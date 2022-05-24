@@ -20,6 +20,13 @@ export interface DataDigitaloceanSpacesBucketObjectsConfig extends cdktf.Terrafo
   */
   readonly encodingType?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_bucket_objects#id DataDigitaloceanSpacesBucketObjects#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_bucket_objects#max_keys DataDigitaloceanSpacesBucketObjects#max_keys}
   */
   readonly maxKeys?: number;
@@ -70,6 +77,7 @@ export class DataDigitaloceanSpacesBucketObjects extends cdktf.TerraformDataSour
     this._bucket = config.bucket;
     this._delimiter = config.delimiter;
     this._encodingType = config.encodingType;
+    this._id = config.id;
     this._maxKeys = config.maxKeys;
     this._prefix = config.prefix;
     this._region = config.region;
@@ -130,8 +138,19 @@ export class DataDigitaloceanSpacesBucketObjects extends cdktf.TerraformDataSour
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // keys - computed: true, optional: false, required: false
@@ -198,6 +217,7 @@ export class DataDigitaloceanSpacesBucketObjects extends cdktf.TerraformDataSour
       bucket: cdktf.stringToTerraform(this._bucket),
       delimiter: cdktf.stringToTerraform(this._delimiter),
       encoding_type: cdktf.stringToTerraform(this._encodingType),
+      id: cdktf.stringToTerraform(this._id),
       max_keys: cdktf.numberToTerraform(this._maxKeys),
       prefix: cdktf.stringToTerraform(this._prefix),
       region: cdktf.stringToTerraform(this._region),

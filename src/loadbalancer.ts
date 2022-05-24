@@ -32,6 +32,13 @@ export interface LoadbalancerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly enableProxyProtocol?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/loadbalancer#id Loadbalancer#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/loadbalancer#name Loadbalancer#name}
   */
   readonly name: string;
@@ -121,6 +128,206 @@ export function loadbalancerForwardingRuleToTerraform(struct?: LoadbalancerForwa
   }
 }
 
+export class LoadbalancerForwardingRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadbalancerForwardingRule | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._certificateId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.certificateId = this._certificateId;
+    }
+    if (this._certificateName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.certificateName = this._certificateName;
+    }
+    if (this._entryPort !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.entryPort = this._entryPort;
+    }
+    if (this._entryProtocol !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.entryProtocol = this._entryProtocol;
+    }
+    if (this._targetPort !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetPort = this._targetPort;
+    }
+    if (this._targetProtocol !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetProtocol = this._targetProtocol;
+    }
+    if (this._tlsPassthrough !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tlsPassthrough = this._tlsPassthrough;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadbalancerForwardingRule | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._certificateId = undefined;
+      this._certificateName = undefined;
+      this._entryPort = undefined;
+      this._entryProtocol = undefined;
+      this._targetPort = undefined;
+      this._targetProtocol = undefined;
+      this._tlsPassthrough = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._certificateId = value.certificateId;
+      this._certificateName = value.certificateName;
+      this._entryPort = value.entryPort;
+      this._entryProtocol = value.entryProtocol;
+      this._targetPort = value.targetPort;
+      this._targetProtocol = value.targetProtocol;
+      this._tlsPassthrough = value.tlsPassthrough;
+    }
+  }
+
+  // certificate_id - computed: true, optional: true, required: false
+  private _certificateId?: string; 
+  public get certificateId() {
+    return this.getStringAttribute('certificate_id');
+  }
+  public set certificateId(value: string) {
+    this._certificateId = value;
+  }
+  public resetCertificateId() {
+    this._certificateId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certificateIdInput() {
+    return this._certificateId;
+  }
+
+  // certificate_name - computed: true, optional: true, required: false
+  private _certificateName?: string; 
+  public get certificateName() {
+    return this.getStringAttribute('certificate_name');
+  }
+  public set certificateName(value: string) {
+    this._certificateName = value;
+  }
+  public resetCertificateName() {
+    this._certificateName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certificateNameInput() {
+    return this._certificateName;
+  }
+
+  // entry_port - computed: false, optional: false, required: true
+  private _entryPort?: number; 
+  public get entryPort() {
+    return this.getNumberAttribute('entry_port');
+  }
+  public set entryPort(value: number) {
+    this._entryPort = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get entryPortInput() {
+    return this._entryPort;
+  }
+
+  // entry_protocol - computed: false, optional: false, required: true
+  private _entryProtocol?: string; 
+  public get entryProtocol() {
+    return this.getStringAttribute('entry_protocol');
+  }
+  public set entryProtocol(value: string) {
+    this._entryProtocol = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get entryProtocolInput() {
+    return this._entryProtocol;
+  }
+
+  // target_port - computed: false, optional: false, required: true
+  private _targetPort?: number; 
+  public get targetPort() {
+    return this.getNumberAttribute('target_port');
+  }
+  public set targetPort(value: number) {
+    this._targetPort = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetPortInput() {
+    return this._targetPort;
+  }
+
+  // target_protocol - computed: false, optional: false, required: true
+  private _targetProtocol?: string; 
+  public get targetProtocol() {
+    return this.getStringAttribute('target_protocol');
+  }
+  public set targetProtocol(value: string) {
+    this._targetProtocol = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetProtocolInput() {
+    return this._targetProtocol;
+  }
+
+  // tls_passthrough - computed: false, optional: true, required: false
+  private _tlsPassthrough?: boolean | cdktf.IResolvable; 
+  public get tlsPassthrough() {
+    return this.getBooleanAttribute('tls_passthrough');
+  }
+  public set tlsPassthrough(value: boolean | cdktf.IResolvable) {
+    this._tlsPassthrough = value;
+  }
+  public resetTlsPassthrough() {
+    this._tlsPassthrough = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tlsPassthroughInput() {
+    return this._tlsPassthrough;
+  }
+}
+
+export class LoadbalancerForwardingRuleList extends cdktf.ComplexList {
+  public internalValue? : LoadbalancerForwardingRule[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadbalancerForwardingRuleOutputReference {
+    return new LoadbalancerForwardingRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LoadbalancerHealthcheck {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/loadbalancer#check_interval_seconds Loadbalancer#check_interval_seconds}
@@ -502,13 +709,14 @@ export class Loadbalancer extends cdktf.TerraformResource {
     this._dropletTag = config.dropletTag;
     this._enableBackendKeepalive = config.enableBackendKeepalive;
     this._enableProxyProtocol = config.enableProxyProtocol;
+    this._id = config.id;
     this._name = config.name;
     this._redirectHttpToHttps = config.redirectHttpToHttps;
     this._region = config.region;
     this._size = config.size;
     this._sizeUnit = config.sizeUnit;
     this._vpcUuid = config.vpcUuid;
-    this._forwardingRule = config.forwardingRule;
+    this._forwardingRule.internalValue = config.forwardingRule;
     this._healthcheck.internalValue = config.healthcheck;
     this._stickySessions.internalValue = config.stickySessions;
   }
@@ -614,8 +822,19 @@ export class Loadbalancer extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // ip - computed: true, optional: false, required: false
@@ -724,17 +943,16 @@ export class Loadbalancer extends cdktf.TerraformResource {
   }
 
   // forwarding_rule - computed: false, optional: false, required: true
-  private _forwardingRule?: LoadbalancerForwardingRule[] | cdktf.IResolvable; 
+  private _forwardingRule = new LoadbalancerForwardingRuleList(this, "forwarding_rule", true);
   public get forwardingRule() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('forwarding_rule')));
+    return this._forwardingRule;
   }
-  public set forwardingRule(value: LoadbalancerForwardingRule[] | cdktf.IResolvable) {
-    this._forwardingRule = value;
+  public putForwardingRule(value: LoadbalancerForwardingRule[] | cdktf.IResolvable) {
+    this._forwardingRule.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get forwardingRuleInput() {
-    return this._forwardingRule;
+    return this._forwardingRule.internalValue;
   }
 
   // healthcheck - computed: false, optional: true, required: false
@@ -781,13 +999,14 @@ export class Loadbalancer extends cdktf.TerraformResource {
       droplet_tag: cdktf.stringToTerraform(this._dropletTag),
       enable_backend_keepalive: cdktf.booleanToTerraform(this._enableBackendKeepalive),
       enable_proxy_protocol: cdktf.booleanToTerraform(this._enableProxyProtocol),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       redirect_http_to_https: cdktf.booleanToTerraform(this._redirectHttpToHttps),
       region: cdktf.stringToTerraform(this._region),
       size: cdktf.stringToTerraform(this._size),
       size_unit: cdktf.numberToTerraform(this._sizeUnit),
       vpc_uuid: cdktf.stringToTerraform(this._vpcUuid),
-      forwarding_rule: cdktf.listMapper(loadbalancerForwardingRuleToTerraform)(this._forwardingRule),
+      forwarding_rule: cdktf.listMapper(loadbalancerForwardingRuleToTerraform)(this._forwardingRule.internalValue),
       healthcheck: loadbalancerHealthcheckToTerraform(this._healthcheck.internalValue),
       sticky_sessions: loadbalancerStickySessionsToTerraform(this._stickySessions.internalValue),
     };

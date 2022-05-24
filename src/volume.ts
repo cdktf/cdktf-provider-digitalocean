@@ -16,6 +16,13 @@ export interface VolumeConfig extends cdktf.TerraformMetaArguments {
   */
   readonly filesystemType?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/volume#id Volume#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/volume#initial_filesystem_label Volume#initial_filesystem_label}
   */
   readonly initialFilesystemLabel?: string;
@@ -81,6 +88,7 @@ export class Volume extends cdktf.TerraformResource {
     });
     this._description = config.description;
     this._filesystemType = config.filesystemType;
+    this._id = config.id;
     this._initialFilesystemLabel = config.initialFilesystemLabel;
     this._initialFilesystemType = config.initialFilesystemType;
     this._name = config.name;
@@ -137,8 +145,19 @@ export class Volume extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // initial_filesystem_label - computed: false, optional: true, required: false
@@ -257,6 +276,7 @@ export class Volume extends cdktf.TerraformResource {
     return {
       description: cdktf.stringToTerraform(this._description),
       filesystem_type: cdktf.stringToTerraform(this._filesystemType),
+      id: cdktf.stringToTerraform(this._id),
       initial_filesystem_label: cdktf.stringToTerraform(this._initialFilesystemLabel),
       initial_filesystem_type: cdktf.stringToTerraform(this._initialFilesystemType),
       name: cdktf.stringToTerraform(this._name),

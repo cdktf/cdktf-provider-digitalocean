@@ -8,6 +8,15 @@ import * as cdktf from 'cdktf';
 
 export interface DataDigitaloceanDropletConfig extends cdktf.TerraformMetaArguments {
   /**
+  * id of the Droplet
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/droplet#id DataDigitaloceanDroplet#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: number;
+  /**
   * name of the Droplet
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/droplet#name DataDigitaloceanDroplet#name}
@@ -55,6 +64,7 @@ export class DataDigitaloceanDroplet extends cdktf.TerraformDataSource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._name = config.name;
     this._tag = config.tag;
   }
@@ -79,8 +89,19 @@ export class DataDigitaloceanDroplet extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: number; 
   public get id() {
     return this.getNumberAttribute('id');
+  }
+  public set id(value: number) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // image - computed: true, optional: false, required: false
@@ -221,6 +242,7 @@ export class DataDigitaloceanDroplet extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.numberToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       tag: cdktf.stringToTerraform(this._tag),
     };

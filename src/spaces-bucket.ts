@@ -20,6 +20,13 @@ export interface SpacesBucketConfig extends cdktf.TerraformMetaArguments {
   */
   readonly forceDestroy?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/spaces_bucket#id SpacesBucket#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Bucket name
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/spaces_bucket#name SpacesBucket#name}
@@ -88,6 +95,146 @@ export function spacesBucketCorsRuleToTerraform(struct?: SpacesBucketCorsRule | 
   }
 }
 
+export class SpacesBucketCorsRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SpacesBucketCorsRule | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allowedHeaders !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedHeaders = this._allowedHeaders;
+    }
+    if (this._allowedMethods !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedMethods = this._allowedMethods;
+    }
+    if (this._allowedOrigins !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedOrigins = this._allowedOrigins;
+    }
+    if (this._maxAgeSeconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxAgeSeconds = this._maxAgeSeconds;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SpacesBucketCorsRule | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._allowedHeaders = undefined;
+      this._allowedMethods = undefined;
+      this._allowedOrigins = undefined;
+      this._maxAgeSeconds = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._allowedHeaders = value.allowedHeaders;
+      this._allowedMethods = value.allowedMethods;
+      this._allowedOrigins = value.allowedOrigins;
+      this._maxAgeSeconds = value.maxAgeSeconds;
+    }
+  }
+
+  // allowed_headers - computed: false, optional: true, required: false
+  private _allowedHeaders?: string[]; 
+  public get allowedHeaders() {
+    return this.getListAttribute('allowed_headers');
+  }
+  public set allowedHeaders(value: string[]) {
+    this._allowedHeaders = value;
+  }
+  public resetAllowedHeaders() {
+    this._allowedHeaders = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedHeadersInput() {
+    return this._allowedHeaders;
+  }
+
+  // allowed_methods - computed: false, optional: false, required: true
+  private _allowedMethods?: string[]; 
+  public get allowedMethods() {
+    return this.getListAttribute('allowed_methods');
+  }
+  public set allowedMethods(value: string[]) {
+    this._allowedMethods = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedMethodsInput() {
+    return this._allowedMethods;
+  }
+
+  // allowed_origins - computed: false, optional: false, required: true
+  private _allowedOrigins?: string[]; 
+  public get allowedOrigins() {
+    return this.getListAttribute('allowed_origins');
+  }
+  public set allowedOrigins(value: string[]) {
+    this._allowedOrigins = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedOriginsInput() {
+    return this._allowedOrigins;
+  }
+
+  // max_age_seconds - computed: false, optional: true, required: false
+  private _maxAgeSeconds?: number; 
+  public get maxAgeSeconds() {
+    return this.getNumberAttribute('max_age_seconds');
+  }
+  public set maxAgeSeconds(value: number) {
+    this._maxAgeSeconds = value;
+  }
+  public resetMaxAgeSeconds() {
+    this._maxAgeSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxAgeSecondsInput() {
+    return this._maxAgeSeconds;
+  }
+}
+
+export class SpacesBucketCorsRuleList extends cdktf.ComplexList {
+  public internalValue? : SpacesBucketCorsRule[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SpacesBucketCorsRuleOutputReference {
+    return new SpacesBucketCorsRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface SpacesBucketLifecycleRuleExpiration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/spaces_bucket#date SpacesBucket#date}
@@ -283,6 +430,9 @@ export interface SpacesBucketLifecycleRule {
   readonly enabled: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/spaces_bucket#id SpacesBucket#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
@@ -311,12 +461,200 @@ export function spacesBucketLifecycleRuleToTerraform(struct?: SpacesBucketLifecy
   return {
     abort_incomplete_multipart_upload_days: cdktf.numberToTerraform(struct!.abortIncompleteMultipartUploadDays),
     enabled: cdktf.booleanToTerraform(struct!.enabled),
+    id: cdktf.stringToTerraform(struct!.id),
     prefix: cdktf.stringToTerraform(struct!.prefix),
     expiration: spacesBucketLifecycleRuleExpirationToTerraform(struct!.expiration),
     noncurrent_version_expiration: spacesBucketLifecycleRuleNoncurrentVersionExpirationToTerraform(struct!.noncurrentVersionExpiration),
   }
 }
 
+export class SpacesBucketLifecycleRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SpacesBucketLifecycleRule | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._abortIncompleteMultipartUploadDays !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.abortIncompleteMultipartUploadDays = this._abortIncompleteMultipartUploadDays;
+    }
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._prefix !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.prefix = this._prefix;
+    }
+    if (this._expiration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.expiration = this._expiration?.internalValue;
+    }
+    if (this._noncurrentVersionExpiration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.noncurrentVersionExpiration = this._noncurrentVersionExpiration?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SpacesBucketLifecycleRule | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._abortIncompleteMultipartUploadDays = undefined;
+      this._enabled = undefined;
+      this._id = undefined;
+      this._prefix = undefined;
+      this._expiration.internalValue = undefined;
+      this._noncurrentVersionExpiration.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._abortIncompleteMultipartUploadDays = value.abortIncompleteMultipartUploadDays;
+      this._enabled = value.enabled;
+      this._id = value.id;
+      this._prefix = value.prefix;
+      this._expiration.internalValue = value.expiration;
+      this._noncurrentVersionExpiration.internalValue = value.noncurrentVersionExpiration;
+    }
+  }
+
+  // abort_incomplete_multipart_upload_days - computed: false, optional: true, required: false
+  private _abortIncompleteMultipartUploadDays?: number; 
+  public get abortIncompleteMultipartUploadDays() {
+    return this.getNumberAttribute('abort_incomplete_multipart_upload_days');
+  }
+  public set abortIncompleteMultipartUploadDays(value: number) {
+    this._abortIncompleteMultipartUploadDays = value;
+  }
+  public resetAbortIncompleteMultipartUploadDays() {
+    this._abortIncompleteMultipartUploadDays = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get abortIncompleteMultipartUploadDaysInput() {
+    return this._abortIncompleteMultipartUploadDays;
+  }
+
+  // enabled - computed: false, optional: false, required: true
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+
+  // id - computed: true, optional: true, required: false
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // prefix - computed: false, optional: true, required: false
+  private _prefix?: string; 
+  public get prefix() {
+    return this.getStringAttribute('prefix');
+  }
+  public set prefix(value: string) {
+    this._prefix = value;
+  }
+  public resetPrefix() {
+    this._prefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get prefixInput() {
+    return this._prefix;
+  }
+
+  // expiration - computed: false, optional: true, required: false
+  private _expiration = new SpacesBucketLifecycleRuleExpirationOutputReference(this, "expiration");
+  public get expiration() {
+    return this._expiration;
+  }
+  public putExpiration(value: SpacesBucketLifecycleRuleExpiration) {
+    this._expiration.internalValue = value;
+  }
+  public resetExpiration() {
+    this._expiration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get expirationInput() {
+    return this._expiration.internalValue;
+  }
+
+  // noncurrent_version_expiration - computed: false, optional: true, required: false
+  private _noncurrentVersionExpiration = new SpacesBucketLifecycleRuleNoncurrentVersionExpirationOutputReference(this, "noncurrent_version_expiration");
+  public get noncurrentVersionExpiration() {
+    return this._noncurrentVersionExpiration;
+  }
+  public putNoncurrentVersionExpiration(value: SpacesBucketLifecycleRuleNoncurrentVersionExpiration) {
+    this._noncurrentVersionExpiration.internalValue = value;
+  }
+  public resetNoncurrentVersionExpiration() {
+    this._noncurrentVersionExpiration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get noncurrentVersionExpirationInput() {
+    return this._noncurrentVersionExpiration.internalValue;
+  }
+}
+
+export class SpacesBucketLifecycleRuleList extends cdktf.ComplexList {
+  public internalValue? : SpacesBucketLifecycleRule[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SpacesBucketLifecycleRuleOutputReference {
+    return new SpacesBucketLifecycleRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface SpacesBucketVersioning {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/spaces_bucket#enabled SpacesBucket#enabled}
@@ -419,10 +757,11 @@ export class SpacesBucket extends cdktf.TerraformResource {
     });
     this._acl = config.acl;
     this._forceDestroy = config.forceDestroy;
+    this._id = config.id;
     this._name = config.name;
     this._region = config.region;
-    this._corsRule = config.corsRule;
-    this._lifecycleRule = config.lifecycleRule;
+    this._corsRule.internalValue = config.corsRule;
+    this._lifecycleRule.internalValue = config.lifecycleRule;
     this._versioning.internalValue = config.versioning;
   }
 
@@ -468,8 +807,19 @@ export class SpacesBucket extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -507,37 +857,35 @@ export class SpacesBucket extends cdktf.TerraformResource {
   }
 
   // cors_rule - computed: false, optional: true, required: false
-  private _corsRule?: SpacesBucketCorsRule[] | cdktf.IResolvable; 
+  private _corsRule = new SpacesBucketCorsRuleList(this, "cors_rule", false);
   public get corsRule() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('cors_rule');
+    return this._corsRule;
   }
-  public set corsRule(value: SpacesBucketCorsRule[] | cdktf.IResolvable) {
-    this._corsRule = value;
+  public putCorsRule(value: SpacesBucketCorsRule[] | cdktf.IResolvable) {
+    this._corsRule.internalValue = value;
   }
   public resetCorsRule() {
-    this._corsRule = undefined;
+    this._corsRule.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get corsRuleInput() {
-    return this._corsRule;
+    return this._corsRule.internalValue;
   }
 
   // lifecycle_rule - computed: false, optional: true, required: false
-  private _lifecycleRule?: SpacesBucketLifecycleRule[] | cdktf.IResolvable; 
+  private _lifecycleRule = new SpacesBucketLifecycleRuleList(this, "lifecycle_rule", false);
   public get lifecycleRule() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('lifecycle_rule');
+    return this._lifecycleRule;
   }
-  public set lifecycleRule(value: SpacesBucketLifecycleRule[] | cdktf.IResolvable) {
-    this._lifecycleRule = value;
+  public putLifecycleRule(value: SpacesBucketLifecycleRule[] | cdktf.IResolvable) {
+    this._lifecycleRule.internalValue = value;
   }
   public resetLifecycleRule() {
-    this._lifecycleRule = undefined;
+    this._lifecycleRule.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get lifecycleRuleInput() {
-    return this._lifecycleRule;
+    return this._lifecycleRule.internalValue;
   }
 
   // versioning - computed: false, optional: true, required: false
@@ -564,10 +912,11 @@ export class SpacesBucket extends cdktf.TerraformResource {
     return {
       acl: cdktf.stringToTerraform(this._acl),
       force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       region: cdktf.stringToTerraform(this._region),
-      cors_rule: cdktf.listMapper(spacesBucketCorsRuleToTerraform)(this._corsRule),
-      lifecycle_rule: cdktf.listMapper(spacesBucketLifecycleRuleToTerraform)(this._lifecycleRule),
+      cors_rule: cdktf.listMapper(spacesBucketCorsRuleToTerraform)(this._corsRule.internalValue),
+      lifecycle_rule: cdktf.listMapper(spacesBucketLifecycleRuleToTerraform)(this._lifecycleRule.internalValue),
       versioning: spacesBucketVersioningToTerraform(this._versioning.internalValue),
     };
   }
