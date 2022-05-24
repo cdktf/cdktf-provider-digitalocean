@@ -14,6 +14,13 @@ export interface DataDigitaloceanRecordConfig extends cdktf.TerraformMetaArgumen
   */
   readonly domain: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/record#id DataDigitaloceanRecord#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * name of the record
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/record#name DataDigitaloceanRecord#name}
@@ -56,6 +63,7 @@ export class DataDigitaloceanRecord extends cdktf.TerraformDataSource {
       lifecycle: config.lifecycle
     });
     this._domain = config.domain;
+    this._id = config.id;
     this._name = config.name;
   }
 
@@ -87,8 +95,19 @@ export class DataDigitaloceanRecord extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -141,6 +160,7 @@ export class DataDigitaloceanRecord extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       domain: cdktf.stringToTerraform(this._domain),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
     };
   }

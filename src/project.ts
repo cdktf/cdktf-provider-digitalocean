@@ -20,6 +20,13 @@ export interface ProjectConfig extends cdktf.TerraformMetaArguments {
   */
   readonly environment?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/project#id Project#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * the human-readable name for the project
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/project#name Project#name}
@@ -75,6 +82,7 @@ export class Project extends cdktf.TerraformResource {
     });
     this._description = config.description;
     this._environment = config.environment;
+    this._id = config.id;
     this._name = config.name;
     this._purpose = config.purpose;
     this._resources = config.resources;
@@ -122,8 +130,19 @@ export class Project extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // is_default - computed: true, optional: false, required: false
@@ -199,6 +218,7 @@ export class Project extends cdktf.TerraformResource {
     return {
       description: cdktf.stringToTerraform(this._description),
       environment: cdktf.stringToTerraform(this._environment),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       purpose: cdktf.stringToTerraform(this._purpose),
       resources: cdktf.listMapper(cdktf.stringToTerraform)(this._resources),

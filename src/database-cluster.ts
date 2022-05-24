@@ -16,6 +16,13 @@ export interface DatabaseClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly evictionPolicy?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_cluster#id DatabaseCluster#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_cluster#name DatabaseCluster#name}
   */
   readonly name: string;
@@ -82,6 +89,102 @@ export function databaseClusterMaintenanceWindowToTerraform(struct?: DatabaseClu
   }
 }
 
+export class DatabaseClusterMaintenanceWindowOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DatabaseClusterMaintenanceWindow | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._day !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.day = this._day;
+    }
+    if (this._hour !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hour = this._hour;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DatabaseClusterMaintenanceWindow | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._day = undefined;
+      this._hour = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._day = value.day;
+      this._hour = value.hour;
+    }
+  }
+
+  // day - computed: false, optional: false, required: true
+  private _day?: string; 
+  public get day() {
+    return this.getStringAttribute('day');
+  }
+  public set day(value: string) {
+    this._day = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dayInput() {
+    return this._day;
+  }
+
+  // hour - computed: false, optional: false, required: true
+  private _hour?: string; 
+  public get hour() {
+    return this.getStringAttribute('hour');
+  }
+  public set hour(value: string) {
+    this._hour = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hourInput() {
+    return this._hour;
+  }
+}
+
+export class DatabaseClusterMaintenanceWindowList extends cdktf.ComplexList {
+  public internalValue? : DatabaseClusterMaintenanceWindow[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DatabaseClusterMaintenanceWindowOutputReference {
+    return new DatabaseClusterMaintenanceWindowOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DatabaseClusterTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_cluster#create DatabaseCluster#create}
@@ -101,6 +204,7 @@ export function databaseClusterTimeoutsToTerraform(struct?: DatabaseClusterTimeo
 
 export class DatabaseClusterTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -110,7 +214,10 @@ export class DatabaseClusterTimeoutsOutputReference extends cdktf.ComplexObject 
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): DatabaseClusterTimeouts | undefined {
+  public get internalValue(): DatabaseClusterTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -120,13 +227,19 @@ export class DatabaseClusterTimeoutsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatabaseClusterTimeouts | undefined) {
+  public set internalValue(value: DatabaseClusterTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
     }
   }
@@ -184,6 +297,7 @@ export class DatabaseCluster extends cdktf.TerraformResource {
     });
     this._engine = config.engine;
     this._evictionPolicy = config.evictionPolicy;
+    this._id = config.id;
     this._name = config.name;
     this._nodeCount = config.nodeCount;
     this._privateNetworkUuid = config.privateNetworkUuid;
@@ -192,7 +306,7 @@ export class DatabaseCluster extends cdktf.TerraformResource {
     this._sqlMode = config.sqlMode;
     this._tags = config.tags;
     this._version = config.version;
-    this._maintenanceWindow = config.maintenanceWindow;
+    this._maintenanceWindow.internalValue = config.maintenanceWindow;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -240,8 +354,19 @@ export class DatabaseCluster extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -396,20 +521,19 @@ export class DatabaseCluster extends cdktf.TerraformResource {
   }
 
   // maintenance_window - computed: false, optional: true, required: false
-  private _maintenanceWindow?: DatabaseClusterMaintenanceWindow[] | cdktf.IResolvable; 
+  private _maintenanceWindow = new DatabaseClusterMaintenanceWindowList(this, "maintenance_window", false);
   public get maintenanceWindow() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('maintenance_window');
+    return this._maintenanceWindow;
   }
-  public set maintenanceWindow(value: DatabaseClusterMaintenanceWindow[] | cdktf.IResolvable) {
-    this._maintenanceWindow = value;
+  public putMaintenanceWindow(value: DatabaseClusterMaintenanceWindow[] | cdktf.IResolvable) {
+    this._maintenanceWindow.internalValue = value;
   }
   public resetMaintenanceWindow() {
-    this._maintenanceWindow = undefined;
+    this._maintenanceWindow.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get maintenanceWindowInput() {
-    return this._maintenanceWindow;
+    return this._maintenanceWindow.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -436,6 +560,7 @@ export class DatabaseCluster extends cdktf.TerraformResource {
     return {
       engine: cdktf.stringToTerraform(this._engine),
       eviction_policy: cdktf.stringToTerraform(this._evictionPolicy),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       node_count: cdktf.numberToTerraform(this._nodeCount),
       private_network_uuid: cdktf.stringToTerraform(this._privateNetworkUuid),
@@ -444,7 +569,7 @@ export class DatabaseCluster extends cdktf.TerraformResource {
       sql_mode: cdktf.stringToTerraform(this._sqlMode),
       tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
       version: cdktf.stringToTerraform(this._version),
-      maintenance_window: cdktf.listMapper(databaseClusterMaintenanceWindowToTerraform)(this._maintenanceWindow),
+      maintenance_window: cdktf.listMapper(databaseClusterMaintenanceWindowToTerraform)(this._maintenanceWindow.internalValue),
       timeouts: databaseClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

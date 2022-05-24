@@ -16,6 +16,13 @@ export interface DatabaseConnectionPoolConfig extends cdktf.TerraformMetaArgumen
   */
   readonly dbName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_connection_pool#id DatabaseConnectionPool#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_connection_pool#mode DatabaseConnectionPool#mode}
   */
   readonly mode: string;
@@ -69,6 +76,7 @@ export class DatabaseConnectionPool extends cdktf.TerraformResource {
     });
     this._clusterId = config.clusterId;
     this._dbName = config.dbName;
+    this._id = config.id;
     this._mode = config.mode;
     this._name = config.name;
     this._size = config.size;
@@ -111,8 +119,19 @@ export class DatabaseConnectionPool extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // mode - computed: false, optional: false, required: true
@@ -200,6 +219,7 @@ export class DatabaseConnectionPool extends cdktf.TerraformResource {
     return {
       cluster_id: cdktf.stringToTerraform(this._clusterId),
       db_name: cdktf.stringToTerraform(this._dbName),
+      id: cdktf.stringToTerraform(this._id),
       mode: cdktf.stringToTerraform(this._mode),
       name: cdktf.stringToTerraform(this._name),
       size: cdktf.numberToTerraform(this._size),
