@@ -790,6 +790,1957 @@ export class AppSpecEnvList extends cdktf.ComplexList {
     return new AppSpecEnvOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface AppSpecFunctionAlert {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#disabled App#disabled}
+  */
+  readonly disabled?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#operator App#operator}
+  */
+  readonly operator: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#rule App#rule}
+  */
+  readonly rule: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#value App#value}
+  */
+  readonly value: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#window App#window}
+  */
+  readonly window: string;
+}
+
+export function appSpecFunctionAlertToTerraform(struct?: AppSpecFunctionAlert | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    disabled: cdktf.booleanToTerraform(struct!.disabled),
+    operator: cdktf.stringToTerraform(struct!.operator),
+    rule: cdktf.stringToTerraform(struct!.rule),
+    value: cdktf.numberToTerraform(struct!.value),
+    window: cdktf.stringToTerraform(struct!.window),
+  }
+}
+
+export class AppSpecFunctionAlertOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AppSpecFunctionAlert | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._disabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.disabled = this._disabled;
+    }
+    if (this._operator !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.operator = this._operator;
+    }
+    if (this._rule !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rule = this._rule;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    if (this._window !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.window = this._window;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppSpecFunctionAlert | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._disabled = undefined;
+      this._operator = undefined;
+      this._rule = undefined;
+      this._value = undefined;
+      this._window = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._disabled = value.disabled;
+      this._operator = value.operator;
+      this._rule = value.rule;
+      this._value = value.value;
+      this._window = value.window;
+    }
+  }
+
+  // disabled - computed: false, optional: true, required: false
+  private _disabled?: boolean | cdktf.IResolvable; 
+  public get disabled() {
+    return this.getBooleanAttribute('disabled');
+  }
+  public set disabled(value: boolean | cdktf.IResolvable) {
+    this._disabled = value;
+  }
+  public resetDisabled() {
+    this._disabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disabledInput() {
+    return this._disabled;
+  }
+
+  // operator - computed: false, optional: false, required: true
+  private _operator?: string; 
+  public get operator() {
+    return this.getStringAttribute('operator');
+  }
+  public set operator(value: string) {
+    this._operator = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operatorInput() {
+    return this._operator;
+  }
+
+  // rule - computed: false, optional: false, required: true
+  private _rule?: string; 
+  public get rule() {
+    return this.getStringAttribute('rule');
+  }
+  public set rule(value: string) {
+    this._rule = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ruleInput() {
+    return this._rule;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: number; 
+  public get value() {
+    return this.getNumberAttribute('value');
+  }
+  public set value(value: number) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+
+  // window - computed: false, optional: false, required: true
+  private _window?: string; 
+  public get window() {
+    return this.getStringAttribute('window');
+  }
+  public set window(value: string) {
+    this._window = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get windowInput() {
+    return this._window;
+  }
+}
+
+export class AppSpecFunctionAlertList extends cdktf.ComplexList {
+  public internalValue? : AppSpecFunctionAlert[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppSpecFunctionAlertOutputReference {
+    return new AppSpecFunctionAlertOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface AppSpecFunctionCorsAllowOrigins {
+  /**
+  * Exact string match.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#exact App#exact}
+  */
+  readonly exact?: string;
+  /**
+  * Prefix-based match. 
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#prefix App#prefix}
+  */
+  readonly prefix?: string;
+  /**
+  * RE2 style regex-based match.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#regex App#regex}
+  */
+  readonly regex?: string;
+}
+
+export function appSpecFunctionCorsAllowOriginsToTerraform(struct?: AppSpecFunctionCorsAllowOriginsOutputReference | AppSpecFunctionCorsAllowOrigins): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    exact: cdktf.stringToTerraform(struct!.exact),
+    prefix: cdktf.stringToTerraform(struct!.prefix),
+    regex: cdktf.stringToTerraform(struct!.regex),
+  }
+}
+
+export class AppSpecFunctionCorsAllowOriginsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppSpecFunctionCorsAllowOrigins | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._exact !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.exact = this._exact;
+    }
+    if (this._prefix !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.prefix = this._prefix;
+    }
+    if (this._regex !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.regex = this._regex;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppSpecFunctionCorsAllowOrigins | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._exact = undefined;
+      this._prefix = undefined;
+      this._regex = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._exact = value.exact;
+      this._prefix = value.prefix;
+      this._regex = value.regex;
+    }
+  }
+
+  // exact - computed: false, optional: true, required: false
+  private _exact?: string; 
+  public get exact() {
+    return this.getStringAttribute('exact');
+  }
+  public set exact(value: string) {
+    this._exact = value;
+  }
+  public resetExact() {
+    this._exact = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exactInput() {
+    return this._exact;
+  }
+
+  // prefix - computed: false, optional: true, required: false
+  private _prefix?: string; 
+  public get prefix() {
+    return this.getStringAttribute('prefix');
+  }
+  public set prefix(value: string) {
+    this._prefix = value;
+  }
+  public resetPrefix() {
+    this._prefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get prefixInput() {
+    return this._prefix;
+  }
+
+  // regex - computed: false, optional: true, required: false
+  private _regex?: string; 
+  public get regex() {
+    return this.getStringAttribute('regex');
+  }
+  public set regex(value: string) {
+    this._regex = value;
+  }
+  public resetRegex() {
+    this._regex = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regexInput() {
+    return this._regex;
+  }
+}
+export interface AppSpecFunctionCors {
+  /**
+  * Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`. This configures the Access-Control-Allow-Credentials header.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#allow_credentials App#allow_credentials}
+  */
+  readonly allowCredentials?: boolean | cdktf.IResolvable;
+  /**
+  * The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#allow_headers App#allow_headers}
+  */
+  readonly allowHeaders?: string[];
+  /**
+  * The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#allow_methods App#allow_methods}
+  */
+  readonly allowMethods?: string[];
+  /**
+  * The set of HTTP response headers that browsers are allowed to access. This configures the Access-Control-Expose-Headers header.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#expose_headers App#expose_headers}
+  */
+  readonly exposeHeaders?: string[];
+  /**
+  * An optional duration specifying how long browsers can cache the results of a preflight request. This configures the Access-Control-Max-Age header. Example: `5h30m`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#max_age App#max_age}
+  */
+  readonly maxAge?: string;
+  /**
+  * allow_origins block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#allow_origins App#allow_origins}
+  */
+  readonly allowOrigins?: AppSpecFunctionCorsAllowOrigins;
+}
+
+export function appSpecFunctionCorsToTerraform(struct?: AppSpecFunctionCorsOutputReference | AppSpecFunctionCors): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    allow_credentials: cdktf.booleanToTerraform(struct!.allowCredentials),
+    allow_headers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowHeaders),
+    allow_methods: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowMethods),
+    expose_headers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exposeHeaders),
+    max_age: cdktf.stringToTerraform(struct!.maxAge),
+    allow_origins: appSpecFunctionCorsAllowOriginsToTerraform(struct!.allowOrigins),
+  }
+}
+
+export class AppSpecFunctionCorsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppSpecFunctionCors | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allowCredentials !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowCredentials = this._allowCredentials;
+    }
+    if (this._allowHeaders !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowHeaders = this._allowHeaders;
+    }
+    if (this._allowMethods !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowMethods = this._allowMethods;
+    }
+    if (this._exposeHeaders !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.exposeHeaders = this._exposeHeaders;
+    }
+    if (this._maxAge !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxAge = this._maxAge;
+    }
+    if (this._allowOrigins?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowOrigins = this._allowOrigins?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppSpecFunctionCors | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._allowCredentials = undefined;
+      this._allowHeaders = undefined;
+      this._allowMethods = undefined;
+      this._exposeHeaders = undefined;
+      this._maxAge = undefined;
+      this._allowOrigins.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._allowCredentials = value.allowCredentials;
+      this._allowHeaders = value.allowHeaders;
+      this._allowMethods = value.allowMethods;
+      this._exposeHeaders = value.exposeHeaders;
+      this._maxAge = value.maxAge;
+      this._allowOrigins.internalValue = value.allowOrigins;
+    }
+  }
+
+  // allow_credentials - computed: false, optional: true, required: false
+  private _allowCredentials?: boolean | cdktf.IResolvable; 
+  public get allowCredentials() {
+    return this.getBooleanAttribute('allow_credentials');
+  }
+  public set allowCredentials(value: boolean | cdktf.IResolvable) {
+    this._allowCredentials = value;
+  }
+  public resetAllowCredentials() {
+    this._allowCredentials = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowCredentialsInput() {
+    return this._allowCredentials;
+  }
+
+  // allow_headers - computed: false, optional: true, required: false
+  private _allowHeaders?: string[]; 
+  public get allowHeaders() {
+    return cdktf.Fn.tolist(this.getListAttribute('allow_headers'));
+  }
+  public set allowHeaders(value: string[]) {
+    this._allowHeaders = value;
+  }
+  public resetAllowHeaders() {
+    this._allowHeaders = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowHeadersInput() {
+    return this._allowHeaders;
+  }
+
+  // allow_methods - computed: false, optional: true, required: false
+  private _allowMethods?: string[]; 
+  public get allowMethods() {
+    return cdktf.Fn.tolist(this.getListAttribute('allow_methods'));
+  }
+  public set allowMethods(value: string[]) {
+    this._allowMethods = value;
+  }
+  public resetAllowMethods() {
+    this._allowMethods = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowMethodsInput() {
+    return this._allowMethods;
+  }
+
+  // expose_headers - computed: false, optional: true, required: false
+  private _exposeHeaders?: string[]; 
+  public get exposeHeaders() {
+    return cdktf.Fn.tolist(this.getListAttribute('expose_headers'));
+  }
+  public set exposeHeaders(value: string[]) {
+    this._exposeHeaders = value;
+  }
+  public resetExposeHeaders() {
+    this._exposeHeaders = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exposeHeadersInput() {
+    return this._exposeHeaders;
+  }
+
+  // max_age - computed: false, optional: true, required: false
+  private _maxAge?: string; 
+  public get maxAge() {
+    return this.getStringAttribute('max_age');
+  }
+  public set maxAge(value: string) {
+    this._maxAge = value;
+  }
+  public resetMaxAge() {
+    this._maxAge = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxAgeInput() {
+    return this._maxAge;
+  }
+
+  // allow_origins - computed: false, optional: true, required: false
+  private _allowOrigins = new AppSpecFunctionCorsAllowOriginsOutputReference(this, "allow_origins");
+  public get allowOrigins() {
+    return this._allowOrigins;
+  }
+  public putAllowOrigins(value: AppSpecFunctionCorsAllowOrigins) {
+    this._allowOrigins.internalValue = value;
+  }
+  public resetAllowOrigins() {
+    this._allowOrigins.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowOriginsInput() {
+    return this._allowOrigins.internalValue;
+  }
+}
+export interface AppSpecFunctionEnv {
+  /**
+  * The name of the environment variable.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#key App#key}
+  */
+  readonly key?: string;
+  /**
+  * The visibility scope of the environment variable.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#scope App#scope}
+  */
+  readonly scope?: string;
+  /**
+  * The type of the environment variable.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#type App#type}
+  */
+  readonly type?: string;
+  /**
+  * The value of the environment variable.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#value App#value}
+  */
+  readonly value?: string;
+}
+
+export function appSpecFunctionEnvToTerraform(struct?: AppSpecFunctionEnv | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktf.stringToTerraform(struct!.key),
+    scope: cdktf.stringToTerraform(struct!.scope),
+    type: cdktf.stringToTerraform(struct!.type),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+export class AppSpecFunctionEnvOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AppSpecFunctionEnv | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._scope !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scope = this._scope;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppSpecFunctionEnv | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._key = undefined;
+      this._scope = undefined;
+      this._type = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._key = value.key;
+      this._scope = value.scope;
+      this._type = value.type;
+      this._value = value.value;
+    }
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // scope - computed: false, optional: true, required: false
+  private _scope?: string; 
+  public get scope() {
+    return this.getStringAttribute('scope');
+  }
+  public set scope(value: string) {
+    this._scope = value;
+  }
+  public resetScope() {
+    this._scope = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scopeInput() {
+    return this._scope;
+  }
+
+  // type - computed: true, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class AppSpecFunctionEnvList extends cdktf.ComplexList {
+  public internalValue? : AppSpecFunctionEnv[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppSpecFunctionEnvOutputReference {
+    return new AppSpecFunctionEnvOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface AppSpecFunctionGit {
+  /**
+  * The name of the branch to use.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#branch App#branch}
+  */
+  readonly branch?: string;
+  /**
+  * The clone URL of the repo.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#repo_clone_url App#repo_clone_url}
+  */
+  readonly repoCloneUrl?: string;
+}
+
+export function appSpecFunctionGitToTerraform(struct?: AppSpecFunctionGitOutputReference | AppSpecFunctionGit): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    branch: cdktf.stringToTerraform(struct!.branch),
+    repo_clone_url: cdktf.stringToTerraform(struct!.repoCloneUrl),
+  }
+}
+
+export class AppSpecFunctionGitOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppSpecFunctionGit | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._branch !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.branch = this._branch;
+    }
+    if (this._repoCloneUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.repoCloneUrl = this._repoCloneUrl;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppSpecFunctionGit | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._branch = undefined;
+      this._repoCloneUrl = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._branch = value.branch;
+      this._repoCloneUrl = value.repoCloneUrl;
+    }
+  }
+
+  // branch - computed: false, optional: true, required: false
+  private _branch?: string; 
+  public get branch() {
+    return this.getStringAttribute('branch');
+  }
+  public set branch(value: string) {
+    this._branch = value;
+  }
+  public resetBranch() {
+    this._branch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get branchInput() {
+    return this._branch;
+  }
+
+  // repo_clone_url - computed: false, optional: true, required: false
+  private _repoCloneUrl?: string; 
+  public get repoCloneUrl() {
+    return this.getStringAttribute('repo_clone_url');
+  }
+  public set repoCloneUrl(value: string) {
+    this._repoCloneUrl = value;
+  }
+  public resetRepoCloneUrl() {
+    this._repoCloneUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get repoCloneUrlInput() {
+    return this._repoCloneUrl;
+  }
+}
+export interface AppSpecFunctionGithub {
+  /**
+  * The name of the branch to use.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#branch App#branch}
+  */
+  readonly branch?: string;
+  /**
+  * Whether to automatically deploy new commits made to the repo
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#deploy_on_push App#deploy_on_push}
+  */
+  readonly deployOnPush?: boolean | cdktf.IResolvable;
+  /**
+  * The name of the repo in the format `owner/repo`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#repo App#repo}
+  */
+  readonly repo?: string;
+}
+
+export function appSpecFunctionGithubToTerraform(struct?: AppSpecFunctionGithubOutputReference | AppSpecFunctionGithub): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    branch: cdktf.stringToTerraform(struct!.branch),
+    deploy_on_push: cdktf.booleanToTerraform(struct!.deployOnPush),
+    repo: cdktf.stringToTerraform(struct!.repo),
+  }
+}
+
+export class AppSpecFunctionGithubOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppSpecFunctionGithub | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._branch !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.branch = this._branch;
+    }
+    if (this._deployOnPush !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deployOnPush = this._deployOnPush;
+    }
+    if (this._repo !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.repo = this._repo;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppSpecFunctionGithub | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._branch = undefined;
+      this._deployOnPush = undefined;
+      this._repo = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._branch = value.branch;
+      this._deployOnPush = value.deployOnPush;
+      this._repo = value.repo;
+    }
+  }
+
+  // branch - computed: false, optional: true, required: false
+  private _branch?: string; 
+  public get branch() {
+    return this.getStringAttribute('branch');
+  }
+  public set branch(value: string) {
+    this._branch = value;
+  }
+  public resetBranch() {
+    this._branch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get branchInput() {
+    return this._branch;
+  }
+
+  // deploy_on_push - computed: false, optional: true, required: false
+  private _deployOnPush?: boolean | cdktf.IResolvable; 
+  public get deployOnPush() {
+    return this.getBooleanAttribute('deploy_on_push');
+  }
+  public set deployOnPush(value: boolean | cdktf.IResolvable) {
+    this._deployOnPush = value;
+  }
+  public resetDeployOnPush() {
+    this._deployOnPush = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deployOnPushInput() {
+    return this._deployOnPush;
+  }
+
+  // repo - computed: false, optional: true, required: false
+  private _repo?: string; 
+  public get repo() {
+    return this.getStringAttribute('repo');
+  }
+  public set repo(value: string) {
+    this._repo = value;
+  }
+  public resetRepo() {
+    this._repo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get repoInput() {
+    return this._repo;
+  }
+}
+export interface AppSpecFunctionGitlab {
+  /**
+  * The name of the branch to use.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#branch App#branch}
+  */
+  readonly branch?: string;
+  /**
+  * Whether to automatically deploy new commits made to the repo
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#deploy_on_push App#deploy_on_push}
+  */
+  readonly deployOnPush?: boolean | cdktf.IResolvable;
+  /**
+  * The name of the repo in the format `owner/repo`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#repo App#repo}
+  */
+  readonly repo?: string;
+}
+
+export function appSpecFunctionGitlabToTerraform(struct?: AppSpecFunctionGitlabOutputReference | AppSpecFunctionGitlab): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    branch: cdktf.stringToTerraform(struct!.branch),
+    deploy_on_push: cdktf.booleanToTerraform(struct!.deployOnPush),
+    repo: cdktf.stringToTerraform(struct!.repo),
+  }
+}
+
+export class AppSpecFunctionGitlabOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppSpecFunctionGitlab | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._branch !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.branch = this._branch;
+    }
+    if (this._deployOnPush !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deployOnPush = this._deployOnPush;
+    }
+    if (this._repo !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.repo = this._repo;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppSpecFunctionGitlab | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._branch = undefined;
+      this._deployOnPush = undefined;
+      this._repo = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._branch = value.branch;
+      this._deployOnPush = value.deployOnPush;
+      this._repo = value.repo;
+    }
+  }
+
+  // branch - computed: false, optional: true, required: false
+  private _branch?: string; 
+  public get branch() {
+    return this.getStringAttribute('branch');
+  }
+  public set branch(value: string) {
+    this._branch = value;
+  }
+  public resetBranch() {
+    this._branch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get branchInput() {
+    return this._branch;
+  }
+
+  // deploy_on_push - computed: false, optional: true, required: false
+  private _deployOnPush?: boolean | cdktf.IResolvable; 
+  public get deployOnPush() {
+    return this.getBooleanAttribute('deploy_on_push');
+  }
+  public set deployOnPush(value: boolean | cdktf.IResolvable) {
+    this._deployOnPush = value;
+  }
+  public resetDeployOnPush() {
+    this._deployOnPush = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deployOnPushInput() {
+    return this._deployOnPush;
+  }
+
+  // repo - computed: false, optional: true, required: false
+  private _repo?: string; 
+  public get repo() {
+    return this.getStringAttribute('repo');
+  }
+  public set repo(value: string) {
+    this._repo = value;
+  }
+  public resetRepo() {
+    this._repo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get repoInput() {
+    return this._repo;
+  }
+}
+export interface AppSpecFunctionLogDestinationDatadog {
+  /**
+  * Datadog API key.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#api_key App#api_key}
+  */
+  readonly apiKey: string;
+  /**
+  * Datadog HTTP log intake endpoint.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#endpoint App#endpoint}
+  */
+  readonly endpoint?: string;
+}
+
+export function appSpecFunctionLogDestinationDatadogToTerraform(struct?: AppSpecFunctionLogDestinationDatadogOutputReference | AppSpecFunctionLogDestinationDatadog): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    api_key: cdktf.stringToTerraform(struct!.apiKey),
+    endpoint: cdktf.stringToTerraform(struct!.endpoint),
+  }
+}
+
+export class AppSpecFunctionLogDestinationDatadogOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppSpecFunctionLogDestinationDatadog | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._apiKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.apiKey = this._apiKey;
+    }
+    if (this._endpoint !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.endpoint = this._endpoint;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppSpecFunctionLogDestinationDatadog | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._apiKey = undefined;
+      this._endpoint = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._apiKey = value.apiKey;
+      this._endpoint = value.endpoint;
+    }
+  }
+
+  // api_key - computed: false, optional: false, required: true
+  private _apiKey?: string; 
+  public get apiKey() {
+    return this.getStringAttribute('api_key');
+  }
+  public set apiKey(value: string) {
+    this._apiKey = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get apiKeyInput() {
+    return this._apiKey;
+  }
+
+  // endpoint - computed: false, optional: true, required: false
+  private _endpoint?: string; 
+  public get endpoint() {
+    return this.getStringAttribute('endpoint');
+  }
+  public set endpoint(value: string) {
+    this._endpoint = value;
+  }
+  public resetEndpoint() {
+    this._endpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointInput() {
+    return this._endpoint;
+  }
+}
+export interface AppSpecFunctionLogDestinationLogtail {
+  /**
+  * Logtail token.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#token App#token}
+  */
+  readonly token: string;
+}
+
+export function appSpecFunctionLogDestinationLogtailToTerraform(struct?: AppSpecFunctionLogDestinationLogtailOutputReference | AppSpecFunctionLogDestinationLogtail): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    token: cdktf.stringToTerraform(struct!.token),
+  }
+}
+
+export class AppSpecFunctionLogDestinationLogtailOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppSpecFunctionLogDestinationLogtail | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._token !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.token = this._token;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppSpecFunctionLogDestinationLogtail | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._token = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._token = value.token;
+    }
+  }
+
+  // token - computed: false, optional: false, required: true
+  private _token?: string; 
+  public get token() {
+    return this.getStringAttribute('token');
+  }
+  public set token(value: string) {
+    this._token = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tokenInput() {
+    return this._token;
+  }
+}
+export interface AppSpecFunctionLogDestinationPapertrail {
+  /**
+  * Papertrail syslog endpoint.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#endpoint App#endpoint}
+  */
+  readonly endpoint: string;
+}
+
+export function appSpecFunctionLogDestinationPapertrailToTerraform(struct?: AppSpecFunctionLogDestinationPapertrailOutputReference | AppSpecFunctionLogDestinationPapertrail): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    endpoint: cdktf.stringToTerraform(struct!.endpoint),
+  }
+}
+
+export class AppSpecFunctionLogDestinationPapertrailOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppSpecFunctionLogDestinationPapertrail | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._endpoint !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.endpoint = this._endpoint;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppSpecFunctionLogDestinationPapertrail | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._endpoint = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._endpoint = value.endpoint;
+    }
+  }
+
+  // endpoint - computed: false, optional: false, required: true
+  private _endpoint?: string; 
+  public get endpoint() {
+    return this.getStringAttribute('endpoint');
+  }
+  public set endpoint(value: string) {
+    this._endpoint = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointInput() {
+    return this._endpoint;
+  }
+}
+export interface AppSpecFunctionLogDestination {
+  /**
+  * Name of the log destination
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#name App#name}
+  */
+  readonly name: string;
+  /**
+  * datadog block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#datadog App#datadog}
+  */
+  readonly datadog?: AppSpecFunctionLogDestinationDatadog;
+  /**
+  * logtail block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#logtail App#logtail}
+  */
+  readonly logtail?: AppSpecFunctionLogDestinationLogtail;
+  /**
+  * papertrail block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#papertrail App#papertrail}
+  */
+  readonly papertrail?: AppSpecFunctionLogDestinationPapertrail;
+}
+
+export function appSpecFunctionLogDestinationToTerraform(struct?: AppSpecFunctionLogDestination | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    datadog: appSpecFunctionLogDestinationDatadogToTerraform(struct!.datadog),
+    logtail: appSpecFunctionLogDestinationLogtailToTerraform(struct!.logtail),
+    papertrail: appSpecFunctionLogDestinationPapertrailToTerraform(struct!.papertrail),
+  }
+}
+
+export class AppSpecFunctionLogDestinationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AppSpecFunctionLogDestination | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._datadog?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.datadog = this._datadog?.internalValue;
+    }
+    if (this._logtail?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.logtail = this._logtail?.internalValue;
+    }
+    if (this._papertrail?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.papertrail = this._papertrail?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppSpecFunctionLogDestination | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._datadog.internalValue = undefined;
+      this._logtail.internalValue = undefined;
+      this._papertrail.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._datadog.internalValue = value.datadog;
+      this._logtail.internalValue = value.logtail;
+      this._papertrail.internalValue = value.papertrail;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // datadog - computed: false, optional: true, required: false
+  private _datadog = new AppSpecFunctionLogDestinationDatadogOutputReference(this, "datadog");
+  public get datadog() {
+    return this._datadog;
+  }
+  public putDatadog(value: AppSpecFunctionLogDestinationDatadog) {
+    this._datadog.internalValue = value;
+  }
+  public resetDatadog() {
+    this._datadog.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get datadogInput() {
+    return this._datadog.internalValue;
+  }
+
+  // logtail - computed: false, optional: true, required: false
+  private _logtail = new AppSpecFunctionLogDestinationLogtailOutputReference(this, "logtail");
+  public get logtail() {
+    return this._logtail;
+  }
+  public putLogtail(value: AppSpecFunctionLogDestinationLogtail) {
+    this._logtail.internalValue = value;
+  }
+  public resetLogtail() {
+    this._logtail.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logtailInput() {
+    return this._logtail.internalValue;
+  }
+
+  // papertrail - computed: false, optional: true, required: false
+  private _papertrail = new AppSpecFunctionLogDestinationPapertrailOutputReference(this, "papertrail");
+  public get papertrail() {
+    return this._papertrail;
+  }
+  public putPapertrail(value: AppSpecFunctionLogDestinationPapertrail) {
+    this._papertrail.internalValue = value;
+  }
+  public resetPapertrail() {
+    this._papertrail.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get papertrailInput() {
+    return this._papertrail.internalValue;
+  }
+}
+
+export class AppSpecFunctionLogDestinationList extends cdktf.ComplexList {
+  public internalValue? : AppSpecFunctionLogDestination[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppSpecFunctionLogDestinationOutputReference {
+    return new AppSpecFunctionLogDestinationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface AppSpecFunctionRoutes {
+  /**
+  * Path specifies an route by HTTP path prefix. Paths must start with / and must be unique within the app.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#path App#path}
+  */
+  readonly path?: string;
+  /**
+  *  An optional flag to preserve the path that is forwarded to the backend service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#preserve_path_prefix App#preserve_path_prefix}
+  */
+  readonly preservePathPrefix?: boolean | cdktf.IResolvable;
+}
+
+export function appSpecFunctionRoutesToTerraform(struct?: AppSpecFunctionRoutes | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    path: cdktf.stringToTerraform(struct!.path),
+    preserve_path_prefix: cdktf.booleanToTerraform(struct!.preservePathPrefix),
+  }
+}
+
+export class AppSpecFunctionRoutesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AppSpecFunctionRoutes | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._path !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path;
+    }
+    if (this._preservePathPrefix !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.preservePathPrefix = this._preservePathPrefix;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppSpecFunctionRoutes | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._path = undefined;
+      this._preservePathPrefix = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._path = value.path;
+      this._preservePathPrefix = value.preservePathPrefix;
+    }
+  }
+
+  // path - computed: false, optional: true, required: false
+  private _path?: string; 
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+  public set path(value: string) {
+    this._path = value;
+  }
+  public resetPath() {
+    this._path = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path;
+  }
+
+  // preserve_path_prefix - computed: false, optional: true, required: false
+  private _preservePathPrefix?: boolean | cdktf.IResolvable; 
+  public get preservePathPrefix() {
+    return this.getBooleanAttribute('preserve_path_prefix');
+  }
+  public set preservePathPrefix(value: boolean | cdktf.IResolvable) {
+    this._preservePathPrefix = value;
+  }
+  public resetPreservePathPrefix() {
+    this._preservePathPrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get preservePathPrefixInput() {
+    return this._preservePathPrefix;
+  }
+}
+
+export class AppSpecFunctionRoutesList extends cdktf.ComplexList {
+  public internalValue? : AppSpecFunctionRoutes[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppSpecFunctionRoutesOutputReference {
+    return new AppSpecFunctionRoutesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface AppSpecFunction {
+  /**
+  * The name of the component
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#name App#name}
+  */
+  readonly name: string;
+  /**
+  * An optional path to the working directory to use for the build.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#source_dir App#source_dir}
+  */
+  readonly sourceDir?: string;
+  /**
+  * alert block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#alert App#alert}
+  */
+  readonly alert?: AppSpecFunctionAlert[] | cdktf.IResolvable;
+  /**
+  * cors block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#cors App#cors}
+  */
+  readonly cors?: AppSpecFunctionCors;
+  /**
+  * env block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#env App#env}
+  */
+  readonly env?: AppSpecFunctionEnv[] | cdktf.IResolvable;
+  /**
+  * git block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#git App#git}
+  */
+  readonly git?: AppSpecFunctionGit;
+  /**
+  * github block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#github App#github}
+  */
+  readonly github?: AppSpecFunctionGithub;
+  /**
+  * gitlab block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#gitlab App#gitlab}
+  */
+  readonly gitlab?: AppSpecFunctionGitlab;
+  /**
+  * log_destination block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#log_destination App#log_destination}
+  */
+  readonly logDestination?: AppSpecFunctionLogDestination[] | cdktf.IResolvable;
+  /**
+  * routes block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#routes App#routes}
+  */
+  readonly routes?: AppSpecFunctionRoutes[] | cdktf.IResolvable;
+}
+
+export function appSpecFunctionToTerraform(struct?: AppSpecFunction | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    source_dir: cdktf.stringToTerraform(struct!.sourceDir),
+    alert: cdktf.listMapper(appSpecFunctionAlertToTerraform)(struct!.alert),
+    cors: appSpecFunctionCorsToTerraform(struct!.cors),
+    env: cdktf.listMapper(appSpecFunctionEnvToTerraform)(struct!.env),
+    git: appSpecFunctionGitToTerraform(struct!.git),
+    github: appSpecFunctionGithubToTerraform(struct!.github),
+    gitlab: appSpecFunctionGitlabToTerraform(struct!.gitlab),
+    log_destination: cdktf.listMapper(appSpecFunctionLogDestinationToTerraform)(struct!.logDestination),
+    routes: cdktf.listMapper(appSpecFunctionRoutesToTerraform)(struct!.routes),
+  }
+}
+
+export class AppSpecFunctionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AppSpecFunction | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._sourceDir !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sourceDir = this._sourceDir;
+    }
+    if (this._alert?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.alert = this._alert?.internalValue;
+    }
+    if (this._cors?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cors = this._cors?.internalValue;
+    }
+    if (this._env?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.env = this._env?.internalValue;
+    }
+    if (this._git?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.git = this._git?.internalValue;
+    }
+    if (this._github?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.github = this._github?.internalValue;
+    }
+    if (this._gitlab?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.gitlab = this._gitlab?.internalValue;
+    }
+    if (this._logDestination?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.logDestination = this._logDestination?.internalValue;
+    }
+    if (this._routes?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.routes = this._routes?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppSpecFunction | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._sourceDir = undefined;
+      this._alert.internalValue = undefined;
+      this._cors.internalValue = undefined;
+      this._env.internalValue = undefined;
+      this._git.internalValue = undefined;
+      this._github.internalValue = undefined;
+      this._gitlab.internalValue = undefined;
+      this._logDestination.internalValue = undefined;
+      this._routes.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._sourceDir = value.sourceDir;
+      this._alert.internalValue = value.alert;
+      this._cors.internalValue = value.cors;
+      this._env.internalValue = value.env;
+      this._git.internalValue = value.git;
+      this._github.internalValue = value.github;
+      this._gitlab.internalValue = value.gitlab;
+      this._logDestination.internalValue = value.logDestination;
+      this._routes.internalValue = value.routes;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // source_dir - computed: false, optional: true, required: false
+  private _sourceDir?: string; 
+  public get sourceDir() {
+    return this.getStringAttribute('source_dir');
+  }
+  public set sourceDir(value: string) {
+    this._sourceDir = value;
+  }
+  public resetSourceDir() {
+    this._sourceDir = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceDirInput() {
+    return this._sourceDir;
+  }
+
+  // alert - computed: false, optional: true, required: false
+  private _alert = new AppSpecFunctionAlertList(this, "alert", false);
+  public get alert() {
+    return this._alert;
+  }
+  public putAlert(value: AppSpecFunctionAlert[] | cdktf.IResolvable) {
+    this._alert.internalValue = value;
+  }
+  public resetAlert() {
+    this._alert.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get alertInput() {
+    return this._alert.internalValue;
+  }
+
+  // cors - computed: false, optional: true, required: false
+  private _cors = new AppSpecFunctionCorsOutputReference(this, "cors");
+  public get cors() {
+    return this._cors;
+  }
+  public putCors(value: AppSpecFunctionCors) {
+    this._cors.internalValue = value;
+  }
+  public resetCors() {
+    this._cors.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get corsInput() {
+    return this._cors.internalValue;
+  }
+
+  // env - computed: false, optional: true, required: false
+  private _env = new AppSpecFunctionEnvList(this, "env", true);
+  public get env() {
+    return this._env;
+  }
+  public putEnv(value: AppSpecFunctionEnv[] | cdktf.IResolvable) {
+    this._env.internalValue = value;
+  }
+  public resetEnv() {
+    this._env.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get envInput() {
+    return this._env.internalValue;
+  }
+
+  // git - computed: false, optional: true, required: false
+  private _git = new AppSpecFunctionGitOutputReference(this, "git");
+  public get git() {
+    return this._git;
+  }
+  public putGit(value: AppSpecFunctionGit) {
+    this._git.internalValue = value;
+  }
+  public resetGit() {
+    this._git.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gitInput() {
+    return this._git.internalValue;
+  }
+
+  // github - computed: false, optional: true, required: false
+  private _github = new AppSpecFunctionGithubOutputReference(this, "github");
+  public get github() {
+    return this._github;
+  }
+  public putGithub(value: AppSpecFunctionGithub) {
+    this._github.internalValue = value;
+  }
+  public resetGithub() {
+    this._github.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get githubInput() {
+    return this._github.internalValue;
+  }
+
+  // gitlab - computed: false, optional: true, required: false
+  private _gitlab = new AppSpecFunctionGitlabOutputReference(this, "gitlab");
+  public get gitlab() {
+    return this._gitlab;
+  }
+  public putGitlab(value: AppSpecFunctionGitlab) {
+    this._gitlab.internalValue = value;
+  }
+  public resetGitlab() {
+    this._gitlab.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gitlabInput() {
+    return this._gitlab.internalValue;
+  }
+
+  // log_destination - computed: false, optional: true, required: false
+  private _logDestination = new AppSpecFunctionLogDestinationList(this, "log_destination", false);
+  public get logDestination() {
+    return this._logDestination;
+  }
+  public putLogDestination(value: AppSpecFunctionLogDestination[] | cdktf.IResolvable) {
+    this._logDestination.internalValue = value;
+  }
+  public resetLogDestination() {
+    this._logDestination.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logDestinationInput() {
+    return this._logDestination.internalValue;
+  }
+
+  // routes - computed: false, optional: true, required: false
+  private _routes = new AppSpecFunctionRoutesList(this, "routes", false);
+  public get routes() {
+    return this._routes;
+  }
+  public putRoutes(value: AppSpecFunctionRoutes[] | cdktf.IResolvable) {
+    this._routes.internalValue = value;
+  }
+  public resetRoutes() {
+    this._routes.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routesInput() {
+    return this._routes.internalValue;
+  }
+}
+
+export class AppSpecFunctionList extends cdktf.ComplexList {
+  public internalValue? : AppSpecFunction[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppSpecFunctionOutputReference {
+    return new AppSpecFunctionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AppSpecJobAlert {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#disabled App#disabled}
@@ -8517,6 +10468,12 @@ export interface AppSpec {
   */
   readonly env?: AppSpecEnv[] | cdktf.IResolvable;
   /**
+  * function block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#function App#function}
+  */
+  readonly function?: AppSpecFunction[] | cdktf.IResolvable;
+  /**
   * job block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#job App#job}
@@ -8555,6 +10512,7 @@ export function appSpecToTerraform(struct?: AppSpecOutputReference | AppSpec): a
     database: cdktf.listMapper(appSpecDatabaseToTerraform)(struct!.database),
     domain: cdktf.listMapper(appSpecDomainToTerraform)(struct!.domain),
     env: cdktf.listMapper(appSpecEnvToTerraform)(struct!.env),
+    function: cdktf.listMapper(appSpecFunctionToTerraform)(struct!.function),
     job: cdktf.listMapper(appSpecJobToTerraform)(struct!.job),
     service: cdktf.listMapper(appSpecServiceToTerraform)(struct!.service),
     static_site: cdktf.listMapper(appSpecStaticSiteToTerraform)(struct!.staticSite),
@@ -8604,6 +10562,10 @@ export class AppSpecOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.env = this._env?.internalValue;
     }
+    if (this._function?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.function = this._function?.internalValue;
+    }
     if (this._job?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.job = this._job?.internalValue;
@@ -8633,6 +10595,7 @@ export class AppSpecOutputReference extends cdktf.ComplexObject {
       this._database.internalValue = undefined;
       this._domain.internalValue = undefined;
       this._env.internalValue = undefined;
+      this._function.internalValue = undefined;
       this._job.internalValue = undefined;
       this._service.internalValue = undefined;
       this._staticSite.internalValue = undefined;
@@ -8647,6 +10610,7 @@ export class AppSpecOutputReference extends cdktf.ComplexObject {
       this._database.internalValue = value.database;
       this._domain.internalValue = value.domain;
       this._env.internalValue = value.env;
+      this._function.internalValue = value.function;
       this._job.internalValue = value.job;
       this._service.internalValue = value.service;
       this._staticSite.internalValue = value.staticSite;
@@ -8761,6 +10725,22 @@ export class AppSpecOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get envInput() {
     return this._env.internalValue;
+  }
+
+  // function - computed: false, optional: true, required: false
+  private _function = new AppSpecFunctionList(this, "function", false);
+  public get function() {
+    return this._function;
+  }
+  public putFunction(value: AppSpecFunction[] | cdktf.IResolvable) {
+    this._function.internalValue = value;
+  }
+  public resetFunction() {
+    this._function.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get functionInput() {
+    return this._function.internalValue;
   }
 
   // job - computed: false, optional: true, required: false
@@ -8929,7 +10909,7 @@ export class App extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_app',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.19.0',
+        providerVersion: '2.20.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
