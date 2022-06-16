@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/digitalocean/d/floating_ip
+// https://www.terraform.io/docs/providers/digitalocean/r/reserved_ip
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,46 +6,52 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataDigitaloceanFloatingIpConfig extends cdktf.TerraformMetaArguments {
+export interface ReservedIpConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/floating_ip#id DataDigitaloceanFloatingIp#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/reserved_ip#droplet_id ReservedIp#droplet_id}
+  */
+  readonly dropletId?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/reserved_ip#id ReservedIp#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * floating ip address
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/floating_ip#ip_address DataDigitaloceanFloatingIp#ip_address}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/reserved_ip#ip_address ReservedIp#ip_address}
   */
-  readonly ipAddress: string;
+  readonly ipAddress?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/reserved_ip#region ReservedIp#region}
+  */
+  readonly region: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/digitalocean/d/floating_ip digitalocean_floating_ip}
+* Represents a {@link https://www.terraform.io/docs/providers/digitalocean/r/reserved_ip digitalocean_reserved_ip}
 */
-export class DataDigitaloceanFloatingIp extends cdktf.TerraformDataSource {
+export class ReservedIp extends cdktf.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "digitalocean_floating_ip";
+  public static readonly tfResourceType = "digitalocean_reserved_ip";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/digitalocean/d/floating_ip digitalocean_floating_ip} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/digitalocean/r/reserved_ip digitalocean_reserved_ip} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataDigitaloceanFloatingIpConfig
+  * @param options ReservedIpConfig
   */
-  public constructor(scope: Construct, id: string, config: DataDigitaloceanFloatingIpConfig) {
+  public constructor(scope: Construct, id: string, config: ReservedIpConfig) {
     super(scope, id, {
-      terraformResourceType: 'digitalocean_floating_ip',
+      terraformResourceType: 'digitalocean_reserved_ip',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
         providerVersion: '2.21.0',
@@ -56,17 +62,30 @@ export class DataDigitaloceanFloatingIp extends cdktf.TerraformDataSource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._dropletId = config.dropletId;
     this._id = config.id;
     this._ipAddress = config.ipAddress;
+    this._region = config.region;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // droplet_id - computed: true, optional: false, required: false
+  // droplet_id - computed: false, optional: true, required: false
+  private _dropletId?: number; 
   public get dropletId() {
     return this.getNumberAttribute('droplet_id');
+  }
+  public set dropletId(value: number) {
+    this._dropletId = value;
+  }
+  public resetDropletId() {
+    this._dropletId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dropletIdInput() {
+    return this._dropletId;
   }
 
   // id - computed: true, optional: true, required: false
@@ -85,7 +104,7 @@ export class DataDigitaloceanFloatingIp extends cdktf.TerraformDataSource {
     return this._id;
   }
 
-  // ip_address - computed: false, optional: false, required: true
+  // ip_address - computed: true, optional: true, required: false
   private _ipAddress?: string; 
   public get ipAddress() {
     return this.getStringAttribute('ip_address');
@@ -93,14 +112,25 @@ export class DataDigitaloceanFloatingIp extends cdktf.TerraformDataSource {
   public set ipAddress(value: string) {
     this._ipAddress = value;
   }
+  public resetIpAddress() {
+    this._ipAddress = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get ipAddressInput() {
     return this._ipAddress;
   }
 
-  // region - computed: true, optional: false, required: false
+  // region - computed: false, optional: false, required: true
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
   }
 
   // urn - computed: true, optional: false, required: false
@@ -114,8 +144,10 @@ export class DataDigitaloceanFloatingIp extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      droplet_id: cdktf.numberToTerraform(this._dropletId),
       id: cdktf.stringToTerraform(this._id),
       ip_address: cdktf.stringToTerraform(this._ipAddress),
+      region: cdktf.stringToTerraform(this._region),
     };
   }
 }

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/digitalocean/d/floating_ip
+// https://www.terraform.io/docs/providers/digitalocean/d/reserved_ip
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,46 +6,46 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataDigitaloceanFloatingIpConfig extends cdktf.TerraformMetaArguments {
+export interface DataDigitaloceanReservedIpConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/floating_ip#id DataDigitaloceanFloatingIp#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/reserved_ip#id DataDigitaloceanReservedIp#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * floating ip address
+  * reserved ip address
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/floating_ip#ip_address DataDigitaloceanFloatingIp#ip_address}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/reserved_ip#ip_address DataDigitaloceanReservedIp#ip_address}
   */
   readonly ipAddress: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/digitalocean/d/floating_ip digitalocean_floating_ip}
+* Represents a {@link https://www.terraform.io/docs/providers/digitalocean/d/reserved_ip digitalocean_reserved_ip}
 */
-export class DataDigitaloceanFloatingIp extends cdktf.TerraformDataSource {
+export class DataDigitaloceanReservedIp extends cdktf.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "digitalocean_floating_ip";
+  public static readonly tfResourceType = "digitalocean_reserved_ip";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/digitalocean/d/floating_ip digitalocean_floating_ip} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/digitalocean/d/reserved_ip digitalocean_reserved_ip} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataDigitaloceanFloatingIpConfig
+  * @param options DataDigitaloceanReservedIpConfig
   */
-  public constructor(scope: Construct, id: string, config: DataDigitaloceanFloatingIpConfig) {
+  public constructor(scope: Construct, id: string, config: DataDigitaloceanReservedIpConfig) {
     super(scope, id, {
-      terraformResourceType: 'digitalocean_floating_ip',
+      terraformResourceType: 'digitalocean_reserved_ip',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
         providerVersion: '2.21.0',
