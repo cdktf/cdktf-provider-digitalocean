@@ -701,7 +701,10 @@ export class Loadbalancer extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._algorithm = config.algorithm;
     this._disableLetsEncryptDnsRecords = config.disableLetsEncryptDnsRecords;
@@ -995,7 +998,7 @@ export class Loadbalancer extends cdktf.TerraformResource {
     return {
       algorithm: cdktf.stringToTerraform(this._algorithm),
       disable_lets_encrypt_dns_records: cdktf.booleanToTerraform(this._disableLetsEncryptDnsRecords),
-      droplet_ids: cdktf.listMapper(cdktf.numberToTerraform)(this._dropletIds),
+      droplet_ids: cdktf.listMapper(cdktf.numberToTerraform, false)(this._dropletIds),
       droplet_tag: cdktf.stringToTerraform(this._dropletTag),
       enable_backend_keepalive: cdktf.booleanToTerraform(this._enableBackendKeepalive),
       enable_proxy_protocol: cdktf.booleanToTerraform(this._enableProxyProtocol),
@@ -1006,7 +1009,7 @@ export class Loadbalancer extends cdktf.TerraformResource {
       size: cdktf.stringToTerraform(this._size),
       size_unit: cdktf.numberToTerraform(this._sizeUnit),
       vpc_uuid: cdktf.stringToTerraform(this._vpcUuid),
-      forwarding_rule: cdktf.listMapper(loadbalancerForwardingRuleToTerraform)(this._forwardingRule.internalValue),
+      forwarding_rule: cdktf.listMapper(loadbalancerForwardingRuleToTerraform, true)(this._forwardingRule.internalValue),
       healthcheck: loadbalancerHealthcheckToTerraform(this._healthcheck.internalValue),
       sticky_sessions: loadbalancerStickySessionsToTerraform(this._stickySessions.internalValue),
     };

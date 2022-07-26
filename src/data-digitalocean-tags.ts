@@ -149,7 +149,7 @@ export function dataDigitaloceanTagsFilterToTerraform(struct?: DataDigitaloceanT
     all: cdktf.booleanToTerraform(struct!.all),
     key: cdktf.stringToTerraform(struct!.key),
     match_by: cdktf.stringToTerraform(struct!.matchBy),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -447,7 +447,10 @@ export class DataDigitaloceanTags extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._filter.internalValue = config.filter;
@@ -519,8 +522,8 @@ export class DataDigitaloceanTags extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
-      filter: cdktf.listMapper(dataDigitaloceanTagsFilterToTerraform)(this._filter.internalValue),
-      sort: cdktf.listMapper(dataDigitaloceanTagsSortToTerraform)(this._sort.internalValue),
+      filter: cdktf.listMapper(dataDigitaloceanTagsFilterToTerraform, true)(this._filter.internalValue),
+      sort: cdktf.listMapper(dataDigitaloceanTagsSortToTerraform, true)(this._sort.internalValue),
     };
   }
 }

@@ -72,7 +72,10 @@ export class CustomImage extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._distribution = config.distribution;
@@ -240,8 +243,8 @@ export class CustomImage extends cdktf.TerraformResource {
       distribution: cdktf.stringToTerraform(this._distribution),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      regions: cdktf.listMapper(cdktf.stringToTerraform)(this._regions),
-      tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
+      regions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._regions),
+      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
       url: cdktf.stringToTerraform(this._url),
     };
   }

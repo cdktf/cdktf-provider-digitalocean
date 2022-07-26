@@ -202,8 +202,8 @@ export function monitorAlertAlertsToTerraform(struct?: MonitorAlertAlertsOutputR
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email: cdktf.listMapper(cdktf.stringToTerraform)(struct!.email),
-    slack: cdktf.listMapper(monitorAlertAlertsSlackToTerraform)(struct!.slack),
+    email: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.email),
+    slack: cdktf.listMapper(monitorAlertAlertsSlackToTerraform, true)(struct!.slack),
   }
 }
 
@@ -310,7 +310,10 @@ export class MonitorAlert extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._compare = config.compare;
     this._description = config.description;
@@ -484,9 +487,9 @@ export class MonitorAlert extends cdktf.TerraformResource {
       compare: cdktf.stringToTerraform(this._compare),
       description: cdktf.stringToTerraform(this._description),
       enabled: cdktf.booleanToTerraform(this._enabled),
-      entities: cdktf.listMapper(cdktf.stringToTerraform)(this._entities),
+      entities: cdktf.listMapper(cdktf.stringToTerraform, false)(this._entities),
       id: cdktf.stringToTerraform(this._id),
-      tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
+      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
       type: cdktf.stringToTerraform(this._type),
       value: cdktf.numberToTerraform(this._value),
       window: cdktf.stringToTerraform(this._window),

@@ -293,7 +293,10 @@ export class DatabaseCluster extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._engine = config.engine;
     this._evictionPolicy = config.evictionPolicy;
@@ -567,9 +570,9 @@ export class DatabaseCluster extends cdktf.TerraformResource {
       region: cdktf.stringToTerraform(this._region),
       size: cdktf.stringToTerraform(this._size),
       sql_mode: cdktf.stringToTerraform(this._sqlMode),
-      tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
+      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
       version: cdktf.stringToTerraform(this._version),
-      maintenance_window: cdktf.listMapper(databaseClusterMaintenanceWindowToTerraform)(this._maintenanceWindow.internalValue),
+      maintenance_window: cdktf.listMapper(databaseClusterMaintenanceWindowToTerraform, true)(this._maintenanceWindow.internalValue),
       timeouts: databaseClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

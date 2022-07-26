@@ -429,7 +429,10 @@ export class KubernetesNodePool extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._autoScale = config.autoScale;
     this._clusterId = config.clusterId;
@@ -658,8 +661,8 @@ export class KubernetesNodePool extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       node_count: cdktf.numberToTerraform(this._nodeCount),
       size: cdktf.stringToTerraform(this._size),
-      tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
-      taint: cdktf.listMapper(kubernetesNodePoolTaintToTerraform)(this._taint.internalValue),
+      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
+      taint: cdktf.listMapper(kubernetesNodePoolTaintToTerraform, true)(this._taint.internalValue),
       timeouts: kubernetesNodePoolTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

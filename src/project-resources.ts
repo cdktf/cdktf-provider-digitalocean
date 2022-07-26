@@ -60,7 +60,10 @@ export class ProjectResources extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._project = config.project;
@@ -121,7 +124,7 @@ export class ProjectResources extends cdktf.TerraformResource {
     return {
       id: cdktf.stringToTerraform(this._id),
       project: cdktf.stringToTerraform(this._project),
-      resources: cdktf.listMapper(cdktf.stringToTerraform)(this._resources),
+      resources: cdktf.listMapper(cdktf.stringToTerraform, false)(this._resources),
     };
   }
 }
