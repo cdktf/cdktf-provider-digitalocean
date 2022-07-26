@@ -72,7 +72,10 @@ export class DatabaseReplica extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._clusterId = config.clusterId;
     this._id = config.id;
@@ -245,7 +248,7 @@ export class DatabaseReplica extends cdktf.TerraformResource {
       private_network_uuid: cdktf.stringToTerraform(this._privateNetworkUuid),
       region: cdktf.stringToTerraform(this._region),
       size: cdktf.stringToTerraform(this._size),
-      tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
+      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
     };
   }
 }

@@ -84,7 +84,10 @@ export class Volume extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._filesystemType = config.filesystemType;
@@ -283,7 +286,7 @@ export class Volume extends cdktf.TerraformResource {
       region: cdktf.stringToTerraform(this._region),
       size: cdktf.numberToTerraform(this._size),
       snapshot_id: cdktf.stringToTerraform(this._snapshotId),
-      tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
+      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
     };
   }
 }

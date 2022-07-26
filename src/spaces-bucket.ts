@@ -88,9 +88,9 @@ export function spacesBucketCorsRuleToTerraform(struct?: SpacesBucketCorsRule | 
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_headers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedHeaders),
-    allowed_methods: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedMethods),
-    allowed_origins: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedOrigins),
+    allowed_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedHeaders),
+    allowed_methods: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedMethods),
+    allowed_origins: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedOrigins),
     max_age_seconds: cdktf.numberToTerraform(struct!.maxAgeSeconds),
   }
 }
@@ -753,7 +753,10 @@ export class SpacesBucket extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._acl = config.acl;
     this._forceDestroy = config.forceDestroy;
@@ -915,8 +918,8 @@ export class SpacesBucket extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       region: cdktf.stringToTerraform(this._region),
-      cors_rule: cdktf.listMapper(spacesBucketCorsRuleToTerraform)(this._corsRule.internalValue),
-      lifecycle_rule: cdktf.listMapper(spacesBucketLifecycleRuleToTerraform)(this._lifecycleRule.internalValue),
+      cors_rule: cdktf.listMapper(spacesBucketCorsRuleToTerraform, true)(this._corsRule.internalValue),
+      lifecycle_rule: cdktf.listMapper(spacesBucketLifecycleRuleToTerraform, true)(this._lifecycleRule.internalValue),
       versioning: spacesBucketVersioningToTerraform(this._versioning.internalValue),
     };
   }

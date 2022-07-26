@@ -134,7 +134,7 @@ export function dataDigitaloceanSshKeysFilterToTerraform(struct?: DataDigitaloce
     all: cdktf.booleanToTerraform(struct!.all),
     key: cdktf.stringToTerraform(struct!.key),
     match_by: cdktf.stringToTerraform(struct!.matchBy),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -432,7 +432,10 @@ export class DataDigitaloceanSshKeys extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._filter.internalValue = config.filter;
@@ -504,8 +507,8 @@ export class DataDigitaloceanSshKeys extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
-      filter: cdktf.listMapper(dataDigitaloceanSshKeysFilterToTerraform)(this._filter.internalValue),
-      sort: cdktf.listMapper(dataDigitaloceanSshKeysSortToTerraform)(this._sort.internalValue),
+      filter: cdktf.listMapper(dataDigitaloceanSshKeysFilterToTerraform, true)(this._filter.internalValue),
+      sort: cdktf.listMapper(dataDigitaloceanSshKeysSortToTerraform, true)(this._sort.internalValue),
     };
   }
 }

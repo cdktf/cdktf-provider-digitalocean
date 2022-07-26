@@ -72,7 +72,10 @@ export class Certificate extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._certificateChain = config.certificateChain;
     this._domains = config.domains;
@@ -223,7 +226,7 @@ export class Certificate extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       certificate_chain: cdktf.stringToTerraform(this._certificateChain),
-      domains: cdktf.listMapper(cdktf.stringToTerraform)(this._domains),
+      domains: cdktf.listMapper(cdktf.stringToTerraform, false)(this._domains),
       id: cdktf.stringToTerraform(this._id),
       leaf_certificate: cdktf.stringToTerraform(this._leafCertificate),
       name: cdktf.stringToTerraform(this._name),

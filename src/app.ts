@@ -1154,9 +1154,9 @@ export function appSpecFunctionCorsToTerraform(struct?: AppSpecFunctionCorsOutpu
   }
   return {
     allow_credentials: cdktf.booleanToTerraform(struct!.allowCredentials),
-    allow_headers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowHeaders),
-    allow_methods: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowMethods),
-    expose_headers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exposeHeaders),
+    allow_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowHeaders),
+    allow_methods: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowMethods),
+    expose_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exposeHeaders),
     max_age: cdktf.stringToTerraform(struct!.maxAge),
     allow_origins: appSpecFunctionCorsAllowOriginsToTerraform(struct!.allowOrigins),
   }
@@ -2455,14 +2455,14 @@ export function appSpecFunctionToTerraform(struct?: AppSpecFunction | cdktf.IRes
   return {
     name: cdktf.stringToTerraform(struct!.name),
     source_dir: cdktf.stringToTerraform(struct!.sourceDir),
-    alert: cdktf.listMapper(appSpecFunctionAlertToTerraform)(struct!.alert),
+    alert: cdktf.listMapper(appSpecFunctionAlertToTerraform, true)(struct!.alert),
     cors: appSpecFunctionCorsToTerraform(struct!.cors),
-    env: cdktf.listMapper(appSpecFunctionEnvToTerraform)(struct!.env),
+    env: cdktf.listMapper(appSpecFunctionEnvToTerraform, true)(struct!.env),
     git: appSpecFunctionGitToTerraform(struct!.git),
     github: appSpecFunctionGithubToTerraform(struct!.github),
     gitlab: appSpecFunctionGitlabToTerraform(struct!.gitlab),
-    log_destination: cdktf.listMapper(appSpecFunctionLogDestinationToTerraform)(struct!.logDestination),
-    routes: cdktf.listMapper(appSpecFunctionRoutesToTerraform)(struct!.routes),
+    log_destination: cdktf.listMapper(appSpecFunctionLogDestinationToTerraform, true)(struct!.logDestination),
+    routes: cdktf.listMapper(appSpecFunctionRoutesToTerraform, true)(struct!.routes),
   }
 }
 
@@ -4132,13 +4132,13 @@ export function appSpecJobToTerraform(struct?: AppSpecJob | cdktf.IResolvable): 
     name: cdktf.stringToTerraform(struct!.name),
     run_command: cdktf.stringToTerraform(struct!.runCommand),
     source_dir: cdktf.stringToTerraform(struct!.sourceDir),
-    alert: cdktf.listMapper(appSpecJobAlertToTerraform)(struct!.alert),
-    env: cdktf.listMapper(appSpecJobEnvToTerraform)(struct!.env),
+    alert: cdktf.listMapper(appSpecJobAlertToTerraform, true)(struct!.alert),
+    env: cdktf.listMapper(appSpecJobEnvToTerraform, true)(struct!.env),
     git: appSpecJobGitToTerraform(struct!.git),
     github: appSpecJobGithubToTerraform(struct!.github),
     gitlab: appSpecJobGitlabToTerraform(struct!.gitlab),
     image: appSpecJobImageToTerraform(struct!.image),
-    log_destination: cdktf.listMapper(appSpecJobLogDestinationToTerraform)(struct!.logDestination),
+    log_destination: cdktf.listMapper(appSpecJobLogDestinationToTerraform, true)(struct!.logDestination),
   }
 }
 
@@ -4913,9 +4913,9 @@ export function appSpecServiceCorsToTerraform(struct?: AppSpecServiceCorsOutputR
   }
   return {
     allow_credentials: cdktf.booleanToTerraform(struct!.allowCredentials),
-    allow_headers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowHeaders),
-    allow_methods: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowMethods),
-    expose_headers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exposeHeaders),
+    allow_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowHeaders),
+    allow_methods: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowMethods),
+    expose_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exposeHeaders),
     max_age: cdktf.stringToTerraform(struct!.maxAge),
     allow_origins: appSpecServiceCorsAllowOriginsToTerraform(struct!.allowOrigins),
   }
@@ -6636,20 +6636,20 @@ export function appSpecServiceToTerraform(struct?: AppSpecService | cdktf.IResol
     http_port: cdktf.numberToTerraform(struct!.httpPort),
     instance_count: cdktf.numberToTerraform(struct!.instanceCount),
     instance_size_slug: cdktf.stringToTerraform(struct!.instanceSizeSlug),
-    internal_ports: cdktf.listMapper(cdktf.numberToTerraform)(struct!.internalPorts),
+    internal_ports: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.internalPorts),
     name: cdktf.stringToTerraform(struct!.name),
     run_command: cdktf.stringToTerraform(struct!.runCommand),
     source_dir: cdktf.stringToTerraform(struct!.sourceDir),
-    alert: cdktf.listMapper(appSpecServiceAlertToTerraform)(struct!.alert),
+    alert: cdktf.listMapper(appSpecServiceAlertToTerraform, true)(struct!.alert),
     cors: appSpecServiceCorsToTerraform(struct!.cors),
-    env: cdktf.listMapper(appSpecServiceEnvToTerraform)(struct!.env),
+    env: cdktf.listMapper(appSpecServiceEnvToTerraform, true)(struct!.env),
     git: appSpecServiceGitToTerraform(struct!.git),
     github: appSpecServiceGithubToTerraform(struct!.github),
     gitlab: appSpecServiceGitlabToTerraform(struct!.gitlab),
     health_check: appSpecServiceHealthCheckToTerraform(struct!.healthCheck),
     image: appSpecServiceImageToTerraform(struct!.image),
-    log_destination: cdktf.listMapper(appSpecServiceLogDestinationToTerraform)(struct!.logDestination),
-    routes: cdktf.listMapper(appSpecServiceRoutesToTerraform)(struct!.routes),
+    log_destination: cdktf.listMapper(appSpecServiceLogDestinationToTerraform, true)(struct!.logDestination),
+    routes: cdktf.listMapper(appSpecServiceRoutesToTerraform, true)(struct!.routes),
   }
 }
 
@@ -7319,9 +7319,9 @@ export function appSpecStaticSiteCorsToTerraform(struct?: AppSpecStaticSiteCorsO
   }
   return {
     allow_credentials: cdktf.booleanToTerraform(struct!.allowCredentials),
-    allow_headers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowHeaders),
-    allow_methods: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowMethods),
-    expose_headers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exposeHeaders),
+    allow_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowHeaders),
+    allow_methods: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowMethods),
+    expose_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exposeHeaders),
     max_age: cdktf.stringToTerraform(struct!.maxAge),
     allow_origins: appSpecStaticSiteCorsAllowOriginsToTerraform(struct!.allowOrigins),
   }
@@ -8254,11 +8254,11 @@ export function appSpecStaticSiteToTerraform(struct?: AppSpecStaticSite | cdktf.
     output_dir: cdktf.stringToTerraform(struct!.outputDir),
     source_dir: cdktf.stringToTerraform(struct!.sourceDir),
     cors: appSpecStaticSiteCorsToTerraform(struct!.cors),
-    env: cdktf.listMapper(appSpecStaticSiteEnvToTerraform)(struct!.env),
+    env: cdktf.listMapper(appSpecStaticSiteEnvToTerraform, true)(struct!.env),
     git: appSpecStaticSiteGitToTerraform(struct!.git),
     github: appSpecStaticSiteGithubToTerraform(struct!.github),
     gitlab: appSpecStaticSiteGitlabToTerraform(struct!.gitlab),
-    routes: cdktf.listMapper(appSpecStaticSiteRoutesToTerraform)(struct!.routes),
+    routes: cdktf.listMapper(appSpecStaticSiteRoutesToTerraform, true)(struct!.routes),
   }
 }
 
@@ -10031,13 +10031,13 @@ export function appSpecWorkerToTerraform(struct?: AppSpecWorker | cdktf.IResolva
     name: cdktf.stringToTerraform(struct!.name),
     run_command: cdktf.stringToTerraform(struct!.runCommand),
     source_dir: cdktf.stringToTerraform(struct!.sourceDir),
-    alert: cdktf.listMapper(appSpecWorkerAlertToTerraform)(struct!.alert),
-    env: cdktf.listMapper(appSpecWorkerEnvToTerraform)(struct!.env),
+    alert: cdktf.listMapper(appSpecWorkerAlertToTerraform, true)(struct!.alert),
+    env: cdktf.listMapper(appSpecWorkerEnvToTerraform, true)(struct!.env),
     git: appSpecWorkerGitToTerraform(struct!.git),
     github: appSpecWorkerGithubToTerraform(struct!.github),
     gitlab: appSpecWorkerGitlabToTerraform(struct!.gitlab),
     image: appSpecWorkerImageToTerraform(struct!.image),
-    log_destination: cdktf.listMapper(appSpecWorkerLogDestinationToTerraform)(struct!.logDestination),
+    log_destination: cdktf.listMapper(appSpecWorkerLogDestinationToTerraform, true)(struct!.logDestination),
   }
 }
 
@@ -10505,18 +10505,18 @@ export function appSpecToTerraform(struct?: AppSpecOutputReference | AppSpec): a
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    domains: cdktf.listMapper(cdktf.stringToTerraform)(struct!.domains),
+    domains: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.domains),
     name: cdktf.stringToTerraform(struct!.name),
     region: cdktf.stringToTerraform(struct!.region),
-    alert: cdktf.listMapper(appSpecAlertToTerraform)(struct!.alert),
-    database: cdktf.listMapper(appSpecDatabaseToTerraform)(struct!.database),
-    domain: cdktf.listMapper(appSpecDomainToTerraform)(struct!.domain),
-    env: cdktf.listMapper(appSpecEnvToTerraform)(struct!.env),
-    function: cdktf.listMapper(appSpecFunctionToTerraform)(struct!.function),
-    job: cdktf.listMapper(appSpecJobToTerraform)(struct!.job),
-    service: cdktf.listMapper(appSpecServiceToTerraform)(struct!.service),
-    static_site: cdktf.listMapper(appSpecStaticSiteToTerraform)(struct!.staticSite),
-    worker: cdktf.listMapper(appSpecWorkerToTerraform)(struct!.worker),
+    alert: cdktf.listMapper(appSpecAlertToTerraform, true)(struct!.alert),
+    database: cdktf.listMapper(appSpecDatabaseToTerraform, true)(struct!.database),
+    domain: cdktf.listMapper(appSpecDomainToTerraform, true)(struct!.domain),
+    env: cdktf.listMapper(appSpecEnvToTerraform, true)(struct!.env),
+    function: cdktf.listMapper(appSpecFunctionToTerraform, true)(struct!.function),
+    job: cdktf.listMapper(appSpecJobToTerraform, true)(struct!.job),
+    service: cdktf.listMapper(appSpecServiceToTerraform, true)(struct!.service),
+    static_site: cdktf.listMapper(appSpecStaticSiteToTerraform, true)(struct!.staticSite),
+    worker: cdktf.listMapper(appSpecWorkerToTerraform, true)(struct!.worker),
   }
 }
 
@@ -10915,7 +10915,10 @@ export class App extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._spec.internalValue = config.spec;

@@ -112,7 +112,10 @@ export class Droplet extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._backups = config.backups;
     this._dropletAgent = config.dropletAgent;
@@ -475,10 +478,10 @@ export class Droplet extends cdktf.TerraformResource {
       region: cdktf.stringToTerraform(this._region),
       resize_disk: cdktf.booleanToTerraform(this._resizeDisk),
       size: cdktf.stringToTerraform(this._size),
-      ssh_keys: cdktf.listMapper(cdktf.stringToTerraform)(this._sshKeys),
-      tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
+      ssh_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sshKeys),
+      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
       user_data: cdktf.stringToTerraform(this._userData),
-      volume_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._volumeIds),
+      volume_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._volumeIds),
       vpc_uuid: cdktf.stringToTerraform(this._vpcUuid),
     };
   }

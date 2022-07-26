@@ -186,7 +186,10 @@ export class DatabaseFirewall extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._clusterId = config.clusterId;
     this._id = config.id;
@@ -247,7 +250,7 @@ export class DatabaseFirewall extends cdktf.TerraformResource {
     return {
       cluster_id: cdktf.stringToTerraform(this._clusterId),
       id: cdktf.stringToTerraform(this._id),
-      rule: cdktf.listMapper(databaseFirewallRuleToTerraform)(this._rule.internalValue),
+      rule: cdktf.listMapper(databaseFirewallRuleToTerraform, true)(this._rule.internalValue),
     };
   }
 }

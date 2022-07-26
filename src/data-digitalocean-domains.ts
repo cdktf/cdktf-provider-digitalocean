@@ -129,7 +129,7 @@ export function dataDigitaloceanDomainsFilterToTerraform(struct?: DataDigitaloce
     all: cdktf.booleanToTerraform(struct!.all),
     key: cdktf.stringToTerraform(struct!.key),
     match_by: cdktf.stringToTerraform(struct!.matchBy),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -427,7 +427,10 @@ export class DataDigitaloceanDomains extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._filter.internalValue = config.filter;
@@ -499,8 +502,8 @@ export class DataDigitaloceanDomains extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
-      filter: cdktf.listMapper(dataDigitaloceanDomainsFilterToTerraform)(this._filter.internalValue),
-      sort: cdktf.listMapper(dataDigitaloceanDomainsSortToTerraform)(this._sort.internalValue),
+      filter: cdktf.listMapper(dataDigitaloceanDomainsFilterToTerraform, true)(this._filter.internalValue),
+      sort: cdktf.listMapper(dataDigitaloceanDomainsSortToTerraform, true)(this._sort.internalValue),
     };
   }
 }

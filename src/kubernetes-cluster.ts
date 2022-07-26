@@ -541,8 +541,8 @@ export function kubernetesClusterNodePoolToTerraform(struct?: KubernetesClusterN
     name: cdktf.stringToTerraform(struct!.name),
     node_count: cdktf.numberToTerraform(struct!.nodeCount),
     size: cdktf.stringToTerraform(struct!.size),
-    tags: cdktf.listMapper(cdktf.stringToTerraform)(struct!.tags),
-    taint: cdktf.listMapper(kubernetesClusterNodePoolTaintToTerraform)(struct!.taint),
+    tags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tags),
+    taint: cdktf.listMapper(kubernetesClusterNodePoolTaintToTerraform, true)(struct!.taint),
   }
 }
 
@@ -888,7 +888,10 @@ export class KubernetesCluster extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._autoUpgrade = config.autoUpgrade;
     this._ha = config.ha;
@@ -1146,7 +1149,7 @@ export class KubernetesCluster extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       region: cdktf.stringToTerraform(this._region),
       surge_upgrade: cdktf.booleanToTerraform(this._surgeUpgrade),
-      tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
+      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
       version: cdktf.stringToTerraform(this._version),
       vpc_uuid: cdktf.stringToTerraform(this._vpcUuid),
       maintenance_policy: kubernetesClusterMaintenancePolicyToTerraform(this._maintenancePolicy.internalValue),
