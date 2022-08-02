@@ -1,7 +1,7 @@
 
 # Terraform CDK digitalocean Provider ~> 2.19
 
-This repo builds and publishes the Terraform digitalocean Provider bindings for [cdktf](https://cdk.tf).
+This repo builds and publishes the Terraform digitalocean Provider bindings for [CDK for Terraform](https://cdk.tf).
 
 ## Available Packages
 
@@ -45,6 +45,7 @@ The go package is generated into the [`github.com/hashicorp/cdktf-provider-digit
 ## Docs
 
 Find auto-generated docs for this provider here: [./API.md](./API.md)
+You can also visit a hosted version of the documentation on [constructs.dev](https://constructs.dev/packages/@cdktf/provider-digitalocean).
 
 ## Versioning
 
