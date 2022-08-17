@@ -48,7 +48,7 @@ export class DataDigitaloceanReservedIp extends cdktf.TerraformDataSource {
       terraformResourceType: 'digitalocean_reserved_ip',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.21.0',
+        providerVersion: '2.22.1',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,

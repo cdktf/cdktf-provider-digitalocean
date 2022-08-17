@@ -50,7 +50,7 @@ export class DropletSnapshot extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_droplet_snapshot',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.21.0',
+        providerVersion: '2.22.1',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
