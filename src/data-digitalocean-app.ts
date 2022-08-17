@@ -5165,7 +5165,7 @@ export class DataDigitaloceanApp extends cdktf.TerraformDataSource {
       terraformResourceType: 'digitalocean_app',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.21.0',
+        providerVersion: '2.22.1',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
@@ -5242,6 +5242,11 @@ export class DataDigitaloceanApp extends cdktf.TerraformDataSource {
   // updated_at - computed: true, optional: false, required: false
   public get updatedAt() {
     return this.getStringAttribute('updated_at');
+  }
+
+  // urn - computed: true, optional: false, required: false
+  public get urn() {
+    return this.getStringAttribute('urn');
   }
 
   // =========

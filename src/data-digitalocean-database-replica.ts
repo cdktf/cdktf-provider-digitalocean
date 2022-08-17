@@ -54,7 +54,7 @@ export class DataDigitaloceanDatabaseReplica extends cdktf.TerraformDataSource {
       terraformResourceType: 'digitalocean_database_replica',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.21.0',
+        providerVersion: '2.22.1',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,

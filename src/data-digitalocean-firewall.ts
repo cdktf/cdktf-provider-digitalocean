@@ -652,7 +652,7 @@ export class DataDigitaloceanFirewall extends cdktf.TerraformDataSource {
       terraformResourceType: 'digitalocean_firewall',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.21.0',
+        providerVersion: '2.22.1',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,

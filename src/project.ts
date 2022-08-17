@@ -27,6 +27,12 @@ export interface ProjectConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * determine if the project is the default or not.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/project#is_default Project#is_default}
+  */
+  readonly isDefault?: boolean | cdktf.IResolvable;
+  /**
   * the human-readable name for the project
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/project#name Project#name}
@@ -72,7 +78,7 @@ export class Project extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_project',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.21.0',
+        providerVersion: '2.22.1',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
@@ -86,6 +92,7 @@ export class Project extends cdktf.TerraformResource {
     this._description = config.description;
     this._environment = config.environment;
     this._id = config.id;
+    this._isDefault = config.isDefault;
     this._name = config.name;
     this._purpose = config.purpose;
     this._resources = config.resources;
@@ -148,9 +155,20 @@ export class Project extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // is_default - computed: true, optional: false, required: false
+  // is_default - computed: false, optional: true, required: false
+  private _isDefault?: boolean | cdktf.IResolvable; 
   public get isDefault() {
     return this.getBooleanAttribute('is_default');
+  }
+  public set isDefault(value: boolean | cdktf.IResolvable) {
+    this._isDefault = value;
+  }
+  public resetIsDefault() {
+    this._isDefault = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isDefaultInput() {
+    return this._isDefault;
   }
 
   // name - computed: false, optional: false, required: true
@@ -222,6 +240,7 @@ export class Project extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       environment: cdktf.stringToTerraform(this._environment),
       id: cdktf.stringToTerraform(this._id),
+      is_default: cdktf.booleanToTerraform(this._isDefault),
       name: cdktf.stringToTerraform(this._name),
       purpose: cdktf.stringToTerraform(this._purpose),
       resources: cdktf.listMapper(cdktf.stringToTerraform, false)(this._resources),
