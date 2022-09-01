@@ -54,7 +54,7 @@ export class ContainerRegistryDockerCredentials extends cdktf.TerraformResource 
       terraformResourceType: 'digitalocean_container_registry_docker_credentials',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.22.1',
+        providerVersion: '2.22.2',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,

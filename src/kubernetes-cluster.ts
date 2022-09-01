@@ -882,7 +882,7 @@ export class KubernetesCluster extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_kubernetes_cluster',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.22.1',
+        providerVersion: '2.22.2',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
