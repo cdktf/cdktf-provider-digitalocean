@@ -37,7 +37,7 @@ export interface DatabaseConnectionPoolConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_connection_pool#user DatabaseConnectionPool#user}
   */
-  readonly user: string;
+  readonly user?: string;
 }
 
 /**
@@ -66,7 +66,7 @@ export class DatabaseConnectionPool extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_database_connection_pool',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.22.1',
+        providerVersion: '2.22.2',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
@@ -201,13 +201,16 @@ export class DatabaseConnectionPool extends cdktf.TerraformResource {
     return this.getStringAttribute('uri');
   }
 
-  // user - computed: false, optional: false, required: true
+  // user - computed: false, optional: true, required: false
   private _user?: string; 
   public get user() {
     return this.getStringAttribute('user');
   }
   public set user(value: string) {
     this._user = value;
+  }
+  public resetUser() {
+    this._user = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get userInput() {

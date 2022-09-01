@@ -54,7 +54,7 @@ export class ProjectResources extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_project_resources',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.22.1',
+        providerVersion: '2.22.2',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
