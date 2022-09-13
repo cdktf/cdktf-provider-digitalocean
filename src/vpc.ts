@@ -147,7 +147,7 @@ export class Vpc extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_vpc',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.22.2',
+        providerVersion: '2.22.3',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
