@@ -110,7 +110,7 @@
   "cdktf": {
     "provider": {
       "name": "registry.terraform.io/digitalocean/digitalocean",
-      "version": "2.22.2"
+      "version": "2.22.3"
     }
   },
   "resolutions": {
