@@ -49,7 +49,7 @@ export interface DropletConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/droplet#region Droplet#region}
   */
-  readonly region: string;
+  readonly region?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/droplet#resize_disk Droplet#resize_disk}
   */
@@ -241,7 +241,7 @@ export class Droplet extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_droplet',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.22.3',
+        providerVersion: '2.23.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
@@ -459,13 +459,16 @@ export class Droplet extends cdktf.TerraformResource {
     return this._privateNetworking;
   }
 
-  // region - computed: false, optional: false, required: true
+  // region - computed: true, optional: true, required: false
   private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
   public set region(value: string) {
     this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
