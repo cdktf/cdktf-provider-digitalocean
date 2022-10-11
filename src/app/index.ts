@@ -3466,6 +3466,105 @@ export class AppSpecJobGitlabOutputReference extends cdktf.ComplexObject {
     return this._repo;
   }
 }
+export interface AppSpecJobImageDeployOnPush {
+  /**
+  * Whether to automatically deploy images pushed to DOCR.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#enabled App#enabled}
+  */
+  readonly enabled?: boolean | cdktf.IResolvable;
+}
+
+export function appSpecJobImageDeployOnPushToTerraform(struct?: AppSpecJobImageDeployOnPush | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+  }
+}
+
+export class AppSpecJobImageDeployOnPushOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AppSpecJobImageDeployOnPush | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppSpecJobImageDeployOnPush | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._enabled = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._enabled = value.enabled;
+    }
+  }
+
+  // enabled - computed: false, optional: true, required: false
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+}
+
+export class AppSpecJobImageDeployOnPushList extends cdktf.ComplexList {
+  public internalValue? : AppSpecJobImageDeployOnPush[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppSpecJobImageDeployOnPushOutputReference {
+    return new AppSpecJobImageDeployOnPushOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AppSpecJobImage {
   /**
   * The registry name. Must be left empty for the DOCR registry type.
@@ -3491,6 +3590,12 @@ export interface AppSpecJobImage {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#tag App#tag}
   */
   readonly tag?: string;
+  /**
+  * deploy_on_push block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#deploy_on_push App#deploy_on_push}
+  */
+  readonly deployOnPush?: AppSpecJobImageDeployOnPush[] | cdktf.IResolvable;
 }
 
 export function appSpecJobImageToTerraform(struct?: AppSpecJobImageOutputReference | AppSpecJobImage): any {
@@ -3503,6 +3608,7 @@ export function appSpecJobImageToTerraform(struct?: AppSpecJobImageOutputReferen
     registry_type: cdktf.stringToTerraform(struct!.registryType),
     repository: cdktf.stringToTerraform(struct!.repository),
     tag: cdktf.stringToTerraform(struct!.tag),
+    deploy_on_push: cdktf.listMapper(appSpecJobImageDeployOnPushToTerraform, true)(struct!.deployOnPush),
   }
 }
 
@@ -3536,6 +3642,10 @@ export class AppSpecJobImageOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.tag = this._tag;
     }
+    if (this._deployOnPush?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deployOnPush = this._deployOnPush?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -3546,6 +3656,7 @@ export class AppSpecJobImageOutputReference extends cdktf.ComplexObject {
       this._registryType = undefined;
       this._repository = undefined;
       this._tag = undefined;
+      this._deployOnPush.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -3553,6 +3664,7 @@ export class AppSpecJobImageOutputReference extends cdktf.ComplexObject {
       this._registryType = value.registryType;
       this._repository = value.repository;
       this._tag = value.tag;
+      this._deployOnPush.internalValue = value.deployOnPush;
     }
   }
 
@@ -3612,6 +3724,22 @@ export class AppSpecJobImageOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get tagInput() {
     return this._tag;
+  }
+
+  // deploy_on_push - computed: false, optional: true, required: false
+  private _deployOnPush = new AppSpecJobImageDeployOnPushList(this, "deploy_on_push", false);
+  public get deployOnPush() {
+    return this._deployOnPush;
+  }
+  public putDeployOnPush(value: AppSpecJobImageDeployOnPush[] | cdktf.IResolvable) {
+    this._deployOnPush.internalValue = value;
+  }
+  public resetDeployOnPush() {
+    this._deployOnPush.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deployOnPushInput() {
+    return this._deployOnPush.internalValue;
   }
 }
 export interface AppSpecJobLogDestinationDatadog {
@@ -5823,6 +5951,105 @@ export class AppSpecServiceHealthCheckOutputReference extends cdktf.ComplexObjec
     return this._timeoutSeconds;
   }
 }
+export interface AppSpecServiceImageDeployOnPush {
+  /**
+  * Whether to automatically deploy images pushed to DOCR.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#enabled App#enabled}
+  */
+  readonly enabled?: boolean | cdktf.IResolvable;
+}
+
+export function appSpecServiceImageDeployOnPushToTerraform(struct?: AppSpecServiceImageDeployOnPush | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+  }
+}
+
+export class AppSpecServiceImageDeployOnPushOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AppSpecServiceImageDeployOnPush | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppSpecServiceImageDeployOnPush | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._enabled = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._enabled = value.enabled;
+    }
+  }
+
+  // enabled - computed: false, optional: true, required: false
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+}
+
+export class AppSpecServiceImageDeployOnPushList extends cdktf.ComplexList {
+  public internalValue? : AppSpecServiceImageDeployOnPush[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppSpecServiceImageDeployOnPushOutputReference {
+    return new AppSpecServiceImageDeployOnPushOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AppSpecServiceImage {
   /**
   * The registry name. Must be left empty for the DOCR registry type.
@@ -5848,6 +6075,12 @@ export interface AppSpecServiceImage {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#tag App#tag}
   */
   readonly tag?: string;
+  /**
+  * deploy_on_push block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#deploy_on_push App#deploy_on_push}
+  */
+  readonly deployOnPush?: AppSpecServiceImageDeployOnPush[] | cdktf.IResolvable;
 }
 
 export function appSpecServiceImageToTerraform(struct?: AppSpecServiceImageOutputReference | AppSpecServiceImage): any {
@@ -5860,6 +6093,7 @@ export function appSpecServiceImageToTerraform(struct?: AppSpecServiceImageOutpu
     registry_type: cdktf.stringToTerraform(struct!.registryType),
     repository: cdktf.stringToTerraform(struct!.repository),
     tag: cdktf.stringToTerraform(struct!.tag),
+    deploy_on_push: cdktf.listMapper(appSpecServiceImageDeployOnPushToTerraform, true)(struct!.deployOnPush),
   }
 }
 
@@ -5893,6 +6127,10 @@ export class AppSpecServiceImageOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.tag = this._tag;
     }
+    if (this._deployOnPush?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deployOnPush = this._deployOnPush?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -5903,6 +6141,7 @@ export class AppSpecServiceImageOutputReference extends cdktf.ComplexObject {
       this._registryType = undefined;
       this._repository = undefined;
       this._tag = undefined;
+      this._deployOnPush.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -5910,6 +6149,7 @@ export class AppSpecServiceImageOutputReference extends cdktf.ComplexObject {
       this._registryType = value.registryType;
       this._repository = value.repository;
       this._tag = value.tag;
+      this._deployOnPush.internalValue = value.deployOnPush;
     }
   }
 
@@ -5969,6 +6209,22 @@ export class AppSpecServiceImageOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get tagInput() {
     return this._tag;
+  }
+
+  // deploy_on_push - computed: false, optional: true, required: false
+  private _deployOnPush = new AppSpecServiceImageDeployOnPushList(this, "deploy_on_push", false);
+  public get deployOnPush() {
+    return this._deployOnPush;
+  }
+  public putDeployOnPush(value: AppSpecServiceImageDeployOnPush[] | cdktf.IResolvable) {
+    this._deployOnPush.internalValue = value;
+  }
+  public resetDeployOnPush() {
+    this._deployOnPush.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deployOnPushInput() {
+    return this._deployOnPush.internalValue;
   }
 }
 export interface AppSpecServiceLogDestinationDatadog {
@@ -9372,6 +9628,105 @@ export class AppSpecWorkerGitlabOutputReference extends cdktf.ComplexObject {
     return this._repo;
   }
 }
+export interface AppSpecWorkerImageDeployOnPush {
+  /**
+  * Whether to automatically deploy images pushed to DOCR.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#enabled App#enabled}
+  */
+  readonly enabled?: boolean | cdktf.IResolvable;
+}
+
+export function appSpecWorkerImageDeployOnPushToTerraform(struct?: AppSpecWorkerImageDeployOnPush | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+  }
+}
+
+export class AppSpecWorkerImageDeployOnPushOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AppSpecWorkerImageDeployOnPush | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppSpecWorkerImageDeployOnPush | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._enabled = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._enabled = value.enabled;
+    }
+  }
+
+  // enabled - computed: false, optional: true, required: false
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+}
+
+export class AppSpecWorkerImageDeployOnPushList extends cdktf.ComplexList {
+  public internalValue? : AppSpecWorkerImageDeployOnPush[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppSpecWorkerImageDeployOnPushOutputReference {
+    return new AppSpecWorkerImageDeployOnPushOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AppSpecWorkerImage {
   /**
   * The registry name. Must be left empty for the DOCR registry type.
@@ -9397,6 +9752,12 @@ export interface AppSpecWorkerImage {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#tag App#tag}
   */
   readonly tag?: string;
+  /**
+  * deploy_on_push block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#deploy_on_push App#deploy_on_push}
+  */
+  readonly deployOnPush?: AppSpecWorkerImageDeployOnPush[] | cdktf.IResolvable;
 }
 
 export function appSpecWorkerImageToTerraform(struct?: AppSpecWorkerImageOutputReference | AppSpecWorkerImage): any {
@@ -9409,6 +9770,7 @@ export function appSpecWorkerImageToTerraform(struct?: AppSpecWorkerImageOutputR
     registry_type: cdktf.stringToTerraform(struct!.registryType),
     repository: cdktf.stringToTerraform(struct!.repository),
     tag: cdktf.stringToTerraform(struct!.tag),
+    deploy_on_push: cdktf.listMapper(appSpecWorkerImageDeployOnPushToTerraform, true)(struct!.deployOnPush),
   }
 }
 
@@ -9442,6 +9804,10 @@ export class AppSpecWorkerImageOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.tag = this._tag;
     }
+    if (this._deployOnPush?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deployOnPush = this._deployOnPush?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -9452,6 +9818,7 @@ export class AppSpecWorkerImageOutputReference extends cdktf.ComplexObject {
       this._registryType = undefined;
       this._repository = undefined;
       this._tag = undefined;
+      this._deployOnPush.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -9459,6 +9826,7 @@ export class AppSpecWorkerImageOutputReference extends cdktf.ComplexObject {
       this._registryType = value.registryType;
       this._repository = value.repository;
       this._tag = value.tag;
+      this._deployOnPush.internalValue = value.deployOnPush;
     }
   }
 
@@ -9518,6 +9886,22 @@ export class AppSpecWorkerImageOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get tagInput() {
     return this._tag;
+  }
+
+  // deploy_on_push - computed: false, optional: true, required: false
+  private _deployOnPush = new AppSpecWorkerImageDeployOnPushList(this, "deploy_on_push", false);
+  public get deployOnPush() {
+    return this._deployOnPush;
+  }
+  public putDeployOnPush(value: AppSpecWorkerImageDeployOnPush[] | cdktf.IResolvable) {
+    this._deployOnPush.internalValue = value;
+  }
+  public resetDeployOnPush() {
+    this._deployOnPush.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deployOnPushInput() {
+    return this._deployOnPush.internalValue;
   }
 }
 export interface AppSpecWorkerLogDestinationDatadog {
@@ -10909,7 +11293,7 @@ export class App extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_app',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.22.3',
+        providerVersion: '2.23.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
