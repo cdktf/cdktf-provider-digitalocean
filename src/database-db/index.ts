@@ -50,7 +50,7 @@ export class DatabaseDb extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_database_db',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.23.0',
+        providerVersion: '2.24.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,

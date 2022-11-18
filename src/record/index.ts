@@ -82,7 +82,7 @@ export class Record extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_record',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.23.0',
+        providerVersion: '2.24.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
