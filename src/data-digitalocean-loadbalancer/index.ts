@@ -312,7 +312,7 @@ export class DataDigitaloceanLoadbalancer extends cdktf.TerraformDataSource {
       terraformResourceType: 'digitalocean_loadbalancer',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.23.0',
+        providerVersion: '2.25.2',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
@@ -373,6 +373,11 @@ export class DataDigitaloceanLoadbalancer extends cdktf.TerraformDataSource {
     return this._healthcheck;
   }
 
+  // http_idle_timeout_seconds - computed: true, optional: false, required: false
+  public get httpIdleTimeoutSeconds() {
+    return this.getNumberAttribute('http_idle_timeout_seconds');
+  }
+
   // id - computed: false, optional: true, required: false
   private _id?: string; 
   public get id() {
@@ -408,6 +413,11 @@ export class DataDigitaloceanLoadbalancer extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // project_id - computed: true, optional: false, required: false
+  public get projectId() {
+    return this.getStringAttribute('project_id');
   }
 
   // redirect_http_to_https - computed: true, optional: false, required: false
