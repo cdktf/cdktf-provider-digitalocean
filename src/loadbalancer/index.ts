@@ -32,6 +32,10 @@ export interface LoadbalancerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly enableProxyProtocol?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/loadbalancer#http_idle_timeout_seconds Loadbalancer#http_idle_timeout_seconds}
+  */
+  readonly httpIdleTimeoutSeconds?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/loadbalancer#id Loadbalancer#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -42,6 +46,10 @@ export interface LoadbalancerConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/loadbalancer#name Loadbalancer#name}
   */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/loadbalancer#project_id Loadbalancer#project_id}
+  */
+  readonly projectId?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/loadbalancer#redirect_http_to_https Loadbalancer#redirect_http_to_https}
   */
@@ -695,7 +703,7 @@ export class Loadbalancer extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_loadbalancer',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.23.0',
+        providerVersion: '2.25.2',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
@@ -712,8 +720,10 @@ export class Loadbalancer extends cdktf.TerraformResource {
     this._dropletTag = config.dropletTag;
     this._enableBackendKeepalive = config.enableBackendKeepalive;
     this._enableProxyProtocol = config.enableProxyProtocol;
+    this._httpIdleTimeoutSeconds = config.httpIdleTimeoutSeconds;
     this._id = config.id;
     this._name = config.name;
+    this._projectId = config.projectId;
     this._redirectHttpToHttps = config.redirectHttpToHttps;
     this._region = config.region;
     this._size = config.size;
@@ -824,6 +834,22 @@ export class Loadbalancer extends cdktf.TerraformResource {
     return this._enableProxyProtocol;
   }
 
+  // http_idle_timeout_seconds - computed: true, optional: true, required: false
+  private _httpIdleTimeoutSeconds?: number; 
+  public get httpIdleTimeoutSeconds() {
+    return this.getNumberAttribute('http_idle_timeout_seconds');
+  }
+  public set httpIdleTimeoutSeconds(value: number) {
+    this._httpIdleTimeoutSeconds = value;
+  }
+  public resetHttpIdleTimeoutSeconds() {
+    this._httpIdleTimeoutSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpIdleTimeoutSecondsInput() {
+    return this._httpIdleTimeoutSeconds;
+  }
+
   // id - computed: true, optional: true, required: false
   private _id?: string; 
   public get id() {
@@ -856,6 +882,22 @@ export class Loadbalancer extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // project_id - computed: true, optional: true, required: false
+  private _projectId?: string; 
+  public get projectId() {
+    return this.getStringAttribute('project_id');
+  }
+  public set projectId(value: string) {
+    this._projectId = value;
+  }
+  public resetProjectId() {
+    this._projectId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectIdInput() {
+    return this._projectId;
   }
 
   // redirect_http_to_https - computed: false, optional: true, required: false
@@ -1002,8 +1044,10 @@ export class Loadbalancer extends cdktf.TerraformResource {
       droplet_tag: cdktf.stringToTerraform(this._dropletTag),
       enable_backend_keepalive: cdktf.booleanToTerraform(this._enableBackendKeepalive),
       enable_proxy_protocol: cdktf.booleanToTerraform(this._enableProxyProtocol),
+      http_idle_timeout_seconds: cdktf.numberToTerraform(this._httpIdleTimeoutSeconds),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
+      project_id: cdktf.stringToTerraform(this._projectId),
       redirect_http_to_https: cdktf.booleanToTerraform(this._redirectHttpToHttps),
       region: cdktf.stringToTerraform(this._region),
       size: cdktf.stringToTerraform(this._size),

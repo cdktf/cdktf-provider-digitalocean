@@ -72,6 +72,11 @@ export class DataDigitaloceanSpacesBucketsBucketsOutputReference extends cdktf.C
     return this.getStringAttribute('bucket_domain_name');
   }
 
+  // endpoint - computed: true, optional: false, required: false
+  public get endpoint() {
+    return this.getStringAttribute('endpoint');
+  }
+
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
@@ -426,7 +431,7 @@ export class DataDigitaloceanSpacesBuckets extends cdktf.TerraformDataSource {
       terraformResourceType: 'digitalocean_spaces_buckets',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.23.0',
+        providerVersion: '2.25.2',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
