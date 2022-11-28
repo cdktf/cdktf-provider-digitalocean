@@ -60,7 +60,7 @@ export class DataDigitaloceanVolume extends cdktf.TerraformDataSource {
       terraformResourceType: 'digitalocean_volume',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.23.0',
+        providerVersion: '2.25.2',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,

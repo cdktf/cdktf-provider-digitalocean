@@ -5375,7 +5375,7 @@ export class DataDigitaloceanApp extends cdktf.TerraformDataSource {
       terraformResourceType: 'digitalocean_app',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.23.0',
+        providerVersion: '2.25.2',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
