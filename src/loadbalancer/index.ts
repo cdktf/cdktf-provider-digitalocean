@@ -71,6 +71,12 @@ export interface LoadbalancerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly vpcUuid?: string;
   /**
+  * firewall block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/loadbalancer#firewall Loadbalancer#firewall}
+  */
+  readonly firewall?: LoadbalancerFirewall;
+  /**
   * forwarding_rule block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/loadbalancer#forwarding_rule Loadbalancer#forwarding_rule}
@@ -88,6 +94,102 @@ export interface LoadbalancerConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/loadbalancer#sticky_sessions Loadbalancer#sticky_sessions}
   */
   readonly stickySessions?: LoadbalancerStickySessions;
+}
+export interface LoadbalancerFirewall {
+  /**
+  * the rules for ALLOWING traffic to the LB (strings in the form: 'ip:1.2.3.4' or 'cidr:1.2.0.0/16')
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/loadbalancer#allow Loadbalancer#allow}
+  */
+  readonly allow?: string[];
+  /**
+  * the rules for DENYING traffic to the LB (strings in the form: 'ip:1.2.3.4' or 'cidr:1.2.0.0/16')
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/loadbalancer#deny Loadbalancer#deny}
+  */
+  readonly deny?: string[];
+}
+
+export function loadbalancerFirewallToTerraform(struct?: LoadbalancerFirewallOutputReference | LoadbalancerFirewall): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    allow: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allow),
+    deny: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.deny),
+  }
+}
+
+export class LoadbalancerFirewallOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): LoadbalancerFirewall | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allow !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allow = this._allow;
+    }
+    if (this._deny !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deny = this._deny;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadbalancerFirewall | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._allow = undefined;
+      this._deny = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._allow = value.allow;
+      this._deny = value.deny;
+    }
+  }
+
+  // allow - computed: false, optional: true, required: false
+  private _allow?: string[]; 
+  public get allow() {
+    return this.getListAttribute('allow');
+  }
+  public set allow(value: string[]) {
+    this._allow = value;
+  }
+  public resetAllow() {
+    this._allow = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowInput() {
+    return this._allow;
+  }
+
+  // deny - computed: false, optional: true, required: false
+  private _deny?: string[]; 
+  public get deny() {
+    return this.getListAttribute('deny');
+  }
+  public set deny(value: string[]) {
+    this._deny = value;
+  }
+  public resetDeny() {
+    this._deny = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get denyInput() {
+    return this._deny;
+  }
 }
 export interface LoadbalancerForwardingRule {
   /**
@@ -703,7 +805,7 @@ export class Loadbalancer extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_loadbalancer',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.25.2',
+        providerVersion: '2.26.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
@@ -729,6 +831,7 @@ export class Loadbalancer extends cdktf.TerraformResource {
     this._size = config.size;
     this._sizeUnit = config.sizeUnit;
     this._vpcUuid = config.vpcUuid;
+    this._firewall.internalValue = config.firewall;
     this._forwardingRule.internalValue = config.forwardingRule;
     this._healthcheck.internalValue = config.healthcheck;
     this._stickySessions.internalValue = config.stickySessions;
@@ -987,6 +1090,22 @@ export class Loadbalancer extends cdktf.TerraformResource {
     return this._vpcUuid;
   }
 
+  // firewall - computed: false, optional: true, required: false
+  private _firewall = new LoadbalancerFirewallOutputReference(this, "firewall");
+  public get firewall() {
+    return this._firewall;
+  }
+  public putFirewall(value: LoadbalancerFirewall) {
+    this._firewall.internalValue = value;
+  }
+  public resetFirewall() {
+    this._firewall.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get firewallInput() {
+    return this._firewall.internalValue;
+  }
+
   // forwarding_rule - computed: false, optional: false, required: true
   private _forwardingRule = new LoadbalancerForwardingRuleList(this, "forwarding_rule", true);
   public get forwardingRule() {
@@ -1053,6 +1172,7 @@ export class Loadbalancer extends cdktf.TerraformResource {
       size: cdktf.stringToTerraform(this._size),
       size_unit: cdktf.numberToTerraform(this._sizeUnit),
       vpc_uuid: cdktf.stringToTerraform(this._vpcUuid),
+      firewall: loadbalancerFirewallToTerraform(this._firewall.internalValue),
       forwarding_rule: cdktf.listMapper(loadbalancerForwardingRuleToTerraform, true)(this._forwardingRule.internalValue),
       healthcheck: loadbalancerHealthcheckToTerraform(this._healthcheck.internalValue),
       sticky_sessions: loadbalancerStickySessionsToTerraform(this._stickySessions.internalValue),

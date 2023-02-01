@@ -481,7 +481,7 @@ export class DataDigitaloceanImages extends cdktf.TerraformDataSource {
       terraformResourceType: 'digitalocean_images',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.25.2',
+        providerVersion: '2.26.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,

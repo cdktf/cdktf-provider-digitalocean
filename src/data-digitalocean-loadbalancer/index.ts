@@ -23,6 +23,75 @@ export interface DataDigitaloceanLoadbalancerConfig extends cdktf.TerraformMetaA
   */
   readonly name?: string;
 }
+export interface DataDigitaloceanLoadbalancerFirewall {
+}
+
+export function dataDigitaloceanLoadbalancerFirewallToTerraform(struct?: DataDigitaloceanLoadbalancerFirewall): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataDigitaloceanLoadbalancerFirewallOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataDigitaloceanLoadbalancerFirewall | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDigitaloceanLoadbalancerFirewall | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // allow - computed: true, optional: false, required: false
+  public get allow() {
+    return cdktf.Fn.tolist(this.getListAttribute('allow'));
+  }
+
+  // deny - computed: true, optional: false, required: false
+  public get deny() {
+    return cdktf.Fn.tolist(this.getListAttribute('deny'));
+  }
+}
+
+export class DataDigitaloceanLoadbalancerFirewallList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataDigitaloceanLoadbalancerFirewallOutputReference {
+    return new DataDigitaloceanLoadbalancerFirewallOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataDigitaloceanLoadbalancerForwardingRule {
 }
 
@@ -312,7 +381,7 @@ export class DataDigitaloceanLoadbalancer extends cdktf.TerraformDataSource {
       terraformResourceType: 'digitalocean_loadbalancer',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.25.2',
+        providerVersion: '2.26.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
@@ -359,6 +428,12 @@ export class DataDigitaloceanLoadbalancer extends cdktf.TerraformDataSource {
   // enable_proxy_protocol - computed: true, optional: false, required: false
   public get enableProxyProtocol() {
     return this.getBooleanAttribute('enable_proxy_protocol');
+  }
+
+  // firewall - computed: true, optional: false, required: false
+  private _firewall = new DataDigitaloceanLoadbalancerFirewallList(this, "firewall", false);
+  public get firewall() {
+    return this._firewall;
   }
 
   // forwarding_rule - computed: true, optional: false, required: false
