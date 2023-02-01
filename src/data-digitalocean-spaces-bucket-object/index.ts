@@ -62,7 +62,7 @@ export class DataDigitaloceanSpacesBucketObject extends cdktf.TerraformDataSourc
       terraformResourceType: 'digitalocean_spaces_bucket_object',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.25.2',
+        providerVersion: '2.26.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,

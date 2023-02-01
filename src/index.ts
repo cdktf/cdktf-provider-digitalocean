@@ -31,6 +31,8 @@ export * as spacesBucketObject from './spaces-bucket-object';
 export * as spacesBucketPolicy from './spaces-bucket-policy';
 export * as sshKey from './ssh-key';
 export * as tag from './tag';
+export * as uptimeAlert from './uptime-alert';
+export * as uptimeCheck from './uptime-check';
 export * as volume from './volume';
 export * as volumeAttachment from './volume-attachment';
 export * as volumeSnapshot from './volume-snapshot';
