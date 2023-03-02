@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/digitalocean/r/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasecluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/databasecluster"
 
 databasecluster.NewDatabaseCluster(scope Construct, id *string, config DatabaseClusterConfig) DatabaseCluster
 ```
@@ -348,7 +348,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasecluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/databasecluster"
 
 databasecluster.DatabaseCluster_IsConstruct(x interface{}) *bool
 ```
@@ -380,7 +380,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasecluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/databasecluster"
 
 databasecluster.DatabaseCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -394,7 +394,7 @@ databasecluster.DatabaseCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasecluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/databasecluster"
 
 databasecluster.DatabaseCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -978,7 +978,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.databaseCluster.DatabaseClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasecluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/databasecluster"
 
 &databasecluster.DatabaseClusterConfig {
 	Connection: interface{},
@@ -999,7 +999,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databaseclu
 	PrivateNetworkUuid: *string,
 	SqlMode: *string,
 	Tags: *[]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.databaseCluster.DatabaseClusterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5.databaseCluster.DatabaseClusterTimeouts,
 	Version: *string,
 }
 ```
@@ -1269,7 +1269,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.databaseCluster.DatabaseClusterMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasecluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/databasecluster"
 
 &databasecluster.DatabaseClusterMaintenanceWindow {
 	Day: *string,
@@ -1315,7 +1315,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.databaseCluster.DatabaseClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasecluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/databasecluster"
 
 &databasecluster.DatabaseClusterTimeouts {
 	Create: *string,
@@ -1349,7 +1349,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databaseCluster.DatabaseClusterMaintenanceWindowList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasecluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/databasecluster"
 
 databasecluster.NewDatabaseClusterMaintenanceWindowList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseClusterMaintenanceWindowList
 ```
@@ -1492,7 +1492,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databaseCluster.DatabaseClusterMaintenanceWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasecluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/databasecluster"
 
 databasecluster.NewDatabaseClusterMaintenanceWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseClusterMaintenanceWindowOutputReference
 ```
@@ -1803,7 +1803,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databaseCluster.DatabaseClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasecluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/databasecluster"
 
 databasecluster.NewDatabaseClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseClusterTimeoutsOutputReference
 ```
