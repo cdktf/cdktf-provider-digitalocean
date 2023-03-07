@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/digitalocean/r/proje
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.project.Project.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/project"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/project"
 
 project.NewProject(scope Construct, id *string, config ProjectConfig) Project
 ```
@@ -308,7 +308,7 @@ func ResetResources()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.project.Project.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/project"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/project"
 
 project.Project_IsConstruct(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.project.Project.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/project"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/project"
 
 project.Project_IsTerraformElement(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ project.Project_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.project.Project.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/project"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/project"
 
 project.Project_IsTerraformResource(x interface{}) *bool
 ```
@@ -751,7 +751,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.project.ProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/project"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/project"
 
 &project.ProjectConfig {
 	Connection: interface{},
