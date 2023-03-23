@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/digitalocean/d/accou
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanAccount.DataDigitaloceanAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanaccount"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceanaccount"
 
 datadigitaloceanaccount.NewDataDigitaloceanAccount(scope Construct, id *string, config DataDigitaloceanAccountConfig) DataDigitaloceanAccount
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanAccount.DataDigitaloceanAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanaccount"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceanaccount"
 
 datadigitaloceanaccount.DataDigitaloceanAccount_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanAccount.DataDigitaloceanAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanaccount"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceanaccount"
 
 datadigitaloceanaccount.DataDigitaloceanAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datadigitaloceanaccount.DataDigitaloceanAccount_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanAccount.DataDigitaloceanAccount.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanaccount"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceanaccount"
 
 datadigitaloceanaccount.DataDigitaloceanAccount_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -595,7 +595,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanAccount.DataDigitaloceanAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanaccount"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceanaccount"
 
 &datadigitaloceanaccount.DataDigitaloceanAccountConfig {
 	Connection: interface{},

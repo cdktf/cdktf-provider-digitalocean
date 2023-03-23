@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/digitalocean/r/proje
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.projectResources.ProjectResources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/projectresources"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/projectresources"
 
 projectresources.NewProjectResources(scope Construct, id *string, config ProjectResourcesConfig) ProjectResources
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.projectResources.ProjectResources.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/projectresources"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/projectresources"
 
 projectresources.ProjectResources_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.projectResources.ProjectResources.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/projectresources"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/projectresources"
 
 projectresources.ProjectResources_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ projectresources.ProjectResources_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.projectResources.ProjectResources.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/projectresources"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/projectresources"
 
 projectresources.ProjectResources_IsTerraformResource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.projectResources.ProjectResourcesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/projectresources"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/projectresources"
 
 &projectresources.ProjectResourcesConfig {
 	Connection: interface{},
