@@ -72,6 +72,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.resetMaintenanceWindow">ResetMaintenanceWindow</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.resetPrivateNetworkUuid">ResetPrivateNetworkUuid</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.resetProjectId">ResetProjectId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.resetSqlMode">ResetSqlMode</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -311,6 +312,12 @@ private void ResetMaintenanceWindow()
 private void ResetPrivateNetworkUuid()
 ```
 
+##### `ResetProjectId` <a name="ResetProjectId" id="@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.resetProjectId"></a>
+
+```csharp
+private void ResetProjectId()
+```
+
 ##### `ResetSqlMode` <a name="ResetSqlMode" id="@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.resetSqlMode"></a>
 
 ```csharp
@@ -441,6 +448,7 @@ DatabaseCluster.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.nodeCountInput">NodeCountInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.privateNetworkUuidInput">PrivateNetworkUuidInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.projectIdInput">ProjectIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.sizeInput">SizeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.sqlModeInput">SqlModeInput</a></code> | <code>string</code> | *No description.* |
@@ -453,6 +461,7 @@ DatabaseCluster.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.nodeCount">NodeCount</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.privateNetworkUuid">PrivateNetworkUuid</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.projectId">ProjectId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.region">Region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.size">Size</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.sqlMode">SqlMode</a></code> | <code>string</code> | *No description.* |
@@ -783,6 +792,16 @@ public string PrivateNetworkUuidInput { get; }
 
 ---
 
+##### `ProjectIdInput`<sup>Optional</sup> <a name="ProjectIdInput" id="@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.projectIdInput"></a>
+
+```csharp
+public string ProjectIdInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.regionInput"></a>
 
 ```csharp
@@ -903,6 +922,16 @@ public string PrivateNetworkUuid { get; }
 
 ---
 
+##### `ProjectId`<sup>Required</sup> <a name="ProjectId" id="@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.projectId"></a>
+
+```csharp
+public string ProjectId { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.region"></a>
 
 ```csharp
@@ -997,6 +1026,7 @@ new DatabaseClusterConfig {
     string Id = null,
     object MaintenanceWindow = null,
     string PrivateNetworkUuid = null,
+    string ProjectId = null,
     string SqlMode = null,
     string[] Tags = null,
     DatabaseClusterTimeouts Timeouts = null,
@@ -1024,6 +1054,7 @@ new DatabaseClusterConfig {
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseClusterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_cluster#id DatabaseCluster#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseClusterConfig.property.maintenanceWindow">MaintenanceWindow</a></code> | <code>object</code> | maintenance_window block. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseClusterConfig.property.privateNetworkUuid">PrivateNetworkUuid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_cluster#private_network_uuid DatabaseCluster#private_network_uuid}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseClusterConfig.property.projectId">ProjectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_cluster#project_id DatabaseCluster#project_id}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseClusterConfig.property.sqlMode">SqlMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_cluster#sql_mode DatabaseCluster#sql_mode}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseClusterConfig.property.tags">Tags</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_cluster#tags DatabaseCluster#tags}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseClusterConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseClusterTimeouts">DatabaseClusterTimeouts</a></code> | timeouts block. |
@@ -1211,6 +1242,18 @@ public string PrivateNetworkUuid { get; set; }
 - *Type:* string
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_cluster#private_network_uuid DatabaseCluster#private_network_uuid}.
+
+---
+
+##### `ProjectId`<sup>Optional</sup> <a name="ProjectId" id="@cdktf/provider-digitalocean.databaseCluster.DatabaseClusterConfig.property.projectId"></a>
+
+```csharp
+public string ProjectId { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_cluster#project_id DatabaseCluster#project_id}.
 
 ---
 

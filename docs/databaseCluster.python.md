@@ -30,6 +30,7 @@ databaseCluster.DatabaseCluster(
   id: str = None,
   maintenance_window: typing.Union[IResolvable, typing.List[DatabaseClusterMaintenanceWindow]] = None,
   private_network_uuid: str = None,
+  project_id: str = None,
   sql_mode: str = None,
   tags: typing.List[str] = None,
   timeouts: DatabaseClusterTimeouts = None,
@@ -57,6 +58,7 @@ databaseCluster.DatabaseCluster(
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_cluster#id DatabaseCluster#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.Initializer.parameter.maintenanceWindow">maintenance_window</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseClusterMaintenanceWindow">DatabaseClusterMaintenanceWindow</a>]]</code> | maintenance_window block. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.Initializer.parameter.privateNetworkUuid">private_network_uuid</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_cluster#private_network_uuid DatabaseCluster#private_network_uuid}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.Initializer.parameter.projectId">project_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_cluster#project_id DatabaseCluster#project_id}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.Initializer.parameter.sqlMode">sql_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_cluster#sql_mode DatabaseCluster#sql_mode}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.Initializer.parameter.tags">tags</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_cluster#tags DatabaseCluster#tags}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseClusterTimeouts">DatabaseClusterTimeouts</a></code> | timeouts block. |
@@ -201,6 +203,14 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digit
 
 ---
 
+##### `project_id`<sup>Optional</sup> <a name="project_id" id="@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.Initializer.parameter.projectId"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_cluster#project_id DatabaseCluster#project_id}.
+
+---
+
 ##### `sql_mode`<sup>Optional</sup> <a name="sql_mode" id="@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.Initializer.parameter.sqlMode"></a>
 
 - *Type:* str
@@ -261,6 +271,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digit
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.resetMaintenanceWindow">reset_maintenance_window</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.resetPrivateNetworkUuid">reset_private_network_uuid</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.resetProjectId">reset_project_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.resetSqlMode">reset_sql_mode</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.resetTags">reset_tags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.resetTimeouts">reset_timeouts</a></code> | *No description.* |
@@ -531,6 +542,12 @@ def reset_maintenance_window() -> None
 def reset_private_network_uuid() -> None
 ```
 
+##### `reset_project_id` <a name="reset_project_id" id="@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.resetProjectId"></a>
+
+```python
+def reset_project_id() -> None
+```
+
 ##### `reset_sql_mode` <a name="reset_sql_mode" id="@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.resetSqlMode"></a>
 
 ```python
@@ -667,6 +684,7 @@ databaseCluster.DatabaseCluster.is_terraform_resource(
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.nodeCountInput">node_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.privateNetworkUuidInput">private_network_uuid_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.projectIdInput">project_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.sizeInput">size_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.sqlModeInput">sql_mode_input</a></code> | <code>str</code> | *No description.* |
@@ -679,6 +697,7 @@ databaseCluster.DatabaseCluster.is_terraform_resource(
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.nodeCount">node_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.privateNetworkUuid">private_network_uuid</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.projectId">project_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.size">size</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.sqlMode">sql_mode</a></code> | <code>str</code> | *No description.* |
@@ -1009,6 +1028,16 @@ private_network_uuid_input: str
 
 ---
 
+##### `project_id_input`<sup>Optional</sup> <a name="project_id_input" id="@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.projectIdInput"></a>
+
+```python
+project_id_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.regionInput"></a>
 
 ```python
@@ -1129,6 +1158,16 @@ private_network_uuid: str
 
 ---
 
+##### `project_id`<sup>Required</sup> <a name="project_id" id="@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.projectId"></a>
+
+```python
+project_id: str
+```
+
+- *Type:* str
+
+---
+
 ##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-digitalocean.databaseCluster.DatabaseCluster.property.region"></a>
 
 ```python
@@ -1223,6 +1262,7 @@ databaseCluster.DatabaseClusterConfig(
   id: str = None,
   maintenance_window: typing.Union[IResolvable, typing.List[DatabaseClusterMaintenanceWindow]] = None,
   private_network_uuid: str = None,
+  project_id: str = None,
   sql_mode: str = None,
   tags: typing.List[str] = None,
   timeouts: DatabaseClusterTimeouts = None,
@@ -1250,6 +1290,7 @@ databaseCluster.DatabaseClusterConfig(
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseClusterConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_cluster#id DatabaseCluster#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseClusterConfig.property.maintenanceWindow">maintenance_window</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseClusterMaintenanceWindow">DatabaseClusterMaintenanceWindow</a>]]</code> | maintenance_window block. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseClusterConfig.property.privateNetworkUuid">private_network_uuid</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_cluster#private_network_uuid DatabaseCluster#private_network_uuid}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseClusterConfig.property.projectId">project_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_cluster#project_id DatabaseCluster#project_id}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseClusterConfig.property.sqlMode">sql_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_cluster#sql_mode DatabaseCluster#sql_mode}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseClusterConfig.property.tags">tags</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_cluster#tags DatabaseCluster#tags}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseClusterConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-digitalocean.databaseCluster.DatabaseClusterTimeouts">DatabaseClusterTimeouts</a></code> | timeouts block. |
@@ -1437,6 +1478,18 @@ private_network_uuid: str
 - *Type:* str
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_cluster#private_network_uuid DatabaseCluster#private_network_uuid}.
+
+---
+
+##### `project_id`<sup>Optional</sup> <a name="project_id" id="@cdktf/provider-digitalocean.databaseCluster.DatabaseClusterConfig.property.projectId"></a>
+
+```python
+project_id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_cluster#project_id DatabaseCluster#project_id}.
 
 ---
 

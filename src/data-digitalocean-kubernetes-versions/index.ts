@@ -46,7 +46,7 @@ export class DataDigitaloceanKubernetesVersions extends cdktf.TerraformDataSourc
       terraformResourceType: 'digitalocean_kubernetes_versions',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.26.0',
+        providerVersion: '2.27.1',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
