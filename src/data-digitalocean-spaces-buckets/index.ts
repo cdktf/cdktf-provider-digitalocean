@@ -431,7 +431,7 @@ export class DataDigitaloceanSpacesBuckets extends cdktf.TerraformDataSource {
       terraformResourceType: 'digitalocean_spaces_buckets',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.26.0',
+        providerVersion: '2.27.1',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,

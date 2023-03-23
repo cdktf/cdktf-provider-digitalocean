@@ -119,7 +119,7 @@ export class DataDigitaloceanDatabaseCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'digitalocean_database_cluster',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.26.0',
+        providerVersion: '2.27.1',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
@@ -217,6 +217,11 @@ export class DataDigitaloceanDatabaseCluster extends cdktf.TerraformDataSource {
   // private_uri - computed: true, optional: false, required: false
   public get privateUri() {
     return this.getStringAttribute('private_uri');
+  }
+
+  // project_id - computed: true, optional: false, required: false
+  public get projectId() {
+    return this.getStringAttribute('project_id');
   }
 
   // region - computed: true, optional: false, required: false
