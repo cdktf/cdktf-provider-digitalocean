@@ -70,7 +70,7 @@ export class Cdn extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_cdn',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.26.0',
+        providerVersion: '2.27.1',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,

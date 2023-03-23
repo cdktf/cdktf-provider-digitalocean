@@ -449,6 +449,7 @@ DataDigitaloceanDatabaseCluster.isTerraformDataSource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseCluster.DataDigitaloceanDatabaseCluster.property.privateHost">privateHost</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseCluster.DataDigitaloceanDatabaseCluster.property.privateNetworkUuid">privateNetworkUuid</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseCluster.DataDigitaloceanDatabaseCluster.property.privateUri">privateUri</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseCluster.DataDigitaloceanDatabaseCluster.property.projectId">projectId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseCluster.DataDigitaloceanDatabaseCluster.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseCluster.DataDigitaloceanDatabaseCluster.property.size">size</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseCluster.DataDigitaloceanDatabaseCluster.property.uri">uri</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -680,6 +681,16 @@ public java.lang.String getPrivateNetworkUuid();
 
 ```java
 public java.lang.String getPrivateUri();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `projectId`<sup>Required</sup> <a name="projectId" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseCluster.DataDigitaloceanDatabaseCluster.property.projectId"></a>
+
+```java
+public java.lang.String getProjectId();
 ```
 
 - *Type:* java.lang.String

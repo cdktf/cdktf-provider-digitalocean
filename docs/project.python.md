@@ -27,7 +27,8 @@ project.Project(
   id: str = None,
   is_default: typing.Union[bool, IResolvable] = None,
   purpose: str = None,
-  resources: typing.List[str] = None
+  resources: typing.List[str] = None,
+  timeouts: ProjectTimeouts = None
 )
 ```
 
@@ -49,6 +50,7 @@ project.Project(
 | <code><a href="#@cdktf/provider-digitalocean.project.Project.Initializer.parameter.isDefault">is_default</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | determine if the project is the default or not. |
 | <code><a href="#@cdktf/provider-digitalocean.project.Project.Initializer.parameter.purpose">purpose</a></code> | <code>str</code> | the purpose of the project. |
 | <code><a href="#@cdktf/provider-digitalocean.project.Project.Initializer.parameter.resources">resources</a></code> | <code>typing.List[str]</code> | the resources associated with the project. |
+| <code><a href="#@cdktf/provider-digitalocean.project.Project.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-digitalocean.project.ProjectTimeouts">ProjectTimeouts</a></code> | timeouts block. |
 
 ---
 
@@ -183,6 +185,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digit
 
 ---
 
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-digitalocean.project.Project.Initializer.parameter.timeouts"></a>
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.project.ProjectTimeouts">ProjectTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/project#timeouts Project#timeouts}
+
+---
+
 #### Methods <a name="Methods" id="Methods"></a>
 
 | **Name** | **Description** |
@@ -203,12 +215,14 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digit
 | <code><a href="#@cdktf/provider-digitalocean.project.Project.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.project.Project.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.project.Project.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.project.Project.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.project.Project.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.project.Project.resetEnvironment">reset_environment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.project.Project.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.project.Project.resetIsDefault">reset_is_default</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.project.Project.resetPurpose">reset_purpose</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.project.Project.resetResources">reset_resources</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.project.Project.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
 
@@ -421,6 +435,22 @@ def interpolation_for_attribute(
 
 ---
 
+##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-digitalocean.project.Project.putTimeouts"></a>
+
+```python
+def put_timeouts(
+  delete: str = None
+) -> None
+```
+
+###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-digitalocean.project.Project.putTimeouts.parameter.delete"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/project#delete Project#delete}.
+
+---
+
 ##### `reset_description` <a name="reset_description" id="@cdktf/provider-digitalocean.project.Project.resetDescription"></a>
 
 ```python
@@ -455,6 +485,12 @@ def reset_purpose() -> None
 
 ```python
 def reset_resources() -> None
+```
+
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-digitalocean.project.Project.resetTimeouts"></a>
+
+```python
+def reset_timeouts() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -554,6 +590,7 @@ project.Project.is_terraform_resource(
 | <code><a href="#@cdktf/provider-digitalocean.project.Project.property.createdAt">created_at</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.project.Project.property.ownerId">owner_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.project.Project.property.ownerUuid">owner_uuid</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.project.Project.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference">ProjectTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.project.Project.property.updatedAt">updated_at</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.project.Project.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.project.Project.property.environmentInput">environment_input</a></code> | <code>str</code> | *No description.* |
@@ -562,6 +599,7 @@ project.Project.is_terraform_resource(
 | <code><a href="#@cdktf/provider-digitalocean.project.Project.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.project.Project.property.purposeInput">purpose_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.project.Project.property.resourcesInput">resources_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.project.Project.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-digitalocean.project.ProjectTimeouts">ProjectTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.project.Project.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.project.Project.property.environment">environment</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.project.Project.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -744,6 +782,16 @@ owner_uuid: str
 
 ---
 
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-digitalocean.project.Project.property.timeouts"></a>
+
+```python
+timeouts: ProjectTimeoutsOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference">ProjectTimeoutsOutputReference</a>
+
+---
+
 ##### `updated_at`<sup>Required</sup> <a name="updated_at" id="@cdktf/provider-digitalocean.project.Project.property.updatedAt"></a>
 
 ```python
@@ -821,6 +869,16 @@ resources_input: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
+
+---
+
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-digitalocean.project.Project.property.timeoutsInput"></a>
+
+```python
+timeouts_input: typing.Union[ProjectTimeouts, IResolvable]
+```
+
+- *Type:* typing.Union[<a href="#@cdktf/provider-digitalocean.project.ProjectTimeouts">ProjectTimeouts</a>, cdktf.IResolvable]
 
 ---
 
@@ -935,7 +993,8 @@ project.ProjectConfig(
   id: str = None,
   is_default: typing.Union[bool, IResolvable] = None,
   purpose: str = None,
-  resources: typing.List[str] = None
+  resources: typing.List[str] = None,
+  timeouts: ProjectTimeouts = None
 )
 ```
 
@@ -957,6 +1016,7 @@ project.ProjectConfig(
 | <code><a href="#@cdktf/provider-digitalocean.project.ProjectConfig.property.isDefault">is_default</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | determine if the project is the default or not. |
 | <code><a href="#@cdktf/provider-digitalocean.project.ProjectConfig.property.purpose">purpose</a></code> | <code>str</code> | the purpose of the project. |
 | <code><a href="#@cdktf/provider-digitalocean.project.ProjectConfig.property.resources">resources</a></code> | <code>typing.List[str]</code> | the resources associated with the project. |
+| <code><a href="#@cdktf/provider-digitalocean.project.ProjectConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-digitalocean.project.ProjectTimeouts">ProjectTimeouts</a></code> | timeouts block. |
 
 ---
 
@@ -1126,6 +1186,356 @@ resources: typing.List[str]
 the resources associated with the project.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/project#resources Project#resources}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-digitalocean.project.ProjectConfig.property.timeouts"></a>
+
+```python
+timeouts: ProjectTimeouts
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.project.ProjectTimeouts">ProjectTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/project#timeouts Project#timeouts}
+
+---
+
+### ProjectTimeouts <a name="ProjectTimeouts" id="@cdktf/provider-digitalocean.project.ProjectTimeouts"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.project.ProjectTimeouts.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_digitalocean import project
+
+project.ProjectTimeouts(
+  delete: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.project.ProjectTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/project#delete Project#delete}. |
+
+---
+
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-digitalocean.project.ProjectTimeouts.property.delete"></a>
+
+```python
+delete: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/project#delete Project#delete}.
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### ProjectTimeoutsOutputReference <a name="ProjectTimeoutsOutputReference" id="@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_digitalocean import project
+
+project.ProjectTimeoutsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_delete` <a name="reset_delete" id="@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.resetDelete"></a>
+
+```python
+def reset_delete() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-digitalocean.project.ProjectTimeouts">ProjectTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.property.deleteInput"></a>
+
+```python
+delete_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.property.delete"></a>
+
+```python
+delete: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.project.ProjectTimeoutsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[ProjectTimeouts, IResolvable]
+```
+
+- *Type:* typing.Union[<a href="#@cdktf/provider-digitalocean.project.ProjectTimeouts">ProjectTimeouts</a>, cdktf.IResolvable]
 
 ---
 

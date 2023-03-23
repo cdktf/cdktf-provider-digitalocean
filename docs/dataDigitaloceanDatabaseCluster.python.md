@@ -479,6 +479,7 @@ dataDigitaloceanDatabaseCluster.DataDigitaloceanDatabaseCluster.is_terraform_dat
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseCluster.DataDigitaloceanDatabaseCluster.property.privateHost">private_host</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseCluster.DataDigitaloceanDatabaseCluster.property.privateNetworkUuid">private_network_uuid</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseCluster.DataDigitaloceanDatabaseCluster.property.privateUri">private_uri</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseCluster.DataDigitaloceanDatabaseCluster.property.projectId">project_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseCluster.DataDigitaloceanDatabaseCluster.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseCluster.DataDigitaloceanDatabaseCluster.property.size">size</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseCluster.DataDigitaloceanDatabaseCluster.property.uri">uri</a></code> | <code>str</code> | *No description.* |
@@ -710,6 +711,16 @@ private_network_uuid: str
 
 ```python
 private_uri: str
+```
+
+- *Type:* str
+
+---
+
+##### `project_id`<sup>Required</sup> <a name="project_id" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseCluster.DataDigitaloceanDatabaseCluster.property.projectId"></a>
+
+```python
+project_id: str
 ```
 
 - *Type:* str

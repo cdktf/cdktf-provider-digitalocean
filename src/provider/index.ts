@@ -71,7 +71,7 @@ export class DigitaloceanProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'digitalocean',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.26.0',
+        providerVersion: '2.27.1',
         providerVersionConstraint: '~> 2.19'
       },
       terraformProviderSource: 'digitalocean/digitalocean'

@@ -66,7 +66,7 @@ export class CustomImage extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_custom_image',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.26.0',
+        providerVersion: '2.27.1',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,

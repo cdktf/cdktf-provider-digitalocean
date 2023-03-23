@@ -35,6 +35,10 @@ export interface DatabaseClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly privateNetworkUuid?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_cluster#project_id DatabaseCluster#project_id}
+  */
+  readonly projectId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_cluster#region DatabaseCluster#region}
   */
   readonly region: string;
@@ -287,7 +291,7 @@ export class DatabaseCluster extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_database_cluster',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.26.0',
+        providerVersion: '2.27.1',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
@@ -304,6 +308,7 @@ export class DatabaseCluster extends cdktf.TerraformResource {
     this._name = config.name;
     this._nodeCount = config.nodeCount;
     this._privateNetworkUuid = config.privateNetworkUuid;
+    this._projectId = config.projectId;
     this._region = config.region;
     this._size = config.size;
     this._sqlMode = config.sqlMode;
@@ -432,6 +437,22 @@ export class DatabaseCluster extends cdktf.TerraformResource {
   // private_uri - computed: true, optional: false, required: false
   public get privateUri() {
     return this.getStringAttribute('private_uri');
+  }
+
+  // project_id - computed: true, optional: true, required: false
+  private _projectId?: string; 
+  public get projectId() {
+    return this.getStringAttribute('project_id');
+  }
+  public set projectId(value: string) {
+    this._projectId = value;
+  }
+  public resetProjectId() {
+    this._projectId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectIdInput() {
+    return this._projectId;
   }
 
   // region - computed: false, optional: false, required: true
@@ -567,6 +588,7 @@ export class DatabaseCluster extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       node_count: cdktf.numberToTerraform(this._nodeCount),
       private_network_uuid: cdktf.stringToTerraform(this._privateNetworkUuid),
+      project_id: cdktf.stringToTerraform(this._projectId),
       region: cdktf.stringToTerraform(this._region),
       size: cdktf.stringToTerraform(this._size),
       sql_mode: cdktf.stringToTerraform(this._sqlMode),
