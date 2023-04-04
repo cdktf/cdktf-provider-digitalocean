@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/digitalocean/d/kuber
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanKubernetesCluster.DataDigitaloceanKubernetesCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceankubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceankubernetescluster"
 
 datadigitaloceankubernetescluster.NewDataDigitaloceanKubernetesCluster(scope Construct, id *string, config DataDigitaloceanKubernetesClusterConfig) DataDigitaloceanKubernetesCluster
 ```
@@ -280,7 +280,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanKubernetesCluster.DataDigitaloceanKubernetesCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceankubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceankubernetescluster"
 
 datadigitaloceankubernetescluster.DataDigitaloceanKubernetesCluster_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanKubernetesCluster.DataDigitaloceanKubernetesCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceankubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceankubernetescluster"
 
 datadigitaloceankubernetescluster.DataDigitaloceanKubernetesCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ datadigitaloceankubernetescluster.DataDigitaloceanKubernetesCluster_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanKubernetesCluster.DataDigitaloceanKubernetesCluster.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceankubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceankubernetescluster"
 
 datadigitaloceankubernetescluster.DataDigitaloceanKubernetesCluster_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -756,7 +756,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanKubernetesCluster.DataDigitaloceanKubernetesClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceankubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceankubernetescluster"
 
 &datadigitaloceankubernetescluster.DataDigitaloceanKubernetesClusterConfig {
 	Connection: interface{},
@@ -903,7 +903,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanKubernetesCluster.DataDigitaloceanKubernetesClusterKubeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceankubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceankubernetescluster"
 
 &datadigitaloceankubernetescluster.DataDigitaloceanKubernetesClusterKubeConfig {
 
@@ -916,7 +916,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigi
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanKubernetesCluster.DataDigitaloceanKubernetesClusterMaintenancePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceankubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceankubernetescluster"
 
 &datadigitaloceankubernetescluster.DataDigitaloceanKubernetesClusterMaintenancePolicy {
 
@@ -929,7 +929,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigi
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanKubernetesCluster.DataDigitaloceanKubernetesClusterNodePool.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceankubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceankubernetescluster"
 
 &datadigitaloceankubernetescluster.DataDigitaloceanKubernetesClusterNodePool {
 
@@ -942,7 +942,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigi
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanKubernetesCluster.DataDigitaloceanKubernetesClusterNodePoolNodes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceankubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceankubernetescluster"
 
 &datadigitaloceankubernetescluster.DataDigitaloceanKubernetesClusterNodePoolNodes {
 
@@ -955,7 +955,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigi
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanKubernetesCluster.DataDigitaloceanKubernetesClusterNodePoolTaint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceankubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceankubernetescluster"
 
 &datadigitaloceankubernetescluster.DataDigitaloceanKubernetesClusterNodePoolTaint {
 
@@ -970,7 +970,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigi
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanKubernetesCluster.DataDigitaloceanKubernetesClusterKubeConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceankubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceankubernetescluster"
 
 datadigitaloceankubernetescluster.NewDataDigitaloceanKubernetesClusterKubeConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanKubernetesClusterKubeConfigList
 ```
@@ -1102,7 +1102,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanKubernetesCluster.DataDigitaloceanKubernetesClusterKubeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceankubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceankubernetescluster"
 
 datadigitaloceankubernetescluster.NewDataDigitaloceanKubernetesClusterKubeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanKubernetesClusterKubeConfigOutputReference
 ```
@@ -1446,7 +1446,7 @@ func InternalValue() DataDigitaloceanKubernetesClusterKubeConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanKubernetesCluster.DataDigitaloceanKubernetesClusterMaintenancePolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceankubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceankubernetescluster"
 
 datadigitaloceankubernetescluster.NewDataDigitaloceanKubernetesClusterMaintenancePolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanKubernetesClusterMaintenancePolicyList
 ```
@@ -1578,7 +1578,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanKubernetesCluster.DataDigitaloceanKubernetesClusterMaintenancePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceankubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceankubernetescluster"
 
 datadigitaloceankubernetescluster.NewDataDigitaloceanKubernetesClusterMaintenancePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanKubernetesClusterMaintenancePolicyOutputReference
 ```
@@ -1878,7 +1878,7 @@ func InternalValue() DataDigitaloceanKubernetesClusterMaintenancePolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanKubernetesCluster.DataDigitaloceanKubernetesClusterNodePoolList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceankubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceankubernetescluster"
 
 datadigitaloceankubernetescluster.NewDataDigitaloceanKubernetesClusterNodePoolList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanKubernetesClusterNodePoolList
 ```
@@ -2010,7 +2010,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanKubernetesCluster.DataDigitaloceanKubernetesClusterNodePoolNodesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceankubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceankubernetescluster"
 
 datadigitaloceankubernetescluster.NewDataDigitaloceanKubernetesClusterNodePoolNodesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanKubernetesClusterNodePoolNodesList
 ```
@@ -2142,7 +2142,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanKubernetesCluster.DataDigitaloceanKubernetesClusterNodePoolNodesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceankubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceankubernetescluster"
 
 datadigitaloceankubernetescluster.NewDataDigitaloceanKubernetesClusterNodePoolNodesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanKubernetesClusterNodePoolNodesOutputReference
 ```
@@ -2475,7 +2475,7 @@ func InternalValue() DataDigitaloceanKubernetesClusterNodePoolNodes
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanKubernetesCluster.DataDigitaloceanKubernetesClusterNodePoolOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceankubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceankubernetescluster"
 
 datadigitaloceankubernetescluster.NewDataDigitaloceanKubernetesClusterNodePoolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanKubernetesClusterNodePoolOutputReference
 ```
@@ -2874,7 +2874,7 @@ func InternalValue() DataDigitaloceanKubernetesClusterNodePool
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanKubernetesCluster.DataDigitaloceanKubernetesClusterNodePoolTaintList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceankubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceankubernetescluster"
 
 datadigitaloceankubernetescluster.NewDataDigitaloceanKubernetesClusterNodePoolTaintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanKubernetesClusterNodePoolTaintList
 ```
@@ -3006,7 +3006,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanKubernetesCluster.DataDigitaloceanKubernetesClusterNodePoolTaintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceankubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceankubernetescluster"
 
 datadigitaloceankubernetescluster.NewDataDigitaloceanKubernetesClusterNodePoolTaintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanKubernetesClusterNodePoolTaintOutputReference
 ```
