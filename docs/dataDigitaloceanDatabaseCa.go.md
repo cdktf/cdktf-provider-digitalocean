@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/digitalocean/d/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseCa.DataDigitaloceanDatabaseCa.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandatabaseca"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceandatabaseca"
 
 datadigitaloceandatabaseca.NewDataDigitaloceanDatabaseCa(scope Construct, id *string, config DataDigitaloceanDatabaseCaConfig) DataDigitaloceanDatabaseCa
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseCa.DataDigitaloceanDatabaseCa.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandatabaseca"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceandatabaseca"
 
 datadigitaloceandatabaseca.DataDigitaloceanDatabaseCa_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseCa.DataDigitaloceanDatabaseCa.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandatabaseca"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceandatabaseca"
 
 datadigitaloceandatabaseca.DataDigitaloceanDatabaseCa_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datadigitaloceandatabaseca.DataDigitaloceanDatabaseCa_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseCa.DataDigitaloceanDatabaseCa.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandatabaseca"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceandatabaseca"
 
 datadigitaloceandatabaseca.DataDigitaloceanDatabaseCa_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -551,7 +551,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseCa.DataDigitaloceanDatabaseCaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandatabaseca"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceandatabaseca"
 
 &datadigitaloceandatabaseca.DataDigitaloceanDatabaseCaConfig {
 	Connection: interface{},

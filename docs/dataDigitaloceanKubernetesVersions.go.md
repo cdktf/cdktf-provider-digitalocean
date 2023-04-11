@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/digitalocean/d/kuber
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanKubernetesVersions.DataDigitaloceanKubernetesVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceankubernetesversions"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceankubernetesversions"
 
 datadigitaloceankubernetesversions.NewDataDigitaloceanKubernetesVersions(scope Construct, id *string, config DataDigitaloceanKubernetesVersionsConfig) DataDigitaloceanKubernetesVersions
 ```
@@ -280,7 +280,7 @@ func ResetVersionPrefix()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanKubernetesVersions.DataDigitaloceanKubernetesVersions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceankubernetesversions"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceankubernetesversions"
 
 datadigitaloceankubernetesversions.DataDigitaloceanKubernetesVersions_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanKubernetesVersions.DataDigitaloceanKubernetesVersions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceankubernetesversions"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceankubernetesversions"
 
 datadigitaloceankubernetesversions.DataDigitaloceanKubernetesVersions_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ datadigitaloceankubernetesversions.DataDigitaloceanKubernetesVersions_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanKubernetesVersions.DataDigitaloceanKubernetesVersions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceankubernetesversions"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceankubernetesversions"
 
 datadigitaloceankubernetesversions.DataDigitaloceanKubernetesVersions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -569,7 +569,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanKubernetesVersions.DataDigitaloceanKubernetesVersionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceankubernetesversions"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceankubernetesversions"
 
 &datadigitaloceankubernetesversions.DataDigitaloceanKubernetesVersionsConfig {
 	Connection: interface{},
