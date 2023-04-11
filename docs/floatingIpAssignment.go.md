@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/digitalocean/r/float
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.floatingIpAssignment.FloatingIpAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/floatingipassignment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/floatingipassignment"
 
 floatingipassignment.NewFloatingIpAssignment(scope Construct, id *string, config FloatingIpAssignmentConfig) FloatingIpAssignment
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.floatingIpAssignment.FloatingIpAssignment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/floatingipassignment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/floatingipassignment"
 
 floatingipassignment.FloatingIpAssignment_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.floatingIpAssignment.FloatingIpAssignment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/floatingipassignment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/floatingipassignment"
 
 floatingipassignment.FloatingIpAssignment_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ floatingipassignment.FloatingIpAssignment_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.floatingIpAssignment.FloatingIpAssignment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/floatingipassignment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/floatingipassignment"
 
 floatingipassignment.FloatingIpAssignment_IsTerraformResource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.floatingIpAssignment.FloatingIpAssignmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/floatingipassignment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/floatingipassignment"
 
 &floatingipassignment.FloatingIpAssignmentConfig {
 	Connection: interface{},
