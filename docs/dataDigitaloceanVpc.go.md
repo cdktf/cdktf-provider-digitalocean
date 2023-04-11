@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/digitalocean/d/vpc d
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceanvpc"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceanvpc"
 
 datadigitaloceanvpc.NewDataDigitaloceanVpc(scope Construct, id *string, config DataDigitaloceanVpcConfig) DataDigitaloceanVpc
 ```
@@ -287,7 +287,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpc.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceanvpc"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceanvpc"
 
 datadigitaloceanvpc.DataDigitaloceanVpc_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpc.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceanvpc"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceanvpc"
 
 datadigitaloceanvpc.DataDigitaloceanVpc_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ datadigitaloceanvpc.DataDigitaloceanVpc_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpc.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceanvpc"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceanvpc"
 
 datadigitaloceanvpc.DataDigitaloceanVpc_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -631,7 +631,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceanvpc"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceanvpc"
 
 &datadigitaloceanvpc.DataDigitaloceanVpcConfig {
 	Connection: interface{},

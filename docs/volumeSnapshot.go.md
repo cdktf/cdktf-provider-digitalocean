@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/digitalocean/r/volum
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.volumeSnapshot.VolumeSnapshot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/volumesnapshot"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/volumesnapshot"
 
 volumesnapshot.NewVolumeSnapshot(scope Construct, id *string, config VolumeSnapshotConfig) VolumeSnapshot
 ```
@@ -280,7 +280,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.volumeSnapshot.VolumeSnapshot.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/volumesnapshot"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/volumesnapshot"
 
 volumesnapshot.VolumeSnapshot_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.volumeSnapshot.VolumeSnapshot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/volumesnapshot"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/volumesnapshot"
 
 volumesnapshot.VolumeSnapshot_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ volumesnapshot.VolumeSnapshot_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.volumeSnapshot.VolumeSnapshot.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/volumesnapshot"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/volumesnapshot"
 
 volumesnapshot.VolumeSnapshot_IsTerraformResource(x interface{}) *bool
 ```
@@ -657,7 +657,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.volumeSnapshot.VolumeSnapshotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/volumesnapshot"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/volumesnapshot"
 
 &volumesnapshot.VolumeSnapshotConfig {
 	Connection: interface{},

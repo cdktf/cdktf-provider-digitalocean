@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/digitalocean/r/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/databasefirewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/databasefirewall"
 
 databasefirewall.NewDatabaseFirewall(scope Construct, id *string, config DatabaseFirewallConfig) DatabaseFirewall
 ```
@@ -286,7 +286,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/databasefirewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/databasefirewall"
 
 databasefirewall.DatabaseFirewall_IsConstruct(x interface{}) *bool
 ```
@@ -318,7 +318,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/databasefirewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/databasefirewall"
 
 databasefirewall.DatabaseFirewall_IsTerraformElement(x interface{}) *bool
 ```
@@ -332,7 +332,7 @@ databasefirewall.DatabaseFirewall_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/databasefirewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/databasefirewall"
 
 databasefirewall.DatabaseFirewall_IsTerraformResource(x interface{}) *bool
 ```
@@ -597,7 +597,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/databasefirewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/databasefirewall"
 
 &databasefirewall.DatabaseFirewallConfig {
 	Connection: interface{},
@@ -746,7 +746,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/databasefirewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/databasefirewall"
 
 &databasefirewall.DatabaseFirewallRule {
 	Type: *string,
@@ -794,7 +794,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/databasefirewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/databasefirewall"
 
 databasefirewall.NewDatabaseFirewallRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseFirewallRuleList
 ```
@@ -937,7 +937,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/databasefirewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/databasefirewall"
 
 databasefirewall.NewDatabaseFirewallRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseFirewallRuleOutputReference
 ```

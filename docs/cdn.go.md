@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/digitalocean/r/cdn d
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.cdn.Cdn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/cdn"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/cdn"
 
 cdn.NewCdn(scope Construct, id *string, config CdnConfig) Cdn
 ```
@@ -301,7 +301,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.cdn.Cdn.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/cdn"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/cdn"
 
 cdn.Cdn_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.cdn.Cdn.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/cdn"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/cdn"
 
 cdn.Cdn_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ cdn.Cdn_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.cdn.Cdn.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/cdn"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/cdn"
 
 cdn.Cdn_IsTerraformResource(x interface{}) *bool
 ```
@@ -700,7 +700,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.cdn.CdnConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/cdn"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/cdn"
 
 &cdn.CdnConfig {
 	Connection: interface{},
