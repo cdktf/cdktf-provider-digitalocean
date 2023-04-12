@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/digitalocean/d/dropl
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanDroplets.DataDigitaloceanDroplets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceandroplets"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandroplets"
 
 datadigitaloceandroplets.NewDataDigitaloceanDroplets(scope Construct, id *string, config DataDigitaloceanDropletsConfig) DataDigitaloceanDroplets
 ```
@@ -313,7 +313,7 @@ func ResetSort()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanDroplets.DataDigitaloceanDroplets.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceandroplets"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandroplets"
 
 datadigitaloceandroplets.DataDigitaloceanDroplets_IsConstruct(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanDroplets.DataDigitaloceanDroplets.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceandroplets"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandroplets"
 
 datadigitaloceandroplets.DataDigitaloceanDroplets_IsTerraformElement(x interface{}) *bool
 ```
@@ -359,7 +359,7 @@ datadigitaloceandroplets.DataDigitaloceanDroplets_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanDroplets.DataDigitaloceanDroplets.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceandroplets"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandroplets"
 
 datadigitaloceandroplets.DataDigitaloceanDroplets_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -613,7 +613,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanDroplets.DataDigitaloceanDropletsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceandroplets"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandroplets"
 
 &datadigitaloceandroplets.DataDigitaloceanDropletsConfig {
 	Connection: interface{},
@@ -764,7 +764,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanDroplets.DataDigitaloceanDropletsDroplets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceandroplets"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandroplets"
 
 &datadigitaloceandroplets.DataDigitaloceanDropletsDroplets {
 
@@ -777,7 +777,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigi
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanDroplets.DataDigitaloceanDropletsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceandroplets"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandroplets"
 
 &datadigitaloceandroplets.DataDigitaloceanDropletsFilter {
 	Key: *string,
@@ -851,7 +851,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanDroplets.DataDigitaloceanDropletsSort.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceandroplets"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandroplets"
 
 &datadigitaloceandroplets.DataDigitaloceanDropletsSort {
 	Key: *string,
@@ -899,7 +899,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanDroplets.DataDigitaloceanDropletsDropletsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceandroplets"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandroplets"
 
 datadigitaloceandroplets.NewDataDigitaloceanDropletsDropletsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanDropletsDropletsList
 ```
@@ -1031,7 +1031,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanDroplets.DataDigitaloceanDropletsDropletsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceandroplets"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandroplets"
 
 datadigitaloceandroplets.NewDataDigitaloceanDropletsDropletsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanDropletsDropletsOutputReference
 ```
@@ -1573,7 +1573,7 @@ func InternalValue() DataDigitaloceanDropletsDroplets
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanDroplets.DataDigitaloceanDropletsFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceandroplets"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandroplets"
 
 datadigitaloceandroplets.NewDataDigitaloceanDropletsFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanDropletsFilterList
 ```
@@ -1716,7 +1716,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanDroplets.DataDigitaloceanDropletsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceandroplets"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandroplets"
 
 datadigitaloceandroplets.NewDataDigitaloceanDropletsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanDropletsFilterOutputReference
 ```
@@ -2085,7 +2085,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanDroplets.DataDigitaloceanDropletsSortList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceandroplets"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandroplets"
 
 datadigitaloceandroplets.NewDataDigitaloceanDropletsSortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanDropletsSortList
 ```
@@ -2228,7 +2228,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanDroplets.DataDigitaloceanDropletsSortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceandroplets"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandroplets"
 
 datadigitaloceandroplets.NewDataDigitaloceanDropletsSortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanDropletsSortOutputReference
 ```

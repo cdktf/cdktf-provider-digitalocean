@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/digitalocean/r/space
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.spacesBucketPolicy.SpacesBucketPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/spacesbucketpolicy"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucketpolicy"
 
 spacesbucketpolicy.NewSpacesBucketPolicy(scope Construct, id *string, config SpacesBucketPolicyConfig) SpacesBucketPolicy
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.spacesBucketPolicy.SpacesBucketPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/spacesbucketpolicy"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucketpolicy"
 
 spacesbucketpolicy.SpacesBucketPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.spacesBucketPolicy.SpacesBucketPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/spacesbucketpolicy"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucketpolicy"
 
 spacesbucketpolicy.SpacesBucketPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ spacesbucketpolicy.SpacesBucketPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.spacesBucketPolicy.SpacesBucketPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/spacesbucketpolicy"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucketpolicy"
 
 spacesbucketpolicy.SpacesBucketPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -606,7 +606,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.spacesBucketPolicy.SpacesBucketPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/spacesbucketpolicy"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucketpolicy"
 
 &spacesbucketpolicy.SpacesBucketPolicyConfig {
 	Connection: interface{},

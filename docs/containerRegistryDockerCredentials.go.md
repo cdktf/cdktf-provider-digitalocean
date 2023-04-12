@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/digitalocean/r/conta
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.containerRegistryDockerCredentials.ContainerRegistryDockerCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/containerregistrydockercredentials"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/containerregistrydockercredentials"
 
 containerregistrydockercredentials.NewContainerRegistryDockerCredentials(scope Construct, id *string, config ContainerRegistryDockerCredentialsConfig) ContainerRegistryDockerCredentials
 ```
@@ -287,7 +287,7 @@ func ResetWrite()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.containerRegistryDockerCredentials.ContainerRegistryDockerCredentials.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/containerregistrydockercredentials"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/containerregistrydockercredentials"
 
 containerregistrydockercredentials.ContainerRegistryDockerCredentials_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.containerRegistryDockerCredentials.ContainerRegistryDockerCredentials.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/containerregistrydockercredentials"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/containerregistrydockercredentials"
 
 containerregistrydockercredentials.ContainerRegistryDockerCredentials_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ containerregistrydockercredentials.ContainerRegistryDockerCredentials_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.containerRegistryDockerCredentials.ContainerRegistryDockerCredentials.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/containerregistrydockercredentials"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/containerregistrydockercredentials"
 
 containerregistrydockercredentials.ContainerRegistryDockerCredentials_IsTerraformResource(x interface{}) *bool
 ```
@@ -642,7 +642,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.containerRegistryDockerCredentials.ContainerRegistryDockerCredentialsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/containerregistrydockercredentials"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/containerregistrydockercredentials"
 
 &containerregistrydockercredentials.ContainerRegistryDockerCredentialsConfig {
 	Connection: interface{},
