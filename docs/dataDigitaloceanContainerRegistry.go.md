@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/digitalocean/d/conta
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanContainerRegistry.DataDigitaloceanContainerRegistry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceancontainerregistry"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceancontainerregistry"
 
 datadigitaloceancontainerregistry.NewDataDigitaloceanContainerRegistry(scope Construct, id *string, config DataDigitaloceanContainerRegistryConfig) DataDigitaloceanContainerRegistry
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanContainerRegistry.DataDigitaloceanContainerRegistry.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceancontainerregistry"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceancontainerregistry"
 
 datadigitaloceancontainerregistry.DataDigitaloceanContainerRegistry_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanContainerRegistry.DataDigitaloceanContainerRegistry.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceancontainerregistry"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceancontainerregistry"
 
 datadigitaloceancontainerregistry.DataDigitaloceanContainerRegistry_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datadigitaloceancontainerregistry.DataDigitaloceanContainerRegistry_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanContainerRegistry.DataDigitaloceanContainerRegistry.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceancontainerregistry"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceancontainerregistry"
 
 datadigitaloceancontainerregistry.DataDigitaloceanContainerRegistry_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -606,7 +606,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanContainerRegistry.DataDigitaloceanContainerRegistryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceancontainerregistry"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceancontainerregistry"
 
 &datadigitaloceancontainerregistry.DataDigitaloceanContainerRegistryConfig {
 	Connection: interface{},

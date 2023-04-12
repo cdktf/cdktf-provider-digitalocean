@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/digitalocean/r/float
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.floatingIp.FloatingIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/floatingip"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/floatingip"
 
 floatingip.NewFloatingIp(scope Construct, id *string, config FloatingIpConfig) FloatingIp
 ```
@@ -287,7 +287,7 @@ func ResetIpAddress()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.floatingIp.FloatingIp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/floatingip"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/floatingip"
 
 floatingip.FloatingIp_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.floatingIp.FloatingIp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/floatingip"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/floatingip"
 
 floatingip.FloatingIp_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ floatingip.FloatingIp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.floatingIp.FloatingIp.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/floatingip"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/floatingip"
 
 floatingip.FloatingIp_IsTerraformResource(x interface{}) *bool
 ```
@@ -631,7 +631,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.floatingIp.FloatingIpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/floatingip"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/floatingip"
 
 &floatingip.FloatingIpConfig {
 	Connection: interface{},
