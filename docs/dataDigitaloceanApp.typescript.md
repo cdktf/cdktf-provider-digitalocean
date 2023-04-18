@@ -1,3 +1,7 @@
+# `data_digitalocean_app`
+
+Refer to the Terraform Registory for docs: [`data_digitalocean_app`](https://www.terraform.io/docs/providers/digitalocean/d/app).
+
 # `dataDigitaloceanApp` Submodule <a name="`dataDigitaloceanApp` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanApp"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

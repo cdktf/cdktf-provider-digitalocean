@@ -1,3 +1,7 @@
+# `digitalocean_database_firewall`
+
+Refer to the Terraform Registory for docs: [`digitalocean_database_firewall`](https://www.terraform.io/docs/providers/digitalocean/r/database_firewall).
+
 # `databaseFirewall` Submodule <a name="`databaseFirewall` Submodule" id="@cdktf/provider-digitalocean.databaseFirewall"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

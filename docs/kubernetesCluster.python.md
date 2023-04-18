@@ -1,3 +1,7 @@
+# `digitalocean_kubernetes_cluster`
+
+Refer to the Terraform Registory for docs: [`digitalocean_kubernetes_cluster`](https://www.terraform.io/docs/providers/digitalocean/r/kubernetes_cluster).
+
 # `kubernetesCluster` Submodule <a name="`kubernetesCluster` Submodule" id="@cdktf/provider-digitalocean.kubernetesCluster"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

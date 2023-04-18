@@ -1,3 +1,7 @@
+# `digitalocean_spaces_bucket_object`
+
+Refer to the Terraform Registory for docs: [`digitalocean_spaces_bucket_object`](https://www.terraform.io/docs/providers/digitalocean/r/spaces_bucket_object).
+
 # `spacesBucketObject` Submodule <a name="`spacesBucketObject` Submodule" id="@cdktf/provider-digitalocean.spacesBucketObject"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

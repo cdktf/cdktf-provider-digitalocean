@@ -1,3 +1,7 @@
+# `digitalocean_database_connection_pool`
+
+Refer to the Terraform Registory for docs: [`digitalocean_database_connection_pool`](https://www.terraform.io/docs/providers/digitalocean/r/database_connection_pool).
+
 # `databaseConnectionPool` Submodule <a name="`databaseConnectionPool` Submodule" id="@cdktf/provider-digitalocean.databaseConnectionPool"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

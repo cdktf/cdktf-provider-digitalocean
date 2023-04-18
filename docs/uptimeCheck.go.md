@@ -1,3 +1,7 @@
+# `digitalocean_uptime_check`
+
+Refer to the Terraform Registory for docs: [`digitalocean_uptime_check`](https://www.terraform.io/docs/providers/digitalocean/r/uptime_check).
+
 # `uptimeCheck` Submodule <a name="`uptimeCheck` Submodule" id="@cdktf/provider-digitalocean.uptimeCheck"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

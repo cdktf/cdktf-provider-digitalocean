@@ -1,3 +1,7 @@
+# `digitalocean_volume`
+
+Refer to the Terraform Registory for docs: [`digitalocean_volume`](https://www.terraform.io/docs/providers/digitalocean/r/volume).
+
 # `volume` Submodule <a name="`volume` Submodule" id="@cdktf/provider-digitalocean.volume"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

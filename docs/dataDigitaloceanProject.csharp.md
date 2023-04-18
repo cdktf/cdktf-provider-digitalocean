@@ -1,3 +1,7 @@
+# `data_digitalocean_project`
+
+Refer to the Terraform Registory for docs: [`data_digitalocean_project`](https://www.terraform.io/docs/providers/digitalocean/d/project).
+
 # `dataDigitaloceanProject` Submodule <a name="`dataDigitaloceanProject` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanProject"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
