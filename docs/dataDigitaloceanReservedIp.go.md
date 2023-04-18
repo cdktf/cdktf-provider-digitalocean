@@ -1,3 +1,7 @@
+# `data_digitalocean_reserved_ip`
+
+Refer to the Terraform Registory for docs: [`data_digitalocean_reserved_ip`](https://www.terraform.io/docs/providers/digitalocean/d/reserved_ip).
+
 # `dataDigitaloceanReservedIp` Submodule <a name="`dataDigitaloceanReservedIp` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanReservedIp"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

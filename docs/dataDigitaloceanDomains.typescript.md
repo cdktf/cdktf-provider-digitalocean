@@ -1,3 +1,7 @@
+# `data_digitalocean_domains`
+
+Refer to the Terraform Registory for docs: [`data_digitalocean_domains`](https://www.terraform.io/docs/providers/digitalocean/d/domains).
+
 # `dataDigitaloceanDomains` Submodule <a name="`dataDigitaloceanDomains` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanDomains"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `data_digitalocean_sizes`
+
+Refer to the Terraform Registory for docs: [`data_digitalocean_sizes`](https://www.terraform.io/docs/providers/digitalocean/d/sizes).
+
 # `dataDigitaloceanSizes` Submodule <a name="`dataDigitaloceanSizes` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanSizes"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

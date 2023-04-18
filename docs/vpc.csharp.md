@@ -1,3 +1,7 @@
+# `digitalocean_vpc`
+
+Refer to the Terraform Registory for docs: [`digitalocean_vpc`](https://www.terraform.io/docs/providers/digitalocean/r/vpc).
+
 # `vpc` Submodule <a name="`vpc` Submodule" id="@cdktf/provider-digitalocean.vpc"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

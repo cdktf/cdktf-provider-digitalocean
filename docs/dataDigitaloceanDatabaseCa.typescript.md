@@ -1,3 +1,7 @@
+# `data_digitalocean_database_ca`
+
+Refer to the Terraform Registory for docs: [`data_digitalocean_database_ca`](https://www.terraform.io/docs/providers/digitalocean/d/database_ca).
+
 # `dataDigitaloceanDatabaseCa` Submodule <a name="`dataDigitaloceanDatabaseCa` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseCa"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

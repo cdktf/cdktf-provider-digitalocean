@@ -1,3 +1,7 @@
+# `data_digitalocean_droplet_snapshot`
+
+Refer to the Terraform Registory for docs: [`data_digitalocean_droplet_snapshot`](https://www.terraform.io/docs/providers/digitalocean/d/droplet_snapshot).
+
 # `dataDigitaloceanDropletSnapshot` Submodule <a name="`dataDigitaloceanDropletSnapshot` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

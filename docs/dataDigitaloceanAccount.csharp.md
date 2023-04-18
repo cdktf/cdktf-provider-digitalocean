@@ -1,3 +1,7 @@
+# `data_digitalocean_account`
+
+Refer to the Terraform Registory for docs: [`data_digitalocean_account`](https://www.terraform.io/docs/providers/digitalocean/d/account).
+
 # `dataDigitaloceanAccount` Submodule <a name="`dataDigitaloceanAccount` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanAccount"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

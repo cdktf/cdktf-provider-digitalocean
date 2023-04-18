@@ -1,3 +1,7 @@
+# `digitalocean_certificate`
+
+Refer to the Terraform Registory for docs: [`digitalocean_certificate`](https://www.terraform.io/docs/providers/digitalocean/r/certificate).
+
 # `certificate` Submodule <a name="`certificate` Submodule" id="@cdktf/provider-digitalocean.certificate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `digitalocean_database_replica`
+
+Refer to the Terraform Registory for docs: [`digitalocean_database_replica`](https://www.terraform.io/docs/providers/digitalocean/r/database_replica).
+
 # `databaseReplica` Submodule <a name="`databaseReplica` Submodule" id="@cdktf/provider-digitalocean.databaseReplica"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

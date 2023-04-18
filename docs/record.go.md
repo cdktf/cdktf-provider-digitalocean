@@ -1,3 +1,7 @@
+# `digitalocean_record`
+
+Refer to the Terraform Registory for docs: [`digitalocean_record`](https://www.terraform.io/docs/providers/digitalocean/r/record).
+
 # `record` Submodule <a name="`record` Submodule" id="@cdktf/provider-digitalocean.record"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

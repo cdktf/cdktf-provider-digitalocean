@@ -1,3 +1,7 @@
+# `digitalocean_volume_attachment`
+
+Refer to the Terraform Registory for docs: [`digitalocean_volume_attachment`](https://www.terraform.io/docs/providers/digitalocean/r/volume_attachment).
+
 # `volumeAttachment` Submodule <a name="`volumeAttachment` Submodule" id="@cdktf/provider-digitalocean.volumeAttachment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

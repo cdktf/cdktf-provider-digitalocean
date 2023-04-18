@@ -1,3 +1,7 @@
+# `digitalocean_uptime_alert`
+
+Refer to the Terraform Registory for docs: [`digitalocean_uptime_alert`](https://www.terraform.io/docs/providers/digitalocean/r/uptime_alert).
+
 # `uptimeAlert` Submodule <a name="`uptimeAlert` Submodule" id="@cdktf/provider-digitalocean.uptimeAlert"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

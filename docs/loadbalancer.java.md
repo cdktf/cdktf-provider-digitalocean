@@ -1,3 +1,7 @@
+# `digitalocean_loadbalancer`
+
+Refer to the Terraform Registory for docs: [`digitalocean_loadbalancer`](https://www.terraform.io/docs/providers/digitalocean/r/loadbalancer).
+
 # `loadbalancer` Submodule <a name="`loadbalancer` Submodule" id="@cdktf/provider-digitalocean.loadbalancer"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

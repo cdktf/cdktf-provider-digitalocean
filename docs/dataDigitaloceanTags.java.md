@@ -1,3 +1,7 @@
+# `data_digitalocean_tags`
+
+Refer to the Terraform Registory for docs: [`data_digitalocean_tags`](https://www.terraform.io/docs/providers/digitalocean/d/tags).
+
 # `dataDigitaloceanTags` Submodule <a name="`dataDigitaloceanTags` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanTags"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
