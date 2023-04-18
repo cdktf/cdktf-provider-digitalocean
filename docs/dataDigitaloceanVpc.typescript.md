@@ -1,6 +1,6 @@
 # `data_digitalocean_vpc`
 
-Refer to the Terraform Registory for docs: [`data_digitalocean_vpc`](https://www.terraform.io/docs/providers/digitalocean/d/vpc).
+Refer to the Terraform Registory for docs: [`data_digitalocean_vpc`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/vpc).
 
 # `dataDigitaloceanVpc` Submodule <a name="`dataDigitaloceanVpc` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanVpc"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_digitalocean_vpc`](https://www
 
 ### DataDigitaloceanVpc <a name="DataDigitaloceanVpc" id="@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpc"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/digitalocean/d/vpc digitalocean_vpc}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/vpc digitalocean_vpc}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpc.Initializer"></a>
 
@@ -359,7 +359,7 @@ dataDigitaloceanVpc.DataDigitaloceanVpc.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpc.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpc.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpc.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpc.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpc.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpc.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpc.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpc.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -453,10 +453,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpc.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -645,15 +645,15 @@ const dataDigitaloceanVpcConfig: dataDigitaloceanVpc.DataDigitaloceanVpcConfig =
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpcConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpcConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpcConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpcConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpcConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpcConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpcConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpcConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpcConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/vpc#id DataDigitaloceanVpc#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpcConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/vpc#name DataDigitaloceanVpc#name}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpcConfig.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/vpc#region DataDigitaloceanVpc#region}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpcConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/vpc#id DataDigitaloceanVpc#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpcConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/vpc#name DataDigitaloceanVpc#name}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpcConfig.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/vpc#region DataDigitaloceanVpc#region}. |
 
 ---
 
@@ -670,10 +670,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpcConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -735,7 +735,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/vpc#id DataDigitaloceanVpc#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/vpc#id DataDigitaloceanVpc#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -750,7 +750,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/vpc#name DataDigitaloceanVpc#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/vpc#name DataDigitaloceanVpc#name}.
 
 ---
 
@@ -762,7 +762,7 @@ public readonly region: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/vpc#region DataDigitaloceanVpc#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/vpc#region DataDigitaloceanVpc#region}.
 
 ---
 

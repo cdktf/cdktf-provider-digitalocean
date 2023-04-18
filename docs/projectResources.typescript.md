@@ -1,6 +1,6 @@
 # `digitalocean_project_resources`
 
-Refer to the Terraform Registory for docs: [`digitalocean_project_resources`](https://www.terraform.io/docs/providers/digitalocean/r/project_resources).
+Refer to the Terraform Registory for docs: [`digitalocean_project_resources`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/project_resources).
 
 # `projectResources` Submodule <a name="`projectResources` Submodule" id="@cdktf/provider-digitalocean.projectResources"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`digitalocean_project_resources`](ht
 
 ### ProjectResources <a name="ProjectResources" id="@cdktf/provider-digitalocean.projectResources.ProjectResources"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/digitalocean/r/project_resources digitalocean_project_resources}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/project_resources digitalocean_project_resources}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.projectResources.ProjectResources.Initializer"></a>
 
@@ -346,7 +346,7 @@ projectResources.ProjectResources.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResources.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResources.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResources.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResources.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResources.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResources.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResources.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResources.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -446,10 +446,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.projectResources.ProjectResources.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -598,7 +598,7 @@ const projectResourcesConfig: projectResources.ProjectResourcesConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResourcesConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResourcesConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResourcesConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResourcesConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResourcesConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResourcesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -606,7 +606,7 @@ const projectResourcesConfig: projectResources.ProjectResourcesConfig = { ... }
 | <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResourcesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResourcesConfig.property.project">project</a></code> | <code>string</code> | project ID. |
 | <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResourcesConfig.property.resources">resources</a></code> | <code>string[]</code> | the resources associated with the project. |
-| <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResourcesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/project_resources#id ProjectResources#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResourcesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/project_resources#id ProjectResources#id}. |
 
 ---
 
@@ -623,10 +623,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.projectResources.ProjectResourcesConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -690,7 +690,7 @@ public readonly project: string;
 
 project ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/project_resources#project ProjectResources#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/project_resources#project ProjectResources#project}
 
 ---
 
@@ -704,7 +704,7 @@ public readonly resources: string[];
 
 the resources associated with the project.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/project_resources#resources ProjectResources#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/project_resources#resources ProjectResources#resources}
 
 ---
 
@@ -716,7 +716,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/project_resources#id ProjectResources#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/project_resources#id ProjectResources#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

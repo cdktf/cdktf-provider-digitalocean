@@ -1,6 +1,6 @@
 # `digitalocean_project_resources`
 
-Refer to the Terraform Registory for docs: [`digitalocean_project_resources`](https://www.terraform.io/docs/providers/digitalocean/r/project_resources).
+Refer to the Terraform Registory for docs: [`digitalocean_project_resources`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/project_resources).
 
 # `projectResources` Submodule <a name="`projectResources` Submodule" id="@cdktf/provider-digitalocean.projectResources"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`digitalocean_project_resources`](ht
 
 ### ProjectResources <a name="ProjectResources" id="@cdktf/provider-digitalocean.projectResources.ProjectResources"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/digitalocean/r/project_resources digitalocean_project_resources}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/project_resources digitalocean_project_resources}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.projectResources.ProjectResources.Initializer"></a>
 
@@ -346,7 +346,7 @@ ProjectResources.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResources.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResources.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResources.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResources.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResources.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResources.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResources.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResources.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -446,10 +446,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-digitalocean.projectResources.ProjectResources.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -592,7 +592,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new ProjectResourcesConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -609,7 +609,7 @@ new ProjectResourcesConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResourcesConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResourcesConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResourcesConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResourcesConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResourcesConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResourcesConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -617,7 +617,7 @@ new ProjectResourcesConfig {
 | <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResourcesConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResourcesConfig.property.project">Project</a></code> | <code>string</code> | project ID. |
 | <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResourcesConfig.property.resources">Resources</a></code> | <code>string[]</code> | the resources associated with the project. |
-| <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResourcesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/project_resources#id ProjectResources#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResourcesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/project_resources#id ProjectResources#id}. |
 
 ---
 
@@ -634,10 +634,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-digitalocean.projectResources.ProjectResourcesConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -701,7 +701,7 @@ public string Project { get; set; }
 
 project ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/project_resources#project ProjectResources#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/project_resources#project ProjectResources#project}
 
 ---
 
@@ -715,7 +715,7 @@ public string[] Resources { get; set; }
 
 the resources associated with the project.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/project_resources#resources ProjectResources#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/project_resources#resources ProjectResources#resources}
 
 ---
 
@@ -727,7 +727,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/project_resources#id ProjectResources#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/project_resources#id ProjectResources#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

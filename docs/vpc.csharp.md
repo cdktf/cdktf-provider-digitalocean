@@ -1,6 +1,6 @@
 # `digitalocean_vpc`
 
-Refer to the Terraform Registory for docs: [`digitalocean_vpc`](https://www.terraform.io/docs/providers/digitalocean/r/vpc).
+Refer to the Terraform Registory for docs: [`digitalocean_vpc`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/vpc).
 
 # `vpc` Submodule <a name="`vpc` Submodule" id="@cdktf/provider-digitalocean.vpc"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`digitalocean_vpc`](https://www.terr
 
 ### Vpc <a name="Vpc" id="@cdktf/provider-digitalocean.vpc.Vpc"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/digitalocean/r/vpc digitalocean_vpc}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/vpc digitalocean_vpc}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.vpc.Vpc.Initializer"></a>
 
@@ -380,7 +380,7 @@ Vpc.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-digitalocean.vpc.Vpc.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.vpc.Vpc.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.vpc.Vpc.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.vpc.Vpc.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.vpc.Vpc.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.vpc.Vpc.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.vpc.Vpc.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.vpc.Vpc.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -489,10 +489,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-digitalocean.vpc.Vpc.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -725,7 +725,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new VpcConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -745,7 +745,7 @@ new VpcConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.vpc.VpcConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.vpc.VpcConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.vpc.VpcConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.vpc.VpcConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.vpc.VpcConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.vpc.VpcConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -754,7 +754,7 @@ new VpcConfig {
 | <code><a href="#@cdktf/provider-digitalocean.vpc.VpcConfig.property.name">Name</a></code> | <code>string</code> | The name of the VPC. |
 | <code><a href="#@cdktf/provider-digitalocean.vpc.VpcConfig.property.region">Region</a></code> | <code>string</code> | DigitalOcean region slug for the VPC's location. |
 | <code><a href="#@cdktf/provider-digitalocean.vpc.VpcConfig.property.description">Description</a></code> | <code>string</code> | A free-form description for the VPC. |
-| <code><a href="#@cdktf/provider-digitalocean.vpc.VpcConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/vpc#id Vpc#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.vpc.VpcConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/vpc#id Vpc#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.vpc.VpcConfig.property.ipRange">IpRange</a></code> | <code>string</code> | The range of IP addresses for the VPC in CIDR notation. |
 | <code><a href="#@cdktf/provider-digitalocean.vpc.VpcConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-digitalocean.vpc.VpcTimeouts">VpcTimeouts</a></code> | timeouts block. |
 
@@ -773,10 +773,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-digitalocean.vpc.VpcConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -840,7 +840,7 @@ public string Name { get; set; }
 
 The name of the VPC.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/vpc#name Vpc#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/vpc#name Vpc#name}
 
 ---
 
@@ -854,7 +854,7 @@ public string Region { get; set; }
 
 DigitalOcean region slug for the VPC's location.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/vpc#region Vpc#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/vpc#region Vpc#region}
 
 ---
 
@@ -868,7 +868,7 @@ public string Description { get; set; }
 
 A free-form description for the VPC.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/vpc#description Vpc#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/vpc#description Vpc#description}
 
 ---
 
@@ -880,7 +880,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/vpc#id Vpc#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/vpc#id Vpc#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -897,7 +897,7 @@ public string IpRange { get; set; }
 
 The range of IP addresses for the VPC in CIDR notation.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/vpc#ip_range Vpc#ip_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/vpc#ip_range Vpc#ip_range}
 
 ---
 
@@ -911,7 +911,7 @@ public VpcTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/vpc#timeouts Vpc#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/vpc#timeouts Vpc#timeouts}
 
 ---
 
@@ -931,7 +931,7 @@ new VpcTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.vpc.VpcTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/vpc#delete Vpc#delete}. |
+| <code><a href="#@cdktf/provider-digitalocean.vpc.VpcTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/vpc#delete Vpc#delete}. |
 
 ---
 
@@ -943,7 +943,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/vpc#delete Vpc#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/vpc#delete Vpc#delete}.
 
 ---
 

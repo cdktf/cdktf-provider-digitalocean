@@ -1,6 +1,6 @@
 # `digitalocean_database_firewall`
 
-Refer to the Terraform Registory for docs: [`digitalocean_database_firewall`](https://www.terraform.io/docs/providers/digitalocean/r/database_firewall).
+Refer to the Terraform Registory for docs: [`digitalocean_database_firewall`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/database_firewall).
 
 # `databaseFirewall` Submodule <a name="`databaseFirewall` Submodule" id="@cdktf/provider-digitalocean.databaseFirewall"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`digitalocean_database_firewall`](ht
 
 ### DatabaseFirewall <a name="DatabaseFirewall" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/digitalocean/r/database_firewall digitalocean_database_firewall}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/database_firewall digitalocean_database_firewall}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.Initializer"></a>
 
@@ -359,7 +359,7 @@ databasefirewall.DatabaseFirewall_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -459,10 +459,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -605,7 +605,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/database
 
 &databasefirewall.DatabaseFirewallConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -622,15 +622,15 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/database
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.clusterId">ClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_firewall#cluster_id DatabaseFirewall#cluster_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.clusterId">ClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/database_firewall#cluster_id DatabaseFirewall#cluster_id}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.rule">Rule</a></code> | <code>interface{}</code> | rule block. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_firewall#id DatabaseFirewall#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/database_firewall#id DatabaseFirewall#id}. |
 
 ---
 
@@ -647,10 +647,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -712,7 +712,7 @@ ClusterId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_firewall#cluster_id DatabaseFirewall#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/database_firewall#cluster_id DatabaseFirewall#cluster_id}.
 
 ---
 
@@ -726,7 +726,7 @@ Rule interface{}
 
 rule block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_firewall#rule DatabaseFirewall#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/database_firewall#rule DatabaseFirewall#rule}
 
 ---
 
@@ -738,7 +738,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_firewall#id DatabaseFirewall#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/database_firewall#id DatabaseFirewall#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -762,8 +762,8 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/database
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRule.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_firewall#type DatabaseFirewall#type}. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRule.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_firewall#value DatabaseFirewall#value}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRule.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/database_firewall#type DatabaseFirewall#type}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRule.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/database_firewall#value DatabaseFirewall#value}. |
 
 ---
 
@@ -775,7 +775,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_firewall#type DatabaseFirewall#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/database_firewall#type DatabaseFirewall#type}.
 
 ---
 
@@ -787,7 +787,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_firewall#value DatabaseFirewall#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/database_firewall#value DatabaseFirewall#value}.
 
 ---
 

@@ -1,6 +1,6 @@
 # `data_digitalocean_ssh_key`
 
-Refer to the Terraform Registory for docs: [`data_digitalocean_ssh_key`](https://www.terraform.io/docs/providers/digitalocean/d/ssh_key).
+Refer to the Terraform Registory for docs: [`data_digitalocean_ssh_key`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/ssh_key).
 
 # `dataDigitaloceanSshKey` Submodule <a name="`dataDigitaloceanSshKey` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKey"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_digitalocean_ssh_key`](https:/
 
 ### DataDigitaloceanSshKey <a name="DataDigitaloceanSshKey" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKey.DataDigitaloceanSshKey"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/digitalocean/d/ssh_key digitalocean_ssh_key}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/ssh_key digitalocean_ssh_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKey.DataDigitaloceanSshKey.Initializer"></a>
 
@@ -338,7 +338,7 @@ datadigitaloceansshkey.DataDigitaloceanSshKey_IsTerraformDataSource(x interface{
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSshKey.DataDigitaloceanSshKey.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSshKey.DataDigitaloceanSshKey.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSshKey.DataDigitaloceanSshKey.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSshKey.DataDigitaloceanSshKey.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSshKey.DataDigitaloceanSshKey.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSshKey.DataDigitaloceanSshKey.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSshKey.DataDigitaloceanSshKey.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSshKey.DataDigitaloceanSshKey.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -426,10 +426,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKey.DataDigitaloceanSshKey.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -552,7 +552,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigi
 
 &datadigitaloceansshkey.DataDigitaloceanSshKeyConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -567,7 +567,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigi
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSshKey.DataDigitaloceanSshKeyConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSshKey.DataDigitaloceanSshKeyConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSshKey.DataDigitaloceanSshKeyConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSshKey.DataDigitaloceanSshKeyConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSshKey.DataDigitaloceanSshKeyConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSshKey.DataDigitaloceanSshKeyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -590,10 +590,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKey.DataDigitaloceanSshKeyConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -657,7 +657,7 @@ Name *string
 
 name of the ssh key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/ssh_key#name DataDigitaloceanSshKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/ssh_key#name DataDigitaloceanSshKey#name}
 
 ---
 

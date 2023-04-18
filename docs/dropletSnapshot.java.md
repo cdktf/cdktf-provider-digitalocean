@@ -1,6 +1,6 @@
 # `digitalocean_droplet_snapshot`
 
-Refer to the Terraform Registory for docs: [`digitalocean_droplet_snapshot`](https://www.terraform.io/docs/providers/digitalocean/r/droplet_snapshot).
+Refer to the Terraform Registory for docs: [`digitalocean_droplet_snapshot`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/droplet_snapshot).
 
 # `dropletSnapshot` Submodule <a name="`dropletSnapshot` Submodule" id="@cdktf/provider-digitalocean.dropletSnapshot"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`digitalocean_droplet_snapshot`](htt
 
 ### DropletSnapshot <a name="DropletSnapshot" id="@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/digitalocean/r/droplet_snapshot digitalocean_droplet_snapshot}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/droplet_snapshot digitalocean_droplet_snapshot}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.Initializer"></a>
 
@@ -19,6 +19,7 @@ DropletSnapshot.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -37,15 +38,15 @@ DropletSnapshot.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.Initializer.parameter.dropletId">dropletId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/droplet_snapshot#droplet_id DropletSnapshot#droplet_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/droplet_snapshot#name DropletSnapshot#name}. |
-| <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/droplet_snapshot#id DropletSnapshot#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.Initializer.parameter.dropletId">dropletId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/droplet_snapshot#droplet_id DropletSnapshot#droplet_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/droplet_snapshot#name DropletSnapshot#name}. |
+| <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/droplet_snapshot#id DropletSnapshot#id}. |
 
 ---
 
@@ -75,7 +76,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -113,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/droplet_snapshot#droplet_id DropletSnapshot#droplet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/droplet_snapshot#droplet_id DropletSnapshot#droplet_id}.
 
 ---
 
@@ -121,7 +122,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digit
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/droplet_snapshot#name DropletSnapshot#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/droplet_snapshot#name DropletSnapshot#name}.
 
 ---
 
@@ -129,7 +130,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digit
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/droplet_snapshot#id DropletSnapshot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/droplet_snapshot#id DropletSnapshot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -432,7 +433,7 @@ DropletSnapshot.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -536,10 +537,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -724,6 +725,7 @@ DropletSnapshotConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -742,15 +744,15 @@ DropletSnapshotConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshotConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshotConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshotConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshotConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshotConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshotConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshotConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshotConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshotConfig.property.dropletId">dropletId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/droplet_snapshot#droplet_id DropletSnapshot#droplet_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshotConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/droplet_snapshot#name DropletSnapshot#name}. |
-| <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshotConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/droplet_snapshot#id DropletSnapshot#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshotConfig.property.dropletId">dropletId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/droplet_snapshot#droplet_id DropletSnapshot#droplet_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshotConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/droplet_snapshot#name DropletSnapshot#name}. |
+| <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshotConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/droplet_snapshot#id DropletSnapshot#id}. |
 
 ---
 
@@ -767,10 +769,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshotConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -832,7 +834,7 @@ public java.lang.String getDropletId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/droplet_snapshot#droplet_id DropletSnapshot#droplet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/droplet_snapshot#droplet_id DropletSnapshot#droplet_id}.
 
 ---
 
@@ -844,7 +846,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/droplet_snapshot#name DropletSnapshot#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/droplet_snapshot#name DropletSnapshot#name}.
 
 ---
 
@@ -856,7 +858,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/droplet_snapshot#id DropletSnapshot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/droplet_snapshot#id DropletSnapshot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

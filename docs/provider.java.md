@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`digitalocean`](https://www.terraform.io/docs/providers/digitalocean).
+Refer to the Terraform Registory for docs: [`digitalocean`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-digitalocean.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`digitalocean`](https://www.terrafor
 
 ### DigitaloceanProvider <a name="DigitaloceanProvider" id="@cdktf/provider-digitalocean.provider.DigitaloceanProvider"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/digitalocean digitalocean}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs digitalocean}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.provider.DigitaloceanProvider.Initializer"></a>
 
@@ -62,7 +62,7 @@ Must be unique amongst siblings in the same scope
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean#alias DigitaloceanProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs#alias DigitaloceanProvider#alias}
 
 ---
 
@@ -72,7 +72,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digit
 
 The URL to use for the DigitalOcean API.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean#api_endpoint DigitaloceanProvider#api_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs#api_endpoint DigitaloceanProvider#api_endpoint}
 
 ---
 
@@ -82,7 +82,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digit
 
 The access key ID for Spaces API operations.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean#spaces_access_id DigitaloceanProvider#spaces_access_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs#spaces_access_id DigitaloceanProvider#spaces_access_id}
 
 ---
 
@@ -92,7 +92,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digit
 
 The URL to use for the DigitalOcean Spaces API.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean#spaces_endpoint DigitaloceanProvider#spaces_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs#spaces_endpoint DigitaloceanProvider#spaces_endpoint}
 
 ---
 
@@ -102,7 +102,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digit
 
 The secret access key for Spaces API operations.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean#spaces_secret_key DigitaloceanProvider#spaces_secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs#spaces_secret_key DigitaloceanProvider#spaces_secret_key}
 
 ---
 
@@ -112,7 +112,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digit
 
 The token key for API operations.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean#token DigitaloceanProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs#token DigitaloceanProvider#token}
 
 ---
 
@@ -594,7 +594,7 @@ public java.lang.String getAlias();
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean#alias DigitaloceanProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs#alias DigitaloceanProvider#alias}
 
 ---
 
@@ -608,7 +608,7 @@ public java.lang.String getApiEndpoint();
 
 The URL to use for the DigitalOcean API.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean#api_endpoint DigitaloceanProvider#api_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs#api_endpoint DigitaloceanProvider#api_endpoint}
 
 ---
 
@@ -622,7 +622,7 @@ public java.lang.String getSpacesAccessId();
 
 The access key ID for Spaces API operations.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean#spaces_access_id DigitaloceanProvider#spaces_access_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs#spaces_access_id DigitaloceanProvider#spaces_access_id}
 
 ---
 
@@ -636,7 +636,7 @@ public java.lang.String getSpacesEndpoint();
 
 The URL to use for the DigitalOcean Spaces API.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean#spaces_endpoint DigitaloceanProvider#spaces_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs#spaces_endpoint DigitaloceanProvider#spaces_endpoint}
 
 ---
 
@@ -650,7 +650,7 @@ public java.lang.String getSpacesSecretKey();
 
 The secret access key for Spaces API operations.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean#spaces_secret_key DigitaloceanProvider#spaces_secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs#spaces_secret_key DigitaloceanProvider#spaces_secret_key}
 
 ---
 
@@ -664,7 +664,7 @@ public java.lang.String getToken();
 
 The token key for API operations.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean#token DigitaloceanProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs#token DigitaloceanProvider#token}
 
 ---
 

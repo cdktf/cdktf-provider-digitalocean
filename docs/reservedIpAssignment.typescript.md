@@ -1,6 +1,6 @@
 # `digitalocean_reserved_ip_assignment`
 
-Refer to the Terraform Registory for docs: [`digitalocean_reserved_ip_assignment`](https://www.terraform.io/docs/providers/digitalocean/r/reserved_ip_assignment).
+Refer to the Terraform Registory for docs: [`digitalocean_reserved_ip_assignment`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/reserved_ip_assignment).
 
 # `reservedIpAssignment` Submodule <a name="`reservedIpAssignment` Submodule" id="@cdktf/provider-digitalocean.reservedIpAssignment"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`digitalocean_reserved_ip_assignment
 
 ### ReservedIpAssignment <a name="ReservedIpAssignment" id="@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignment"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/digitalocean/r/reserved_ip_assignment digitalocean_reserved_ip_assignment}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/reserved_ip_assignment digitalocean_reserved_ip_assignment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignment.Initializer"></a>
 
@@ -346,7 +346,7 @@ reservedIpAssignment.ReservedIpAssignment.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignment.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignment.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignment.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignment.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignment.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignment.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignment.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignment.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -446,10 +446,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignment.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -598,15 +598,15 @@ const reservedIpAssignmentConfig: reservedIpAssignment.ReservedIpAssignmentConfi
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignmentConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignmentConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignmentConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignmentConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignmentConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignmentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignmentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignmentConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignmentConfig.property.dropletId">dropletId</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/reserved_ip_assignment#droplet_id ReservedIpAssignment#droplet_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignmentConfig.property.ipAddress">ipAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/reserved_ip_assignment#ip_address ReservedIpAssignment#ip_address}. |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignmentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/reserved_ip_assignment#id ReservedIpAssignment#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignmentConfig.property.dropletId">dropletId</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/reserved_ip_assignment#droplet_id ReservedIpAssignment#droplet_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignmentConfig.property.ipAddress">ipAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/reserved_ip_assignment#ip_address ReservedIpAssignment#ip_address}. |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignmentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/reserved_ip_assignment#id ReservedIpAssignment#id}. |
 
 ---
 
@@ -623,10 +623,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignmentConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -688,7 +688,7 @@ public readonly dropletId: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/reserved_ip_assignment#droplet_id ReservedIpAssignment#droplet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/reserved_ip_assignment#droplet_id ReservedIpAssignment#droplet_id}.
 
 ---
 
@@ -700,7 +700,7 @@ public readonly ipAddress: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/reserved_ip_assignment#ip_address ReservedIpAssignment#ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/reserved_ip_assignment#ip_address ReservedIpAssignment#ip_address}.
 
 ---
 
@@ -712,7 +712,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/reserved_ip_assignment#id ReservedIpAssignment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/reserved_ip_assignment#id ReservedIpAssignment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

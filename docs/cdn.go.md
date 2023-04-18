@@ -1,6 +1,6 @@
 # `digitalocean_cdn`
 
-Refer to the Terraform Registory for docs: [`digitalocean_cdn`](https://www.terraform.io/docs/providers/digitalocean/r/cdn).
+Refer to the Terraform Registory for docs: [`digitalocean_cdn`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/cdn).
 
 # `cdn` Submodule <a name="`cdn` Submodule" id="@cdktf/provider-digitalocean.cdn"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`digitalocean_cdn`](https://www.terr
 
 ### Cdn <a name="Cdn" id="@cdktf/provider-digitalocean.cdn.Cdn"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/digitalocean/r/cdn digitalocean_cdn}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/cdn digitalocean_cdn}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.cdn.Cdn.Initializer"></a>
 
@@ -374,7 +374,7 @@ cdn.Cdn_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-digitalocean.cdn.Cdn.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.cdn.Cdn.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.cdn.Cdn.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.cdn.Cdn.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.cdn.Cdn.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.cdn.Cdn.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.cdn.Cdn.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.cdn.Cdn.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -482,10 +482,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-digitalocean.cdn.Cdn.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -708,7 +708,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/cdn"
 
 &cdn.CdnConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -728,7 +728,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/cdn"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.cdn.CdnConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.cdn.CdnConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.cdn.CdnConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.cdn.CdnConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.cdn.CdnConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.cdn.CdnConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -736,9 +736,9 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/cdn"
 | <code><a href="#@cdktf/provider-digitalocean.cdn.CdnConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.cdn.CdnConfig.property.origin">Origin</a></code> | <code>*string</code> | fully qualified domain name (FQDN) for the origin server. |
 | <code><a href="#@cdktf/provider-digitalocean.cdn.CdnConfig.property.certificateId">CertificateId</a></code> | <code>*string</code> | ID of a DigitalOcean managed TLS certificate for use with custom domains. |
-| <code><a href="#@cdktf/provider-digitalocean.cdn.CdnConfig.property.certificateName">CertificateName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/cdn#certificate_name Cdn#certificate_name}. |
+| <code><a href="#@cdktf/provider-digitalocean.cdn.CdnConfig.property.certificateName">CertificateName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/cdn#certificate_name Cdn#certificate_name}. |
 | <code><a href="#@cdktf/provider-digitalocean.cdn.CdnConfig.property.customDomain">CustomDomain</a></code> | <code>*string</code> | fully qualified domain name (FQDN) for custom subdomain, (requires certificate_id). |
-| <code><a href="#@cdktf/provider-digitalocean.cdn.CdnConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/cdn#id Cdn#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.cdn.CdnConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/cdn#id Cdn#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.cdn.CdnConfig.property.ttl">Ttl</a></code> | <code>*f64</code> | The amount of time the content is cached in the CDN. |
 
 ---
@@ -756,10 +756,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-digitalocean.cdn.CdnConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -823,7 +823,7 @@ Origin *string
 
 fully qualified domain name (FQDN) for the origin server.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/cdn#origin Cdn#origin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/cdn#origin Cdn#origin}
 
 ---
 
@@ -837,7 +837,7 @@ CertificateId *string
 
 ID of a DigitalOcean managed TLS certificate for use with custom domains.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/cdn#certificate_id Cdn#certificate_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/cdn#certificate_id Cdn#certificate_id}
 
 ---
 
@@ -849,7 +849,7 @@ CertificateName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/cdn#certificate_name Cdn#certificate_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/cdn#certificate_name Cdn#certificate_name}.
 
 ---
 
@@ -863,7 +863,7 @@ CustomDomain *string
 
 fully qualified domain name (FQDN) for custom subdomain, (requires certificate_id).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/cdn#custom_domain Cdn#custom_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/cdn#custom_domain Cdn#custom_domain}
 
 ---
 
@@ -875,7 +875,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/cdn#id Cdn#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/cdn#id Cdn#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -892,7 +892,7 @@ Ttl *f64
 
 The amount of time the content is cached in the CDN.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/cdn#ttl Cdn#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/cdn#ttl Cdn#ttl}
 
 ---
 

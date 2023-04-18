@@ -1,6 +1,6 @@
 # `digitalocean_uptime_check`
 
-Refer to the Terraform Registory for docs: [`digitalocean_uptime_check`](https://www.terraform.io/docs/providers/digitalocean/r/uptime_check).
+Refer to the Terraform Registory for docs: [`digitalocean_uptime_check`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_check).
 
 # `uptimeCheck` Submodule <a name="`uptimeCheck` Submodule" id="@cdktf/provider-digitalocean.uptimeCheck"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`digitalocean_uptime_check`](https:/
 
 ### UptimeCheck <a name="UptimeCheck" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_check digitalocean_uptime_check}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_check digitalocean_uptime_check}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.Initializer"></a>
 
@@ -19,6 +19,7 @@ UptimeCheck.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -40,7 +41,7 @@ UptimeCheck.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -80,7 +81,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -120,7 +121,7 @@ Must be unique amongst siblings in the same scope
 
 A human-friendly display name for the check.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_check#name UptimeCheck#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_check#name UptimeCheck#name}
 
 ---
 
@@ -130,7 +131,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digit
 
 The endpoint to perform healthchecks on.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_check#target UptimeCheck#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_check#target UptimeCheck#target}
 
 ---
 
@@ -140,7 +141,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digit
 
 A boolean value indicating whether the check is enabled/disabled.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_check#enabled UptimeCheck#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_check#enabled UptimeCheck#enabled}
 
 ---
 
@@ -150,7 +151,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digit
 
 An array containing the selected regions to perform healthchecks from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_check#regions UptimeCheck#regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_check#regions UptimeCheck#regions}
 
 ---
 
@@ -160,7 +161,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digit
 
 The type of health check to perform. Enum: 'ping' 'http' 'https'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_check#type UptimeCheck#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_check#type UptimeCheck#type}
 
 ---
 
@@ -474,7 +475,7 @@ UptimeCheck.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -579,10 +580,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -777,6 +778,7 @@ UptimeCheckConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -798,7 +800,7 @@ UptimeCheckConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -825,10 +827,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -892,7 +894,7 @@ public java.lang.String getName();
 
 A human-friendly display name for the check.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_check#name UptimeCheck#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_check#name UptimeCheck#name}
 
 ---
 
@@ -906,7 +908,7 @@ public java.lang.String getTarget();
 
 The endpoint to perform healthchecks on.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_check#target UptimeCheck#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_check#target UptimeCheck#target}
 
 ---
 
@@ -920,7 +922,7 @@ public java.lang.Object getEnabled();
 
 A boolean value indicating whether the check is enabled/disabled.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_check#enabled UptimeCheck#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_check#enabled UptimeCheck#enabled}
 
 ---
 
@@ -934,7 +936,7 @@ public java.util.List<java.lang.String> getRegions();
 
 An array containing the selected regions to perform healthchecks from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_check#regions UptimeCheck#regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_check#regions UptimeCheck#regions}
 
 ---
 
@@ -948,7 +950,7 @@ public java.lang.String getType();
 
 The type of health check to perform. Enum: 'ping' 'http' 'https'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_check#type UptimeCheck#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_check#type UptimeCheck#type}
 
 ---
 

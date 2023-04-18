@@ -1,6 +1,6 @@
 # `digitalocean_uptime_alert`
 
-Refer to the Terraform Registory for docs: [`digitalocean_uptime_alert`](https://www.terraform.io/docs/providers/digitalocean/r/uptime_alert).
+Refer to the Terraform Registory for docs: [`digitalocean_uptime_alert`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_alert).
 
 # `uptimeAlert` Submodule <a name="`uptimeAlert` Submodule" id="@cdktf/provider-digitalocean.uptimeAlert"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`digitalocean_uptime_alert`](https:/
 
 ### UptimeAlert <a name="UptimeAlert" id="@cdktf/provider-digitalocean.uptimeAlert.UptimeAlert"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_alert digitalocean_uptime_alert}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_alert digitalocean_uptime_alert}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.uptimeAlert.UptimeAlert.Initializer"></a>
 
@@ -373,7 +373,7 @@ uptimeAlert.UptimeAlert.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-digitalocean.uptimeAlert.UptimeAlert.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeAlert.UptimeAlert.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeAlert.UptimeAlert.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.uptimeAlert.UptimeAlert.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.uptimeAlert.UptimeAlert.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeAlert.UptimeAlert.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeAlert.UptimeAlert.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeAlert.UptimeAlert.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -482,10 +482,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.uptimeAlert.UptimeAlert.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -724,7 +724,7 @@ const uptimeAlertConfig: uptimeAlert.UptimeAlertConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeAlert.UptimeAlertConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.uptimeAlert.UptimeAlertConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.uptimeAlert.UptimeAlertConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeAlert.UptimeAlertConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeAlert.UptimeAlertConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeAlert.UptimeAlertConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -753,10 +753,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.uptimeAlert.UptimeAlertConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -820,7 +820,7 @@ public readonly checkId: string;
 
 A unique identifier for a check.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_alert#check_id UptimeAlert#check_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_alert#check_id UptimeAlert#check_id}
 
 ---
 
@@ -834,7 +834,7 @@ public readonly name: string;
 
 A human-friendly display name for the alert.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_alert#name UptimeAlert#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_alert#name UptimeAlert#name}
 
 ---
 
@@ -848,7 +848,7 @@ public readonly notifications: IResolvable | UptimeAlertNotifications[];
 
 notifications block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_alert#notifications UptimeAlert#notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_alert#notifications UptimeAlert#notifications}
 
 ---
 
@@ -862,7 +862,7 @@ public readonly type: string;
 
 The type of health check to perform. Enum: 'latency' 'down' 'down_global' 'ssl_expiry'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_alert#type UptimeAlert#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_alert#type UptimeAlert#type}
 
 ---
 
@@ -876,7 +876,7 @@ public readonly comparison: string;
 
 The comparison operator used against the alert's threshold. Enum: 'greater_than' 'less_than.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_alert#comparison UptimeAlert#comparison}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_alert#comparison UptimeAlert#comparison}
 
 ---
 
@@ -892,7 +892,7 @@ Period of time the threshold must be exceeded to trigger the alert.
 
 Enum '2m' '3m' '5m' '10m' '15m' '30m' '1h'
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_alert#period UptimeAlert#period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_alert#period UptimeAlert#period}
 
 ---
 
@@ -908,7 +908,7 @@ The threshold at which the alert will enter a trigger state.
 
 The specific threshold is dependent on the alert type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_alert#threshold UptimeAlert#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_alert#threshold UptimeAlert#threshold}
 
 ---
 
@@ -941,7 +941,7 @@ public readonly email: string[];
 
 List of email addresses to sent notifications to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_alert#email UptimeAlert#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_alert#email UptimeAlert#email}
 
 ---
 
@@ -955,7 +955,7 @@ public readonly slack: IResolvable | UptimeAlertNotificationsSlack[];
 
 slack block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_alert#slack UptimeAlert#slack}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_alert#slack UptimeAlert#slack}
 
 ---
 
@@ -988,7 +988,7 @@ public readonly channel: string;
 
 The Slack channel to send alerts to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_alert#channel UptimeAlert#channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_alert#channel UptimeAlert#channel}
 
 ---
 
@@ -1002,7 +1002,7 @@ public readonly url: string;
 
 The webhook URL for Slack.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_alert#url UptimeAlert#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_alert#url UptimeAlert#url}
 
 ---
 

@@ -1,6 +1,6 @@
 # `data_digitalocean_domains`
 
-Refer to the Terraform Registory for docs: [`data_digitalocean_domains`](https://www.terraform.io/docs/providers/digitalocean/d/domains).
+Refer to the Terraform Registory for docs: [`data_digitalocean_domains`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains).
 
 # `dataDigitaloceanDomains` Submodule <a name="`dataDigitaloceanDomains` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanDomains"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_digitalocean_domains`](https:/
 
 ### DataDigitaloceanDomains <a name="DataDigitaloceanDomains" id="@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/digitalocean/d/domains digitalocean_domains}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains digitalocean_domains}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.Initializer"></a>
 
@@ -19,6 +19,7 @@ DataDigitaloceanDomains.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -39,14 +40,14 @@ DataDigitaloceanDomains.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.Initializer.parameter.filter">filter</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsFilter">DataDigitaloceanDomainsFilter</a>></code> | filter block. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#id DataDigitaloceanDomains#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#id DataDigitaloceanDomains#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.Initializer.parameter.sort">sort</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsSort">DataDigitaloceanDomainsSort</a>></code> | sort block. |
 
 ---
@@ -77,7 +78,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -117,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 filter block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#filter DataDigitaloceanDomains#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#filter DataDigitaloceanDomains#filter}
 
 ---
 
@@ -125,7 +126,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digit
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#id DataDigitaloceanDomains#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#id DataDigitaloceanDomains#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -138,7 +139,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 sort block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#sort DataDigitaloceanDomains#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#sort DataDigitaloceanDomains#sort}
 
 ---
 
@@ -477,7 +478,7 @@ DataDigitaloceanDomains.isTerraformDataSource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -567,10 +568,10 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -715,6 +716,7 @@ DataDigitaloceanDomainsConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -735,14 +737,14 @@ DataDigitaloceanDomainsConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsConfig.property.filter">filter</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsFilter">DataDigitaloceanDomainsFilter</a>></code> | filter block. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#id DataDigitaloceanDomains#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#id DataDigitaloceanDomains#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsConfig.property.sort">sort</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsSort">DataDigitaloceanDomainsSort</a>></code> | sort block. |
 
 ---
@@ -760,10 +762,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -827,7 +829,7 @@ public java.lang.Object getFilter();
 
 filter block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#filter DataDigitaloceanDomains#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#filter DataDigitaloceanDomains#filter}
 
 ---
 
@@ -839,7 +841,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#id DataDigitaloceanDomains#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#id DataDigitaloceanDomains#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -856,7 +858,7 @@ public java.lang.Object getSort();
 
 sort block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#sort DataDigitaloceanDomains#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#sort DataDigitaloceanDomains#sort}
 
 ---
 
@@ -892,10 +894,10 @@ DataDigitaloceanDomainsFilter.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsFilter.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#key DataDigitaloceanDomains#key}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsFilter.property.values">values</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#values DataDigitaloceanDomains#values}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsFilter.property.all">all</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#all DataDigitaloceanDomains#all}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsFilter.property.matchBy">matchBy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#match_by DataDigitaloceanDomains#match_by}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsFilter.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#key DataDigitaloceanDomains#key}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsFilter.property.values">values</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#values DataDigitaloceanDomains#values}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsFilter.property.all">all</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#all DataDigitaloceanDomains#all}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsFilter.property.matchBy">matchBy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#match_by DataDigitaloceanDomains#match_by}. |
 
 ---
 
@@ -907,7 +909,7 @@ public java.lang.String getKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#key DataDigitaloceanDomains#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#key DataDigitaloceanDomains#key}.
 
 ---
 
@@ -919,7 +921,7 @@ public java.util.List<java.lang.String> getValues();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#values DataDigitaloceanDomains#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#values DataDigitaloceanDomains#values}.
 
 ---
 
@@ -931,7 +933,7 @@ public java.lang.Object getAll();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#all DataDigitaloceanDomains#all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#all DataDigitaloceanDomains#all}.
 
 ---
 
@@ -943,7 +945,7 @@ public java.lang.String getMatchBy();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#match_by DataDigitaloceanDomains#match_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#match_by DataDigitaloceanDomains#match_by}.
 
 ---
 
@@ -964,8 +966,8 @@ DataDigitaloceanDomainsSort.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsSort.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#key DataDigitaloceanDomains#key}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsSort.property.direction">direction</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#direction DataDigitaloceanDomains#direction}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsSort.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#key DataDigitaloceanDomains#key}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsSort.property.direction">direction</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#direction DataDigitaloceanDomains#direction}. |
 
 ---
 
@@ -977,7 +979,7 @@ public java.lang.String getKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#key DataDigitaloceanDomains#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#key DataDigitaloceanDomains#key}.
 
 ---
 
@@ -989,7 +991,7 @@ public java.lang.String getDirection();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#direction DataDigitaloceanDomains#direction}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#direction DataDigitaloceanDomains#direction}.
 
 ---
 

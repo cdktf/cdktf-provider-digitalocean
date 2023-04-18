@@ -1,6 +1,6 @@
 # `data_digitalocean_certificate`
 
-Refer to the Terraform Registory for docs: [`data_digitalocean_certificate`](https://www.terraform.io/docs/providers/digitalocean/d/certificate).
+Refer to the Terraform Registory for docs: [`data_digitalocean_certificate`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/certificate).
 
 # `dataDigitaloceanCertificate` Submodule <a name="`dataDigitaloceanCertificate` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanCertificate"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_digitalocean_certificate`](htt
 
 ### DataDigitaloceanCertificate <a name="DataDigitaloceanCertificate" id="@cdktf/provider-digitalocean.dataDigitaloceanCertificate.DataDigitaloceanCertificate"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/digitalocean/d/certificate digitalocean_certificate}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/certificate digitalocean_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanCertificate.DataDigitaloceanCertificate.Initializer"></a>
 
@@ -345,7 +345,7 @@ dataDigitaloceanCertificate.DataDigitaloceanCertificate.isTerraformDataSource(x:
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanCertificate.DataDigitaloceanCertificate.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanCertificate.DataDigitaloceanCertificate.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanCertificate.DataDigitaloceanCertificate.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanCertificate.DataDigitaloceanCertificate.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanCertificate.DataDigitaloceanCertificate.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanCertificate.DataDigitaloceanCertificate.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanCertificate.DataDigitaloceanCertificate.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanCertificate.DataDigitaloceanCertificate.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -438,10 +438,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dataDigitaloceanCertificate.DataDigitaloceanCertificate.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -620,14 +620,14 @@ const dataDigitaloceanCertificateConfig: dataDigitaloceanCertificate.DataDigital
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanCertificate.DataDigitaloceanCertificateConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanCertificate.DataDigitaloceanCertificateConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanCertificate.DataDigitaloceanCertificateConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanCertificate.DataDigitaloceanCertificateConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanCertificate.DataDigitaloceanCertificateConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanCertificate.DataDigitaloceanCertificateConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanCertificate.DataDigitaloceanCertificateConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanCertificate.DataDigitaloceanCertificateConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanCertificate.DataDigitaloceanCertificateConfig.property.name">name</a></code> | <code>string</code> | name of the certificate. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanCertificate.DataDigitaloceanCertificateConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/certificate#id DataDigitaloceanCertificate#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanCertificate.DataDigitaloceanCertificateConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/certificate#id DataDigitaloceanCertificate#id}. |
 
 ---
 
@@ -644,10 +644,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dataDigitaloceanCertificate.DataDigitaloceanCertificateConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -711,7 +711,7 @@ public readonly name: string;
 
 name of the certificate.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/certificate#name DataDigitaloceanCertificate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/certificate#name DataDigitaloceanCertificate#name}
 
 ---
 
@@ -723,7 +723,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/certificate#id DataDigitaloceanCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/certificate#id DataDigitaloceanCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

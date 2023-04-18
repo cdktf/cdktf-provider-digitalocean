@@ -1,6 +1,6 @@
 # `digitalocean_reserved_ip`
 
-Refer to the Terraform Registory for docs: [`digitalocean_reserved_ip`](https://www.terraform.io/docs/providers/digitalocean/r/reserved_ip).
+Refer to the Terraform Registory for docs: [`digitalocean_reserved_ip`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/reserved_ip).
 
 # `reservedIp` Submodule <a name="`reservedIp` Submodule" id="@cdktf/provider-digitalocean.reservedIp"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`digitalocean_reserved_ip`](https://
 
 ### ReservedIp <a name="ReservedIp" id="@cdktf/provider-digitalocean.reservedIp.ReservedIp"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/digitalocean/r/reserved_ip digitalocean_reserved_ip}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/reserved_ip digitalocean_reserved_ip}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.reservedIp.ReservedIp.Initializer"></a>
 
@@ -19,7 +19,7 @@ reservedIp.ReservedIp(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -37,16 +37,16 @@ reservedIp.ReservedIp(
 | <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIp.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIp.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIp.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIp.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIp.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIp.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIp.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIp.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIp.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIp.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIp.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/reserved_ip#region ReservedIp#region}. |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIp.Initializer.parameter.dropletId">droplet_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/reserved_ip#droplet_id ReservedIp#droplet_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIp.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/reserved_ip#id ReservedIp#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIp.Initializer.parameter.ipAddress">ip_address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/reserved_ip#ip_address ReservedIp#ip_address}. |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIp.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/reserved_ip#region ReservedIp#region}. |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIp.Initializer.parameter.dropletId">droplet_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/reserved_ip#droplet_id ReservedIp#droplet_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIp.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/reserved_ip#id ReservedIp#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIp.Initializer.parameter.ipAddress">ip_address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/reserved_ip#ip_address ReservedIp#ip_address}. |
 
 ---
 
@@ -76,7 +76,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.reservedIp.ReservedIp.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/reserved_ip#region ReservedIp#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/reserved_ip#region ReservedIp#region}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digit
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/reserved_ip#droplet_id ReservedIp#droplet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/reserved_ip#droplet_id ReservedIp#droplet_id}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digit
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/reserved_ip#id ReservedIp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/reserved_ip#id ReservedIp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -141,7 +141,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/reserved_ip#ip_address ReservedIp#ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/reserved_ip#ip_address ReservedIp#ip_address}.
 
 ---
 
@@ -486,7 +486,7 @@ reservedIp.ReservedIp.is_terraform_resource(
 | <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIp.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIp.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIp.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIp.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIp.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIp.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIp.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIp.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -589,10 +589,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.reservedIp.ReservedIp.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -765,7 +765,7 @@ from cdktf_cdktf_provider_digitalocean import reserved_ip
 
 reservedIp.ReservedIpConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -783,16 +783,16 @@ reservedIp.ReservedIpConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIpConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIpConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIpConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIpConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIpConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIpConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIpConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIpConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIpConfig.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/reserved_ip#region ReservedIp#region}. |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIpConfig.property.dropletId">droplet_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/reserved_ip#droplet_id ReservedIp#droplet_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIpConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/reserved_ip#id ReservedIp#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIpConfig.property.ipAddress">ip_address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/reserved_ip#ip_address ReservedIp#ip_address}. |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIpConfig.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/reserved_ip#region ReservedIp#region}. |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIpConfig.property.dropletId">droplet_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/reserved_ip#droplet_id ReservedIp#droplet_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIpConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/reserved_ip#id ReservedIp#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIp.ReservedIpConfig.property.ipAddress">ip_address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/reserved_ip#ip_address ReservedIp#ip_address}. |
 
 ---
 
@@ -809,10 +809,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.reservedIp.ReservedIpConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -874,7 +874,7 @@ region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/reserved_ip#region ReservedIp#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/reserved_ip#region ReservedIp#region}.
 
 ---
 
@@ -886,7 +886,7 @@ droplet_id: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/reserved_ip#droplet_id ReservedIp#droplet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/reserved_ip#droplet_id ReservedIp#droplet_id}.
 
 ---
 
@@ -898,7 +898,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/reserved_ip#id ReservedIp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/reserved_ip#id ReservedIp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -913,7 +913,7 @@ ip_address: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/reserved_ip#ip_address ReservedIp#ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/reserved_ip#ip_address ReservedIp#ip_address}.
 
 ---
 

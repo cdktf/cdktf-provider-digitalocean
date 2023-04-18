@@ -1,6 +1,6 @@
 # `data_digitalocean_domains`
 
-Refer to the Terraform Registory for docs: [`data_digitalocean_domains`](https://www.terraform.io/docs/providers/digitalocean/d/domains).
+Refer to the Terraform Registory for docs: [`data_digitalocean_domains`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains).
 
 # `dataDigitaloceanDomains` Submodule <a name="`dataDigitaloceanDomains` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanDomains"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_digitalocean_domains`](https:/
 
 ### DataDigitaloceanDomains <a name="DataDigitaloceanDomains" id="@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/digitalocean/d/domains digitalocean_domains}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains digitalocean_domains}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.Initializer"></a>
 
@@ -19,7 +19,7 @@ dataDigitaloceanDomains.DataDigitaloceanDomains(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -36,14 +36,14 @@ dataDigitaloceanDomains.DataDigitaloceanDomains(
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.Initializer.parameter.filter">filter</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsFilter">DataDigitaloceanDomainsFilter</a>]]</code> | filter block. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#id DataDigitaloceanDomains#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#id DataDigitaloceanDomains#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.Initializer.parameter.sort">sort</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsSort">DataDigitaloceanDomainsSort</a>]]</code> | sort block. |
 
 ---
@@ -74,7 +74,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 filter block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#filter DataDigitaloceanDomains#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#filter DataDigitaloceanDomains#filter}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digit
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#id DataDigitaloceanDomains#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#id DataDigitaloceanDomains#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -135,7 +135,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 sort block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#sort DataDigitaloceanDomains#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#sort DataDigitaloceanDomains#sort}
 
 ---
 
@@ -509,7 +509,7 @@ dataDigitaloceanDomains.DataDigitaloceanDomains.is_terraform_data_source(
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -599,10 +599,10 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -745,7 +745,7 @@ from cdktf_cdktf_provider_digitalocean import data_digitalocean_domains
 
 dataDigitaloceanDomains.DataDigitaloceanDomainsConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -762,14 +762,14 @@ dataDigitaloceanDomains.DataDigitaloceanDomainsConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsConfig.property.filter">filter</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsFilter">DataDigitaloceanDomainsFilter</a>]]</code> | filter block. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#id DataDigitaloceanDomains#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#id DataDigitaloceanDomains#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsConfig.property.sort">sort</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsSort">DataDigitaloceanDomainsSort</a>]]</code> | sort block. |
 
 ---
@@ -787,10 +787,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -854,7 +854,7 @@ filter: typing.Union[IResolvable, typing.List[DataDigitaloceanDomainsFilter]]
 
 filter block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#filter DataDigitaloceanDomains#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#filter DataDigitaloceanDomains#filter}
 
 ---
 
@@ -866,7 +866,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#id DataDigitaloceanDomains#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#id DataDigitaloceanDomains#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -883,7 +883,7 @@ sort: typing.Union[IResolvable, typing.List[DataDigitaloceanDomainsSort]]
 
 sort block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#sort DataDigitaloceanDomains#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#sort DataDigitaloceanDomains#sort}
 
 ---
 
@@ -917,10 +917,10 @@ dataDigitaloceanDomains.DataDigitaloceanDomainsFilter(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsFilter.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#key DataDigitaloceanDomains#key}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsFilter.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#values DataDigitaloceanDomains#values}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsFilter.property.all">all</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#all DataDigitaloceanDomains#all}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsFilter.property.matchBy">match_by</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#match_by DataDigitaloceanDomains#match_by}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsFilter.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#key DataDigitaloceanDomains#key}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsFilter.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#values DataDigitaloceanDomains#values}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsFilter.property.all">all</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#all DataDigitaloceanDomains#all}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsFilter.property.matchBy">match_by</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#match_by DataDigitaloceanDomains#match_by}. |
 
 ---
 
@@ -932,7 +932,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#key DataDigitaloceanDomains#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#key DataDigitaloceanDomains#key}.
 
 ---
 
@@ -944,7 +944,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#values DataDigitaloceanDomains#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#values DataDigitaloceanDomains#values}.
 
 ---
 
@@ -956,7 +956,7 @@ all: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#all DataDigitaloceanDomains#all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#all DataDigitaloceanDomains#all}.
 
 ---
 
@@ -968,7 +968,7 @@ match_by: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#match_by DataDigitaloceanDomains#match_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#match_by DataDigitaloceanDomains#match_by}.
 
 ---
 
@@ -989,8 +989,8 @@ dataDigitaloceanDomains.DataDigitaloceanDomainsSort(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsSort.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#key DataDigitaloceanDomains#key}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsSort.property.direction">direction</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#direction DataDigitaloceanDomains#direction}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsSort.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#key DataDigitaloceanDomains#key}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsSort.property.direction">direction</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#direction DataDigitaloceanDomains#direction}. |
 
 ---
 
@@ -1002,7 +1002,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#key DataDigitaloceanDomains#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#key DataDigitaloceanDomains#key}.
 
 ---
 
@@ -1014,7 +1014,7 @@ direction: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/domains#direction DataDigitaloceanDomains#direction}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains#direction DataDigitaloceanDomains#direction}.
 
 ---
 

@@ -1,6 +1,6 @@
 # `digitalocean_uptime_check`
 
-Refer to the Terraform Registory for docs: [`digitalocean_uptime_check`](https://www.terraform.io/docs/providers/digitalocean/r/uptime_check).
+Refer to the Terraform Registory for docs: [`digitalocean_uptime_check`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_check).
 
 # `uptimeCheck` Submodule <a name="`uptimeCheck` Submodule" id="@cdktf/provider-digitalocean.uptimeCheck"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`digitalocean_uptime_check`](https:/
 
 ### UptimeCheck <a name="UptimeCheck" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_check digitalocean_uptime_check}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_check digitalocean_uptime_check}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.Initializer"></a>
 
@@ -19,7 +19,7 @@ uptimeCheck.UptimeCheck(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -38,7 +38,7 @@ uptimeCheck.UptimeCheck(
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -78,7 +78,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 A human-friendly display name for the check.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_check#name UptimeCheck#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_check#name UptimeCheck#name}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digit
 
 The endpoint to perform healthchecks on.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_check#target UptimeCheck#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_check#target UptimeCheck#target}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digit
 
 A boolean value indicating whether the check is enabled/disabled.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_check#enabled UptimeCheck#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_check#enabled UptimeCheck#enabled}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digit
 
 An array containing the selected regions to perform healthchecks from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_check#regions UptimeCheck#regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_check#regions UptimeCheck#regions}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digit
 
 The type of health check to perform. Enum: 'ping' 'http' 'https'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_check#type UptimeCheck#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_check#type UptimeCheck#type}
 
 ---
 
@@ -503,7 +503,7 @@ uptimeCheck.UptimeCheck.is_terraform_resource(
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -608,10 +608,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -804,7 +804,7 @@ from cdktf_cdktf_provider_digitalocean import uptime_check
 
 uptimeCheck.UptimeCheckConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -823,7 +823,7 @@ uptimeCheck.UptimeCheckConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -850,10 +850,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -917,7 +917,7 @@ name: str
 
 A human-friendly display name for the check.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_check#name UptimeCheck#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_check#name UptimeCheck#name}
 
 ---
 
@@ -931,7 +931,7 @@ target: str
 
 The endpoint to perform healthchecks on.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_check#target UptimeCheck#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_check#target UptimeCheck#target}
 
 ---
 
@@ -945,7 +945,7 @@ enabled: typing.Union[bool, IResolvable]
 
 A boolean value indicating whether the check is enabled/disabled.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_check#enabled UptimeCheck#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_check#enabled UptimeCheck#enabled}
 
 ---
 
@@ -959,7 +959,7 @@ regions: typing.List[str]
 
 An array containing the selected regions to perform healthchecks from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_check#regions UptimeCheck#regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_check#regions UptimeCheck#regions}
 
 ---
 
@@ -973,7 +973,7 @@ type: str
 
 The type of health check to perform. Enum: 'ping' 'http' 'https'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_check#type UptimeCheck#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_check#type UptimeCheck#type}
 
 ---
 

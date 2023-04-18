@@ -1,6 +1,6 @@
 # `data_digitalocean_spaces_bucket_object`
 
-Refer to the Terraform Registory for docs: [`data_digitalocean_spaces_bucket_object`](https://www.terraform.io/docs/providers/digitalocean/d/spaces_bucket_object).
+Refer to the Terraform Registory for docs: [`data_digitalocean_spaces_bucket_object`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_bucket_object).
 
 # `dataDigitaloceanSpacesBucketObject` Submodule <a name="`dataDigitaloceanSpacesBucketObject` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_digitalocean_spaces_bucket_obj
 
 ### DataDigitaloceanSpacesBucketObject <a name="DataDigitaloceanSpacesBucketObject" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObject"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_bucket_object digitalocean_spaces_bucket_object}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_bucket_object digitalocean_spaces_bucket_object}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObject.Initializer"></a>
 
@@ -359,7 +359,7 @@ dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObject.isTerrafor
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObject.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObject.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObject.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObject.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObject.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObject.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObject.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObject.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -467,10 +467,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObject.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -799,18 +799,18 @@ const dataDigitaloceanSpacesBucketObjectConfig: dataDigitaloceanSpacesBucketObje
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObjectConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObjectConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObjectConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObjectConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObjectConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObjectConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObjectConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObjectConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObjectConfig.property.bucket">bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_bucket_object#bucket DataDigitaloceanSpacesBucketObject#bucket}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObjectConfig.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_bucket_object#key DataDigitaloceanSpacesBucketObject#key}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObjectConfig.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_bucket_object#region DataDigitaloceanSpacesBucketObject#region}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObjectConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_bucket_object#id DataDigitaloceanSpacesBucketObject#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObjectConfig.property.range">range</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_bucket_object#range DataDigitaloceanSpacesBucketObject#range}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObjectConfig.property.versionId">versionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_bucket_object#version_id DataDigitaloceanSpacesBucketObject#version_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObjectConfig.property.bucket">bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_bucket_object#bucket DataDigitaloceanSpacesBucketObject#bucket}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObjectConfig.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_bucket_object#key DataDigitaloceanSpacesBucketObject#key}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObjectConfig.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_bucket_object#region DataDigitaloceanSpacesBucketObject#region}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObjectConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_bucket_object#id DataDigitaloceanSpacesBucketObject#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObjectConfig.property.range">range</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_bucket_object#range DataDigitaloceanSpacesBucketObject#range}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObjectConfig.property.versionId">versionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_bucket_object#version_id DataDigitaloceanSpacesBucketObject#version_id}. |
 
 ---
 
@@ -827,10 +827,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObjectConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -892,7 +892,7 @@ public readonly bucket: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_bucket_object#bucket DataDigitaloceanSpacesBucketObject#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_bucket_object#bucket DataDigitaloceanSpacesBucketObject#bucket}.
 
 ---
 
@@ -904,7 +904,7 @@ public readonly key: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_bucket_object#key DataDigitaloceanSpacesBucketObject#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_bucket_object#key DataDigitaloceanSpacesBucketObject#key}.
 
 ---
 
@@ -916,7 +916,7 @@ public readonly region: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_bucket_object#region DataDigitaloceanSpacesBucketObject#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_bucket_object#region DataDigitaloceanSpacesBucketObject#region}.
 
 ---
 
@@ -928,7 +928,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_bucket_object#id DataDigitaloceanSpacesBucketObject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_bucket_object#id DataDigitaloceanSpacesBucketObject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -943,7 +943,7 @@ public readonly range: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_bucket_object#range DataDigitaloceanSpacesBucketObject#range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_bucket_object#range DataDigitaloceanSpacesBucketObject#range}.
 
 ---
 
@@ -955,7 +955,7 @@ public readonly versionId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_bucket_object#version_id DataDigitaloceanSpacesBucketObject#version_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_bucket_object#version_id DataDigitaloceanSpacesBucketObject#version_id}.
 
 ---
 

@@ -1,6 +1,6 @@
 # `data_digitalocean_spaces_bucket`
 
-Refer to the Terraform Registory for docs: [`data_digitalocean_spaces_bucket`](https://www.terraform.io/docs/providers/digitalocean/d/spaces_bucket).
+Refer to the Terraform Registory for docs: [`data_digitalocean_spaces_bucket`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_bucket).
 
 # `dataDigitaloceanSpacesBucket` Submodule <a name="`dataDigitaloceanSpacesBucket` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucket"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_digitalocean_spaces_bucket`](h
 
 ### DataDigitaloceanSpacesBucket <a name="DataDigitaloceanSpacesBucket" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucket.DataDigitaloceanSpacesBucket"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_bucket digitalocean_spaces_bucket}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_bucket digitalocean_spaces_bucket}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucket.DataDigitaloceanSpacesBucket.Initializer"></a>
 
@@ -345,7 +345,7 @@ DataDigitaloceanSpacesBucket.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucket.DataDigitaloceanSpacesBucket.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucket.DataDigitaloceanSpacesBucket.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucket.DataDigitaloceanSpacesBucket.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucket.DataDigitaloceanSpacesBucket.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucket.DataDigitaloceanSpacesBucket.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucket.DataDigitaloceanSpacesBucket.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucket.DataDigitaloceanSpacesBucket.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucket.DataDigitaloceanSpacesBucket.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -437,10 +437,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucket.DataDigitaloceanSpacesBucket.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -603,7 +603,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new DataDigitaloceanSpacesBucketConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -620,7 +620,7 @@ new DataDigitaloceanSpacesBucketConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucket.DataDigitaloceanSpacesBucketConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucket.DataDigitaloceanSpacesBucketConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucket.DataDigitaloceanSpacesBucketConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucket.DataDigitaloceanSpacesBucketConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucket.DataDigitaloceanSpacesBucketConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucket.DataDigitaloceanSpacesBucketConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -628,7 +628,7 @@ new DataDigitaloceanSpacesBucketConfig {
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucket.DataDigitaloceanSpacesBucketConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucket.DataDigitaloceanSpacesBucketConfig.property.name">Name</a></code> | <code>string</code> | Bucket name. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucket.DataDigitaloceanSpacesBucketConfig.property.region">Region</a></code> | <code>string</code> | Bucket region. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucket.DataDigitaloceanSpacesBucketConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_bucket#id DataDigitaloceanSpacesBucket#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucket.DataDigitaloceanSpacesBucketConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_bucket#id DataDigitaloceanSpacesBucket#id}. |
 
 ---
 
@@ -645,10 +645,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucket.DataDigitaloceanSpacesBucketConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -712,7 +712,7 @@ public string Name { get; set; }
 
 Bucket name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_bucket#name DataDigitaloceanSpacesBucket#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_bucket#name DataDigitaloceanSpacesBucket#name}
 
 ---
 
@@ -726,7 +726,7 @@ public string Region { get; set; }
 
 Bucket region.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_bucket#region DataDigitaloceanSpacesBucket#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_bucket#region DataDigitaloceanSpacesBucket#region}
 
 ---
 
@@ -738,7 +738,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_bucket#id DataDigitaloceanSpacesBucket#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_bucket#id DataDigitaloceanSpacesBucket#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

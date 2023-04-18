@@ -1,6 +1,6 @@
 # `data_digitalocean_volume_snapshot`
 
-Refer to the Terraform Registory for docs: [`data_digitalocean_volume_snapshot`](https://www.terraform.io/docs/providers/digitalocean/d/volume_snapshot).
+Refer to the Terraform Registory for docs: [`data_digitalocean_volume_snapshot`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/volume_snapshot).
 
 # `dataDigitaloceanVolumeSnapshot` Submodule <a name="`dataDigitaloceanVolumeSnapshot` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_digitalocean_volume_snapshot`]
 
 ### DataDigitaloceanVolumeSnapshot <a name="DataDigitaloceanVolumeSnapshot" id="@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshot"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/digitalocean/d/volume_snapshot digitalocean_volume_snapshot}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/volume_snapshot digitalocean_volume_snapshot}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshot.Initializer"></a>
 
@@ -19,6 +19,7 @@ DataDigitaloceanVolumeSnapshot.Builder.create(Construct scope, java.lang.String 
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -40,17 +41,17 @@ DataDigitaloceanVolumeSnapshot.Builder.create(Construct scope, java.lang.String 
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshot.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshot.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshot.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshot.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshot.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshot.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshot.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshot.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshot.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshot.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshot.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/volume_snapshot#id DataDigitaloceanVolumeSnapshot#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshot.Initializer.parameter.mostRecent">mostRecent</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/volume_snapshot#most_recent DataDigitaloceanVolumeSnapshot#most_recent}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshot.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/volume_snapshot#name DataDigitaloceanVolumeSnapshot#name}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshot.Initializer.parameter.nameRegex">nameRegex</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/volume_snapshot#name_regex DataDigitaloceanVolumeSnapshot#name_regex}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshot.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/volume_snapshot#region DataDigitaloceanVolumeSnapshot#region}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshot.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/volume_snapshot#id DataDigitaloceanVolumeSnapshot#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshot.Initializer.parameter.mostRecent">mostRecent</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/volume_snapshot#most_recent DataDigitaloceanVolumeSnapshot#most_recent}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshot.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/volume_snapshot#name DataDigitaloceanVolumeSnapshot#name}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshot.Initializer.parameter.nameRegex">nameRegex</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/volume_snapshot#name_regex DataDigitaloceanVolumeSnapshot#name_regex}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshot.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/volume_snapshot#region DataDigitaloceanVolumeSnapshot#region}. |
 
 ---
 
@@ -80,7 +81,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshot.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -118,7 +119,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/volume_snapshot#id DataDigitaloceanVolumeSnapshot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/volume_snapshot#id DataDigitaloceanVolumeSnapshot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -129,7 +130,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/volume_snapshot#most_recent DataDigitaloceanVolumeSnapshot#most_recent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/volume_snapshot#most_recent DataDigitaloceanVolumeSnapshot#most_recent}.
 
 ---
 
@@ -137,7 +138,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digit
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/volume_snapshot#name DataDigitaloceanVolumeSnapshot#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/volume_snapshot#name DataDigitaloceanVolumeSnapshot#name}.
 
 ---
 
@@ -145,7 +146,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digit
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/volume_snapshot#name_regex DataDigitaloceanVolumeSnapshot#name_regex}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/volume_snapshot#name_regex DataDigitaloceanVolumeSnapshot#name_regex}.
 
 ---
 
@@ -153,7 +154,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digit
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/volume_snapshot#region DataDigitaloceanVolumeSnapshot#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/volume_snapshot#region DataDigitaloceanVolumeSnapshot#region}.
 
 ---
 
@@ -480,7 +481,7 @@ DataDigitaloceanVolumeSnapshot.isTerraformDataSource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshot.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshot.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshot.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshot.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshot.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshot.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshot.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshot.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -579,10 +580,10 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshot.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -817,6 +818,7 @@ DataDigitaloceanVolumeSnapshotConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -838,17 +840,17 @@ DataDigitaloceanVolumeSnapshotConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshotConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshotConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshotConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshotConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshotConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshotConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshotConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshotConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshotConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/volume_snapshot#id DataDigitaloceanVolumeSnapshot#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshotConfig.property.mostRecent">mostRecent</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/volume_snapshot#most_recent DataDigitaloceanVolumeSnapshot#most_recent}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshotConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/volume_snapshot#name DataDigitaloceanVolumeSnapshot#name}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshotConfig.property.nameRegex">nameRegex</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/volume_snapshot#name_regex DataDigitaloceanVolumeSnapshot#name_regex}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshotConfig.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/volume_snapshot#region DataDigitaloceanVolumeSnapshot#region}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshotConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/volume_snapshot#id DataDigitaloceanVolumeSnapshot#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshotConfig.property.mostRecent">mostRecent</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/volume_snapshot#most_recent DataDigitaloceanVolumeSnapshot#most_recent}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshotConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/volume_snapshot#name DataDigitaloceanVolumeSnapshot#name}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshotConfig.property.nameRegex">nameRegex</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/volume_snapshot#name_regex DataDigitaloceanVolumeSnapshot#name_regex}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshotConfig.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/volume_snapshot#region DataDigitaloceanVolumeSnapshot#region}. |
 
 ---
 
@@ -865,10 +867,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot.DataDigitaloceanVolumeSnapshotConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -930,7 +932,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/volume_snapshot#id DataDigitaloceanVolumeSnapshot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/volume_snapshot#id DataDigitaloceanVolumeSnapshot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -945,7 +947,7 @@ public java.lang.Object getMostRecent();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/volume_snapshot#most_recent DataDigitaloceanVolumeSnapshot#most_recent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/volume_snapshot#most_recent DataDigitaloceanVolumeSnapshot#most_recent}.
 
 ---
 
@@ -957,7 +959,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/volume_snapshot#name DataDigitaloceanVolumeSnapshot#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/volume_snapshot#name DataDigitaloceanVolumeSnapshot#name}.
 
 ---
 
@@ -969,7 +971,7 @@ public java.lang.String getNameRegex();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/volume_snapshot#name_regex DataDigitaloceanVolumeSnapshot#name_regex}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/volume_snapshot#name_regex DataDigitaloceanVolumeSnapshot#name_regex}.
 
 ---
 
@@ -981,7 +983,7 @@ public java.lang.String getRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/volume_snapshot#region DataDigitaloceanVolumeSnapshot#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/volume_snapshot#region DataDigitaloceanVolumeSnapshot#region}.
 
 ---
 

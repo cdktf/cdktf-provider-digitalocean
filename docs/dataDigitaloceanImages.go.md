@@ -1,6 +1,6 @@
 # `data_digitalocean_images`
 
-Refer to the Terraform Registory for docs: [`data_digitalocean_images`](https://www.terraform.io/docs/providers/digitalocean/d/images).
+Refer to the Terraform Registory for docs: [`data_digitalocean_images`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/images).
 
 # `dataDigitaloceanImages` Submodule <a name="`dataDigitaloceanImages` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanImages"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_digitalocean_images`](https://
 
 ### DataDigitaloceanImages <a name="DataDigitaloceanImages" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/digitalocean/d/images digitalocean_images}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/images digitalocean_images}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.Initializer"></a>
 
@@ -385,7 +385,7 @@ datadigitaloceanimages.DataDigitaloceanImages_IsTerraformDataSource(x interface{
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -475,10 +475,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -621,7 +621,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigi
 
 &datadigitaloceanimages.DataDigitaloceanImagesConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -638,14 +638,14 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigi
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesConfig.property.filter">Filter</a></code> | <code>interface{}</code> | filter block. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/images#id DataDigitaloceanImages#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/images#id DataDigitaloceanImages#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesConfig.property.sort">Sort</a></code> | <code>interface{}</code> | sort block. |
 
 ---
@@ -663,10 +663,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -730,7 +730,7 @@ Filter interface{}
 
 filter block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/images#filter DataDigitaloceanImages#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/images#filter DataDigitaloceanImages#filter}
 
 ---
 
@@ -742,7 +742,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/images#id DataDigitaloceanImages#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/images#id DataDigitaloceanImages#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -759,7 +759,7 @@ Sort interface{}
 
 sort block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/images#sort DataDigitaloceanImages#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/images#sort DataDigitaloceanImages#sort}
 
 ---
 
@@ -782,10 +782,10 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/images#key DataDigitaloceanImages#key}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/images#values DataDigitaloceanImages#values}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter.property.all">All</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/images#all DataDigitaloceanImages#all}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter.property.matchBy">MatchBy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/images#match_by DataDigitaloceanImages#match_by}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/images#key DataDigitaloceanImages#key}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/images#values DataDigitaloceanImages#values}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter.property.all">All</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/images#all DataDigitaloceanImages#all}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter.property.matchBy">MatchBy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/images#match_by DataDigitaloceanImages#match_by}. |
 
 ---
 
@@ -797,7 +797,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/images#key DataDigitaloceanImages#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/images#key DataDigitaloceanImages#key}.
 
 ---
 
@@ -809,7 +809,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/images#values DataDigitaloceanImages#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/images#values DataDigitaloceanImages#values}.
 
 ---
 
@@ -821,7 +821,7 @@ All interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/images#all DataDigitaloceanImages#all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/images#all DataDigitaloceanImages#all}.
 
 ---
 
@@ -833,7 +833,7 @@ MatchBy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/images#match_by DataDigitaloceanImages#match_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/images#match_by DataDigitaloceanImages#match_by}.
 
 ---
 
@@ -867,8 +867,8 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSort.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/images#key DataDigitaloceanImages#key}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSort.property.direction">Direction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/images#direction DataDigitaloceanImages#direction}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSort.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/images#key DataDigitaloceanImages#key}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSort.property.direction">Direction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/images#direction DataDigitaloceanImages#direction}. |
 
 ---
 
@@ -880,7 +880,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/images#key DataDigitaloceanImages#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/images#key DataDigitaloceanImages#key}.
 
 ---
 
@@ -892,7 +892,7 @@ Direction *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/images#direction DataDigitaloceanImages#direction}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/images#direction DataDigitaloceanImages#direction}.
 
 ---
 

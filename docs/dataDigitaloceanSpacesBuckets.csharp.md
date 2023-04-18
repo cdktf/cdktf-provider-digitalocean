@@ -1,6 +1,6 @@
 # `data_digitalocean_spaces_buckets`
 
-Refer to the Terraform Registory for docs: [`data_digitalocean_spaces_buckets`](https://www.terraform.io/docs/providers/digitalocean/d/spaces_buckets).
+Refer to the Terraform Registory for docs: [`data_digitalocean_spaces_buckets`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_buckets).
 
 # `dataDigitaloceanSpacesBuckets` Submodule <a name="`dataDigitaloceanSpacesBuckets` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_digitalocean_spaces_buckets`](
 
 ### DataDigitaloceanSpacesBuckets <a name="DataDigitaloceanSpacesBuckets" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBuckets"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_buckets digitalocean_spaces_buckets}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_buckets digitalocean_spaces_buckets}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBuckets.Initializer"></a>
 
@@ -385,7 +385,7 @@ DataDigitaloceanSpacesBuckets.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBuckets.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBuckets.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBuckets.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBuckets.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBuckets.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBuckets.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBuckets.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBuckets.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -475,10 +475,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBuckets.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -634,7 +634,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new DataDigitaloceanSpacesBucketsConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -651,14 +651,14 @@ new DataDigitaloceanSpacesBucketsConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBucketsConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBucketsConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBucketsConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBucketsConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBucketsConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBucketsConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBucketsConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBucketsConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBucketsConfig.property.filter">Filter</a></code> | <code>object</code> | filter block. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBucketsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_buckets#id DataDigitaloceanSpacesBuckets#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBucketsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_buckets#id DataDigitaloceanSpacesBuckets#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBucketsConfig.property.sort">Sort</a></code> | <code>object</code> | sort block. |
 
 ---
@@ -676,10 +676,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBucketsConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -743,7 +743,7 @@ public object Filter { get; set; }
 
 filter block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_buckets#filter DataDigitaloceanSpacesBuckets#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_buckets#filter DataDigitaloceanSpacesBuckets#filter}
 
 ---
 
@@ -755,7 +755,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_buckets#id DataDigitaloceanSpacesBuckets#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_buckets#id DataDigitaloceanSpacesBuckets#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -772,7 +772,7 @@ public object Sort { get; set; }
 
 sort block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_buckets#sort DataDigitaloceanSpacesBuckets#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_buckets#sort DataDigitaloceanSpacesBuckets#sort}
 
 ---
 
@@ -795,10 +795,10 @@ new DataDigitaloceanSpacesBucketsFilter {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBucketsFilter.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_buckets#key DataDigitaloceanSpacesBuckets#key}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBucketsFilter.property.values">Values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_buckets#values DataDigitaloceanSpacesBuckets#values}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBucketsFilter.property.all">All</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_buckets#all DataDigitaloceanSpacesBuckets#all}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBucketsFilter.property.matchBy">MatchBy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_buckets#match_by DataDigitaloceanSpacesBuckets#match_by}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBucketsFilter.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_buckets#key DataDigitaloceanSpacesBuckets#key}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBucketsFilter.property.values">Values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_buckets#values DataDigitaloceanSpacesBuckets#values}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBucketsFilter.property.all">All</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_buckets#all DataDigitaloceanSpacesBuckets#all}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBucketsFilter.property.matchBy">MatchBy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_buckets#match_by DataDigitaloceanSpacesBuckets#match_by}. |
 
 ---
 
@@ -810,7 +810,7 @@ public string Key { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_buckets#key DataDigitaloceanSpacesBuckets#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_buckets#key DataDigitaloceanSpacesBuckets#key}.
 
 ---
 
@@ -822,7 +822,7 @@ public string[] Values { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_buckets#values DataDigitaloceanSpacesBuckets#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_buckets#values DataDigitaloceanSpacesBuckets#values}.
 
 ---
 
@@ -834,7 +834,7 @@ public object All { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_buckets#all DataDigitaloceanSpacesBuckets#all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_buckets#all DataDigitaloceanSpacesBuckets#all}.
 
 ---
 
@@ -846,7 +846,7 @@ public string MatchBy { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_buckets#match_by DataDigitaloceanSpacesBuckets#match_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_buckets#match_by DataDigitaloceanSpacesBuckets#match_by}.
 
 ---
 
@@ -867,8 +867,8 @@ new DataDigitaloceanSpacesBucketsSort {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBucketsSort.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_buckets#key DataDigitaloceanSpacesBuckets#key}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBucketsSort.property.direction">Direction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_buckets#direction DataDigitaloceanSpacesBuckets#direction}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBucketsSort.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_buckets#key DataDigitaloceanSpacesBuckets#key}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesBuckets.DataDigitaloceanSpacesBucketsSort.property.direction">Direction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_buckets#direction DataDigitaloceanSpacesBuckets#direction}. |
 
 ---
 
@@ -880,7 +880,7 @@ public string Key { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_buckets#key DataDigitaloceanSpacesBuckets#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_buckets#key DataDigitaloceanSpacesBuckets#key}.
 
 ---
 
@@ -892,7 +892,7 @@ public string Direction { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_buckets#direction DataDigitaloceanSpacesBuckets#direction}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_buckets#direction DataDigitaloceanSpacesBuckets#direction}.
 
 ---
 
