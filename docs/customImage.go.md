@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.customImage.CustomImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/customimage"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/customimage"
 
 customimage.NewCustomImage(scope Construct, id *string, config CustomImageConfig) CustomImage
 ```
@@ -298,7 +298,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.customImage.CustomImage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/customimage"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/customimage"
 
 customimage.CustomImage_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.customImage.CustomImage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/customimage"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/customimage"
 
 customimage.CustomImage_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ customimage.CustomImage_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.customImage.CustomImage.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/customimage"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/customimage"
 
 customimage.CustomImage_IsTerraformResource(x interface{}) *bool
 ```
@@ -785,7 +785,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.customImage.CustomImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/customimage"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/customimage"
 
 &customimage.CustomImageConfig {
 	Connection: interface{},
