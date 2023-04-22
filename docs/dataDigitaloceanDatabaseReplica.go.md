@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseReplica.DataDigitaloceanDatabaseReplica.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandatabasereplica"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceandatabasereplica"
 
 datadigitaloceandatabasereplica.NewDataDigitaloceanDatabaseReplica(scope Construct, id *string, config DataDigitaloceanDatabaseReplicaConfig) DataDigitaloceanDatabaseReplica
 ```
@@ -284,7 +284,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseReplica.DataDigitaloceanDatabaseReplica.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandatabasereplica"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceandatabasereplica"
 
 datadigitaloceandatabasereplica.DataDigitaloceanDatabaseReplica_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseReplica.DataDigitaloceanDatabaseReplica.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandatabasereplica"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceandatabasereplica"
 
 datadigitaloceandatabasereplica.DataDigitaloceanDatabaseReplica_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datadigitaloceandatabasereplica.DataDigitaloceanDatabaseReplica_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseReplica.DataDigitaloceanDatabaseReplica.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandatabasereplica"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceandatabasereplica"
 
 datadigitaloceandatabasereplica.DataDigitaloceanDatabaseReplica_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -716,7 +716,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseReplica.DataDigitaloceanDatabaseReplicaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandatabasereplica"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceandatabasereplica"
 
 &datadigitaloceandatabasereplica.DataDigitaloceanDatabaseReplicaConfig {
 	Connection: interface{},
