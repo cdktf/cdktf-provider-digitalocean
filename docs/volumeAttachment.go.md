@@ -1,6 +1,6 @@
 # `digitalocean_volume_attachment`
 
-Refer to the Terraform Registory for docs: [`digitalocean_volume_attachment`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/volume_attachment).
+Refer to the Terraform Registory for docs: [`digitalocean_volume_attachment`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/volume_attachment).
 
 # `volumeAttachment` Submodule <a name="`volumeAttachment` Submodule" id="@cdktf/provider-digitalocean.volumeAttachment"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`digitalocean_volume_attachment`](ht
 
 ### VolumeAttachment <a name="VolumeAttachment" id="@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/volume_attachment digitalocean_volume_attachment}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/volume_attachment digitalocean_volume_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/volumeattachment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/volumeattachment"
 
 volumeattachment.NewVolumeAttachment(scope Construct, id *string, config VolumeAttachmentConfig) VolumeAttachment
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/volumeattachment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/volumeattachment"
 
 volumeattachment.VolumeAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/volumeattachment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/volumeattachment"
 
 volumeattachment.VolumeAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ volumeattachment.VolumeAttachment_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/volumeattachment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/volumeattachment"
 
 volumeattachment.VolumeAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/volumeattachment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/volumeattachment"
 
 &volumeattachment.VolumeAttachmentConfig {
 	Connection: interface{},
@@ -615,9 +615,9 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/volumeat
 | <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachmentConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachmentConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachmentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachmentConfig.property.dropletId">DropletId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/volume_attachment#droplet_id VolumeAttachment#droplet_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachmentConfig.property.volumeId">VolumeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/volume_attachment#volume_id VolumeAttachment#volume_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/volume_attachment#id VolumeAttachment#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachmentConfig.property.dropletId">DropletId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/volume_attachment#droplet_id VolumeAttachment#droplet_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachmentConfig.property.volumeId">VolumeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/volume_attachment#volume_id VolumeAttachment#volume_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/volume_attachment#id VolumeAttachment#id}. |
 
 ---
 
@@ -699,7 +699,7 @@ DropletId *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/volume_attachment#droplet_id VolumeAttachment#droplet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/volume_attachment#droplet_id VolumeAttachment#droplet_id}.
 
 ---
 
@@ -711,7 +711,7 @@ VolumeId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/volume_attachment#volume_id VolumeAttachment#volume_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/volume_attachment#volume_id VolumeAttachment#volume_id}.
 
 ---
 
@@ -723,7 +723,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/volume_attachment#id VolumeAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/volume_attachment#id VolumeAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

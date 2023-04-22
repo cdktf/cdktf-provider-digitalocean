@@ -1,6 +1,6 @@
 # `digitalocean_record`
 
-Refer to the Terraform Registory for docs: [`digitalocean_record`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/record).
+Refer to the Terraform Registory for docs: [`digitalocean_record`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/record).
 
 # `record` Submodule <a name="`record` Submodule" id="@cdktf/provider-digitalocean.record"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`digitalocean_record`](https://regis
 
 ### Record <a name="Record" id="@cdktf/provider-digitalocean.record.Record"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/record digitalocean_record}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/record digitalocean_record}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.record.Record.Initializer"></a>
 
@@ -852,17 +852,17 @@ new RecordConfig {
 | <code><a href="#@cdktf/provider-digitalocean.record.RecordConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.record.RecordConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.record.RecordConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.record.RecordConfig.property.domain">Domain</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/record#domain Record#domain}. |
-| <code><a href="#@cdktf/provider-digitalocean.record.RecordConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/record#name Record#name}. |
-| <code><a href="#@cdktf/provider-digitalocean.record.RecordConfig.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/record#type Record#type}. |
-| <code><a href="#@cdktf/provider-digitalocean.record.RecordConfig.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/record#value Record#value}. |
-| <code><a href="#@cdktf/provider-digitalocean.record.RecordConfig.property.flags">Flags</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/record#flags Record#flags}. |
-| <code><a href="#@cdktf/provider-digitalocean.record.RecordConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/record#id Record#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.record.RecordConfig.property.port">Port</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/record#port Record#port}. |
-| <code><a href="#@cdktf/provider-digitalocean.record.RecordConfig.property.priority">Priority</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/record#priority Record#priority}. |
-| <code><a href="#@cdktf/provider-digitalocean.record.RecordConfig.property.tag">Tag</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/record#tag Record#tag}. |
-| <code><a href="#@cdktf/provider-digitalocean.record.RecordConfig.property.ttl">Ttl</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/record#ttl Record#ttl}. |
-| <code><a href="#@cdktf/provider-digitalocean.record.RecordConfig.property.weight">Weight</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/record#weight Record#weight}. |
+| <code><a href="#@cdktf/provider-digitalocean.record.RecordConfig.property.domain">Domain</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/record#domain Record#domain}. |
+| <code><a href="#@cdktf/provider-digitalocean.record.RecordConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/record#name Record#name}. |
+| <code><a href="#@cdktf/provider-digitalocean.record.RecordConfig.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/record#type Record#type}. |
+| <code><a href="#@cdktf/provider-digitalocean.record.RecordConfig.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/record#value Record#value}. |
+| <code><a href="#@cdktf/provider-digitalocean.record.RecordConfig.property.flags">Flags</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/record#flags Record#flags}. |
+| <code><a href="#@cdktf/provider-digitalocean.record.RecordConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/record#id Record#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.record.RecordConfig.property.port">Port</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/record#port Record#port}. |
+| <code><a href="#@cdktf/provider-digitalocean.record.RecordConfig.property.priority">Priority</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/record#priority Record#priority}. |
+| <code><a href="#@cdktf/provider-digitalocean.record.RecordConfig.property.tag">Tag</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/record#tag Record#tag}. |
+| <code><a href="#@cdktf/provider-digitalocean.record.RecordConfig.property.ttl">Ttl</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/record#ttl Record#ttl}. |
+| <code><a href="#@cdktf/provider-digitalocean.record.RecordConfig.property.weight">Weight</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/record#weight Record#weight}. |
 
 ---
 
@@ -944,7 +944,7 @@ public string Domain { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/record#domain Record#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/record#domain Record#domain}.
 
 ---
 
@@ -956,7 +956,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/record#name Record#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/record#name Record#name}.
 
 ---
 
@@ -968,7 +968,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/record#type Record#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/record#type Record#type}.
 
 ---
 
@@ -980,7 +980,7 @@ public string Value { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/record#value Record#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/record#value Record#value}.
 
 ---
 
@@ -992,7 +992,7 @@ public double Flags { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/record#flags Record#flags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/record#flags Record#flags}.
 
 ---
 
@@ -1004,7 +1004,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/record#id Record#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/record#id Record#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1019,7 +1019,7 @@ public double Port { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/record#port Record#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/record#port Record#port}.
 
 ---
 
@@ -1031,7 +1031,7 @@ public double Priority { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/record#priority Record#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/record#priority Record#priority}.
 
 ---
 
@@ -1043,7 +1043,7 @@ public string Tag { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/record#tag Record#tag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/record#tag Record#tag}.
 
 ---
 
@@ -1055,7 +1055,7 @@ public double Ttl { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/record#ttl Record#ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/record#ttl Record#ttl}.
 
 ---
 
@@ -1067,7 +1067,7 @@ public double Weight { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/record#weight Record#weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/record#weight Record#weight}.
 
 ---
 

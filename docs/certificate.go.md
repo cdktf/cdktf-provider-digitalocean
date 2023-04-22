@@ -1,6 +1,6 @@
 # `digitalocean_certificate`
 
-Refer to the Terraform Registory for docs: [`digitalocean_certificate`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/certificate).
+Refer to the Terraform Registory for docs: [`digitalocean_certificate`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/certificate).
 
 # `certificate` Submodule <a name="`certificate` Submodule" id="@cdktf/provider-digitalocean.certificate"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`digitalocean_certificate`](https://
 
 ### Certificate <a name="Certificate" id="@cdktf/provider-digitalocean.certificate.Certificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/certificate digitalocean_certificate}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/certificate digitalocean_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.certificate.Certificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/certificate"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/certificate"
 
 certificate.NewCertificate(scope Construct, id *string, config CertificateConfig) Certificate
 ```
@@ -312,7 +312,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.certificate.Certificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/certificate"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/certificate"
 
 certificate.Certificate_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.certificate.Certificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/certificate"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/certificate"
 
 certificate.Certificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ certificate.Certificate_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.certificate.Certificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/certificate"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/certificate"
 
 certificate.Certificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -755,7 +755,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.certificate.CertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/certificate"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/certificate"
 
 &certificate.CertificateConfig {
 	Connection: interface{},
@@ -786,13 +786,13 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/certific
 | <code><a href="#@cdktf/provider-digitalocean.certificate.CertificateConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.certificate.CertificateConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.certificate.CertificateConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.certificate.CertificateConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/certificate#name Certificate#name}. |
-| <code><a href="#@cdktf/provider-digitalocean.certificate.CertificateConfig.property.certificateChain">CertificateChain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/certificate#certificate_chain Certificate#certificate_chain}. |
-| <code><a href="#@cdktf/provider-digitalocean.certificate.CertificateConfig.property.domains">Domains</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/certificate#domains Certificate#domains}. |
-| <code><a href="#@cdktf/provider-digitalocean.certificate.CertificateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/certificate#id Certificate#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.certificate.CertificateConfig.property.leafCertificate">LeafCertificate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/certificate#leaf_certificate Certificate#leaf_certificate}. |
-| <code><a href="#@cdktf/provider-digitalocean.certificate.CertificateConfig.property.privateKey">PrivateKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/certificate#private_key Certificate#private_key}. |
-| <code><a href="#@cdktf/provider-digitalocean.certificate.CertificateConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/certificate#type Certificate#type}. |
+| <code><a href="#@cdktf/provider-digitalocean.certificate.CertificateConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/certificate#name Certificate#name}. |
+| <code><a href="#@cdktf/provider-digitalocean.certificate.CertificateConfig.property.certificateChain">CertificateChain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/certificate#certificate_chain Certificate#certificate_chain}. |
+| <code><a href="#@cdktf/provider-digitalocean.certificate.CertificateConfig.property.domains">Domains</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/certificate#domains Certificate#domains}. |
+| <code><a href="#@cdktf/provider-digitalocean.certificate.CertificateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/certificate#id Certificate#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.certificate.CertificateConfig.property.leafCertificate">LeafCertificate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/certificate#leaf_certificate Certificate#leaf_certificate}. |
+| <code><a href="#@cdktf/provider-digitalocean.certificate.CertificateConfig.property.privateKey">PrivateKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/certificate#private_key Certificate#private_key}. |
+| <code><a href="#@cdktf/provider-digitalocean.certificate.CertificateConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/certificate#type Certificate#type}. |
 
 ---
 
@@ -874,7 +874,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/certificate#name Certificate#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/certificate#name Certificate#name}.
 
 ---
 
@@ -886,7 +886,7 @@ CertificateChain *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/certificate#certificate_chain Certificate#certificate_chain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/certificate#certificate_chain Certificate#certificate_chain}.
 
 ---
 
@@ -898,7 +898,7 @@ Domains *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/certificate#domains Certificate#domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/certificate#domains Certificate#domains}.
 
 ---
 
@@ -910,7 +910,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/certificate#id Certificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/certificate#id Certificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -925,7 +925,7 @@ LeafCertificate *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/certificate#leaf_certificate Certificate#leaf_certificate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/certificate#leaf_certificate Certificate#leaf_certificate}.
 
 ---
 
@@ -937,7 +937,7 @@ PrivateKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/certificate#private_key Certificate#private_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/certificate#private_key Certificate#private_key}.
 
 ---
 
@@ -949,7 +949,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/certificate#type Certificate#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/certificate#type Certificate#type}.
 
 ---
 

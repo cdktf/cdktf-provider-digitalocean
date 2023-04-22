@@ -1,6 +1,6 @@
 # `digitalocean_uptime_check`
 
-Refer to the Terraform Registory for docs: [`digitalocean_uptime_check`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_check).
+Refer to the Terraform Registory for docs: [`digitalocean_uptime_check`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/uptime_check).
 
 # `uptimeCheck` Submodule <a name="`uptimeCheck` Submodule" id="@cdktf/provider-digitalocean.uptimeCheck"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`digitalocean_uptime_check`](https:/
 
 ### UptimeCheck <a name="UptimeCheck" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_check digitalocean_uptime_check}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/uptime_check digitalocean_uptime_check}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/uptimecheck"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/uptimecheck"
 
 uptimecheck.NewUptimeCheck(scope Construct, id *string, config UptimeCheckConfig) UptimeCheck
 ```
@@ -291,7 +291,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/uptimecheck"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/uptimecheck"
 
 uptimecheck.UptimeCheck_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/uptimecheck"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/uptimecheck"
 
 uptimecheck.UptimeCheck_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ uptimecheck.UptimeCheck_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/uptimecheck"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/uptimecheck"
 
 uptimecheck.UptimeCheck_IsTerraformResource(x interface{}) *bool
 ```
@@ -657,7 +657,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/uptimecheck"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/uptimecheck"
 
 &uptimecheck.UptimeCheckConfig {
 	Connection: interface{},
@@ -774,7 +774,7 @@ Name *string
 
 A human-friendly display name for the check.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_check#name UptimeCheck#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/uptime_check#name UptimeCheck#name}
 
 ---
 
@@ -788,7 +788,7 @@ Target *string
 
 The endpoint to perform healthchecks on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_check#target UptimeCheck#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/uptime_check#target UptimeCheck#target}
 
 ---
 
@@ -802,7 +802,7 @@ Enabled interface{}
 
 A boolean value indicating whether the check is enabled/disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_check#enabled UptimeCheck#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/uptime_check#enabled UptimeCheck#enabled}
 
 ---
 
@@ -816,7 +816,7 @@ Regions *[]*string
 
 An array containing the selected regions to perform healthchecks from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_check#regions UptimeCheck#regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/uptime_check#regions UptimeCheck#regions}
 
 ---
 
@@ -830,7 +830,7 @@ Type *string
 
 The type of health check to perform. Enum: 'ping' 'http' 'https'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_check#type UptimeCheck#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/uptime_check#type UptimeCheck#type}
 
 ---
 

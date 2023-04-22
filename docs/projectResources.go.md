@@ -1,6 +1,6 @@
 # `digitalocean_project_resources`
 
-Refer to the Terraform Registory for docs: [`digitalocean_project_resources`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/project_resources).
+Refer to the Terraform Registory for docs: [`digitalocean_project_resources`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/project_resources).
 
 # `projectResources` Submodule <a name="`projectResources` Submodule" id="@cdktf/provider-digitalocean.projectResources"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`digitalocean_project_resources`](ht
 
 ### ProjectResources <a name="ProjectResources" id="@cdktf/provider-digitalocean.projectResources.ProjectResources"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/project_resources digitalocean_project_resources}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/project_resources digitalocean_project_resources}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.projectResources.ProjectResources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/projectresources"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/projectresources"
 
 projectresources.NewProjectResources(scope Construct, id *string, config ProjectResourcesConfig) ProjectResources
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.projectResources.ProjectResources.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/projectresources"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/projectresources"
 
 projectresources.ProjectResources_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.projectResources.ProjectResources.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/projectresources"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/projectresources"
 
 projectresources.ProjectResources_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ projectresources.ProjectResources_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.projectResources.ProjectResources.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/projectresources"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/projectresources"
 
 projectresources.ProjectResources_IsTerraformResource(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.projectResources.ProjectResourcesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/projectresources"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/projectresources"
 
 &projectresources.ProjectResourcesConfig {
 	Connection: interface{},
@@ -617,7 +617,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/projectr
 | <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResourcesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResourcesConfig.property.project">Project</a></code> | <code>*string</code> | project ID. |
 | <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResourcesConfig.property.resources">Resources</a></code> | <code>*[]*string</code> | the resources associated with the project. |
-| <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResourcesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/project_resources#id ProjectResources#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.projectResources.ProjectResourcesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/project_resources#id ProjectResources#id}. |
 
 ---
 
@@ -701,7 +701,7 @@ Project *string
 
 project ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/project_resources#project ProjectResources#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/project_resources#project ProjectResources#project}
 
 ---
 
@@ -715,7 +715,7 @@ Resources *[]*string
 
 the resources associated with the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/project_resources#resources ProjectResources#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/project_resources#resources ProjectResources#resources}
 
 ---
 
@@ -727,7 +727,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/project_resources#id ProjectResources#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/project_resources#id ProjectResources#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

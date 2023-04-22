@@ -1,6 +1,6 @@
 # `data_digitalocean_container_registry`
 
-Refer to the Terraform Registory for docs: [`data_digitalocean_container_registry`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/container_registry).
+Refer to the Terraform Registory for docs: [`data_digitalocean_container_registry`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/container_registry).
 
 # `dataDigitaloceanContainerRegistry` Submodule <a name="`dataDigitaloceanContainerRegistry` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanContainerRegistry"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_digitalocean_container_registr
 
 ### DataDigitaloceanContainerRegistry <a name="DataDigitaloceanContainerRegistry" id="@cdktf/provider-digitalocean.dataDigitaloceanContainerRegistry.DataDigitaloceanContainerRegistry"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/container_registry digitalocean_container_registry}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/container_registry digitalocean_container_registry}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanContainerRegistry.DataDigitaloceanContainerRegistry.Initializer"></a>
 
@@ -42,7 +42,7 @@ dataDigitaloceanContainerRegistry.DataDigitaloceanContainerRegistry(
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanContainerRegistry.DataDigitaloceanContainerRegistry.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanContainerRegistry.DataDigitaloceanContainerRegistry.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanContainerRegistry.DataDigitaloceanContainerRegistry.Initializer.parameter.name">name</a></code> | <code>str</code> | name of the container registry. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanContainerRegistry.DataDigitaloceanContainerRegistry.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/container_registry#id DataDigitaloceanContainerRegistry#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanContainerRegistry.DataDigitaloceanContainerRegistry.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/container_registry#id DataDigitaloceanContainerRegistry#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 name of the container registry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/container_registry#name DataDigitaloceanContainerRegistry#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/container_registry#name DataDigitaloceanContainerRegistry#name}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/container_registry#id DataDigitaloceanContainerRegistry#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/container_registry#id DataDigitaloceanContainerRegistry#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -745,7 +745,7 @@ dataDigitaloceanContainerRegistry.DataDigitaloceanContainerRegistryConfig(
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanContainerRegistry.DataDigitaloceanContainerRegistryConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanContainerRegistry.DataDigitaloceanContainerRegistryConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanContainerRegistry.DataDigitaloceanContainerRegistryConfig.property.name">name</a></code> | <code>str</code> | name of the container registry. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanContainerRegistry.DataDigitaloceanContainerRegistryConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/container_registry#id DataDigitaloceanContainerRegistry#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanContainerRegistry.DataDigitaloceanContainerRegistryConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/container_registry#id DataDigitaloceanContainerRegistry#id}. |
 
 ---
 
@@ -829,7 +829,7 @@ name: str
 
 name of the container registry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/container_registry#name DataDigitaloceanContainerRegistry#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/container_registry#name DataDigitaloceanContainerRegistry#name}
 
 ---
 
@@ -841,7 +841,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/container_registry#id DataDigitaloceanContainerRegistry#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/container_registry#id DataDigitaloceanContainerRegistry#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

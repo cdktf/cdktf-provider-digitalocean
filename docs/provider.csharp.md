@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`digitalocean`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs).
+Refer to the Terraform Registory for docs: [`digitalocean`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-digitalocean.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`digitalocean`](https://registry.ter
 
 ### DigitaloceanProvider <a name="DigitaloceanProvider" id="@cdktf/provider-digitalocean.provider.DigitaloceanProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs digitalocean}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs digitalocean}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.provider.DigitaloceanProvider.Initializer"></a>
 
@@ -62,6 +62,10 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProvider.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProvider.resetAlias">ResetAlias</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProvider.resetApiEndpoint">ResetApiEndpoint</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProvider.resetHttpRetryMax">ResetHttpRetryMax</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProvider.resetHttpRetryWaitMax">ResetHttpRetryWaitMax</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProvider.resetHttpRetryWaitMin">ResetHttpRetryWaitMin</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProvider.resetRequestsPerSecond">ResetRequestsPerSecond</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProvider.resetSpacesAccessId">ResetSpacesAccessId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProvider.resetSpacesEndpoint">ResetSpacesEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProvider.resetSpacesSecretKey">ResetSpacesSecretKey</a></code> | *No description.* |
@@ -143,6 +147,30 @@ private void ResetAlias()
 
 ```csharp
 private void ResetApiEndpoint()
+```
+
+##### `ResetHttpRetryMax` <a name="ResetHttpRetryMax" id="@cdktf/provider-digitalocean.provider.DigitaloceanProvider.resetHttpRetryMax"></a>
+
+```csharp
+private void ResetHttpRetryMax()
+```
+
+##### `ResetHttpRetryWaitMax` <a name="ResetHttpRetryWaitMax" id="@cdktf/provider-digitalocean.provider.DigitaloceanProvider.resetHttpRetryWaitMax"></a>
+
+```csharp
+private void ResetHttpRetryWaitMax()
+```
+
+##### `ResetHttpRetryWaitMin` <a name="ResetHttpRetryWaitMin" id="@cdktf/provider-digitalocean.provider.DigitaloceanProvider.resetHttpRetryWaitMin"></a>
+
+```csharp
+private void ResetHttpRetryWaitMin()
+```
+
+##### `ResetRequestsPerSecond` <a name="ResetRequestsPerSecond" id="@cdktf/provider-digitalocean.provider.DigitaloceanProvider.resetRequestsPerSecond"></a>
+
+```csharp
+private void ResetRequestsPerSecond()
 ```
 
 ##### `ResetSpacesAccessId` <a name="ResetSpacesAccessId" id="@cdktf/provider-digitalocean.provider.DigitaloceanProvider.resetSpacesAccessId"></a>
@@ -254,11 +282,19 @@ DigitaloceanProvider.IsTerraformProvider(object X);
 | <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProvider.property.alias">Alias</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProvider.property.aliasInput">AliasInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProvider.property.apiEndpointInput">ApiEndpointInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProvider.property.httpRetryMaxInput">HttpRetryMaxInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProvider.property.httpRetryWaitMaxInput">HttpRetryWaitMaxInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProvider.property.httpRetryWaitMinInput">HttpRetryWaitMinInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProvider.property.requestsPerSecondInput">RequestsPerSecondInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProvider.property.spacesAccessIdInput">SpacesAccessIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProvider.property.spacesEndpointInput">SpacesEndpointInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProvider.property.spacesSecretKeyInput">SpacesSecretKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProvider.property.tokenInput">TokenInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProvider.property.apiEndpoint">ApiEndpoint</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProvider.property.httpRetryMax">HttpRetryMax</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProvider.property.httpRetryWaitMax">HttpRetryWaitMax</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProvider.property.httpRetryWaitMin">HttpRetryWaitMin</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProvider.property.requestsPerSecond">RequestsPerSecond</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProvider.property.spacesAccessId">SpacesAccessId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProvider.property.spacesEndpoint">SpacesEndpoint</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProvider.property.spacesSecretKey">SpacesSecretKey</a></code> | <code>string</code> | *No description.* |
@@ -378,6 +414,46 @@ public string ApiEndpointInput { get; }
 
 ---
 
+##### `HttpRetryMaxInput`<sup>Optional</sup> <a name="HttpRetryMaxInput" id="@cdktf/provider-digitalocean.provider.DigitaloceanProvider.property.httpRetryMaxInput"></a>
+
+```csharp
+public double HttpRetryMaxInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `HttpRetryWaitMaxInput`<sup>Optional</sup> <a name="HttpRetryWaitMaxInput" id="@cdktf/provider-digitalocean.provider.DigitaloceanProvider.property.httpRetryWaitMaxInput"></a>
+
+```csharp
+public double HttpRetryWaitMaxInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `HttpRetryWaitMinInput`<sup>Optional</sup> <a name="HttpRetryWaitMinInput" id="@cdktf/provider-digitalocean.provider.DigitaloceanProvider.property.httpRetryWaitMinInput"></a>
+
+```csharp
+public double HttpRetryWaitMinInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `RequestsPerSecondInput`<sup>Optional</sup> <a name="RequestsPerSecondInput" id="@cdktf/provider-digitalocean.provider.DigitaloceanProvider.property.requestsPerSecondInput"></a>
+
+```csharp
+public double RequestsPerSecondInput { get; }
+```
+
+- *Type:* double
+
+---
+
 ##### `SpacesAccessIdInput`<sup>Optional</sup> <a name="SpacesAccessIdInput" id="@cdktf/provider-digitalocean.provider.DigitaloceanProvider.property.spacesAccessIdInput"></a>
 
 ```csharp
@@ -425,6 +501,46 @@ public string ApiEndpoint { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `HttpRetryMax`<sup>Optional</sup> <a name="HttpRetryMax" id="@cdktf/provider-digitalocean.provider.DigitaloceanProvider.property.httpRetryMax"></a>
+
+```csharp
+public double HttpRetryMax { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `HttpRetryWaitMax`<sup>Optional</sup> <a name="HttpRetryWaitMax" id="@cdktf/provider-digitalocean.provider.DigitaloceanProvider.property.httpRetryWaitMax"></a>
+
+```csharp
+public double HttpRetryWaitMax { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `HttpRetryWaitMin`<sup>Optional</sup> <a name="HttpRetryWaitMin" id="@cdktf/provider-digitalocean.provider.DigitaloceanProvider.property.httpRetryWaitMin"></a>
+
+```csharp
+public double HttpRetryWaitMin { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `RequestsPerSecond`<sup>Optional</sup> <a name="RequestsPerSecond" id="@cdktf/provider-digitalocean.provider.DigitaloceanProvider.property.requestsPerSecond"></a>
+
+```csharp
+public double RequestsPerSecond { get; }
+```
+
+- *Type:* double
 
 ---
 
@@ -498,6 +614,10 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 new DigitaloceanProviderConfig {
     string Alias = null,
     string ApiEndpoint = null,
+    double HttpRetryMax = null,
+    double HttpRetryWaitMax = null,
+    double HttpRetryWaitMin = null,
+    double RequestsPerSecond = null,
     string SpacesAccessId = null,
     string SpacesEndpoint = null,
     string SpacesSecretKey = null,
@@ -511,6 +631,10 @@ new DigitaloceanProviderConfig {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProviderConfig.property.alias">Alias</a></code> | <code>string</code> | Alias name. |
 | <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProviderConfig.property.apiEndpoint">ApiEndpoint</a></code> | <code>string</code> | The URL to use for the DigitalOcean API. |
+| <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProviderConfig.property.httpRetryMax">HttpRetryMax</a></code> | <code>double</code> | The maximum number of retries on a failed API request. |
+| <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProviderConfig.property.httpRetryWaitMax">HttpRetryWaitMax</a></code> | <code>double</code> | The maximum wait time (in seconds) between failed API requests. |
+| <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProviderConfig.property.httpRetryWaitMin">HttpRetryWaitMin</a></code> | <code>double</code> | The minimum wait time (in seconds) between failed API requests. |
+| <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProviderConfig.property.requestsPerSecond">RequestsPerSecond</a></code> | <code>double</code> | The rate of requests per second to limit the HTTP client. |
 | <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProviderConfig.property.spacesAccessId">SpacesAccessId</a></code> | <code>string</code> | The access key ID for Spaces API operations. |
 | <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProviderConfig.property.spacesEndpoint">SpacesEndpoint</a></code> | <code>string</code> | The URL to use for the DigitalOcean Spaces API. |
 | <code><a href="#@cdktf/provider-digitalocean.provider.DigitaloceanProviderConfig.property.spacesSecretKey">SpacesSecretKey</a></code> | <code>string</code> | The secret access key for Spaces API operations. |
@@ -528,7 +652,7 @@ public string Alias { get; set; }
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs#alias DigitaloceanProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs#alias DigitaloceanProvider#alias}
 
 ---
 
@@ -542,7 +666,63 @@ public string ApiEndpoint { get; set; }
 
 The URL to use for the DigitalOcean API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs#api_endpoint DigitaloceanProvider#api_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs#api_endpoint DigitaloceanProvider#api_endpoint}
+
+---
+
+##### `HttpRetryMax`<sup>Optional</sup> <a name="HttpRetryMax" id="@cdktf/provider-digitalocean.provider.DigitaloceanProviderConfig.property.httpRetryMax"></a>
+
+```csharp
+public double HttpRetryMax { get; set; }
+```
+
+- *Type:* double
+
+The maximum number of retries on a failed API request.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs#http_retry_max DigitaloceanProvider#http_retry_max}
+
+---
+
+##### `HttpRetryWaitMax`<sup>Optional</sup> <a name="HttpRetryWaitMax" id="@cdktf/provider-digitalocean.provider.DigitaloceanProviderConfig.property.httpRetryWaitMax"></a>
+
+```csharp
+public double HttpRetryWaitMax { get; set; }
+```
+
+- *Type:* double
+
+The maximum wait time (in seconds) between failed API requests.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs#http_retry_wait_max DigitaloceanProvider#http_retry_wait_max}
+
+---
+
+##### `HttpRetryWaitMin`<sup>Optional</sup> <a name="HttpRetryWaitMin" id="@cdktf/provider-digitalocean.provider.DigitaloceanProviderConfig.property.httpRetryWaitMin"></a>
+
+```csharp
+public double HttpRetryWaitMin { get; set; }
+```
+
+- *Type:* double
+
+The minimum wait time (in seconds) between failed API requests.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs#http_retry_wait_min DigitaloceanProvider#http_retry_wait_min}
+
+---
+
+##### `RequestsPerSecond`<sup>Optional</sup> <a name="RequestsPerSecond" id="@cdktf/provider-digitalocean.provider.DigitaloceanProviderConfig.property.requestsPerSecond"></a>
+
+```csharp
+public double RequestsPerSecond { get; set; }
+```
+
+- *Type:* double
+
+The rate of requests per second to limit the HTTP client.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs#requests_per_second DigitaloceanProvider#requests_per_second}
 
 ---
 
@@ -556,7 +736,7 @@ public string SpacesAccessId { get; set; }
 
 The access key ID for Spaces API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs#spaces_access_id DigitaloceanProvider#spaces_access_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs#spaces_access_id DigitaloceanProvider#spaces_access_id}
 
 ---
 
@@ -570,7 +750,7 @@ public string SpacesEndpoint { get; set; }
 
 The URL to use for the DigitalOcean Spaces API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs#spaces_endpoint DigitaloceanProvider#spaces_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs#spaces_endpoint DigitaloceanProvider#spaces_endpoint}
 
 ---
 
@@ -584,7 +764,7 @@ public string SpacesSecretKey { get; set; }
 
 The secret access key for Spaces API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs#spaces_secret_key DigitaloceanProvider#spaces_secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs#spaces_secret_key DigitaloceanProvider#spaces_secret_key}
 
 ---
 
@@ -598,7 +778,7 @@ public string Token { get; set; }
 
 The token key for API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs#token DigitaloceanProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs#token DigitaloceanProvider#token}
 
 ---
 

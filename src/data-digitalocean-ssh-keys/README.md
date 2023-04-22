@@ -1,3 +1,3 @@
 # `data_digitalocean_ssh_keys`
 
-Refer to the Terraform Registory for docs: [`data_digitalocean_ssh_keys`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/ssh_keys).
+Refer to the Terraform Registory for docs: [`data_digitalocean_ssh_keys`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/ssh_keys).
