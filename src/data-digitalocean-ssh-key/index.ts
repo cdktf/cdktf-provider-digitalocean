@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/ssh_key
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/ssh_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface DataDigitaloceanSshKeyConfig extends cdktf.TerraformMetaArgumen
   /**
   * name of the ssh key
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/ssh_key#name DataDigitaloceanSshKey#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/ssh_key#name DataDigitaloceanSshKey#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/ssh_key digitalocean_ssh_key}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/ssh_key digitalocean_ssh_key}
 */
 export class DataDigitaloceanSshKey extends cdktf.TerraformDataSource {
 
@@ -30,7 +30,7 @@ export class DataDigitaloceanSshKey extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/ssh_key digitalocean_ssh_key} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/ssh_key digitalocean_ssh_key} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -41,7 +41,7 @@ export class DataDigitaloceanSshKey extends cdktf.TerraformDataSource {
       terraformResourceType: 'digitalocean_ssh_key',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.27.1',
+        providerVersion: '2.28.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,

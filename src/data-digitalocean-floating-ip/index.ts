@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/floating_ip
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/floating_ip
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataDigitaloceanFloatingIpConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/floating_ip#id DataDigitaloceanFloatingIp#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/floating_ip#id DataDigitaloceanFloatingIp#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,13 +17,13 @@ export interface DataDigitaloceanFloatingIpConfig extends cdktf.TerraformMetaArg
   /**
   * floating ip address
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/floating_ip#ip_address DataDigitaloceanFloatingIp#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/floating_ip#ip_address DataDigitaloceanFloatingIp#ip_address}
   */
   readonly ipAddress: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/floating_ip digitalocean_floating_ip}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/floating_ip digitalocean_floating_ip}
 */
 export class DataDigitaloceanFloatingIp extends cdktf.TerraformDataSource {
 
@@ -37,7 +37,7 @@ export class DataDigitaloceanFloatingIp extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/floating_ip digitalocean_floating_ip} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/floating_ip digitalocean_floating_ip} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -48,7 +48,7 @@ export class DataDigitaloceanFloatingIp extends cdktf.TerraformDataSource {
       terraformResourceType: 'digitalocean_floating_ip',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.27.1',
+        providerVersion: '2.28.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,

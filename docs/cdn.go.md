@@ -1,6 +1,6 @@
 # `digitalocean_cdn`
 
-Refer to the Terraform Registory for docs: [`digitalocean_cdn`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/cdn).
+Refer to the Terraform Registory for docs: [`digitalocean_cdn`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/cdn).
 
 # `cdn` Submodule <a name="`cdn` Submodule" id="@cdktf/provider-digitalocean.cdn"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`digitalocean_cdn`](https://registry
 
 ### Cdn <a name="Cdn" id="@cdktf/provider-digitalocean.cdn.Cdn"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/cdn digitalocean_cdn}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/cdn digitalocean_cdn}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.cdn.Cdn.Initializer"></a>
 
@@ -736,9 +736,9 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/cdn"
 | <code><a href="#@cdktf/provider-digitalocean.cdn.CdnConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.cdn.CdnConfig.property.origin">Origin</a></code> | <code>*string</code> | fully qualified domain name (FQDN) for the origin server. |
 | <code><a href="#@cdktf/provider-digitalocean.cdn.CdnConfig.property.certificateId">CertificateId</a></code> | <code>*string</code> | ID of a DigitalOcean managed TLS certificate for use with custom domains. |
-| <code><a href="#@cdktf/provider-digitalocean.cdn.CdnConfig.property.certificateName">CertificateName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/cdn#certificate_name Cdn#certificate_name}. |
+| <code><a href="#@cdktf/provider-digitalocean.cdn.CdnConfig.property.certificateName">CertificateName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/cdn#certificate_name Cdn#certificate_name}. |
 | <code><a href="#@cdktf/provider-digitalocean.cdn.CdnConfig.property.customDomain">CustomDomain</a></code> | <code>*string</code> | fully qualified domain name (FQDN) for custom subdomain, (requires certificate_id). |
-| <code><a href="#@cdktf/provider-digitalocean.cdn.CdnConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/cdn#id Cdn#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.cdn.CdnConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/cdn#id Cdn#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.cdn.CdnConfig.property.ttl">Ttl</a></code> | <code>*f64</code> | The amount of time the content is cached in the CDN. |
 
 ---
@@ -823,7 +823,7 @@ Origin *string
 
 fully qualified domain name (FQDN) for the origin server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/cdn#origin Cdn#origin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/cdn#origin Cdn#origin}
 
 ---
 
@@ -837,7 +837,7 @@ CertificateId *string
 
 ID of a DigitalOcean managed TLS certificate for use with custom domains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/cdn#certificate_id Cdn#certificate_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/cdn#certificate_id Cdn#certificate_id}
 
 ---
 
@@ -849,7 +849,7 @@ CertificateName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/cdn#certificate_name Cdn#certificate_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/cdn#certificate_name Cdn#certificate_name}.
 
 ---
 
@@ -863,7 +863,7 @@ CustomDomain *string
 
 fully qualified domain name (FQDN) for custom subdomain, (requires certificate_id).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/cdn#custom_domain Cdn#custom_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/cdn#custom_domain Cdn#custom_domain}
 
 ---
 
@@ -875,7 +875,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/cdn#id Cdn#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/cdn#id Cdn#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -892,7 +892,7 @@ Ttl *f64
 
 The amount of time the content is cached in the CDN.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/cdn#ttl Cdn#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/cdn#ttl Cdn#ttl}
 
 ---
 

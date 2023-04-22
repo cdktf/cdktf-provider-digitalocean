@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/tag
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/tag
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataDigitaloceanTagConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/tag#id DataDigitaloceanTag#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/tag#id DataDigitaloceanTag#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,13 +17,13 @@ export interface DataDigitaloceanTagConfig extends cdktf.TerraformMetaArguments 
   /**
   * name of the tag
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/tag#name DataDigitaloceanTag#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/tag#name DataDigitaloceanTag#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/tag digitalocean_tag}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/tag digitalocean_tag}
 */
 export class DataDigitaloceanTag extends cdktf.TerraformDataSource {
 
@@ -37,7 +37,7 @@ export class DataDigitaloceanTag extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/tag digitalocean_tag} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/tag digitalocean_tag} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -48,7 +48,7 @@ export class DataDigitaloceanTag extends cdktf.TerraformDataSource {
       terraformResourceType: 'digitalocean_tag',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.27.1',
+        providerVersion: '2.28.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,

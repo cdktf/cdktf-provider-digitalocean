@@ -1,3 +1,3 @@
 # `data_digitalocean_domains`
 
-Refer to the Terraform Registory for docs: [`data_digitalocean_domains`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains).
+Refer to the Terraform Registory for docs: [`data_digitalocean_domains`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/domains).
