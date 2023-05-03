@@ -1,6 +1,6 @@
 # `digitalocean_spaces_bucket_policy`
 
-Refer to the Terraform Registory for docs: [`digitalocean_spaces_bucket_policy`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/spaces_bucket_policy).
+Refer to the Terraform Registory for docs: [`digitalocean_spaces_bucket_policy`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/spaces_bucket_policy).
 
 # `spacesBucketPolicy` Submodule <a name="`spacesBucketPolicy` Submodule" id="@cdktf/provider-digitalocean.spacesBucketPolicy"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`digitalocean_spaces_bucket_policy`]
 
 ### SpacesBucketPolicy <a name="SpacesBucketPolicy" id="@cdktf/provider-digitalocean.spacesBucketPolicy.SpacesBucketPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/spaces_bucket_policy digitalocean_spaces_bucket_policy}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/spaces_bucket_policy digitalocean_spaces_bucket_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.spacesBucketPolicy.SpacesBucketPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/spacesbucketpolicy"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucketpolicy"
 
 spacesbucketpolicy.NewSpacesBucketPolicy(scope Construct, id *string, config SpacesBucketPolicyConfig) SpacesBucketPolicy
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.spacesBucketPolicy.SpacesBucketPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/spacesbucketpolicy"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucketpolicy"
 
 spacesbucketpolicy.SpacesBucketPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.spacesBucketPolicy.SpacesBucketPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/spacesbucketpolicy"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucketpolicy"
 
 spacesbucketpolicy.SpacesBucketPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ spacesbucketpolicy.SpacesBucketPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.spacesBucketPolicy.SpacesBucketPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/spacesbucketpolicy"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucketpolicy"
 
 spacesbucketpolicy.SpacesBucketPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -610,7 +610,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.spacesBucketPolicy.SpacesBucketPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/spacesbucketpolicy"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucketpolicy"
 
 &spacesbucketpolicy.SpacesBucketPolicyConfig {
 	Connection: interface{},
@@ -638,10 +638,10 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/spacesbu
 | <code><a href="#@cdktf/provider-digitalocean.spacesBucketPolicy.SpacesBucketPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.spacesBucketPolicy.SpacesBucketPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.spacesBucketPolicy.SpacesBucketPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.spacesBucketPolicy.SpacesBucketPolicyConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/spaces_bucket_policy#bucket SpacesBucketPolicy#bucket}. |
-| <code><a href="#@cdktf/provider-digitalocean.spacesBucketPolicy.SpacesBucketPolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/spaces_bucket_policy#policy SpacesBucketPolicy#policy}. |
-| <code><a href="#@cdktf/provider-digitalocean.spacesBucketPolicy.SpacesBucketPolicyConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/spaces_bucket_policy#region SpacesBucketPolicy#region}. |
-| <code><a href="#@cdktf/provider-digitalocean.spacesBucketPolicy.SpacesBucketPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/spaces_bucket_policy#id SpacesBucketPolicy#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.spacesBucketPolicy.SpacesBucketPolicyConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/spaces_bucket_policy#bucket SpacesBucketPolicy#bucket}. |
+| <code><a href="#@cdktf/provider-digitalocean.spacesBucketPolicy.SpacesBucketPolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/spaces_bucket_policy#policy SpacesBucketPolicy#policy}. |
+| <code><a href="#@cdktf/provider-digitalocean.spacesBucketPolicy.SpacesBucketPolicyConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/spaces_bucket_policy#region SpacesBucketPolicy#region}. |
+| <code><a href="#@cdktf/provider-digitalocean.spacesBucketPolicy.SpacesBucketPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/spaces_bucket_policy#id SpacesBucketPolicy#id}. |
 
 ---
 
@@ -723,7 +723,7 @@ Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/spaces_bucket_policy#bucket SpacesBucketPolicy#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/spaces_bucket_policy#bucket SpacesBucketPolicy#bucket}.
 
 ---
 
@@ -735,7 +735,7 @@ Policy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/spaces_bucket_policy#policy SpacesBucketPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/spaces_bucket_policy#policy SpacesBucketPolicy#policy}.
 
 ---
 
@@ -747,7 +747,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/spaces_bucket_policy#region SpacesBucketPolicy#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/spaces_bucket_policy#region SpacesBucketPolicy#region}.
 
 ---
 
@@ -759,7 +759,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/spaces_bucket_policy#id SpacesBucketPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/spaces_bucket_policy#id SpacesBucketPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

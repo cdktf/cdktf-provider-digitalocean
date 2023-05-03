@@ -1,6 +1,6 @@
 # `data_digitalocean_domain`
 
-Refer to the Terraform Registory for docs: [`data_digitalocean_domain`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/domain).
+Refer to the Terraform Registory for docs: [`data_digitalocean_domain`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/domain).
 
 # `dataDigitaloceanDomain` Submodule <a name="`dataDigitaloceanDomain` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanDomain"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_digitalocean_domain`](https://
 
 ### DataDigitaloceanDomain <a name="DataDigitaloceanDomain" id="@cdktf/provider-digitalocean.dataDigitaloceanDomain.DataDigitaloceanDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/domain digitalocean_domain}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/domain digitalocean_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanDomain.DataDigitaloceanDomain.Initializer"></a>
 
@@ -42,7 +42,7 @@ dataDigitaloceanDomain.DataDigitaloceanDomain(
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomain.DataDigitaloceanDomain.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomain.DataDigitaloceanDomain.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomain.DataDigitaloceanDomain.Initializer.parameter.name">name</a></code> | <code>str</code> | name of the domain. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomain.DataDigitaloceanDomain.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/domain#id DataDigitaloceanDomain#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomain.DataDigitaloceanDomain.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/domain#id DataDigitaloceanDomain#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 name of the domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/domain#name DataDigitaloceanDomain#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/domain#name DataDigitaloceanDomain#name}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/domain#id DataDigitaloceanDomain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/domain#id DataDigitaloceanDomain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -712,7 +712,7 @@ dataDigitaloceanDomain.DataDigitaloceanDomainConfig(
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomain.DataDigitaloceanDomainConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomain.DataDigitaloceanDomainConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomain.DataDigitaloceanDomainConfig.property.name">name</a></code> | <code>str</code> | name of the domain. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomain.DataDigitaloceanDomainConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/domain#id DataDigitaloceanDomain#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomain.DataDigitaloceanDomainConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/domain#id DataDigitaloceanDomain#id}. |
 
 ---
 
@@ -796,7 +796,7 @@ name: str
 
 name of the domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/domain#name DataDigitaloceanDomain#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/domain#name DataDigitaloceanDomain#name}
 
 ---
 
@@ -808,7 +808,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/domain#id DataDigitaloceanDomain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/domain#id DataDigitaloceanDomain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

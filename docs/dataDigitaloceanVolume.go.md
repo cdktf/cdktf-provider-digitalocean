@@ -1,6 +1,6 @@
 # `data_digitalocean_volume`
 
-Refer to the Terraform Registory for docs: [`data_digitalocean_volume`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/volume).
+Refer to the Terraform Registory for docs: [`data_digitalocean_volume`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/volume).
 
 # `dataDigitaloceanVolume` Submodule <a name="`dataDigitaloceanVolume` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanVolume"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_digitalocean_volume`](https://
 
 ### DataDigitaloceanVolume <a name="DataDigitaloceanVolume" id="@cdktf/provider-digitalocean.dataDigitaloceanVolume.DataDigitaloceanVolume"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/volume digitalocean_volume}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/volume digitalocean_volume}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanVolume.DataDigitaloceanVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceanvolume"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanvolume"
 
 datadigitaloceanvolume.NewDataDigitaloceanVolume(scope Construct, id *string, config DataDigitaloceanVolumeConfig) DataDigitaloceanVolume
 ```
@@ -291,7 +291,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanVolume.DataDigitaloceanVolume.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceanvolume"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanvolume"
 
 datadigitaloceanvolume.DataDigitaloceanVolume_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanVolume.DataDigitaloceanVolume.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceanvolume"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanvolume"
 
 datadigitaloceanvolume.DataDigitaloceanVolume_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ datadigitaloceanvolume.DataDigitaloceanVolume_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanVolume.DataDigitaloceanVolume.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceanvolume"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanvolume"
 
 datadigitaloceanvolume.DataDigitaloceanVolume_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -668,7 +668,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanVolume.DataDigitaloceanVolumeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceanvolume"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanvolume"
 
 &datadigitaloceanvolume.DataDigitaloceanVolumeConfig {
 	Connection: interface{},
@@ -698,7 +698,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigi
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolume.DataDigitaloceanVolumeConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolume.DataDigitaloceanVolumeConfig.property.name">Name</a></code> | <code>*string</code> | name of the volume. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolume.DataDigitaloceanVolumeConfig.property.description">Description</a></code> | <code>*string</code> | volume description. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolume.DataDigitaloceanVolumeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/volume#id DataDigitaloceanVolume#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolume.DataDigitaloceanVolumeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/volume#id DataDigitaloceanVolume#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolume.DataDigitaloceanVolumeConfig.property.region">Region</a></code> | <code>*string</code> | the region that the volume is provisioned in. |
 
 ---
@@ -783,7 +783,7 @@ Name *string
 
 name of the volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/volume#name DataDigitaloceanVolume#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/volume#name DataDigitaloceanVolume#name}
 
 ---
 
@@ -797,7 +797,7 @@ Description *string
 
 volume description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/volume#description DataDigitaloceanVolume#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/volume#description DataDigitaloceanVolume#description}
 
 ---
 
@@ -809,7 +809,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/volume#id DataDigitaloceanVolume#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/volume#id DataDigitaloceanVolume#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -826,7 +826,7 @@ Region *string
 
 the region that the volume is provisioned in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/volume#region DataDigitaloceanVolume#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/volume#region DataDigitaloceanVolume#region}
 
 ---
 
