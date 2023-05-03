@@ -1,6 +1,6 @@
 # `digitalocean_vpc`
 
-Refer to the Terraform Registory for docs: [`digitalocean_vpc`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/vpc).
+Refer to the Terraform Registory for docs: [`digitalocean_vpc`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/vpc).
 
 # `vpc` Submodule <a name="`vpc` Submodule" id="@cdktf/provider-digitalocean.vpc"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`digitalocean_vpc`](https://registry
 
 ### Vpc <a name="Vpc" id="@cdktf/provider-digitalocean.vpc.Vpc"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/vpc digitalocean_vpc}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/vpc digitalocean_vpc}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.vpc.Vpc.Initializer"></a>
 
@@ -48,7 +48,7 @@ vpc.Vpc(
 | <code><a href="#@cdktf/provider-digitalocean.vpc.Vpc.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the VPC. |
 | <code><a href="#@cdktf/provider-digitalocean.vpc.Vpc.Initializer.parameter.region">region</a></code> | <code>str</code> | DigitalOcean region slug for the VPC's location. |
 | <code><a href="#@cdktf/provider-digitalocean.vpc.Vpc.Initializer.parameter.description">description</a></code> | <code>str</code> | A free-form description for the VPC. |
-| <code><a href="#@cdktf/provider-digitalocean.vpc.Vpc.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/vpc#id Vpc#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.vpc.Vpc.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/vpc#id Vpc#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.vpc.Vpc.Initializer.parameter.ipRange">ip_range</a></code> | <code>str</code> | The range of IP addresses for the VPC in CIDR notation. |
 | <code><a href="#@cdktf/provider-digitalocean.vpc.Vpc.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-digitalocean.vpc.VpcTimeouts">VpcTimeouts</a></code> | timeouts block. |
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the VPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/vpc#name Vpc#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/vpc#name Vpc#name}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 DigitalOcean region slug for the VPC's location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/vpc#region Vpc#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/vpc#region Vpc#region}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 A free-form description for the VPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/vpc#description Vpc#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/vpc#description Vpc#description}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/vpc#id Vpc#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/vpc#id Vpc#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -161,7 +161,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The range of IP addresses for the VPC in CIDR notation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/vpc#ip_range Vpc#ip_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/vpc#ip_range Vpc#ip_range}
 
 ---
 
@@ -171,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/vpc#timeouts Vpc#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/vpc#timeouts Vpc#timeouts}
 
 ---
 
@@ -424,7 +424,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/vpc#delete Vpc#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/vpc#delete Vpc#delete}.
 
 ---
 
@@ -914,7 +914,7 @@ vpc.VpcConfig(
 | <code><a href="#@cdktf/provider-digitalocean.vpc.VpcConfig.property.name">name</a></code> | <code>str</code> | The name of the VPC. |
 | <code><a href="#@cdktf/provider-digitalocean.vpc.VpcConfig.property.region">region</a></code> | <code>str</code> | DigitalOcean region slug for the VPC's location. |
 | <code><a href="#@cdktf/provider-digitalocean.vpc.VpcConfig.property.description">description</a></code> | <code>str</code> | A free-form description for the VPC. |
-| <code><a href="#@cdktf/provider-digitalocean.vpc.VpcConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/vpc#id Vpc#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.vpc.VpcConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/vpc#id Vpc#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.vpc.VpcConfig.property.ipRange">ip_range</a></code> | <code>str</code> | The range of IP addresses for the VPC in CIDR notation. |
 | <code><a href="#@cdktf/provider-digitalocean.vpc.VpcConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-digitalocean.vpc.VpcTimeouts">VpcTimeouts</a></code> | timeouts block. |
 
@@ -1000,7 +1000,7 @@ name: str
 
 The name of the VPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/vpc#name Vpc#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/vpc#name Vpc#name}
 
 ---
 
@@ -1014,7 +1014,7 @@ region: str
 
 DigitalOcean region slug for the VPC's location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/vpc#region Vpc#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/vpc#region Vpc#region}
 
 ---
 
@@ -1028,7 +1028,7 @@ description: str
 
 A free-form description for the VPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/vpc#description Vpc#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/vpc#description Vpc#description}
 
 ---
 
@@ -1040,7 +1040,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/vpc#id Vpc#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/vpc#id Vpc#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1057,7 +1057,7 @@ ip_range: str
 
 The range of IP addresses for the VPC in CIDR notation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/vpc#ip_range Vpc#ip_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/vpc#ip_range Vpc#ip_range}
 
 ---
 
@@ -1071,7 +1071,7 @@ timeouts: VpcTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/vpc#timeouts Vpc#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/vpc#timeouts Vpc#timeouts}
 
 ---
 
@@ -1091,7 +1091,7 @@ vpc.VpcTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.vpc.VpcTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/vpc#delete Vpc#delete}. |
+| <code><a href="#@cdktf/provider-digitalocean.vpc.VpcTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/vpc#delete Vpc#delete}. |
 
 ---
 
@@ -1103,7 +1103,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/vpc#delete Vpc#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/vpc#delete Vpc#delete}.
 
 ---
 

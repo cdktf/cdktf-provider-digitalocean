@@ -1,6 +1,6 @@
 # `digitalocean_droplet`
 
-Refer to the Terraform Registory for docs: [`digitalocean_droplet`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet).
+Refer to the Terraform Registory for docs: [`digitalocean_droplet`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet).
 
 # `droplet` Submodule <a name="`droplet` Submodule" id="@cdktf/provider-digitalocean.droplet"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`digitalocean_droplet`](https://regi
 
 ### Droplet <a name="Droplet" id="@cdktf/provider-digitalocean.droplet.Droplet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet digitalocean_droplet}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet digitalocean_droplet}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.droplet.Droplet.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.resetGracefulShutdown">resetGracefulShutdown</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.resetIpv6">resetIpv6</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.resetIpv6Address">resetIpv6Address</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.resetMonitoring">resetMonitoring</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.resetPrivateNetworking">resetPrivateNetworking</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.resetRegion">resetRegion</a></code> | *No description.* |
@@ -315,6 +316,12 @@ public resetId(): void
 public resetIpv6(): void
 ```
 
+##### `resetIpv6Address` <a name="resetIpv6Address" id="@cdktf/provider-digitalocean.droplet.Droplet.resetIpv6Address"></a>
+
+```typescript
+public resetIpv6Address(): void
+```
+
 ##### `resetMonitoring` <a name="resetMonitoring" id="@cdktf/provider-digitalocean.droplet.Droplet.resetMonitoring"></a>
 
 ```typescript
@@ -467,7 +474,6 @@ droplet.Droplet.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.disk">disk</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.ipv4Address">ipv4Address</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.ipv4AddressPrivate">ipv4AddressPrivate</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.ipv6Address">ipv6Address</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.locked">locked</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.memory">memory</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.priceHourly">priceHourly</a></code> | <code>number</code> | *No description.* |
@@ -481,6 +487,7 @@ droplet.Droplet.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.gracefulShutdownInput">gracefulShutdownInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.imageInput">imageInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.ipv6AddressInput">ipv6AddressInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.ipv6Input">ipv6Input</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.monitoringInput">monitoringInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
@@ -500,6 +507,7 @@ droplet.Droplet.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.image">image</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.ipv6">ipv6</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.ipv6Address">ipv6Address</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.monitoring">monitoring</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.privateNetworking">privateNetworking</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -696,16 +704,6 @@ public readonly ipv4AddressPrivate: string;
 
 ---
 
-##### `ipv6Address`<sup>Required</sup> <a name="ipv6Address" id="@cdktf/provider-digitalocean.droplet.Droplet.property.ipv6Address"></a>
-
-```typescript
-public readonly ipv6Address: string;
-```
-
-- *Type:* string
-
----
-
 ##### `locked`<sup>Required</sup> <a name="locked" id="@cdktf/provider-digitalocean.droplet.Droplet.property.locked"></a>
 
 ```typescript
@@ -830,6 +828,16 @@ public readonly idInput: string;
 
 ```typescript
 public readonly imageInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `ipv6AddressInput`<sup>Optional</sup> <a name="ipv6AddressInput" id="@cdktf/provider-digitalocean.droplet.Droplet.property.ipv6AddressInput"></a>
+
+```typescript
+public readonly ipv6AddressInput: string;
 ```
 
 - *Type:* string
@@ -1026,6 +1034,16 @@ public readonly ipv6: boolean | IResolvable;
 
 ---
 
+##### `ipv6Address`<sup>Required</sup> <a name="ipv6Address" id="@cdktf/provider-digitalocean.droplet.Droplet.property.ipv6Address"></a>
+
+```typescript
+public readonly ipv6Address: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `monitoring`<sup>Required</sup> <a name="monitoring" id="@cdktf/provider-digitalocean.droplet.Droplet.property.monitoring"></a>
 
 ```typescript
@@ -1177,24 +1195,25 @@ const dropletConfig: droplet.DropletConfig = { ... }
 | <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.image">image</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#image Droplet#image}. |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#name Droplet#name}. |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.size">size</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#size Droplet#size}. |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.backups">backups</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#backups Droplet#backups}. |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.dropletAgent">dropletAgent</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#droplet_agent Droplet#droplet_agent}. |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.gracefulShutdown">gracefulShutdown</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#graceful_shutdown Droplet#graceful_shutdown}. |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#id Droplet#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.ipv6">ipv6</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#ipv6 Droplet#ipv6}. |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.monitoring">monitoring</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#monitoring Droplet#monitoring}. |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.privateNetworking">privateNetworking</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#private_networking Droplet#private_networking}. |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#region Droplet#region}. |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.resizeDisk">resizeDisk</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#resize_disk Droplet#resize_disk}. |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.sshKeys">sshKeys</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#ssh_keys Droplet#ssh_keys}. |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.tags">tags</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#tags Droplet#tags}. |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.image">image</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#image Droplet#image}. |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#name Droplet#name}. |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.size">size</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#size Droplet#size}. |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.backups">backups</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#backups Droplet#backups}. |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.dropletAgent">dropletAgent</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#droplet_agent Droplet#droplet_agent}. |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.gracefulShutdown">gracefulShutdown</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#graceful_shutdown Droplet#graceful_shutdown}. |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#id Droplet#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.ipv6">ipv6</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#ipv6 Droplet#ipv6}. |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.ipv6Address">ipv6Address</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#ipv6_address Droplet#ipv6_address}. |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.monitoring">monitoring</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#monitoring Droplet#monitoring}. |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.privateNetworking">privateNetworking</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#private_networking Droplet#private_networking}. |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#region Droplet#region}. |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.resizeDisk">resizeDisk</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#resize_disk Droplet#resize_disk}. |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.sshKeys">sshKeys</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#ssh_keys Droplet#ssh_keys}. |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.tags">tags</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#tags Droplet#tags}. |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-digitalocean.droplet.DropletTimeouts">DropletTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.userData">userData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#user_data Droplet#user_data}. |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.volumeIds">volumeIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#volume_ids Droplet#volume_ids}. |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.vpcUuid">vpcUuid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#vpc_uuid Droplet#vpc_uuid}. |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.userData">userData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#user_data Droplet#user_data}. |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.volumeIds">volumeIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#volume_ids Droplet#volume_ids}. |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.vpcUuid">vpcUuid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#vpc_uuid Droplet#vpc_uuid}. |
 
 ---
 
@@ -1276,7 +1295,7 @@ public readonly image: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#image Droplet#image}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#image Droplet#image}.
 
 ---
 
@@ -1288,7 +1307,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#name Droplet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#name Droplet#name}.
 
 ---
 
@@ -1300,7 +1319,7 @@ public readonly size: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#size Droplet#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#size Droplet#size}.
 
 ---
 
@@ -1312,7 +1331,7 @@ public readonly backups: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#backups Droplet#backups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#backups Droplet#backups}.
 
 ---
 
@@ -1324,7 +1343,7 @@ public readonly dropletAgent: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#droplet_agent Droplet#droplet_agent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#droplet_agent Droplet#droplet_agent}.
 
 ---
 
@@ -1336,7 +1355,7 @@ public readonly gracefulShutdown: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#graceful_shutdown Droplet#graceful_shutdown}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#graceful_shutdown Droplet#graceful_shutdown}.
 
 ---
 
@@ -1348,7 +1367,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#id Droplet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#id Droplet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1363,7 +1382,19 @@ public readonly ipv6: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#ipv6 Droplet#ipv6}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#ipv6 Droplet#ipv6}.
+
+---
+
+##### `ipv6Address`<sup>Optional</sup> <a name="ipv6Address" id="@cdktf/provider-digitalocean.droplet.DropletConfig.property.ipv6Address"></a>
+
+```typescript
+public readonly ipv6Address: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#ipv6_address Droplet#ipv6_address}.
 
 ---
 
@@ -1375,7 +1406,7 @@ public readonly monitoring: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#monitoring Droplet#monitoring}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#monitoring Droplet#monitoring}.
 
 ---
 
@@ -1387,7 +1418,7 @@ public readonly privateNetworking: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#private_networking Droplet#private_networking}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#private_networking Droplet#private_networking}.
 
 ---
 
@@ -1399,7 +1430,7 @@ public readonly region: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#region Droplet#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#region Droplet#region}.
 
 ---
 
@@ -1411,7 +1442,7 @@ public readonly resizeDisk: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#resize_disk Droplet#resize_disk}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#resize_disk Droplet#resize_disk}.
 
 ---
 
@@ -1423,7 +1454,7 @@ public readonly sshKeys: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#ssh_keys Droplet#ssh_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#ssh_keys Droplet#ssh_keys}.
 
 ---
 
@@ -1435,7 +1466,7 @@ public readonly tags: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#tags Droplet#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#tags Droplet#tags}.
 
 ---
 
@@ -1449,7 +1480,7 @@ public readonly timeouts: DropletTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#timeouts Droplet#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#timeouts Droplet#timeouts}
 
 ---
 
@@ -1461,7 +1492,7 @@ public readonly userData: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#user_data Droplet#user_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#user_data Droplet#user_data}.
 
 ---
 
@@ -1473,7 +1504,7 @@ public readonly volumeIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#volume_ids Droplet#volume_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#volume_ids Droplet#volume_ids}.
 
 ---
 
@@ -1485,7 +1516,7 @@ public readonly vpcUuid: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#vpc_uuid Droplet#vpc_uuid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#vpc_uuid Droplet#vpc_uuid}.
 
 ---
 
@@ -1503,9 +1534,9 @@ const dropletTimeouts: droplet.DropletTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#create Droplet#create}. |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#delete Droplet#delete}. |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#update Droplet#update}. |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#create Droplet#create}. |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#delete Droplet#delete}. |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#update Droplet#update}. |
 
 ---
 
@@ -1517,7 +1548,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#create Droplet#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#create Droplet#create}.
 
 ---
 
@@ -1529,7 +1560,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#delete Droplet#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#delete Droplet#delete}.
 
 ---
 
@@ -1541,7 +1572,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet#update Droplet#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet#update Droplet#update}.
 
 ---
 

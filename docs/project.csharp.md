@@ -1,6 +1,6 @@
 # `digitalocean_project`
 
-Refer to the Terraform Registory for docs: [`digitalocean_project`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/project).
+Refer to the Terraform Registory for docs: [`digitalocean_project`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/project).
 
 # `project` Submodule <a name="`project` Submodule" id="@cdktf/provider-digitalocean.project"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`digitalocean_project`](https://regi
 
 ### Project <a name="Project" id="@cdktf/provider-digitalocean.project.Project"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/project digitalocean_project}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/project digitalocean_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.project.Project.Initializer"></a>
 
@@ -832,7 +832,7 @@ new ProjectConfig {
 | <code><a href="#@cdktf/provider-digitalocean.project.ProjectConfig.property.name">Name</a></code> | <code>string</code> | the human-readable name for the project. |
 | <code><a href="#@cdktf/provider-digitalocean.project.ProjectConfig.property.description">Description</a></code> | <code>string</code> | the description of the project. |
 | <code><a href="#@cdktf/provider-digitalocean.project.ProjectConfig.property.environment">Environment</a></code> | <code>string</code> | the environment of the project's resources. |
-| <code><a href="#@cdktf/provider-digitalocean.project.ProjectConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/project#id Project#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.project.ProjectConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/project#id Project#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.project.ProjectConfig.property.isDefault">IsDefault</a></code> | <code>object</code> | determine if the project is the default or not. |
 | <code><a href="#@cdktf/provider-digitalocean.project.ProjectConfig.property.purpose">Purpose</a></code> | <code>string</code> | the purpose of the project. |
 | <code><a href="#@cdktf/provider-digitalocean.project.ProjectConfig.property.resources">Resources</a></code> | <code>string[]</code> | the resources associated with the project. |
@@ -920,7 +920,7 @@ public string Name { get; set; }
 
 the human-readable name for the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/project#name Project#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/project#name Project#name}
 
 ---
 
@@ -934,7 +934,7 @@ public string Description { get; set; }
 
 the description of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/project#description Project#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/project#description Project#description}
 
 ---
 
@@ -948,7 +948,7 @@ public string Environment { get; set; }
 
 the environment of the project's resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/project#environment Project#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/project#environment Project#environment}
 
 ---
 
@@ -960,7 +960,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/project#id Project#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/project#id Project#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -977,7 +977,7 @@ public object IsDefault { get; set; }
 
 determine if the project is the default or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/project#is_default Project#is_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/project#is_default Project#is_default}
 
 ---
 
@@ -991,7 +991,7 @@ public string Purpose { get; set; }
 
 the purpose of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/project#purpose Project#purpose}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/project#purpose Project#purpose}
 
 ---
 
@@ -1005,7 +1005,7 @@ public string[] Resources { get; set; }
 
 the resources associated with the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/project#resources Project#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/project#resources Project#resources}
 
 ---
 
@@ -1019,7 +1019,7 @@ public ProjectTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/project#timeouts Project#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/project#timeouts Project#timeouts}
 
 ---
 
@@ -1039,7 +1039,7 @@ new ProjectTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.project.ProjectTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/project#delete Project#delete}. |
+| <code><a href="#@cdktf/provider-digitalocean.project.ProjectTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/project#delete Project#delete}. |
 
 ---
 
@@ -1051,7 +1051,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/project#delete Project#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/project#delete Project#delete}.
 
 ---
 
