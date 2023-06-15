@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/databasereplica"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/databasereplica"
 
 databasereplica.NewDatabaseReplica(scope Construct, id *string, config DatabaseReplicaConfig) DatabaseReplica
 ```
@@ -305,7 +305,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/databasereplica"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/databasereplica"
 
 databasereplica.DatabaseReplica_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/databasereplica"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/databasereplica"
 
 databasereplica.DatabaseReplica_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ databasereplica.DatabaseReplica_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/databasereplica"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/databasereplica"
 
 databasereplica.DatabaseReplica_IsTerraformResource(x interface{}) *bool
 ```
@@ -803,7 +803,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.databaseReplica.DatabaseReplicaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/databasereplica"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/databasereplica"
 
 &databasereplica.DatabaseReplicaConfig {
 	Connection: interface{},
