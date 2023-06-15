@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.reservedIp.ReservedIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/reservedip"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/reservedip"
 
 reservedip.NewReservedIp(scope Construct, id *string, config ReservedIpConfig) ReservedIp
 ```
@@ -291,7 +291,7 @@ func ResetIpAddress()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.reservedIp.ReservedIp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/reservedip"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/reservedip"
 
 reservedip.ReservedIp_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.reservedIp.ReservedIp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/reservedip"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/reservedip"
 
 reservedip.ReservedIp_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ reservedip.ReservedIp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.reservedIp.ReservedIp.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/reservedip"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/reservedip"
 
 reservedip.ReservedIp_IsTerraformResource(x interface{}) *bool
 ```
@@ -635,7 +635,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.reservedIp.ReservedIpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/reservedip"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/reservedip"
 
 &reservedip.ReservedIpConfig {
 	Connection: interface{},

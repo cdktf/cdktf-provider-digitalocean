@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanprojects"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/datadigitaloceanprojects"
 
 datadigitaloceanprojects.NewDataDigitaloceanProjects(scope Construct, id *string, config DataDigitaloceanProjectsConfig) DataDigitaloceanProjects
 ```
@@ -317,7 +317,7 @@ func ResetSort()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanprojects"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/datadigitaloceanprojects"
 
 datadigitaloceanprojects.DataDigitaloceanProjects_IsConstruct(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanprojects"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/datadigitaloceanprojects"
 
 datadigitaloceanprojects.DataDigitaloceanProjects_IsTerraformElement(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ datadigitaloceanprojects.DataDigitaloceanProjects_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanprojects"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/datadigitaloceanprojects"
 
 datadigitaloceanprojects.DataDigitaloceanProjects_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -617,7 +617,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanprojects"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/datadigitaloceanprojects"
 
 &datadigitaloceanprojects.DataDigitaloceanProjectsConfig {
 	Connection: interface{},
@@ -768,7 +768,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanprojects"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/datadigitaloceanprojects"
 
 &datadigitaloceanprojects.DataDigitaloceanProjectsFilter {
 	Key: *string,
@@ -842,7 +842,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsProjects.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanprojects"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/datadigitaloceanprojects"
 
 &datadigitaloceanprojects.DataDigitaloceanProjectsProjects {
 
@@ -855,7 +855,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigital
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSort.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanprojects"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/datadigitaloceanprojects"
 
 &datadigitaloceanprojects.DataDigitaloceanProjectsSort {
 	Key: *string,
@@ -903,7 +903,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanprojects"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/datadigitaloceanprojects"
 
 datadigitaloceanprojects.NewDataDigitaloceanProjectsFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanProjectsFilterList
 ```
@@ -1046,7 +1046,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanprojects"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/datadigitaloceanprojects"
 
 datadigitaloceanprojects.NewDataDigitaloceanProjectsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanProjectsFilterOutputReference
 ```
@@ -1415,7 +1415,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsProjectsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanprojects"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/datadigitaloceanprojects"
 
 datadigitaloceanprojects.NewDataDigitaloceanProjectsProjectsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanProjectsProjectsList
 ```
@@ -1547,7 +1547,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsProjectsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanprojects"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/datadigitaloceanprojects"
 
 datadigitaloceanprojects.NewDataDigitaloceanProjectsProjectsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanProjectsProjectsOutputReference
 ```
@@ -1935,7 +1935,7 @@ func InternalValue() DataDigitaloceanProjectsProjects
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSortList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanprojects"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/datadigitaloceanprojects"
 
 datadigitaloceanprojects.NewDataDigitaloceanProjectsSortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanProjectsSortList
 ```
@@ -2078,7 +2078,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanprojects"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/datadigitaloceanprojects"
 
 datadigitaloceanprojects.NewDataDigitaloceanProjectsSortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanProjectsSortOutputReference
 ```
