@@ -6962,7 +6962,7 @@ public resetVersion(): void
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.production">production</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.version">version</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a></code> | *No description.* |
 
 ---
 
@@ -7133,10 +7133,10 @@ public readonly version: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppSpecDatabase | IResolvable;
+public readonly internalValue: IResolvable | AppSpecDatabase;
 ```
 
-- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>
 
 ---
 
@@ -7541,7 +7541,7 @@ public resetZone(): void
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.wildcard">wildcard</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.zone">zone</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a></code> | *No description.* |
 
 ---
 
@@ -7652,10 +7652,10 @@ public readonly zone: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppSpecDomain | IResolvable;
+public readonly internalValue: IResolvable | AppSpecDomain;
 ```
 
-- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>
 
 ---
 
@@ -8067,7 +8067,7 @@ public resetValue(): void
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEnvOutputReference.property.scope">scope</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEnvOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEnvOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEnvOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEnvOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a></code> | *No description.* |
 
 ---
 
@@ -8178,10 +8178,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecEnvOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppSpecEnv | IResolvable;
+public readonly internalValue: IResolvable | AppSpecEnv;
 ```
 
-- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>
 
 ---
 
@@ -8574,7 +8574,7 @@ public resetDisabled(): void
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.rule">rule</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.value">value</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.window">window</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a></code> | *No description.* |
 
 ---
 
@@ -8705,10 +8705,10 @@ public readonly window: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppSpecFunctionAlert | IResolvable;
+public readonly internalValue: IResolvable | AppSpecFunctionAlert;
 ```
 
-- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>
 
 ---
 
@@ -9892,7 +9892,7 @@ public resetValue(): void
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnvOutputReference.property.scope">scope</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnvOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnvOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnvOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnvOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a></code> | *No description.* |
 
 ---
 
@@ -10003,10 +10003,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecFunctionEnvOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppSpecFunctionEnv | IResolvable;
+public readonly internalValue: IResolvable | AppSpecFunctionEnv;
 ```
 
-- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>
 
 ---
 
@@ -12143,7 +12143,7 @@ public resetPapertrail(): void
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationOutputReference.property.papertrailInput">papertrailInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationPapertrail">AppSpecFunctionLogDestinationPapertrail</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a></code> | *No description.* |
 
 ---
 
@@ -12254,10 +12254,10 @@ public readonly name: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppSpecFunctionLogDestination | IResolvable;
+public readonly internalValue: IResolvable | AppSpecFunctionLogDestination;
 ```
 
-- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>
 
 ---
 
@@ -12948,7 +12948,7 @@ public resetSourceDir(): void
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.sourceDirInput">sourceDirInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.sourceDir">sourceDir</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a></code> | *No description.* |
 
 ---
 
@@ -13179,10 +13179,10 @@ public readonly sourceDir: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppSpecFunction | IResolvable;
+public readonly internalValue: IResolvable | AppSpecFunction;
 ```
 
-- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>
 
 ---
 
@@ -13576,7 +13576,7 @@ public resetPreservePathPrefix(): void
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.preservePathPrefixInput">preservePathPrefixInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.path">path</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.preservePathPrefix">preservePathPrefix</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a></code> | *No description.* |
 
 ---
 
@@ -13647,10 +13647,10 @@ public readonly preservePathPrefix: boolean | IResolvable;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppSpecFunctionRoutes | IResolvable;
+public readonly internalValue: IResolvable | AppSpecFunctionRoutes;
 ```
 
-- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>
 
 ---
 
@@ -14043,7 +14043,7 @@ public resetDisabled(): void
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.rule">rule</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.value">value</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.window">window</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a></code> | *No description.* |
 
 ---
 
@@ -14174,10 +14174,10 @@ public readonly window: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppSpecJobAlert | IResolvable;
+public readonly internalValue: IResolvable | AppSpecJobAlert;
 ```
 
-- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>
 
 ---
 
@@ -14589,7 +14589,7 @@ public resetValue(): void
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnvOutputReference.property.scope">scope</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnvOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnvOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnvOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnvOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a></code> | *No description.* |
 
 ---
 
@@ -14700,10 +14700,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecJobEnvOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppSpecJobEnv | IResolvable;
+public readonly internalValue: IResolvable | AppSpecJobEnv;
 ```
 
-- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>
 
 ---
 
@@ -16067,7 +16067,7 @@ public resetEnabled(): void
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a></code> | *No description.* |
 
 ---
 
@@ -16118,10 +16118,10 @@ public readonly enabled: boolean | IResolvable;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppSpecJobImageDeployOnPush | IResolvable;
+public readonly internalValue: IResolvable | AppSpecJobImageDeployOnPush;
 ```
 
-- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>
 
 ---
 
@@ -17672,7 +17672,7 @@ public resetPapertrail(): void
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationOutputReference.property.papertrailInput">papertrailInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationPapertrail">AppSpecJobLogDestinationPapertrail</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a></code> | *No description.* |
 
 ---
 
@@ -17783,10 +17783,10 @@ public readonly name: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppSpecJobLogDestination | IResolvable;
+public readonly internalValue: IResolvable | AppSpecJobLogDestination;
 ```
 
-- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>
 
 ---
 
@@ -18518,7 +18518,7 @@ public resetSourceDir(): void
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.runCommand">runCommand</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.sourceDir">sourceDir</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a></code> | *No description.* |
 
 ---
 
@@ -18869,10 +18869,10 @@ public readonly sourceDir: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppSpecJob | IResolvable;
+public readonly internalValue: IResolvable | AppSpecJob;
 ```
 
-- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>
 
 ---
 
@@ -19972,7 +19972,7 @@ public resetDisabled(): void
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.rule">rule</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.value">value</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.window">window</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a></code> | *No description.* |
 
 ---
 
@@ -20103,10 +20103,10 @@ public readonly window: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppSpecServiceAlert | IResolvable;
+public readonly internalValue: IResolvable | AppSpecServiceAlert;
 ```
 
-- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>
 
 ---
 
@@ -21290,7 +21290,7 @@ public resetValue(): void
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnvOutputReference.property.scope">scope</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnvOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnvOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnvOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnvOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a></code> | *No description.* |
 
 ---
 
@@ -21401,10 +21401,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceEnvOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppSpecServiceEnv | IResolvable;
+public readonly internalValue: IResolvable | AppSpecServiceEnv;
 ```
 
-- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>
 
 ---
 
@@ -23191,7 +23191,7 @@ public resetEnabled(): void
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a></code> | *No description.* |
 
 ---
 
@@ -23242,10 +23242,10 @@ public readonly enabled: boolean | IResolvable;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppSpecServiceImageDeployOnPush | IResolvable;
+public readonly internalValue: IResolvable | AppSpecServiceImageDeployOnPush;
 ```
 
-- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>
 
 ---
 
@@ -24796,7 +24796,7 @@ public resetPapertrail(): void
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationOutputReference.property.papertrailInput">papertrailInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationPapertrail">AppSpecServiceLogDestinationPapertrail</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a></code> | *No description.* |
 
 ---
 
@@ -24907,10 +24907,10 @@ public readonly name: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppSpecServiceLogDestination | IResolvable;
+public readonly internalValue: IResolvable | AppSpecServiceLogDestination;
 ```
 
-- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>
 
 ---
 
@@ -25717,7 +25717,7 @@ public resetSourceDir(): void
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.runCommand">runCommand</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.sourceDir">sourceDir</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a></code> | *No description.* |
 
 ---
 
@@ -26148,10 +26148,10 @@ public readonly sourceDir: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppSpecService | IResolvable;
+public readonly internalValue: IResolvable | AppSpecService;
 ```
 
-- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>
 
 ---
 
@@ -26545,7 +26545,7 @@ public resetPreservePathPrefix(): void
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.preservePathPrefixInput">preservePathPrefixInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.path">path</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.preservePathPrefix">preservePathPrefix</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a></code> | *No description.* |
 
 ---
 
@@ -26616,10 +26616,10 @@ public readonly preservePathPrefix: boolean | IResolvable;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppSpecServiceRoutes | IResolvable;
+public readonly internalValue: IResolvable | AppSpecServiceRoutes;
 ```
 
-- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>
 
 ---
 
@@ -27803,7 +27803,7 @@ public resetValue(): void
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvOutputReference.property.scope">scope</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a></code> | *No description.* |
 
 ---
 
@@ -27914,10 +27914,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppSpecStaticSiteEnv | IResolvable;
+public readonly internalValue: IResolvable | AppSpecStaticSiteEnv;
 ```
 
-- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>
 
 ---
 
@@ -29478,7 +29478,7 @@ public resetSourceDir(): void
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.outputDir">outputDir</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.sourceDir">sourceDir</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a></code> | *No description.* |
 
 ---
 
@@ -29809,10 +29809,10 @@ public readonly sourceDir: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppSpecStaticSite | IResolvable;
+public readonly internalValue: IResolvable | AppSpecStaticSite;
 ```
 
-- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>
 
 ---
 
@@ -30206,7 +30206,7 @@ public resetPreservePathPrefix(): void
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.preservePathPrefixInput">preservePathPrefixInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.path">path</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.preservePathPrefix">preservePathPrefix</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a></code> | *No description.* |
 
 ---
 
@@ -30277,10 +30277,10 @@ public readonly preservePathPrefix: boolean | IResolvable;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppSpecStaticSiteRoutes | IResolvable;
+public readonly internalValue: IResolvable | AppSpecStaticSiteRoutes;
 ```
 
-- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>
 
 ---
 
@@ -30673,7 +30673,7 @@ public resetDisabled(): void
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.rule">rule</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.value">value</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.window">window</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a></code> | *No description.* |
 
 ---
 
@@ -30804,10 +30804,10 @@ public readonly window: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppSpecWorkerAlert | IResolvable;
+public readonly internalValue: IResolvable | AppSpecWorkerAlert;
 ```
 
-- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>
 
 ---
 
@@ -31219,7 +31219,7 @@ public resetValue(): void
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnvOutputReference.property.scope">scope</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnvOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnvOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnvOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnvOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a></code> | *No description.* |
 
 ---
 
@@ -31330,10 +31330,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecWorkerEnvOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppSpecWorkerEnv | IResolvable;
+public readonly internalValue: IResolvable | AppSpecWorkerEnv;
 ```
 
-- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>
 
 ---
 
@@ -32697,7 +32697,7 @@ public resetEnabled(): void
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a></code> | *No description.* |
 
 ---
 
@@ -32748,10 +32748,10 @@ public readonly enabled: boolean | IResolvable;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppSpecWorkerImageDeployOnPush | IResolvable;
+public readonly internalValue: IResolvable | AppSpecWorkerImageDeployOnPush;
 ```
 
-- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>
 
 ---
 
@@ -34302,7 +34302,7 @@ public resetPapertrail(): void
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationOutputReference.property.papertrailInput">papertrailInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationPapertrail">AppSpecWorkerLogDestinationPapertrail</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a></code> | *No description.* |
 
 ---
 
@@ -34413,10 +34413,10 @@ public readonly name: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppSpecWorkerLogDestination | IResolvable;
+public readonly internalValue: IResolvable | AppSpecWorkerLogDestination;
 ```
 
-- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>
 
 ---
 
@@ -35139,7 +35139,7 @@ public resetSourceDir(): void
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.runCommand">runCommand</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.sourceDir">sourceDir</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a></code> | *No description.* |
 
 ---
 
@@ -35470,10 +35470,10 @@ public readonly sourceDir: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppSpecWorker | IResolvable;
+public readonly internalValue: IResolvable | AppSpecWorker;
 ```
 
-- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>
 
 ---
 

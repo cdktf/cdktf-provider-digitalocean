@@ -555,7 +555,7 @@ vpc.Vpc.is_terraform_resource(
 | <code><a href="#@cdktf/provider-digitalocean.vpc.Vpc.property.ipRangeInput">ip_range_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.vpc.Vpc.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.vpc.Vpc.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.vpc.Vpc.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-digitalocean.vpc.VpcTimeouts">VpcTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.vpc.Vpc.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.vpc.VpcTimeouts">VpcTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.vpc.Vpc.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.vpc.Vpc.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.vpc.Vpc.property.ipRange">ip_range</a></code> | <code>str</code> | *No description.* |
@@ -799,10 +799,10 @@ region_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-digitalocean.vpc.Vpc.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[VpcTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, VpcTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-digitalocean.vpc.VpcTimeouts">VpcTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.vpc.VpcTimeouts">VpcTimeouts</a>]
 
 ---
 
@@ -1353,7 +1353,7 @@ def reset_delete() -> None
 | <code><a href="#@cdktf/provider-digitalocean.vpc.VpcTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.vpc.VpcTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.vpc.VpcTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.vpc.VpcTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-digitalocean.vpc.VpcTimeouts">VpcTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.vpc.VpcTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.vpc.VpcTimeouts">VpcTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -1404,10 +1404,10 @@ delete: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.vpc.VpcTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[VpcTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, VpcTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-digitalocean.vpc.VpcTimeouts">VpcTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.vpc.VpcTimeouts">VpcTimeouts</a>]
 
 ---
 
