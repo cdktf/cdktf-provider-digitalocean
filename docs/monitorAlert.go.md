@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/monitoralert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/monitoralert"
 
 monitoralert.NewMonitorAlert(scope Construct, id *string, config MonitorAlertConfig) MonitorAlert
 ```
@@ -311,7 +311,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/monitoralert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/monitoralert"
 
 monitoralert.MonitorAlert_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/monitoralert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/monitoralert"
 
 monitoralert.MonitorAlert_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ monitoralert.MonitorAlert_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/monitoralert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/monitoralert"
 
 monitoralert.MonitorAlert_IsTerraformResource(x interface{}) *bool
 ```
@@ -787,7 +787,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlerts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/monitoralert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/monitoralert"
 
 &monitoralert.MonitorAlertAlerts {
 	Email: *[]*string,
@@ -837,7 +837,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlack.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/monitoralert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/monitoralert"
 
 &monitoralert.MonitorAlertAlertsSlack {
 	Channel: *string,
@@ -887,7 +887,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/monitoralert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/monitoralert"
 
 &monitoralert.MonitorAlertConfig {
 	Connection: interface{},
@@ -897,7 +897,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/monitora
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Alerts: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7.monitorAlert.MonitorAlertAlerts,
+	Alerts: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.monitorAlert.MonitorAlertAlerts,
 	Compare: *string,
 	Description: *string,
 	Type: *string,
@@ -1142,7 +1142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/monitoralert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/monitoralert"
 
 monitoralert.NewMonitorAlertAlertsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorAlertAlertsOutputReference
 ```
@@ -1462,7 +1462,7 @@ func InternalValue() MonitorAlertAlerts
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlackList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/monitoralert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/monitoralert"
 
 monitoralert.NewMonitorAlertAlertsSlackList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorAlertAlertsSlackList
 ```
@@ -1605,7 +1605,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlackOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/monitoralert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/monitoralert"
 
 monitoralert.NewMonitorAlertAlertsSlackOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorAlertAlertsSlackOutputReference
 ```

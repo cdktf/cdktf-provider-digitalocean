@@ -797,7 +797,7 @@ droplet.Droplet.is_terraform_resource(
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.sizeInput">size_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.sshKeysInput">ssh_keys_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.tagsInput">tags_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-digitalocean.droplet.DropletTimeouts">DropletTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.droplet.DropletTimeouts">DropletTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.userDataInput">user_data_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.volumeIdsInput">volume_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.vpcUuidInput">vpc_uuid_input</a></code> | <code>str</code> | *No description.* |
@@ -1237,10 +1237,10 @@ tags_input: typing.List[str]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-digitalocean.droplet.Droplet.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[DropletTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, DropletTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-digitalocean.droplet.DropletTimeouts">DropletTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.droplet.DropletTimeouts">DropletTimeouts</a>]
 
 ---
 
@@ -2171,7 +2171,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-digitalocean.droplet.DropletTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.DropletTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.DropletTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-digitalocean.droplet.DropletTimeouts">DropletTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.droplet.DropletTimeouts">DropletTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -2262,10 +2262,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.droplet.DropletTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[DropletTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, DropletTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-digitalocean.droplet.DropletTimeouts">DropletTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.droplet.DropletTimeouts">DropletTimeouts</a>]
 
 ---
 

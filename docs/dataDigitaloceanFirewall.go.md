@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanFirewall.DataDigitaloceanFirewall.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/datadigitaloceanfirewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanfirewall"
 
 datadigitaloceanfirewall.NewDataDigitaloceanFirewall(scope Construct, id *string, config DataDigitaloceanFirewallConfig) DataDigitaloceanFirewall
 ```
@@ -331,7 +331,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanFirewall.DataDigitaloceanFirewall.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/datadigitaloceanfirewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanfirewall"
 
 datadigitaloceanfirewall.DataDigitaloceanFirewall_IsConstruct(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanFirewall.DataDigitaloceanFirewall.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/datadigitaloceanfirewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanfirewall"
 
 datadigitaloceanfirewall.DataDigitaloceanFirewall_IsTerraformElement(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ datadigitaloceanfirewall.DataDigitaloceanFirewall_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanFirewall.DataDigitaloceanFirewall.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/datadigitaloceanfirewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanfirewall"
 
 datadigitaloceanfirewall.DataDigitaloceanFirewall_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -730,7 +730,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanFirewall.DataDigitaloceanFirewallConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/datadigitaloceanfirewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanfirewall"
 
 &datadigitaloceanfirewall.DataDigitaloceanFirewallConfig {
 	Connection: interface{},
@@ -923,7 +923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanFirewall.DataDigitaloceanFirewallInboundRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/datadigitaloceanfirewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanfirewall"
 
 &datadigitaloceanfirewall.DataDigitaloceanFirewallInboundRule {
 	Protocol: *string,
@@ -1039,7 +1039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanFirewall.DataDigitaloceanFirewallOutboundRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/datadigitaloceanfirewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanfirewall"
 
 &datadigitaloceanfirewall.DataDigitaloceanFirewallOutboundRule {
 	Protocol: *string,
@@ -1155,7 +1155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanFirewall.DataDigitaloceanFirewallPendingChanges.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/datadigitaloceanfirewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanfirewall"
 
 &datadigitaloceanfirewall.DataDigitaloceanFirewallPendingChanges {
 
@@ -1170,7 +1170,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/datadigi
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanFirewall.DataDigitaloceanFirewallInboundRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/datadigitaloceanfirewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanfirewall"
 
 datadigitaloceanfirewall.NewDataDigitaloceanFirewallInboundRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanFirewallInboundRuleList
 ```
@@ -1313,7 +1313,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanFirewall.DataDigitaloceanFirewallInboundRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/datadigitaloceanfirewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanfirewall"
 
 datadigitaloceanfirewall.NewDataDigitaloceanFirewallInboundRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanFirewallInboundRuleOutputReference
 ```
@@ -1776,7 +1776,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanFirewall.DataDigitaloceanFirewallOutboundRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/datadigitaloceanfirewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanfirewall"
 
 datadigitaloceanfirewall.NewDataDigitaloceanFirewallOutboundRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanFirewallOutboundRuleList
 ```
@@ -1919,7 +1919,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanFirewall.DataDigitaloceanFirewallOutboundRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/datadigitaloceanfirewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanfirewall"
 
 datadigitaloceanfirewall.NewDataDigitaloceanFirewallOutboundRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanFirewallOutboundRuleOutputReference
 ```
@@ -2382,7 +2382,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanFirewall.DataDigitaloceanFirewallPendingChangesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/datadigitaloceanfirewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanfirewall"
 
 datadigitaloceanfirewall.NewDataDigitaloceanFirewallPendingChangesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanFirewallPendingChangesList
 ```
@@ -2514,7 +2514,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanFirewall.DataDigitaloceanFirewallPendingChangesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/datadigitaloceanfirewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanfirewall"
 
 datadigitaloceanfirewall.NewDataDigitaloceanFirewallPendingChangesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanFirewallPendingChangesOutputReference
 ```
