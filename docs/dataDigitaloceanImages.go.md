@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanimages"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/datadigitaloceanimages"
 
 datadigitaloceanimages.NewDataDigitaloceanImages(scope Construct, id *string, config DataDigitaloceanImagesConfig) DataDigitaloceanImages
 ```
@@ -317,7 +317,7 @@ func ResetSort()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanimages"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/datadigitaloceanimages"
 
 datadigitaloceanimages.DataDigitaloceanImages_IsConstruct(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanimages"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/datadigitaloceanimages"
 
 datadigitaloceanimages.DataDigitaloceanImages_IsTerraformElement(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ datadigitaloceanimages.DataDigitaloceanImages_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanimages"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/datadigitaloceanimages"
 
 datadigitaloceanimages.DataDigitaloceanImages_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -617,7 +617,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanimages"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/datadigitaloceanimages"
 
 &datadigitaloceanimages.DataDigitaloceanImagesConfig {
 	Connection: interface{},
@@ -768,7 +768,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanimages"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/datadigitaloceanimages"
 
 &datadigitaloceanimages.DataDigitaloceanImagesFilter {
 	Key: *string,
@@ -842,7 +842,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesImages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanimages"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/datadigitaloceanimages"
 
 &datadigitaloceanimages.DataDigitaloceanImagesImages {
 
@@ -855,7 +855,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigital
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSort.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanimages"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/datadigitaloceanimages"
 
 &datadigitaloceanimages.DataDigitaloceanImagesSort {
 	Key: *string,
@@ -903,7 +903,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanimages"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/datadigitaloceanimages"
 
 datadigitaloceanimages.NewDataDigitaloceanImagesFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanImagesFilterList
 ```
@@ -1046,7 +1046,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanimages"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/datadigitaloceanimages"
 
 datadigitaloceanimages.NewDataDigitaloceanImagesFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanImagesFilterOutputReference
 ```
@@ -1415,7 +1415,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesImagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanimages"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/datadigitaloceanimages"
 
 datadigitaloceanimages.NewDataDigitaloceanImagesImagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanImagesImagesList
 ```
@@ -1547,7 +1547,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesImagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanimages"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/datadigitaloceanimages"
 
 datadigitaloceanimages.NewDataDigitaloceanImagesImagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanImagesImagesOutputReference
 ```
@@ -1979,7 +1979,7 @@ func InternalValue() DataDigitaloceanImagesImages
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSortList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanimages"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/datadigitaloceanimages"
 
 datadigitaloceanimages.NewDataDigitaloceanImagesSortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanImagesSortList
 ```
@@ -2122,7 +2122,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanimages"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/datadigitaloceanimages"
 
 datadigitaloceanimages.NewDataDigitaloceanImagesSortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanImagesSortOutputReference
 ```
