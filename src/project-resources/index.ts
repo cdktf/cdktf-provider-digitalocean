@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/project_resources
 // generated from terraform resource schema
 
