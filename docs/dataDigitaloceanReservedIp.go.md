@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanReservedIp.DataDigitaloceanReservedIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/datadigitaloceanreservedip"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanreservedip"
 
 datadigitaloceanreservedip.NewDataDigitaloceanReservedIp(scope Construct, id *string, config DataDigitaloceanReservedIpConfig) DataDigitaloceanReservedIp
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanReservedIp.DataDigitaloceanReservedIp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/datadigitaloceanreservedip"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanreservedip"
 
 datadigitaloceanreservedip.DataDigitaloceanReservedIp_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanReservedIp.DataDigitaloceanReservedIp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/datadigitaloceanreservedip"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanreservedip"
 
 datadigitaloceanreservedip.DataDigitaloceanReservedIp_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datadigitaloceanreservedip.DataDigitaloceanReservedIp_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanReservedIp.DataDigitaloceanReservedIp.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/datadigitaloceanreservedip"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanreservedip"
 
 datadigitaloceanreservedip.DataDigitaloceanReservedIp_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -577,7 +577,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanReservedIp.DataDigitaloceanReservedIpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/datadigitaloceanreservedip"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanreservedip"
 
 &datadigitaloceanreservedip.DataDigitaloceanReservedIpConfig {
 	Connection: interface{},
