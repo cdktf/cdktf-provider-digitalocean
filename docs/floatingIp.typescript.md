@@ -1,6 +1,6 @@
 # `digitalocean_floating_ip`
 
-Refer to the Terraform Registory for docs: [`digitalocean_floating_ip`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/floating_ip).
+Refer to the Terraform Registory for docs: [`digitalocean_floating_ip`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/floating_ip).
 
 # `floatingIp` Submodule <a name="`floatingIp` Submodule" id="@cdktf/provider-digitalocean.floatingIp"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`digitalocean_floating_ip`](https://
 
 ### FloatingIp <a name="FloatingIp" id="@cdktf/provider-digitalocean.floatingIp.FloatingIp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/floating_ip digitalocean_floating_ip}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/floating_ip digitalocean_floating_ip}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.floatingIp.FloatingIp.Initializer"></a>
 
@@ -651,10 +651,10 @@ const floatingIpConfig: floatingIp.FloatingIpConfig = { ... }
 | <code><a href="#@cdktf/provider-digitalocean.floatingIp.FloatingIpConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.floatingIp.FloatingIpConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.floatingIp.FloatingIpConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.floatingIp.FloatingIpConfig.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/floating_ip#region FloatingIp#region}. |
-| <code><a href="#@cdktf/provider-digitalocean.floatingIp.FloatingIpConfig.property.dropletId">dropletId</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/floating_ip#droplet_id FloatingIp#droplet_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.floatingIp.FloatingIpConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/floating_ip#id FloatingIp#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.floatingIp.FloatingIpConfig.property.ipAddress">ipAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/floating_ip#ip_address FloatingIp#ip_address}. |
+| <code><a href="#@cdktf/provider-digitalocean.floatingIp.FloatingIpConfig.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/floating_ip#region FloatingIp#region}. |
+| <code><a href="#@cdktf/provider-digitalocean.floatingIp.FloatingIpConfig.property.dropletId">dropletId</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/floating_ip#droplet_id FloatingIp#droplet_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.floatingIp.FloatingIpConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/floating_ip#id FloatingIp#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.floatingIp.FloatingIpConfig.property.ipAddress">ipAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/floating_ip#ip_address FloatingIp#ip_address}. |
 
 ---
 
@@ -736,7 +736,7 @@ public readonly region: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/floating_ip#region FloatingIp#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/floating_ip#region FloatingIp#region}.
 
 ---
 
@@ -748,7 +748,7 @@ public readonly dropletId: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/floating_ip#droplet_id FloatingIp#droplet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/floating_ip#droplet_id FloatingIp#droplet_id}.
 
 ---
 
@@ -760,7 +760,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/floating_ip#id FloatingIp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/floating_ip#id FloatingIp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -775,7 +775,7 @@ public readonly ipAddress: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/floating_ip#ip_address FloatingIp#ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/floating_ip#ip_address FloatingIp#ip_address}.
 
 ---
 

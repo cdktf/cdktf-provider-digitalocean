@@ -14,6 +14,7 @@ The following submodules are available:
 - [dataDigitaloceanDatabaseCa](./dataDigitaloceanDatabaseCa.typescript.md)
 - [dataDigitaloceanDatabaseCluster](./dataDigitaloceanDatabaseCluster.typescript.md)
 - [dataDigitaloceanDatabaseReplica](./dataDigitaloceanDatabaseReplica.typescript.md)
+- [dataDigitaloceanDatabaseUser](./dataDigitaloceanDatabaseUser.typescript.md)
 - [dataDigitaloceanDomain](./dataDigitaloceanDomain.typescript.md)
 - [dataDigitaloceanDomains](./dataDigitaloceanDomains.typescript.md)
 - [dataDigitaloceanDroplet](./dataDigitaloceanDroplet.typescript.md)
