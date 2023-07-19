@@ -14,6 +14,7 @@ The following submodules are available:
 - [dataDigitaloceanDatabaseCa](./dataDigitaloceanDatabaseCa.python.md)
 - [dataDigitaloceanDatabaseCluster](./dataDigitaloceanDatabaseCluster.python.md)
 - [dataDigitaloceanDatabaseReplica](./dataDigitaloceanDatabaseReplica.python.md)
+- [dataDigitaloceanDatabaseUser](./dataDigitaloceanDatabaseUser.python.md)
 - [dataDigitaloceanDomain](./dataDigitaloceanDomain.python.md)
 - [dataDigitaloceanDomains](./dataDigitaloceanDomains.python.md)
 - [dataDigitaloceanDroplet](./dataDigitaloceanDroplet.python.md)

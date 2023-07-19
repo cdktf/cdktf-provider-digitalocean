@@ -1,6 +1,6 @@
 # `data_digitalocean_region`
 
-Refer to the Terraform Registory for docs: [`data_digitalocean_region`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/region).
+Refer to the Terraform Registory for docs: [`data_digitalocean_region`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/region).
 
 # `dataDigitaloceanRegion` Submodule <a name="`dataDigitaloceanRegion` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanRegion"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_digitalocean_region`](https://
 
 ### DataDigitaloceanRegion <a name="DataDigitaloceanRegion" id="@cdktf/provider-digitalocean.dataDigitaloceanRegion.DataDigitaloceanRegion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/region digitalocean_region}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/region digitalocean_region}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanRegion.DataDigitaloceanRegion.Initializer"></a>
 
@@ -614,8 +614,8 @@ new DataDigitaloceanRegionConfig {
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanRegion.DataDigitaloceanRegionConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanRegion.DataDigitaloceanRegionConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanRegion.DataDigitaloceanRegionConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanRegion.DataDigitaloceanRegionConfig.property.slug">Slug</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/region#slug DataDigitaloceanRegion#slug}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanRegion.DataDigitaloceanRegionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/region#id DataDigitaloceanRegion#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanRegion.DataDigitaloceanRegionConfig.property.slug">Slug</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/region#slug DataDigitaloceanRegion#slug}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanRegion.DataDigitaloceanRegionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/region#id DataDigitaloceanRegion#id}. |
 
 ---
 
@@ -697,7 +697,7 @@ public string Slug { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/region#slug DataDigitaloceanRegion#slug}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/region#slug DataDigitaloceanRegion#slug}.
 
 ---
 
@@ -709,7 +709,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/region#id DataDigitaloceanRegion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/region#id DataDigitaloceanRegion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

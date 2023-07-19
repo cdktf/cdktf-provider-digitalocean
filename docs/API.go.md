@@ -14,6 +14,7 @@ The following submodules are available:
 - [dataDigitaloceanDatabaseCa](./dataDigitaloceanDatabaseCa.go.md)
 - [dataDigitaloceanDatabaseCluster](./dataDigitaloceanDatabaseCluster.go.md)
 - [dataDigitaloceanDatabaseReplica](./dataDigitaloceanDatabaseReplica.go.md)
+- [dataDigitaloceanDatabaseUser](./dataDigitaloceanDatabaseUser.go.md)
 - [dataDigitaloceanDomain](./dataDigitaloceanDomain.go.md)
 - [dataDigitaloceanDomains](./dataDigitaloceanDomains.go.md)
 - [dataDigitaloceanDroplet](./dataDigitaloceanDroplet.go.md)

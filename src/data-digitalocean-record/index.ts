@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/record
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/record
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface DataDigitaloceanRecordConfig extends cdktf.TerraformMetaArgumen
   /**
   * domain of the name record
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/record#domain DataDigitaloceanRecord#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/record#domain DataDigitaloceanRecord#domain}
   */
   readonly domain: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/record#id DataDigitaloceanRecord#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/record#id DataDigitaloceanRecord#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +23,13 @@ export interface DataDigitaloceanRecordConfig extends cdktf.TerraformMetaArgumen
   /**
   * name of the record
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/record#name DataDigitaloceanRecord#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/record#name DataDigitaloceanRecord#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/record digitalocean_record}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/record digitalocean_record}
 */
 export class DataDigitaloceanRecord extends cdktf.TerraformDataSource {
 
@@ -48,7 +43,7 @@ export class DataDigitaloceanRecord extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/record digitalocean_record} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/record digitalocean_record} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +54,7 @@ export class DataDigitaloceanRecord extends cdktf.TerraformDataSource {
       terraformResourceType: 'digitalocean_record',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.28.1',
+        providerVersion: '2.29.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
