@@ -49,6 +49,7 @@ export * as dataDigitaloceanContainerRegistry from './data-digitalocean-containe
 export * as dataDigitaloceanDatabaseCa from './data-digitalocean-database-ca';
 export * as dataDigitaloceanDatabaseCluster from './data-digitalocean-database-cluster';
 export * as dataDigitaloceanDatabaseReplica from './data-digitalocean-database-replica';
+export * as dataDigitaloceanDatabaseUser from './data-digitalocean-database-user';
 export * as dataDigitaloceanDomain from './data-digitalocean-domain';
 export * as dataDigitaloceanDomains from './data-digitalocean-domains';
 export * as dataDigitaloceanDroplet from './data-digitalocean-droplet';

@@ -14,6 +14,7 @@ The following submodules are available:
 - [dataDigitaloceanDatabaseCa](./dataDigitaloceanDatabaseCa.csharp.md)
 - [dataDigitaloceanDatabaseCluster](./dataDigitaloceanDatabaseCluster.csharp.md)
 - [dataDigitaloceanDatabaseReplica](./dataDigitaloceanDatabaseReplica.csharp.md)
+- [dataDigitaloceanDatabaseUser](./dataDigitaloceanDatabaseUser.csharp.md)
 - [dataDigitaloceanDomain](./dataDigitaloceanDomain.csharp.md)
 - [dataDigitaloceanDomains](./dataDigitaloceanDomains.csharp.md)
 - [dataDigitaloceanDroplet](./dataDigitaloceanDroplet.csharp.md)
