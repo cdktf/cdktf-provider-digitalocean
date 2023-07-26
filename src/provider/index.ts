@@ -14,61 +14,61 @@ import * as cdktf from 'cdktf';
 export interface DigitaloceanProviderConfig {
   /**
   * The URL to use for the DigitalOcean API.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs#api_endpoint DigitaloceanProvider#api_endpoint}
   */
   readonly apiEndpoint?: string;
   /**
   * The maximum number of retries on a failed API request.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs#http_retry_max DigitaloceanProvider#http_retry_max}
   */
   readonly httpRetryMax?: number;
   /**
   * The maximum wait time (in seconds) between failed API requests.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs#http_retry_wait_max DigitaloceanProvider#http_retry_wait_max}
   */
   readonly httpRetryWaitMax?: number;
   /**
   * The minimum wait time (in seconds) between failed API requests.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs#http_retry_wait_min DigitaloceanProvider#http_retry_wait_min}
   */
   readonly httpRetryWaitMin?: number;
   /**
   * The rate of requests per second to limit the HTTP client.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs#requests_per_second DigitaloceanProvider#requests_per_second}
   */
   readonly requestsPerSecond?: number;
   /**
   * The access key ID for Spaces API operations.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs#spaces_access_id DigitaloceanProvider#spaces_access_id}
   */
   readonly spacesAccessId?: string;
   /**
   * The URL to use for the DigitalOcean Spaces API.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs#spaces_endpoint DigitaloceanProvider#spaces_endpoint}
   */
   readonly spacesEndpoint?: string;
   /**
   * The secret access key for Spaces API operations.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs#spaces_secret_key DigitaloceanProvider#spaces_secret_key}
   */
   readonly spacesSecretKey?: string;
   /**
   * The token key for API operations.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs#token DigitaloceanProvider#token}
   */
   readonly token?: string;
   /**
   * Alias name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs#alias DigitaloceanProvider#alias}
   */
   readonly alias?: string;

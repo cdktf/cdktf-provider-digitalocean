@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DataDigitaloceanImageConfig extends cdktf.TerraformMetaArguments {
   /**
   * id of the image
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/image#id DataDigitaloceanImage#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -23,13 +23,13 @@ export interface DataDigitaloceanImageConfig extends cdktf.TerraformMetaArgument
   readonly id?: number;
   /**
   * name of the image
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/image#name DataDigitaloceanImage#name}
   */
   readonly name?: string;
   /**
   * slug of the image
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/image#slug DataDigitaloceanImage#slug}
   */
   readonly slug?: string;

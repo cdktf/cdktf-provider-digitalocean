@@ -21,13 +21,13 @@ export interface ProjectResourcesConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * project ID
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/project_resources#project ProjectResources#project}
   */
   readonly project: string;
   /**
   * the resources associated with the project
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/project_resources#resources ProjectResources#resources}
   */
   readonly resources: string[];

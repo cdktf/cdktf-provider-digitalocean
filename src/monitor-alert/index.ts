@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface MonitorAlertConfig extends cdktf.TerraformMetaArguments {
   /**
   * The comparison operator to use for value
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/monitor_alert#compare MonitorAlert#compare}
   */
   readonly compare: string;
   /**
   * Description of the alert policy
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/monitor_alert#description MonitorAlert#description}
   */
   readonly description: string;
@@ -30,7 +30,7 @@ export interface MonitorAlertConfig extends cdktf.TerraformMetaArguments {
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * The droplets to apply the alert policy to
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/monitor_alert#entities MonitorAlert#entities}
   */
   readonly entities?: string[];
@@ -59,7 +59,7 @@ export interface MonitorAlertConfig extends cdktf.TerraformMetaArguments {
   readonly window: string;
   /**
   * alerts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/monitor_alert#alerts MonitorAlert#alerts}
   */
   readonly alerts: MonitorAlertAlerts;
@@ -67,13 +67,13 @@ export interface MonitorAlertConfig extends cdktf.TerraformMetaArguments {
 export interface MonitorAlertAlertsSlack {
   /**
   * The Slack channel to send alerts to
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/monitor_alert#channel MonitorAlert#channel}
   */
   readonly channel: string;
   /**
   * The webhook URL for Slack
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/monitor_alert#url MonitorAlert#url}
   */
   readonly url: string;
@@ -189,13 +189,13 @@ export class MonitorAlertAlertsSlackList extends cdktf.ComplexList {
 export interface MonitorAlertAlerts {
   /**
   * List of email addresses to sent notifications to
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/monitor_alert#email MonitorAlert#email}
   */
   readonly email?: string[];
   /**
   * slack block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/monitor_alert#slack MonitorAlert#slack}
   */
   readonly slack?: MonitorAlertAlertsSlack[] | cdktf.IResolvable;

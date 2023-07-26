@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DataDigitaloceanSshKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * name of the ssh key
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/ssh_key#name DataDigitaloceanSshKey#name}
   */
   readonly name: string;

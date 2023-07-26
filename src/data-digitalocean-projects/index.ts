@@ -21,13 +21,13 @@ export interface DataDigitaloceanProjectsConfig extends cdktf.TerraformMetaArgum
   readonly id?: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/projects#filter DataDigitaloceanProjects#filter}
   */
   readonly filter?: DataDigitaloceanProjectsFilter[] | cdktf.IResolvable;
   /**
   * sort block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/projects#sort DataDigitaloceanProjects#sort}
   */
   readonly sort?: DataDigitaloceanProjectsSort[] | cdktf.IResolvable;

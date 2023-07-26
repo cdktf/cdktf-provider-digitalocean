@@ -21,7 +21,7 @@ export interface DataDigitaloceanReservedIpConfig extends cdktf.TerraformMetaArg
   readonly id?: string;
   /**
   * reserved ip address
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/reserved_ip#ip_address DataDigitaloceanReservedIp#ip_address}
   */
   readonly ipAddress: string;

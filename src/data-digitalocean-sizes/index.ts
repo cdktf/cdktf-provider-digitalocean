@@ -21,13 +21,13 @@ export interface DataDigitaloceanSizesConfig extends cdktf.TerraformMetaArgument
   readonly id?: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/sizes#filter DataDigitaloceanSizes#filter}
   */
   readonly filter?: DataDigitaloceanSizesFilter[] | cdktf.IResolvable;
   /**
   * sort block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/sizes#sort DataDigitaloceanSizes#sort}
   */
   readonly sort?: DataDigitaloceanSizesSort[] | cdktf.IResolvable;

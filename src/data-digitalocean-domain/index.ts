@@ -21,7 +21,7 @@ export interface DataDigitaloceanDomainConfig extends cdktf.TerraformMetaArgumen
   readonly id?: string;
   /**
   * name of the domain
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/domain#name DataDigitaloceanDomain#name}
   */
   readonly name: string;

@@ -65,19 +65,19 @@ export interface DatabaseClusterConfig extends cdktf.TerraformMetaArguments {
   readonly version?: string;
   /**
   * backup_restore block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#backup_restore DatabaseCluster#backup_restore}
   */
   readonly backupRestore?: DatabaseClusterBackupRestore;
   /**
   * maintenance_window block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#maintenance_window DatabaseCluster#maintenance_window}
   */
   readonly maintenanceWindow?: DatabaseClusterMaintenanceWindow[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#timeouts DatabaseCluster#timeouts}
   */
   readonly timeouts?: DatabaseClusterTimeouts;

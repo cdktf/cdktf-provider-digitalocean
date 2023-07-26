@@ -61,19 +61,19 @@ export interface KubernetesClusterConfig extends cdktf.TerraformMetaArguments {
   readonly vpcUuid?: string;
   /**
   * maintenance_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/kubernetes_cluster#maintenance_policy KubernetesCluster#maintenance_policy}
   */
   readonly maintenancePolicy?: KubernetesClusterMaintenancePolicy;
   /**
   * node_pool block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/kubernetes_cluster#node_pool KubernetesCluster#node_pool}
   */
   readonly nodePool: KubernetesClusterNodePool;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/kubernetes_cluster#timeouts KubernetesCluster#timeouts}
   */
   readonly timeouts?: KubernetesClusterTimeouts;
@@ -535,7 +535,7 @@ export interface KubernetesClusterNodePool {
   readonly tags?: string[];
   /**
   * taint block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/kubernetes_cluster#taint KubernetesCluster#taint}
   */
   readonly taint?: KubernetesClusterNodePoolTaint[] | cdktf.IResolvable;

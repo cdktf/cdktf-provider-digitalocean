@@ -33,13 +33,13 @@ export interface FirewallConfig extends cdktf.TerraformMetaArguments {
   readonly tags?: string[];
   /**
   * inbound_rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/firewall#inbound_rule Firewall#inbound_rule}
   */
   readonly inboundRule?: FirewallInboundRule[] | cdktf.IResolvable;
   /**
   * outbound_rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/firewall#outbound_rule Firewall#outbound_rule}
   */
   readonly outboundRule?: FirewallOutboundRule[] | cdktf.IResolvable;

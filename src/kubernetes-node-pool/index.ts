@@ -57,13 +57,13 @@ export interface KubernetesNodePoolConfig extends cdktf.TerraformMetaArguments {
   readonly tags?: string[];
   /**
   * taint block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/kubernetes_node_pool#taint KubernetesNodePool#taint}
   */
   readonly taint?: KubernetesNodePoolTaint[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/kubernetes_node_pool#timeouts KubernetesNodePool#timeouts}
   */
   readonly timeouts?: KubernetesNodePoolTimeouts;

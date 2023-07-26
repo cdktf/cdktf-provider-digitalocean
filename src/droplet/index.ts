@@ -89,7 +89,7 @@ export interface DropletConfig extends cdktf.TerraformMetaArguments {
   readonly vpcUuid?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/droplet#timeouts Droplet#timeouts}
   */
   readonly timeouts?: DropletTimeouts;

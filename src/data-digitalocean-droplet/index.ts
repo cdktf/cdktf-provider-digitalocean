@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DataDigitaloceanDropletConfig extends cdktf.TerraformMetaArguments {
   /**
   * id of the Droplet
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/droplet#id DataDigitaloceanDroplet#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -23,13 +23,13 @@ export interface DataDigitaloceanDropletConfig extends cdktf.TerraformMetaArgume
   readonly id?: number;
   /**
   * name of the Droplet
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/droplet#name DataDigitaloceanDroplet#name}
   */
   readonly name?: string;
   /**
   * unique tag of the Droplet
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/droplet#tag DataDigitaloceanDroplet#tag}
   */
   readonly tag?: string;

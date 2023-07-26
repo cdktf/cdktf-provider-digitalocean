@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DataDigitaloceanVolumeConfig extends cdktf.TerraformMetaArguments {
   /**
   * volume description
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/volume#description DataDigitaloceanVolume#description}
   */
   readonly description?: string;
@@ -27,13 +27,13 @@ export interface DataDigitaloceanVolumeConfig extends cdktf.TerraformMetaArgumen
   readonly id?: string;
   /**
   * name of the volume
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/volume#name DataDigitaloceanVolume#name}
   */
   readonly name: string;
   /**
   * the region that the volume is provisioned in
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/volume#region DataDigitaloceanVolume#region}
   */
   readonly region?: string;

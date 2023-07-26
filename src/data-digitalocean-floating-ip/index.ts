@@ -21,7 +21,7 @@ export interface DataDigitaloceanFloatingIpConfig extends cdktf.TerraformMetaArg
   readonly id?: string;
   /**
   * floating ip address
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/floating_ip#ip_address DataDigitaloceanFloatingIp#ip_address}
   */
   readonly ipAddress: string;

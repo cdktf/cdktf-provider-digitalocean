@@ -21,13 +21,13 @@ export interface DataDigitaloceanSpacesBucketsConfig extends cdktf.TerraformMeta
   readonly id?: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/spaces_buckets#filter DataDigitaloceanSpacesBuckets#filter}
   */
   readonly filter?: DataDigitaloceanSpacesBucketsFilter[] | cdktf.IResolvable;
   /**
   * sort block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/spaces_buckets#sort DataDigitaloceanSpacesBuckets#sort}
   */
   readonly sort?: DataDigitaloceanSpacesBucketsSort[] | cdktf.IResolvable;

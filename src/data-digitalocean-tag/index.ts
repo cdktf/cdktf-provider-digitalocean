@@ -21,7 +21,7 @@ export interface DataDigitaloceanTagConfig extends cdktf.TerraformMetaArguments 
   readonly id?: string;
   /**
   * name of the tag
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/tag#name DataDigitaloceanTag#name}
   */
   readonly name: string;

@@ -21,13 +21,13 @@ export interface DataDigitaloceanSpacesBucketConfig extends cdktf.TerraformMetaA
   readonly id?: string;
   /**
   * Bucket name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/spaces_bucket#name DataDigitaloceanSpacesBucket#name}
   */
   readonly name: string;
   /**
   * Bucket region
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/spaces_bucket#region DataDigitaloceanSpacesBucket#region}
   */
   readonly region: string;

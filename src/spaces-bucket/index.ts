@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface SpacesBucketConfig extends cdktf.TerraformMetaArguments {
   /**
   * Canned ACL applied on bucket creation
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/spaces_bucket#acl SpacesBucket#acl}
   */
   readonly acl?: string;
   /**
   * Unless true, the bucket will only be destroyed if empty
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/spaces_bucket#force_destroy SpacesBucket#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktf.IResolvable;
@@ -33,31 +33,31 @@ export interface SpacesBucketConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Bucket name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/spaces_bucket#name SpacesBucket#name}
   */
   readonly name: string;
   /**
   * Bucket region
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/spaces_bucket#region SpacesBucket#region}
   */
   readonly region?: string;
   /**
   * cors_rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/spaces_bucket#cors_rule SpacesBucket#cors_rule}
   */
   readonly corsRule?: SpacesBucketCorsRule[] | cdktf.IResolvable;
   /**
   * lifecycle_rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/spaces_bucket#lifecycle_rule SpacesBucket#lifecycle_rule}
   */
   readonly lifecycleRule?: SpacesBucketLifecycleRule[] | cdktf.IResolvable;
   /**
   * versioning block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/spaces_bucket#versioning SpacesBucket#versioning}
   */
   readonly versioning?: SpacesBucketVersioning;
@@ -65,19 +65,19 @@ export interface SpacesBucketConfig extends cdktf.TerraformMetaArguments {
 export interface SpacesBucketCorsRule {
   /**
   * A list of headers that will be included in the CORS preflight request's Access-Control-Request-Headers. A header may contain one wildcard (e.g. x-amz-*).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/spaces_bucket#allowed_headers SpacesBucket#allowed_headers}
   */
   readonly allowedHeaders?: string[];
   /**
   * A list of HTTP methods (e.g. GET) which are allowed from the specified origin.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/spaces_bucket#allowed_methods SpacesBucket#allowed_methods}
   */
   readonly allowedMethods: string[];
   /**
   * A list of hosts from which requests using the specified methods are allowed. A host may contain one wildcard (e.g. http://*.example.com).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/spaces_bucket#allowed_origins SpacesBucket#allowed_origins}
   */
   readonly allowedOrigins: string[];
@@ -446,13 +446,13 @@ export interface SpacesBucketLifecycleRule {
   readonly prefix?: string;
   /**
   * expiration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/spaces_bucket#expiration SpacesBucket#expiration}
   */
   readonly expiration?: SpacesBucketLifecycleRuleExpiration;
   /**
   * noncurrent_version_expiration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/spaces_bucket#noncurrent_version_expiration SpacesBucket#noncurrent_version_expiration}
   */
   readonly noncurrentVersionExpiration?: SpacesBucketLifecycleRuleNoncurrentVersionExpiration;

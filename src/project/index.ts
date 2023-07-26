@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface ProjectConfig extends cdktf.TerraformMetaArguments {
   /**
   * the description of the project
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/project#description Project#description}
   */
   readonly description?: string;
   /**
   * the environment of the project's resources
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/project#environment Project#environment}
   */
   readonly environment?: string;
@@ -33,31 +33,31 @@ export interface ProjectConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * determine if the project is the default or not.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/project#is_default Project#is_default}
   */
   readonly isDefault?: boolean | cdktf.IResolvable;
   /**
   * the human-readable name for the project
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/project#name Project#name}
   */
   readonly name: string;
   /**
   * the purpose of the project
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/project#purpose Project#purpose}
   */
   readonly purpose?: string;
   /**
   * the resources associated with the project
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/project#resources Project#resources}
   */
   readonly resources?: string[];
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/project#timeouts Project#timeouts}
   */
   readonly timeouts?: ProjectTimeouts;

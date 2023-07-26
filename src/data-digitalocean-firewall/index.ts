@@ -33,13 +33,13 @@ export interface DataDigitaloceanFirewallConfig extends cdktf.TerraformMetaArgum
   readonly tags?: string[];
   /**
   * inbound_rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/firewall#inbound_rule DataDigitaloceanFirewall#inbound_rule}
   */
   readonly inboundRule?: DataDigitaloceanFirewallInboundRule[] | cdktf.IResolvable;
   /**
   * outbound_rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/firewall#outbound_rule DataDigitaloceanFirewall#outbound_rule}
   */
   readonly outboundRule?: DataDigitaloceanFirewallOutboundRule[] | cdktf.IResolvable;

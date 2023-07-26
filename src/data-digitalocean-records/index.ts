@@ -25,13 +25,13 @@ export interface DataDigitaloceanRecordsConfig extends cdktf.TerraformMetaArgume
   readonly id?: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/records#filter DataDigitaloceanRecords#filter}
   */
   readonly filter?: DataDigitaloceanRecordsFilter[] | cdktf.IResolvable;
   /**
   * sort block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/records#sort DataDigitaloceanRecords#sort}
   */
   readonly sort?: DataDigitaloceanRecordsSort[] | cdktf.IResolvable;

@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DataDigitaloceanRecordConfig extends cdktf.TerraformMetaArguments {
   /**
   * domain of the name record
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/record#domain DataDigitaloceanRecord#domain}
   */
   readonly domain: string;
@@ -27,7 +27,7 @@ export interface DataDigitaloceanRecordConfig extends cdktf.TerraformMetaArgumen
   readonly id?: string;
   /**
   * name of the record
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/record#name DataDigitaloceanRecord#name}
   */
   readonly name: string;

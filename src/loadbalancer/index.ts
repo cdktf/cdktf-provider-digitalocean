@@ -77,25 +77,25 @@ export interface LoadbalancerConfig extends cdktf.TerraformMetaArguments {
   readonly vpcUuid?: string;
   /**
   * firewall block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/loadbalancer#firewall Loadbalancer#firewall}
   */
   readonly firewall?: LoadbalancerFirewall;
   /**
   * forwarding_rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/loadbalancer#forwarding_rule Loadbalancer#forwarding_rule}
   */
   readonly forwardingRule: LoadbalancerForwardingRule[] | cdktf.IResolvable;
   /**
   * healthcheck block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/loadbalancer#healthcheck Loadbalancer#healthcheck}
   */
   readonly healthcheck?: LoadbalancerHealthcheck;
   /**
   * sticky_sessions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/loadbalancer#sticky_sessions Loadbalancer#sticky_sessions}
   */
   readonly stickySessions?: LoadbalancerStickySessions;
@@ -103,13 +103,13 @@ export interface LoadbalancerConfig extends cdktf.TerraformMetaArguments {
 export interface LoadbalancerFirewall {
   /**
   * the rules for ALLOWING traffic to the LB (strings in the form: 'ip:1.2.3.4' or 'cidr:1.2.0.0/16')
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/loadbalancer#allow Loadbalancer#allow}
   */
   readonly allow?: string[];
   /**
   * the rules for DENYING traffic to the LB (strings in the form: 'ip:1.2.3.4' or 'cidr:1.2.0.0/16')
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/loadbalancer#deny Loadbalancer#deny}
   */
   readonly deny?: string[];
