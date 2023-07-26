@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/custom_image
 // generated from terraform resource schema
 
@@ -45,7 +40,7 @@ export interface CustomImageConfig extends cdktf.TerraformMetaArguments {
   readonly url: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/custom_image#timeouts CustomImage#timeouts}
   */
   readonly timeouts?: CustomImageTimeouts;

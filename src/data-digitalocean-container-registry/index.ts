@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/container_registry
 // generated from terraform resource schema
 
@@ -21,7 +16,7 @@ export interface DataDigitaloceanContainerRegistryConfig extends cdktf.Terraform
   readonly id?: string;
   /**
   * name of the container registry
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/container_registry#name DataDigitaloceanContainerRegistry#name}
   */
   readonly name: string;

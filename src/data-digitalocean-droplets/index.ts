@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/droplets
 // generated from terraform resource schema
 
@@ -21,13 +16,13 @@ export interface DataDigitaloceanDropletsConfig extends cdktf.TerraformMetaArgum
   readonly id?: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/droplets#filter DataDigitaloceanDroplets#filter}
   */
   readonly filter?: DataDigitaloceanDropletsFilter[] | cdktf.IResolvable;
   /**
   * sort block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/droplets#sort DataDigitaloceanDroplets#sort}
   */
   readonly sort?: DataDigitaloceanDropletsSort[] | cdktf.IResolvable;

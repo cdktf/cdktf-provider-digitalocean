@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_firewall
 // generated from terraform resource schema
 
@@ -25,7 +20,7 @@ export interface DatabaseFirewallConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_firewall#rule DatabaseFirewall#rule}
   */
   readonly rule: DatabaseFirewallRule[] | cdktf.IResolvable;

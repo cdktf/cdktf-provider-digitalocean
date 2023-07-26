@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/vpc
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface VpcConfig extends cdktf.TerraformMetaArguments {
   /**
   * A free-form description for the VPC
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/vpc#description Vpc#description}
   */
   readonly description?: string;
@@ -27,25 +22,25 @@ export interface VpcConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The range of IP addresses for the VPC in CIDR notation
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/vpc#ip_range Vpc#ip_range}
   */
   readonly ipRange?: string;
   /**
   * The name of the VPC
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/vpc#name Vpc#name}
   */
   readonly name: string;
   /**
   * DigitalOcean region slug for the VPC's location
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/vpc#region Vpc#region}
   */
   readonly region: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/vpc#timeouts Vpc#timeouts}
   */
   readonly timeouts?: VpcTimeouts;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/droplet
 // generated from terraform resource schema
 
@@ -89,7 +84,7 @@ export interface DropletConfig extends cdktf.TerraformMetaArguments {
   readonly vpcUuid?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/droplet#timeouts Droplet#timeouts}
   */
   readonly timeouts?: DropletTimeouts;

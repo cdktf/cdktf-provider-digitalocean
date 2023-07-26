@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/images
 // generated from terraform resource schema
 
@@ -21,13 +16,13 @@ export interface DataDigitaloceanImagesConfig extends cdktf.TerraformMetaArgumen
   readonly id?: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/images#filter DataDigitaloceanImages#filter}
   */
   readonly filter?: DataDigitaloceanImagesFilter[] | cdktf.IResolvable;
   /**
   * sort block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/images#sort DataDigitaloceanImages#sort}
   */
   readonly sort?: DataDigitaloceanImagesSort[] | cdktf.IResolvable;

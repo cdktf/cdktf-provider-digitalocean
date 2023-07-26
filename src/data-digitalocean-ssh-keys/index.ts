@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/ssh_keys
 // generated from terraform resource schema
 
@@ -21,13 +16,13 @@ export interface DataDigitaloceanSshKeysConfig extends cdktf.TerraformMetaArgume
   readonly id?: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/ssh_keys#filter DataDigitaloceanSshKeys#filter}
   */
   readonly filter?: DataDigitaloceanSshKeysFilter[] | cdktf.IResolvable;
   /**
   * sort block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/ssh_keys#sort DataDigitaloceanSshKeys#sort}
   */
   readonly sort?: DataDigitaloceanSshKeysSort[] | cdktf.IResolvable;

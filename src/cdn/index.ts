@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/cdn
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface CdnConfig extends cdktf.TerraformMetaArguments {
   /**
   * ID of a DigitalOcean managed TLS certificate for use with custom domains
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/cdn#certificate_id Cdn#certificate_id}
   */
   readonly certificateId?: string;
@@ -24,7 +19,7 @@ export interface CdnConfig extends cdktf.TerraformMetaArguments {
   readonly certificateName?: string;
   /**
   * fully qualified domain name (FQDN) for custom subdomain, (requires certificate_id)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/cdn#custom_domain Cdn#custom_domain}
   */
   readonly customDomain?: string;
@@ -37,13 +32,13 @@ export interface CdnConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * fully qualified domain name (FQDN) for the origin server
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/cdn#origin Cdn#origin}
   */
   readonly origin: string;
   /**
   * The amount of time the content is cached in the CDN
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/cdn#ttl Cdn#ttl}
   */
   readonly ttl?: number;

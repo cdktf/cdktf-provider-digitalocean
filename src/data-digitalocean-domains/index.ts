@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/domains
 // generated from terraform resource schema
 
@@ -21,13 +16,13 @@ export interface DataDigitaloceanDomainsConfig extends cdktf.TerraformMetaArgume
   readonly id?: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/domains#filter DataDigitaloceanDomains#filter}
   */
   readonly filter?: DataDigitaloceanDomainsFilter[] | cdktf.IResolvable;
   /**
   * sort block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/domains#sort DataDigitaloceanDomains#sort}
   */
   readonly sort?: DataDigitaloceanDomainsSort[] | cdktf.IResolvable;

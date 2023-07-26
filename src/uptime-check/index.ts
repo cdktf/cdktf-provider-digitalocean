@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/uptime_check
 // generated from terraform resource schema
 
@@ -14,31 +9,31 @@ import * as cdktf from 'cdktf';
 export interface UptimeCheckConfig extends cdktf.TerraformMetaArguments {
   /**
   * A boolean value indicating whether the check is enabled/disabled.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/uptime_check#enabled UptimeCheck#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * A human-friendly display name for the check.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/uptime_check#name UptimeCheck#name}
   */
   readonly name: string;
   /**
   * An array containing the selected regions to perform healthchecks from.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/uptime_check#regions UptimeCheck#regions}
   */
   readonly regions?: string[];
   /**
   * The endpoint to perform healthchecks on.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/uptime_check#target UptimeCheck#target}
   */
   readonly target: string;
   /**
   * The type of health check to perform. Enum: 'ping' 'http' 'https'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/uptime_check#type UptimeCheck#type}
   */
   readonly type?: string;
