@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKey.DataDigitaloceanSshKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/datadigitaloceansshkey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceansshkey"
 
 datadigitaloceansshkey.NewDataDigitaloceanSshKey(scope Construct, id *string, config DataDigitaloceanSshKeyConfig) DataDigitaloceanSshKey
 ```
@@ -270,7 +270,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKey.DataDigitaloceanSshKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/datadigitaloceansshkey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceansshkey"
 
 datadigitaloceansshkey.DataDigitaloceanSshKey_IsConstruct(x interface{}) *bool
 ```
@@ -302,7 +302,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKey.DataDigitaloceanSshKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/datadigitaloceansshkey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceansshkey"
 
 datadigitaloceansshkey.DataDigitaloceanSshKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ datadigitaloceansshkey.DataDigitaloceanSshKey_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKey.DataDigitaloceanSshKey.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/datadigitaloceansshkey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceansshkey"
 
 datadigitaloceansshkey.DataDigitaloceanSshKey_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKey.DataDigitaloceanSshKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/datadigitaloceansshkey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceansshkey"
 
 &datadigitaloceansshkey.DataDigitaloceanSshKeyConfig {
 	Connection: interface{},
