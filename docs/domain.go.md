@@ -1,6 +1,6 @@
 # `digitalocean_domain`
 
-Refer to the Terraform Registory for docs: [`digitalocean_domain`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/domain).
+Refer to the Terraform Registory for docs: [`digitalocean_domain`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/domain).
 
 # `domain` Submodule <a name="`domain` Submodule" id="@cdktf/provider-digitalocean.domain"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`digitalocean_domain`](https://regis
 
 ### Domain <a name="Domain" id="@cdktf/provider-digitalocean.domain.Domain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/domain digitalocean_domain}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/domain digitalocean_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.domain.Domain.Initializer"></a>
 
@@ -644,9 +644,9 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v9/domain"
 | <code><a href="#@cdktf/provider-digitalocean.domain.DomainConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.domain.DomainConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.domain.DomainConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.domain.DomainConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/domain#name Domain#name}. |
-| <code><a href="#@cdktf/provider-digitalocean.domain.DomainConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/domain#id Domain#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.domain.DomainConfig.property.ipAddress">IpAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/domain#ip_address Domain#ip_address}. |
+| <code><a href="#@cdktf/provider-digitalocean.domain.DomainConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/domain#name Domain#name}. |
+| <code><a href="#@cdktf/provider-digitalocean.domain.DomainConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/domain#id Domain#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.domain.DomainConfig.property.ipAddress">IpAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/domain#ip_address Domain#ip_address}. |
 
 ---
 
@@ -728,7 +728,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/domain#name Domain#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/domain#name Domain#name}.
 
 ---
 
@@ -740,7 +740,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/domain#id Domain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/domain#id Domain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -755,7 +755,7 @@ IpAddress *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/domain#ip_address Domain#ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/domain#ip_address Domain#ip_address}.
 
 ---
 

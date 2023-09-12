@@ -69,6 +69,7 @@ The following submodules are available:
 - [reservedIp](./reservedIp.python.md)
 - [reservedIpAssignment](./reservedIpAssignment.python.md)
 - [spacesBucket](./spacesBucket.python.md)
+- [spacesBucketCorsConfiguration](./spacesBucketCorsConfiguration.python.md)
 - [spacesBucketObject](./spacesBucketObject.python.md)
 - [spacesBucketPolicy](./spacesBucketPolicy.python.md)
 - [sshKey](./sshKey.python.md)

@@ -1,3 +1,3 @@
 # `digitalocean_tag`
 
-Refer to the Terraform Registory for docs: [`digitalocean_tag`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/tag).
+Refer to the Terraform Registory for docs: [`digitalocean_tag`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/tag).

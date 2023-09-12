@@ -32,6 +32,7 @@ export * as record from './record';
 export * as reservedIp from './reserved-ip';
 export * as reservedIpAssignment from './reserved-ip-assignment';
 export * as spacesBucket from './spaces-bucket';
+export * as spacesBucketCorsConfiguration from './spaces-bucket-cors-configuration';
 export * as spacesBucketObject from './spaces-bucket-object';
 export * as spacesBucketPolicy from './spaces-bucket-policy';
 export * as sshKey from './ssh-key';

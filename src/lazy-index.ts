@@ -32,6 +32,7 @@ Object.defineProperty(exports, 'record', { get: function () { return require('./
 Object.defineProperty(exports, 'reservedIp', { get: function () { return require('./reserved-ip'); } });
 Object.defineProperty(exports, 'reservedIpAssignment', { get: function () { return require('./reserved-ip-assignment'); } });
 Object.defineProperty(exports, 'spacesBucket', { get: function () { return require('./spaces-bucket'); } });
+Object.defineProperty(exports, 'spacesBucketCorsConfiguration', { get: function () { return require('./spaces-bucket-cors-configuration'); } });
 Object.defineProperty(exports, 'spacesBucketObject', { get: function () { return require('./spaces-bucket-object'); } });
 Object.defineProperty(exports, 'spacesBucketPolicy', { get: function () { return require('./spaces-bucket-policy'); } });
 Object.defineProperty(exports, 'sshKey', { get: function () { return require('./ssh-key'); } });

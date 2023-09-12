@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,82 +13,82 @@ import * as cdktf from 'cdktf';
 
 export interface DatabaseClusterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#engine DatabaseCluster#engine}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster#engine DatabaseCluster#engine}
   */
   readonly engine: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#eviction_policy DatabaseCluster#eviction_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster#eviction_policy DatabaseCluster#eviction_policy}
   */
   readonly evictionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#id DatabaseCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster#id DatabaseCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#name DatabaseCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster#name DatabaseCluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#node_count DatabaseCluster#node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster#node_count DatabaseCluster#node_count}
   */
   readonly nodeCount: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#private_network_uuid DatabaseCluster#private_network_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster#private_network_uuid DatabaseCluster#private_network_uuid}
   */
   readonly privateNetworkUuid?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#project_id DatabaseCluster#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster#project_id DatabaseCluster#project_id}
   */
   readonly projectId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#region DatabaseCluster#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster#region DatabaseCluster#region}
   */
   readonly region: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#size DatabaseCluster#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster#size DatabaseCluster#size}
   */
   readonly size: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#sql_mode DatabaseCluster#sql_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster#sql_mode DatabaseCluster#sql_mode}
   */
   readonly sqlMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#tags DatabaseCluster#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster#tags DatabaseCluster#tags}
   */
   readonly tags?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#version DatabaseCluster#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster#version DatabaseCluster#version}
   */
   readonly version?: string;
   /**
   * backup_restore block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#backup_restore DatabaseCluster#backup_restore}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster#backup_restore DatabaseCluster#backup_restore}
   */
   readonly backupRestore?: DatabaseClusterBackupRestore;
   /**
   * maintenance_window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#maintenance_window DatabaseCluster#maintenance_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster#maintenance_window DatabaseCluster#maintenance_window}
   */
   readonly maintenanceWindow?: DatabaseClusterMaintenanceWindow[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#timeouts DatabaseCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster#timeouts DatabaseCluster#timeouts}
   */
   readonly timeouts?: DatabaseClusterTimeouts;
 }
 export interface DatabaseClusterBackupRestore {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#backup_created_at DatabaseCluster#backup_created_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster#backup_created_at DatabaseCluster#backup_created_at}
   */
   readonly backupCreatedAt?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#database_name DatabaseCluster#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster#database_name DatabaseCluster#database_name}
   */
   readonly databaseName: string;
 }
@@ -173,11 +173,11 @@ export class DatabaseClusterBackupRestoreOutputReference extends cdktf.ComplexOb
 }
 export interface DatabaseClusterMaintenanceWindow {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#day DatabaseCluster#day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster#day DatabaseCluster#day}
   */
   readonly day: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#hour DatabaseCluster#hour}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster#hour DatabaseCluster#hour}
   */
   readonly hour: string;
 }
@@ -291,7 +291,7 @@ export class DatabaseClusterMaintenanceWindowList extends cdktf.ComplexList {
 }
 export interface DatabaseClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#create DatabaseCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster#create DatabaseCluster#create}
   */
   readonly create?: string;
 }
@@ -366,7 +366,7 @@ export class DatabaseClusterTimeoutsOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster digitalocean_database_cluster}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster digitalocean_database_cluster}
 */
 export class DatabaseCluster extends cdktf.TerraformResource {
 
@@ -380,7 +380,7 @@ export class DatabaseCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster digitalocean_database_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster digitalocean_database_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -391,7 +391,7 @@ export class DatabaseCluster extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_database_cluster',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.29.0',
+        providerVersion: '2.30.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
