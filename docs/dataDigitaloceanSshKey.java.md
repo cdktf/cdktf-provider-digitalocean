@@ -1,6 +1,6 @@
 # `data_digitalocean_ssh_key`
 
-Refer to the Terraform Registory for docs: [`data_digitalocean_ssh_key`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/ssh_key).
+Refer to the Terraform Registory for docs: [`data_digitalocean_ssh_key`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/data-sources/ssh_key).
 
 # `dataDigitaloceanSshKey` Submodule <a name="`dataDigitaloceanSshKey` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKey"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_digitalocean_ssh_key`](https:/
 
 ### DataDigitaloceanSshKey <a name="DataDigitaloceanSshKey" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKey.DataDigitaloceanSshKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/ssh_key digitalocean_ssh_key}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/data-sources/ssh_key digitalocean_ssh_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKey.DataDigitaloceanSshKey.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 name of the ssh key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/ssh_key#name DataDigitaloceanSshKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/data-sources/ssh_key#name DataDigitaloceanSshKey#name}
 
 ---
 
@@ -727,7 +727,7 @@ public java.lang.String getName();
 
 name of the ssh key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/ssh_key#name DataDigitaloceanSshKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/data-sources/ssh_key#name DataDigitaloceanSshKey#name}
 
 ---
 

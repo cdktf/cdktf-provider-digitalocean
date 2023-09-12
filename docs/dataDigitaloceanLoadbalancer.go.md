@@ -1,6 +1,6 @@
 # `data_digitalocean_loadbalancer`
 
-Refer to the Terraform Registory for docs: [`data_digitalocean_loadbalancer`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/loadbalancer).
+Refer to the Terraform Registory for docs: [`data_digitalocean_loadbalancer`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/data-sources/loadbalancer).
 
 # `dataDigitaloceanLoadbalancer` Submodule <a name="`dataDigitaloceanLoadbalancer` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanLoadbalancer"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_digitalocean_loadbalancer`](ht
 
 ### DataDigitaloceanLoadbalancer <a name="DataDigitaloceanLoadbalancer" id="@cdktf/provider-digitalocean.dataDigitaloceanLoadbalancer.DataDigitaloceanLoadbalancer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/loadbalancer digitalocean_loadbalancer}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/data-sources/loadbalancer digitalocean_loadbalancer}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanLoadbalancer.DataDigitaloceanLoadbalancer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v9/datadigitaloceanloadbalancer"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanloadbalancer"
 
 datadigitaloceanloadbalancer.NewDataDigitaloceanLoadbalancer(scope Construct, id *string, config DataDigitaloceanLoadbalancerConfig) DataDigitaloceanLoadbalancer
 ```
@@ -284,7 +284,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanLoadbalancer.DataDigitaloceanLoadbalancer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v9/datadigitaloceanloadbalancer"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanloadbalancer"
 
 datadigitaloceanloadbalancer.DataDigitaloceanLoadbalancer_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanLoadbalancer.DataDigitaloceanLoadbalancer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v9/datadigitaloceanloadbalancer"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanloadbalancer"
 
 datadigitaloceanloadbalancer.DataDigitaloceanLoadbalancer_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datadigitaloceanloadbalancer.DataDigitaloceanLoadbalancer_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanLoadbalancer.DataDigitaloceanLoadbalancer.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v9/datadigitaloceanloadbalancer"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanloadbalancer"
 
 datadigitaloceanloadbalancer.DataDigitaloceanLoadbalancer_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -771,7 +771,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanLoadbalancer.DataDigitaloceanLoadbalancerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v9/datadigitaloceanloadbalancer"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanloadbalancer"
 
 &datadigitaloceanloadbalancer.DataDigitaloceanLoadbalancerConfig {
 	Connection: interface{},
@@ -882,7 +882,7 @@ Id *string
 
 id of the load balancer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/loadbalancer#id DataDigitaloceanLoadbalancer#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/data-sources/loadbalancer#id DataDigitaloceanLoadbalancer#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -899,7 +899,7 @@ Name *string
 
 name of the load balancer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/loadbalancer#name DataDigitaloceanLoadbalancer#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/data-sources/loadbalancer#name DataDigitaloceanLoadbalancer#name}
 
 ---
 
@@ -908,7 +908,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanLoadbalancer.DataDigitaloceanLoadbalancerFirewall.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v9/datadigitaloceanloadbalancer"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanloadbalancer"
 
 &datadigitaloceanloadbalancer.DataDigitaloceanLoadbalancerFirewall {
 
@@ -921,7 +921,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v9/datadigi
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanLoadbalancer.DataDigitaloceanLoadbalancerForwardingRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v9/datadigitaloceanloadbalancer"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanloadbalancer"
 
 &datadigitaloceanloadbalancer.DataDigitaloceanLoadbalancerForwardingRule {
 
@@ -934,7 +934,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v9/datadigi
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanLoadbalancer.DataDigitaloceanLoadbalancerHealthcheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v9/datadigitaloceanloadbalancer"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanloadbalancer"
 
 &datadigitaloceanloadbalancer.DataDigitaloceanLoadbalancerHealthcheck {
 
@@ -947,7 +947,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v9/datadigi
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanLoadbalancer.DataDigitaloceanLoadbalancerStickySessions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v9/datadigitaloceanloadbalancer"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanloadbalancer"
 
 &datadigitaloceanloadbalancer.DataDigitaloceanLoadbalancerStickySessions {
 
@@ -962,7 +962,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v9/datadigi
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanLoadbalancer.DataDigitaloceanLoadbalancerFirewallList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v9/datadigitaloceanloadbalancer"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanloadbalancer"
 
 datadigitaloceanloadbalancer.NewDataDigitaloceanLoadbalancerFirewallList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanLoadbalancerFirewallList
 ```
@@ -1094,7 +1094,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanLoadbalancer.DataDigitaloceanLoadbalancerFirewallOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v9/datadigitaloceanloadbalancer"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanloadbalancer"
 
 datadigitaloceanloadbalancer.NewDataDigitaloceanLoadbalancerFirewallOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanLoadbalancerFirewallOutputReference
 ```
@@ -1383,7 +1383,7 @@ func InternalValue() DataDigitaloceanLoadbalancerFirewall
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanLoadbalancer.DataDigitaloceanLoadbalancerForwardingRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v9/datadigitaloceanloadbalancer"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanloadbalancer"
 
 datadigitaloceanloadbalancer.NewDataDigitaloceanLoadbalancerForwardingRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanLoadbalancerForwardingRuleList
 ```
@@ -1515,7 +1515,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanLoadbalancer.DataDigitaloceanLoadbalancerForwardingRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v9/datadigitaloceanloadbalancer"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanloadbalancer"
 
 datadigitaloceanloadbalancer.NewDataDigitaloceanLoadbalancerForwardingRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanLoadbalancerForwardingRuleOutputReference
 ```
@@ -1859,7 +1859,7 @@ func InternalValue() DataDigitaloceanLoadbalancerForwardingRule
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanLoadbalancer.DataDigitaloceanLoadbalancerHealthcheckList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v9/datadigitaloceanloadbalancer"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanloadbalancer"
 
 datadigitaloceanloadbalancer.NewDataDigitaloceanLoadbalancerHealthcheckList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanLoadbalancerHealthcheckList
 ```
@@ -1991,7 +1991,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanLoadbalancer.DataDigitaloceanLoadbalancerHealthcheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v9/datadigitaloceanloadbalancer"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanloadbalancer"
 
 datadigitaloceanloadbalancer.NewDataDigitaloceanLoadbalancerHealthcheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanLoadbalancerHealthcheckOutputReference
 ```
@@ -2335,7 +2335,7 @@ func InternalValue() DataDigitaloceanLoadbalancerHealthcheck
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanLoadbalancer.DataDigitaloceanLoadbalancerStickySessionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v9/datadigitaloceanloadbalancer"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanloadbalancer"
 
 datadigitaloceanloadbalancer.NewDataDigitaloceanLoadbalancerStickySessionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanLoadbalancerStickySessionsList
 ```
@@ -2467,7 +2467,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanLoadbalancer.DataDigitaloceanLoadbalancerStickySessionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v9/datadigitaloceanloadbalancer"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanloadbalancer"
 
 datadigitaloceanloadbalancer.NewDataDigitaloceanLoadbalancerStickySessionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanLoadbalancerStickySessionsOutputReference
 ```

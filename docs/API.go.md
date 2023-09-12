@@ -69,6 +69,7 @@ The following submodules are available:
 - [reservedIp](./reservedIp.go.md)
 - [reservedIpAssignment](./reservedIpAssignment.go.md)
 - [spacesBucket](./spacesBucket.go.md)
+- [spacesBucketCorsConfiguration](./spacesBucketCorsConfiguration.go.md)
 - [spacesBucketObject](./spacesBucketObject.go.md)
 - [spacesBucketPolicy](./spacesBucketPolicy.go.md)
 - [sshKey](./sshKey.go.md)

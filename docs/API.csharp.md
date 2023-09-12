@@ -69,6 +69,7 @@ The following submodules are available:
 - [reservedIp](./reservedIp.csharp.md)
 - [reservedIpAssignment](./reservedIpAssignment.csharp.md)
 - [spacesBucket](./spacesBucket.csharp.md)
+- [spacesBucketCorsConfiguration](./spacesBucketCorsConfiguration.csharp.md)
 - [spacesBucketObject](./spacesBucketObject.csharp.md)
 - [spacesBucketPolicy](./spacesBucketPolicy.csharp.md)
 - [sshKey](./sshKey.csharp.md)

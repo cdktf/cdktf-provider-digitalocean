@@ -1,6 +1,6 @@
 # `digitalocean_droplet_snapshot`
 
-Refer to the Terraform Registory for docs: [`digitalocean_droplet_snapshot`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/droplet_snapshot).
+Refer to the Terraform Registory for docs: [`digitalocean_droplet_snapshot`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/droplet_snapshot).
 
 # `dropletSnapshot` Submodule <a name="`dropletSnapshot` Submodule" id="@cdktf/provider-digitalocean.dropletSnapshot"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`digitalocean_droplet_snapshot`](htt
 
 ### DropletSnapshot <a name="DropletSnapshot" id="@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/droplet_snapshot digitalocean_droplet_snapshot}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/droplet_snapshot digitalocean_droplet_snapshot}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v9/dropletsnapshot"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/dropletsnapshot"
 
 dropletsnapshot.NewDropletSnapshot(scope Construct, id *string, config DropletSnapshotConfig) DropletSnapshot
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v9/dropletsnapshot"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/dropletsnapshot"
 
 dropletsnapshot.DropletSnapshot_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v9/dropletsnapshot"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/dropletsnapshot"
 
 dropletsnapshot.DropletSnapshot_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dropletsnapshot.DropletSnapshot_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v9/dropletsnapshot"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/dropletsnapshot"
 
 dropletsnapshot.DropletSnapshot_IsTerraformResource(x interface{}) *bool
 ```
@@ -632,7 +632,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v9/dropletsnapshot"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/dropletsnapshot"
 
 &dropletsnapshot.DropletSnapshotConfig {
 	Connection: interface{},
@@ -659,9 +659,9 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v9/droplets
 | <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshotConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshotConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshotConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshotConfig.property.dropletId">DropletId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/droplet_snapshot#droplet_id DropletSnapshot#droplet_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshotConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/droplet_snapshot#name DropletSnapshot#name}. |
-| <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshotConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/droplet_snapshot#id DropletSnapshot#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshotConfig.property.dropletId">DropletId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/droplet_snapshot#droplet_id DropletSnapshot#droplet_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshotConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/droplet_snapshot#name DropletSnapshot#name}. |
+| <code><a href="#@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshotConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/droplet_snapshot#id DropletSnapshot#id}. |
 
 ---
 
@@ -743,7 +743,7 @@ DropletId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/droplet_snapshot#droplet_id DropletSnapshot#droplet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/droplet_snapshot#droplet_id DropletSnapshot#droplet_id}.
 
 ---
 
@@ -755,7 +755,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/droplet_snapshot#name DropletSnapshot#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/droplet_snapshot#name DropletSnapshot#name}.
 
 ---
 
@@ -767,7 +767,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/droplet_snapshot#id DropletSnapshot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/droplet_snapshot#id DropletSnapshot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

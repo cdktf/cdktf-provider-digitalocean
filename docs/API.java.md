@@ -69,6 +69,7 @@ The following submodules are available:
 - [reservedIp](./reservedIp.java.md)
 - [reservedIpAssignment](./reservedIpAssignment.java.md)
 - [spacesBucket](./spacesBucket.java.md)
+- [spacesBucketCorsConfiguration](./spacesBucketCorsConfiguration.java.md)
 - [spacesBucketObject](./spacesBucketObject.java.md)
 - [spacesBucketPolicy](./spacesBucketPolicy.java.md)
 - [sshKey](./sshKey.java.md)
