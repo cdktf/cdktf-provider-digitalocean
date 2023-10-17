@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanTags.DataDigitaloceanTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceantags"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceantags"
 
 datadigitaloceantags.NewDataDigitaloceanTags(scope Construct, id *string, config DataDigitaloceanTagsConfig) DataDigitaloceanTags
 ```
@@ -311,13 +311,14 @@ func ResetSort()
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanTags.DataDigitaloceanTags.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanTags.DataDigitaloceanTags.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanTags.DataDigitaloceanTags.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanTags.DataDigitaloceanTags.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataDigitaloceanTags resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanTags.DataDigitaloceanTags.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceantags"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceantags"
 
 datadigitaloceantags.DataDigitaloceanTags_IsConstruct(x interface{}) *bool
 ```
@@ -349,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanTags.DataDigitaloceanTags.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceantags"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceantags"
 
 datadigitaloceantags.DataDigitaloceanTags_IsTerraformElement(x interface{}) *bool
 ```
@@ -363,7 +364,7 @@ datadigitaloceantags.DataDigitaloceanTags_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanTags.DataDigitaloceanTags.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceantags"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceantags"
 
 datadigitaloceantags.DataDigitaloceanTags_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -371,6 +372,50 @@ datadigitaloceantags.DataDigitaloceanTags_IsTerraformDataSource(x interface{}) *
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-digitalocean.dataDigitaloceanTags.DataDigitaloceanTags.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.dataDigitaloceanTags.DataDigitaloceanTags.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceantags"
+
+datadigitaloceantags.DataDigitaloceanTags_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataDigitaloceanTags resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-digitalocean.dataDigitaloceanTags.DataDigitaloceanTags.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-digitalocean.dataDigitaloceanTags.DataDigitaloceanTags.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataDigitaloceanTags to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-digitalocean.dataDigitaloceanTags.DataDigitaloceanTags.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataDigitaloceanTags that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/data-sources/tags#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-digitalocean.dataDigitaloceanTags.DataDigitaloceanTags.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataDigitaloceanTags to import is found.
 
 ---
 
@@ -617,7 +662,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanTags.DataDigitaloceanTagsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceantags"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceantags"
 
 &datadigitaloceantags.DataDigitaloceanTagsConfig {
 	Connection: interface{},
@@ -768,7 +813,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanTags.DataDigitaloceanTagsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceantags"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceantags"
 
 &datadigitaloceantags.DataDigitaloceanTagsFilter {
 	Key: *string,
@@ -842,7 +887,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanTags.DataDigitaloceanTagsSort.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceantags"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceantags"
 
 &datadigitaloceantags.DataDigitaloceanTagsSort {
 	Key: *string,
@@ -888,7 +933,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanTags.DataDigitaloceanTagsTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceantags"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceantags"
 
 &datadigitaloceantags.DataDigitaloceanTagsTags {
 
@@ -903,7 +948,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanTags.DataDigitaloceanTagsFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceantags"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceantags"
 
 datadigitaloceantags.NewDataDigitaloceanTagsFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanTagsFilterList
 ```
@@ -1046,7 +1091,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanTags.DataDigitaloceanTagsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceantags"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceantags"
 
 datadigitaloceantags.NewDataDigitaloceanTagsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanTagsFilterOutputReference
 ```
@@ -1415,7 +1460,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanTags.DataDigitaloceanTagsSortList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceantags"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceantags"
 
 datadigitaloceantags.NewDataDigitaloceanTagsSortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanTagsSortList
 ```
@@ -1558,7 +1603,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanTags.DataDigitaloceanTagsSortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceantags"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceantags"
 
 datadigitaloceantags.NewDataDigitaloceanTagsSortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanTagsSortOutputReference
 ```
@@ -1876,7 +1921,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanTags.DataDigitaloceanTagsTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceantags"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceantags"
 
 datadigitaloceantags.NewDataDigitaloceanTagsTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanTagsTagsList
 ```
@@ -2008,7 +2053,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanTags.DataDigitaloceanTagsTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceantags"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceantags"
 
 datadigitaloceantags.NewDataDigitaloceanTagsTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanTagsTagsOutputReference
 ```

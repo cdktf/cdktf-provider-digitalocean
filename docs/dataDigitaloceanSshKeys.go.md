@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKeys.DataDigitaloceanSshKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceansshkeys"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceansshkeys"
 
 datadigitaloceansshkeys.NewDataDigitaloceanSshKeys(scope Construct, id *string, config DataDigitaloceanSshKeysConfig) DataDigitaloceanSshKeys
 ```
@@ -311,13 +311,14 @@ func ResetSort()
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSshKeys.DataDigitaloceanSshKeys.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSshKeys.DataDigitaloceanSshKeys.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSshKeys.DataDigitaloceanSshKeys.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSshKeys.DataDigitaloceanSshKeys.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataDigitaloceanSshKeys resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKeys.DataDigitaloceanSshKeys.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceansshkeys"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceansshkeys"
 
 datadigitaloceansshkeys.DataDigitaloceanSshKeys_IsConstruct(x interface{}) *bool
 ```
@@ -349,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKeys.DataDigitaloceanSshKeys.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceansshkeys"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceansshkeys"
 
 datadigitaloceansshkeys.DataDigitaloceanSshKeys_IsTerraformElement(x interface{}) *bool
 ```
@@ -363,7 +364,7 @@ datadigitaloceansshkeys.DataDigitaloceanSshKeys_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKeys.DataDigitaloceanSshKeys.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceansshkeys"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceansshkeys"
 
 datadigitaloceansshkeys.DataDigitaloceanSshKeys_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -371,6 +372,50 @@ datadigitaloceansshkeys.DataDigitaloceanSshKeys_IsTerraformDataSource(x interfac
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKeys.DataDigitaloceanSshKeys.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKeys.DataDigitaloceanSshKeys.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceansshkeys"
+
+datadigitaloceansshkeys.DataDigitaloceanSshKeys_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataDigitaloceanSshKeys resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKeys.DataDigitaloceanSshKeys.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKeys.DataDigitaloceanSshKeys.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataDigitaloceanSshKeys to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKeys.DataDigitaloceanSshKeys.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataDigitaloceanSshKeys that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/data-sources/ssh_keys#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKeys.DataDigitaloceanSshKeys.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataDigitaloceanSshKeys to import is found.
 
 ---
 
@@ -617,7 +662,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKeys.DataDigitaloceanSshKeysConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceansshkeys"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceansshkeys"
 
 &datadigitaloceansshkeys.DataDigitaloceanSshKeysConfig {
 	Connection: interface{},
@@ -768,7 +813,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKeys.DataDigitaloceanSshKeysFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceansshkeys"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceansshkeys"
 
 &datadigitaloceansshkeys.DataDigitaloceanSshKeysFilter {
 	Key: *string,
@@ -842,7 +887,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKeys.DataDigitaloceanSshKeysSort.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceansshkeys"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceansshkeys"
 
 &datadigitaloceansshkeys.DataDigitaloceanSshKeysSort {
 	Key: *string,
@@ -888,7 +933,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKeys.DataDigitaloceanSshKeysSshKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceansshkeys"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceansshkeys"
 
 &datadigitaloceansshkeys.DataDigitaloceanSshKeysSshKeys {
 
@@ -903,7 +948,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKeys.DataDigitaloceanSshKeysFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceansshkeys"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceansshkeys"
 
 datadigitaloceansshkeys.NewDataDigitaloceanSshKeysFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanSshKeysFilterList
 ```
@@ -1046,7 +1091,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKeys.DataDigitaloceanSshKeysFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceansshkeys"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceansshkeys"
 
 datadigitaloceansshkeys.NewDataDigitaloceanSshKeysFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanSshKeysFilterOutputReference
 ```
@@ -1415,7 +1460,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKeys.DataDigitaloceanSshKeysSortList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceansshkeys"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceansshkeys"
 
 datadigitaloceansshkeys.NewDataDigitaloceanSshKeysSortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanSshKeysSortList
 ```
@@ -1558,7 +1603,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKeys.DataDigitaloceanSshKeysSortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceansshkeys"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceansshkeys"
 
 datadigitaloceansshkeys.NewDataDigitaloceanSshKeysSortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanSshKeysSortOutputReference
 ```
@@ -1876,7 +1921,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKeys.DataDigitaloceanSshKeysSshKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceansshkeys"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceansshkeys"
 
 datadigitaloceansshkeys.NewDataDigitaloceanSshKeysSshKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanSshKeysSshKeysList
 ```
@@ -2008,7 +2053,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKeys.DataDigitaloceanSshKeysSshKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceansshkeys"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceansshkeys"
 
 datadigitaloceansshkeys.NewDataDigitaloceanSshKeysSshKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanSshKeysSshKeysOutputReference
 ```
