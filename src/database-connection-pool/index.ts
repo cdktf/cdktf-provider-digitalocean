@@ -55,6 +55,20 @@ export class DatabaseConnectionPool extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "digitalocean_database_connection_pool";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DatabaseConnectionPool resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DatabaseConnectionPool to import
+  * @param importFromId The id of the existing DatabaseConnectionPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_connection_pool#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DatabaseConnectionPool to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "digitalocean_database_connection_pool", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

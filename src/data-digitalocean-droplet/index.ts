@@ -45,6 +45,20 @@ export class DataDigitaloceanDroplet extends cdktf.TerraformDataSource {
   // =================
   public static readonly tfResourceType = "digitalocean_droplet";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataDigitaloceanDroplet resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataDigitaloceanDroplet to import
+  * @param importFromId The id of the existing DataDigitaloceanDroplet that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/data-sources/droplet#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataDigitaloceanDroplet to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "digitalocean_droplet", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

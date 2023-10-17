@@ -39,6 +39,20 @@ export class DatabaseDb extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "digitalocean_database_db";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DatabaseDb resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DatabaseDb to import
+  * @param importFromId The id of the existing DatabaseDb that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_db#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DatabaseDb to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "digitalocean_database_db", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

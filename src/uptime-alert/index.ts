@@ -316,6 +316,20 @@ export class UptimeAlert extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "digitalocean_uptime_alert";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a UptimeAlert resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the UptimeAlert to import
+  * @param importFromId The id of the existing UptimeAlert that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/uptime_alert#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the UptimeAlert to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "digitalocean_uptime_alert", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========
