@@ -1,6 +1,6 @@
 # `data_digitalocean_ssh_key`
 
-Refer to the Terraform Registory for docs: [`data_digitalocean_ssh_key`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/data-sources/ssh_key).
+Refer to the Terraform Registory for docs: [`data_digitalocean_ssh_key`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/ssh_key).
 
 # `dataDigitaloceanSshKey` Submodule <a name="`dataDigitaloceanSshKey` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKey"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_digitalocean_ssh_key`](https:/
 
 ### DataDigitaloceanSshKey <a name="DataDigitaloceanSshKey" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKey.DataDigitaloceanSshKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/data-sources/ssh_key digitalocean_ssh_key}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/ssh_key digitalocean_ssh_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKey.DataDigitaloceanSshKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceansshkey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceansshkey"
 
 datadigitaloceansshkey.NewDataDigitaloceanSshKey(scope Construct, id *string, config DataDigitaloceanSshKeyConfig) DataDigitaloceanSshKey
 ```
@@ -271,7 +271,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKey.DataDigitaloceanSshKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceansshkey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceansshkey"
 
 datadigitaloceansshkey.DataDigitaloceanSshKey_IsConstruct(x interface{}) *bool
 ```
@@ -303,7 +303,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKey.DataDigitaloceanSshKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceansshkey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceansshkey"
 
 datadigitaloceansshkey.DataDigitaloceanSshKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -317,7 +317,7 @@ datadigitaloceansshkey.DataDigitaloceanSshKey_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKey.DataDigitaloceanSshKey.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceansshkey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceansshkey"
 
 datadigitaloceansshkey.DataDigitaloceanSshKey_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -331,7 +331,7 @@ datadigitaloceansshkey.DataDigitaloceanSshKey_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKey.DataDigitaloceanSshKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceansshkey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceansshkey"
 
 datadigitaloceansshkey.DataDigitaloceanSshKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -360,7 +360,7 @@ The construct id used in the generated config for the DataDigitaloceanSshKey to 
 
 The id of the existing DataDigitaloceanSshKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/data-sources/ssh_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/ssh_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -593,7 +593,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanSshKey.DataDigitaloceanSshKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceansshkey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceansshkey"
 
 &datadigitaloceansshkey.DataDigitaloceanSshKeyConfig {
 	Connection: interface{},
@@ -702,7 +702,7 @@ Name *string
 
 name of the ssh key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/data-sources/ssh_key#name DataDigitaloceanSshKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/ssh_key#name DataDigitaloceanSshKey#name}
 
 ---
 

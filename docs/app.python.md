@@ -1,6 +1,6 @@
 # `digitalocean_app`
 
-Refer to the Terraform Registory for docs: [`digitalocean_app`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app).
+Refer to the Terraform Registory for docs: [`digitalocean_app`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app).
 
 # `app` Submodule <a name="`app` Submodule" id="@cdktf/provider-digitalocean.app"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`digitalocean_app`](https://registry
 
 ### App <a name="App" id="@cdktf/provider-digitalocean.app.App"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app digitalocean_app}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app digitalocean_app}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.App.Initializer"></a>
 
@@ -42,7 +42,7 @@ app.App(
 | <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#id App#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#id App#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.spec">spec</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec">AppSpec</a></code> | spec block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppTimeouts">AppTimeouts</a></code> | timeouts block. |
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#id App#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#id App#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -125,7 +125,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#spec App#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#spec App#spec}
 
 ---
 
@@ -135,7 +135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#timeouts App#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#timeouts App#timeouts}
 
 ---
 
@@ -456,6 +456,7 @@ def put_spec(
   domains: typing.List[str] = None,
   env: typing.Union[IResolvable, typing.List[AppSpecEnv]] = None,
   function: typing.Union[IResolvable, typing.List[AppSpecFunction]] = None,
+  ingress: AppSpecIngress = None,
   job: typing.Union[IResolvable, typing.List[AppSpecJob]] = None,
   region: str = None,
   service: typing.Union[IResolvable, typing.List[AppSpecService]] = None,
@@ -470,7 +471,7 @@ def put_spec(
 
 The name of the app. Must be unique across all apps in the same account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
 
 ---
 
@@ -480,7 +481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 alert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#alert App#alert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#alert App#alert}
 
 ---
 
@@ -490,7 +491,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 database block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#database App#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#database App#database}
 
 ---
 
@@ -500,7 +501,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 domain block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#domain App#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#domain App#domain}
 
 ---
 
@@ -508,7 +509,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#domains App#domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#domains App#domains}.
 
 ---
 
@@ -518,7 +519,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#env App#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#env App#env}
 
 ---
 
@@ -528,7 +529,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 function block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#function App#function}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#function App#function}
+
+---
+
+###### `ingress`<sup>Optional</sup> <a name="ingress" id="@cdktf/provider-digitalocean.app.App.putSpec.parameter.ingress"></a>
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecIngress">AppSpecIngress</a>
+
+ingress block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#ingress App#ingress}
 
 ---
 
@@ -538,7 +549,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 job block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#job App#job}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#job App#job}
 
 ---
 
@@ -548,7 +559,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The slug for the DigitalOcean data center region hosting the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#region App#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#region App#region}
 
 ---
 
@@ -558,7 +569,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#service App#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#service App#service}
 
 ---
 
@@ -568,7 +579,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 static_site block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#static_site App#static_site}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#static_site App#static_site}
 
 ---
 
@@ -578,7 +589,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 worker block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#worker App#worker}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#worker App#worker}
 
 ---
 
@@ -594,7 +605,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#create App#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#create App#create}.
 
 ---
 
@@ -730,7 +741,7 @@ The construct id used in the generated config for the App to import.
 
 The id of the existing App that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1089,7 +1100,7 @@ app.AppConfig(
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#id App#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#id App#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.spec">spec</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec">AppSpec</a></code> | spec block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppTimeouts">AppTimeouts</a></code> | timeouts block. |
 
@@ -1173,7 +1184,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#id App#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#id App#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1190,7 +1201,7 @@ spec: AppSpec
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#spec App#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#spec App#spec}
 
 ---
 
@@ -1204,7 +1215,7 @@ timeouts: AppTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#timeouts App#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#timeouts App#timeouts}
 
 ---
 
@@ -1223,6 +1234,7 @@ app.AppSpec(
   domains: typing.List[str] = None,
   env: typing.Union[IResolvable, typing.List[AppSpecEnv]] = None,
   function: typing.Union[IResolvable, typing.List[AppSpecFunction]] = None,
+  ingress: AppSpecIngress = None,
   job: typing.Union[IResolvable, typing.List[AppSpecJob]] = None,
   region: str = None,
   service: typing.Union[IResolvable, typing.List[AppSpecService]] = None,
@@ -1239,9 +1251,10 @@ app.AppSpec(
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.alert">alert</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>]]</code> | alert block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.database">database</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>]]</code> | database block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.domain">domain</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>]]</code> | domain block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.domains">domains</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#domains App#domains}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.domains">domains</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#domains App#domains}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.env">env</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>]]</code> | env block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.function">function</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>]]</code> | function block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.ingress">ingress</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngress">AppSpecIngress</a></code> | ingress block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.job">job</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>]]</code> | job block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.region">region</a></code> | <code>str</code> | The slug for the DigitalOcean data center region hosting the app. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.service">service</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>]]</code> | service block. |
@@ -1260,7 +1273,7 @@ name: str
 
 The name of the app. Must be unique across all apps in the same account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
 
 ---
 
@@ -1274,7 +1287,7 @@ alert: typing.Union[IResolvable, typing.List[AppSpecAlert]]
 
 alert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#alert App#alert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#alert App#alert}
 
 ---
 
@@ -1288,7 +1301,7 @@ database: typing.Union[IResolvable, typing.List[AppSpecDatabase]]
 
 database block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#database App#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#database App#database}
 
 ---
 
@@ -1302,7 +1315,7 @@ domain: typing.Union[IResolvable, typing.List[AppSpecDomain]]
 
 domain block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#domain App#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#domain App#domain}
 
 ---
 
@@ -1314,7 +1327,7 @@ domains: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#domains App#domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#domains App#domains}.
 
 ---
 
@@ -1328,7 +1341,7 @@ env: typing.Union[IResolvable, typing.List[AppSpecEnv]]
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#env App#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#env App#env}
 
 ---
 
@@ -1342,7 +1355,21 @@ function: typing.Union[IResolvable, typing.List[AppSpecFunction]]
 
 function block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#function App#function}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#function App#function}
+
+---
+
+##### `ingress`<sup>Optional</sup> <a name="ingress" id="@cdktf/provider-digitalocean.app.AppSpec.property.ingress"></a>
+
+```python
+ingress: AppSpecIngress
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecIngress">AppSpecIngress</a>
+
+ingress block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#ingress App#ingress}
 
 ---
 
@@ -1356,7 +1383,7 @@ job: typing.Union[IResolvable, typing.List[AppSpecJob]]
 
 job block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#job App#job}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#job App#job}
 
 ---
 
@@ -1370,7 +1397,7 @@ region: str
 
 The slug for the DigitalOcean data center region hosting the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#region App#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#region App#region}
 
 ---
 
@@ -1384,7 +1411,7 @@ service: typing.Union[IResolvable, typing.List[AppSpecService]]
 
 service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#service App#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#service App#service}
 
 ---
 
@@ -1398,7 +1425,7 @@ static_site: typing.Union[IResolvable, typing.List[AppSpecStaticSite]]
 
 static_site block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#static_site App#static_site}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#static_site App#static_site}
 
 ---
 
@@ -1412,7 +1439,7 @@ worker: typing.Union[IResolvable, typing.List[AppSpecWorker]]
 
 worker block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#worker App#worker}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#worker App#worker}
 
 ---
 
@@ -1433,8 +1460,8 @@ app.AppSpecAlert(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlert.property.rule">rule</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#rule App#rule}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlert.property.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlert.property.rule">rule</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#rule App#rule}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlert.property.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -1446,7 +1473,7 @@ rule: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#rule App#rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#rule App#rule}.
 
 ---
 
@@ -1458,7 +1485,7 @@ disabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#disabled App#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#disabled App#disabled}.
 
 ---
 
@@ -1506,7 +1533,7 @@ The name of the underlying DigitalOcean DBaaS cluster.
 
 This is required for production databases. For dev databases, if cluster_name is not set, a new cluster will be provisioned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#cluster_name App#cluster_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#cluster_name App#cluster_name}
 
 ---
 
@@ -1520,7 +1547,7 @@ db_name: str
 
 The name of the MySQL or PostgreSQL database to configure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#db_name App#db_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#db_name App#db_name}
 
 ---
 
@@ -1534,7 +1561,7 @@ db_user: str
 
 The name of the MySQL or PostgreSQL user to configure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#db_user App#db_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#db_user App#db_user}
 
 ---
 
@@ -1548,7 +1575,7 @@ engine: str
 
 The database engine to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#engine App#engine}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#engine App#engine}
 
 ---
 
@@ -1562,7 +1589,7 @@ name: str
 
 The name of the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
 
 ---
 
@@ -1576,7 +1603,7 @@ production: typing.Union[bool, IResolvable]
 
 Whether this is a production or dev database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#production App#production}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#production App#production}
 
 ---
 
@@ -1590,7 +1617,7 @@ version: str
 
 The version of the database engine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#version App#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#version App#version}
 
 ---
 
@@ -1630,7 +1657,7 @@ name: str
 
 The hostname for the domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
 
 ---
 
@@ -1644,7 +1671,7 @@ type: str
 
 The type of the domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#type App#type}
 
 ---
 
@@ -1658,7 +1685,7 @@ wildcard: typing.Union[bool, IResolvable]
 
 Indicates whether the domain includes all sub-domains, in addition to the given domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#wildcard App#wildcard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#wildcard App#wildcard}
 
 ---
 
@@ -1672,7 +1699,7 @@ zone: str
 
 If the domain uses DigitalOcean DNS and you would like App Platform to automatically manage it for you, set this to the name of the domain on your account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#zone App#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#zone App#zone}
 
 ---
 
@@ -1712,7 +1739,7 @@ key: str
 
 The name of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#key App#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#key App#key}
 
 ---
 
@@ -1726,7 +1753,7 @@ scope: str
 
 The visibility scope of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#scope App#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#scope App#scope}
 
 ---
 
@@ -1740,7 +1767,7 @@ type: str
 
 The type of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#type App#type}
 
 ---
 
@@ -1754,7 +1781,7 @@ value: str
 
 The value of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#value App#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}
 
 ---
 
@@ -1806,7 +1833,7 @@ name: str
 
 The name of the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
 
 ---
 
@@ -1820,7 +1847,7 @@ alert: typing.Union[IResolvable, typing.List[AppSpecFunctionAlert]]
 
 alert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#alert App#alert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#alert App#alert}
 
 ---
 
@@ -1834,7 +1861,7 @@ cors: AppSpecFunctionCors
 
 cors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#cors App#cors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#cors App#cors}
 
 ---
 
@@ -1848,7 +1875,7 @@ env: typing.Union[IResolvable, typing.List[AppSpecFunctionEnv]]
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#env App#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#env App#env}
 
 ---
 
@@ -1862,7 +1889,7 @@ git: AppSpecFunctionGit
 
 git block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#git App#git}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#git App#git}
 
 ---
 
@@ -1876,7 +1903,7 @@ github: AppSpecFunctionGithub
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#github App#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#github App#github}
 
 ---
 
@@ -1890,7 +1917,7 @@ gitlab: AppSpecFunctionGitlab
 
 gitlab block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#gitlab App#gitlab}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#gitlab App#gitlab}
 
 ---
 
@@ -1904,7 +1931,7 @@ log_destination: typing.Union[IResolvable, typing.List[AppSpecFunctionLogDestina
 
 log_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#log_destination App#log_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#log_destination App#log_destination}
 
 ---
 
@@ -1918,7 +1945,7 @@ routes: typing.Union[IResolvable, typing.List[AppSpecFunctionRoutes]]
 
 routes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#routes App#routes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#routes App#routes}
 
 ---
 
@@ -1932,7 +1959,7 @@ source_dir: str
 
 An optional path to the working directory to use for the build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#source_dir App#source_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#source_dir App#source_dir}
 
 ---
 
@@ -1956,11 +1983,11 @@ app.AppSpecFunctionAlert(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#operator App#operator}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.rule">rule</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#rule App#rule}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#value App#value}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.window">window</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#window App#window}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#operator App#operator}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.rule">rule</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#rule App#rule}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.window">window</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#window App#window}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -1972,7 +1999,7 @@ operator: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#operator App#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#operator App#operator}.
 
 ---
 
@@ -1984,7 +2011,7 @@ rule: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#rule App#rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#rule App#rule}.
 
 ---
 
@@ -1996,7 +2023,7 @@ value: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#value App#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}.
 
 ---
 
@@ -2008,7 +2035,7 @@ window: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#window App#window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#window App#window}.
 
 ---
 
@@ -2020,7 +2047,7 @@ disabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#disabled App#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#disabled App#disabled}.
 
 ---
 
@@ -2066,7 +2093,7 @@ Whether browsers should expose the response to the client-side JavaScript code w
 
 This configures the Access-Control-Allow-Credentials header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_credentials App#allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_credentials App#allow_credentials}
 
 ---
 
@@ -2080,7 +2107,7 @@ allow_headers: typing.List[str]
 
 The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_headers App#allow_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_headers App#allow_headers}
 
 ---
 
@@ -2094,7 +2121,7 @@ allow_methods: typing.List[str]
 
 The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_methods App#allow_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_methods App#allow_methods}
 
 ---
 
@@ -2108,7 +2135,7 @@ allow_origins: AppSpecFunctionCorsAllowOrigins
 
 allow_origins block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_origins App#allow_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_origins App#allow_origins}
 
 ---
 
@@ -2122,7 +2149,7 @@ expose_headers: typing.List[str]
 
 The set of HTTP response headers that browsers are allowed to access. This configures the Access-Control-Expose-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#expose_headers App#expose_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#expose_headers App#expose_headers}
 
 ---
 
@@ -2138,7 +2165,7 @@ An optional duration specifying how long browsers can cache the results of a pre
 
 This configures the Access-Control-Max-Age header. Example: `5h30m`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#max_age App#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#max_age App#max_age}
 
 ---
 
@@ -2176,7 +2203,7 @@ exact: str
 
 Exact string match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#exact App#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#exact App#exact}
 
 ---
 
@@ -2190,7 +2217,7 @@ prefix: str
 
 Prefix-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#prefix App#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#prefix App#prefix}
 
 ---
 
@@ -2204,7 +2231,7 @@ regex: str
 
 RE2 style regex-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#regex App#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#regex App#regex}
 
 ---
 
@@ -2244,7 +2271,7 @@ key: str
 
 The name of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#key App#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#key App#key}
 
 ---
 
@@ -2258,7 +2285,7 @@ scope: str
 
 The visibility scope of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#scope App#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#scope App#scope}
 
 ---
 
@@ -2272,7 +2299,7 @@ type: str
 
 The type of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#type App#type}
 
 ---
 
@@ -2286,7 +2313,7 @@ value: str
 
 The value of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#value App#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}
 
 ---
 
@@ -2322,7 +2349,7 @@ branch: str
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -2336,7 +2363,7 @@ repo_clone_url: str
 
 The clone URL of the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo_clone_url App#repo_clone_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo_clone_url App#repo_clone_url}
 
 ---
 
@@ -2374,7 +2401,7 @@ branch: str
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -2388,7 +2415,7 @@ deploy_on_push: typing.Union[bool, IResolvable]
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -2402,7 +2429,7 @@ repo: str
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -2440,7 +2467,7 @@ branch: str
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -2454,7 +2481,7 @@ deploy_on_push: typing.Union[bool, IResolvable]
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -2468,7 +2495,7 @@ repo: str
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -2508,7 +2535,7 @@ name: str
 
 Name of the log destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
 
 ---
 
@@ -2522,7 +2549,7 @@ datadog: AppSpecFunctionLogDestinationDatadog
 
 datadog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#datadog App#datadog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#datadog App#datadog}
 
 ---
 
@@ -2536,7 +2563,7 @@ logtail: AppSpecFunctionLogDestinationLogtail
 
 logtail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#logtail App#logtail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#logtail App#logtail}
 
 ---
 
@@ -2550,7 +2577,7 @@ papertrail: AppSpecFunctionLogDestinationPapertrail
 
 papertrail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#papertrail App#papertrail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#papertrail App#papertrail}
 
 ---
 
@@ -2586,7 +2613,7 @@ api_key: str
 
 Datadog API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#api_key App#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#api_key App#api_key}
 
 ---
 
@@ -2600,7 +2627,7 @@ endpoint: str
 
 Datadog HTTP log intake endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -2634,7 +2661,7 @@ token: str
 
 Logtail token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#token App#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#token App#token}
 
 ---
 
@@ -2668,7 +2695,7 @@ endpoint: str
 
 Papertrail syslog endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -2706,7 +2733,7 @@ Path specifies an route by HTTP path prefix.
 
 Paths must start with / and must be unique within the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#path App#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#path App#path}
 
 ---
 
@@ -2720,7 +2747,521 @@ preserve_path_prefix: typing.Union[bool, IResolvable]
 
 An optional flag to preserve the path that is forwarded to the backend service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
+
+---
+
+### AppSpecIngress <a name="AppSpecIngress" id="@cdktf/provider-digitalocean.app.AppSpecIngress"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecIngress.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_digitalocean import app
+
+app.AppSpecIngress(
+  rule: typing.Union[IResolvable, typing.List[AppSpecIngressRule]] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngress.property.rule">rule</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>]]</code> | rule block. |
+
+---
+
+##### `rule`<sup>Optional</sup> <a name="rule" id="@cdktf/provider-digitalocean.app.AppSpecIngress.property.rule"></a>
+
+```python
+rule: typing.Union[IResolvable, typing.List[AppSpecIngressRule]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>]]
+
+rule block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#rule App#rule}
+
+---
+
+### AppSpecIngressRule <a name="AppSpecIngressRule" id="@cdktf/provider-digitalocean.app.AppSpecIngressRule"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecIngressRule.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_digitalocean import app
+
+app.AppSpecIngressRule(
+  component: AppSpecIngressRuleComponent = None,
+  cors: AppSpecIngressRuleCors = None,
+  match: AppSpecIngressRuleMatch = None,
+  redirect: AppSpecIngressRuleRedirect = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule.property.component">component</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent">AppSpecIngressRuleComponent</a></code> | component block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule.property.cors">cors</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors">AppSpecIngressRuleCors</a></code> | cors block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule.property.match">match</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatch">AppSpecIngressRuleMatch</a></code> | match block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule.property.redirect">redirect</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect">AppSpecIngressRuleRedirect</a></code> | redirect block. |
+
+---
+
+##### `component`<sup>Optional</sup> <a name="component" id="@cdktf/provider-digitalocean.app.AppSpecIngressRule.property.component"></a>
+
+```python
+component: AppSpecIngressRuleComponent
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent">AppSpecIngressRuleComponent</a>
+
+component block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#component App#component}
+
+---
+
+##### `cors`<sup>Optional</sup> <a name="cors" id="@cdktf/provider-digitalocean.app.AppSpecIngressRule.property.cors"></a>
+
+```python
+cors: AppSpecIngressRuleCors
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors">AppSpecIngressRuleCors</a>
+
+cors block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#cors App#cors}
+
+---
+
+##### `match`<sup>Optional</sup> <a name="match" id="@cdktf/provider-digitalocean.app.AppSpecIngressRule.property.match"></a>
+
+```python
+match: AppSpecIngressRuleMatch
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatch">AppSpecIngressRuleMatch</a>
+
+match block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#match App#match}
+
+---
+
+##### `redirect`<sup>Optional</sup> <a name="redirect" id="@cdktf/provider-digitalocean.app.AppSpecIngressRule.property.redirect"></a>
+
+```python
+redirect: AppSpecIngressRuleRedirect
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect">AppSpecIngressRuleRedirect</a>
+
+redirect block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#redirect App#redirect}
+
+---
+
+### AppSpecIngressRuleComponent <a name="AppSpecIngressRuleComponent" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_digitalocean import app
+
+app.AppSpecIngressRuleComponent(
+  name: str = None,
+  preserve_path_prefix: typing.Union[bool, IResolvable] = None,
+  rewrite: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.preservePathPrefix">preserve_path_prefix</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.rewrite">rewrite</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#rewrite App#rewrite}. |
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}.
+
+---
+
+##### `preserve_path_prefix`<sup>Optional</sup> <a name="preserve_path_prefix" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.preservePathPrefix"></a>
+
+```python
+preserve_path_prefix: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}.
+
+---
+
+##### `rewrite`<sup>Optional</sup> <a name="rewrite" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.rewrite"></a>
+
+```python
+rewrite: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#rewrite App#rewrite}.
+
+---
+
+### AppSpecIngressRuleCors <a name="AppSpecIngressRuleCors" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_digitalocean import app
+
+app.AppSpecIngressRuleCors(
+  allow_credentials: typing.Union[bool, IResolvable] = None,
+  allow_headers: typing.List[str] = None,
+  allow_methods: typing.List[str] = None,
+  allow_origins: AppSpecIngressRuleCorsAllowOrigins = None,
+  expose_headers: typing.List[str] = None,
+  max_age: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors.property.allowCredentials">allow_credentials</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors.property.allowHeaders">allow_headers</a></code> | <code>typing.List[str]</code> | The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors.property.allowMethods">allow_methods</a></code> | <code>typing.List[str]</code> | The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors.property.allowOrigins">allow_origins</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOrigins">AppSpecIngressRuleCorsAllowOrigins</a></code> | allow_origins block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors.property.exposeHeaders">expose_headers</a></code> | <code>typing.List[str]</code> | The set of HTTP response headers that browsers are allowed to access. This configures the Access-Control-Expose-Headers header. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors.property.maxAge">max_age</a></code> | <code>str</code> | An optional duration specifying how long browsers can cache the results of a preflight request. |
+
+---
+
+##### `allow_credentials`<sup>Optional</sup> <a name="allow_credentials" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors.property.allowCredentials"></a>
+
+```python
+allow_credentials: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`.
+
+This configures the Access-Control-Allow-Credentials header.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_credentials App#allow_credentials}
+
+---
+
+##### `allow_headers`<sup>Optional</sup> <a name="allow_headers" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors.property.allowHeaders"></a>
+
+```python
+allow_headers: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_headers App#allow_headers}
+
+---
+
+##### `allow_methods`<sup>Optional</sup> <a name="allow_methods" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors.property.allowMethods"></a>
+
+```python
+allow_methods: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_methods App#allow_methods}
+
+---
+
+##### `allow_origins`<sup>Optional</sup> <a name="allow_origins" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors.property.allowOrigins"></a>
+
+```python
+allow_origins: AppSpecIngressRuleCorsAllowOrigins
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOrigins">AppSpecIngressRuleCorsAllowOrigins</a>
+
+allow_origins block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_origins App#allow_origins}
+
+---
+
+##### `expose_headers`<sup>Optional</sup> <a name="expose_headers" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors.property.exposeHeaders"></a>
+
+```python
+expose_headers: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The set of HTTP response headers that browsers are allowed to access. This configures the Access-Control-Expose-Headers header.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#expose_headers App#expose_headers}
+
+---
+
+##### `max_age`<sup>Optional</sup> <a name="max_age" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors.property.maxAge"></a>
+
+```python
+max_age: str
+```
+
+- *Type:* str
+
+An optional duration specifying how long browsers can cache the results of a preflight request.
+
+This configures the Access-Control-Max-Age header. Example: `5h30m`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#max_age App#max_age}
+
+---
+
+### AppSpecIngressRuleCorsAllowOrigins <a name="AppSpecIngressRuleCorsAllowOrigins" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOrigins"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOrigins.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_digitalocean import app
+
+app.AppSpecIngressRuleCorsAllowOrigins(
+  exact: str = None,
+  prefix: str = None,
+  regex: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOrigins.property.exact">exact</a></code> | <code>str</code> | Exact string match. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOrigins.property.prefix">prefix</a></code> | <code>str</code> | Prefix-based match. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOrigins.property.regex">regex</a></code> | <code>str</code> | RE2 style regex-based match. |
+
+---
+
+##### `exact`<sup>Optional</sup> <a name="exact" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOrigins.property.exact"></a>
+
+```python
+exact: str
+```
+
+- *Type:* str
+
+Exact string match.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#exact App#exact}
+
+---
+
+##### `prefix`<sup>Optional</sup> <a name="prefix" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOrigins.property.prefix"></a>
+
+```python
+prefix: str
+```
+
+- *Type:* str
+
+Prefix-based match.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#prefix App#prefix}
+
+---
+
+##### `regex`<sup>Optional</sup> <a name="regex" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOrigins.property.regex"></a>
+
+```python
+regex: str
+```
+
+- *Type:* str
+
+RE2 style regex-based match.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#regex App#regex}
+
+---
+
+### AppSpecIngressRuleMatch <a name="AppSpecIngressRuleMatch" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatch"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatch.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_digitalocean import app
+
+app.AppSpecIngressRuleMatch(
+  path: AppSpecIngressRuleMatchPath = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatch.property.path">path</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPath">AppSpecIngressRuleMatchPath</a></code> | path block. |
+
+---
+
+##### `path`<sup>Optional</sup> <a name="path" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatch.property.path"></a>
+
+```python
+path: AppSpecIngressRuleMatchPath
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPath">AppSpecIngressRuleMatchPath</a>
+
+path block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#path App#path}
+
+---
+
+### AppSpecIngressRuleMatchPath <a name="AppSpecIngressRuleMatchPath" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPath"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPath.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_digitalocean import app
+
+app.AppSpecIngressRuleMatchPath(
+  prefix: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPath.property.prefix">prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#prefix App#prefix}. |
+
+---
+
+##### `prefix`<sup>Optional</sup> <a name="prefix" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPath.property.prefix"></a>
+
+```python
+prefix: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#prefix App#prefix}.
+
+---
+
+### AppSpecIngressRuleRedirect <a name="AppSpecIngressRuleRedirect" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_digitalocean import app
+
+app.AppSpecIngressRuleRedirect(
+  authority: str = None,
+  port: typing.Union[int, float] = None,
+  redirect_code: typing.Union[int, float] = None,
+  scheme: str = None,
+  uri: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.authority">authority</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#authority App#authority}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.port">port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#port App#port}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.redirectCode">redirect_code</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#redirect_code App#redirect_code}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.scheme">scheme</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#scheme App#scheme}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.uri">uri</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#uri App#uri}. |
+
+---
+
+##### `authority`<sup>Optional</sup> <a name="authority" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.authority"></a>
+
+```python
+authority: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#authority App#authority}.
+
+---
+
+##### `port`<sup>Optional</sup> <a name="port" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.port"></a>
+
+```python
+port: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#port App#port}.
+
+---
+
+##### `redirect_code`<sup>Optional</sup> <a name="redirect_code" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.redirectCode"></a>
+
+```python
+redirect_code: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#redirect_code App#redirect_code}.
+
+---
+
+##### `scheme`<sup>Optional</sup> <a name="scheme" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.scheme"></a>
+
+```python
+scheme: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#scheme App#scheme}.
+
+---
+
+##### `uri`<sup>Optional</sup> <a name="uri" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.uri"></a>
+
+```python
+uri: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#uri App#uri}.
 
 ---
 
@@ -2784,7 +3325,7 @@ name: str
 
 The name of the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
 
 ---
 
@@ -2798,7 +3339,7 @@ alert: typing.Union[IResolvable, typing.List[AppSpecJobAlert]]
 
 alert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#alert App#alert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#alert App#alert}
 
 ---
 
@@ -2812,7 +3353,7 @@ build_command: str
 
 An optional build command to run while building this component from source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#build_command App#build_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#build_command App#build_command}
 
 ---
 
@@ -2826,7 +3367,7 @@ dockerfile_path: str
 
 The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#dockerfile_path App#dockerfile_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#dockerfile_path App#dockerfile_path}
 
 ---
 
@@ -2840,7 +3381,7 @@ env: typing.Union[IResolvable, typing.List[AppSpecJobEnv]]
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#env App#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#env App#env}
 
 ---
 
@@ -2854,7 +3395,7 @@ environment_slug: str
 
 An environment slug describing the type of this app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#environment_slug App#environment_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#environment_slug App#environment_slug}
 
 ---
 
@@ -2868,7 +3409,7 @@ git: AppSpecJobGit
 
 git block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#git App#git}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#git App#git}
 
 ---
 
@@ -2882,7 +3423,7 @@ github: AppSpecJobGithub
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#github App#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#github App#github}
 
 ---
 
@@ -2896,7 +3437,7 @@ gitlab: AppSpecJobGitlab
 
 gitlab block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#gitlab App#gitlab}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#gitlab App#gitlab}
 
 ---
 
@@ -2910,7 +3451,7 @@ image: AppSpecJobImage
 
 image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#image App#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#image App#image}
 
 ---
 
@@ -2924,7 +3465,7 @@ instance_count: typing.Union[int, float]
 
 The amount of instances that this component should be scaled to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#instance_count App#instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#instance_count App#instance_count}
 
 ---
 
@@ -2938,7 +3479,7 @@ instance_size_slug: str
 
 The instance size to use for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#instance_size_slug App#instance_size_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#instance_size_slug App#instance_size_slug}
 
 ---
 
@@ -2952,7 +3493,7 @@ kind: str
 
 The type of job and when it will be run during the deployment process.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#kind App#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#kind App#kind}
 
 ---
 
@@ -2966,7 +3507,7 @@ log_destination: typing.Union[IResolvable, typing.List[AppSpecJobLogDestination]
 
 log_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#log_destination App#log_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#log_destination App#log_destination}
 
 ---
 
@@ -2980,7 +3521,7 @@ run_command: str
 
 An optional run command to override the component's default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#run_command App#run_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#run_command App#run_command}
 
 ---
 
@@ -2994,7 +3535,7 @@ source_dir: str
 
 An optional path to the working directory to use for the build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#source_dir App#source_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#source_dir App#source_dir}
 
 ---
 
@@ -3018,11 +3559,11 @@ app.AppSpecJobAlert(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#operator App#operator}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.rule">rule</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#rule App#rule}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#value App#value}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.window">window</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#window App#window}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#operator App#operator}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.rule">rule</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#rule App#rule}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.window">window</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#window App#window}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -3034,7 +3575,7 @@ operator: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#operator App#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#operator App#operator}.
 
 ---
 
@@ -3046,7 +3587,7 @@ rule: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#rule App#rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#rule App#rule}.
 
 ---
 
@@ -3058,7 +3599,7 @@ value: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#value App#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}.
 
 ---
 
@@ -3070,7 +3611,7 @@ window: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#window App#window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#window App#window}.
 
 ---
 
@@ -3082,7 +3623,7 @@ disabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#disabled App#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#disabled App#disabled}.
 
 ---
 
@@ -3122,7 +3663,7 @@ key: str
 
 The name of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#key App#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#key App#key}
 
 ---
 
@@ -3136,7 +3677,7 @@ scope: str
 
 The visibility scope of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#scope App#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#scope App#scope}
 
 ---
 
@@ -3150,7 +3691,7 @@ type: str
 
 The type of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#type App#type}
 
 ---
 
@@ -3164,7 +3705,7 @@ value: str
 
 The value of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#value App#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}
 
 ---
 
@@ -3200,7 +3741,7 @@ branch: str
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -3214,7 +3755,7 @@ repo_clone_url: str
 
 The clone URL of the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo_clone_url App#repo_clone_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo_clone_url App#repo_clone_url}
 
 ---
 
@@ -3252,7 +3793,7 @@ branch: str
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -3266,7 +3807,7 @@ deploy_on_push: typing.Union[bool, IResolvable]
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -3280,7 +3821,7 @@ repo: str
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -3318,7 +3859,7 @@ branch: str
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -3332,7 +3873,7 @@ deploy_on_push: typing.Union[bool, IResolvable]
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -3346,7 +3887,7 @@ repo: str
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -3388,7 +3929,7 @@ registry_type: str
 
 The registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#registry_type App#registry_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#registry_type App#registry_type}
 
 ---
 
@@ -3402,7 +3943,7 @@ repository: str
 
 The repository name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repository App#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repository App#repository}
 
 ---
 
@@ -3416,7 +3957,7 @@ deploy_on_push: typing.Union[IResolvable, typing.List[AppSpecJobImageDeployOnPus
 
 deploy_on_push block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -3430,7 +3971,7 @@ registry: str
 
 The registry name. Must be left empty for the DOCR registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#registry App#registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#registry App#registry}
 
 ---
 
@@ -3444,7 +3985,7 @@ tag: str
 
 The repository tag. Defaults to latest if not provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#tag App#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#tag App#tag}
 
 ---
 
@@ -3478,7 +4019,7 @@ enabled: typing.Union[bool, IResolvable]
 
 Whether to automatically deploy images pushed to DOCR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#enabled App#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#enabled App#enabled}
 
 ---
 
@@ -3518,7 +4059,7 @@ name: str
 
 Name of the log destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
 
 ---
 
@@ -3532,7 +4073,7 @@ datadog: AppSpecJobLogDestinationDatadog
 
 datadog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#datadog App#datadog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#datadog App#datadog}
 
 ---
 
@@ -3546,7 +4087,7 @@ logtail: AppSpecJobLogDestinationLogtail
 
 logtail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#logtail App#logtail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#logtail App#logtail}
 
 ---
 
@@ -3560,7 +4101,7 @@ papertrail: AppSpecJobLogDestinationPapertrail
 
 papertrail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#papertrail App#papertrail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#papertrail App#papertrail}
 
 ---
 
@@ -3596,7 +4137,7 @@ api_key: str
 
 Datadog API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#api_key App#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#api_key App#api_key}
 
 ---
 
@@ -3610,7 +4151,7 @@ endpoint: str
 
 Datadog HTTP log intake endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -3644,7 +4185,7 @@ token: str
 
 Logtail token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#token App#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#token App#token}
 
 ---
 
@@ -3678,7 +4219,7 @@ endpoint: str
 
 Papertrail syslog endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -3732,7 +4273,7 @@ app.AppSpecService(
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.image">image</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImage">AppSpecServiceImage</a></code> | image block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.instanceCount">instance_count</a></code> | <code>typing.Union[int, float]</code> | The amount of instances that this component should be scaled to. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.instanceSizeSlug">instance_size_slug</a></code> | <code>str</code> | The instance size to use for this component. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.internalPorts">internal_ports</a></code> | <code>typing.List[typing.Union[int, float]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#internal_ports App#internal_ports}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.internalPorts">internal_ports</a></code> | <code>typing.List[typing.Union[int, float]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#internal_ports App#internal_ports}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.logDestination">log_destination</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>]]</code> | log_destination block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.routes">routes</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>]]</code> | routes block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.runCommand">run_command</a></code> | <code>str</code> | An optional run command to override the component's default. |
@@ -3750,7 +4291,7 @@ name: str
 
 The name of the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
 
 ---
 
@@ -3764,7 +4305,7 @@ alert: typing.Union[IResolvable, typing.List[AppSpecServiceAlert]]
 
 alert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#alert App#alert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#alert App#alert}
 
 ---
 
@@ -3778,7 +4319,7 @@ build_command: str
 
 An optional build command to run while building this component from source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#build_command App#build_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#build_command App#build_command}
 
 ---
 
@@ -3792,7 +4333,7 @@ cors: AppSpecServiceCors
 
 cors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#cors App#cors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#cors App#cors}
 
 ---
 
@@ -3806,7 +4347,7 @@ dockerfile_path: str
 
 The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#dockerfile_path App#dockerfile_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#dockerfile_path App#dockerfile_path}
 
 ---
 
@@ -3820,7 +4361,7 @@ env: typing.Union[IResolvable, typing.List[AppSpecServiceEnv]]
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#env App#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#env App#env}
 
 ---
 
@@ -3834,7 +4375,7 @@ environment_slug: str
 
 An environment slug describing the type of this app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#environment_slug App#environment_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#environment_slug App#environment_slug}
 
 ---
 
@@ -3848,7 +4389,7 @@ git: AppSpecServiceGit
 
 git block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#git App#git}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#git App#git}
 
 ---
 
@@ -3862,7 +4403,7 @@ github: AppSpecServiceGithub
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#github App#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#github App#github}
 
 ---
 
@@ -3876,7 +4417,7 @@ gitlab: AppSpecServiceGitlab
 
 gitlab block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#gitlab App#gitlab}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#gitlab App#gitlab}
 
 ---
 
@@ -3890,7 +4431,7 @@ health_check: AppSpecServiceHealthCheck
 
 health_check block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#health_check App#health_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#health_check App#health_check}
 
 ---
 
@@ -3904,7 +4445,7 @@ http_port: typing.Union[int, float]
 
 The internal port on which this service's run command will listen.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#http_port App#http_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#http_port App#http_port}
 
 ---
 
@@ -3918,7 +4459,7 @@ image: AppSpecServiceImage
 
 image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#image App#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#image App#image}
 
 ---
 
@@ -3932,7 +4473,7 @@ instance_count: typing.Union[int, float]
 
 The amount of instances that this component should be scaled to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#instance_count App#instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#instance_count App#instance_count}
 
 ---
 
@@ -3946,7 +4487,7 @@ instance_size_slug: str
 
 The instance size to use for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#instance_size_slug App#instance_size_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#instance_size_slug App#instance_size_slug}
 
 ---
 
@@ -3958,7 +4499,7 @@ internal_ports: typing.List[typing.Union[int, float]]
 
 - *Type:* typing.List[typing.Union[int, float]]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#internal_ports App#internal_ports}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#internal_ports App#internal_ports}.
 
 ---
 
@@ -3972,7 +4513,7 @@ log_destination: typing.Union[IResolvable, typing.List[AppSpecServiceLogDestinat
 
 log_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#log_destination App#log_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#log_destination App#log_destination}
 
 ---
 
@@ -3986,7 +4527,7 @@ routes: typing.Union[IResolvable, typing.List[AppSpecServiceRoutes]]
 
 routes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#routes App#routes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#routes App#routes}
 
 ---
 
@@ -4000,7 +4541,7 @@ run_command: str
 
 An optional run command to override the component's default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#run_command App#run_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#run_command App#run_command}
 
 ---
 
@@ -4014,7 +4555,7 @@ source_dir: str
 
 An optional path to the working directory to use for the build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#source_dir App#source_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#source_dir App#source_dir}
 
 ---
 
@@ -4038,11 +4579,11 @@ app.AppSpecServiceAlert(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#operator App#operator}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.rule">rule</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#rule App#rule}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#value App#value}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.window">window</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#window App#window}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#operator App#operator}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.rule">rule</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#rule App#rule}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.window">window</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#window App#window}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -4054,7 +4595,7 @@ operator: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#operator App#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#operator App#operator}.
 
 ---
 
@@ -4066,7 +4607,7 @@ rule: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#rule App#rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#rule App#rule}.
 
 ---
 
@@ -4078,7 +4619,7 @@ value: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#value App#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}.
 
 ---
 
@@ -4090,7 +4631,7 @@ window: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#window App#window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#window App#window}.
 
 ---
 
@@ -4102,7 +4643,7 @@ disabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#disabled App#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#disabled App#disabled}.
 
 ---
 
@@ -4148,7 +4689,7 @@ Whether browsers should expose the response to the client-side JavaScript code w
 
 This configures the Access-Control-Allow-Credentials header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_credentials App#allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_credentials App#allow_credentials}
 
 ---
 
@@ -4162,7 +4703,7 @@ allow_headers: typing.List[str]
 
 The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_headers App#allow_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_headers App#allow_headers}
 
 ---
 
@@ -4176,7 +4717,7 @@ allow_methods: typing.List[str]
 
 The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_methods App#allow_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_methods App#allow_methods}
 
 ---
 
@@ -4190,7 +4731,7 @@ allow_origins: AppSpecServiceCorsAllowOrigins
 
 allow_origins block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_origins App#allow_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_origins App#allow_origins}
 
 ---
 
@@ -4204,7 +4745,7 @@ expose_headers: typing.List[str]
 
 The set of HTTP response headers that browsers are allowed to access. This configures the Access-Control-Expose-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#expose_headers App#expose_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#expose_headers App#expose_headers}
 
 ---
 
@@ -4220,7 +4761,7 @@ An optional duration specifying how long browsers can cache the results of a pre
 
 This configures the Access-Control-Max-Age header. Example: `5h30m`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#max_age App#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#max_age App#max_age}
 
 ---
 
@@ -4258,7 +4799,7 @@ exact: str
 
 Exact string match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#exact App#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#exact App#exact}
 
 ---
 
@@ -4272,7 +4813,7 @@ prefix: str
 
 Prefix-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#prefix App#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#prefix App#prefix}
 
 ---
 
@@ -4286,7 +4827,7 @@ regex: str
 
 RE2 style regex-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#regex App#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#regex App#regex}
 
 ---
 
@@ -4326,7 +4867,7 @@ key: str
 
 The name of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#key App#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#key App#key}
 
 ---
 
@@ -4340,7 +4881,7 @@ scope: str
 
 The visibility scope of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#scope App#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#scope App#scope}
 
 ---
 
@@ -4354,7 +4895,7 @@ type: str
 
 The type of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#type App#type}
 
 ---
 
@@ -4368,7 +4909,7 @@ value: str
 
 The value of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#value App#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}
 
 ---
 
@@ -4404,7 +4945,7 @@ branch: str
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -4418,7 +4959,7 @@ repo_clone_url: str
 
 The clone URL of the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo_clone_url App#repo_clone_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo_clone_url App#repo_clone_url}
 
 ---
 
@@ -4456,7 +4997,7 @@ branch: str
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -4470,7 +5011,7 @@ deploy_on_push: typing.Union[bool, IResolvable]
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -4484,7 +5025,7 @@ repo: str
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -4522,7 +5063,7 @@ branch: str
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -4536,7 +5077,7 @@ deploy_on_push: typing.Union[bool, IResolvable]
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -4550,7 +5091,7 @@ repo: str
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -4594,7 +5135,7 @@ failure_threshold: typing.Union[int, float]
 
 The number of failed health checks before considered unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#failure_threshold App#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#failure_threshold App#failure_threshold}
 
 ---
 
@@ -4608,7 +5149,7 @@ http_path: str
 
 The route path used for the HTTP health check ping.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#http_path App#http_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#http_path App#http_path}
 
 ---
 
@@ -4622,7 +5163,7 @@ initial_delay_seconds: typing.Union[int, float]
 
 The number of seconds to wait before beginning health checks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#initial_delay_seconds App#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#initial_delay_seconds App#initial_delay_seconds}
 
 ---
 
@@ -4636,7 +5177,7 @@ period_seconds: typing.Union[int, float]
 
 The number of seconds to wait between health checks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#period_seconds App#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#period_seconds App#period_seconds}
 
 ---
 
@@ -4650,7 +5191,7 @@ success_threshold: typing.Union[int, float]
 
 The number of successful health checks before considered healthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#success_threshold App#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#success_threshold App#success_threshold}
 
 ---
 
@@ -4664,7 +5205,7 @@ timeout_seconds: typing.Union[int, float]
 
 The number of seconds after which the check times out.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#timeout_seconds App#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#timeout_seconds App#timeout_seconds}
 
 ---
 
@@ -4706,7 +5247,7 @@ registry_type: str
 
 The registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#registry_type App#registry_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#registry_type App#registry_type}
 
 ---
 
@@ -4720,7 +5261,7 @@ repository: str
 
 The repository name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repository App#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repository App#repository}
 
 ---
 
@@ -4734,7 +5275,7 @@ deploy_on_push: typing.Union[IResolvable, typing.List[AppSpecServiceImageDeployO
 
 deploy_on_push block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -4748,7 +5289,7 @@ registry: str
 
 The registry name. Must be left empty for the DOCR registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#registry App#registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#registry App#registry}
 
 ---
 
@@ -4762,7 +5303,7 @@ tag: str
 
 The repository tag. Defaults to latest if not provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#tag App#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#tag App#tag}
 
 ---
 
@@ -4796,7 +5337,7 @@ enabled: typing.Union[bool, IResolvable]
 
 Whether to automatically deploy images pushed to DOCR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#enabled App#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#enabled App#enabled}
 
 ---
 
@@ -4836,7 +5377,7 @@ name: str
 
 Name of the log destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
 
 ---
 
@@ -4850,7 +5391,7 @@ datadog: AppSpecServiceLogDestinationDatadog
 
 datadog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#datadog App#datadog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#datadog App#datadog}
 
 ---
 
@@ -4864,7 +5405,7 @@ logtail: AppSpecServiceLogDestinationLogtail
 
 logtail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#logtail App#logtail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#logtail App#logtail}
 
 ---
 
@@ -4878,7 +5419,7 @@ papertrail: AppSpecServiceLogDestinationPapertrail
 
 papertrail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#papertrail App#papertrail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#papertrail App#papertrail}
 
 ---
 
@@ -4914,7 +5455,7 @@ api_key: str
 
 Datadog API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#api_key App#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#api_key App#api_key}
 
 ---
 
@@ -4928,7 +5469,7 @@ endpoint: str
 
 Datadog HTTP log intake endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -4962,7 +5503,7 @@ token: str
 
 Logtail token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#token App#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#token App#token}
 
 ---
 
@@ -4996,7 +5537,7 @@ endpoint: str
 
 Papertrail syslog endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -5034,7 +5575,7 @@ Path specifies an route by HTTP path prefix.
 
 Paths must start with / and must be unique within the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#path App#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#path App#path}
 
 ---
 
@@ -5048,7 +5589,7 @@ preserve_path_prefix: typing.Union[bool, IResolvable]
 
 An optional flag to preserve the path that is forwarded to the backend service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
 
 ---
 
@@ -5110,7 +5651,7 @@ name: str
 
 The name of the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
 
 ---
 
@@ -5124,7 +5665,7 @@ build_command: str
 
 An optional build command to run while building this component from source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#build_command App#build_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#build_command App#build_command}
 
 ---
 
@@ -5138,7 +5679,7 @@ catchall_document: str
 
 The name of the document to use as the fallback for any requests to documents that are not found when serving this static site.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#catchall_document App#catchall_document}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#catchall_document App#catchall_document}
 
 ---
 
@@ -5152,7 +5693,7 @@ cors: AppSpecStaticSiteCors
 
 cors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#cors App#cors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#cors App#cors}
 
 ---
 
@@ -5166,7 +5707,7 @@ dockerfile_path: str
 
 The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#dockerfile_path App#dockerfile_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#dockerfile_path App#dockerfile_path}
 
 ---
 
@@ -5180,7 +5721,7 @@ env: typing.Union[IResolvable, typing.List[AppSpecStaticSiteEnv]]
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#env App#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#env App#env}
 
 ---
 
@@ -5194,7 +5735,7 @@ environment_slug: str
 
 An environment slug describing the type of this app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#environment_slug App#environment_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#environment_slug App#environment_slug}
 
 ---
 
@@ -5208,7 +5749,7 @@ error_document: str
 
 The name of the error document to use when serving this static site.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#error_document App#error_document}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#error_document App#error_document}
 
 ---
 
@@ -5222,7 +5763,7 @@ git: AppSpecStaticSiteGit
 
 git block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#git App#git}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#git App#git}
 
 ---
 
@@ -5236,7 +5777,7 @@ github: AppSpecStaticSiteGithub
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#github App#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#github App#github}
 
 ---
 
@@ -5250,7 +5791,7 @@ gitlab: AppSpecStaticSiteGitlab
 
 gitlab block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#gitlab App#gitlab}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#gitlab App#gitlab}
 
 ---
 
@@ -5264,7 +5805,7 @@ index_document: str
 
 The name of the index document to use when serving this static site.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#index_document App#index_document}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#index_document App#index_document}
 
 ---
 
@@ -5280,7 +5821,7 @@ An optional path to where the built assets will be located, relative to the buil
 
 If not set, App Platform will automatically scan for these directory names: `_static`, `dist`, `public`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#output_dir App#output_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#output_dir App#output_dir}
 
 ---
 
@@ -5294,7 +5835,7 @@ routes: typing.Union[IResolvable, typing.List[AppSpecStaticSiteRoutes]]
 
 routes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#routes App#routes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#routes App#routes}
 
 ---
 
@@ -5308,7 +5849,7 @@ source_dir: str
 
 An optional path to the working directory to use for the build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#source_dir App#source_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#source_dir App#source_dir}
 
 ---
 
@@ -5354,7 +5895,7 @@ Whether browsers should expose the response to the client-side JavaScript code w
 
 This configures the Access-Control-Allow-Credentials header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_credentials App#allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_credentials App#allow_credentials}
 
 ---
 
@@ -5368,7 +5909,7 @@ allow_headers: typing.List[str]
 
 The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_headers App#allow_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_headers App#allow_headers}
 
 ---
 
@@ -5382,7 +5923,7 @@ allow_methods: typing.List[str]
 
 The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_methods App#allow_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_methods App#allow_methods}
 
 ---
 
@@ -5396,7 +5937,7 @@ allow_origins: AppSpecStaticSiteCorsAllowOrigins
 
 allow_origins block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_origins App#allow_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_origins App#allow_origins}
 
 ---
 
@@ -5410,7 +5951,7 @@ expose_headers: typing.List[str]
 
 The set of HTTP response headers that browsers are allowed to access. This configures the Access-Control-Expose-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#expose_headers App#expose_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#expose_headers App#expose_headers}
 
 ---
 
@@ -5426,7 +5967,7 @@ An optional duration specifying how long browsers can cache the results of a pre
 
 This configures the Access-Control-Max-Age header. Example: `5h30m`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#max_age App#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#max_age App#max_age}
 
 ---
 
@@ -5464,7 +6005,7 @@ exact: str
 
 Exact string match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#exact App#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#exact App#exact}
 
 ---
 
@@ -5478,7 +6019,7 @@ prefix: str
 
 Prefix-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#prefix App#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#prefix App#prefix}
 
 ---
 
@@ -5492,7 +6033,7 @@ regex: str
 
 RE2 style regex-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#regex App#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#regex App#regex}
 
 ---
 
@@ -5532,7 +6073,7 @@ key: str
 
 The name of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#key App#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#key App#key}
 
 ---
 
@@ -5546,7 +6087,7 @@ scope: str
 
 The visibility scope of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#scope App#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#scope App#scope}
 
 ---
 
@@ -5560,7 +6101,7 @@ type: str
 
 The type of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#type App#type}
 
 ---
 
@@ -5574,7 +6115,7 @@ value: str
 
 The value of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#value App#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}
 
 ---
 
@@ -5610,7 +6151,7 @@ branch: str
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -5624,7 +6165,7 @@ repo_clone_url: str
 
 The clone URL of the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo_clone_url App#repo_clone_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo_clone_url App#repo_clone_url}
 
 ---
 
@@ -5662,7 +6203,7 @@ branch: str
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -5676,7 +6217,7 @@ deploy_on_push: typing.Union[bool, IResolvable]
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -5690,7 +6231,7 @@ repo: str
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -5728,7 +6269,7 @@ branch: str
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -5742,7 +6283,7 @@ deploy_on_push: typing.Union[bool, IResolvable]
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -5756,7 +6297,7 @@ repo: str
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -5794,7 +6335,7 @@ Path specifies an route by HTTP path prefix.
 
 Paths must start with / and must be unique within the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#path App#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#path App#path}
 
 ---
 
@@ -5808,7 +6349,7 @@ preserve_path_prefix: typing.Union[bool, IResolvable]
 
 An optional flag to preserve the path that is forwarded to the backend service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
 
 ---
 
@@ -5870,7 +6411,7 @@ name: str
 
 The name of the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
 
 ---
 
@@ -5884,7 +6425,7 @@ alert: typing.Union[IResolvable, typing.List[AppSpecWorkerAlert]]
 
 alert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#alert App#alert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#alert App#alert}
 
 ---
 
@@ -5898,7 +6439,7 @@ build_command: str
 
 An optional build command to run while building this component from source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#build_command App#build_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#build_command App#build_command}
 
 ---
 
@@ -5912,7 +6453,7 @@ dockerfile_path: str
 
 The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#dockerfile_path App#dockerfile_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#dockerfile_path App#dockerfile_path}
 
 ---
 
@@ -5926,7 +6467,7 @@ env: typing.Union[IResolvable, typing.List[AppSpecWorkerEnv]]
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#env App#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#env App#env}
 
 ---
 
@@ -5940,7 +6481,7 @@ environment_slug: str
 
 An environment slug describing the type of this app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#environment_slug App#environment_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#environment_slug App#environment_slug}
 
 ---
 
@@ -5954,7 +6495,7 @@ git: AppSpecWorkerGit
 
 git block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#git App#git}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#git App#git}
 
 ---
 
@@ -5968,7 +6509,7 @@ github: AppSpecWorkerGithub
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#github App#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#github App#github}
 
 ---
 
@@ -5982,7 +6523,7 @@ gitlab: AppSpecWorkerGitlab
 
 gitlab block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#gitlab App#gitlab}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#gitlab App#gitlab}
 
 ---
 
@@ -5996,7 +6537,7 @@ image: AppSpecWorkerImage
 
 image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#image App#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#image App#image}
 
 ---
 
@@ -6010,7 +6551,7 @@ instance_count: typing.Union[int, float]
 
 The amount of instances that this component should be scaled to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#instance_count App#instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#instance_count App#instance_count}
 
 ---
 
@@ -6024,7 +6565,7 @@ instance_size_slug: str
 
 The instance size to use for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#instance_size_slug App#instance_size_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#instance_size_slug App#instance_size_slug}
 
 ---
 
@@ -6038,7 +6579,7 @@ log_destination: typing.Union[IResolvable, typing.List[AppSpecWorkerLogDestinati
 
 log_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#log_destination App#log_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#log_destination App#log_destination}
 
 ---
 
@@ -6052,7 +6593,7 @@ run_command: str
 
 An optional run command to override the component's default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#run_command App#run_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#run_command App#run_command}
 
 ---
 
@@ -6066,7 +6607,7 @@ source_dir: str
 
 An optional path to the working directory to use for the build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#source_dir App#source_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#source_dir App#source_dir}
 
 ---
 
@@ -6090,11 +6631,11 @@ app.AppSpecWorkerAlert(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#operator App#operator}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.rule">rule</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#rule App#rule}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#value App#value}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.window">window</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#window App#window}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#operator App#operator}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.rule">rule</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#rule App#rule}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.window">window</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#window App#window}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -6106,7 +6647,7 @@ operator: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#operator App#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#operator App#operator}.
 
 ---
 
@@ -6118,7 +6659,7 @@ rule: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#rule App#rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#rule App#rule}.
 
 ---
 
@@ -6130,7 +6671,7 @@ value: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#value App#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}.
 
 ---
 
@@ -6142,7 +6683,7 @@ window: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#window App#window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#window App#window}.
 
 ---
 
@@ -6154,7 +6695,7 @@ disabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#disabled App#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#disabled App#disabled}.
 
 ---
 
@@ -6194,7 +6735,7 @@ key: str
 
 The name of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#key App#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#key App#key}
 
 ---
 
@@ -6208,7 +6749,7 @@ scope: str
 
 The visibility scope of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#scope App#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#scope App#scope}
 
 ---
 
@@ -6222,7 +6763,7 @@ type: str
 
 The type of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#type App#type}
 
 ---
 
@@ -6236,7 +6777,7 @@ value: str
 
 The value of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#value App#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}
 
 ---
 
@@ -6272,7 +6813,7 @@ branch: str
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -6286,7 +6827,7 @@ repo_clone_url: str
 
 The clone URL of the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo_clone_url App#repo_clone_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo_clone_url App#repo_clone_url}
 
 ---
 
@@ -6324,7 +6865,7 @@ branch: str
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -6338,7 +6879,7 @@ deploy_on_push: typing.Union[bool, IResolvable]
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -6352,7 +6893,7 @@ repo: str
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -6390,7 +6931,7 @@ branch: str
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -6404,7 +6945,7 @@ deploy_on_push: typing.Union[bool, IResolvable]
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -6418,7 +6959,7 @@ repo: str
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -6460,7 +7001,7 @@ registry_type: str
 
 The registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#registry_type App#registry_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#registry_type App#registry_type}
 
 ---
 
@@ -6474,7 +7015,7 @@ repository: str
 
 The repository name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repository App#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repository App#repository}
 
 ---
 
@@ -6488,7 +7029,7 @@ deploy_on_push: typing.Union[IResolvable, typing.List[AppSpecWorkerImageDeployOn
 
 deploy_on_push block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -6502,7 +7043,7 @@ registry: str
 
 The registry name. Must be left empty for the DOCR registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#registry App#registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#registry App#registry}
 
 ---
 
@@ -6516,7 +7057,7 @@ tag: str
 
 The repository tag. Defaults to latest if not provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#tag App#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#tag App#tag}
 
 ---
 
@@ -6550,7 +7091,7 @@ enabled: typing.Union[bool, IResolvable]
 
 Whether to automatically deploy images pushed to DOCR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#enabled App#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#enabled App#enabled}
 
 ---
 
@@ -6590,7 +7131,7 @@ name: str
 
 Name of the log destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
 
 ---
 
@@ -6604,7 +7145,7 @@ datadog: AppSpecWorkerLogDestinationDatadog
 
 datadog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#datadog App#datadog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#datadog App#datadog}
 
 ---
 
@@ -6618,7 +7159,7 @@ logtail: AppSpecWorkerLogDestinationLogtail
 
 logtail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#logtail App#logtail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#logtail App#logtail}
 
 ---
 
@@ -6632,7 +7173,7 @@ papertrail: AppSpecWorkerLogDestinationPapertrail
 
 papertrail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#papertrail App#papertrail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#papertrail App#papertrail}
 
 ---
 
@@ -6668,7 +7209,7 @@ api_key: str
 
 Datadog API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#api_key App#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#api_key App#api_key}
 
 ---
 
@@ -6682,7 +7223,7 @@ endpoint: str
 
 Datadog HTTP log intake endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -6716,7 +7257,7 @@ token: str
 
 Logtail token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#token App#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#token App#token}
 
 ---
 
@@ -6750,7 +7291,7 @@ endpoint: str
 
 Papertrail syslog endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -6770,7 +7311,7 @@ app.AppTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#create App#create}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#create App#create}. |
 
 ---
 
@@ -6782,7 +7323,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#create App#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#create App#create}.
 
 ---
 
@@ -10221,7 +10762,7 @@ def put_allow_origins(
 
 Exact string match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#exact App#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#exact App#exact}
 
 ---
 
@@ -10231,7 +10772,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Prefix-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#prefix App#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#prefix App#prefix}
 
 ---
 
@@ -10241,7 +10782,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 RE2 style regex-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#regex App#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#regex App#regex}
 
 ---
 
@@ -13266,7 +13807,7 @@ def put_datadog(
 
 Datadog API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#api_key App#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#api_key App#api_key}
 
 ---
 
@@ -13276,7 +13817,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Datadog HTTP log intake endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -13294,7 +13835,7 @@ def put_logtail(
 
 Logtail token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#token App#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#token App#token}
 
 ---
 
@@ -13312,7 +13853,7 @@ def put_papertrail(
 
 Papertrail syslog endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -14064,7 +14605,7 @@ Whether browsers should expose the response to the client-side JavaScript code w
 
 This configures the Access-Control-Allow-Credentials header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_credentials App#allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_credentials App#allow_credentials}
 
 ---
 
@@ -14074,7 +14615,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_headers App#allow_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_headers App#allow_headers}
 
 ---
 
@@ -14084,7 +14625,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_methods App#allow_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_methods App#allow_methods}
 
 ---
 
@@ -14094,7 +14635,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 allow_origins block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_origins App#allow_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_origins App#allow_origins}
 
 ---
 
@@ -14104,7 +14645,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The set of HTTP response headers that browsers are allowed to access. This configures the Access-Control-Expose-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#expose_headers App#expose_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#expose_headers App#expose_headers}
 
 ---
 
@@ -14116,7 +14657,7 @@ An optional duration specifying how long browsers can cache the results of a pre
 
 This configures the Access-Control-Max-Age header. Example: `5h30m`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#max_age App#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#max_age App#max_age}
 
 ---
 
@@ -14149,7 +14690,7 @@ def put_git(
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -14159,7 +14700,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The clone URL of the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo_clone_url App#repo_clone_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo_clone_url App#repo_clone_url}
 
 ---
 
@@ -14179,7 +14720,7 @@ def put_github(
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -14189,7 +14730,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -14199,7 +14740,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -14219,7 +14760,7 @@ def put_gitlab(
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -14229,7 +14770,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -14239,7 +14780,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -15090,6 +15631,3323 @@ internal_value: typing.Union[IResolvable, AppSpecFunctionRoutes]
 ```
 
 - *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>]
+
+---
+
+
+### AppSpecIngressOutputReference <a name="AppSpecIngressOutputReference" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_digitalocean import app
+
+app.AppSpecIngressOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.putRule">put_rule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.resetRule">reset_rule</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_rule` <a name="put_rule" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.putRule"></a>
+
+```python
+def put_rule(
+  value: typing.Union[IResolvable, typing.List[AppSpecIngressRule]]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.putRule.parameter.value"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>]]
+
+---
+
+##### `reset_rule` <a name="reset_rule" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.resetRule"></a>
+
+```python
+def reset_rule() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.property.rule">rule</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleList">AppSpecIngressRuleList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.property.ruleInput">rule_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngress">AppSpecIngress</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `rule`<sup>Required</sup> <a name="rule" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.property.rule"></a>
+
+```python
+rule: AppSpecIngressRuleList
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleList">AppSpecIngressRuleList</a>
+
+---
+
+##### `rule_input`<sup>Optional</sup> <a name="rule_input" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.property.ruleInput"></a>
+
+```python
+rule_input: typing.Union[IResolvable, typing.List[AppSpecIngressRule]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>]]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.property.internalValue"></a>
+
+```python
+internal_value: AppSpecIngress
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecIngress">AppSpecIngress</a>
+
+---
+
+
+### AppSpecIngressRuleComponentOutputReference <a name="AppSpecIngressRuleComponentOutputReference" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_digitalocean import app
+
+app.AppSpecIngressRuleComponentOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.resetName">reset_name</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.resetPreservePathPrefix">reset_preserve_path_prefix</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.resetRewrite">reset_rewrite</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_name` <a name="reset_name" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.resetName"></a>
+
+```python
+def reset_name() -> None
+```
+
+##### `reset_preserve_path_prefix` <a name="reset_preserve_path_prefix" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.resetPreservePathPrefix"></a>
+
+```python
+def reset_preserve_path_prefix() -> None
+```
+
+##### `reset_rewrite` <a name="reset_rewrite" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.resetRewrite"></a>
+
+```python
+def reset_rewrite() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.preservePathPrefixInput">preserve_path_prefix_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.rewriteInput">rewrite_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.preservePathPrefix">preserve_path_prefix</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.rewrite">rewrite</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent">AppSpecIngressRuleComponent</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.nameInput"></a>
+
+```python
+name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `preserve_path_prefix_input`<sup>Optional</sup> <a name="preserve_path_prefix_input" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.preservePathPrefixInput"></a>
+
+```python
+preserve_path_prefix_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `rewrite_input`<sup>Optional</sup> <a name="rewrite_input" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.rewriteInput"></a>
+
+```python
+rewrite_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
+##### `preserve_path_prefix`<sup>Required</sup> <a name="preserve_path_prefix" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.preservePathPrefix"></a>
+
+```python
+preserve_path_prefix: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `rewrite`<sup>Required</sup> <a name="rewrite" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.rewrite"></a>
+
+```python
+rewrite: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.internalValue"></a>
+
+```python
+internal_value: AppSpecIngressRuleComponent
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent">AppSpecIngressRuleComponent</a>
+
+---
+
+
+### AppSpecIngressRuleCorsAllowOriginsOutputReference <a name="AppSpecIngressRuleCorsAllowOriginsOutputReference" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_digitalocean import app
+
+app.AppSpecIngressRuleCorsAllowOriginsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.resetExact">reset_exact</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.resetPrefix">reset_prefix</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.resetRegex">reset_regex</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_exact` <a name="reset_exact" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.resetExact"></a>
+
+```python
+def reset_exact() -> None
+```
+
+##### `reset_prefix` <a name="reset_prefix" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.resetPrefix"></a>
+
+```python
+def reset_prefix() -> None
+```
+
+##### `reset_regex` <a name="reset_regex" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.resetRegex"></a>
+
+```python
+def reset_regex() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.property.exactInput">exact_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.property.prefixInput">prefix_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.property.regexInput">regex_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.property.exact">exact</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.property.prefix">prefix</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.property.regex">regex</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOrigins">AppSpecIngressRuleCorsAllowOrigins</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `exact_input`<sup>Optional</sup> <a name="exact_input" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.property.exactInput"></a>
+
+```python
+exact_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `prefix_input`<sup>Optional</sup> <a name="prefix_input" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.property.prefixInput"></a>
+
+```python
+prefix_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `regex_input`<sup>Optional</sup> <a name="regex_input" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.property.regexInput"></a>
+
+```python
+regex_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `exact`<sup>Required</sup> <a name="exact" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.property.exact"></a>
+
+```python
+exact: str
+```
+
+- *Type:* str
+
+---
+
+##### `prefix`<sup>Required</sup> <a name="prefix" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.property.prefix"></a>
+
+```python
+prefix: str
+```
+
+- *Type:* str
+
+---
+
+##### `regex`<sup>Required</sup> <a name="regex" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.property.regex"></a>
+
+```python
+regex: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: AppSpecIngressRuleCorsAllowOrigins
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOrigins">AppSpecIngressRuleCorsAllowOrigins</a>
+
+---
+
+
+### AppSpecIngressRuleCorsOutputReference <a name="AppSpecIngressRuleCorsOutputReference" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_digitalocean import app
+
+app.AppSpecIngressRuleCorsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.putAllowOrigins">put_allow_origins</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.resetAllowCredentials">reset_allow_credentials</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.resetAllowHeaders">reset_allow_headers</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.resetAllowMethods">reset_allow_methods</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.resetAllowOrigins">reset_allow_origins</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.resetExposeHeaders">reset_expose_headers</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.resetMaxAge">reset_max_age</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_allow_origins` <a name="put_allow_origins" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.putAllowOrigins"></a>
+
+```python
+def put_allow_origins(
+  exact: str = None,
+  prefix: str = None,
+  regex: str = None
+) -> None
+```
+
+###### `exact`<sup>Optional</sup> <a name="exact" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.putAllowOrigins.parameter.exact"></a>
+
+- *Type:* str
+
+Exact string match.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#exact App#exact}
+
+---
+
+###### `prefix`<sup>Optional</sup> <a name="prefix" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.putAllowOrigins.parameter.prefix"></a>
+
+- *Type:* str
+
+Prefix-based match.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#prefix App#prefix}
+
+---
+
+###### `regex`<sup>Optional</sup> <a name="regex" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.putAllowOrigins.parameter.regex"></a>
+
+- *Type:* str
+
+RE2 style regex-based match.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#regex App#regex}
+
+---
+
+##### `reset_allow_credentials` <a name="reset_allow_credentials" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.resetAllowCredentials"></a>
+
+```python
+def reset_allow_credentials() -> None
+```
+
+##### `reset_allow_headers` <a name="reset_allow_headers" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.resetAllowHeaders"></a>
+
+```python
+def reset_allow_headers() -> None
+```
+
+##### `reset_allow_methods` <a name="reset_allow_methods" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.resetAllowMethods"></a>
+
+```python
+def reset_allow_methods() -> None
+```
+
+##### `reset_allow_origins` <a name="reset_allow_origins" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.resetAllowOrigins"></a>
+
+```python
+def reset_allow_origins() -> None
+```
+
+##### `reset_expose_headers` <a name="reset_expose_headers" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.resetExposeHeaders"></a>
+
+```python
+def reset_expose_headers() -> None
+```
+
+##### `reset_max_age` <a name="reset_max_age" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.resetMaxAge"></a>
+
+```python
+def reset_max_age() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowOrigins">allow_origins</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference">AppSpecIngressRuleCorsAllowOriginsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowCredentialsInput">allow_credentials_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowHeadersInput">allow_headers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowMethodsInput">allow_methods_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowOriginsInput">allow_origins_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOrigins">AppSpecIngressRuleCorsAllowOrigins</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.exposeHeadersInput">expose_headers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.maxAgeInput">max_age_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowCredentials">allow_credentials</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowHeaders">allow_headers</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowMethods">allow_methods</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.exposeHeaders">expose_headers</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.maxAge">max_age</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors">AppSpecIngressRuleCors</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `allow_origins`<sup>Required</sup> <a name="allow_origins" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowOrigins"></a>
+
+```python
+allow_origins: AppSpecIngressRuleCorsAllowOriginsOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference">AppSpecIngressRuleCorsAllowOriginsOutputReference</a>
+
+---
+
+##### `allow_credentials_input`<sup>Optional</sup> <a name="allow_credentials_input" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowCredentialsInput"></a>
+
+```python
+allow_credentials_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `allow_headers_input`<sup>Optional</sup> <a name="allow_headers_input" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowHeadersInput"></a>
+
+```python
+allow_headers_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `allow_methods_input`<sup>Optional</sup> <a name="allow_methods_input" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowMethodsInput"></a>
+
+```python
+allow_methods_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `allow_origins_input`<sup>Optional</sup> <a name="allow_origins_input" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowOriginsInput"></a>
+
+```python
+allow_origins_input: AppSpecIngressRuleCorsAllowOrigins
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOrigins">AppSpecIngressRuleCorsAllowOrigins</a>
+
+---
+
+##### `expose_headers_input`<sup>Optional</sup> <a name="expose_headers_input" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.exposeHeadersInput"></a>
+
+```python
+expose_headers_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `max_age_input`<sup>Optional</sup> <a name="max_age_input" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.maxAgeInput"></a>
+
+```python
+max_age_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `allow_credentials`<sup>Required</sup> <a name="allow_credentials" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowCredentials"></a>
+
+```python
+allow_credentials: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `allow_headers`<sup>Required</sup> <a name="allow_headers" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowHeaders"></a>
+
+```python
+allow_headers: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `allow_methods`<sup>Required</sup> <a name="allow_methods" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowMethods"></a>
+
+```python
+allow_methods: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `expose_headers`<sup>Required</sup> <a name="expose_headers" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.exposeHeaders"></a>
+
+```python
+expose_headers: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `max_age`<sup>Required</sup> <a name="max_age" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.maxAge"></a>
+
+```python
+max_age: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: AppSpecIngressRuleCors
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors">AppSpecIngressRuleCors</a>
+
+---
+
+
+### AppSpecIngressRuleList <a name="AppSpecIngressRuleList" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_digitalocean import app
+
+app.AppSpecIngressRuleList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.get">get</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> AppSpecIngressRuleOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>]]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, typing.List[AppSpecIngressRule]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>]]
+
+---
+
+
+### AppSpecIngressRuleMatchOutputReference <a name="AppSpecIngressRuleMatchOutputReference" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_digitalocean import app
+
+app.AppSpecIngressRuleMatchOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.putPath">put_path</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.resetPath">reset_path</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_path` <a name="put_path" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.putPath"></a>
+
+```python
+def put_path(
+  prefix: str = None
+) -> None
+```
+
+###### `prefix`<sup>Optional</sup> <a name="prefix" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.putPath.parameter.prefix"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#prefix App#prefix}.
+
+---
+
+##### `reset_path` <a name="reset_path" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.resetPath"></a>
+
+```python
+def reset_path() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.property.path">path</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference">AppSpecIngressRuleMatchPathOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.property.pathInput">path_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPath">AppSpecIngressRuleMatchPath</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatch">AppSpecIngressRuleMatch</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.property.path"></a>
+
+```python
+path: AppSpecIngressRuleMatchPathOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference">AppSpecIngressRuleMatchPathOutputReference</a>
+
+---
+
+##### `path_input`<sup>Optional</sup> <a name="path_input" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.property.pathInput"></a>
+
+```python
+path_input: AppSpecIngressRuleMatchPath
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPath">AppSpecIngressRuleMatchPath</a>
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.property.internalValue"></a>
+
+```python
+internal_value: AppSpecIngressRuleMatch
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatch">AppSpecIngressRuleMatch</a>
+
+---
+
+
+### AppSpecIngressRuleMatchPathOutputReference <a name="AppSpecIngressRuleMatchPathOutputReference" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_digitalocean import app
+
+app.AppSpecIngressRuleMatchPathOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.resetPrefix">reset_prefix</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_prefix` <a name="reset_prefix" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.resetPrefix"></a>
+
+```python
+def reset_prefix() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.property.prefixInput">prefix_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.property.prefix">prefix</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPath">AppSpecIngressRuleMatchPath</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `prefix_input`<sup>Optional</sup> <a name="prefix_input" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.property.prefixInput"></a>
+
+```python
+prefix_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `prefix`<sup>Required</sup> <a name="prefix" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.property.prefix"></a>
+
+```python
+prefix: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.property.internalValue"></a>
+
+```python
+internal_value: AppSpecIngressRuleMatchPath
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPath">AppSpecIngressRuleMatchPath</a>
+
+---
+
+
+### AppSpecIngressRuleOutputReference <a name="AppSpecIngressRuleOutputReference" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_digitalocean import app
+
+app.AppSpecIngressRuleOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.putComponent">put_component</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.putCors">put_cors</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.putMatch">put_match</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.putRedirect">put_redirect</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.resetComponent">reset_component</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.resetCors">reset_cors</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.resetMatch">reset_match</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.resetRedirect">reset_redirect</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_component` <a name="put_component" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.putComponent"></a>
+
+```python
+def put_component(
+  name: str = None,
+  preserve_path_prefix: typing.Union[bool, IResolvable] = None,
+  rewrite: str = None
+) -> None
+```
+
+###### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.putComponent.parameter.name"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}.
+
+---
+
+###### `preserve_path_prefix`<sup>Optional</sup> <a name="preserve_path_prefix" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.putComponent.parameter.preservePathPrefix"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}.
+
+---
+
+###### `rewrite`<sup>Optional</sup> <a name="rewrite" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.putComponent.parameter.rewrite"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#rewrite App#rewrite}.
+
+---
+
+##### `put_cors` <a name="put_cors" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.putCors"></a>
+
+```python
+def put_cors(
+  allow_credentials: typing.Union[bool, IResolvable] = None,
+  allow_headers: typing.List[str] = None,
+  allow_methods: typing.List[str] = None,
+  allow_origins: AppSpecIngressRuleCorsAllowOrigins = None,
+  expose_headers: typing.List[str] = None,
+  max_age: str = None
+) -> None
+```
+
+###### `allow_credentials`<sup>Optional</sup> <a name="allow_credentials" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.putCors.parameter.allowCredentials"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`.
+
+This configures the Access-Control-Allow-Credentials header.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_credentials App#allow_credentials}
+
+---
+
+###### `allow_headers`<sup>Optional</sup> <a name="allow_headers" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.putCors.parameter.allowHeaders"></a>
+
+- *Type:* typing.List[str]
+
+The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_headers App#allow_headers}
+
+---
+
+###### `allow_methods`<sup>Optional</sup> <a name="allow_methods" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.putCors.parameter.allowMethods"></a>
+
+- *Type:* typing.List[str]
+
+The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_methods App#allow_methods}
+
+---
+
+###### `allow_origins`<sup>Optional</sup> <a name="allow_origins" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.putCors.parameter.allowOrigins"></a>
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOrigins">AppSpecIngressRuleCorsAllowOrigins</a>
+
+allow_origins block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_origins App#allow_origins}
+
+---
+
+###### `expose_headers`<sup>Optional</sup> <a name="expose_headers" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.putCors.parameter.exposeHeaders"></a>
+
+- *Type:* typing.List[str]
+
+The set of HTTP response headers that browsers are allowed to access. This configures the Access-Control-Expose-Headers header.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#expose_headers App#expose_headers}
+
+---
+
+###### `max_age`<sup>Optional</sup> <a name="max_age" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.putCors.parameter.maxAge"></a>
+
+- *Type:* str
+
+An optional duration specifying how long browsers can cache the results of a preflight request.
+
+This configures the Access-Control-Max-Age header. Example: `5h30m`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#max_age App#max_age}
+
+---
+
+##### `put_match` <a name="put_match" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.putMatch"></a>
+
+```python
+def put_match(
+  path: AppSpecIngressRuleMatchPath = None
+) -> None
+```
+
+###### `path`<sup>Optional</sup> <a name="path" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.putMatch.parameter.path"></a>
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPath">AppSpecIngressRuleMatchPath</a>
+
+path block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#path App#path}
+
+---
+
+##### `put_redirect` <a name="put_redirect" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.putRedirect"></a>
+
+```python
+def put_redirect(
+  authority: str = None,
+  port: typing.Union[int, float] = None,
+  redirect_code: typing.Union[int, float] = None,
+  scheme: str = None,
+  uri: str = None
+) -> None
+```
+
+###### `authority`<sup>Optional</sup> <a name="authority" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.putRedirect.parameter.authority"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#authority App#authority}.
+
+---
+
+###### `port`<sup>Optional</sup> <a name="port" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.putRedirect.parameter.port"></a>
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#port App#port}.
+
+---
+
+###### `redirect_code`<sup>Optional</sup> <a name="redirect_code" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.putRedirect.parameter.redirectCode"></a>
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#redirect_code App#redirect_code}.
+
+---
+
+###### `scheme`<sup>Optional</sup> <a name="scheme" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.putRedirect.parameter.scheme"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#scheme App#scheme}.
+
+---
+
+###### `uri`<sup>Optional</sup> <a name="uri" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.putRedirect.parameter.uri"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#uri App#uri}.
+
+---
+
+##### `reset_component` <a name="reset_component" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.resetComponent"></a>
+
+```python
+def reset_component() -> None
+```
+
+##### `reset_cors` <a name="reset_cors" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.resetCors"></a>
+
+```python
+def reset_cors() -> None
+```
+
+##### `reset_match` <a name="reset_match" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.resetMatch"></a>
+
+```python
+def reset_match() -> None
+```
+
+##### `reset_redirect` <a name="reset_redirect" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.resetRedirect"></a>
+
+```python
+def reset_redirect() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.component">component</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference">AppSpecIngressRuleComponentOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.cors">cors</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference">AppSpecIngressRuleCorsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.match">match</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference">AppSpecIngressRuleMatchOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.redirect">redirect</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference">AppSpecIngressRuleRedirectOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.componentInput">component_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent">AppSpecIngressRuleComponent</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.corsInput">cors_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors">AppSpecIngressRuleCors</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.matchInput">match_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatch">AppSpecIngressRuleMatch</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.redirectInput">redirect_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect">AppSpecIngressRuleRedirect</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `component`<sup>Required</sup> <a name="component" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.component"></a>
+
+```python
+component: AppSpecIngressRuleComponentOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference">AppSpecIngressRuleComponentOutputReference</a>
+
+---
+
+##### `cors`<sup>Required</sup> <a name="cors" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.cors"></a>
+
+```python
+cors: AppSpecIngressRuleCorsOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference">AppSpecIngressRuleCorsOutputReference</a>
+
+---
+
+##### `match`<sup>Required</sup> <a name="match" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.match"></a>
+
+```python
+match: AppSpecIngressRuleMatchOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference">AppSpecIngressRuleMatchOutputReference</a>
+
+---
+
+##### `redirect`<sup>Required</sup> <a name="redirect" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.redirect"></a>
+
+```python
+redirect: AppSpecIngressRuleRedirectOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference">AppSpecIngressRuleRedirectOutputReference</a>
+
+---
+
+##### `component_input`<sup>Optional</sup> <a name="component_input" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.componentInput"></a>
+
+```python
+component_input: AppSpecIngressRuleComponent
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent">AppSpecIngressRuleComponent</a>
+
+---
+
+##### `cors_input`<sup>Optional</sup> <a name="cors_input" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.corsInput"></a>
+
+```python
+cors_input: AppSpecIngressRuleCors
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors">AppSpecIngressRuleCors</a>
+
+---
+
+##### `match_input`<sup>Optional</sup> <a name="match_input" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.matchInput"></a>
+
+```python
+match_input: AppSpecIngressRuleMatch
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatch">AppSpecIngressRuleMatch</a>
+
+---
+
+##### `redirect_input`<sup>Optional</sup> <a name="redirect_input" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.redirectInput"></a>
+
+```python
+redirect_input: AppSpecIngressRuleRedirect
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect">AppSpecIngressRuleRedirect</a>
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, AppSpecIngressRule]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>]
+
+---
+
+
+### AppSpecIngressRuleRedirectOutputReference <a name="AppSpecIngressRuleRedirectOutputReference" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_digitalocean import app
+
+app.AppSpecIngressRuleRedirectOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.resetAuthority">reset_authority</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.resetPort">reset_port</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.resetRedirectCode">reset_redirect_code</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.resetScheme">reset_scheme</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.resetUri">reset_uri</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_authority` <a name="reset_authority" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.resetAuthority"></a>
+
+```python
+def reset_authority() -> None
+```
+
+##### `reset_port` <a name="reset_port" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.resetPort"></a>
+
+```python
+def reset_port() -> None
+```
+
+##### `reset_redirect_code` <a name="reset_redirect_code" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.resetRedirectCode"></a>
+
+```python
+def reset_redirect_code() -> None
+```
+
+##### `reset_scheme` <a name="reset_scheme" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.resetScheme"></a>
+
+```python
+def reset_scheme() -> None
+```
+
+##### `reset_uri` <a name="reset_uri" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.resetUri"></a>
+
+```python
+def reset_uri() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.property.authorityInput">authority_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.property.portInput">port_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.property.redirectCodeInput">redirect_code_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.property.schemeInput">scheme_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.property.uriInput">uri_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.property.authority">authority</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.property.port">port</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.property.redirectCode">redirect_code</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.property.scheme">scheme</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.property.uri">uri</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect">AppSpecIngressRuleRedirect</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `authority_input`<sup>Optional</sup> <a name="authority_input" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.property.authorityInput"></a>
+
+```python
+authority_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `port_input`<sup>Optional</sup> <a name="port_input" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.property.portInput"></a>
+
+```python
+port_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `redirect_code_input`<sup>Optional</sup> <a name="redirect_code_input" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.property.redirectCodeInput"></a>
+
+```python
+redirect_code_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `scheme_input`<sup>Optional</sup> <a name="scheme_input" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.property.schemeInput"></a>
+
+```python
+scheme_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `uri_input`<sup>Optional</sup> <a name="uri_input" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.property.uriInput"></a>
+
+```python
+uri_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `authority`<sup>Required</sup> <a name="authority" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.property.authority"></a>
+
+```python
+authority: str
+```
+
+- *Type:* str
+
+---
+
+##### `port`<sup>Required</sup> <a name="port" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.property.port"></a>
+
+```python
+port: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `redirect_code`<sup>Required</sup> <a name="redirect_code" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.property.redirectCode"></a>
+
+```python
+redirect_code: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `scheme`<sup>Required</sup> <a name="scheme" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.property.scheme"></a>
+
+```python
+scheme: str
+```
+
+- *Type:* str
+
+---
+
+##### `uri`<sup>Required</sup> <a name="uri" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.property.uri"></a>
+
+```python
+uri: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.property.internalValue"></a>
+
+```python
+internal_value: AppSpecIngressRuleRedirect
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect">AppSpecIngressRuleRedirect</a>
 
 ---
 
@@ -19357,7 +23215,7 @@ def put_datadog(
 
 Datadog API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#api_key App#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#api_key App#api_key}
 
 ---
 
@@ -19367,7 +23225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Datadog HTTP log intake endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -19385,7 +23243,7 @@ def put_logtail(
 
 Logtail token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#token App#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#token App#token}
 
 ---
 
@@ -19403,7 +23261,7 @@ def put_papertrail(
 
 Papertrail syslog endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -20168,7 +24026,7 @@ def put_git(
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -20178,7 +24036,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The clone URL of the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo_clone_url App#repo_clone_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo_clone_url App#repo_clone_url}
 
 ---
 
@@ -20198,7 +24056,7 @@ def put_github(
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -20208,7 +24066,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -20218,7 +24076,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -20238,7 +24096,7 @@ def put_gitlab(
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -20248,7 +24106,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -20258,7 +24116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -20280,7 +24138,7 @@ def put_image(
 
 The registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#registry_type App#registry_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#registry_type App#registry_type}
 
 ---
 
@@ -20290,7 +24148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The repository name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repository App#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repository App#repository}
 
 ---
 
@@ -20300,7 +24158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 deploy_on_push block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -20310,7 +24168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The registry name. Must be left empty for the DOCR registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#registry App#registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#registry App#registry}
 
 ---
 
@@ -20320,7 +24178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The repository tag. Defaults to latest if not provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#tag App#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#tag App#tag}
 
 ---
 
@@ -20884,6 +24742,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.putDomain">put_domain</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.putEnv">put_env</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.putFunction">put_function</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.putIngress">put_ingress</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.putJob">put_job</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.putService">put_service</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.putStaticSite">put_static_site</a></code> | *No description.* |
@@ -20894,6 +24753,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.resetDomains">reset_domains</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.resetEnv">reset_env</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.resetFunction">reset_function</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.resetIngress">reset_ingress</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.resetJob">reset_job</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.resetRegion">reset_region</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.resetService">reset_service</a></code> | *No description.* |
@@ -21144,6 +25004,24 @@ def put_function(
 
 ---
 
+##### `put_ingress` <a name="put_ingress" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putIngress"></a>
+
+```python
+def put_ingress(
+  rule: typing.Union[IResolvable, typing.List[AppSpecIngressRule]] = None
+) -> None
+```
+
+###### `rule`<sup>Optional</sup> <a name="rule" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putIngress.parameter.rule"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>]]
+
+rule block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#rule App#rule}
+
+---
+
 ##### `put_job` <a name="put_job" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putJob"></a>
 
 ```python
@@ -21236,6 +25114,12 @@ def reset_env() -> None
 def reset_function() -> None
 ```
 
+##### `reset_ingress` <a name="reset_ingress" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.resetIngress"></a>
+
+```python
+def reset_ingress() -> None
+```
+
 ##### `reset_job` <a name="reset_job" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.resetJob"></a>
 
 ```python
@@ -21278,6 +25162,7 @@ def reset_worker() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.domain">domain</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainList">AppSpecDomainList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.env">env</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEnvList">AppSpecEnvList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.function">function</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionList">AppSpecFunctionList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.ingress">ingress</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference">AppSpecIngressOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.job">job</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobList">AppSpecJobList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.service">service</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceList">AppSpecServiceList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.staticSite">static_site</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteList">AppSpecStaticSiteList</a></code> | *No description.* |
@@ -21288,6 +25173,7 @@ def reset_worker() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.domainsInput">domains_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.envInput">env_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.functionInput">function_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.ingressInput">ingress_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngress">AppSpecIngress</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.jobInput">job_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
@@ -21372,6 +25258,16 @@ function: AppSpecFunctionList
 ```
 
 - *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionList">AppSpecFunctionList</a>
+
+---
+
+##### `ingress`<sup>Required</sup> <a name="ingress" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.ingress"></a>
+
+```python
+ingress: AppSpecIngressOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference">AppSpecIngressOutputReference</a>
 
 ---
 
@@ -21472,6 +25368,16 @@ function_input: typing.Union[IResolvable, typing.List[AppSpecFunction]]
 ```
 
 - *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>]]
+
+---
+
+##### `ingress_input`<sup>Optional</sup> <a name="ingress_input" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.ingressInput"></a>
+
+```python
+ingress_input: AppSpecIngress
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecIngress">AppSpecIngress</a>
 
 ---
 
@@ -22750,7 +26656,7 @@ def put_allow_origins(
 
 Exact string match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#exact App#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#exact App#exact}
 
 ---
 
@@ -22760,7 +26666,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Prefix-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#prefix App#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#prefix App#prefix}
 
 ---
 
@@ -22770,7 +26676,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 RE2 style regex-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#regex App#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#regex App#regex}
 
 ---
 
@@ -27137,7 +31043,7 @@ def put_datadog(
 
 Datadog API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#api_key App#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#api_key App#api_key}
 
 ---
 
@@ -27147,7 +31053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Datadog HTTP log intake endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -27165,7 +31071,7 @@ def put_logtail(
 
 Logtail token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#token App#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#token App#token}
 
 ---
 
@@ -27183,7 +31089,7 @@ def put_papertrail(
 
 Papertrail syslog endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -27947,7 +31853,7 @@ Whether browsers should expose the response to the client-side JavaScript code w
 
 This configures the Access-Control-Allow-Credentials header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_credentials App#allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_credentials App#allow_credentials}
 
 ---
 
@@ -27957,7 +31863,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_headers App#allow_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_headers App#allow_headers}
 
 ---
 
@@ -27967,7 +31873,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_methods App#allow_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_methods App#allow_methods}
 
 ---
 
@@ -27977,7 +31883,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 allow_origins block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_origins App#allow_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_origins App#allow_origins}
 
 ---
 
@@ -27987,7 +31893,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The set of HTTP response headers that browsers are allowed to access. This configures the Access-Control-Expose-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#expose_headers App#expose_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#expose_headers App#expose_headers}
 
 ---
 
@@ -27999,7 +31905,7 @@ An optional duration specifying how long browsers can cache the results of a pre
 
 This configures the Access-Control-Max-Age header. Example: `5h30m`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#max_age App#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#max_age App#max_age}
 
 ---
 
@@ -28032,7 +31938,7 @@ def put_git(
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -28042,7 +31948,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The clone URL of the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo_clone_url App#repo_clone_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo_clone_url App#repo_clone_url}
 
 ---
 
@@ -28062,7 +31968,7 @@ def put_github(
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -28072,7 +31978,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -28082,7 +31988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -28102,7 +32008,7 @@ def put_gitlab(
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -28112,7 +32018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -28122,7 +32028,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -28145,7 +32051,7 @@ def put_health_check(
 
 The number of failed health checks before considered unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#failure_threshold App#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#failure_threshold App#failure_threshold}
 
 ---
 
@@ -28155,7 +32061,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The route path used for the HTTP health check ping.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#http_path App#http_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#http_path App#http_path}
 
 ---
 
@@ -28165,7 +32071,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The number of seconds to wait before beginning health checks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#initial_delay_seconds App#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#initial_delay_seconds App#initial_delay_seconds}
 
 ---
 
@@ -28175,7 +32081,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The number of seconds to wait between health checks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#period_seconds App#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#period_seconds App#period_seconds}
 
 ---
 
@@ -28185,7 +32091,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The number of successful health checks before considered healthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#success_threshold App#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#success_threshold App#success_threshold}
 
 ---
 
@@ -28195,7 +32101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The number of seconds after which the check times out.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#timeout_seconds App#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#timeout_seconds App#timeout_seconds}
 
 ---
 
@@ -28217,7 +32123,7 @@ def put_image(
 
 The registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#registry_type App#registry_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#registry_type App#registry_type}
 
 ---
 
@@ -28227,7 +32133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The repository name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repository App#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repository App#repository}
 
 ---
 
@@ -28237,7 +32143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 deploy_on_push block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -28247,7 +32153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The registry name. Must be left empty for the DOCR registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#registry App#registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#registry App#registry}
 
 ---
 
@@ -28257,7 +32163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The repository tag. Defaults to latest if not provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#tag App#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#tag App#tag}
 
 ---
 
@@ -30004,7 +33910,7 @@ def put_allow_origins(
 
 Exact string match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#exact App#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#exact App#exact}
 
 ---
 
@@ -30014,7 +33920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Prefix-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#prefix App#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#prefix App#prefix}
 
 ---
 
@@ -30024,7 +33930,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 RE2 style regex-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#regex App#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#regex App#regex}
 
 ---
 
@@ -32297,7 +36203,7 @@ Whether browsers should expose the response to the client-side JavaScript code w
 
 This configures the Access-Control-Allow-Credentials header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_credentials App#allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_credentials App#allow_credentials}
 
 ---
 
@@ -32307,7 +36213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_headers App#allow_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_headers App#allow_headers}
 
 ---
 
@@ -32317,7 +36223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_methods App#allow_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_methods App#allow_methods}
 
 ---
 
@@ -32327,7 +36233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 allow_origins block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_origins App#allow_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_origins App#allow_origins}
 
 ---
 
@@ -32337,7 +36243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The set of HTTP response headers that browsers are allowed to access. This configures the Access-Control-Expose-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#expose_headers App#expose_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#expose_headers App#expose_headers}
 
 ---
 
@@ -32349,7 +36255,7 @@ An optional duration specifying how long browsers can cache the results of a pre
 
 This configures the Access-Control-Max-Age header. Example: `5h30m`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#max_age App#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#max_age App#max_age}
 
 ---
 
@@ -32382,7 +36288,7 @@ def put_git(
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -32392,7 +36298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The clone URL of the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo_clone_url App#repo_clone_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo_clone_url App#repo_clone_url}
 
 ---
 
@@ -32412,7 +36318,7 @@ def put_github(
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -32422,7 +36328,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -32432,7 +36338,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -32452,7 +36358,7 @@ def put_gitlab(
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -32462,7 +36368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -32472,7 +36378,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -37716,7 +41622,7 @@ def put_datadog(
 
 Datadog API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#api_key App#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#api_key App#api_key}
 
 ---
 
@@ -37726,7 +41632,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Datadog HTTP log intake endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -37744,7 +41650,7 @@ def put_logtail(
 
 Logtail token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#token App#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#token App#token}
 
 ---
 
@@ -37762,7 +41668,7 @@ def put_papertrail(
 
 Papertrail syslog endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -38526,7 +42432,7 @@ def put_git(
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -38536,7 +42442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The clone URL of the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo_clone_url App#repo_clone_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo_clone_url App#repo_clone_url}
 
 ---
 
@@ -38556,7 +42462,7 @@ def put_github(
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -38566,7 +42472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -38576,7 +42482,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -38596,7 +42502,7 @@ def put_gitlab(
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -38606,7 +42512,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -38616,7 +42522,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -38638,7 +42544,7 @@ def put_image(
 
 The registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#registry_type App#registry_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#registry_type App#registry_type}
 
 ---
 
@@ -38648,7 +42554,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The repository name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repository App#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repository App#repository}
 
 ---
 
@@ -38658,7 +42564,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 deploy_on_push block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -38668,7 +42574,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The registry name. Must be left empty for the DOCR registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#registry App#registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#registry App#registry}
 
 ---
 
@@ -38678,7 +42584,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The repository tag. Defaults to latest if not provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#tag App#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#tag App#tag}
 
 ---
 

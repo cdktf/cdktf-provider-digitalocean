@@ -1,6 +1,6 @@
 # `digitalocean_uptime_alert`
 
-Refer to the Terraform Registory for docs: [`digitalocean_uptime_alert`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/uptime_alert).
+Refer to the Terraform Registory for docs: [`digitalocean_uptime_alert`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/uptime_alert).
 
 # `uptimeAlert` Submodule <a name="`uptimeAlert` Submodule" id="@cdktf/provider-digitalocean.uptimeAlert"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`digitalocean_uptime_alert`](https:/
 
 ### UptimeAlert <a name="UptimeAlert" id="@cdktf/provider-digitalocean.uptimeAlert.UptimeAlert"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/uptime_alert digitalocean_uptime_alert}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/uptime_alert digitalocean_uptime_alert}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.uptimeAlert.UptimeAlert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/uptimealert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/uptimealert"
 
 uptimealert.NewUptimeAlert(scope Construct, id *string, config UptimeAlertConfig) UptimeAlert
 ```
@@ -366,7 +366,7 @@ func ResetThreshold()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.uptimeAlert.UptimeAlert.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/uptimealert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/uptimealert"
 
 uptimealert.UptimeAlert_IsConstruct(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.uptimeAlert.UptimeAlert.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/uptimealert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/uptimealert"
 
 uptimealert.UptimeAlert_IsTerraformElement(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ uptimealert.UptimeAlert_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.uptimeAlert.UptimeAlert.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/uptimealert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/uptimealert"
 
 uptimealert.UptimeAlert_IsTerraformResource(x interface{}) *bool
 ```
@@ -426,7 +426,7 @@ uptimealert.UptimeAlert_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.uptimeAlert.UptimeAlert.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/uptimealert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/uptimealert"
 
 uptimealert.UptimeAlert_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -455,7 +455,7 @@ The construct id used in the generated config for the UptimeAlert to import.
 
 The id of the existing UptimeAlert that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/uptime_alert#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/uptime_alert#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -820,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.uptimeAlert.UptimeAlertConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/uptimealert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/uptimealert"
 
 &uptimealert.UptimeAlertConfig {
 	Connection: interface{},
@@ -941,7 +941,7 @@ CheckId *string
 
 A unique identifier for a check.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/uptime_alert#check_id UptimeAlert#check_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/uptime_alert#check_id UptimeAlert#check_id}
 
 ---
 
@@ -955,7 +955,7 @@ Name *string
 
 A human-friendly display name for the alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/uptime_alert#name UptimeAlert#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/uptime_alert#name UptimeAlert#name}
 
 ---
 
@@ -969,7 +969,7 @@ Notifications interface{}
 
 notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/uptime_alert#notifications UptimeAlert#notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/uptime_alert#notifications UptimeAlert#notifications}
 
 ---
 
@@ -983,7 +983,7 @@ Type *string
 
 The type of health check to perform. Enum: 'latency' 'down' 'down_global' 'ssl_expiry'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/uptime_alert#type UptimeAlert#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/uptime_alert#type UptimeAlert#type}
 
 ---
 
@@ -997,7 +997,7 @@ Comparison *string
 
 The comparison operator used against the alert's threshold. Enum: 'greater_than' 'less_than.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/uptime_alert#comparison UptimeAlert#comparison}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/uptime_alert#comparison UptimeAlert#comparison}
 
 ---
 
@@ -1013,7 +1013,7 @@ Period of time the threshold must be exceeded to trigger the alert.
 
 Enum '2m' '3m' '5m' '10m' '15m' '30m' '1h'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/uptime_alert#period UptimeAlert#period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/uptime_alert#period UptimeAlert#period}
 
 ---
 
@@ -1029,7 +1029,7 @@ The threshold at which the alert will enter a trigger state.
 
 The specific threshold is dependent on the alert type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/uptime_alert#threshold UptimeAlert#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/uptime_alert#threshold UptimeAlert#threshold}
 
 ---
 
@@ -1038,7 +1038,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.uptimeAlert.UptimeAlertNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/uptimealert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/uptimealert"
 
 &uptimealert.UptimeAlertNotifications {
 	Email: *[]*string,
@@ -1065,7 +1065,7 @@ Email *[]*string
 
 List of email addresses to sent notifications to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/uptime_alert#email UptimeAlert#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/uptime_alert#email UptimeAlert#email}
 
 ---
 
@@ -1079,7 +1079,7 @@ Slack interface{}
 
 slack block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/uptime_alert#slack UptimeAlert#slack}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/uptime_alert#slack UptimeAlert#slack}
 
 ---
 
@@ -1088,7 +1088,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.uptimeAlert.UptimeAlertNotificationsSlack.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/uptimealert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/uptimealert"
 
 &uptimealert.UptimeAlertNotificationsSlack {
 	Channel: *string,
@@ -1115,7 +1115,7 @@ Channel *string
 
 The Slack channel to send alerts to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/uptime_alert#channel UptimeAlert#channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/uptime_alert#channel UptimeAlert#channel}
 
 ---
 
@@ -1129,7 +1129,7 @@ Url *string
 
 The webhook URL for Slack.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/uptime_alert#url UptimeAlert#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/uptime_alert#url UptimeAlert#url}
 
 ---
 
@@ -1140,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.uptimeAlert.UptimeAlertNotificationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/uptimealert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/uptimealert"
 
 uptimealert.NewUptimeAlertNotificationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UptimeAlertNotificationsList
 ```
@@ -1283,7 +1283,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.uptimeAlert.UptimeAlertNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/uptimealert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/uptimealert"
 
 uptimealert.NewUptimeAlertNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UptimeAlertNotificationsOutputReference
 ```
@@ -1621,7 +1621,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.uptimeAlert.UptimeAlertNotificationsSlackList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/uptimealert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/uptimealert"
 
 uptimealert.NewUptimeAlertNotificationsSlackList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UptimeAlertNotificationsSlackList
 ```
@@ -1764,7 +1764,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.uptimeAlert.UptimeAlertNotificationsSlackOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/uptimealert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/uptimealert"
 
 uptimealert.NewUptimeAlertNotificationsSlackOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UptimeAlertNotificationsSlackOutputReference
 ```

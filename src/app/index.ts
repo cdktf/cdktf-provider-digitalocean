@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface AppConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#id App#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#id App#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,23 +17,23 @@ export interface AppConfig extends cdktf.TerraformMetaArguments {
   /**
   * spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#spec App#spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#spec App#spec}
   */
   readonly spec?: AppSpec;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#timeouts App#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#timeouts App#timeouts}
   */
   readonly timeouts?: AppTimeouts;
 }
 export interface AppSpecAlert {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#disabled App#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#disabled App#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#rule App#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#rule App#rule}
   */
   readonly rule: string;
 }
@@ -157,43 +152,43 @@ export interface AppSpecDatabase {
   /**
   * The name of the underlying DigitalOcean DBaaS cluster. This is required for production databases. For dev databases, if cluster_name is not set, a new cluster will be provisioned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#cluster_name App#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#cluster_name App#cluster_name}
   */
   readonly clusterName?: string;
   /**
   * The name of the MySQL or PostgreSQL database to configure.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#db_name App#db_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#db_name App#db_name}
   */
   readonly dbName?: string;
   /**
   * The name of the MySQL or PostgreSQL user to configure.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#db_user App#db_user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#db_user App#db_user}
   */
   readonly dbUser?: string;
   /**
   * The database engine to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#engine App#engine}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#engine App#engine}
   */
   readonly engine?: string;
   /**
   * The name of the component
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#name App#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
   */
   readonly name?: string;
   /**
   * Whether this is a production or dev database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#production App#production}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#production App#production}
   */
   readonly production?: boolean | cdktf.IResolvable;
   /**
   * The version of the database engine.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#version App#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#version App#version}
   */
   readonly version?: string;
 }
@@ -430,25 +425,25 @@ export interface AppSpecDomain {
   /**
   * The hostname for the domain.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#name App#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
   */
   readonly name: string;
   /**
   * The type of the domain.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#type App#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#type App#type}
   */
   readonly type?: string;
   /**
   * Indicates whether the domain includes all sub-domains, in addition to the given domain.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#wildcard App#wildcard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#wildcard App#wildcard}
   */
   readonly wildcard?: boolean | cdktf.IResolvable;
   /**
   * If the domain uses DigitalOcean DNS and you would like App Platform to automatically manage it for you, set this to the name of the domain on your account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#zone App#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#zone App#zone}
   */
   readonly zone?: string;
 }
@@ -613,25 +608,25 @@ export interface AppSpecEnv {
   /**
   * The name of the environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#key App#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#key App#key}
   */
   readonly key?: string;
   /**
   * The visibility scope of the environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#scope App#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#scope App#scope}
   */
   readonly scope?: string;
   /**
   * The type of the environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#type App#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#type App#type}
   */
   readonly type?: string;
   /**
   * The value of the environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#value App#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}
   */
   readonly value?: string;
 }
@@ -797,23 +792,23 @@ export class AppSpecEnvList extends cdktf.ComplexList {
 }
 export interface AppSpecFunctionAlert {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#disabled App#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#disabled App#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#operator App#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#operator App#operator}
   */
   readonly operator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#rule App#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#rule App#rule}
   */
   readonly rule: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#value App#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}
   */
   readonly value: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#window App#window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#window App#window}
   */
   readonly window: string;
 }
@@ -992,19 +987,19 @@ export interface AppSpecFunctionCorsAllowOrigins {
   /**
   * Exact string match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#exact App#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#exact App#exact}
   */
   readonly exact?: string;
   /**
   * Prefix-based match. 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#prefix App#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#prefix App#prefix}
   */
   readonly prefix?: string;
   /**
   * RE2 style regex-based match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#regex App#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#regex App#regex}
   */
   readonly regex?: string;
 }
@@ -1117,37 +1112,37 @@ export interface AppSpecFunctionCors {
   /**
   * Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`. This configures the Access-Control-Allow-Credentials header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_credentials App#allow_credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_credentials App#allow_credentials}
   */
   readonly allowCredentials?: boolean | cdktf.IResolvable;
   /**
   * The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_headers App#allow_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_headers App#allow_headers}
   */
   readonly allowHeaders?: string[];
   /**
   * The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_methods App#allow_methods}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_methods App#allow_methods}
   */
   readonly allowMethods?: string[];
   /**
   * The set of HTTP response headers that browsers are allowed to access. This configures the Access-Control-Expose-Headers header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#expose_headers App#expose_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#expose_headers App#expose_headers}
   */
   readonly exposeHeaders?: string[];
   /**
   * An optional duration specifying how long browsers can cache the results of a preflight request. This configures the Access-Control-Max-Age header. Example: `5h30m`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#max_age App#max_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#max_age App#max_age}
   */
   readonly maxAge?: string;
   /**
   * allow_origins block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_origins App#allow_origins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_origins App#allow_origins}
   */
   readonly allowOrigins?: AppSpecFunctionCorsAllowOrigins;
 }
@@ -1329,25 +1324,25 @@ export interface AppSpecFunctionEnv {
   /**
   * The name of the environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#key App#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#key App#key}
   */
   readonly key?: string;
   /**
   * The visibility scope of the environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#scope App#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#scope App#scope}
   */
   readonly scope?: string;
   /**
   * The type of the environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#type App#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#type App#type}
   */
   readonly type?: string;
   /**
   * The value of the environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#value App#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}
   */
   readonly value?: string;
 }
@@ -1515,13 +1510,13 @@ export interface AppSpecFunctionGit {
   /**
   * The name of the branch to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
   */
   readonly branch?: string;
   /**
   * The clone URL of the repo.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo_clone_url App#repo_clone_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo_clone_url App#repo_clone_url}
   */
   readonly repoCloneUrl?: string;
 }
@@ -1611,19 +1606,19 @@ export interface AppSpecFunctionGithub {
   /**
   * The name of the branch to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
   */
   readonly branch?: string;
   /**
   * Whether to automatically deploy new commits made to the repo
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
   */
   readonly deployOnPush?: boolean | cdktf.IResolvable;
   /**
   * The name of the repo in the format `owner/repo`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo App#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
   */
   readonly repo?: string;
 }
@@ -1736,19 +1731,19 @@ export interface AppSpecFunctionGitlab {
   /**
   * The name of the branch to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
   */
   readonly branch?: string;
   /**
   * Whether to automatically deploy new commits made to the repo
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
   */
   readonly deployOnPush?: boolean | cdktf.IResolvable;
   /**
   * The name of the repo in the format `owner/repo`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo App#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
   */
   readonly repo?: string;
 }
@@ -1861,13 +1856,13 @@ export interface AppSpecFunctionLogDestinationDatadog {
   /**
   * Datadog API key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#api_key App#api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#api_key App#api_key}
   */
   readonly apiKey: string;
   /**
   * Datadog HTTP log intake endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#endpoint App#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#endpoint App#endpoint}
   */
   readonly endpoint?: string;
 }
@@ -1954,7 +1949,7 @@ export interface AppSpecFunctionLogDestinationLogtail {
   /**
   * Logtail token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#token App#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#token App#token}
   */
   readonly token: string;
 }
@@ -2018,7 +2013,7 @@ export interface AppSpecFunctionLogDestinationPapertrail {
   /**
   * Papertrail syslog endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#endpoint App#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#endpoint App#endpoint}
   */
   readonly endpoint: string;
 }
@@ -2082,25 +2077,25 @@ export interface AppSpecFunctionLogDestination {
   /**
   * Name of the log destination
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#name App#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
   */
   readonly name: string;
   /**
   * datadog block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#datadog App#datadog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#datadog App#datadog}
   */
   readonly datadog?: AppSpecFunctionLogDestinationDatadog;
   /**
   * logtail block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#logtail App#logtail}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#logtail App#logtail}
   */
   readonly logtail?: AppSpecFunctionLogDestinationLogtail;
   /**
   * papertrail block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#papertrail App#papertrail}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#papertrail App#papertrail}
   */
   readonly papertrail?: AppSpecFunctionLogDestinationPapertrail;
 }
@@ -2265,13 +2260,13 @@ export interface AppSpecFunctionRoutes {
   /**
   * Path specifies an route by HTTP path prefix. Paths must start with / and must be unique within the app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#path App#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#path App#path}
   */
   readonly path?: string;
   /**
   *  An optional flag to preserve the path that is forwarded to the backend service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
   */
   readonly preservePathPrefix?: boolean | cdktf.IResolvable;
 }
@@ -2393,61 +2388,61 @@ export interface AppSpecFunction {
   /**
   * The name of the component
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#name App#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
   */
   readonly name: string;
   /**
   * An optional path to the working directory to use for the build.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#source_dir App#source_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#source_dir App#source_dir}
   */
   readonly sourceDir?: string;
   /**
   * alert block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#alert App#alert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#alert App#alert}
   */
   readonly alert?: AppSpecFunctionAlert[] | cdktf.IResolvable;
   /**
   * cors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#cors App#cors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#cors App#cors}
   */
   readonly cors?: AppSpecFunctionCors;
   /**
   * env block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#env App#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#env App#env}
   */
   readonly env?: AppSpecFunctionEnv[] | cdktf.IResolvable;
   /**
   * git block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#git App#git}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#git App#git}
   */
   readonly git?: AppSpecFunctionGit;
   /**
   * github block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#github App#github}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#github App#github}
   */
   readonly github?: AppSpecFunctionGithub;
   /**
   * gitlab block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#gitlab App#gitlab}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#gitlab App#gitlab}
   */
   readonly gitlab?: AppSpecFunctionGitlab;
   /**
   * log_destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#log_destination App#log_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#log_destination App#log_destination}
   */
   readonly logDestination?: AppSpecFunctionLogDestination[] | cdktf.IResolvable;
   /**
   * routes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#routes App#routes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#routes App#routes}
   */
   readonly routes?: AppSpecFunctionRoutes[] | cdktf.IResolvable;
 }
@@ -2746,25 +2741,1039 @@ export class AppSpecFunctionList extends cdktf.ComplexList {
     return new AppSpecFunctionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface AppSpecIngressRuleComponent {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
+  */
+  readonly name?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
+  */
+  readonly preservePathPrefix?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#rewrite App#rewrite}
+  */
+  readonly rewrite?: string;
+}
+
+export function appSpecIngressRuleComponentToTerraform(struct?: AppSpecIngressRuleComponentOutputReference | AppSpecIngressRuleComponent): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    preserve_path_prefix: cdktf.booleanToTerraform(struct!.preservePathPrefix),
+    rewrite: cdktf.stringToTerraform(struct!.rewrite),
+  }
+}
+
+export class AppSpecIngressRuleComponentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppSpecIngressRuleComponent | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._preservePathPrefix !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.preservePathPrefix = this._preservePathPrefix;
+    }
+    if (this._rewrite !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rewrite = this._rewrite;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppSpecIngressRuleComponent | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._name = undefined;
+      this._preservePathPrefix = undefined;
+      this._rewrite = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._name = value.name;
+      this._preservePathPrefix = value.preservePathPrefix;
+      this._rewrite = value.rewrite;
+    }
+  }
+
+  // name - computed: true, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // preserve_path_prefix - computed: true, optional: true, required: false
+  private _preservePathPrefix?: boolean | cdktf.IResolvable; 
+  public get preservePathPrefix() {
+    return this.getBooleanAttribute('preserve_path_prefix');
+  }
+  public set preservePathPrefix(value: boolean | cdktf.IResolvable) {
+    this._preservePathPrefix = value;
+  }
+  public resetPreservePathPrefix() {
+    this._preservePathPrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get preservePathPrefixInput() {
+    return this._preservePathPrefix;
+  }
+
+  // rewrite - computed: true, optional: true, required: false
+  private _rewrite?: string; 
+  public get rewrite() {
+    return this.getStringAttribute('rewrite');
+  }
+  public set rewrite(value: string) {
+    this._rewrite = value;
+  }
+  public resetRewrite() {
+    this._rewrite = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rewriteInput() {
+    return this._rewrite;
+  }
+}
+export interface AppSpecIngressRuleCorsAllowOrigins {
+  /**
+  * Exact string match.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#exact App#exact}
+  */
+  readonly exact?: string;
+  /**
+  * Prefix-based match. 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#prefix App#prefix}
+  */
+  readonly prefix?: string;
+  /**
+  * RE2 style regex-based match.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#regex App#regex}
+  */
+  readonly regex?: string;
+}
+
+export function appSpecIngressRuleCorsAllowOriginsToTerraform(struct?: AppSpecIngressRuleCorsAllowOriginsOutputReference | AppSpecIngressRuleCorsAllowOrigins): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    exact: cdktf.stringToTerraform(struct!.exact),
+    prefix: cdktf.stringToTerraform(struct!.prefix),
+    regex: cdktf.stringToTerraform(struct!.regex),
+  }
+}
+
+export class AppSpecIngressRuleCorsAllowOriginsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppSpecIngressRuleCorsAllowOrigins | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._exact !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.exact = this._exact;
+    }
+    if (this._prefix !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.prefix = this._prefix;
+    }
+    if (this._regex !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.regex = this._regex;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppSpecIngressRuleCorsAllowOrigins | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._exact = undefined;
+      this._prefix = undefined;
+      this._regex = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._exact = value.exact;
+      this._prefix = value.prefix;
+      this._regex = value.regex;
+    }
+  }
+
+  // exact - computed: false, optional: true, required: false
+  private _exact?: string; 
+  public get exact() {
+    return this.getStringAttribute('exact');
+  }
+  public set exact(value: string) {
+    this._exact = value;
+  }
+  public resetExact() {
+    this._exact = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exactInput() {
+    return this._exact;
+  }
+
+  // prefix - computed: false, optional: true, required: false
+  private _prefix?: string; 
+  public get prefix() {
+    return this.getStringAttribute('prefix');
+  }
+  public set prefix(value: string) {
+    this._prefix = value;
+  }
+  public resetPrefix() {
+    this._prefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get prefixInput() {
+    return this._prefix;
+  }
+
+  // regex - computed: false, optional: true, required: false
+  private _regex?: string; 
+  public get regex() {
+    return this.getStringAttribute('regex');
+  }
+  public set regex(value: string) {
+    this._regex = value;
+  }
+  public resetRegex() {
+    this._regex = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regexInput() {
+    return this._regex;
+  }
+}
+export interface AppSpecIngressRuleCors {
+  /**
+  * Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`. This configures the Access-Control-Allow-Credentials header.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_credentials App#allow_credentials}
+  */
+  readonly allowCredentials?: boolean | cdktf.IResolvable;
+  /**
+  * The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_headers App#allow_headers}
+  */
+  readonly allowHeaders?: string[];
+  /**
+  * The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_methods App#allow_methods}
+  */
+  readonly allowMethods?: string[];
+  /**
+  * The set of HTTP response headers that browsers are allowed to access. This configures the Access-Control-Expose-Headers header.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#expose_headers App#expose_headers}
+  */
+  readonly exposeHeaders?: string[];
+  /**
+  * An optional duration specifying how long browsers can cache the results of a preflight request. This configures the Access-Control-Max-Age header. Example: `5h30m`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#max_age App#max_age}
+  */
+  readonly maxAge?: string;
+  /**
+  * allow_origins block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_origins App#allow_origins}
+  */
+  readonly allowOrigins?: AppSpecIngressRuleCorsAllowOrigins;
+}
+
+export function appSpecIngressRuleCorsToTerraform(struct?: AppSpecIngressRuleCorsOutputReference | AppSpecIngressRuleCors): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    allow_credentials: cdktf.booleanToTerraform(struct!.allowCredentials),
+    allow_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowHeaders),
+    allow_methods: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowMethods),
+    expose_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exposeHeaders),
+    max_age: cdktf.stringToTerraform(struct!.maxAge),
+    allow_origins: appSpecIngressRuleCorsAllowOriginsToTerraform(struct!.allowOrigins),
+  }
+}
+
+export class AppSpecIngressRuleCorsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppSpecIngressRuleCors | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allowCredentials !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowCredentials = this._allowCredentials;
+    }
+    if (this._allowHeaders !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowHeaders = this._allowHeaders;
+    }
+    if (this._allowMethods !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowMethods = this._allowMethods;
+    }
+    if (this._exposeHeaders !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.exposeHeaders = this._exposeHeaders;
+    }
+    if (this._maxAge !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxAge = this._maxAge;
+    }
+    if (this._allowOrigins?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowOrigins = this._allowOrigins?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppSpecIngressRuleCors | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._allowCredentials = undefined;
+      this._allowHeaders = undefined;
+      this._allowMethods = undefined;
+      this._exposeHeaders = undefined;
+      this._maxAge = undefined;
+      this._allowOrigins.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._allowCredentials = value.allowCredentials;
+      this._allowHeaders = value.allowHeaders;
+      this._allowMethods = value.allowMethods;
+      this._exposeHeaders = value.exposeHeaders;
+      this._maxAge = value.maxAge;
+      this._allowOrigins.internalValue = value.allowOrigins;
+    }
+  }
+
+  // allow_credentials - computed: false, optional: true, required: false
+  private _allowCredentials?: boolean | cdktf.IResolvable; 
+  public get allowCredentials() {
+    return this.getBooleanAttribute('allow_credentials');
+  }
+  public set allowCredentials(value: boolean | cdktf.IResolvable) {
+    this._allowCredentials = value;
+  }
+  public resetAllowCredentials() {
+    this._allowCredentials = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowCredentialsInput() {
+    return this._allowCredentials;
+  }
+
+  // allow_headers - computed: false, optional: true, required: false
+  private _allowHeaders?: string[]; 
+  public get allowHeaders() {
+    return cdktf.Fn.tolist(this.getListAttribute('allow_headers'));
+  }
+  public set allowHeaders(value: string[]) {
+    this._allowHeaders = value;
+  }
+  public resetAllowHeaders() {
+    this._allowHeaders = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowHeadersInput() {
+    return this._allowHeaders;
+  }
+
+  // allow_methods - computed: false, optional: true, required: false
+  private _allowMethods?: string[]; 
+  public get allowMethods() {
+    return cdktf.Fn.tolist(this.getListAttribute('allow_methods'));
+  }
+  public set allowMethods(value: string[]) {
+    this._allowMethods = value;
+  }
+  public resetAllowMethods() {
+    this._allowMethods = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowMethodsInput() {
+    return this._allowMethods;
+  }
+
+  // expose_headers - computed: false, optional: true, required: false
+  private _exposeHeaders?: string[]; 
+  public get exposeHeaders() {
+    return cdktf.Fn.tolist(this.getListAttribute('expose_headers'));
+  }
+  public set exposeHeaders(value: string[]) {
+    this._exposeHeaders = value;
+  }
+  public resetExposeHeaders() {
+    this._exposeHeaders = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exposeHeadersInput() {
+    return this._exposeHeaders;
+  }
+
+  // max_age - computed: false, optional: true, required: false
+  private _maxAge?: string; 
+  public get maxAge() {
+    return this.getStringAttribute('max_age');
+  }
+  public set maxAge(value: string) {
+    this._maxAge = value;
+  }
+  public resetMaxAge() {
+    this._maxAge = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxAgeInput() {
+    return this._maxAge;
+  }
+
+  // allow_origins - computed: false, optional: true, required: false
+  private _allowOrigins = new AppSpecIngressRuleCorsAllowOriginsOutputReference(this, "allow_origins");
+  public get allowOrigins() {
+    return this._allowOrigins;
+  }
+  public putAllowOrigins(value: AppSpecIngressRuleCorsAllowOrigins) {
+    this._allowOrigins.internalValue = value;
+  }
+  public resetAllowOrigins() {
+    this._allowOrigins.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowOriginsInput() {
+    return this._allowOrigins.internalValue;
+  }
+}
+export interface AppSpecIngressRuleMatchPath {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#prefix App#prefix}
+  */
+  readonly prefix?: string;
+}
+
+export function appSpecIngressRuleMatchPathToTerraform(struct?: AppSpecIngressRuleMatchPathOutputReference | AppSpecIngressRuleMatchPath): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    prefix: cdktf.stringToTerraform(struct!.prefix),
+  }
+}
+
+export class AppSpecIngressRuleMatchPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppSpecIngressRuleMatchPath | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._prefix !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.prefix = this._prefix;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppSpecIngressRuleMatchPath | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._prefix = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._prefix = value.prefix;
+    }
+  }
+
+  // prefix - computed: true, optional: true, required: false
+  private _prefix?: string; 
+  public get prefix() {
+    return this.getStringAttribute('prefix');
+  }
+  public set prefix(value: string) {
+    this._prefix = value;
+  }
+  public resetPrefix() {
+    this._prefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get prefixInput() {
+    return this._prefix;
+  }
+}
+export interface AppSpecIngressRuleMatch {
+  /**
+  * path block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#path App#path}
+  */
+  readonly path?: AppSpecIngressRuleMatchPath;
+}
+
+export function appSpecIngressRuleMatchToTerraform(struct?: AppSpecIngressRuleMatchOutputReference | AppSpecIngressRuleMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    path: appSpecIngressRuleMatchPathToTerraform(struct!.path),
+  }
+}
+
+export class AppSpecIngressRuleMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppSpecIngressRuleMatch | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._path?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppSpecIngressRuleMatch | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._path.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._path.internalValue = value.path;
+    }
+  }
+
+  // path - computed: false, optional: true, required: false
+  private _path = new AppSpecIngressRuleMatchPathOutputReference(this, "path");
+  public get path() {
+    return this._path;
+  }
+  public putPath(value: AppSpecIngressRuleMatchPath) {
+    this._path.internalValue = value;
+  }
+  public resetPath() {
+    this._path.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path.internalValue;
+  }
+}
+export interface AppSpecIngressRuleRedirect {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#authority App#authority}
+  */
+  readonly authority?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#port App#port}
+  */
+  readonly port?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#redirect_code App#redirect_code}
+  */
+  readonly redirectCode?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#scheme App#scheme}
+  */
+  readonly scheme?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#uri App#uri}
+  */
+  readonly uri?: string;
+}
+
+export function appSpecIngressRuleRedirectToTerraform(struct?: AppSpecIngressRuleRedirectOutputReference | AppSpecIngressRuleRedirect): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    authority: cdktf.stringToTerraform(struct!.authority),
+    port: cdktf.numberToTerraform(struct!.port),
+    redirect_code: cdktf.numberToTerraform(struct!.redirectCode),
+    scheme: cdktf.stringToTerraform(struct!.scheme),
+    uri: cdktf.stringToTerraform(struct!.uri),
+  }
+}
+
+export class AppSpecIngressRuleRedirectOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppSpecIngressRuleRedirect | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._authority !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authority = this._authority;
+    }
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
+    if (this._redirectCode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.redirectCode = this._redirectCode;
+    }
+    if (this._scheme !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scheme = this._scheme;
+    }
+    if (this._uri !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.uri = this._uri;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppSpecIngressRuleRedirect | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._authority = undefined;
+      this._port = undefined;
+      this._redirectCode = undefined;
+      this._scheme = undefined;
+      this._uri = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._authority = value.authority;
+      this._port = value.port;
+      this._redirectCode = value.redirectCode;
+      this._scheme = value.scheme;
+      this._uri = value.uri;
+    }
+  }
+
+  // authority - computed: false, optional: true, required: false
+  private _authority?: string; 
+  public get authority() {
+    return this.getStringAttribute('authority');
+  }
+  public set authority(value: string) {
+    this._authority = value;
+  }
+  public resetAuthority() {
+    this._authority = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authorityInput() {
+    return this._authority;
+  }
+
+  // port - computed: false, optional: true, required: false
+  private _port?: number; 
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+  public set port(value: number) {
+    this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
+  }
+
+  // redirect_code - computed: false, optional: true, required: false
+  private _redirectCode?: number; 
+  public get redirectCode() {
+    return this.getNumberAttribute('redirect_code');
+  }
+  public set redirectCode(value: number) {
+    this._redirectCode = value;
+  }
+  public resetRedirectCode() {
+    this._redirectCode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get redirectCodeInput() {
+    return this._redirectCode;
+  }
+
+  // scheme - computed: false, optional: true, required: false
+  private _scheme?: string; 
+  public get scheme() {
+    return this.getStringAttribute('scheme');
+  }
+  public set scheme(value: string) {
+    this._scheme = value;
+  }
+  public resetScheme() {
+    this._scheme = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemeInput() {
+    return this._scheme;
+  }
+
+  // uri - computed: false, optional: true, required: false
+  private _uri?: string; 
+  public get uri() {
+    return this.getStringAttribute('uri');
+  }
+  public set uri(value: string) {
+    this._uri = value;
+  }
+  public resetUri() {
+    this._uri = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get uriInput() {
+    return this._uri;
+  }
+}
+export interface AppSpecIngressRule {
+  /**
+  * component block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#component App#component}
+  */
+  readonly component?: AppSpecIngressRuleComponent;
+  /**
+  * cors block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#cors App#cors}
+  */
+  readonly cors?: AppSpecIngressRuleCors;
+  /**
+  * match block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#match App#match}
+  */
+  readonly match?: AppSpecIngressRuleMatch;
+  /**
+  * redirect block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#redirect App#redirect}
+  */
+  readonly redirect?: AppSpecIngressRuleRedirect;
+}
+
+export function appSpecIngressRuleToTerraform(struct?: AppSpecIngressRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    component: appSpecIngressRuleComponentToTerraform(struct!.component),
+    cors: appSpecIngressRuleCorsToTerraform(struct!.cors),
+    match: appSpecIngressRuleMatchToTerraform(struct!.match),
+    redirect: appSpecIngressRuleRedirectToTerraform(struct!.redirect),
+  }
+}
+
+export class AppSpecIngressRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AppSpecIngressRule | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._component?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.component = this._component?.internalValue;
+    }
+    if (this._cors?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cors = this._cors?.internalValue;
+    }
+    if (this._match?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.match = this._match?.internalValue;
+    }
+    if (this._redirect?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.redirect = this._redirect?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppSpecIngressRule | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._component.internalValue = undefined;
+      this._cors.internalValue = undefined;
+      this._match.internalValue = undefined;
+      this._redirect.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._component.internalValue = value.component;
+      this._cors.internalValue = value.cors;
+      this._match.internalValue = value.match;
+      this._redirect.internalValue = value.redirect;
+    }
+  }
+
+  // component - computed: false, optional: true, required: false
+  private _component = new AppSpecIngressRuleComponentOutputReference(this, "component");
+  public get component() {
+    return this._component;
+  }
+  public putComponent(value: AppSpecIngressRuleComponent) {
+    this._component.internalValue = value;
+  }
+  public resetComponent() {
+    this._component.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get componentInput() {
+    return this._component.internalValue;
+  }
+
+  // cors - computed: false, optional: true, required: false
+  private _cors = new AppSpecIngressRuleCorsOutputReference(this, "cors");
+  public get cors() {
+    return this._cors;
+  }
+  public putCors(value: AppSpecIngressRuleCors) {
+    this._cors.internalValue = value;
+  }
+  public resetCors() {
+    this._cors.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get corsInput() {
+    return this._cors.internalValue;
+  }
+
+  // match - computed: false, optional: true, required: false
+  private _match = new AppSpecIngressRuleMatchOutputReference(this, "match");
+  public get match() {
+    return this._match;
+  }
+  public putMatch(value: AppSpecIngressRuleMatch) {
+    this._match.internalValue = value;
+  }
+  public resetMatch() {
+    this._match.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchInput() {
+    return this._match.internalValue;
+  }
+
+  // redirect - computed: false, optional: true, required: false
+  private _redirect = new AppSpecIngressRuleRedirectOutputReference(this, "redirect");
+  public get redirect() {
+    return this._redirect;
+  }
+  public putRedirect(value: AppSpecIngressRuleRedirect) {
+    this._redirect.internalValue = value;
+  }
+  public resetRedirect() {
+    this._redirect.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get redirectInput() {
+    return this._redirect.internalValue;
+  }
+}
+
+export class AppSpecIngressRuleList extends cdktf.ComplexList {
+  public internalValue? : AppSpecIngressRule[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppSpecIngressRuleOutputReference {
+    return new AppSpecIngressRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface AppSpecIngress {
+  /**
+  * rule block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#rule App#rule}
+  */
+  readonly rule?: AppSpecIngressRule[] | cdktf.IResolvable;
+}
+
+export function appSpecIngressToTerraform(struct?: AppSpecIngressOutputReference | AppSpecIngress): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    rule: cdktf.listMapper(appSpecIngressRuleToTerraform, true)(struct!.rule),
+  }
+}
+
+export class AppSpecIngressOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppSpecIngress | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._rule?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rule = this._rule?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppSpecIngress | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._rule.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._rule.internalValue = value.rule;
+    }
+  }
+
+  // rule - computed: false, optional: true, required: false
+  private _rule = new AppSpecIngressRuleList(this, "rule", false);
+  public get rule() {
+    return this._rule;
+  }
+  public putRule(value: AppSpecIngressRule[] | cdktf.IResolvable) {
+    this._rule.internalValue = value;
+  }
+  public resetRule() {
+    this._rule.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ruleInput() {
+    return this._rule.internalValue;
+  }
+}
 export interface AppSpecJobAlert {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#disabled App#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#disabled App#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#operator App#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#operator App#operator}
   */
   readonly operator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#rule App#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#rule App#rule}
   */
   readonly rule: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#value App#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}
   */
   readonly value: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#window App#window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#window App#window}
   */
   readonly window: string;
 }
@@ -2943,25 +3952,25 @@ export interface AppSpecJobEnv {
   /**
   * The name of the environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#key App#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#key App#key}
   */
   readonly key?: string;
   /**
   * The visibility scope of the environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#scope App#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#scope App#scope}
   */
   readonly scope?: string;
   /**
   * The type of the environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#type App#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#type App#type}
   */
   readonly type?: string;
   /**
   * The value of the environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#value App#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}
   */
   readonly value?: string;
 }
@@ -3129,13 +4138,13 @@ export interface AppSpecJobGit {
   /**
   * The name of the branch to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
   */
   readonly branch?: string;
   /**
   * The clone URL of the repo.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo_clone_url App#repo_clone_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo_clone_url App#repo_clone_url}
   */
   readonly repoCloneUrl?: string;
 }
@@ -3225,19 +4234,19 @@ export interface AppSpecJobGithub {
   /**
   * The name of the branch to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
   */
   readonly branch?: string;
   /**
   * Whether to automatically deploy new commits made to the repo
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
   */
   readonly deployOnPush?: boolean | cdktf.IResolvable;
   /**
   * The name of the repo in the format `owner/repo`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo App#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
   */
   readonly repo?: string;
 }
@@ -3350,19 +4359,19 @@ export interface AppSpecJobGitlab {
   /**
   * The name of the branch to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
   */
   readonly branch?: string;
   /**
   * Whether to automatically deploy new commits made to the repo
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
   */
   readonly deployOnPush?: boolean | cdktf.IResolvable;
   /**
   * The name of the repo in the format `owner/repo`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo App#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
   */
   readonly repo?: string;
 }
@@ -3475,7 +4484,7 @@ export interface AppSpecJobImageDeployOnPush {
   /**
   * Whether to automatically deploy images pushed to DOCR.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#enabled App#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#enabled App#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
 }
@@ -3574,31 +4583,31 @@ export interface AppSpecJobImage {
   /**
   * The registry name. Must be left empty for the DOCR registry type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#registry App#registry}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#registry App#registry}
   */
   readonly registry?: string;
   /**
   * The registry type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#registry_type App#registry_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#registry_type App#registry_type}
   */
   readonly registryType: string;
   /**
   * The repository name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repository App#repository}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repository App#repository}
   */
   readonly repository: string;
   /**
   * The repository tag. Defaults to latest if not provided.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#tag App#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#tag App#tag}
   */
   readonly tag?: string;
   /**
   * deploy_on_push block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
   */
   readonly deployOnPush?: AppSpecJobImageDeployOnPush[] | cdktf.IResolvable;
 }
@@ -3751,13 +4760,13 @@ export interface AppSpecJobLogDestinationDatadog {
   /**
   * Datadog API key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#api_key App#api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#api_key App#api_key}
   */
   readonly apiKey: string;
   /**
   * Datadog HTTP log intake endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#endpoint App#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#endpoint App#endpoint}
   */
   readonly endpoint?: string;
 }
@@ -3844,7 +4853,7 @@ export interface AppSpecJobLogDestinationLogtail {
   /**
   * Logtail token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#token App#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#token App#token}
   */
   readonly token: string;
 }
@@ -3908,7 +4917,7 @@ export interface AppSpecJobLogDestinationPapertrail {
   /**
   * Papertrail syslog endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#endpoint App#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#endpoint App#endpoint}
   */
   readonly endpoint: string;
 }
@@ -3972,25 +4981,25 @@ export interface AppSpecJobLogDestination {
   /**
   * Name of the log destination
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#name App#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
   */
   readonly name: string;
   /**
   * datadog block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#datadog App#datadog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#datadog App#datadog}
   */
   readonly datadog?: AppSpecJobLogDestinationDatadog;
   /**
   * logtail block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#logtail App#logtail}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#logtail App#logtail}
   */
   readonly logtail?: AppSpecJobLogDestinationLogtail;
   /**
   * papertrail block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#papertrail App#papertrail}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#papertrail App#papertrail}
   */
   readonly papertrail?: AppSpecJobLogDestinationPapertrail;
 }
@@ -4155,97 +5164,97 @@ export interface AppSpecJob {
   /**
   * An optional build command to run while building this component from source.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#build_command App#build_command}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#build_command App#build_command}
   */
   readonly buildCommand?: string;
   /**
   * The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#dockerfile_path App#dockerfile_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#dockerfile_path App#dockerfile_path}
   */
   readonly dockerfilePath?: string;
   /**
   * An environment slug describing the type of this app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#environment_slug App#environment_slug}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#environment_slug App#environment_slug}
   */
   readonly environmentSlug?: string;
   /**
   * The amount of instances that this component should be scaled to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#instance_count App#instance_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#instance_count App#instance_count}
   */
   readonly instanceCount?: number;
   /**
   * The instance size to use for this component.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#instance_size_slug App#instance_size_slug}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#instance_size_slug App#instance_size_slug}
   */
   readonly instanceSizeSlug?: string;
   /**
   * The type of job and when it will be run during the deployment process.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#kind App#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#kind App#kind}
   */
   readonly kind?: string;
   /**
   * The name of the component
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#name App#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
   */
   readonly name: string;
   /**
   * An optional run command to override the component's default.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#run_command App#run_command}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#run_command App#run_command}
   */
   readonly runCommand?: string;
   /**
   * An optional path to the working directory to use for the build.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#source_dir App#source_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#source_dir App#source_dir}
   */
   readonly sourceDir?: string;
   /**
   * alert block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#alert App#alert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#alert App#alert}
   */
   readonly alert?: AppSpecJobAlert[] | cdktf.IResolvable;
   /**
   * env block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#env App#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#env App#env}
   */
   readonly env?: AppSpecJobEnv[] | cdktf.IResolvable;
   /**
   * git block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#git App#git}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#git App#git}
   */
   readonly git?: AppSpecJobGit;
   /**
   * github block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#github App#github}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#github App#github}
   */
   readonly github?: AppSpecJobGithub;
   /**
   * gitlab block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#gitlab App#gitlab}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#gitlab App#gitlab}
   */
   readonly gitlab?: AppSpecJobGitlab;
   /**
   * image block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#image App#image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#image App#image}
   */
   readonly image?: AppSpecJobImage;
   /**
   * log_destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#log_destination App#log_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#log_destination App#log_destination}
   */
   readonly logDestination?: AppSpecJobLogDestination[] | cdktf.IResolvable;
 }
@@ -4684,23 +5693,23 @@ export class AppSpecJobList extends cdktf.ComplexList {
 }
 export interface AppSpecServiceAlert {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#disabled App#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#disabled App#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#operator App#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#operator App#operator}
   */
   readonly operator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#rule App#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#rule App#rule}
   */
   readonly rule: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#value App#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}
   */
   readonly value: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#window App#window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#window App#window}
   */
   readonly window: string;
 }
@@ -4879,19 +5888,19 @@ export interface AppSpecServiceCorsAllowOrigins {
   /**
   * Exact string match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#exact App#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#exact App#exact}
   */
   readonly exact?: string;
   /**
   * Prefix-based match. 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#prefix App#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#prefix App#prefix}
   */
   readonly prefix?: string;
   /**
   * RE2 style regex-based match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#regex App#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#regex App#regex}
   */
   readonly regex?: string;
 }
@@ -5004,37 +6013,37 @@ export interface AppSpecServiceCors {
   /**
   * Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`. This configures the Access-Control-Allow-Credentials header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_credentials App#allow_credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_credentials App#allow_credentials}
   */
   readonly allowCredentials?: boolean | cdktf.IResolvable;
   /**
   * The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_headers App#allow_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_headers App#allow_headers}
   */
   readonly allowHeaders?: string[];
   /**
   * The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_methods App#allow_methods}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_methods App#allow_methods}
   */
   readonly allowMethods?: string[];
   /**
   * The set of HTTP response headers that browsers are allowed to access. This configures the Access-Control-Expose-Headers header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#expose_headers App#expose_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#expose_headers App#expose_headers}
   */
   readonly exposeHeaders?: string[];
   /**
   * An optional duration specifying how long browsers can cache the results of a preflight request. This configures the Access-Control-Max-Age header. Example: `5h30m`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#max_age App#max_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#max_age App#max_age}
   */
   readonly maxAge?: string;
   /**
   * allow_origins block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_origins App#allow_origins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_origins App#allow_origins}
   */
   readonly allowOrigins?: AppSpecServiceCorsAllowOrigins;
 }
@@ -5216,25 +6225,25 @@ export interface AppSpecServiceEnv {
   /**
   * The name of the environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#key App#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#key App#key}
   */
   readonly key?: string;
   /**
   * The visibility scope of the environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#scope App#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#scope App#scope}
   */
   readonly scope?: string;
   /**
   * The type of the environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#type App#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#type App#type}
   */
   readonly type?: string;
   /**
   * The value of the environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#value App#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}
   */
   readonly value?: string;
 }
@@ -5402,13 +6411,13 @@ export interface AppSpecServiceGit {
   /**
   * The name of the branch to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
   */
   readonly branch?: string;
   /**
   * The clone URL of the repo.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo_clone_url App#repo_clone_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo_clone_url App#repo_clone_url}
   */
   readonly repoCloneUrl?: string;
 }
@@ -5498,19 +6507,19 @@ export interface AppSpecServiceGithub {
   /**
   * The name of the branch to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
   */
   readonly branch?: string;
   /**
   * Whether to automatically deploy new commits made to the repo
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
   */
   readonly deployOnPush?: boolean | cdktf.IResolvable;
   /**
   * The name of the repo in the format `owner/repo`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo App#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
   */
   readonly repo?: string;
 }
@@ -5623,19 +6632,19 @@ export interface AppSpecServiceGitlab {
   /**
   * The name of the branch to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
   */
   readonly branch?: string;
   /**
   * Whether to automatically deploy new commits made to the repo
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
   */
   readonly deployOnPush?: boolean | cdktf.IResolvable;
   /**
   * The name of the repo in the format `owner/repo`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo App#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
   */
   readonly repo?: string;
 }
@@ -5748,37 +6757,37 @@ export interface AppSpecServiceHealthCheck {
   /**
   * The number of failed health checks before considered unhealthy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#failure_threshold App#failure_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#failure_threshold App#failure_threshold}
   */
   readonly failureThreshold?: number;
   /**
   * The route path used for the HTTP health check ping.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#http_path App#http_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#http_path App#http_path}
   */
   readonly httpPath?: string;
   /**
   * The number of seconds to wait before beginning health checks.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#initial_delay_seconds App#initial_delay_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#initial_delay_seconds App#initial_delay_seconds}
   */
   readonly initialDelaySeconds?: number;
   /**
   * The number of seconds to wait between health checks.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#period_seconds App#period_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#period_seconds App#period_seconds}
   */
   readonly periodSeconds?: number;
   /**
   * The number of successful health checks before considered healthy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#success_threshold App#success_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#success_threshold App#success_threshold}
   */
   readonly successThreshold?: number;
   /**
   * The number of seconds after which the check times out.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#timeout_seconds App#timeout_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#timeout_seconds App#timeout_seconds}
   */
   readonly timeoutSeconds?: number;
 }
@@ -5960,7 +6969,7 @@ export interface AppSpecServiceImageDeployOnPush {
   /**
   * Whether to automatically deploy images pushed to DOCR.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#enabled App#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#enabled App#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
 }
@@ -6059,31 +7068,31 @@ export interface AppSpecServiceImage {
   /**
   * The registry name. Must be left empty for the DOCR registry type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#registry App#registry}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#registry App#registry}
   */
   readonly registry?: string;
   /**
   * The registry type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#registry_type App#registry_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#registry_type App#registry_type}
   */
   readonly registryType: string;
   /**
   * The repository name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repository App#repository}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repository App#repository}
   */
   readonly repository: string;
   /**
   * The repository tag. Defaults to latest if not provided.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#tag App#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#tag App#tag}
   */
   readonly tag?: string;
   /**
   * deploy_on_push block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
   */
   readonly deployOnPush?: AppSpecServiceImageDeployOnPush[] | cdktf.IResolvable;
 }
@@ -6236,13 +7245,13 @@ export interface AppSpecServiceLogDestinationDatadog {
   /**
   * Datadog API key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#api_key App#api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#api_key App#api_key}
   */
   readonly apiKey: string;
   /**
   * Datadog HTTP log intake endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#endpoint App#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#endpoint App#endpoint}
   */
   readonly endpoint?: string;
 }
@@ -6329,7 +7338,7 @@ export interface AppSpecServiceLogDestinationLogtail {
   /**
   * Logtail token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#token App#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#token App#token}
   */
   readonly token: string;
 }
@@ -6393,7 +7402,7 @@ export interface AppSpecServiceLogDestinationPapertrail {
   /**
   * Papertrail syslog endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#endpoint App#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#endpoint App#endpoint}
   */
   readonly endpoint: string;
 }
@@ -6457,25 +7466,25 @@ export interface AppSpecServiceLogDestination {
   /**
   * Name of the log destination
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#name App#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
   */
   readonly name: string;
   /**
   * datadog block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#datadog App#datadog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#datadog App#datadog}
   */
   readonly datadog?: AppSpecServiceLogDestinationDatadog;
   /**
   * logtail block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#logtail App#logtail}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#logtail App#logtail}
   */
   readonly logtail?: AppSpecServiceLogDestinationLogtail;
   /**
   * papertrail block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#papertrail App#papertrail}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#papertrail App#papertrail}
   */
   readonly papertrail?: AppSpecServiceLogDestinationPapertrail;
 }
@@ -6640,13 +7649,13 @@ export interface AppSpecServiceRoutes {
   /**
   * Path specifies an route by HTTP path prefix. Paths must start with / and must be unique within the app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#path App#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#path App#path}
   */
   readonly path?: string;
   /**
   *  An optional flag to preserve the path that is forwarded to the backend service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
   */
   readonly preservePathPrefix?: boolean | cdktf.IResolvable;
 }
@@ -6768,119 +7777,119 @@ export interface AppSpecService {
   /**
   * An optional build command to run while building this component from source.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#build_command App#build_command}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#build_command App#build_command}
   */
   readonly buildCommand?: string;
   /**
   * The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#dockerfile_path App#dockerfile_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#dockerfile_path App#dockerfile_path}
   */
   readonly dockerfilePath?: string;
   /**
   * An environment slug describing the type of this app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#environment_slug App#environment_slug}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#environment_slug App#environment_slug}
   */
   readonly environmentSlug?: string;
   /**
   * The internal port on which this service's run command will listen.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#http_port App#http_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#http_port App#http_port}
   */
   readonly httpPort?: number;
   /**
   * The amount of instances that this component should be scaled to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#instance_count App#instance_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#instance_count App#instance_count}
   */
   readonly instanceCount?: number;
   /**
   * The instance size to use for this component.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#instance_size_slug App#instance_size_slug}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#instance_size_slug App#instance_size_slug}
   */
   readonly instanceSizeSlug?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#internal_ports App#internal_ports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#internal_ports App#internal_ports}
   */
   readonly internalPorts?: number[];
   /**
   * The name of the component
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#name App#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
   */
   readonly name: string;
   /**
   * An optional run command to override the component's default.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#run_command App#run_command}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#run_command App#run_command}
   */
   readonly runCommand?: string;
   /**
   * An optional path to the working directory to use for the build.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#source_dir App#source_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#source_dir App#source_dir}
   */
   readonly sourceDir?: string;
   /**
   * alert block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#alert App#alert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#alert App#alert}
   */
   readonly alert?: AppSpecServiceAlert[] | cdktf.IResolvable;
   /**
   * cors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#cors App#cors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#cors App#cors}
   */
   readonly cors?: AppSpecServiceCors;
   /**
   * env block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#env App#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#env App#env}
   */
   readonly env?: AppSpecServiceEnv[] | cdktf.IResolvable;
   /**
   * git block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#git App#git}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#git App#git}
   */
   readonly git?: AppSpecServiceGit;
   /**
   * github block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#github App#github}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#github App#github}
   */
   readonly github?: AppSpecServiceGithub;
   /**
   * gitlab block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#gitlab App#gitlab}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#gitlab App#gitlab}
   */
   readonly gitlab?: AppSpecServiceGitlab;
   /**
   * health_check block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#health_check App#health_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#health_check App#health_check}
   */
   readonly healthCheck?: AppSpecServiceHealthCheck;
   /**
   * image block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#image App#image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#image App#image}
   */
   readonly image?: AppSpecServiceImage;
   /**
   * log_destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#log_destination App#log_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#log_destination App#log_destination}
   */
   readonly logDestination?: AppSpecServiceLogDestination[] | cdktf.IResolvable;
   /**
   * routes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#routes App#routes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#routes App#routes}
   */
   readonly routes?: AppSpecServiceRoutes[] | cdktf.IResolvable;
 }
@@ -7413,19 +8422,19 @@ export interface AppSpecStaticSiteCorsAllowOrigins {
   /**
   * Exact string match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#exact App#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#exact App#exact}
   */
   readonly exact?: string;
   /**
   * Prefix-based match. 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#prefix App#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#prefix App#prefix}
   */
   readonly prefix?: string;
   /**
   * RE2 style regex-based match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#regex App#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#regex App#regex}
   */
   readonly regex?: string;
 }
@@ -7538,37 +8547,37 @@ export interface AppSpecStaticSiteCors {
   /**
   * Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`. This configures the Access-Control-Allow-Credentials header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_credentials App#allow_credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_credentials App#allow_credentials}
   */
   readonly allowCredentials?: boolean | cdktf.IResolvable;
   /**
   * The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_headers App#allow_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_headers App#allow_headers}
   */
   readonly allowHeaders?: string[];
   /**
   * The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_methods App#allow_methods}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_methods App#allow_methods}
   */
   readonly allowMethods?: string[];
   /**
   * The set of HTTP response headers that browsers are allowed to access. This configures the Access-Control-Expose-Headers header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#expose_headers App#expose_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#expose_headers App#expose_headers}
   */
   readonly exposeHeaders?: string[];
   /**
   * An optional duration specifying how long browsers can cache the results of a preflight request. This configures the Access-Control-Max-Age header. Example: `5h30m`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#max_age App#max_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#max_age App#max_age}
   */
   readonly maxAge?: string;
   /**
   * allow_origins block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#allow_origins App#allow_origins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_origins App#allow_origins}
   */
   readonly allowOrigins?: AppSpecStaticSiteCorsAllowOrigins;
 }
@@ -7750,25 +8759,25 @@ export interface AppSpecStaticSiteEnv {
   /**
   * The name of the environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#key App#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#key App#key}
   */
   readonly key?: string;
   /**
   * The visibility scope of the environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#scope App#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#scope App#scope}
   */
   readonly scope?: string;
   /**
   * The type of the environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#type App#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#type App#type}
   */
   readonly type?: string;
   /**
   * The value of the environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#value App#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}
   */
   readonly value?: string;
 }
@@ -7936,13 +8945,13 @@ export interface AppSpecStaticSiteGit {
   /**
   * The name of the branch to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
   */
   readonly branch?: string;
   /**
   * The clone URL of the repo.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo_clone_url App#repo_clone_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo_clone_url App#repo_clone_url}
   */
   readonly repoCloneUrl?: string;
 }
@@ -8032,19 +9041,19 @@ export interface AppSpecStaticSiteGithub {
   /**
   * The name of the branch to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
   */
   readonly branch?: string;
   /**
   * Whether to automatically deploy new commits made to the repo
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
   */
   readonly deployOnPush?: boolean | cdktf.IResolvable;
   /**
   * The name of the repo in the format `owner/repo`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo App#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
   */
   readonly repo?: string;
 }
@@ -8157,19 +9166,19 @@ export interface AppSpecStaticSiteGitlab {
   /**
   * The name of the branch to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
   */
   readonly branch?: string;
   /**
   * Whether to automatically deploy new commits made to the repo
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
   */
   readonly deployOnPush?: boolean | cdktf.IResolvable;
   /**
   * The name of the repo in the format `owner/repo`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo App#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
   */
   readonly repo?: string;
 }
@@ -8282,13 +9291,13 @@ export interface AppSpecStaticSiteRoutes {
   /**
   * Path specifies an route by HTTP path prefix. Paths must start with / and must be unique within the app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#path App#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#path App#path}
   */
   readonly path?: string;
   /**
   *  An optional flag to preserve the path that is forwarded to the backend service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
   */
   readonly preservePathPrefix?: boolean | cdktf.IResolvable;
 }
@@ -8410,91 +9419,91 @@ export interface AppSpecStaticSite {
   /**
   * An optional build command to run while building this component from source.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#build_command App#build_command}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#build_command App#build_command}
   */
   readonly buildCommand?: string;
   /**
   * The name of the document to use as the fallback for any requests to documents that are not found when serving this static site.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#catchall_document App#catchall_document}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#catchall_document App#catchall_document}
   */
   readonly catchallDocument?: string;
   /**
   * The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#dockerfile_path App#dockerfile_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#dockerfile_path App#dockerfile_path}
   */
   readonly dockerfilePath?: string;
   /**
   * An environment slug describing the type of this app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#environment_slug App#environment_slug}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#environment_slug App#environment_slug}
   */
   readonly environmentSlug?: string;
   /**
   * The name of the error document to use when serving this static site.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#error_document App#error_document}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#error_document App#error_document}
   */
   readonly errorDocument?: string;
   /**
   * The name of the index document to use when serving this static site.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#index_document App#index_document}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#index_document App#index_document}
   */
   readonly indexDocument?: string;
   /**
   * The name of the component
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#name App#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
   */
   readonly name: string;
   /**
   * An optional path to where the built assets will be located, relative to the build context. If not set, App Platform will automatically scan for these directory names: `_static`, `dist`, `public`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#output_dir App#output_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#output_dir App#output_dir}
   */
   readonly outputDir?: string;
   /**
   * An optional path to the working directory to use for the build.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#source_dir App#source_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#source_dir App#source_dir}
   */
   readonly sourceDir?: string;
   /**
   * cors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#cors App#cors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#cors App#cors}
   */
   readonly cors?: AppSpecStaticSiteCors;
   /**
   * env block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#env App#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#env App#env}
   */
   readonly env?: AppSpecStaticSiteEnv[] | cdktf.IResolvable;
   /**
   * git block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#git App#git}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#git App#git}
   */
   readonly git?: AppSpecStaticSiteGit;
   /**
   * github block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#github App#github}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#github App#github}
   */
   readonly github?: AppSpecStaticSiteGithub;
   /**
   * gitlab block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#gitlab App#gitlab}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#gitlab App#gitlab}
   */
   readonly gitlab?: AppSpecStaticSiteGitlab;
   /**
   * routes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#routes App#routes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#routes App#routes}
   */
   readonly routes?: AppSpecStaticSiteRoutes[] | cdktf.IResolvable;
 }
@@ -8910,23 +9919,23 @@ export class AppSpecStaticSiteList extends cdktf.ComplexList {
 }
 export interface AppSpecWorkerAlert {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#disabled App#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#disabled App#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#operator App#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#operator App#operator}
   */
   readonly operator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#rule App#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#rule App#rule}
   */
   readonly rule: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#value App#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}
   */
   readonly value: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#window App#window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#window App#window}
   */
   readonly window: string;
 }
@@ -9105,25 +10114,25 @@ export interface AppSpecWorkerEnv {
   /**
   * The name of the environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#key App#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#key App#key}
   */
   readonly key?: string;
   /**
   * The visibility scope of the environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#scope App#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#scope App#scope}
   */
   readonly scope?: string;
   /**
   * The type of the environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#type App#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#type App#type}
   */
   readonly type?: string;
   /**
   * The value of the environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#value App#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}
   */
   readonly value?: string;
 }
@@ -9291,13 +10300,13 @@ export interface AppSpecWorkerGit {
   /**
   * The name of the branch to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
   */
   readonly branch?: string;
   /**
   * The clone URL of the repo.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo_clone_url App#repo_clone_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo_clone_url App#repo_clone_url}
   */
   readonly repoCloneUrl?: string;
 }
@@ -9387,19 +10396,19 @@ export interface AppSpecWorkerGithub {
   /**
   * The name of the branch to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
   */
   readonly branch?: string;
   /**
   * Whether to automatically deploy new commits made to the repo
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
   */
   readonly deployOnPush?: boolean | cdktf.IResolvable;
   /**
   * The name of the repo in the format `owner/repo`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo App#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
   */
   readonly repo?: string;
 }
@@ -9512,19 +10521,19 @@ export interface AppSpecWorkerGitlab {
   /**
   * The name of the branch to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#branch App#branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
   */
   readonly branch?: string;
   /**
   * Whether to automatically deploy new commits made to the repo
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
   */
   readonly deployOnPush?: boolean | cdktf.IResolvable;
   /**
   * The name of the repo in the format `owner/repo`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repo App#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
   */
   readonly repo?: string;
 }
@@ -9637,7 +10646,7 @@ export interface AppSpecWorkerImageDeployOnPush {
   /**
   * Whether to automatically deploy images pushed to DOCR.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#enabled App#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#enabled App#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
 }
@@ -9736,31 +10745,31 @@ export interface AppSpecWorkerImage {
   /**
   * The registry name. Must be left empty for the DOCR registry type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#registry App#registry}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#registry App#registry}
   */
   readonly registry?: string;
   /**
   * The registry type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#registry_type App#registry_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#registry_type App#registry_type}
   */
   readonly registryType: string;
   /**
   * The repository name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#repository App#repository}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repository App#repository}
   */
   readonly repository: string;
   /**
   * The repository tag. Defaults to latest if not provided.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#tag App#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#tag App#tag}
   */
   readonly tag?: string;
   /**
   * deploy_on_push block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
   */
   readonly deployOnPush?: AppSpecWorkerImageDeployOnPush[] | cdktf.IResolvable;
 }
@@ -9913,13 +10922,13 @@ export interface AppSpecWorkerLogDestinationDatadog {
   /**
   * Datadog API key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#api_key App#api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#api_key App#api_key}
   */
   readonly apiKey: string;
   /**
   * Datadog HTTP log intake endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#endpoint App#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#endpoint App#endpoint}
   */
   readonly endpoint?: string;
 }
@@ -10006,7 +11015,7 @@ export interface AppSpecWorkerLogDestinationLogtail {
   /**
   * Logtail token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#token App#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#token App#token}
   */
   readonly token: string;
 }
@@ -10070,7 +11079,7 @@ export interface AppSpecWorkerLogDestinationPapertrail {
   /**
   * Papertrail syslog endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#endpoint App#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#endpoint App#endpoint}
   */
   readonly endpoint: string;
 }
@@ -10134,25 +11143,25 @@ export interface AppSpecWorkerLogDestination {
   /**
   * Name of the log destination
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#name App#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
   */
   readonly name: string;
   /**
   * datadog block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#datadog App#datadog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#datadog App#datadog}
   */
   readonly datadog?: AppSpecWorkerLogDestinationDatadog;
   /**
   * logtail block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#logtail App#logtail}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#logtail App#logtail}
   */
   readonly logtail?: AppSpecWorkerLogDestinationLogtail;
   /**
   * papertrail block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#papertrail App#papertrail}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#papertrail App#papertrail}
   */
   readonly papertrail?: AppSpecWorkerLogDestinationPapertrail;
 }
@@ -10317,91 +11326,91 @@ export interface AppSpecWorker {
   /**
   * An optional build command to run while building this component from source.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#build_command App#build_command}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#build_command App#build_command}
   */
   readonly buildCommand?: string;
   /**
   * The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#dockerfile_path App#dockerfile_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#dockerfile_path App#dockerfile_path}
   */
   readonly dockerfilePath?: string;
   /**
   * An environment slug describing the type of this app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#environment_slug App#environment_slug}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#environment_slug App#environment_slug}
   */
   readonly environmentSlug?: string;
   /**
   * The amount of instances that this component should be scaled to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#instance_count App#instance_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#instance_count App#instance_count}
   */
   readonly instanceCount?: number;
   /**
   * The instance size to use for this component.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#instance_size_slug App#instance_size_slug}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#instance_size_slug App#instance_size_slug}
   */
   readonly instanceSizeSlug?: string;
   /**
   * The name of the component
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#name App#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
   */
   readonly name: string;
   /**
   * An optional run command to override the component's default.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#run_command App#run_command}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#run_command App#run_command}
   */
   readonly runCommand?: string;
   /**
   * An optional path to the working directory to use for the build.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#source_dir App#source_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#source_dir App#source_dir}
   */
   readonly sourceDir?: string;
   /**
   * alert block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#alert App#alert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#alert App#alert}
   */
   readonly alert?: AppSpecWorkerAlert[] | cdktf.IResolvable;
   /**
   * env block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#env App#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#env App#env}
   */
   readonly env?: AppSpecWorkerEnv[] | cdktf.IResolvable;
   /**
   * git block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#git App#git}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#git App#git}
   */
   readonly git?: AppSpecWorkerGit;
   /**
   * github block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#github App#github}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#github App#github}
   */
   readonly github?: AppSpecWorkerGithub;
   /**
   * gitlab block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#gitlab App#gitlab}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#gitlab App#gitlab}
   */
   readonly gitlab?: AppSpecWorkerGitlab;
   /**
   * image block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#image App#image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#image App#image}
   */
   readonly image?: AppSpecWorkerImage;
   /**
   * log_destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#log_destination App#log_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#log_destination App#log_destination}
   */
   readonly logDestination?: AppSpecWorkerLogDestination[] | cdktf.IResolvable;
 }
@@ -10817,73 +11826,79 @@ export class AppSpecWorkerList extends cdktf.ComplexList {
 }
 export interface AppSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#domains App#domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#domains App#domains}
   */
   readonly domains?: string[];
   /**
   * The name of the app. Must be unique across all apps in the same account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#name App#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
   */
   readonly name: string;
   /**
   * The slug for the DigitalOcean data center region hosting the app
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#region App#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#region App#region}
   */
   readonly region?: string;
   /**
   * alert block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#alert App#alert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#alert App#alert}
   */
   readonly alert?: AppSpecAlert[] | cdktf.IResolvable;
   /**
   * database block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#database App#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#database App#database}
   */
   readonly database?: AppSpecDatabase[] | cdktf.IResolvable;
   /**
   * domain block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#domain App#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#domain App#domain}
   */
   readonly domain?: AppSpecDomain[] | cdktf.IResolvable;
   /**
   * env block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#env App#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#env App#env}
   */
   readonly env?: AppSpecEnv[] | cdktf.IResolvable;
   /**
   * function block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#function App#function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#function App#function}
   */
   readonly function?: AppSpecFunction[] | cdktf.IResolvable;
   /**
+  * ingress block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#ingress App#ingress}
+  */
+  readonly ingress?: AppSpecIngress;
+  /**
   * job block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#job App#job}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#job App#job}
   */
   readonly job?: AppSpecJob[] | cdktf.IResolvable;
   /**
   * service block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#service App#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#service App#service}
   */
   readonly service?: AppSpecService[] | cdktf.IResolvable;
   /**
   * static_site block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#static_site App#static_site}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#static_site App#static_site}
   */
   readonly staticSite?: AppSpecStaticSite[] | cdktf.IResolvable;
   /**
   * worker block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#worker App#worker}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#worker App#worker}
   */
   readonly worker?: AppSpecWorker[] | cdktf.IResolvable;
 }
@@ -10902,6 +11917,7 @@ export function appSpecToTerraform(struct?: AppSpecOutputReference | AppSpec): a
     domain: cdktf.listMapper(appSpecDomainToTerraform, true)(struct!.domain),
     env: cdktf.listMapper(appSpecEnvToTerraform, true)(struct!.env),
     function: cdktf.listMapper(appSpecFunctionToTerraform, true)(struct!.function),
+    ingress: appSpecIngressToTerraform(struct!.ingress),
     job: cdktf.listMapper(appSpecJobToTerraform, true)(struct!.job),
     service: cdktf.listMapper(appSpecServiceToTerraform, true)(struct!.service),
     static_site: cdktf.listMapper(appSpecStaticSiteToTerraform, true)(struct!.staticSite),
@@ -10955,6 +11971,10 @@ export class AppSpecOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.function = this._function?.internalValue;
     }
+    if (this._ingress?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ingress = this._ingress?.internalValue;
+    }
     if (this._job?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.job = this._job?.internalValue;
@@ -10985,6 +12005,7 @@ export class AppSpecOutputReference extends cdktf.ComplexObject {
       this._domain.internalValue = undefined;
       this._env.internalValue = undefined;
       this._function.internalValue = undefined;
+      this._ingress.internalValue = undefined;
       this._job.internalValue = undefined;
       this._service.internalValue = undefined;
       this._staticSite.internalValue = undefined;
@@ -11000,6 +12021,7 @@ export class AppSpecOutputReference extends cdktf.ComplexObject {
       this._domain.internalValue = value.domain;
       this._env.internalValue = value.env;
       this._function.internalValue = value.function;
+      this._ingress.internalValue = value.ingress;
       this._job.internalValue = value.job;
       this._service.internalValue = value.service;
       this._staticSite.internalValue = value.staticSite;
@@ -11132,6 +12154,22 @@ export class AppSpecOutputReference extends cdktf.ComplexObject {
     return this._function.internalValue;
   }
 
+  // ingress - computed: false, optional: true, required: false
+  private _ingress = new AppSpecIngressOutputReference(this, "ingress");
+  public get ingress() {
+    return this._ingress;
+  }
+  public putIngress(value: AppSpecIngress) {
+    this._ingress.internalValue = value;
+  }
+  public resetIngress() {
+    this._ingress.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ingressInput() {
+    return this._ingress.internalValue;
+  }
+
   // job - computed: false, optional: true, required: false
   private _job = new AppSpecJobList(this, "job", false);
   public get job() {
@@ -11198,7 +12236,7 @@ export class AppSpecOutputReference extends cdktf.ComplexObject {
 }
 export interface AppTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#create App#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#create App#create}
   */
   readonly create?: string;
 }
@@ -11273,7 +12311,7 @@ export class AppTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app digitalocean_app}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app digitalocean_app}
 */
 export class App extends cdktf.TerraformResource {
 
@@ -11289,7 +12327,7 @@ export class App extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a App resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the App to import
-  * @param importFromId The id of the existing App that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing App that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the App to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -11301,7 +12339,7 @@ export class App extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/app digitalocean_app} Resource
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app digitalocean_app} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -11312,7 +12350,7 @@ export class App extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_app',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.30.0',
+        providerVersion: '2.31.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,

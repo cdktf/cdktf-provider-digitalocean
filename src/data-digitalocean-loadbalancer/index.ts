@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/data-sources/loadbalancer
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/loadbalancer
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +10,7 @@ export interface DataDigitaloceanLoadbalancerConfig extends cdktf.TerraformMetaA
   /**
   * id of the load balancer
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/data-sources/loadbalancer#id DataDigitaloceanLoadbalancer#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/loadbalancer#id DataDigitaloceanLoadbalancer#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,9 +19,15 @@ export interface DataDigitaloceanLoadbalancerConfig extends cdktf.TerraformMetaA
   /**
   * name of the load balancer
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/data-sources/loadbalancer#name DataDigitaloceanLoadbalancer#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/loadbalancer#name DataDigitaloceanLoadbalancer#name}
   */
   readonly name?: string;
+  /**
+  * the type of the load balancer (GLOBAL or REGIONAL)
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/loadbalancer#type DataDigitaloceanLoadbalancer#type}
+  */
+  readonly type?: string;
 }
 export interface DataDigitaloceanLoadbalancerFirewall {
 }
@@ -361,7 +362,7 @@ export class DataDigitaloceanLoadbalancerStickySessionsList extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/data-sources/loadbalancer digitalocean_loadbalancer}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/loadbalancer digitalocean_loadbalancer}
 */
 export class DataDigitaloceanLoadbalancer extends cdktf.TerraformDataSource {
 
@@ -377,7 +378,7 @@ export class DataDigitaloceanLoadbalancer extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDigitaloceanLoadbalancer resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDigitaloceanLoadbalancer to import
-  * @param importFromId The id of the existing DataDigitaloceanLoadbalancer that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/data-sources/loadbalancer#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDigitaloceanLoadbalancer that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/loadbalancer#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDigitaloceanLoadbalancer to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -389,7 +390,7 @@ export class DataDigitaloceanLoadbalancer extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/data-sources/loadbalancer digitalocean_loadbalancer} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/loadbalancer digitalocean_loadbalancer} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -400,7 +401,7 @@ export class DataDigitaloceanLoadbalancer extends cdktf.TerraformDataSource {
       terraformResourceType: 'digitalocean_loadbalancer',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.30.0',
+        providerVersion: '2.31.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
@@ -413,6 +414,7 @@ export class DataDigitaloceanLoadbalancer extends cdktf.TerraformDataSource {
     });
     this._id = config.id;
     this._name = config.name;
+    this._type = config.type;
   }
 
   // ==========
@@ -545,6 +547,22 @@ export class DataDigitaloceanLoadbalancer extends cdktf.TerraformDataSource {
     return this._stickySessions;
   }
 
+  // type - computed: true, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
   // urn - computed: true, optional: false, required: false
   public get urn() {
     return this.getStringAttribute('urn');
@@ -563,6 +581,7 @@ export class DataDigitaloceanLoadbalancer extends cdktf.TerraformDataSource {
     return {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
+      type: cdktf.stringToTerraform(this._type),
     };
   }
 }
