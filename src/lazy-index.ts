@@ -14,6 +14,9 @@ Object.defineProperty(exports, 'databaseCluster', { get: function () { return re
 Object.defineProperty(exports, 'databaseConnectionPool', { get: function () { return require('./database-connection-pool'); } });
 Object.defineProperty(exports, 'databaseDb', { get: function () { return require('./database-db'); } });
 Object.defineProperty(exports, 'databaseFirewall', { get: function () { return require('./database-firewall'); } });
+Object.defineProperty(exports, 'databaseKafkaTopic', { get: function () { return require('./database-kafka-topic'); } });
+Object.defineProperty(exports, 'databaseMysqlConfig', { get: function () { return require('./database-mysql-config'); } });
+Object.defineProperty(exports, 'databaseRedisConfig', { get: function () { return require('./database-redis-config'); } });
 Object.defineProperty(exports, 'databaseReplica', { get: function () { return require('./database-replica'); } });
 Object.defineProperty(exports, 'databaseUser', { get: function () { return require('./database-user'); } });
 Object.defineProperty(exports, 'domain', { get: function () { return require('./domain'); } });
