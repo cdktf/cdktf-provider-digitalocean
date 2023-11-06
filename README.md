@@ -1,7 +1,9 @@
 
-# Terraform CDK digitalocean Provider ~> 2.19
+# Terraform CDK digitalocean Provider tracks ~> 2.19
 
 This repo builds and publishes the Terraform digitalocean Provider bindings for [CDK for Terraform](https://cdk.tf).
+
+Is based directly on digitalocean 2.31.0
 
 ## Available Packages
 
@@ -61,7 +63,7 @@ This project is explicitly not tracking the Terraform digitalocean Provider vers
 These are the upstream dependencies:
 
 - [Terraform CDK](https://cdk.tf)
-- [Terraform digitalocean Provider](https://registry.terraform.io/providers/digitalocean/digitalocean/2.19.0)
+- [Terraform digitalocean Provider](https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0)
     - This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-digitalocean/releases)
 - [Terraform Engine](https://terraform.io)
 
