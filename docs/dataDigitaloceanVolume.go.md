@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanVolume.DataDigitaloceanVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanvolume"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanvolume"
 
 datadigitaloceanvolume.NewDataDigitaloceanVolume(scope Construct, id *string, config DataDigitaloceanVolumeConfig) DataDigitaloceanVolume
 ```
@@ -292,7 +292,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanVolume.DataDigitaloceanVolume.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanvolume"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanvolume"
 
 datadigitaloceanvolume.DataDigitaloceanVolume_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanVolume.DataDigitaloceanVolume.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanvolume"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanvolume"
 
 datadigitaloceanvolume.DataDigitaloceanVolume_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ datadigitaloceanvolume.DataDigitaloceanVolume_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanVolume.DataDigitaloceanVolume.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanvolume"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanvolume"
 
 datadigitaloceanvolume.DataDigitaloceanVolume_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +352,7 @@ datadigitaloceanvolume.DataDigitaloceanVolume_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.dataDigitaloceanVolume.DataDigitaloceanVolume.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanvolume"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanvolume"
 
 datadigitaloceanvolume.DataDigitaloceanVolume_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -713,7 +713,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanVolume.DataDigitaloceanVolumeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanvolume"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanvolume"
 
 &datadigitaloceanvolume.DataDigitaloceanVolumeConfig {
 	Connection: interface{},
