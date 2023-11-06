@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databasekafkatopic"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasekafkatopic"
 
 databasekafkatopic.NewDatabaseKafkaTopic(scope Construct, id *string, config DatabaseKafkaTopicConfig) DatabaseKafkaTopic
 ```
@@ -373,7 +373,7 @@ func ResetReplicationFactor()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databasekafkatopic"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasekafkatopic"
 
 databasekafkatopic.DatabaseKafkaTopic_IsConstruct(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databasekafkatopic"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasekafkatopic"
 
 databasekafkatopic.DatabaseKafkaTopic_IsTerraformElement(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ databasekafkatopic.DatabaseKafkaTopic_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databasekafkatopic"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasekafkatopic"
 
 databasekafkatopic.DatabaseKafkaTopic_IsTerraformResource(x interface{}) *bool
 ```
@@ -433,7 +433,7 @@ databasekafkatopic.DatabaseKafkaTopic_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databasekafkatopic"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasekafkatopic"
 
 databasekafkatopic.DatabaseKafkaTopic_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -805,7 +805,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databasekafkatopic"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasekafkatopic"
 
 &databasekafkatopic.DatabaseKafkaTopicConfig {
 	Connection: interface{},
@@ -996,7 +996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databasekafkatopic"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasekafkatopic"
 
 &databasekafkatopic.DatabaseKafkaTopicConfigA {
 	CleanupPolicy: *string,
@@ -1352,7 +1352,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databasekafkatopic"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasekafkatopic"
 
 databasekafkatopic.NewDatabaseKafkaTopicConfigAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseKafkaTopicConfigAList
 ```
@@ -1495,7 +1495,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databasekafkatopic"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasekafkatopic"
 
 databasekafkatopic.NewDatabaseKafkaTopicConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseKafkaTopicConfigAOutputReference
 ```
