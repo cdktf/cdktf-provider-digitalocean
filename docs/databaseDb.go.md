@@ -1,6 +1,6 @@
 # `digitalocean_database_db`
 
-Refer to the Terraform Registory for docs: [`digitalocean_database_db`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/database_db).
+Refer to the Terraform Registory for docs: [`digitalocean_database_db`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/database_db).
 
 # `databaseDb` Submodule <a name="`databaseDb` Submodule" id="@cdktf/provider-digitalocean.databaseDb"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`digitalocean_database_db`](https://
 
 ### DatabaseDb <a name="DatabaseDb" id="@cdktf/provider-digitalocean.databaseDb.DatabaseDb"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/database_db digitalocean_database_db}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/database_db digitalocean_database_db}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databaseDb.DatabaseDb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databasedb"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasedb"
 
 databasedb.NewDatabaseDb(scope Construct, id *string, config DatabaseDbConfig) DatabaseDb
 ```
@@ -339,7 +339,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.databaseDb.DatabaseDb.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databasedb"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasedb"
 
 databasedb.DatabaseDb_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.databaseDb.DatabaseDb.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databasedb"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasedb"
 
 databasedb.DatabaseDb_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ databasedb.DatabaseDb_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.databaseDb.DatabaseDb.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databasedb"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasedb"
 
 databasedb.DatabaseDb_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ databasedb.DatabaseDb_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.databaseDb.DatabaseDb.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databasedb"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasedb"
 
 databasedb.DatabaseDb_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -428,7 +428,7 @@ The construct id used in the generated config for the DatabaseDb to import.
 
 The id of the existing DatabaseDb that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/database_db#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/database_db#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -694,7 +694,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.databaseDb.DatabaseDbConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databasedb"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasedb"
 
 &databasedb.DatabaseDbConfig {
 	Connection: interface{},
@@ -721,9 +721,9 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databas
 | <code><a href="#@cdktf/provider-digitalocean.databaseDb.DatabaseDbConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseDb.DatabaseDbConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseDb.DatabaseDbConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseDb.DatabaseDbConfig.property.clusterId">ClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/database_db#cluster_id DatabaseDb#cluster_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseDb.DatabaseDbConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/database_db#name DatabaseDb#name}. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseDb.DatabaseDbConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/database_db#id DatabaseDb#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseDb.DatabaseDbConfig.property.clusterId">ClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/database_db#cluster_id DatabaseDb#cluster_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseDb.DatabaseDbConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/database_db#name DatabaseDb#name}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseDb.DatabaseDbConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/database_db#id DatabaseDb#id}. |
 
 ---
 
@@ -805,7 +805,7 @@ ClusterId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/database_db#cluster_id DatabaseDb#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/database_db#cluster_id DatabaseDb#cluster_id}.
 
 ---
 
@@ -817,7 +817,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/database_db#name DatabaseDb#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/database_db#name DatabaseDb#name}.
 
 ---
 
@@ -829,7 +829,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/database_db#id DatabaseDb#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/database_db#id DatabaseDb#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

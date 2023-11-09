@@ -1,6 +1,6 @@
 # `data_digitalocean_reserved_ip`
 
-Refer to the Terraform Registory for docs: [`data_digitalocean_reserved_ip`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/reserved_ip).
+Refer to the Terraform Registory for docs: [`data_digitalocean_reserved_ip`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/reserved_ip).
 
 # `dataDigitaloceanReservedIp` Submodule <a name="`dataDigitaloceanReservedIp` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanReservedIp"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_digitalocean_reserved_ip`](htt
 
 ### DataDigitaloceanReservedIp <a name="DataDigitaloceanReservedIp" id="@cdktf/provider-digitalocean.dataDigitaloceanReservedIp.DataDigitaloceanReservedIp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/reserved_ip digitalocean_reserved_ip}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/reserved_ip digitalocean_reserved_ip}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanReservedIp.DataDigitaloceanReservedIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanreservedip"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanreservedip"
 
 datadigitaloceanreservedip.NewDataDigitaloceanReservedIp(scope Construct, id *string, config DataDigitaloceanReservedIpConfig) DataDigitaloceanReservedIp
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanReservedIp.DataDigitaloceanReservedIp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanreservedip"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanreservedip"
 
 datadigitaloceanreservedip.DataDigitaloceanReservedIp_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanReservedIp.DataDigitaloceanReservedIp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanreservedip"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanreservedip"
 
 datadigitaloceanreservedip.DataDigitaloceanReservedIp_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ datadigitaloceanreservedip.DataDigitaloceanReservedIp_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanReservedIp.DataDigitaloceanReservedIp.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanreservedip"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanreservedip"
 
 datadigitaloceanreservedip.DataDigitaloceanReservedIp_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ datadigitaloceanreservedip.DataDigitaloceanReservedIp_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.dataDigitaloceanReservedIp.DataDigitaloceanReservedIp.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanreservedip"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanreservedip"
 
 datadigitaloceanreservedip.DataDigitaloceanReservedIp_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataDigitaloceanReservedIp
 
 The id of the existing DataDigitaloceanReservedIp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/reserved_ip#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/reserved_ip#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -622,7 +622,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanReservedIp.DataDigitaloceanReservedIpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanreservedip"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanreservedip"
 
 &datadigitaloceanreservedip.DataDigitaloceanReservedIpConfig {
 	Connection: interface{},
@@ -649,7 +649,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanReservedIp.DataDigitaloceanReservedIpConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanReservedIp.DataDigitaloceanReservedIpConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanReservedIp.DataDigitaloceanReservedIpConfig.property.ipAddress">IpAddress</a></code> | <code>*string</code> | reserved ip address. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanReservedIp.DataDigitaloceanReservedIpConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/reserved_ip#id DataDigitaloceanReservedIp#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanReservedIp.DataDigitaloceanReservedIpConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/reserved_ip#id DataDigitaloceanReservedIp#id}. |
 
 ---
 
@@ -733,7 +733,7 @@ IpAddress *string
 
 reserved ip address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/reserved_ip#ip_address DataDigitaloceanReservedIp#ip_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/reserved_ip#ip_address DataDigitaloceanReservedIp#ip_address}
 
 ---
 
@@ -745,7 +745,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/reserved_ip#id DataDigitaloceanReservedIp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/reserved_ip#id DataDigitaloceanReservedIp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

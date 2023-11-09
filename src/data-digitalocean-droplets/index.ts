@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/droplets
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/droplets
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataDigitaloceanDropletsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/droplets#id DataDigitaloceanDroplets#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/droplets#id DataDigitaloceanDroplets#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +17,13 @@ export interface DataDigitaloceanDropletsConfig extends cdktf.TerraformMetaArgum
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/droplets#filter DataDigitaloceanDroplets#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/droplets#filter DataDigitaloceanDroplets#filter}
   */
   readonly filter?: DataDigitaloceanDropletsFilter[] | cdktf.IResolvable;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/droplets#sort DataDigitaloceanDroplets#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/droplets#sort DataDigitaloceanDroplets#sort}
   */
   readonly sort?: DataDigitaloceanDropletsSort[] | cdktf.IResolvable;
 }
@@ -218,19 +213,19 @@ export class DataDigitaloceanDropletsDropletsList extends cdktf.ComplexList {
 }
 export interface DataDigitaloceanDropletsFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/droplets#all DataDigitaloceanDroplets#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/droplets#all DataDigitaloceanDroplets#all}
   */
   readonly all?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/droplets#key DataDigitaloceanDroplets#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/droplets#key DataDigitaloceanDroplets#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/droplets#match_by DataDigitaloceanDroplets#match_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/droplets#match_by DataDigitaloceanDroplets#match_by}
   */
   readonly matchBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/droplets#values DataDigitaloceanDroplets#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/droplets#values DataDigitaloceanDroplets#values}
   */
   readonly values: string[];
 }
@@ -390,11 +385,11 @@ export class DataDigitaloceanDropletsFilterList extends cdktf.ComplexList {
 }
 export interface DataDigitaloceanDropletsSort {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/droplets#direction DataDigitaloceanDroplets#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/droplets#direction DataDigitaloceanDroplets#direction}
   */
   readonly direction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/droplets#key DataDigitaloceanDroplets#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/droplets#key DataDigitaloceanDroplets#key}
   */
   readonly key: string;
 }
@@ -511,7 +506,7 @@ export class DataDigitaloceanDropletsSortList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/droplets digitalocean_droplets}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/droplets digitalocean_droplets}
 */
 export class DataDigitaloceanDroplets extends cdktf.TerraformDataSource {
 
@@ -527,7 +522,7 @@ export class DataDigitaloceanDroplets extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDigitaloceanDroplets resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDigitaloceanDroplets to import
-  * @param importFromId The id of the existing DataDigitaloceanDroplets that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/droplets#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDigitaloceanDroplets that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/droplets#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDigitaloceanDroplets to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -539,7 +534,7 @@ export class DataDigitaloceanDroplets extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/droplets digitalocean_droplets} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/droplets digitalocean_droplets} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -550,7 +545,7 @@ export class DataDigitaloceanDroplets extends cdktf.TerraformDataSource {
       terraformResourceType: 'digitalocean_droplets',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.31.0',
+        providerVersion: '2.32.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,

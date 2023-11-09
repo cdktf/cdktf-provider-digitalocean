@@ -1,6 +1,6 @@
 # `digitalocean_app`
 
-Refer to the Terraform Registory for docs: [`digitalocean_app`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app).
+Refer to the Terraform Registory for docs: [`digitalocean_app`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app).
 
 # `app` Submodule <a name="`app` Submodule" id="@cdktf/provider-digitalocean.app"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`digitalocean_app`](https://registry
 
 ### App <a name="App" id="@cdktf/provider-digitalocean.app.App"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app digitalocean_app}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app digitalocean_app}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.App.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewApp(scope Construct, id *string, config AppConfig) App
 ```
@@ -379,7 +379,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.app.App.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.App_IsConstruct(x interface{}) *bool
 ```
@@ -411,7 +411,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.app.App.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.App_IsTerraformElement(x interface{}) *bool
 ```
@@ -425,7 +425,7 @@ app.App_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.app.App.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.App_IsTerraformResource(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ app.App_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.app.App.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.App_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -468,7 +468,7 @@ The construct id used in the generated config for the App to import.
 
 The id of the existing App that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -800,7 +800,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppConfig {
 	Connection: interface{},
@@ -811,8 +811,8 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
-	Spec: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpec,
-	Timeouts: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppTimeouts,
+	Spec: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpec,
+	Timeouts: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppTimeouts,
 }
 ```
 
@@ -827,7 +827,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#id App#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#id App#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.spec">Spec</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec">AppSpec</a></code> | spec block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppTimeouts">AppTimeouts</a></code> | timeouts block. |
 
@@ -911,7 +911,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#id App#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#id App#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -928,7 +928,7 @@ Spec AppSpec
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#spec App#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#spec App#spec}
 
 ---
 
@@ -942,7 +942,7 @@ Timeouts AppTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#timeouts App#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#timeouts App#timeouts}
 
 ---
 
@@ -951,7 +951,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpec {
 	Name: *string,
@@ -960,8 +960,9 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
 	Domain: interface{},
 	Domains: *[]*string,
 	Env: interface{},
+	Features: *[]*string,
 	Function: interface{},
-	Ingress: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecIngress,
+	Ingress: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecIngress,
 	Job: interface{},
 	Region: *string,
 	Service: interface{},
@@ -978,8 +979,9 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.alert">Alert</a></code> | <code>interface{}</code> | alert block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.database">Database</a></code> | <code>interface{}</code> | database block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.domain">Domain</a></code> | <code>interface{}</code> | domain block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.domains">Domains</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#domains App#domains}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.domains">Domains</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#domains App#domains}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.env">Env</a></code> | <code>interface{}</code> | env block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.features">Features</a></code> | <code>*[]*string</code> | List of features which is applied to the app. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.function">Function</a></code> | <code>interface{}</code> | function block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.ingress">Ingress</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngress">AppSpecIngress</a></code> | ingress block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.job">Job</a></code> | <code>interface{}</code> | job block. |
@@ -1000,7 +1002,7 @@ Name *string
 
 The name of the app. Must be unique across all apps in the same account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#name App#name}
 
 ---
 
@@ -1014,7 +1016,7 @@ Alert interface{}
 
 alert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#alert App#alert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#alert App#alert}
 
 ---
 
@@ -1028,7 +1030,7 @@ Database interface{}
 
 database block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#database App#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#database App#database}
 
 ---
 
@@ -1042,7 +1044,7 @@ Domain interface{}
 
 domain block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#domain App#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#domain App#domain}
 
 ---
 
@@ -1054,7 +1056,7 @@ Domains *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#domains App#domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#domains App#domains}.
 
 ---
 
@@ -1068,7 +1070,21 @@ Env interface{}
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#env App#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#env App#env}
+
+---
+
+##### `Features`<sup>Optional</sup> <a name="Features" id="@cdktf/provider-digitalocean.app.AppSpec.property.features"></a>
+
+```go
+Features *[]*string
+```
+
+- *Type:* *[]*string
+
+List of features which is applied to the app.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#features App#features}
 
 ---
 
@@ -1082,7 +1098,7 @@ Function interface{}
 
 function block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#function App#function}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#function App#function}
 
 ---
 
@@ -1096,7 +1112,7 @@ Ingress AppSpecIngress
 
 ingress block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#ingress App#ingress}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#ingress App#ingress}
 
 ---
 
@@ -1110,7 +1126,7 @@ Job interface{}
 
 job block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#job App#job}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#job App#job}
 
 ---
 
@@ -1124,7 +1140,7 @@ Region *string
 
 The slug for the DigitalOcean data center region hosting the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#region App#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#region App#region}
 
 ---
 
@@ -1138,7 +1154,7 @@ Service interface{}
 
 service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#service App#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#service App#service}
 
 ---
 
@@ -1152,7 +1168,7 @@ StaticSite interface{}
 
 static_site block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#static_site App#static_site}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#static_site App#static_site}
 
 ---
 
@@ -1166,7 +1182,7 @@ Worker interface{}
 
 worker block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#worker App#worker}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#worker App#worker}
 
 ---
 
@@ -1175,7 +1191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecAlert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecAlert {
 	Rule: *string,
@@ -1187,8 +1203,8 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlert.property.rule">Rule</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#rule App#rule}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlert.property.disabled">Disabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlert.property.rule">Rule</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#rule App#rule}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlert.property.disabled">Disabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -1200,7 +1216,7 @@ Rule *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#rule App#rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#rule App#rule}.
 
 ---
 
@@ -1212,7 +1228,7 @@ Disabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#disabled App#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#disabled App#disabled}.
 
 ---
 
@@ -1221,7 +1237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecDatabase {
 	ClusterName: *string,
@@ -1260,7 +1276,7 @@ The name of the underlying DigitalOcean DBaaS cluster.
 
 This is required for production databases. For dev databases, if cluster_name is not set, a new cluster will be provisioned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#cluster_name App#cluster_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#cluster_name App#cluster_name}
 
 ---
 
@@ -1274,7 +1290,7 @@ DbName *string
 
 The name of the MySQL or PostgreSQL database to configure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#db_name App#db_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#db_name App#db_name}
 
 ---
 
@@ -1288,7 +1304,7 @@ DbUser *string
 
 The name of the MySQL or PostgreSQL user to configure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#db_user App#db_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#db_user App#db_user}
 
 ---
 
@@ -1302,7 +1318,7 @@ Engine *string
 
 The database engine to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#engine App#engine}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#engine App#engine}
 
 ---
 
@@ -1316,7 +1332,7 @@ Name *string
 
 The name of the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#name App#name}
 
 ---
 
@@ -1330,7 +1346,7 @@ Production interface{}
 
 Whether this is a production or dev database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#production App#production}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#production App#production}
 
 ---
 
@@ -1344,7 +1360,7 @@ Version *string
 
 The version of the database engine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#version App#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#version App#version}
 
 ---
 
@@ -1353,7 +1369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecDomain {
 	Name: *string,
@@ -1384,7 +1400,7 @@ Name *string
 
 The hostname for the domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#name App#name}
 
 ---
 
@@ -1398,7 +1414,7 @@ Type *string
 
 The type of the domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#type App#type}
 
 ---
 
@@ -1412,7 +1428,7 @@ Wildcard interface{}
 
 Indicates whether the domain includes all sub-domains, in addition to the given domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#wildcard App#wildcard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#wildcard App#wildcard}
 
 ---
 
@@ -1426,7 +1442,7 @@ Zone *string
 
 If the domain uses DigitalOcean DNS and you would like App Platform to automatically manage it for you, set this to the name of the domain on your account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#zone App#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#zone App#zone}
 
 ---
 
@@ -1435,7 +1451,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecEnv {
 	Key: *string,
@@ -1466,7 +1482,7 @@ Key *string
 
 The name of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#key App#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#key App#key}
 
 ---
 
@@ -1480,7 +1496,7 @@ Scope *string
 
 The visibility scope of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#scope App#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#scope App#scope}
 
 ---
 
@@ -1494,7 +1510,7 @@ Type *string
 
 The type of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#type App#type}
 
 ---
 
@@ -1508,7 +1524,7 @@ Value *string
 
 The value of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#value App#value}
 
 ---
 
@@ -1517,16 +1533,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecFunction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecFunction {
 	Name: *string,
 	Alert: interface{},
-	Cors: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecFunctionCors,
+	Cors: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecFunctionCors,
 	Env: interface{},
-	Git: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecFunctionGit,
-	Github: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecFunctionGithub,
-	Gitlab: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecFunctionGitlab,
+	Git: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecFunctionGit,
+	Github: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecFunctionGithub,
+	Gitlab: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecFunctionGitlab,
 	LogDestination: interface{},
 	Routes: interface{},
 	SourceDir: *string,
@@ -1560,7 +1576,7 @@ Name *string
 
 The name of the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#name App#name}
 
 ---
 
@@ -1574,7 +1590,7 @@ Alert interface{}
 
 alert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#alert App#alert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#alert App#alert}
 
 ---
 
@@ -1588,7 +1604,7 @@ Cors AppSpecFunctionCors
 
 cors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#cors App#cors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#cors App#cors}
 
 ---
 
@@ -1602,7 +1618,7 @@ Env interface{}
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#env App#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#env App#env}
 
 ---
 
@@ -1616,7 +1632,7 @@ Git AppSpecFunctionGit
 
 git block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#git App#git}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#git App#git}
 
 ---
 
@@ -1630,7 +1646,7 @@ Github AppSpecFunctionGithub
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#github App#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#github App#github}
 
 ---
 
@@ -1644,7 +1660,7 @@ Gitlab AppSpecFunctionGitlab
 
 gitlab block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#gitlab App#gitlab}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#gitlab App#gitlab}
 
 ---
 
@@ -1658,7 +1674,7 @@ LogDestination interface{}
 
 log_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#log_destination App#log_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#log_destination App#log_destination}
 
 ---
 
@@ -1672,7 +1688,7 @@ Routes interface{}
 
 routes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#routes App#routes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#routes App#routes}
 
 ---
 
@@ -1686,7 +1702,7 @@ SourceDir *string
 
 An optional path to the working directory to use for the build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#source_dir App#source_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#source_dir App#source_dir}
 
 ---
 
@@ -1695,7 +1711,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecFunctionAlert {
 	Operator: *string,
@@ -1710,11 +1726,11 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#operator App#operator}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.rule">Rule</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#rule App#rule}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.window">Window</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#window App#window}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.disabled">Disabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#operator App#operator}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.rule">Rule</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#rule App#rule}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#value App#value}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.window">Window</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#window App#window}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.disabled">Disabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -1726,7 +1742,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#operator App#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#operator App#operator}.
 
 ---
 
@@ -1738,7 +1754,7 @@ Rule *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#rule App#rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#rule App#rule}.
 
 ---
 
@@ -1750,7 +1766,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#value App#value}.
 
 ---
 
@@ -1762,7 +1778,7 @@ Window *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#window App#window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#window App#window}.
 
 ---
 
@@ -1774,7 +1790,7 @@ Disabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#disabled App#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#disabled App#disabled}.
 
 ---
 
@@ -1783,13 +1799,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecFunctionCors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecFunctionCors {
 	AllowCredentials: interface{},
 	AllowHeaders: *[]*string,
 	AllowMethods: *[]*string,
-	AllowOrigins: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecFunctionCorsAllowOrigins,
+	AllowOrigins: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecFunctionCorsAllowOrigins,
 	ExposeHeaders: *[]*string,
 	MaxAge: *string,
 }
@@ -1820,7 +1836,7 @@ Whether browsers should expose the response to the client-side JavaScript code w
 
 This configures the Access-Control-Allow-Credentials header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_credentials App#allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#allow_credentials App#allow_credentials}
 
 ---
 
@@ -1834,7 +1850,7 @@ AllowHeaders *[]*string
 
 The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_headers App#allow_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#allow_headers App#allow_headers}
 
 ---
 
@@ -1848,7 +1864,7 @@ AllowMethods *[]*string
 
 The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_methods App#allow_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#allow_methods App#allow_methods}
 
 ---
 
@@ -1862,7 +1878,7 @@ AllowOrigins AppSpecFunctionCorsAllowOrigins
 
 allow_origins block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_origins App#allow_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#allow_origins App#allow_origins}
 
 ---
 
@@ -1876,7 +1892,7 @@ ExposeHeaders *[]*string
 
 The set of HTTP response headers that browsers are allowed to access. This configures the Access-Control-Expose-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#expose_headers App#expose_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#expose_headers App#expose_headers}
 
 ---
 
@@ -1892,7 +1908,7 @@ An optional duration specifying how long browsers can cache the results of a pre
 
 This configures the Access-Control-Max-Age header. Example: `5h30m`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#max_age App#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#max_age App#max_age}
 
 ---
 
@@ -1901,7 +1917,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecFunctionCorsAllowOrigins.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecFunctionCorsAllowOrigins {
 	Exact: *string,
@@ -1930,7 +1946,7 @@ Exact *string
 
 Exact string match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#exact App#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#exact App#exact}
 
 ---
 
@@ -1944,7 +1960,7 @@ Prefix *string
 
 Prefix-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#prefix App#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#prefix App#prefix}
 
 ---
 
@@ -1958,7 +1974,7 @@ Regex *string
 
 RE2 style regex-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#regex App#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#regex App#regex}
 
 ---
 
@@ -1967,7 +1983,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecFunctionEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecFunctionEnv {
 	Key: *string,
@@ -1998,7 +2014,7 @@ Key *string
 
 The name of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#key App#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#key App#key}
 
 ---
 
@@ -2012,7 +2028,7 @@ Scope *string
 
 The visibility scope of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#scope App#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#scope App#scope}
 
 ---
 
@@ -2026,7 +2042,7 @@ Type *string
 
 The type of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#type App#type}
 
 ---
 
@@ -2040,7 +2056,7 @@ Value *string
 
 The value of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#value App#value}
 
 ---
 
@@ -2049,7 +2065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecFunctionGit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecFunctionGit {
 	Branch: *string,
@@ -2076,7 +2092,7 @@ Branch *string
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -2090,7 +2106,7 @@ RepoCloneUrl *string
 
 The clone URL of the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo_clone_url App#repo_clone_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#repo_clone_url App#repo_clone_url}
 
 ---
 
@@ -2099,7 +2115,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecFunctionGithub.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecFunctionGithub {
 	Branch: *string,
@@ -2128,7 +2144,7 @@ Branch *string
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -2142,7 +2158,7 @@ DeployOnPush interface{}
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -2156,7 +2172,7 @@ Repo *string
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -2165,7 +2181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecFunctionGitlab.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecFunctionGitlab {
 	Branch: *string,
@@ -2194,7 +2210,7 @@ Branch *string
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -2208,7 +2224,7 @@ DeployOnPush interface{}
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -2222,7 +2238,7 @@ Repo *string
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -2231,13 +2247,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecFunctionLogDestination {
 	Name: *string,
-	Datadog: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecFunctionLogDestinationDatadog,
-	Logtail: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecFunctionLogDestinationLogtail,
-	Papertrail: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecFunctionLogDestinationPapertrail,
+	Datadog: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecFunctionLogDestinationDatadog,
+	Logtail: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecFunctionLogDestinationLogtail,
+	Papertrail: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecFunctionLogDestinationPapertrail,
 }
 ```
 
@@ -2262,7 +2278,7 @@ Name *string
 
 Name of the log destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#name App#name}
 
 ---
 
@@ -2276,7 +2292,7 @@ Datadog AppSpecFunctionLogDestinationDatadog
 
 datadog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#datadog App#datadog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#datadog App#datadog}
 
 ---
 
@@ -2290,7 +2306,7 @@ Logtail AppSpecFunctionLogDestinationLogtail
 
 logtail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#logtail App#logtail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#logtail App#logtail}
 
 ---
 
@@ -2304,7 +2320,7 @@ Papertrail AppSpecFunctionLogDestinationPapertrail
 
 papertrail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#papertrail App#papertrail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#papertrail App#papertrail}
 
 ---
 
@@ -2313,7 +2329,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationDatadog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecFunctionLogDestinationDatadog {
 	ApiKey: *string,
@@ -2340,7 +2356,7 @@ ApiKey *string
 
 Datadog API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#api_key App#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#api_key App#api_key}
 
 ---
 
@@ -2354,7 +2370,7 @@ Endpoint *string
 
 Datadog HTTP log intake endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -2363,7 +2379,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationLogtail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecFunctionLogDestinationLogtail {
 	Token: *string,
@@ -2388,7 +2404,7 @@ Token *string
 
 Logtail token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#token App#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#token App#token}
 
 ---
 
@@ -2397,7 +2413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationPapertrail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecFunctionLogDestinationPapertrail {
 	Endpoint: *string,
@@ -2422,7 +2438,7 @@ Endpoint *string
 
 Papertrail syslog endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -2431,7 +2447,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecFunctionRoutes {
 	Path: *string,
@@ -2460,7 +2476,7 @@ Path specifies an route by HTTP path prefix.
 
 Paths must start with / and must be unique within the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#path App#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#path App#path}
 
 ---
 
@@ -2474,7 +2490,7 @@ PreservePathPrefix interface{}
 
 An optional flag to preserve the path that is forwarded to the backend service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
 
 ---
 
@@ -2483,7 +2499,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecIngress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecIngress {
 	Rule: interface{},
@@ -2508,7 +2524,7 @@ Rule interface{}
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#rule App#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#rule App#rule}
 
 ---
 
@@ -2517,13 +2533,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecIngressRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecIngressRule {
-	Component: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecIngressRuleComponent,
-	Cors: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecIngressRuleCors,
-	Match: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecIngressRuleMatch,
-	Redirect: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecIngressRuleRedirect,
+	Component: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecIngressRuleComponent,
+	Cors: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecIngressRuleCors,
+	Match: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecIngressRuleMatch,
+	Redirect: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecIngressRuleRedirect,
 }
 ```
 
@@ -2548,7 +2564,7 @@ Component AppSpecIngressRuleComponent
 
 component block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#component App#component}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#component App#component}
 
 ---
 
@@ -2562,7 +2578,7 @@ Cors AppSpecIngressRuleCors
 
 cors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#cors App#cors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#cors App#cors}
 
 ---
 
@@ -2576,7 +2592,7 @@ Match AppSpecIngressRuleMatch
 
 match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#match App#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#match App#match}
 
 ---
 
@@ -2590,7 +2606,7 @@ Redirect AppSpecIngressRuleRedirect
 
 redirect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#redirect App#redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#redirect App#redirect}
 
 ---
 
@@ -2599,7 +2615,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecIngressRuleComponent {
 	Name: *string,
@@ -2612,9 +2628,9 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.preservePathPrefix">PreservePathPrefix</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.rewrite">Rewrite</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#rewrite App#rewrite}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#name App#name}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.preservePathPrefix">PreservePathPrefix</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.rewrite">Rewrite</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#rewrite App#rewrite}. |
 
 ---
 
@@ -2626,7 +2642,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#name App#name}.
 
 ---
 
@@ -2638,7 +2654,7 @@ PreservePathPrefix interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}.
 
 ---
 
@@ -2650,7 +2666,7 @@ Rewrite *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#rewrite App#rewrite}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#rewrite App#rewrite}.
 
 ---
 
@@ -2659,13 +2675,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecIngressRuleCors {
 	AllowCredentials: interface{},
 	AllowHeaders: *[]*string,
 	AllowMethods: *[]*string,
-	AllowOrigins: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecIngressRuleCorsAllowOrigins,
+	AllowOrigins: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecIngressRuleCorsAllowOrigins,
 	ExposeHeaders: *[]*string,
 	MaxAge: *string,
 }
@@ -2696,7 +2712,7 @@ Whether browsers should expose the response to the client-side JavaScript code w
 
 This configures the Access-Control-Allow-Credentials header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_credentials App#allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#allow_credentials App#allow_credentials}
 
 ---
 
@@ -2710,7 +2726,7 @@ AllowHeaders *[]*string
 
 The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_headers App#allow_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#allow_headers App#allow_headers}
 
 ---
 
@@ -2724,7 +2740,7 @@ AllowMethods *[]*string
 
 The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_methods App#allow_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#allow_methods App#allow_methods}
 
 ---
 
@@ -2738,7 +2754,7 @@ AllowOrigins AppSpecIngressRuleCorsAllowOrigins
 
 allow_origins block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_origins App#allow_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#allow_origins App#allow_origins}
 
 ---
 
@@ -2752,7 +2768,7 @@ ExposeHeaders *[]*string
 
 The set of HTTP response headers that browsers are allowed to access. This configures the Access-Control-Expose-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#expose_headers App#expose_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#expose_headers App#expose_headers}
 
 ---
 
@@ -2768,7 +2784,7 @@ An optional duration specifying how long browsers can cache the results of a pre
 
 This configures the Access-Control-Max-Age header. Example: `5h30m`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#max_age App#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#max_age App#max_age}
 
 ---
 
@@ -2777,7 +2793,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOrigins.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecIngressRuleCorsAllowOrigins {
 	Exact: *string,
@@ -2806,7 +2822,7 @@ Exact *string
 
 Exact string match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#exact App#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#exact App#exact}
 
 ---
 
@@ -2820,7 +2836,7 @@ Prefix *string
 
 Prefix-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#prefix App#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#prefix App#prefix}
 
 ---
 
@@ -2834,7 +2850,7 @@ Regex *string
 
 RE2 style regex-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#regex App#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#regex App#regex}
 
 ---
 
@@ -2843,10 +2859,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecIngressRuleMatch {
-	Path: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecIngressRuleMatchPath,
+	Path: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecIngressRuleMatchPath,
 }
 ```
 
@@ -2868,7 +2884,7 @@ Path AppSpecIngressRuleMatchPath
 
 path block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#path App#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#path App#path}
 
 ---
 
@@ -2877,7 +2893,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPath.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecIngressRuleMatchPath {
 	Prefix: *string,
@@ -2888,7 +2904,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPath.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#prefix App#prefix}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPath.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#prefix App#prefix}. |
 
 ---
 
@@ -2900,7 +2916,7 @@ Prefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#prefix App#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#prefix App#prefix}.
 
 ---
 
@@ -2909,7 +2925,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecIngressRuleRedirect {
 	Authority: *string,
@@ -2924,11 +2940,11 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.authority">Authority</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#authority App#authority}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#port App#port}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.redirectCode">RedirectCode</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#redirect_code App#redirect_code}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.scheme">Scheme</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#scheme App#scheme}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.uri">Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#uri App#uri}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.authority">Authority</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#authority App#authority}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#port App#port}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.redirectCode">RedirectCode</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#redirect_code App#redirect_code}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.scheme">Scheme</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#scheme App#scheme}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.uri">Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#uri App#uri}. |
 
 ---
 
@@ -2940,7 +2956,7 @@ Authority *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#authority App#authority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#authority App#authority}.
 
 ---
 
@@ -2952,7 +2968,7 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#port App#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#port App#port}.
 
 ---
 
@@ -2964,7 +2980,7 @@ RedirectCode *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#redirect_code App#redirect_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#redirect_code App#redirect_code}.
 
 ---
 
@@ -2976,7 +2992,7 @@ Scheme *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#scheme App#scheme}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#scheme App#scheme}.
 
 ---
 
@@ -2988,7 +3004,7 @@ Uri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#uri App#uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#uri App#uri}.
 
 ---
 
@@ -2997,7 +3013,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecJob.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecJob {
 	Name: *string,
@@ -3006,10 +3022,10 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
 	DockerfilePath: *string,
 	Env: interface{},
 	EnvironmentSlug: *string,
-	Git: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecJobGit,
-	Github: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecJobGithub,
-	Gitlab: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecJobGitlab,
-	Image: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecJobImage,
+	Git: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecJobGit,
+	Github: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecJobGithub,
+	Gitlab: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecJobGitlab,
+	Image: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecJobImage,
 	InstanceCount: *f64,
 	InstanceSizeSlug: *string,
 	Kind: *string,
@@ -3052,7 +3068,7 @@ Name *string
 
 The name of the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#name App#name}
 
 ---
 
@@ -3066,7 +3082,7 @@ Alert interface{}
 
 alert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#alert App#alert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#alert App#alert}
 
 ---
 
@@ -3080,7 +3096,7 @@ BuildCommand *string
 
 An optional build command to run while building this component from source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#build_command App#build_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#build_command App#build_command}
 
 ---
 
@@ -3094,7 +3110,7 @@ DockerfilePath *string
 
 The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#dockerfile_path App#dockerfile_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#dockerfile_path App#dockerfile_path}
 
 ---
 
@@ -3108,7 +3124,7 @@ Env interface{}
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#env App#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#env App#env}
 
 ---
 
@@ -3122,7 +3138,7 @@ EnvironmentSlug *string
 
 An environment slug describing the type of this app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#environment_slug App#environment_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#environment_slug App#environment_slug}
 
 ---
 
@@ -3136,7 +3152,7 @@ Git AppSpecJobGit
 
 git block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#git App#git}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#git App#git}
 
 ---
 
@@ -3150,7 +3166,7 @@ Github AppSpecJobGithub
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#github App#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#github App#github}
 
 ---
 
@@ -3164,7 +3180,7 @@ Gitlab AppSpecJobGitlab
 
 gitlab block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#gitlab App#gitlab}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#gitlab App#gitlab}
 
 ---
 
@@ -3178,7 +3194,7 @@ Image AppSpecJobImage
 
 image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#image App#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#image App#image}
 
 ---
 
@@ -3192,7 +3208,7 @@ InstanceCount *f64
 
 The amount of instances that this component should be scaled to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#instance_count App#instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#instance_count App#instance_count}
 
 ---
 
@@ -3206,7 +3222,7 @@ InstanceSizeSlug *string
 
 The instance size to use for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#instance_size_slug App#instance_size_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#instance_size_slug App#instance_size_slug}
 
 ---
 
@@ -3220,7 +3236,7 @@ Kind *string
 
 The type of job and when it will be run during the deployment process.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#kind App#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#kind App#kind}
 
 ---
 
@@ -3234,7 +3250,7 @@ LogDestination interface{}
 
 log_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#log_destination App#log_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#log_destination App#log_destination}
 
 ---
 
@@ -3248,7 +3264,7 @@ RunCommand *string
 
 An optional run command to override the component's default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#run_command App#run_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#run_command App#run_command}
 
 ---
 
@@ -3262,7 +3278,7 @@ SourceDir *string
 
 An optional path to the working directory to use for the build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#source_dir App#source_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#source_dir App#source_dir}
 
 ---
 
@@ -3271,7 +3287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecJobAlert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecJobAlert {
 	Operator: *string,
@@ -3286,11 +3302,11 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#operator App#operator}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.rule">Rule</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#rule App#rule}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.window">Window</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#window App#window}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.disabled">Disabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#operator App#operator}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.rule">Rule</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#rule App#rule}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#value App#value}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.window">Window</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#window App#window}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.disabled">Disabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -3302,7 +3318,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#operator App#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#operator App#operator}.
 
 ---
 
@@ -3314,7 +3330,7 @@ Rule *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#rule App#rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#rule App#rule}.
 
 ---
 
@@ -3326,7 +3342,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#value App#value}.
 
 ---
 
@@ -3338,7 +3354,7 @@ Window *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#window App#window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#window App#window}.
 
 ---
 
@@ -3350,7 +3366,7 @@ Disabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#disabled App#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#disabled App#disabled}.
 
 ---
 
@@ -3359,7 +3375,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecJobEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecJobEnv {
 	Key: *string,
@@ -3390,7 +3406,7 @@ Key *string
 
 The name of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#key App#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#key App#key}
 
 ---
 
@@ -3404,7 +3420,7 @@ Scope *string
 
 The visibility scope of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#scope App#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#scope App#scope}
 
 ---
 
@@ -3418,7 +3434,7 @@ Type *string
 
 The type of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#type App#type}
 
 ---
 
@@ -3432,7 +3448,7 @@ Value *string
 
 The value of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#value App#value}
 
 ---
 
@@ -3441,7 +3457,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecJobGit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecJobGit {
 	Branch: *string,
@@ -3468,7 +3484,7 @@ Branch *string
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -3482,7 +3498,7 @@ RepoCloneUrl *string
 
 The clone URL of the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo_clone_url App#repo_clone_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#repo_clone_url App#repo_clone_url}
 
 ---
 
@@ -3491,7 +3507,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecJobGithub.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecJobGithub {
 	Branch: *string,
@@ -3520,7 +3536,7 @@ Branch *string
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -3534,7 +3550,7 @@ DeployOnPush interface{}
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -3548,7 +3564,7 @@ Repo *string
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -3557,7 +3573,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecJobGitlab.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecJobGitlab {
 	Branch: *string,
@@ -3586,7 +3602,7 @@ Branch *string
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -3600,7 +3616,7 @@ DeployOnPush interface{}
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -3614,7 +3630,7 @@ Repo *string
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -3623,7 +3639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecJobImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecJobImage {
 	RegistryType: *string,
@@ -3656,7 +3672,7 @@ RegistryType *string
 
 The registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#registry_type App#registry_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#registry_type App#registry_type}
 
 ---
 
@@ -3670,7 +3686,7 @@ Repository *string
 
 The repository name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repository App#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#repository App#repository}
 
 ---
 
@@ -3684,7 +3700,7 @@ DeployOnPush interface{}
 
 deploy_on_push block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -3698,7 +3714,7 @@ Registry *string
 
 The registry name. Must be left empty for the DOCR registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#registry App#registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#registry App#registry}
 
 ---
 
@@ -3712,7 +3728,7 @@ Tag *string
 
 The repository tag. Defaults to latest if not provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#tag App#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#tag App#tag}
 
 ---
 
@@ -3721,7 +3737,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecJobImageDeployOnPush {
 	Enabled: interface{},
@@ -3746,7 +3762,7 @@ Enabled interface{}
 
 Whether to automatically deploy images pushed to DOCR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#enabled App#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#enabled App#enabled}
 
 ---
 
@@ -3755,13 +3771,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecJobLogDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecJobLogDestination {
 	Name: *string,
-	Datadog: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecJobLogDestinationDatadog,
-	Logtail: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecJobLogDestinationLogtail,
-	Papertrail: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecJobLogDestinationPapertrail,
+	Datadog: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecJobLogDestinationDatadog,
+	Logtail: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecJobLogDestinationLogtail,
+	Papertrail: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecJobLogDestinationPapertrail,
 }
 ```
 
@@ -3786,7 +3802,7 @@ Name *string
 
 Name of the log destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#name App#name}
 
 ---
 
@@ -3800,7 +3816,7 @@ Datadog AppSpecJobLogDestinationDatadog
 
 datadog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#datadog App#datadog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#datadog App#datadog}
 
 ---
 
@@ -3814,7 +3830,7 @@ Logtail AppSpecJobLogDestinationLogtail
 
 logtail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#logtail App#logtail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#logtail App#logtail}
 
 ---
 
@@ -3828,7 +3844,7 @@ Papertrail AppSpecJobLogDestinationPapertrail
 
 papertrail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#papertrail App#papertrail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#papertrail App#papertrail}
 
 ---
 
@@ -3837,7 +3853,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationDatadog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecJobLogDestinationDatadog {
 	ApiKey: *string,
@@ -3864,7 +3880,7 @@ ApiKey *string
 
 Datadog API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#api_key App#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#api_key App#api_key}
 
 ---
 
@@ -3878,7 +3894,7 @@ Endpoint *string
 
 Datadog HTTP log intake endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -3887,7 +3903,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationLogtail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecJobLogDestinationLogtail {
 	Token: *string,
@@ -3912,7 +3928,7 @@ Token *string
 
 Logtail token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#token App#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#token App#token}
 
 ---
 
@@ -3921,7 +3937,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationPapertrail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecJobLogDestinationPapertrail {
 	Endpoint: *string,
@@ -3946,7 +3962,7 @@ Endpoint *string
 
 Papertrail syslog endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -3955,22 +3971,22 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecService {
 	Name: *string,
 	Alert: interface{},
 	BuildCommand: *string,
-	Cors: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecServiceCors,
+	Cors: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecServiceCors,
 	DockerfilePath: *string,
 	Env: interface{},
 	EnvironmentSlug: *string,
-	Git: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecServiceGit,
-	Github: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecServiceGithub,
-	Gitlab: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecServiceGitlab,
-	HealthCheck: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecServiceHealthCheck,
+	Git: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecServiceGit,
+	Github: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecServiceGithub,
+	Gitlab: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecServiceGitlab,
+	HealthCheck: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecServiceHealthCheck,
 	HttpPort: *f64,
-	Image: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecServiceImage,
+	Image: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecServiceImage,
 	InstanceCount: *f64,
 	InstanceSizeSlug: *string,
 	InternalPorts: *[]*f64,
@@ -4000,7 +4016,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.image">Image</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImage">AppSpecServiceImage</a></code> | image block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.instanceCount">InstanceCount</a></code> | <code>*f64</code> | The amount of instances that this component should be scaled to. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.instanceSizeSlug">InstanceSizeSlug</a></code> | <code>*string</code> | The instance size to use for this component. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.internalPorts">InternalPorts</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#internal_ports App#internal_ports}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.internalPorts">InternalPorts</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#internal_ports App#internal_ports}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.logDestination">LogDestination</a></code> | <code>interface{}</code> | log_destination block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.routes">Routes</a></code> | <code>interface{}</code> | routes block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.runCommand">RunCommand</a></code> | <code>*string</code> | An optional run command to override the component's default. |
@@ -4018,7 +4034,7 @@ Name *string
 
 The name of the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#name App#name}
 
 ---
 
@@ -4032,7 +4048,7 @@ Alert interface{}
 
 alert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#alert App#alert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#alert App#alert}
 
 ---
 
@@ -4046,7 +4062,7 @@ BuildCommand *string
 
 An optional build command to run while building this component from source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#build_command App#build_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#build_command App#build_command}
 
 ---
 
@@ -4060,7 +4076,7 @@ Cors AppSpecServiceCors
 
 cors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#cors App#cors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#cors App#cors}
 
 ---
 
@@ -4074,7 +4090,7 @@ DockerfilePath *string
 
 The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#dockerfile_path App#dockerfile_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#dockerfile_path App#dockerfile_path}
 
 ---
 
@@ -4088,7 +4104,7 @@ Env interface{}
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#env App#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#env App#env}
 
 ---
 
@@ -4102,7 +4118,7 @@ EnvironmentSlug *string
 
 An environment slug describing the type of this app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#environment_slug App#environment_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#environment_slug App#environment_slug}
 
 ---
 
@@ -4116,7 +4132,7 @@ Git AppSpecServiceGit
 
 git block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#git App#git}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#git App#git}
 
 ---
 
@@ -4130,7 +4146,7 @@ Github AppSpecServiceGithub
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#github App#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#github App#github}
 
 ---
 
@@ -4144,7 +4160,7 @@ Gitlab AppSpecServiceGitlab
 
 gitlab block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#gitlab App#gitlab}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#gitlab App#gitlab}
 
 ---
 
@@ -4158,7 +4174,7 @@ HealthCheck AppSpecServiceHealthCheck
 
 health_check block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#health_check App#health_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#health_check App#health_check}
 
 ---
 
@@ -4172,7 +4188,7 @@ HttpPort *f64
 
 The internal port on which this service's run command will listen.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#http_port App#http_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#http_port App#http_port}
 
 ---
 
@@ -4186,7 +4202,7 @@ Image AppSpecServiceImage
 
 image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#image App#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#image App#image}
 
 ---
 
@@ -4200,7 +4216,7 @@ InstanceCount *f64
 
 The amount of instances that this component should be scaled to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#instance_count App#instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#instance_count App#instance_count}
 
 ---
 
@@ -4214,7 +4230,7 @@ InstanceSizeSlug *string
 
 The instance size to use for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#instance_size_slug App#instance_size_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#instance_size_slug App#instance_size_slug}
 
 ---
 
@@ -4226,7 +4242,7 @@ InternalPorts *[]*f64
 
 - *Type:* *[]*f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#internal_ports App#internal_ports}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#internal_ports App#internal_ports}.
 
 ---
 
@@ -4240,7 +4256,7 @@ LogDestination interface{}
 
 log_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#log_destination App#log_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#log_destination App#log_destination}
 
 ---
 
@@ -4254,7 +4270,7 @@ Routes interface{}
 
 routes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#routes App#routes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#routes App#routes}
 
 ---
 
@@ -4268,7 +4284,7 @@ RunCommand *string
 
 An optional run command to override the component's default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#run_command App#run_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#run_command App#run_command}
 
 ---
 
@@ -4282,7 +4298,7 @@ SourceDir *string
 
 An optional path to the working directory to use for the build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#source_dir App#source_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#source_dir App#source_dir}
 
 ---
 
@@ -4291,7 +4307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecServiceAlert {
 	Operator: *string,
@@ -4306,11 +4322,11 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#operator App#operator}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.rule">Rule</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#rule App#rule}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.window">Window</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#window App#window}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.disabled">Disabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#operator App#operator}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.rule">Rule</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#rule App#rule}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#value App#value}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.window">Window</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#window App#window}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.disabled">Disabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -4322,7 +4338,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#operator App#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#operator App#operator}.
 
 ---
 
@@ -4334,7 +4350,7 @@ Rule *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#rule App#rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#rule App#rule}.
 
 ---
 
@@ -4346,7 +4362,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#value App#value}.
 
 ---
 
@@ -4358,7 +4374,7 @@ Window *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#window App#window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#window App#window}.
 
 ---
 
@@ -4370,7 +4386,7 @@ Disabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#disabled App#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#disabled App#disabled}.
 
 ---
 
@@ -4379,13 +4395,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceCors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecServiceCors {
 	AllowCredentials: interface{},
 	AllowHeaders: *[]*string,
 	AllowMethods: *[]*string,
-	AllowOrigins: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecServiceCorsAllowOrigins,
+	AllowOrigins: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecServiceCorsAllowOrigins,
 	ExposeHeaders: *[]*string,
 	MaxAge: *string,
 }
@@ -4416,7 +4432,7 @@ Whether browsers should expose the response to the client-side JavaScript code w
 
 This configures the Access-Control-Allow-Credentials header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_credentials App#allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#allow_credentials App#allow_credentials}
 
 ---
 
@@ -4430,7 +4446,7 @@ AllowHeaders *[]*string
 
 The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_headers App#allow_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#allow_headers App#allow_headers}
 
 ---
 
@@ -4444,7 +4460,7 @@ AllowMethods *[]*string
 
 The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_methods App#allow_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#allow_methods App#allow_methods}
 
 ---
 
@@ -4458,7 +4474,7 @@ AllowOrigins AppSpecServiceCorsAllowOrigins
 
 allow_origins block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_origins App#allow_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#allow_origins App#allow_origins}
 
 ---
 
@@ -4472,7 +4488,7 @@ ExposeHeaders *[]*string
 
 The set of HTTP response headers that browsers are allowed to access. This configures the Access-Control-Expose-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#expose_headers App#expose_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#expose_headers App#expose_headers}
 
 ---
 
@@ -4488,7 +4504,7 @@ An optional duration specifying how long browsers can cache the results of a pre
 
 This configures the Access-Control-Max-Age header. Example: `5h30m`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#max_age App#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#max_age App#max_age}
 
 ---
 
@@ -4497,7 +4513,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceCorsAllowOrigins.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecServiceCorsAllowOrigins {
 	Exact: *string,
@@ -4526,7 +4542,7 @@ Exact *string
 
 Exact string match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#exact App#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#exact App#exact}
 
 ---
 
@@ -4540,7 +4556,7 @@ Prefix *string
 
 Prefix-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#prefix App#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#prefix App#prefix}
 
 ---
 
@@ -4554,7 +4570,7 @@ Regex *string
 
 RE2 style regex-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#regex App#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#regex App#regex}
 
 ---
 
@@ -4563,7 +4579,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecServiceEnv {
 	Key: *string,
@@ -4594,7 +4610,7 @@ Key *string
 
 The name of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#key App#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#key App#key}
 
 ---
 
@@ -4608,7 +4624,7 @@ Scope *string
 
 The visibility scope of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#scope App#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#scope App#scope}
 
 ---
 
@@ -4622,7 +4638,7 @@ Type *string
 
 The type of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#type App#type}
 
 ---
 
@@ -4636,7 +4652,7 @@ Value *string
 
 The value of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#value App#value}
 
 ---
 
@@ -4645,7 +4661,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceGit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecServiceGit {
 	Branch: *string,
@@ -4672,7 +4688,7 @@ Branch *string
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -4686,7 +4702,7 @@ RepoCloneUrl *string
 
 The clone URL of the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo_clone_url App#repo_clone_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#repo_clone_url App#repo_clone_url}
 
 ---
 
@@ -4695,7 +4711,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceGithub.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecServiceGithub {
 	Branch: *string,
@@ -4724,7 +4740,7 @@ Branch *string
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -4738,7 +4754,7 @@ DeployOnPush interface{}
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -4752,7 +4768,7 @@ Repo *string
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -4761,7 +4777,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceGitlab.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecServiceGitlab {
 	Branch: *string,
@@ -4790,7 +4806,7 @@ Branch *string
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -4804,7 +4820,7 @@ DeployOnPush interface{}
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -4818,7 +4834,7 @@ Repo *string
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -4827,7 +4843,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecServiceHealthCheck {
 	FailureThreshold: *f64,
@@ -4862,7 +4878,7 @@ FailureThreshold *f64
 
 The number of failed health checks before considered unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#failure_threshold App#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#failure_threshold App#failure_threshold}
 
 ---
 
@@ -4876,7 +4892,7 @@ HttpPath *string
 
 The route path used for the HTTP health check ping.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#http_path App#http_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#http_path App#http_path}
 
 ---
 
@@ -4890,7 +4906,7 @@ InitialDelaySeconds *f64
 
 The number of seconds to wait before beginning health checks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#initial_delay_seconds App#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#initial_delay_seconds App#initial_delay_seconds}
 
 ---
 
@@ -4904,7 +4920,7 @@ PeriodSeconds *f64
 
 The number of seconds to wait between health checks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#period_seconds App#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#period_seconds App#period_seconds}
 
 ---
 
@@ -4918,7 +4934,7 @@ SuccessThreshold *f64
 
 The number of successful health checks before considered healthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#success_threshold App#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#success_threshold App#success_threshold}
 
 ---
 
@@ -4932,7 +4948,7 @@ TimeoutSeconds *f64
 
 The number of seconds after which the check times out.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#timeout_seconds App#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#timeout_seconds App#timeout_seconds}
 
 ---
 
@@ -4941,7 +4957,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecServiceImage {
 	RegistryType: *string,
@@ -4974,7 +4990,7 @@ RegistryType *string
 
 The registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#registry_type App#registry_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#registry_type App#registry_type}
 
 ---
 
@@ -4988,7 +5004,7 @@ Repository *string
 
 The repository name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repository App#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#repository App#repository}
 
 ---
 
@@ -5002,7 +5018,7 @@ DeployOnPush interface{}
 
 deploy_on_push block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -5016,7 +5032,7 @@ Registry *string
 
 The registry name. Must be left empty for the DOCR registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#registry App#registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#registry App#registry}
 
 ---
 
@@ -5030,7 +5046,7 @@ Tag *string
 
 The repository tag. Defaults to latest if not provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#tag App#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#tag App#tag}
 
 ---
 
@@ -5039,7 +5055,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecServiceImageDeployOnPush {
 	Enabled: interface{},
@@ -5064,7 +5080,7 @@ Enabled interface{}
 
 Whether to automatically deploy images pushed to DOCR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#enabled App#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#enabled App#enabled}
 
 ---
 
@@ -5073,13 +5089,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecServiceLogDestination {
 	Name: *string,
-	Datadog: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecServiceLogDestinationDatadog,
-	Logtail: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecServiceLogDestinationLogtail,
-	Papertrail: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecServiceLogDestinationPapertrail,
+	Datadog: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecServiceLogDestinationDatadog,
+	Logtail: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecServiceLogDestinationLogtail,
+	Papertrail: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecServiceLogDestinationPapertrail,
 }
 ```
 
@@ -5104,7 +5120,7 @@ Name *string
 
 Name of the log destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#name App#name}
 
 ---
 
@@ -5118,7 +5134,7 @@ Datadog AppSpecServiceLogDestinationDatadog
 
 datadog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#datadog App#datadog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#datadog App#datadog}
 
 ---
 
@@ -5132,7 +5148,7 @@ Logtail AppSpecServiceLogDestinationLogtail
 
 logtail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#logtail App#logtail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#logtail App#logtail}
 
 ---
 
@@ -5146,7 +5162,7 @@ Papertrail AppSpecServiceLogDestinationPapertrail
 
 papertrail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#papertrail App#papertrail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#papertrail App#papertrail}
 
 ---
 
@@ -5155,7 +5171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationDatadog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecServiceLogDestinationDatadog {
 	ApiKey: *string,
@@ -5182,7 +5198,7 @@ ApiKey *string
 
 Datadog API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#api_key App#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#api_key App#api_key}
 
 ---
 
@@ -5196,7 +5212,7 @@ Endpoint *string
 
 Datadog HTTP log intake endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -5205,7 +5221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationLogtail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecServiceLogDestinationLogtail {
 	Token: *string,
@@ -5230,7 +5246,7 @@ Token *string
 
 Logtail token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#token App#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#token App#token}
 
 ---
 
@@ -5239,7 +5255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationPapertrail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecServiceLogDestinationPapertrail {
 	Endpoint: *string,
@@ -5264,7 +5280,7 @@ Endpoint *string
 
 Papertrail syslog endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -5273,7 +5289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceRoutes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecServiceRoutes {
 	Path: *string,
@@ -5302,7 +5318,7 @@ Path specifies an route by HTTP path prefix.
 
 Paths must start with / and must be unique within the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#path App#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#path App#path}
 
 ---
 
@@ -5316,7 +5332,7 @@ PreservePathPrefix interface{}
 
 An optional flag to preserve the path that is forwarded to the backend service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
 
 ---
 
@@ -5325,20 +5341,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecStaticSite.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecStaticSite {
 	Name: *string,
 	BuildCommand: *string,
 	CatchallDocument: *string,
-	Cors: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecStaticSiteCors,
+	Cors: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecStaticSiteCors,
 	DockerfilePath: *string,
 	Env: interface{},
 	EnvironmentSlug: *string,
 	ErrorDocument: *string,
-	Git: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecStaticSiteGit,
-	Github: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecStaticSiteGithub,
-	Gitlab: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecStaticSiteGitlab,
+	Git: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecStaticSiteGit,
+	Github: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecStaticSiteGithub,
+	Gitlab: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecStaticSiteGitlab,
 	IndexDocument: *string,
 	OutputDir: *string,
 	Routes: interface{},
@@ -5378,7 +5394,7 @@ Name *string
 
 The name of the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#name App#name}
 
 ---
 
@@ -5392,7 +5408,7 @@ BuildCommand *string
 
 An optional build command to run while building this component from source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#build_command App#build_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#build_command App#build_command}
 
 ---
 
@@ -5406,7 +5422,7 @@ CatchallDocument *string
 
 The name of the document to use as the fallback for any requests to documents that are not found when serving this static site.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#catchall_document App#catchall_document}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#catchall_document App#catchall_document}
 
 ---
 
@@ -5420,7 +5436,7 @@ Cors AppSpecStaticSiteCors
 
 cors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#cors App#cors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#cors App#cors}
 
 ---
 
@@ -5434,7 +5450,7 @@ DockerfilePath *string
 
 The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#dockerfile_path App#dockerfile_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#dockerfile_path App#dockerfile_path}
 
 ---
 
@@ -5448,7 +5464,7 @@ Env interface{}
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#env App#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#env App#env}
 
 ---
 
@@ -5462,7 +5478,7 @@ EnvironmentSlug *string
 
 An environment slug describing the type of this app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#environment_slug App#environment_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#environment_slug App#environment_slug}
 
 ---
 
@@ -5476,7 +5492,7 @@ ErrorDocument *string
 
 The name of the error document to use when serving this static site.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#error_document App#error_document}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#error_document App#error_document}
 
 ---
 
@@ -5490,7 +5506,7 @@ Git AppSpecStaticSiteGit
 
 git block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#git App#git}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#git App#git}
 
 ---
 
@@ -5504,7 +5520,7 @@ Github AppSpecStaticSiteGithub
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#github App#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#github App#github}
 
 ---
 
@@ -5518,7 +5534,7 @@ Gitlab AppSpecStaticSiteGitlab
 
 gitlab block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#gitlab App#gitlab}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#gitlab App#gitlab}
 
 ---
 
@@ -5532,7 +5548,7 @@ IndexDocument *string
 
 The name of the index document to use when serving this static site.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#index_document App#index_document}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#index_document App#index_document}
 
 ---
 
@@ -5548,7 +5564,7 @@ An optional path to where the built assets will be located, relative to the buil
 
 If not set, App Platform will automatically scan for these directory names: `_static`, `dist`, `public`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#output_dir App#output_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#output_dir App#output_dir}
 
 ---
 
@@ -5562,7 +5578,7 @@ Routes interface{}
 
 routes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#routes App#routes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#routes App#routes}
 
 ---
 
@@ -5576,7 +5592,7 @@ SourceDir *string
 
 An optional path to the working directory to use for the build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#source_dir App#source_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#source_dir App#source_dir}
 
 ---
 
@@ -5585,13 +5601,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteCors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecStaticSiteCors {
 	AllowCredentials: interface{},
 	AllowHeaders: *[]*string,
 	AllowMethods: *[]*string,
-	AllowOrigins: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecStaticSiteCorsAllowOrigins,
+	AllowOrigins: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecStaticSiteCorsAllowOrigins,
 	ExposeHeaders: *[]*string,
 	MaxAge: *string,
 }
@@ -5622,7 +5638,7 @@ Whether browsers should expose the response to the client-side JavaScript code w
 
 This configures the Access-Control-Allow-Credentials header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_credentials App#allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#allow_credentials App#allow_credentials}
 
 ---
 
@@ -5636,7 +5652,7 @@ AllowHeaders *[]*string
 
 The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_headers App#allow_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#allow_headers App#allow_headers}
 
 ---
 
@@ -5650,7 +5666,7 @@ AllowMethods *[]*string
 
 The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_methods App#allow_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#allow_methods App#allow_methods}
 
 ---
 
@@ -5664,7 +5680,7 @@ AllowOrigins AppSpecStaticSiteCorsAllowOrigins
 
 allow_origins block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#allow_origins App#allow_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#allow_origins App#allow_origins}
 
 ---
 
@@ -5678,7 +5694,7 @@ ExposeHeaders *[]*string
 
 The set of HTTP response headers that browsers are allowed to access. This configures the Access-Control-Expose-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#expose_headers App#expose_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#expose_headers App#expose_headers}
 
 ---
 
@@ -5694,7 +5710,7 @@ An optional duration specifying how long browsers can cache the results of a pre
 
 This configures the Access-Control-Max-Age header. Example: `5h30m`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#max_age App#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#max_age App#max_age}
 
 ---
 
@@ -5703,7 +5719,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsAllowOrigins.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecStaticSiteCorsAllowOrigins {
 	Exact: *string,
@@ -5732,7 +5748,7 @@ Exact *string
 
 Exact string match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#exact App#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#exact App#exact}
 
 ---
 
@@ -5746,7 +5762,7 @@ Prefix *string
 
 Prefix-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#prefix App#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#prefix App#prefix}
 
 ---
 
@@ -5760,7 +5776,7 @@ Regex *string
 
 RE2 style regex-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#regex App#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#regex App#regex}
 
 ---
 
@@ -5769,7 +5785,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecStaticSiteEnv {
 	Key: *string,
@@ -5800,7 +5816,7 @@ Key *string
 
 The name of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#key App#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#key App#key}
 
 ---
 
@@ -5814,7 +5830,7 @@ Scope *string
 
 The visibility scope of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#scope App#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#scope App#scope}
 
 ---
 
@@ -5828,7 +5844,7 @@ Type *string
 
 The type of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#type App#type}
 
 ---
 
@@ -5842,7 +5858,7 @@ Value *string
 
 The value of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#value App#value}
 
 ---
 
@@ -5851,7 +5867,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteGit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecStaticSiteGit {
 	Branch: *string,
@@ -5878,7 +5894,7 @@ Branch *string
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -5892,7 +5908,7 @@ RepoCloneUrl *string
 
 The clone URL of the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo_clone_url App#repo_clone_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#repo_clone_url App#repo_clone_url}
 
 ---
 
@@ -5901,7 +5917,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithub.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecStaticSiteGithub {
 	Branch: *string,
@@ -5930,7 +5946,7 @@ Branch *string
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -5944,7 +5960,7 @@ DeployOnPush interface{}
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -5958,7 +5974,7 @@ Repo *string
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -5967,7 +5983,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlab.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecStaticSiteGitlab {
 	Branch: *string,
@@ -5996,7 +6012,7 @@ Branch *string
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -6010,7 +6026,7 @@ DeployOnPush interface{}
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -6024,7 +6040,7 @@ Repo *string
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -6033,7 +6049,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecStaticSiteRoutes {
 	Path: *string,
@@ -6062,7 +6078,7 @@ Path specifies an route by HTTP path prefix.
 
 Paths must start with / and must be unique within the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#path App#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#path App#path}
 
 ---
 
@@ -6076,7 +6092,7 @@ PreservePathPrefix interface{}
 
 An optional flag to preserve the path that is forwarded to the backend service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
 
 ---
 
@@ -6085,7 +6101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecWorker.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecWorker {
 	Name: *string,
@@ -6094,10 +6110,10 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
 	DockerfilePath: *string,
 	Env: interface{},
 	EnvironmentSlug: *string,
-	Git: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecWorkerGit,
-	Github: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecWorkerGithub,
-	Gitlab: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecWorkerGitlab,
-	Image: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecWorkerImage,
+	Git: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecWorkerGit,
+	Github: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecWorkerGithub,
+	Gitlab: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecWorkerGitlab,
+	Image: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecWorkerImage,
 	InstanceCount: *f64,
 	InstanceSizeSlug: *string,
 	LogDestination: interface{},
@@ -6138,7 +6154,7 @@ Name *string
 
 The name of the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#name App#name}
 
 ---
 
@@ -6152,7 +6168,7 @@ Alert interface{}
 
 alert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#alert App#alert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#alert App#alert}
 
 ---
 
@@ -6166,7 +6182,7 @@ BuildCommand *string
 
 An optional build command to run while building this component from source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#build_command App#build_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#build_command App#build_command}
 
 ---
 
@@ -6180,7 +6196,7 @@ DockerfilePath *string
 
 The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#dockerfile_path App#dockerfile_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#dockerfile_path App#dockerfile_path}
 
 ---
 
@@ -6194,7 +6210,7 @@ Env interface{}
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#env App#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#env App#env}
 
 ---
 
@@ -6208,7 +6224,7 @@ EnvironmentSlug *string
 
 An environment slug describing the type of this app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#environment_slug App#environment_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#environment_slug App#environment_slug}
 
 ---
 
@@ -6222,7 +6238,7 @@ Git AppSpecWorkerGit
 
 git block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#git App#git}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#git App#git}
 
 ---
 
@@ -6236,7 +6252,7 @@ Github AppSpecWorkerGithub
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#github App#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#github App#github}
 
 ---
 
@@ -6250,7 +6266,7 @@ Gitlab AppSpecWorkerGitlab
 
 gitlab block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#gitlab App#gitlab}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#gitlab App#gitlab}
 
 ---
 
@@ -6264,7 +6280,7 @@ Image AppSpecWorkerImage
 
 image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#image App#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#image App#image}
 
 ---
 
@@ -6278,7 +6294,7 @@ InstanceCount *f64
 
 The amount of instances that this component should be scaled to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#instance_count App#instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#instance_count App#instance_count}
 
 ---
 
@@ -6292,7 +6308,7 @@ InstanceSizeSlug *string
 
 The instance size to use for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#instance_size_slug App#instance_size_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#instance_size_slug App#instance_size_slug}
 
 ---
 
@@ -6306,7 +6322,7 @@ LogDestination interface{}
 
 log_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#log_destination App#log_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#log_destination App#log_destination}
 
 ---
 
@@ -6320,7 +6336,7 @@ RunCommand *string
 
 An optional run command to override the component's default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#run_command App#run_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#run_command App#run_command}
 
 ---
 
@@ -6334,7 +6350,7 @@ SourceDir *string
 
 An optional path to the working directory to use for the build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#source_dir App#source_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#source_dir App#source_dir}
 
 ---
 
@@ -6343,7 +6359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecWorkerAlert {
 	Operator: *string,
@@ -6358,11 +6374,11 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#operator App#operator}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.rule">Rule</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#rule App#rule}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.window">Window</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#window App#window}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.disabled">Disabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#operator App#operator}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.rule">Rule</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#rule App#rule}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#value App#value}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.window">Window</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#window App#window}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.disabled">Disabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -6374,7 +6390,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#operator App#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#operator App#operator}.
 
 ---
 
@@ -6386,7 +6402,7 @@ Rule *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#rule App#rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#rule App#rule}.
 
 ---
 
@@ -6398,7 +6414,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#value App#value}.
 
 ---
 
@@ -6410,7 +6426,7 @@ Window *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#window App#window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#window App#window}.
 
 ---
 
@@ -6422,7 +6438,7 @@ Disabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#disabled App#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#disabled App#disabled}.
 
 ---
 
@@ -6431,7 +6447,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecWorkerEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecWorkerEnv {
 	Key: *string,
@@ -6462,7 +6478,7 @@ Key *string
 
 The name of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#key App#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#key App#key}
 
 ---
 
@@ -6476,7 +6492,7 @@ Scope *string
 
 The visibility scope of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#scope App#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#scope App#scope}
 
 ---
 
@@ -6490,7 +6506,7 @@ Type *string
 
 The type of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#type App#type}
 
 ---
 
@@ -6504,7 +6520,7 @@ Value *string
 
 The value of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#value App#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#value App#value}
 
 ---
 
@@ -6513,7 +6529,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecWorkerGit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecWorkerGit {
 	Branch: *string,
@@ -6540,7 +6556,7 @@ Branch *string
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -6554,7 +6570,7 @@ RepoCloneUrl *string
 
 The clone URL of the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo_clone_url App#repo_clone_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#repo_clone_url App#repo_clone_url}
 
 ---
 
@@ -6563,7 +6579,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecWorkerGithub.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecWorkerGithub {
 	Branch: *string,
@@ -6592,7 +6608,7 @@ Branch *string
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -6606,7 +6622,7 @@ DeployOnPush interface{}
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -6620,7 +6636,7 @@ Repo *string
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -6629,7 +6645,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecWorkerGitlab.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecWorkerGitlab {
 	Branch: *string,
@@ -6658,7 +6674,7 @@ Branch *string
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -6672,7 +6688,7 @@ DeployOnPush interface{}
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -6686,7 +6702,7 @@ Repo *string
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -6695,7 +6711,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecWorkerImage {
 	RegistryType: *string,
@@ -6728,7 +6744,7 @@ RegistryType *string
 
 The registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#registry_type App#registry_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#registry_type App#registry_type}
 
 ---
 
@@ -6742,7 +6758,7 @@ Repository *string
 
 The repository name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#repository App#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#repository App#repository}
 
 ---
 
@@ -6756,7 +6772,7 @@ DeployOnPush interface{}
 
 deploy_on_push block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -6770,7 +6786,7 @@ Registry *string
 
 The registry name. Must be left empty for the DOCR registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#registry App#registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#registry App#registry}
 
 ---
 
@@ -6784,7 +6800,7 @@ Tag *string
 
 The repository tag. Defaults to latest if not provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#tag App#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#tag App#tag}
 
 ---
 
@@ -6793,7 +6809,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecWorkerImageDeployOnPush {
 	Enabled: interface{},
@@ -6818,7 +6834,7 @@ Enabled interface{}
 
 Whether to automatically deploy images pushed to DOCR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#enabled App#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#enabled App#enabled}
 
 ---
 
@@ -6827,13 +6843,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecWorkerLogDestination {
 	Name: *string,
-	Datadog: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecWorkerLogDestinationDatadog,
-	Logtail: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecWorkerLogDestinationLogtail,
-	Papertrail: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.app.AppSpecWorkerLogDestinationPapertrail,
+	Datadog: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecWorkerLogDestinationDatadog,
+	Logtail: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecWorkerLogDestinationLogtail,
+	Papertrail: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecWorkerLogDestinationPapertrail,
 }
 ```
 
@@ -6858,7 +6874,7 @@ Name *string
 
 Name of the log destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#name App#name}
 
 ---
 
@@ -6872,7 +6888,7 @@ Datadog AppSpecWorkerLogDestinationDatadog
 
 datadog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#datadog App#datadog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#datadog App#datadog}
 
 ---
 
@@ -6886,7 +6902,7 @@ Logtail AppSpecWorkerLogDestinationLogtail
 
 logtail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#logtail App#logtail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#logtail App#logtail}
 
 ---
 
@@ -6900,7 +6916,7 @@ Papertrail AppSpecWorkerLogDestinationPapertrail
 
 papertrail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#papertrail App#papertrail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#papertrail App#papertrail}
 
 ---
 
@@ -6909,7 +6925,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationDatadog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecWorkerLogDestinationDatadog {
 	ApiKey: *string,
@@ -6936,7 +6952,7 @@ ApiKey *string
 
 Datadog API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#api_key App#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#api_key App#api_key}
 
 ---
 
@@ -6950,7 +6966,7 @@ Endpoint *string
 
 Datadog HTTP log intake endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -6959,7 +6975,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationLogtail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecWorkerLogDestinationLogtail {
 	Token: *string,
@@ -6984,7 +7000,7 @@ Token *string
 
 Logtail token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#token App#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#token App#token}
 
 ---
 
@@ -6993,7 +7009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationPapertrail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecWorkerLogDestinationPapertrail {
 	Endpoint: *string,
@@ -7018,7 +7034,7 @@ Endpoint *string
 
 Papertrail syslog endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -7027,7 +7043,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppTimeouts {
 	Create: *string,
@@ -7038,7 +7054,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#create App#create}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#create App#create}. |
 
 ---
 
@@ -7050,7 +7066,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/app#create App#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/app#create App#create}.
 
 ---
 
@@ -7061,7 +7077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecAlertList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecAlertList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecAlertList
 ```
@@ -7204,7 +7220,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecAlertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecAlertOutputReference
 ```
@@ -7522,7 +7538,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecDatabaseList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecDatabaseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecDatabaseList
 ```
@@ -7665,7 +7681,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecDatabaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecDatabaseOutputReference
 ```
@@ -8135,7 +8151,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecDomainList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecDomainList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecDomainList
 ```
@@ -8278,7 +8294,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecDomainOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecDomainOutputReference
 ```
@@ -8654,7 +8670,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecEnvList
 ```
@@ -8797,7 +8813,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecEnvOutputReference
 ```
@@ -9180,7 +9196,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlertList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionAlertList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecFunctionAlertList
 ```
@@ -9323,7 +9339,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionAlertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecFunctionAlertOutputReference
 ```
@@ -9707,7 +9723,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionCorsAllowOriginsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionCorsAllowOriginsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecFunctionCorsAllowOriginsOutputReference
 ```
@@ -10043,7 +10059,7 @@ func InternalValue() AppSpecFunctionCorsAllowOrigins
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionCorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecFunctionCorsOutputReference
 ```
@@ -10479,7 +10495,7 @@ func InternalValue() AppSpecFunctionCors
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecFunctionEnvList
 ```
@@ -10622,7 +10638,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecFunctionEnvOutputReference
 ```
@@ -11005,7 +11021,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionGithubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecFunctionGithubOutputReference
 ```
@@ -11341,7 +11357,7 @@ func InternalValue() AppSpecFunctionGithub
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionGitlabOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecFunctionGitlabOutputReference
 ```
@@ -11677,7 +11693,7 @@ func InternalValue() AppSpecFunctionGitlab
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionGitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionGitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecFunctionGitOutputReference
 ```
@@ -11984,7 +12000,7 @@ func InternalValue() AppSpecFunctionGit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecFunctionList
 ```
@@ -12127,7 +12143,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationDatadogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionLogDestinationDatadogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecFunctionLogDestinationDatadogOutputReference
 ```
@@ -12427,7 +12443,7 @@ func InternalValue() AppSpecFunctionLogDestinationDatadog
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionLogDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecFunctionLogDestinationList
 ```
@@ -12570,7 +12586,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationLogtailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionLogDestinationLogtailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecFunctionLogDestinationLogtailOutputReference
 ```
@@ -12841,7 +12857,7 @@ func InternalValue() AppSpecFunctionLogDestinationLogtail
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionLogDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecFunctionLogDestinationOutputReference
 ```
@@ -13256,7 +13272,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationPapertrailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionLogDestinationPapertrailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecFunctionLogDestinationPapertrailOutputReference
 ```
@@ -13527,7 +13543,7 @@ func InternalValue() AppSpecFunctionLogDestinationPapertrail
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecFunctionOutputReference
 ```
@@ -14181,7 +14197,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionRoutesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecFunctionRoutesList
 ```
@@ -14324,7 +14340,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionRoutesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecFunctionRoutesOutputReference
 ```
@@ -14649,7 +14665,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecIngressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecIngressOutputReference
 ```
@@ -14940,7 +14956,7 @@ func InternalValue() AppSpecIngress
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecIngressRuleComponentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecIngressRuleComponentOutputReference
 ```
@@ -15276,7 +15292,7 @@ func InternalValue() AppSpecIngressRuleComponent
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecIngressRuleCorsAllowOriginsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecIngressRuleCorsAllowOriginsOutputReference
 ```
@@ -15612,7 +15628,7 @@ func InternalValue() AppSpecIngressRuleCorsAllowOrigins
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecIngressRuleCorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecIngressRuleCorsOutputReference
 ```
@@ -16048,7 +16064,7 @@ func InternalValue() AppSpecIngressRuleCors
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecIngressRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecIngressRuleList
 ```
@@ -16191,7 +16207,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecIngressRuleMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecIngressRuleMatchOutputReference
 ```
@@ -16482,7 +16498,7 @@ func InternalValue() AppSpecIngressRuleMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecIngressRuleMatchPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecIngressRuleMatchPathOutputReference
 ```
@@ -16760,7 +16776,7 @@ func InternalValue() AppSpecIngressRuleMatchPath
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecIngressRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecIngressRuleOutputReference
 ```
@@ -17195,7 +17211,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecIngressRuleRedirectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecIngressRuleRedirectOutputReference
 ```
@@ -17589,7 +17605,7 @@ func InternalValue() AppSpecIngressRuleRedirect
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobAlertList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobAlertList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecJobAlertList
 ```
@@ -17732,7 +17748,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobAlertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecJobAlertOutputReference
 ```
@@ -18116,7 +18132,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecJobEnvList
 ```
@@ -18259,7 +18275,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecJobEnvOutputReference
 ```
@@ -18642,7 +18658,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobGithubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecJobGithubOutputReference
 ```
@@ -18978,7 +18994,7 @@ func InternalValue() AppSpecJobGithub
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobGitlabOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecJobGitlabOutputReference
 ```
@@ -19314,7 +19330,7 @@ func InternalValue() AppSpecJobGitlab
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobGitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobGitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecJobGitOutputReference
 ```
@@ -19621,7 +19637,7 @@ func InternalValue() AppSpecJobGit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobImageDeployOnPushList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecJobImageDeployOnPushList
 ```
@@ -19764,7 +19780,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobImageDeployOnPushOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecJobImageDeployOnPushOutputReference
 ```
@@ -20060,7 +20076,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecJobImageOutputReference
 ```
@@ -20453,7 +20469,7 @@ func InternalValue() AppSpecJobImage
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecJobList
 ```
@@ -20596,7 +20612,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationDatadogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobLogDestinationDatadogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecJobLogDestinationDatadogOutputReference
 ```
@@ -20896,7 +20912,7 @@ func InternalValue() AppSpecJobLogDestinationDatadog
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobLogDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecJobLogDestinationList
 ```
@@ -21039,7 +21055,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationLogtailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobLogDestinationLogtailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecJobLogDestinationLogtailOutputReference
 ```
@@ -21310,7 +21326,7 @@ func InternalValue() AppSpecJobLogDestinationLogtail
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobLogDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecJobLogDestinationOutputReference
 ```
@@ -21725,7 +21741,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationPapertrailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobLogDestinationPapertrailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecJobLogDestinationPapertrailOutputReference
 ```
@@ -21996,7 +22012,7 @@ func InternalValue() AppSpecJobLogDestinationPapertrail
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecJobOutputReference
 ```
@@ -22811,7 +22827,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecOutputReference
 ```
@@ -22871,6 +22887,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.resetDomain">ResetDomain</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.resetDomains">ResetDomains</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.resetEnv">ResetEnv</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.resetFeatures">ResetFeatures</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.resetFunction">ResetFunction</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.resetIngress">ResetIngress</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.resetJob">ResetJob</a></code> | *No description.* |
@@ -23181,6 +23198,12 @@ func ResetDomains()
 func ResetEnv()
 ```
 
+##### `ResetFeatures` <a name="ResetFeatures" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.resetFeatures"></a>
+
+```go
+func ResetFeatures()
+```
+
 ##### `ResetFunction` <a name="ResetFunction" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.resetFunction"></a>
 
 ```go
@@ -23245,6 +23268,7 @@ func ResetWorker()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.domainInput">DomainInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.domainsInput">DomainsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.envInput">EnvInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.featuresInput">FeaturesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.functionInput">FunctionInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.ingressInput">IngressInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngress">AppSpecIngress</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.jobInput">JobInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -23254,6 +23278,7 @@ func ResetWorker()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.staticSiteInput">StaticSiteInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.workerInput">WorkerInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.domains">Domains</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.features">Features</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec">AppSpec</a></code> | *No description.* |
@@ -23434,6 +23459,16 @@ func EnvInput() interface{}
 
 ---
 
+##### `FeaturesInput`<sup>Optional</sup> <a name="FeaturesInput" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.featuresInput"></a>
+
+```go
+func FeaturesInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `FunctionInput`<sup>Optional</sup> <a name="FunctionInput" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.functionInput"></a>
 
 ```go
@@ -23524,6 +23559,16 @@ func Domains() *[]*string
 
 ---
 
+##### `Features`<sup>Required</sup> <a name="Features" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.features"></a>
+
+```go
+func Features() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.name"></a>
 
 ```go
@@ -23560,7 +23605,7 @@ func InternalValue() AppSpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlertList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceAlertList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecServiceAlertList
 ```
@@ -23703,7 +23748,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceAlertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecServiceAlertOutputReference
 ```
@@ -24087,7 +24132,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceCorsAllowOriginsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceCorsAllowOriginsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecServiceCorsAllowOriginsOutputReference
 ```
@@ -24423,7 +24468,7 @@ func InternalValue() AppSpecServiceCorsAllowOrigins
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceCorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecServiceCorsOutputReference
 ```
@@ -24859,7 +24904,7 @@ func InternalValue() AppSpecServiceCors
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecServiceEnvList
 ```
@@ -25002,7 +25047,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecServiceEnvOutputReference
 ```
@@ -25385,7 +25430,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceGithubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecServiceGithubOutputReference
 ```
@@ -25721,7 +25766,7 @@ func InternalValue() AppSpecServiceGithub
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceGitlabOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecServiceGitlabOutputReference
 ```
@@ -26057,7 +26102,7 @@ func InternalValue() AppSpecServiceGitlab
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceGitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceGitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecServiceGitOutputReference
 ```
@@ -26364,7 +26409,7 @@ func InternalValue() AppSpecServiceGit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecServiceHealthCheckOutputReference
 ```
@@ -26787,7 +26832,7 @@ func InternalValue() AppSpecServiceHealthCheck
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceImageDeployOnPushList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecServiceImageDeployOnPushList
 ```
@@ -26930,7 +26975,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceImageDeployOnPushOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecServiceImageDeployOnPushOutputReference
 ```
@@ -27226,7 +27271,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecServiceImageOutputReference
 ```
@@ -27619,7 +27664,7 @@ func InternalValue() AppSpecServiceImage
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecServiceList
 ```
@@ -27762,7 +27807,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationDatadogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceLogDestinationDatadogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecServiceLogDestinationDatadogOutputReference
 ```
@@ -28062,7 +28107,7 @@ func InternalValue() AppSpecServiceLogDestinationDatadog
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceLogDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecServiceLogDestinationList
 ```
@@ -28205,7 +28250,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationLogtailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceLogDestinationLogtailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecServiceLogDestinationLogtailOutputReference
 ```
@@ -28476,7 +28521,7 @@ func InternalValue() AppSpecServiceLogDestinationLogtail
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceLogDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecServiceLogDestinationOutputReference
 ```
@@ -28891,7 +28936,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationPapertrailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceLogDestinationPapertrailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecServiceLogDestinationPapertrailOutputReference
 ```
@@ -29162,7 +29207,7 @@ func InternalValue() AppSpecServiceLogDestinationPapertrail
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecServiceOutputReference
 ```
@@ -30132,7 +30177,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceRoutesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceRoutesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecServiceRoutesList
 ```
@@ -30275,7 +30320,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceRoutesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecServiceRoutesOutputReference
 ```
@@ -30600,7 +30645,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsAllowOriginsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecStaticSiteCorsAllowOriginsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecStaticSiteCorsAllowOriginsOutputReference
 ```
@@ -30936,7 +30981,7 @@ func InternalValue() AppSpecStaticSiteCorsAllowOrigins
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecStaticSiteCorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecStaticSiteCorsOutputReference
 ```
@@ -31372,7 +31417,7 @@ func InternalValue() AppSpecStaticSiteCors
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecStaticSiteEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecStaticSiteEnvList
 ```
@@ -31515,7 +31560,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecStaticSiteEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecStaticSiteEnvOutputReference
 ```
@@ -31898,7 +31943,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecStaticSiteGithubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecStaticSiteGithubOutputReference
 ```
@@ -32234,7 +32279,7 @@ func InternalValue() AppSpecStaticSiteGithub
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecStaticSiteGitlabOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecStaticSiteGitlabOutputReference
 ```
@@ -32570,7 +32615,7 @@ func InternalValue() AppSpecStaticSiteGitlab
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecStaticSiteGitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecStaticSiteGitOutputReference
 ```
@@ -32877,7 +32922,7 @@ func InternalValue() AppSpecStaticSiteGit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecStaticSiteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecStaticSiteList
 ```
@@ -33020,7 +33065,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecStaticSiteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecStaticSiteOutputReference
 ```
@@ -33793,7 +33838,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecStaticSiteRoutesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecStaticSiteRoutesList
 ```
@@ -33936,7 +33981,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecStaticSiteRoutesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecStaticSiteRoutesOutputReference
 ```
@@ -34261,7 +34306,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlertList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerAlertList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecWorkerAlertList
 ```
@@ -34404,7 +34449,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerAlertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecWorkerAlertOutputReference
 ```
@@ -34788,7 +34833,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecWorkerEnvList
 ```
@@ -34931,7 +34976,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecWorkerEnvOutputReference
 ```
@@ -35314,7 +35359,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerGithubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecWorkerGithubOutputReference
 ```
@@ -35650,7 +35695,7 @@ func InternalValue() AppSpecWorkerGithub
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerGitlabOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecWorkerGitlabOutputReference
 ```
@@ -35986,7 +36031,7 @@ func InternalValue() AppSpecWorkerGitlab
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerGitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerGitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecWorkerGitOutputReference
 ```
@@ -36293,7 +36338,7 @@ func InternalValue() AppSpecWorkerGit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerImageDeployOnPushList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecWorkerImageDeployOnPushList
 ```
@@ -36436,7 +36481,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerImageDeployOnPushOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecWorkerImageDeployOnPushOutputReference
 ```
@@ -36732,7 +36777,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecWorkerImageOutputReference
 ```
@@ -37125,7 +37170,7 @@ func InternalValue() AppSpecWorkerImage
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecWorkerList
 ```
@@ -37268,7 +37313,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationDatadogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerLogDestinationDatadogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecWorkerLogDestinationDatadogOutputReference
 ```
@@ -37568,7 +37613,7 @@ func InternalValue() AppSpecWorkerLogDestinationDatadog
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerLogDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecWorkerLogDestinationList
 ```
@@ -37711,7 +37756,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationLogtailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerLogDestinationLogtailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecWorkerLogDestinationLogtailOutputReference
 ```
@@ -37982,7 +38027,7 @@ func InternalValue() AppSpecWorkerLogDestinationLogtail
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerLogDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecWorkerLogDestinationOutputReference
 ```
@@ -38397,7 +38442,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationPapertrailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerLogDestinationPapertrailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecWorkerLogDestinationPapertrailOutputReference
 ```
@@ -38668,7 +38713,7 @@ func InternalValue() AppSpecWorkerLogDestinationPapertrail
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecWorkerOutputReference
 ```
@@ -39454,7 +39499,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppTimeoutsOutputReference
 ```
