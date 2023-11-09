@@ -1,6 +1,6 @@
 # `data_digitalocean_project`
 
-Refer to the Terraform Registory for docs: [`data_digitalocean_project`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/project).
+Refer to the Terraform Registory for docs: [`data_digitalocean_project`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/project).
 
 # `dataDigitaloceanProject` Submodule <a name="`dataDigitaloceanProject` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanProject"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_digitalocean_project`](https:/
 
 ### DataDigitaloceanProject <a name="DataDigitaloceanProject" id="@cdktf/provider-digitalocean.dataDigitaloceanProject.DataDigitaloceanProject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/project digitalocean_project}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/project digitalocean_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanProject.DataDigitaloceanProject.Initializer"></a>
 
@@ -374,7 +374,7 @@ The construct id used in the generated config for the DataDigitaloceanProject to
 
 The id of the existing DataDigitaloceanProject that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -721,8 +721,8 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProject.DataDigitaloceanProjectConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProject.DataDigitaloceanProjectConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProject.DataDigitaloceanProjectConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProject.DataDigitaloceanProjectConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/project#id DataDigitaloceanProject#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProject.DataDigitaloceanProjectConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/project#name DataDigitaloceanProject#name}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProject.DataDigitaloceanProjectConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/project#id DataDigitaloceanProject#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProject.DataDigitaloceanProjectConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/project#name DataDigitaloceanProject#name}. |
 
 ---
 
@@ -804,7 +804,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/project#id DataDigitaloceanProject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/project#id DataDigitaloceanProject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -819,7 +819,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/project#name DataDigitaloceanProject#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/project#name DataDigitaloceanProject#name}.
 
 ---
 

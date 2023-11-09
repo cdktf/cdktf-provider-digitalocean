@@ -1,6 +1,6 @@
 # `data_digitalocean_app`
 
-Refer to the Terraform Registory for docs: [`data_digitalocean_app`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/app).
+Refer to the Terraform Registory for docs: [`data_digitalocean_app`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/app).
 
 # `dataDigitaloceanApp` Submodule <a name="`dataDigitaloceanApp` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanApp"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_digitalocean_app`](https://reg
 
 ### DataDigitaloceanApp <a name="DataDigitaloceanApp" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/app digitalocean_app}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/app digitalocean_app}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.Initializer"></a>
 
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataDigitaloceanApp to imp
 
 The id of the existing DataDigitaloceanApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -682,8 +682,8 @@ const dataDigitaloceanAppConfig: dataDigitaloceanApp.DataDigitaloceanAppConfig =
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.appId">appId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/app#app_id DataDigitaloceanApp#app_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/app#id DataDigitaloceanApp#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.appId">appId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/app#app_id DataDigitaloceanApp#app_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/app#id DataDigitaloceanApp#id}. |
 
 ---
 
@@ -765,7 +765,7 @@ public readonly appId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/app#app_id DataDigitaloceanApp#app_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/app#app_id DataDigitaloceanApp#app_id}.
 
 ---
 
@@ -777,7 +777,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/data-sources/app#id DataDigitaloceanApp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/app#id DataDigitaloceanApp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -18202,6 +18202,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecOutputReference.property.domain">domain</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecDomainList">DataDigitaloceanAppSpecDomainList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecOutputReference.property.domains">domains</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecOutputReference.property.env">env</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEnvList">DataDigitaloceanAppSpecEnvList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecOutputReference.property.features">features</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecOutputReference.property.function">function</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionList">DataDigitaloceanAppSpecFunctionList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecOutputReference.property.ingress">ingress</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressList">DataDigitaloceanAppSpecIngressList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecOutputReference.property.job">job</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobList">DataDigitaloceanAppSpecJobList</a></code> | *No description.* |
@@ -18285,6 +18286,16 @@ public readonly env: DataDigitaloceanAppSpecEnvList;
 ```
 
 - *Type:* <a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEnvList">DataDigitaloceanAppSpecEnvList</a>
+
+---
+
+##### `features`<sup>Required</sup> <a name="features" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecOutputReference.property.features"></a>
+
+```typescript
+public readonly features: string[];
+```
+
+- *Type:* string[]
 
 ---
 
