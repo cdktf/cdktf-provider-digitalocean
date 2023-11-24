@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databaseuser"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databaseuser"
 
 databaseuser.NewDatabaseUser(scope Construct, id *string, config DatabaseUserConfig) DatabaseUser
 ```
@@ -366,7 +366,7 @@ func ResetSettings()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databaseuser"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databaseuser"
 
 databaseuser.DatabaseUser_IsConstruct(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databaseuser"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databaseuser"
 
 databaseuser.DatabaseUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ databaseuser.DatabaseUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUser.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databaseuser"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databaseuser"
 
 databaseuser.DatabaseUser_IsTerraformResource(x interface{}) *bool
 ```
@@ -426,7 +426,7 @@ databaseuser.DatabaseUser_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databaseuser"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databaseuser"
 
 databaseuser.DatabaseUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -787,7 +787,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databaseuser"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databaseuser"
 
 &databaseuser.DatabaseUserConfig {
 	Connection: interface{},
@@ -964,7 +964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databaseuser"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databaseuser"
 
 &databaseuser.DatabaseUserSettings {
 	Acl: interface{},
@@ -998,7 +998,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsAcl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databaseuser"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databaseuser"
 
 &databaseuser.DatabaseUserSettingsAcl {
 	Permission: *string,
@@ -1046,7 +1046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsAclList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databaseuser"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databaseuser"
 
 databaseuser.NewDatabaseUserSettingsAclList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseUserSettingsAclList
 ```
@@ -1189,7 +1189,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsAclOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databaseuser"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databaseuser"
 
 databaseuser.NewDatabaseUserSettingsAclOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseUserSettingsAclOutputReference
 ```
@@ -1511,7 +1511,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databaseuser"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databaseuser"
 
 databaseuser.NewDatabaseUserSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseUserSettingsList
 ```
@@ -1654,7 +1654,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databaseuser"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databaseuser"
 
 databaseuser.NewDatabaseUserSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseUserSettingsOutputReference
 ```

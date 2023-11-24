@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.spacesBucketCorsConfiguration.SpacesBucketCorsConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucketcorsconfiguration"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucketcorsconfiguration"
 
 spacesbucketcorsconfiguration.NewSpacesBucketCorsConfiguration(scope Construct, id *string, config SpacesBucketCorsConfigurationConfig) SpacesBucketCorsConfiguration
 ```
@@ -352,7 +352,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.spacesBucketCorsConfiguration.SpacesBucketCorsConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucketcorsconfiguration"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucketcorsconfiguration"
 
 spacesbucketcorsconfiguration.SpacesBucketCorsConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -384,7 +384,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.spacesBucketCorsConfiguration.SpacesBucketCorsConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucketcorsconfiguration"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucketcorsconfiguration"
 
 spacesbucketcorsconfiguration.SpacesBucketCorsConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ spacesbucketcorsconfiguration.SpacesBucketCorsConfiguration_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.spacesBucketCorsConfiguration.SpacesBucketCorsConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucketcorsconfiguration"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucketcorsconfiguration"
 
 spacesbucketcorsconfiguration.SpacesBucketCorsConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ spacesbucketcorsconfiguration.SpacesBucketCorsConfiguration_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.spacesBucketCorsConfiguration.SpacesBucketCorsConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucketcorsconfiguration"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucketcorsconfiguration"
 
 spacesbucketcorsconfiguration.SpacesBucketCorsConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -729,7 +729,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.spacesBucketCorsConfiguration.SpacesBucketCorsConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucketcorsconfiguration"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucketcorsconfiguration"
 
 &spacesbucketcorsconfiguration.SpacesBucketCorsConfigurationConfig {
 	Connection: interface{},
@@ -894,7 +894,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.spacesBucketCorsConfiguration.SpacesBucketCorsConfigurationCorsRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucketcorsconfiguration"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucketcorsconfiguration"
 
 &spacesbucketcorsconfiguration.SpacesBucketCorsConfigurationCorsRule {
 	AllowedMethods: *[]*string,
@@ -1001,7 +1001,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.spacesBucketCorsConfiguration.SpacesBucketCorsConfigurationCorsRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucketcorsconfiguration"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucketcorsconfiguration"
 
 spacesbucketcorsconfiguration.NewSpacesBucketCorsConfigurationCorsRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SpacesBucketCorsConfigurationCorsRuleList
 ```
@@ -1144,7 +1144,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.spacesBucketCorsConfiguration.SpacesBucketCorsConfigurationCorsRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucketcorsconfiguration"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucketcorsconfiguration"
 
 spacesbucketcorsconfiguration.NewSpacesBucketCorsConfigurationCorsRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SpacesBucketCorsConfigurationCorsRuleOutputReference
 ```
