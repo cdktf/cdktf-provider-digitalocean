@@ -1,7 +1,3 @@
-# `digitalocean_kubernetes_node_pool`
-
-Refer to the Terraform Registory for docs: [`digitalocean_kubernetes_node_pool`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/kubernetes_node_pool).
-
 # `kubernetesNodePool` Submodule <a name="`kubernetesNodePool` Submodule" id="@cdktf/provider-digitalocean.kubernetesNodePool"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

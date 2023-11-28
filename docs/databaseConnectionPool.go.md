@@ -1,7 +1,3 @@
-# `digitalocean_database_connection_pool`
-
-Refer to the Terraform Registory for docs: [`digitalocean_database_connection_pool`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/database_connection_pool).
-
 # `databaseConnectionPool` Submodule <a name="`databaseConnectionPool` Submodule" id="@cdktf/provider-digitalocean.databaseConnectionPool"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databaseConnectionPool.DatabaseConnectionPool.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databaseconnectionpool"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databaseconnectionpool"
 
 databaseconnectionpool.NewDatabaseConnectionPool(scope Construct, id *string, config DatabaseConnectionPoolConfig) DatabaseConnectionPool
 ```
@@ -346,7 +342,7 @@ func ResetUser()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.databaseConnectionPool.DatabaseConnectionPool.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databaseconnectionpool"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databaseconnectionpool"
 
 databaseconnectionpool.DatabaseConnectionPool_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.databaseConnectionPool.DatabaseConnectionPool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databaseconnectionpool"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databaseconnectionpool"
 
 databaseconnectionpool.DatabaseConnectionPool_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +388,7 @@ databaseconnectionpool.DatabaseConnectionPool_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.databaseConnectionPool.DatabaseConnectionPool.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databaseconnectionpool"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databaseconnectionpool"
 
 databaseconnectionpool.DatabaseConnectionPool_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +402,7 @@ databaseconnectionpool.DatabaseConnectionPool_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.databaseConnectionPool.DatabaseConnectionPool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databaseconnectionpool"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databaseconnectionpool"
 
 databaseconnectionpool.DatabaseConnectionPool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -855,7 +851,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.databaseConnectionPool.DatabaseConnectionPoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databaseconnectionpool"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databaseconnectionpool"
 
 &databaseconnectionpool.DatabaseConnectionPoolConfig {
 	Connection: interface{},

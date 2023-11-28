@@ -1,7 +1,3 @@
-# `digitalocean_cdn`
-
-Refer to the Terraform Registory for docs: [`digitalocean_cdn`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/cdn).
-
 # `cdn` Submodule <a name="`cdn` Submodule" id="@cdktf/provider-digitalocean.cdn"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.cdn.Cdn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/cdn"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/cdn"
 
 cdn.NewCdn(scope Construct, id *string, config CdnConfig) Cdn
 ```
@@ -367,7 +363,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.cdn.Cdn.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/cdn"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/cdn"
 
 cdn.Cdn_IsConstruct(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.cdn.Cdn.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/cdn"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/cdn"
 
 cdn.Cdn_IsTerraformElement(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ cdn.Cdn_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.cdn.Cdn.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/cdn"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/cdn"
 
 cdn.Cdn_IsTerraformResource(x interface{}) *bool
 ```
@@ -427,7 +423,7 @@ cdn.Cdn_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.cdn.Cdn.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/cdn"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/cdn"
 
 cdn.Cdn_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -810,7 +806,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.cdn.CdnConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/cdn"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/cdn"
 
 &cdn.CdnConfig {
 	Connection: interface{},

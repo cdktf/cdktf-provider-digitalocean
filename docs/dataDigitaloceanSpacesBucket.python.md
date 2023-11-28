@@ -1,7 +1,3 @@
-# `data_digitalocean_spaces_bucket`
-
-Refer to the Terraform Registory for docs: [`data_digitalocean_spaces_bucket`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/spaces_bucket).
-
 # `dataDigitaloceanSpacesBucket` Submodule <a name="`dataDigitaloceanSpacesBucket` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucket"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

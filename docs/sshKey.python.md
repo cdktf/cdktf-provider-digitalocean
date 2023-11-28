@@ -1,7 +1,3 @@
-# `digitalocean_ssh_key`
-
-Refer to the Terraform Registory for docs: [`digitalocean_ssh_key`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/ssh_key).
-
 # `sshKey` Submodule <a name="`sshKey` Submodule" id="@cdktf/provider-digitalocean.sshKey"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

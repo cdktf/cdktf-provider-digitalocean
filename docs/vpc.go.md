@@ -1,7 +1,3 @@
-# `digitalocean_vpc`
-
-Refer to the Terraform Registory for docs: [`digitalocean_vpc`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/vpc).
-
 # `vpc` Submodule <a name="`vpc` Submodule" id="@cdktf/provider-digitalocean.vpc"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.vpc.Vpc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/vpc"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/vpc"
 
 vpc.NewVpc(scope Construct, id *string, config VpcConfig) Vpc
 ```
@@ -373,7 +369,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.vpc.Vpc.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/vpc"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/vpc"
 
 vpc.Vpc_IsConstruct(x interface{}) *bool
 ```
@@ -405,7 +401,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.vpc.Vpc.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/vpc"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/vpc"
 
 vpc.Vpc_IsTerraformElement(x interface{}) *bool
 ```
@@ -419,7 +415,7 @@ vpc.Vpc_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.vpc.Vpc.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/vpc"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/vpc"
 
 vpc.Vpc_IsTerraformResource(x interface{}) *bool
 ```
@@ -433,7 +429,7 @@ vpc.Vpc_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.vpc.Vpc.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/vpc"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/vpc"
 
 vpc.Vpc_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -827,7 +823,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.vpc.VpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/vpc"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/vpc"
 
 &vpc.VpcConfig {
 	Connection: interface{},
@@ -842,7 +838,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/vpc"
 	Description: *string,
 	Id: *string,
 	IpRange: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.vpc.VpcTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.vpc.VpcTimeouts,
 }
 ```
 
@@ -1026,7 +1022,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.vpc.VpcTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/vpc"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/vpc"
 
 &vpc.VpcTimeouts {
 	Delete: *string,
@@ -1060,7 +1056,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.vpc.VpcTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/vpc"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/vpc"
 
 vpc.NewVpcTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcTimeoutsOutputReference
 ```

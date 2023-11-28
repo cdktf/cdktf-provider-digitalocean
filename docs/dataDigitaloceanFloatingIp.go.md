@@ -1,7 +1,3 @@
-# `data_digitalocean_floating_ip`
-
-Refer to the Terraform Registory for docs: [`data_digitalocean_floating_ip`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/floating_ip).
-
 # `dataDigitaloceanFloatingIp` Submodule <a name="`dataDigitaloceanFloatingIp` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanFloatingIp"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanFloatingIp.DataDigitaloceanFloatingIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanfloatingip"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanfloatingip"
 
 datadigitaloceanfloatingip.NewDataDigitaloceanFloatingIp(scope Construct, id *string, config DataDigitaloceanFloatingIpConfig) DataDigitaloceanFloatingIp
 ```
@@ -278,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanFloatingIp.DataDigitaloceanFloatingIp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanfloatingip"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanfloatingip"
 
 datadigitaloceanfloatingip.DataDigitaloceanFloatingIp_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanFloatingIp.DataDigitaloceanFloatingIp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanfloatingip"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanfloatingip"
 
 datadigitaloceanfloatingip.DataDigitaloceanFloatingIp_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ datadigitaloceanfloatingip.DataDigitaloceanFloatingIp_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanFloatingIp.DataDigitaloceanFloatingIp.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanfloatingip"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanfloatingip"
 
 datadigitaloceanfloatingip.DataDigitaloceanFloatingIp_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datadigitaloceanfloatingip.DataDigitaloceanFloatingIp_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.dataDigitaloceanFloatingIp.DataDigitaloceanFloatingIp.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanfloatingip"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanfloatingip"
 
 datadigitaloceanfloatingip.DataDigitaloceanFloatingIp_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -622,7 +618,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanFloatingIp.DataDigitaloceanFloatingIpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanfloatingip"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanfloatingip"
 
 &datadigitaloceanfloatingip.DataDigitaloceanFloatingIpConfig {
 	Connection: interface{},

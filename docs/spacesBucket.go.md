@@ -1,7 +1,3 @@
-# `digitalocean_spaces_bucket`
-
-Refer to the Terraform Registory for docs: [`digitalocean_spaces_bucket`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/spaces_bucket).
-
 # `spacesBucket` Submodule <a name="`spacesBucket` Submodule" id="@cdktf/provider-digitalocean.spacesBucket"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucket.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucket"
 
 spacesbucket.NewSpacesBucket(scope Construct, id *string, config SpacesBucketConfig) SpacesBucket
 ```
@@ -420,7 +416,7 @@ func ResetVersioning()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucket.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucket"
 
 spacesbucket.SpacesBucket_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +448,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucket.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucket"
 
 spacesbucket.SpacesBucket_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +462,7 @@ spacesbucket.SpacesBucket_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucket.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucket"
 
 spacesbucket.SpacesBucket_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +476,7 @@ spacesbucket.SpacesBucket_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucket.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucket"
 
 spacesbucket.SpacesBucket_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -918,7 +914,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucketConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucket"
 
 &spacesbucket.SpacesBucketConfig {
 	Connection: interface{},
@@ -935,7 +931,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesb
 	Id: *string,
 	LifecycleRule: interface{},
 	Region: *string,
-	Versioning: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.spacesBucket.SpacesBucketVersioning,
+	Versioning: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.spacesBucket.SpacesBucketVersioning,
 }
 ```
 
@@ -1149,7 +1145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucketCorsRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucket"
 
 &spacesbucket.SpacesBucketCorsRule {
 	AllowedMethods: *[]*string,
@@ -1233,14 +1229,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucketLifecycleRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucket"
 
 &spacesbucket.SpacesBucketLifecycleRule {
 	Enabled: interface{},
 	AbortIncompleteMultipartUploadDays: *f64,
-	Expiration: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.spacesBucket.SpacesBucketLifecycleRuleExpiration,
+	Expiration: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.spacesBucket.SpacesBucketLifecycleRuleExpiration,
 	Id: *string,
-	NoncurrentVersionExpiration: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.spacesBucket.SpacesBucketLifecycleRuleNoncurrentVersionExpiration,
+	NoncurrentVersionExpiration: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.spacesBucket.SpacesBucketLifecycleRuleNoncurrentVersionExpiration,
 	Prefix: *string,
 }
 ```
@@ -1342,7 +1338,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucketLifecycleRuleExpiration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucket"
 
 &spacesbucket.SpacesBucketLifecycleRuleExpiration {
 	Date: *string,
@@ -1402,7 +1398,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucketLifecycleRuleNoncurrentVersionExpiration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucket"
 
 &spacesbucket.SpacesBucketLifecycleRuleNoncurrentVersionExpiration {
 	Days: *f64,
@@ -1434,7 +1430,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucketVersioning.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucket"
 
 &spacesbucket.SpacesBucketVersioning {
 	Enabled: interface{},
@@ -1468,7 +1464,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucketCorsRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucket"
 
 spacesbucket.NewSpacesBucketCorsRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SpacesBucketCorsRuleList
 ```
@@ -1611,7 +1607,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucketCorsRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucket"
 
 spacesbucket.NewSpacesBucketCorsRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SpacesBucketCorsRuleOutputReference
 ```
@@ -1980,7 +1976,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucketLifecycleRuleExpirationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucket"
 
 spacesbucket.NewSpacesBucketLifecycleRuleExpirationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpacesBucketLifecycleRuleExpirationOutputReference
 ```
@@ -2316,7 +2312,7 @@ func InternalValue() SpacesBucketLifecycleRuleExpiration
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucketLifecycleRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucket"
 
 spacesbucket.NewSpacesBucketLifecycleRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SpacesBucketLifecycleRuleList
 ```
@@ -2459,7 +2455,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucketLifecycleRuleNoncurrentVersionExpirationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucket"
 
 spacesbucket.NewSpacesBucketLifecycleRuleNoncurrentVersionExpirationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpacesBucketLifecycleRuleNoncurrentVersionExpirationOutputReference
 ```
@@ -2737,7 +2733,7 @@ func InternalValue() SpacesBucketLifecycleRuleNoncurrentVersionExpiration
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucketLifecycleRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucket"
 
 spacesbucket.NewSpacesBucketLifecycleRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SpacesBucketLifecycleRuleOutputReference
 ```
@@ -3197,7 +3193,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucketVersioningOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/spacesbucket"
 
 spacesbucket.NewSpacesBucketVersioningOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpacesBucketVersioningOutputReference
 ```

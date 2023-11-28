@@ -1,7 +1,3 @@
-# `digitalocean_database_redis_config`
-
-Refer to the Terraform Registory for docs: [`digitalocean_database_redis_config`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/database_redis_config).
-
 # `databaseRedisConfig` Submodule <a name="`databaseRedisConfig` Submodule" id="@cdktf/provider-digitalocean.databaseRedisConfig"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `data_digitalocean_spaces_bucket_object`
-
-Refer to the Terraform Registory for docs: [`data_digitalocean_spaces_bucket_object`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/spaces_bucket_object).
-
 # `dataDigitaloceanSpacesBucketObject` Submodule <a name="`dataDigitaloceanSpacesBucketObject` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanspacesbucketobject"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanspacesbucketobject"
 
 datadigitaloceanspacesbucketobject.NewDataDigitaloceanSpacesBucketObject(scope Construct, id *string, config DataDigitaloceanSpacesBucketObjectConfig) DataDigitaloceanSpacesBucketObject
 ```
@@ -292,7 +288,7 @@ func ResetVersionId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObject.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanspacesbucketobject"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanspacesbucketobject"
 
 datadigitaloceanspacesbucketobject.DataDigitaloceanSpacesBucketObject_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObject.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanspacesbucketobject"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanspacesbucketobject"
 
 datadigitaloceanspacesbucketobject.DataDigitaloceanSpacesBucketObject_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datadigitaloceanspacesbucketobject.DataDigitaloceanSpacesBucketObject_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObject.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanspacesbucketobject"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanspacesbucketobject"
 
 datadigitaloceanspacesbucketobject.DataDigitaloceanSpacesBucketObject_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +348,7 @@ datadigitaloceanspacesbucketobject.DataDigitaloceanSpacesBucketObject_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObject.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanspacesbucketobject"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanspacesbucketobject"
 
 datadigitaloceanspacesbucketobject.DataDigitaloceanSpacesBucketObject_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -834,7 +830,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanspacesbucketobject"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanspacesbucketobject"
 
 &datadigitaloceanspacesbucketobject.DataDigitaloceanSpacesBucketObjectConfig {
 	Connection: interface{},

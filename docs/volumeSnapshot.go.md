@@ -1,7 +1,3 @@
-# `digitalocean_volume_snapshot`
-
-Refer to the Terraform Registory for docs: [`digitalocean_volume_snapshot`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/volume_snapshot).
-
 # `volumeSnapshot` Submodule <a name="`volumeSnapshot` Submodule" id="@cdktf/provider-digitalocean.volumeSnapshot"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.volumeSnapshot.VolumeSnapshot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/volumesnapshot"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/volumesnapshot"
 
 volumesnapshot.NewVolumeSnapshot(scope Construct, id *string, config VolumeSnapshotConfig) VolumeSnapshot
 ```
@@ -346,7 +342,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.volumeSnapshot.VolumeSnapshot.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/volumesnapshot"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/volumesnapshot"
 
 volumesnapshot.VolumeSnapshot_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.volumeSnapshot.VolumeSnapshot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/volumesnapshot"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/volumesnapshot"
 
 volumesnapshot.VolumeSnapshot_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +388,7 @@ volumesnapshot.VolumeSnapshot_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.volumeSnapshot.VolumeSnapshot.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/volumesnapshot"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/volumesnapshot"
 
 volumesnapshot.VolumeSnapshot_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +402,7 @@ volumesnapshot.VolumeSnapshot_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.volumeSnapshot.VolumeSnapshot.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/volumesnapshot"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/volumesnapshot"
 
 volumesnapshot.VolumeSnapshot_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -767,7 +763,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.volumeSnapshot.VolumeSnapshotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/volumesnapshot"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/volumesnapshot"
 
 &volumesnapshot.VolumeSnapshotConfig {
 	Connection: interface{},

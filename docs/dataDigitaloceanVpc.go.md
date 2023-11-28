@@ -1,7 +1,3 @@
-# `data_digitalocean_vpc`
-
-Refer to the Terraform Registory for docs: [`data_digitalocean_vpc`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/vpc).
-
 # `dataDigitaloceanVpc` Submodule <a name="`dataDigitaloceanVpc` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanVpc"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanvpc"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanvpc"
 
 datadigitaloceanvpc.NewDataDigitaloceanVpc(scope Construct, id *string, config DataDigitaloceanVpcConfig) DataDigitaloceanVpc
 ```
@@ -292,7 +288,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpc.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanvpc"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanvpc"
 
 datadigitaloceanvpc.DataDigitaloceanVpc_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpc.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanvpc"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanvpc"
 
 datadigitaloceanvpc.DataDigitaloceanVpc_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datadigitaloceanvpc.DataDigitaloceanVpc_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpc.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanvpc"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanvpc"
 
 datadigitaloceanvpc.DataDigitaloceanVpc_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +348,7 @@ datadigitaloceanvpc.DataDigitaloceanVpc_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpc.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanvpc"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanvpc"
 
 datadigitaloceanvpc.DataDigitaloceanVpc_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -680,7 +676,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanVpc.DataDigitaloceanVpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanvpc"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanvpc"
 
 &datadigitaloceanvpc.DataDigitaloceanVpcConfig {
 	Connection: interface{},

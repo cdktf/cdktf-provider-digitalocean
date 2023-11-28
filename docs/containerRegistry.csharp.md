@@ -1,7 +1,3 @@
-# `digitalocean_container_registry`
-
-Refer to the Terraform Registory for docs: [`digitalocean_container_registry`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/container_registry).
-
 # `containerRegistry` Submodule <a name="`containerRegistry` Submodule" id="@cdktf/provider-digitalocean.containerRegistry"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

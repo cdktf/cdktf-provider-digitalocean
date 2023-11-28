@@ -1,7 +1,3 @@
-# `data_digitalocean_image`
-
-Refer to the Terraform Registory for docs: [`data_digitalocean_image`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/image).
-
 # `dataDigitaloceanImage` Submodule <a name="`dataDigitaloceanImage` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanImage"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
