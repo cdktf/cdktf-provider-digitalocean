@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/reservedipassignment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/reservedipassignment"
 
 reservedipassignment.NewReservedIpAssignment(scope Construct, id *string, config ReservedIpAssignmentConfig) ReservedIpAssignment
 ```
@@ -335,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/reservedipassignment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/reservedipassignment"
 
 reservedipassignment.ReservedIpAssignment_IsConstruct(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/reservedipassignment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/reservedipassignment"
 
 reservedipassignment.ReservedIpAssignment_IsTerraformElement(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ reservedipassignment.ReservedIpAssignment_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/reservedipassignment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/reservedipassignment"
 
 reservedipassignment.ReservedIpAssignment_IsTerraformResource(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ reservedipassignment.ReservedIpAssignment_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/reservedipassignment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/reservedipassignment"
 
 reservedipassignment.ReservedIpAssignment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -690,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/reservedipassignment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/reservedipassignment"
 
 &reservedipassignment.ReservedIpAssignmentConfig {
 	Connection: interface{},
