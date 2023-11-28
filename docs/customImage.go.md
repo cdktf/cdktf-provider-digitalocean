@@ -1,7 +1,3 @@
-# `digitalocean_custom_image`
-
-Refer to the Terraform Registory for docs: [`digitalocean_custom_image`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/custom_image).
-
 # `customImage` Submodule <a name="`customImage` Submodule" id="@cdktf/provider-digitalocean.customImage"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

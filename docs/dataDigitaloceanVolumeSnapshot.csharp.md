@@ -1,7 +1,3 @@
-# `data_digitalocean_volume_snapshot`
-
-Refer to the Terraform Registory for docs: [`data_digitalocean_volume_snapshot`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/volume_snapshot).
-
 # `dataDigitaloceanVolumeSnapshot` Submodule <a name="`dataDigitaloceanVolumeSnapshot` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanVolumeSnapshot"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `data_digitalocean_kubernetes_versions`
-
-Refer to the Terraform Registory for docs: [`data_digitalocean_kubernetes_versions`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/kubernetes_versions).
-
 # `dataDigitaloceanKubernetesVersions` Submodule <a name="`dataDigitaloceanKubernetesVersions` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanKubernetesVersions"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

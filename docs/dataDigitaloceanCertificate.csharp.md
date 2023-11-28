@@ -1,7 +1,3 @@
-# `data_digitalocean_certificate`
-
-Refer to the Terraform Registory for docs: [`data_digitalocean_certificate`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/certificate).
-
 # `dataDigitaloceanCertificate` Submodule <a name="`dataDigitaloceanCertificate` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanCertificate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `digitalocean_spaces_bucket_cors_configuration`
-
-Refer to the Terraform Registory for docs: [`digitalocean_spaces_bucket_cors_configuration`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/spaces_bucket_cors_configuration).
-
 # `spacesBucketCorsConfiguration` Submodule <a name="`spacesBucketCorsConfiguration` Submodule" id="@cdktf/provider-digitalocean.spacesBucketCorsConfiguration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

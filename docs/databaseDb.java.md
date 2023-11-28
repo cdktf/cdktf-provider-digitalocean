@@ -1,7 +1,3 @@
-# `digitalocean_database_db`
-
-Refer to the Terraform Registory for docs: [`digitalocean_database_db`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/database_db).
-
 # `databaseDb` Submodule <a name="`databaseDb` Submodule" id="@cdktf/provider-digitalocean.databaseDb"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

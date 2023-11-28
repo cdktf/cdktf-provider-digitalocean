@@ -1,7 +1,3 @@
-# `data_digitalocean_floating_ip`
-
-Refer to the Terraform Registory for docs: [`data_digitalocean_floating_ip`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/floating_ip).
-
 # `dataDigitaloceanFloatingIp` Submodule <a name="`dataDigitaloceanFloatingIp` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanFloatingIp"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

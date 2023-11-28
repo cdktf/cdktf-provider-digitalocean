@@ -1,7 +1,3 @@
-# `data_digitalocean_record`
-
-Refer to the Terraform Registory for docs: [`data_digitalocean_record`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/record).
-
 # `dataDigitaloceanRecord` Submodule <a name="`dataDigitaloceanRecord` Submodule" id="@cdktf/provider-digitalocean.dataDigitaloceanRecord"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

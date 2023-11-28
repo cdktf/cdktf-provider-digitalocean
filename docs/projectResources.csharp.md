@@ -1,7 +1,3 @@
-# `digitalocean_project_resources`
-
-Refer to the Terraform Registory for docs: [`digitalocean_project_resources`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/project_resources).
-
 # `projectResources` Submodule <a name="`projectResources` Submodule" id="@cdktf/provider-digitalocean.projectResources"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
