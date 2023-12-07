@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.provider.DigitaloceanProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/provider"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/provider"
 
 provider.NewDigitaloceanProvider(scope Construct, id *string, config DigitaloceanProviderConfig) DigitaloceanProvider
 ```
@@ -207,7 +207,7 @@ func ResetToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.provider.DigitaloceanProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/provider"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/provider"
 
 provider.DigitaloceanProvider_IsConstruct(x interface{}) *bool
 ```
@@ -239,7 +239,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.provider.DigitaloceanProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/provider"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/provider"
 
 provider.DigitaloceanProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -253,7 +253,7 @@ provider.DigitaloceanProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-digitalocean.provider.DigitaloceanProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/provider"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/provider"
 
 provider.DigitaloceanProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -267,7 +267,7 @@ provider.DigitaloceanProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.provider.DigitaloceanProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/provider"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/provider"
 
 provider.DigitaloceanProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -650,7 +650,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.provider.DigitaloceanProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/provider"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/provider"
 
 &provider.DigitaloceanProviderConfig {
 	Alias: *string,
