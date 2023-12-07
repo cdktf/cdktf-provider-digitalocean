@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanImage.DataDigitaloceanImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanimage"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanimage"
 
 datadigitaloceanimage.NewDataDigitaloceanImage(scope Construct, id *string, config DataDigitaloceanImageConfig) DataDigitaloceanImage
 ```
@@ -295,7 +295,7 @@ func ResetSource()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanImage.DataDigitaloceanImage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanimage"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanimage"
 
 datadigitaloceanimage.DataDigitaloceanImage_IsConstruct(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanImage.DataDigitaloceanImage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanimage"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanimage"
 
 datadigitaloceanimage.DataDigitaloceanImage_IsTerraformElement(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ datadigitaloceanimage.DataDigitaloceanImage_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanImage.DataDigitaloceanImage.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanimage"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanimage"
 
 datadigitaloceanimage.DataDigitaloceanImage_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -355,7 +355,7 @@ datadigitaloceanimage.DataDigitaloceanImage_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.dataDigitaloceanImage.DataDigitaloceanImage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanimage"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanimage"
 
 datadigitaloceanimage.DataDigitaloceanImage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -782,7 +782,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanImage.DataDigitaloceanImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanimage"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanimage"
 
 &datadigitaloceanimage.DataDigitaloceanImageConfig {
 	Connection: interface{},
