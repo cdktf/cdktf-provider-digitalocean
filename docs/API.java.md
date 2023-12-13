@@ -13,6 +13,7 @@ The following submodules are available:
 - [dataDigitaloceanContainerRegistry](./dataDigitaloceanContainerRegistry.java.md)
 - [dataDigitaloceanDatabaseCa](./dataDigitaloceanDatabaseCa.java.md)
 - [dataDigitaloceanDatabaseCluster](./dataDigitaloceanDatabaseCluster.java.md)
+- [dataDigitaloceanDatabaseConnectionPool](./dataDigitaloceanDatabaseConnectionPool.java.md)
 - [dataDigitaloceanDatabaseReplica](./dataDigitaloceanDatabaseReplica.java.md)
 - [dataDigitaloceanDatabaseUser](./dataDigitaloceanDatabaseUser.java.md)
 - [dataDigitaloceanDomain](./dataDigitaloceanDomain.java.md)

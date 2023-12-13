@@ -13,6 +13,7 @@ The following submodules are available:
 - [dataDigitaloceanContainerRegistry](./dataDigitaloceanContainerRegistry.typescript.md)
 - [dataDigitaloceanDatabaseCa](./dataDigitaloceanDatabaseCa.typescript.md)
 - [dataDigitaloceanDatabaseCluster](./dataDigitaloceanDatabaseCluster.typescript.md)
+- [dataDigitaloceanDatabaseConnectionPool](./dataDigitaloceanDatabaseConnectionPool.typescript.md)
 - [dataDigitaloceanDatabaseReplica](./dataDigitaloceanDatabaseReplica.typescript.md)
 - [dataDigitaloceanDatabaseUser](./dataDigitaloceanDatabaseUser.typescript.md)
 - [dataDigitaloceanDomain](./dataDigitaloceanDomain.typescript.md)

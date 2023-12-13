@@ -13,6 +13,7 @@ The following submodules are available:
 - [dataDigitaloceanContainerRegistry](./dataDigitaloceanContainerRegistry.csharp.md)
 - [dataDigitaloceanDatabaseCa](./dataDigitaloceanDatabaseCa.csharp.md)
 - [dataDigitaloceanDatabaseCluster](./dataDigitaloceanDatabaseCluster.csharp.md)
+- [dataDigitaloceanDatabaseConnectionPool](./dataDigitaloceanDatabaseConnectionPool.csharp.md)
 - [dataDigitaloceanDatabaseReplica](./dataDigitaloceanDatabaseReplica.csharp.md)
 - [dataDigitaloceanDatabaseUser](./dataDigitaloceanDatabaseUser.csharp.md)
 - [dataDigitaloceanDomain](./dataDigitaloceanDomain.csharp.md)

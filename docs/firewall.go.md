@@ -4,12 +4,12 @@
 
 ### Firewall <a name="Firewall" id="@cdktf/provider-digitalocean.firewall.Firewall"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall digitalocean_firewall}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall digitalocean_firewall}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.firewall.Firewall.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/firewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/firewall"
 
 firewall.NewFirewall(scope Construct, id *string, config FirewallConfig) Firewall
 ```
@@ -432,7 +432,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.firewall.Firewall.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/firewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/firewall"
 
 firewall.Firewall_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.firewall.Firewall.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/firewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/firewall"
 
 firewall.Firewall_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ firewall.Firewall_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.firewall.Firewall.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/firewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/firewall"
 
 firewall.Firewall_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ firewall.Firewall_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.firewall.Firewall.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/firewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/firewall"
 
 firewall.Firewall_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -521,7 +521,7 @@ The construct id used in the generated config for the Firewall to import.
 
 The id of the existing Firewall that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -886,7 +886,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.firewall.FirewallConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/firewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/firewall"
 
 &firewall.FirewallConfig {
 	Connection: interface{},
@@ -916,12 +916,12 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/firewal
 | <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#name Firewall#name}. |
-| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallConfig.property.dropletIds">DropletIds</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#droplet_ids Firewall#droplet_ids}. |
-| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#id Firewall#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#name Firewall#name}. |
+| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallConfig.property.dropletIds">DropletIds</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#droplet_ids Firewall#droplet_ids}. |
+| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#id Firewall#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallConfig.property.inboundRule">InboundRule</a></code> | <code>interface{}</code> | inbound_rule block. |
 | <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallConfig.property.outboundRule">OutboundRule</a></code> | <code>interface{}</code> | outbound_rule block. |
-| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallConfig.property.tags">Tags</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#tags Firewall#tags}. |
+| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallConfig.property.tags">Tags</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#tags Firewall#tags}. |
 
 ---
 
@@ -1003,7 +1003,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#name Firewall#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#name Firewall#name}.
 
 ---
 
@@ -1015,7 +1015,7 @@ DropletIds *[]*f64
 
 - *Type:* *[]*f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#droplet_ids Firewall#droplet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#droplet_ids Firewall#droplet_ids}.
 
 ---
 
@@ -1027,7 +1027,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#id Firewall#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#id Firewall#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1044,7 +1044,7 @@ InboundRule interface{}
 
 inbound_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#inbound_rule Firewall#inbound_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#inbound_rule Firewall#inbound_rule}
 
 ---
 
@@ -1058,7 +1058,7 @@ OutboundRule interface{}
 
 outbound_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#outbound_rule Firewall#outbound_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#outbound_rule Firewall#outbound_rule}
 
 ---
 
@@ -1070,7 +1070,7 @@ Tags *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#tags Firewall#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#tags Firewall#tags}.
 
 ---
 
@@ -1079,7 +1079,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.firewall.FirewallInboundRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/firewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/firewall"
 
 &firewall.FirewallInboundRule {
 	Protocol: *string,
@@ -1096,13 +1096,13 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/firewal
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallInboundRule.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#protocol Firewall#protocol}. |
-| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallInboundRule.property.portRange">PortRange</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#port_range Firewall#port_range}. |
-| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallInboundRule.property.sourceAddresses">SourceAddresses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#source_addresses Firewall#source_addresses}. |
-| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallInboundRule.property.sourceDropletIds">SourceDropletIds</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#source_droplet_ids Firewall#source_droplet_ids}. |
-| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallInboundRule.property.sourceKubernetesIds">SourceKubernetesIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#source_kubernetes_ids Firewall#source_kubernetes_ids}. |
-| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallInboundRule.property.sourceLoadBalancerUids">SourceLoadBalancerUids</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#source_load_balancer_uids Firewall#source_load_balancer_uids}. |
-| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallInboundRule.property.sourceTags">SourceTags</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#source_tags Firewall#source_tags}. |
+| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallInboundRule.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#protocol Firewall#protocol}. |
+| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallInboundRule.property.portRange">PortRange</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#port_range Firewall#port_range}. |
+| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallInboundRule.property.sourceAddresses">SourceAddresses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#source_addresses Firewall#source_addresses}. |
+| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallInboundRule.property.sourceDropletIds">SourceDropletIds</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#source_droplet_ids Firewall#source_droplet_ids}. |
+| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallInboundRule.property.sourceKubernetesIds">SourceKubernetesIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#source_kubernetes_ids Firewall#source_kubernetes_ids}. |
+| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallInboundRule.property.sourceLoadBalancerUids">SourceLoadBalancerUids</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#source_load_balancer_uids Firewall#source_load_balancer_uids}. |
+| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallInboundRule.property.sourceTags">SourceTags</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#source_tags Firewall#source_tags}. |
 
 ---
 
@@ -1114,7 +1114,7 @@ Protocol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#protocol Firewall#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#protocol Firewall#protocol}.
 
 ---
 
@@ -1126,7 +1126,7 @@ PortRange *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#port_range Firewall#port_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#port_range Firewall#port_range}.
 
 ---
 
@@ -1138,7 +1138,7 @@ SourceAddresses *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#source_addresses Firewall#source_addresses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#source_addresses Firewall#source_addresses}.
 
 ---
 
@@ -1150,7 +1150,7 @@ SourceDropletIds *[]*f64
 
 - *Type:* *[]*f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#source_droplet_ids Firewall#source_droplet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#source_droplet_ids Firewall#source_droplet_ids}.
 
 ---
 
@@ -1162,7 +1162,7 @@ SourceKubernetesIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#source_kubernetes_ids Firewall#source_kubernetes_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#source_kubernetes_ids Firewall#source_kubernetes_ids}.
 
 ---
 
@@ -1174,7 +1174,7 @@ SourceLoadBalancerUids *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#source_load_balancer_uids Firewall#source_load_balancer_uids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#source_load_balancer_uids Firewall#source_load_balancer_uids}.
 
 ---
 
@@ -1186,7 +1186,7 @@ SourceTags *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#source_tags Firewall#source_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#source_tags Firewall#source_tags}.
 
 ---
 
@@ -1195,7 +1195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.firewall.FirewallOutboundRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/firewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/firewall"
 
 &firewall.FirewallOutboundRule {
 	Protocol: *string,
@@ -1212,13 +1212,13 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/firewal
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallOutboundRule.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#protocol Firewall#protocol}. |
-| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallOutboundRule.property.destinationAddresses">DestinationAddresses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#destination_addresses Firewall#destination_addresses}. |
-| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallOutboundRule.property.destinationDropletIds">DestinationDropletIds</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#destination_droplet_ids Firewall#destination_droplet_ids}. |
-| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallOutboundRule.property.destinationKubernetesIds">DestinationKubernetesIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#destination_kubernetes_ids Firewall#destination_kubernetes_ids}. |
-| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallOutboundRule.property.destinationLoadBalancerUids">DestinationLoadBalancerUids</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#destination_load_balancer_uids Firewall#destination_load_balancer_uids}. |
-| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallOutboundRule.property.destinationTags">DestinationTags</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#destination_tags Firewall#destination_tags}. |
-| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallOutboundRule.property.portRange">PortRange</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#port_range Firewall#port_range}. |
+| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallOutboundRule.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#protocol Firewall#protocol}. |
+| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallOutboundRule.property.destinationAddresses">DestinationAddresses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#destination_addresses Firewall#destination_addresses}. |
+| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallOutboundRule.property.destinationDropletIds">DestinationDropletIds</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#destination_droplet_ids Firewall#destination_droplet_ids}. |
+| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallOutboundRule.property.destinationKubernetesIds">DestinationKubernetesIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#destination_kubernetes_ids Firewall#destination_kubernetes_ids}. |
+| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallOutboundRule.property.destinationLoadBalancerUids">DestinationLoadBalancerUids</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#destination_load_balancer_uids Firewall#destination_load_balancer_uids}. |
+| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallOutboundRule.property.destinationTags">DestinationTags</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#destination_tags Firewall#destination_tags}. |
+| <code><a href="#@cdktf/provider-digitalocean.firewall.FirewallOutboundRule.property.portRange">PortRange</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#port_range Firewall#port_range}. |
 
 ---
 
@@ -1230,7 +1230,7 @@ Protocol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#protocol Firewall#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#protocol Firewall#protocol}.
 
 ---
 
@@ -1242,7 +1242,7 @@ DestinationAddresses *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#destination_addresses Firewall#destination_addresses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#destination_addresses Firewall#destination_addresses}.
 
 ---
 
@@ -1254,7 +1254,7 @@ DestinationDropletIds *[]*f64
 
 - *Type:* *[]*f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#destination_droplet_ids Firewall#destination_droplet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#destination_droplet_ids Firewall#destination_droplet_ids}.
 
 ---
 
@@ -1266,7 +1266,7 @@ DestinationKubernetesIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#destination_kubernetes_ids Firewall#destination_kubernetes_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#destination_kubernetes_ids Firewall#destination_kubernetes_ids}.
 
 ---
 
@@ -1278,7 +1278,7 @@ DestinationLoadBalancerUids *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#destination_load_balancer_uids Firewall#destination_load_balancer_uids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#destination_load_balancer_uids Firewall#destination_load_balancer_uids}.
 
 ---
 
@@ -1290,7 +1290,7 @@ DestinationTags *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#destination_tags Firewall#destination_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#destination_tags Firewall#destination_tags}.
 
 ---
 
@@ -1302,7 +1302,7 @@ PortRange *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/firewall#port_range Firewall#port_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall#port_range Firewall#port_range}.
 
 ---
 
@@ -1311,7 +1311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.firewall.FirewallPendingChanges.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/firewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/firewall"
 
 &firewall.FirewallPendingChanges {
 
@@ -1326,7 +1326,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/firewal
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.firewall.FirewallInboundRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/firewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/firewall"
 
 firewall.NewFirewallInboundRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirewallInboundRuleList
 ```
@@ -1469,7 +1469,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.firewall.FirewallInboundRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/firewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/firewall"
 
 firewall.NewFirewallInboundRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FirewallInboundRuleOutputReference
 ```
@@ -1932,7 +1932,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.firewall.FirewallOutboundRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/firewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/firewall"
 
 firewall.NewFirewallOutboundRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirewallOutboundRuleList
 ```
@@ -2075,7 +2075,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.firewall.FirewallOutboundRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/firewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/firewall"
 
 firewall.NewFirewallOutboundRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FirewallOutboundRuleOutputReference
 ```
@@ -2538,7 +2538,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.firewall.FirewallPendingChangesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/firewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/firewall"
 
 firewall.NewFirewallPendingChangesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirewallPendingChangesList
 ```
@@ -2670,7 +2670,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.firewall.FirewallPendingChangesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/firewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/firewall"
 
 firewall.NewFirewallPendingChangesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FirewallPendingChangesOutputReference
 ```

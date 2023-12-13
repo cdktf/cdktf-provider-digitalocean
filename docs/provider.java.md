@@ -4,7 +4,7 @@
 
 ### DigitaloceanProvider <a name="DigitaloceanProvider" id="@cdktf/provider-digitalocean.provider.DigitaloceanProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs digitalocean}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs digitalocean}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.provider.DigitaloceanProvider.Initializer"></a>
 
@@ -66,7 +66,7 @@ Must be unique amongst siblings in the same scope
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs#alias DigitaloceanProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs#alias DigitaloceanProvider#alias}
 
 ---
 
@@ -76,7 +76,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The URL to use for the DigitalOcean API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs#api_endpoint DigitaloceanProvider#api_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs#api_endpoint DigitaloceanProvider#api_endpoint}
 
 ---
 
@@ -86,7 +86,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The maximum number of retries on a failed API request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs#http_retry_max DigitaloceanProvider#http_retry_max}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs#http_retry_max DigitaloceanProvider#http_retry_max}
 
 ---
 
@@ -96,7 +96,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The maximum wait time (in seconds) between failed API requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs#http_retry_wait_max DigitaloceanProvider#http_retry_wait_max}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs#http_retry_wait_max DigitaloceanProvider#http_retry_wait_max}
 
 ---
 
@@ -106,7 +106,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The minimum wait time (in seconds) between failed API requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs#http_retry_wait_min DigitaloceanProvider#http_retry_wait_min}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs#http_retry_wait_min DigitaloceanProvider#http_retry_wait_min}
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The rate of requests per second to limit the HTTP client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs#requests_per_second DigitaloceanProvider#requests_per_second}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs#requests_per_second DigitaloceanProvider#requests_per_second}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The access key ID for Spaces API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs#spaces_access_id DigitaloceanProvider#spaces_access_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs#spaces_access_id DigitaloceanProvider#spaces_access_id}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The URL to use for the DigitalOcean Spaces API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs#spaces_endpoint DigitaloceanProvider#spaces_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs#spaces_endpoint DigitaloceanProvider#spaces_endpoint}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The secret access key for Spaces API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs#spaces_secret_key DigitaloceanProvider#spaces_secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs#spaces_secret_key DigitaloceanProvider#spaces_secret_key}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The token key for API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs#token DigitaloceanProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs#token DigitaloceanProvider#token}
 
 ---
 
@@ -410,7 +410,7 @@ The construct id used in the generated config for the DigitaloceanProvider to im
 
 The id of the existing DigitaloceanProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -807,7 +807,7 @@ public java.lang.String getAlias();
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs#alias DigitaloceanProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs#alias DigitaloceanProvider#alias}
 
 ---
 
@@ -821,7 +821,7 @@ public java.lang.String getApiEndpoint();
 
 The URL to use for the DigitalOcean API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs#api_endpoint DigitaloceanProvider#api_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs#api_endpoint DigitaloceanProvider#api_endpoint}
 
 ---
 
@@ -835,7 +835,7 @@ public java.lang.Number getHttpRetryMax();
 
 The maximum number of retries on a failed API request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs#http_retry_max DigitaloceanProvider#http_retry_max}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs#http_retry_max DigitaloceanProvider#http_retry_max}
 
 ---
 
@@ -849,7 +849,7 @@ public java.lang.Number getHttpRetryWaitMax();
 
 The maximum wait time (in seconds) between failed API requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs#http_retry_wait_max DigitaloceanProvider#http_retry_wait_max}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs#http_retry_wait_max DigitaloceanProvider#http_retry_wait_max}
 
 ---
 
@@ -863,7 +863,7 @@ public java.lang.Number getHttpRetryWaitMin();
 
 The minimum wait time (in seconds) between failed API requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs#http_retry_wait_min DigitaloceanProvider#http_retry_wait_min}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs#http_retry_wait_min DigitaloceanProvider#http_retry_wait_min}
 
 ---
 
@@ -877,7 +877,7 @@ public java.lang.Number getRequestsPerSecond();
 
 The rate of requests per second to limit the HTTP client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs#requests_per_second DigitaloceanProvider#requests_per_second}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs#requests_per_second DigitaloceanProvider#requests_per_second}
 
 ---
 
@@ -891,7 +891,7 @@ public java.lang.String getSpacesAccessId();
 
 The access key ID for Spaces API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs#spaces_access_id DigitaloceanProvider#spaces_access_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs#spaces_access_id DigitaloceanProvider#spaces_access_id}
 
 ---
 
@@ -905,7 +905,7 @@ public java.lang.String getSpacesEndpoint();
 
 The URL to use for the DigitalOcean Spaces API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs#spaces_endpoint DigitaloceanProvider#spaces_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs#spaces_endpoint DigitaloceanProvider#spaces_endpoint}
 
 ---
 
@@ -919,7 +919,7 @@ public java.lang.String getSpacesSecretKey();
 
 The secret access key for Spaces API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs#spaces_secret_key DigitaloceanProvider#spaces_secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs#spaces_secret_key DigitaloceanProvider#spaces_secret_key}
 
 ---
 
@@ -933,7 +933,7 @@ public java.lang.String getToken();
 
 The token key for API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs#token DigitaloceanProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs#token DigitaloceanProvider#token}
 
 ---
 

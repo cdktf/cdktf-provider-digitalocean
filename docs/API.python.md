@@ -13,6 +13,7 @@ The following submodules are available:
 - [dataDigitaloceanContainerRegistry](./dataDigitaloceanContainerRegistry.python.md)
 - [dataDigitaloceanDatabaseCa](./dataDigitaloceanDatabaseCa.python.md)
 - [dataDigitaloceanDatabaseCluster](./dataDigitaloceanDatabaseCluster.python.md)
+- [dataDigitaloceanDatabaseConnectionPool](./dataDigitaloceanDatabaseConnectionPool.python.md)
 - [dataDigitaloceanDatabaseReplica](./dataDigitaloceanDatabaseReplica.python.md)
 - [dataDigitaloceanDatabaseUser](./dataDigitaloceanDatabaseUser.python.md)
 - [dataDigitaloceanDomain](./dataDigitaloceanDomain.python.md)
