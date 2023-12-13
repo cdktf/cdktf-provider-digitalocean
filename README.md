@@ -1,7 +1,7 @@
 
-# CDKTF prebuilt bindings for digitalocean/digitalocean provider version 2.32.0
+# CDKTF prebuilt bindings for digitalocean/digitalocean provider version 2.34.0
 
-This repo builds and publishes the [Terraform digitalocean provider](https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform digitalocean provider](https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
 ## Available Packages
 
@@ -61,7 +61,7 @@ This project is explicitly not tracking the Terraform digitalocean provider vers
 These are the upstream dependencies:
 
 - [CDK for Terraform](https://cdk.tf)
-- [Terraform digitalocean provider](https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0)
+- [Terraform digitalocean provider](https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0)
 - [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.

@@ -52,6 +52,7 @@ export * as dataDigitaloceanCertificate from './data-digitalocean-certificate';
 export * as dataDigitaloceanContainerRegistry from './data-digitalocean-container-registry';
 export * as dataDigitaloceanDatabaseCa from './data-digitalocean-database-ca';
 export * as dataDigitaloceanDatabaseCluster from './data-digitalocean-database-cluster';
+export * as dataDigitaloceanDatabaseConnectionPool from './data-digitalocean-database-connection-pool';
 export * as dataDigitaloceanDatabaseReplica from './data-digitalocean-database-replica';
 export * as dataDigitaloceanDatabaseUser from './data-digitalocean-database-user';
 export * as dataDigitaloceanDomain from './data-digitalocean-domain';

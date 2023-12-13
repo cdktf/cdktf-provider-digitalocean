@@ -52,6 +52,7 @@ Object.defineProperty(exports, 'dataDigitaloceanCertificate', { get: function ()
 Object.defineProperty(exports, 'dataDigitaloceanContainerRegistry', { get: function () { return require('./data-digitalocean-container-registry'); } });
 Object.defineProperty(exports, 'dataDigitaloceanDatabaseCa', { get: function () { return require('./data-digitalocean-database-ca'); } });
 Object.defineProperty(exports, 'dataDigitaloceanDatabaseCluster', { get: function () { return require('./data-digitalocean-database-cluster'); } });
+Object.defineProperty(exports, 'dataDigitaloceanDatabaseConnectionPool', { get: function () { return require('./data-digitalocean-database-connection-pool'); } });
 Object.defineProperty(exports, 'dataDigitaloceanDatabaseReplica', { get: function () { return require('./data-digitalocean-database-replica'); } });
 Object.defineProperty(exports, 'dataDigitaloceanDatabaseUser', { get: function () { return require('./data-digitalocean-database-user'); } });
 Object.defineProperty(exports, 'dataDigitaloceanDomain', { get: function () { return require('./data-digitalocean-domain'); } });
