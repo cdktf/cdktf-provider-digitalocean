@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/uptimecheck"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/uptimecheck"
 
 uptimecheck.NewUptimeCheck(scope Construct, id *string, config UptimeCheckConfig) UptimeCheck
 ```
@@ -392,7 +392,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/uptimecheck"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/uptimecheck"
 
 uptimecheck.UptimeCheck_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/uptimecheck"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/uptimecheck"
 
 uptimecheck.UptimeCheck_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ uptimecheck.UptimeCheck_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/uptimecheck"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/uptimecheck"
 
 uptimecheck.UptimeCheck_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ uptimecheck.UptimeCheck_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/uptimecheck"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/uptimecheck"
 
 uptimecheck.UptimeCheck_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -802,7 +802,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/uptimecheck"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/uptimecheck"
 
 &uptimecheck.UptimeCheckConfig {
 	Connection: interface{},
