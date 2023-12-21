@@ -1,3 +1,3 @@
 # `data_digitalocean_spaces_bucket_objects`
 
-Refer to the Terraform Registory for docs: [`data_digitalocean_spaces_bucket_objects`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/data-sources/spaces_bucket_objects).
+Refer to the Terraform Registory for docs: [`data_digitalocean_spaces_bucket_objects`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/data-sources/spaces_bucket_objects).
