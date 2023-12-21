@@ -4,7 +4,7 @@
 
 ### UptimeCheck <a name="UptimeCheck" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/uptime_check digitalocean_uptime_check}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/uptime_check digitalocean_uptime_check}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the UptimeCheck to import.
 
 The id of the existing UptimeCheck that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/uptime_check#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/uptime_check#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -906,7 +906,7 @@ public readonly name: string;
 
 A human-friendly display name for the check.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/uptime_check#name UptimeCheck#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/uptime_check#name UptimeCheck#name}
 
 ---
 
@@ -920,7 +920,7 @@ public readonly target: string;
 
 The endpoint to perform healthchecks on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/uptime_check#target UptimeCheck#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/uptime_check#target UptimeCheck#target}
 
 ---
 
@@ -934,7 +934,7 @@ public readonly enabled: boolean | IResolvable;
 
 A boolean value indicating whether the check is enabled/disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/uptime_check#enabled UptimeCheck#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/uptime_check#enabled UptimeCheck#enabled}
 
 ---
 
@@ -948,7 +948,7 @@ public readonly regions: string[];
 
 An array containing the selected regions to perform healthchecks from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/uptime_check#regions UptimeCheck#regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/uptime_check#regions UptimeCheck#regions}
 
 ---
 
@@ -962,7 +962,7 @@ public readonly type: string;
 
 The type of health check to perform. Enum: 'ping' 'http' 'https'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/uptime_check#type UptimeCheck#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/uptime_check#type UptimeCheck#type}
 
 ---
 

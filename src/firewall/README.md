@@ -1,3 +1,3 @@
 # `digitalocean_firewall`
 
-Refer to the Terraform Registory for docs: [`digitalocean_firewall`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/firewall).
+Refer to the Terraform Registory for docs: [`digitalocean_firewall`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/firewall).

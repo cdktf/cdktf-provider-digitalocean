@@ -4,12 +4,12 @@
 
 ### Loadbalancer <a name="Loadbalancer" id="@cdktf/provider-digitalocean.loadbalancer.Loadbalancer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer digitalocean_loadbalancer}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer digitalocean_loadbalancer}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/loadbalancer"
 
 loadbalancer.NewLoadbalancer(scope Construct, id *string, config LoadbalancerConfig) Loadbalancer
 ```
@@ -549,7 +549,7 @@ func ResetVpcUuid()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/loadbalancer"
 
 loadbalancer.Loadbalancer_IsConstruct(x interface{}) *bool
 ```
@@ -581,7 +581,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/loadbalancer"
 
 loadbalancer.Loadbalancer_IsTerraformElement(x interface{}) *bool
 ```
@@ -595,7 +595,7 @@ loadbalancer.Loadbalancer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/loadbalancer"
 
 loadbalancer.Loadbalancer_IsTerraformResource(x interface{}) *bool
 ```
@@ -609,7 +609,7 @@ loadbalancer.Loadbalancer_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/loadbalancer"
 
 loadbalancer.Loadbalancer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -638,7 +638,7 @@ The construct id used in the generated config for the Loadbalancer to import.
 
 The id of the existing Loadbalancer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1311,7 +1311,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/loadbalancer"
 
 &loadbalancer.LoadbalancerConfig {
 	Connection: interface{},
@@ -1329,8 +1329,8 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/loadbal
 	DropletTag: *string,
 	EnableBackendKeepalive: interface{},
 	EnableProxyProtocol: interface{},
-	Firewall: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.loadbalancer.LoadbalancerFirewall,
-	Healthcheck: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.loadbalancer.LoadbalancerHealthcheck,
+	Firewall: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.loadbalancer.LoadbalancerFirewall,
+	Healthcheck: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.loadbalancer.LoadbalancerHealthcheck,
 	HttpIdleTimeoutSeconds: *f64,
 	Id: *string,
 	ProjectId: *string,
@@ -1338,7 +1338,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/loadbal
 	Region: *string,
 	Size: *string,
 	SizeUnit: *f64,
-	StickySessions: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.loadbalancer.LoadbalancerStickySessions,
+	StickySessions: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.loadbalancer.LoadbalancerStickySessions,
 	Type: *string,
 	VpcUuid: *string,
 }
@@ -1356,25 +1356,25 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/loadbal
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.forwardingRule">ForwardingRule</a></code> | <code>interface{}</code> | forwarding_rule block. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#name Loadbalancer#name}. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.algorithm">Algorithm</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#algorithm Loadbalancer#algorithm}. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.disableLetsEncryptDnsRecords">DisableLetsEncryptDnsRecords</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#disable_lets_encrypt_dns_records Loadbalancer#disable_lets_encrypt_dns_records}. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.dropletIds">DropletIds</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#droplet_ids Loadbalancer#droplet_ids}. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.dropletTag">DropletTag</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#droplet_tag Loadbalancer#droplet_tag}. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.enableBackendKeepalive">EnableBackendKeepalive</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#enable_backend_keepalive Loadbalancer#enable_backend_keepalive}. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.enableProxyProtocol">EnableProxyProtocol</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#enable_proxy_protocol Loadbalancer#enable_proxy_protocol}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#name Loadbalancer#name}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.algorithm">Algorithm</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#algorithm Loadbalancer#algorithm}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.disableLetsEncryptDnsRecords">DisableLetsEncryptDnsRecords</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#disable_lets_encrypt_dns_records Loadbalancer#disable_lets_encrypt_dns_records}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.dropletIds">DropletIds</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#droplet_ids Loadbalancer#droplet_ids}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.dropletTag">DropletTag</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#droplet_tag Loadbalancer#droplet_tag}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.enableBackendKeepalive">EnableBackendKeepalive</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#enable_backend_keepalive Loadbalancer#enable_backend_keepalive}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.enableProxyProtocol">EnableProxyProtocol</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#enable_proxy_protocol Loadbalancer#enable_proxy_protocol}. |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.firewall">Firewall</a></code> | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerFirewall">LoadbalancerFirewall</a></code> | firewall block. |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.healthcheck">Healthcheck</a></code> | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerHealthcheck">LoadbalancerHealthcheck</a></code> | healthcheck block. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.httpIdleTimeoutSeconds">HttpIdleTimeoutSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#http_idle_timeout_seconds Loadbalancer#http_idle_timeout_seconds}. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#id Loadbalancer#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#project_id Loadbalancer#project_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.redirectHttpToHttps">RedirectHttpToHttps</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#redirect_http_to_https Loadbalancer#redirect_http_to_https}. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#region Loadbalancer#region}. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.size">Size</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#size Loadbalancer#size}. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.sizeUnit">SizeUnit</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#size_unit Loadbalancer#size_unit}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.httpIdleTimeoutSeconds">HttpIdleTimeoutSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#http_idle_timeout_seconds Loadbalancer#http_idle_timeout_seconds}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#id Loadbalancer#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#project_id Loadbalancer#project_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.redirectHttpToHttps">RedirectHttpToHttps</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#redirect_http_to_https Loadbalancer#redirect_http_to_https}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#region Loadbalancer#region}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.size">Size</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#size Loadbalancer#size}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.sizeUnit">SizeUnit</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#size_unit Loadbalancer#size_unit}. |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.stickySessions">StickySessions</a></code> | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerStickySessions">LoadbalancerStickySessions</a></code> | sticky_sessions block. |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.type">Type</a></code> | <code>*string</code> | the type of the load balancer (GLOBAL or REGIONAL). |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.vpcUuid">VpcUuid</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#vpc_uuid Loadbalancer#vpc_uuid}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.vpcUuid">VpcUuid</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#vpc_uuid Loadbalancer#vpc_uuid}. |
 
 ---
 
@@ -1458,7 +1458,7 @@ ForwardingRule interface{}
 
 forwarding_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#forwarding_rule Loadbalancer#forwarding_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#forwarding_rule Loadbalancer#forwarding_rule}
 
 ---
 
@@ -1470,7 +1470,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#name Loadbalancer#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#name Loadbalancer#name}.
 
 ---
 
@@ -1482,7 +1482,7 @@ Algorithm *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#algorithm Loadbalancer#algorithm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#algorithm Loadbalancer#algorithm}.
 
 ---
 
@@ -1494,7 +1494,7 @@ DisableLetsEncryptDnsRecords interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#disable_lets_encrypt_dns_records Loadbalancer#disable_lets_encrypt_dns_records}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#disable_lets_encrypt_dns_records Loadbalancer#disable_lets_encrypt_dns_records}.
 
 ---
 
@@ -1506,7 +1506,7 @@ DropletIds *[]*f64
 
 - *Type:* *[]*f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#droplet_ids Loadbalancer#droplet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#droplet_ids Loadbalancer#droplet_ids}.
 
 ---
 
@@ -1518,7 +1518,7 @@ DropletTag *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#droplet_tag Loadbalancer#droplet_tag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#droplet_tag Loadbalancer#droplet_tag}.
 
 ---
 
@@ -1530,7 +1530,7 @@ EnableBackendKeepalive interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#enable_backend_keepalive Loadbalancer#enable_backend_keepalive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#enable_backend_keepalive Loadbalancer#enable_backend_keepalive}.
 
 ---
 
@@ -1542,7 +1542,7 @@ EnableProxyProtocol interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#enable_proxy_protocol Loadbalancer#enable_proxy_protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#enable_proxy_protocol Loadbalancer#enable_proxy_protocol}.
 
 ---
 
@@ -1556,7 +1556,7 @@ Firewall LoadbalancerFirewall
 
 firewall block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#firewall Loadbalancer#firewall}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#firewall Loadbalancer#firewall}
 
 ---
 
@@ -1570,7 +1570,7 @@ Healthcheck LoadbalancerHealthcheck
 
 healthcheck block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#healthcheck Loadbalancer#healthcheck}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#healthcheck Loadbalancer#healthcheck}
 
 ---
 
@@ -1582,7 +1582,7 @@ HttpIdleTimeoutSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#http_idle_timeout_seconds Loadbalancer#http_idle_timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#http_idle_timeout_seconds Loadbalancer#http_idle_timeout_seconds}.
 
 ---
 
@@ -1594,7 +1594,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#id Loadbalancer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#id Loadbalancer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1609,7 +1609,7 @@ ProjectId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#project_id Loadbalancer#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#project_id Loadbalancer#project_id}.
 
 ---
 
@@ -1621,7 +1621,7 @@ RedirectHttpToHttps interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#redirect_http_to_https Loadbalancer#redirect_http_to_https}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#redirect_http_to_https Loadbalancer#redirect_http_to_https}.
 
 ---
 
@@ -1633,7 +1633,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#region Loadbalancer#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#region Loadbalancer#region}.
 
 ---
 
@@ -1645,7 +1645,7 @@ Size *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#size Loadbalancer#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#size Loadbalancer#size}.
 
 ---
 
@@ -1657,7 +1657,7 @@ SizeUnit *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#size_unit Loadbalancer#size_unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#size_unit Loadbalancer#size_unit}.
 
 ---
 
@@ -1671,7 +1671,7 @@ StickySessions LoadbalancerStickySessions
 
 sticky_sessions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#sticky_sessions Loadbalancer#sticky_sessions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#sticky_sessions Loadbalancer#sticky_sessions}
 
 ---
 
@@ -1685,7 +1685,7 @@ Type *string
 
 the type of the load balancer (GLOBAL or REGIONAL).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#type Loadbalancer#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#type Loadbalancer#type}
 
 ---
 
@@ -1697,7 +1697,7 @@ VpcUuid *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#vpc_uuid Loadbalancer#vpc_uuid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#vpc_uuid Loadbalancer#vpc_uuid}.
 
 ---
 
@@ -1706,7 +1706,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.loadbalancer.LoadbalancerFirewall.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/loadbalancer"
 
 &loadbalancer.LoadbalancerFirewall {
 	Allow: *[]*string,
@@ -1733,7 +1733,7 @@ Allow *[]*string
 
 the rules for ALLOWING traffic to the LB (strings in the form: 'ip:1.2.3.4' or 'cidr:1.2.0.0/16').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#allow Loadbalancer#allow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#allow Loadbalancer#allow}
 
 ---
 
@@ -1747,7 +1747,7 @@ Deny *[]*string
 
 the rules for DENYING traffic to the LB (strings in the form: 'ip:1.2.3.4' or 'cidr:1.2.0.0/16').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#deny Loadbalancer#deny}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#deny Loadbalancer#deny}
 
 ---
 
@@ -1756,7 +1756,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/loadbalancer"
 
 &loadbalancer.LoadbalancerForwardingRule {
 	EntryPort: *f64,
@@ -1773,13 +1773,13 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/loadbal
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRule.property.entryPort">EntryPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#entry_port Loadbalancer#entry_port}. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRule.property.entryProtocol">EntryProtocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#entry_protocol Loadbalancer#entry_protocol}. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRule.property.targetPort">TargetPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#target_port Loadbalancer#target_port}. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRule.property.targetProtocol">TargetProtocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#target_protocol Loadbalancer#target_protocol}. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRule.property.certificateId">CertificateId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#certificate_id Loadbalancer#certificate_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRule.property.certificateName">CertificateName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#certificate_name Loadbalancer#certificate_name}. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRule.property.tlsPassthrough">TlsPassthrough</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#tls_passthrough Loadbalancer#tls_passthrough}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRule.property.entryPort">EntryPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#entry_port Loadbalancer#entry_port}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRule.property.entryProtocol">EntryProtocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#entry_protocol Loadbalancer#entry_protocol}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRule.property.targetPort">TargetPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#target_port Loadbalancer#target_port}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRule.property.targetProtocol">TargetProtocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#target_protocol Loadbalancer#target_protocol}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRule.property.certificateId">CertificateId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#certificate_id Loadbalancer#certificate_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRule.property.certificateName">CertificateName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#certificate_name Loadbalancer#certificate_name}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRule.property.tlsPassthrough">TlsPassthrough</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#tls_passthrough Loadbalancer#tls_passthrough}. |
 
 ---
 
@@ -1791,7 +1791,7 @@ EntryPort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#entry_port Loadbalancer#entry_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#entry_port Loadbalancer#entry_port}.
 
 ---
 
@@ -1803,7 +1803,7 @@ EntryProtocol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#entry_protocol Loadbalancer#entry_protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#entry_protocol Loadbalancer#entry_protocol}.
 
 ---
 
@@ -1815,7 +1815,7 @@ TargetPort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#target_port Loadbalancer#target_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#target_port Loadbalancer#target_port}.
 
 ---
 
@@ -1827,7 +1827,7 @@ TargetProtocol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#target_protocol Loadbalancer#target_protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#target_protocol Loadbalancer#target_protocol}.
 
 ---
 
@@ -1839,7 +1839,7 @@ CertificateId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#certificate_id Loadbalancer#certificate_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#certificate_id Loadbalancer#certificate_id}.
 
 ---
 
@@ -1851,7 +1851,7 @@ CertificateName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#certificate_name Loadbalancer#certificate_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#certificate_name Loadbalancer#certificate_name}.
 
 ---
 
@@ -1863,7 +1863,7 @@ TlsPassthrough interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#tls_passthrough Loadbalancer#tls_passthrough}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#tls_passthrough Loadbalancer#tls_passthrough}.
 
 ---
 
@@ -1872,7 +1872,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.loadbalancer.LoadbalancerHealthcheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/loadbalancer"
 
 &loadbalancer.LoadbalancerHealthcheck {
 	Port: *f64,
@@ -1889,13 +1889,13 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/loadbal
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerHealthcheck.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#port Loadbalancer#port}. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerHealthcheck.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#protocol Loadbalancer#protocol}. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerHealthcheck.property.checkIntervalSeconds">CheckIntervalSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#check_interval_seconds Loadbalancer#check_interval_seconds}. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerHealthcheck.property.healthyThreshold">HealthyThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#healthy_threshold Loadbalancer#healthy_threshold}. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerHealthcheck.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#path Loadbalancer#path}. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerHealthcheck.property.responseTimeoutSeconds">ResponseTimeoutSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#response_timeout_seconds Loadbalancer#response_timeout_seconds}. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerHealthcheck.property.unhealthyThreshold">UnhealthyThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#unhealthy_threshold Loadbalancer#unhealthy_threshold}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerHealthcheck.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#port Loadbalancer#port}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerHealthcheck.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#protocol Loadbalancer#protocol}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerHealthcheck.property.checkIntervalSeconds">CheckIntervalSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#check_interval_seconds Loadbalancer#check_interval_seconds}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerHealthcheck.property.healthyThreshold">HealthyThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#healthy_threshold Loadbalancer#healthy_threshold}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerHealthcheck.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#path Loadbalancer#path}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerHealthcheck.property.responseTimeoutSeconds">ResponseTimeoutSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#response_timeout_seconds Loadbalancer#response_timeout_seconds}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerHealthcheck.property.unhealthyThreshold">UnhealthyThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#unhealthy_threshold Loadbalancer#unhealthy_threshold}. |
 
 ---
 
@@ -1907,7 +1907,7 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#port Loadbalancer#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#port Loadbalancer#port}.
 
 ---
 
@@ -1919,7 +1919,7 @@ Protocol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#protocol Loadbalancer#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#protocol Loadbalancer#protocol}.
 
 ---
 
@@ -1931,7 +1931,7 @@ CheckIntervalSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#check_interval_seconds Loadbalancer#check_interval_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#check_interval_seconds Loadbalancer#check_interval_seconds}.
 
 ---
 
@@ -1943,7 +1943,7 @@ HealthyThreshold *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#healthy_threshold Loadbalancer#healthy_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#healthy_threshold Loadbalancer#healthy_threshold}.
 
 ---
 
@@ -1955,7 +1955,7 @@ Path *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#path Loadbalancer#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#path Loadbalancer#path}.
 
 ---
 
@@ -1967,7 +1967,7 @@ ResponseTimeoutSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#response_timeout_seconds Loadbalancer#response_timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#response_timeout_seconds Loadbalancer#response_timeout_seconds}.
 
 ---
 
@@ -1979,7 +1979,7 @@ UnhealthyThreshold *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#unhealthy_threshold Loadbalancer#unhealthy_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#unhealthy_threshold Loadbalancer#unhealthy_threshold}.
 
 ---
 
@@ -1988,7 +1988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.loadbalancer.LoadbalancerStickySessions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/loadbalancer"
 
 &loadbalancer.LoadbalancerStickySessions {
 	CookieName: *string,
@@ -2001,9 +2001,9 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/loadbal
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerStickySessions.property.cookieName">CookieName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#cookie_name Loadbalancer#cookie_name}. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerStickySessions.property.cookieTtlSeconds">CookieTtlSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#cookie_ttl_seconds Loadbalancer#cookie_ttl_seconds}. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerStickySessions.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#type Loadbalancer#type}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerStickySessions.property.cookieName">CookieName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#cookie_name Loadbalancer#cookie_name}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerStickySessions.property.cookieTtlSeconds">CookieTtlSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#cookie_ttl_seconds Loadbalancer#cookie_ttl_seconds}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerStickySessions.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#type Loadbalancer#type}. |
 
 ---
 
@@ -2015,7 +2015,7 @@ CookieName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#cookie_name Loadbalancer#cookie_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#cookie_name Loadbalancer#cookie_name}.
 
 ---
 
@@ -2027,7 +2027,7 @@ CookieTtlSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#cookie_ttl_seconds Loadbalancer#cookie_ttl_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#cookie_ttl_seconds Loadbalancer#cookie_ttl_seconds}.
 
 ---
 
@@ -2039,7 +2039,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/loadbalancer#type Loadbalancer#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/loadbalancer#type Loadbalancer#type}.
 
 ---
 
@@ -2050,7 +2050,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.loadbalancer.LoadbalancerFirewallOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/loadbalancer"
 
 loadbalancer.NewLoadbalancerFirewallOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LoadbalancerFirewallOutputReference
 ```
@@ -2357,7 +2357,7 @@ func InternalValue() LoadbalancerFirewall
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/loadbalancer"
 
 loadbalancer.NewLoadbalancerForwardingRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadbalancerForwardingRuleList
 ```
@@ -2500,7 +2500,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/loadbalancer"
 
 loadbalancer.NewLoadbalancerForwardingRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadbalancerForwardingRuleOutputReference
 ```
@@ -2942,7 +2942,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.loadbalancer.LoadbalancerHealthcheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/loadbalancer"
 
 loadbalancer.NewLoadbalancerHealthcheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LoadbalancerHealthcheckOutputReference
 ```
@@ -3380,7 +3380,7 @@ func InternalValue() LoadbalancerHealthcheck
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.loadbalancer.LoadbalancerStickySessionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/loadbalancer"
 
 loadbalancer.NewLoadbalancerStickySessionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LoadbalancerStickySessionsOutputReference
 ```

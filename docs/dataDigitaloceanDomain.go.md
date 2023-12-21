@@ -4,12 +4,12 @@
 
 ### DataDigitaloceanDomain <a name="DataDigitaloceanDomain" id="@cdktf/provider-digitalocean.dataDigitaloceanDomain.DataDigitaloceanDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/data-sources/domain digitalocean_domain}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/data-sources/domain digitalocean_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanDomain.DataDigitaloceanDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceandomain"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandomain"
 
 datadigitaloceandomain.NewDataDigitaloceanDomain(scope Construct, id *string, config DataDigitaloceanDomainConfig) DataDigitaloceanDomain
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanDomain.DataDigitaloceanDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceandomain"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandomain"
 
 datadigitaloceandomain.DataDigitaloceanDomain_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanDomain.DataDigitaloceanDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceandomain"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandomain"
 
 datadigitaloceandomain.DataDigitaloceanDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ datadigitaloceandomain.DataDigitaloceanDomain_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanDomain.DataDigitaloceanDomain.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceandomain"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandomain"
 
 datadigitaloceandomain.DataDigitaloceanDomain_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datadigitaloceandomain.DataDigitaloceanDomain_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.dataDigitaloceanDomain.DataDigitaloceanDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceandomain"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandomain"
 
 datadigitaloceandomain.DataDigitaloceanDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -363,7 +363,7 @@ The construct id used in the generated config for the DataDigitaloceanDomain to 
 
 The id of the existing DataDigitaloceanDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/data-sources/domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/data-sources/domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -618,7 +618,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanDomain.DataDigitaloceanDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceandomain"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandomain"
 
 &datadigitaloceandomain.DataDigitaloceanDomainConfig {
 	Connection: interface{},
@@ -645,7 +645,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomain.DataDigitaloceanDomainConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomain.DataDigitaloceanDomainConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomain.DataDigitaloceanDomainConfig.property.name">Name</a></code> | <code>*string</code> | name of the domain. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomain.DataDigitaloceanDomainConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/data-sources/domain#id DataDigitaloceanDomain#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomain.DataDigitaloceanDomainConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/data-sources/domain#id DataDigitaloceanDomain#id}. |
 
 ---
 
@@ -729,7 +729,7 @@ Name *string
 
 name of the domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/data-sources/domain#name DataDigitaloceanDomain#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/data-sources/domain#name DataDigitaloceanDomain#name}
 
 ---
 
@@ -741,7 +741,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/data-sources/domain#id DataDigitaloceanDomain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/data-sources/domain#id DataDigitaloceanDomain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

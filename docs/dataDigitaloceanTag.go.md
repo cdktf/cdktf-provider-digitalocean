@@ -4,12 +4,12 @@
 
 ### DataDigitaloceanTag <a name="DataDigitaloceanTag" id="@cdktf/provider-digitalocean.dataDigitaloceanTag.DataDigitaloceanTag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/data-sources/tag digitalocean_tag}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/data-sources/tag digitalocean_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanTag.DataDigitaloceanTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceantag"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceantag"
 
 datadigitaloceantag.NewDataDigitaloceanTag(scope Construct, id *string, config DataDigitaloceanTagConfig) DataDigitaloceanTag
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanTag.DataDigitaloceanTag.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceantag"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceantag"
 
 datadigitaloceantag.DataDigitaloceanTag_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanTag.DataDigitaloceanTag.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceantag"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceantag"
 
 datadigitaloceantag.DataDigitaloceanTag_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ datadigitaloceantag.DataDigitaloceanTag_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanTag.DataDigitaloceanTag.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceantag"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceantag"
 
 datadigitaloceantag.DataDigitaloceanTag_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datadigitaloceantag.DataDigitaloceanTag_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.dataDigitaloceanTag.DataDigitaloceanTag.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceantag"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceantag"
 
 datadigitaloceantag.DataDigitaloceanTag_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -363,7 +363,7 @@ The construct id used in the generated config for the DataDigitaloceanTag to imp
 
 The id of the existing DataDigitaloceanTag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/data-sources/tag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/data-sources/tag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -651,7 +651,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanTag.DataDigitaloceanTagConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceantag"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceantag"
 
 &datadigitaloceantag.DataDigitaloceanTagConfig {
 	Connection: interface{},
@@ -678,7 +678,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanTag.DataDigitaloceanTagConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanTag.DataDigitaloceanTagConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanTag.DataDigitaloceanTagConfig.property.name">Name</a></code> | <code>*string</code> | name of the tag. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanTag.DataDigitaloceanTagConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/data-sources/tag#id DataDigitaloceanTag#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanTag.DataDigitaloceanTagConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/data-sources/tag#id DataDigitaloceanTag#id}. |
 
 ---
 
@@ -762,7 +762,7 @@ Name *string
 
 name of the tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/data-sources/tag#name DataDigitaloceanTag#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/data-sources/tag#name DataDigitaloceanTag#name}
 
 ---
 
@@ -774,7 +774,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/data-sources/tag#id DataDigitaloceanTag#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/data-sources/tag#id DataDigitaloceanTag#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

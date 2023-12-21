@@ -4,12 +4,12 @@
 
 ### ContainerRegistry <a name="ContainerRegistry" id="@cdktf/provider-digitalocean.containerRegistry.ContainerRegistry"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/container_registry digitalocean_container_registry}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/container_registry digitalocean_container_registry}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.containerRegistry.ContainerRegistry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/containerregistry"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/containerregistry"
 
 containerregistry.NewContainerRegistry(scope Construct, id *string, config ContainerRegistryConfig) ContainerRegistry
 ```
@@ -385,7 +385,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.containerRegistry.ContainerRegistry.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/containerregistry"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/containerregistry"
 
 containerregistry.ContainerRegistry_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.containerRegistry.ContainerRegistry.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/containerregistry"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/containerregistry"
 
 containerregistry.ContainerRegistry_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ containerregistry.ContainerRegistry_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.containerRegistry.ContainerRegistry.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/containerregistry"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/containerregistry"
 
 containerregistry.ContainerRegistry_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ containerregistry.ContainerRegistry_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.containerRegistry.ContainerRegistry.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/containerregistry"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/containerregistry"
 
 containerregistry.ContainerRegistry_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the ContainerRegistry to impor
 
 The id of the existing ContainerRegistry that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/container_registry#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/container_registry#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -806,7 +806,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.containerRegistry.ContainerRegistryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/containerregistry"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/containerregistry"
 
 &containerregistry.ContainerRegistryConfig {
 	Connection: interface{},
@@ -834,10 +834,10 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/contain
 | <code><a href="#@cdktf/provider-digitalocean.containerRegistry.ContainerRegistryConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.containerRegistry.ContainerRegistryConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.containerRegistry.ContainerRegistryConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.containerRegistry.ContainerRegistryConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/container_registry#name ContainerRegistry#name}. |
-| <code><a href="#@cdktf/provider-digitalocean.containerRegistry.ContainerRegistryConfig.property.subscriptionTierSlug">SubscriptionTierSlug</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/container_registry#subscription_tier_slug ContainerRegistry#subscription_tier_slug}. |
-| <code><a href="#@cdktf/provider-digitalocean.containerRegistry.ContainerRegistryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/container_registry#id ContainerRegistry#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.containerRegistry.ContainerRegistryConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/container_registry#region ContainerRegistry#region}. |
+| <code><a href="#@cdktf/provider-digitalocean.containerRegistry.ContainerRegistryConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/container_registry#name ContainerRegistry#name}. |
+| <code><a href="#@cdktf/provider-digitalocean.containerRegistry.ContainerRegistryConfig.property.subscriptionTierSlug">SubscriptionTierSlug</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/container_registry#subscription_tier_slug ContainerRegistry#subscription_tier_slug}. |
+| <code><a href="#@cdktf/provider-digitalocean.containerRegistry.ContainerRegistryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/container_registry#id ContainerRegistry#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.containerRegistry.ContainerRegistryConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/container_registry#region ContainerRegistry#region}. |
 
 ---
 
@@ -919,7 +919,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/container_registry#name ContainerRegistry#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/container_registry#name ContainerRegistry#name}.
 
 ---
 
@@ -931,7 +931,7 @@ SubscriptionTierSlug *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/container_registry#subscription_tier_slug ContainerRegistry#subscription_tier_slug}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/container_registry#subscription_tier_slug ContainerRegistry#subscription_tier_slug}.
 
 ---
 
@@ -943,7 +943,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/container_registry#id ContainerRegistry#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/container_registry#id ContainerRegistry#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -958,7 +958,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/container_registry#region ContainerRegistry#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/container_registry#region ContainerRegistry#region}.
 
 ---
 
