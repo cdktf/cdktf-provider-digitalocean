@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/data-sources/firewall
 // generated from terraform resource schema
 
@@ -54,6 +49,17 @@ export function dataDigitaloceanFirewallPendingChangesToTerraform(struct?: DataD
   }
   return {
   }
+}
+
+
+export function dataDigitaloceanFirewallPendingChangesToHclTerraform(struct?: DataDigitaloceanFirewallPendingChanges): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataDigitaloceanFirewallPendingChangesOutputReference extends cdktf.ComplexObject {
@@ -163,6 +169,61 @@ export function dataDigitaloceanFirewallInboundRuleToTerraform(struct?: DataDigi
     source_load_balancer_uids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sourceLoadBalancerUids),
     source_tags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sourceTags),
   }
+}
+
+
+export function dataDigitaloceanFirewallInboundRuleToHclTerraform(struct?: DataDigitaloceanFirewallInboundRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    port_range: {
+      value: cdktf.stringToHclTerraform(struct!.portRange),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    protocol: {
+      value: cdktf.stringToHclTerraform(struct!.protocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source_addresses: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sourceAddresses),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    source_droplet_ids: {
+      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.sourceDropletIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "numberList",
+    },
+    source_kubernetes_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sourceKubernetesIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    source_load_balancer_uids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sourceLoadBalancerUids),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    source_tags: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sourceTags),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataDigitaloceanFirewallInboundRuleOutputReference extends cdktf.ComplexObject {
@@ -419,6 +480,61 @@ export function dataDigitaloceanFirewallOutboundRuleToTerraform(struct?: DataDig
     port_range: cdktf.stringToTerraform(struct!.portRange),
     protocol: cdktf.stringToTerraform(struct!.protocol),
   }
+}
+
+
+export function dataDigitaloceanFirewallOutboundRuleToHclTerraform(struct?: DataDigitaloceanFirewallOutboundRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    destination_addresses: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.destinationAddresses),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    destination_droplet_ids: {
+      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.destinationDropletIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "numberList",
+    },
+    destination_kubernetes_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.destinationKubernetesIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    destination_load_balancer_uids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.destinationLoadBalancerUids),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    destination_tags: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.destinationTags),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    port_range: {
+      value: cdktf.stringToHclTerraform(struct!.portRange),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    protocol: {
+      value: cdktf.stringToHclTerraform(struct!.protocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataDigitaloceanFirewallOutboundRuleOutputReference extends cdktf.ComplexObject {
@@ -821,5 +937,49 @@ export class DataDigitaloceanFirewall extends cdktf.TerraformDataSource {
       inbound_rule: cdktf.listMapper(dataDigitaloceanFirewallInboundRuleToTerraform, true)(this._inboundRule.internalValue),
       outbound_rule: cdktf.listMapper(dataDigitaloceanFirewallOutboundRuleToTerraform, true)(this._outboundRule.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      droplet_ids: {
+        value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(this._dropletIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "numberList",
+      },
+      firewall_id: {
+        value: cdktf.stringToHclTerraform(this._firewallId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      inbound_rule: {
+        value: cdktf.listMapperHcl(dataDigitaloceanFirewallInboundRuleToHclTerraform, true)(this._inboundRule.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DataDigitaloceanFirewallInboundRuleList",
+      },
+      outbound_rule: {
+        value: cdktf.listMapperHcl(dataDigitaloceanFirewallOutboundRuleToHclTerraform, true)(this._outboundRule.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DataDigitaloceanFirewallOutboundRuleList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

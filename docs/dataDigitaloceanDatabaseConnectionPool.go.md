@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseConnectionPool.DataDigitaloceanDatabaseConnectionPool.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceandatabaseconnectionpool"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandatabaseconnectionpool"
 
 datadigitaloceandatabaseconnectionpool.NewDataDigitaloceanDatabaseConnectionPool(scope Construct, id *string, config DataDigitaloceanDatabaseConnectionPoolConfig) DataDigitaloceanDatabaseConnectionPool
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseConnectionPool.DataDigitaloceanDatabaseConnectionPool.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseConnectionPool.DataDigitaloceanDatabaseConnectionPool.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseConnectionPool.DataDigitaloceanDatabaseConnectionPool.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseConnectionPool.DataDigitaloceanDatabaseConnectionPool.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseConnectionPool.DataDigitaloceanDatabaseConnectionPool.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseConnectionPool.DataDigitaloceanDatabaseConnectionPool.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseConnectionPool.DataDigitaloceanDatabaseConnectionPool.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -119,6 +120,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseConnectionPool.DataDigitaloceanDatabaseConnectionPool.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseConnectionPool.DataDigitaloceanDatabaseConnectionPool.toMetadata"></a>
 
@@ -274,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseConnectionPool.DataDigitaloceanDatabaseConnectionPool.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceandatabaseconnectionpool"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandatabaseconnectionpool"
 
 datadigitaloceandatabaseconnectionpool.DataDigitaloceanDatabaseConnectionPool_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseConnectionPool.DataDigitaloceanDatabaseConnectionPool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceandatabaseconnectionpool"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandatabaseconnectionpool"
 
 datadigitaloceandatabaseconnectionpool.DataDigitaloceanDatabaseConnectionPool_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +329,7 @@ datadigitaloceandatabaseconnectionpool.DataDigitaloceanDatabaseConnectionPool_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseConnectionPool.DataDigitaloceanDatabaseConnectionPool.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceandatabaseconnectionpool"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandatabaseconnectionpool"
 
 datadigitaloceandatabaseconnectionpool.DataDigitaloceanDatabaseConnectionPool_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +343,7 @@ datadigitaloceandatabaseconnectionpool.DataDigitaloceanDatabaseConnectionPool_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseConnectionPool.DataDigitaloceanDatabaseConnectionPool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceandatabaseconnectionpool"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandatabaseconnectionpool"
 
 datadigitaloceandatabaseconnectionpool.DataDigitaloceanDatabaseConnectionPool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -717,7 +726,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseConnectionPool.DataDigitaloceanDatabaseConnectionPoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceandatabaseconnectionpool"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandatabaseconnectionpool"
 
 &datadigitaloceandatabaseconnectionpool.DataDigitaloceanDatabaseConnectionPoolConfig {
 	Connection: interface{},

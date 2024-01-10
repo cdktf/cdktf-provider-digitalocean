@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/data-sources/database_ca
 // generated from terraform resource schema
 
@@ -127,5 +122,25 @@ export class DataDigitaloceanDatabaseCa extends cdktf.TerraformDataSource {
       cluster_id: cdktf.stringToTerraform(this._clusterId),
       id: cdktf.stringToTerraform(this._id),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cluster_id: {
+        value: cdktf.stringToHclTerraform(this._clusterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

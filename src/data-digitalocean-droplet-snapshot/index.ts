@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/data-sources/droplet_snapshot
 // generated from terraform resource schema
 
@@ -216,5 +211,43 @@ export class DataDigitaloceanDropletSnapshot extends cdktf.TerraformDataSource {
       name_regex: cdktf.stringToTerraform(this._nameRegex),
       region: cdktf.stringToTerraform(this._region),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      most_recent: {
+        value: cdktf.booleanToHclTerraform(this._mostRecent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name_regex: {
+        value: cdktf.stringToHclTerraform(this._nameRegex),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

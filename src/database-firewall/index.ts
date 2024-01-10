@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_firewall
 // generated from terraform resource schema
 
@@ -50,6 +45,31 @@ export function databaseFirewallRuleToTerraform(struct?: DatabaseFirewallRule | 
     type: cdktf.stringToTerraform(struct!.type),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function databaseFirewallRuleToHclTerraform(struct?: DatabaseFirewallRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DatabaseFirewallRuleOutputReference extends cdktf.ComplexObject {
@@ -271,5 +291,31 @@ export class DatabaseFirewall extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       rule: cdktf.listMapper(databaseFirewallRuleToTerraform, true)(this._rule.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cluster_id: {
+        value: cdktf.stringToHclTerraform(this._clusterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rule: {
+        value: cdktf.listMapperHcl(databaseFirewallRuleToHclTerraform, true)(this._rule.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DatabaseFirewallRuleList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

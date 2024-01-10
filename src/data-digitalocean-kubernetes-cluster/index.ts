@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/data-sources/kubernetes_cluster
 // generated from terraform resource schema
 
@@ -38,6 +33,17 @@ export function dataDigitaloceanKubernetesClusterKubeConfigToTerraform(struct?: 
   }
   return {
   }
+}
+
+
+export function dataDigitaloceanKubernetesClusterKubeConfigToHclTerraform(struct?: DataDigitaloceanKubernetesClusterKubeConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataDigitaloceanKubernetesClusterKubeConfigOutputReference extends cdktf.ComplexObject {
@@ -134,6 +140,17 @@ export function dataDigitaloceanKubernetesClusterMaintenancePolicyToTerraform(st
   }
 }
 
+
+export function dataDigitaloceanKubernetesClusterMaintenancePolicyToHclTerraform(struct?: DataDigitaloceanKubernetesClusterMaintenancePolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataDigitaloceanKubernetesClusterMaintenancePolicyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -206,6 +223,17 @@ export function dataDigitaloceanKubernetesClusterNodePoolNodesToTerraform(struct
   }
   return {
   }
+}
+
+
+export function dataDigitaloceanKubernetesClusterNodePoolNodesToHclTerraform(struct?: DataDigitaloceanKubernetesClusterNodePoolNodes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataDigitaloceanKubernetesClusterNodePoolNodesOutputReference extends cdktf.ComplexObject {
@@ -297,6 +325,17 @@ export function dataDigitaloceanKubernetesClusterNodePoolTaintToTerraform(struct
   }
 }
 
+
+export function dataDigitaloceanKubernetesClusterNodePoolTaintToHclTerraform(struct?: DataDigitaloceanKubernetesClusterNodePoolTaint): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataDigitaloceanKubernetesClusterNodePoolTaintOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -369,6 +408,17 @@ export function dataDigitaloceanKubernetesClusterNodePoolToTerraform(struct?: Da
   }
   return {
   }
+}
+
+
+export function dataDigitaloceanKubernetesClusterNodePoolToHclTerraform(struct?: DataDigitaloceanKubernetesClusterNodePool): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataDigitaloceanKubernetesClusterNodePoolOutputReference extends cdktf.ComplexObject {
@@ -685,5 +735,31 @@ export class DataDigitaloceanKubernetesCluster extends cdktf.TerraformDataSource
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

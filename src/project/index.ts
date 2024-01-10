@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/project
 // generated from terraform resource schema
 
@@ -77,6 +72,25 @@ export function projectTimeoutsToTerraform(struct?: ProjectTimeouts | cdktf.IRes
   return {
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function projectTimeoutsToHclTerraform(struct?: ProjectTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ProjectTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -363,5 +377,61 @@ export class Project extends cdktf.TerraformResource {
       resources: cdktf.listMapper(cdktf.stringToTerraform, false)(this._resources),
       timeouts: projectTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      environment: {
+        value: cdktf.stringToHclTerraform(this._environment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      is_default: {
+        value: cdktf.booleanToHclTerraform(this._isDefault),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      purpose: {
+        value: cdktf.stringToHclTerraform(this._purpose),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resources: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._resources),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      timeouts: {
+        value: projectTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "ProjectTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

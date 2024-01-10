@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_redis_config
 // generated from terraform resource schema
 
@@ -364,5 +359,91 @@ export class DatabaseRedisConfig extends cdktf.TerraformResource {
       ssl: cdktf.booleanToTerraform(this._ssl),
       timeout: cdktf.numberToTerraform(this._timeout),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      acl_channels_default: {
+        value: cdktf.stringToHclTerraform(this._aclChannelsDefault),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cluster_id: {
+        value: cdktf.stringToHclTerraform(this._clusterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      io_threads: {
+        value: cdktf.numberToHclTerraform(this._ioThreads),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      lfu_decay_time: {
+        value: cdktf.numberToHclTerraform(this._lfuDecayTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      lfu_log_factor: {
+        value: cdktf.numberToHclTerraform(this._lfuLogFactor),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      maxmemory_policy: {
+        value: cdktf.stringToHclTerraform(this._maxmemoryPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      notify_keyspace_events: {
+        value: cdktf.stringToHclTerraform(this._notifyKeyspaceEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      number_of_databases: {
+        value: cdktf.numberToHclTerraform(this._numberOfDatabases),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      persistence: {
+        value: cdktf.stringToHclTerraform(this._persistence),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      pubsub_client_output_buffer_limit: {
+        value: cdktf.numberToHclTerraform(this._pubsubClientOutputBufferLimit),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      ssl: {
+        value: cdktf.booleanToHclTerraform(this._ssl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      timeout: {
+        value: cdktf.numberToHclTerraform(this._timeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

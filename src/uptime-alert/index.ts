@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/uptime_alert
 // generated from terraform resource schema
 
@@ -79,6 +74,31 @@ export function uptimeAlertNotificationsSlackToTerraform(struct?: UptimeAlertNot
     channel: cdktf.stringToTerraform(struct!.channel),
     url: cdktf.stringToTerraform(struct!.url),
   }
+}
+
+
+export function uptimeAlertNotificationsSlackToHclTerraform(struct?: UptimeAlertNotificationsSlack | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    channel: {
+      value: cdktf.stringToHclTerraform(struct!.channel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    url: {
+      value: cdktf.stringToHclTerraform(struct!.url),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class UptimeAlertNotificationsSlackOutputReference extends cdktf.ComplexObject {
@@ -201,6 +221,31 @@ export function uptimeAlertNotificationsToTerraform(struct?: UptimeAlertNotifica
     email: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.email),
     slack: cdktf.listMapper(uptimeAlertNotificationsSlackToTerraform, true)(struct!.slack),
   }
+}
+
+
+export function uptimeAlertNotificationsToHclTerraform(struct?: UptimeAlertNotifications | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    email: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.email),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    slack: {
+      value: cdktf.listMapperHcl(uptimeAlertNotificationsSlackToHclTerraform, true)(struct!.slack),
+      isBlock: true,
+      type: "list",
+      storageClassType: "UptimeAlertNotificationsSlackList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class UptimeAlertNotificationsOutputReference extends cdktf.ComplexObject {
@@ -489,5 +534,55 @@ export class UptimeAlert extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
       notifications: cdktf.listMapper(uptimeAlertNotificationsToTerraform, true)(this._notifications.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      check_id: {
+        value: cdktf.stringToHclTerraform(this._checkId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      comparison: {
+        value: cdktf.stringToHclTerraform(this._comparison),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      period: {
+        value: cdktf.stringToHclTerraform(this._period),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      threshold: {
+        value: cdktf.numberToHclTerraform(this._threshold),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      notifications: {
+        value: cdktf.listMapperHcl(uptimeAlertNotificationsToHclTerraform, true)(this._notifications.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "UptimeAlertNotificationsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

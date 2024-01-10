@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/data-sources/domains
 // generated from terraform resource schema
 
@@ -42,6 +37,17 @@ export function dataDigitaloceanDomainsDomainsToTerraform(struct?: DataDigitaloc
   }
   return {
   }
+}
+
+
+export function dataDigitaloceanDomainsDomainsToHclTerraform(struct?: DataDigitaloceanDomainsDomains): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataDigitaloceanDomainsDomainsOutputReference extends cdktf.ComplexObject {
@@ -136,6 +142,43 @@ export function dataDigitaloceanDomainsFilterToTerraform(struct?: DataDigitaloce
     match_by: cdktf.stringToTerraform(struct!.matchBy),
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
+}
+
+
+export function dataDigitaloceanDomainsFilterToHclTerraform(struct?: DataDigitaloceanDomainsFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    all: {
+      value: cdktf.booleanToHclTerraform(struct!.all),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_by: {
+      value: cdktf.stringToHclTerraform(struct!.matchBy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataDigitaloceanDomainsFilterOutputReference extends cdktf.ComplexObject {
@@ -298,6 +341,31 @@ export function dataDigitaloceanDomainsSortToTerraform(struct?: DataDigitalocean
     direction: cdktf.stringToTerraform(struct!.direction),
     key: cdktf.stringToTerraform(struct!.key),
   }
+}
+
+
+export function dataDigitaloceanDomainsSortToHclTerraform(struct?: DataDigitaloceanDomainsSort | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    direction: {
+      value: cdktf.stringToHclTerraform(struct!.direction),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataDigitaloceanDomainsSortOutputReference extends cdktf.ComplexObject {
@@ -524,5 +592,31 @@ export class DataDigitaloceanDomains extends cdktf.TerraformDataSource {
       filter: cdktf.listMapper(dataDigitaloceanDomainsFilterToTerraform, true)(this._filter.internalValue),
       sort: cdktf.listMapper(dataDigitaloceanDomainsSortToTerraform, true)(this._sort.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      filter: {
+        value: cdktf.listMapperHcl(dataDigitaloceanDomainsFilterToHclTerraform, true)(this._filter.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DataDigitaloceanDomainsFilterList",
+      },
+      sort: {
+        value: cdktf.listMapperHcl(dataDigitaloceanDomainsSortToHclTerraform, true)(this._sort.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataDigitaloceanDomainsSortList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

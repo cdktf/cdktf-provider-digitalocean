@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/cdn
 // generated from terraform resource schema
 
@@ -228,5 +223,49 @@ export class Cdn extends cdktf.TerraformResource {
       origin: cdktf.stringToTerraform(this._origin),
       ttl: cdktf.numberToTerraform(this._ttl),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      certificate_id: {
+        value: cdktf.stringToHclTerraform(this._certificateId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      certificate_name: {
+        value: cdktf.stringToHclTerraform(this._certificateName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      custom_domain: {
+        value: cdktf.stringToHclTerraform(this._customDomain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      origin: {
+        value: cdktf.stringToHclTerraform(this._origin),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ttl: {
+        value: cdktf.numberToHclTerraform(this._ttl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

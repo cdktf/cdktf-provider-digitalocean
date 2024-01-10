@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/data-sources/loadbalancer
 // generated from terraform resource schema
 
@@ -44,6 +39,17 @@ export function dataDigitaloceanLoadbalancerFirewallToTerraform(struct?: DataDig
   }
   return {
   }
+}
+
+
+export function dataDigitaloceanLoadbalancerFirewallToHclTerraform(struct?: DataDigitaloceanLoadbalancerFirewall): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataDigitaloceanLoadbalancerFirewallOutputReference extends cdktf.ComplexObject {
@@ -113,6 +119,17 @@ export function dataDigitaloceanLoadbalancerForwardingRuleToTerraform(struct?: D
   }
   return {
   }
+}
+
+
+export function dataDigitaloceanLoadbalancerForwardingRuleToHclTerraform(struct?: DataDigitaloceanLoadbalancerForwardingRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataDigitaloceanLoadbalancerForwardingRuleOutputReference extends cdktf.ComplexObject {
@@ -209,6 +226,17 @@ export function dataDigitaloceanLoadbalancerHealthcheckToTerraform(struct?: Data
   }
 }
 
+
+export function dataDigitaloceanLoadbalancerHealthcheckToHclTerraform(struct?: DataDigitaloceanLoadbalancerHealthcheck): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataDigitaloceanLoadbalancerHealthcheckOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -301,6 +329,17 @@ export function dataDigitaloceanLoadbalancerStickySessionsToTerraform(struct?: D
   }
   return {
   }
+}
+
+
+export function dataDigitaloceanLoadbalancerStickySessionsToHclTerraform(struct?: DataDigitaloceanLoadbalancerStickySessions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataDigitaloceanLoadbalancerStickySessionsOutputReference extends cdktf.ComplexObject {
@@ -588,5 +627,31 @@ export class DataDigitaloceanLoadbalancer extends cdktf.TerraformDataSource {
       name: cdktf.stringToTerraform(this._name),
       type: cdktf.stringToTerraform(this._type),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

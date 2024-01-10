@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/spaces_bucket_cors_configuration
 // generated from terraform resource schema
 
@@ -79,6 +74,55 @@ export function spacesBucketCorsConfigurationCorsRuleToTerraform(struct?: Spaces
     id: cdktf.stringToTerraform(struct!.id),
     max_age_seconds: cdktf.numberToTerraform(struct!.maxAgeSeconds),
   }
+}
+
+
+export function spacesBucketCorsConfigurationCorsRuleToHclTerraform(struct?: SpacesBucketCorsConfigurationCorsRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allowed_headers: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedHeaders),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    allowed_methods: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedMethods),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    allowed_origins: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedOrigins),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    expose_headers: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.exposeHeaders),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    max_age_seconds: {
+      value: cdktf.numberToHclTerraform(struct!.maxAgeSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SpacesBucketCorsConfigurationCorsRuleOutputReference extends cdktf.ComplexObject {
@@ -393,5 +437,37 @@ export class SpacesBucketCorsConfiguration extends cdktf.TerraformResource {
       region: cdktf.stringToTerraform(this._region),
       cors_rule: cdktf.listMapper(spacesBucketCorsConfigurationCorsRuleToTerraform, true)(this._corsRule.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      bucket: {
+        value: cdktf.stringToHclTerraform(this._bucket),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cors_rule: {
+        value: cdktf.listMapperHcl(spacesBucketCorsConfigurationCorsRuleToHclTerraform, true)(this._corsRule.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "SpacesBucketCorsConfigurationCorsRuleList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

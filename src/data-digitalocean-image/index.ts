@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/data-sources/image
 // generated from terraform resource schema
 
@@ -235,5 +230,37 @@ export class DataDigitaloceanImage extends cdktf.TerraformDataSource {
       slug: cdktf.stringToTerraform(this._slug),
       source: cdktf.stringToTerraform(this._source),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.numberToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      slug: {
+        value: cdktf.stringToHclTerraform(this._slug),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      source: {
+        value: cdktf.stringToHclTerraform(this._source),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

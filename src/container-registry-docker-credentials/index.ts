@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/container_registry_docker_credentials
 // generated from terraform resource schema
 
@@ -176,5 +171,37 @@ export class ContainerRegistryDockerCredentials extends cdktf.TerraformResource 
       registry_name: cdktf.stringToTerraform(this._registryName),
       write: cdktf.booleanToTerraform(this._write),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      expiry_seconds: {
+        value: cdktf.numberToHclTerraform(this._expirySeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      registry_name: {
+        value: cdktf.stringToHclTerraform(this._registryName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      write: {
+        value: cdktf.booleanToHclTerraform(this._write),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

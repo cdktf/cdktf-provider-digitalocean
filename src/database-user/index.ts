@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_user
 // generated from terraform resource schema
 
@@ -58,6 +53,31 @@ export function databaseUserSettingsAclToTerraform(struct?: DatabaseUserSettings
     permission: cdktf.stringToTerraform(struct!.permission),
     topic: cdktf.stringToTerraform(struct!.topic),
   }
+}
+
+
+export function databaseUserSettingsAclToHclTerraform(struct?: DatabaseUserSettingsAcl | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    permission: {
+      value: cdktf.stringToHclTerraform(struct!.permission),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    topic: {
+      value: cdktf.stringToHclTerraform(struct!.topic),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DatabaseUserSettingsAclOutputReference extends cdktf.ComplexObject {
@@ -178,6 +198,25 @@ export function databaseUserSettingsToTerraform(struct?: DatabaseUserSettings | 
   return {
     acl: cdktf.listMapper(databaseUserSettingsAclToTerraform, true)(struct!.acl),
   }
+}
+
+
+export function databaseUserSettingsToHclTerraform(struct?: DatabaseUserSettings | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    acl: {
+      value: cdktf.listMapperHcl(databaseUserSettingsAclToHclTerraform, true)(struct!.acl),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DatabaseUserSettingsAclList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DatabaseUserSettingsOutputReference extends cdktf.ComplexObject {
@@ -419,5 +458,43 @@ export class DatabaseUser extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       settings: cdktf.listMapper(databaseUserSettingsToTerraform, true)(this._settings.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cluster_id: {
+        value: cdktf.stringToHclTerraform(this._clusterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mysql_auth_plugin: {
+        value: cdktf.stringToHclTerraform(this._mysqlAuthPlugin),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      settings: {
+        value: cdktf.listMapperHcl(databaseUserSettingsToHclTerraform, true)(this._settings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DatabaseUserSettingsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

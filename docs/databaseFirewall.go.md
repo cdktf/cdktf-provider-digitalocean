@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databasefirewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasefirewall"
 
 databasefirewall.NewDatabaseFirewall(scope Construct, id *string, config DatabaseFirewallConfig) DatabaseFirewall
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -126,6 +127,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.toMetadata"></a>
 
@@ -391,7 +398,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databasefirewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasefirewall"
 
 databasefirewall.DatabaseFirewall_IsConstruct(x interface{}) *bool
 ```
@@ -423,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databasefirewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasefirewall"
 
 databasefirewall.DatabaseFirewall_IsTerraformElement(x interface{}) *bool
 ```
@@ -437,7 +444,7 @@ databasefirewall.DatabaseFirewall_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databasefirewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasefirewall"
 
 databasefirewall.DatabaseFirewall_IsTerraformResource(x interface{}) *bool
 ```
@@ -451,7 +458,7 @@ databasefirewall.DatabaseFirewall_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databasefirewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasefirewall"
 
 databasefirewall.DatabaseFirewall_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -746,7 +753,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databasefirewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasefirewall"
 
 &databasefirewall.DatabaseFirewallConfig {
 	Connection: interface{},
@@ -895,7 +902,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databasefirewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasefirewall"
 
 &databasefirewall.DatabaseFirewallRule {
 	Type: *string,
@@ -943,7 +950,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databasefirewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasefirewall"
 
 databasefirewall.NewDatabaseFirewallRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseFirewallRuleList
 ```
@@ -984,10 +991,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRuleList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRuleList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRuleList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRuleList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRuleList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRuleList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRuleList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1086,7 +1110,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databasefirewall"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasefirewall"
 
 databasefirewall.NewDatabaseFirewallRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseFirewallRuleOutputReference
 ```

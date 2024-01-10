@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.cdn.Cdn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/cdn"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/cdn"
 
 cdn.NewCdn(scope Construct, id *string, config CdnConfig) Cdn
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-digitalocean.cdn.Cdn.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.cdn.Cdn.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-digitalocean.cdn.Cdn.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-digitalocean.cdn.Cdn.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.cdn.Cdn.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.cdn.Cdn.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-digitalocean.cdn.Cdn.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -129,6 +130,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-digitalocean.cdn.Cdn.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-digitalocean.cdn.Cdn.toMetadata"></a>
 
@@ -406,7 +413,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.cdn.Cdn.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/cdn"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/cdn"
 
 cdn.Cdn_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.cdn.Cdn.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/cdn"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/cdn"
 
 cdn.Cdn_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +459,7 @@ cdn.Cdn_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.cdn.Cdn.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/cdn"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/cdn"
 
 cdn.Cdn_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +473,7 @@ cdn.Cdn_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.cdn.Cdn.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/cdn"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/cdn"
 
 cdn.Cdn_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -849,7 +856,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.cdn.CdnConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/cdn"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/cdn"
 
 &cdn.CdnConfig {
 	Connection: interface{},

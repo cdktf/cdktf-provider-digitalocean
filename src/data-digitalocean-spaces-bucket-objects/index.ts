@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/data-sources/spaces_bucket_objects
 // generated from terraform resource schema
 
@@ -244,5 +239,55 @@ export class DataDigitaloceanSpacesBucketObjects extends cdktf.TerraformDataSour
       prefix: cdktf.stringToTerraform(this._prefix),
       region: cdktf.stringToTerraform(this._region),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      bucket: {
+        value: cdktf.stringToHclTerraform(this._bucket),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      delimiter: {
+        value: cdktf.stringToHclTerraform(this._delimiter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      encoding_type: {
+        value: cdktf.stringToHclTerraform(this._encodingType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_keys: {
+        value: cdktf.numberToHclTerraform(this._maxKeys),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      prefix: {
+        value: cdktf.stringToHclTerraform(this._prefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

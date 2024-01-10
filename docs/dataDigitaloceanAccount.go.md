@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanAccount.DataDigitaloceanAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanaccount"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanaccount"
 
 datadigitaloceanaccount.NewDataDigitaloceanAccount(scope Construct, id *string, config DataDigitaloceanAccountConfig) DataDigitaloceanAccount
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanAccount.DataDigitaloceanAccount.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanAccount.DataDigitaloceanAccount.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanAccount.DataDigitaloceanAccount.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanAccount.DataDigitaloceanAccount.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanAccount.DataDigitaloceanAccount.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanAccount.DataDigitaloceanAccount.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanAccount.DataDigitaloceanAccount.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -119,6 +120,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-digitalocean.dataDigitaloceanAccount.DataDigitaloceanAccount.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-digitalocean.dataDigitaloceanAccount.DataDigitaloceanAccount.toMetadata"></a>
 
@@ -274,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanAccount.DataDigitaloceanAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanaccount"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanaccount"
 
 datadigitaloceanaccount.DataDigitaloceanAccount_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanAccount.DataDigitaloceanAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanaccount"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanaccount"
 
 datadigitaloceanaccount.DataDigitaloceanAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +329,7 @@ datadigitaloceanaccount.DataDigitaloceanAccount_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanAccount.DataDigitaloceanAccount.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanaccount"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanaccount"
 
 datadigitaloceanaccount.DataDigitaloceanAccount_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +343,7 @@ datadigitaloceanaccount.DataDigitaloceanAccount_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.dataDigitaloceanAccount.DataDigitaloceanAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanaccount"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanaccount"
 
 datadigitaloceanaccount.DataDigitaloceanAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -640,7 +649,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanAccount.DataDigitaloceanAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanaccount"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanaccount"
 
 &datadigitaloceanaccount.DataDigitaloceanAccountConfig {
 	Connection: interface{},

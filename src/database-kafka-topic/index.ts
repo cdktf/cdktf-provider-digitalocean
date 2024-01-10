@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_kafka_topic
 // generated from terraform resource schema
 
@@ -167,6 +162,157 @@ export function databaseKafkaTopicConfigAToTerraform(struct?: DatabaseKafkaTopic
     segment_jitter_ms: cdktf.stringToTerraform(struct!.segmentJitterMs),
     segment_ms: cdktf.stringToTerraform(struct!.segmentMs),
   }
+}
+
+
+export function databaseKafkaTopicConfigAToHclTerraform(struct?: DatabaseKafkaTopicConfigA | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cleanup_policy: {
+      value: cdktf.stringToHclTerraform(struct!.cleanupPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    compression_type: {
+      value: cdktf.stringToHclTerraform(struct!.compressionType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete_retention_ms: {
+      value: cdktf.stringToHclTerraform(struct!.deleteRetentionMs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    file_delete_delay_ms: {
+      value: cdktf.stringToHclTerraform(struct!.fileDeleteDelayMs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    flush_messages: {
+      value: cdktf.stringToHclTerraform(struct!.flushMessages),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    flush_ms: {
+      value: cdktf.stringToHclTerraform(struct!.flushMs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    index_interval_bytes: {
+      value: cdktf.stringToHclTerraform(struct!.indexIntervalBytes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    max_compaction_lag_ms: {
+      value: cdktf.stringToHclTerraform(struct!.maxCompactionLagMs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    max_message_bytes: {
+      value: cdktf.stringToHclTerraform(struct!.maxMessageBytes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    message_down_conversion_enable: {
+      value: cdktf.booleanToHclTerraform(struct!.messageDownConversionEnable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    message_format_version: {
+      value: cdktf.stringToHclTerraform(struct!.messageFormatVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    message_timestamp_difference_max_ms: {
+      value: cdktf.stringToHclTerraform(struct!.messageTimestampDifferenceMaxMs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    message_timestamp_type: {
+      value: cdktf.stringToHclTerraform(struct!.messageTimestampType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    min_cleanable_dirty_ratio: {
+      value: cdktf.numberToHclTerraform(struct!.minCleanableDirtyRatio),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    min_compaction_lag_ms: {
+      value: cdktf.stringToHclTerraform(struct!.minCompactionLagMs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    min_insync_replicas: {
+      value: cdktf.numberToHclTerraform(struct!.minInsyncReplicas),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    preallocate: {
+      value: cdktf.booleanToHclTerraform(struct!.preallocate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    retention_bytes: {
+      value: cdktf.stringToHclTerraform(struct!.retentionBytes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    retention_ms: {
+      value: cdktf.stringToHclTerraform(struct!.retentionMs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    segment_bytes: {
+      value: cdktf.stringToHclTerraform(struct!.segmentBytes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    segment_index_bytes: {
+      value: cdktf.stringToHclTerraform(struct!.segmentIndexBytes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    segment_jitter_ms: {
+      value: cdktf.stringToHclTerraform(struct!.segmentJitterMs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    segment_ms: {
+      value: cdktf.stringToHclTerraform(struct!.segmentMs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DatabaseKafkaTopicConfigAOutputReference extends cdktf.ComplexObject {
@@ -905,5 +1051,49 @@ export class DatabaseKafkaTopic extends cdktf.TerraformResource {
       replication_factor: cdktf.numberToTerraform(this._replicationFactor),
       config: cdktf.listMapper(databaseKafkaTopicConfigAToTerraform, true)(this._config.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cluster_id: {
+        value: cdktf.stringToHclTerraform(this._clusterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      partition_count: {
+        value: cdktf.numberToHclTerraform(this._partitionCount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      replication_factor: {
+        value: cdktf.numberToHclTerraform(this._replicationFactor),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      config: {
+        value: cdktf.listMapperHcl(databaseKafkaTopicConfigAToHclTerraform, true)(this._config.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DatabaseKafkaTopicConfigAList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

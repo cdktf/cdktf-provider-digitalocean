@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanApp(scope Construct, id *string, config DataDigitaloceanAppConfig) DataDigitaloceanApp
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -119,6 +120,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.toMetadata"></a>
 
@@ -274,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.DataDigitaloceanApp_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.DataDigitaloceanApp_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +329,7 @@ datadigitaloceanapp.DataDigitaloceanApp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.DataDigitaloceanApp_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +343,7 @@ datadigitaloceanapp.DataDigitaloceanApp_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.DataDigitaloceanApp_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -662,7 +671,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppConfig {
 	Connection: interface{},
@@ -795,7 +804,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpec {
 
@@ -808,7 +817,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecAlert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecAlert {
 
@@ -821,7 +830,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecDatabase {
 
@@ -834,7 +843,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecDomain {
 
@@ -847,7 +856,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecEnv {
 
@@ -860,7 +869,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecFunction {
 
@@ -873,7 +882,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionAlert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecFunctionAlert {
 
@@ -886,7 +895,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionCors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecFunctionCors {
 
@@ -899,7 +908,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionCorsAllowOrigins.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecFunctionCorsAllowOrigins {
 
@@ -912,7 +921,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecFunctionEnv {
 
@@ -925,7 +934,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecFunctionGit {
 
@@ -938,7 +947,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGithub.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecFunctionGithub {
 
@@ -951,7 +960,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGitlab.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecFunctionGitlab {
 
@@ -964,7 +973,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecFunctionLogDestination {
 
@@ -977,7 +986,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationDatadog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecFunctionLogDestinationDatadog {
 
@@ -990,7 +999,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationLogtail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecFunctionLogDestinationLogtail {
 
@@ -1003,7 +1012,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationPapertrail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecFunctionLogDestinationPapertrail {
 
@@ -1016,7 +1025,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionRoutes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecFunctionRoutes {
 
@@ -1029,7 +1038,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecIngress {
 
@@ -1042,7 +1051,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecIngressRule {
 
@@ -1055,7 +1064,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleComponent.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecIngressRuleComponent {
 
@@ -1068,7 +1077,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleCors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecIngressRuleCors {
 
@@ -1081,7 +1090,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleCorsAllowOrigins.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecIngressRuleCorsAllowOrigins {
 
@@ -1094,7 +1103,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecIngressRuleMatch {
 
@@ -1107,7 +1116,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleMatchPath.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecIngressRuleMatchPath {
 
@@ -1120,7 +1129,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleRedirect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecIngressRuleRedirect {
 
@@ -1133,7 +1142,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJob.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecJob {
 
@@ -1146,7 +1155,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobAlert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecJobAlert {
 
@@ -1159,7 +1168,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecJobEnv {
 
@@ -1172,7 +1181,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecJobGit {
 
@@ -1185,7 +1194,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGithub.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecJobGithub {
 
@@ -1198,7 +1207,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGitlab.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecJobGitlab {
 
@@ -1211,7 +1220,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecJobImage {
 
@@ -1224,7 +1233,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobImageDeployOnPush.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecJobImageDeployOnPush {
 
@@ -1237,7 +1246,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecJobLogDestination {
 
@@ -1250,7 +1259,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationDatadog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecJobLogDestinationDatadog {
 
@@ -1263,7 +1272,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationLogtail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecJobLogDestinationLogtail {
 
@@ -1276,7 +1285,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationPapertrail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecJobLogDestinationPapertrail {
 
@@ -1289,7 +1298,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecService {
 
@@ -1302,7 +1311,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceAlert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecServiceAlert {
 
@@ -1315,7 +1324,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceCors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecServiceCors {
 
@@ -1328,7 +1337,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceCorsAllowOrigins.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecServiceCorsAllowOrigins {
 
@@ -1341,7 +1350,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecServiceEnv {
 
@@ -1354,7 +1363,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecServiceGit {
 
@@ -1367,7 +1376,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGithub.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecServiceGithub {
 
@@ -1380,7 +1389,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGitlab.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecServiceGitlab {
 
@@ -1393,7 +1402,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecServiceHealthCheck {
 
@@ -1406,7 +1415,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecServiceImage {
 
@@ -1419,7 +1428,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceImageDeployOnPush.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecServiceImageDeployOnPush {
 
@@ -1432,7 +1441,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecServiceLogDestination {
 
@@ -1445,7 +1454,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationDatadog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecServiceLogDestinationDatadog {
 
@@ -1458,7 +1467,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationLogtail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecServiceLogDestinationLogtail {
 
@@ -1471,7 +1480,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationPapertrail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecServiceLogDestinationPapertrail {
 
@@ -1484,7 +1493,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceRoutes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecServiceRoutes {
 
@@ -1497,7 +1506,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSite.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecStaticSite {
 
@@ -1510,7 +1519,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteCors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecStaticSiteCors {
 
@@ -1523,7 +1532,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteCorsAllowOrigins.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecStaticSiteCorsAllowOrigins {
 
@@ -1536,7 +1545,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecStaticSiteEnv {
 
@@ -1549,7 +1558,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecStaticSiteGit {
 
@@ -1562,7 +1571,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGithub.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecStaticSiteGithub {
 
@@ -1575,7 +1584,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGitlab.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecStaticSiteGitlab {
 
@@ -1588,7 +1597,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteRoutes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecStaticSiteRoutes {
 
@@ -1601,7 +1610,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorker.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecWorker {
 
@@ -1614,7 +1623,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerAlert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecWorkerAlert {
 
@@ -1627,7 +1636,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecWorkerEnv {
 
@@ -1640,7 +1649,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecWorkerGit {
 
@@ -1653,7 +1662,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGithub.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecWorkerGithub {
 
@@ -1666,7 +1675,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGitlab.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecWorkerGitlab {
 
@@ -1679,7 +1688,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecWorkerImage {
 
@@ -1692,7 +1701,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerImageDeployOnPush.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecWorkerImageDeployOnPush {
 
@@ -1705,7 +1714,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecWorkerLogDestination {
 
@@ -1718,7 +1727,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationDatadog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecWorkerLogDestinationDatadog {
 
@@ -1731,7 +1740,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationLogtail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecWorkerLogDestinationLogtail {
 
@@ -1744,7 +1753,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationPapertrail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecWorkerLogDestinationPapertrail {
 
@@ -1759,7 +1768,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadig
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecAlertList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecAlertList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecAlertList
 ```
@@ -1800,10 +1809,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecAlertList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecAlertList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecAlertList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecAlertList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecAlertList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecAlertList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecAlertList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1891,7 +1917,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecAlertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecAlertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecAlertOutputReference
 ```
@@ -2180,7 +2206,7 @@ func InternalValue() DataDigitaloceanAppSpecAlert
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecDatabaseList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecDatabaseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecDatabaseList
 ```
@@ -2221,10 +2247,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecDatabaseList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecDatabaseList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecDatabaseList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecDatabaseList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecDatabaseList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecDatabaseList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecDatabaseList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2312,7 +2355,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecDatabaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecDatabaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecDatabaseOutputReference
 ```
@@ -2656,7 +2699,7 @@ func InternalValue() DataDigitaloceanAppSpecDatabase
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecDomainList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecDomainList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecDomainList
 ```
@@ -2697,10 +2740,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecDomainList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecDomainList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecDomainList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecDomainList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecDomainList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecDomainList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecDomainList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2788,7 +2848,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecDomainOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecDomainOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecDomainOutputReference
 ```
@@ -3099,7 +3159,7 @@ func InternalValue() DataDigitaloceanAppSpecDomain
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecEnvList
 ```
@@ -3140,10 +3200,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEnvList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEnvList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEnvList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEnvList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEnvList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEnvList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEnvList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -3231,7 +3308,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecEnvOutputReference
 ```
@@ -3542,7 +3619,7 @@ func InternalValue() DataDigitaloceanAppSpecEnv
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionAlertList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionAlertList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecFunctionAlertList
 ```
@@ -3583,10 +3660,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionAlertList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionAlertList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionAlertList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionAlertList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionAlertList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionAlertList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionAlertList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -3674,7 +3768,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionAlertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionAlertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecFunctionAlertOutputReference
 ```
@@ -3996,7 +4090,7 @@ func InternalValue() DataDigitaloceanAppSpecFunctionAlert
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionCorsAllowOriginsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionCorsAllowOriginsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecFunctionCorsAllowOriginsList
 ```
@@ -4037,10 +4131,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionCorsAllowOriginsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionCorsAllowOriginsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionCorsAllowOriginsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionCorsAllowOriginsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionCorsAllowOriginsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionCorsAllowOriginsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionCorsAllowOriginsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -4128,7 +4239,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionCorsAllowOriginsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionCorsAllowOriginsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecFunctionCorsAllowOriginsOutputReference
 ```
@@ -4428,7 +4539,7 @@ func InternalValue() DataDigitaloceanAppSpecFunctionCorsAllowOrigins
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionCorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionCorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecFunctionCorsList
 ```
@@ -4469,10 +4580,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionCorsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionCorsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionCorsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionCorsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionCorsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionCorsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionCorsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -4560,7 +4688,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionCorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionCorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecFunctionCorsOutputReference
 ```
@@ -4893,7 +5021,7 @@ func InternalValue() DataDigitaloceanAppSpecFunctionCors
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecFunctionEnvList
 ```
@@ -4934,10 +5062,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionEnvList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionEnvList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionEnvList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionEnvList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionEnvList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionEnvList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionEnvList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -5025,7 +5170,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecFunctionEnvOutputReference
 ```
@@ -5336,7 +5481,7 @@ func InternalValue() DataDigitaloceanAppSpecFunctionEnv
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGithubList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionGithubList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecFunctionGithubList
 ```
@@ -5377,10 +5522,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGithubList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGithubList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGithubList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGithubList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGithubList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGithubList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGithubList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -5468,7 +5630,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGithubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionGithubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecFunctionGithubOutputReference
 ```
@@ -5768,7 +5930,7 @@ func InternalValue() DataDigitaloceanAppSpecFunctionGithub
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGitlabList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionGitlabList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecFunctionGitlabList
 ```
@@ -5809,10 +5971,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGitlabList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGitlabList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGitlabList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGitlabList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGitlabList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGitlabList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGitlabList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -5900,7 +6079,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGitlabOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionGitlabOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecFunctionGitlabOutputReference
 ```
@@ -6200,7 +6379,7 @@ func InternalValue() DataDigitaloceanAppSpecFunctionGitlab
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGitList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionGitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecFunctionGitList
 ```
@@ -6241,10 +6420,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGitList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGitList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGitList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGitList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGitList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGitList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGitList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -6332,7 +6528,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionGitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecFunctionGitOutputReference
 ```
@@ -6621,7 +6817,7 @@ func InternalValue() DataDigitaloceanAppSpecFunctionGit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecFunctionList
 ```
@@ -6662,10 +6858,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -6753,7 +6966,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationDatadogList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionLogDestinationDatadogList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecFunctionLogDestinationDatadogList
 ```
@@ -6794,10 +7007,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationDatadogList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationDatadogList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationDatadogList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationDatadogList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationDatadogList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationDatadogList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationDatadogList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -6885,7 +7115,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationDatadogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionLogDestinationDatadogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecFunctionLogDestinationDatadogOutputReference
 ```
@@ -7174,7 +7404,7 @@ func InternalValue() DataDigitaloceanAppSpecFunctionLogDestinationDatadog
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionLogDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecFunctionLogDestinationList
 ```
@@ -7215,10 +7445,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -7306,7 +7553,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationLogtailList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionLogDestinationLogtailList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecFunctionLogDestinationLogtailList
 ```
@@ -7347,10 +7594,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationLogtailList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationLogtailList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationLogtailList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationLogtailList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationLogtailList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationLogtailList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationLogtailList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -7438,7 +7702,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationLogtailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionLogDestinationLogtailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecFunctionLogDestinationLogtailOutputReference
 ```
@@ -7716,7 +7980,7 @@ func InternalValue() DataDigitaloceanAppSpecFunctionLogDestinationLogtail
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionLogDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecFunctionLogDestinationOutputReference
 ```
@@ -8027,7 +8291,7 @@ func InternalValue() DataDigitaloceanAppSpecFunctionLogDestination
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationPapertrailList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionLogDestinationPapertrailList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecFunctionLogDestinationPapertrailList
 ```
@@ -8068,10 +8332,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationPapertrailList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationPapertrailList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationPapertrailList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationPapertrailList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationPapertrailList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationPapertrailList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationPapertrailList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -8159,7 +8440,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationPapertrailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionLogDestinationPapertrailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecFunctionLogDestinationPapertrailOutputReference
 ```
@@ -8437,7 +8718,7 @@ func InternalValue() DataDigitaloceanAppSpecFunctionLogDestinationPapertrail
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecFunctionOutputReference
 ```
@@ -8814,7 +9095,7 @@ func InternalValue() DataDigitaloceanAppSpecFunction
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionRoutesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionRoutesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecFunctionRoutesList
 ```
@@ -8855,10 +9136,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionRoutesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionRoutesList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionRoutesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionRoutesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionRoutesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionRoutesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionRoutesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -8946,7 +9244,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionRoutesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionRoutesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecFunctionRoutesOutputReference
 ```
@@ -9235,7 +9533,7 @@ func InternalValue() DataDigitaloceanAppSpecFunctionRoutes
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecIngressList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecIngressList
 ```
@@ -9276,10 +9574,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -9367,7 +9682,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecIngressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecIngressOutputReference
 ```
@@ -9645,7 +9960,7 @@ func InternalValue() DataDigitaloceanAppSpecIngress
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleComponentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecIngressRuleComponentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecIngressRuleComponentList
 ```
@@ -9686,10 +10001,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleComponentList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleComponentList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleComponentList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleComponentList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleComponentList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleComponentList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleComponentList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -9777,7 +10109,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleComponentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecIngressRuleComponentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecIngressRuleComponentOutputReference
 ```
@@ -10077,7 +10409,7 @@ func InternalValue() DataDigitaloceanAppSpecIngressRuleComponent
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleCorsAllowOriginsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecIngressRuleCorsAllowOriginsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecIngressRuleCorsAllowOriginsList
 ```
@@ -10118,10 +10450,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleCorsAllowOriginsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleCorsAllowOriginsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleCorsAllowOriginsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleCorsAllowOriginsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleCorsAllowOriginsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleCorsAllowOriginsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleCorsAllowOriginsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -10209,7 +10558,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleCorsAllowOriginsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecIngressRuleCorsAllowOriginsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecIngressRuleCorsAllowOriginsOutputReference
 ```
@@ -10509,7 +10858,7 @@ func InternalValue() DataDigitaloceanAppSpecIngressRuleCorsAllowOrigins
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleCorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecIngressRuleCorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecIngressRuleCorsList
 ```
@@ -10550,10 +10899,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleCorsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleCorsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleCorsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleCorsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleCorsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleCorsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleCorsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -10641,7 +11007,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleCorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecIngressRuleCorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecIngressRuleCorsOutputReference
 ```
@@ -10974,7 +11340,7 @@ func InternalValue() DataDigitaloceanAppSpecIngressRuleCors
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecIngressRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecIngressRuleList
 ```
@@ -11015,10 +11381,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -11106,7 +11489,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleMatchList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecIngressRuleMatchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecIngressRuleMatchList
 ```
@@ -11147,10 +11530,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleMatchList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleMatchList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleMatchList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleMatchList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleMatchList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleMatchList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleMatchList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -11238,7 +11638,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecIngressRuleMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecIngressRuleMatchOutputReference
 ```
@@ -11516,7 +11916,7 @@ func InternalValue() DataDigitaloceanAppSpecIngressRuleMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleMatchPathList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecIngressRuleMatchPathList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecIngressRuleMatchPathList
 ```
@@ -11557,10 +11957,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleMatchPathList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleMatchPathList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleMatchPathList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleMatchPathList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleMatchPathList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleMatchPathList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleMatchPathList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -11648,7 +12065,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleMatchPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecIngressRuleMatchPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecIngressRuleMatchPathOutputReference
 ```
@@ -11926,7 +12343,7 @@ func InternalValue() DataDigitaloceanAppSpecIngressRuleMatchPath
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecIngressRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecIngressRuleOutputReference
 ```
@@ -12237,7 +12654,7 @@ func InternalValue() DataDigitaloceanAppSpecIngressRule
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleRedirectList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecIngressRuleRedirectList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecIngressRuleRedirectList
 ```
@@ -12278,10 +12695,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleRedirectList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleRedirectList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleRedirectList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleRedirectList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleRedirectList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleRedirectList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleRedirectList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -12369,7 +12803,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleRedirectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecIngressRuleRedirectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecIngressRuleRedirectOutputReference
 ```
@@ -12691,7 +13125,7 @@ func InternalValue() DataDigitaloceanAppSpecIngressRuleRedirect
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobAlertList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobAlertList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecJobAlertList
 ```
@@ -12732,10 +13166,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobAlertList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobAlertList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobAlertList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobAlertList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobAlertList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobAlertList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobAlertList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -12823,7 +13274,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobAlertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobAlertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecJobAlertOutputReference
 ```
@@ -13145,7 +13596,7 @@ func InternalValue() DataDigitaloceanAppSpecJobAlert
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecJobEnvList
 ```
@@ -13186,10 +13637,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobEnvList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobEnvList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobEnvList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobEnvList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobEnvList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobEnvList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobEnvList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -13277,7 +13745,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecJobEnvOutputReference
 ```
@@ -13588,7 +14056,7 @@ func InternalValue() DataDigitaloceanAppSpecJobEnv
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGithubList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobGithubList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecJobGithubList
 ```
@@ -13629,10 +14097,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGithubList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGithubList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGithubList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGithubList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGithubList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGithubList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGithubList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -13720,7 +14205,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGithubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobGithubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecJobGithubOutputReference
 ```
@@ -14020,7 +14505,7 @@ func InternalValue() DataDigitaloceanAppSpecJobGithub
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGitlabList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobGitlabList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecJobGitlabList
 ```
@@ -14061,10 +14546,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGitlabList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGitlabList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGitlabList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGitlabList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGitlabList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGitlabList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGitlabList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -14152,7 +14654,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGitlabOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobGitlabOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecJobGitlabOutputReference
 ```
@@ -14452,7 +14954,7 @@ func InternalValue() DataDigitaloceanAppSpecJobGitlab
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGitList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobGitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecJobGitList
 ```
@@ -14493,10 +14995,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGitList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGitList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGitList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGitList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGitList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGitList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGitList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -14584,7 +15103,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobGitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecJobGitOutputReference
 ```
@@ -14873,7 +15392,7 @@ func InternalValue() DataDigitaloceanAppSpecJobGit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobImageDeployOnPushList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobImageDeployOnPushList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecJobImageDeployOnPushList
 ```
@@ -14914,10 +15433,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobImageDeployOnPushList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobImageDeployOnPushList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobImageDeployOnPushList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobImageDeployOnPushList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobImageDeployOnPushList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobImageDeployOnPushList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobImageDeployOnPushList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -15005,7 +15541,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobImageDeployOnPushOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobImageDeployOnPushOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecJobImageDeployOnPushOutputReference
 ```
@@ -15283,7 +15819,7 @@ func InternalValue() DataDigitaloceanAppSpecJobImageDeployOnPush
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobImageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobImageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecJobImageList
 ```
@@ -15324,10 +15860,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobImageList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobImageList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobImageList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobImageList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobImageList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobImageList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobImageList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -15415,7 +15968,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecJobImageOutputReference
 ```
@@ -15737,7 +16290,7 @@ func InternalValue() DataDigitaloceanAppSpecJobImage
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecJobList
 ```
@@ -15778,10 +16331,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -15869,7 +16439,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationDatadogList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobLogDestinationDatadogList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecJobLogDestinationDatadogList
 ```
@@ -15910,10 +16480,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationDatadogList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationDatadogList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationDatadogList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationDatadogList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationDatadogList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationDatadogList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationDatadogList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -16001,7 +16588,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationDatadogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobLogDestinationDatadogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecJobLogDestinationDatadogOutputReference
 ```
@@ -16290,7 +16877,7 @@ func InternalValue() DataDigitaloceanAppSpecJobLogDestinationDatadog
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobLogDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecJobLogDestinationList
 ```
@@ -16331,10 +16918,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -16422,7 +17026,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationLogtailList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobLogDestinationLogtailList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecJobLogDestinationLogtailList
 ```
@@ -16463,10 +17067,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationLogtailList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationLogtailList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationLogtailList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationLogtailList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationLogtailList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationLogtailList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationLogtailList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -16554,7 +17175,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationLogtailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobLogDestinationLogtailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecJobLogDestinationLogtailOutputReference
 ```
@@ -16832,7 +17453,7 @@ func InternalValue() DataDigitaloceanAppSpecJobLogDestinationLogtail
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobLogDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecJobLogDestinationOutputReference
 ```
@@ -17143,7 +17764,7 @@ func InternalValue() DataDigitaloceanAppSpecJobLogDestination
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationPapertrailList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobLogDestinationPapertrailList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecJobLogDestinationPapertrailList
 ```
@@ -17184,10 +17805,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationPapertrailList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationPapertrailList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationPapertrailList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationPapertrailList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationPapertrailList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationPapertrailList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationPapertrailList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -17275,7 +17913,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationPapertrailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobLogDestinationPapertrailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecJobLogDestinationPapertrailOutputReference
 ```
@@ -17553,7 +18191,7 @@ func InternalValue() DataDigitaloceanAppSpecJobLogDestinationPapertrail
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecJobOutputReference
 ```
@@ -17996,7 +18634,7 @@ func InternalValue() DataDigitaloceanAppSpecJob
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecList
 ```
@@ -18037,10 +18675,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -18128,7 +18783,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecOutputReference
 ```
@@ -18549,7 +19204,7 @@ func InternalValue() DataDigitaloceanAppSpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceAlertList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceAlertList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceAlertList
 ```
@@ -18590,10 +19245,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceAlertList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceAlertList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceAlertList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceAlertList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceAlertList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceAlertList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceAlertList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -18681,7 +19353,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceAlertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceAlertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceAlertOutputReference
 ```
@@ -19003,7 +19675,7 @@ func InternalValue() DataDigitaloceanAppSpecServiceAlert
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceCorsAllowOriginsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceCorsAllowOriginsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceCorsAllowOriginsList
 ```
@@ -19044,10 +19716,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceCorsAllowOriginsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceCorsAllowOriginsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceCorsAllowOriginsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceCorsAllowOriginsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceCorsAllowOriginsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceCorsAllowOriginsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceCorsAllowOriginsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -19135,7 +19824,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceCorsAllowOriginsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceCorsAllowOriginsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceCorsAllowOriginsOutputReference
 ```
@@ -19435,7 +20124,7 @@ func InternalValue() DataDigitaloceanAppSpecServiceCorsAllowOrigins
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceCorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceCorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceCorsList
 ```
@@ -19476,10 +20165,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceCorsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceCorsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceCorsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceCorsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceCorsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceCorsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceCorsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -19567,7 +20273,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceCorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceCorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceCorsOutputReference
 ```
@@ -19900,7 +20606,7 @@ func InternalValue() DataDigitaloceanAppSpecServiceCors
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceEnvList
 ```
@@ -19941,10 +20647,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceEnvList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceEnvList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceEnvList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceEnvList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceEnvList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceEnvList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceEnvList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -20032,7 +20755,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceEnvOutputReference
 ```
@@ -20343,7 +21066,7 @@ func InternalValue() DataDigitaloceanAppSpecServiceEnv
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGithubList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceGithubList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceGithubList
 ```
@@ -20384,10 +21107,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGithubList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGithubList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGithubList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGithubList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGithubList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGithubList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGithubList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -20475,7 +21215,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGithubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceGithubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceGithubOutputReference
 ```
@@ -20775,7 +21515,7 @@ func InternalValue() DataDigitaloceanAppSpecServiceGithub
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGitlabList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceGitlabList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceGitlabList
 ```
@@ -20816,10 +21556,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGitlabList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGitlabList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGitlabList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGitlabList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGitlabList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGitlabList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGitlabList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -20907,7 +21664,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGitlabOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceGitlabOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceGitlabOutputReference
 ```
@@ -21207,7 +21964,7 @@ func InternalValue() DataDigitaloceanAppSpecServiceGitlab
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGitList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceGitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceGitList
 ```
@@ -21248,10 +22005,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGitList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGitList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGitList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGitList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGitList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGitList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGitList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -21339,7 +22113,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceGitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceGitOutputReference
 ```
@@ -21628,7 +22402,7 @@ func InternalValue() DataDigitaloceanAppSpecServiceGit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceHealthCheckList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceHealthCheckList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceHealthCheckList
 ```
@@ -21669,10 +22443,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceHealthCheckList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceHealthCheckList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceHealthCheckList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceHealthCheckList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceHealthCheckList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceHealthCheckList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceHealthCheckList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -21760,7 +22551,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceHealthCheckOutputReference
 ```
@@ -22104,7 +22895,7 @@ func InternalValue() DataDigitaloceanAppSpecServiceHealthCheck
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceImageDeployOnPushList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceImageDeployOnPushList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceImageDeployOnPushList
 ```
@@ -22145,10 +22936,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceImageDeployOnPushList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceImageDeployOnPushList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceImageDeployOnPushList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceImageDeployOnPushList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceImageDeployOnPushList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceImageDeployOnPushList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceImageDeployOnPushList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -22236,7 +23044,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceImageDeployOnPushOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceImageDeployOnPushOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceImageDeployOnPushOutputReference
 ```
@@ -22514,7 +23322,7 @@ func InternalValue() DataDigitaloceanAppSpecServiceImageDeployOnPush
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceImageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceImageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceImageList
 ```
@@ -22555,10 +23363,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceImageList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceImageList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceImageList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceImageList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceImageList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceImageList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceImageList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -22646,7 +23471,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceImageOutputReference
 ```
@@ -22968,7 +23793,7 @@ func InternalValue() DataDigitaloceanAppSpecServiceImage
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceList
 ```
@@ -23009,10 +23834,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -23100,7 +23942,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationDatadogList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceLogDestinationDatadogList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceLogDestinationDatadogList
 ```
@@ -23141,10 +23983,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationDatadogList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationDatadogList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationDatadogList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationDatadogList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationDatadogList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationDatadogList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationDatadogList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -23232,7 +24091,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationDatadogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceLogDestinationDatadogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceLogDestinationDatadogOutputReference
 ```
@@ -23521,7 +24380,7 @@ func InternalValue() DataDigitaloceanAppSpecServiceLogDestinationDatadog
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceLogDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceLogDestinationList
 ```
@@ -23562,10 +24421,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -23653,7 +24529,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationLogtailList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceLogDestinationLogtailList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceLogDestinationLogtailList
 ```
@@ -23694,10 +24570,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationLogtailList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationLogtailList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationLogtailList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationLogtailList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationLogtailList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationLogtailList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationLogtailList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -23785,7 +24678,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationLogtailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceLogDestinationLogtailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceLogDestinationLogtailOutputReference
 ```
@@ -24063,7 +24956,7 @@ func InternalValue() DataDigitaloceanAppSpecServiceLogDestinationLogtail
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceLogDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceLogDestinationOutputReference
 ```
@@ -24374,7 +25267,7 @@ func InternalValue() DataDigitaloceanAppSpecServiceLogDestination
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationPapertrailList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceLogDestinationPapertrailList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceLogDestinationPapertrailList
 ```
@@ -24415,10 +25308,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationPapertrailList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationPapertrailList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationPapertrailList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationPapertrailList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationPapertrailList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationPapertrailList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationPapertrailList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -24506,7 +25416,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationPapertrailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceLogDestinationPapertrailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceLogDestinationPapertrailOutputReference
 ```
@@ -24784,7 +25694,7 @@ func InternalValue() DataDigitaloceanAppSpecServiceLogDestinationPapertrail
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceOutputReference
 ```
@@ -25271,7 +26181,7 @@ func InternalValue() DataDigitaloceanAppSpecService
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceRoutesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceRoutesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceRoutesList
 ```
@@ -25312,10 +26222,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceRoutesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceRoutesList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceRoutesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceRoutesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceRoutesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceRoutesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceRoutesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -25403,7 +26330,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceRoutesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceRoutesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceRoutesOutputReference
 ```
@@ -25692,7 +26619,7 @@ func InternalValue() DataDigitaloceanAppSpecServiceRoutes
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteCorsAllowOriginsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecStaticSiteCorsAllowOriginsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecStaticSiteCorsAllowOriginsList
 ```
@@ -25733,10 +26660,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteCorsAllowOriginsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteCorsAllowOriginsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteCorsAllowOriginsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteCorsAllowOriginsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteCorsAllowOriginsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteCorsAllowOriginsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteCorsAllowOriginsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -25824,7 +26768,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteCorsAllowOriginsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecStaticSiteCorsAllowOriginsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecStaticSiteCorsAllowOriginsOutputReference
 ```
@@ -26124,7 +27068,7 @@ func InternalValue() DataDigitaloceanAppSpecStaticSiteCorsAllowOrigins
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteCorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecStaticSiteCorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecStaticSiteCorsList
 ```
@@ -26165,10 +27109,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteCorsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteCorsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteCorsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteCorsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteCorsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteCorsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteCorsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -26256,7 +27217,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteCorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecStaticSiteCorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecStaticSiteCorsOutputReference
 ```
@@ -26589,7 +27550,7 @@ func InternalValue() DataDigitaloceanAppSpecStaticSiteCors
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecStaticSiteEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecStaticSiteEnvList
 ```
@@ -26630,10 +27591,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteEnvList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteEnvList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteEnvList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteEnvList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteEnvList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteEnvList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteEnvList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -26721,7 +27699,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecStaticSiteEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecStaticSiteEnvOutputReference
 ```
@@ -27032,7 +28010,7 @@ func InternalValue() DataDigitaloceanAppSpecStaticSiteEnv
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGithubList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecStaticSiteGithubList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecStaticSiteGithubList
 ```
@@ -27073,10 +28051,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGithubList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGithubList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGithubList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGithubList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGithubList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGithubList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGithubList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -27164,7 +28159,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGithubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecStaticSiteGithubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecStaticSiteGithubOutputReference
 ```
@@ -27464,7 +28459,7 @@ func InternalValue() DataDigitaloceanAppSpecStaticSiteGithub
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGitlabList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecStaticSiteGitlabList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecStaticSiteGitlabList
 ```
@@ -27505,10 +28500,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGitlabList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGitlabList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGitlabList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGitlabList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGitlabList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGitlabList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGitlabList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -27596,7 +28608,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGitlabOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecStaticSiteGitlabOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecStaticSiteGitlabOutputReference
 ```
@@ -27896,7 +28908,7 @@ func InternalValue() DataDigitaloceanAppSpecStaticSiteGitlab
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGitList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecStaticSiteGitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecStaticSiteGitList
 ```
@@ -27937,10 +28949,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGitList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGitList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGitList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGitList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGitList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGitList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGitList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -28028,7 +29057,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecStaticSiteGitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecStaticSiteGitOutputReference
 ```
@@ -28317,7 +29346,7 @@ func InternalValue() DataDigitaloceanAppSpecStaticSiteGit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecStaticSiteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecStaticSiteList
 ```
@@ -28358,10 +29387,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -28449,7 +29495,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecStaticSiteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecStaticSiteOutputReference
 ```
@@ -28881,7 +29927,7 @@ func InternalValue() DataDigitaloceanAppSpecStaticSite
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteRoutesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecStaticSiteRoutesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecStaticSiteRoutesList
 ```
@@ -28922,10 +29968,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteRoutesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteRoutesList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteRoutesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteRoutesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteRoutesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteRoutesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteRoutesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -29013,7 +30076,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteRoutesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecStaticSiteRoutesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecStaticSiteRoutesOutputReference
 ```
@@ -29302,7 +30365,7 @@ func InternalValue() DataDigitaloceanAppSpecStaticSiteRoutes
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerAlertList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerAlertList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecWorkerAlertList
 ```
@@ -29343,10 +30406,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerAlertList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerAlertList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerAlertList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerAlertList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerAlertList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerAlertList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerAlertList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -29434,7 +30514,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerAlertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerAlertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecWorkerAlertOutputReference
 ```
@@ -29756,7 +30836,7 @@ func InternalValue() DataDigitaloceanAppSpecWorkerAlert
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecWorkerEnvList
 ```
@@ -29797,10 +30877,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerEnvList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerEnvList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerEnvList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerEnvList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerEnvList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerEnvList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerEnvList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -29888,7 +30985,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecWorkerEnvOutputReference
 ```
@@ -30199,7 +31296,7 @@ func InternalValue() DataDigitaloceanAppSpecWorkerEnv
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGithubList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerGithubList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecWorkerGithubList
 ```
@@ -30240,10 +31337,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGithubList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGithubList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGithubList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGithubList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGithubList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGithubList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGithubList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -30331,7 +31445,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGithubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerGithubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecWorkerGithubOutputReference
 ```
@@ -30631,7 +31745,7 @@ func InternalValue() DataDigitaloceanAppSpecWorkerGithub
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGitlabList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerGitlabList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecWorkerGitlabList
 ```
@@ -30672,10 +31786,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGitlabList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGitlabList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGitlabList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGitlabList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGitlabList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGitlabList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGitlabList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -30763,7 +31894,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGitlabOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerGitlabOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecWorkerGitlabOutputReference
 ```
@@ -31063,7 +32194,7 @@ func InternalValue() DataDigitaloceanAppSpecWorkerGitlab
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGitList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerGitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecWorkerGitList
 ```
@@ -31104,10 +32235,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGitList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGitList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGitList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGitList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGitList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGitList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGitList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -31195,7 +32343,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerGitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecWorkerGitOutputReference
 ```
@@ -31484,7 +32632,7 @@ func InternalValue() DataDigitaloceanAppSpecWorkerGit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerImageDeployOnPushList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerImageDeployOnPushList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecWorkerImageDeployOnPushList
 ```
@@ -31525,10 +32673,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerImageDeployOnPushList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerImageDeployOnPushList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerImageDeployOnPushList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerImageDeployOnPushList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerImageDeployOnPushList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerImageDeployOnPushList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerImageDeployOnPushList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -31616,7 +32781,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerImageDeployOnPushOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerImageDeployOnPushOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecWorkerImageDeployOnPushOutputReference
 ```
@@ -31894,7 +33059,7 @@ func InternalValue() DataDigitaloceanAppSpecWorkerImageDeployOnPush
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerImageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerImageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecWorkerImageList
 ```
@@ -31935,10 +33100,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerImageList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerImageList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerImageList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerImageList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerImageList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerImageList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerImageList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -32026,7 +33208,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecWorkerImageOutputReference
 ```
@@ -32348,7 +33530,7 @@ func InternalValue() DataDigitaloceanAppSpecWorkerImage
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecWorkerList
 ```
@@ -32389,10 +33571,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -32480,7 +33679,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationDatadogList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerLogDestinationDatadogList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecWorkerLogDestinationDatadogList
 ```
@@ -32521,10 +33720,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationDatadogList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationDatadogList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationDatadogList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationDatadogList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationDatadogList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationDatadogList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationDatadogList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -32612,7 +33828,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationDatadogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerLogDestinationDatadogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecWorkerLogDestinationDatadogOutputReference
 ```
@@ -32901,7 +34117,7 @@ func InternalValue() DataDigitaloceanAppSpecWorkerLogDestinationDatadog
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerLogDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecWorkerLogDestinationList
 ```
@@ -32942,10 +34158,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -33033,7 +34266,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationLogtailList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerLogDestinationLogtailList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecWorkerLogDestinationLogtailList
 ```
@@ -33074,10 +34307,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationLogtailList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationLogtailList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationLogtailList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationLogtailList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationLogtailList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationLogtailList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationLogtailList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -33165,7 +34415,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationLogtailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerLogDestinationLogtailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecWorkerLogDestinationLogtailOutputReference
 ```
@@ -33443,7 +34693,7 @@ func InternalValue() DataDigitaloceanAppSpecWorkerLogDestinationLogtail
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerLogDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecWorkerLogDestinationOutputReference
 ```
@@ -33754,7 +35004,7 @@ func InternalValue() DataDigitaloceanAppSpecWorkerLogDestination
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationPapertrailList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerLogDestinationPapertrailList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecWorkerLogDestinationPapertrailList
 ```
@@ -33795,10 +35045,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationPapertrailList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationPapertrailList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationPapertrailList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationPapertrailList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationPapertrailList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationPapertrailList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationPapertrailList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -33886,7 +35153,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationPapertrailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerLogDestinationPapertrailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecWorkerLogDestinationPapertrailOutputReference
 ```
@@ -34164,7 +35431,7 @@ func InternalValue() DataDigitaloceanAppSpecWorkerLogDestinationPapertrail
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecWorkerOutputReference
 ```
