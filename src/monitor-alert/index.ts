@@ -90,6 +90,31 @@ export function monitorAlertAlertsSlackToTerraform(struct?: MonitorAlertAlertsSl
   }
 }
 
+
+export function monitorAlertAlertsSlackToHclTerraform(struct?: MonitorAlertAlertsSlack | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    channel: {
+      value: cdktf.stringToHclTerraform(struct!.channel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    url: {
+      value: cdktf.stringToHclTerraform(struct!.url),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MonitorAlertAlertsSlackOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -210,6 +235,31 @@ export function monitorAlertAlertsToTerraform(struct?: MonitorAlertAlertsOutputR
     email: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.email),
     slack: cdktf.listMapper(monitorAlertAlertsSlackToTerraform, true)(struct!.slack),
   }
+}
+
+
+export function monitorAlertAlertsToHclTerraform(struct?: MonitorAlertAlertsOutputReference | MonitorAlertAlerts): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    email: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.email),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    slack: {
+      value: cdktf.listMapperHcl(monitorAlertAlertsSlackToHclTerraform, true)(struct!.slack),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MonitorAlertAlertsSlackList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MonitorAlertAlertsOutputReference extends cdktf.ComplexObject {
@@ -514,5 +564,73 @@ export class MonitorAlert extends cdktf.TerraformResource {
       window: cdktf.stringToTerraform(this._window),
       alerts: monitorAlertAlertsToTerraform(this._alerts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      compare: {
+        value: cdktf.stringToHclTerraform(this._compare),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      entities: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._entities),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      value: {
+        value: cdktf.numberToHclTerraform(this._value),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      window: {
+        value: cdktf.stringToHclTerraform(this._window),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      alerts: {
+        value: monitorAlertAlertsToHclTerraform(this._alerts.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MonitorAlertAlertsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

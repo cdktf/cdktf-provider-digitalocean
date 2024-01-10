@@ -717,4 +717,186 @@ export class DatabaseMysqlConfig extends cdktf.TerraformResource {
       wait_timeout: cdktf.numberToTerraform(this._waitTimeout),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      backup_hour: {
+        value: cdktf.numberToHclTerraform(this._backupHour),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      backup_minute: {
+        value: cdktf.numberToHclTerraform(this._backupMinute),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      binlog_retention_period: {
+        value: cdktf.numberToHclTerraform(this._binlogRetentionPeriod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      cluster_id: {
+        value: cdktf.stringToHclTerraform(this._clusterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      connect_timeout: {
+        value: cdktf.numberToHclTerraform(this._connectTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      default_time_zone: {
+        value: cdktf.stringToHclTerraform(this._defaultTimeZone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      group_concat_max_len: {
+        value: cdktf.numberToHclTerraform(this._groupConcatMaxLen),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      information_schema_stats_expiry: {
+        value: cdktf.numberToHclTerraform(this._informationSchemaStatsExpiry),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      innodb_ft_min_token_size: {
+        value: cdktf.numberToHclTerraform(this._innodbFtMinTokenSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      innodb_ft_server_stopword_table: {
+        value: cdktf.stringToHclTerraform(this._innodbFtServerStopwordTable),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      innodb_lock_wait_timeout: {
+        value: cdktf.numberToHclTerraform(this._innodbLockWaitTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      innodb_log_buffer_size: {
+        value: cdktf.numberToHclTerraform(this._innodbLogBufferSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      innodb_online_alter_log_max_size: {
+        value: cdktf.numberToHclTerraform(this._innodbOnlineAlterLogMaxSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      innodb_print_all_deadlocks: {
+        value: cdktf.booleanToHclTerraform(this._innodbPrintAllDeadlocks),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      innodb_rollback_on_timeout: {
+        value: cdktf.booleanToHclTerraform(this._innodbRollbackOnTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      interactive_timeout: {
+        value: cdktf.numberToHclTerraform(this._interactiveTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      internal_tmp_mem_storage_engine: {
+        value: cdktf.stringToHclTerraform(this._internalTmpMemStorageEngine),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      long_query_time: {
+        value: cdktf.numberToHclTerraform(this._longQueryTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      max_allowed_packet: {
+        value: cdktf.numberToHclTerraform(this._maxAllowedPacket),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      max_heap_table_size: {
+        value: cdktf.numberToHclTerraform(this._maxHeapTableSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      net_read_timeout: {
+        value: cdktf.numberToHclTerraform(this._netReadTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      net_write_timeout: {
+        value: cdktf.numberToHclTerraform(this._netWriteTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      slow_query_log: {
+        value: cdktf.booleanToHclTerraform(this._slowQueryLog),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      sort_buffer_size: {
+        value: cdktf.numberToHclTerraform(this._sortBufferSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      sql_mode: {
+        value: cdktf.stringToHclTerraform(this._sqlMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sql_require_primary_key: {
+        value: cdktf.booleanToHclTerraform(this._sqlRequirePrimaryKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tmp_table_size: {
+        value: cdktf.numberToHclTerraform(this._tmpTableSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      wait_timeout: {
+        value: cdktf.numberToHclTerraform(this._waitTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

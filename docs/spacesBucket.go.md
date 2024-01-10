@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucket.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/spacesbucket"
 
 spacesbucket.NewSpacesBucket(scope Construct, id *string, config SpacesBucketConfig) SpacesBucket
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-digitalocean.spacesBucket.SpacesBucket.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.spacesBucket.SpacesBucket.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-digitalocean.spacesBucket.SpacesBucket.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-digitalocean.spacesBucket.SpacesBucket.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.spacesBucket.SpacesBucket.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.spacesBucket.SpacesBucket.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-digitalocean.spacesBucket.SpacesBucket.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -134,6 +135,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucket.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucket.toMetadata"></a>
 
@@ -459,7 +466,7 @@ func ResetVersioning()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucket.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/spacesbucket"
 
 spacesbucket.SpacesBucket_IsConstruct(x interface{}) *bool
 ```
@@ -491,7 +498,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucket.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/spacesbucket"
 
 spacesbucket.SpacesBucket_IsTerraformElement(x interface{}) *bool
 ```
@@ -505,7 +512,7 @@ spacesbucket.SpacesBucket_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucket.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/spacesbucket"
 
 spacesbucket.SpacesBucket_IsTerraformResource(x interface{}) *bool
 ```
@@ -519,7 +526,7 @@ spacesbucket.SpacesBucket_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucket.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/spacesbucket"
 
 spacesbucket.SpacesBucket_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -957,7 +964,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucketConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/spacesbucket"
 
 &spacesbucket.SpacesBucketConfig {
 	Connection: interface{},
@@ -974,7 +981,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesb
 	Id: *string,
 	LifecycleRule: interface{},
 	Region: *string,
-	Versioning: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.spacesBucket.SpacesBucketVersioning,
+	Versioning: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.spacesBucket.SpacesBucketVersioning,
 }
 ```
 
@@ -1188,7 +1195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucketCorsRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/spacesbucket"
 
 &spacesbucket.SpacesBucketCorsRule {
 	AllowedMethods: *[]*string,
@@ -1272,14 +1279,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucketLifecycleRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/spacesbucket"
 
 &spacesbucket.SpacesBucketLifecycleRule {
 	Enabled: interface{},
 	AbortIncompleteMultipartUploadDays: *f64,
-	Expiration: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.spacesBucket.SpacesBucketLifecycleRuleExpiration,
+	Expiration: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.spacesBucket.SpacesBucketLifecycleRuleExpiration,
 	Id: *string,
-	NoncurrentVersionExpiration: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10.spacesBucket.SpacesBucketLifecycleRuleNoncurrentVersionExpiration,
+	NoncurrentVersionExpiration: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.spacesBucket.SpacesBucketLifecycleRuleNoncurrentVersionExpiration,
 	Prefix: *string,
 }
 ```
@@ -1381,7 +1388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucketLifecycleRuleExpiration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/spacesbucket"
 
 &spacesbucket.SpacesBucketLifecycleRuleExpiration {
 	Date: *string,
@@ -1441,7 +1448,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucketLifecycleRuleNoncurrentVersionExpiration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/spacesbucket"
 
 &spacesbucket.SpacesBucketLifecycleRuleNoncurrentVersionExpiration {
 	Days: *f64,
@@ -1473,7 +1480,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucketVersioning.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/spacesbucket"
 
 &spacesbucket.SpacesBucketVersioning {
 	Enabled: interface{},
@@ -1507,7 +1514,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucketCorsRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/spacesbucket"
 
 spacesbucket.NewSpacesBucketCorsRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SpacesBucketCorsRuleList
 ```
@@ -1548,10 +1555,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.spacesBucket.SpacesBucketCorsRuleList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.spacesBucket.SpacesBucketCorsRuleList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.spacesBucket.SpacesBucketCorsRuleList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.spacesBucket.SpacesBucketCorsRuleList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.spacesBucket.SpacesBucketCorsRuleList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucketCorsRuleList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucketCorsRuleList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1650,7 +1674,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucketCorsRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/spacesbucket"
 
 spacesbucket.NewSpacesBucketCorsRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SpacesBucketCorsRuleOutputReference
 ```
@@ -2019,7 +2043,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucketLifecycleRuleExpirationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/spacesbucket"
 
 spacesbucket.NewSpacesBucketLifecycleRuleExpirationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpacesBucketLifecycleRuleExpirationOutputReference
 ```
@@ -2355,7 +2379,7 @@ func InternalValue() SpacesBucketLifecycleRuleExpiration
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucketLifecycleRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/spacesbucket"
 
 spacesbucket.NewSpacesBucketLifecycleRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SpacesBucketLifecycleRuleList
 ```
@@ -2396,10 +2420,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.spacesBucket.SpacesBucketLifecycleRuleList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-digitalocean.spacesBucket.SpacesBucketLifecycleRuleList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.spacesBucket.SpacesBucketLifecycleRuleList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.spacesBucket.SpacesBucketLifecycleRuleList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.spacesBucket.SpacesBucketLifecycleRuleList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucketLifecycleRuleList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucketLifecycleRuleList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2498,7 +2539,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucketLifecycleRuleNoncurrentVersionExpirationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/spacesbucket"
 
 spacesbucket.NewSpacesBucketLifecycleRuleNoncurrentVersionExpirationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpacesBucketLifecycleRuleNoncurrentVersionExpirationOutputReference
 ```
@@ -2776,7 +2817,7 @@ func InternalValue() SpacesBucketLifecycleRuleNoncurrentVersionExpiration
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucketLifecycleRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/spacesbucket"
 
 spacesbucket.NewSpacesBucketLifecycleRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SpacesBucketLifecycleRuleOutputReference
 ```
@@ -3236,7 +3277,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.spacesBucket.SpacesBucketVersioningOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/spacesbucket"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/spacesbucket"
 
 spacesbucket.NewSpacesBucketVersioningOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpacesBucketVersioningOutputReference
 ```

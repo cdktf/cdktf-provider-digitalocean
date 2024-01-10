@@ -177,4 +177,36 @@ export class ContainerRegistryDockerCredentials extends cdktf.TerraformResource 
       write: cdktf.booleanToTerraform(this._write),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      expiry_seconds: {
+        value: cdktf.numberToHclTerraform(this._expirySeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      registry_name: {
+        value: cdktf.stringToHclTerraform(this._registryName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      write: {
+        value: cdktf.booleanToHclTerraform(this._write),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }
