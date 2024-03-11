@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.kubernetesNodePool.KubernetesNodePool.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetesnodepool"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetesnodepool"
 
 kubernetesnodepool.NewKubernetesNodePool(scope Construct, id *string, config KubernetesNodePoolConfig) KubernetesNodePool
 ```
@@ -467,7 +467,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.kubernetesNodePool.KubernetesNodePool.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetesnodepool"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetesnodepool"
 
 kubernetesnodepool.KubernetesNodePool_IsConstruct(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.kubernetesNodePool.KubernetesNodePool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetesnodepool"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetesnodepool"
 
 kubernetesnodepool.KubernetesNodePool_IsTerraformElement(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ kubernetesnodepool.KubernetesNodePool_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.kubernetesNodePool.KubernetesNodePool.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetesnodepool"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetesnodepool"
 
 kubernetesnodepool.KubernetesNodePool_IsTerraformResource(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ kubernetesnodepool.KubernetesNodePool_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.kubernetesNodePool.KubernetesNodePool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetesnodepool"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetesnodepool"
 
 kubernetesnodepool.KubernetesNodePool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1042,7 +1042,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.kubernetesNodePool.KubernetesNodePoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetesnodepool"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetesnodepool"
 
 &kubernetesnodepool.KubernetesNodePoolConfig {
 	Connection: interface{},
@@ -1063,7 +1063,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kuberne
 	NodeCount: *f64,
 	Tags: *[]*string,
 	Taint: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.kubernetesNodePool.KubernetesNodePoolTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.kubernetesNodePool.KubernetesNodePoolTimeouts,
 }
 ```
 
@@ -1319,7 +1319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.kubernetesNodePool.KubernetesNodePoolNodes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetesnodepool"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetesnodepool"
 
 &kubernetesnodepool.KubernetesNodePoolNodes {
 
@@ -1332,7 +1332,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kuberne
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.kubernetesNodePool.KubernetesNodePoolTaint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetesnodepool"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetesnodepool"
 
 &kubernetesnodepool.KubernetesNodePoolTaint {
 	Effect: *string,
@@ -1392,7 +1392,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.kubernetesNodePool.KubernetesNodePoolTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetesnodepool"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetesnodepool"
 
 &kubernetesnodepool.KubernetesNodePoolTimeouts {
 	Create: *string,
@@ -1440,7 +1440,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.kubernetesNodePool.KubernetesNodePoolNodesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetesnodepool"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetesnodepool"
 
 kubernetesnodepool.NewKubernetesNodePoolNodesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KubernetesNodePoolNodesList
 ```
@@ -1589,7 +1589,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.kubernetesNodePool.KubernetesNodePoolNodesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetesnodepool"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetesnodepool"
 
 kubernetesnodepool.NewKubernetesNodePoolNodesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KubernetesNodePoolNodesOutputReference
 ```
@@ -1922,7 +1922,7 @@ func InternalValue() KubernetesNodePoolNodes
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.kubernetesNodePool.KubernetesNodePoolTaintList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetesnodepool"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetesnodepool"
 
 kubernetesnodepool.NewKubernetesNodePoolTaintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KubernetesNodePoolTaintList
 ```
@@ -2082,7 +2082,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.kubernetesNodePool.KubernetesNodePoolTaintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetesnodepool"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetesnodepool"
 
 kubernetesnodepool.NewKubernetesNodePoolTaintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KubernetesNodePoolTaintOutputReference
 ```
@@ -2415,7 +2415,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.kubernetesNodePool.KubernetesNodePoolTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetesnodepool"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetesnodepool"
 
 kubernetesnodepool.NewKubernetesNodePoolTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesNodePoolTimeoutsOutputReference
 ```
