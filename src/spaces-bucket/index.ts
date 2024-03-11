@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/spaces_bucket
 // generated from terraform resource schema
 
