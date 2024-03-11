@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_replica
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_replica
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +8,44 @@ import * as cdktf from 'cdktf';
 
 export interface DatabaseReplicaConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_replica#cluster_id DatabaseReplica#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_replica#cluster_id DatabaseReplica#cluster_id}
   */
   readonly clusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_replica#id DatabaseReplica#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_replica#id DatabaseReplica#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_replica#name DatabaseReplica#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_replica#name DatabaseReplica#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_replica#private_network_uuid DatabaseReplica#private_network_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_replica#private_network_uuid DatabaseReplica#private_network_uuid}
   */
   readonly privateNetworkUuid?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_replica#region DatabaseReplica#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_replica#region DatabaseReplica#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_replica#size DatabaseReplica#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_replica#size DatabaseReplica#size}
   */
   readonly size?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_replica#tags DatabaseReplica#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_replica#storage_size_mib DatabaseReplica#storage_size_mib}
+  */
+  readonly storageSizeMib?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_replica#tags DatabaseReplica#tags}
   */
   readonly tags?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_replica digitalocean_database_replica}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_replica digitalocean_database_replica}
 */
 export class DatabaseReplica extends cdktf.TerraformResource {
 
@@ -62,7 +61,7 @@ export class DatabaseReplica extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DatabaseReplica resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatabaseReplica to import
-  * @param importFromId The id of the existing DatabaseReplica that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_replica#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DatabaseReplica that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_replica#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatabaseReplica to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +73,7 @@ export class DatabaseReplica extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_replica digitalocean_database_replica} Resource
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_replica digitalocean_database_replica} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +84,7 @@ export class DatabaseReplica extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_database_replica',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.34.1',
+        providerVersion: '2.35.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
@@ -102,6 +101,7 @@ export class DatabaseReplica extends cdktf.TerraformResource {
     this._privateNetworkUuid = config.privateNetworkUuid;
     this._region = config.region;
     this._size = config.size;
+    this._storageSizeMib = config.storageSizeMib;
     this._tags = config.tags;
   }
 
@@ -229,6 +229,22 @@ export class DatabaseReplica extends cdktf.TerraformResource {
     return this._size;
   }
 
+  // storage_size_mib - computed: true, optional: true, required: false
+  private _storageSizeMib?: string; 
+  public get storageSizeMib() {
+    return this.getStringAttribute('storage_size_mib');
+  }
+  public set storageSizeMib(value: string) {
+    this._storageSizeMib = value;
+  }
+  public resetStorageSizeMib() {
+    this._storageSizeMib = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageSizeMibInput() {
+    return this._storageSizeMib;
+  }
+
   // tags - computed: false, optional: true, required: false
   private _tags?: string[]; 
   public get tags() {
@@ -272,6 +288,7 @@ export class DatabaseReplica extends cdktf.TerraformResource {
       private_network_uuid: cdktf.stringToTerraform(this._privateNetworkUuid),
       region: cdktf.stringToTerraform(this._region),
       size: cdktf.stringToTerraform(this._size),
+      storage_size_mib: cdktf.stringToTerraform(this._storageSizeMib),
       tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
     };
   }
@@ -310,6 +327,12 @@ export class DatabaseReplica extends cdktf.TerraformResource {
       },
       size: {
         value: cdktf.stringToHclTerraform(this._size),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      storage_size_mib: {
+        value: cdktf.stringToHclTerraform(this._storageSizeMib),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

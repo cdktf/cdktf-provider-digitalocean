@@ -4,12 +4,12 @@
 
 ### DatabaseReplica <a name="DatabaseReplica" id="@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_replica digitalocean_database_replica}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_replica digitalocean_database_replica}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/databasereplica"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasereplica"
 
 databasereplica.NewDatabaseReplica(scope Construct, id *string, config DatabaseReplicaConfig) DatabaseReplica
 ```
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica.resetPrivateNetworkUuid">ResetPrivateNetworkUuid</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica.resetSize">ResetSize</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica.resetStorageSizeMib">ResetStorageSizeMib</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica.resetTags">ResetTags</a></code> | *No description.* |
 
 ---
@@ -393,6 +394,12 @@ func ResetRegion()
 func ResetSize()
 ```
 
+##### `ResetStorageSizeMib` <a name="ResetStorageSizeMib" id="@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica.resetStorageSizeMib"></a>
+
+```go
+func ResetStorageSizeMib()
+```
+
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica.resetTags"></a>
 
 ```go
@@ -413,7 +420,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/databasereplica"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasereplica"
 
 databasereplica.DatabaseReplica_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/databasereplica"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasereplica"
 
 databasereplica.DatabaseReplica_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +466,7 @@ databasereplica.DatabaseReplica_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/databasereplica"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasereplica"
 
 databasereplica.DatabaseReplica_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +480,7 @@ databasereplica.DatabaseReplica_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/databasereplica"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasereplica"
 
 databasereplica.DatabaseReplica_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -502,7 +509,7 @@ The construct id used in the generated config for the DatabaseReplica to import.
 
 The id of the existing DatabaseReplica that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_replica#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_replica#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -547,6 +554,7 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica.property.privateNetworkUuidInput">PrivateNetworkUuidInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica.property.sizeInput">SizeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica.property.storageSizeMibInput">StorageSizeMibInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica.property.tagsInput">TagsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica.property.clusterId">ClusterId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica.property.id">Id</a></code> | <code>*string</code> | *No description.* |
@@ -554,6 +562,7 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica.property.privateNetworkUuid">PrivateNetworkUuid</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica.property.size">Size</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica.property.storageSizeMib">StorageSizeMib</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica.property.tags">Tags</a></code> | <code>*[]*string</code> | *No description.* |
 
 ---
@@ -850,6 +859,16 @@ func SizeInput() *string
 
 ---
 
+##### `StorageSizeMibInput`<sup>Optional</sup> <a name="StorageSizeMibInput" id="@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica.property.storageSizeMibInput"></a>
+
+```go
+func StorageSizeMibInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica.property.tagsInput"></a>
 
 ```go
@@ -920,6 +939,16 @@ func Size() *string
 
 ---
 
+##### `StorageSizeMib`<sup>Required</sup> <a name="StorageSizeMib" id="@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica.property.storageSizeMib"></a>
+
+```go
+func StorageSizeMib() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica.property.tags"></a>
 
 ```go
@@ -955,7 +984,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.databaseReplica.DatabaseReplicaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/databasereplica"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasereplica"
 
 &databasereplica.DatabaseReplicaConfig {
 	Connection: interface{},
@@ -971,6 +1000,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/databas
 	PrivateNetworkUuid: *string,
 	Region: *string,
 	Size: *string,
+	StorageSizeMib: *string,
 	Tags: *[]*string,
 }
 ```
@@ -986,13 +1016,14 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/databas
 | <code><a href="#@cdktf/provider-digitalocean.databaseReplica.DatabaseReplicaConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseReplica.DatabaseReplicaConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseReplica.DatabaseReplicaConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseReplica.DatabaseReplicaConfig.property.clusterId">ClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_replica#cluster_id DatabaseReplica#cluster_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseReplica.DatabaseReplicaConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_replica#name DatabaseReplica#name}. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseReplica.DatabaseReplicaConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_replica#id DatabaseReplica#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseReplica.DatabaseReplicaConfig.property.privateNetworkUuid">PrivateNetworkUuid</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_replica#private_network_uuid DatabaseReplica#private_network_uuid}. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseReplica.DatabaseReplicaConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_replica#region DatabaseReplica#region}. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseReplica.DatabaseReplicaConfig.property.size">Size</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_replica#size DatabaseReplica#size}. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseReplica.DatabaseReplicaConfig.property.tags">Tags</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_replica#tags DatabaseReplica#tags}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseReplica.DatabaseReplicaConfig.property.clusterId">ClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_replica#cluster_id DatabaseReplica#cluster_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseReplica.DatabaseReplicaConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_replica#name DatabaseReplica#name}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseReplica.DatabaseReplicaConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_replica#id DatabaseReplica#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseReplica.DatabaseReplicaConfig.property.privateNetworkUuid">PrivateNetworkUuid</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_replica#private_network_uuid DatabaseReplica#private_network_uuid}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseReplica.DatabaseReplicaConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_replica#region DatabaseReplica#region}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseReplica.DatabaseReplicaConfig.property.size">Size</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_replica#size DatabaseReplica#size}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseReplica.DatabaseReplicaConfig.property.storageSizeMib">StorageSizeMib</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_replica#storage_size_mib DatabaseReplica#storage_size_mib}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseReplica.DatabaseReplicaConfig.property.tags">Tags</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_replica#tags DatabaseReplica#tags}. |
 
 ---
 
@@ -1074,7 +1105,7 @@ ClusterId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_replica#cluster_id DatabaseReplica#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_replica#cluster_id DatabaseReplica#cluster_id}.
 
 ---
 
@@ -1086,7 +1117,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_replica#name DatabaseReplica#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_replica#name DatabaseReplica#name}.
 
 ---
 
@@ -1098,7 +1129,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_replica#id DatabaseReplica#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_replica#id DatabaseReplica#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1113,7 +1144,7 @@ PrivateNetworkUuid *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_replica#private_network_uuid DatabaseReplica#private_network_uuid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_replica#private_network_uuid DatabaseReplica#private_network_uuid}.
 
 ---
 
@@ -1125,7 +1156,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_replica#region DatabaseReplica#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_replica#region DatabaseReplica#region}.
 
 ---
 
@@ -1137,7 +1168,19 @@ Size *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_replica#size DatabaseReplica#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_replica#size DatabaseReplica#size}.
+
+---
+
+##### `StorageSizeMib`<sup>Optional</sup> <a name="StorageSizeMib" id="@cdktf/provider-digitalocean.databaseReplica.DatabaseReplicaConfig.property.storageSizeMib"></a>
+
+```go
+StorageSizeMib *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_replica#storage_size_mib DatabaseReplica#storage_size_mib}.
 
 ---
 
@@ -1149,7 +1192,7 @@ Tags *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_replica#tags DatabaseReplica#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_replica#tags DatabaseReplica#tags}.
 
 ---
 

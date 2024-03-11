@@ -4,7 +4,7 @@
 
 ### DataDigitaloceanApp <a name="DataDigitaloceanApp" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/data-sources/app digitalocean_app}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/data-sources/app digitalocean_app}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataDigitaloceanApp to imp
 
 The id of the existing DataDigitaloceanApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/data-sources/app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/data-sources/app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -404,6 +404,7 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.createdAt">CreatedAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.defaultIngress">DefaultIngress</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.liveUrl">LiveUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.projectId">ProjectId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.spec">Spec</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecList">DataDigitaloceanAppSpecList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.updatedAt">UpdatedAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.urn">Urn</a></code> | <code>string</code> | *No description.* |
@@ -576,6 +577,16 @@ public string LiveUrl { get; }
 
 ---
 
+##### `ProjectId`<sup>Required</sup> <a name="ProjectId" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.projectId"></a>
+
+```csharp
+public string ProjectId { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Spec`<sup>Required</sup> <a name="Spec" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.spec"></a>
 
 ```csharp
@@ -697,8 +708,8 @@ new DataDigitaloceanAppConfig {
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.appId">AppId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/data-sources/app#app_id DataDigitaloceanApp#app_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/data-sources/app#id DataDigitaloceanApp#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.appId">AppId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/data-sources/app#app_id DataDigitaloceanApp#app_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/data-sources/app#id DataDigitaloceanApp#id}. |
 
 ---
 
@@ -780,7 +791,7 @@ public string AppId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/data-sources/app#app_id DataDigitaloceanApp#app_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/data-sources/app#app_id DataDigitaloceanApp#app_id}.
 
 ---
 
@@ -792,7 +803,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/data-sources/app#id DataDigitaloceanApp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/data-sources/app#id DataDigitaloceanApp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
