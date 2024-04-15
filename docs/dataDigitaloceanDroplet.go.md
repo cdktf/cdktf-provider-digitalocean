@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanDroplet.DataDigitaloceanDroplet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandroplet"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceandroplet"
 
 datadigitaloceandroplet.NewDataDigitaloceanDroplet(scope Construct, id *string, config DataDigitaloceanDropletConfig) DataDigitaloceanDroplet
 ```
@@ -297,7 +297,7 @@ func ResetTag()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanDroplet.DataDigitaloceanDroplet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandroplet"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceandroplet"
 
 datadigitaloceandroplet.DataDigitaloceanDroplet_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanDroplet.DataDigitaloceanDroplet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandroplet"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceandroplet"
 
 datadigitaloceandroplet.DataDigitaloceanDroplet_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datadigitaloceandroplet.DataDigitaloceanDroplet_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanDroplet.DataDigitaloceanDroplet.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandroplet"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceandroplet"
 
 datadigitaloceandroplet.DataDigitaloceanDroplet_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datadigitaloceandroplet.DataDigitaloceanDroplet_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.dataDigitaloceanDroplet.DataDigitaloceanDroplet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandroplet"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceandroplet"
 
 datadigitaloceandroplet.DataDigitaloceanDroplet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -883,7 +883,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanDroplet.DataDigitaloceanDropletConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandroplet"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceandroplet"
 
 &datadigitaloceandroplet.DataDigitaloceanDropletConfig {
 	Connection: interface{},
