@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/data-sources/loadbalancer
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/data-sources/loadbalancer
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +10,7 @@ export interface DataDigitaloceanLoadbalancerConfig extends cdktf.TerraformMetaA
   /**
   * id of the load balancer
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/data-sources/loadbalancer#id DataDigitaloceanLoadbalancer#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/data-sources/loadbalancer#id DataDigitaloceanLoadbalancer#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,15 +19,109 @@ export interface DataDigitaloceanLoadbalancerConfig extends cdktf.TerraformMetaA
   /**
   * name of the load balancer
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/data-sources/loadbalancer#name DataDigitaloceanLoadbalancer#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/data-sources/loadbalancer#name DataDigitaloceanLoadbalancer#name}
   */
   readonly name?: string;
+}
+export interface DataDigitaloceanLoadbalancerDomains {
+}
+
+export function dataDigitaloceanLoadbalancerDomainsToTerraform(struct?: DataDigitaloceanLoadbalancerDomains): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataDigitaloceanLoadbalancerDomainsToHclTerraform(struct?: DataDigitaloceanLoadbalancerDomains): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDigitaloceanLoadbalancerDomainsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
-  * the type of the load balancer (GLOBAL or REGIONAL)
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/data-sources/loadbalancer#type DataDigitaloceanLoadbalancer#type}
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  readonly type?: string;
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataDigitaloceanLoadbalancerDomains | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDigitaloceanLoadbalancerDomains | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // certificate_id - computed: true, optional: false, required: false
+  public get certificateId() {
+    return this.getStringAttribute('certificate_id');
+  }
+
+  // certificate_name - computed: true, optional: false, required: false
+  public get certificateName() {
+    return this.getStringAttribute('certificate_name');
+  }
+
+  // is_managed - computed: true, optional: false, required: false
+  public get isManaged() {
+    return this.getBooleanAttribute('is_managed');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // ssl_validation_error_reasons - computed: true, optional: false, required: false
+  public get sslValidationErrorReasons() {
+    return this.getListAttribute('ssl_validation_error_reasons');
+  }
+
+  // verification_error_reasons - computed: true, optional: false, required: false
+  public get verificationErrorReasons() {
+    return this.getListAttribute('verification_error_reasons');
+  }
+}
+
+export class DataDigitaloceanLoadbalancerDomainsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataDigitaloceanLoadbalancerDomainsOutputReference {
+    return new DataDigitaloceanLoadbalancerDomainsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface DataDigitaloceanLoadbalancerFirewall {
 }
@@ -217,6 +306,167 @@ export class DataDigitaloceanLoadbalancerForwardingRuleList extends cdktf.Comple
   */
   public get(index: number): DataDigitaloceanLoadbalancerForwardingRuleOutputReference {
     return new DataDigitaloceanLoadbalancerForwardingRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataDigitaloceanLoadbalancerGlbSettingsCdn {
+}
+
+export function dataDigitaloceanLoadbalancerGlbSettingsCdnToTerraform(struct?: DataDigitaloceanLoadbalancerGlbSettingsCdn): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataDigitaloceanLoadbalancerGlbSettingsCdnToHclTerraform(struct?: DataDigitaloceanLoadbalancerGlbSettingsCdn): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDigitaloceanLoadbalancerGlbSettingsCdnOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataDigitaloceanLoadbalancerGlbSettingsCdn | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDigitaloceanLoadbalancerGlbSettingsCdn | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // is_enabled - computed: true, optional: false, required: false
+  public get isEnabled() {
+    return this.getBooleanAttribute('is_enabled');
+  }
+}
+
+export class DataDigitaloceanLoadbalancerGlbSettingsCdnList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataDigitaloceanLoadbalancerGlbSettingsCdnOutputReference {
+    return new DataDigitaloceanLoadbalancerGlbSettingsCdnOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataDigitaloceanLoadbalancerGlbSettings {
+}
+
+export function dataDigitaloceanLoadbalancerGlbSettingsToTerraform(struct?: DataDigitaloceanLoadbalancerGlbSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataDigitaloceanLoadbalancerGlbSettingsToHclTerraform(struct?: DataDigitaloceanLoadbalancerGlbSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDigitaloceanLoadbalancerGlbSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataDigitaloceanLoadbalancerGlbSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDigitaloceanLoadbalancerGlbSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // cdn - computed: true, optional: false, required: false
+  private _cdn = new DataDigitaloceanLoadbalancerGlbSettingsCdnList(this, "cdn", false);
+  public get cdn() {
+    return this._cdn;
+  }
+
+  // target_port - computed: true, optional: false, required: false
+  public get targetPort() {
+    return this.getNumberAttribute('target_port');
+  }
+
+  // target_protocol - computed: true, optional: false, required: false
+  public get targetProtocol() {
+    return this.getStringAttribute('target_protocol');
+  }
+}
+
+export class DataDigitaloceanLoadbalancerGlbSettingsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataDigitaloceanLoadbalancerGlbSettingsOutputReference {
+    return new DataDigitaloceanLoadbalancerGlbSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataDigitaloceanLoadbalancerHealthcheck {
@@ -411,7 +661,7 @@ export class DataDigitaloceanLoadbalancerStickySessionsList extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/data-sources/loadbalancer digitalocean_loadbalancer}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/data-sources/loadbalancer digitalocean_loadbalancer}
 */
 export class DataDigitaloceanLoadbalancer extends cdktf.TerraformDataSource {
 
@@ -427,7 +677,7 @@ export class DataDigitaloceanLoadbalancer extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDigitaloceanLoadbalancer resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDigitaloceanLoadbalancer to import
-  * @param importFromId The id of the existing DataDigitaloceanLoadbalancer that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/data-sources/loadbalancer#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDigitaloceanLoadbalancer that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/data-sources/loadbalancer#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDigitaloceanLoadbalancer to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -439,7 +689,7 @@ export class DataDigitaloceanLoadbalancer extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/data-sources/loadbalancer digitalocean_loadbalancer} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/data-sources/loadbalancer digitalocean_loadbalancer} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -450,7 +700,7 @@ export class DataDigitaloceanLoadbalancer extends cdktf.TerraformDataSource {
       terraformResourceType: 'digitalocean_loadbalancer',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.36.0',
+        providerVersion: '2.37.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
@@ -463,7 +713,6 @@ export class DataDigitaloceanLoadbalancer extends cdktf.TerraformDataSource {
     });
     this._id = config.id;
     this._name = config.name;
-    this._type = config.type;
   }
 
   // ==========
@@ -478,6 +727,12 @@ export class DataDigitaloceanLoadbalancer extends cdktf.TerraformDataSource {
   // disable_lets_encrypt_dns_records - computed: true, optional: false, required: false
   public get disableLetsEncryptDnsRecords() {
     return this.getBooleanAttribute('disable_lets_encrypt_dns_records');
+  }
+
+  // domains - computed: true, optional: false, required: false
+  private _domains = new DataDigitaloceanLoadbalancerDomainsList(this, "domains", true);
+  public get domains() {
+    return this._domains;
   }
 
   // droplet_ids - computed: true, optional: false, required: false
@@ -510,6 +765,12 @@ export class DataDigitaloceanLoadbalancer extends cdktf.TerraformDataSource {
   private _forwardingRule = new DataDigitaloceanLoadbalancerForwardingRuleList(this, "forwarding_rule", true);
   public get forwardingRule() {
     return this._forwardingRule;
+  }
+
+  // glb_settings - computed: true, optional: false, required: false
+  private _glbSettings = new DataDigitaloceanLoadbalancerGlbSettingsList(this, "glb_settings", false);
+  public get glbSettings() {
+    return this._glbSettings;
   }
 
   // healthcheck - computed: true, optional: false, required: false
@@ -596,20 +857,14 @@ export class DataDigitaloceanLoadbalancer extends cdktf.TerraformDataSource {
     return this._stickySessions;
   }
 
-  // type - computed: true, optional: true, required: false
-  private _type?: string; 
+  // target_load_balancer_ids - computed: true, optional: false, required: false
+  public get targetLoadBalancerIds() {
+    return cdktf.Fn.tolist(this.getListAttribute('target_load_balancer_ids'));
+  }
+
+  // type - computed: true, optional: false, required: false
   public get type() {
     return this.getStringAttribute('type');
-  }
-  public set type(value: string) {
-    this._type = value;
-  }
-  public resetType() {
-    this._type = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get typeInput() {
-    return this._type;
   }
 
   // urn - computed: true, optional: false, required: false
@@ -630,7 +885,6 @@ export class DataDigitaloceanLoadbalancer extends cdktf.TerraformDataSource {
     return {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      type: cdktf.stringToTerraform(this._type),
     };
   }
 
@@ -644,12 +898,6 @@ export class DataDigitaloceanLoadbalancer extends cdktf.TerraformDataSource {
       },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      type: {
-        value: cdktf.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

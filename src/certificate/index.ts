@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/resources/certificate
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/resources/certificate
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +8,40 @@ import * as cdktf from 'cdktf';
 
 export interface CertificateConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/resources/certificate#certificate_chain Certificate#certificate_chain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/resources/certificate#certificate_chain Certificate#certificate_chain}
   */
   readonly certificateChain?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/resources/certificate#domains Certificate#domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/resources/certificate#domains Certificate#domains}
   */
   readonly domains?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/resources/certificate#id Certificate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/resources/certificate#id Certificate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/resources/certificate#leaf_certificate Certificate#leaf_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/resources/certificate#leaf_certificate Certificate#leaf_certificate}
   */
   readonly leafCertificate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/resources/certificate#name Certificate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/resources/certificate#name Certificate#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/resources/certificate#private_key Certificate#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/resources/certificate#private_key Certificate#private_key}
   */
   readonly privateKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/resources/certificate#type Certificate#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/resources/certificate#type Certificate#type}
   */
   readonly type?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/resources/certificate digitalocean_certificate}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/resources/certificate digitalocean_certificate}
 */
 export class Certificate extends cdktf.TerraformResource {
 
@@ -62,7 +57,7 @@ export class Certificate extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Certificate resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Certificate to import
-  * @param importFromId The id of the existing Certificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/resources/certificate#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Certificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/resources/certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Certificate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +69,7 @@ export class Certificate extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/resources/certificate digitalocean_certificate} Resource
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/resources/certificate digitalocean_certificate} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +80,7 @@ export class Certificate extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_certificate',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.36.0',
+        providerVersion: '2.37.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
