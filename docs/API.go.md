@@ -56,6 +56,7 @@ The following submodules are available:
 - [databaseFirewall](./databaseFirewall.go.md)
 - [databaseKafkaTopic](./databaseKafkaTopic.go.md)
 - [databaseMysqlConfig](./databaseMysqlConfig.go.md)
+- [databasePostgresqlConfig](./databasePostgresqlConfig.go.md)
 - [databaseRedisConfig](./databaseRedisConfig.go.md)
 - [databaseReplica](./databaseReplica.go.md)
 - [databaseUser](./databaseUser.go.md)

@@ -56,6 +56,7 @@ The following submodules are available:
 - [databaseFirewall](./databaseFirewall.csharp.md)
 - [databaseKafkaTopic](./databaseKafkaTopic.csharp.md)
 - [databaseMysqlConfig](./databaseMysqlConfig.csharp.md)
+- [databasePostgresqlConfig](./databasePostgresqlConfig.csharp.md)
 - [databaseRedisConfig](./databaseRedisConfig.csharp.md)
 - [databaseReplica](./databaseReplica.csharp.md)
 - [databaseUser](./databaseUser.csharp.md)

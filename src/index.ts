@@ -16,6 +16,7 @@ export * as databaseDb from './database-db';
 export * as databaseFirewall from './database-firewall';
 export * as databaseKafkaTopic from './database-kafka-topic';
 export * as databaseMysqlConfig from './database-mysql-config';
+export * as databasePostgresqlConfig from './database-postgresql-config';
 export * as databaseRedisConfig from './database-redis-config';
 export * as databaseReplica from './database-replica';
 export * as databaseUser from './database-user';

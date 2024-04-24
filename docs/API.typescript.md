@@ -56,6 +56,7 @@ The following submodules are available:
 - [databaseFirewall](./databaseFirewall.typescript.md)
 - [databaseKafkaTopic](./databaseKafkaTopic.typescript.md)
 - [databaseMysqlConfig](./databaseMysqlConfig.typescript.md)
+- [databasePostgresqlConfig](./databasePostgresqlConfig.typescript.md)
 - [databaseRedisConfig](./databaseRedisConfig.typescript.md)
 - [databaseReplica](./databaseReplica.typescript.md)
 - [databaseUser](./databaseUser.typescript.md)

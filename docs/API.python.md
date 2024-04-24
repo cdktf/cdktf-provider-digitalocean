@@ -56,6 +56,7 @@ The following submodules are available:
 - [databaseFirewall](./databaseFirewall.python.md)
 - [databaseKafkaTopic](./databaseKafkaTopic.python.md)
 - [databaseMysqlConfig](./databaseMysqlConfig.python.md)
+- [databasePostgresqlConfig](./databasePostgresqlConfig.python.md)
 - [databaseRedisConfig](./databaseRedisConfig.python.md)
 - [databaseReplica](./databaseReplica.python.md)
 - [databaseUser](./databaseUser.python.md)

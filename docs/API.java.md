@@ -56,6 +56,7 @@ The following submodules are available:
 - [databaseFirewall](./databaseFirewall.java.md)
 - [databaseKafkaTopic](./databaseKafkaTopic.java.md)
 - [databaseMysqlConfig](./databaseMysqlConfig.java.md)
+- [databasePostgresqlConfig](./databasePostgresqlConfig.java.md)
 - [databaseRedisConfig](./databaseRedisConfig.java.md)
 - [databaseReplica](./databaseReplica.java.md)
 - [databaseUser](./databaseUser.java.md)

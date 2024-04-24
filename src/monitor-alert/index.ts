@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/resources/monitor_alert
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/resources/monitor_alert
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,52 +15,52 @@ export interface MonitorAlertConfig extends cdktf.TerraformMetaArguments {
   /**
   * The comparison operator to use for value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/resources/monitor_alert#compare MonitorAlert#compare}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/resources/monitor_alert#compare MonitorAlert#compare}
   */
   readonly compare: string;
   /**
   * Description of the alert policy
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/resources/monitor_alert#description MonitorAlert#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/resources/monitor_alert#description MonitorAlert#description}
   */
   readonly description: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/resources/monitor_alert#enabled MonitorAlert#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/resources/monitor_alert#enabled MonitorAlert#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * The droplets to apply the alert policy to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/resources/monitor_alert#entities MonitorAlert#entities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/resources/monitor_alert#entities MonitorAlert#entities}
   */
   readonly entities?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/resources/monitor_alert#id MonitorAlert#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/resources/monitor_alert#id MonitorAlert#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/resources/monitor_alert#tags MonitorAlert#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/resources/monitor_alert#tags MonitorAlert#tags}
   */
   readonly tags?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/resources/monitor_alert#type MonitorAlert#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/resources/monitor_alert#type MonitorAlert#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/resources/monitor_alert#value MonitorAlert#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/resources/monitor_alert#value MonitorAlert#value}
   */
   readonly value: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/resources/monitor_alert#window MonitorAlert#window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/resources/monitor_alert#window MonitorAlert#window}
   */
   readonly window: string;
   /**
   * alerts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/resources/monitor_alert#alerts MonitorAlert#alerts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/resources/monitor_alert#alerts MonitorAlert#alerts}
   */
   readonly alerts: MonitorAlertAlerts;
 }
@@ -68,13 +68,13 @@ export interface MonitorAlertAlertsSlack {
   /**
   * The Slack channel to send alerts to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/resources/monitor_alert#channel MonitorAlert#channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/resources/monitor_alert#channel MonitorAlert#channel}
   */
   readonly channel: string;
   /**
   * The webhook URL for Slack
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/resources/monitor_alert#url MonitorAlert#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/resources/monitor_alert#url MonitorAlert#url}
   */
   readonly url: string;
 }
@@ -215,13 +215,13 @@ export interface MonitorAlertAlerts {
   /**
   * List of email addresses to sent notifications to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/resources/monitor_alert#email MonitorAlert#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/resources/monitor_alert#email MonitorAlert#email}
   */
   readonly email?: string[];
   /**
   * slack block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/resources/monitor_alert#slack MonitorAlert#slack}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/resources/monitor_alert#slack MonitorAlert#slack}
   */
   readonly slack?: MonitorAlertAlertsSlack[] | cdktf.IResolvable;
 }
@@ -334,7 +334,7 @@ export class MonitorAlertAlertsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/resources/monitor_alert digitalocean_monitor_alert}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/resources/monitor_alert digitalocean_monitor_alert}
 */
 export class MonitorAlert extends cdktf.TerraformResource {
 
@@ -350,7 +350,7 @@ export class MonitorAlert extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a MonitorAlert resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MonitorAlert to import
-  * @param importFromId The id of the existing MonitorAlert that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/resources/monitor_alert#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MonitorAlert that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/resources/monitor_alert#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MonitorAlert to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -362,7 +362,7 @@ export class MonitorAlert extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/resources/monitor_alert digitalocean_monitor_alert} Resource
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/resources/monitor_alert digitalocean_monitor_alert} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -373,7 +373,7 @@ export class MonitorAlert extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_monitor_alert',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.36.0',
+        providerVersion: '2.37.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
