@@ -1,3 +1,3 @@
 # `data_digitalocean_database_replica`
 
-Refer to the Terraform Registry for docs: [`data_digitalocean_database_replica`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.1/docs/data-sources/database_replica).
+Refer to the Terraform Registry for docs: [`data_digitalocean_database_replica`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.38.0/docs/data-sources/database_replica).

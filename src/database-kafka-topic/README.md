@@ -1,3 +1,3 @@
 # `digitalocean_database_kafka_topic`
 
-Refer to the Terraform Registry for docs: [`digitalocean_database_kafka_topic`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.1/docs/resources/database_kafka_topic).
+Refer to the Terraform Registry for docs: [`digitalocean_database_kafka_topic`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.38.0/docs/resources/database_kafka_topic).
