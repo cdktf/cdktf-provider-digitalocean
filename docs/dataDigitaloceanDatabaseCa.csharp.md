@@ -4,7 +4,7 @@
 
 ### DataDigitaloceanDatabaseCa <a name="DataDigitaloceanDatabaseCa" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseCa.DataDigitaloceanDatabaseCa"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.38.0/docs/data-sources/database_ca digitalocean_database_ca}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.0/docs/data-sources/database_ca digitalocean_database_ca}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseCa.DataDigitaloceanDatabaseCa.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataDigitaloceanDatabaseCa
 
 The id of the existing DataDigitaloceanDatabaseCa that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.38.0/docs/data-sources/database_ca#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.0/docs/data-sources/database_ca#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -631,8 +631,8 @@ new DataDigitaloceanDatabaseCaConfig {
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseCa.DataDigitaloceanDatabaseCaConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseCa.DataDigitaloceanDatabaseCaConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseCa.DataDigitaloceanDatabaseCaConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseCa.DataDigitaloceanDatabaseCaConfig.property.clusterId">ClusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.38.0/docs/data-sources/database_ca#cluster_id DataDigitaloceanDatabaseCa#cluster_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseCa.DataDigitaloceanDatabaseCaConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.38.0/docs/data-sources/database_ca#id DataDigitaloceanDatabaseCa#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseCa.DataDigitaloceanDatabaseCaConfig.property.clusterId">ClusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.0/docs/data-sources/database_ca#cluster_id DataDigitaloceanDatabaseCa#cluster_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseCa.DataDigitaloceanDatabaseCaConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.0/docs/data-sources/database_ca#id DataDigitaloceanDatabaseCa#id}. |
 
 ---
 
@@ -714,7 +714,7 @@ public string ClusterId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.38.0/docs/data-sources/database_ca#cluster_id DataDigitaloceanDatabaseCa#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.0/docs/data-sources/database_ca#cluster_id DataDigitaloceanDatabaseCa#cluster_id}.
 
 ---
 
@@ -726,7 +726,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.38.0/docs/data-sources/database_ca#id DataDigitaloceanDatabaseCa#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.0/docs/data-sources/database_ca#id DataDigitaloceanDatabaseCa#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

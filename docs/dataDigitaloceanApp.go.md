@@ -4,7 +4,7 @@
 
 ### DataDigitaloceanApp <a name="DataDigitaloceanApp" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.38.0/docs/data-sources/app digitalocean_app}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.0/docs/data-sources/app digitalocean_app}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.Initializer"></a>
 
@@ -67,6 +67,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.putDedicatedIps">PutDedicatedIps</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.resetDedicatedIps">ResetDedicatedIps</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.resetId">ResetId</a></code> | *No description.* |
 
 ---
@@ -263,6 +265,24 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
+##### `PutDedicatedIps` <a name="PutDedicatedIps" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.putDedicatedIps"></a>
+
+```go
+func PutDedicatedIps(value interface{})
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.putDedicatedIps.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
+##### `ResetDedicatedIps` <a name="ResetDedicatedIps" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.resetDedicatedIps"></a>
+
+```go
+func ResetDedicatedIps()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.resetId"></a>
 
 ```go
@@ -372,7 +392,7 @@ The construct id used in the generated config for the DataDigitaloceanApp to imp
 
 The id of the existing DataDigitaloceanApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.38.0/docs/data-sources/app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.0/docs/data-sources/app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -402,6 +422,7 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.activeDeploymentId">ActiveDeploymentId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.createdAt">CreatedAt</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.dedicatedIps">DedicatedIps</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList">DataDigitaloceanAppDedicatedIpsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.defaultIngress">DefaultIngress</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.liveUrl">LiveUrl</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.projectId">ProjectId</a></code> | <code>*string</code> | *No description.* |
@@ -409,6 +430,7 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.updatedAt">UpdatedAt</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.urn">Urn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.appIdInput">AppIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.dedicatedIpsInput">DedicatedIpsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.appId">AppId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.id">Id</a></code> | <code>*string</code> | *No description.* |
@@ -557,6 +579,16 @@ func CreatedAt() *string
 
 ---
 
+##### `DedicatedIps`<sup>Required</sup> <a name="DedicatedIps" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.dedicatedIps"></a>
+
+```go
+func DedicatedIps() DataDigitaloceanAppDedicatedIpsList
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList">DataDigitaloceanAppDedicatedIpsList</a>
+
+---
+
 ##### `DefaultIngress`<sup>Required</sup> <a name="DefaultIngress" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.defaultIngress"></a>
 
 ```go
@@ -627,6 +659,16 @@ func AppIdInput() *string
 
 ---
 
+##### `DedicatedIpsInput`<sup>Optional</sup> <a name="DedicatedIpsInput" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.dedicatedIpsInput"></a>
+
+```go
+func DedicatedIpsInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.idInput"></a>
 
 ```go
@@ -693,6 +735,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	AppId: *string,
+	DedicatedIps: interface{},
 	Id: *string,
 }
 ```
@@ -708,8 +751,9 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.appId">AppId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.38.0/docs/data-sources/app#app_id DataDigitaloceanApp#app_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.38.0/docs/data-sources/app#id DataDigitaloceanApp#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.appId">AppId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.0/docs/data-sources/app#app_id DataDigitaloceanApp#app_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.dedicatedIps">DedicatedIps</a></code> | <code>interface{}</code> | dedicated_ips block. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.0/docs/data-sources/app#id DataDigitaloceanApp#id}. |
 
 ---
 
@@ -791,7 +835,21 @@ AppId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.38.0/docs/data-sources/app#app_id DataDigitaloceanApp#app_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.0/docs/data-sources/app#app_id DataDigitaloceanApp#app_id}.
+
+---
+
+##### `DedicatedIps`<sup>Optional</sup> <a name="DedicatedIps" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.dedicatedIps"></a>
+
+```go
+DedicatedIps interface{}
+```
+
+- *Type:* interface{}
+
+dedicated_ips block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.0/docs/data-sources/app#dedicated_ips DataDigitaloceanApp#dedicated_ips}
 
 ---
 
@@ -803,10 +861,79 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.38.0/docs/data-sources/app#id DataDigitaloceanApp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.0/docs/data-sources/app#id DataDigitaloceanApp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+### DataDigitaloceanAppDedicatedIps <a name="DataDigitaloceanAppDedicatedIps" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIps"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIps.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+
+&datadigitaloceanapp.DataDigitaloceanAppDedicatedIps {
+	Id: *string,
+	Ip: *string,
+	Status: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIps.property.id">Id</a></code> | <code>*string</code> | The ID of the dedicated egress IP. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIps.property.ip">Ip</a></code> | <code>*string</code> | The IP address of the dedicated egress IP. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIps.property.status">Status</a></code> | <code>*string</code> | The status of the dedicated egress IP: 'UNKNOWN', 'ASSIGNING', 'ASSIGNED', or 'REMOVED'. |
+
+---
+
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIps.property.id"></a>
+
+```go
+Id *string
+```
+
+- *Type:* *string
+
+The ID of the dedicated egress IP.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.0/docs/data-sources/app#id DataDigitaloceanApp#id}
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Ip`<sup>Optional</sup> <a name="Ip" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIps.property.ip"></a>
+
+```go
+Ip *string
+```
+
+- *Type:* *string
+
+The IP address of the dedicated egress IP.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.0/docs/data-sources/app#ip DataDigitaloceanApp#ip}
+
+---
+
+##### `Status`<sup>Optional</sup> <a name="Status" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIps.property.status"></a>
+
+```go
+Status *string
+```
+
+- *Type:* *string
+
+The status of the dedicated egress IP: 'UNKNOWN', 'ASSIGNING', 'ASSIGNED', or 'REMOVED'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.0/docs/data-sources/app#status DataDigitaloceanApp#status}
 
 ---
 
@@ -857,6 +984,19 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecDomain {
+
+}
+```
+
+
+### DataDigitaloceanAppSpecEgress <a name="DataDigitaloceanAppSpecEgress" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgress"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgress.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+
+&datadigitaloceanapp.DataDigitaloceanAppSpecEgress {
 
 }
 ```
@@ -1773,6 +1913,520 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### DataDigitaloceanAppDedicatedIpsList <a name="DataDigitaloceanAppDedicatedIpsList" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+
+datadigitaloceanapp.NewDataDigitaloceanAppDedicatedIpsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppDedicatedIpsList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList.get"></a>
+
+```go
+func Get(index *f64) DataDigitaloceanAppDedicatedIpsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### DataDigitaloceanAppDedicatedIpsOutputReference <a name="DataDigitaloceanAppDedicatedIpsOutputReference" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+
+datadigitaloceanapp.NewDataDigitaloceanAppDedicatedIpsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppDedicatedIpsOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.resetIp">ResetIp</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.resetStatus">ResetStatus</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetId` <a name="ResetId" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.resetId"></a>
+
+```go
+func ResetId()
+```
+
+##### `ResetIp` <a name="ResetIp" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.resetIp"></a>
+
+```go
+func ResetIp()
+```
+
+##### `ResetStatus` <a name="ResetStatus" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.resetStatus"></a>
+
+```go
+func ResetStatus()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.property.ipInput">IpInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.property.statusInput">StatusInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.property.ip">Ip</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.property.status">Status</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.property.idInput"></a>
+
+```go
+func IdInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `IpInput`<sup>Optional</sup> <a name="IpInput" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.property.ipInput"></a>
+
+```go
+func IpInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `StatusInput`<sup>Optional</sup> <a name="StatusInput" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.property.statusInput"></a>
+
+```go
+func StatusInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Ip`<sup>Required</sup> <a name="Ip" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.property.ip"></a>
+
+```go
+func Ip() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Status`<sup>Required</sup> <a name="Status" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.property.status"></a>
+
+```go
+func Status() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 
 ### DataDigitaloceanAppSpecAlertList <a name="DataDigitaloceanAppSpecAlertList" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecAlertList"></a>
 
@@ -3161,6 +3815,433 @@ func InternalValue() DataDigitaloceanAppSpecDomain
 ```
 
 - *Type:* <a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecDomain">DataDigitaloceanAppSpecDomain</a>
+
+---
+
+
+### DataDigitaloceanAppSpecEgressList <a name="DataDigitaloceanAppSpecEgressList" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressList.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+
+datadigitaloceanapp.NewDataDigitaloceanAppSpecEgressList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecEgressList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressList.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressList.get"></a>
+
+```go
+func Get(index *f64) DataDigitaloceanAppSpecEgressOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### DataDigitaloceanAppSpecEgressOutputReference <a name="DataDigitaloceanAppSpecEgressOutputReference" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+
+datadigitaloceanapp.NewDataDigitaloceanAppSpecEgressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecEgressOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.property.type">Type</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgress">DataDigitaloceanAppSpecEgress</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Type`<sup>Required</sup> <a name="Type" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.property.type"></a>
+
+```go
+func Type() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataDigitaloceanAppSpecEgress
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgress">DataDigitaloceanAppSpecEgress</a>
 
 ---
 
@@ -19032,6 +20113,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecOutputReference.property.database">Database</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecDatabaseList">DataDigitaloceanAppSpecDatabaseList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecOutputReference.property.domain">Domain</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecDomainList">DataDigitaloceanAppSpecDomainList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecOutputReference.property.domains">Domains</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecOutputReference.property.egress">Egress</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressList">DataDigitaloceanAppSpecEgressList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecOutputReference.property.env">Env</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEnvList">DataDigitaloceanAppSpecEnvList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecOutputReference.property.features">Features</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecOutputReference.property.function">Function</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionList">DataDigitaloceanAppSpecFunctionList</a></code> | *No description.* |
@@ -19107,6 +20189,16 @@ func Domains() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `Egress`<sup>Required</sup> <a name="Egress" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecOutputReference.property.egress"></a>
+
+```go
+func Egress() DataDigitaloceanAppSpecEgressList
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressList">DataDigitaloceanAppSpecEgressList</a>
 
 ---
 

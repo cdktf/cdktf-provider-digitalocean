@@ -47,6 +47,7 @@ export * as volume from './volume';
 export * as volumeAttachment from './volume-attachment';
 export * as volumeSnapshot from './volume-snapshot';
 export * as vpc from './vpc';
+export * as vpcPeering from './vpc-peering';
 export * as dataDigitaloceanAccount from './data-digitalocean-account';
 export * as dataDigitaloceanApp from './data-digitalocean-app';
 export * as dataDigitaloceanCertificate from './data-digitalocean-certificate';
@@ -87,5 +88,6 @@ export * as dataDigitaloceanTags from './data-digitalocean-tags';
 export * as dataDigitaloceanVolume from './data-digitalocean-volume';
 export * as dataDigitaloceanVolumeSnapshot from './data-digitalocean-volume-snapshot';
 export * as dataDigitaloceanVpc from './data-digitalocean-vpc';
+export * as dataDigitaloceanVpcPeering from './data-digitalocean-vpc-peering';
 export * as provider from './provider';
 
