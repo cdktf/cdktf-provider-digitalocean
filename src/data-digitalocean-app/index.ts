@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.38.0/docs/data-sources/app
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.0/docs/data-sources/app
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,16 +8,22 @@ import * as cdktf from 'cdktf';
 
 export interface DataDigitaloceanAppConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.38.0/docs/data-sources/app#app_id DataDigitaloceanApp#app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.0/docs/data-sources/app#app_id DataDigitaloceanApp#app_id}
   */
   readonly appId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.38.0/docs/data-sources/app#id DataDigitaloceanApp#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.0/docs/data-sources/app#id DataDigitaloceanApp#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
+  /**
+  * dedicated_ips block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.0/docs/data-sources/app#dedicated_ips DataDigitaloceanApp#dedicated_ips}
+  */
+  readonly dedicatedIps?: DataDigitaloceanAppDedicatedIps[] | cdktf.IResolvable;
 }
 export interface DataDigitaloceanAppSpecAlert {
 }
@@ -297,6 +298,81 @@ export class DataDigitaloceanAppSpecDomainList extends cdktf.ComplexList {
   */
   public get(index: number): DataDigitaloceanAppSpecDomainOutputReference {
     return new DataDigitaloceanAppSpecDomainOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataDigitaloceanAppSpecEgress {
+}
+
+export function dataDigitaloceanAppSpecEgressToTerraform(struct?: DataDigitaloceanAppSpecEgress): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataDigitaloceanAppSpecEgressToHclTerraform(struct?: DataDigitaloceanAppSpecEgress): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDigitaloceanAppSpecEgressOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataDigitaloceanAppSpecEgress | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDigitaloceanAppSpecEgress | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+}
+
+export class DataDigitaloceanAppSpecEgressList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataDigitaloceanAppSpecEgressOutputReference {
+    return new DataDigitaloceanAppSpecEgressOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataDigitaloceanAppSpecEnv {
@@ -6721,6 +6797,12 @@ export class DataDigitaloceanAppSpecOutputReference extends cdktf.ComplexObject 
     return cdktf.Fn.tolist(this.getListAttribute('domains'));
   }
 
+  // egress - computed: true, optional: false, required: false
+  private _egress = new DataDigitaloceanAppSpecEgressList(this, "egress", false);
+  public get egress() {
+    return this._egress;
+  }
+
   // env - computed: true, optional: false, required: false
   private _env = new DataDigitaloceanAppSpecEnvList(this, "env", true);
   public get env() {
@@ -6797,9 +6879,200 @@ export class DataDigitaloceanAppSpecList extends cdktf.ComplexList {
     return new DataDigitaloceanAppSpecOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataDigitaloceanAppDedicatedIps {
+  /**
+  * The ID of the dedicated egress IP.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.0/docs/data-sources/app#id DataDigitaloceanApp#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
+  * The IP address of the dedicated egress IP.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.0/docs/data-sources/app#ip DataDigitaloceanApp#ip}
+  */
+  readonly ip?: string;
+  /**
+  * The status of the dedicated egress IP: 'UNKNOWN', 'ASSIGNING', 'ASSIGNED', or 'REMOVED'
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.0/docs/data-sources/app#status DataDigitaloceanApp#status}
+  */
+  readonly status?: string;
+}
+
+export function dataDigitaloceanAppDedicatedIpsToTerraform(struct?: DataDigitaloceanAppDedicatedIps | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    id: cdktf.stringToTerraform(struct!.id),
+    ip: cdktf.stringToTerraform(struct!.ip),
+    status: cdktf.stringToTerraform(struct!.status),
+  }
+}
+
+
+export function dataDigitaloceanAppDedicatedIpsToHclTerraform(struct?: DataDigitaloceanAppDedicatedIps | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ip: {
+      value: cdktf.stringToHclTerraform(struct!.ip),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    status: {
+      value: cdktf.stringToHclTerraform(struct!.status),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDigitaloceanAppDedicatedIpsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataDigitaloceanAppDedicatedIps | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._ip !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ip = this._ip;
+    }
+    if (this._status !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.status = this._status;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDigitaloceanAppDedicatedIps | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+      this._ip = undefined;
+      this._status = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+      this._ip = value.ip;
+      this._status = value.status;
+    }
+  }
+
+  // id - computed: true, optional: true, required: false
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // ip - computed: true, optional: true, required: false
+  private _ip?: string; 
+  public get ip() {
+    return this.getStringAttribute('ip');
+  }
+  public set ip(value: string) {
+    this._ip = value;
+  }
+  public resetIp() {
+    this._ip = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipInput() {
+    return this._ip;
+  }
+
+  // status - computed: true, optional: true, required: false
+  private _status?: string; 
+  public get status() {
+    return this.getStringAttribute('status');
+  }
+  public set status(value: string) {
+    this._status = value;
+  }
+  public resetStatus() {
+    this._status = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statusInput() {
+    return this._status;
+  }
+}
+
+export class DataDigitaloceanAppDedicatedIpsList extends cdktf.ComplexList {
+  public internalValue? : DataDigitaloceanAppDedicatedIps[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataDigitaloceanAppDedicatedIpsOutputReference {
+    return new DataDigitaloceanAppDedicatedIpsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.38.0/docs/data-sources/app digitalocean_app}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.0/docs/data-sources/app digitalocean_app}
 */
 export class DataDigitaloceanApp extends cdktf.TerraformDataSource {
 
@@ -6815,7 +7088,7 @@ export class DataDigitaloceanApp extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDigitaloceanApp resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDigitaloceanApp to import
-  * @param importFromId The id of the existing DataDigitaloceanApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.38.0/docs/data-sources/app#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDigitaloceanApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.0/docs/data-sources/app#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDigitaloceanApp to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -6827,7 +7100,7 @@ export class DataDigitaloceanApp extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.38.0/docs/data-sources/app digitalocean_app} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.0/docs/data-sources/app digitalocean_app} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -6838,7 +7111,7 @@ export class DataDigitaloceanApp extends cdktf.TerraformDataSource {
       terraformResourceType: 'digitalocean_app',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.38.0',
+        providerVersion: '2.39.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
@@ -6851,6 +7124,7 @@ export class DataDigitaloceanApp extends cdktf.TerraformDataSource {
     });
     this._appId = config.appId;
     this._id = config.id;
+    this._dedicatedIps.internalValue = config.dedicatedIps;
   }
 
   // ==========
@@ -6927,6 +7201,22 @@ export class DataDigitaloceanApp extends cdktf.TerraformDataSource {
     return this.getStringAttribute('urn');
   }
 
+  // dedicated_ips - computed: false, optional: true, required: false
+  private _dedicatedIps = new DataDigitaloceanAppDedicatedIpsList(this, "dedicated_ips", false);
+  public get dedicatedIps() {
+    return this._dedicatedIps;
+  }
+  public putDedicatedIps(value: DataDigitaloceanAppDedicatedIps[] | cdktf.IResolvable) {
+    this._dedicatedIps.internalValue = value;
+  }
+  public resetDedicatedIps() {
+    this._dedicatedIps.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dedicatedIpsInput() {
+    return this._dedicatedIps.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -6935,6 +7225,7 @@ export class DataDigitaloceanApp extends cdktf.TerraformDataSource {
     return {
       app_id: cdktf.stringToTerraform(this._appId),
       id: cdktf.stringToTerraform(this._id),
+      dedicated_ips: cdktf.listMapper(dataDigitaloceanAppDedicatedIpsToTerraform, true)(this._dedicatedIps.internalValue),
     };
   }
 
@@ -6951,6 +7242,12 @@ export class DataDigitaloceanApp extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      dedicated_ips: {
+        value: cdktf.listMapperHcl(dataDigitaloceanAppDedicatedIpsToHclTerraform, true)(this._dedicatedIps.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataDigitaloceanAppDedicatedIpsList",
       },
     };
 

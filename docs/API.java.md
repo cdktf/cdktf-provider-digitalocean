@@ -50,6 +50,7 @@ The following submodules are available:
 - [dataDigitaloceanVolume](./dataDigitaloceanVolume.java.md)
 - [dataDigitaloceanVolumeSnapshot](./dataDigitaloceanVolumeSnapshot.java.md)
 - [dataDigitaloceanVpc](./dataDigitaloceanVpc.java.md)
+- [dataDigitaloceanVpcPeering](./dataDigitaloceanVpcPeering.java.md)
 - [databaseCluster](./databaseCluster.java.md)
 - [databaseConnectionPool](./databaseConnectionPool.java.md)
 - [databaseDb](./databaseDb.java.md)
@@ -88,6 +89,7 @@ The following submodules are available:
 - [volumeAttachment](./volumeAttachment.java.md)
 - [volumeSnapshot](./volumeSnapshot.java.md)
 - [vpc](./vpc.java.md)
+- [vpcPeering](./vpcPeering.java.md)
 
 
 
