@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.0/docs/data-sources/container_registry
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.1/docs/data-sources/container_registry
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataDigitaloceanContainerRegistryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.0/docs/data-sources/container_registry#id DataDigitaloceanContainerRegistry#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.1/docs/data-sources/container_registry#id DataDigitaloceanContainerRegistry#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +17,13 @@ export interface DataDigitaloceanContainerRegistryConfig extends cdktf.Terraform
   /**
   * name of the container registry
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.0/docs/data-sources/container_registry#name DataDigitaloceanContainerRegistry#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.1/docs/data-sources/container_registry#name DataDigitaloceanContainerRegistry#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.0/docs/data-sources/container_registry digitalocean_container_registry}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.1/docs/data-sources/container_registry digitalocean_container_registry}
 */
 export class DataDigitaloceanContainerRegistry extends cdktf.TerraformDataSource {
 
@@ -44,7 +39,7 @@ export class DataDigitaloceanContainerRegistry extends cdktf.TerraformDataSource
   * Generates CDKTF code for importing a DataDigitaloceanContainerRegistry resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDigitaloceanContainerRegistry to import
-  * @param importFromId The id of the existing DataDigitaloceanContainerRegistry that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.0/docs/data-sources/container_registry#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDigitaloceanContainerRegistry that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.1/docs/data-sources/container_registry#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDigitaloceanContainerRegistry to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -56,7 +51,7 @@ export class DataDigitaloceanContainerRegistry extends cdktf.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.0/docs/data-sources/container_registry digitalocean_container_registry} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.1/docs/data-sources/container_registry digitalocean_container_registry} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +62,7 @@ export class DataDigitaloceanContainerRegistry extends cdktf.TerraformDataSource
       terraformResourceType: 'digitalocean_container_registry',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.39.0',
+        providerVersion: '2.39.1',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
