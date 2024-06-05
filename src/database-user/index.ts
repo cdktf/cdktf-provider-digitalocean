@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.1/docs/resources/database_user
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.2/docs/resources/database_user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +13,38 @@ import * as cdktf from 'cdktf';
 
 export interface DatabaseUserConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.1/docs/resources/database_user#cluster_id DatabaseUser#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.2/docs/resources/database_user#cluster_id DatabaseUser#cluster_id}
   */
   readonly clusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.1/docs/resources/database_user#id DatabaseUser#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.2/docs/resources/database_user#id DatabaseUser#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.1/docs/resources/database_user#mysql_auth_plugin DatabaseUser#mysql_auth_plugin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.2/docs/resources/database_user#mysql_auth_plugin DatabaseUser#mysql_auth_plugin}
   */
   readonly mysqlAuthPlugin?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.1/docs/resources/database_user#name DatabaseUser#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.2/docs/resources/database_user#name DatabaseUser#name}
   */
   readonly name: string;
   /**
   * settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.1/docs/resources/database_user#settings DatabaseUser#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.2/docs/resources/database_user#settings DatabaseUser#settings}
   */
   readonly settings?: DatabaseUserSettings[] | cdktf.IResolvable;
 }
 export interface DatabaseUserSettingsAcl {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.1/docs/resources/database_user#permission DatabaseUser#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.2/docs/resources/database_user#permission DatabaseUser#permission}
   */
   readonly permission: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.1/docs/resources/database_user#topic DatabaseUser#topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.2/docs/resources/database_user#topic DatabaseUser#topic}
   */
   readonly topic: string;
 }
@@ -190,7 +190,7 @@ export interface DatabaseUserSettings {
   /**
   * acl block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.1/docs/resources/database_user#acl DatabaseUser#acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.2/docs/resources/database_user#acl DatabaseUser#acl}
   */
   readonly acl?: DatabaseUserSettingsAcl[] | cdktf.IResolvable;
 }
@@ -306,7 +306,7 @@ export class DatabaseUserSettingsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.1/docs/resources/database_user digitalocean_database_user}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.2/docs/resources/database_user digitalocean_database_user}
 */
 export class DatabaseUser extends cdktf.TerraformResource {
 
@@ -322,7 +322,7 @@ export class DatabaseUser extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DatabaseUser resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatabaseUser to import
-  * @param importFromId The id of the existing DatabaseUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.1/docs/resources/database_user#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DatabaseUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.2/docs/resources/database_user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatabaseUser to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -334,7 +334,7 @@ export class DatabaseUser extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.1/docs/resources/database_user digitalocean_database_user} Resource
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.2/docs/resources/database_user digitalocean_database_user} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -345,7 +345,7 @@ export class DatabaseUser extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_database_user',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.39.1',
+        providerVersion: '2.39.2',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
