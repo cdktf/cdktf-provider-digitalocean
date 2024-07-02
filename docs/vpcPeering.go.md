@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.vpcPeering.VpcPeering.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/vpcpeering"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/vpcpeering"
 
 vpcpeering.NewVpcPeering(scope Construct, id *string, config VpcPeeringConfig) VpcPeering
 ```
@@ -398,7 +398,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.vpcPeering.VpcPeering.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/vpcpeering"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/vpcpeering"
 
 vpcpeering.VpcPeering_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.vpcPeering.VpcPeering.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/vpcpeering"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/vpcpeering"
 
 vpcpeering.VpcPeering_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ vpcpeering.VpcPeering_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.vpcPeering.VpcPeering.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/vpcpeering"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/vpcpeering"
 
 vpcpeering.VpcPeering_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ vpcpeering.VpcPeering_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.vpcPeering.VpcPeering.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/vpcpeering"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/vpcpeering"
 
 vpcpeering.VpcPeering_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -786,7 +786,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.vpcPeering.VpcPeeringConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/vpcpeering"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/vpcpeering"
 
 &vpcpeering.VpcPeeringConfig {
 	Connection: interface{},
@@ -798,7 +798,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/vpcpeering"
 	Provisioners: *[]interface{},
 	Name: *string,
 	VpcIds: *[]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.vpcPeering.VpcPeeringTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.vpcPeering.VpcPeeringTimeouts,
 }
 ```
 
@@ -936,7 +936,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.vpcPeering.VpcPeeringTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/vpcpeering"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/vpcpeering"
 
 &vpcpeering.VpcPeeringTimeouts {
 	Create: *string,
@@ -984,7 +984,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.vpcPeering.VpcPeeringTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/vpcpeering"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/vpcpeering"
 
 vpcpeering.NewVpcPeeringTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcPeeringTimeoutsOutputReference
 ```
