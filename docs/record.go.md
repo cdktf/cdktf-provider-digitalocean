@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.record.Record.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/record"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/record"
 
 record.NewRecord(scope Construct, id *string, config RecordConfig) Record
 ```
@@ -427,7 +427,7 @@ func ResetWeight()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.record.Record.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/record"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/record"
 
 record.Record_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.record.Record.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/record"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/record"
 
 record.Record_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ record.Record_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.record.Record.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/record"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/record"
 
 record.Record_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ record.Record_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.record.Record.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/record"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/record"
 
 record.Record_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -969,7 +969,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.record.RecordConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/record"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/record"
 
 &record.RecordConfig {
 	Connection: interface{},
