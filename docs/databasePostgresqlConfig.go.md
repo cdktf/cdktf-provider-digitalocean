@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databasePostgresqlConfig.DatabasePostgresqlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasepostgresqlconfig"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/databasepostgresqlconfig"
 
 databasepostgresqlconfig.NewDatabasePostgresqlConfig(scope Construct, id *string, config DatabasePostgresqlConfigConfig) DatabasePostgresqlConfig
 ```
@@ -768,7 +768,7 @@ func ResetWorkMem()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.databasePostgresqlConfig.DatabasePostgresqlConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasepostgresqlconfig"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/databasepostgresqlconfig"
 
 databasepostgresqlconfig.DatabasePostgresqlConfig_IsConstruct(x interface{}) *bool
 ```
@@ -800,7 +800,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.databasePostgresqlConfig.DatabasePostgresqlConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasepostgresqlconfig"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/databasepostgresqlconfig"
 
 databasepostgresqlconfig.DatabasePostgresqlConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -814,7 +814,7 @@ databasepostgresqlconfig.DatabasePostgresqlConfig_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.databasePostgresqlConfig.DatabasePostgresqlConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasepostgresqlconfig"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/databasepostgresqlconfig"
 
 databasepostgresqlconfig.DatabasePostgresqlConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -828,7 +828,7 @@ databasepostgresqlconfig.DatabasePostgresqlConfig_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.databasePostgresqlConfig.DatabasePostgresqlConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasepostgresqlconfig"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/databasepostgresqlconfig"
 
 databasepostgresqlconfig.DatabasePostgresqlConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -2223,7 +2223,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.databasePostgresqlConfig.DatabasePostgresqlConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasepostgresqlconfig"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/databasepostgresqlconfig"
 
 &databasepostgresqlconfig.DatabasePostgresqlConfigConfig {
 	Connection: interface{},
@@ -3074,7 +3074,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.databasePostgresqlConfig.DatabasePostgresqlConfigPgbouncer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasepostgresqlconfig"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/databasepostgresqlconfig"
 
 &databasepostgresqlconfig.DatabasePostgresqlConfigPgbouncer {
 	AutodbIdleTimeout: *f64,
@@ -3218,7 +3218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.databasePostgresqlConfig.DatabasePostgresqlConfigTimescaledb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasepostgresqlconfig"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/databasepostgresqlconfig"
 
 &databasepostgresqlconfig.DatabasePostgresqlConfigTimescaledb {
 	Timescaledb: *f64,
@@ -3252,7 +3252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databasePostgresqlConfig.DatabasePostgresqlConfigPgbouncerList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasepostgresqlconfig"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/databasepostgresqlconfig"
 
 databasepostgresqlconfig.NewDatabasePostgresqlConfigPgbouncerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabasePostgresqlConfigPgbouncerList
 ```
@@ -3412,7 +3412,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databasePostgresqlConfig.DatabasePostgresqlConfigPgbouncerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasepostgresqlconfig"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/databasepostgresqlconfig"
 
 databasepostgresqlconfig.NewDatabasePostgresqlConfigPgbouncerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabasePostgresqlConfigPgbouncerOutputReference
 ```
@@ -3940,7 +3940,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databasePostgresqlConfig.DatabasePostgresqlConfigTimescaledbList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasepostgresqlconfig"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/databasepostgresqlconfig"
 
 databasepostgresqlconfig.NewDatabasePostgresqlConfigTimescaledbList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabasePostgresqlConfigTimescaledbList
 ```
@@ -4100,7 +4100,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databasePostgresqlConfig.DatabasePostgresqlConfigTimescaledbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasepostgresqlconfig"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/databasepostgresqlconfig"
 
 databasepostgresqlconfig.NewDatabasePostgresqlConfigTimescaledbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabasePostgresqlConfigTimescaledbOutputReference
 ```
