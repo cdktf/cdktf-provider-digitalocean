@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,67 +10,67 @@ export interface DigitaloceanProviderConfig {
   /**
   * The URL to use for the DigitalOcean API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs#api_endpoint DigitaloceanProvider#api_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs#api_endpoint DigitaloceanProvider#api_endpoint}
   */
   readonly apiEndpoint?: string;
   /**
   * The maximum number of retries on a failed API request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs#http_retry_max DigitaloceanProvider#http_retry_max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs#http_retry_max DigitaloceanProvider#http_retry_max}
   */
   readonly httpRetryMax?: number;
   /**
   * The maximum wait time (in seconds) between failed API requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs#http_retry_wait_max DigitaloceanProvider#http_retry_wait_max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs#http_retry_wait_max DigitaloceanProvider#http_retry_wait_max}
   */
   readonly httpRetryWaitMax?: number;
   /**
   * The minimum wait time (in seconds) between failed API requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs#http_retry_wait_min DigitaloceanProvider#http_retry_wait_min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs#http_retry_wait_min DigitaloceanProvider#http_retry_wait_min}
   */
   readonly httpRetryWaitMin?: number;
   /**
   * The rate of requests per second to limit the HTTP client.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs#requests_per_second DigitaloceanProvider#requests_per_second}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs#requests_per_second DigitaloceanProvider#requests_per_second}
   */
   readonly requestsPerSecond?: number;
   /**
   * The access key ID for Spaces API operations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs#spaces_access_id DigitaloceanProvider#spaces_access_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs#spaces_access_id DigitaloceanProvider#spaces_access_id}
   */
   readonly spacesAccessId?: string;
   /**
   * The URL to use for the DigitalOcean Spaces API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs#spaces_endpoint DigitaloceanProvider#spaces_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs#spaces_endpoint DigitaloceanProvider#spaces_endpoint}
   */
   readonly spacesEndpoint?: string;
   /**
   * The secret access key for Spaces API operations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs#spaces_secret_key DigitaloceanProvider#spaces_secret_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs#spaces_secret_key DigitaloceanProvider#spaces_secret_key}
   */
   readonly spacesSecretKey?: string;
   /**
   * The token key for API operations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs#token DigitaloceanProvider#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs#token DigitaloceanProvider#token}
   */
   readonly token?: string;
   /**
   * Alias name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs#alias DigitaloceanProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs#alias DigitaloceanProvider#alias}
   */
   readonly alias?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs digitalocean}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs digitalocean}
 */
 export class DigitaloceanProvider extends cdktf.TerraformProvider {
 
@@ -91,7 +86,7 @@ export class DigitaloceanProvider extends cdktf.TerraformProvider {
   * Generates CDKTF code for importing a DigitaloceanProvider resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DigitaloceanProvider to import
-  * @param importFromId The id of the existing DigitaloceanProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DigitaloceanProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DigitaloceanProvider to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -103,7 +98,7 @@ export class DigitaloceanProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs digitalocean} Resource
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs digitalocean} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -114,7 +109,7 @@ export class DigitaloceanProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'digitalocean',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.40.0',
+        providerVersion: '2.41.0',
         providerVersionConstraint: '~> 2.19'
       },
       terraformProviderSource: 'digitalocean/digitalocean'

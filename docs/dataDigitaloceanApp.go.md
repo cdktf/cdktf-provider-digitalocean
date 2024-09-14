@@ -4,12 +4,12 @@
 
 ### DataDigitaloceanApp <a name="DataDigitaloceanApp" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/data-sources/app digitalocean_app}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/data-sources/app digitalocean_app}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanApp(scope Construct, id *string, config DataDigitaloceanAppConfig) DataDigitaloceanApp
 ```
@@ -303,7 +303,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.DataDigitaloceanApp_IsConstruct(x interface{}) *bool
 ```
@@ -335,7 +335,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.DataDigitaloceanApp_IsTerraformElement(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ datadigitaloceanapp.DataDigitaloceanApp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.DataDigitaloceanApp_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ datadigitaloceanapp.DataDigitaloceanApp_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.DataDigitaloceanApp_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -392,7 +392,7 @@ The construct id used in the generated config for the DataDigitaloceanApp to imp
 
 The id of the existing DataDigitaloceanApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/data-sources/app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/data-sources/app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -424,6 +424,7 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.createdAt">CreatedAt</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.dedicatedIps">DedicatedIps</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList">DataDigitaloceanAppDedicatedIpsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.defaultIngress">DefaultIngress</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.liveDomain">LiveDomain</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.liveUrl">LiveUrl</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.projectId">ProjectId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.spec">Spec</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecList">DataDigitaloceanAppSpecList</a></code> | *No description.* |
@@ -599,6 +600,16 @@ func DefaultIngress() *string
 
 ---
 
+##### `LiveDomain`<sup>Required</sup> <a name="LiveDomain" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.liveDomain"></a>
+
+```go
+func LiveDomain() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `LiveUrl`<sup>Required</sup> <a name="LiveUrl" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.liveUrl"></a>
 
 ```go
@@ -724,7 +735,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppConfig {
 	Connection: interface{},
@@ -751,9 +762,9 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.appId">AppId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/data-sources/app#app_id DataDigitaloceanApp#app_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.appId">AppId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/data-sources/app#app_id DataDigitaloceanApp#app_id}. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.dedicatedIps">DedicatedIps</a></code> | <code>interface{}</code> | dedicated_ips block. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/data-sources/app#id DataDigitaloceanApp#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/data-sources/app#id DataDigitaloceanApp#id}. |
 
 ---
 
@@ -835,7 +846,7 @@ AppId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/data-sources/app#app_id DataDigitaloceanApp#app_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/data-sources/app#app_id DataDigitaloceanApp#app_id}.
 
 ---
 
@@ -849,7 +860,7 @@ DedicatedIps interface{}
 
 dedicated_ips block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/data-sources/app#dedicated_ips DataDigitaloceanApp#dedicated_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/data-sources/app#dedicated_ips DataDigitaloceanApp#dedicated_ips}
 
 ---
 
@@ -861,7 +872,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/data-sources/app#id DataDigitaloceanApp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/data-sources/app#id DataDigitaloceanApp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -873,7 +884,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppDedicatedIps {
 	Id: *string,
@@ -902,7 +913,7 @@ Id *string
 
 The ID of the dedicated egress IP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/data-sources/app#id DataDigitaloceanApp#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/data-sources/app#id DataDigitaloceanApp#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -919,7 +930,7 @@ Ip *string
 
 The IP address of the dedicated egress IP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/data-sources/app#ip DataDigitaloceanApp#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/data-sources/app#ip DataDigitaloceanApp#ip}
 
 ---
 
@@ -933,7 +944,7 @@ Status *string
 
 The status of the dedicated egress IP: 'UNKNOWN', 'ASSIGNING', 'ASSIGNED', or 'REMOVED'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/data-sources/app#status DataDigitaloceanApp#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/data-sources/app#status DataDigitaloceanApp#status}
 
 ---
 
@@ -942,7 +953,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpec {
 
@@ -955,7 +966,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecAlert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecAlert {
 
@@ -968,7 +979,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecDatabase {
 
@@ -981,7 +992,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecDomain {
 
@@ -994,7 +1005,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecEgress {
 
@@ -1007,7 +1018,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecEnv {
 
@@ -1020,7 +1031,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecFunction {
 
@@ -1033,7 +1044,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionAlert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecFunctionAlert {
 
@@ -1046,7 +1057,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionCors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecFunctionCors {
 
@@ -1059,7 +1070,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionCorsAllowOrigins.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecFunctionCorsAllowOrigins {
 
@@ -1072,7 +1083,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecFunctionEnv {
 
@@ -1085,7 +1096,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecFunctionGit {
 
@@ -1098,7 +1109,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGithub.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecFunctionGithub {
 
@@ -1111,7 +1122,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGitlab.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecFunctionGitlab {
 
@@ -1124,7 +1135,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecFunctionLogDestination {
 
@@ -1137,7 +1148,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationDatadog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecFunctionLogDestinationDatadog {
 
@@ -1150,9 +1161,35 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationLogtail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecFunctionLogDestinationLogtail {
+
+}
+```
+
+
+### DataDigitaloceanAppSpecFunctionLogDestinationOpenSearch <a name="DataDigitaloceanAppSpecFunctionLogDestinationOpenSearch" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearch"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearch.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
+
+&datadigitaloceanapp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearch {
+
+}
+```
+
+
+### DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuth <a name="DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuth" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuth"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuth.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
+
+&datadigitaloceanapp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuth {
 
 }
 ```
@@ -1163,7 +1200,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationPapertrail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecFunctionLogDestinationPapertrail {
 
@@ -1176,7 +1213,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionRoutes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecFunctionRoutes {
 
@@ -1189,7 +1226,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecIngress {
 
@@ -1202,7 +1239,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecIngressRule {
 
@@ -1215,7 +1252,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleComponent.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecIngressRuleComponent {
 
@@ -1228,7 +1265,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleCors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecIngressRuleCors {
 
@@ -1241,7 +1278,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleCorsAllowOrigins.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecIngressRuleCorsAllowOrigins {
 
@@ -1254,7 +1291,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecIngressRuleMatch {
 
@@ -1267,7 +1304,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleMatchPath.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecIngressRuleMatchPath {
 
@@ -1280,7 +1317,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleRedirect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecIngressRuleRedirect {
 
@@ -1293,7 +1330,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJob.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecJob {
 
@@ -1306,7 +1343,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobAlert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecJobAlert {
 
@@ -1319,7 +1356,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecJobEnv {
 
@@ -1332,7 +1369,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecJobGit {
 
@@ -1345,7 +1382,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGithub.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecJobGithub {
 
@@ -1358,7 +1395,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGitlab.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecJobGitlab {
 
@@ -1371,7 +1408,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecJobImage {
 
@@ -1384,7 +1421,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobImageDeployOnPush.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecJobImageDeployOnPush {
 
@@ -1397,7 +1434,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecJobLogDestination {
 
@@ -1410,7 +1447,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationDatadog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecJobLogDestinationDatadog {
 
@@ -1423,9 +1460,35 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationLogtail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecJobLogDestinationLogtail {
+
+}
+```
+
+
+### DataDigitaloceanAppSpecJobLogDestinationOpenSearch <a name="DataDigitaloceanAppSpecJobLogDestinationOpenSearch" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearch"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearch.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
+
+&datadigitaloceanapp.DataDigitaloceanAppSpecJobLogDestinationOpenSearch {
+
+}
+```
+
+
+### DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuth <a name="DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuth" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuth"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuth.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
+
+&datadigitaloceanapp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuth {
 
 }
 ```
@@ -1436,7 +1499,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationPapertrail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecJobLogDestinationPapertrail {
 
@@ -1449,7 +1512,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecService {
 
@@ -1462,7 +1525,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceAlert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecServiceAlert {
 
@@ -1475,7 +1538,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceAutoscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecServiceAutoscaling {
 
@@ -1488,7 +1551,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceAutoscalingMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecServiceAutoscalingMetrics {
 
@@ -1501,7 +1564,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceAutoscalingMetricsCpu.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecServiceAutoscalingMetricsCpu {
 
@@ -1514,7 +1577,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceCors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecServiceCors {
 
@@ -1527,7 +1590,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceCorsAllowOrigins.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecServiceCorsAllowOrigins {
 
@@ -1540,7 +1603,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecServiceEnv {
 
@@ -1553,7 +1616,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecServiceGit {
 
@@ -1566,7 +1629,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGithub.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecServiceGithub {
 
@@ -1579,7 +1642,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGitlab.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecServiceGitlab {
 
@@ -1592,7 +1655,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecServiceHealthCheck {
 
@@ -1605,7 +1668,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecServiceImage {
 
@@ -1618,7 +1681,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceImageDeployOnPush.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecServiceImageDeployOnPush {
 
@@ -1631,7 +1694,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecServiceLogDestination {
 
@@ -1644,7 +1707,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationDatadog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecServiceLogDestinationDatadog {
 
@@ -1657,9 +1720,35 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationLogtail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecServiceLogDestinationLogtail {
+
+}
+```
+
+
+### DataDigitaloceanAppSpecServiceLogDestinationOpenSearch <a name="DataDigitaloceanAppSpecServiceLogDestinationOpenSearch" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearch"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearch.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
+
+&datadigitaloceanapp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearch {
+
+}
+```
+
+
+### DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuth <a name="DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuth" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuth"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuth.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
+
+&datadigitaloceanapp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuth {
 
 }
 ```
@@ -1670,7 +1759,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationPapertrail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecServiceLogDestinationPapertrail {
 
@@ -1683,7 +1772,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceRoutes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecServiceRoutes {
 
@@ -1696,7 +1785,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSite.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecStaticSite {
 
@@ -1709,7 +1798,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteCors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecStaticSiteCors {
 
@@ -1722,7 +1811,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteCorsAllowOrigins.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecStaticSiteCorsAllowOrigins {
 
@@ -1735,7 +1824,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecStaticSiteEnv {
 
@@ -1748,7 +1837,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecStaticSiteGit {
 
@@ -1761,7 +1850,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGithub.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecStaticSiteGithub {
 
@@ -1774,7 +1863,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGitlab.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecStaticSiteGitlab {
 
@@ -1787,7 +1876,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteRoutes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecStaticSiteRoutes {
 
@@ -1800,7 +1889,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorker.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecWorker {
 
@@ -1813,7 +1902,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerAlert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecWorkerAlert {
 
@@ -1826,7 +1915,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecWorkerEnv {
 
@@ -1839,7 +1928,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecWorkerGit {
 
@@ -1852,7 +1941,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGithub.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecWorkerGithub {
 
@@ -1865,7 +1954,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGitlab.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecWorkerGitlab {
 
@@ -1878,7 +1967,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecWorkerImage {
 
@@ -1891,7 +1980,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerImageDeployOnPush.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecWorkerImageDeployOnPush {
 
@@ -1904,7 +1993,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecWorkerLogDestination {
 
@@ -1917,7 +2006,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationDatadog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecWorkerLogDestinationDatadog {
 
@@ -1930,9 +2019,35 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationLogtail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecWorkerLogDestinationLogtail {
+
+}
+```
+
+
+### DataDigitaloceanAppSpecWorkerLogDestinationOpenSearch <a name="DataDigitaloceanAppSpecWorkerLogDestinationOpenSearch" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearch"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearch.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
+
+&datadigitaloceanapp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearch {
+
+}
+```
+
+
+### DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuth <a name="DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuth" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuth"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuth.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
+
+&datadigitaloceanapp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuth {
 
 }
 ```
@@ -1943,7 +2058,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationPapertrail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 &datadigitaloceanapp.DataDigitaloceanAppSpecWorkerLogDestinationPapertrail {
 
@@ -1958,7 +2073,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppDedicatedIpsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppDedicatedIpsList
 ```
@@ -2118,7 +2233,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppDedicatedIpsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppDedicatedIpsOutputReference
 ```
@@ -2472,7 +2587,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecAlertList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecAlertList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecAlertList
 ```
@@ -2621,7 +2736,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecAlertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecAlertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecAlertOutputReference
 ```
@@ -2910,7 +3025,7 @@ func InternalValue() DataDigitaloceanAppSpecAlert
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecDatabaseList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecDatabaseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecDatabaseList
 ```
@@ -3059,7 +3174,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecDatabaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecDatabaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecDatabaseOutputReference
 ```
@@ -3403,7 +3518,7 @@ func InternalValue() DataDigitaloceanAppSpecDatabase
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecDomainList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecDomainList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecDomainList
 ```
@@ -3552,7 +3667,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecDomainOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecDomainOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecDomainOutputReference
 ```
@@ -3863,7 +3978,7 @@ func InternalValue() DataDigitaloceanAppSpecDomain
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecEgressList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecEgressList
 ```
@@ -4012,7 +4127,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEgressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecEgressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecEgressOutputReference
 ```
@@ -4290,7 +4405,7 @@ func InternalValue() DataDigitaloceanAppSpecEgress
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecEnvList
 ```
@@ -4439,7 +4554,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecEnvOutputReference
 ```
@@ -4750,7 +4865,7 @@ func InternalValue() DataDigitaloceanAppSpecEnv
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionAlertList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionAlertList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecFunctionAlertList
 ```
@@ -4899,7 +5014,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionAlertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionAlertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecFunctionAlertOutputReference
 ```
@@ -5221,7 +5336,7 @@ func InternalValue() DataDigitaloceanAppSpecFunctionAlert
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionCorsAllowOriginsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionCorsAllowOriginsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecFunctionCorsAllowOriginsList
 ```
@@ -5370,7 +5485,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionCorsAllowOriginsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionCorsAllowOriginsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecFunctionCorsAllowOriginsOutputReference
 ```
@@ -5670,7 +5785,7 @@ func InternalValue() DataDigitaloceanAppSpecFunctionCorsAllowOrigins
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionCorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionCorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecFunctionCorsList
 ```
@@ -5819,7 +5934,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionCorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionCorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecFunctionCorsOutputReference
 ```
@@ -6152,7 +6267,7 @@ func InternalValue() DataDigitaloceanAppSpecFunctionCors
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecFunctionEnvList
 ```
@@ -6301,7 +6416,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecFunctionEnvOutputReference
 ```
@@ -6612,7 +6727,7 @@ func InternalValue() DataDigitaloceanAppSpecFunctionEnv
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGithubList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionGithubList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecFunctionGithubList
 ```
@@ -6761,7 +6876,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGithubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionGithubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecFunctionGithubOutputReference
 ```
@@ -7061,7 +7176,7 @@ func InternalValue() DataDigitaloceanAppSpecFunctionGithub
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGitlabList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionGitlabList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecFunctionGitlabList
 ```
@@ -7210,7 +7325,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGitlabOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionGitlabOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecFunctionGitlabOutputReference
 ```
@@ -7510,7 +7625,7 @@ func InternalValue() DataDigitaloceanAppSpecFunctionGitlab
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGitList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionGitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecFunctionGitList
 ```
@@ -7659,7 +7774,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionGitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionGitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecFunctionGitOutputReference
 ```
@@ -7948,7 +8063,7 @@ func InternalValue() DataDigitaloceanAppSpecFunctionGit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecFunctionList
 ```
@@ -8097,7 +8212,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationDatadogList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionLogDestinationDatadogList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecFunctionLogDestinationDatadogList
 ```
@@ -8246,7 +8361,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationDatadogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionLogDestinationDatadogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecFunctionLogDestinationDatadogOutputReference
 ```
@@ -8535,7 +8650,7 @@ func InternalValue() DataDigitaloceanAppSpecFunctionLogDestinationDatadog
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionLogDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecFunctionLogDestinationList
 ```
@@ -8684,7 +8799,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationLogtailList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionLogDestinationLogtailList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecFunctionLogDestinationLogtailList
 ```
@@ -8833,7 +8948,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationLogtailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionLogDestinationLogtailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecFunctionLogDestinationLogtailOutputReference
 ```
@@ -9106,12 +9221,910 @@ func InternalValue() DataDigitaloceanAppSpecFunctionLogDestinationLogtail
 ---
 
 
+### DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthList <a name="DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthList" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthList.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
+
+datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthList.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthList.get"></a>
+
+```go
+func Get(index *f64) DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference <a name="DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
+
+datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.property.password">Password</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.property.user">User</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuth">DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuth</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Password`<sup>Required</sup> <a name="Password" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.property.password"></a>
+
+```go
+func Password() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `User`<sup>Required</sup> <a name="User" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.property.user"></a>
+
+```go
+func User() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuth
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuth">DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuth</a>
+
+---
+
+
+### DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchList <a name="DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchList" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchList.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
+
+datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionLogDestinationOpenSearchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchList.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchList.get"></a>
+
+```go
+func Get(index *f64) DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference <a name="DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
+
+datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.property.basicAuth">BasicAuth</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthList">DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.property.clusterName">ClusterName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.property.endpoint">Endpoint</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.property.indexName">IndexName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearch">DataDigitaloceanAppSpecFunctionLogDestinationOpenSearch</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `BasicAuth`<sup>Required</sup> <a name="BasicAuth" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.property.basicAuth"></a>
+
+```go
+func BasicAuth() DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthList
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthList">DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchBasicAuthList</a>
+
+---
+
+##### `ClusterName`<sup>Required</sup> <a name="ClusterName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.property.clusterName"></a>
+
+```go
+func ClusterName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Endpoint`<sup>Required</sup> <a name="Endpoint" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.property.endpoint"></a>
+
+```go
+func Endpoint() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `IndexName`<sup>Required</sup> <a name="IndexName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.property.indexName"></a>
+
+```go
+func IndexName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataDigitaloceanAppSpecFunctionLogDestinationOpenSearch
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearch">DataDigitaloceanAppSpecFunctionLogDestinationOpenSearch</a>
+
+---
+
+
 ### DataDigitaloceanAppSpecFunctionLogDestinationOutputReference <a name="DataDigitaloceanAppSpecFunctionLogDestinationOutputReference" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionLogDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecFunctionLogDestinationOutputReference
 ```
@@ -9337,6 +10350,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOutputReference.property.datadog">Datadog</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationDatadogList">DataDigitaloceanAppSpecFunctionLogDestinationDatadogList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOutputReference.property.logtail">Logtail</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationLogtailList">DataDigitaloceanAppSpecFunctionLogDestinationLogtailList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOutputReference.property.openSearch">OpenSearch</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchList">DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOutputReference.property.papertrail">Papertrail</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationPapertrailList">DataDigitaloceanAppSpecFunctionLogDestinationPapertrailList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestination">DataDigitaloceanAppSpecFunctionLogDestination</a></code> | *No description.* |
 
@@ -9396,6 +10410,16 @@ func Name() *string
 
 ---
 
+##### `OpenSearch`<sup>Required</sup> <a name="OpenSearch" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOutputReference.property.openSearch"></a>
+
+```go
+func OpenSearch() DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchList
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchList">DataDigitaloceanAppSpecFunctionLogDestinationOpenSearchList</a>
+
+---
+
 ##### `Papertrail`<sup>Required</sup> <a name="Papertrail" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationOutputReference.property.papertrail"></a>
 
 ```go
@@ -9422,7 +10446,7 @@ func InternalValue() DataDigitaloceanAppSpecFunctionLogDestination
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationPapertrailList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionLogDestinationPapertrailList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecFunctionLogDestinationPapertrailList
 ```
@@ -9571,7 +10595,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionLogDestinationPapertrailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionLogDestinationPapertrailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecFunctionLogDestinationPapertrailOutputReference
 ```
@@ -9849,7 +10873,7 @@ func InternalValue() DataDigitaloceanAppSpecFunctionLogDestinationPapertrail
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecFunctionOutputReference
 ```
@@ -10226,7 +11250,7 @@ func InternalValue() DataDigitaloceanAppSpecFunction
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionRoutesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionRoutesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecFunctionRoutesList
 ```
@@ -10375,7 +11399,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecFunctionRoutesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecFunctionRoutesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecFunctionRoutesOutputReference
 ```
@@ -10664,7 +11688,7 @@ func InternalValue() DataDigitaloceanAppSpecFunctionRoutes
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecIngressList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecIngressList
 ```
@@ -10813,7 +11837,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecIngressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecIngressOutputReference
 ```
@@ -11091,7 +12115,7 @@ func InternalValue() DataDigitaloceanAppSpecIngress
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleComponentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecIngressRuleComponentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecIngressRuleComponentList
 ```
@@ -11240,7 +12264,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleComponentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecIngressRuleComponentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecIngressRuleComponentOutputReference
 ```
@@ -11540,7 +12564,7 @@ func InternalValue() DataDigitaloceanAppSpecIngressRuleComponent
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleCorsAllowOriginsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecIngressRuleCorsAllowOriginsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecIngressRuleCorsAllowOriginsList
 ```
@@ -11689,7 +12713,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleCorsAllowOriginsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecIngressRuleCorsAllowOriginsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecIngressRuleCorsAllowOriginsOutputReference
 ```
@@ -11989,7 +13013,7 @@ func InternalValue() DataDigitaloceanAppSpecIngressRuleCorsAllowOrigins
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleCorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecIngressRuleCorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecIngressRuleCorsList
 ```
@@ -12138,7 +13162,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleCorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecIngressRuleCorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecIngressRuleCorsOutputReference
 ```
@@ -12471,7 +13495,7 @@ func InternalValue() DataDigitaloceanAppSpecIngressRuleCors
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecIngressRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecIngressRuleList
 ```
@@ -12620,7 +13644,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleMatchList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecIngressRuleMatchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecIngressRuleMatchList
 ```
@@ -12769,7 +13793,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecIngressRuleMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecIngressRuleMatchOutputReference
 ```
@@ -13047,7 +14071,7 @@ func InternalValue() DataDigitaloceanAppSpecIngressRuleMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleMatchPathList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecIngressRuleMatchPathList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecIngressRuleMatchPathList
 ```
@@ -13196,7 +14220,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleMatchPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecIngressRuleMatchPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecIngressRuleMatchPathOutputReference
 ```
@@ -13474,7 +14498,7 @@ func InternalValue() DataDigitaloceanAppSpecIngressRuleMatchPath
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecIngressRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecIngressRuleOutputReference
 ```
@@ -13785,7 +14809,7 @@ func InternalValue() DataDigitaloceanAppSpecIngressRule
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleRedirectList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecIngressRuleRedirectList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecIngressRuleRedirectList
 ```
@@ -13934,7 +14958,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecIngressRuleRedirectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecIngressRuleRedirectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecIngressRuleRedirectOutputReference
 ```
@@ -14256,7 +15280,7 @@ func InternalValue() DataDigitaloceanAppSpecIngressRuleRedirect
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobAlertList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobAlertList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecJobAlertList
 ```
@@ -14405,7 +15429,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobAlertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobAlertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecJobAlertOutputReference
 ```
@@ -14727,7 +15751,7 @@ func InternalValue() DataDigitaloceanAppSpecJobAlert
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecJobEnvList
 ```
@@ -14876,7 +15900,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecJobEnvOutputReference
 ```
@@ -15187,7 +16211,7 @@ func InternalValue() DataDigitaloceanAppSpecJobEnv
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGithubList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobGithubList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecJobGithubList
 ```
@@ -15336,7 +16360,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGithubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobGithubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecJobGithubOutputReference
 ```
@@ -15636,7 +16660,7 @@ func InternalValue() DataDigitaloceanAppSpecJobGithub
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGitlabList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobGitlabList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecJobGitlabList
 ```
@@ -15785,7 +16809,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGitlabOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobGitlabOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecJobGitlabOutputReference
 ```
@@ -16085,7 +17109,7 @@ func InternalValue() DataDigitaloceanAppSpecJobGitlab
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGitList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobGitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecJobGitList
 ```
@@ -16234,7 +17258,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobGitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobGitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecJobGitOutputReference
 ```
@@ -16523,7 +17547,7 @@ func InternalValue() DataDigitaloceanAppSpecJobGit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobImageDeployOnPushList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobImageDeployOnPushList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecJobImageDeployOnPushList
 ```
@@ -16672,7 +17696,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobImageDeployOnPushOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobImageDeployOnPushOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecJobImageDeployOnPushOutputReference
 ```
@@ -16950,7 +17974,7 @@ func InternalValue() DataDigitaloceanAppSpecJobImageDeployOnPush
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobImageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobImageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecJobImageList
 ```
@@ -17099,7 +18123,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecJobImageOutputReference
 ```
@@ -17432,7 +18456,7 @@ func InternalValue() DataDigitaloceanAppSpecJobImage
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecJobList
 ```
@@ -17581,7 +18605,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationDatadogList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobLogDestinationDatadogList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecJobLogDestinationDatadogList
 ```
@@ -17730,7 +18754,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationDatadogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobLogDestinationDatadogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecJobLogDestinationDatadogOutputReference
 ```
@@ -18019,7 +19043,7 @@ func InternalValue() DataDigitaloceanAppSpecJobLogDestinationDatadog
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobLogDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecJobLogDestinationList
 ```
@@ -18168,7 +19192,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationLogtailList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobLogDestinationLogtailList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecJobLogDestinationLogtailList
 ```
@@ -18317,7 +19341,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationLogtailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobLogDestinationLogtailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecJobLogDestinationLogtailOutputReference
 ```
@@ -18590,12 +19614,910 @@ func InternalValue() DataDigitaloceanAppSpecJobLogDestinationLogtail
 ---
 
 
+### DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthList <a name="DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthList" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthList.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
+
+datadigitaloceanapp.NewDataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthList.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthList.get"></a>
+
+```go
+func Get(index *f64) DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference <a name="DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
+
+datadigitaloceanapp.NewDataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.property.password">Password</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.property.user">User</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuth">DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuth</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Password`<sup>Required</sup> <a name="Password" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.property.password"></a>
+
+```go
+func Password() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `User`<sup>Required</sup> <a name="User" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.property.user"></a>
+
+```go
+func User() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuth
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuth">DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuth</a>
+
+---
+
+
+### DataDigitaloceanAppSpecJobLogDestinationOpenSearchList <a name="DataDigitaloceanAppSpecJobLogDestinationOpenSearchList" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchList.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
+
+datadigitaloceanapp.NewDataDigitaloceanAppSpecJobLogDestinationOpenSearchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecJobLogDestinationOpenSearchList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchList.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchList.get"></a>
+
+```go
+func Get(index *f64) DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference <a name="DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
+
+datadigitaloceanapp.NewDataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.property.basicAuth">BasicAuth</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthList">DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.property.clusterName">ClusterName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.property.endpoint">Endpoint</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.property.indexName">IndexName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearch">DataDigitaloceanAppSpecJobLogDestinationOpenSearch</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `BasicAuth`<sup>Required</sup> <a name="BasicAuth" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.property.basicAuth"></a>
+
+```go
+func BasicAuth() DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthList
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthList">DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthList</a>
+
+---
+
+##### `ClusterName`<sup>Required</sup> <a name="ClusterName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.property.clusterName"></a>
+
+```go
+func ClusterName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Endpoint`<sup>Required</sup> <a name="Endpoint" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.property.endpoint"></a>
+
+```go
+func Endpoint() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `IndexName`<sup>Required</sup> <a name="IndexName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.property.indexName"></a>
+
+```go
+func IndexName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataDigitaloceanAppSpecJobLogDestinationOpenSearch
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearch">DataDigitaloceanAppSpecJobLogDestinationOpenSearch</a>
+
+---
+
+
 ### DataDigitaloceanAppSpecJobLogDestinationOutputReference <a name="DataDigitaloceanAppSpecJobLogDestinationOutputReference" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobLogDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecJobLogDestinationOutputReference
 ```
@@ -18821,6 +20743,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOutputReference.property.datadog">Datadog</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationDatadogList">DataDigitaloceanAppSpecJobLogDestinationDatadogList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOutputReference.property.logtail">Logtail</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationLogtailList">DataDigitaloceanAppSpecJobLogDestinationLogtailList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOutputReference.property.openSearch">OpenSearch</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchList">DataDigitaloceanAppSpecJobLogDestinationOpenSearchList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOutputReference.property.papertrail">Papertrail</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationPapertrailList">DataDigitaloceanAppSpecJobLogDestinationPapertrailList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestination">DataDigitaloceanAppSpecJobLogDestination</a></code> | *No description.* |
 
@@ -18880,6 +20803,16 @@ func Name() *string
 
 ---
 
+##### `OpenSearch`<sup>Required</sup> <a name="OpenSearch" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOutputReference.property.openSearch"></a>
+
+```go
+func OpenSearch() DataDigitaloceanAppSpecJobLogDestinationOpenSearchList
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOpenSearchList">DataDigitaloceanAppSpecJobLogDestinationOpenSearchList</a>
+
+---
+
 ##### `Papertrail`<sup>Required</sup> <a name="Papertrail" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationOutputReference.property.papertrail"></a>
 
 ```go
@@ -18906,7 +20839,7 @@ func InternalValue() DataDigitaloceanAppSpecJobLogDestination
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationPapertrailList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobLogDestinationPapertrailList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecJobLogDestinationPapertrailList
 ```
@@ -19055,7 +20988,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobLogDestinationPapertrailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobLogDestinationPapertrailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecJobLogDestinationPapertrailOutputReference
 ```
@@ -19333,7 +21266,7 @@ func InternalValue() DataDigitaloceanAppSpecJobLogDestinationPapertrail
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecJobOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecJobOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecJobOutputReference
 ```
@@ -19776,7 +21709,7 @@ func InternalValue() DataDigitaloceanAppSpecJob
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecList
 ```
@@ -19925,7 +21858,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecOutputReference
 ```
@@ -20357,7 +22290,7 @@ func InternalValue() DataDigitaloceanAppSpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceAlertList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceAlertList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceAlertList
 ```
@@ -20506,7 +22439,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceAlertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceAlertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceAlertOutputReference
 ```
@@ -20828,7 +22761,7 @@ func InternalValue() DataDigitaloceanAppSpecServiceAlert
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceAutoscalingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceAutoscalingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceAutoscalingList
 ```
@@ -20977,7 +22910,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceAutoscalingMetricsCpuList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceAutoscalingMetricsCpuList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceAutoscalingMetricsCpuList
 ```
@@ -21126,7 +23059,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceAutoscalingMetricsCpuOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceAutoscalingMetricsCpuOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceAutoscalingMetricsCpuOutputReference
 ```
@@ -21404,7 +23337,7 @@ func InternalValue() DataDigitaloceanAppSpecServiceAutoscalingMetricsCpu
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceAutoscalingMetricsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceAutoscalingMetricsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceAutoscalingMetricsList
 ```
@@ -21553,7 +23486,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceAutoscalingMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceAutoscalingMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceAutoscalingMetricsOutputReference
 ```
@@ -21831,7 +23764,7 @@ func InternalValue() DataDigitaloceanAppSpecServiceAutoscalingMetrics
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceAutoscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceAutoscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceAutoscalingOutputReference
 ```
@@ -22131,7 +24064,7 @@ func InternalValue() DataDigitaloceanAppSpecServiceAutoscaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceCorsAllowOriginsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceCorsAllowOriginsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceCorsAllowOriginsList
 ```
@@ -22280,7 +24213,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceCorsAllowOriginsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceCorsAllowOriginsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceCorsAllowOriginsOutputReference
 ```
@@ -22580,7 +24513,7 @@ func InternalValue() DataDigitaloceanAppSpecServiceCorsAllowOrigins
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceCorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceCorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceCorsList
 ```
@@ -22729,7 +24662,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceCorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceCorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceCorsOutputReference
 ```
@@ -23062,7 +24995,7 @@ func InternalValue() DataDigitaloceanAppSpecServiceCors
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceEnvList
 ```
@@ -23211,7 +25144,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceEnvOutputReference
 ```
@@ -23522,7 +25455,7 @@ func InternalValue() DataDigitaloceanAppSpecServiceEnv
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGithubList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceGithubList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceGithubList
 ```
@@ -23671,7 +25604,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGithubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceGithubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceGithubOutputReference
 ```
@@ -23971,7 +25904,7 @@ func InternalValue() DataDigitaloceanAppSpecServiceGithub
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGitlabList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceGitlabList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceGitlabList
 ```
@@ -24120,7 +26053,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGitlabOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceGitlabOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceGitlabOutputReference
 ```
@@ -24420,7 +26353,7 @@ func InternalValue() DataDigitaloceanAppSpecServiceGitlab
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGitList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceGitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceGitList
 ```
@@ -24569,7 +26502,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceGitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceGitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceGitOutputReference
 ```
@@ -24858,7 +26791,7 @@ func InternalValue() DataDigitaloceanAppSpecServiceGit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceHealthCheckList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceHealthCheckList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceHealthCheckList
 ```
@@ -25007,7 +26940,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceHealthCheckOutputReference
 ```
@@ -25351,7 +27284,7 @@ func InternalValue() DataDigitaloceanAppSpecServiceHealthCheck
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceImageDeployOnPushList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceImageDeployOnPushList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceImageDeployOnPushList
 ```
@@ -25500,7 +27433,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceImageDeployOnPushOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceImageDeployOnPushOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceImageDeployOnPushOutputReference
 ```
@@ -25778,7 +27711,7 @@ func InternalValue() DataDigitaloceanAppSpecServiceImageDeployOnPush
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceImageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceImageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceImageList
 ```
@@ -25927,7 +27860,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceImageOutputReference
 ```
@@ -26260,7 +28193,7 @@ func InternalValue() DataDigitaloceanAppSpecServiceImage
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceList
 ```
@@ -26409,7 +28342,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationDatadogList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceLogDestinationDatadogList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceLogDestinationDatadogList
 ```
@@ -26558,7 +28491,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationDatadogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceLogDestinationDatadogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceLogDestinationDatadogOutputReference
 ```
@@ -26847,7 +28780,7 @@ func InternalValue() DataDigitaloceanAppSpecServiceLogDestinationDatadog
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceLogDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceLogDestinationList
 ```
@@ -26996,7 +28929,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationLogtailList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceLogDestinationLogtailList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceLogDestinationLogtailList
 ```
@@ -27145,7 +29078,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationLogtailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceLogDestinationLogtailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceLogDestinationLogtailOutputReference
 ```
@@ -27418,12 +29351,910 @@ func InternalValue() DataDigitaloceanAppSpecServiceLogDestinationLogtail
 ---
 
 
+### DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthList <a name="DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthList" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthList.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
+
+datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthList.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthList.get"></a>
+
+```go
+func Get(index *f64) DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference <a name="DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
+
+datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.property.password">Password</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.property.user">User</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuth">DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuth</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Password`<sup>Required</sup> <a name="Password" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.property.password"></a>
+
+```go
+func Password() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `User`<sup>Required</sup> <a name="User" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.property.user"></a>
+
+```go
+func User() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuth
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuth">DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuth</a>
+
+---
+
+
+### DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList <a name="DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
+
+datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceLogDestinationOpenSearchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList.get"></a>
+
+```go
+func Get(index *f64) DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference <a name="DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
+
+datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.property.basicAuth">BasicAuth</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthList">DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.property.clusterName">ClusterName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.property.endpoint">Endpoint</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.property.indexName">IndexName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearch">DataDigitaloceanAppSpecServiceLogDestinationOpenSearch</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `BasicAuth`<sup>Required</sup> <a name="BasicAuth" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.property.basicAuth"></a>
+
+```go
+func BasicAuth() DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthList
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthList">DataDigitaloceanAppSpecServiceLogDestinationOpenSearchBasicAuthList</a>
+
+---
+
+##### `ClusterName`<sup>Required</sup> <a name="ClusterName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.property.clusterName"></a>
+
+```go
+func ClusterName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Endpoint`<sup>Required</sup> <a name="Endpoint" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.property.endpoint"></a>
+
+```go
+func Endpoint() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `IndexName`<sup>Required</sup> <a name="IndexName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.property.indexName"></a>
+
+```go
+func IndexName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataDigitaloceanAppSpecServiceLogDestinationOpenSearch
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearch">DataDigitaloceanAppSpecServiceLogDestinationOpenSearch</a>
+
+---
+
+
 ### DataDigitaloceanAppSpecServiceLogDestinationOutputReference <a name="DataDigitaloceanAppSpecServiceLogDestinationOutputReference" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceLogDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceLogDestinationOutputReference
 ```
@@ -27649,6 +30480,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOutputReference.property.datadog">Datadog</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationDatadogList">DataDigitaloceanAppSpecServiceLogDestinationDatadogList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOutputReference.property.logtail">Logtail</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationLogtailList">DataDigitaloceanAppSpecServiceLogDestinationLogtailList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOutputReference.property.openSearch">OpenSearch</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList">DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOutputReference.property.papertrail">Papertrail</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationPapertrailList">DataDigitaloceanAppSpecServiceLogDestinationPapertrailList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestination">DataDigitaloceanAppSpecServiceLogDestination</a></code> | *No description.* |
 
@@ -27708,6 +30540,16 @@ func Name() *string
 
 ---
 
+##### `OpenSearch`<sup>Required</sup> <a name="OpenSearch" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOutputReference.property.openSearch"></a>
+
+```go
+func OpenSearch() DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList">DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList</a>
+
+---
+
 ##### `Papertrail`<sup>Required</sup> <a name="Papertrail" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOutputReference.property.papertrail"></a>
 
 ```go
@@ -27734,7 +30576,7 @@ func InternalValue() DataDigitaloceanAppSpecServiceLogDestination
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationPapertrailList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceLogDestinationPapertrailList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceLogDestinationPapertrailList
 ```
@@ -27883,7 +30725,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationPapertrailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceLogDestinationPapertrailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceLogDestinationPapertrailOutputReference
 ```
@@ -28161,7 +31003,7 @@ func InternalValue() DataDigitaloceanAppSpecServiceLogDestinationPapertrail
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceOutputReference
 ```
@@ -28659,7 +31501,7 @@ func InternalValue() DataDigitaloceanAppSpecService
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceRoutesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceRoutesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceRoutesList
 ```
@@ -28808,7 +31650,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceRoutesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecServiceRoutesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecServiceRoutesOutputReference
 ```
@@ -29097,7 +31939,7 @@ func InternalValue() DataDigitaloceanAppSpecServiceRoutes
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteCorsAllowOriginsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecStaticSiteCorsAllowOriginsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecStaticSiteCorsAllowOriginsList
 ```
@@ -29246,7 +32088,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteCorsAllowOriginsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecStaticSiteCorsAllowOriginsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecStaticSiteCorsAllowOriginsOutputReference
 ```
@@ -29546,7 +32388,7 @@ func InternalValue() DataDigitaloceanAppSpecStaticSiteCorsAllowOrigins
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteCorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecStaticSiteCorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecStaticSiteCorsList
 ```
@@ -29695,7 +32537,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteCorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecStaticSiteCorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecStaticSiteCorsOutputReference
 ```
@@ -30028,7 +32870,7 @@ func InternalValue() DataDigitaloceanAppSpecStaticSiteCors
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecStaticSiteEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecStaticSiteEnvList
 ```
@@ -30177,7 +33019,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecStaticSiteEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecStaticSiteEnvOutputReference
 ```
@@ -30488,7 +33330,7 @@ func InternalValue() DataDigitaloceanAppSpecStaticSiteEnv
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGithubList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecStaticSiteGithubList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecStaticSiteGithubList
 ```
@@ -30637,7 +33479,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGithubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecStaticSiteGithubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecStaticSiteGithubOutputReference
 ```
@@ -30937,7 +33779,7 @@ func InternalValue() DataDigitaloceanAppSpecStaticSiteGithub
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGitlabList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecStaticSiteGitlabList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecStaticSiteGitlabList
 ```
@@ -31086,7 +33928,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGitlabOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecStaticSiteGitlabOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecStaticSiteGitlabOutputReference
 ```
@@ -31386,7 +34228,7 @@ func InternalValue() DataDigitaloceanAppSpecStaticSiteGitlab
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGitList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecStaticSiteGitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecStaticSiteGitList
 ```
@@ -31535,7 +34377,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteGitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecStaticSiteGitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecStaticSiteGitOutputReference
 ```
@@ -31824,7 +34666,7 @@ func InternalValue() DataDigitaloceanAppSpecStaticSiteGit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecStaticSiteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecStaticSiteList
 ```
@@ -31973,7 +34815,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecStaticSiteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecStaticSiteOutputReference
 ```
@@ -32405,7 +35247,7 @@ func InternalValue() DataDigitaloceanAppSpecStaticSite
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteRoutesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecStaticSiteRoutesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecStaticSiteRoutesList
 ```
@@ -32554,7 +35396,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecStaticSiteRoutesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecStaticSiteRoutesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecStaticSiteRoutesOutputReference
 ```
@@ -32843,7 +35685,7 @@ func InternalValue() DataDigitaloceanAppSpecStaticSiteRoutes
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerAlertList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerAlertList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecWorkerAlertList
 ```
@@ -32992,7 +35834,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerAlertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerAlertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecWorkerAlertOutputReference
 ```
@@ -33314,7 +36156,7 @@ func InternalValue() DataDigitaloceanAppSpecWorkerAlert
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecWorkerEnvList
 ```
@@ -33463,7 +36305,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecWorkerEnvOutputReference
 ```
@@ -33774,7 +36616,7 @@ func InternalValue() DataDigitaloceanAppSpecWorkerEnv
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGithubList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerGithubList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecWorkerGithubList
 ```
@@ -33923,7 +36765,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGithubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerGithubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecWorkerGithubOutputReference
 ```
@@ -34223,7 +37065,7 @@ func InternalValue() DataDigitaloceanAppSpecWorkerGithub
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGitlabList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerGitlabList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecWorkerGitlabList
 ```
@@ -34372,7 +37214,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGitlabOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerGitlabOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecWorkerGitlabOutputReference
 ```
@@ -34672,7 +37514,7 @@ func InternalValue() DataDigitaloceanAppSpecWorkerGitlab
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGitList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerGitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecWorkerGitList
 ```
@@ -34821,7 +37663,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerGitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerGitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecWorkerGitOutputReference
 ```
@@ -35110,7 +37952,7 @@ func InternalValue() DataDigitaloceanAppSpecWorkerGit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerImageDeployOnPushList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerImageDeployOnPushList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecWorkerImageDeployOnPushList
 ```
@@ -35259,7 +38101,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerImageDeployOnPushOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerImageDeployOnPushOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecWorkerImageDeployOnPushOutputReference
 ```
@@ -35537,7 +38379,7 @@ func InternalValue() DataDigitaloceanAppSpecWorkerImageDeployOnPush
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerImageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerImageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecWorkerImageList
 ```
@@ -35686,7 +38528,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecWorkerImageOutputReference
 ```
@@ -36019,7 +38861,7 @@ func InternalValue() DataDigitaloceanAppSpecWorkerImage
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecWorkerList
 ```
@@ -36168,7 +39010,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationDatadogList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerLogDestinationDatadogList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecWorkerLogDestinationDatadogList
 ```
@@ -36317,7 +39159,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationDatadogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerLogDestinationDatadogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecWorkerLogDestinationDatadogOutputReference
 ```
@@ -36606,7 +39448,7 @@ func InternalValue() DataDigitaloceanAppSpecWorkerLogDestinationDatadog
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerLogDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecWorkerLogDestinationList
 ```
@@ -36755,7 +39597,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationLogtailList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerLogDestinationLogtailList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecWorkerLogDestinationLogtailList
 ```
@@ -36904,7 +39746,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationLogtailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerLogDestinationLogtailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecWorkerLogDestinationLogtailOutputReference
 ```
@@ -37177,12 +40019,910 @@ func InternalValue() DataDigitaloceanAppSpecWorkerLogDestinationLogtail
 ---
 
 
+### DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList <a name="DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
+
+datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList.get"></a>
+
+```go
+func Get(index *f64) DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference <a name="DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
+
+datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.property.password">Password</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.property.user">User</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuth">DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuth</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Password`<sup>Required</sup> <a name="Password" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.property.password"></a>
+
+```go
+func Password() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `User`<sup>Required</sup> <a name="User" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.property.user"></a>
+
+```go
+func User() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuth
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuth">DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuth</a>
+
+---
+
+
+### DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchList <a name="DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchList" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchList.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
+
+datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerLogDestinationOpenSearchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchList.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchList.get"></a>
+
+```go
+func Get(index *f64) DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference <a name="DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
+
+datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.property.basicAuth">BasicAuth</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList">DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.property.clusterName">ClusterName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.property.endpoint">Endpoint</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.property.indexName">IndexName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearch">DataDigitaloceanAppSpecWorkerLogDestinationOpenSearch</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `BasicAuth`<sup>Required</sup> <a name="BasicAuth" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.property.basicAuth"></a>
+
+```go
+func BasicAuth() DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList">DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList</a>
+
+---
+
+##### `ClusterName`<sup>Required</sup> <a name="ClusterName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.property.clusterName"></a>
+
+```go
+func ClusterName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Endpoint`<sup>Required</sup> <a name="Endpoint" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.property.endpoint"></a>
+
+```go
+func Endpoint() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `IndexName`<sup>Required</sup> <a name="IndexName" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.property.indexName"></a>
+
+```go
+func IndexName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataDigitaloceanAppSpecWorkerLogDestinationOpenSearch
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearch">DataDigitaloceanAppSpecWorkerLogDestinationOpenSearch</a>
+
+---
+
+
 ### DataDigitaloceanAppSpecWorkerLogDestinationOutputReference <a name="DataDigitaloceanAppSpecWorkerLogDestinationOutputReference" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerLogDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecWorkerLogDestinationOutputReference
 ```
@@ -37408,6 +41148,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOutputReference.property.datadog">Datadog</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationDatadogList">DataDigitaloceanAppSpecWorkerLogDestinationDatadogList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOutputReference.property.logtail">Logtail</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationLogtailList">DataDigitaloceanAppSpecWorkerLogDestinationLogtailList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOutputReference.property.openSearch">OpenSearch</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchList">DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOutputReference.property.papertrail">Papertrail</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationPapertrailList">DataDigitaloceanAppSpecWorkerLogDestinationPapertrailList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestination">DataDigitaloceanAppSpecWorkerLogDestination</a></code> | *No description.* |
 
@@ -37467,6 +41208,16 @@ func Name() *string
 
 ---
 
+##### `OpenSearch`<sup>Required</sup> <a name="OpenSearch" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOutputReference.property.openSearch"></a>
+
+```go
+func OpenSearch() DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchList
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchList">DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchList</a>
+
+---
+
 ##### `Papertrail`<sup>Required</sup> <a name="Papertrail" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationOutputReference.property.papertrail"></a>
 
 ```go
@@ -37493,7 +41244,7 @@ func InternalValue() DataDigitaloceanAppSpecWorkerLogDestination
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationPapertrailList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerLogDestinationPapertrailList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecWorkerLogDestinationPapertrailList
 ```
@@ -37642,7 +41393,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerLogDestinationPapertrailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerLogDestinationPapertrailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecWorkerLogDestinationPapertrailOutputReference
 ```
@@ -37920,7 +41671,7 @@ func InternalValue() DataDigitaloceanAppSpecWorkerLogDestinationPapertrail
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecWorkerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanapp"
 
 datadigitaloceanapp.NewDataDigitaloceanAppSpecWorkerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanAppSpecWorkerOutputReference
 ```

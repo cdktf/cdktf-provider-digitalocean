@@ -4,12 +4,12 @@
 
 ### DataDigitaloceanDatabaseConnectionPool <a name="DataDigitaloceanDatabaseConnectionPool" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseConnectionPool.DataDigitaloceanDatabaseConnectionPool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/data-sources/database_connection_pool digitalocean_database_connection_pool}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/data-sources/database_connection_pool digitalocean_database_connection_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseConnectionPool.DataDigitaloceanDatabaseConnectionPool.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceandatabaseconnectionpool"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandatabaseconnectionpool"
 
 datadigitaloceandatabaseconnectionpool.NewDataDigitaloceanDatabaseConnectionPool(scope Construct, id *string, config DataDigitaloceanDatabaseConnectionPoolConfig) DataDigitaloceanDatabaseConnectionPool
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseConnectionPool.DataDigitaloceanDatabaseConnectionPool.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceandatabaseconnectionpool"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandatabaseconnectionpool"
 
 datadigitaloceandatabaseconnectionpool.DataDigitaloceanDatabaseConnectionPool_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseConnectionPool.DataDigitaloceanDatabaseConnectionPool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceandatabaseconnectionpool"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandatabaseconnectionpool"
 
 datadigitaloceandatabaseconnectionpool.DataDigitaloceanDatabaseConnectionPool_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datadigitaloceandatabaseconnectionpool.DataDigitaloceanDatabaseConnectionPool_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseConnectionPool.DataDigitaloceanDatabaseConnectionPool.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceandatabaseconnectionpool"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandatabaseconnectionpool"
 
 datadigitaloceandatabaseconnectionpool.DataDigitaloceanDatabaseConnectionPool_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datadigitaloceandatabaseconnectionpool.DataDigitaloceanDatabaseConnectionPool_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseConnectionPool.DataDigitaloceanDatabaseConnectionPool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceandatabaseconnectionpool"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandatabaseconnectionpool"
 
 datadigitaloceandatabaseconnectionpool.DataDigitaloceanDatabaseConnectionPool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataDigitaloceanDatabaseCo
 
 The id of the existing DataDigitaloceanDatabaseConnectionPool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/data-sources/database_connection_pool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/data-sources/database_connection_pool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -726,7 +726,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseConnectionPool.DataDigitaloceanDatabaseConnectionPoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceandatabaseconnectionpool"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandatabaseconnectionpool"
 
 &datadigitaloceandatabaseconnectionpool.DataDigitaloceanDatabaseConnectionPoolConfig {
 	Connection: interface{},
@@ -753,9 +753,9 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseConnectionPool.DataDigitaloceanDatabaseConnectionPoolConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseConnectionPool.DataDigitaloceanDatabaseConnectionPoolConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseConnectionPool.DataDigitaloceanDatabaseConnectionPoolConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseConnectionPool.DataDigitaloceanDatabaseConnectionPoolConfig.property.clusterId">ClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/data-sources/database_connection_pool#cluster_id DataDigitaloceanDatabaseConnectionPool#cluster_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseConnectionPool.DataDigitaloceanDatabaseConnectionPoolConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/data-sources/database_connection_pool#name DataDigitaloceanDatabaseConnectionPool#name}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseConnectionPool.DataDigitaloceanDatabaseConnectionPoolConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/data-sources/database_connection_pool#id DataDigitaloceanDatabaseConnectionPool#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseConnectionPool.DataDigitaloceanDatabaseConnectionPoolConfig.property.clusterId">ClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/data-sources/database_connection_pool#cluster_id DataDigitaloceanDatabaseConnectionPool#cluster_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseConnectionPool.DataDigitaloceanDatabaseConnectionPoolConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/data-sources/database_connection_pool#name DataDigitaloceanDatabaseConnectionPool#name}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDatabaseConnectionPool.DataDigitaloceanDatabaseConnectionPoolConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/data-sources/database_connection_pool#id DataDigitaloceanDatabaseConnectionPool#id}. |
 
 ---
 
@@ -837,7 +837,7 @@ ClusterId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/data-sources/database_connection_pool#cluster_id DataDigitaloceanDatabaseConnectionPool#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/data-sources/database_connection_pool#cluster_id DataDigitaloceanDatabaseConnectionPool#cluster_id}.
 
 ---
 
@@ -849,7 +849,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/data-sources/database_connection_pool#name DataDigitaloceanDatabaseConnectionPool#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/data-sources/database_connection_pool#name DataDigitaloceanDatabaseConnectionPool#name}.
 
 ---
 
@@ -861,7 +861,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/data-sources/database_connection_pool#id DataDigitaloceanDatabaseConnectionPool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/data-sources/database_connection_pool#id DataDigitaloceanDatabaseConnectionPool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
