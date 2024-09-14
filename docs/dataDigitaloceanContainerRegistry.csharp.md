@@ -4,7 +4,7 @@
 
 ### DataDigitaloceanContainerRegistry <a name="DataDigitaloceanContainerRegistry" id="@cdktf/provider-digitalocean.dataDigitaloceanContainerRegistry.DataDigitaloceanContainerRegistry"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/data-sources/container_registry digitalocean_container_registry}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/data-sources/container_registry digitalocean_container_registry}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanContainerRegistry.DataDigitaloceanContainerRegistry.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataDigitaloceanContainerR
 
 The id of the existing DataDigitaloceanContainerRegistry that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/data-sources/container_registry#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/data-sources/container_registry#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -687,7 +687,7 @@ new DataDigitaloceanContainerRegistryConfig {
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanContainerRegistry.DataDigitaloceanContainerRegistryConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanContainerRegistry.DataDigitaloceanContainerRegistryConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanContainerRegistry.DataDigitaloceanContainerRegistryConfig.property.name">Name</a></code> | <code>string</code> | name of the container registry. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanContainerRegistry.DataDigitaloceanContainerRegistryConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/data-sources/container_registry#id DataDigitaloceanContainerRegistry#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanContainerRegistry.DataDigitaloceanContainerRegistryConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/data-sources/container_registry#id DataDigitaloceanContainerRegistry#id}. |
 
 ---
 
@@ -771,7 +771,7 @@ public string Name { get; set; }
 
 name of the container registry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/data-sources/container_registry#name DataDigitaloceanContainerRegistry#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/data-sources/container_registry#name DataDigitaloceanContainerRegistry#name}
 
 ---
 
@@ -783,7 +783,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/data-sources/container_registry#id DataDigitaloceanContainerRegistry#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/data-sources/container_registry#id DataDigitaloceanContainerRegistry#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
