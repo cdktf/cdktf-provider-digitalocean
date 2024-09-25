@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.App.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewApp(scope Construct, id *string, config AppConfig) App
 ```
@@ -452,7 +452,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.app.App.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.App_IsConstruct(x interface{}) *bool
 ```
@@ -484,7 +484,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.app.App.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.App_IsTerraformElement(x interface{}) *bool
 ```
@@ -498,7 +498,7 @@ app.App_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.app.App.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.App_IsTerraformResource(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ app.App_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.app.App.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.App_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -928,7 +928,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppConfig {
 	Connection: interface{},
@@ -941,8 +941,8 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
 	DedicatedIps: interface{},
 	Id: *string,
 	ProjectId: *string,
-	Spec: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpec,
-	Timeouts: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppTimeouts,
+	Spec: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpec,
+	Timeouts: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppTimeouts,
 }
 ```
 
@@ -1109,7 +1109,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppDedicatedIps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppDedicatedIps {
 	Id: *string,
@@ -1178,7 +1178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpec {
 	Name: *string,
@@ -1190,7 +1190,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
 	Env: interface{},
 	Features: *[]*string,
 	Function: interface{},
-	Ingress: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecIngress,
+	Ingress: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecIngress,
 	Job: interface{},
 	Region: *string,
 	Service: interface{},
@@ -1434,7 +1434,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecAlert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecAlert {
 	Rule: *string,
@@ -1480,7 +1480,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecDatabase {
 	ClusterName: *string,
@@ -1612,7 +1612,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecDomain {
 	Name: *string,
@@ -1694,7 +1694,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecEgress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecEgress {
 	Type: *string,
@@ -1728,7 +1728,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecEnv {
 	Key: *string,
@@ -1810,16 +1810,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecFunction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecFunction {
 	Name: *string,
 	Alert: interface{},
-	Cors: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecFunctionCors,
+	Cors: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecFunctionCors,
 	Env: interface{},
-	Git: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecFunctionGit,
-	Github: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecFunctionGithub,
-	Gitlab: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecFunctionGitlab,
+	Git: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecFunctionGit,
+	Github: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecFunctionGithub,
+	Gitlab: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecFunctionGitlab,
 	LogDestination: interface{},
 	Routes: interface{},
 	SourceDir: *string,
@@ -1988,7 +1988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecFunctionAlert {
 	Operator: *string,
@@ -2076,13 +2076,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecFunctionCors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecFunctionCors {
 	AllowCredentials: interface{},
 	AllowHeaders: *[]*string,
 	AllowMethods: *[]*string,
-	AllowOrigins: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecFunctionCorsAllowOrigins,
+	AllowOrigins: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecFunctionCorsAllowOrigins,
 	ExposeHeaders: *[]*string,
 	MaxAge: *string,
 }
@@ -2194,7 +2194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecFunctionCorsAllowOrigins.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecFunctionCorsAllowOrigins {
 	Exact: *string,
@@ -2260,7 +2260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecFunctionEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecFunctionEnv {
 	Key: *string,
@@ -2342,7 +2342,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecFunctionGit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecFunctionGit {
 	Branch: *string,
@@ -2392,7 +2392,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecFunctionGithub.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecFunctionGithub {
 	Branch: *string,
@@ -2458,7 +2458,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecFunctionGitlab.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecFunctionGitlab {
 	Branch: *string,
@@ -2524,14 +2524,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecFunctionLogDestination {
 	Name: *string,
-	Datadog: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecFunctionLogDestinationDatadog,
-	Logtail: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecFunctionLogDestinationLogtail,
-	OpenSearch: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecFunctionLogDestinationOpenSearch,
-	Papertrail: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecFunctionLogDestinationPapertrail,
+	Datadog: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecFunctionLogDestinationDatadog,
+	Logtail: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecFunctionLogDestinationLogtail,
+	OpenSearch: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecFunctionLogDestinationOpenSearch,
+	Papertrail: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecFunctionLogDestinationPapertrail,
 }
 ```
 
@@ -2622,7 +2622,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationDatadog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecFunctionLogDestinationDatadog {
 	ApiKey: *string,
@@ -2672,7 +2672,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationLogtail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecFunctionLogDestinationLogtail {
 	Token: *string,
@@ -2706,10 +2706,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationOpenSearch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecFunctionLogDestinationOpenSearch {
-	BasicAuth: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecFunctionLogDestinationOpenSearchBasicAuth,
+	BasicAuth: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecFunctionLogDestinationOpenSearchBasicAuth,
 	ClusterName: *string,
 	Endpoint: *string,
 	IndexName: *string,
@@ -2788,7 +2788,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationOpenSearchBasicAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecFunctionLogDestinationOpenSearchBasicAuth {
 	Password: *string,
@@ -2838,7 +2838,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationPapertrail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecFunctionLogDestinationPapertrail {
 	Endpoint: *string,
@@ -2872,7 +2872,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecFunctionRoutes {
 	Path: *string,
@@ -2924,7 +2924,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecIngress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecIngress {
 	Rule: interface{},
@@ -2958,13 +2958,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecIngressRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecIngressRule {
-	Component: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecIngressRuleComponent,
-	Cors: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecIngressRuleCors,
-	Match: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecIngressRuleMatch,
-	Redirect: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecIngressRuleRedirect,
+	Component: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecIngressRuleComponent,
+	Cors: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecIngressRuleCors,
+	Match: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecIngressRuleMatch,
+	Redirect: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecIngressRuleRedirect,
 }
 ```
 
@@ -3040,7 +3040,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecIngressRuleComponent {
 	Name: *string,
@@ -3100,13 +3100,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecIngressRuleCors {
 	AllowCredentials: interface{},
 	AllowHeaders: *[]*string,
 	AllowMethods: *[]*string,
-	AllowOrigins: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecIngressRuleCorsAllowOrigins,
+	AllowOrigins: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecIngressRuleCorsAllowOrigins,
 	ExposeHeaders: *[]*string,
 	MaxAge: *string,
 }
@@ -3218,7 +3218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOrigins.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecIngressRuleCorsAllowOrigins {
 	Exact: *string,
@@ -3284,10 +3284,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecIngressRuleMatch {
-	Path: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecIngressRuleMatchPath,
+	Path: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecIngressRuleMatchPath,
 }
 ```
 
@@ -3318,7 +3318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPath.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecIngressRuleMatchPath {
 	Prefix: *string,
@@ -3350,7 +3350,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecIngressRuleRedirect {
 	Authority: *string,
@@ -3438,7 +3438,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecJob.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecJob {
 	Name: *string,
@@ -3447,10 +3447,10 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
 	DockerfilePath: *string,
 	Env: interface{},
 	EnvironmentSlug: *string,
-	Git: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecJobGit,
-	Github: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecJobGithub,
-	Gitlab: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecJobGitlab,
-	Image: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecJobImage,
+	Git: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecJobGit,
+	Github: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecJobGithub,
+	Gitlab: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecJobGitlab,
+	Image: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecJobImage,
 	InstanceCount: *f64,
 	InstanceSizeSlug: *string,
 	Kind: *string,
@@ -3712,7 +3712,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecJobAlert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecJobAlert {
 	Operator: *string,
@@ -3800,7 +3800,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecJobEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecJobEnv {
 	Key: *string,
@@ -3882,7 +3882,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecJobGit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecJobGit {
 	Branch: *string,
@@ -3932,7 +3932,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecJobGithub.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecJobGithub {
 	Branch: *string,
@@ -3998,7 +3998,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecJobGitlab.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecJobGitlab {
 	Branch: *string,
@@ -4064,7 +4064,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecJobImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecJobImage {
 	RegistryType: *string,
@@ -4178,7 +4178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecJobImageDeployOnPush {
 	Enabled: interface{},
@@ -4212,14 +4212,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecJobLogDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecJobLogDestination {
 	Name: *string,
-	Datadog: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecJobLogDestinationDatadog,
-	Logtail: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecJobLogDestinationLogtail,
-	OpenSearch: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecJobLogDestinationOpenSearch,
-	Papertrail: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecJobLogDestinationPapertrail,
+	Datadog: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecJobLogDestinationDatadog,
+	Logtail: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecJobLogDestinationLogtail,
+	OpenSearch: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecJobLogDestinationOpenSearch,
+	Papertrail: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecJobLogDestinationPapertrail,
 }
 ```
 
@@ -4310,7 +4310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationDatadog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecJobLogDestinationDatadog {
 	ApiKey: *string,
@@ -4360,7 +4360,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationLogtail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecJobLogDestinationLogtail {
 	Token: *string,
@@ -4394,10 +4394,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationOpenSearch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecJobLogDestinationOpenSearch {
-	BasicAuth: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecJobLogDestinationOpenSearchBasicAuth,
+	BasicAuth: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecJobLogDestinationOpenSearchBasicAuth,
 	ClusterName: *string,
 	Endpoint: *string,
 	IndexName: *string,
@@ -4476,7 +4476,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationOpenSearchBasicAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecJobLogDestinationOpenSearchBasicAuth {
 	Password: *string,
@@ -4526,7 +4526,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationPapertrail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecJobLogDestinationPapertrail {
 	Endpoint: *string,
@@ -4560,23 +4560,23 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecService {
 	Name: *string,
 	Alert: interface{},
-	Autoscaling: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecServiceAutoscaling,
+	Autoscaling: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecServiceAutoscaling,
 	BuildCommand: *string,
-	Cors: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecServiceCors,
+	Cors: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecServiceCors,
 	DockerfilePath: *string,
 	Env: interface{},
 	EnvironmentSlug: *string,
-	Git: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecServiceGit,
-	Github: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecServiceGithub,
-	Gitlab: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecServiceGitlab,
-	HealthCheck: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecServiceHealthCheck,
+	Git: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecServiceGit,
+	Github: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecServiceGithub,
+	Gitlab: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecServiceGitlab,
+	HealthCheck: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecServiceHealthCheck,
 	HttpPort: *f64,
-	Image: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecServiceImage,
+	Image: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecServiceImage,
 	InstanceCount: *f64,
 	InstanceSizeSlug: *string,
 	InternalPorts: *[]*f64,
@@ -4912,7 +4912,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecServiceAlert {
 	Operator: *string,
@@ -5000,11 +5000,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceAutoscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecServiceAutoscaling {
 	MaxInstanceCount: *f64,
-	Metrics: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecServiceAutoscalingMetrics,
+	Metrics: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecServiceAutoscalingMetrics,
 	MinInstanceCount: *f64,
 }
 ```
@@ -5066,10 +5066,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceAutoscalingMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecServiceAutoscalingMetrics {
-	Cpu: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecServiceAutoscalingMetricsCpu,
+	Cpu: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecServiceAutoscalingMetricsCpu,
 }
 ```
 
@@ -5100,7 +5100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceAutoscalingMetricsCpu.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecServiceAutoscalingMetricsCpu {
 	Percent: *f64,
@@ -5134,13 +5134,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceCors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecServiceCors {
 	AllowCredentials: interface{},
 	AllowHeaders: *[]*string,
 	AllowMethods: *[]*string,
-	AllowOrigins: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecServiceCorsAllowOrigins,
+	AllowOrigins: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecServiceCorsAllowOrigins,
 	ExposeHeaders: *[]*string,
 	MaxAge: *string,
 }
@@ -5252,7 +5252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceCorsAllowOrigins.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecServiceCorsAllowOrigins {
 	Exact: *string,
@@ -5318,7 +5318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecServiceEnv {
 	Key: *string,
@@ -5400,7 +5400,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceGit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecServiceGit {
 	Branch: *string,
@@ -5450,7 +5450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceGithub.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecServiceGithub {
 	Branch: *string,
@@ -5516,7 +5516,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceGitlab.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecServiceGitlab {
 	Branch: *string,
@@ -5582,7 +5582,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecServiceHealthCheck {
 	FailureThreshold: *f64,
@@ -5714,7 +5714,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecServiceImage {
 	RegistryType: *string,
@@ -5828,7 +5828,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecServiceImageDeployOnPush {
 	Enabled: interface{},
@@ -5862,14 +5862,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecServiceLogDestination {
 	Name: *string,
-	Datadog: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecServiceLogDestinationDatadog,
-	Logtail: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecServiceLogDestinationLogtail,
-	OpenSearch: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecServiceLogDestinationOpenSearch,
-	Papertrail: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecServiceLogDestinationPapertrail,
+	Datadog: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecServiceLogDestinationDatadog,
+	Logtail: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecServiceLogDestinationLogtail,
+	OpenSearch: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecServiceLogDestinationOpenSearch,
+	Papertrail: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecServiceLogDestinationPapertrail,
 }
 ```
 
@@ -5960,7 +5960,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationDatadog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecServiceLogDestinationDatadog {
 	ApiKey: *string,
@@ -6010,7 +6010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationLogtail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecServiceLogDestinationLogtail {
 	Token: *string,
@@ -6044,10 +6044,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationOpenSearch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecServiceLogDestinationOpenSearch {
-	BasicAuth: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecServiceLogDestinationOpenSearchBasicAuth,
+	BasicAuth: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecServiceLogDestinationOpenSearchBasicAuth,
 	ClusterName: *string,
 	Endpoint: *string,
 	IndexName: *string,
@@ -6126,7 +6126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationOpenSearchBasicAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecServiceLogDestinationOpenSearchBasicAuth {
 	Password: *string,
@@ -6176,7 +6176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationPapertrail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecServiceLogDestinationPapertrail {
 	Endpoint: *string,
@@ -6210,7 +6210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceRoutes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecServiceRoutes {
 	Path: *string,
@@ -6262,20 +6262,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecStaticSite.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecStaticSite {
 	Name: *string,
 	BuildCommand: *string,
 	CatchallDocument: *string,
-	Cors: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecStaticSiteCors,
+	Cors: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecStaticSiteCors,
 	DockerfilePath: *string,
 	Env: interface{},
 	EnvironmentSlug: *string,
 	ErrorDocument: *string,
-	Git: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecStaticSiteGit,
-	Github: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecStaticSiteGithub,
-	Gitlab: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecStaticSiteGitlab,
+	Git: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecStaticSiteGit,
+	Github: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecStaticSiteGithub,
+	Gitlab: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecStaticSiteGitlab,
 	IndexDocument: *string,
 	OutputDir: *string,
 	Routes: interface{},
@@ -6522,13 +6522,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteCors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecStaticSiteCors {
 	AllowCredentials: interface{},
 	AllowHeaders: *[]*string,
 	AllowMethods: *[]*string,
-	AllowOrigins: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecStaticSiteCorsAllowOrigins,
+	AllowOrigins: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecStaticSiteCorsAllowOrigins,
 	ExposeHeaders: *[]*string,
 	MaxAge: *string,
 }
@@ -6640,7 +6640,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsAllowOrigins.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecStaticSiteCorsAllowOrigins {
 	Exact: *string,
@@ -6706,7 +6706,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecStaticSiteEnv {
 	Key: *string,
@@ -6788,7 +6788,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteGit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecStaticSiteGit {
 	Branch: *string,
@@ -6838,7 +6838,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithub.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecStaticSiteGithub {
 	Branch: *string,
@@ -6904,7 +6904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlab.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecStaticSiteGitlab {
 	Branch: *string,
@@ -6970,7 +6970,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecStaticSiteRoutes {
 	Path: *string,
@@ -7022,7 +7022,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecWorker.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecWorker {
 	Name: *string,
@@ -7031,10 +7031,10 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
 	DockerfilePath: *string,
 	Env: interface{},
 	EnvironmentSlug: *string,
-	Git: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecWorkerGit,
-	Github: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecWorkerGithub,
-	Gitlab: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecWorkerGitlab,
-	Image: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecWorkerImage,
+	Git: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecWorkerGit,
+	Github: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecWorkerGithub,
+	Gitlab: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecWorkerGitlab,
+	Image: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecWorkerImage,
 	InstanceCount: *f64,
 	InstanceSizeSlug: *string,
 	LogDestination: interface{},
@@ -7280,7 +7280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecWorkerAlert {
 	Operator: *string,
@@ -7368,7 +7368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecWorkerEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecWorkerEnv {
 	Key: *string,
@@ -7450,7 +7450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecWorkerGit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecWorkerGit {
 	Branch: *string,
@@ -7500,7 +7500,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecWorkerGithub.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecWorkerGithub {
 	Branch: *string,
@@ -7566,7 +7566,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecWorkerGitlab.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecWorkerGitlab {
 	Branch: *string,
@@ -7632,7 +7632,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecWorkerImage {
 	RegistryType: *string,
@@ -7746,7 +7746,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecWorkerImageDeployOnPush {
 	Enabled: interface{},
@@ -7780,14 +7780,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecWorkerLogDestination {
 	Name: *string,
-	Datadog: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecWorkerLogDestinationDatadog,
-	Logtail: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecWorkerLogDestinationLogtail,
-	OpenSearch: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecWorkerLogDestinationOpenSearch,
-	Papertrail: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecWorkerLogDestinationPapertrail,
+	Datadog: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecWorkerLogDestinationDatadog,
+	Logtail: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecWorkerLogDestinationLogtail,
+	OpenSearch: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecWorkerLogDestinationOpenSearch,
+	Papertrail: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecWorkerLogDestinationPapertrail,
 }
 ```
 
@@ -7878,7 +7878,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationDatadog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecWorkerLogDestinationDatadog {
 	ApiKey: *string,
@@ -7928,7 +7928,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationLogtail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecWorkerLogDestinationLogtail {
 	Token: *string,
@@ -7962,10 +7962,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationOpenSearch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecWorkerLogDestinationOpenSearch {
-	BasicAuth: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.app.AppSpecWorkerLogDestinationOpenSearchBasicAuth,
+	BasicAuth: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.app.AppSpecWorkerLogDestinationOpenSearchBasicAuth,
 	ClusterName: *string,
 	Endpoint: *string,
 	IndexName: *string,
@@ -8044,7 +8044,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationOpenSearchBasicAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecWorkerLogDestinationOpenSearchBasicAuth {
 	Password: *string,
@@ -8094,7 +8094,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationPapertrail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppSpecWorkerLogDestinationPapertrail {
 	Endpoint: *string,
@@ -8128,7 +8128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 &app.AppTimeouts {
 	Create: *string,
@@ -8162,7 +8162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppDedicatedIpsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppDedicatedIpsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppDedicatedIpsList
 ```
@@ -8322,7 +8322,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppDedicatedIpsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppDedicatedIpsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppDedicatedIpsOutputReference
 ```
@@ -8676,7 +8676,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecAlertList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecAlertList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecAlertList
 ```
@@ -8836,7 +8836,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecAlertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecAlertOutputReference
 ```
@@ -9154,7 +9154,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecDatabaseList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecDatabaseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecDatabaseList
 ```
@@ -9314,7 +9314,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecDatabaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecDatabaseOutputReference
 ```
@@ -9784,7 +9784,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecDomainList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecDomainList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecDomainList
 ```
@@ -9944,7 +9944,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecDomainOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecDomainOutputReference
 ```
@@ -10320,7 +10320,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecEgressList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecEgressList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecEgressList
 ```
@@ -10480,7 +10480,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecEgressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecEgressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecEgressOutputReference
 ```
@@ -10776,7 +10776,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecEnvList
 ```
@@ -10936,7 +10936,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecEnvOutputReference
 ```
@@ -11319,7 +11319,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlertList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionAlertList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecFunctionAlertList
 ```
@@ -11479,7 +11479,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionAlertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecFunctionAlertOutputReference
 ```
@@ -11863,7 +11863,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionCorsAllowOriginsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionCorsAllowOriginsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecFunctionCorsAllowOriginsOutputReference
 ```
@@ -12199,7 +12199,7 @@ func InternalValue() AppSpecFunctionCorsAllowOrigins
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionCorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecFunctionCorsOutputReference
 ```
@@ -12635,7 +12635,7 @@ func InternalValue() AppSpecFunctionCors
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecFunctionEnvList
 ```
@@ -12795,7 +12795,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecFunctionEnvOutputReference
 ```
@@ -13178,7 +13178,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionGithubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecFunctionGithubOutputReference
 ```
@@ -13514,7 +13514,7 @@ func InternalValue() AppSpecFunctionGithub
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionGitlabOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecFunctionGitlabOutputReference
 ```
@@ -13850,7 +13850,7 @@ func InternalValue() AppSpecFunctionGitlab
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionGitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionGitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecFunctionGitOutputReference
 ```
@@ -14157,7 +14157,7 @@ func InternalValue() AppSpecFunctionGit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecFunctionList
 ```
@@ -14317,7 +14317,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationDatadogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionLogDestinationDatadogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecFunctionLogDestinationDatadogOutputReference
 ```
@@ -14617,7 +14617,7 @@ func InternalValue() AppSpecFunctionLogDestinationDatadog
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionLogDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecFunctionLogDestinationList
 ```
@@ -14777,7 +14777,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationLogtailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionLogDestinationLogtailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecFunctionLogDestinationLogtailOutputReference
 ```
@@ -15048,7 +15048,7 @@ func InternalValue() AppSpecFunctionLogDestinationLogtail
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecFunctionLogDestinationOpenSearchBasicAuthOutputReference
 ```
@@ -15355,7 +15355,7 @@ func InternalValue() AppSpecFunctionLogDestinationOpenSearchBasicAuth
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationOpenSearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionLogDestinationOpenSearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecFunctionLogDestinationOpenSearchOutputReference
 ```
@@ -15726,7 +15726,7 @@ func InternalValue() AppSpecFunctionLogDestinationOpenSearch
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionLogDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecFunctionLogDestinationOutputReference
 ```
@@ -16183,7 +16183,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationPapertrailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionLogDestinationPapertrailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecFunctionLogDestinationPapertrailOutputReference
 ```
@@ -16454,7 +16454,7 @@ func InternalValue() AppSpecFunctionLogDestinationPapertrail
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecFunctionOutputReference
 ```
@@ -17108,7 +17108,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionRoutesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecFunctionRoutesList
 ```
@@ -17268,7 +17268,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecFunctionRoutesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecFunctionRoutesOutputReference
 ```
@@ -17593,7 +17593,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecIngressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecIngressOutputReference
 ```
@@ -17884,7 +17884,7 @@ func InternalValue() AppSpecIngress
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecIngressRuleComponentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecIngressRuleComponentOutputReference
 ```
@@ -18220,7 +18220,7 @@ func InternalValue() AppSpecIngressRuleComponent
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecIngressRuleCorsAllowOriginsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecIngressRuleCorsAllowOriginsOutputReference
 ```
@@ -18556,7 +18556,7 @@ func InternalValue() AppSpecIngressRuleCorsAllowOrigins
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecIngressRuleCorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecIngressRuleCorsOutputReference
 ```
@@ -18992,7 +18992,7 @@ func InternalValue() AppSpecIngressRuleCors
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecIngressRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecIngressRuleList
 ```
@@ -19152,7 +19152,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecIngressRuleMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecIngressRuleMatchOutputReference
 ```
@@ -19443,7 +19443,7 @@ func InternalValue() AppSpecIngressRuleMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecIngressRuleMatchPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecIngressRuleMatchPathOutputReference
 ```
@@ -19721,7 +19721,7 @@ func InternalValue() AppSpecIngressRuleMatchPath
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecIngressRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecIngressRuleOutputReference
 ```
@@ -20156,7 +20156,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecIngressRuleRedirectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecIngressRuleRedirectOutputReference
 ```
@@ -20550,7 +20550,7 @@ func InternalValue() AppSpecIngressRuleRedirect
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobAlertList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobAlertList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecJobAlertList
 ```
@@ -20710,7 +20710,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobAlertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecJobAlertOutputReference
 ```
@@ -21094,7 +21094,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecJobEnvList
 ```
@@ -21254,7 +21254,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecJobEnvOutputReference
 ```
@@ -21637,7 +21637,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobGithubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecJobGithubOutputReference
 ```
@@ -21973,7 +21973,7 @@ func InternalValue() AppSpecJobGithub
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobGitlabOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecJobGitlabOutputReference
 ```
@@ -22309,7 +22309,7 @@ func InternalValue() AppSpecJobGitlab
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobGitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobGitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecJobGitOutputReference
 ```
@@ -22616,7 +22616,7 @@ func InternalValue() AppSpecJobGit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobImageDeployOnPushList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecJobImageDeployOnPushList
 ```
@@ -22776,7 +22776,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobImageDeployOnPushOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecJobImageDeployOnPushOutputReference
 ```
@@ -23072,7 +23072,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecJobImageOutputReference
 ```
@@ -23494,7 +23494,7 @@ func InternalValue() AppSpecJobImage
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecJobList
 ```
@@ -23654,7 +23654,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationDatadogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobLogDestinationDatadogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecJobLogDestinationDatadogOutputReference
 ```
@@ -23954,7 +23954,7 @@ func InternalValue() AppSpecJobLogDestinationDatadog
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobLogDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecJobLogDestinationList
 ```
@@ -24114,7 +24114,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationLogtailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobLogDestinationLogtailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecJobLogDestinationLogtailOutputReference
 ```
@@ -24385,7 +24385,7 @@ func InternalValue() AppSpecJobLogDestinationLogtail
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationOpenSearchBasicAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecJobLogDestinationOpenSearchBasicAuthOutputReference
 ```
@@ -24692,7 +24692,7 @@ func InternalValue() AppSpecJobLogDestinationOpenSearchBasicAuth
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationOpenSearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobLogDestinationOpenSearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecJobLogDestinationOpenSearchOutputReference
 ```
@@ -25063,7 +25063,7 @@ func InternalValue() AppSpecJobLogDestinationOpenSearch
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobLogDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecJobLogDestinationOutputReference
 ```
@@ -25520,7 +25520,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationPapertrailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobLogDestinationPapertrailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecJobLogDestinationPapertrailOutputReference
 ```
@@ -25791,7 +25791,7 @@ func InternalValue() AppSpecJobLogDestinationPapertrail
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecJobOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecJobOutputReference
 ```
@@ -26606,7 +26606,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecOutputReference
 ```
@@ -27426,7 +27426,7 @@ func InternalValue() AppSpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlertList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceAlertList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecServiceAlertList
 ```
@@ -27586,7 +27586,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceAlertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecServiceAlertOutputReference
 ```
@@ -27970,7 +27970,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceAutoscalingMetricsCpuOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceAutoscalingMetricsCpuOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecServiceAutoscalingMetricsCpuOutputReference
 ```
@@ -28241,7 +28241,7 @@ func InternalValue() AppSpecServiceAutoscalingMetricsCpu
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceAutoscalingMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceAutoscalingMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecServiceAutoscalingMetricsOutputReference
 ```
@@ -28532,7 +28532,7 @@ func InternalValue() AppSpecServiceAutoscalingMetrics
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceAutoscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceAutoscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecServiceAutoscalingOutputReference
 ```
@@ -28860,7 +28860,7 @@ func InternalValue() AppSpecServiceAutoscaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceCorsAllowOriginsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceCorsAllowOriginsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecServiceCorsAllowOriginsOutputReference
 ```
@@ -29196,7 +29196,7 @@ func InternalValue() AppSpecServiceCorsAllowOrigins
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceCorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecServiceCorsOutputReference
 ```
@@ -29632,7 +29632,7 @@ func InternalValue() AppSpecServiceCors
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecServiceEnvList
 ```
@@ -29792,7 +29792,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecServiceEnvOutputReference
 ```
@@ -30175,7 +30175,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceGithubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecServiceGithubOutputReference
 ```
@@ -30511,7 +30511,7 @@ func InternalValue() AppSpecServiceGithub
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceGitlabOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecServiceGitlabOutputReference
 ```
@@ -30847,7 +30847,7 @@ func InternalValue() AppSpecServiceGitlab
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceGitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceGitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecServiceGitOutputReference
 ```
@@ -31154,7 +31154,7 @@ func InternalValue() AppSpecServiceGit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecServiceHealthCheckOutputReference
 ```
@@ -31606,7 +31606,7 @@ func InternalValue() AppSpecServiceHealthCheck
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceImageDeployOnPushList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecServiceImageDeployOnPushList
 ```
@@ -31766,7 +31766,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceImageDeployOnPushOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecServiceImageDeployOnPushOutputReference
 ```
@@ -32062,7 +32062,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecServiceImageOutputReference
 ```
@@ -32484,7 +32484,7 @@ func InternalValue() AppSpecServiceImage
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecServiceList
 ```
@@ -32644,7 +32644,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationDatadogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceLogDestinationDatadogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecServiceLogDestinationDatadogOutputReference
 ```
@@ -32944,7 +32944,7 @@ func InternalValue() AppSpecServiceLogDestinationDatadog
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceLogDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecServiceLogDestinationList
 ```
@@ -33104,7 +33104,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationLogtailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceLogDestinationLogtailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecServiceLogDestinationLogtailOutputReference
 ```
@@ -33375,7 +33375,7 @@ func InternalValue() AppSpecServiceLogDestinationLogtail
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecServiceLogDestinationOpenSearchBasicAuthOutputReference
 ```
@@ -33682,7 +33682,7 @@ func InternalValue() AppSpecServiceLogDestinationOpenSearchBasicAuth
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationOpenSearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceLogDestinationOpenSearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecServiceLogDestinationOpenSearchOutputReference
 ```
@@ -34053,7 +34053,7 @@ func InternalValue() AppSpecServiceLogDestinationOpenSearch
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceLogDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecServiceLogDestinationOutputReference
 ```
@@ -34510,7 +34510,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationPapertrailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceLogDestinationPapertrailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecServiceLogDestinationPapertrailOutputReference
 ```
@@ -34781,7 +34781,7 @@ func InternalValue() AppSpecServiceLogDestinationPapertrail
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecServiceOutputReference
 ```
@@ -35793,7 +35793,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceRoutesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceRoutesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecServiceRoutesList
 ```
@@ -35953,7 +35953,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecServiceRoutesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecServiceRoutesOutputReference
 ```
@@ -36278,7 +36278,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsAllowOriginsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecStaticSiteCorsAllowOriginsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecStaticSiteCorsAllowOriginsOutputReference
 ```
@@ -36614,7 +36614,7 @@ func InternalValue() AppSpecStaticSiteCorsAllowOrigins
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecStaticSiteCorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecStaticSiteCorsOutputReference
 ```
@@ -37050,7 +37050,7 @@ func InternalValue() AppSpecStaticSiteCors
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecStaticSiteEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecStaticSiteEnvList
 ```
@@ -37210,7 +37210,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecStaticSiteEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecStaticSiteEnvOutputReference
 ```
@@ -37593,7 +37593,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecStaticSiteGithubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecStaticSiteGithubOutputReference
 ```
@@ -37929,7 +37929,7 @@ func InternalValue() AppSpecStaticSiteGithub
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecStaticSiteGitlabOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecStaticSiteGitlabOutputReference
 ```
@@ -38265,7 +38265,7 @@ func InternalValue() AppSpecStaticSiteGitlab
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecStaticSiteGitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecStaticSiteGitOutputReference
 ```
@@ -38572,7 +38572,7 @@ func InternalValue() AppSpecStaticSiteGit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecStaticSiteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecStaticSiteList
 ```
@@ -38732,7 +38732,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecStaticSiteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecStaticSiteOutputReference
 ```
@@ -39505,7 +39505,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecStaticSiteRoutesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecStaticSiteRoutesList
 ```
@@ -39665,7 +39665,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecStaticSiteRoutesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecStaticSiteRoutesOutputReference
 ```
@@ -39990,7 +39990,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlertList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerAlertList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecWorkerAlertList
 ```
@@ -40150,7 +40150,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerAlertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecWorkerAlertOutputReference
 ```
@@ -40534,7 +40534,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecWorkerEnvList
 ```
@@ -40694,7 +40694,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecWorkerEnvOutputReference
 ```
@@ -41077,7 +41077,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerGithubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecWorkerGithubOutputReference
 ```
@@ -41413,7 +41413,7 @@ func InternalValue() AppSpecWorkerGithub
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerGitlabOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecWorkerGitlabOutputReference
 ```
@@ -41749,7 +41749,7 @@ func InternalValue() AppSpecWorkerGitlab
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerGitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerGitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecWorkerGitOutputReference
 ```
@@ -42056,7 +42056,7 @@ func InternalValue() AppSpecWorkerGit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerImageDeployOnPushList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecWorkerImageDeployOnPushList
 ```
@@ -42216,7 +42216,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerImageDeployOnPushOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecWorkerImageDeployOnPushOutputReference
 ```
@@ -42512,7 +42512,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecWorkerImageOutputReference
 ```
@@ -42934,7 +42934,7 @@ func InternalValue() AppSpecWorkerImage
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecWorkerList
 ```
@@ -43094,7 +43094,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationDatadogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerLogDestinationDatadogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecWorkerLogDestinationDatadogOutputReference
 ```
@@ -43394,7 +43394,7 @@ func InternalValue() AppSpecWorkerLogDestinationDatadog
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerLogDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecWorkerLogDestinationList
 ```
@@ -43554,7 +43554,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationLogtailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerLogDestinationLogtailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecWorkerLogDestinationLogtailOutputReference
 ```
@@ -43825,7 +43825,7 @@ func InternalValue() AppSpecWorkerLogDestinationLogtail
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecWorkerLogDestinationOpenSearchBasicAuthOutputReference
 ```
@@ -44132,7 +44132,7 @@ func InternalValue() AppSpecWorkerLogDestinationOpenSearchBasicAuth
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationOpenSearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerLogDestinationOpenSearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecWorkerLogDestinationOpenSearchOutputReference
 ```
@@ -44503,7 +44503,7 @@ func InternalValue() AppSpecWorkerLogDestinationOpenSearch
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerLogDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecWorkerLogDestinationOutputReference
 ```
@@ -44960,7 +44960,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationPapertrailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerLogDestinationPapertrailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpecWorkerLogDestinationPapertrailOutputReference
 ```
@@ -45231,7 +45231,7 @@ func InternalValue() AppSpecWorkerLogDestinationPapertrail
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppSpecWorkerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpecWorkerOutputReference
 ```
@@ -46017,7 +46017,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/app"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/app"
 
 app.NewAppTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppTimeoutsOutputReference
 ```
