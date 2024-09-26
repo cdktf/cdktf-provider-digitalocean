@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/resources/database_user
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/database_user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +13,38 @@ import * as cdktf from 'cdktf';
 
 export interface DatabaseUserConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/resources/database_user#cluster_id DatabaseUser#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/database_user#cluster_id DatabaseUser#cluster_id}
   */
   readonly clusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/resources/database_user#id DatabaseUser#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/database_user#id DatabaseUser#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/resources/database_user#mysql_auth_plugin DatabaseUser#mysql_auth_plugin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/database_user#mysql_auth_plugin DatabaseUser#mysql_auth_plugin}
   */
   readonly mysqlAuthPlugin?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/resources/database_user#name DatabaseUser#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/database_user#name DatabaseUser#name}
   */
   readonly name: string;
   /**
   * settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/resources/database_user#settings DatabaseUser#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/database_user#settings DatabaseUser#settings}
   */
   readonly settings?: DatabaseUserSettings[] | cdktf.IResolvable;
 }
 export interface DatabaseUserSettingsAcl {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/resources/database_user#permission DatabaseUser#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/database_user#permission DatabaseUser#permission}
   */
   readonly permission: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/resources/database_user#topic DatabaseUser#topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/database_user#topic DatabaseUser#topic}
   */
   readonly topic: string;
 }
@@ -186,13 +186,162 @@ export class DatabaseUserSettingsAclList extends cdktf.ComplexList {
     return new DatabaseUserSettingsAclOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DatabaseUserSettingsOpensearchAcl {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/database_user#index DatabaseUser#index}
+  */
+  readonly index: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/database_user#permission DatabaseUser#permission}
+  */
+  readonly permission: string;
+}
+
+export function databaseUserSettingsOpensearchAclToTerraform(struct?: DatabaseUserSettingsOpensearchAcl | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    index: cdktf.stringToTerraform(struct!.index),
+    permission: cdktf.stringToTerraform(struct!.permission),
+  }
+}
+
+
+export function databaseUserSettingsOpensearchAclToHclTerraform(struct?: DatabaseUserSettingsOpensearchAcl | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    index: {
+      value: cdktf.stringToHclTerraform(struct!.index),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    permission: {
+      value: cdktf.stringToHclTerraform(struct!.permission),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DatabaseUserSettingsOpensearchAclOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DatabaseUserSettingsOpensearchAcl | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._index !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.index = this._index;
+    }
+    if (this._permission !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.permission = this._permission;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DatabaseUserSettingsOpensearchAcl | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._index = undefined;
+      this._permission = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._index = value.index;
+      this._permission = value.permission;
+    }
+  }
+
+  // index - computed: false, optional: false, required: true
+  private _index?: string; 
+  public get index() {
+    return this.getStringAttribute('index');
+  }
+  public set index(value: string) {
+    this._index = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get indexInput() {
+    return this._index;
+  }
+
+  // permission - computed: false, optional: false, required: true
+  private _permission?: string; 
+  public get permission() {
+    return this.getStringAttribute('permission');
+  }
+  public set permission(value: string) {
+    this._permission = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get permissionInput() {
+    return this._permission;
+  }
+}
+
+export class DatabaseUserSettingsOpensearchAclList extends cdktf.ComplexList {
+  public internalValue? : DatabaseUserSettingsOpensearchAcl[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DatabaseUserSettingsOpensearchAclOutputReference {
+    return new DatabaseUserSettingsOpensearchAclOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DatabaseUserSettings {
   /**
   * acl block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/resources/database_user#acl DatabaseUser#acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/database_user#acl DatabaseUser#acl}
   */
   readonly acl?: DatabaseUserSettingsAcl[] | cdktf.IResolvable;
+  /**
+  * opensearch_acl block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/database_user#opensearch_acl DatabaseUser#opensearch_acl}
+  */
+  readonly opensearchAcl?: DatabaseUserSettingsOpensearchAcl[] | cdktf.IResolvable;
 }
 
 export function databaseUserSettingsToTerraform(struct?: DatabaseUserSettings | cdktf.IResolvable): any {
@@ -202,6 +351,7 @@ export function databaseUserSettingsToTerraform(struct?: DatabaseUserSettings | 
   }
   return {
     acl: cdktf.listMapper(databaseUserSettingsAclToTerraform, true)(struct!.acl),
+    opensearch_acl: cdktf.listMapper(databaseUserSettingsOpensearchAclToTerraform, true)(struct!.opensearchAcl),
   }
 }
 
@@ -217,6 +367,12 @@ export function databaseUserSettingsToHclTerraform(struct?: DatabaseUserSettings
       isBlock: true,
       type: "list",
       storageClassType: "DatabaseUserSettingsAclList",
+    },
+    opensearch_acl: {
+      value: cdktf.listMapperHcl(databaseUserSettingsOpensearchAclToHclTerraform, true)(struct!.opensearchAcl),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DatabaseUserSettingsOpensearchAclList",
     },
   };
 
@@ -248,6 +404,10 @@ export class DatabaseUserSettingsOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.acl = this._acl?.internalValue;
     }
+    if (this._opensearchAcl?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.opensearchAcl = this._opensearchAcl?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -256,6 +416,7 @@ export class DatabaseUserSettingsOutputReference extends cdktf.ComplexObject {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._acl.internalValue = undefined;
+      this._opensearchAcl.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -265,6 +426,7 @@ export class DatabaseUserSettingsOutputReference extends cdktf.ComplexObject {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._acl.internalValue = value.acl;
+      this._opensearchAcl.internalValue = value.opensearchAcl;
     }
   }
 
@@ -282,6 +444,22 @@ export class DatabaseUserSettingsOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get aclInput() {
     return this._acl.internalValue;
+  }
+
+  // opensearch_acl - computed: false, optional: true, required: false
+  private _opensearchAcl = new DatabaseUserSettingsOpensearchAclList(this, "opensearch_acl", false);
+  public get opensearchAcl() {
+    return this._opensearchAcl;
+  }
+  public putOpensearchAcl(value: DatabaseUserSettingsOpensearchAcl[] | cdktf.IResolvable) {
+    this._opensearchAcl.internalValue = value;
+  }
+  public resetOpensearchAcl() {
+    this._opensearchAcl.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get opensearchAclInput() {
+    return this._opensearchAcl.internalValue;
   }
 }
 
@@ -306,7 +484,7 @@ export class DatabaseUserSettingsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/resources/database_user digitalocean_database_user}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/database_user digitalocean_database_user}
 */
 export class DatabaseUser extends cdktf.TerraformResource {
 
@@ -322,7 +500,7 @@ export class DatabaseUser extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DatabaseUser resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatabaseUser to import
-  * @param importFromId The id of the existing DatabaseUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/resources/database_user#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DatabaseUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/database_user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatabaseUser to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -334,7 +512,7 @@ export class DatabaseUser extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/resources/database_user digitalocean_database_user} Resource
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/database_user digitalocean_database_user} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -345,7 +523,7 @@ export class DatabaseUser extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_database_user',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.41.0',
+        providerVersion: '2.42.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,

@@ -1,3 +1,3 @@
 # `digitalocean_droplet_snapshot`
 
-Refer to the Terraform Registry for docs: [`digitalocean_droplet_snapshot`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/resources/droplet_snapshot).
+Refer to the Terraform Registry for docs: [`digitalocean_droplet_snapshot`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/droplet_snapshot).
