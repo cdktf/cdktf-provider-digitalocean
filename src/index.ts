@@ -18,6 +18,7 @@ export * as databaseKafkaConfig from './database-kafka-config';
 export * as databaseKafkaTopic from './database-kafka-topic';
 export * as databaseMongodbConfig from './database-mongodb-config';
 export * as databaseMysqlConfig from './database-mysql-config';
+export * as databaseOpensearchConfig from './database-opensearch-config';
 export * as databasePostgresqlConfig from './database-postgresql-config';
 export * as databaseRedisConfig from './database-redis-config';
 export * as databaseReplica from './database-replica';

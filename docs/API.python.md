@@ -59,6 +59,7 @@ The following submodules are available:
 - [databaseKafkaTopic](./databaseKafkaTopic.python.md)
 - [databaseMongodbConfig](./databaseMongodbConfig.python.md)
 - [databaseMysqlConfig](./databaseMysqlConfig.python.md)
+- [databaseOpensearchConfig](./databaseOpensearchConfig.python.md)
 - [databasePostgresqlConfig](./databasePostgresqlConfig.python.md)
 - [databaseRedisConfig](./databaseRedisConfig.python.md)
 - [databaseReplica](./databaseReplica.python.md)

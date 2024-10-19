@@ -18,6 +18,7 @@ Object.defineProperty(exports, 'databaseKafkaConfig', { get: function () { retur
 Object.defineProperty(exports, 'databaseKafkaTopic', { get: function () { return require('./database-kafka-topic'); } });
 Object.defineProperty(exports, 'databaseMongodbConfig', { get: function () { return require('./database-mongodb-config'); } });
 Object.defineProperty(exports, 'databaseMysqlConfig', { get: function () { return require('./database-mysql-config'); } });
+Object.defineProperty(exports, 'databaseOpensearchConfig', { get: function () { return require('./database-opensearch-config'); } });
 Object.defineProperty(exports, 'databasePostgresqlConfig', { get: function () { return require('./database-postgresql-config'); } });
 Object.defineProperty(exports, 'databaseRedisConfig', { get: function () { return require('./database-redis-config'); } });
 Object.defineProperty(exports, 'databaseReplica', { get: function () { return require('./database-replica'); } });
