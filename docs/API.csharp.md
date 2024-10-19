@@ -59,6 +59,7 @@ The following submodules are available:
 - [databaseKafkaTopic](./databaseKafkaTopic.csharp.md)
 - [databaseMongodbConfig](./databaseMongodbConfig.csharp.md)
 - [databaseMysqlConfig](./databaseMysqlConfig.csharp.md)
+- [databaseOpensearchConfig](./databaseOpensearchConfig.csharp.md)
 - [databasePostgresqlConfig](./databasePostgresqlConfig.csharp.md)
 - [databaseRedisConfig](./databaseRedisConfig.csharp.md)
 - [databaseReplica](./databaseReplica.csharp.md)

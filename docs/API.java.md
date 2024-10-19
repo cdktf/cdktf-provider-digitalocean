@@ -59,6 +59,7 @@ The following submodules are available:
 - [databaseKafkaTopic](./databaseKafkaTopic.java.md)
 - [databaseMongodbConfig](./databaseMongodbConfig.java.md)
 - [databaseMysqlConfig](./databaseMysqlConfig.java.md)
+- [databaseOpensearchConfig](./databaseOpensearchConfig.java.md)
 - [databasePostgresqlConfig](./databasePostgresqlConfig.java.md)
 - [databaseRedisConfig](./databaseRedisConfig.java.md)
 - [databaseReplica](./databaseReplica.java.md)

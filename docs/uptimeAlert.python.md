@@ -4,7 +4,7 @@
 
 ### UptimeAlert <a name="UptimeAlert" id="@cdktf/provider-digitalocean.uptimeAlert.UptimeAlert"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/uptime_alert digitalocean_uptime_alert}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/uptime_alert digitalocean_uptime_alert}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.uptimeAlert.UptimeAlert.Initializer"></a>
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 A unique identifier for a check.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/uptime_alert#check_id UptimeAlert#check_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/uptime_alert#check_id UptimeAlert#check_id}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 A human-friendly display name for the alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/uptime_alert#name UptimeAlert#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/uptime_alert#name UptimeAlert#name}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/uptime_alert#notifications UptimeAlert#notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/uptime_alert#notifications UptimeAlert#notifications}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The type of health check to perform. Enum: 'latency' 'down' 'down_global' 'ssl_expiry'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/uptime_alert#type UptimeAlert#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/uptime_alert#type UptimeAlert#type}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The comparison operator used against the alert's threshold. Enum: 'greater_than' 'less_than.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/uptime_alert#comparison UptimeAlert#comparison}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/uptime_alert#comparison UptimeAlert#comparison}
 
 ---
 
@@ -170,7 +170,7 @@ Period of time the threshold must be exceeded to trigger the alert.
 
 Enum '2m' '3m' '5m' '10m' '15m' '30m' '1h'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/uptime_alert#period UptimeAlert#period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/uptime_alert#period UptimeAlert#period}
 
 ---
 
@@ -182,7 +182,7 @@ The threshold at which the alert will enter a trigger state.
 
 The specific threshold is dependent on the alert type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/uptime_alert#threshold UptimeAlert#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/uptime_alert#threshold UptimeAlert#threshold}
 
 ---
 
@@ -691,7 +691,7 @@ The construct id used in the generated config for the UptimeAlert to import.
 
 The id of the existing UptimeAlert that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/uptime_alert#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/uptime_alert#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1177,7 +1177,7 @@ check_id: str
 
 A unique identifier for a check.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/uptime_alert#check_id UptimeAlert#check_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/uptime_alert#check_id UptimeAlert#check_id}
 
 ---
 
@@ -1191,7 +1191,7 @@ name: str
 
 A human-friendly display name for the alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/uptime_alert#name UptimeAlert#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/uptime_alert#name UptimeAlert#name}
 
 ---
 
@@ -1205,7 +1205,7 @@ notifications: typing.Union[IResolvable, typing.List[UptimeAlertNotifications]]
 
 notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/uptime_alert#notifications UptimeAlert#notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/uptime_alert#notifications UptimeAlert#notifications}
 
 ---
 
@@ -1219,7 +1219,7 @@ type: str
 
 The type of health check to perform. Enum: 'latency' 'down' 'down_global' 'ssl_expiry'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/uptime_alert#type UptimeAlert#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/uptime_alert#type UptimeAlert#type}
 
 ---
 
@@ -1233,7 +1233,7 @@ comparison: str
 
 The comparison operator used against the alert's threshold. Enum: 'greater_than' 'less_than.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/uptime_alert#comparison UptimeAlert#comparison}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/uptime_alert#comparison UptimeAlert#comparison}
 
 ---
 
@@ -1249,7 +1249,7 @@ Period of time the threshold must be exceeded to trigger the alert.
 
 Enum '2m' '3m' '5m' '10m' '15m' '30m' '1h'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/uptime_alert#period UptimeAlert#period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/uptime_alert#period UptimeAlert#period}
 
 ---
 
@@ -1265,7 +1265,7 @@ The threshold at which the alert will enter a trigger state.
 
 The specific threshold is dependent on the alert type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/uptime_alert#threshold UptimeAlert#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/uptime_alert#threshold UptimeAlert#threshold}
 
 ---
 
@@ -1301,7 +1301,7 @@ email: typing.List[str]
 
 List of email addresses to sent notifications to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/uptime_alert#email UptimeAlert#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/uptime_alert#email UptimeAlert#email}
 
 ---
 
@@ -1315,7 +1315,7 @@ slack: typing.Union[IResolvable, typing.List[UptimeAlertNotificationsSlack]]
 
 slack block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/uptime_alert#slack UptimeAlert#slack}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/uptime_alert#slack UptimeAlert#slack}
 
 ---
 
@@ -1351,7 +1351,7 @@ channel: str
 
 The Slack channel to send alerts to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/uptime_alert#channel UptimeAlert#channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/uptime_alert#channel UptimeAlert#channel}
 
 ---
 
@@ -1365,7 +1365,7 @@ url: str
 
 The webhook URL for Slack.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/uptime_alert#url UptimeAlert#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/uptime_alert#url UptimeAlert#url}
 
 ---
 

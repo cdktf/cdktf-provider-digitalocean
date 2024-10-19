@@ -59,6 +59,7 @@ The following submodules are available:
 - [databaseKafkaTopic](./databaseKafkaTopic.typescript.md)
 - [databaseMongodbConfig](./databaseMongodbConfig.typescript.md)
 - [databaseMysqlConfig](./databaseMysqlConfig.typescript.md)
+- [databaseOpensearchConfig](./databaseOpensearchConfig.typescript.md)
 - [databasePostgresqlConfig](./databasePostgresqlConfig.typescript.md)
 - [databaseRedisConfig](./databaseRedisConfig.typescript.md)
 - [databaseReplica](./databaseReplica.typescript.md)
