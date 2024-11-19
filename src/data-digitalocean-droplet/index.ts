@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/data-sources/droplet
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/data-sources/droplet
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,9 +13,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataDigitaloceanDropletConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/data-sources/droplet#gpu DataDigitaloceanDroplet#gpu}
+  */
+  readonly gpu?: boolean | cdktf.IResolvable;
+  /**
   * id of the Droplet
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/data-sources/droplet#id DataDigitaloceanDroplet#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/data-sources/droplet#id DataDigitaloceanDroplet#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,19 +28,19 @@ export interface DataDigitaloceanDropletConfig extends cdktf.TerraformMetaArgume
   /**
   * name of the Droplet
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/data-sources/droplet#name DataDigitaloceanDroplet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/data-sources/droplet#name DataDigitaloceanDroplet#name}
   */
   readonly name?: string;
   /**
   * unique tag of the Droplet
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/data-sources/droplet#tag DataDigitaloceanDroplet#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/data-sources/droplet#tag DataDigitaloceanDroplet#tag}
   */
   readonly tag?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/data-sources/droplet digitalocean_droplet}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/data-sources/droplet digitalocean_droplet}
 */
 export class DataDigitaloceanDroplet extends cdktf.TerraformDataSource {
 
@@ -52,7 +56,7 @@ export class DataDigitaloceanDroplet extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDigitaloceanDroplet resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDigitaloceanDroplet to import
-  * @param importFromId The id of the existing DataDigitaloceanDroplet that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/data-sources/droplet#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDigitaloceanDroplet that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/data-sources/droplet#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDigitaloceanDroplet to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -64,7 +68,7 @@ export class DataDigitaloceanDroplet extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/data-sources/droplet digitalocean_droplet} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/data-sources/droplet digitalocean_droplet} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -75,7 +79,7 @@ export class DataDigitaloceanDroplet extends cdktf.TerraformDataSource {
       terraformResourceType: 'digitalocean_droplet',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.43.0',
+        providerVersion: '2.44.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
@@ -86,6 +90,7 @@ export class DataDigitaloceanDroplet extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._gpu = config.gpu;
     this._id = config.id;
     this._name = config.name;
     this._tag = config.tag;
@@ -108,6 +113,22 @@ export class DataDigitaloceanDroplet extends cdktf.TerraformDataSource {
   // disk - computed: true, optional: false, required: false
   public get disk() {
     return this.getNumberAttribute('disk');
+  }
+
+  // gpu - computed: false, optional: true, required: false
+  private _gpu?: boolean | cdktf.IResolvable; 
+  public get gpu() {
+    return this.getBooleanAttribute('gpu');
+  }
+  public set gpu(value: boolean | cdktf.IResolvable) {
+    this._gpu = value;
+  }
+  public resetGpu() {
+    this._gpu = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gpuInput() {
+    return this._gpu;
   }
 
   // id - computed: true, optional: true, required: false
@@ -264,6 +285,7 @@ export class DataDigitaloceanDroplet extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      gpu: cdktf.booleanToTerraform(this._gpu),
       id: cdktf.numberToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       tag: cdktf.stringToTerraform(this._tag),
@@ -272,6 +294,12 @@ export class DataDigitaloceanDroplet extends cdktf.TerraformDataSource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      gpu: {
+        value: cdktf.booleanToHclTerraform(this._gpu),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       id: {
         value: cdktf.numberToHclTerraform(this._id),
         isBlock: false,

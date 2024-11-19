@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/droplet
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/droplet
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,98 +13,254 @@ import * as cdktf from 'cdktf';
 
 export interface DropletConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/droplet#backups Droplet#backups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/droplet#backups Droplet#backups}
   */
   readonly backups?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/droplet#droplet_agent Droplet#droplet_agent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/droplet#droplet_agent Droplet#droplet_agent}
   */
   readonly dropletAgent?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/droplet#graceful_shutdown Droplet#graceful_shutdown}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/droplet#graceful_shutdown Droplet#graceful_shutdown}
   */
   readonly gracefulShutdown?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/droplet#id Droplet#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/droplet#id Droplet#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/droplet#image Droplet#image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/droplet#image Droplet#image}
   */
   readonly image: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/droplet#ipv6 Droplet#ipv6}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/droplet#ipv6 Droplet#ipv6}
   */
   readonly ipv6?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/droplet#ipv6_address Droplet#ipv6_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/droplet#ipv6_address Droplet#ipv6_address}
   */
   readonly ipv6Address?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/droplet#monitoring Droplet#monitoring}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/droplet#monitoring Droplet#monitoring}
   */
   readonly monitoring?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/droplet#name Droplet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/droplet#name Droplet#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/droplet#private_networking Droplet#private_networking}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/droplet#private_networking Droplet#private_networking}
   */
   readonly privateNetworking?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/droplet#region Droplet#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/droplet#region Droplet#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/droplet#resize_disk Droplet#resize_disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/droplet#resize_disk Droplet#resize_disk}
   */
   readonly resizeDisk?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/droplet#size Droplet#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/droplet#size Droplet#size}
   */
   readonly size: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/droplet#ssh_keys Droplet#ssh_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/droplet#ssh_keys Droplet#ssh_keys}
   */
   readonly sshKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/droplet#tags Droplet#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/droplet#tags Droplet#tags}
   */
   readonly tags?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/droplet#user_data Droplet#user_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/droplet#user_data Droplet#user_data}
   */
   readonly userData?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/droplet#volume_ids Droplet#volume_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/droplet#volume_ids Droplet#volume_ids}
   */
   readonly volumeIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/droplet#vpc_uuid Droplet#vpc_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/droplet#vpc_uuid Droplet#vpc_uuid}
   */
   readonly vpcUuid?: string;
   /**
+  * backup_policy block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/droplet#backup_policy Droplet#backup_policy}
+  */
+  readonly backupPolicy?: DropletBackupPolicy;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/droplet#timeouts Droplet#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/droplet#timeouts Droplet#timeouts}
   */
   readonly timeouts?: DropletTimeouts;
 }
+export interface DropletBackupPolicy {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/droplet#hour Droplet#hour}
+  */
+  readonly hour?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/droplet#plan Droplet#plan}
+  */
+  readonly plan?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/droplet#weekday Droplet#weekday}
+  */
+  readonly weekday?: string;
+}
+
+export function dropletBackupPolicyToTerraform(struct?: DropletBackupPolicyOutputReference | DropletBackupPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    hour: cdktf.numberToTerraform(struct!.hour),
+    plan: cdktf.stringToTerraform(struct!.plan),
+    weekday: cdktf.stringToTerraform(struct!.weekday),
+  }
+}
+
+
+export function dropletBackupPolicyToHclTerraform(struct?: DropletBackupPolicyOutputReference | DropletBackupPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    hour: {
+      value: cdktf.numberToHclTerraform(struct!.hour),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    plan: {
+      value: cdktf.stringToHclTerraform(struct!.plan),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    weekday: {
+      value: cdktf.stringToHclTerraform(struct!.weekday),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DropletBackupPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DropletBackupPolicy | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._hour !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hour = this._hour;
+    }
+    if (this._plan !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.plan = this._plan;
+    }
+    if (this._weekday !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.weekday = this._weekday;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DropletBackupPolicy | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._hour = undefined;
+      this._plan = undefined;
+      this._weekday = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._hour = value.hour;
+      this._plan = value.plan;
+      this._weekday = value.weekday;
+    }
+  }
+
+  // hour - computed: false, optional: true, required: false
+  private _hour?: number; 
+  public get hour() {
+    return this.getNumberAttribute('hour');
+  }
+  public set hour(value: number) {
+    this._hour = value;
+  }
+  public resetHour() {
+    this._hour = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hourInput() {
+    return this._hour;
+  }
+
+  // plan - computed: false, optional: true, required: false
+  private _plan?: string; 
+  public get plan() {
+    return this.getStringAttribute('plan');
+  }
+  public set plan(value: string) {
+    this._plan = value;
+  }
+  public resetPlan() {
+    this._plan = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get planInput() {
+    return this._plan;
+  }
+
+  // weekday - computed: false, optional: true, required: false
+  private _weekday?: string; 
+  public get weekday() {
+    return this.getStringAttribute('weekday');
+  }
+  public set weekday(value: string) {
+    this._weekday = value;
+  }
+  public resetWeekday() {
+    this._weekday = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get weekdayInput() {
+    return this._weekday;
+  }
+}
 export interface DropletTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/droplet#create Droplet#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/droplet#create Droplet#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/droplet#delete Droplet#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/droplet#delete Droplet#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/droplet#update Droplet#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/droplet#update Droplet#update}
   */
   readonly update?: string;
 }
@@ -256,7 +412,7 @@ export class DropletTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/droplet digitalocean_droplet}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/droplet digitalocean_droplet}
 */
 export class Droplet extends cdktf.TerraformResource {
 
@@ -272,7 +428,7 @@ export class Droplet extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Droplet resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Droplet to import
-  * @param importFromId The id of the existing Droplet that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/droplet#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Droplet that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/droplet#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Droplet to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -284,7 +440,7 @@ export class Droplet extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/droplet digitalocean_droplet} Resource
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/droplet digitalocean_droplet} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -295,7 +451,7 @@ export class Droplet extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_droplet',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.43.0',
+        providerVersion: '2.44.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
@@ -324,6 +480,7 @@ export class Droplet extends cdktf.TerraformResource {
     this._userData = config.userData;
     this._volumeIds = config.volumeIds;
     this._vpcUuid = config.vpcUuid;
+    this._backupPolicy.internalValue = config.backupPolicy;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -665,6 +822,22 @@ export class Droplet extends cdktf.TerraformResource {
     return this._vpcUuid;
   }
 
+  // backup_policy - computed: false, optional: true, required: false
+  private _backupPolicy = new DropletBackupPolicyOutputReference(this, "backup_policy");
+  public get backupPolicy() {
+    return this._backupPolicy;
+  }
+  public putBackupPolicy(value: DropletBackupPolicy) {
+    this._backupPolicy.internalValue = value;
+  }
+  public resetBackupPolicy() {
+    this._backupPolicy.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get backupPolicyInput() {
+    return this._backupPolicy.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new DropletTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -705,6 +878,7 @@ export class Droplet extends cdktf.TerraformResource {
       user_data: cdktf.stringToTerraform(this._userData),
       volume_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._volumeIds),
       vpc_uuid: cdktf.stringToTerraform(this._vpcUuid),
+      backup_policy: dropletBackupPolicyToTerraform(this._backupPolicy.internalValue),
       timeouts: dropletTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -818,6 +992,12 @@ export class Droplet extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      backup_policy: {
+        value: dropletBackupPolicyToHclTerraform(this._backupPolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DropletBackupPolicyList",
       },
       timeouts: {
         value: dropletTimeoutsToHclTerraform(this._timeouts.internalValue),
