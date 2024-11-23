@@ -4,12 +4,12 @@
 
 ### MonitorAlert <a name="MonitorAlert" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlert"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/monitor_alert digitalocean_monitor_alert}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/monitor_alert digitalocean_monitor_alert}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/monitoralert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/monitoralert"
 
 monitoralert.NewMonitorAlert(scope Construct, id *string, config MonitorAlertConfig) MonitorAlert
 ```
@@ -419,7 +419,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/monitoralert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/monitoralert"
 
 monitoralert.MonitorAlert_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/monitoralert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/monitoralert"
 
 monitoralert.MonitorAlert_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ monitoralert.MonitorAlert_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/monitoralert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/monitoralert"
 
 monitoralert.MonitorAlert_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ monitoralert.MonitorAlert_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/monitoralert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/monitoralert"
 
 monitoralert.MonitorAlert_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -508,7 +508,7 @@ The construct id used in the generated config for the MonitorAlert to import.
 
 The id of the existing MonitorAlert that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/monitor_alert#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/monitor_alert#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -939,7 +939,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlerts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/monitoralert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/monitoralert"
 
 &monitoralert.MonitorAlertAlerts {
 	Email: *[]*string,
@@ -966,7 +966,7 @@ Email *[]*string
 
 List of email addresses to sent notifications to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/monitor_alert#email MonitorAlert#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/monitor_alert#email MonitorAlert#email}
 
 ---
 
@@ -980,7 +980,7 @@ Slack interface{}
 
 slack block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/monitor_alert#slack MonitorAlert#slack}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/monitor_alert#slack MonitorAlert#slack}
 
 ---
 
@@ -989,7 +989,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlack.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/monitoralert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/monitoralert"
 
 &monitoralert.MonitorAlertAlertsSlack {
 	Channel: *string,
@@ -1016,7 +1016,7 @@ Channel *string
 
 The Slack channel to send alerts to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/monitor_alert#channel MonitorAlert#channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/monitor_alert#channel MonitorAlert#channel}
 
 ---
 
@@ -1030,7 +1030,7 @@ Url *string
 
 The webhook URL for Slack.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/monitor_alert#url MonitorAlert#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/monitor_alert#url MonitorAlert#url}
 
 ---
 
@@ -1039,7 +1039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/monitoralert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/monitoralert"
 
 &monitoralert.MonitorAlertConfig {
 	Connection: interface{},
@@ -1049,7 +1049,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/monitor
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Alerts: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.monitorAlert.MonitorAlertAlerts,
+	Alerts: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.monitorAlert.MonitorAlertAlerts,
 	Compare: *string,
 	Description: *string,
 	Type: *string,
@@ -1076,13 +1076,13 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/monitor
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.alerts">Alerts</a></code> | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlerts">MonitorAlertAlerts</a></code> | alerts block. |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.compare">Compare</a></code> | <code>*string</code> | The comparison operator to use for value. |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.description">Description</a></code> | <code>*string</code> | Description of the alert policy. |
-| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/monitor_alert#type MonitorAlert#type}. |
-| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/monitor_alert#value MonitorAlert#value}. |
-| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.window">Window</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/monitor_alert#window MonitorAlert#window}. |
-| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/monitor_alert#enabled MonitorAlert#enabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/monitor_alert#type MonitorAlert#type}. |
+| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/monitor_alert#value MonitorAlert#value}. |
+| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.window">Window</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/monitor_alert#window MonitorAlert#window}. |
+| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/monitor_alert#enabled MonitorAlert#enabled}. |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.entities">Entities</a></code> | <code>*[]*string</code> | The droplets to apply the alert policy to. |
-| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/monitor_alert#id MonitorAlert#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.tags">Tags</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/monitor_alert#tags MonitorAlert#tags}. |
+| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/monitor_alert#id MonitorAlert#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.tags">Tags</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/monitor_alert#tags MonitorAlert#tags}. |
 
 ---
 
@@ -1166,7 +1166,7 @@ Alerts MonitorAlertAlerts
 
 alerts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/monitor_alert#alerts MonitorAlert#alerts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/monitor_alert#alerts MonitorAlert#alerts}
 
 ---
 
@@ -1180,7 +1180,7 @@ Compare *string
 
 The comparison operator to use for value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/monitor_alert#compare MonitorAlert#compare}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/monitor_alert#compare MonitorAlert#compare}
 
 ---
 
@@ -1194,7 +1194,7 @@ Description *string
 
 Description of the alert policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/monitor_alert#description MonitorAlert#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/monitor_alert#description MonitorAlert#description}
 
 ---
 
@@ -1206,7 +1206,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/monitor_alert#type MonitorAlert#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/monitor_alert#type MonitorAlert#type}.
 
 ---
 
@@ -1218,7 +1218,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/monitor_alert#value MonitorAlert#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/monitor_alert#value MonitorAlert#value}.
 
 ---
 
@@ -1230,7 +1230,7 @@ Window *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/monitor_alert#window MonitorAlert#window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/monitor_alert#window MonitorAlert#window}.
 
 ---
 
@@ -1242,7 +1242,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/monitor_alert#enabled MonitorAlert#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/monitor_alert#enabled MonitorAlert#enabled}.
 
 ---
 
@@ -1256,7 +1256,7 @@ Entities *[]*string
 
 The droplets to apply the alert policy to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/monitor_alert#entities MonitorAlert#entities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/monitor_alert#entities MonitorAlert#entities}
 
 ---
 
@@ -1268,7 +1268,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/monitor_alert#id MonitorAlert#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/monitor_alert#id MonitorAlert#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1283,7 +1283,7 @@ Tags *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/monitor_alert#tags MonitorAlert#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/monitor_alert#tags MonitorAlert#tags}.
 
 ---
 
@@ -1294,7 +1294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/monitoralert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/monitoralert"
 
 monitoralert.NewMonitorAlertAlertsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorAlertAlertsOutputReference
 ```
@@ -1614,7 +1614,7 @@ func InternalValue() MonitorAlertAlerts
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlackList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/monitoralert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/monitoralert"
 
 monitoralert.NewMonitorAlertAlertsSlackList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorAlertAlertsSlackList
 ```
@@ -1774,7 +1774,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlackOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/monitoralert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/monitoralert"
 
 monitoralert.NewMonitorAlertAlertsSlackOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorAlertAlertsSlackOutputReference
 ```

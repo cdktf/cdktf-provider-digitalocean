@@ -4,7 +4,7 @@
 
 ### DatabaseFirewall <a name="DatabaseFirewall" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/database_firewall digitalocean_database_firewall}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/database_firewall digitalocean_database_firewall}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.Initializer"></a>
 
@@ -487,7 +487,7 @@ The construct id used in the generated config for the DatabaseFirewall to import
 
 The id of the existing DatabaseFirewall that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/database_firewall#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/database_firewall#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -769,9 +769,9 @@ const databaseFirewallConfig: databaseFirewall.DatabaseFirewallConfig = { ... }
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.clusterId">clusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/database_firewall#cluster_id DatabaseFirewall#cluster_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.clusterId">clusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/database_firewall#cluster_id DatabaseFirewall#cluster_id}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.rule">rule</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRule">DatabaseFirewallRule</a>[]</code> | rule block. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/database_firewall#id DatabaseFirewall#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/database_firewall#id DatabaseFirewall#id}. |
 
 ---
 
@@ -853,7 +853,7 @@ public readonly clusterId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/database_firewall#cluster_id DatabaseFirewall#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/database_firewall#cluster_id DatabaseFirewall#cluster_id}.
 
 ---
 
@@ -867,7 +867,7 @@ public readonly rule: IResolvable | DatabaseFirewallRule[];
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/database_firewall#rule DatabaseFirewall#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/database_firewall#rule DatabaseFirewall#rule}
 
 ---
 
@@ -879,7 +879,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/database_firewall#id DatabaseFirewall#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/database_firewall#id DatabaseFirewall#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -900,8 +900,8 @@ const databaseFirewallRule: databaseFirewall.DatabaseFirewallRule = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRule.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/database_firewall#type DatabaseFirewall#type}. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRule.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/database_firewall#value DatabaseFirewall#value}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRule.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/database_firewall#type DatabaseFirewall#type}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRule.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/database_firewall#value DatabaseFirewall#value}. |
 
 ---
 
@@ -913,7 +913,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/database_firewall#type DatabaseFirewall#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/database_firewall#type DatabaseFirewall#type}.
 
 ---
 
@@ -925,7 +925,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/database_firewall#value DatabaseFirewall#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/database_firewall#value DatabaseFirewall#value}.
 
 ---
 
