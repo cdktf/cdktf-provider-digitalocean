@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databaseKafkaConfig.DatabaseKafkaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasekafkaconfig"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/databasekafkaconfig"
 
 databasekafkaconfig.NewDatabaseKafkaConfig(scope Construct, id *string, config DatabaseKafkaConfigConfig) DatabaseKafkaConfig
 ```
@@ -504,7 +504,7 @@ func ResetMessageMaxBytes()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.databaseKafkaConfig.DatabaseKafkaConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasekafkaconfig"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/databasekafkaconfig"
 
 databasekafkaconfig.DatabaseKafkaConfig_IsConstruct(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.databaseKafkaConfig.DatabaseKafkaConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasekafkaconfig"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/databasekafkaconfig"
 
 databasekafkaconfig.DatabaseKafkaConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -550,7 +550,7 @@ databasekafkaconfig.DatabaseKafkaConfig_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.databaseKafkaConfig.DatabaseKafkaConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasekafkaconfig"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/databasekafkaconfig"
 
 databasekafkaconfig.DatabaseKafkaConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -564,7 +564,7 @@ databasekafkaconfig.DatabaseKafkaConfig_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.databaseKafkaConfig.DatabaseKafkaConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasekafkaconfig"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/databasekafkaconfig"
 
 databasekafkaconfig.DatabaseKafkaConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1211,7 +1211,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.databaseKafkaConfig.DatabaseKafkaConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databasekafkaconfig"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/databasekafkaconfig"
 
 &databasekafkaconfig.DatabaseKafkaConfigConfig {
 	Connection: interface{},
