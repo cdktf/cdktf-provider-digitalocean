@@ -4,12 +4,12 @@
 
 ### Vpc <a name="Vpc" id="@cdktf/provider-digitalocean.vpc.Vpc"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/vpc digitalocean_vpc}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.45.0/docs/resources/vpc digitalocean_vpc}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.vpc.Vpc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/vpc"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/vpc"
 
 vpc.NewVpc(scope Construct, id *string, config VpcConfig) Vpc
 ```
@@ -419,7 +419,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.vpc.Vpc.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/vpc"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/vpc"
 
 vpc.Vpc_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.vpc.Vpc.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/vpc"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/vpc"
 
 vpc.Vpc_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ vpc.Vpc_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.vpc.Vpc.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/vpc"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/vpc"
 
 vpc.Vpc_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ vpc.Vpc_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.vpc.Vpc.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/vpc"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/vpc"
 
 vpc.Vpc_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -508,7 +508,7 @@ The construct id used in the generated config for the Vpc to import.
 
 The id of the existing Vpc that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/vpc#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.45.0/docs/resources/vpc#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -873,7 +873,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.vpc.VpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/vpc"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/vpc"
 
 &vpc.VpcConfig {
 	Connection: interface{},
@@ -888,7 +888,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/vpc"
 	Description: *string,
 	Id: *string,
 	IpRange: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.vpc.VpcTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.vpc.VpcTimeouts,
 }
 ```
 
@@ -906,7 +906,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/vpc"
 | <code><a href="#@cdktf/provider-digitalocean.vpc.VpcConfig.property.name">Name</a></code> | <code>*string</code> | The name of the VPC. |
 | <code><a href="#@cdktf/provider-digitalocean.vpc.VpcConfig.property.region">Region</a></code> | <code>*string</code> | DigitalOcean region slug for the VPC's location. |
 | <code><a href="#@cdktf/provider-digitalocean.vpc.VpcConfig.property.description">Description</a></code> | <code>*string</code> | A free-form description for the VPC. |
-| <code><a href="#@cdktf/provider-digitalocean.vpc.VpcConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/vpc#id Vpc#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.vpc.VpcConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.45.0/docs/resources/vpc#id Vpc#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.vpc.VpcConfig.property.ipRange">IpRange</a></code> | <code>*string</code> | The range of IP addresses for the VPC in CIDR notation. |
 | <code><a href="#@cdktf/provider-digitalocean.vpc.VpcConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-digitalocean.vpc.VpcTimeouts">VpcTimeouts</a></code> | timeouts block. |
 
@@ -992,7 +992,7 @@ Name *string
 
 The name of the VPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/vpc#name Vpc#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.45.0/docs/resources/vpc#name Vpc#name}
 
 ---
 
@@ -1006,7 +1006,7 @@ Region *string
 
 DigitalOcean region slug for the VPC's location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/vpc#region Vpc#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.45.0/docs/resources/vpc#region Vpc#region}
 
 ---
 
@@ -1020,7 +1020,7 @@ Description *string
 
 A free-form description for the VPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/vpc#description Vpc#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.45.0/docs/resources/vpc#description Vpc#description}
 
 ---
 
@@ -1032,7 +1032,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/vpc#id Vpc#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.45.0/docs/resources/vpc#id Vpc#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1049,7 +1049,7 @@ IpRange *string
 
 The range of IP addresses for the VPC in CIDR notation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/vpc#ip_range Vpc#ip_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.45.0/docs/resources/vpc#ip_range Vpc#ip_range}
 
 ---
 
@@ -1063,7 +1063,7 @@ Timeouts VpcTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/vpc#timeouts Vpc#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.45.0/docs/resources/vpc#timeouts Vpc#timeouts}
 
 ---
 
@@ -1072,7 +1072,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.vpc.VpcTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/vpc"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/vpc"
 
 &vpc.VpcTimeouts {
 	Delete: *string,
@@ -1083,7 +1083,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/vpc"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.vpc.VpcTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/vpc#delete Vpc#delete}. |
+| <code><a href="#@cdktf/provider-digitalocean.vpc.VpcTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.45.0/docs/resources/vpc#delete Vpc#delete}. |
 
 ---
 
@@ -1095,7 +1095,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/vpc#delete Vpc#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.45.0/docs/resources/vpc#delete Vpc#delete}.
 
 ---
 
@@ -1106,7 +1106,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.vpc.VpcTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/vpc"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/vpc"
 
 vpc.NewVpcTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcTimeoutsOutputReference
 ```

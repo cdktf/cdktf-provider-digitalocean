@@ -1,3 +1,3 @@
 # `data_digitalocean_kubernetes_cluster`
 
-Refer to the Terraform Registry for docs: [`data_digitalocean_kubernetes_cluster`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/data-sources/kubernetes_cluster).
+Refer to the Terraform Registry for docs: [`data_digitalocean_kubernetes_cluster`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.45.0/docs/data-sources/kubernetes_cluster).
