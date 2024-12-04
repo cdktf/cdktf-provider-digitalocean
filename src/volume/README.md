@@ -1,3 +1,3 @@
 # `digitalocean_volume`
 
-Refer to the Terraform Registry for docs: [`digitalocean_volume`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/volume).
+Refer to the Terraform Registry for docs: [`digitalocean_volume`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.45.0/docs/resources/volume).
