@@ -1,3 +1,3 @@
 # `provider`
 
-Refer to the Terraform Registry for docs: [`digitalocean`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.45.0/docs).
+Refer to the Terraform Registry for docs: [`digitalocean`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.0/docs).
