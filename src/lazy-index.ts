@@ -25,6 +25,7 @@ Object.defineProperty(exports, 'databaseReplica', { get: function () { return re
 Object.defineProperty(exports, 'databaseUser', { get: function () { return require('./database-user'); } });
 Object.defineProperty(exports, 'domain', { get: function () { return require('./domain'); } });
 Object.defineProperty(exports, 'droplet', { get: function () { return require('./droplet'); } });
+Object.defineProperty(exports, 'dropletAutoscale', { get: function () { return require('./droplet-autoscale'); } });
 Object.defineProperty(exports, 'dropletSnapshot', { get: function () { return require('./droplet-snapshot'); } });
 Object.defineProperty(exports, 'firewall', { get: function () { return require('./firewall'); } });
 Object.defineProperty(exports, 'floatingIp', { get: function () { return require('./floating-ip'); } });
@@ -38,6 +39,8 @@ Object.defineProperty(exports, 'projectResources', { get: function () { return r
 Object.defineProperty(exports, 'record', { get: function () { return require('./record'); } });
 Object.defineProperty(exports, 'reservedIp', { get: function () { return require('./reserved-ip'); } });
 Object.defineProperty(exports, 'reservedIpAssignment', { get: function () { return require('./reserved-ip-assignment'); } });
+Object.defineProperty(exports, 'reservedIpv6', { get: function () { return require('./reserved-ipv6'); } });
+Object.defineProperty(exports, 'reservedIpv6Assignment', { get: function () { return require('./reserved-ipv6-assignment'); } });
 Object.defineProperty(exports, 'spacesBucket', { get: function () { return require('./spaces-bucket'); } });
 Object.defineProperty(exports, 'spacesBucketCorsConfiguration', { get: function () { return require('./spaces-bucket-cors-configuration'); } });
 Object.defineProperty(exports, 'spacesBucketObject', { get: function () { return require('./spaces-bucket-object'); } });
@@ -63,6 +66,7 @@ Object.defineProperty(exports, 'dataDigitaloceanDatabaseUser', { get: function (
 Object.defineProperty(exports, 'dataDigitaloceanDomain', { get: function () { return require('./data-digitalocean-domain'); } });
 Object.defineProperty(exports, 'dataDigitaloceanDomains', { get: function () { return require('./data-digitalocean-domains'); } });
 Object.defineProperty(exports, 'dataDigitaloceanDroplet', { get: function () { return require('./data-digitalocean-droplet'); } });
+Object.defineProperty(exports, 'dataDigitaloceanDropletAutoscale', { get: function () { return require('./data-digitalocean-droplet-autoscale'); } });
 Object.defineProperty(exports, 'dataDigitaloceanDropletSnapshot', { get: function () { return require('./data-digitalocean-droplet-snapshot'); } });
 Object.defineProperty(exports, 'dataDigitaloceanDroplets', { get: function () { return require('./data-digitalocean-droplets'); } });
 Object.defineProperty(exports, 'dataDigitaloceanFirewall', { get: function () { return require('./data-digitalocean-firewall'); } });
@@ -79,6 +83,7 @@ Object.defineProperty(exports, 'dataDigitaloceanRecords', { get: function () { r
 Object.defineProperty(exports, 'dataDigitaloceanRegion', { get: function () { return require('./data-digitalocean-region'); } });
 Object.defineProperty(exports, 'dataDigitaloceanRegions', { get: function () { return require('./data-digitalocean-regions'); } });
 Object.defineProperty(exports, 'dataDigitaloceanReservedIp', { get: function () { return require('./data-digitalocean-reserved-ip'); } });
+Object.defineProperty(exports, 'dataDigitaloceanReservedIpv6', { get: function () { return require('./data-digitalocean-reserved-ipv6'); } });
 Object.defineProperty(exports, 'dataDigitaloceanSizes', { get: function () { return require('./data-digitalocean-sizes'); } });
 Object.defineProperty(exports, 'dataDigitaloceanSpacesBucket', { get: function () { return require('./data-digitalocean-spaces-bucket'); } });
 Object.defineProperty(exports, 'dataDigitaloceanSpacesBucketObject', { get: function () { return require('./data-digitalocean-spaces-bucket-object'); } });
