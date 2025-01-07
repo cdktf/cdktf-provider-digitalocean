@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/data-sources/app
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/data-sources/app
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktf from 'cdktf';
 
 export interface DataDigitaloceanAppConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/data-sources/app#app_id DataDigitaloceanApp#app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/data-sources/app#app_id DataDigitaloceanApp#app_id}
   */
   readonly appId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/data-sources/app#id DataDigitaloceanApp#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/data-sources/app#id DataDigitaloceanApp#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,7 +26,7 @@ export interface DataDigitaloceanAppConfig extends cdktf.TerraformMetaArguments 
   /**
   * dedicated_ips block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/data-sources/app#dedicated_ips DataDigitaloceanApp#dedicated_ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/data-sources/app#dedicated_ips DataDigitaloceanApp#dedicated_ips}
   */
   readonly dedicatedIps?: DataDigitaloceanAppDedicatedIps[] | cdktf.IResolvable;
 }
@@ -3053,6 +3053,11 @@ export class DataDigitaloceanAppSpecJobImageOutputReference extends cdktf.Comple
     return this._deployOnPush;
   }
 
+  // digest - computed: true, optional: false, required: false
+  public get digest() {
+    return this.getStringAttribute('digest');
+  }
+
   // registry - computed: true, optional: false, required: false
   public get registry() {
     return this.getStringAttribute('registry');
@@ -3597,6 +3602,81 @@ export class DataDigitaloceanAppSpecJobLogDestinationList extends cdktf.ComplexL
     return new DataDigitaloceanAppSpecJobLogDestinationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataDigitaloceanAppSpecJobTermination {
+}
+
+export function dataDigitaloceanAppSpecJobTerminationToTerraform(struct?: DataDigitaloceanAppSpecJobTermination): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataDigitaloceanAppSpecJobTerminationToHclTerraform(struct?: DataDigitaloceanAppSpecJobTermination): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDigitaloceanAppSpecJobTerminationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataDigitaloceanAppSpecJobTermination | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDigitaloceanAppSpecJobTermination | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // grace_period_seconds - computed: true, optional: false, required: false
+  public get gracePeriodSeconds() {
+    return this.getNumberAttribute('grace_period_seconds');
+  }
+}
+
+export class DataDigitaloceanAppSpecJobTerminationList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataDigitaloceanAppSpecJobTerminationOutputReference {
+    return new DataDigitaloceanAppSpecJobTerminationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataDigitaloceanAppSpecJob {
 }
 
@@ -3733,6 +3813,12 @@ export class DataDigitaloceanAppSpecJobOutputReference extends cdktf.ComplexObje
   // source_dir - computed: true, optional: false, required: false
   public get sourceDir() {
     return this.getStringAttribute('source_dir');
+  }
+
+  // termination - computed: true, optional: false, required: false
+  private _termination = new DataDigitaloceanAppSpecJobTerminationList(this, "termination", false);
+  public get termination() {
+    return this._termination;
   }
 }
 
@@ -4849,6 +4935,11 @@ export class DataDigitaloceanAppSpecServiceImageOutputReference extends cdktf.Co
     return this._deployOnPush;
   }
 
+  // digest - computed: true, optional: false, required: false
+  public get digest() {
+    return this.getStringAttribute('digest');
+  }
+
   // registry - computed: true, optional: false, required: false
   public get registry() {
     return this.getStringAttribute('registry');
@@ -5473,6 +5564,86 @@ export class DataDigitaloceanAppSpecServiceRoutesList extends cdktf.ComplexList 
     return new DataDigitaloceanAppSpecServiceRoutesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataDigitaloceanAppSpecServiceTermination {
+}
+
+export function dataDigitaloceanAppSpecServiceTerminationToTerraform(struct?: DataDigitaloceanAppSpecServiceTermination): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataDigitaloceanAppSpecServiceTerminationToHclTerraform(struct?: DataDigitaloceanAppSpecServiceTermination): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDigitaloceanAppSpecServiceTerminationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataDigitaloceanAppSpecServiceTermination | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDigitaloceanAppSpecServiceTermination | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // drain_seconds - computed: true, optional: false, required: false
+  public get drainSeconds() {
+    return this.getNumberAttribute('drain_seconds');
+  }
+
+  // grace_period_seconds - computed: true, optional: false, required: false
+  public get gracePeriodSeconds() {
+    return this.getNumberAttribute('grace_period_seconds');
+  }
+}
+
+export class DataDigitaloceanAppSpecServiceTerminationList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataDigitaloceanAppSpecServiceTerminationOutputReference {
+    return new DataDigitaloceanAppSpecServiceTerminationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataDigitaloceanAppSpecService {
 }
 
@@ -5638,6 +5809,12 @@ export class DataDigitaloceanAppSpecServiceOutputReference extends cdktf.Complex
   // source_dir - computed: true, optional: false, required: false
   public get sourceDir() {
     return this.getStringAttribute('source_dir');
+  }
+
+  // termination - computed: true, optional: false, required: false
+  private _termination = new DataDigitaloceanAppSpecServiceTerminationList(this, "termination", false);
+  public get termination() {
+    return this._termination;
   }
 }
 
@@ -6511,6 +6688,243 @@ export class DataDigitaloceanAppSpecWorkerAlertList extends cdktf.ComplexList {
     return new DataDigitaloceanAppSpecWorkerAlertOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataDigitaloceanAppSpecWorkerAutoscalingMetricsCpu {
+}
+
+export function dataDigitaloceanAppSpecWorkerAutoscalingMetricsCpuToTerraform(struct?: DataDigitaloceanAppSpecWorkerAutoscalingMetricsCpu): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataDigitaloceanAppSpecWorkerAutoscalingMetricsCpuToHclTerraform(struct?: DataDigitaloceanAppSpecWorkerAutoscalingMetricsCpu): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDigitaloceanAppSpecWorkerAutoscalingMetricsCpuOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataDigitaloceanAppSpecWorkerAutoscalingMetricsCpu | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDigitaloceanAppSpecWorkerAutoscalingMetricsCpu | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // percent - computed: true, optional: false, required: false
+  public get percent() {
+    return this.getNumberAttribute('percent');
+  }
+}
+
+export class DataDigitaloceanAppSpecWorkerAutoscalingMetricsCpuList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataDigitaloceanAppSpecWorkerAutoscalingMetricsCpuOutputReference {
+    return new DataDigitaloceanAppSpecWorkerAutoscalingMetricsCpuOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataDigitaloceanAppSpecWorkerAutoscalingMetrics {
+}
+
+export function dataDigitaloceanAppSpecWorkerAutoscalingMetricsToTerraform(struct?: DataDigitaloceanAppSpecWorkerAutoscalingMetrics): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataDigitaloceanAppSpecWorkerAutoscalingMetricsToHclTerraform(struct?: DataDigitaloceanAppSpecWorkerAutoscalingMetrics): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDigitaloceanAppSpecWorkerAutoscalingMetricsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataDigitaloceanAppSpecWorkerAutoscalingMetrics | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDigitaloceanAppSpecWorkerAutoscalingMetrics | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // cpu - computed: true, optional: false, required: false
+  private _cpu = new DataDigitaloceanAppSpecWorkerAutoscalingMetricsCpuList(this, "cpu", false);
+  public get cpu() {
+    return this._cpu;
+  }
+}
+
+export class DataDigitaloceanAppSpecWorkerAutoscalingMetricsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataDigitaloceanAppSpecWorkerAutoscalingMetricsOutputReference {
+    return new DataDigitaloceanAppSpecWorkerAutoscalingMetricsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataDigitaloceanAppSpecWorkerAutoscaling {
+}
+
+export function dataDigitaloceanAppSpecWorkerAutoscalingToTerraform(struct?: DataDigitaloceanAppSpecWorkerAutoscaling): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataDigitaloceanAppSpecWorkerAutoscalingToHclTerraform(struct?: DataDigitaloceanAppSpecWorkerAutoscaling): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDigitaloceanAppSpecWorkerAutoscalingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataDigitaloceanAppSpecWorkerAutoscaling | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDigitaloceanAppSpecWorkerAutoscaling | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // max_instance_count - computed: true, optional: false, required: false
+  public get maxInstanceCount() {
+    return this.getNumberAttribute('max_instance_count');
+  }
+
+  // metrics - computed: true, optional: false, required: false
+  private _metrics = new DataDigitaloceanAppSpecWorkerAutoscalingMetricsList(this, "metrics", false);
+  public get metrics() {
+    return this._metrics;
+  }
+
+  // min_instance_count - computed: true, optional: false, required: false
+  public get minInstanceCount() {
+    return this.getNumberAttribute('min_instance_count');
+  }
+}
+
+export class DataDigitaloceanAppSpecWorkerAutoscalingList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataDigitaloceanAppSpecWorkerAutoscalingOutputReference {
+    return new DataDigitaloceanAppSpecWorkerAutoscalingOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataDigitaloceanAppSpecWorkerEnv {
 }
 
@@ -6981,6 +7395,11 @@ export class DataDigitaloceanAppSpecWorkerImageOutputReference extends cdktf.Com
   private _deployOnPush = new DataDigitaloceanAppSpecWorkerImageDeployOnPushList(this, "deploy_on_push", false);
   public get deployOnPush() {
     return this._deployOnPush;
+  }
+
+  // digest - computed: true, optional: false, required: false
+  public get digest() {
+    return this.getStringAttribute('digest');
   }
 
   // registry - computed: true, optional: false, required: false
@@ -7527,6 +7946,81 @@ export class DataDigitaloceanAppSpecWorkerLogDestinationList extends cdktf.Compl
     return new DataDigitaloceanAppSpecWorkerLogDestinationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataDigitaloceanAppSpecWorkerTermination {
+}
+
+export function dataDigitaloceanAppSpecWorkerTerminationToTerraform(struct?: DataDigitaloceanAppSpecWorkerTermination): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataDigitaloceanAppSpecWorkerTerminationToHclTerraform(struct?: DataDigitaloceanAppSpecWorkerTermination): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDigitaloceanAppSpecWorkerTerminationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataDigitaloceanAppSpecWorkerTermination | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDigitaloceanAppSpecWorkerTermination | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // grace_period_seconds - computed: true, optional: false, required: false
+  public get gracePeriodSeconds() {
+    return this.getNumberAttribute('grace_period_seconds');
+  }
+}
+
+export class DataDigitaloceanAppSpecWorkerTerminationList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataDigitaloceanAppSpecWorkerTerminationOutputReference {
+    return new DataDigitaloceanAppSpecWorkerTerminationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataDigitaloceanAppSpecWorker {
 }
 
@@ -7582,6 +8076,12 @@ export class DataDigitaloceanAppSpecWorkerOutputReference extends cdktf.ComplexO
   private _alert = new DataDigitaloceanAppSpecWorkerAlertList(this, "alert", false);
   public get alert() {
     return this._alert;
+  }
+
+  // autoscaling - computed: true, optional: false, required: false
+  private _autoscaling = new DataDigitaloceanAppSpecWorkerAutoscalingList(this, "autoscaling", false);
+  public get autoscaling() {
+    return this._autoscaling;
   }
 
   // build_command - computed: true, optional: false, required: false
@@ -7658,6 +8158,12 @@ export class DataDigitaloceanAppSpecWorkerOutputReference extends cdktf.ComplexO
   // source_dir - computed: true, optional: false, required: false
   public get sourceDir() {
     return this.getStringAttribute('source_dir');
+  }
+
+  // termination - computed: true, optional: false, required: false
+  private _termination = new DataDigitaloceanAppSpecWorkerTerminationList(this, "termination", false);
+  public get termination() {
+    return this._termination;
   }
 }
 
@@ -7839,7 +8345,7 @@ export interface DataDigitaloceanAppDedicatedIps {
   /**
   * The ID of the dedicated egress IP.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/data-sources/app#id DataDigitaloceanApp#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/data-sources/app#id DataDigitaloceanApp#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -7848,13 +8354,13 @@ export interface DataDigitaloceanAppDedicatedIps {
   /**
   * The IP address of the dedicated egress IP.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/data-sources/app#ip DataDigitaloceanApp#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/data-sources/app#ip DataDigitaloceanApp#ip}
   */
   readonly ip?: string;
   /**
   * The status of the dedicated egress IP: 'UNKNOWN', 'ASSIGNING', 'ASSIGNED', or 'REMOVED'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/data-sources/app#status DataDigitaloceanApp#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/data-sources/app#status DataDigitaloceanApp#status}
   */
   readonly status?: string;
 }
@@ -8028,7 +8534,7 @@ export class DataDigitaloceanAppDedicatedIpsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/data-sources/app digitalocean_app}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/data-sources/app digitalocean_app}
 */
 export class DataDigitaloceanApp extends cdktf.TerraformDataSource {
 
@@ -8044,7 +8550,7 @@ export class DataDigitaloceanApp extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDigitaloceanApp resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDigitaloceanApp to import
-  * @param importFromId The id of the existing DataDigitaloceanApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/data-sources/app#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDigitaloceanApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/data-sources/app#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDigitaloceanApp to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -8056,7 +8562,7 @@ export class DataDigitaloceanApp extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/data-sources/app digitalocean_app} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/data-sources/app digitalocean_app} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -8067,7 +8573,7 @@ export class DataDigitaloceanApp extends cdktf.TerraformDataSource {
       terraformResourceType: 'digitalocean_app',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.46.1',
+        providerVersion: '2.47.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
