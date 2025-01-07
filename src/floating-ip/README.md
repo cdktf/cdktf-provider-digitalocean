@@ -1,3 +1,3 @@
 # `digitalocean_floating_ip`
 
-Refer to the Terraform Registry for docs: [`digitalocean_floating_ip`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/floating_ip).
+Refer to the Terraform Registry for docs: [`digitalocean_floating_ip`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/floating_ip).

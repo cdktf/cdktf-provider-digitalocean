@@ -4,12 +4,12 @@
 
 ### DataDigitaloceanVpcPeering <a name="DataDigitaloceanVpcPeering" id="@cdktf/provider-digitalocean.dataDigitaloceanVpcPeering.DataDigitaloceanVpcPeering"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/data-sources/vpc_peering digitalocean_vpc_peering}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/data-sources/vpc_peering digitalocean_vpc_peering}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanVpcPeering.DataDigitaloceanVpcPeering.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanvpcpeering"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanvpcpeering"
 
 datadigitaloceanvpcpeering.NewDataDigitaloceanVpcPeering(scope Construct, id *string, config DataDigitaloceanVpcPeeringConfig) DataDigitaloceanVpcPeering
 ```
@@ -297,7 +297,7 @@ func ResetVpcIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanVpcPeering.DataDigitaloceanVpcPeering.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanvpcpeering"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanvpcpeering"
 
 datadigitaloceanvpcpeering.DataDigitaloceanVpcPeering_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanVpcPeering.DataDigitaloceanVpcPeering.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanvpcpeering"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanvpcpeering"
 
 datadigitaloceanvpcpeering.DataDigitaloceanVpcPeering_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datadigitaloceanvpcpeering.DataDigitaloceanVpcPeering_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanVpcPeering.DataDigitaloceanVpcPeering.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanvpcpeering"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanvpcpeering"
 
 datadigitaloceanvpcpeering.DataDigitaloceanVpcPeering_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datadigitaloceanvpcpeering.DataDigitaloceanVpcPeering_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.dataDigitaloceanVpcPeering.DataDigitaloceanVpcPeering.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanvpcpeering"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanvpcpeering"
 
 datadigitaloceanvpcpeering.DataDigitaloceanVpcPeering_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataDigitaloceanVpcPeering
 
 The id of the existing DataDigitaloceanVpcPeering that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/data-sources/vpc_peering#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/data-sources/vpc_peering#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -652,7 +652,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanVpcPeering.DataDigitaloceanVpcPeeringConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanvpcpeering"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanvpcpeering"
 
 &datadigitaloceanvpcpeering.DataDigitaloceanVpcPeeringConfig {
 	Connection: interface{},
@@ -765,7 +765,7 @@ Id *string
 
 The ID of the VPC Peering.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/data-sources/vpc_peering#id DataDigitaloceanVpcPeering#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/data-sources/vpc_peering#id DataDigitaloceanVpcPeering#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -782,7 +782,7 @@ Name *string
 
 The name of the VPC Peering.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/data-sources/vpc_peering#name DataDigitaloceanVpcPeering#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/data-sources/vpc_peering#name DataDigitaloceanVpcPeering#name}
 
 ---
 
@@ -796,7 +796,7 @@ VpcIds *[]*string
 
 The list of VPCs to be peered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/data-sources/vpc_peering#vpc_ids DataDigitaloceanVpcPeering#vpc_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/data-sources/vpc_peering#vpc_ids DataDigitaloceanVpcPeering#vpc_ids}
 
 ---
 

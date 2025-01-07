@@ -4,7 +4,7 @@
 
 ### App <a name="App" id="@cdktf/provider-digitalocean.app.App"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app digitalocean_app}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app digitalocean_app}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.App.Initializer"></a>
 
@@ -44,8 +44,8 @@ App.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.dedicatedIps">dedicatedIps</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>></code> | dedicated_ips block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#id App#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#project_id App#project_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#id App#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#project_id App#project_id}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.spec">spec</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec">AppSpec</a></code> | spec block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppTimeouts">AppTimeouts</a></code> | timeouts block. |
 
@@ -117,7 +117,7 @@ Must be unique amongst siblings in the same scope
 
 dedicated_ips block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#dedicated_ips App#dedicated_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#dedicated_ips App#dedicated_ips}
 
 ---
 
@@ -125,7 +125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#id App#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#id App#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -136,7 +136,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#project_id App#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#project_id App#project_id}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#spec App#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#spec App#spec}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#timeouts App#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#timeouts App#timeouts}
 
 ---
 
@@ -657,7 +657,7 @@ The construct id used in the generated config for the App to import.
 
 The id of the existing App that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1079,8 +1079,8 @@ AppConfig.builder()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.dedicatedIps">dedicatedIps</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>></code> | dedicated_ips block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#id App#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#project_id App#project_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#id App#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#project_id App#project_id}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.spec">spec</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec">AppSpec</a></code> | spec block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppTimeouts">AppTimeouts</a></code> | timeouts block. |
 
@@ -1166,7 +1166,7 @@ public java.lang.Object getDedicatedIps();
 
 dedicated_ips block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#dedicated_ips App#dedicated_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#dedicated_ips App#dedicated_ips}
 
 ---
 
@@ -1178,7 +1178,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#id App#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#id App#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1193,7 +1193,7 @@ public java.lang.String getProjectId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#project_id App#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#project_id App#project_id}.
 
 ---
 
@@ -1207,7 +1207,7 @@ public AppSpec getSpec();
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#spec App#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#spec App#spec}
 
 ---
 
@@ -1221,7 +1221,7 @@ public AppTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#timeouts App#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#timeouts App#timeouts}
 
 ---
 
@@ -1259,7 +1259,7 @@ public java.lang.String getId();
 
 The ID of the dedicated egress IP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#id App#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#id App#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1276,7 +1276,7 @@ public java.lang.String getIp();
 
 The IP address of the dedicated egress IP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#ip App#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#ip App#ip}
 
 ---
 
@@ -1290,7 +1290,7 @@ public java.lang.String getStatus();
 
 The status of the dedicated egress IP: 'UNKNOWN', 'ASSIGNING', 'ASSIGNED', or 'REMOVED'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#status App#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#status App#status}
 
 ---
 
@@ -1338,7 +1338,7 @@ AppSpec.builder()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.alert">alert</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>></code> | alert block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.database">database</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>></code> | database block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.domain">domain</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>></code> | domain block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.domains">domains</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#domains App#domains}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.domains">domains</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#domains App#domains}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.egress">egress</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>></code> | egress block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.env">env</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>></code> | env block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.features">features</a></code> | <code>java.util.List<java.lang.String></code> | List of features which is applied to the app. |
@@ -1362,7 +1362,7 @@ public java.lang.String getName();
 
 The name of the app. Must be unique across all apps in the same account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#name App#name}
 
 ---
 
@@ -1376,7 +1376,7 @@ public java.lang.Object getAlert();
 
 alert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#alert App#alert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#alert App#alert}
 
 ---
 
@@ -1390,7 +1390,7 @@ public java.lang.Object getDatabase();
 
 database block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#database App#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#database App#database}
 
 ---
 
@@ -1404,7 +1404,7 @@ public java.lang.Object getDomain();
 
 domain block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#domain App#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#domain App#domain}
 
 ---
 
@@ -1416,7 +1416,7 @@ public java.util.List<java.lang.String> getDomains();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#domains App#domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#domains App#domains}.
 
 ---
 
@@ -1430,7 +1430,7 @@ public java.lang.Object getEgress();
 
 egress block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#egress App#egress}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#egress App#egress}
 
 ---
 
@@ -1444,7 +1444,7 @@ public java.lang.Object getEnv();
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#env App#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#env App#env}
 
 ---
 
@@ -1458,7 +1458,7 @@ public java.util.List<java.lang.String> getFeatures();
 
 List of features which is applied to the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#features App#features}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#features App#features}
 
 ---
 
@@ -1472,7 +1472,7 @@ public java.lang.Object getFunction();
 
 function block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#function App#function}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#function App#function}
 
 ---
 
@@ -1486,7 +1486,7 @@ public AppSpecIngress getIngress();
 
 ingress block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#ingress App#ingress}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#ingress App#ingress}
 
 ---
 
@@ -1500,7 +1500,7 @@ public java.lang.Object getJob();
 
 job block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#job App#job}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#job App#job}
 
 ---
 
@@ -1514,7 +1514,7 @@ public java.lang.String getRegion();
 
 The slug for the DigitalOcean data center region hosting the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#region App#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#region App#region}
 
 ---
 
@@ -1528,7 +1528,7 @@ public java.lang.Object getService();
 
 service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#service App#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#service App#service}
 
 ---
 
@@ -1542,7 +1542,7 @@ public java.lang.Object getStaticSite();
 
 static_site block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#static_site App#static_site}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#static_site App#static_site}
 
 ---
 
@@ -1556,7 +1556,7 @@ public java.lang.Object getWorker();
 
 worker block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#worker App#worker}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#worker App#worker}
 
 ---
 
@@ -1578,8 +1578,8 @@ AppSpecAlert.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlert.property.rule">rule</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#rule App#rule}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlert.property.disabled">disabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlert.property.rule">rule</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#rule App#rule}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlert.property.disabled">disabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -1591,7 +1591,7 @@ public java.lang.String getRule();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#rule App#rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#rule App#rule}.
 
 ---
 
@@ -1603,7 +1603,7 @@ public java.lang.Object getDisabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#disabled App#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#disabled App#disabled}.
 
 ---
 
@@ -1652,7 +1652,7 @@ The name of the underlying DigitalOcean DBaaS cluster.
 
 This is required for production databases. For dev databases, if cluster_name is not set, a new cluster will be provisioned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#cluster_name App#cluster_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#cluster_name App#cluster_name}
 
 ---
 
@@ -1666,7 +1666,7 @@ public java.lang.String getDbName();
 
 The name of the MySQL or PostgreSQL database to configure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#db_name App#db_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#db_name App#db_name}
 
 ---
 
@@ -1680,7 +1680,7 @@ public java.lang.String getDbUser();
 
 The name of the MySQL or PostgreSQL user to configure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#db_user App#db_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#db_user App#db_user}
 
 ---
 
@@ -1694,7 +1694,7 @@ public java.lang.String getEngine();
 
 The database engine to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#engine App#engine}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#engine App#engine}
 
 ---
 
@@ -1708,7 +1708,7 @@ public java.lang.String getName();
 
 The name of the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#name App#name}
 
 ---
 
@@ -1722,7 +1722,7 @@ public java.lang.Object getProduction();
 
 Whether this is a production or dev database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#production App#production}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#production App#production}
 
 ---
 
@@ -1736,7 +1736,7 @@ public java.lang.String getVersion();
 
 The version of the database engine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#version App#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#version App#version}
 
 ---
 
@@ -1777,7 +1777,7 @@ public java.lang.String getName();
 
 The hostname for the domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#name App#name}
 
 ---
 
@@ -1791,7 +1791,7 @@ public java.lang.String getType();
 
 The type of the domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#type App#type}
 
 ---
 
@@ -1805,7 +1805,7 @@ public java.lang.Object getWildcard();
 
 Indicates whether the domain includes all sub-domains, in addition to the given domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#wildcard App#wildcard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#wildcard App#wildcard}
 
 ---
 
@@ -1819,7 +1819,7 @@ public java.lang.String getZone();
 
 If the domain uses DigitalOcean DNS and you would like App Platform to automatically manage it for you, set this to the name of the domain on your account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#zone App#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#zone App#zone}
 
 ---
 
@@ -1853,7 +1853,7 @@ public java.lang.String getType();
 
 The app egress type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#type App#type}
 
 ---
 
@@ -1893,7 +1893,7 @@ public java.lang.String getKey();
 
 The name of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#key App#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#key App#key}
 
 ---
 
@@ -1907,7 +1907,7 @@ public java.lang.String getScope();
 
 The visibility scope of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#scope App#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#scope App#scope}
 
 ---
 
@@ -1921,7 +1921,7 @@ public java.lang.String getType();
 
 The type of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#type App#type}
 
 ---
 
@@ -1935,7 +1935,7 @@ public java.lang.String getValue();
 
 The value of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#value App#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#value App#value}
 
 ---
 
@@ -1991,7 +1991,7 @@ public java.lang.String getName();
 
 The name of the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#name App#name}
 
 ---
 
@@ -2005,7 +2005,7 @@ public java.lang.Object getAlert();
 
 alert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#alert App#alert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#alert App#alert}
 
 ---
 
@@ -2019,7 +2019,7 @@ public AppSpecFunctionCors getCors();
 
 cors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#cors App#cors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#cors App#cors}
 
 ---
 
@@ -2033,7 +2033,7 @@ public java.lang.Object getEnv();
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#env App#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#env App#env}
 
 ---
 
@@ -2047,7 +2047,7 @@ public AppSpecFunctionGit getGit();
 
 git block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#git App#git}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#git App#git}
 
 ---
 
@@ -2061,7 +2061,7 @@ public AppSpecFunctionGithub getGithub();
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#github App#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#github App#github}
 
 ---
 
@@ -2075,7 +2075,7 @@ public AppSpecFunctionGitlab getGitlab();
 
 gitlab block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#gitlab App#gitlab}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#gitlab App#gitlab}
 
 ---
 
@@ -2089,7 +2089,7 @@ public java.lang.Object getLogDestination();
 
 log_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#log_destination App#log_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#log_destination App#log_destination}
 
 ---
 
@@ -2103,7 +2103,7 @@ public java.lang.Object getRoutes();
 
 routes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#routes App#routes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#routes App#routes}
 
 ---
 
@@ -2117,7 +2117,7 @@ public java.lang.String getSourceDir();
 
 An optional path to the working directory to use for the build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#source_dir App#source_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#source_dir App#source_dir}
 
 ---
 
@@ -2142,11 +2142,11 @@ AppSpecFunctionAlert.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.operator">operator</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#operator App#operator}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.rule">rule</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#rule App#rule}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.value">value</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#value App#value}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.window">window</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#window App#window}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.disabled">disabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.operator">operator</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#operator App#operator}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.rule">rule</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#rule App#rule}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.value">value</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#value App#value}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.window">window</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#window App#window}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.disabled">disabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -2158,7 +2158,7 @@ public java.lang.String getOperator();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#operator App#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#operator App#operator}.
 
 ---
 
@@ -2170,7 +2170,7 @@ public java.lang.String getRule();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#rule App#rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#rule App#rule}.
 
 ---
 
@@ -2182,7 +2182,7 @@ public java.lang.Number getValue();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#value App#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#value App#value}.
 
 ---
 
@@ -2194,7 +2194,7 @@ public java.lang.String getWindow();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#window App#window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#window App#window}.
 
 ---
 
@@ -2206,7 +2206,7 @@ public java.lang.Object getDisabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#disabled App#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#disabled App#disabled}.
 
 ---
 
@@ -2253,7 +2253,7 @@ Whether browsers should expose the response to the client-side JavaScript code w
 
 This configures the Access-Control-Allow-Credentials header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#allow_credentials App#allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#allow_credentials App#allow_credentials}
 
 ---
 
@@ -2267,7 +2267,7 @@ public java.util.List<java.lang.String> getAllowHeaders();
 
 The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#allow_headers App#allow_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#allow_headers App#allow_headers}
 
 ---
 
@@ -2281,7 +2281,7 @@ public java.util.List<java.lang.String> getAllowMethods();
 
 The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#allow_methods App#allow_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#allow_methods App#allow_methods}
 
 ---
 
@@ -2295,7 +2295,7 @@ public AppSpecFunctionCorsAllowOrigins getAllowOrigins();
 
 allow_origins block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#allow_origins App#allow_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#allow_origins App#allow_origins}
 
 ---
 
@@ -2309,7 +2309,7 @@ public java.util.List<java.lang.String> getExposeHeaders();
 
 The set of HTTP response headers that browsers are allowed to access. This configures the Access-Control-Expose-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#expose_headers App#expose_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#expose_headers App#expose_headers}
 
 ---
 
@@ -2325,7 +2325,7 @@ An optional duration specifying how long browsers can cache the results of a pre
 
 This configures the Access-Control-Max-Age header. Example: `5h30m`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#max_age App#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#max_age App#max_age}
 
 ---
 
@@ -2363,7 +2363,7 @@ public java.lang.String getExact();
 
 Exact string match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#exact App#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#exact App#exact}
 
 ---
 
@@ -2377,7 +2377,7 @@ public java.lang.String getPrefix();
 
 Prefix-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#prefix App#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#prefix App#prefix}
 
 ---
 
@@ -2391,7 +2391,7 @@ public java.lang.String getRegex();
 
 RE2 style regex-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#regex App#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#regex App#regex}
 
 ---
 
@@ -2431,7 +2431,7 @@ public java.lang.String getKey();
 
 The name of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#key App#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#key App#key}
 
 ---
 
@@ -2445,7 +2445,7 @@ public java.lang.String getScope();
 
 The visibility scope of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#scope App#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#scope App#scope}
 
 ---
 
@@ -2459,7 +2459,7 @@ public java.lang.String getType();
 
 The type of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#type App#type}
 
 ---
 
@@ -2473,7 +2473,7 @@ public java.lang.String getValue();
 
 The value of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#value App#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#value App#value}
 
 ---
 
@@ -2509,7 +2509,7 @@ public java.lang.String getBranch();
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -2523,7 +2523,7 @@ public java.lang.String getRepoCloneUrl();
 
 The clone URL of the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#repo_clone_url App#repo_clone_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repo_clone_url App#repo_clone_url}
 
 ---
 
@@ -2562,7 +2562,7 @@ public java.lang.String getBranch();
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -2576,7 +2576,7 @@ public java.lang.Object getDeployOnPush();
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -2590,7 +2590,7 @@ public java.lang.String getRepo();
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -2629,7 +2629,7 @@ public java.lang.String getBranch();
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -2643,7 +2643,7 @@ public java.lang.Object getDeployOnPush();
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -2657,7 +2657,7 @@ public java.lang.String getRepo();
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -2699,7 +2699,7 @@ public java.lang.String getName();
 
 Name of the log destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#name App#name}
 
 ---
 
@@ -2713,7 +2713,7 @@ public AppSpecFunctionLogDestinationDatadog getDatadog();
 
 datadog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#datadog App#datadog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#datadog App#datadog}
 
 ---
 
@@ -2727,7 +2727,7 @@ public AppSpecFunctionLogDestinationLogtail getLogtail();
 
 logtail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#logtail App#logtail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#logtail App#logtail}
 
 ---
 
@@ -2741,7 +2741,7 @@ public AppSpecFunctionLogDestinationOpenSearch getOpenSearch();
 
 open_search block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#open_search App#open_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#open_search App#open_search}
 
 ---
 
@@ -2755,7 +2755,7 @@ public AppSpecFunctionLogDestinationPapertrail getPapertrail();
 
 papertrail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#papertrail App#papertrail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#papertrail App#papertrail}
 
 ---
 
@@ -2791,7 +2791,7 @@ public java.lang.String getApiKey();
 
 Datadog API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#api_key App#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#api_key App#api_key}
 
 ---
 
@@ -2805,7 +2805,7 @@ public java.lang.String getEndpoint();
 
 Datadog HTTP log intake endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -2839,7 +2839,7 @@ public java.lang.String getToken();
 
 Logtail token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#token App#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#token App#token}
 
 ---
 
@@ -2879,7 +2879,7 @@ public AppSpecFunctionLogDestinationOpenSearchBasicAuth getBasicAuth();
 
 basic_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#basic_auth App#basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#basic_auth App#basic_auth}
 
 ---
 
@@ -2893,7 +2893,7 @@ public java.lang.String getClusterName();
 
 OpenSearch cluster name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#cluster_name App#cluster_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#cluster_name App#cluster_name}
 
 ---
 
@@ -2907,7 +2907,7 @@ public java.lang.String getEndpoint();
 
 OpenSearch endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -2921,7 +2921,7 @@ public java.lang.String getIndexName();
 
 OpenSearch index name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#index_name App#index_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#index_name App#index_name}
 
 ---
 
@@ -2957,7 +2957,7 @@ public java.lang.String getPassword();
 
 Password for basic authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#password App#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#password App#password}
 
 ---
 
@@ -2971,7 +2971,7 @@ public java.lang.String getUser();
 
 user for basic authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#user App#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#user App#user}
 
 ---
 
@@ -3005,7 +3005,7 @@ public java.lang.String getEndpoint();
 
 Papertrail syslog endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -3044,7 +3044,7 @@ Path specifies an route by HTTP path prefix.
 
 Paths must start with / and must be unique within the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#path App#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#path App#path}
 
 ---
 
@@ -3058,7 +3058,7 @@ public java.lang.Object getPreservePathPrefix();
 
 An optional flag to preserve the path that is forwarded to the backend service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
 
 ---
 
@@ -3093,7 +3093,7 @@ public java.lang.Object getRule();
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#rule App#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#rule App#rule}
 
 ---
 
@@ -3133,7 +3133,7 @@ public AppSpecIngressRuleComponent getComponent();
 
 component block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#component App#component}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#component App#component}
 
 ---
 
@@ -3147,7 +3147,7 @@ public AppSpecIngressRuleCors getCors();
 
 cors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#cors App#cors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#cors App#cors}
 
 ---
 
@@ -3161,7 +3161,7 @@ public AppSpecIngressRuleMatch getMatch();
 
 match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#match App#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#match App#match}
 
 ---
 
@@ -3175,7 +3175,7 @@ public AppSpecIngressRuleRedirect getRedirect();
 
 redirect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#redirect App#redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#redirect App#redirect}
 
 ---
 
@@ -3198,9 +3198,9 @@ AppSpecIngressRuleComponent.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#name App#name}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.preservePathPrefix">preservePathPrefix</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.rewrite">rewrite</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#rewrite App#rewrite}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#name App#name}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.preservePathPrefix">preservePathPrefix</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.rewrite">rewrite</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#rewrite App#rewrite}. |
 
 ---
 
@@ -3212,7 +3212,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#name App#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#name App#name}.
 
 ---
 
@@ -3224,7 +3224,7 @@ public java.lang.Object getPreservePathPrefix();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}.
 
 ---
 
@@ -3236,7 +3236,7 @@ public java.lang.String getRewrite();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#rewrite App#rewrite}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#rewrite App#rewrite}.
 
 ---
 
@@ -3283,7 +3283,7 @@ Whether browsers should expose the response to the client-side JavaScript code w
 
 This configures the Access-Control-Allow-Credentials header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#allow_credentials App#allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#allow_credentials App#allow_credentials}
 
 ---
 
@@ -3297,7 +3297,7 @@ public java.util.List<java.lang.String> getAllowHeaders();
 
 The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#allow_headers App#allow_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#allow_headers App#allow_headers}
 
 ---
 
@@ -3311,7 +3311,7 @@ public java.util.List<java.lang.String> getAllowMethods();
 
 The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#allow_methods App#allow_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#allow_methods App#allow_methods}
 
 ---
 
@@ -3325,7 +3325,7 @@ public AppSpecIngressRuleCorsAllowOrigins getAllowOrigins();
 
 allow_origins block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#allow_origins App#allow_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#allow_origins App#allow_origins}
 
 ---
 
@@ -3339,7 +3339,7 @@ public java.util.List<java.lang.String> getExposeHeaders();
 
 The set of HTTP response headers that browsers are allowed to access. This configures the Access-Control-Expose-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#expose_headers App#expose_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#expose_headers App#expose_headers}
 
 ---
 
@@ -3355,7 +3355,7 @@ An optional duration specifying how long browsers can cache the results of a pre
 
 This configures the Access-Control-Max-Age header. Example: `5h30m`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#max_age App#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#max_age App#max_age}
 
 ---
 
@@ -3393,7 +3393,7 @@ public java.lang.String getExact();
 
 Exact string match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#exact App#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#exact App#exact}
 
 ---
 
@@ -3407,7 +3407,7 @@ public java.lang.String getPrefix();
 
 Prefix-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#prefix App#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#prefix App#prefix}
 
 ---
 
@@ -3421,7 +3421,7 @@ public java.lang.String getRegex();
 
 RE2 style regex-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#regex App#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#regex App#regex}
 
 ---
 
@@ -3455,7 +3455,7 @@ public AppSpecIngressRuleMatchPath getPath();
 
 path block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#path App#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#path App#path}
 
 ---
 
@@ -3475,7 +3475,7 @@ AppSpecIngressRuleMatchPath.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPath.property.prefix">prefix</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#prefix App#prefix}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPath.property.prefix">prefix</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#prefix App#prefix}. |
 
 ---
 
@@ -3487,7 +3487,7 @@ public java.lang.String getPrefix();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#prefix App#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#prefix App#prefix}.
 
 ---
 
@@ -3511,11 +3511,11 @@ AppSpecIngressRuleRedirect.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.authority">authority</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#authority App#authority}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.port">port</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#port App#port}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.redirectCode">redirectCode</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#redirect_code App#redirect_code}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.scheme">scheme</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#scheme App#scheme}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.uri">uri</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#uri App#uri}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.authority">authority</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#authority App#authority}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.port">port</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#port App#port}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.redirectCode">redirectCode</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#redirect_code App#redirect_code}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.scheme">scheme</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#scheme App#scheme}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.uri">uri</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#uri App#uri}. |
 
 ---
 
@@ -3527,7 +3527,7 @@ public java.lang.String getAuthority();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#authority App#authority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#authority App#authority}.
 
 ---
 
@@ -3539,7 +3539,7 @@ public java.lang.Number getPort();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#port App#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#port App#port}.
 
 ---
 
@@ -3551,7 +3551,7 @@ public java.lang.Number getRedirectCode();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#redirect_code App#redirect_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#redirect_code App#redirect_code}.
 
 ---
 
@@ -3563,7 +3563,7 @@ public java.lang.String getScheme();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#scheme App#scheme}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#scheme App#scheme}.
 
 ---
 
@@ -3575,7 +3575,7 @@ public java.lang.String getUri();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#uri App#uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#uri App#uri}.
 
 ---
 
@@ -3606,6 +3606,7 @@ AppSpecJob.builder()
 //  .logDestination(java.util.List<AppSpecJobLogDestination>)
 //  .runCommand(java.lang.String)
 //  .sourceDir(java.lang.String)
+//  .termination(AppSpecJobTermination)
     .build();
 ```
 
@@ -3629,6 +3630,7 @@ AppSpecJob.builder()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.logDestination">logDestination</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>></code> | log_destination block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.runCommand">runCommand</a></code> | <code>java.lang.String</code> | An optional run command to override the component's default. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.sourceDir">sourceDir</a></code> | <code>java.lang.String</code> | An optional path to the working directory to use for the build. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.termination">termination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobTermination">AppSpecJobTermination</a></code> | termination block. |
 
 ---
 
@@ -3642,7 +3644,7 @@ public java.lang.String getName();
 
 The name of the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#name App#name}
 
 ---
 
@@ -3656,7 +3658,7 @@ public java.lang.Object getAlert();
 
 alert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#alert App#alert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#alert App#alert}
 
 ---
 
@@ -3670,7 +3672,7 @@ public java.lang.String getBuildCommand();
 
 An optional build command to run while building this component from source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#build_command App#build_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#build_command App#build_command}
 
 ---
 
@@ -3684,7 +3686,7 @@ public java.lang.String getDockerfilePath();
 
 The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#dockerfile_path App#dockerfile_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#dockerfile_path App#dockerfile_path}
 
 ---
 
@@ -3698,7 +3700,7 @@ public java.lang.Object getEnv();
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#env App#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#env App#env}
 
 ---
 
@@ -3712,7 +3714,7 @@ public java.lang.String getEnvironmentSlug();
 
 An environment slug describing the type of this app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#environment_slug App#environment_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#environment_slug App#environment_slug}
 
 ---
 
@@ -3726,7 +3728,7 @@ public AppSpecJobGit getGit();
 
 git block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#git App#git}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#git App#git}
 
 ---
 
@@ -3740,7 +3742,7 @@ public AppSpecJobGithub getGithub();
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#github App#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#github App#github}
 
 ---
 
@@ -3754,7 +3756,7 @@ public AppSpecJobGitlab getGitlab();
 
 gitlab block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#gitlab App#gitlab}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#gitlab App#gitlab}
 
 ---
 
@@ -3768,7 +3770,7 @@ public AppSpecJobImage getImage();
 
 image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#image App#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#image App#image}
 
 ---
 
@@ -3782,7 +3784,7 @@ public java.lang.Number getInstanceCount();
 
 The amount of instances that this component should be scaled to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#instance_count App#instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#instance_count App#instance_count}
 
 ---
 
@@ -3796,7 +3798,7 @@ public java.lang.String getInstanceSizeSlug();
 
 The instance size to use for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#instance_size_slug App#instance_size_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#instance_size_slug App#instance_size_slug}
 
 ---
 
@@ -3810,7 +3812,7 @@ public java.lang.String getKind();
 
 The type of job and when it will be run during the deployment process.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#kind App#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#kind App#kind}
 
 ---
 
@@ -3824,7 +3826,7 @@ public java.lang.Object getLogDestination();
 
 log_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#log_destination App#log_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#log_destination App#log_destination}
 
 ---
 
@@ -3838,7 +3840,7 @@ public java.lang.String getRunCommand();
 
 An optional run command to override the component's default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#run_command App#run_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#run_command App#run_command}
 
 ---
 
@@ -3852,7 +3854,21 @@ public java.lang.String getSourceDir();
 
 An optional path to the working directory to use for the build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#source_dir App#source_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#source_dir App#source_dir}
+
+---
+
+##### `termination`<sup>Optional</sup> <a name="termination" id="@cdktf/provider-digitalocean.app.AppSpecJob.property.termination"></a>
+
+```java
+public AppSpecJobTermination getTermination();
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecJobTermination">AppSpecJobTermination</a>
+
+termination block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#termination App#termination}
 
 ---
 
@@ -3877,11 +3893,11 @@ AppSpecJobAlert.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.operator">operator</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#operator App#operator}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.rule">rule</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#rule App#rule}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.value">value</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#value App#value}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.window">window</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#window App#window}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.disabled">disabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.operator">operator</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#operator App#operator}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.rule">rule</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#rule App#rule}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.value">value</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#value App#value}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.window">window</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#window App#window}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.disabled">disabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -3893,7 +3909,7 @@ public java.lang.String getOperator();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#operator App#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#operator App#operator}.
 
 ---
 
@@ -3905,7 +3921,7 @@ public java.lang.String getRule();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#rule App#rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#rule App#rule}.
 
 ---
 
@@ -3917,7 +3933,7 @@ public java.lang.Number getValue();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#value App#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#value App#value}.
 
 ---
 
@@ -3929,7 +3945,7 @@ public java.lang.String getWindow();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#window App#window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#window App#window}.
 
 ---
 
@@ -3941,7 +3957,7 @@ public java.lang.Object getDisabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#disabled App#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#disabled App#disabled}.
 
 ---
 
@@ -3981,7 +3997,7 @@ public java.lang.String getKey();
 
 The name of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#key App#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#key App#key}
 
 ---
 
@@ -3995,7 +4011,7 @@ public java.lang.String getScope();
 
 The visibility scope of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#scope App#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#scope App#scope}
 
 ---
 
@@ -4009,7 +4025,7 @@ public java.lang.String getType();
 
 The type of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#type App#type}
 
 ---
 
@@ -4023,7 +4039,7 @@ public java.lang.String getValue();
 
 The value of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#value App#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#value App#value}
 
 ---
 
@@ -4059,7 +4075,7 @@ public java.lang.String getBranch();
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -4073,7 +4089,7 @@ public java.lang.String getRepoCloneUrl();
 
 The clone URL of the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#repo_clone_url App#repo_clone_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repo_clone_url App#repo_clone_url}
 
 ---
 
@@ -4112,7 +4128,7 @@ public java.lang.String getBranch();
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -4126,7 +4142,7 @@ public java.lang.Object getDeployOnPush();
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -4140,7 +4156,7 @@ public java.lang.String getRepo();
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -4179,7 +4195,7 @@ public java.lang.String getBranch();
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -4193,7 +4209,7 @@ public java.lang.Object getDeployOnPush();
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -4207,7 +4223,7 @@ public java.lang.String getRepo();
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -4223,6 +4239,7 @@ AppSpecJobImage.builder()
     .repository(java.lang.String)
 //  .deployOnPush(IResolvable)
 //  .deployOnPush(java.util.List<AppSpecJobImageDeployOnPush>)
+//  .digest(java.lang.String)
 //  .registry(java.lang.String)
 //  .registryCredentials(java.lang.String)
 //  .tag(java.lang.String)
@@ -4236,9 +4253,10 @@ AppSpecJobImage.builder()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImage.property.registryType">registryType</a></code> | <code>java.lang.String</code> | The registry type. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImage.property.repository">repository</a></code> | <code>java.lang.String</code> | The repository name. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImage.property.deployOnPush">deployOnPush</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>></code> | deploy_on_push block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImage.property.digest">digest</a></code> | <code>java.lang.String</code> | The image digest. Cannot be specified if tag is provided. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImage.property.registry">registry</a></code> | <code>java.lang.String</code> | The registry name. Must be left empty for the DOCR registry type. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImage.property.registryCredentials">registryCredentials</a></code> | <code>java.lang.String</code> | Access credentials for third-party registries. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImage.property.tag">tag</a></code> | <code>java.lang.String</code> | The repository tag. Defaults to latest if not provided. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImage.property.tag">tag</a></code> | <code>java.lang.String</code> | The repository tag. Defaults to latest if not provided. Cannot be specified if digest is provided. |
 
 ---
 
@@ -4252,7 +4270,7 @@ public java.lang.String getRegistryType();
 
 The registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#registry_type App#registry_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#registry_type App#registry_type}
 
 ---
 
@@ -4266,7 +4284,7 @@ public java.lang.String getRepository();
 
 The repository name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#repository App#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repository App#repository}
 
 ---
 
@@ -4280,7 +4298,21 @@ public java.lang.Object getDeployOnPush();
 
 deploy_on_push block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+
+---
+
+##### `digest`<sup>Optional</sup> <a name="digest" id="@cdktf/provider-digitalocean.app.AppSpecJobImage.property.digest"></a>
+
+```java
+public java.lang.String getDigest();
+```
+
+- *Type:* java.lang.String
+
+The image digest. Cannot be specified if tag is provided.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#digest App#digest}
 
 ---
 
@@ -4294,7 +4326,7 @@ public java.lang.String getRegistry();
 
 The registry name. Must be left empty for the DOCR registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#registry App#registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#registry App#registry}
 
 ---
 
@@ -4308,7 +4340,7 @@ public java.lang.String getRegistryCredentials();
 
 Access credentials for third-party registries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#registry_credentials App#registry_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#registry_credentials App#registry_credentials}
 
 ---
 
@@ -4320,9 +4352,9 @@ public java.lang.String getTag();
 
 - *Type:* java.lang.String
 
-The repository tag. Defaults to latest if not provided.
+The repository tag. Defaults to latest if not provided. Cannot be specified if digest is provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#tag App#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#tag App#tag}
 
 ---
 
@@ -4357,7 +4389,7 @@ public java.lang.Object getEnabled();
 
 Whether to automatically deploy images pushed to DOCR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#enabled App#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#enabled App#enabled}
 
 ---
 
@@ -4399,7 +4431,7 @@ public java.lang.String getName();
 
 Name of the log destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#name App#name}
 
 ---
 
@@ -4413,7 +4445,7 @@ public AppSpecJobLogDestinationDatadog getDatadog();
 
 datadog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#datadog App#datadog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#datadog App#datadog}
 
 ---
 
@@ -4427,7 +4459,7 @@ public AppSpecJobLogDestinationLogtail getLogtail();
 
 logtail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#logtail App#logtail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#logtail App#logtail}
 
 ---
 
@@ -4441,7 +4473,7 @@ public AppSpecJobLogDestinationOpenSearch getOpenSearch();
 
 open_search block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#open_search App#open_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#open_search App#open_search}
 
 ---
 
@@ -4455,7 +4487,7 @@ public AppSpecJobLogDestinationPapertrail getPapertrail();
 
 papertrail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#papertrail App#papertrail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#papertrail App#papertrail}
 
 ---
 
@@ -4491,7 +4523,7 @@ public java.lang.String getApiKey();
 
 Datadog API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#api_key App#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#api_key App#api_key}
 
 ---
 
@@ -4505,7 +4537,7 @@ public java.lang.String getEndpoint();
 
 Datadog HTTP log intake endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -4539,7 +4571,7 @@ public java.lang.String getToken();
 
 Logtail token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#token App#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#token App#token}
 
 ---
 
@@ -4579,7 +4611,7 @@ public AppSpecJobLogDestinationOpenSearchBasicAuth getBasicAuth();
 
 basic_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#basic_auth App#basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#basic_auth App#basic_auth}
 
 ---
 
@@ -4593,7 +4625,7 @@ public java.lang.String getClusterName();
 
 OpenSearch cluster name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#cluster_name App#cluster_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#cluster_name App#cluster_name}
 
 ---
 
@@ -4607,7 +4639,7 @@ public java.lang.String getEndpoint();
 
 OpenSearch endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -4621,7 +4653,7 @@ public java.lang.String getIndexName();
 
 OpenSearch index name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#index_name App#index_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#index_name App#index_name}
 
 ---
 
@@ -4657,7 +4689,7 @@ public java.lang.String getPassword();
 
 Password for basic authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#password App#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#password App#password}
 
 ---
 
@@ -4671,7 +4703,7 @@ public java.lang.String getUser();
 
 user for basic authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#user App#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#user App#user}
 
 ---
 
@@ -4705,7 +4737,43 @@ public java.lang.String getEndpoint();
 
 Papertrail syslog endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#endpoint App#endpoint}
+
+---
+
+### AppSpecJobTermination <a name="AppSpecJobTermination" id="@cdktf/provider-digitalocean.app.AppSpecJobTermination"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecJobTermination.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecJobTermination;
+
+AppSpecJobTermination.builder()
+//  .gracePeriodSeconds(java.lang.Number)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobTermination.property.gracePeriodSeconds">gracePeriodSeconds</a></code> | <code>java.lang.Number</code> | The number of seconds to wait between sending a TERM signal to a container and issuing a KILL which causes immediate shutdown. |
+
+---
+
+##### `gracePeriodSeconds`<sup>Optional</sup> <a name="gracePeriodSeconds" id="@cdktf/provider-digitalocean.app.AppSpecJobTermination.property.gracePeriodSeconds"></a>
+
+```java
+public java.lang.Number getGracePeriodSeconds();
+```
+
+- *Type:* java.lang.Number
+
+The number of seconds to wait between sending a TERM signal to a container and issuing a KILL which causes immediate shutdown.
+
+Default: 120, Minimum 1, Maximum 600.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#grace_period_seconds App#grace_period_seconds}
 
 ---
 
@@ -4742,6 +4810,7 @@ AppSpecService.builder()
 //  .routes(java.util.List<AppSpecServiceRoutes>)
 //  .runCommand(java.lang.String)
 //  .sourceDir(java.lang.String)
+//  .termination(AppSpecServiceTermination)
     .build();
 ```
 
@@ -4765,11 +4834,12 @@ AppSpecService.builder()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.image">image</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImage">AppSpecServiceImage</a></code> | image block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.instanceCount">instanceCount</a></code> | <code>java.lang.Number</code> | The amount of instances that this component should be scaled to. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.instanceSizeSlug">instanceSizeSlug</a></code> | <code>java.lang.String</code> | The instance size to use for this component. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.internalPorts">internalPorts</a></code> | <code>java.util.List<java.lang.Number></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#internal_ports App#internal_ports}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.internalPorts">internalPorts</a></code> | <code>java.util.List<java.lang.Number></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#internal_ports App#internal_ports}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.logDestination">logDestination</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>></code> | log_destination block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.routes">routes</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>></code> | routes block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.runCommand">runCommand</a></code> | <code>java.lang.String</code> | An optional run command to override the component's default. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.sourceDir">sourceDir</a></code> | <code>java.lang.String</code> | An optional path to the working directory to use for the build. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.termination">termination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTermination">AppSpecServiceTermination</a></code> | termination block. |
 
 ---
 
@@ -4783,7 +4853,7 @@ public java.lang.String getName();
 
 The name of the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#name App#name}
 
 ---
 
@@ -4797,7 +4867,7 @@ public java.lang.Object getAlert();
 
 alert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#alert App#alert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#alert App#alert}
 
 ---
 
@@ -4811,7 +4881,7 @@ public AppSpecServiceAutoscaling getAutoscaling();
 
 autoscaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#autoscaling App#autoscaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#autoscaling App#autoscaling}
 
 ---
 
@@ -4825,7 +4895,7 @@ public java.lang.String getBuildCommand();
 
 An optional build command to run while building this component from source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#build_command App#build_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#build_command App#build_command}
 
 ---
 
@@ -4839,7 +4909,7 @@ public AppSpecServiceCors getCors();
 
 cors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#cors App#cors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#cors App#cors}
 
 ---
 
@@ -4853,7 +4923,7 @@ public java.lang.String getDockerfilePath();
 
 The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#dockerfile_path App#dockerfile_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#dockerfile_path App#dockerfile_path}
 
 ---
 
@@ -4867,7 +4937,7 @@ public java.lang.Object getEnv();
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#env App#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#env App#env}
 
 ---
 
@@ -4881,7 +4951,7 @@ public java.lang.String getEnvironmentSlug();
 
 An environment slug describing the type of this app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#environment_slug App#environment_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#environment_slug App#environment_slug}
 
 ---
 
@@ -4895,7 +4965,7 @@ public AppSpecServiceGit getGit();
 
 git block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#git App#git}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#git App#git}
 
 ---
 
@@ -4909,7 +4979,7 @@ public AppSpecServiceGithub getGithub();
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#github App#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#github App#github}
 
 ---
 
@@ -4923,7 +4993,7 @@ public AppSpecServiceGitlab getGitlab();
 
 gitlab block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#gitlab App#gitlab}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#gitlab App#gitlab}
 
 ---
 
@@ -4937,7 +5007,7 @@ public AppSpecServiceHealthCheck getHealthCheck();
 
 health_check block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#health_check App#health_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#health_check App#health_check}
 
 ---
 
@@ -4951,7 +5021,7 @@ public java.lang.Number getHttpPort();
 
 The internal port on which this service's run command will listen.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#http_port App#http_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#http_port App#http_port}
 
 ---
 
@@ -4965,7 +5035,7 @@ public AppSpecServiceImage getImage();
 
 image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#image App#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#image App#image}
 
 ---
 
@@ -4979,7 +5049,7 @@ public java.lang.Number getInstanceCount();
 
 The amount of instances that this component should be scaled to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#instance_count App#instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#instance_count App#instance_count}
 
 ---
 
@@ -4993,7 +5063,7 @@ public java.lang.String getInstanceSizeSlug();
 
 The instance size to use for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#instance_size_slug App#instance_size_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#instance_size_slug App#instance_size_slug}
 
 ---
 
@@ -5005,7 +5075,7 @@ public java.util.List<java.lang.Number> getInternalPorts();
 
 - *Type:* java.util.List<java.lang.Number>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#internal_ports App#internal_ports}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#internal_ports App#internal_ports}.
 
 ---
 
@@ -5019,7 +5089,7 @@ public java.lang.Object getLogDestination();
 
 log_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#log_destination App#log_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#log_destination App#log_destination}
 
 ---
 
@@ -5033,7 +5103,7 @@ public java.lang.Object getRoutes();
 
 routes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#routes App#routes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#routes App#routes}
 
 ---
 
@@ -5047,7 +5117,7 @@ public java.lang.String getRunCommand();
 
 An optional run command to override the component's default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#run_command App#run_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#run_command App#run_command}
 
 ---
 
@@ -5061,7 +5131,21 @@ public java.lang.String getSourceDir();
 
 An optional path to the working directory to use for the build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#source_dir App#source_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#source_dir App#source_dir}
+
+---
+
+##### `termination`<sup>Optional</sup> <a name="termination" id="@cdktf/provider-digitalocean.app.AppSpecService.property.termination"></a>
+
+```java
+public AppSpecServiceTermination getTermination();
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTermination">AppSpecServiceTermination</a>
+
+termination block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#termination App#termination}
 
 ---
 
@@ -5086,11 +5170,11 @@ AppSpecServiceAlert.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.operator">operator</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#operator App#operator}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.rule">rule</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#rule App#rule}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.value">value</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#value App#value}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.window">window</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#window App#window}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.disabled">disabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.operator">operator</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#operator App#operator}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.rule">rule</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#rule App#rule}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.value">value</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#value App#value}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.window">window</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#window App#window}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.disabled">disabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -5102,7 +5186,7 @@ public java.lang.String getOperator();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#operator App#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#operator App#operator}.
 
 ---
 
@@ -5114,7 +5198,7 @@ public java.lang.String getRule();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#rule App#rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#rule App#rule}.
 
 ---
 
@@ -5126,7 +5210,7 @@ public java.lang.Number getValue();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#value App#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#value App#value}.
 
 ---
 
@@ -5138,7 +5222,7 @@ public java.lang.String getWindow();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#window App#window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#window App#window}.
 
 ---
 
@@ -5150,7 +5234,7 @@ public java.lang.Object getDisabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#disabled App#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#disabled App#disabled}.
 
 ---
 
@@ -5188,7 +5272,7 @@ public java.lang.Number getMaxInstanceCount();
 
 The maximum amount of instances for this component. Must be more than min_instance_count.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#max_instance_count App#max_instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#max_instance_count App#max_instance_count}
 
 ---
 
@@ -5202,7 +5286,7 @@ public AppSpecServiceAutoscalingMetrics getMetrics();
 
 metrics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#metrics App#metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#metrics App#metrics}
 
 ---
 
@@ -5216,7 +5300,7 @@ public java.lang.Number getMinInstanceCount();
 
 The minimum amount of instances for this component. Must be less than max_instance_count.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#min_instance_count App#min_instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#min_instance_count App#min_instance_count}
 
 ---
 
@@ -5250,7 +5334,7 @@ public AppSpecServiceAutoscalingMetricsCpu getCpu();
 
 cpu block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#cpu App#cpu}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#cpu App#cpu}
 
 ---
 
@@ -5284,7 +5368,7 @@ public java.lang.Number getPercent();
 
 The average target CPU utilization for the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#percent App#percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#percent App#percent}
 
 ---
 
@@ -5331,7 +5415,7 @@ Whether browsers should expose the response to the client-side JavaScript code w
 
 This configures the Access-Control-Allow-Credentials header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#allow_credentials App#allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#allow_credentials App#allow_credentials}
 
 ---
 
@@ -5345,7 +5429,7 @@ public java.util.List<java.lang.String> getAllowHeaders();
 
 The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#allow_headers App#allow_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#allow_headers App#allow_headers}
 
 ---
 
@@ -5359,7 +5443,7 @@ public java.util.List<java.lang.String> getAllowMethods();
 
 The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#allow_methods App#allow_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#allow_methods App#allow_methods}
 
 ---
 
@@ -5373,7 +5457,7 @@ public AppSpecServiceCorsAllowOrigins getAllowOrigins();
 
 allow_origins block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#allow_origins App#allow_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#allow_origins App#allow_origins}
 
 ---
 
@@ -5387,7 +5471,7 @@ public java.util.List<java.lang.String> getExposeHeaders();
 
 The set of HTTP response headers that browsers are allowed to access. This configures the Access-Control-Expose-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#expose_headers App#expose_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#expose_headers App#expose_headers}
 
 ---
 
@@ -5403,7 +5487,7 @@ An optional duration specifying how long browsers can cache the results of a pre
 
 This configures the Access-Control-Max-Age header. Example: `5h30m`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#max_age App#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#max_age App#max_age}
 
 ---
 
@@ -5441,7 +5525,7 @@ public java.lang.String getExact();
 
 Exact string match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#exact App#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#exact App#exact}
 
 ---
 
@@ -5455,7 +5539,7 @@ public java.lang.String getPrefix();
 
 Prefix-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#prefix App#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#prefix App#prefix}
 
 ---
 
@@ -5469,7 +5553,7 @@ public java.lang.String getRegex();
 
 RE2 style regex-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#regex App#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#regex App#regex}
 
 ---
 
@@ -5509,7 +5593,7 @@ public java.lang.String getKey();
 
 The name of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#key App#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#key App#key}
 
 ---
 
@@ -5523,7 +5607,7 @@ public java.lang.String getScope();
 
 The visibility scope of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#scope App#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#scope App#scope}
 
 ---
 
@@ -5537,7 +5621,7 @@ public java.lang.String getType();
 
 The type of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#type App#type}
 
 ---
 
@@ -5551,7 +5635,7 @@ public java.lang.String getValue();
 
 The value of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#value App#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#value App#value}
 
 ---
 
@@ -5587,7 +5671,7 @@ public java.lang.String getBranch();
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -5601,7 +5685,7 @@ public java.lang.String getRepoCloneUrl();
 
 The clone URL of the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#repo_clone_url App#repo_clone_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repo_clone_url App#repo_clone_url}
 
 ---
 
@@ -5640,7 +5724,7 @@ public java.lang.String getBranch();
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -5654,7 +5738,7 @@ public java.lang.Object getDeployOnPush();
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -5668,7 +5752,7 @@ public java.lang.String getRepo();
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -5707,7 +5791,7 @@ public java.lang.String getBranch();
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -5721,7 +5805,7 @@ public java.lang.Object getDeployOnPush();
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -5735,7 +5819,7 @@ public java.lang.String getRepo();
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -5781,7 +5865,7 @@ public java.lang.Number getFailureThreshold();
 
 The number of failed health checks before considered unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#failure_threshold App#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#failure_threshold App#failure_threshold}
 
 ---
 
@@ -5795,7 +5879,7 @@ public java.lang.String getHttpPath();
 
 The route path used for the HTTP health check ping.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#http_path App#http_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#http_path App#http_path}
 
 ---
 
@@ -5809,7 +5893,7 @@ public java.lang.Number getInitialDelaySeconds();
 
 The number of seconds to wait before beginning health checks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#initial_delay_seconds App#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#initial_delay_seconds App#initial_delay_seconds}
 
 ---
 
@@ -5823,7 +5907,7 @@ public java.lang.Number getPeriodSeconds();
 
 The number of seconds to wait between health checks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#period_seconds App#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#period_seconds App#period_seconds}
 
 ---
 
@@ -5839,7 +5923,7 @@ The port on which the health check will be performed.
 
 If not set, the health check will be performed on the component's http_port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#port App#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#port App#port}
 
 ---
 
@@ -5853,7 +5937,7 @@ public java.lang.Number getSuccessThreshold();
 
 The number of successful health checks before considered healthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#success_threshold App#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#success_threshold App#success_threshold}
 
 ---
 
@@ -5867,7 +5951,7 @@ public java.lang.Number getTimeoutSeconds();
 
 The number of seconds after which the check times out.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#timeout_seconds App#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#timeout_seconds App#timeout_seconds}
 
 ---
 
@@ -5883,6 +5967,7 @@ AppSpecServiceImage.builder()
     .repository(java.lang.String)
 //  .deployOnPush(IResolvable)
 //  .deployOnPush(java.util.List<AppSpecServiceImageDeployOnPush>)
+//  .digest(java.lang.String)
 //  .registry(java.lang.String)
 //  .registryCredentials(java.lang.String)
 //  .tag(java.lang.String)
@@ -5896,9 +5981,10 @@ AppSpecServiceImage.builder()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImage.property.registryType">registryType</a></code> | <code>java.lang.String</code> | The registry type. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImage.property.repository">repository</a></code> | <code>java.lang.String</code> | The repository name. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImage.property.deployOnPush">deployOnPush</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>></code> | deploy_on_push block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImage.property.digest">digest</a></code> | <code>java.lang.String</code> | The image digest. Cannot be specified if tag is provided. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImage.property.registry">registry</a></code> | <code>java.lang.String</code> | The registry name. Must be left empty for the DOCR registry type. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImage.property.registryCredentials">registryCredentials</a></code> | <code>java.lang.String</code> | Access credentials for third-party registries. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImage.property.tag">tag</a></code> | <code>java.lang.String</code> | The repository tag. Defaults to latest if not provided. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImage.property.tag">tag</a></code> | <code>java.lang.String</code> | The repository tag. Defaults to latest if not provided. Cannot be specified if digest is provided. |
 
 ---
 
@@ -5912,7 +5998,7 @@ public java.lang.String getRegistryType();
 
 The registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#registry_type App#registry_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#registry_type App#registry_type}
 
 ---
 
@@ -5926,7 +6012,7 @@ public java.lang.String getRepository();
 
 The repository name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#repository App#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repository App#repository}
 
 ---
 
@@ -5940,7 +6026,21 @@ public java.lang.Object getDeployOnPush();
 
 deploy_on_push block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+
+---
+
+##### `digest`<sup>Optional</sup> <a name="digest" id="@cdktf/provider-digitalocean.app.AppSpecServiceImage.property.digest"></a>
+
+```java
+public java.lang.String getDigest();
+```
+
+- *Type:* java.lang.String
+
+The image digest. Cannot be specified if tag is provided.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#digest App#digest}
 
 ---
 
@@ -5954,7 +6054,7 @@ public java.lang.String getRegistry();
 
 The registry name. Must be left empty for the DOCR registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#registry App#registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#registry App#registry}
 
 ---
 
@@ -5968,7 +6068,7 @@ public java.lang.String getRegistryCredentials();
 
 Access credentials for third-party registries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#registry_credentials App#registry_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#registry_credentials App#registry_credentials}
 
 ---
 
@@ -5980,9 +6080,9 @@ public java.lang.String getTag();
 
 - *Type:* java.lang.String
 
-The repository tag. Defaults to latest if not provided.
+The repository tag. Defaults to latest if not provided. Cannot be specified if digest is provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#tag App#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#tag App#tag}
 
 ---
 
@@ -6017,7 +6117,7 @@ public java.lang.Object getEnabled();
 
 Whether to automatically deploy images pushed to DOCR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#enabled App#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#enabled App#enabled}
 
 ---
 
@@ -6059,7 +6159,7 @@ public java.lang.String getName();
 
 Name of the log destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#name App#name}
 
 ---
 
@@ -6073,7 +6173,7 @@ public AppSpecServiceLogDestinationDatadog getDatadog();
 
 datadog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#datadog App#datadog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#datadog App#datadog}
 
 ---
 
@@ -6087,7 +6187,7 @@ public AppSpecServiceLogDestinationLogtail getLogtail();
 
 logtail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#logtail App#logtail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#logtail App#logtail}
 
 ---
 
@@ -6101,7 +6201,7 @@ public AppSpecServiceLogDestinationOpenSearch getOpenSearch();
 
 open_search block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#open_search App#open_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#open_search App#open_search}
 
 ---
 
@@ -6115,7 +6215,7 @@ public AppSpecServiceLogDestinationPapertrail getPapertrail();
 
 papertrail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#papertrail App#papertrail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#papertrail App#papertrail}
 
 ---
 
@@ -6151,7 +6251,7 @@ public java.lang.String getApiKey();
 
 Datadog API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#api_key App#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#api_key App#api_key}
 
 ---
 
@@ -6165,7 +6265,7 @@ public java.lang.String getEndpoint();
 
 Datadog HTTP log intake endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -6199,7 +6299,7 @@ public java.lang.String getToken();
 
 Logtail token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#token App#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#token App#token}
 
 ---
 
@@ -6239,7 +6339,7 @@ public AppSpecServiceLogDestinationOpenSearchBasicAuth getBasicAuth();
 
 basic_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#basic_auth App#basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#basic_auth App#basic_auth}
 
 ---
 
@@ -6253,7 +6353,7 @@ public java.lang.String getClusterName();
 
 OpenSearch cluster name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#cluster_name App#cluster_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#cluster_name App#cluster_name}
 
 ---
 
@@ -6267,7 +6367,7 @@ public java.lang.String getEndpoint();
 
 OpenSearch endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -6281,7 +6381,7 @@ public java.lang.String getIndexName();
 
 OpenSearch index name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#index_name App#index_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#index_name App#index_name}
 
 ---
 
@@ -6317,7 +6417,7 @@ public java.lang.String getPassword();
 
 Password for basic authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#password App#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#password App#password}
 
 ---
 
@@ -6331,7 +6431,7 @@ public java.lang.String getUser();
 
 user for basic authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#user App#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#user App#user}
 
 ---
 
@@ -6365,7 +6465,7 @@ public java.lang.String getEndpoint();
 
 Papertrail syslog endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -6404,7 +6504,7 @@ Path specifies an route by HTTP path prefix.
 
 Paths must start with / and must be unique within the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#path App#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#path App#path}
 
 ---
 
@@ -6418,7 +6518,61 @@ public java.lang.Object getPreservePathPrefix();
 
 An optional flag to preserve the path that is forwarded to the backend service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
+
+---
+
+### AppSpecServiceTermination <a name="AppSpecServiceTermination" id="@cdktf/provider-digitalocean.app.AppSpecServiceTermination"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceTermination.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecServiceTermination;
+
+AppSpecServiceTermination.builder()
+//  .drainSeconds(java.lang.Number)
+//  .gracePeriodSeconds(java.lang.Number)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTermination.property.drainSeconds">drainSeconds</a></code> | <code>java.lang.Number</code> | The number of seconds to wait between selecting a container instance for termination and issuing the TERM signal. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTermination.property.gracePeriodSeconds">gracePeriodSeconds</a></code> | <code>java.lang.Number</code> | The number of seconds to wait between sending a TERM signal to a container and issuing a KILL which causes immediate shutdown. |
+
+---
+
+##### `drainSeconds`<sup>Optional</sup> <a name="drainSeconds" id="@cdktf/provider-digitalocean.app.AppSpecServiceTermination.property.drainSeconds"></a>
+
+```java
+public java.lang.Number getDrainSeconds();
+```
+
+- *Type:* java.lang.Number
+
+The number of seconds to wait between selecting a container instance for termination and issuing the TERM signal.
+
+Selecting a container instance for termination begins an asynchronous drain of new requests on upstream load-balancers. Default: 15 seconds, Minimum 1, Maximum 110.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#drain_seconds App#drain_seconds}
+
+---
+
+##### `gracePeriodSeconds`<sup>Optional</sup> <a name="gracePeriodSeconds" id="@cdktf/provider-digitalocean.app.AppSpecServiceTermination.property.gracePeriodSeconds"></a>
+
+```java
+public java.lang.Number getGracePeriodSeconds();
+```
+
+- *Type:* java.lang.Number
+
+The number of seconds to wait between sending a TERM signal to a container and issuing a KILL which causes immediate shutdown.
+
+Default: 120, Minimum 1, Maximum 600.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#grace_period_seconds App#grace_period_seconds}
 
 ---
 
@@ -6482,7 +6636,7 @@ public java.lang.String getName();
 
 The name of the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#name App#name}
 
 ---
 
@@ -6496,7 +6650,7 @@ public java.lang.String getBuildCommand();
 
 An optional build command to run while building this component from source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#build_command App#build_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#build_command App#build_command}
 
 ---
 
@@ -6510,7 +6664,7 @@ public java.lang.String getCatchallDocument();
 
 The name of the document to use as the fallback for any requests to documents that are not found when serving this static site.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#catchall_document App#catchall_document}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#catchall_document App#catchall_document}
 
 ---
 
@@ -6524,7 +6678,7 @@ public AppSpecStaticSiteCors getCors();
 
 cors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#cors App#cors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#cors App#cors}
 
 ---
 
@@ -6538,7 +6692,7 @@ public java.lang.String getDockerfilePath();
 
 The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#dockerfile_path App#dockerfile_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#dockerfile_path App#dockerfile_path}
 
 ---
 
@@ -6552,7 +6706,7 @@ public java.lang.Object getEnv();
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#env App#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#env App#env}
 
 ---
 
@@ -6566,7 +6720,7 @@ public java.lang.String getEnvironmentSlug();
 
 An environment slug describing the type of this app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#environment_slug App#environment_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#environment_slug App#environment_slug}
 
 ---
 
@@ -6580,7 +6734,7 @@ public java.lang.String getErrorDocument();
 
 The name of the error document to use when serving this static site.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#error_document App#error_document}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#error_document App#error_document}
 
 ---
 
@@ -6594,7 +6748,7 @@ public AppSpecStaticSiteGit getGit();
 
 git block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#git App#git}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#git App#git}
 
 ---
 
@@ -6608,7 +6762,7 @@ public AppSpecStaticSiteGithub getGithub();
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#github App#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#github App#github}
 
 ---
 
@@ -6622,7 +6776,7 @@ public AppSpecStaticSiteGitlab getGitlab();
 
 gitlab block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#gitlab App#gitlab}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#gitlab App#gitlab}
 
 ---
 
@@ -6636,7 +6790,7 @@ public java.lang.String getIndexDocument();
 
 The name of the index document to use when serving this static site.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#index_document App#index_document}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#index_document App#index_document}
 
 ---
 
@@ -6652,7 +6806,7 @@ An optional path to where the built assets will be located, relative to the buil
 
 If not set, App Platform will automatically scan for these directory names: `_static`, `dist`, `public`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#output_dir App#output_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#output_dir App#output_dir}
 
 ---
 
@@ -6666,7 +6820,7 @@ public java.lang.Object getRoutes();
 
 routes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#routes App#routes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#routes App#routes}
 
 ---
 
@@ -6680,7 +6834,7 @@ public java.lang.String getSourceDir();
 
 An optional path to the working directory to use for the build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#source_dir App#source_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#source_dir App#source_dir}
 
 ---
 
@@ -6727,7 +6881,7 @@ Whether browsers should expose the response to the client-side JavaScript code w
 
 This configures the Access-Control-Allow-Credentials header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#allow_credentials App#allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#allow_credentials App#allow_credentials}
 
 ---
 
@@ -6741,7 +6895,7 @@ public java.util.List<java.lang.String> getAllowHeaders();
 
 The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#allow_headers App#allow_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#allow_headers App#allow_headers}
 
 ---
 
@@ -6755,7 +6909,7 @@ public java.util.List<java.lang.String> getAllowMethods();
 
 The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#allow_methods App#allow_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#allow_methods App#allow_methods}
 
 ---
 
@@ -6769,7 +6923,7 @@ public AppSpecStaticSiteCorsAllowOrigins getAllowOrigins();
 
 allow_origins block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#allow_origins App#allow_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#allow_origins App#allow_origins}
 
 ---
 
@@ -6783,7 +6937,7 @@ public java.util.List<java.lang.String> getExposeHeaders();
 
 The set of HTTP response headers that browsers are allowed to access. This configures the Access-Control-Expose-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#expose_headers App#expose_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#expose_headers App#expose_headers}
 
 ---
 
@@ -6799,7 +6953,7 @@ An optional duration specifying how long browsers can cache the results of a pre
 
 This configures the Access-Control-Max-Age header. Example: `5h30m`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#max_age App#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#max_age App#max_age}
 
 ---
 
@@ -6837,7 +6991,7 @@ public java.lang.String getExact();
 
 Exact string match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#exact App#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#exact App#exact}
 
 ---
 
@@ -6851,7 +7005,7 @@ public java.lang.String getPrefix();
 
 Prefix-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#prefix App#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#prefix App#prefix}
 
 ---
 
@@ -6865,7 +7019,7 @@ public java.lang.String getRegex();
 
 RE2 style regex-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#regex App#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#regex App#regex}
 
 ---
 
@@ -6905,7 +7059,7 @@ public java.lang.String getKey();
 
 The name of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#key App#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#key App#key}
 
 ---
 
@@ -6919,7 +7073,7 @@ public java.lang.String getScope();
 
 The visibility scope of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#scope App#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#scope App#scope}
 
 ---
 
@@ -6933,7 +7087,7 @@ public java.lang.String getType();
 
 The type of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#type App#type}
 
 ---
 
@@ -6947,7 +7101,7 @@ public java.lang.String getValue();
 
 The value of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#value App#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#value App#value}
 
 ---
 
@@ -6983,7 +7137,7 @@ public java.lang.String getBranch();
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -6997,7 +7151,7 @@ public java.lang.String getRepoCloneUrl();
 
 The clone URL of the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#repo_clone_url App#repo_clone_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repo_clone_url App#repo_clone_url}
 
 ---
 
@@ -7036,7 +7190,7 @@ public java.lang.String getBranch();
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -7050,7 +7204,7 @@ public java.lang.Object getDeployOnPush();
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -7064,7 +7218,7 @@ public java.lang.String getRepo();
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -7103,7 +7257,7 @@ public java.lang.String getBranch();
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -7117,7 +7271,7 @@ public java.lang.Object getDeployOnPush();
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -7131,7 +7285,7 @@ public java.lang.String getRepo();
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -7170,7 +7324,7 @@ Path specifies an route by HTTP path prefix.
 
 Paths must start with / and must be unique within the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#path App#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#path App#path}
 
 ---
 
@@ -7184,7 +7338,7 @@ public java.lang.Object getPreservePathPrefix();
 
 An optional flag to preserve the path that is forwarded to the backend service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
 
 ---
 
@@ -7199,6 +7353,7 @@ AppSpecWorker.builder()
     .name(java.lang.String)
 //  .alert(IResolvable)
 //  .alert(java.util.List<AppSpecWorkerAlert>)
+//  .autoscaling(AppSpecWorkerAutoscaling)
 //  .buildCommand(java.lang.String)
 //  .dockerfilePath(java.lang.String)
 //  .env(IResolvable)
@@ -7214,6 +7369,7 @@ AppSpecWorker.builder()
 //  .logDestination(java.util.List<AppSpecWorkerLogDestination>)
 //  .runCommand(java.lang.String)
 //  .sourceDir(java.lang.String)
+//  .termination(AppSpecWorkerTermination)
     .build();
 ```
 
@@ -7223,6 +7379,7 @@ AppSpecWorker.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.name">name</a></code> | <code>java.lang.String</code> | The name of the component. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.alert">alert</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>></code> | alert block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.autoscaling">autoscaling</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscaling">AppSpecWorkerAutoscaling</a></code> | autoscaling block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.buildCommand">buildCommand</a></code> | <code>java.lang.String</code> | An optional build command to run while building this component from source. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.dockerfilePath">dockerfilePath</a></code> | <code>java.lang.String</code> | The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.env">env</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>></code> | env block. |
@@ -7236,6 +7393,7 @@ AppSpecWorker.builder()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.logDestination">logDestination</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>></code> | log_destination block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.runCommand">runCommand</a></code> | <code>java.lang.String</code> | An optional run command to override the component's default. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.sourceDir">sourceDir</a></code> | <code>java.lang.String</code> | An optional path to the working directory to use for the build. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.termination">termination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTermination">AppSpecWorkerTermination</a></code> | termination block. |
 
 ---
 
@@ -7249,7 +7407,7 @@ public java.lang.String getName();
 
 The name of the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#name App#name}
 
 ---
 
@@ -7263,7 +7421,21 @@ public java.lang.Object getAlert();
 
 alert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#alert App#alert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#alert App#alert}
+
+---
+
+##### `autoscaling`<sup>Optional</sup> <a name="autoscaling" id="@cdktf/provider-digitalocean.app.AppSpecWorker.property.autoscaling"></a>
+
+```java
+public AppSpecWorkerAutoscaling getAutoscaling();
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscaling">AppSpecWorkerAutoscaling</a>
+
+autoscaling block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#autoscaling App#autoscaling}
 
 ---
 
@@ -7277,7 +7449,7 @@ public java.lang.String getBuildCommand();
 
 An optional build command to run while building this component from source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#build_command App#build_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#build_command App#build_command}
 
 ---
 
@@ -7291,7 +7463,7 @@ public java.lang.String getDockerfilePath();
 
 The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#dockerfile_path App#dockerfile_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#dockerfile_path App#dockerfile_path}
 
 ---
 
@@ -7305,7 +7477,7 @@ public java.lang.Object getEnv();
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#env App#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#env App#env}
 
 ---
 
@@ -7319,7 +7491,7 @@ public java.lang.String getEnvironmentSlug();
 
 An environment slug describing the type of this app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#environment_slug App#environment_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#environment_slug App#environment_slug}
 
 ---
 
@@ -7333,7 +7505,7 @@ public AppSpecWorkerGit getGit();
 
 git block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#git App#git}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#git App#git}
 
 ---
 
@@ -7347,7 +7519,7 @@ public AppSpecWorkerGithub getGithub();
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#github App#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#github App#github}
 
 ---
 
@@ -7361,7 +7533,7 @@ public AppSpecWorkerGitlab getGitlab();
 
 gitlab block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#gitlab App#gitlab}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#gitlab App#gitlab}
 
 ---
 
@@ -7375,7 +7547,7 @@ public AppSpecWorkerImage getImage();
 
 image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#image App#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#image App#image}
 
 ---
 
@@ -7389,7 +7561,7 @@ public java.lang.Number getInstanceCount();
 
 The amount of instances that this component should be scaled to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#instance_count App#instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#instance_count App#instance_count}
 
 ---
 
@@ -7403,7 +7575,7 @@ public java.lang.String getInstanceSizeSlug();
 
 The instance size to use for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#instance_size_slug App#instance_size_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#instance_size_slug App#instance_size_slug}
 
 ---
 
@@ -7417,7 +7589,7 @@ public java.lang.Object getLogDestination();
 
 log_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#log_destination App#log_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#log_destination App#log_destination}
 
 ---
 
@@ -7431,7 +7603,7 @@ public java.lang.String getRunCommand();
 
 An optional run command to override the component's default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#run_command App#run_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#run_command App#run_command}
 
 ---
 
@@ -7445,7 +7617,21 @@ public java.lang.String getSourceDir();
 
 An optional path to the working directory to use for the build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#source_dir App#source_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#source_dir App#source_dir}
+
+---
+
+##### `termination`<sup>Optional</sup> <a name="termination" id="@cdktf/provider-digitalocean.app.AppSpecWorker.property.termination"></a>
+
+```java
+public AppSpecWorkerTermination getTermination();
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTermination">AppSpecWorkerTermination</a>
+
+termination block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#termination App#termination}
 
 ---
 
@@ -7470,11 +7656,11 @@ AppSpecWorkerAlert.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.operator">operator</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#operator App#operator}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.rule">rule</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#rule App#rule}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.value">value</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#value App#value}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.window">window</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#window App#window}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.disabled">disabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.operator">operator</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#operator App#operator}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.rule">rule</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#rule App#rule}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.value">value</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#value App#value}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.window">window</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#window App#window}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.disabled">disabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -7486,7 +7672,7 @@ public java.lang.String getOperator();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#operator App#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#operator App#operator}.
 
 ---
 
@@ -7498,7 +7684,7 @@ public java.lang.String getRule();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#rule App#rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#rule App#rule}.
 
 ---
 
@@ -7510,7 +7696,7 @@ public java.lang.Number getValue();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#value App#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#value App#value}.
 
 ---
 
@@ -7522,7 +7708,7 @@ public java.lang.String getWindow();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#window App#window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#window App#window}.
 
 ---
 
@@ -7534,7 +7720,141 @@ public java.lang.Object getDisabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#disabled App#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#disabled App#disabled}.
+
+---
+
+### AppSpecWorkerAutoscaling <a name="AppSpecWorkerAutoscaling" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscaling"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscaling.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecWorkerAutoscaling;
+
+AppSpecWorkerAutoscaling.builder()
+    .maxInstanceCount(java.lang.Number)
+    .metrics(AppSpecWorkerAutoscalingMetrics)
+    .minInstanceCount(java.lang.Number)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscaling.property.maxInstanceCount">maxInstanceCount</a></code> | <code>java.lang.Number</code> | The maximum amount of instances for this component. Must be more than min_instance_count. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscaling.property.metrics">metrics</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetrics">AppSpecWorkerAutoscalingMetrics</a></code> | metrics block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscaling.property.minInstanceCount">minInstanceCount</a></code> | <code>java.lang.Number</code> | The minimum amount of instances for this component. Must be less than max_instance_count. |
+
+---
+
+##### `maxInstanceCount`<sup>Required</sup> <a name="maxInstanceCount" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscaling.property.maxInstanceCount"></a>
+
+```java
+public java.lang.Number getMaxInstanceCount();
+```
+
+- *Type:* java.lang.Number
+
+The maximum amount of instances for this component. Must be more than min_instance_count.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#max_instance_count App#max_instance_count}
+
+---
+
+##### `metrics`<sup>Required</sup> <a name="metrics" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscaling.property.metrics"></a>
+
+```java
+public AppSpecWorkerAutoscalingMetrics getMetrics();
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetrics">AppSpecWorkerAutoscalingMetrics</a>
+
+metrics block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#metrics App#metrics}
+
+---
+
+##### `minInstanceCount`<sup>Required</sup> <a name="minInstanceCount" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscaling.property.minInstanceCount"></a>
+
+```java
+public java.lang.Number getMinInstanceCount();
+```
+
+- *Type:* java.lang.Number
+
+The minimum amount of instances for this component. Must be less than max_instance_count.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#min_instance_count App#min_instance_count}
+
+---
+
+### AppSpecWorkerAutoscalingMetrics <a name="AppSpecWorkerAutoscalingMetrics" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetrics"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetrics.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecWorkerAutoscalingMetrics;
+
+AppSpecWorkerAutoscalingMetrics.builder()
+//  .cpu(AppSpecWorkerAutoscalingMetricsCpu)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetrics.property.cpu">cpu</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpu">AppSpecWorkerAutoscalingMetricsCpu</a></code> | cpu block. |
+
+---
+
+##### `cpu`<sup>Optional</sup> <a name="cpu" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetrics.property.cpu"></a>
+
+```java
+public AppSpecWorkerAutoscalingMetricsCpu getCpu();
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpu">AppSpecWorkerAutoscalingMetricsCpu</a>
+
+cpu block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#cpu App#cpu}
+
+---
+
+### AppSpecWorkerAutoscalingMetricsCpu <a name="AppSpecWorkerAutoscalingMetricsCpu" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpu"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpu.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecWorkerAutoscalingMetricsCpu;
+
+AppSpecWorkerAutoscalingMetricsCpu.builder()
+    .percent(java.lang.Number)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpu.property.percent">percent</a></code> | <code>java.lang.Number</code> | The average target CPU utilization for the component. |
+
+---
+
+##### `percent`<sup>Required</sup> <a name="percent" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpu.property.percent"></a>
+
+```java
+public java.lang.Number getPercent();
+```
+
+- *Type:* java.lang.Number
+
+The average target CPU utilization for the component.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#percent App#percent}
 
 ---
 
@@ -7574,7 +7894,7 @@ public java.lang.String getKey();
 
 The name of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#key App#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#key App#key}
 
 ---
 
@@ -7588,7 +7908,7 @@ public java.lang.String getScope();
 
 The visibility scope of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#scope App#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#scope App#scope}
 
 ---
 
@@ -7602,7 +7922,7 @@ public java.lang.String getType();
 
 The type of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#type App#type}
 
 ---
 
@@ -7616,7 +7936,7 @@ public java.lang.String getValue();
 
 The value of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#value App#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#value App#value}
 
 ---
 
@@ -7652,7 +7972,7 @@ public java.lang.String getBranch();
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -7666,7 +7986,7 @@ public java.lang.String getRepoCloneUrl();
 
 The clone URL of the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#repo_clone_url App#repo_clone_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repo_clone_url App#repo_clone_url}
 
 ---
 
@@ -7705,7 +8025,7 @@ public java.lang.String getBranch();
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -7719,7 +8039,7 @@ public java.lang.Object getDeployOnPush();
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -7733,7 +8053,7 @@ public java.lang.String getRepo();
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -7772,7 +8092,7 @@ public java.lang.String getBranch();
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#branch App#branch}
 
 ---
 
@@ -7786,7 +8106,7 @@ public java.lang.Object getDeployOnPush();
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -7800,7 +8120,7 @@ public java.lang.String getRepo();
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repo App#repo}
 
 ---
 
@@ -7816,6 +8136,7 @@ AppSpecWorkerImage.builder()
     .repository(java.lang.String)
 //  .deployOnPush(IResolvable)
 //  .deployOnPush(java.util.List<AppSpecWorkerImageDeployOnPush>)
+//  .digest(java.lang.String)
 //  .registry(java.lang.String)
 //  .registryCredentials(java.lang.String)
 //  .tag(java.lang.String)
@@ -7829,9 +8150,10 @@ AppSpecWorkerImage.builder()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImage.property.registryType">registryType</a></code> | <code>java.lang.String</code> | The registry type. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImage.property.repository">repository</a></code> | <code>java.lang.String</code> | The repository name. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImage.property.deployOnPush">deployOnPush</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>></code> | deploy_on_push block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImage.property.digest">digest</a></code> | <code>java.lang.String</code> | The image digest. Cannot be specified if tag is provided. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImage.property.registry">registry</a></code> | <code>java.lang.String</code> | The registry name. Must be left empty for the DOCR registry type. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImage.property.registryCredentials">registryCredentials</a></code> | <code>java.lang.String</code> | Access credentials for third-party registries. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImage.property.tag">tag</a></code> | <code>java.lang.String</code> | The repository tag. Defaults to latest if not provided. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImage.property.tag">tag</a></code> | <code>java.lang.String</code> | The repository tag. Defaults to latest if not provided. Cannot be specified if digest is provided. |
 
 ---
 
@@ -7845,7 +8167,7 @@ public java.lang.String getRegistryType();
 
 The registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#registry_type App#registry_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#registry_type App#registry_type}
 
 ---
 
@@ -7859,7 +8181,7 @@ public java.lang.String getRepository();
 
 The repository name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#repository App#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repository App#repository}
 
 ---
 
@@ -7873,7 +8195,21 @@ public java.lang.Object getDeployOnPush();
 
 deploy_on_push block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+
+---
+
+##### `digest`<sup>Optional</sup> <a name="digest" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImage.property.digest"></a>
+
+```java
+public java.lang.String getDigest();
+```
+
+- *Type:* java.lang.String
+
+The image digest. Cannot be specified if tag is provided.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#digest App#digest}
 
 ---
 
@@ -7887,7 +8223,7 @@ public java.lang.String getRegistry();
 
 The registry name. Must be left empty for the DOCR registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#registry App#registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#registry App#registry}
 
 ---
 
@@ -7901,7 +8237,7 @@ public java.lang.String getRegistryCredentials();
 
 Access credentials for third-party registries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#registry_credentials App#registry_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#registry_credentials App#registry_credentials}
 
 ---
 
@@ -7913,9 +8249,9 @@ public java.lang.String getTag();
 
 - *Type:* java.lang.String
 
-The repository tag. Defaults to latest if not provided.
+The repository tag. Defaults to latest if not provided. Cannot be specified if digest is provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#tag App#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#tag App#tag}
 
 ---
 
@@ -7950,7 +8286,7 @@ public java.lang.Object getEnabled();
 
 Whether to automatically deploy images pushed to DOCR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#enabled App#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#enabled App#enabled}
 
 ---
 
@@ -7992,7 +8328,7 @@ public java.lang.String getName();
 
 Name of the log destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#name App#name}
 
 ---
 
@@ -8006,7 +8342,7 @@ public AppSpecWorkerLogDestinationDatadog getDatadog();
 
 datadog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#datadog App#datadog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#datadog App#datadog}
 
 ---
 
@@ -8020,7 +8356,7 @@ public AppSpecWorkerLogDestinationLogtail getLogtail();
 
 logtail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#logtail App#logtail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#logtail App#logtail}
 
 ---
 
@@ -8034,7 +8370,7 @@ public AppSpecWorkerLogDestinationOpenSearch getOpenSearch();
 
 open_search block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#open_search App#open_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#open_search App#open_search}
 
 ---
 
@@ -8048,7 +8384,7 @@ public AppSpecWorkerLogDestinationPapertrail getPapertrail();
 
 papertrail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#papertrail App#papertrail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#papertrail App#papertrail}
 
 ---
 
@@ -8084,7 +8420,7 @@ public java.lang.String getApiKey();
 
 Datadog API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#api_key App#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#api_key App#api_key}
 
 ---
 
@@ -8098,7 +8434,7 @@ public java.lang.String getEndpoint();
 
 Datadog HTTP log intake endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -8132,7 +8468,7 @@ public java.lang.String getToken();
 
 Logtail token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#token App#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#token App#token}
 
 ---
 
@@ -8172,7 +8508,7 @@ public AppSpecWorkerLogDestinationOpenSearchBasicAuth getBasicAuth();
 
 basic_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#basic_auth App#basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#basic_auth App#basic_auth}
 
 ---
 
@@ -8186,7 +8522,7 @@ public java.lang.String getClusterName();
 
 OpenSearch cluster name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#cluster_name App#cluster_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#cluster_name App#cluster_name}
 
 ---
 
@@ -8200,7 +8536,7 @@ public java.lang.String getEndpoint();
 
 OpenSearch endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -8214,7 +8550,7 @@ public java.lang.String getIndexName();
 
 OpenSearch index name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#index_name App#index_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#index_name App#index_name}
 
 ---
 
@@ -8250,7 +8586,7 @@ public java.lang.String getPassword();
 
 Password for basic authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#password App#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#password App#password}
 
 ---
 
@@ -8264,7 +8600,7 @@ public java.lang.String getUser();
 
 user for basic authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#user App#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#user App#user}
 
 ---
 
@@ -8298,7 +8634,43 @@ public java.lang.String getEndpoint();
 
 Papertrail syslog endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#endpoint App#endpoint}
+
+---
+
+### AppSpecWorkerTermination <a name="AppSpecWorkerTermination" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTermination"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTermination.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecWorkerTermination;
+
+AppSpecWorkerTermination.builder()
+//  .gracePeriodSeconds(java.lang.Number)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTermination.property.gracePeriodSeconds">gracePeriodSeconds</a></code> | <code>java.lang.Number</code> | The number of seconds to wait between sending a TERM signal to a container and issuing a KILL which causes immediate shutdown. |
+
+---
+
+##### `gracePeriodSeconds`<sup>Optional</sup> <a name="gracePeriodSeconds" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTermination.property.gracePeriodSeconds"></a>
+
+```java
+public java.lang.Number getGracePeriodSeconds();
+```
+
+- *Type:* java.lang.Number
+
+The number of seconds to wait between sending a TERM signal to a container and issuing a KILL which causes immediate shutdown.
+
+Default: 120, Minimum 1, Maximum 600.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#grace_period_seconds App#grace_period_seconds}
 
 ---
 
@@ -8318,7 +8690,7 @@ AppTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#create App#create}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#create App#create}. |
 
 ---
 
@@ -8330,7 +8702,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#create App#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#create App#create}.
 
 ---
 
@@ -23298,6 +23670,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.putDeployOnPush">putDeployOnPush</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.resetDeployOnPush">resetDeployOnPush</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.resetDigest">resetDigest</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.resetRegistry">resetRegistry</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.resetRegistryCredentials">resetRegistryCredentials</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.resetTag">resetTag</a></code> | *No description.* |
@@ -23472,6 +23845,12 @@ public void putDeployOnPush(IResolvable OR java.util.List<AppSpecJobImageDeployO
 public void resetDeployOnPush()
 ```
 
+##### `resetDigest` <a name="resetDigest" id="@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.resetDigest"></a>
+
+```java
+public void resetDigest()
+```
+
 ##### `resetRegistry` <a name="resetRegistry" id="@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.resetRegistry"></a>
 
 ```java
@@ -23499,11 +23878,13 @@ public void resetTag()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.deployOnPush">deployOnPush</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushList">AppSpecJobImageDeployOnPushList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.digestInput">digestInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.registryCredentialsInput">registryCredentialsInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.registryInput">registryInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.registryTypeInput">registryTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.repositoryInput">repositoryInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.tagInput">tagInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.digest">digest</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.registry">registry</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.registryCredentials">registryCredentials</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.registryType">registryType</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -23557,6 +23938,16 @@ public java.lang.Object getDeployOnPushInput();
 
 ---
 
+##### `digestInput`<sup>Optional</sup> <a name="digestInput" id="@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.digestInput"></a>
+
+```java
+public java.lang.String getDigestInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `registryCredentialsInput`<sup>Optional</sup> <a name="registryCredentialsInput" id="@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.registryCredentialsInput"></a>
 
 ```java
@@ -23601,6 +23992,16 @@ public java.lang.String getRepositoryInput();
 
 ```java
 public java.lang.String getTagInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `digest`<sup>Required</sup> <a name="digest" id="@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.digest"></a>
+
+```java
+public java.lang.String getDigest();
 ```
 
 - *Type:* java.lang.String
@@ -26040,6 +26441,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.putGitlab">putGitlab</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.putImage">putImage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.putLogDestination">putLogDestination</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.putTermination">putTermination</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.resetAlert">resetAlert</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.resetBuildCommand">resetBuildCommand</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.resetDockerfilePath">resetDockerfilePath</a></code> | *No description.* |
@@ -26055,6 +26457,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.resetLogDestination">resetLogDestination</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.resetRunCommand">resetRunCommand</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.resetSourceDir">resetSourceDir</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.resetTermination">resetTermination</a></code> | *No description.* |
 
 ---
 
@@ -26292,6 +26695,18 @@ public void putLogDestination(IResolvable OR java.util.List<AppSpecJobLogDestina
 
 ---
 
+##### `putTermination` <a name="putTermination" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.putTermination"></a>
+
+```java
+public void putTermination(AppSpecJobTermination value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.putTermination.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecJobTermination">AppSpecJobTermination</a>
+
+---
+
 ##### `resetAlert` <a name="resetAlert" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.resetAlert"></a>
 
 ```java
@@ -26382,6 +26797,12 @@ public void resetRunCommand()
 public void resetSourceDir()
 ```
 
+##### `resetTermination` <a name="resetTermination" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.resetTermination"></a>
+
+```java
+public void resetTermination()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -26396,6 +26817,7 @@ public void resetSourceDir()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.gitlab">gitlab</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference">AppSpecJobGitlabOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.image">image</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference">AppSpecJobImageOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.logDestination">logDestination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationList">AppSpecJobLogDestinationList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.termination">termination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference">AppSpecJobTerminationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.alertInput">alertInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.buildCommandInput">buildCommandInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.dockerfilePathInput">dockerfilePathInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -26412,6 +26834,7 @@ public void resetSourceDir()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.runCommandInput">runCommandInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.sourceDirInput">sourceDirInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.terminationInput">terminationInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobTermination">AppSpecJobTermination</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.buildCommand">buildCommand</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.dockerfilePath">dockerfilePath</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.environmentSlug">environmentSlug</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -26516,6 +26939,16 @@ public AppSpecJobLogDestinationList getLogDestination();
 ```
 
 - *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationList">AppSpecJobLogDestinationList</a>
+
+---
+
+##### `termination`<sup>Required</sup> <a name="termination" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.termination"></a>
+
+```java
+public AppSpecJobTerminationOutputReference getTermination();
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference">AppSpecJobTerminationOutputReference</a>
 
 ---
 
@@ -26679,6 +27112,16 @@ public java.lang.String getSourceDirInput();
 
 ---
 
+##### `terminationInput`<sup>Optional</sup> <a name="terminationInput" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.terminationInput"></a>
+
+```java
+public AppSpecJobTermination getTerminationInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecJobTermination">AppSpecJobTermination</a>
+
+---
+
 ##### `buildCommand`<sup>Required</sup> <a name="buildCommand" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.buildCommand"></a>
 
 ```java
@@ -26776,6 +27219,284 @@ public java.lang.Object getInternalValue();
 ```
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>
+
+---
+
+
+### AppSpecJobTerminationOutputReference <a name="AppSpecJobTerminationOutputReference" id="@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecJobTerminationOutputReference;
+
+new AppSpecJobTerminationOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.resetGracePeriodSeconds">resetGracePeriodSeconds</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetGracePeriodSeconds` <a name="resetGracePeriodSeconds" id="@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.resetGracePeriodSeconds"></a>
+
+```java
+public void resetGracePeriodSeconds()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.property.gracePeriodSecondsInput">gracePeriodSecondsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.property.gracePeriodSeconds">gracePeriodSeconds</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobTermination">AppSpecJobTermination</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `gracePeriodSecondsInput`<sup>Optional</sup> <a name="gracePeriodSecondsInput" id="@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.property.gracePeriodSecondsInput"></a>
+
+```java
+public java.lang.Number getGracePeriodSecondsInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `gracePeriodSeconds`<sup>Required</sup> <a name="gracePeriodSeconds" id="@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.property.gracePeriodSeconds"></a>
+
+```java
+public java.lang.Number getGracePeriodSeconds();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference.property.internalValue"></a>
+
+```java
+public AppSpecJobTermination getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecJobTermination">AppSpecJobTermination</a>
 
 ---
 
@@ -32288,6 +33009,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.putDeployOnPush">putDeployOnPush</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.resetDeployOnPush">resetDeployOnPush</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.resetDigest">resetDigest</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.resetRegistry">resetRegistry</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.resetRegistryCredentials">resetRegistryCredentials</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.resetTag">resetTag</a></code> | *No description.* |
@@ -32462,6 +33184,12 @@ public void putDeployOnPush(IResolvable OR java.util.List<AppSpecServiceImageDep
 public void resetDeployOnPush()
 ```
 
+##### `resetDigest` <a name="resetDigest" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.resetDigest"></a>
+
+```java
+public void resetDigest()
+```
+
 ##### `resetRegistry` <a name="resetRegistry" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.resetRegistry"></a>
 
 ```java
@@ -32489,11 +33217,13 @@ public void resetTag()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.deployOnPush">deployOnPush</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushList">AppSpecServiceImageDeployOnPushList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.digestInput">digestInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.registryCredentialsInput">registryCredentialsInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.registryInput">registryInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.registryTypeInput">registryTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.repositoryInput">repositoryInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.tagInput">tagInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.digest">digest</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.registry">registry</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.registryCredentials">registryCredentials</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.registryType">registryType</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -32547,6 +33277,16 @@ public java.lang.Object getDeployOnPushInput();
 
 ---
 
+##### `digestInput`<sup>Optional</sup> <a name="digestInput" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.digestInput"></a>
+
+```java
+public java.lang.String getDigestInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `registryCredentialsInput`<sup>Optional</sup> <a name="registryCredentialsInput" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.registryCredentialsInput"></a>
 
 ```java
@@ -32591,6 +33331,16 @@ public java.lang.String getRepositoryInput();
 
 ```java
 public java.lang.String getTagInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `digest`<sup>Required</sup> <a name="digest" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.digest"></a>
+
+```java
+public java.lang.String getDigest();
 ```
 
 - *Type:* java.lang.String
@@ -35034,6 +35784,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putImage">putImage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putLogDestination">putLogDestination</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putRoutes">putRoutes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putTermination">putTermination</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.resetAlert">resetAlert</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.resetAutoscaling">resetAutoscaling</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.resetBuildCommand">resetBuildCommand</a></code> | *No description.* |
@@ -35054,6 +35805,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.resetRoutes">resetRoutes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.resetRunCommand">resetRunCommand</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.resetSourceDir">resetSourceDir</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.resetTermination">resetTermination</a></code> | *No description.* |
 
 ---
 
@@ -35339,6 +36091,18 @@ public void putRoutes(IResolvable OR java.util.List<AppSpecServiceRoutes> value)
 
 ---
 
+##### `putTermination` <a name="putTermination" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putTermination"></a>
+
+```java
+public void putTermination(AppSpecServiceTermination value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putTermination.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTermination">AppSpecServiceTermination</a>
+
+---
+
 ##### `resetAlert` <a name="resetAlert" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.resetAlert"></a>
 
 ```java
@@ -35459,6 +36223,12 @@ public void resetRunCommand()
 public void resetSourceDir()
 ```
 
+##### `resetTermination` <a name="resetTermination" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.resetTermination"></a>
+
+```java
+public void resetTermination()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -35477,6 +36247,7 @@ public void resetSourceDir()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.image">image</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference">AppSpecServiceImageOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.logDestination">logDestination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationList">AppSpecServiceLogDestinationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.routes">routes</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesList">AppSpecServiceRoutesList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.termination">termination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference">AppSpecServiceTerminationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.alertInput">alertInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.autoscalingInput">autoscalingInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAutoscaling">AppSpecServiceAutoscaling</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.buildCommandInput">buildCommandInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -35498,6 +36269,7 @@ public void resetSourceDir()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.routesInput">routesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.runCommandInput">runCommandInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.sourceDirInput">sourceDirInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.terminationInput">terminationInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTermination">AppSpecServiceTermination</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.buildCommand">buildCommand</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.dockerfilePath">dockerfilePath</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.environmentSlug">environmentSlug</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -35643,6 +36415,16 @@ public AppSpecServiceRoutesList getRoutes();
 ```
 
 - *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesList">AppSpecServiceRoutesList</a>
+
+---
+
+##### `termination`<sup>Required</sup> <a name="termination" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.termination"></a>
+
+```java
+public AppSpecServiceTerminationOutputReference getTermination();
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference">AppSpecServiceTerminationOutputReference</a>
 
 ---
 
@@ -35853,6 +36635,16 @@ public java.lang.String getSourceDirInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `terminationInput`<sup>Optional</sup> <a name="terminationInput" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.terminationInput"></a>
+
+```java
+public AppSpecServiceTermination getTerminationInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTermination">AppSpecServiceTermination</a>
 
 ---
 
@@ -36448,6 +37240,313 @@ public java.lang.Object getInternalValue();
 ```
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>
+
+---
+
+
+### AppSpecServiceTerminationOutputReference <a name="AppSpecServiceTerminationOutputReference" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecServiceTerminationOutputReference;
+
+new AppSpecServiceTerminationOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.resetDrainSeconds">resetDrainSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.resetGracePeriodSeconds">resetGracePeriodSeconds</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetDrainSeconds` <a name="resetDrainSeconds" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.resetDrainSeconds"></a>
+
+```java
+public void resetDrainSeconds()
+```
+
+##### `resetGracePeriodSeconds` <a name="resetGracePeriodSeconds" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.resetGracePeriodSeconds"></a>
+
+```java
+public void resetGracePeriodSeconds()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.property.drainSecondsInput">drainSecondsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.property.gracePeriodSecondsInput">gracePeriodSecondsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.property.drainSeconds">drainSeconds</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.property.gracePeriodSeconds">gracePeriodSeconds</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTermination">AppSpecServiceTermination</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `drainSecondsInput`<sup>Optional</sup> <a name="drainSecondsInput" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.property.drainSecondsInput"></a>
+
+```java
+public java.lang.Number getDrainSecondsInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `gracePeriodSecondsInput`<sup>Optional</sup> <a name="gracePeriodSecondsInput" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.property.gracePeriodSecondsInput"></a>
+
+```java
+public java.lang.Number getGracePeriodSecondsInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `drainSeconds`<sup>Required</sup> <a name="drainSeconds" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.property.drainSeconds"></a>
+
+```java
+public java.lang.Number getDrainSeconds();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `gracePeriodSeconds`<sup>Required</sup> <a name="gracePeriodSeconds" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.property.gracePeriodSeconds"></a>
+
+```java
+public java.lang.Number getGracePeriodSeconds();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference.property.internalValue"></a>
+
+```java
+public AppSpecServiceTermination getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTermination">AppSpecServiceTermination</a>
 
 ---
 
@@ -40708,6 +41807,896 @@ public java.lang.Object getInternalValue();
 ---
 
 
+### AppSpecWorkerAutoscalingMetricsCpuOutputReference <a name="AppSpecWorkerAutoscalingMetricsCpuOutputReference" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference;
+
+new AppSpecWorkerAutoscalingMetricsCpuOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.property.percentInput">percentInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.property.percent">percent</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpu">AppSpecWorkerAutoscalingMetricsCpu</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `percentInput`<sup>Optional</sup> <a name="percentInput" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.property.percentInput"></a>
+
+```java
+public java.lang.Number getPercentInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `percent`<sup>Required</sup> <a name="percent" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.property.percent"></a>
+
+```java
+public java.lang.Number getPercent();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference.property.internalValue"></a>
+
+```java
+public AppSpecWorkerAutoscalingMetricsCpu getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpu">AppSpecWorkerAutoscalingMetricsCpu</a>
+
+---
+
+
+### AppSpecWorkerAutoscalingMetricsOutputReference <a name="AppSpecWorkerAutoscalingMetricsOutputReference" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference;
+
+new AppSpecWorkerAutoscalingMetricsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.putCpu">putCpu</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.resetCpu">resetCpu</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putCpu` <a name="putCpu" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.putCpu"></a>
+
+```java
+public void putCpu(AppSpecWorkerAutoscalingMetricsCpu value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.putCpu.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpu">AppSpecWorkerAutoscalingMetricsCpu</a>
+
+---
+
+##### `resetCpu` <a name="resetCpu" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.resetCpu"></a>
+
+```java
+public void resetCpu()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.property.cpu">cpu</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference">AppSpecWorkerAutoscalingMetricsCpuOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.property.cpuInput">cpuInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpu">AppSpecWorkerAutoscalingMetricsCpu</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetrics">AppSpecWorkerAutoscalingMetrics</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `cpu`<sup>Required</sup> <a name="cpu" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.property.cpu"></a>
+
+```java
+public AppSpecWorkerAutoscalingMetricsCpuOutputReference getCpu();
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpuOutputReference">AppSpecWorkerAutoscalingMetricsCpuOutputReference</a>
+
+---
+
+##### `cpuInput`<sup>Optional</sup> <a name="cpuInput" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.property.cpuInput"></a>
+
+```java
+public AppSpecWorkerAutoscalingMetricsCpu getCpuInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsCpu">AppSpecWorkerAutoscalingMetricsCpu</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference.property.internalValue"></a>
+
+```java
+public AppSpecWorkerAutoscalingMetrics getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetrics">AppSpecWorkerAutoscalingMetrics</a>
+
+---
+
+
+### AppSpecWorkerAutoscalingOutputReference <a name="AppSpecWorkerAutoscalingOutputReference" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecWorkerAutoscalingOutputReference;
+
+new AppSpecWorkerAutoscalingOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.putMetrics">putMetrics</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putMetrics` <a name="putMetrics" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.putMetrics"></a>
+
+```java
+public void putMetrics(AppSpecWorkerAutoscalingMetrics value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.putMetrics.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetrics">AppSpecWorkerAutoscalingMetrics</a>
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.property.metrics">metrics</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference">AppSpecWorkerAutoscalingMetricsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.property.maxInstanceCountInput">maxInstanceCountInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.property.metricsInput">metricsInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetrics">AppSpecWorkerAutoscalingMetrics</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.property.minInstanceCountInput">minInstanceCountInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.property.maxInstanceCount">maxInstanceCount</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.property.minInstanceCount">minInstanceCount</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscaling">AppSpecWorkerAutoscaling</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `metrics`<sup>Required</sup> <a name="metrics" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.property.metrics"></a>
+
+```java
+public AppSpecWorkerAutoscalingMetricsOutputReference getMetrics();
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetricsOutputReference">AppSpecWorkerAutoscalingMetricsOutputReference</a>
+
+---
+
+##### `maxInstanceCountInput`<sup>Optional</sup> <a name="maxInstanceCountInput" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.property.maxInstanceCountInput"></a>
+
+```java
+public java.lang.Number getMaxInstanceCountInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `metricsInput`<sup>Optional</sup> <a name="metricsInput" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.property.metricsInput"></a>
+
+```java
+public AppSpecWorkerAutoscalingMetrics getMetricsInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingMetrics">AppSpecWorkerAutoscalingMetrics</a>
+
+---
+
+##### `minInstanceCountInput`<sup>Optional</sup> <a name="minInstanceCountInput" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.property.minInstanceCountInput"></a>
+
+```java
+public java.lang.Number getMinInstanceCountInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `maxInstanceCount`<sup>Required</sup> <a name="maxInstanceCount" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.property.maxInstanceCount"></a>
+
+```java
+public java.lang.Number getMaxInstanceCount();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `minInstanceCount`<sup>Required</sup> <a name="minInstanceCount" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.property.minInstanceCount"></a>
+
+```java
+public java.lang.Number getMinInstanceCount();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference.property.internalValue"></a>
+
+```java
+public AppSpecWorkerAutoscaling getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscaling">AppSpecWorkerAutoscaling</a>
+
+---
+
+
 ### AppSpecWorkerEnvList <a name="AppSpecWorkerEnvList" id="@cdktf/provider-digitalocean.app.AppSpecWorkerEnvList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerEnvList.Initializer"></a>
@@ -42738,6 +44727,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.putDeployOnPush">putDeployOnPush</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.resetDeployOnPush">resetDeployOnPush</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.resetDigest">resetDigest</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.resetRegistry">resetRegistry</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.resetRegistryCredentials">resetRegistryCredentials</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.resetTag">resetTag</a></code> | *No description.* |
@@ -42912,6 +44902,12 @@ public void putDeployOnPush(IResolvable OR java.util.List<AppSpecWorkerImageDepl
 public void resetDeployOnPush()
 ```
 
+##### `resetDigest` <a name="resetDigest" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.resetDigest"></a>
+
+```java
+public void resetDigest()
+```
+
 ##### `resetRegistry` <a name="resetRegistry" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.resetRegistry"></a>
 
 ```java
@@ -42939,11 +44935,13 @@ public void resetTag()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.deployOnPush">deployOnPush</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushList">AppSpecWorkerImageDeployOnPushList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.digestInput">digestInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.registryCredentialsInput">registryCredentialsInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.registryInput">registryInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.registryTypeInput">registryTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.repositoryInput">repositoryInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.tagInput">tagInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.digest">digest</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.registry">registry</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.registryCredentials">registryCredentials</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.registryType">registryType</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -42997,6 +44995,16 @@ public java.lang.Object getDeployOnPushInput();
 
 ---
 
+##### `digestInput`<sup>Optional</sup> <a name="digestInput" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.digestInput"></a>
+
+```java
+public java.lang.String getDigestInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `registryCredentialsInput`<sup>Optional</sup> <a name="registryCredentialsInput" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.registryCredentialsInput"></a>
 
 ```java
@@ -43041,6 +45049,16 @@ public java.lang.String getRepositoryInput();
 
 ```java
 public java.lang.String getTagInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `digest`<sup>Required</sup> <a name="digest" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.digest"></a>
+
+```java
+public java.lang.String getDigest();
 ```
 
 - *Type:* java.lang.String
@@ -45474,13 +47492,16 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putAlert">putAlert</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putAutoscaling">putAutoscaling</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putEnv">putEnv</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putGit">putGit</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putGithub">putGithub</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putGitlab">putGitlab</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putImage">putImage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putLogDestination">putLogDestination</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putTermination">putTermination</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.resetAlert">resetAlert</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.resetAutoscaling">resetAutoscaling</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.resetBuildCommand">resetBuildCommand</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.resetDockerfilePath">resetDockerfilePath</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.resetEnv">resetEnv</a></code> | *No description.* |
@@ -45494,6 +47515,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.resetLogDestination">resetLogDestination</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.resetRunCommand">resetRunCommand</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.resetSourceDir">resetSourceDir</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.resetTermination">resetTermination</a></code> | *No description.* |
 
 ---
 
@@ -45659,6 +47681,18 @@ public void putAlert(IResolvable OR java.util.List<AppSpecWorkerAlert> value)
 
 ---
 
+##### `putAutoscaling` <a name="putAutoscaling" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putAutoscaling"></a>
+
+```java
+public void putAutoscaling(AppSpecWorkerAutoscaling value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putAutoscaling.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscaling">AppSpecWorkerAutoscaling</a>
+
+---
+
 ##### `putEnv` <a name="putEnv" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putEnv"></a>
 
 ```java
@@ -45731,10 +47765,28 @@ public void putLogDestination(IResolvable OR java.util.List<AppSpecWorkerLogDest
 
 ---
 
+##### `putTermination` <a name="putTermination" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putTermination"></a>
+
+```java
+public void putTermination(AppSpecWorkerTermination value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putTermination.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTermination">AppSpecWorkerTermination</a>
+
+---
+
 ##### `resetAlert` <a name="resetAlert" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.resetAlert"></a>
 
 ```java
 public void resetAlert()
+```
+
+##### `resetAutoscaling` <a name="resetAutoscaling" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.resetAutoscaling"></a>
+
+```java
+public void resetAutoscaling()
 ```
 
 ##### `resetBuildCommand` <a name="resetBuildCommand" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.resetBuildCommand"></a>
@@ -45815,6 +47867,12 @@ public void resetRunCommand()
 public void resetSourceDir()
 ```
 
+##### `resetTermination` <a name="resetTermination" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.resetTermination"></a>
+
+```java
+public void resetTermination()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -45823,13 +47881,16 @@ public void resetSourceDir()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.alert">alert</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertList">AppSpecWorkerAlertList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.autoscaling">autoscaling</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference">AppSpecWorkerAutoscalingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.env">env</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnvList">AppSpecWorkerEnvList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.git">git</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitOutputReference">AppSpecWorkerGitOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.github">github</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference">AppSpecWorkerGithubOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.gitlab">gitlab</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference">AppSpecWorkerGitlabOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.image">image</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference">AppSpecWorkerImageOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.logDestination">logDestination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationList">AppSpecWorkerLogDestinationList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.termination">termination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference">AppSpecWorkerTerminationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.alertInput">alertInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.autoscalingInput">autoscalingInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscaling">AppSpecWorkerAutoscaling</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.buildCommandInput">buildCommandInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.dockerfilePathInput">dockerfilePathInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.envInput">envInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>></code> | *No description.* |
@@ -45844,6 +47905,7 @@ public void resetSourceDir()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.runCommandInput">runCommandInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.sourceDirInput">sourceDirInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.terminationInput">terminationInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTermination">AppSpecWorkerTermination</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.buildCommand">buildCommand</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.dockerfilePath">dockerfilePath</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.environmentSlug">environmentSlug</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -45887,6 +47949,16 @@ public AppSpecWorkerAlertList getAlert();
 ```
 
 - *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertList">AppSpecWorkerAlertList</a>
+
+---
+
+##### `autoscaling`<sup>Required</sup> <a name="autoscaling" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.autoscaling"></a>
+
+```java
+public AppSpecWorkerAutoscalingOutputReference getAutoscaling();
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference">AppSpecWorkerAutoscalingOutputReference</a>
 
 ---
 
@@ -45950,6 +48022,16 @@ public AppSpecWorkerLogDestinationList getLogDestination();
 
 ---
 
+##### `termination`<sup>Required</sup> <a name="termination" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.termination"></a>
+
+```java
+public AppSpecWorkerTerminationOutputReference getTermination();
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference">AppSpecWorkerTerminationOutputReference</a>
+
+---
+
 ##### `alertInput`<sup>Optional</sup> <a name="alertInput" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.alertInput"></a>
 
 ```java
@@ -45957,6 +48039,16 @@ public java.lang.Object getAlertInput();
 ```
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>>
+
+---
+
+##### `autoscalingInput`<sup>Optional</sup> <a name="autoscalingInput" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.autoscalingInput"></a>
+
+```java
+public AppSpecWorkerAutoscaling getAutoscalingInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscaling">AppSpecWorkerAutoscaling</a>
 
 ---
 
@@ -46100,6 +48192,16 @@ public java.lang.String getSourceDirInput();
 
 ---
 
+##### `terminationInput`<sup>Optional</sup> <a name="terminationInput" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.terminationInput"></a>
+
+```java
+public AppSpecWorkerTermination getTerminationInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTermination">AppSpecWorkerTermination</a>
+
+---
+
 ##### `buildCommand`<sup>Required</sup> <a name="buildCommand" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.buildCommand"></a>
 
 ```java
@@ -46187,6 +48289,284 @@ public java.lang.Object getInternalValue();
 ```
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>
+
+---
+
+
+### AppSpecWorkerTerminationOutputReference <a name="AppSpecWorkerTerminationOutputReference" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecWorkerTerminationOutputReference;
+
+new AppSpecWorkerTerminationOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.resetGracePeriodSeconds">resetGracePeriodSeconds</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetGracePeriodSeconds` <a name="resetGracePeriodSeconds" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.resetGracePeriodSeconds"></a>
+
+```java
+public void resetGracePeriodSeconds()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.property.gracePeriodSecondsInput">gracePeriodSecondsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.property.gracePeriodSeconds">gracePeriodSeconds</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTermination">AppSpecWorkerTermination</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `gracePeriodSecondsInput`<sup>Optional</sup> <a name="gracePeriodSecondsInput" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.property.gracePeriodSecondsInput"></a>
+
+```java
+public java.lang.Number getGracePeriodSecondsInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `gracePeriodSeconds`<sup>Required</sup> <a name="gracePeriodSeconds" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.property.gracePeriodSeconds"></a>
+
+```java
+public java.lang.Number getGracePeriodSeconds();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference.property.internalValue"></a>
+
+```java
+public AppSpecWorkerTermination getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTermination">AppSpecWorkerTermination</a>
 
 ---
 

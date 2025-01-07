@@ -4,7 +4,7 @@
 
 ### ReservedIpAssignment <a name="ReservedIpAssignment" id="@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/reserved_ip_assignment digitalocean_reserved_ip_assignment}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/reserved_ip_assignment digitalocean_reserved_ip_assignment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignment.Initializer"></a>
 
@@ -38,9 +38,9 @@ reservedIpAssignment.ReservedIpAssignment(
 | <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignment.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignment.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignment.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignment.Initializer.parameter.dropletId">droplet_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/reserved_ip_assignment#droplet_id ReservedIpAssignment#droplet_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignment.Initializer.parameter.ipAddress">ip_address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/reserved_ip_assignment#ip_address ReservedIpAssignment#ip_address}. |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/reserved_ip_assignment#id ReservedIpAssignment#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignment.Initializer.parameter.dropletId">droplet_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/reserved_ip_assignment#droplet_id ReservedIpAssignment#droplet_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignment.Initializer.parameter.ipAddress">ip_address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/reserved_ip_assignment#ip_address ReservedIpAssignment#ip_address}. |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/reserved_ip_assignment#id ReservedIpAssignment#id}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/reserved_ip_assignment#droplet_id ReservedIpAssignment#droplet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/reserved_ip_assignment#droplet_id ReservedIpAssignment#droplet_id}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/reserved_ip_assignment#ip_address ReservedIpAssignment#ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/reserved_ip_assignment#ip_address ReservedIpAssignment#ip_address}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/reserved_ip_assignment#id ReservedIpAssignment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/reserved_ip_assignment#id ReservedIpAssignment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -607,7 +607,7 @@ The construct id used in the generated config for the ReservedIpAssignment to im
 
 The id of the existing ReservedIpAssignment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/reserved_ip_assignment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/reserved_ip_assignment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -900,9 +900,9 @@ reservedIpAssignment.ReservedIpAssignmentConfig(
 | <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignmentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignmentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignmentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignmentConfig.property.dropletId">droplet_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/reserved_ip_assignment#droplet_id ReservedIpAssignment#droplet_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignmentConfig.property.ipAddress">ip_address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/reserved_ip_assignment#ip_address ReservedIpAssignment#ip_address}. |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/reserved_ip_assignment#id ReservedIpAssignment#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignmentConfig.property.dropletId">droplet_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/reserved_ip_assignment#droplet_id ReservedIpAssignment#droplet_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignmentConfig.property.ipAddress">ip_address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/reserved_ip_assignment#ip_address ReservedIpAssignment#ip_address}. |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIpAssignment.ReservedIpAssignmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/reserved_ip_assignment#id ReservedIpAssignment#id}. |
 
 ---
 
@@ -984,7 +984,7 @@ droplet_id: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/reserved_ip_assignment#droplet_id ReservedIpAssignment#droplet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/reserved_ip_assignment#droplet_id ReservedIpAssignment#droplet_id}.
 
 ---
 
@@ -996,7 +996,7 @@ ip_address: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/reserved_ip_assignment#ip_address ReservedIpAssignment#ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/reserved_ip_assignment#ip_address ReservedIpAssignment#ip_address}.
 
 ---
 
@@ -1008,7 +1008,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/reserved_ip_assignment#id ReservedIpAssignment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/reserved_ip_assignment#id ReservedIpAssignment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
