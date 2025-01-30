@@ -4,7 +4,7 @@
 
 ### App <a name="App" id="@cdktf/provider-digitalocean.app.App"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app digitalocean_app}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app digitalocean_app}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.App.Initializer"></a>
 
@@ -541,7 +541,7 @@ The construct id used in the generated config for the App to import.
 
 The id of the existing App that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -958,8 +958,8 @@ new AppConfig {
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.dedicatedIps">DedicatedIps</a></code> | <code>object</code> | dedicated_ips block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#id App#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.projectId">ProjectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#project_id App#project_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#id App#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.projectId">ProjectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#project_id App#project_id}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.spec">Spec</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec">AppSpec</a></code> | spec block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppTimeouts">AppTimeouts</a></code> | timeouts block. |
 
@@ -1045,7 +1045,7 @@ public object DedicatedIps { get; set; }
 
 dedicated_ips block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#dedicated_ips App#dedicated_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#dedicated_ips App#dedicated_ips}
 
 ---
 
@@ -1057,7 +1057,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#id App#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#id App#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1072,7 +1072,7 @@ public string ProjectId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#project_id App#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#project_id App#project_id}.
 
 ---
 
@@ -1086,7 +1086,7 @@ public AppSpec Spec { get; set; }
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#spec App#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#spec App#spec}
 
 ---
 
@@ -1100,7 +1100,7 @@ public AppTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#timeouts App#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#timeouts App#timeouts}
 
 ---
 
@@ -1138,7 +1138,7 @@ public string Id { get; set; }
 
 The ID of the dedicated egress IP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#id App#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#id App#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1155,7 +1155,7 @@ public string Ip { get; set; }
 
 The IP address of the dedicated egress IP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#ip App#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#ip App#ip}
 
 ---
 
@@ -1169,7 +1169,7 @@ public string Status { get; set; }
 
 The status of the dedicated egress IP: 'UNKNOWN', 'ASSIGNING', 'ASSIGNED', or 'REMOVED'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#status App#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#status App#status}
 
 ---
 
@@ -1207,7 +1207,7 @@ new AppSpec {
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.alert">Alert</a></code> | <code>object</code> | alert block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.database">Database</a></code> | <code>object</code> | database block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.domain">Domain</a></code> | <code>object</code> | domain block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.domains">Domains</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#domains App#domains}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.domains">Domains</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#domains App#domains}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.egress">Egress</a></code> | <code>object</code> | egress block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.env">Env</a></code> | <code>object</code> | env block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.features">Features</a></code> | <code>string[]</code> | List of features which is applied to the app. |
@@ -1231,7 +1231,7 @@ public string Name { get; set; }
 
 The name of the app. Must be unique across all apps in the same account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#name App#name}
 
 ---
 
@@ -1245,7 +1245,7 @@ public object Alert { get; set; }
 
 alert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#alert App#alert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#alert App#alert}
 
 ---
 
@@ -1259,7 +1259,7 @@ public object Database { get; set; }
 
 database block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#database App#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#database App#database}
 
 ---
 
@@ -1273,7 +1273,7 @@ public object Domain { get; set; }
 
 domain block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#domain App#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#domain App#domain}
 
 ---
 
@@ -1285,7 +1285,7 @@ public string[] Domains { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#domains App#domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#domains App#domains}.
 
 ---
 
@@ -1299,7 +1299,7 @@ public object Egress { get; set; }
 
 egress block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#egress App#egress}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#egress App#egress}
 
 ---
 
@@ -1313,7 +1313,7 @@ public object Env { get; set; }
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#env App#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#env App#env}
 
 ---
 
@@ -1327,7 +1327,7 @@ public string[] Features { get; set; }
 
 List of features which is applied to the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#features App#features}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#features App#features}
 
 ---
 
@@ -1341,7 +1341,7 @@ public object Function { get; set; }
 
 function block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#function App#function}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#function App#function}
 
 ---
 
@@ -1355,7 +1355,7 @@ public AppSpecIngress Ingress { get; set; }
 
 ingress block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#ingress App#ingress}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#ingress App#ingress}
 
 ---
 
@@ -1369,7 +1369,7 @@ public object Job { get; set; }
 
 job block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#job App#job}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#job App#job}
 
 ---
 
@@ -1383,7 +1383,7 @@ public string Region { get; set; }
 
 The slug for the DigitalOcean data center region hosting the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#region App#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#region App#region}
 
 ---
 
@@ -1397,7 +1397,7 @@ public object Service { get; set; }
 
 service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#service App#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#service App#service}
 
 ---
 
@@ -1411,7 +1411,7 @@ public object StaticSite { get; set; }
 
 static_site block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#static_site App#static_site}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#static_site App#static_site}
 
 ---
 
@@ -1425,7 +1425,7 @@ public object Worker { get; set; }
 
 worker block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#worker App#worker}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#worker App#worker}
 
 ---
 
@@ -1446,8 +1446,8 @@ new AppSpecAlert {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlert.property.rule">Rule</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#rule App#rule}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlert.property.disabled">Disabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlert.property.rule">Rule</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#rule App#rule}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlert.property.disabled">Disabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -1459,7 +1459,7 @@ public string Rule { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#rule App#rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#rule App#rule}.
 
 ---
 
@@ -1471,7 +1471,7 @@ public object Disabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#disabled App#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#disabled App#disabled}.
 
 ---
 
@@ -1519,7 +1519,7 @@ The name of the underlying DigitalOcean DBaaS cluster.
 
 This is required for production databases. For dev databases, if cluster_name is not set, a new cluster will be provisioned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#cluster_name App#cluster_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#cluster_name App#cluster_name}
 
 ---
 
@@ -1533,7 +1533,7 @@ public string DbName { get; set; }
 
 The name of the MySQL or PostgreSQL database to configure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#db_name App#db_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#db_name App#db_name}
 
 ---
 
@@ -1547,7 +1547,7 @@ public string DbUser { get; set; }
 
 The name of the MySQL or PostgreSQL user to configure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#db_user App#db_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#db_user App#db_user}
 
 ---
 
@@ -1561,7 +1561,7 @@ public string Engine { get; set; }
 
 The database engine to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#engine App#engine}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#engine App#engine}
 
 ---
 
@@ -1575,7 +1575,7 @@ public string Name { get; set; }
 
 The name of the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#name App#name}
 
 ---
 
@@ -1589,7 +1589,7 @@ public object Production { get; set; }
 
 Whether this is a production or dev database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#production App#production}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#production App#production}
 
 ---
 
@@ -1603,7 +1603,7 @@ public string Version { get; set; }
 
 The version of the database engine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#version App#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#version App#version}
 
 ---
 
@@ -1643,7 +1643,7 @@ public string Name { get; set; }
 
 The hostname for the domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#name App#name}
 
 ---
 
@@ -1657,7 +1657,7 @@ public string Type { get; set; }
 
 The type of the domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#type App#type}
 
 ---
 
@@ -1671,7 +1671,7 @@ public object Wildcard { get; set; }
 
 Indicates whether the domain includes all sub-domains, in addition to the given domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#wildcard App#wildcard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#wildcard App#wildcard}
 
 ---
 
@@ -1685,7 +1685,7 @@ public string Zone { get; set; }
 
 If the domain uses DigitalOcean DNS and you would like App Platform to automatically manage it for you, set this to the name of the domain on your account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#zone App#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#zone App#zone}
 
 ---
 
@@ -1719,7 +1719,7 @@ public string Type { get; set; }
 
 The app egress type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#type App#type}
 
 ---
 
@@ -1759,7 +1759,7 @@ public string Key { get; set; }
 
 The name of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#key App#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#key App#key}
 
 ---
 
@@ -1773,7 +1773,7 @@ public string Scope { get; set; }
 
 The visibility scope of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#scope App#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#scope App#scope}
 
 ---
 
@@ -1787,7 +1787,7 @@ public string Type { get; set; }
 
 The type of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#type App#type}
 
 ---
 
@@ -1801,7 +1801,7 @@ public string Value { get; set; }
 
 The value of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#value App#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#value App#value}
 
 ---
 
@@ -1815,6 +1815,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 new AppSpecFunction {
     string Name,
     object Alert = null,
+    AppSpecFunctionBitbucket Bitbucket = null,
     AppSpecFunctionCors Cors = null,
     object Env = null,
     AppSpecFunctionGit Git = null,
@@ -1832,6 +1833,7 @@ new AppSpecFunction {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.name">Name</a></code> | <code>string</code> | The name of the component. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.alert">Alert</a></code> | <code>object</code> | alert block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.bitbucket">Bitbucket</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket">AppSpecFunctionBitbucket</a></code> | bitbucket block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.cors">Cors</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCors">AppSpecFunctionCors</a></code> | cors block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.env">Env</a></code> | <code>object</code> | env block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.git">Git</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGit">AppSpecFunctionGit</a></code> | git block. |
@@ -1853,7 +1855,7 @@ public string Name { get; set; }
 
 The name of the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#name App#name}
 
 ---
 
@@ -1867,7 +1869,21 @@ public object Alert { get; set; }
 
 alert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#alert App#alert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#alert App#alert}
+
+---
+
+##### `Bitbucket`<sup>Optional</sup> <a name="Bitbucket" id="@cdktf/provider-digitalocean.app.AppSpecFunction.property.bitbucket"></a>
+
+```csharp
+public AppSpecFunctionBitbucket Bitbucket { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket">AppSpecFunctionBitbucket</a>
+
+bitbucket block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#bitbucket App#bitbucket}
 
 ---
 
@@ -1881,7 +1897,7 @@ public AppSpecFunctionCors Cors { get; set; }
 
 cors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#cors App#cors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#cors App#cors}
 
 ---
 
@@ -1895,7 +1911,7 @@ public object Env { get; set; }
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#env App#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#env App#env}
 
 ---
 
@@ -1909,7 +1925,7 @@ public AppSpecFunctionGit Git { get; set; }
 
 git block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#git App#git}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#git App#git}
 
 ---
 
@@ -1923,7 +1939,7 @@ public AppSpecFunctionGithub Github { get; set; }
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#github App#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#github App#github}
 
 ---
 
@@ -1937,7 +1953,7 @@ public AppSpecFunctionGitlab Gitlab { get; set; }
 
 gitlab block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#gitlab App#gitlab}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#gitlab App#gitlab}
 
 ---
 
@@ -1951,7 +1967,7 @@ public object LogDestination { get; set; }
 
 log_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#log_destination App#log_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#log_destination App#log_destination}
 
 ---
 
@@ -1965,7 +1981,7 @@ public object Routes { get; set; }
 
 routes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#routes App#routes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#routes App#routes}
 
 ---
 
@@ -1979,7 +1995,7 @@ public string SourceDir { get; set; }
 
 An optional path to the working directory to use for the build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#source_dir App#source_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#source_dir App#source_dir}
 
 ---
 
@@ -2003,11 +2019,11 @@ new AppSpecFunctionAlert {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.operator">Operator</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#operator App#operator}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.rule">Rule</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#rule App#rule}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.value">Value</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#value App#value}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.window">Window</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#window App#window}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.disabled">Disabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.operator">Operator</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#operator App#operator}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.rule">Rule</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#rule App#rule}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.value">Value</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#value App#value}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.window">Window</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#window App#window}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.disabled">Disabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -2019,7 +2035,7 @@ public string Operator { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#operator App#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#operator App#operator}.
 
 ---
 
@@ -2031,7 +2047,7 @@ public string Rule { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#rule App#rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#rule App#rule}.
 
 ---
 
@@ -2043,7 +2059,7 @@ public double Value { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#value App#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#value App#value}.
 
 ---
 
@@ -2055,7 +2071,7 @@ public string Window { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#window App#window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#window App#window}.
 
 ---
 
@@ -2067,7 +2083,73 @@ public object Disabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#disabled App#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#disabled App#disabled}.
+
+---
+
+### AppSpecFunctionBitbucket <a name="AppSpecFunctionBitbucket" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Digitalocean;
+
+new AppSpecFunctionBitbucket {
+    string Branch = null,
+    object DeployOnPush = null,
+    string Repo = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket.property.branch">Branch</a></code> | <code>string</code> | The name of the branch to use. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket.property.repo">Repo</a></code> | <code>string</code> | The name of the repo in the format `owner/repo`. |
+
+---
+
+##### `Branch`<sup>Optional</sup> <a name="Branch" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket.property.branch"></a>
+
+```csharp
+public string Branch { get; set; }
+```
+
+- *Type:* string
+
+The name of the branch to use.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
+
+---
+
+##### `DeployOnPush`<sup>Optional</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket.property.deployOnPush"></a>
+
+```csharp
+public object DeployOnPush { get; set; }
+```
+
+- *Type:* object
+
+Whether to automatically deploy new commits made to the repo.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+
+---
+
+##### `Repo`<sup>Optional</sup> <a name="Repo" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket.property.repo"></a>
+
+```csharp
+public string Repo { get; set; }
+```
+
+- *Type:* string
+
+The name of the repo in the format `owner/repo`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo App#repo}
 
 ---
 
@@ -2113,7 +2195,7 @@ Whether browsers should expose the response to the client-side JavaScript code w
 
 This configures the Access-Control-Allow-Credentials header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#allow_credentials App#allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#allow_credentials App#allow_credentials}
 
 ---
 
@@ -2127,7 +2209,7 @@ public string[] AllowHeaders { get; set; }
 
 The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#allow_headers App#allow_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#allow_headers App#allow_headers}
 
 ---
 
@@ -2141,7 +2223,7 @@ public string[] AllowMethods { get; set; }
 
 The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#allow_methods App#allow_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#allow_methods App#allow_methods}
 
 ---
 
@@ -2155,7 +2237,7 @@ public AppSpecFunctionCorsAllowOrigins AllowOrigins { get; set; }
 
 allow_origins block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#allow_origins App#allow_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#allow_origins App#allow_origins}
 
 ---
 
@@ -2169,7 +2251,7 @@ public string[] ExposeHeaders { get; set; }
 
 The set of HTTP response headers that browsers are allowed to access. This configures the Access-Control-Expose-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#expose_headers App#expose_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#expose_headers App#expose_headers}
 
 ---
 
@@ -2185,7 +2267,7 @@ An optional duration specifying how long browsers can cache the results of a pre
 
 This configures the Access-Control-Max-Age header. Example: `5h30m`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#max_age App#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#max_age App#max_age}
 
 ---
 
@@ -2223,7 +2305,7 @@ public string Exact { get; set; }
 
 Exact string match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#exact App#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#exact App#exact}
 
 ---
 
@@ -2237,7 +2319,7 @@ public string Prefix { get; set; }
 
 Prefix-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#prefix App#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#prefix App#prefix}
 
 ---
 
@@ -2251,7 +2333,7 @@ public string Regex { get; set; }
 
 RE2 style regex-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#regex App#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#regex App#regex}
 
 ---
 
@@ -2291,7 +2373,7 @@ public string Key { get; set; }
 
 The name of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#key App#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#key App#key}
 
 ---
 
@@ -2305,7 +2387,7 @@ public string Scope { get; set; }
 
 The visibility scope of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#scope App#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#scope App#scope}
 
 ---
 
@@ -2319,7 +2401,7 @@ public string Type { get; set; }
 
 The type of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#type App#type}
 
 ---
 
@@ -2333,7 +2415,7 @@ public string Value { get; set; }
 
 The value of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#value App#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#value App#value}
 
 ---
 
@@ -2369,7 +2451,7 @@ public string Branch { get; set; }
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
 
 ---
 
@@ -2383,7 +2465,7 @@ public string RepoCloneUrl { get; set; }
 
 The clone URL of the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repo_clone_url App#repo_clone_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo_clone_url App#repo_clone_url}
 
 ---
 
@@ -2421,7 +2503,7 @@ public string Branch { get; set; }
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
 
 ---
 
@@ -2435,7 +2517,7 @@ public object DeployOnPush { get; set; }
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -2449,7 +2531,7 @@ public string Repo { get; set; }
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo App#repo}
 
 ---
 
@@ -2487,7 +2569,7 @@ public string Branch { get; set; }
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
 
 ---
 
@@ -2501,7 +2583,7 @@ public object DeployOnPush { get; set; }
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -2515,7 +2597,7 @@ public string Repo { get; set; }
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo App#repo}
 
 ---
 
@@ -2557,7 +2639,7 @@ public string Name { get; set; }
 
 Name of the log destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#name App#name}
 
 ---
 
@@ -2571,7 +2653,7 @@ public AppSpecFunctionLogDestinationDatadog Datadog { get; set; }
 
 datadog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#datadog App#datadog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#datadog App#datadog}
 
 ---
 
@@ -2585,7 +2667,7 @@ public AppSpecFunctionLogDestinationLogtail Logtail { get; set; }
 
 logtail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#logtail App#logtail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#logtail App#logtail}
 
 ---
 
@@ -2599,7 +2681,7 @@ public AppSpecFunctionLogDestinationOpenSearch OpenSearch { get; set; }
 
 open_search block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#open_search App#open_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#open_search App#open_search}
 
 ---
 
@@ -2613,7 +2695,7 @@ public AppSpecFunctionLogDestinationPapertrail Papertrail { get; set; }
 
 papertrail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#papertrail App#papertrail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#papertrail App#papertrail}
 
 ---
 
@@ -2649,7 +2731,7 @@ public string ApiKey { get; set; }
 
 Datadog API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#api_key App#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#api_key App#api_key}
 
 ---
 
@@ -2663,7 +2745,7 @@ public string Endpoint { get; set; }
 
 Datadog HTTP log intake endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -2697,7 +2779,7 @@ public string Token { get; set; }
 
 Logtail token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#token App#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#token App#token}
 
 ---
 
@@ -2737,7 +2819,7 @@ public AppSpecFunctionLogDestinationOpenSearchBasicAuth BasicAuth { get; set; }
 
 basic_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#basic_auth App#basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#basic_auth App#basic_auth}
 
 ---
 
@@ -2751,7 +2833,7 @@ public string ClusterName { get; set; }
 
 OpenSearch cluster name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#cluster_name App#cluster_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#cluster_name App#cluster_name}
 
 ---
 
@@ -2765,7 +2847,7 @@ public string Endpoint { get; set; }
 
 OpenSearch endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -2779,7 +2861,7 @@ public string IndexName { get; set; }
 
 OpenSearch index name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#index_name App#index_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#index_name App#index_name}
 
 ---
 
@@ -2815,7 +2897,7 @@ public string Password { get; set; }
 
 Password for basic authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#password App#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#password App#password}
 
 ---
 
@@ -2829,7 +2911,7 @@ public string User { get; set; }
 
 user for basic authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#user App#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#user App#user}
 
 ---
 
@@ -2863,7 +2945,7 @@ public string Endpoint { get; set; }
 
 Papertrail syslog endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -2901,7 +2983,7 @@ Path specifies an route by HTTP path prefix.
 
 Paths must start with / and must be unique within the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#path App#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#path App#path}
 
 ---
 
@@ -2915,7 +2997,7 @@ public object PreservePathPrefix { get; set; }
 
 An optional flag to preserve the path that is forwarded to the backend service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
 
 ---
 
@@ -2949,7 +3031,7 @@ public object Rule { get; set; }
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#rule App#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#rule App#rule}
 
 ---
 
@@ -2989,7 +3071,7 @@ public AppSpecIngressRuleComponent Component { get; set; }
 
 component block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#component App#component}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#component App#component}
 
 ---
 
@@ -3003,7 +3085,7 @@ public AppSpecIngressRuleCors Cors { get; set; }
 
 cors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#cors App#cors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#cors App#cors}
 
 ---
 
@@ -3017,7 +3099,7 @@ public AppSpecIngressRuleMatch Match { get; set; }
 
 match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#match App#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#match App#match}
 
 ---
 
@@ -3031,7 +3113,7 @@ public AppSpecIngressRuleRedirect Redirect { get; set; }
 
 redirect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#redirect App#redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#redirect App#redirect}
 
 ---
 
@@ -3053,9 +3135,9 @@ new AppSpecIngressRuleComponent {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#name App#name}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.preservePathPrefix">PreservePathPrefix</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.rewrite">Rewrite</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#rewrite App#rewrite}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#name App#name}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.preservePathPrefix">PreservePathPrefix</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.rewrite">Rewrite</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#rewrite App#rewrite}. |
 
 ---
 
@@ -3067,7 +3149,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#name App#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#name App#name}.
 
 ---
 
@@ -3079,7 +3161,7 @@ public object PreservePathPrefix { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}.
 
 ---
 
@@ -3091,7 +3173,7 @@ public string Rewrite { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#rewrite App#rewrite}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#rewrite App#rewrite}.
 
 ---
 
@@ -3137,7 +3219,7 @@ Whether browsers should expose the response to the client-side JavaScript code w
 
 This configures the Access-Control-Allow-Credentials header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#allow_credentials App#allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#allow_credentials App#allow_credentials}
 
 ---
 
@@ -3151,7 +3233,7 @@ public string[] AllowHeaders { get; set; }
 
 The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#allow_headers App#allow_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#allow_headers App#allow_headers}
 
 ---
 
@@ -3165,7 +3247,7 @@ public string[] AllowMethods { get; set; }
 
 The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#allow_methods App#allow_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#allow_methods App#allow_methods}
 
 ---
 
@@ -3179,7 +3261,7 @@ public AppSpecIngressRuleCorsAllowOrigins AllowOrigins { get; set; }
 
 allow_origins block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#allow_origins App#allow_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#allow_origins App#allow_origins}
 
 ---
 
@@ -3193,7 +3275,7 @@ public string[] ExposeHeaders { get; set; }
 
 The set of HTTP response headers that browsers are allowed to access. This configures the Access-Control-Expose-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#expose_headers App#expose_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#expose_headers App#expose_headers}
 
 ---
 
@@ -3209,7 +3291,7 @@ An optional duration specifying how long browsers can cache the results of a pre
 
 This configures the Access-Control-Max-Age header. Example: `5h30m`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#max_age App#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#max_age App#max_age}
 
 ---
 
@@ -3247,7 +3329,7 @@ public string Exact { get; set; }
 
 Exact string match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#exact App#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#exact App#exact}
 
 ---
 
@@ -3261,7 +3343,7 @@ public string Prefix { get; set; }
 
 Prefix-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#prefix App#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#prefix App#prefix}
 
 ---
 
@@ -3275,7 +3357,7 @@ public string Regex { get; set; }
 
 RE2 style regex-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#regex App#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#regex App#regex}
 
 ---
 
@@ -3309,7 +3391,7 @@ public AppSpecIngressRuleMatchPath Path { get; set; }
 
 path block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#path App#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#path App#path}
 
 ---
 
@@ -3329,7 +3411,7 @@ new AppSpecIngressRuleMatchPath {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPath.property.prefix">Prefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#prefix App#prefix}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPath.property.prefix">Prefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#prefix App#prefix}. |
 
 ---
 
@@ -3341,7 +3423,7 @@ public string Prefix { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#prefix App#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#prefix App#prefix}.
 
 ---
 
@@ -3365,11 +3447,11 @@ new AppSpecIngressRuleRedirect {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.authority">Authority</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#authority App#authority}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.port">Port</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#port App#port}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.redirectCode">RedirectCode</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#redirect_code App#redirect_code}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.scheme">Scheme</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#scheme App#scheme}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.uri">Uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#uri App#uri}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.authority">Authority</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#authority App#authority}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.port">Port</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#port App#port}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.redirectCode">RedirectCode</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#redirect_code App#redirect_code}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.scheme">Scheme</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#scheme App#scheme}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.uri">Uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#uri App#uri}. |
 
 ---
 
@@ -3381,7 +3463,7 @@ public string Authority { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#authority App#authority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#authority App#authority}.
 
 ---
 
@@ -3393,7 +3475,7 @@ public double Port { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#port App#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#port App#port}.
 
 ---
 
@@ -3405,7 +3487,7 @@ public double RedirectCode { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#redirect_code App#redirect_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#redirect_code App#redirect_code}.
 
 ---
 
@@ -3417,7 +3499,7 @@ public string Scheme { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#scheme App#scheme}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#scheme App#scheme}.
 
 ---
 
@@ -3429,7 +3511,7 @@ public string Uri { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#uri App#uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#uri App#uri}.
 
 ---
 
@@ -3443,6 +3525,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 new AppSpecJob {
     string Name,
     object Alert = null,
+    AppSpecJobBitbucket Bitbucket = null,
     string BuildCommand = null,
     string DockerfilePath = null,
     object Env = null,
@@ -3467,6 +3550,7 @@ new AppSpecJob {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.name">Name</a></code> | <code>string</code> | The name of the component. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.alert">Alert</a></code> | <code>object</code> | alert block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.bitbucket">Bitbucket</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucket">AppSpecJobBitbucket</a></code> | bitbucket block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.buildCommand">BuildCommand</a></code> | <code>string</code> | An optional build command to run while building this component from source. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.dockerfilePath">DockerfilePath</a></code> | <code>string</code> | The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.env">Env</a></code> | <code>object</code> | env block. |
@@ -3495,7 +3579,7 @@ public string Name { get; set; }
 
 The name of the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#name App#name}
 
 ---
 
@@ -3509,7 +3593,21 @@ public object Alert { get; set; }
 
 alert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#alert App#alert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#alert App#alert}
+
+---
+
+##### `Bitbucket`<sup>Optional</sup> <a name="Bitbucket" id="@cdktf/provider-digitalocean.app.AppSpecJob.property.bitbucket"></a>
+
+```csharp
+public AppSpecJobBitbucket Bitbucket { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucket">AppSpecJobBitbucket</a>
+
+bitbucket block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#bitbucket App#bitbucket}
 
 ---
 
@@ -3523,7 +3621,7 @@ public string BuildCommand { get; set; }
 
 An optional build command to run while building this component from source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#build_command App#build_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#build_command App#build_command}
 
 ---
 
@@ -3537,7 +3635,7 @@ public string DockerfilePath { get; set; }
 
 The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#dockerfile_path App#dockerfile_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#dockerfile_path App#dockerfile_path}
 
 ---
 
@@ -3551,7 +3649,7 @@ public object Env { get; set; }
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#env App#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#env App#env}
 
 ---
 
@@ -3565,7 +3663,7 @@ public string EnvironmentSlug { get; set; }
 
 An environment slug describing the type of this app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#environment_slug App#environment_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#environment_slug App#environment_slug}
 
 ---
 
@@ -3579,7 +3677,7 @@ public AppSpecJobGit Git { get; set; }
 
 git block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#git App#git}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#git App#git}
 
 ---
 
@@ -3593,7 +3691,7 @@ public AppSpecJobGithub Github { get; set; }
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#github App#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#github App#github}
 
 ---
 
@@ -3607,7 +3705,7 @@ public AppSpecJobGitlab Gitlab { get; set; }
 
 gitlab block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#gitlab App#gitlab}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#gitlab App#gitlab}
 
 ---
 
@@ -3621,7 +3719,7 @@ public AppSpecJobImage Image { get; set; }
 
 image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#image App#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#image App#image}
 
 ---
 
@@ -3635,7 +3733,7 @@ public double InstanceCount { get; set; }
 
 The amount of instances that this component should be scaled to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#instance_count App#instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#instance_count App#instance_count}
 
 ---
 
@@ -3649,7 +3747,7 @@ public string InstanceSizeSlug { get; set; }
 
 The instance size to use for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#instance_size_slug App#instance_size_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#instance_size_slug App#instance_size_slug}
 
 ---
 
@@ -3663,7 +3761,7 @@ public string Kind { get; set; }
 
 The type of job and when it will be run during the deployment process.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#kind App#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#kind App#kind}
 
 ---
 
@@ -3677,7 +3775,7 @@ public object LogDestination { get; set; }
 
 log_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#log_destination App#log_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#log_destination App#log_destination}
 
 ---
 
@@ -3691,7 +3789,7 @@ public string RunCommand { get; set; }
 
 An optional run command to override the component's default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#run_command App#run_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#run_command App#run_command}
 
 ---
 
@@ -3705,7 +3803,7 @@ public string SourceDir { get; set; }
 
 An optional path to the working directory to use for the build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#source_dir App#source_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#source_dir App#source_dir}
 
 ---
 
@@ -3719,7 +3817,7 @@ public AppSpecJobTermination Termination { get; set; }
 
 termination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#termination App#termination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#termination App#termination}
 
 ---
 
@@ -3743,11 +3841,11 @@ new AppSpecJobAlert {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.operator">Operator</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#operator App#operator}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.rule">Rule</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#rule App#rule}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.value">Value</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#value App#value}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.window">Window</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#window App#window}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.disabled">Disabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.operator">Operator</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#operator App#operator}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.rule">Rule</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#rule App#rule}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.value">Value</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#value App#value}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.window">Window</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#window App#window}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.disabled">Disabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -3759,7 +3857,7 @@ public string Operator { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#operator App#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#operator App#operator}.
 
 ---
 
@@ -3771,7 +3869,7 @@ public string Rule { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#rule App#rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#rule App#rule}.
 
 ---
 
@@ -3783,7 +3881,7 @@ public double Value { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#value App#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#value App#value}.
 
 ---
 
@@ -3795,7 +3893,7 @@ public string Window { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#window App#window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#window App#window}.
 
 ---
 
@@ -3807,7 +3905,73 @@ public object Disabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#disabled App#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#disabled App#disabled}.
+
+---
+
+### AppSpecJobBitbucket <a name="AppSpecJobBitbucket" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucket"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucket.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Digitalocean;
+
+new AppSpecJobBitbucket {
+    string Branch = null,
+    object DeployOnPush = null,
+    string Repo = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucket.property.branch">Branch</a></code> | <code>string</code> | The name of the branch to use. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucket.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucket.property.repo">Repo</a></code> | <code>string</code> | The name of the repo in the format `owner/repo`. |
+
+---
+
+##### `Branch`<sup>Optional</sup> <a name="Branch" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucket.property.branch"></a>
+
+```csharp
+public string Branch { get; set; }
+```
+
+- *Type:* string
+
+The name of the branch to use.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
+
+---
+
+##### `DeployOnPush`<sup>Optional</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucket.property.deployOnPush"></a>
+
+```csharp
+public object DeployOnPush { get; set; }
+```
+
+- *Type:* object
+
+Whether to automatically deploy new commits made to the repo.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+
+---
+
+##### `Repo`<sup>Optional</sup> <a name="Repo" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucket.property.repo"></a>
+
+```csharp
+public string Repo { get; set; }
+```
+
+- *Type:* string
+
+The name of the repo in the format `owner/repo`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo App#repo}
 
 ---
 
@@ -3847,7 +4011,7 @@ public string Key { get; set; }
 
 The name of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#key App#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#key App#key}
 
 ---
 
@@ -3861,7 +4025,7 @@ public string Scope { get; set; }
 
 The visibility scope of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#scope App#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#scope App#scope}
 
 ---
 
@@ -3875,7 +4039,7 @@ public string Type { get; set; }
 
 The type of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#type App#type}
 
 ---
 
@@ -3889,7 +4053,7 @@ public string Value { get; set; }
 
 The value of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#value App#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#value App#value}
 
 ---
 
@@ -3925,7 +4089,7 @@ public string Branch { get; set; }
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
 
 ---
 
@@ -3939,7 +4103,7 @@ public string RepoCloneUrl { get; set; }
 
 The clone URL of the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repo_clone_url App#repo_clone_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo_clone_url App#repo_clone_url}
 
 ---
 
@@ -3977,7 +4141,7 @@ public string Branch { get; set; }
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
 
 ---
 
@@ -3991,7 +4155,7 @@ public object DeployOnPush { get; set; }
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -4005,7 +4169,7 @@ public string Repo { get; set; }
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo App#repo}
 
 ---
 
@@ -4043,7 +4207,7 @@ public string Branch { get; set; }
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
 
 ---
 
@@ -4057,7 +4221,7 @@ public object DeployOnPush { get; set; }
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -4071,7 +4235,7 @@ public string Repo { get; set; }
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo App#repo}
 
 ---
 
@@ -4117,7 +4281,7 @@ public string RegistryType { get; set; }
 
 The registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#registry_type App#registry_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#registry_type App#registry_type}
 
 ---
 
@@ -4131,7 +4295,7 @@ public string Repository { get; set; }
 
 The repository name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repository App#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repository App#repository}
 
 ---
 
@@ -4145,7 +4309,7 @@ public object DeployOnPush { get; set; }
 
 deploy_on_push block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -4159,7 +4323,7 @@ public string Digest { get; set; }
 
 The image digest. Cannot be specified if tag is provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#digest App#digest}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#digest App#digest}
 
 ---
 
@@ -4173,7 +4337,7 @@ public string Registry { get; set; }
 
 The registry name. Must be left empty for the DOCR registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#registry App#registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#registry App#registry}
 
 ---
 
@@ -4187,7 +4351,7 @@ public string RegistryCredentials { get; set; }
 
 Access credentials for third-party registries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#registry_credentials App#registry_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#registry_credentials App#registry_credentials}
 
 ---
 
@@ -4201,7 +4365,7 @@ public string Tag { get; set; }
 
 The repository tag. Defaults to latest if not provided. Cannot be specified if digest is provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#tag App#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#tag App#tag}
 
 ---
 
@@ -4235,7 +4399,7 @@ public object Enabled { get; set; }
 
 Whether to automatically deploy images pushed to DOCR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#enabled App#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#enabled App#enabled}
 
 ---
 
@@ -4277,7 +4441,7 @@ public string Name { get; set; }
 
 Name of the log destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#name App#name}
 
 ---
 
@@ -4291,7 +4455,7 @@ public AppSpecJobLogDestinationDatadog Datadog { get; set; }
 
 datadog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#datadog App#datadog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#datadog App#datadog}
 
 ---
 
@@ -4305,7 +4469,7 @@ public AppSpecJobLogDestinationLogtail Logtail { get; set; }
 
 logtail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#logtail App#logtail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#logtail App#logtail}
 
 ---
 
@@ -4319,7 +4483,7 @@ public AppSpecJobLogDestinationOpenSearch OpenSearch { get; set; }
 
 open_search block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#open_search App#open_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#open_search App#open_search}
 
 ---
 
@@ -4333,7 +4497,7 @@ public AppSpecJobLogDestinationPapertrail Papertrail { get; set; }
 
 papertrail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#papertrail App#papertrail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#papertrail App#papertrail}
 
 ---
 
@@ -4369,7 +4533,7 @@ public string ApiKey { get; set; }
 
 Datadog API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#api_key App#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#api_key App#api_key}
 
 ---
 
@@ -4383,7 +4547,7 @@ public string Endpoint { get; set; }
 
 Datadog HTTP log intake endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -4417,7 +4581,7 @@ public string Token { get; set; }
 
 Logtail token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#token App#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#token App#token}
 
 ---
 
@@ -4457,7 +4621,7 @@ public AppSpecJobLogDestinationOpenSearchBasicAuth BasicAuth { get; set; }
 
 basic_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#basic_auth App#basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#basic_auth App#basic_auth}
 
 ---
 
@@ -4471,7 +4635,7 @@ public string ClusterName { get; set; }
 
 OpenSearch cluster name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#cluster_name App#cluster_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#cluster_name App#cluster_name}
 
 ---
 
@@ -4485,7 +4649,7 @@ public string Endpoint { get; set; }
 
 OpenSearch endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -4499,7 +4663,7 @@ public string IndexName { get; set; }
 
 OpenSearch index name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#index_name App#index_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#index_name App#index_name}
 
 ---
 
@@ -4535,7 +4699,7 @@ public string Password { get; set; }
 
 Password for basic authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#password App#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#password App#password}
 
 ---
 
@@ -4549,7 +4713,7 @@ public string User { get; set; }
 
 user for basic authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#user App#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#user App#user}
 
 ---
 
@@ -4583,7 +4747,7 @@ public string Endpoint { get; set; }
 
 Papertrail syslog endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -4619,7 +4783,7 @@ The number of seconds to wait between sending a TERM signal to a container and i
 
 Default: 120, Minimum 1, Maximum 600.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#grace_period_seconds App#grace_period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#grace_period_seconds App#grace_period_seconds}
 
 ---
 
@@ -4634,6 +4798,7 @@ new AppSpecService {
     string Name,
     object Alert = null,
     AppSpecServiceAutoscaling Autoscaling = null,
+    AppSpecServiceBitbucket Bitbucket = null,
     string BuildCommand = null,
     AppSpecServiceCors Cors = null,
     string DockerfilePath = null,
@@ -4663,6 +4828,7 @@ new AppSpecService {
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.name">Name</a></code> | <code>string</code> | The name of the component. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.alert">Alert</a></code> | <code>object</code> | alert block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.autoscaling">Autoscaling</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAutoscaling">AppSpecServiceAutoscaling</a></code> | autoscaling block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.bitbucket">Bitbucket</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket">AppSpecServiceBitbucket</a></code> | bitbucket block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.buildCommand">BuildCommand</a></code> | <code>string</code> | An optional build command to run while building this component from source. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.cors">Cors</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCors">AppSpecServiceCors</a></code> | cors block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.dockerfilePath">DockerfilePath</a></code> | <code>string</code> | The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks. |
@@ -4676,7 +4842,7 @@ new AppSpecService {
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.image">Image</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImage">AppSpecServiceImage</a></code> | image block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.instanceCount">InstanceCount</a></code> | <code>double</code> | The amount of instances that this component should be scaled to. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.instanceSizeSlug">InstanceSizeSlug</a></code> | <code>string</code> | The instance size to use for this component. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.internalPorts">InternalPorts</a></code> | <code>double[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#internal_ports App#internal_ports}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.internalPorts">InternalPorts</a></code> | <code>double[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#internal_ports App#internal_ports}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.logDestination">LogDestination</a></code> | <code>object</code> | log_destination block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.routes">Routes</a></code> | <code>object</code> | routes block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.runCommand">RunCommand</a></code> | <code>string</code> | An optional run command to override the component's default. |
@@ -4695,7 +4861,7 @@ public string Name { get; set; }
 
 The name of the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#name App#name}
 
 ---
 
@@ -4709,7 +4875,7 @@ public object Alert { get; set; }
 
 alert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#alert App#alert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#alert App#alert}
 
 ---
 
@@ -4723,7 +4889,21 @@ public AppSpecServiceAutoscaling Autoscaling { get; set; }
 
 autoscaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#autoscaling App#autoscaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#autoscaling App#autoscaling}
+
+---
+
+##### `Bitbucket`<sup>Optional</sup> <a name="Bitbucket" id="@cdktf/provider-digitalocean.app.AppSpecService.property.bitbucket"></a>
+
+```csharp
+public AppSpecServiceBitbucket Bitbucket { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket">AppSpecServiceBitbucket</a>
+
+bitbucket block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#bitbucket App#bitbucket}
 
 ---
 
@@ -4737,7 +4917,7 @@ public string BuildCommand { get; set; }
 
 An optional build command to run while building this component from source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#build_command App#build_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#build_command App#build_command}
 
 ---
 
@@ -4751,7 +4931,7 @@ public AppSpecServiceCors Cors { get; set; }
 
 cors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#cors App#cors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#cors App#cors}
 
 ---
 
@@ -4765,7 +4945,7 @@ public string DockerfilePath { get; set; }
 
 The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#dockerfile_path App#dockerfile_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#dockerfile_path App#dockerfile_path}
 
 ---
 
@@ -4779,7 +4959,7 @@ public object Env { get; set; }
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#env App#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#env App#env}
 
 ---
 
@@ -4793,7 +4973,7 @@ public string EnvironmentSlug { get; set; }
 
 An environment slug describing the type of this app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#environment_slug App#environment_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#environment_slug App#environment_slug}
 
 ---
 
@@ -4807,7 +4987,7 @@ public AppSpecServiceGit Git { get; set; }
 
 git block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#git App#git}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#git App#git}
 
 ---
 
@@ -4821,7 +5001,7 @@ public AppSpecServiceGithub Github { get; set; }
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#github App#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#github App#github}
 
 ---
 
@@ -4835,7 +5015,7 @@ public AppSpecServiceGitlab Gitlab { get; set; }
 
 gitlab block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#gitlab App#gitlab}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#gitlab App#gitlab}
 
 ---
 
@@ -4849,7 +5029,7 @@ public AppSpecServiceHealthCheck HealthCheck { get; set; }
 
 health_check block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#health_check App#health_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#health_check App#health_check}
 
 ---
 
@@ -4863,7 +5043,7 @@ public double HttpPort { get; set; }
 
 The internal port on which this service's run command will listen.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#http_port App#http_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#http_port App#http_port}
 
 ---
 
@@ -4877,7 +5057,7 @@ public AppSpecServiceImage Image { get; set; }
 
 image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#image App#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#image App#image}
 
 ---
 
@@ -4891,7 +5071,7 @@ public double InstanceCount { get; set; }
 
 The amount of instances that this component should be scaled to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#instance_count App#instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#instance_count App#instance_count}
 
 ---
 
@@ -4905,7 +5085,7 @@ public string InstanceSizeSlug { get; set; }
 
 The instance size to use for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#instance_size_slug App#instance_size_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#instance_size_slug App#instance_size_slug}
 
 ---
 
@@ -4917,7 +5097,7 @@ public double[] InternalPorts { get; set; }
 
 - *Type:* double[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#internal_ports App#internal_ports}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#internal_ports App#internal_ports}.
 
 ---
 
@@ -4931,7 +5111,7 @@ public object LogDestination { get; set; }
 
 log_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#log_destination App#log_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#log_destination App#log_destination}
 
 ---
 
@@ -4945,7 +5125,7 @@ public object Routes { get; set; }
 
 routes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#routes App#routes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#routes App#routes}
 
 ---
 
@@ -4959,7 +5139,7 @@ public string RunCommand { get; set; }
 
 An optional run command to override the component's default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#run_command App#run_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#run_command App#run_command}
 
 ---
 
@@ -4973,7 +5153,7 @@ public string SourceDir { get; set; }
 
 An optional path to the working directory to use for the build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#source_dir App#source_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#source_dir App#source_dir}
 
 ---
 
@@ -4987,7 +5167,7 @@ public AppSpecServiceTermination Termination { get; set; }
 
 termination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#termination App#termination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#termination App#termination}
 
 ---
 
@@ -5011,11 +5191,11 @@ new AppSpecServiceAlert {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.operator">Operator</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#operator App#operator}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.rule">Rule</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#rule App#rule}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.value">Value</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#value App#value}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.window">Window</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#window App#window}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.disabled">Disabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.operator">Operator</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#operator App#operator}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.rule">Rule</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#rule App#rule}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.value">Value</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#value App#value}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.window">Window</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#window App#window}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.disabled">Disabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -5027,7 +5207,7 @@ public string Operator { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#operator App#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#operator App#operator}.
 
 ---
 
@@ -5039,7 +5219,7 @@ public string Rule { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#rule App#rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#rule App#rule}.
 
 ---
 
@@ -5051,7 +5231,7 @@ public double Value { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#value App#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#value App#value}.
 
 ---
 
@@ -5063,7 +5243,7 @@ public string Window { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#window App#window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#window App#window}.
 
 ---
 
@@ -5075,7 +5255,7 @@ public object Disabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#disabled App#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#disabled App#disabled}.
 
 ---
 
@@ -5113,7 +5293,7 @@ public double MaxInstanceCount { get; set; }
 
 The maximum amount of instances for this component. Must be more than min_instance_count.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#max_instance_count App#max_instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#max_instance_count App#max_instance_count}
 
 ---
 
@@ -5127,7 +5307,7 @@ public AppSpecServiceAutoscalingMetrics Metrics { get; set; }
 
 metrics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#metrics App#metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#metrics App#metrics}
 
 ---
 
@@ -5141,7 +5321,7 @@ public double MinInstanceCount { get; set; }
 
 The minimum amount of instances for this component. Must be less than max_instance_count.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#min_instance_count App#min_instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#min_instance_count App#min_instance_count}
 
 ---
 
@@ -5175,7 +5355,7 @@ public AppSpecServiceAutoscalingMetricsCpu Cpu { get; set; }
 
 cpu block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#cpu App#cpu}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#cpu App#cpu}
 
 ---
 
@@ -5209,7 +5389,73 @@ public double Percent { get; set; }
 
 The average target CPU utilization for the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#percent App#percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#percent App#percent}
+
+---
+
+### AppSpecServiceBitbucket <a name="AppSpecServiceBitbucket" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Digitalocean;
+
+new AppSpecServiceBitbucket {
+    string Branch = null,
+    object DeployOnPush = null,
+    string Repo = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket.property.branch">Branch</a></code> | <code>string</code> | The name of the branch to use. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket.property.repo">Repo</a></code> | <code>string</code> | The name of the repo in the format `owner/repo`. |
+
+---
+
+##### `Branch`<sup>Optional</sup> <a name="Branch" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket.property.branch"></a>
+
+```csharp
+public string Branch { get; set; }
+```
+
+- *Type:* string
+
+The name of the branch to use.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
+
+---
+
+##### `DeployOnPush`<sup>Optional</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket.property.deployOnPush"></a>
+
+```csharp
+public object DeployOnPush { get; set; }
+```
+
+- *Type:* object
+
+Whether to automatically deploy new commits made to the repo.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+
+---
+
+##### `Repo`<sup>Optional</sup> <a name="Repo" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket.property.repo"></a>
+
+```csharp
+public string Repo { get; set; }
+```
+
+- *Type:* string
+
+The name of the repo in the format `owner/repo`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo App#repo}
 
 ---
 
@@ -5255,7 +5501,7 @@ Whether browsers should expose the response to the client-side JavaScript code w
 
 This configures the Access-Control-Allow-Credentials header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#allow_credentials App#allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#allow_credentials App#allow_credentials}
 
 ---
 
@@ -5269,7 +5515,7 @@ public string[] AllowHeaders { get; set; }
 
 The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#allow_headers App#allow_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#allow_headers App#allow_headers}
 
 ---
 
@@ -5283,7 +5529,7 @@ public string[] AllowMethods { get; set; }
 
 The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#allow_methods App#allow_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#allow_methods App#allow_methods}
 
 ---
 
@@ -5297,7 +5543,7 @@ public AppSpecServiceCorsAllowOrigins AllowOrigins { get; set; }
 
 allow_origins block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#allow_origins App#allow_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#allow_origins App#allow_origins}
 
 ---
 
@@ -5311,7 +5557,7 @@ public string[] ExposeHeaders { get; set; }
 
 The set of HTTP response headers that browsers are allowed to access. This configures the Access-Control-Expose-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#expose_headers App#expose_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#expose_headers App#expose_headers}
 
 ---
 
@@ -5327,7 +5573,7 @@ An optional duration specifying how long browsers can cache the results of a pre
 
 This configures the Access-Control-Max-Age header. Example: `5h30m`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#max_age App#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#max_age App#max_age}
 
 ---
 
@@ -5365,7 +5611,7 @@ public string Exact { get; set; }
 
 Exact string match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#exact App#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#exact App#exact}
 
 ---
 
@@ -5379,7 +5625,7 @@ public string Prefix { get; set; }
 
 Prefix-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#prefix App#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#prefix App#prefix}
 
 ---
 
@@ -5393,7 +5639,7 @@ public string Regex { get; set; }
 
 RE2 style regex-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#regex App#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#regex App#regex}
 
 ---
 
@@ -5433,7 +5679,7 @@ public string Key { get; set; }
 
 The name of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#key App#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#key App#key}
 
 ---
 
@@ -5447,7 +5693,7 @@ public string Scope { get; set; }
 
 The visibility scope of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#scope App#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#scope App#scope}
 
 ---
 
@@ -5461,7 +5707,7 @@ public string Type { get; set; }
 
 The type of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#type App#type}
 
 ---
 
@@ -5475,7 +5721,7 @@ public string Value { get; set; }
 
 The value of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#value App#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#value App#value}
 
 ---
 
@@ -5511,7 +5757,7 @@ public string Branch { get; set; }
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
 
 ---
 
@@ -5525,7 +5771,7 @@ public string RepoCloneUrl { get; set; }
 
 The clone URL of the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repo_clone_url App#repo_clone_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo_clone_url App#repo_clone_url}
 
 ---
 
@@ -5563,7 +5809,7 @@ public string Branch { get; set; }
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
 
 ---
 
@@ -5577,7 +5823,7 @@ public object DeployOnPush { get; set; }
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -5591,7 +5837,7 @@ public string Repo { get; set; }
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo App#repo}
 
 ---
 
@@ -5629,7 +5875,7 @@ public string Branch { get; set; }
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
 
 ---
 
@@ -5643,7 +5889,7 @@ public object DeployOnPush { get; set; }
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -5657,7 +5903,7 @@ public string Repo { get; set; }
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo App#repo}
 
 ---
 
@@ -5703,7 +5949,7 @@ public double FailureThreshold { get; set; }
 
 The number of failed health checks before considered unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#failure_threshold App#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#failure_threshold App#failure_threshold}
 
 ---
 
@@ -5717,7 +5963,7 @@ public string HttpPath { get; set; }
 
 The route path used for the HTTP health check ping.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#http_path App#http_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#http_path App#http_path}
 
 ---
 
@@ -5731,7 +5977,7 @@ public double InitialDelaySeconds { get; set; }
 
 The number of seconds to wait before beginning health checks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#initial_delay_seconds App#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#initial_delay_seconds App#initial_delay_seconds}
 
 ---
 
@@ -5745,7 +5991,7 @@ public double PeriodSeconds { get; set; }
 
 The number of seconds to wait between health checks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#period_seconds App#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#period_seconds App#period_seconds}
 
 ---
 
@@ -5761,7 +6007,7 @@ The port on which the health check will be performed.
 
 If not set, the health check will be performed on the component's http_port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#port App#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#port App#port}
 
 ---
 
@@ -5775,7 +6021,7 @@ public double SuccessThreshold { get; set; }
 
 The number of successful health checks before considered healthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#success_threshold App#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#success_threshold App#success_threshold}
 
 ---
 
@@ -5789,7 +6035,7 @@ public double TimeoutSeconds { get; set; }
 
 The number of seconds after which the check times out.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#timeout_seconds App#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#timeout_seconds App#timeout_seconds}
 
 ---
 
@@ -5835,7 +6081,7 @@ public string RegistryType { get; set; }
 
 The registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#registry_type App#registry_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#registry_type App#registry_type}
 
 ---
 
@@ -5849,7 +6095,7 @@ public string Repository { get; set; }
 
 The repository name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repository App#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repository App#repository}
 
 ---
 
@@ -5863,7 +6109,7 @@ public object DeployOnPush { get; set; }
 
 deploy_on_push block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -5877,7 +6123,7 @@ public string Digest { get; set; }
 
 The image digest. Cannot be specified if tag is provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#digest App#digest}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#digest App#digest}
 
 ---
 
@@ -5891,7 +6137,7 @@ public string Registry { get; set; }
 
 The registry name. Must be left empty for the DOCR registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#registry App#registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#registry App#registry}
 
 ---
 
@@ -5905,7 +6151,7 @@ public string RegistryCredentials { get; set; }
 
 Access credentials for third-party registries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#registry_credentials App#registry_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#registry_credentials App#registry_credentials}
 
 ---
 
@@ -5919,7 +6165,7 @@ public string Tag { get; set; }
 
 The repository tag. Defaults to latest if not provided. Cannot be specified if digest is provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#tag App#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#tag App#tag}
 
 ---
 
@@ -5953,7 +6199,7 @@ public object Enabled { get; set; }
 
 Whether to automatically deploy images pushed to DOCR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#enabled App#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#enabled App#enabled}
 
 ---
 
@@ -5995,7 +6241,7 @@ public string Name { get; set; }
 
 Name of the log destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#name App#name}
 
 ---
 
@@ -6009,7 +6255,7 @@ public AppSpecServiceLogDestinationDatadog Datadog { get; set; }
 
 datadog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#datadog App#datadog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#datadog App#datadog}
 
 ---
 
@@ -6023,7 +6269,7 @@ public AppSpecServiceLogDestinationLogtail Logtail { get; set; }
 
 logtail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#logtail App#logtail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#logtail App#logtail}
 
 ---
 
@@ -6037,7 +6283,7 @@ public AppSpecServiceLogDestinationOpenSearch OpenSearch { get; set; }
 
 open_search block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#open_search App#open_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#open_search App#open_search}
 
 ---
 
@@ -6051,7 +6297,7 @@ public AppSpecServiceLogDestinationPapertrail Papertrail { get; set; }
 
 papertrail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#papertrail App#papertrail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#papertrail App#papertrail}
 
 ---
 
@@ -6087,7 +6333,7 @@ public string ApiKey { get; set; }
 
 Datadog API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#api_key App#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#api_key App#api_key}
 
 ---
 
@@ -6101,7 +6347,7 @@ public string Endpoint { get; set; }
 
 Datadog HTTP log intake endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -6135,7 +6381,7 @@ public string Token { get; set; }
 
 Logtail token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#token App#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#token App#token}
 
 ---
 
@@ -6175,7 +6421,7 @@ public AppSpecServiceLogDestinationOpenSearchBasicAuth BasicAuth { get; set; }
 
 basic_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#basic_auth App#basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#basic_auth App#basic_auth}
 
 ---
 
@@ -6189,7 +6435,7 @@ public string ClusterName { get; set; }
 
 OpenSearch cluster name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#cluster_name App#cluster_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#cluster_name App#cluster_name}
 
 ---
 
@@ -6203,7 +6449,7 @@ public string Endpoint { get; set; }
 
 OpenSearch endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -6217,7 +6463,7 @@ public string IndexName { get; set; }
 
 OpenSearch index name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#index_name App#index_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#index_name App#index_name}
 
 ---
 
@@ -6253,7 +6499,7 @@ public string Password { get; set; }
 
 Password for basic authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#password App#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#password App#password}
 
 ---
 
@@ -6267,7 +6513,7 @@ public string User { get; set; }
 
 user for basic authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#user App#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#user App#user}
 
 ---
 
@@ -6301,7 +6547,7 @@ public string Endpoint { get; set; }
 
 Papertrail syslog endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -6339,7 +6585,7 @@ Path specifies an route by HTTP path prefix.
 
 Paths must start with / and must be unique within the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#path App#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#path App#path}
 
 ---
 
@@ -6353,7 +6599,7 @@ public object PreservePathPrefix { get; set; }
 
 An optional flag to preserve the path that is forwarded to the backend service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
 
 ---
 
@@ -6391,7 +6637,7 @@ The number of seconds to wait between selecting a container instance for termina
 
 Selecting a container instance for termination begins an asynchronous drain of new requests on upstream load-balancers. Default: 15 seconds, Minimum 1, Maximum 110.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#drain_seconds App#drain_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#drain_seconds App#drain_seconds}
 
 ---
 
@@ -6407,7 +6653,7 @@ The number of seconds to wait between sending a TERM signal to a container and i
 
 Default: 120, Minimum 1, Maximum 600.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#grace_period_seconds App#grace_period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#grace_period_seconds App#grace_period_seconds}
 
 ---
 
@@ -6420,6 +6666,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecStaticSite {
     string Name,
+    AppSpecStaticSiteBitbucket Bitbucket = null,
     string BuildCommand = null,
     string CatchallDocument = null,
     AppSpecStaticSiteCors Cors = null,
@@ -6442,6 +6689,7 @@ new AppSpecStaticSite {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.name">Name</a></code> | <code>string</code> | The name of the component. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.bitbucket">Bitbucket</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucket">AppSpecStaticSiteBitbucket</a></code> | bitbucket block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.buildCommand">BuildCommand</a></code> | <code>string</code> | An optional build command to run while building this component from source. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.catchallDocument">CatchallDocument</a></code> | <code>string</code> | The name of the document to use as the fallback for any requests to documents that are not found when serving this static site. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.cors">Cors</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCors">AppSpecStaticSiteCors</a></code> | cors block. |
@@ -6469,7 +6717,21 @@ public string Name { get; set; }
 
 The name of the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#name App#name}
+
+---
+
+##### `Bitbucket`<sup>Optional</sup> <a name="Bitbucket" id="@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.bitbucket"></a>
+
+```csharp
+public AppSpecStaticSiteBitbucket Bitbucket { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucket">AppSpecStaticSiteBitbucket</a>
+
+bitbucket block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#bitbucket App#bitbucket}
 
 ---
 
@@ -6483,7 +6745,7 @@ public string BuildCommand { get; set; }
 
 An optional build command to run while building this component from source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#build_command App#build_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#build_command App#build_command}
 
 ---
 
@@ -6497,7 +6759,7 @@ public string CatchallDocument { get; set; }
 
 The name of the document to use as the fallback for any requests to documents that are not found when serving this static site.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#catchall_document App#catchall_document}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#catchall_document App#catchall_document}
 
 ---
 
@@ -6511,7 +6773,7 @@ public AppSpecStaticSiteCors Cors { get; set; }
 
 cors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#cors App#cors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#cors App#cors}
 
 ---
 
@@ -6525,7 +6787,7 @@ public string DockerfilePath { get; set; }
 
 The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#dockerfile_path App#dockerfile_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#dockerfile_path App#dockerfile_path}
 
 ---
 
@@ -6539,7 +6801,7 @@ public object Env { get; set; }
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#env App#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#env App#env}
 
 ---
 
@@ -6553,7 +6815,7 @@ public string EnvironmentSlug { get; set; }
 
 An environment slug describing the type of this app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#environment_slug App#environment_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#environment_slug App#environment_slug}
 
 ---
 
@@ -6567,7 +6829,7 @@ public string ErrorDocument { get; set; }
 
 The name of the error document to use when serving this static site.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#error_document App#error_document}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#error_document App#error_document}
 
 ---
 
@@ -6581,7 +6843,7 @@ public AppSpecStaticSiteGit Git { get; set; }
 
 git block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#git App#git}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#git App#git}
 
 ---
 
@@ -6595,7 +6857,7 @@ public AppSpecStaticSiteGithub Github { get; set; }
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#github App#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#github App#github}
 
 ---
 
@@ -6609,7 +6871,7 @@ public AppSpecStaticSiteGitlab Gitlab { get; set; }
 
 gitlab block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#gitlab App#gitlab}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#gitlab App#gitlab}
 
 ---
 
@@ -6623,7 +6885,7 @@ public string IndexDocument { get; set; }
 
 The name of the index document to use when serving this static site.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#index_document App#index_document}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#index_document App#index_document}
 
 ---
 
@@ -6639,7 +6901,7 @@ An optional path to where the built assets will be located, relative to the buil
 
 If not set, App Platform will automatically scan for these directory names: `_static`, `dist`, `public`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#output_dir App#output_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#output_dir App#output_dir}
 
 ---
 
@@ -6653,7 +6915,7 @@ public object Routes { get; set; }
 
 routes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#routes App#routes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#routes App#routes}
 
 ---
 
@@ -6667,7 +6929,73 @@ public string SourceDir { get; set; }
 
 An optional path to the working directory to use for the build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#source_dir App#source_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#source_dir App#source_dir}
+
+---
+
+### AppSpecStaticSiteBitbucket <a name="AppSpecStaticSiteBitbucket" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucket"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucket.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Digitalocean;
+
+new AppSpecStaticSiteBitbucket {
+    string Branch = null,
+    object DeployOnPush = null,
+    string Repo = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucket.property.branch">Branch</a></code> | <code>string</code> | The name of the branch to use. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucket.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucket.property.repo">Repo</a></code> | <code>string</code> | The name of the repo in the format `owner/repo`. |
+
+---
+
+##### `Branch`<sup>Optional</sup> <a name="Branch" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucket.property.branch"></a>
+
+```csharp
+public string Branch { get; set; }
+```
+
+- *Type:* string
+
+The name of the branch to use.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
+
+---
+
+##### `DeployOnPush`<sup>Optional</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucket.property.deployOnPush"></a>
+
+```csharp
+public object DeployOnPush { get; set; }
+```
+
+- *Type:* object
+
+Whether to automatically deploy new commits made to the repo.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+
+---
+
+##### `Repo`<sup>Optional</sup> <a name="Repo" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucket.property.repo"></a>
+
+```csharp
+public string Repo { get; set; }
+```
+
+- *Type:* string
+
+The name of the repo in the format `owner/repo`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo App#repo}
 
 ---
 
@@ -6713,7 +7041,7 @@ Whether browsers should expose the response to the client-side JavaScript code w
 
 This configures the Access-Control-Allow-Credentials header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#allow_credentials App#allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#allow_credentials App#allow_credentials}
 
 ---
 
@@ -6727,7 +7055,7 @@ public string[] AllowHeaders { get; set; }
 
 The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#allow_headers App#allow_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#allow_headers App#allow_headers}
 
 ---
 
@@ -6741,7 +7069,7 @@ public string[] AllowMethods { get; set; }
 
 The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#allow_methods App#allow_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#allow_methods App#allow_methods}
 
 ---
 
@@ -6755,7 +7083,7 @@ public AppSpecStaticSiteCorsAllowOrigins AllowOrigins { get; set; }
 
 allow_origins block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#allow_origins App#allow_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#allow_origins App#allow_origins}
 
 ---
 
@@ -6769,7 +7097,7 @@ public string[] ExposeHeaders { get; set; }
 
 The set of HTTP response headers that browsers are allowed to access. This configures the Access-Control-Expose-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#expose_headers App#expose_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#expose_headers App#expose_headers}
 
 ---
 
@@ -6785,7 +7113,7 @@ An optional duration specifying how long browsers can cache the results of a pre
 
 This configures the Access-Control-Max-Age header. Example: `5h30m`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#max_age App#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#max_age App#max_age}
 
 ---
 
@@ -6823,7 +7151,7 @@ public string Exact { get; set; }
 
 Exact string match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#exact App#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#exact App#exact}
 
 ---
 
@@ -6837,7 +7165,7 @@ public string Prefix { get; set; }
 
 Prefix-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#prefix App#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#prefix App#prefix}
 
 ---
 
@@ -6851,7 +7179,7 @@ public string Regex { get; set; }
 
 RE2 style regex-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#regex App#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#regex App#regex}
 
 ---
 
@@ -6891,7 +7219,7 @@ public string Key { get; set; }
 
 The name of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#key App#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#key App#key}
 
 ---
 
@@ -6905,7 +7233,7 @@ public string Scope { get; set; }
 
 The visibility scope of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#scope App#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#scope App#scope}
 
 ---
 
@@ -6919,7 +7247,7 @@ public string Type { get; set; }
 
 The type of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#type App#type}
 
 ---
 
@@ -6933,7 +7261,7 @@ public string Value { get; set; }
 
 The value of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#value App#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#value App#value}
 
 ---
 
@@ -6969,7 +7297,7 @@ public string Branch { get; set; }
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
 
 ---
 
@@ -6983,7 +7311,7 @@ public string RepoCloneUrl { get; set; }
 
 The clone URL of the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repo_clone_url App#repo_clone_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo_clone_url App#repo_clone_url}
 
 ---
 
@@ -7021,7 +7349,7 @@ public string Branch { get; set; }
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
 
 ---
 
@@ -7035,7 +7363,7 @@ public object DeployOnPush { get; set; }
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -7049,7 +7377,7 @@ public string Repo { get; set; }
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo App#repo}
 
 ---
 
@@ -7087,7 +7415,7 @@ public string Branch { get; set; }
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
 
 ---
 
@@ -7101,7 +7429,7 @@ public object DeployOnPush { get; set; }
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -7115,7 +7443,7 @@ public string Repo { get; set; }
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo App#repo}
 
 ---
 
@@ -7153,7 +7481,7 @@ Path specifies an route by HTTP path prefix.
 
 Paths must start with / and must be unique within the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#path App#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#path App#path}
 
 ---
 
@@ -7167,7 +7495,7 @@ public object PreservePathPrefix { get; set; }
 
 An optional flag to preserve the path that is forwarded to the backend service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
 
 ---
 
@@ -7182,6 +7510,7 @@ new AppSpecWorker {
     string Name,
     object Alert = null,
     AppSpecWorkerAutoscaling Autoscaling = null,
+    AppSpecWorkerBitbucket Bitbucket = null,
     string BuildCommand = null,
     string DockerfilePath = null,
     object Env = null,
@@ -7206,6 +7535,7 @@ new AppSpecWorker {
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.name">Name</a></code> | <code>string</code> | The name of the component. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.alert">Alert</a></code> | <code>object</code> | alert block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.autoscaling">Autoscaling</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscaling">AppSpecWorkerAutoscaling</a></code> | autoscaling block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.bitbucket">Bitbucket</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket">AppSpecWorkerBitbucket</a></code> | bitbucket block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.buildCommand">BuildCommand</a></code> | <code>string</code> | An optional build command to run while building this component from source. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.dockerfilePath">DockerfilePath</a></code> | <code>string</code> | The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.env">Env</a></code> | <code>object</code> | env block. |
@@ -7233,7 +7563,7 @@ public string Name { get; set; }
 
 The name of the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#name App#name}
 
 ---
 
@@ -7247,7 +7577,7 @@ public object Alert { get; set; }
 
 alert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#alert App#alert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#alert App#alert}
 
 ---
 
@@ -7261,7 +7591,21 @@ public AppSpecWorkerAutoscaling Autoscaling { get; set; }
 
 autoscaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#autoscaling App#autoscaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#autoscaling App#autoscaling}
+
+---
+
+##### `Bitbucket`<sup>Optional</sup> <a name="Bitbucket" id="@cdktf/provider-digitalocean.app.AppSpecWorker.property.bitbucket"></a>
+
+```csharp
+public AppSpecWorkerBitbucket Bitbucket { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket">AppSpecWorkerBitbucket</a>
+
+bitbucket block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#bitbucket App#bitbucket}
 
 ---
 
@@ -7275,7 +7619,7 @@ public string BuildCommand { get; set; }
 
 An optional build command to run while building this component from source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#build_command App#build_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#build_command App#build_command}
 
 ---
 
@@ -7289,7 +7633,7 @@ public string DockerfilePath { get; set; }
 
 The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#dockerfile_path App#dockerfile_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#dockerfile_path App#dockerfile_path}
 
 ---
 
@@ -7303,7 +7647,7 @@ public object Env { get; set; }
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#env App#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#env App#env}
 
 ---
 
@@ -7317,7 +7661,7 @@ public string EnvironmentSlug { get; set; }
 
 An environment slug describing the type of this app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#environment_slug App#environment_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#environment_slug App#environment_slug}
 
 ---
 
@@ -7331,7 +7675,7 @@ public AppSpecWorkerGit Git { get; set; }
 
 git block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#git App#git}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#git App#git}
 
 ---
 
@@ -7345,7 +7689,7 @@ public AppSpecWorkerGithub Github { get; set; }
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#github App#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#github App#github}
 
 ---
 
@@ -7359,7 +7703,7 @@ public AppSpecWorkerGitlab Gitlab { get; set; }
 
 gitlab block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#gitlab App#gitlab}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#gitlab App#gitlab}
 
 ---
 
@@ -7373,7 +7717,7 @@ public AppSpecWorkerImage Image { get; set; }
 
 image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#image App#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#image App#image}
 
 ---
 
@@ -7387,7 +7731,7 @@ public double InstanceCount { get; set; }
 
 The amount of instances that this component should be scaled to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#instance_count App#instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#instance_count App#instance_count}
 
 ---
 
@@ -7401,7 +7745,7 @@ public string InstanceSizeSlug { get; set; }
 
 The instance size to use for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#instance_size_slug App#instance_size_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#instance_size_slug App#instance_size_slug}
 
 ---
 
@@ -7415,7 +7759,7 @@ public object LogDestination { get; set; }
 
 log_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#log_destination App#log_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#log_destination App#log_destination}
 
 ---
 
@@ -7429,7 +7773,7 @@ public string RunCommand { get; set; }
 
 An optional run command to override the component's default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#run_command App#run_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#run_command App#run_command}
 
 ---
 
@@ -7443,7 +7787,7 @@ public string SourceDir { get; set; }
 
 An optional path to the working directory to use for the build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#source_dir App#source_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#source_dir App#source_dir}
 
 ---
 
@@ -7457,7 +7801,7 @@ public AppSpecWorkerTermination Termination { get; set; }
 
 termination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#termination App#termination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#termination App#termination}
 
 ---
 
@@ -7481,11 +7825,11 @@ new AppSpecWorkerAlert {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.operator">Operator</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#operator App#operator}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.rule">Rule</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#rule App#rule}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.value">Value</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#value App#value}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.window">Window</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#window App#window}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.disabled">Disabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.operator">Operator</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#operator App#operator}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.rule">Rule</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#rule App#rule}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.value">Value</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#value App#value}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.window">Window</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#window App#window}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.disabled">Disabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -7497,7 +7841,7 @@ public string Operator { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#operator App#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#operator App#operator}.
 
 ---
 
@@ -7509,7 +7853,7 @@ public string Rule { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#rule App#rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#rule App#rule}.
 
 ---
 
@@ -7521,7 +7865,7 @@ public double Value { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#value App#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#value App#value}.
 
 ---
 
@@ -7533,7 +7877,7 @@ public string Window { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#window App#window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#window App#window}.
 
 ---
 
@@ -7545,7 +7889,7 @@ public object Disabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#disabled App#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#disabled App#disabled}.
 
 ---
 
@@ -7583,7 +7927,7 @@ public double MaxInstanceCount { get; set; }
 
 The maximum amount of instances for this component. Must be more than min_instance_count.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#max_instance_count App#max_instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#max_instance_count App#max_instance_count}
 
 ---
 
@@ -7597,7 +7941,7 @@ public AppSpecWorkerAutoscalingMetrics Metrics { get; set; }
 
 metrics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#metrics App#metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#metrics App#metrics}
 
 ---
 
@@ -7611,7 +7955,7 @@ public double MinInstanceCount { get; set; }
 
 The minimum amount of instances for this component. Must be less than max_instance_count.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#min_instance_count App#min_instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#min_instance_count App#min_instance_count}
 
 ---
 
@@ -7645,7 +7989,7 @@ public AppSpecWorkerAutoscalingMetricsCpu Cpu { get; set; }
 
 cpu block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#cpu App#cpu}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#cpu App#cpu}
 
 ---
 
@@ -7679,7 +8023,73 @@ public double Percent { get; set; }
 
 The average target CPU utilization for the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#percent App#percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#percent App#percent}
+
+---
+
+### AppSpecWorkerBitbucket <a name="AppSpecWorkerBitbucket" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Digitalocean;
+
+new AppSpecWorkerBitbucket {
+    string Branch = null,
+    object DeployOnPush = null,
+    string Repo = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket.property.branch">Branch</a></code> | <code>string</code> | The name of the branch to use. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket.property.repo">Repo</a></code> | <code>string</code> | The name of the repo in the format `owner/repo`. |
+
+---
+
+##### `Branch`<sup>Optional</sup> <a name="Branch" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket.property.branch"></a>
+
+```csharp
+public string Branch { get; set; }
+```
+
+- *Type:* string
+
+The name of the branch to use.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
+
+---
+
+##### `DeployOnPush`<sup>Optional</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket.property.deployOnPush"></a>
+
+```csharp
+public object DeployOnPush { get; set; }
+```
+
+- *Type:* object
+
+Whether to automatically deploy new commits made to the repo.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+
+---
+
+##### `Repo`<sup>Optional</sup> <a name="Repo" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket.property.repo"></a>
+
+```csharp
+public string Repo { get; set; }
+```
+
+- *Type:* string
+
+The name of the repo in the format `owner/repo`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo App#repo}
 
 ---
 
@@ -7719,7 +8129,7 @@ public string Key { get; set; }
 
 The name of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#key App#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#key App#key}
 
 ---
 
@@ -7733,7 +8143,7 @@ public string Scope { get; set; }
 
 The visibility scope of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#scope App#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#scope App#scope}
 
 ---
 
@@ -7747,7 +8157,7 @@ public string Type { get; set; }
 
 The type of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#type App#type}
 
 ---
 
@@ -7761,7 +8171,7 @@ public string Value { get; set; }
 
 The value of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#value App#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#value App#value}
 
 ---
 
@@ -7797,7 +8207,7 @@ public string Branch { get; set; }
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
 
 ---
 
@@ -7811,7 +8221,7 @@ public string RepoCloneUrl { get; set; }
 
 The clone URL of the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repo_clone_url App#repo_clone_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo_clone_url App#repo_clone_url}
 
 ---
 
@@ -7849,7 +8259,7 @@ public string Branch { get; set; }
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
 
 ---
 
@@ -7863,7 +8273,7 @@ public object DeployOnPush { get; set; }
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -7877,7 +8287,7 @@ public string Repo { get; set; }
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo App#repo}
 
 ---
 
@@ -7915,7 +8325,7 @@ public string Branch { get; set; }
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
 
 ---
 
@@ -7929,7 +8339,7 @@ public object DeployOnPush { get; set; }
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -7943,7 +8353,7 @@ public string Repo { get; set; }
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo App#repo}
 
 ---
 
@@ -7989,7 +8399,7 @@ public string RegistryType { get; set; }
 
 The registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#registry_type App#registry_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#registry_type App#registry_type}
 
 ---
 
@@ -8003,7 +8413,7 @@ public string Repository { get; set; }
 
 The repository name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#repository App#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repository App#repository}
 
 ---
 
@@ -8017,7 +8427,7 @@ public object DeployOnPush { get; set; }
 
 deploy_on_push block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -8031,7 +8441,7 @@ public string Digest { get; set; }
 
 The image digest. Cannot be specified if tag is provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#digest App#digest}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#digest App#digest}
 
 ---
 
@@ -8045,7 +8455,7 @@ public string Registry { get; set; }
 
 The registry name. Must be left empty for the DOCR registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#registry App#registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#registry App#registry}
 
 ---
 
@@ -8059,7 +8469,7 @@ public string RegistryCredentials { get; set; }
 
 Access credentials for third-party registries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#registry_credentials App#registry_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#registry_credentials App#registry_credentials}
 
 ---
 
@@ -8073,7 +8483,7 @@ public string Tag { get; set; }
 
 The repository tag. Defaults to latest if not provided. Cannot be specified if digest is provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#tag App#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#tag App#tag}
 
 ---
 
@@ -8107,7 +8517,7 @@ public object Enabled { get; set; }
 
 Whether to automatically deploy images pushed to DOCR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#enabled App#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#enabled App#enabled}
 
 ---
 
@@ -8149,7 +8559,7 @@ public string Name { get; set; }
 
 Name of the log destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#name App#name}
 
 ---
 
@@ -8163,7 +8573,7 @@ public AppSpecWorkerLogDestinationDatadog Datadog { get; set; }
 
 datadog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#datadog App#datadog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#datadog App#datadog}
 
 ---
 
@@ -8177,7 +8587,7 @@ public AppSpecWorkerLogDestinationLogtail Logtail { get; set; }
 
 logtail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#logtail App#logtail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#logtail App#logtail}
 
 ---
 
@@ -8191,7 +8601,7 @@ public AppSpecWorkerLogDestinationOpenSearch OpenSearch { get; set; }
 
 open_search block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#open_search App#open_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#open_search App#open_search}
 
 ---
 
@@ -8205,7 +8615,7 @@ public AppSpecWorkerLogDestinationPapertrail Papertrail { get; set; }
 
 papertrail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#papertrail App#papertrail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#papertrail App#papertrail}
 
 ---
 
@@ -8241,7 +8651,7 @@ public string ApiKey { get; set; }
 
 Datadog API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#api_key App#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#api_key App#api_key}
 
 ---
 
@@ -8255,7 +8665,7 @@ public string Endpoint { get; set; }
 
 Datadog HTTP log intake endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -8289,7 +8699,7 @@ public string Token { get; set; }
 
 Logtail token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#token App#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#token App#token}
 
 ---
 
@@ -8329,7 +8739,7 @@ public AppSpecWorkerLogDestinationOpenSearchBasicAuth BasicAuth { get; set; }
 
 basic_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#basic_auth App#basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#basic_auth App#basic_auth}
 
 ---
 
@@ -8343,7 +8753,7 @@ public string ClusterName { get; set; }
 
 OpenSearch cluster name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#cluster_name App#cluster_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#cluster_name App#cluster_name}
 
 ---
 
@@ -8357,7 +8767,7 @@ public string Endpoint { get; set; }
 
 OpenSearch endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -8371,7 +8781,7 @@ public string IndexName { get; set; }
 
 OpenSearch index name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#index_name App#index_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#index_name App#index_name}
 
 ---
 
@@ -8407,7 +8817,7 @@ public string Password { get; set; }
 
 Password for basic authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#password App#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#password App#password}
 
 ---
 
@@ -8421,7 +8831,7 @@ public string User { get; set; }
 
 user for basic authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#user App#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#user App#user}
 
 ---
 
@@ -8455,7 +8865,7 @@ public string Endpoint { get; set; }
 
 Papertrail syslog endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -8491,7 +8901,7 @@ The number of seconds to wait between sending a TERM signal to a container and i
 
 Default: 120, Minimum 1, Maximum 600.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#grace_period_seconds App#grace_period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#grace_period_seconds App#grace_period_seconds}
 
 ---
 
@@ -8511,7 +8921,7 @@ new AppTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#create App#create}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#create App#create}. |
 
 ---
 
@@ -8523,7 +8933,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#create App#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#create App#create}.
 
 ---
 
@@ -12226,6 +12636,342 @@ public object InternalValue { get; }
 ```
 
 - *Type:* object
+
+---
+
+
+### AppSpecFunctionBitbucketOutputReference <a name="AppSpecFunctionBitbucketOutputReference" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Digitalocean;
+
+new AppSpecFunctionBitbucketOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.resetBranch">ResetBranch</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.resetDeployOnPush">ResetDeployOnPush</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.resetRepo">ResetRepo</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetBranch` <a name="ResetBranch" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.resetBranch"></a>
+
+```csharp
+private void ResetBranch()
+```
+
+##### `ResetDeployOnPush` <a name="ResetDeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.resetDeployOnPush"></a>
+
+```csharp
+private void ResetDeployOnPush()
+```
+
+##### `ResetRepo` <a name="ResetRepo" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.resetRepo"></a>
+
+```csharp
+private void ResetRepo()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.branchInput">BranchInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.repoInput">RepoInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.branch">Branch</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.repo">Repo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket">AppSpecFunctionBitbucket</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `BranchInput`<sup>Optional</sup> <a name="BranchInput" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.branchInput"></a>
+
+```csharp
+public string BranchInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DeployOnPushInput`<sup>Optional</sup> <a name="DeployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.deployOnPushInput"></a>
+
+```csharp
+public object DeployOnPushInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `RepoInput`<sup>Optional</sup> <a name="RepoInput" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.repoInput"></a>
+
+```csharp
+public string RepoInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Branch`<sup>Required</sup> <a name="Branch" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.branch"></a>
+
+```csharp
+public string Branch { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DeployOnPush`<sup>Required</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.deployOnPush"></a>
+
+```csharp
+public object DeployOnPush { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `Repo`<sup>Required</sup> <a name="Repo" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.repo"></a>
+
+```csharp
+public string Repo { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.internalValue"></a>
+
+```csharp
+public AppSpecFunctionBitbucket InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket">AppSpecFunctionBitbucket</a>
 
 ---
 
@@ -16890,6 +17636,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.putAlert">PutAlert</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.putBitbucket">PutBitbucket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.putCors">PutCors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.putEnv">PutEnv</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.putGit">PutGit</a></code> | *No description.* |
@@ -16898,6 +17645,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.putLogDestination">PutLogDestination</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.putRoutes">PutRoutes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.resetAlert">ResetAlert</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.resetBitbucket">ResetBitbucket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.resetCors">ResetCors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.resetEnv">ResetEnv</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.resetGit">ResetGit</a></code> | *No description.* |
@@ -17071,6 +17819,18 @@ private void PutAlert(object Value)
 
 ---
 
+##### `PutBitbucket` <a name="PutBitbucket" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.putBitbucket"></a>
+
+```csharp
+private void PutBitbucket(AppSpecFunctionBitbucket Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.putBitbucket.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket">AppSpecFunctionBitbucket</a>
+
+---
+
 ##### `PutCors` <a name="PutCors" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.putCors"></a>
 
 ```csharp
@@ -17161,6 +17921,12 @@ private void PutRoutes(object Value)
 private void ResetAlert()
 ```
 
+##### `ResetBitbucket` <a name="ResetBitbucket" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.resetBitbucket"></a>
+
+```csharp
+private void ResetBitbucket()
+```
+
 ##### `ResetCors` <a name="ResetCors" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.resetCors"></a>
 
 ```csharp
@@ -17217,6 +17983,7 @@ private void ResetSourceDir()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.alert">Alert</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertList">AppSpecFunctionAlertList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.bitbucket">Bitbucket</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference">AppSpecFunctionBitbucketOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.cors">Cors</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference">AppSpecFunctionCorsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.env">Env</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnvList">AppSpecFunctionEnvList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.git">Git</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitOutputReference">AppSpecFunctionGitOutputReference</a></code> | *No description.* |
@@ -17225,6 +17992,7 @@ private void ResetSourceDir()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.logDestination">LogDestination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationList">AppSpecFunctionLogDestinationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.routes">Routes</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesList">AppSpecFunctionRoutesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.alertInput">AlertInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.bitbucketInput">BitbucketInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket">AppSpecFunctionBitbucket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.corsInput">CorsInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCors">AppSpecFunctionCors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.envInput">EnvInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.githubInput">GithubInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithub">AppSpecFunctionGithub</a></code> | *No description.* |
@@ -17271,6 +18039,16 @@ public AppSpecFunctionAlertList Alert { get; }
 ```
 
 - *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertList">AppSpecFunctionAlertList</a>
+
+---
+
+##### `Bitbucket`<sup>Required</sup> <a name="Bitbucket" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.bitbucket"></a>
+
+```csharp
+public AppSpecFunctionBitbucketOutputReference Bitbucket { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference">AppSpecFunctionBitbucketOutputReference</a>
 
 ---
 
@@ -17351,6 +18129,16 @@ public object AlertInput { get; }
 ```
 
 - *Type:* object
+
+---
+
+##### `BitbucketInput`<sup>Optional</sup> <a name="BitbucketInput" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.bitbucketInput"></a>
+
+```csharp
+public AppSpecFunctionBitbucket BitbucketInput { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket">AppSpecFunctionBitbucket</a>
 
 ---
 
@@ -21457,6 +22245,342 @@ public object InternalValue { get; }
 ```
 
 - *Type:* object
+
+---
+
+
+### AppSpecJobBitbucketOutputReference <a name="AppSpecJobBitbucketOutputReference" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Digitalocean;
+
+new AppSpecJobBitbucketOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.resetBranch">ResetBranch</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.resetDeployOnPush">ResetDeployOnPush</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.resetRepo">ResetRepo</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetBranch` <a name="ResetBranch" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.resetBranch"></a>
+
+```csharp
+private void ResetBranch()
+```
+
+##### `ResetDeployOnPush` <a name="ResetDeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.resetDeployOnPush"></a>
+
+```csharp
+private void ResetDeployOnPush()
+```
+
+##### `ResetRepo` <a name="ResetRepo" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.resetRepo"></a>
+
+```csharp
+private void ResetRepo()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.branchInput">BranchInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.repoInput">RepoInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.branch">Branch</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.repo">Repo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucket">AppSpecJobBitbucket</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `BranchInput`<sup>Optional</sup> <a name="BranchInput" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.branchInput"></a>
+
+```csharp
+public string BranchInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DeployOnPushInput`<sup>Optional</sup> <a name="DeployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.deployOnPushInput"></a>
+
+```csharp
+public object DeployOnPushInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `RepoInput`<sup>Optional</sup> <a name="RepoInput" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.repoInput"></a>
+
+```csharp
+public string RepoInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Branch`<sup>Required</sup> <a name="Branch" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.branch"></a>
+
+```csharp
+public string Branch { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DeployOnPush`<sup>Required</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.deployOnPush"></a>
+
+```csharp
+public object DeployOnPush { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `Repo`<sup>Required</sup> <a name="Repo" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.repo"></a>
+
+```csharp
+public string Repo { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.internalValue"></a>
+
+```csharp
+public AppSpecJobBitbucket InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucket">AppSpecJobBitbucket</a>
 
 ---
 
@@ -26256,6 +27380,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.putAlert">PutAlert</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.putBitbucket">PutBitbucket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.putEnv">PutEnv</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.putGit">PutGit</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.putGithub">PutGithub</a></code> | *No description.* |
@@ -26264,6 +27389,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.putLogDestination">PutLogDestination</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.putTermination">PutTermination</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.resetAlert">ResetAlert</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.resetBitbucket">ResetBitbucket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.resetBuildCommand">ResetBuildCommand</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.resetDockerfilePath">ResetDockerfilePath</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.resetEnv">ResetEnv</a></code> | *No description.* |
@@ -26444,6 +27570,18 @@ private void PutAlert(object Value)
 
 ---
 
+##### `PutBitbucket` <a name="PutBitbucket" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.putBitbucket"></a>
+
+```csharp
+private void PutBitbucket(AppSpecJobBitbucket Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.putBitbucket.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucket">AppSpecJobBitbucket</a>
+
+---
+
 ##### `PutEnv` <a name="PutEnv" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.putEnv"></a>
 
 ```csharp
@@ -26532,6 +27670,12 @@ private void PutTermination(AppSpecJobTermination Value)
 
 ```csharp
 private void ResetAlert()
+```
+
+##### `ResetBitbucket` <a name="ResetBitbucket" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.resetBitbucket"></a>
+
+```csharp
+private void ResetBitbucket()
 ```
 
 ##### `ResetBuildCommand` <a name="ResetBuildCommand" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.resetBuildCommand"></a>
@@ -26632,6 +27776,7 @@ private void ResetTermination()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.alert">Alert</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertList">AppSpecJobAlertList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.bitbucket">Bitbucket</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference">AppSpecJobBitbucketOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.env">Env</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnvList">AppSpecJobEnvList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.git">Git</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitOutputReference">AppSpecJobGitOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.github">Github</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference">AppSpecJobGithubOutputReference</a></code> | *No description.* |
@@ -26640,6 +27785,7 @@ private void ResetTermination()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.logDestination">LogDestination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationList">AppSpecJobLogDestinationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.termination">Termination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference">AppSpecJobTerminationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.alertInput">AlertInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.bitbucketInput">BitbucketInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucket">AppSpecJobBitbucket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.buildCommandInput">BuildCommandInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.dockerfilePathInput">DockerfilePathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.envInput">EnvInput</a></code> | <code>object</code> | *No description.* |
@@ -26700,6 +27846,16 @@ public AppSpecJobAlertList Alert { get; }
 ```
 
 - *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertList">AppSpecJobAlertList</a>
+
+---
+
+##### `Bitbucket`<sup>Required</sup> <a name="Bitbucket" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.bitbucket"></a>
+
+```csharp
+public AppSpecJobBitbucketOutputReference Bitbucket { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference">AppSpecJobBitbucketOutputReference</a>
 
 ---
 
@@ -26780,6 +27936,16 @@ public object AlertInput { get; }
 ```
 
 - *Type:* object
+
+---
+
+##### `BitbucketInput`<sup>Optional</sup> <a name="BitbucketInput" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.bitbucketInput"></a>
+
+```csharp
+public AppSpecJobBitbucket BitbucketInput { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucket">AppSpecJobBitbucket</a>
 
 ---
 
@@ -29572,6 +30738,342 @@ public AppSpecServiceAutoscaling InternalValue { get; }
 ```
 
 - *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAutoscaling">AppSpecServiceAutoscaling</a>
+
+---
+
+
+### AppSpecServiceBitbucketOutputReference <a name="AppSpecServiceBitbucketOutputReference" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Digitalocean;
+
+new AppSpecServiceBitbucketOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.resetBranch">ResetBranch</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.resetDeployOnPush">ResetDeployOnPush</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.resetRepo">ResetRepo</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetBranch` <a name="ResetBranch" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.resetBranch"></a>
+
+```csharp
+private void ResetBranch()
+```
+
+##### `ResetDeployOnPush` <a name="ResetDeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.resetDeployOnPush"></a>
+
+```csharp
+private void ResetDeployOnPush()
+```
+
+##### `ResetRepo` <a name="ResetRepo" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.resetRepo"></a>
+
+```csharp
+private void ResetRepo()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.branchInput">BranchInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.repoInput">RepoInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.branch">Branch</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.repo">Repo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket">AppSpecServiceBitbucket</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `BranchInput`<sup>Optional</sup> <a name="BranchInput" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.branchInput"></a>
+
+```csharp
+public string BranchInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DeployOnPushInput`<sup>Optional</sup> <a name="DeployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.deployOnPushInput"></a>
+
+```csharp
+public object DeployOnPushInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `RepoInput`<sup>Optional</sup> <a name="RepoInput" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.repoInput"></a>
+
+```csharp
+public string RepoInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Branch`<sup>Required</sup> <a name="Branch" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.branch"></a>
+
+```csharp
+public string Branch { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DeployOnPush`<sup>Required</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.deployOnPush"></a>
+
+```csharp
+public object DeployOnPush { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `Repo`<sup>Required</sup> <a name="Repo" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.repo"></a>
+
+```csharp
+public string Repo { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.internalValue"></a>
+
+```csharp
+public AppSpecServiceBitbucket InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket">AppSpecServiceBitbucket</a>
 
 ---
 
@@ -35596,6 +37098,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putAlert">PutAlert</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putAutoscaling">PutAutoscaling</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putBitbucket">PutBitbucket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putCors">PutCors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putEnv">PutEnv</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putGit">PutGit</a></code> | *No description.* |
@@ -35608,6 +37111,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putTermination">PutTermination</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.resetAlert">ResetAlert</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.resetAutoscaling">ResetAutoscaling</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.resetBitbucket">ResetBitbucket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.resetBuildCommand">ResetBuildCommand</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.resetCors">ResetCors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.resetDockerfilePath">ResetDockerfilePath</a></code> | *No description.* |
@@ -35804,6 +37308,18 @@ private void PutAutoscaling(AppSpecServiceAutoscaling Value)
 
 ---
 
+##### `PutBitbucket` <a name="PutBitbucket" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putBitbucket"></a>
+
+```csharp
+private void PutBitbucket(AppSpecServiceBitbucket Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putBitbucket.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket">AppSpecServiceBitbucket</a>
+
+---
+
 ##### `PutCors` <a name="PutCors" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putCors"></a>
 
 ```csharp
@@ -35936,6 +37452,12 @@ private void ResetAlert()
 private void ResetAutoscaling()
 ```
 
+##### `ResetBitbucket` <a name="ResetBitbucket" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.resetBitbucket"></a>
+
+```csharp
+private void ResetBitbucket()
+```
+
 ##### `ResetBuildCommand` <a name="ResetBuildCommand" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.resetBuildCommand"></a>
 
 ```csharp
@@ -36059,6 +37581,7 @@ private void ResetTermination()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.alert">Alert</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertList">AppSpecServiceAlertList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.autoscaling">Autoscaling</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAutoscalingOutputReference">AppSpecServiceAutoscalingOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.bitbucket">Bitbucket</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference">AppSpecServiceBitbucketOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.cors">Cors</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference">AppSpecServiceCorsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.env">Env</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnvList">AppSpecServiceEnvList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.git">Git</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitOutputReference">AppSpecServiceGitOutputReference</a></code> | *No description.* |
@@ -36071,6 +37594,7 @@ private void ResetTermination()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.termination">Termination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference">AppSpecServiceTerminationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.alertInput">AlertInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.autoscalingInput">AutoscalingInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAutoscaling">AppSpecServiceAutoscaling</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.bitbucketInput">BitbucketInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket">AppSpecServiceBitbucket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.buildCommandInput">BuildCommandInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.corsInput">CorsInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCors">AppSpecServiceCors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.dockerfilePathInput">DockerfilePathInput</a></code> | <code>string</code> | *No description.* |
@@ -36146,6 +37670,16 @@ public AppSpecServiceAutoscalingOutputReference Autoscaling { get; }
 ```
 
 - *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAutoscalingOutputReference">AppSpecServiceAutoscalingOutputReference</a>
+
+---
+
+##### `Bitbucket`<sup>Required</sup> <a name="Bitbucket" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.bitbucket"></a>
+
+```csharp
+public AppSpecServiceBitbucketOutputReference Bitbucket { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference">AppSpecServiceBitbucketOutputReference</a>
 
 ---
 
@@ -36266,6 +37800,16 @@ public AppSpecServiceAutoscaling AutoscalingInput { get; }
 ```
 
 - *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAutoscaling">AppSpecServiceAutoscaling</a>
+
+---
+
+##### `BitbucketInput`<sup>Optional</sup> <a name="BitbucketInput" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.bitbucketInput"></a>
+
+```csharp
+public AppSpecServiceBitbucket BitbucketInput { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket">AppSpecServiceBitbucket</a>
 
 ---
 
@@ -37368,6 +38912,342 @@ public AppSpecServiceTermination InternalValue { get; }
 ```
 
 - *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTermination">AppSpecServiceTermination</a>
+
+---
+
+
+### AppSpecStaticSiteBitbucketOutputReference <a name="AppSpecStaticSiteBitbucketOutputReference" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Digitalocean;
+
+new AppSpecStaticSiteBitbucketOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.resetBranch">ResetBranch</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.resetDeployOnPush">ResetDeployOnPush</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.resetRepo">ResetRepo</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetBranch` <a name="ResetBranch" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.resetBranch"></a>
+
+```csharp
+private void ResetBranch()
+```
+
+##### `ResetDeployOnPush` <a name="ResetDeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.resetDeployOnPush"></a>
+
+```csharp
+private void ResetDeployOnPush()
+```
+
+##### `ResetRepo` <a name="ResetRepo" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.resetRepo"></a>
+
+```csharp
+private void ResetRepo()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.branchInput">BranchInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.repoInput">RepoInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.branch">Branch</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.repo">Repo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucket">AppSpecStaticSiteBitbucket</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `BranchInput`<sup>Optional</sup> <a name="BranchInput" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.branchInput"></a>
+
+```csharp
+public string BranchInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DeployOnPushInput`<sup>Optional</sup> <a name="DeployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.deployOnPushInput"></a>
+
+```csharp
+public object DeployOnPushInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `RepoInput`<sup>Optional</sup> <a name="RepoInput" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.repoInput"></a>
+
+```csharp
+public string RepoInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Branch`<sup>Required</sup> <a name="Branch" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.branch"></a>
+
+```csharp
+public string Branch { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DeployOnPush`<sup>Required</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.deployOnPush"></a>
+
+```csharp
+public object DeployOnPush { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `Repo`<sup>Required</sup> <a name="Repo" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.repo"></a>
+
+```csharp
+public string Repo { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.internalValue"></a>
+
+```csharp
+public AppSpecStaticSiteBitbucket InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucket">AppSpecStaticSiteBitbucket</a>
 
 ---
 
@@ -39894,12 +41774,14 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.putBitbucket">PutBitbucket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.putCors">PutCors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.putEnv">PutEnv</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.putGit">PutGit</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.putGithub">PutGithub</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.putGitlab">PutGitlab</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.putRoutes">PutRoutes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.resetBitbucket">ResetBitbucket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.resetBuildCommand">ResetBuildCommand</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.resetCatchallDocument">ResetCatchallDocument</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.resetCors">ResetCors</a></code> | *No description.* |
@@ -40067,6 +41949,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `PutBitbucket` <a name="PutBitbucket" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.putBitbucket"></a>
+
+```csharp
+private void PutBitbucket(AppSpecStaticSiteBitbucket Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.putBitbucket.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucket">AppSpecStaticSiteBitbucket</a>
+
+---
+
 ##### `PutCors` <a name="PutCors" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.putCors"></a>
 
 ```csharp
@@ -40138,6 +42032,12 @@ private void PutRoutes(object Value)
 - *Type:* object
 
 ---
+
+##### `ResetBitbucket` <a name="ResetBitbucket" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.resetBitbucket"></a>
+
+```csharp
+private void ResetBitbucket()
+```
 
 ##### `ResetBuildCommand` <a name="ResetBuildCommand" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.resetBuildCommand"></a>
 
@@ -40230,12 +42130,14 @@ private void ResetSourceDir()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.bitbucket">Bitbucket</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference">AppSpecStaticSiteBitbucketOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.cors">Cors</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference">AppSpecStaticSiteCorsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.env">Env</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvList">AppSpecStaticSiteEnvList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.git">Git</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitOutputReference">AppSpecStaticSiteGitOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.github">Github</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference">AppSpecStaticSiteGithubOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.gitlab">Gitlab</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference">AppSpecStaticSiteGitlabOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.routes">Routes</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesList">AppSpecStaticSiteRoutesList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.bitbucketInput">BitbucketInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucket">AppSpecStaticSiteBitbucket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.buildCommandInput">BuildCommandInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.catchallDocumentInput">CatchallDocumentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.corsInput">CorsInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCors">AppSpecStaticSiteCors</a></code> | *No description.* |
@@ -40285,6 +42187,16 @@ public string Fqn { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `Bitbucket`<sup>Required</sup> <a name="Bitbucket" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.bitbucket"></a>
+
+```csharp
+public AppSpecStaticSiteBitbucketOutputReference Bitbucket { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference">AppSpecStaticSiteBitbucketOutputReference</a>
 
 ---
 
@@ -40345,6 +42257,16 @@ public AppSpecStaticSiteRoutesList Routes { get; }
 ```
 
 - *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesList">AppSpecStaticSiteRoutesList</a>
+
+---
+
+##### `BitbucketInput`<sup>Optional</sup> <a name="BitbucketInput" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.bitbucketInput"></a>
+
+```csharp
+public AppSpecStaticSiteBitbucket BitbucketInput { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucket">AppSpecStaticSiteBitbucket</a>
 
 ---
 
@@ -42514,6 +44436,342 @@ public AppSpecWorkerAutoscaling InternalValue { get; }
 ```
 
 - *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscaling">AppSpecWorkerAutoscaling</a>
+
+---
+
+
+### AppSpecWorkerBitbucketOutputReference <a name="AppSpecWorkerBitbucketOutputReference" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Digitalocean;
+
+new AppSpecWorkerBitbucketOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.resetBranch">ResetBranch</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.resetDeployOnPush">ResetDeployOnPush</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.resetRepo">ResetRepo</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetBranch` <a name="ResetBranch" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.resetBranch"></a>
+
+```csharp
+private void ResetBranch()
+```
+
+##### `ResetDeployOnPush` <a name="ResetDeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.resetDeployOnPush"></a>
+
+```csharp
+private void ResetDeployOnPush()
+```
+
+##### `ResetRepo` <a name="ResetRepo" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.resetRepo"></a>
+
+```csharp
+private void ResetRepo()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.branchInput">BranchInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.repoInput">RepoInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.branch">Branch</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.repo">Repo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket">AppSpecWorkerBitbucket</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `BranchInput`<sup>Optional</sup> <a name="BranchInput" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.branchInput"></a>
+
+```csharp
+public string BranchInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DeployOnPushInput`<sup>Optional</sup> <a name="DeployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.deployOnPushInput"></a>
+
+```csharp
+public object DeployOnPushInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `RepoInput`<sup>Optional</sup> <a name="RepoInput" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.repoInput"></a>
+
+```csharp
+public string RepoInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Branch`<sup>Required</sup> <a name="Branch" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.branch"></a>
+
+```csharp
+public string Branch { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DeployOnPush`<sup>Required</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.deployOnPush"></a>
+
+```csharp
+public object DeployOnPush { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `Repo`<sup>Required</sup> <a name="Repo" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.repo"></a>
+
+```csharp
+public string Repo { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.internalValue"></a>
+
+```csharp
+public AppSpecWorkerBitbucket InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket">AppSpecWorkerBitbucket</a>
 
 ---
 
@@ -47314,6 +49572,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putAlert">PutAlert</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putAutoscaling">PutAutoscaling</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putBitbucket">PutBitbucket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putEnv">PutEnv</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putGit">PutGit</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putGithub">PutGithub</a></code> | *No description.* |
@@ -47323,6 +49582,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putTermination">PutTermination</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.resetAlert">ResetAlert</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.resetAutoscaling">ResetAutoscaling</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.resetBitbucket">ResetBitbucket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.resetBuildCommand">ResetBuildCommand</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.resetDockerfilePath">ResetDockerfilePath</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.resetEnv">ResetEnv</a></code> | *No description.* |
@@ -47514,6 +49774,18 @@ private void PutAutoscaling(AppSpecWorkerAutoscaling Value)
 
 ---
 
+##### `PutBitbucket` <a name="PutBitbucket" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putBitbucket"></a>
+
+```csharp
+private void PutBitbucket(AppSpecWorkerBitbucket Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putBitbucket.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket">AppSpecWorkerBitbucket</a>
+
+---
+
 ##### `PutEnv` <a name="PutEnv" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putEnv"></a>
 
 ```csharp
@@ -47610,6 +49882,12 @@ private void ResetAlert()
 private void ResetAutoscaling()
 ```
 
+##### `ResetBitbucket` <a name="ResetBitbucket" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.resetBitbucket"></a>
+
+```csharp
+private void ResetBitbucket()
+```
+
 ##### `ResetBuildCommand` <a name="ResetBuildCommand" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.resetBuildCommand"></a>
 
 ```csharp
@@ -47703,6 +49981,7 @@ private void ResetTermination()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.alert">Alert</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertList">AppSpecWorkerAlertList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.autoscaling">Autoscaling</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference">AppSpecWorkerAutoscalingOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.bitbucket">Bitbucket</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference">AppSpecWorkerBitbucketOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.env">Env</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnvList">AppSpecWorkerEnvList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.git">Git</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitOutputReference">AppSpecWorkerGitOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.github">Github</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference">AppSpecWorkerGithubOutputReference</a></code> | *No description.* |
@@ -47712,6 +49991,7 @@ private void ResetTermination()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.termination">Termination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference">AppSpecWorkerTerminationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.alertInput">AlertInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.autoscalingInput">AutoscalingInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscaling">AppSpecWorkerAutoscaling</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.bitbucketInput">BitbucketInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket">AppSpecWorkerBitbucket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.buildCommandInput">BuildCommandInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.dockerfilePathInput">DockerfilePathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.envInput">EnvInput</a></code> | <code>object</code> | *No description.* |
@@ -47780,6 +50060,16 @@ public AppSpecWorkerAutoscalingOutputReference Autoscaling { get; }
 ```
 
 - *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscalingOutputReference">AppSpecWorkerAutoscalingOutputReference</a>
+
+---
+
+##### `Bitbucket`<sup>Required</sup> <a name="Bitbucket" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.bitbucket"></a>
+
+```csharp
+public AppSpecWorkerBitbucketOutputReference Bitbucket { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference">AppSpecWorkerBitbucketOutputReference</a>
 
 ---
 
@@ -47870,6 +50160,16 @@ public AppSpecWorkerAutoscaling AutoscalingInput { get; }
 ```
 
 - *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscaling">AppSpecWorkerAutoscaling</a>
+
+---
+
+##### `BitbucketInput`<sup>Optional</sup> <a name="BitbucketInput" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.bitbucketInput"></a>
+
+```csharp
+public AppSpecWorkerBitbucket BitbucketInput { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket">AppSpecWorkerBitbucket</a>
 
 ---
 

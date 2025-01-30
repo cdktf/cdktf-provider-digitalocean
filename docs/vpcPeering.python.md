@@ -4,7 +4,7 @@
 
 ### VpcPeering <a name="VpcPeering" id="@cdktf/provider-digitalocean.vpcPeering.VpcPeering"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/vpc_peering digitalocean_vpc_peering}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/vpc_peering digitalocean_vpc_peering}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.vpcPeering.VpcPeering.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the VPC Peering.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/vpc_peering#name VpcPeering#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/vpc_peering#name VpcPeering#name}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The list of VPCs to be peered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/vpc_peering#vpc_ids VpcPeering#vpc_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/vpc_peering#vpc_ids VpcPeering#vpc_ids}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/vpc_peering#timeouts VpcPeering#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/vpc_peering#timeouts VpcPeering#timeouts}
 
 ---
 
@@ -504,7 +504,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/vpc_peering#create VpcPeering#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/vpc_peering#create VpcPeering#create}.
 
 ---
 
@@ -512,7 +512,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/vpc_peering#delete VpcPeering#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/vpc_peering#delete VpcPeering#delete}.
 
 ---
 
@@ -636,7 +636,7 @@ The construct id used in the generated config for the VpcPeering to import.
 
 The id of the existing VpcPeering that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/vpc_peering#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/vpc_peering#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1048,7 +1048,7 @@ name: str
 
 The name of the VPC Peering.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/vpc_peering#name VpcPeering#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/vpc_peering#name VpcPeering#name}
 
 ---
 
@@ -1062,7 +1062,7 @@ vpc_ids: typing.List[str]
 
 The list of VPCs to be peered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/vpc_peering#vpc_ids VpcPeering#vpc_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/vpc_peering#vpc_ids VpcPeering#vpc_ids}
 
 ---
 
@@ -1076,7 +1076,7 @@ timeouts: VpcPeeringTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/vpc_peering#timeouts VpcPeering#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/vpc_peering#timeouts VpcPeering#timeouts}
 
 ---
 
@@ -1097,8 +1097,8 @@ vpcPeering.VpcPeeringTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.vpcPeering.VpcPeeringTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/vpc_peering#create VpcPeering#create}. |
-| <code><a href="#@cdktf/provider-digitalocean.vpcPeering.VpcPeeringTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/vpc_peering#delete VpcPeering#delete}. |
+| <code><a href="#@cdktf/provider-digitalocean.vpcPeering.VpcPeeringTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/vpc_peering#create VpcPeering#create}. |
+| <code><a href="#@cdktf/provider-digitalocean.vpcPeering.VpcPeeringTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/vpc_peering#delete VpcPeering#delete}. |
 
 ---
 
@@ -1110,7 +1110,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/vpc_peering#create VpcPeering#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/vpc_peering#create VpcPeering#create}.
 
 ---
 
@@ -1122,7 +1122,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/vpc_peering#delete VpcPeering#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/vpc_peering#delete VpcPeering#delete}.
 
 ---
 

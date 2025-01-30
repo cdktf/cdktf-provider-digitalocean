@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,76 +8,86 @@ import * as cdktf from 'cdktf';
 
 export interface KubernetesClusterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster#auto_upgrade KubernetesCluster#auto_upgrade}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#auto_upgrade KubernetesCluster#auto_upgrade}
   */
   readonly autoUpgrade?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster#cluster_subnet KubernetesCluster#cluster_subnet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#cluster_subnet KubernetesCluster#cluster_subnet}
   */
   readonly clusterSubnet?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster#destroy_all_associated_resources KubernetesCluster#destroy_all_associated_resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#destroy_all_associated_resources KubernetesCluster#destroy_all_associated_resources}
   */
   readonly destroyAllAssociatedResources?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster#ha KubernetesCluster#ha}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#ha KubernetesCluster#ha}
   */
   readonly ha?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster#id KubernetesCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#id KubernetesCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster#name KubernetesCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#kubeconfig_expire_seconds KubernetesCluster#kubeconfig_expire_seconds}
+  */
+  readonly kubeconfigExpireSeconds?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#name KubernetesCluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster#region KubernetesCluster#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#region KubernetesCluster#region}
   */
   readonly region: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster#registry_integration KubernetesCluster#registry_integration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#registry_integration KubernetesCluster#registry_integration}
   */
   readonly registryIntegration?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster#service_subnet KubernetesCluster#service_subnet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#service_subnet KubernetesCluster#service_subnet}
   */
   readonly serviceSubnet?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster#surge_upgrade KubernetesCluster#surge_upgrade}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#surge_upgrade KubernetesCluster#surge_upgrade}
   */
   readonly surgeUpgrade?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster#tags KubernetesCluster#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#tags KubernetesCluster#tags}
   */
   readonly tags?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster#version KubernetesCluster#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#version KubernetesCluster#version}
   */
   readonly version: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster#vpc_uuid KubernetesCluster#vpc_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#vpc_uuid KubernetesCluster#vpc_uuid}
   */
   readonly vpcUuid?: string;
   /**
+  * control_plane_firewall block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#control_plane_firewall KubernetesCluster#control_plane_firewall}
+  */
+  readonly controlPlaneFirewall?: KubernetesClusterControlPlaneFirewall;
+  /**
   * maintenance_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster#maintenance_policy KubernetesCluster#maintenance_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#maintenance_policy KubernetesCluster#maintenance_policy}
   */
   readonly maintenancePolicy?: KubernetesClusterMaintenancePolicy;
   /**
   * node_pool block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster#node_pool KubernetesCluster#node_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#node_pool KubernetesCluster#node_pool}
   */
   readonly nodePool: KubernetesClusterNodePool;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster#timeouts KubernetesCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#timeouts KubernetesCluster#timeouts}
   */
   readonly timeouts?: KubernetesClusterTimeouts;
 }
@@ -191,13 +196,124 @@ export class KubernetesClusterKubeConfigList extends cdktf.ComplexList {
     return new KubernetesClusterKubeConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface KubernetesClusterControlPlaneFirewall {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#allowed_addresses KubernetesCluster#allowed_addresses}
+  */
+  readonly allowedAddresses: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#enabled KubernetesCluster#enabled}
+  */
+  readonly enabled: boolean | cdktf.IResolvable;
+}
+
+export function kubernetesClusterControlPlaneFirewallToTerraform(struct?: KubernetesClusterControlPlaneFirewallOutputReference | KubernetesClusterControlPlaneFirewall): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    allowed_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedAddresses),
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+  }
+}
+
+
+export function kubernetesClusterControlPlaneFirewallToHclTerraform(struct?: KubernetesClusterControlPlaneFirewallOutputReference | KubernetesClusterControlPlaneFirewall): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allowed_addresses: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedAddresses),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class KubernetesClusterControlPlaneFirewallOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): KubernetesClusterControlPlaneFirewall | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allowedAddresses !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedAddresses = this._allowedAddresses;
+    }
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: KubernetesClusterControlPlaneFirewall | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._allowedAddresses = undefined;
+      this._enabled = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._allowedAddresses = value.allowedAddresses;
+      this._enabled = value.enabled;
+    }
+  }
+
+  // allowed_addresses - computed: false, optional: false, required: true
+  private _allowedAddresses?: string[]; 
+  public get allowedAddresses() {
+    return this.getListAttribute('allowed_addresses');
+  }
+  public set allowedAddresses(value: string[]) {
+    this._allowedAddresses = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedAddressesInput() {
+    return this._allowedAddresses;
+  }
+
+  // enabled - computed: false, optional: false, required: true
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+}
 export interface KubernetesClusterMaintenancePolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster#day KubernetesCluster#day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#day KubernetesCluster#day}
   */
   readonly day?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster#start_time KubernetesCluster#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#start_time KubernetesCluster#start_time}
   */
   readonly startTime?: string;
 }
@@ -415,15 +531,15 @@ export class KubernetesClusterNodePoolNodesList extends cdktf.ComplexList {
 }
 export interface KubernetesClusterNodePoolTaint {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster#effect KubernetesCluster#effect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#effect KubernetesCluster#effect}
   */
   readonly effect: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster#key KubernetesCluster#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#key KubernetesCluster#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster#value KubernetesCluster#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#value KubernetesCluster#value}
   */
   readonly value: string;
 }
@@ -588,41 +704,41 @@ export class KubernetesClusterNodePoolTaintList extends cdktf.ComplexList {
 }
 export interface KubernetesClusterNodePool {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster#auto_scale KubernetesCluster#auto_scale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#auto_scale KubernetesCluster#auto_scale}
   */
   readonly autoScale?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster#labels KubernetesCluster#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#labels KubernetesCluster#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster#max_nodes KubernetesCluster#max_nodes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#max_nodes KubernetesCluster#max_nodes}
   */
   readonly maxNodes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster#min_nodes KubernetesCluster#min_nodes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#min_nodes KubernetesCluster#min_nodes}
   */
   readonly minNodes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster#name KubernetesCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#name KubernetesCluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster#node_count KubernetesCluster#node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#node_count KubernetesCluster#node_count}
   */
   readonly nodeCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster#size KubernetesCluster#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#size KubernetesCluster#size}
   */
   readonly size: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster#tags KubernetesCluster#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#tags KubernetesCluster#tags}
   */
   readonly tags?: string[];
   /**
   * taint block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster#taint KubernetesCluster#taint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#taint KubernetesCluster#taint}
   */
   readonly taint?: KubernetesClusterNodePoolTaint[] | cdktf.IResolvable;
 }
@@ -948,7 +1064,7 @@ export class KubernetesClusterNodePoolOutputReference extends cdktf.ComplexObjec
 }
 export interface KubernetesClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster#create KubernetesCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#create KubernetesCluster#create}
   */
   readonly create?: string;
 }
@@ -1042,7 +1158,7 @@ export class KubernetesClusterTimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster}
 */
 export class KubernetesCluster extends cdktf.TerraformResource {
 
@@ -1058,7 +1174,7 @@ export class KubernetesCluster extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a KubernetesCluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KubernetesCluster to import
-  * @param importFromId The id of the existing KubernetesCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KubernetesCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KubernetesCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1070,7 +1186,7 @@ export class KubernetesCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1081,7 +1197,7 @@ export class KubernetesCluster extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_kubernetes_cluster',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.47.0',
+        providerVersion: '2.48.1',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
@@ -1097,6 +1213,7 @@ export class KubernetesCluster extends cdktf.TerraformResource {
     this._destroyAllAssociatedResources = config.destroyAllAssociatedResources;
     this._ha = config.ha;
     this._id = config.id;
+    this._kubeconfigExpireSeconds = config.kubeconfigExpireSeconds;
     this._name = config.name;
     this._region = config.region;
     this._registryIntegration = config.registryIntegration;
@@ -1105,6 +1222,7 @@ export class KubernetesCluster extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._version = config.version;
     this._vpcUuid = config.vpcUuid;
+    this._controlPlaneFirewall.internalValue = config.controlPlaneFirewall;
     this._maintenancePolicy.internalValue = config.maintenancePolicy;
     this._nodePool.internalValue = config.nodePool;
     this._timeouts.internalValue = config.timeouts;
@@ -1213,6 +1331,22 @@ export class KubernetesCluster extends cdktf.TerraformResource {
   private _kubeConfig = new KubernetesClusterKubeConfigList(this, "kube_config", false);
   public get kubeConfig() {
     return this._kubeConfig;
+  }
+
+  // kubeconfig_expire_seconds - computed: false, optional: true, required: false
+  private _kubeconfigExpireSeconds?: number; 
+  public get kubeconfigExpireSeconds() {
+    return this.getNumberAttribute('kubeconfig_expire_seconds');
+  }
+  public set kubeconfigExpireSeconds(value: number) {
+    this._kubeconfigExpireSeconds = value;
+  }
+  public resetKubeconfigExpireSeconds() {
+    this._kubeconfigExpireSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kubeconfigExpireSecondsInput() {
+    return this._kubeconfigExpireSeconds;
   }
 
   // name - computed: false, optional: false, required: true
@@ -1349,6 +1483,22 @@ export class KubernetesCluster extends cdktf.TerraformResource {
     return this._vpcUuid;
   }
 
+  // control_plane_firewall - computed: false, optional: true, required: false
+  private _controlPlaneFirewall = new KubernetesClusterControlPlaneFirewallOutputReference(this, "control_plane_firewall");
+  public get controlPlaneFirewall() {
+    return this._controlPlaneFirewall;
+  }
+  public putControlPlaneFirewall(value: KubernetesClusterControlPlaneFirewall) {
+    this._controlPlaneFirewall.internalValue = value;
+  }
+  public resetControlPlaneFirewall() {
+    this._controlPlaneFirewall.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get controlPlaneFirewallInput() {
+    return this._controlPlaneFirewall.internalValue;
+  }
+
   // maintenance_policy - computed: false, optional: true, required: false
   private _maintenancePolicy = new KubernetesClusterMaintenancePolicyOutputReference(this, "maintenance_policy");
   public get maintenancePolicy() {
@@ -1405,6 +1555,7 @@ export class KubernetesCluster extends cdktf.TerraformResource {
       destroy_all_associated_resources: cdktf.booleanToTerraform(this._destroyAllAssociatedResources),
       ha: cdktf.booleanToTerraform(this._ha),
       id: cdktf.stringToTerraform(this._id),
+      kubeconfig_expire_seconds: cdktf.numberToTerraform(this._kubeconfigExpireSeconds),
       name: cdktf.stringToTerraform(this._name),
       region: cdktf.stringToTerraform(this._region),
       registry_integration: cdktf.booleanToTerraform(this._registryIntegration),
@@ -1413,6 +1564,7 @@ export class KubernetesCluster extends cdktf.TerraformResource {
       tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
       version: cdktf.stringToTerraform(this._version),
       vpc_uuid: cdktf.stringToTerraform(this._vpcUuid),
+      control_plane_firewall: kubernetesClusterControlPlaneFirewallToTerraform(this._controlPlaneFirewall.internalValue),
       maintenance_policy: kubernetesClusterMaintenancePolicyToTerraform(this._maintenancePolicy.internalValue),
       node_pool: kubernetesClusterNodePoolToTerraform(this._nodePool.internalValue),
       timeouts: kubernetesClusterTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1450,6 +1602,12 @@ export class KubernetesCluster extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      kubeconfig_expire_seconds: {
+        value: cdktf.numberToHclTerraform(this._kubeconfigExpireSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
@@ -1498,6 +1656,12 @@ export class KubernetesCluster extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      control_plane_firewall: {
+        value: kubernetesClusterControlPlaneFirewallToHclTerraform(this._controlPlaneFirewall.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "KubernetesClusterControlPlaneFirewallList",
       },
       maintenance_policy: {
         value: kubernetesClusterMaintenancePolicyToHclTerraform(this._maintenancePolicy.internalValue),
