@@ -4,7 +4,7 @@
 
 ### DataDigitaloceanVolume <a name="DataDigitaloceanVolume" id="@cdktf/provider-digitalocean.dataDigitaloceanVolume.DataDigitaloceanVolume"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/data-sources/volume digitalocean_volume}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/volume digitalocean_volume}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanVolume.DataDigitaloceanVolume.Initializer"></a>
 
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataDigitaloceanVolume to 
 
 The id of the existing DataDigitaloceanVolume that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/data-sources/volume#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/volume#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -748,7 +748,7 @@ new DataDigitaloceanVolumeConfig {
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolume.DataDigitaloceanVolumeConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolume.DataDigitaloceanVolumeConfig.property.name">Name</a></code> | <code>string</code> | name of the volume. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolume.DataDigitaloceanVolumeConfig.property.description">Description</a></code> | <code>string</code> | volume description. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolume.DataDigitaloceanVolumeConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/data-sources/volume#id DataDigitaloceanVolume#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolume.DataDigitaloceanVolumeConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/volume#id DataDigitaloceanVolume#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanVolume.DataDigitaloceanVolumeConfig.property.region">Region</a></code> | <code>string</code> | the region that the volume is provisioned in. |
 
 ---
@@ -833,7 +833,7 @@ public string Name { get; set; }
 
 name of the volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/data-sources/volume#name DataDigitaloceanVolume#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/volume#name DataDigitaloceanVolume#name}
 
 ---
 
@@ -847,7 +847,7 @@ public string Description { get; set; }
 
 volume description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/data-sources/volume#description DataDigitaloceanVolume#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/volume#description DataDigitaloceanVolume#description}
 
 ---
 
@@ -859,7 +859,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/data-sources/volume#id DataDigitaloceanVolume#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/volume#id DataDigitaloceanVolume#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -876,7 +876,7 @@ public string Region { get; set; }
 
 the region that the volume is provisioned in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/data-sources/volume#region DataDigitaloceanVolume#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/volume#region DataDigitaloceanVolume#region}
 
 ---
 

@@ -1,3 +1,3 @@
 # `digitalocean_spaces_bucket_cors_configuration`
 
-Refer to the Terraform Registry for docs: [`digitalocean_spaces_bucket_cors_configuration`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/spaces_bucket_cors_configuration).
+Refer to the Terraform Registry for docs: [`digitalocean_spaces_bucket_cors_configuration`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/spaces_bucket_cors_configuration).

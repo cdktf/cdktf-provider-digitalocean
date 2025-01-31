@@ -4,7 +4,7 @@
 
 ### App <a name="App" id="@cdktf/provider-digitalocean.app.App"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app digitalocean_app}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app digitalocean_app}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.app.App.Initializer"></a>
 
@@ -541,7 +541,7 @@ The construct id used in the generated config for the App to import.
 
 The id of the existing App that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -958,8 +958,8 @@ new AppConfig {
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.dedicatedIps">DedicatedIps</a></code> | <code>object</code> | dedicated_ips block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#id App#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.projectId">ProjectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#project_id App#project_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#id App#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.projectId">ProjectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#project_id App#project_id}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.spec">Spec</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec">AppSpec</a></code> | spec block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppTimeouts">AppTimeouts</a></code> | timeouts block. |
 
@@ -1045,7 +1045,7 @@ public object DedicatedIps { get; set; }
 
 dedicated_ips block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#dedicated_ips App#dedicated_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#dedicated_ips App#dedicated_ips}
 
 ---
 
@@ -1057,7 +1057,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#id App#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#id App#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1072,7 +1072,7 @@ public string ProjectId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#project_id App#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#project_id App#project_id}.
 
 ---
 
@@ -1086,7 +1086,7 @@ public AppSpec Spec { get; set; }
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#spec App#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#spec App#spec}
 
 ---
 
@@ -1100,7 +1100,7 @@ public AppTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#timeouts App#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#timeouts App#timeouts}
 
 ---
 
@@ -1138,7 +1138,7 @@ public string Id { get; set; }
 
 The ID of the dedicated egress IP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#id App#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#id App#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1155,7 +1155,7 @@ public string Ip { get; set; }
 
 The IP address of the dedicated egress IP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#ip App#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#ip App#ip}
 
 ---
 
@@ -1169,7 +1169,7 @@ public string Status { get; set; }
 
 The status of the dedicated egress IP: 'UNKNOWN', 'ASSIGNING', 'ASSIGNED', or 'REMOVED'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#status App#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#status App#status}
 
 ---
 
@@ -1207,7 +1207,7 @@ new AppSpec {
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.alert">Alert</a></code> | <code>object</code> | alert block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.database">Database</a></code> | <code>object</code> | database block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.domain">Domain</a></code> | <code>object</code> | domain block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.domains">Domains</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#domains App#domains}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.domains">Domains</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#domains App#domains}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.egress">Egress</a></code> | <code>object</code> | egress block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.env">Env</a></code> | <code>object</code> | env block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.features">Features</a></code> | <code>string[]</code> | List of features which is applied to the app. |
@@ -1231,7 +1231,7 @@ public string Name { get; set; }
 
 The name of the app. Must be unique across all apps in the same account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#name App#name}
 
 ---
 
@@ -1245,7 +1245,7 @@ public object Alert { get; set; }
 
 alert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#alert App#alert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#alert App#alert}
 
 ---
 
@@ -1259,7 +1259,7 @@ public object Database { get; set; }
 
 database block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#database App#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#database App#database}
 
 ---
 
@@ -1273,7 +1273,7 @@ public object Domain { get; set; }
 
 domain block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#domain App#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#domain App#domain}
 
 ---
 
@@ -1285,7 +1285,7 @@ public string[] Domains { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#domains App#domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#domains App#domains}.
 
 ---
 
@@ -1299,7 +1299,7 @@ public object Egress { get; set; }
 
 egress block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#egress App#egress}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#egress App#egress}
 
 ---
 
@@ -1313,7 +1313,7 @@ public object Env { get; set; }
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#env App#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#env App#env}
 
 ---
 
@@ -1327,7 +1327,7 @@ public string[] Features { get; set; }
 
 List of features which is applied to the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#features App#features}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#features App#features}
 
 ---
 
@@ -1341,7 +1341,7 @@ public object Function { get; set; }
 
 function block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#function App#function}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#function App#function}
 
 ---
 
@@ -1355,7 +1355,7 @@ public AppSpecIngress Ingress { get; set; }
 
 ingress block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#ingress App#ingress}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#ingress App#ingress}
 
 ---
 
@@ -1369,7 +1369,7 @@ public object Job { get; set; }
 
 job block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#job App#job}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#job App#job}
 
 ---
 
@@ -1383,7 +1383,7 @@ public string Region { get; set; }
 
 The slug for the DigitalOcean data center region hosting the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#region App#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#region App#region}
 
 ---
 
@@ -1397,7 +1397,7 @@ public object Service { get; set; }
 
 service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#service App#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#service App#service}
 
 ---
 
@@ -1411,7 +1411,7 @@ public object StaticSite { get; set; }
 
 static_site block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#static_site App#static_site}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#static_site App#static_site}
 
 ---
 
@@ -1425,7 +1425,7 @@ public object Worker { get; set; }
 
 worker block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#worker App#worker}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#worker App#worker}
 
 ---
 
@@ -1446,8 +1446,8 @@ new AppSpecAlert {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlert.property.rule">Rule</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#rule App#rule}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlert.property.disabled">Disabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlert.property.rule">Rule</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#rule App#rule}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlert.property.disabled">Disabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -1459,7 +1459,7 @@ public string Rule { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#rule App#rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#rule App#rule}.
 
 ---
 
@@ -1471,7 +1471,7 @@ public object Disabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#disabled App#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#disabled App#disabled}.
 
 ---
 
@@ -1519,7 +1519,7 @@ The name of the underlying DigitalOcean DBaaS cluster.
 
 This is required for production databases. For dev databases, if cluster_name is not set, a new cluster will be provisioned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#cluster_name App#cluster_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#cluster_name App#cluster_name}
 
 ---
 
@@ -1533,7 +1533,7 @@ public string DbName { get; set; }
 
 The name of the MySQL or PostgreSQL database to configure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#db_name App#db_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#db_name App#db_name}
 
 ---
 
@@ -1547,7 +1547,7 @@ public string DbUser { get; set; }
 
 The name of the MySQL or PostgreSQL user to configure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#db_user App#db_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#db_user App#db_user}
 
 ---
 
@@ -1561,7 +1561,7 @@ public string Engine { get; set; }
 
 The database engine to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#engine App#engine}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#engine App#engine}
 
 ---
 
@@ -1575,7 +1575,7 @@ public string Name { get; set; }
 
 The name of the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#name App#name}
 
 ---
 
@@ -1589,7 +1589,7 @@ public object Production { get; set; }
 
 Whether this is a production or dev database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#production App#production}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#production App#production}
 
 ---
 
@@ -1603,7 +1603,7 @@ public string Version { get; set; }
 
 The version of the database engine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#version App#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#version App#version}
 
 ---
 
@@ -1643,7 +1643,7 @@ public string Name { get; set; }
 
 The hostname for the domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#name App#name}
 
 ---
 
@@ -1657,7 +1657,7 @@ public string Type { get; set; }
 
 The type of the domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#type App#type}
 
 ---
 
@@ -1671,7 +1671,7 @@ public object Wildcard { get; set; }
 
 Indicates whether the domain includes all sub-domains, in addition to the given domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#wildcard App#wildcard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#wildcard App#wildcard}
 
 ---
 
@@ -1685,7 +1685,7 @@ public string Zone { get; set; }
 
 If the domain uses DigitalOcean DNS and you would like App Platform to automatically manage it for you, set this to the name of the domain on your account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#zone App#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#zone App#zone}
 
 ---
 
@@ -1719,7 +1719,7 @@ public string Type { get; set; }
 
 The app egress type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#type App#type}
 
 ---
 
@@ -1759,7 +1759,7 @@ public string Key { get; set; }
 
 The name of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#key App#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#key App#key}
 
 ---
 
@@ -1773,7 +1773,7 @@ public string Scope { get; set; }
 
 The visibility scope of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#scope App#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#scope App#scope}
 
 ---
 
@@ -1787,7 +1787,7 @@ public string Type { get; set; }
 
 The type of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#type App#type}
 
 ---
 
@@ -1801,7 +1801,7 @@ public string Value { get; set; }
 
 The value of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#value App#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#value App#value}
 
 ---
 
@@ -1855,7 +1855,7 @@ public string Name { get; set; }
 
 The name of the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#name App#name}
 
 ---
 
@@ -1869,7 +1869,7 @@ public object Alert { get; set; }
 
 alert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#alert App#alert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#alert App#alert}
 
 ---
 
@@ -1883,7 +1883,7 @@ public AppSpecFunctionBitbucket Bitbucket { get; set; }
 
 bitbucket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#bitbucket App#bitbucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#bitbucket App#bitbucket}
 
 ---
 
@@ -1897,7 +1897,7 @@ public AppSpecFunctionCors Cors { get; set; }
 
 cors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#cors App#cors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#cors App#cors}
 
 ---
 
@@ -1911,7 +1911,7 @@ public object Env { get; set; }
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#env App#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#env App#env}
 
 ---
 
@@ -1925,7 +1925,7 @@ public AppSpecFunctionGit Git { get; set; }
 
 git block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#git App#git}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#git App#git}
 
 ---
 
@@ -1939,7 +1939,7 @@ public AppSpecFunctionGithub Github { get; set; }
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#github App#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#github App#github}
 
 ---
 
@@ -1953,7 +1953,7 @@ public AppSpecFunctionGitlab Gitlab { get; set; }
 
 gitlab block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#gitlab App#gitlab}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#gitlab App#gitlab}
 
 ---
 
@@ -1967,7 +1967,7 @@ public object LogDestination { get; set; }
 
 log_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#log_destination App#log_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#log_destination App#log_destination}
 
 ---
 
@@ -1981,7 +1981,7 @@ public object Routes { get; set; }
 
 routes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#routes App#routes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#routes App#routes}
 
 ---
 
@@ -1995,7 +1995,7 @@ public string SourceDir { get; set; }
 
 An optional path to the working directory to use for the build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#source_dir App#source_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#source_dir App#source_dir}
 
 ---
 
@@ -2019,11 +2019,11 @@ new AppSpecFunctionAlert {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.operator">Operator</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#operator App#operator}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.rule">Rule</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#rule App#rule}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.value">Value</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#value App#value}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.window">Window</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#window App#window}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.disabled">Disabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.operator">Operator</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#operator App#operator}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.rule">Rule</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#rule App#rule}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.value">Value</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#value App#value}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.window">Window</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#window App#window}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.disabled">Disabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -2035,7 +2035,7 @@ public string Operator { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#operator App#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#operator App#operator}.
 
 ---
 
@@ -2047,7 +2047,7 @@ public string Rule { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#rule App#rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#rule App#rule}.
 
 ---
 
@@ -2059,7 +2059,7 @@ public double Value { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#value App#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#value App#value}.
 
 ---
 
@@ -2071,7 +2071,7 @@ public string Window { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#window App#window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#window App#window}.
 
 ---
 
@@ -2083,7 +2083,7 @@ public object Disabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#disabled App#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#disabled App#disabled}.
 
 ---
 
@@ -2121,7 +2121,7 @@ public string Branch { get; set; }
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#branch App#branch}
 
 ---
 
@@ -2135,7 +2135,7 @@ public object DeployOnPush { get; set; }
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -2149,7 +2149,7 @@ public string Repo { get; set; }
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#repo App#repo}
 
 ---
 
@@ -2195,7 +2195,7 @@ Whether browsers should expose the response to the client-side JavaScript code w
 
 This configures the Access-Control-Allow-Credentials header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#allow_credentials App#allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#allow_credentials App#allow_credentials}
 
 ---
 
@@ -2209,7 +2209,7 @@ public string[] AllowHeaders { get; set; }
 
 The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#allow_headers App#allow_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#allow_headers App#allow_headers}
 
 ---
 
@@ -2223,7 +2223,7 @@ public string[] AllowMethods { get; set; }
 
 The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#allow_methods App#allow_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#allow_methods App#allow_methods}
 
 ---
 
@@ -2237,7 +2237,7 @@ public AppSpecFunctionCorsAllowOrigins AllowOrigins { get; set; }
 
 allow_origins block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#allow_origins App#allow_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#allow_origins App#allow_origins}
 
 ---
 
@@ -2251,7 +2251,7 @@ public string[] ExposeHeaders { get; set; }
 
 The set of HTTP response headers that browsers are allowed to access. This configures the Access-Control-Expose-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#expose_headers App#expose_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#expose_headers App#expose_headers}
 
 ---
 
@@ -2267,7 +2267,7 @@ An optional duration specifying how long browsers can cache the results of a pre
 
 This configures the Access-Control-Max-Age header. Example: `5h30m`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#max_age App#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#max_age App#max_age}
 
 ---
 
@@ -2305,7 +2305,7 @@ public string Exact { get; set; }
 
 Exact string match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#exact App#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#exact App#exact}
 
 ---
 
@@ -2319,7 +2319,7 @@ public string Prefix { get; set; }
 
 Prefix-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#prefix App#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#prefix App#prefix}
 
 ---
 
@@ -2333,7 +2333,7 @@ public string Regex { get; set; }
 
 RE2 style regex-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#regex App#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#regex App#regex}
 
 ---
 
@@ -2373,7 +2373,7 @@ public string Key { get; set; }
 
 The name of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#key App#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#key App#key}
 
 ---
 
@@ -2387,7 +2387,7 @@ public string Scope { get; set; }
 
 The visibility scope of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#scope App#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#scope App#scope}
 
 ---
 
@@ -2401,7 +2401,7 @@ public string Type { get; set; }
 
 The type of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#type App#type}
 
 ---
 
@@ -2415,7 +2415,7 @@ public string Value { get; set; }
 
 The value of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#value App#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#value App#value}
 
 ---
 
@@ -2451,7 +2451,7 @@ public string Branch { get; set; }
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#branch App#branch}
 
 ---
 
@@ -2465,7 +2465,7 @@ public string RepoCloneUrl { get; set; }
 
 The clone URL of the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo_clone_url App#repo_clone_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#repo_clone_url App#repo_clone_url}
 
 ---
 
@@ -2503,7 +2503,7 @@ public string Branch { get; set; }
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#branch App#branch}
 
 ---
 
@@ -2517,7 +2517,7 @@ public object DeployOnPush { get; set; }
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -2531,7 +2531,7 @@ public string Repo { get; set; }
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#repo App#repo}
 
 ---
 
@@ -2569,7 +2569,7 @@ public string Branch { get; set; }
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#branch App#branch}
 
 ---
 
@@ -2583,7 +2583,7 @@ public object DeployOnPush { get; set; }
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -2597,7 +2597,7 @@ public string Repo { get; set; }
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#repo App#repo}
 
 ---
 
@@ -2639,7 +2639,7 @@ public string Name { get; set; }
 
 Name of the log destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#name App#name}
 
 ---
 
@@ -2653,7 +2653,7 @@ public AppSpecFunctionLogDestinationDatadog Datadog { get; set; }
 
 datadog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#datadog App#datadog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#datadog App#datadog}
 
 ---
 
@@ -2667,7 +2667,7 @@ public AppSpecFunctionLogDestinationLogtail Logtail { get; set; }
 
 logtail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#logtail App#logtail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#logtail App#logtail}
 
 ---
 
@@ -2681,7 +2681,7 @@ public AppSpecFunctionLogDestinationOpenSearch OpenSearch { get; set; }
 
 open_search block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#open_search App#open_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#open_search App#open_search}
 
 ---
 
@@ -2695,7 +2695,7 @@ public AppSpecFunctionLogDestinationPapertrail Papertrail { get; set; }
 
 papertrail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#papertrail App#papertrail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#papertrail App#papertrail}
 
 ---
 
@@ -2731,7 +2731,7 @@ public string ApiKey { get; set; }
 
 Datadog API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#api_key App#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#api_key App#api_key}
 
 ---
 
@@ -2745,7 +2745,7 @@ public string Endpoint { get; set; }
 
 Datadog HTTP log intake endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -2779,7 +2779,7 @@ public string Token { get; set; }
 
 Logtail token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#token App#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#token App#token}
 
 ---
 
@@ -2819,7 +2819,7 @@ public AppSpecFunctionLogDestinationOpenSearchBasicAuth BasicAuth { get; set; }
 
 basic_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#basic_auth App#basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#basic_auth App#basic_auth}
 
 ---
 
@@ -2833,7 +2833,7 @@ public string ClusterName { get; set; }
 
 OpenSearch cluster name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#cluster_name App#cluster_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#cluster_name App#cluster_name}
 
 ---
 
@@ -2847,7 +2847,7 @@ public string Endpoint { get; set; }
 
 OpenSearch endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -2861,7 +2861,7 @@ public string IndexName { get; set; }
 
 OpenSearch index name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#index_name App#index_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#index_name App#index_name}
 
 ---
 
@@ -2897,7 +2897,7 @@ public string Password { get; set; }
 
 Password for basic authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#password App#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#password App#password}
 
 ---
 
@@ -2911,7 +2911,7 @@ public string User { get; set; }
 
 user for basic authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#user App#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#user App#user}
 
 ---
 
@@ -2945,7 +2945,7 @@ public string Endpoint { get; set; }
 
 Papertrail syslog endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -2983,7 +2983,7 @@ Path specifies an route by HTTP path prefix.
 
 Paths must start with / and must be unique within the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#path App#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#path App#path}
 
 ---
 
@@ -2997,7 +2997,7 @@ public object PreservePathPrefix { get; set; }
 
 An optional flag to preserve the path that is forwarded to the backend service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
 
 ---
 
@@ -3031,7 +3031,7 @@ public object Rule { get; set; }
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#rule App#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#rule App#rule}
 
 ---
 
@@ -3071,7 +3071,7 @@ public AppSpecIngressRuleComponent Component { get; set; }
 
 component block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#component App#component}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#component App#component}
 
 ---
 
@@ -3085,7 +3085,7 @@ public AppSpecIngressRuleCors Cors { get; set; }
 
 cors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#cors App#cors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#cors App#cors}
 
 ---
 
@@ -3099,7 +3099,7 @@ public AppSpecIngressRuleMatch Match { get; set; }
 
 match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#match App#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#match App#match}
 
 ---
 
@@ -3113,7 +3113,7 @@ public AppSpecIngressRuleRedirect Redirect { get; set; }
 
 redirect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#redirect App#redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#redirect App#redirect}
 
 ---
 
@@ -3135,9 +3135,9 @@ new AppSpecIngressRuleComponent {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#name App#name}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.preservePathPrefix">PreservePathPrefix</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.rewrite">Rewrite</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#rewrite App#rewrite}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#name App#name}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.preservePathPrefix">PreservePathPrefix</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.rewrite">Rewrite</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#rewrite App#rewrite}. |
 
 ---
 
@@ -3149,7 +3149,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#name App#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#name App#name}.
 
 ---
 
@@ -3161,7 +3161,7 @@ public object PreservePathPrefix { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}.
 
 ---
 
@@ -3173,7 +3173,7 @@ public string Rewrite { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#rewrite App#rewrite}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#rewrite App#rewrite}.
 
 ---
 
@@ -3219,7 +3219,7 @@ Whether browsers should expose the response to the client-side JavaScript code w
 
 This configures the Access-Control-Allow-Credentials header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#allow_credentials App#allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#allow_credentials App#allow_credentials}
 
 ---
 
@@ -3233,7 +3233,7 @@ public string[] AllowHeaders { get; set; }
 
 The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#allow_headers App#allow_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#allow_headers App#allow_headers}
 
 ---
 
@@ -3247,7 +3247,7 @@ public string[] AllowMethods { get; set; }
 
 The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#allow_methods App#allow_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#allow_methods App#allow_methods}
 
 ---
 
@@ -3261,7 +3261,7 @@ public AppSpecIngressRuleCorsAllowOrigins AllowOrigins { get; set; }
 
 allow_origins block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#allow_origins App#allow_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#allow_origins App#allow_origins}
 
 ---
 
@@ -3275,7 +3275,7 @@ public string[] ExposeHeaders { get; set; }
 
 The set of HTTP response headers that browsers are allowed to access. This configures the Access-Control-Expose-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#expose_headers App#expose_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#expose_headers App#expose_headers}
 
 ---
 
@@ -3291,7 +3291,7 @@ An optional duration specifying how long browsers can cache the results of a pre
 
 This configures the Access-Control-Max-Age header. Example: `5h30m`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#max_age App#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#max_age App#max_age}
 
 ---
 
@@ -3329,7 +3329,7 @@ public string Exact { get; set; }
 
 Exact string match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#exact App#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#exact App#exact}
 
 ---
 
@@ -3343,7 +3343,7 @@ public string Prefix { get; set; }
 
 Prefix-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#prefix App#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#prefix App#prefix}
 
 ---
 
@@ -3357,7 +3357,7 @@ public string Regex { get; set; }
 
 RE2 style regex-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#regex App#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#regex App#regex}
 
 ---
 
@@ -3391,7 +3391,7 @@ public AppSpecIngressRuleMatchPath Path { get; set; }
 
 path block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#path App#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#path App#path}
 
 ---
 
@@ -3411,7 +3411,7 @@ new AppSpecIngressRuleMatchPath {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPath.property.prefix">Prefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#prefix App#prefix}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatchPath.property.prefix">Prefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#prefix App#prefix}. |
 
 ---
 
@@ -3423,7 +3423,7 @@ public string Prefix { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#prefix App#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#prefix App#prefix}.
 
 ---
 
@@ -3447,11 +3447,11 @@ new AppSpecIngressRuleRedirect {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.authority">Authority</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#authority App#authority}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.port">Port</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#port App#port}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.redirectCode">RedirectCode</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#redirect_code App#redirect_code}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.scheme">Scheme</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#scheme App#scheme}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.uri">Uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#uri App#uri}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.authority">Authority</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#authority App#authority}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.port">Port</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#port App#port}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.redirectCode">RedirectCode</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#redirect_code App#redirect_code}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.scheme">Scheme</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#scheme App#scheme}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect.property.uri">Uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#uri App#uri}. |
 
 ---
 
@@ -3463,7 +3463,7 @@ public string Authority { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#authority App#authority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#authority App#authority}.
 
 ---
 
@@ -3475,7 +3475,7 @@ public double Port { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#port App#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#port App#port}.
 
 ---
 
@@ -3487,7 +3487,7 @@ public double RedirectCode { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#redirect_code App#redirect_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#redirect_code App#redirect_code}.
 
 ---
 
@@ -3499,7 +3499,7 @@ public string Scheme { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#scheme App#scheme}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#scheme App#scheme}.
 
 ---
 
@@ -3511,7 +3511,7 @@ public string Uri { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#uri App#uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#uri App#uri}.
 
 ---
 
@@ -3579,7 +3579,7 @@ public string Name { get; set; }
 
 The name of the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#name App#name}
 
 ---
 
@@ -3593,7 +3593,7 @@ public object Alert { get; set; }
 
 alert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#alert App#alert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#alert App#alert}
 
 ---
 
@@ -3607,7 +3607,7 @@ public AppSpecJobBitbucket Bitbucket { get; set; }
 
 bitbucket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#bitbucket App#bitbucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#bitbucket App#bitbucket}
 
 ---
 
@@ -3621,7 +3621,7 @@ public string BuildCommand { get; set; }
 
 An optional build command to run while building this component from source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#build_command App#build_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#build_command App#build_command}
 
 ---
 
@@ -3635,7 +3635,7 @@ public string DockerfilePath { get; set; }
 
 The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#dockerfile_path App#dockerfile_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#dockerfile_path App#dockerfile_path}
 
 ---
 
@@ -3649,7 +3649,7 @@ public object Env { get; set; }
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#env App#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#env App#env}
 
 ---
 
@@ -3663,7 +3663,7 @@ public string EnvironmentSlug { get; set; }
 
 An environment slug describing the type of this app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#environment_slug App#environment_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#environment_slug App#environment_slug}
 
 ---
 
@@ -3677,7 +3677,7 @@ public AppSpecJobGit Git { get; set; }
 
 git block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#git App#git}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#git App#git}
 
 ---
 
@@ -3691,7 +3691,7 @@ public AppSpecJobGithub Github { get; set; }
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#github App#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#github App#github}
 
 ---
 
@@ -3705,7 +3705,7 @@ public AppSpecJobGitlab Gitlab { get; set; }
 
 gitlab block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#gitlab App#gitlab}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#gitlab App#gitlab}
 
 ---
 
@@ -3719,7 +3719,7 @@ public AppSpecJobImage Image { get; set; }
 
 image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#image App#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#image App#image}
 
 ---
 
@@ -3733,7 +3733,7 @@ public double InstanceCount { get; set; }
 
 The amount of instances that this component should be scaled to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#instance_count App#instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#instance_count App#instance_count}
 
 ---
 
@@ -3747,7 +3747,7 @@ public string InstanceSizeSlug { get; set; }
 
 The instance size to use for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#instance_size_slug App#instance_size_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#instance_size_slug App#instance_size_slug}
 
 ---
 
@@ -3761,7 +3761,7 @@ public string Kind { get; set; }
 
 The type of job and when it will be run during the deployment process.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#kind App#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#kind App#kind}
 
 ---
 
@@ -3775,7 +3775,7 @@ public object LogDestination { get; set; }
 
 log_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#log_destination App#log_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#log_destination App#log_destination}
 
 ---
 
@@ -3789,7 +3789,7 @@ public string RunCommand { get; set; }
 
 An optional run command to override the component's default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#run_command App#run_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#run_command App#run_command}
 
 ---
 
@@ -3803,7 +3803,7 @@ public string SourceDir { get; set; }
 
 An optional path to the working directory to use for the build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#source_dir App#source_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#source_dir App#source_dir}
 
 ---
 
@@ -3817,7 +3817,7 @@ public AppSpecJobTermination Termination { get; set; }
 
 termination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#termination App#termination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#termination App#termination}
 
 ---
 
@@ -3841,11 +3841,11 @@ new AppSpecJobAlert {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.operator">Operator</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#operator App#operator}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.rule">Rule</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#rule App#rule}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.value">Value</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#value App#value}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.window">Window</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#window App#window}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.disabled">Disabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.operator">Operator</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#operator App#operator}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.rule">Rule</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#rule App#rule}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.value">Value</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#value App#value}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.window">Window</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#window App#window}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.disabled">Disabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -3857,7 +3857,7 @@ public string Operator { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#operator App#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#operator App#operator}.
 
 ---
 
@@ -3869,7 +3869,7 @@ public string Rule { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#rule App#rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#rule App#rule}.
 
 ---
 
@@ -3881,7 +3881,7 @@ public double Value { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#value App#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#value App#value}.
 
 ---
 
@@ -3893,7 +3893,7 @@ public string Window { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#window App#window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#window App#window}.
 
 ---
 
@@ -3905,7 +3905,7 @@ public object Disabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#disabled App#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#disabled App#disabled}.
 
 ---
 
@@ -3943,7 +3943,7 @@ public string Branch { get; set; }
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#branch App#branch}
 
 ---
 
@@ -3957,7 +3957,7 @@ public object DeployOnPush { get; set; }
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -3971,7 +3971,7 @@ public string Repo { get; set; }
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#repo App#repo}
 
 ---
 
@@ -4011,7 +4011,7 @@ public string Key { get; set; }
 
 The name of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#key App#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#key App#key}
 
 ---
 
@@ -4025,7 +4025,7 @@ public string Scope { get; set; }
 
 The visibility scope of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#scope App#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#scope App#scope}
 
 ---
 
@@ -4039,7 +4039,7 @@ public string Type { get; set; }
 
 The type of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#type App#type}
 
 ---
 
@@ -4053,7 +4053,7 @@ public string Value { get; set; }
 
 The value of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#value App#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#value App#value}
 
 ---
 
@@ -4089,7 +4089,7 @@ public string Branch { get; set; }
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#branch App#branch}
 
 ---
 
@@ -4103,7 +4103,7 @@ public string RepoCloneUrl { get; set; }
 
 The clone URL of the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo_clone_url App#repo_clone_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#repo_clone_url App#repo_clone_url}
 
 ---
 
@@ -4141,7 +4141,7 @@ public string Branch { get; set; }
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#branch App#branch}
 
 ---
 
@@ -4155,7 +4155,7 @@ public object DeployOnPush { get; set; }
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -4169,7 +4169,7 @@ public string Repo { get; set; }
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#repo App#repo}
 
 ---
 
@@ -4207,7 +4207,7 @@ public string Branch { get; set; }
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#branch App#branch}
 
 ---
 
@@ -4221,7 +4221,7 @@ public object DeployOnPush { get; set; }
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -4235,7 +4235,7 @@ public string Repo { get; set; }
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#repo App#repo}
 
 ---
 
@@ -4281,7 +4281,7 @@ public string RegistryType { get; set; }
 
 The registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#registry_type App#registry_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#registry_type App#registry_type}
 
 ---
 
@@ -4295,7 +4295,7 @@ public string Repository { get; set; }
 
 The repository name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repository App#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#repository App#repository}
 
 ---
 
@@ -4309,7 +4309,7 @@ public object DeployOnPush { get; set; }
 
 deploy_on_push block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -4323,7 +4323,7 @@ public string Digest { get; set; }
 
 The image digest. Cannot be specified if tag is provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#digest App#digest}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#digest App#digest}
 
 ---
 
@@ -4337,7 +4337,7 @@ public string Registry { get; set; }
 
 The registry name. Must be left empty for the DOCR registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#registry App#registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#registry App#registry}
 
 ---
 
@@ -4351,7 +4351,7 @@ public string RegistryCredentials { get; set; }
 
 Access credentials for third-party registries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#registry_credentials App#registry_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#registry_credentials App#registry_credentials}
 
 ---
 
@@ -4365,7 +4365,7 @@ public string Tag { get; set; }
 
 The repository tag. Defaults to latest if not provided. Cannot be specified if digest is provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#tag App#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#tag App#tag}
 
 ---
 
@@ -4399,7 +4399,7 @@ public object Enabled { get; set; }
 
 Whether to automatically deploy images pushed to DOCR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#enabled App#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#enabled App#enabled}
 
 ---
 
@@ -4441,7 +4441,7 @@ public string Name { get; set; }
 
 Name of the log destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#name App#name}
 
 ---
 
@@ -4455,7 +4455,7 @@ public AppSpecJobLogDestinationDatadog Datadog { get; set; }
 
 datadog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#datadog App#datadog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#datadog App#datadog}
 
 ---
 
@@ -4469,7 +4469,7 @@ public AppSpecJobLogDestinationLogtail Logtail { get; set; }
 
 logtail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#logtail App#logtail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#logtail App#logtail}
 
 ---
 
@@ -4483,7 +4483,7 @@ public AppSpecJobLogDestinationOpenSearch OpenSearch { get; set; }
 
 open_search block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#open_search App#open_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#open_search App#open_search}
 
 ---
 
@@ -4497,7 +4497,7 @@ public AppSpecJobLogDestinationPapertrail Papertrail { get; set; }
 
 papertrail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#papertrail App#papertrail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#papertrail App#papertrail}
 
 ---
 
@@ -4533,7 +4533,7 @@ public string ApiKey { get; set; }
 
 Datadog API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#api_key App#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#api_key App#api_key}
 
 ---
 
@@ -4547,7 +4547,7 @@ public string Endpoint { get; set; }
 
 Datadog HTTP log intake endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -4581,7 +4581,7 @@ public string Token { get; set; }
 
 Logtail token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#token App#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#token App#token}
 
 ---
 
@@ -4621,7 +4621,7 @@ public AppSpecJobLogDestinationOpenSearchBasicAuth BasicAuth { get; set; }
 
 basic_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#basic_auth App#basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#basic_auth App#basic_auth}
 
 ---
 
@@ -4635,7 +4635,7 @@ public string ClusterName { get; set; }
 
 OpenSearch cluster name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#cluster_name App#cluster_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#cluster_name App#cluster_name}
 
 ---
 
@@ -4649,7 +4649,7 @@ public string Endpoint { get; set; }
 
 OpenSearch endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -4663,7 +4663,7 @@ public string IndexName { get; set; }
 
 OpenSearch index name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#index_name App#index_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#index_name App#index_name}
 
 ---
 
@@ -4699,7 +4699,7 @@ public string Password { get; set; }
 
 Password for basic authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#password App#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#password App#password}
 
 ---
 
@@ -4713,7 +4713,7 @@ public string User { get; set; }
 
 user for basic authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#user App#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#user App#user}
 
 ---
 
@@ -4747,7 +4747,7 @@ public string Endpoint { get; set; }
 
 Papertrail syslog endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -4783,7 +4783,7 @@ The number of seconds to wait between sending a TERM signal to a container and i
 
 Default: 120, Minimum 1, Maximum 600.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#grace_period_seconds App#grace_period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#grace_period_seconds App#grace_period_seconds}
 
 ---
 
@@ -4842,7 +4842,7 @@ new AppSpecService {
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.image">Image</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImage">AppSpecServiceImage</a></code> | image block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.instanceCount">InstanceCount</a></code> | <code>double</code> | The amount of instances that this component should be scaled to. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.instanceSizeSlug">InstanceSizeSlug</a></code> | <code>string</code> | The instance size to use for this component. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.internalPorts">InternalPorts</a></code> | <code>double[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#internal_ports App#internal_ports}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.internalPorts">InternalPorts</a></code> | <code>double[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#internal_ports App#internal_ports}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.logDestination">LogDestination</a></code> | <code>object</code> | log_destination block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.routes">Routes</a></code> | <code>object</code> | routes block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.runCommand">RunCommand</a></code> | <code>string</code> | An optional run command to override the component's default. |
@@ -4861,7 +4861,7 @@ public string Name { get; set; }
 
 The name of the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#name App#name}
 
 ---
 
@@ -4875,7 +4875,7 @@ public object Alert { get; set; }
 
 alert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#alert App#alert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#alert App#alert}
 
 ---
 
@@ -4889,7 +4889,7 @@ public AppSpecServiceAutoscaling Autoscaling { get; set; }
 
 autoscaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#autoscaling App#autoscaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#autoscaling App#autoscaling}
 
 ---
 
@@ -4903,7 +4903,7 @@ public AppSpecServiceBitbucket Bitbucket { get; set; }
 
 bitbucket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#bitbucket App#bitbucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#bitbucket App#bitbucket}
 
 ---
 
@@ -4917,7 +4917,7 @@ public string BuildCommand { get; set; }
 
 An optional build command to run while building this component from source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#build_command App#build_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#build_command App#build_command}
 
 ---
 
@@ -4931,7 +4931,7 @@ public AppSpecServiceCors Cors { get; set; }
 
 cors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#cors App#cors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#cors App#cors}
 
 ---
 
@@ -4945,7 +4945,7 @@ public string DockerfilePath { get; set; }
 
 The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#dockerfile_path App#dockerfile_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#dockerfile_path App#dockerfile_path}
 
 ---
 
@@ -4959,7 +4959,7 @@ public object Env { get; set; }
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#env App#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#env App#env}
 
 ---
 
@@ -4973,7 +4973,7 @@ public string EnvironmentSlug { get; set; }
 
 An environment slug describing the type of this app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#environment_slug App#environment_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#environment_slug App#environment_slug}
 
 ---
 
@@ -4987,7 +4987,7 @@ public AppSpecServiceGit Git { get; set; }
 
 git block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#git App#git}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#git App#git}
 
 ---
 
@@ -5001,7 +5001,7 @@ public AppSpecServiceGithub Github { get; set; }
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#github App#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#github App#github}
 
 ---
 
@@ -5015,7 +5015,7 @@ public AppSpecServiceGitlab Gitlab { get; set; }
 
 gitlab block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#gitlab App#gitlab}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#gitlab App#gitlab}
 
 ---
 
@@ -5029,7 +5029,7 @@ public AppSpecServiceHealthCheck HealthCheck { get; set; }
 
 health_check block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#health_check App#health_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#health_check App#health_check}
 
 ---
 
@@ -5043,7 +5043,7 @@ public double HttpPort { get; set; }
 
 The internal port on which this service's run command will listen.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#http_port App#http_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#http_port App#http_port}
 
 ---
 
@@ -5057,7 +5057,7 @@ public AppSpecServiceImage Image { get; set; }
 
 image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#image App#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#image App#image}
 
 ---
 
@@ -5071,7 +5071,7 @@ public double InstanceCount { get; set; }
 
 The amount of instances that this component should be scaled to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#instance_count App#instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#instance_count App#instance_count}
 
 ---
 
@@ -5085,7 +5085,7 @@ public string InstanceSizeSlug { get; set; }
 
 The instance size to use for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#instance_size_slug App#instance_size_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#instance_size_slug App#instance_size_slug}
 
 ---
 
@@ -5097,7 +5097,7 @@ public double[] InternalPorts { get; set; }
 
 - *Type:* double[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#internal_ports App#internal_ports}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#internal_ports App#internal_ports}.
 
 ---
 
@@ -5111,7 +5111,7 @@ public object LogDestination { get; set; }
 
 log_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#log_destination App#log_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#log_destination App#log_destination}
 
 ---
 
@@ -5125,7 +5125,7 @@ public object Routes { get; set; }
 
 routes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#routes App#routes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#routes App#routes}
 
 ---
 
@@ -5139,7 +5139,7 @@ public string RunCommand { get; set; }
 
 An optional run command to override the component's default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#run_command App#run_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#run_command App#run_command}
 
 ---
 
@@ -5153,7 +5153,7 @@ public string SourceDir { get; set; }
 
 An optional path to the working directory to use for the build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#source_dir App#source_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#source_dir App#source_dir}
 
 ---
 
@@ -5167,7 +5167,7 @@ public AppSpecServiceTermination Termination { get; set; }
 
 termination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#termination App#termination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#termination App#termination}
 
 ---
 
@@ -5191,11 +5191,11 @@ new AppSpecServiceAlert {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.operator">Operator</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#operator App#operator}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.rule">Rule</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#rule App#rule}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.value">Value</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#value App#value}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.window">Window</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#window App#window}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.disabled">Disabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.operator">Operator</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#operator App#operator}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.rule">Rule</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#rule App#rule}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.value">Value</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#value App#value}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.window">Window</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#window App#window}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.disabled">Disabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -5207,7 +5207,7 @@ public string Operator { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#operator App#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#operator App#operator}.
 
 ---
 
@@ -5219,7 +5219,7 @@ public string Rule { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#rule App#rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#rule App#rule}.
 
 ---
 
@@ -5231,7 +5231,7 @@ public double Value { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#value App#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#value App#value}.
 
 ---
 
@@ -5243,7 +5243,7 @@ public string Window { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#window App#window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#window App#window}.
 
 ---
 
@@ -5255,7 +5255,7 @@ public object Disabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#disabled App#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#disabled App#disabled}.
 
 ---
 
@@ -5293,7 +5293,7 @@ public double MaxInstanceCount { get; set; }
 
 The maximum amount of instances for this component. Must be more than min_instance_count.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#max_instance_count App#max_instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#max_instance_count App#max_instance_count}
 
 ---
 
@@ -5307,7 +5307,7 @@ public AppSpecServiceAutoscalingMetrics Metrics { get; set; }
 
 metrics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#metrics App#metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#metrics App#metrics}
 
 ---
 
@@ -5321,7 +5321,7 @@ public double MinInstanceCount { get; set; }
 
 The minimum amount of instances for this component. Must be less than max_instance_count.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#min_instance_count App#min_instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#min_instance_count App#min_instance_count}
 
 ---
 
@@ -5355,7 +5355,7 @@ public AppSpecServiceAutoscalingMetricsCpu Cpu { get; set; }
 
 cpu block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#cpu App#cpu}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#cpu App#cpu}
 
 ---
 
@@ -5389,7 +5389,7 @@ public double Percent { get; set; }
 
 The average target CPU utilization for the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#percent App#percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#percent App#percent}
 
 ---
 
@@ -5427,7 +5427,7 @@ public string Branch { get; set; }
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#branch App#branch}
 
 ---
 
@@ -5441,7 +5441,7 @@ public object DeployOnPush { get; set; }
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -5455,7 +5455,7 @@ public string Repo { get; set; }
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#repo App#repo}
 
 ---
 
@@ -5501,7 +5501,7 @@ Whether browsers should expose the response to the client-side JavaScript code w
 
 This configures the Access-Control-Allow-Credentials header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#allow_credentials App#allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#allow_credentials App#allow_credentials}
 
 ---
 
@@ -5515,7 +5515,7 @@ public string[] AllowHeaders { get; set; }
 
 The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#allow_headers App#allow_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#allow_headers App#allow_headers}
 
 ---
 
@@ -5529,7 +5529,7 @@ public string[] AllowMethods { get; set; }
 
 The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#allow_methods App#allow_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#allow_methods App#allow_methods}
 
 ---
 
@@ -5543,7 +5543,7 @@ public AppSpecServiceCorsAllowOrigins AllowOrigins { get; set; }
 
 allow_origins block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#allow_origins App#allow_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#allow_origins App#allow_origins}
 
 ---
 
@@ -5557,7 +5557,7 @@ public string[] ExposeHeaders { get; set; }
 
 The set of HTTP response headers that browsers are allowed to access. This configures the Access-Control-Expose-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#expose_headers App#expose_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#expose_headers App#expose_headers}
 
 ---
 
@@ -5573,7 +5573,7 @@ An optional duration specifying how long browsers can cache the results of a pre
 
 This configures the Access-Control-Max-Age header. Example: `5h30m`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#max_age App#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#max_age App#max_age}
 
 ---
 
@@ -5611,7 +5611,7 @@ public string Exact { get; set; }
 
 Exact string match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#exact App#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#exact App#exact}
 
 ---
 
@@ -5625,7 +5625,7 @@ public string Prefix { get; set; }
 
 Prefix-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#prefix App#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#prefix App#prefix}
 
 ---
 
@@ -5639,7 +5639,7 @@ public string Regex { get; set; }
 
 RE2 style regex-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#regex App#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#regex App#regex}
 
 ---
 
@@ -5679,7 +5679,7 @@ public string Key { get; set; }
 
 The name of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#key App#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#key App#key}
 
 ---
 
@@ -5693,7 +5693,7 @@ public string Scope { get; set; }
 
 The visibility scope of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#scope App#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#scope App#scope}
 
 ---
 
@@ -5707,7 +5707,7 @@ public string Type { get; set; }
 
 The type of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#type App#type}
 
 ---
 
@@ -5721,7 +5721,7 @@ public string Value { get; set; }
 
 The value of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#value App#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#value App#value}
 
 ---
 
@@ -5757,7 +5757,7 @@ public string Branch { get; set; }
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#branch App#branch}
 
 ---
 
@@ -5771,7 +5771,7 @@ public string RepoCloneUrl { get; set; }
 
 The clone URL of the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo_clone_url App#repo_clone_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#repo_clone_url App#repo_clone_url}
 
 ---
 
@@ -5809,7 +5809,7 @@ public string Branch { get; set; }
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#branch App#branch}
 
 ---
 
@@ -5823,7 +5823,7 @@ public object DeployOnPush { get; set; }
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -5837,7 +5837,7 @@ public string Repo { get; set; }
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#repo App#repo}
 
 ---
 
@@ -5875,7 +5875,7 @@ public string Branch { get; set; }
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#branch App#branch}
 
 ---
 
@@ -5889,7 +5889,7 @@ public object DeployOnPush { get; set; }
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -5903,7 +5903,7 @@ public string Repo { get; set; }
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#repo App#repo}
 
 ---
 
@@ -5949,7 +5949,7 @@ public double FailureThreshold { get; set; }
 
 The number of failed health checks before considered unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#failure_threshold App#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#failure_threshold App#failure_threshold}
 
 ---
 
@@ -5963,7 +5963,7 @@ public string HttpPath { get; set; }
 
 The route path used for the HTTP health check ping.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#http_path App#http_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#http_path App#http_path}
 
 ---
 
@@ -5977,7 +5977,7 @@ public double InitialDelaySeconds { get; set; }
 
 The number of seconds to wait before beginning health checks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#initial_delay_seconds App#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#initial_delay_seconds App#initial_delay_seconds}
 
 ---
 
@@ -5991,7 +5991,7 @@ public double PeriodSeconds { get; set; }
 
 The number of seconds to wait between health checks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#period_seconds App#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#period_seconds App#period_seconds}
 
 ---
 
@@ -6007,7 +6007,7 @@ The port on which the health check will be performed.
 
 If not set, the health check will be performed on the component's http_port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#port App#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#port App#port}
 
 ---
 
@@ -6021,7 +6021,7 @@ public double SuccessThreshold { get; set; }
 
 The number of successful health checks before considered healthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#success_threshold App#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#success_threshold App#success_threshold}
 
 ---
 
@@ -6035,7 +6035,7 @@ public double TimeoutSeconds { get; set; }
 
 The number of seconds after which the check times out.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#timeout_seconds App#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#timeout_seconds App#timeout_seconds}
 
 ---
 
@@ -6081,7 +6081,7 @@ public string RegistryType { get; set; }
 
 The registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#registry_type App#registry_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#registry_type App#registry_type}
 
 ---
 
@@ -6095,7 +6095,7 @@ public string Repository { get; set; }
 
 The repository name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repository App#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#repository App#repository}
 
 ---
 
@@ -6109,7 +6109,7 @@ public object DeployOnPush { get; set; }
 
 deploy_on_push block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -6123,7 +6123,7 @@ public string Digest { get; set; }
 
 The image digest. Cannot be specified if tag is provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#digest App#digest}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#digest App#digest}
 
 ---
 
@@ -6137,7 +6137,7 @@ public string Registry { get; set; }
 
 The registry name. Must be left empty for the DOCR registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#registry App#registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#registry App#registry}
 
 ---
 
@@ -6151,7 +6151,7 @@ public string RegistryCredentials { get; set; }
 
 Access credentials for third-party registries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#registry_credentials App#registry_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#registry_credentials App#registry_credentials}
 
 ---
 
@@ -6165,7 +6165,7 @@ public string Tag { get; set; }
 
 The repository tag. Defaults to latest if not provided. Cannot be specified if digest is provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#tag App#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#tag App#tag}
 
 ---
 
@@ -6199,7 +6199,7 @@ public object Enabled { get; set; }
 
 Whether to automatically deploy images pushed to DOCR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#enabled App#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#enabled App#enabled}
 
 ---
 
@@ -6241,7 +6241,7 @@ public string Name { get; set; }
 
 Name of the log destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#name App#name}
 
 ---
 
@@ -6255,7 +6255,7 @@ public AppSpecServiceLogDestinationDatadog Datadog { get; set; }
 
 datadog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#datadog App#datadog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#datadog App#datadog}
 
 ---
 
@@ -6269,7 +6269,7 @@ public AppSpecServiceLogDestinationLogtail Logtail { get; set; }
 
 logtail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#logtail App#logtail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#logtail App#logtail}
 
 ---
 
@@ -6283,7 +6283,7 @@ public AppSpecServiceLogDestinationOpenSearch OpenSearch { get; set; }
 
 open_search block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#open_search App#open_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#open_search App#open_search}
 
 ---
 
@@ -6297,7 +6297,7 @@ public AppSpecServiceLogDestinationPapertrail Papertrail { get; set; }
 
 papertrail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#papertrail App#papertrail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#papertrail App#papertrail}
 
 ---
 
@@ -6333,7 +6333,7 @@ public string ApiKey { get; set; }
 
 Datadog API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#api_key App#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#api_key App#api_key}
 
 ---
 
@@ -6347,7 +6347,7 @@ public string Endpoint { get; set; }
 
 Datadog HTTP log intake endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -6381,7 +6381,7 @@ public string Token { get; set; }
 
 Logtail token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#token App#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#token App#token}
 
 ---
 
@@ -6421,7 +6421,7 @@ public AppSpecServiceLogDestinationOpenSearchBasicAuth BasicAuth { get; set; }
 
 basic_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#basic_auth App#basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#basic_auth App#basic_auth}
 
 ---
 
@@ -6435,7 +6435,7 @@ public string ClusterName { get; set; }
 
 OpenSearch cluster name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#cluster_name App#cluster_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#cluster_name App#cluster_name}
 
 ---
 
@@ -6449,7 +6449,7 @@ public string Endpoint { get; set; }
 
 OpenSearch endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -6463,7 +6463,7 @@ public string IndexName { get; set; }
 
 OpenSearch index name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#index_name App#index_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#index_name App#index_name}
 
 ---
 
@@ -6499,7 +6499,7 @@ public string Password { get; set; }
 
 Password for basic authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#password App#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#password App#password}
 
 ---
 
@@ -6513,7 +6513,7 @@ public string User { get; set; }
 
 user for basic authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#user App#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#user App#user}
 
 ---
 
@@ -6547,7 +6547,7 @@ public string Endpoint { get; set; }
 
 Papertrail syslog endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -6585,7 +6585,7 @@ Path specifies an route by HTTP path prefix.
 
 Paths must start with / and must be unique within the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#path App#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#path App#path}
 
 ---
 
@@ -6599,7 +6599,7 @@ public object PreservePathPrefix { get; set; }
 
 An optional flag to preserve the path that is forwarded to the backend service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
 
 ---
 
@@ -6637,7 +6637,7 @@ The number of seconds to wait between selecting a container instance for termina
 
 Selecting a container instance for termination begins an asynchronous drain of new requests on upstream load-balancers. Default: 15 seconds, Minimum 1, Maximum 110.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#drain_seconds App#drain_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#drain_seconds App#drain_seconds}
 
 ---
 
@@ -6653,7 +6653,7 @@ The number of seconds to wait between sending a TERM signal to a container and i
 
 Default: 120, Minimum 1, Maximum 600.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#grace_period_seconds App#grace_period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#grace_period_seconds App#grace_period_seconds}
 
 ---
 
@@ -6717,7 +6717,7 @@ public string Name { get; set; }
 
 The name of the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#name App#name}
 
 ---
 
@@ -6731,7 +6731,7 @@ public AppSpecStaticSiteBitbucket Bitbucket { get; set; }
 
 bitbucket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#bitbucket App#bitbucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#bitbucket App#bitbucket}
 
 ---
 
@@ -6745,7 +6745,7 @@ public string BuildCommand { get; set; }
 
 An optional build command to run while building this component from source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#build_command App#build_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#build_command App#build_command}
 
 ---
 
@@ -6759,7 +6759,7 @@ public string CatchallDocument { get; set; }
 
 The name of the document to use as the fallback for any requests to documents that are not found when serving this static site.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#catchall_document App#catchall_document}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#catchall_document App#catchall_document}
 
 ---
 
@@ -6773,7 +6773,7 @@ public AppSpecStaticSiteCors Cors { get; set; }
 
 cors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#cors App#cors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#cors App#cors}
 
 ---
 
@@ -6787,7 +6787,7 @@ public string DockerfilePath { get; set; }
 
 The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#dockerfile_path App#dockerfile_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#dockerfile_path App#dockerfile_path}
 
 ---
 
@@ -6801,7 +6801,7 @@ public object Env { get; set; }
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#env App#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#env App#env}
 
 ---
 
@@ -6815,7 +6815,7 @@ public string EnvironmentSlug { get; set; }
 
 An environment slug describing the type of this app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#environment_slug App#environment_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#environment_slug App#environment_slug}
 
 ---
 
@@ -6829,7 +6829,7 @@ public string ErrorDocument { get; set; }
 
 The name of the error document to use when serving this static site.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#error_document App#error_document}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#error_document App#error_document}
 
 ---
 
@@ -6843,7 +6843,7 @@ public AppSpecStaticSiteGit Git { get; set; }
 
 git block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#git App#git}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#git App#git}
 
 ---
 
@@ -6857,7 +6857,7 @@ public AppSpecStaticSiteGithub Github { get; set; }
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#github App#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#github App#github}
 
 ---
 
@@ -6871,7 +6871,7 @@ public AppSpecStaticSiteGitlab Gitlab { get; set; }
 
 gitlab block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#gitlab App#gitlab}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#gitlab App#gitlab}
 
 ---
 
@@ -6885,7 +6885,7 @@ public string IndexDocument { get; set; }
 
 The name of the index document to use when serving this static site.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#index_document App#index_document}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#index_document App#index_document}
 
 ---
 
@@ -6901,7 +6901,7 @@ An optional path to where the built assets will be located, relative to the buil
 
 If not set, App Platform will automatically scan for these directory names: `_static`, `dist`, `public`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#output_dir App#output_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#output_dir App#output_dir}
 
 ---
 
@@ -6915,7 +6915,7 @@ public object Routes { get; set; }
 
 routes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#routes App#routes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#routes App#routes}
 
 ---
 
@@ -6929,7 +6929,7 @@ public string SourceDir { get; set; }
 
 An optional path to the working directory to use for the build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#source_dir App#source_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#source_dir App#source_dir}
 
 ---
 
@@ -6967,7 +6967,7 @@ public string Branch { get; set; }
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#branch App#branch}
 
 ---
 
@@ -6981,7 +6981,7 @@ public object DeployOnPush { get; set; }
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -6995,7 +6995,7 @@ public string Repo { get; set; }
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#repo App#repo}
 
 ---
 
@@ -7041,7 +7041,7 @@ Whether browsers should expose the response to the client-side JavaScript code w
 
 This configures the Access-Control-Allow-Credentials header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#allow_credentials App#allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#allow_credentials App#allow_credentials}
 
 ---
 
@@ -7055,7 +7055,7 @@ public string[] AllowHeaders { get; set; }
 
 The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#allow_headers App#allow_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#allow_headers App#allow_headers}
 
 ---
 
@@ -7069,7 +7069,7 @@ public string[] AllowMethods { get; set; }
 
 The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#allow_methods App#allow_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#allow_methods App#allow_methods}
 
 ---
 
@@ -7083,7 +7083,7 @@ public AppSpecStaticSiteCorsAllowOrigins AllowOrigins { get; set; }
 
 allow_origins block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#allow_origins App#allow_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#allow_origins App#allow_origins}
 
 ---
 
@@ -7097,7 +7097,7 @@ public string[] ExposeHeaders { get; set; }
 
 The set of HTTP response headers that browsers are allowed to access. This configures the Access-Control-Expose-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#expose_headers App#expose_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#expose_headers App#expose_headers}
 
 ---
 
@@ -7113,7 +7113,7 @@ An optional duration specifying how long browsers can cache the results of a pre
 
 This configures the Access-Control-Max-Age header. Example: `5h30m`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#max_age App#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#max_age App#max_age}
 
 ---
 
@@ -7151,7 +7151,7 @@ public string Exact { get; set; }
 
 Exact string match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#exact App#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#exact App#exact}
 
 ---
 
@@ -7165,7 +7165,7 @@ public string Prefix { get; set; }
 
 Prefix-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#prefix App#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#prefix App#prefix}
 
 ---
 
@@ -7179,7 +7179,7 @@ public string Regex { get; set; }
 
 RE2 style regex-based match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#regex App#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#regex App#regex}
 
 ---
 
@@ -7219,7 +7219,7 @@ public string Key { get; set; }
 
 The name of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#key App#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#key App#key}
 
 ---
 
@@ -7233,7 +7233,7 @@ public string Scope { get; set; }
 
 The visibility scope of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#scope App#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#scope App#scope}
 
 ---
 
@@ -7247,7 +7247,7 @@ public string Type { get; set; }
 
 The type of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#type App#type}
 
 ---
 
@@ -7261,7 +7261,7 @@ public string Value { get; set; }
 
 The value of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#value App#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#value App#value}
 
 ---
 
@@ -7297,7 +7297,7 @@ public string Branch { get; set; }
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#branch App#branch}
 
 ---
 
@@ -7311,7 +7311,7 @@ public string RepoCloneUrl { get; set; }
 
 The clone URL of the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo_clone_url App#repo_clone_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#repo_clone_url App#repo_clone_url}
 
 ---
 
@@ -7349,7 +7349,7 @@ public string Branch { get; set; }
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#branch App#branch}
 
 ---
 
@@ -7363,7 +7363,7 @@ public object DeployOnPush { get; set; }
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -7377,7 +7377,7 @@ public string Repo { get; set; }
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#repo App#repo}
 
 ---
 
@@ -7415,7 +7415,7 @@ public string Branch { get; set; }
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#branch App#branch}
 
 ---
 
@@ -7429,7 +7429,7 @@ public object DeployOnPush { get; set; }
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -7443,7 +7443,7 @@ public string Repo { get; set; }
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#repo App#repo}
 
 ---
 
@@ -7481,7 +7481,7 @@ Path specifies an route by HTTP path prefix.
 
 Paths must start with / and must be unique within the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#path App#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#path App#path}
 
 ---
 
@@ -7495,7 +7495,7 @@ public object PreservePathPrefix { get; set; }
 
 An optional flag to preserve the path that is forwarded to the backend service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}
 
 ---
 
@@ -7563,7 +7563,7 @@ public string Name { get; set; }
 
 The name of the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#name App#name}
 
 ---
 
@@ -7577,7 +7577,7 @@ public object Alert { get; set; }
 
 alert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#alert App#alert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#alert App#alert}
 
 ---
 
@@ -7591,7 +7591,7 @@ public AppSpecWorkerAutoscaling Autoscaling { get; set; }
 
 autoscaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#autoscaling App#autoscaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#autoscaling App#autoscaling}
 
 ---
 
@@ -7605,7 +7605,7 @@ public AppSpecWorkerBitbucket Bitbucket { get; set; }
 
 bitbucket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#bitbucket App#bitbucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#bitbucket App#bitbucket}
 
 ---
 
@@ -7619,7 +7619,7 @@ public string BuildCommand { get; set; }
 
 An optional build command to run while building this component from source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#build_command App#build_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#build_command App#build_command}
 
 ---
 
@@ -7633,7 +7633,7 @@ public string DockerfilePath { get; set; }
 
 The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#dockerfile_path App#dockerfile_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#dockerfile_path App#dockerfile_path}
 
 ---
 
@@ -7647,7 +7647,7 @@ public object Env { get; set; }
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#env App#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#env App#env}
 
 ---
 
@@ -7661,7 +7661,7 @@ public string EnvironmentSlug { get; set; }
 
 An environment slug describing the type of this app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#environment_slug App#environment_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#environment_slug App#environment_slug}
 
 ---
 
@@ -7675,7 +7675,7 @@ public AppSpecWorkerGit Git { get; set; }
 
 git block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#git App#git}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#git App#git}
 
 ---
 
@@ -7689,7 +7689,7 @@ public AppSpecWorkerGithub Github { get; set; }
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#github App#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#github App#github}
 
 ---
 
@@ -7703,7 +7703,7 @@ public AppSpecWorkerGitlab Gitlab { get; set; }
 
 gitlab block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#gitlab App#gitlab}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#gitlab App#gitlab}
 
 ---
 
@@ -7717,7 +7717,7 @@ public AppSpecWorkerImage Image { get; set; }
 
 image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#image App#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#image App#image}
 
 ---
 
@@ -7731,7 +7731,7 @@ public double InstanceCount { get; set; }
 
 The amount of instances that this component should be scaled to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#instance_count App#instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#instance_count App#instance_count}
 
 ---
 
@@ -7745,7 +7745,7 @@ public string InstanceSizeSlug { get; set; }
 
 The instance size to use for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#instance_size_slug App#instance_size_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#instance_size_slug App#instance_size_slug}
 
 ---
 
@@ -7759,7 +7759,7 @@ public object LogDestination { get; set; }
 
 log_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#log_destination App#log_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#log_destination App#log_destination}
 
 ---
 
@@ -7773,7 +7773,7 @@ public string RunCommand { get; set; }
 
 An optional run command to override the component's default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#run_command App#run_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#run_command App#run_command}
 
 ---
 
@@ -7787,7 +7787,7 @@ public string SourceDir { get; set; }
 
 An optional path to the working directory to use for the build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#source_dir App#source_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#source_dir App#source_dir}
 
 ---
 
@@ -7801,7 +7801,7 @@ public AppSpecWorkerTermination Termination { get; set; }
 
 termination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#termination App#termination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#termination App#termination}
 
 ---
 
@@ -7825,11 +7825,11 @@ new AppSpecWorkerAlert {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.operator">Operator</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#operator App#operator}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.rule">Rule</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#rule App#rule}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.value">Value</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#value App#value}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.window">Window</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#window App#window}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.disabled">Disabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.operator">Operator</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#operator App#operator}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.rule">Rule</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#rule App#rule}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.value">Value</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#value App#value}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.window">Window</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#window App#window}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.disabled">Disabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -7841,7 +7841,7 @@ public string Operator { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#operator App#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#operator App#operator}.
 
 ---
 
@@ -7853,7 +7853,7 @@ public string Rule { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#rule App#rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#rule App#rule}.
 
 ---
 
@@ -7865,7 +7865,7 @@ public double Value { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#value App#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#value App#value}.
 
 ---
 
@@ -7877,7 +7877,7 @@ public string Window { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#window App#window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#window App#window}.
 
 ---
 
@@ -7889,7 +7889,7 @@ public object Disabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#disabled App#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#disabled App#disabled}.
 
 ---
 
@@ -7927,7 +7927,7 @@ public double MaxInstanceCount { get; set; }
 
 The maximum amount of instances for this component. Must be more than min_instance_count.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#max_instance_count App#max_instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#max_instance_count App#max_instance_count}
 
 ---
 
@@ -7941,7 +7941,7 @@ public AppSpecWorkerAutoscalingMetrics Metrics { get; set; }
 
 metrics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#metrics App#metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#metrics App#metrics}
 
 ---
 
@@ -7955,7 +7955,7 @@ public double MinInstanceCount { get; set; }
 
 The minimum amount of instances for this component. Must be less than max_instance_count.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#min_instance_count App#min_instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#min_instance_count App#min_instance_count}
 
 ---
 
@@ -7989,7 +7989,7 @@ public AppSpecWorkerAutoscalingMetricsCpu Cpu { get; set; }
 
 cpu block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#cpu App#cpu}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#cpu App#cpu}
 
 ---
 
@@ -8023,7 +8023,7 @@ public double Percent { get; set; }
 
 The average target CPU utilization for the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#percent App#percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#percent App#percent}
 
 ---
 
@@ -8061,7 +8061,7 @@ public string Branch { get; set; }
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#branch App#branch}
 
 ---
 
@@ -8075,7 +8075,7 @@ public object DeployOnPush { get; set; }
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -8089,7 +8089,7 @@ public string Repo { get; set; }
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#repo App#repo}
 
 ---
 
@@ -8129,7 +8129,7 @@ public string Key { get; set; }
 
 The name of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#key App#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#key App#key}
 
 ---
 
@@ -8143,7 +8143,7 @@ public string Scope { get; set; }
 
 The visibility scope of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#scope App#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#scope App#scope}
 
 ---
 
@@ -8157,7 +8157,7 @@ public string Type { get; set; }
 
 The type of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#type App#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#type App#type}
 
 ---
 
@@ -8171,7 +8171,7 @@ public string Value { get; set; }
 
 The value of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#value App#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#value App#value}
 
 ---
 
@@ -8207,7 +8207,7 @@ public string Branch { get; set; }
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#branch App#branch}
 
 ---
 
@@ -8221,7 +8221,7 @@ public string RepoCloneUrl { get; set; }
 
 The clone URL of the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo_clone_url App#repo_clone_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#repo_clone_url App#repo_clone_url}
 
 ---
 
@@ -8259,7 +8259,7 @@ public string Branch { get; set; }
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#branch App#branch}
 
 ---
 
@@ -8273,7 +8273,7 @@ public object DeployOnPush { get; set; }
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -8287,7 +8287,7 @@ public string Repo { get; set; }
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#repo App#repo}
 
 ---
 
@@ -8325,7 +8325,7 @@ public string Branch { get; set; }
 
 The name of the branch to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#branch App#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#branch App#branch}
 
 ---
 
@@ -8339,7 +8339,7 @@ public object DeployOnPush { get; set; }
 
 Whether to automatically deploy new commits made to the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -8353,7 +8353,7 @@ public string Repo { get; set; }
 
 The name of the repo in the format `owner/repo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repo App#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#repo App#repo}
 
 ---
 
@@ -8399,7 +8399,7 @@ public string RegistryType { get; set; }
 
 The registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#registry_type App#registry_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#registry_type App#registry_type}
 
 ---
 
@@ -8413,7 +8413,7 @@ public string Repository { get; set; }
 
 The repository name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#repository App#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#repository App#repository}
 
 ---
 
@@ -8427,7 +8427,7 @@ public object DeployOnPush { get; set; }
 
 deploy_on_push block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#deploy_on_push App#deploy_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#deploy_on_push App#deploy_on_push}
 
 ---
 
@@ -8441,7 +8441,7 @@ public string Digest { get; set; }
 
 The image digest. Cannot be specified if tag is provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#digest App#digest}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#digest App#digest}
 
 ---
 
@@ -8455,7 +8455,7 @@ public string Registry { get; set; }
 
 The registry name. Must be left empty for the DOCR registry type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#registry App#registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#registry App#registry}
 
 ---
 
@@ -8469,7 +8469,7 @@ public string RegistryCredentials { get; set; }
 
 Access credentials for third-party registries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#registry_credentials App#registry_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#registry_credentials App#registry_credentials}
 
 ---
 
@@ -8483,7 +8483,7 @@ public string Tag { get; set; }
 
 The repository tag. Defaults to latest if not provided. Cannot be specified if digest is provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#tag App#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#tag App#tag}
 
 ---
 
@@ -8517,7 +8517,7 @@ public object Enabled { get; set; }
 
 Whether to automatically deploy images pushed to DOCR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#enabled App#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#enabled App#enabled}
 
 ---
 
@@ -8559,7 +8559,7 @@ public string Name { get; set; }
 
 Name of the log destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#name App#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#name App#name}
 
 ---
 
@@ -8573,7 +8573,7 @@ public AppSpecWorkerLogDestinationDatadog Datadog { get; set; }
 
 datadog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#datadog App#datadog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#datadog App#datadog}
 
 ---
 
@@ -8587,7 +8587,7 @@ public AppSpecWorkerLogDestinationLogtail Logtail { get; set; }
 
 logtail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#logtail App#logtail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#logtail App#logtail}
 
 ---
 
@@ -8601,7 +8601,7 @@ public AppSpecWorkerLogDestinationOpenSearch OpenSearch { get; set; }
 
 open_search block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#open_search App#open_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#open_search App#open_search}
 
 ---
 
@@ -8615,7 +8615,7 @@ public AppSpecWorkerLogDestinationPapertrail Papertrail { get; set; }
 
 papertrail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#papertrail App#papertrail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#papertrail App#papertrail}
 
 ---
 
@@ -8651,7 +8651,7 @@ public string ApiKey { get; set; }
 
 Datadog API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#api_key App#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#api_key App#api_key}
 
 ---
 
@@ -8665,7 +8665,7 @@ public string Endpoint { get; set; }
 
 Datadog HTTP log intake endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -8699,7 +8699,7 @@ public string Token { get; set; }
 
 Logtail token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#token App#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#token App#token}
 
 ---
 
@@ -8739,7 +8739,7 @@ public AppSpecWorkerLogDestinationOpenSearchBasicAuth BasicAuth { get; set; }
 
 basic_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#basic_auth App#basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#basic_auth App#basic_auth}
 
 ---
 
@@ -8753,7 +8753,7 @@ public string ClusterName { get; set; }
 
 OpenSearch cluster name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#cluster_name App#cluster_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#cluster_name App#cluster_name}
 
 ---
 
@@ -8767,7 +8767,7 @@ public string Endpoint { get; set; }
 
 OpenSearch endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -8781,7 +8781,7 @@ public string IndexName { get; set; }
 
 OpenSearch index name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#index_name App#index_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#index_name App#index_name}
 
 ---
 
@@ -8817,7 +8817,7 @@ public string Password { get; set; }
 
 Password for basic authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#password App#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#password App#password}
 
 ---
 
@@ -8831,7 +8831,7 @@ public string User { get; set; }
 
 user for basic authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#user App#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#user App#user}
 
 ---
 
@@ -8865,7 +8865,7 @@ public string Endpoint { get; set; }
 
 Papertrail syslog endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#endpoint App#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#endpoint App#endpoint}
 
 ---
 
@@ -8901,7 +8901,7 @@ The number of seconds to wait between sending a TERM signal to a container and i
 
 Default: 120, Minimum 1, Maximum 600.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#grace_period_seconds App#grace_period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#grace_period_seconds App#grace_period_seconds}
 
 ---
 
@@ -8921,7 +8921,7 @@ new AppTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#create App#create}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#create App#create}. |
 
 ---
 
@@ -8933,7 +8933,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#create App#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#create App#create}.
 
 ---
 
