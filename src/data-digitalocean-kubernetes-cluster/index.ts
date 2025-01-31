@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/data-sources/kubernetes_cluster
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/kubernetes_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +8,104 @@ import * as cdktf from 'cdktf';
 
 export interface DataDigitaloceanKubernetesClusterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/data-sources/kubernetes_cluster#id DataDigitaloceanKubernetesCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/kubernetes_cluster#id DataDigitaloceanKubernetesCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/data-sources/kubernetes_cluster#name DataDigitaloceanKubernetesCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/kubernetes_cluster#kubeconfig_expire_seconds DataDigitaloceanKubernetesCluster#kubeconfig_expire_seconds}
+  */
+  readonly kubeconfigExpireSeconds?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/kubernetes_cluster#name DataDigitaloceanKubernetesCluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/data-sources/kubernetes_cluster#tags DataDigitaloceanKubernetesCluster#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/kubernetes_cluster#tags DataDigitaloceanKubernetesCluster#tags}
   */
   readonly tags?: string[];
+}
+export interface DataDigitaloceanKubernetesClusterControlPlaneFirewall {
+}
+
+export function dataDigitaloceanKubernetesClusterControlPlaneFirewallToTerraform(struct?: DataDigitaloceanKubernetesClusterControlPlaneFirewall): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataDigitaloceanKubernetesClusterControlPlaneFirewallToHclTerraform(struct?: DataDigitaloceanKubernetesClusterControlPlaneFirewall): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDigitaloceanKubernetesClusterControlPlaneFirewallOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataDigitaloceanKubernetesClusterControlPlaneFirewall | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDigitaloceanKubernetesClusterControlPlaneFirewall | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // allowed_addresses - computed: true, optional: false, required: false
+  public get allowedAddresses() {
+    return this.getListAttribute('allowed_addresses');
+  }
+
+  // enabled - computed: true, optional: false, required: false
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+}
+
+export class DataDigitaloceanKubernetesClusterControlPlaneFirewallList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataDigitaloceanKubernetesClusterControlPlaneFirewallOutputReference {
+    return new DataDigitaloceanKubernetesClusterControlPlaneFirewallOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface DataDigitaloceanKubernetesClusterKubeConfig {
 }
@@ -538,7 +617,7 @@ export class DataDigitaloceanKubernetesClusterNodePoolList extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/data-sources/kubernetes_cluster digitalocean_kubernetes_cluster}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/kubernetes_cluster digitalocean_kubernetes_cluster}
 */
 export class DataDigitaloceanKubernetesCluster extends cdktf.TerraformDataSource {
 
@@ -554,7 +633,7 @@ export class DataDigitaloceanKubernetesCluster extends cdktf.TerraformDataSource
   * Generates CDKTF code for importing a DataDigitaloceanKubernetesCluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDigitaloceanKubernetesCluster to import
-  * @param importFromId The id of the existing DataDigitaloceanKubernetesCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/data-sources/kubernetes_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDigitaloceanKubernetesCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/kubernetes_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDigitaloceanKubernetesCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -566,7 +645,7 @@ export class DataDigitaloceanKubernetesCluster extends cdktf.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/data-sources/kubernetes_cluster digitalocean_kubernetes_cluster} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/kubernetes_cluster digitalocean_kubernetes_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -577,7 +656,7 @@ export class DataDigitaloceanKubernetesCluster extends cdktf.TerraformDataSource
       terraformResourceType: 'digitalocean_kubernetes_cluster',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.48.1',
+        providerVersion: '2.48.2',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
@@ -589,6 +668,7 @@ export class DataDigitaloceanKubernetesCluster extends cdktf.TerraformDataSource
       forEach: config.forEach
     });
     this._id = config.id;
+    this._kubeconfigExpireSeconds = config.kubeconfigExpireSeconds;
     this._name = config.name;
     this._tags = config.tags;
   }
@@ -605,6 +685,12 @@ export class DataDigitaloceanKubernetesCluster extends cdktf.TerraformDataSource
   // cluster_subnet - computed: true, optional: false, required: false
   public get clusterSubnet() {
     return this.getStringAttribute('cluster_subnet');
+  }
+
+  // control_plane_firewall - computed: true, optional: false, required: false
+  private _controlPlaneFirewall = new DataDigitaloceanKubernetesClusterControlPlaneFirewallList(this, "control_plane_firewall", false);
+  public get controlPlaneFirewall() {
+    return this._controlPlaneFirewall;
   }
 
   // created_at - computed: true, optional: false, required: false
@@ -647,6 +733,22 @@ export class DataDigitaloceanKubernetesCluster extends cdktf.TerraformDataSource
   private _kubeConfig = new DataDigitaloceanKubernetesClusterKubeConfigList(this, "kube_config", false);
   public get kubeConfig() {
     return this._kubeConfig;
+  }
+
+  // kubeconfig_expire_seconds - computed: false, optional: true, required: false
+  private _kubeconfigExpireSeconds?: number; 
+  public get kubeconfigExpireSeconds() {
+    return this.getNumberAttribute('kubeconfig_expire_seconds');
+  }
+  public set kubeconfigExpireSeconds(value: number) {
+    this._kubeconfigExpireSeconds = value;
+  }
+  public resetKubeconfigExpireSeconds() {
+    this._kubeconfigExpireSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kubeconfigExpireSecondsInput() {
+    return this._kubeconfigExpireSeconds;
   }
 
   // maintenance_policy - computed: true, optional: false, required: false
@@ -737,6 +839,7 @@ export class DataDigitaloceanKubernetesCluster extends cdktf.TerraformDataSource
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
+      kubeconfig_expire_seconds: cdktf.numberToTerraform(this._kubeconfigExpireSeconds),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
     };
@@ -749,6 +852,12 @@ export class DataDigitaloceanKubernetesCluster extends cdktf.TerraformDataSource
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      kubeconfig_expire_seconds: {
+        value: cdktf.numberToHclTerraform(this._kubeconfigExpireSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
