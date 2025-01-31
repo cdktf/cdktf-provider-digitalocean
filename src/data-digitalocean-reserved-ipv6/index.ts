@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/reserved_ipv6
 // generated from terraform resource schema
 
