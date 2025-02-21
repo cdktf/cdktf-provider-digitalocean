@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/droplet_autoscale
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +10,19 @@ export interface DropletAutoscaleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of the Droplet autoscale pool
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/droplet_autoscale#name DropletAutoscale#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#name DropletAutoscale#name}
   */
   readonly name: string;
   /**
   * config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/droplet_autoscale#config DropletAutoscale#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#config DropletAutoscale#config}
   */
   readonly config: DropletAutoscaleConfigA;
   /**
   * droplet_template block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/droplet_autoscale#droplet_template DropletAutoscale#droplet_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#droplet_template DropletAutoscale#droplet_template}
   */
   readonly dropletTemplate: DropletAutoscaleDropletTemplate;
 }
@@ -115,37 +110,37 @@ export interface DropletAutoscaleConfigA {
   /**
   * Cooldown duration
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/droplet_autoscale#cooldown_minutes DropletAutoscale#cooldown_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#cooldown_minutes DropletAutoscale#cooldown_minutes}
   */
   readonly cooldownMinutes?: number;
   /**
   * Max number of members
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/droplet_autoscale#max_instances DropletAutoscale#max_instances}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#max_instances DropletAutoscale#max_instances}
   */
   readonly maxInstances?: number;
   /**
   * Min number of members
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/droplet_autoscale#min_instances DropletAutoscale#min_instances}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#min_instances DropletAutoscale#min_instances}
   */
   readonly minInstances?: number;
   /**
   * CPU target threshold
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/droplet_autoscale#target_cpu_utilization DropletAutoscale#target_cpu_utilization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#target_cpu_utilization DropletAutoscale#target_cpu_utilization}
   */
   readonly targetCpuUtilization?: number;
   /**
   * Memory target threshold
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/droplet_autoscale#target_memory_utilization DropletAutoscale#target_memory_utilization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#target_memory_utilization DropletAutoscale#target_memory_utilization}
   */
   readonly targetMemoryUtilization?: number;
   /**
   * Target number of members
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/droplet_autoscale#target_number_instances DropletAutoscale#target_number_instances}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#target_number_instances DropletAutoscale#target_number_instances}
   */
   readonly targetNumberInstances?: number;
 }
@@ -376,61 +371,61 @@ export interface DropletAutoscaleDropletTemplate {
   /**
   * Droplet image
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/droplet_autoscale#image DropletAutoscale#image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#image DropletAutoscale#image}
   */
   readonly image: string;
   /**
   * Enable droplet IPv6
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/droplet_autoscale#ipv6 DropletAutoscale#ipv6}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#ipv6 DropletAutoscale#ipv6}
   */
   readonly ipv6?: boolean | cdktf.IResolvable;
   /**
   * Droplet project ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/droplet_autoscale#project_id DropletAutoscale#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#project_id DropletAutoscale#project_id}
   */
   readonly projectId?: string;
   /**
   * Droplet region
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/droplet_autoscale#region DropletAutoscale#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#region DropletAutoscale#region}
   */
   readonly region: string;
   /**
   * Droplet size
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/droplet_autoscale#size DropletAutoscale#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#size DropletAutoscale#size}
   */
   readonly size: string;
   /**
   * Droplet SSH keys
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/droplet_autoscale#ssh_keys DropletAutoscale#ssh_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#ssh_keys DropletAutoscale#ssh_keys}
   */
   readonly sshKeys: string[];
   /**
   * Droplet tags
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/droplet_autoscale#tags DropletAutoscale#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#tags DropletAutoscale#tags}
   */
   readonly tags?: string[];
   /**
   * Droplet user data
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/droplet_autoscale#user_data DropletAutoscale#user_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#user_data DropletAutoscale#user_data}
   */
   readonly userData?: string;
   /**
   * Droplet VPC UUID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/droplet_autoscale#vpc_uuid DropletAutoscale#vpc_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#vpc_uuid DropletAutoscale#vpc_uuid}
   */
   readonly vpcUuid?: string;
   /**
   * Enable droplet agent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/droplet_autoscale#with_droplet_agent DropletAutoscale#with_droplet_agent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#with_droplet_agent DropletAutoscale#with_droplet_agent}
   */
   readonly withDropletAgent?: boolean | cdktf.IResolvable;
 }
@@ -763,7 +758,7 @@ export class DropletAutoscaleDropletTemplateOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/droplet_autoscale digitalocean_droplet_autoscale}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale digitalocean_droplet_autoscale}
 */
 export class DropletAutoscale extends cdktf.TerraformResource {
 
@@ -779,7 +774,7 @@ export class DropletAutoscale extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DropletAutoscale resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DropletAutoscale to import
-  * @param importFromId The id of the existing DropletAutoscale that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/droplet_autoscale#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DropletAutoscale that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DropletAutoscale to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -791,7 +786,7 @@ export class DropletAutoscale extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/droplet_autoscale digitalocean_droplet_autoscale} Resource
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale digitalocean_droplet_autoscale} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -802,7 +797,7 @@ export class DropletAutoscale extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_droplet_autoscale',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.48.2',
+        providerVersion: '2.49.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,

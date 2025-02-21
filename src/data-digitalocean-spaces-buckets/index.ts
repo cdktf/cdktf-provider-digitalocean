@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/spaces_buckets
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/spaces_buckets
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataDigitaloceanSpacesBucketsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/spaces_buckets#id DataDigitaloceanSpacesBuckets#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/spaces_buckets#id DataDigitaloceanSpacesBuckets#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +17,13 @@ export interface DataDigitaloceanSpacesBucketsConfig extends cdktf.TerraformMeta
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/spaces_buckets#filter DataDigitaloceanSpacesBuckets#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/spaces_buckets#filter DataDigitaloceanSpacesBuckets#filter}
   */
   readonly filter?: DataDigitaloceanSpacesBucketsFilter[] | cdktf.IResolvable;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/spaces_buckets#sort DataDigitaloceanSpacesBuckets#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/spaces_buckets#sort DataDigitaloceanSpacesBuckets#sort}
   */
   readonly sort?: DataDigitaloceanSpacesBucketsSort[] | cdktf.IResolvable;
 }
@@ -129,19 +124,19 @@ export class DataDigitaloceanSpacesBucketsBucketsList extends cdktf.ComplexList 
 }
 export interface DataDigitaloceanSpacesBucketsFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/spaces_buckets#all DataDigitaloceanSpacesBuckets#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/spaces_buckets#all DataDigitaloceanSpacesBuckets#all}
   */
   readonly all?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/spaces_buckets#key DataDigitaloceanSpacesBuckets#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/spaces_buckets#key DataDigitaloceanSpacesBuckets#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/spaces_buckets#match_by DataDigitaloceanSpacesBuckets#match_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/spaces_buckets#match_by DataDigitaloceanSpacesBuckets#match_by}
   */
   readonly matchBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/spaces_buckets#values DataDigitaloceanSpacesBuckets#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/spaces_buckets#values DataDigitaloceanSpacesBuckets#values}
   */
   readonly values: string[];
 }
@@ -338,11 +333,11 @@ export class DataDigitaloceanSpacesBucketsFilterList extends cdktf.ComplexList {
 }
 export interface DataDigitaloceanSpacesBucketsSort {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/spaces_buckets#direction DataDigitaloceanSpacesBuckets#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/spaces_buckets#direction DataDigitaloceanSpacesBuckets#direction}
   */
   readonly direction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/spaces_buckets#key DataDigitaloceanSpacesBuckets#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/spaces_buckets#key DataDigitaloceanSpacesBuckets#key}
   */
   readonly key: string;
 }
@@ -484,7 +479,7 @@ export class DataDigitaloceanSpacesBucketsSortList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/spaces_buckets digitalocean_spaces_buckets}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/spaces_buckets digitalocean_spaces_buckets}
 */
 export class DataDigitaloceanSpacesBuckets extends cdktf.TerraformDataSource {
 
@@ -500,7 +495,7 @@ export class DataDigitaloceanSpacesBuckets extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDigitaloceanSpacesBuckets resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDigitaloceanSpacesBuckets to import
-  * @param importFromId The id of the existing DataDigitaloceanSpacesBuckets that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/spaces_buckets#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDigitaloceanSpacesBuckets that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/spaces_buckets#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDigitaloceanSpacesBuckets to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -512,7 +507,7 @@ export class DataDigitaloceanSpacesBuckets extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/spaces_buckets digitalocean_spaces_buckets} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/spaces_buckets digitalocean_spaces_buckets} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -523,7 +518,7 @@ export class DataDigitaloceanSpacesBuckets extends cdktf.TerraformDataSource {
       terraformResourceType: 'digitalocean_spaces_buckets',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.48.2',
+        providerVersion: '2.49.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
