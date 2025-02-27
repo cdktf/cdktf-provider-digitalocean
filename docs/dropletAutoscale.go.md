@@ -4,12 +4,12 @@
 
 ### DropletAutoscale <a name="DropletAutoscale" id="@cdktf/provider-digitalocean.dropletAutoscale.DropletAutoscale"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale digitalocean_droplet_autoscale}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/resources/droplet_autoscale digitalocean_droplet_autoscale}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dropletAutoscale.DropletAutoscale.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/dropletautoscale"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/dropletautoscale"
 
 dropletautoscale.NewDropletAutoscale(scope Construct, id *string, config DropletAutoscaleConfig) DropletAutoscale
 ```
@@ -404,7 +404,7 @@ func PutDropletTemplate(value DropletAutoscaleDropletTemplate)
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dropletAutoscale.DropletAutoscale.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/dropletautoscale"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/dropletautoscale"
 
 dropletautoscale.DropletAutoscale_IsConstruct(x interface{}) *bool
 ```
@@ -436,7 +436,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dropletAutoscale.DropletAutoscale.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/dropletautoscale"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/dropletautoscale"
 
 dropletautoscale.DropletAutoscale_IsTerraformElement(x interface{}) *bool
 ```
@@ -450,7 +450,7 @@ dropletautoscale.DropletAutoscale_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.dropletAutoscale.DropletAutoscale.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/dropletautoscale"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/dropletautoscale"
 
 dropletautoscale.DropletAutoscale_IsTerraformResource(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ dropletautoscale.DropletAutoscale_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.dropletAutoscale.DropletAutoscale.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/dropletautoscale"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/dropletautoscale"
 
 dropletautoscale.DropletAutoscale_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -493,7 +493,7 @@ The construct id used in the generated config for the DropletAutoscale to import
 
 The id of the existing DropletAutoscale that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/resources/droplet_autoscale#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -814,7 +814,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dropletAutoscale.DropletAutoscaleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/dropletautoscale"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/dropletautoscale"
 
 &dropletautoscale.DropletAutoscaleConfig {
 	Connection: interface{},
@@ -824,8 +824,8 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/droplet
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Config: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.dropletAutoscale.DropletAutoscaleConfigA,
-	DropletTemplate: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.dropletAutoscale.DropletAutoscaleDropletTemplate,
+	Config: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.dropletAutoscale.DropletAutoscaleConfigA,
+	DropletTemplate: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.dropletAutoscale.DropletAutoscaleDropletTemplate,
 	Name: *string,
 }
 ```
@@ -927,7 +927,7 @@ Config DropletAutoscaleConfigA
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#config DropletAutoscale#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/resources/droplet_autoscale#config DropletAutoscale#config}
 
 ---
 
@@ -941,7 +941,7 @@ DropletTemplate DropletAutoscaleDropletTemplate
 
 droplet_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#droplet_template DropletAutoscale#droplet_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/resources/droplet_autoscale#droplet_template DropletAutoscale#droplet_template}
 
 ---
 
@@ -955,7 +955,7 @@ Name *string
 
 Name of the Droplet autoscale pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#name DropletAutoscale#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/resources/droplet_autoscale#name DropletAutoscale#name}
 
 ---
 
@@ -964,7 +964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dropletAutoscale.DropletAutoscaleConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/dropletautoscale"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/dropletautoscale"
 
 &dropletautoscale.DropletAutoscaleConfigA {
 	CooldownMinutes: *f64,
@@ -999,7 +999,7 @@ CooldownMinutes *f64
 
 Cooldown duration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#cooldown_minutes DropletAutoscale#cooldown_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/resources/droplet_autoscale#cooldown_minutes DropletAutoscale#cooldown_minutes}
 
 ---
 
@@ -1013,7 +1013,7 @@ MaxInstances *f64
 
 Max number of members.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#max_instances DropletAutoscale#max_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/resources/droplet_autoscale#max_instances DropletAutoscale#max_instances}
 
 ---
 
@@ -1027,7 +1027,7 @@ MinInstances *f64
 
 Min number of members.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#min_instances DropletAutoscale#min_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/resources/droplet_autoscale#min_instances DropletAutoscale#min_instances}
 
 ---
 
@@ -1041,7 +1041,7 @@ TargetCpuUtilization *f64
 
 CPU target threshold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#target_cpu_utilization DropletAutoscale#target_cpu_utilization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/resources/droplet_autoscale#target_cpu_utilization DropletAutoscale#target_cpu_utilization}
 
 ---
 
@@ -1055,7 +1055,7 @@ TargetMemoryUtilization *f64
 
 Memory target threshold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#target_memory_utilization DropletAutoscale#target_memory_utilization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/resources/droplet_autoscale#target_memory_utilization DropletAutoscale#target_memory_utilization}
 
 ---
 
@@ -1069,7 +1069,7 @@ TargetNumberInstances *f64
 
 Target number of members.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#target_number_instances DropletAutoscale#target_number_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/resources/droplet_autoscale#target_number_instances DropletAutoscale#target_number_instances}
 
 ---
 
@@ -1078,7 +1078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dropletAutoscale.DropletAutoscaleCurrentUtilization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/dropletautoscale"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/dropletautoscale"
 
 &dropletautoscale.DropletAutoscaleCurrentUtilization {
 
@@ -1091,7 +1091,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/droplet
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dropletAutoscale.DropletAutoscaleDropletTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/dropletautoscale"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/dropletautoscale"
 
 &dropletautoscale.DropletAutoscaleDropletTemplate {
 	Image: *string,
@@ -1134,7 +1134,7 @@ Image *string
 
 Droplet image.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#image DropletAutoscale#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/resources/droplet_autoscale#image DropletAutoscale#image}
 
 ---
 
@@ -1148,7 +1148,7 @@ Region *string
 
 Droplet region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#region DropletAutoscale#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/resources/droplet_autoscale#region DropletAutoscale#region}
 
 ---
 
@@ -1162,7 +1162,7 @@ Size *string
 
 Droplet size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#size DropletAutoscale#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/resources/droplet_autoscale#size DropletAutoscale#size}
 
 ---
 
@@ -1176,7 +1176,7 @@ SshKeys *[]*string
 
 Droplet SSH keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#ssh_keys DropletAutoscale#ssh_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/resources/droplet_autoscale#ssh_keys DropletAutoscale#ssh_keys}
 
 ---
 
@@ -1190,7 +1190,7 @@ Ipv6 interface{}
 
 Enable droplet IPv6.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#ipv6 DropletAutoscale#ipv6}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/resources/droplet_autoscale#ipv6 DropletAutoscale#ipv6}
 
 ---
 
@@ -1204,7 +1204,7 @@ ProjectId *string
 
 Droplet project ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#project_id DropletAutoscale#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/resources/droplet_autoscale#project_id DropletAutoscale#project_id}
 
 ---
 
@@ -1218,7 +1218,7 @@ Tags *[]*string
 
 Droplet tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#tags DropletAutoscale#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/resources/droplet_autoscale#tags DropletAutoscale#tags}
 
 ---
 
@@ -1232,7 +1232,7 @@ UserData *string
 
 Droplet user data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#user_data DropletAutoscale#user_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/resources/droplet_autoscale#user_data DropletAutoscale#user_data}
 
 ---
 
@@ -1246,7 +1246,7 @@ VpcUuid *string
 
 Droplet VPC UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#vpc_uuid DropletAutoscale#vpc_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/resources/droplet_autoscale#vpc_uuid DropletAutoscale#vpc_uuid}
 
 ---
 
@@ -1260,7 +1260,7 @@ WithDropletAgent interface{}
 
 Enable droplet agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/droplet_autoscale#with_droplet_agent DropletAutoscale#with_droplet_agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/resources/droplet_autoscale#with_droplet_agent DropletAutoscale#with_droplet_agent}
 
 ---
 
@@ -1271,7 +1271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dropletAutoscale.DropletAutoscaleConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/dropletautoscale"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/dropletautoscale"
 
 dropletautoscale.NewDropletAutoscaleConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DropletAutoscaleConfigAOutputReference
 ```
@@ -1694,7 +1694,7 @@ func InternalValue() DropletAutoscaleConfigA
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dropletAutoscale.DropletAutoscaleCurrentUtilizationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/dropletautoscale"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/dropletautoscale"
 
 dropletautoscale.NewDropletAutoscaleCurrentUtilizationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DropletAutoscaleCurrentUtilizationList
 ```
@@ -1843,7 +1843,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dropletAutoscale.DropletAutoscaleCurrentUtilizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/dropletautoscale"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/dropletautoscale"
 
 dropletautoscale.NewDropletAutoscaleCurrentUtilizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DropletAutoscaleCurrentUtilizationOutputReference
 ```
@@ -2132,7 +2132,7 @@ func InternalValue() DropletAutoscaleCurrentUtilization
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dropletAutoscale.DropletAutoscaleDropletTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/dropletautoscale"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/dropletautoscale"
 
 dropletautoscale.NewDropletAutoscaleDropletTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DropletAutoscaleDropletTemplateOutputReference
 ```

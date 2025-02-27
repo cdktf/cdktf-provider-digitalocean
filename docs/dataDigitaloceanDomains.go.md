@@ -4,12 +4,12 @@
 
 ### DataDigitaloceanDomains <a name="DataDigitaloceanDomains" id="@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/domains digitalocean_domains}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/data-sources/domains digitalocean_domains}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceandomains"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandomains"
 
 datadigitaloceandomains.NewDataDigitaloceanDomains(scope Construct, id *string, config DataDigitaloceanDomainsConfig) DataDigitaloceanDomains
 ```
@@ -323,7 +323,7 @@ func ResetSort()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceandomains"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandomains"
 
 datadigitaloceandomains.DataDigitaloceanDomains_IsConstruct(x interface{}) *bool
 ```
@@ -355,7 +355,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceandomains"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandomains"
 
 datadigitaloceandomains.DataDigitaloceanDomains_IsTerraformElement(x interface{}) *bool
 ```
@@ -369,7 +369,7 @@ datadigitaloceandomains.DataDigitaloceanDomains_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceandomains"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandomains"
 
 datadigitaloceandomains.DataDigitaloceanDomains_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -383,7 +383,7 @@ datadigitaloceandomains.DataDigitaloceanDomains_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceandomains"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandomains"
 
 datadigitaloceandomains.DataDigitaloceanDomains_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -412,7 +412,7 @@ The construct id used in the generated config for the DataDigitaloceanDomains to
 
 The id of the existing DataDigitaloceanDomains that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/domains#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/data-sources/domains#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -667,7 +667,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceandomains"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandomains"
 
 &datadigitaloceandomains.DataDigitaloceanDomainsConfig {
 	Connection: interface{},
@@ -695,7 +695,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsConfig.property.filter">Filter</a></code> | <code>interface{}</code> | filter block. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/domains#id DataDigitaloceanDomains#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/data-sources/domains#id DataDigitaloceanDomains#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsConfig.property.sort">Sort</a></code> | <code>interface{}</code> | sort block. |
 
 ---
@@ -780,7 +780,7 @@ Filter interface{}
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/domains#filter DataDigitaloceanDomains#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/data-sources/domains#filter DataDigitaloceanDomains#filter}
 
 ---
 
@@ -792,7 +792,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/domains#id DataDigitaloceanDomains#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/data-sources/domains#id DataDigitaloceanDomains#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -809,7 +809,7 @@ Sort interface{}
 
 sort block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/domains#sort DataDigitaloceanDomains#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/data-sources/domains#sort DataDigitaloceanDomains#sort}
 
 ---
 
@@ -818,7 +818,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsDomains.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceandomains"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandomains"
 
 &datadigitaloceandomains.DataDigitaloceanDomainsDomains {
 
@@ -831,7 +831,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceandomains"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandomains"
 
 &datadigitaloceandomains.DataDigitaloceanDomainsFilter {
 	Key: *string,
@@ -845,10 +845,10 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsFilter.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/domains#key DataDigitaloceanDomains#key}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/domains#values DataDigitaloceanDomains#values}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsFilter.property.all">All</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/domains#all DataDigitaloceanDomains#all}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsFilter.property.matchBy">MatchBy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/domains#match_by DataDigitaloceanDomains#match_by}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsFilter.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/data-sources/domains#key DataDigitaloceanDomains#key}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/data-sources/domains#values DataDigitaloceanDomains#values}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsFilter.property.all">All</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/data-sources/domains#all DataDigitaloceanDomains#all}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsFilter.property.matchBy">MatchBy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/data-sources/domains#match_by DataDigitaloceanDomains#match_by}. |
 
 ---
 
@@ -860,7 +860,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/domains#key DataDigitaloceanDomains#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/data-sources/domains#key DataDigitaloceanDomains#key}.
 
 ---
 
@@ -872,7 +872,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/domains#values DataDigitaloceanDomains#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/data-sources/domains#values DataDigitaloceanDomains#values}.
 
 ---
 
@@ -884,7 +884,7 @@ All interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/domains#all DataDigitaloceanDomains#all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/data-sources/domains#all DataDigitaloceanDomains#all}.
 
 ---
 
@@ -896,7 +896,7 @@ MatchBy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/domains#match_by DataDigitaloceanDomains#match_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/data-sources/domains#match_by DataDigitaloceanDomains#match_by}.
 
 ---
 
@@ -905,7 +905,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsSort.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceandomains"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandomains"
 
 &datadigitaloceandomains.DataDigitaloceanDomainsSort {
 	Key: *string,
@@ -917,8 +917,8 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsSort.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/domains#key DataDigitaloceanDomains#key}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsSort.property.direction">Direction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/domains#direction DataDigitaloceanDomains#direction}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsSort.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/data-sources/domains#key DataDigitaloceanDomains#key}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsSort.property.direction">Direction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/data-sources/domains#direction DataDigitaloceanDomains#direction}. |
 
 ---
 
@@ -930,7 +930,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/domains#key DataDigitaloceanDomains#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/data-sources/domains#key DataDigitaloceanDomains#key}.
 
 ---
 
@@ -942,7 +942,7 @@ Direction *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/domains#direction DataDigitaloceanDomains#direction}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/data-sources/domains#direction DataDigitaloceanDomains#direction}.
 
 ---
 
@@ -953,7 +953,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsDomainsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceandomains"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandomains"
 
 datadigitaloceandomains.NewDataDigitaloceanDomainsDomainsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanDomainsDomainsList
 ```
@@ -1102,7 +1102,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsDomainsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceandomains"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandomains"
 
 datadigitaloceandomains.NewDataDigitaloceanDomainsDomainsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanDomainsDomainsOutputReference
 ```
@@ -1402,7 +1402,7 @@ func InternalValue() DataDigitaloceanDomainsDomains
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceandomains"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandomains"
 
 datadigitaloceandomains.NewDataDigitaloceanDomainsFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanDomainsFilterList
 ```
@@ -1562,7 +1562,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceandomains"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandomains"
 
 datadigitaloceandomains.NewDataDigitaloceanDomainsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanDomainsFilterOutputReference
 ```
@@ -1931,7 +1931,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsSortList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceandomains"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandomains"
 
 datadigitaloceandomains.NewDataDigitaloceanDomainsSortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanDomainsSortList
 ```
@@ -2091,7 +2091,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomainsSortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceandomains"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandomains"
 
 datadigitaloceandomains.NewDataDigitaloceanDomainsSortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanDomainsSortOutputReference
 ```
