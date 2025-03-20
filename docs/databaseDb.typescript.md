@@ -4,7 +4,7 @@
 
 ### DatabaseDb <a name="DatabaseDb" id="@cdktf/provider-digitalocean.databaseDb.DatabaseDb"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/resources/database_db digitalocean_database_db}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.2/docs/resources/database_db digitalocean_database_db}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databaseDb.DatabaseDb.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the DatabaseDb to import.
 
 The id of the existing DatabaseDb that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/resources/database_db#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.2/docs/resources/database_db#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -756,9 +756,9 @@ const databaseDbConfig: databaseDb.DatabaseDbConfig = { ... }
 | <code><a href="#@cdktf/provider-digitalocean.databaseDb.DatabaseDbConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseDb.DatabaseDbConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseDb.DatabaseDbConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseDb.DatabaseDbConfig.property.clusterId">clusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/resources/database_db#cluster_id DatabaseDb#cluster_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseDb.DatabaseDbConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/resources/database_db#name DatabaseDb#name}. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseDb.DatabaseDbConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/resources/database_db#id DatabaseDb#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseDb.DatabaseDbConfig.property.clusterId">clusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.2/docs/resources/database_db#cluster_id DatabaseDb#cluster_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseDb.DatabaseDbConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.2/docs/resources/database_db#name DatabaseDb#name}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseDb.DatabaseDbConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.2/docs/resources/database_db#id DatabaseDb#id}. |
 
 ---
 
@@ -840,7 +840,7 @@ public readonly clusterId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/resources/database_db#cluster_id DatabaseDb#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.2/docs/resources/database_db#cluster_id DatabaseDb#cluster_id}.
 
 ---
 
@@ -852,7 +852,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/resources/database_db#name DatabaseDb#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.2/docs/resources/database_db#name DatabaseDb#name}.
 
 ---
 
@@ -864,7 +864,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/resources/database_db#id DatabaseDb#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.2/docs/resources/database_db#id DatabaseDb#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
