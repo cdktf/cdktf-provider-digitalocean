@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.2/docs/data-sources/kubernetes_cluster
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/data-sources/kubernetes_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,30 +13,36 @@ import * as cdktf from 'cdktf';
 
 export interface DataDigitaloceanKubernetesClusterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.2/docs/data-sources/kubernetes_cluster#id DataDigitaloceanKubernetesCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/data-sources/kubernetes_cluster#id DataDigitaloceanKubernetesCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.2/docs/data-sources/kubernetes_cluster#kubeconfig_expire_seconds DataDigitaloceanKubernetesCluster#kubeconfig_expire_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/data-sources/kubernetes_cluster#kubeconfig_expire_seconds DataDigitaloceanKubernetesCluster#kubeconfig_expire_seconds}
   */
   readonly kubeconfigExpireSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.2/docs/data-sources/kubernetes_cluster#name DataDigitaloceanKubernetesCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/data-sources/kubernetes_cluster#name DataDigitaloceanKubernetesCluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.2/docs/data-sources/kubernetes_cluster#tags DataDigitaloceanKubernetesCluster#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/data-sources/kubernetes_cluster#tags DataDigitaloceanKubernetesCluster#tags}
   */
   readonly tags?: string[];
   /**
   * cluster_autoscaler_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.2/docs/data-sources/kubernetes_cluster#cluster_autoscaler_configuration DataDigitaloceanKubernetesCluster#cluster_autoscaler_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/data-sources/kubernetes_cluster#cluster_autoscaler_configuration DataDigitaloceanKubernetesCluster#cluster_autoscaler_configuration}
   */
   readonly clusterAutoscalerConfiguration?: DataDigitaloceanKubernetesClusterClusterAutoscalerConfiguration[] | cdktf.IResolvable;
+  /**
+  * routing_agent block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/data-sources/kubernetes_cluster#routing_agent DataDigitaloceanKubernetesCluster#routing_agent}
+  */
+  readonly routingAgent?: DataDigitaloceanKubernetesClusterRoutingAgent;
 }
 export interface DataDigitaloceanKubernetesClusterControlPlaneFirewall {
 }
@@ -628,11 +634,11 @@ export class DataDigitaloceanKubernetesClusterNodePoolList extends cdktf.Complex
 }
 export interface DataDigitaloceanKubernetesClusterClusterAutoscalerConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.2/docs/data-sources/kubernetes_cluster#scale_down_unneeded_time DataDigitaloceanKubernetesCluster#scale_down_unneeded_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/data-sources/kubernetes_cluster#scale_down_unneeded_time DataDigitaloceanKubernetesCluster#scale_down_unneeded_time}
   */
   readonly scaleDownUnneededTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.2/docs/data-sources/kubernetes_cluster#scale_down_utilization_threshold DataDigitaloceanKubernetesCluster#scale_down_utilization_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/data-sources/kubernetes_cluster#scale_down_utilization_threshold DataDigitaloceanKubernetesCluster#scale_down_utilization_threshold}
   */
   readonly scaleDownUtilizationThreshold?: number;
 }
@@ -775,9 +781,63 @@ export class DataDigitaloceanKubernetesClusterClusterAutoscalerConfigurationList
     return new DataDigitaloceanKubernetesClusterClusterAutoscalerConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataDigitaloceanKubernetesClusterRoutingAgent {
+}
+
+export function dataDigitaloceanKubernetesClusterRoutingAgentToTerraform(struct?: DataDigitaloceanKubernetesClusterRoutingAgentOutputReference | DataDigitaloceanKubernetesClusterRoutingAgent): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataDigitaloceanKubernetesClusterRoutingAgentToHclTerraform(struct?: DataDigitaloceanKubernetesClusterRoutingAgentOutputReference | DataDigitaloceanKubernetesClusterRoutingAgent): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDigitaloceanKubernetesClusterRoutingAgentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataDigitaloceanKubernetesClusterRoutingAgent | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDigitaloceanKubernetesClusterRoutingAgent | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // enabled - computed: true, optional: false, required: false
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.2/docs/data-sources/kubernetes_cluster digitalocean_kubernetes_cluster}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/data-sources/kubernetes_cluster digitalocean_kubernetes_cluster}
 */
 export class DataDigitaloceanKubernetesCluster extends cdktf.TerraformDataSource {
 
@@ -793,7 +853,7 @@ export class DataDigitaloceanKubernetesCluster extends cdktf.TerraformDataSource
   * Generates CDKTF code for importing a DataDigitaloceanKubernetesCluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDigitaloceanKubernetesCluster to import
-  * @param importFromId The id of the existing DataDigitaloceanKubernetesCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.2/docs/data-sources/kubernetes_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDigitaloceanKubernetesCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/data-sources/kubernetes_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDigitaloceanKubernetesCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -805,7 +865,7 @@ export class DataDigitaloceanKubernetesCluster extends cdktf.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.2/docs/data-sources/kubernetes_cluster digitalocean_kubernetes_cluster} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/data-sources/kubernetes_cluster digitalocean_kubernetes_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -816,7 +876,7 @@ export class DataDigitaloceanKubernetesCluster extends cdktf.TerraformDataSource
       terraformResourceType: 'digitalocean_kubernetes_cluster',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.49.2',
+        providerVersion: '2.50.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
@@ -832,6 +892,7 @@ export class DataDigitaloceanKubernetesCluster extends cdktf.TerraformDataSource
     this._name = config.name;
     this._tags = config.tags;
     this._clusterAutoscalerConfiguration.internalValue = config.clusterAutoscalerConfiguration;
+    this._routingAgent.internalValue = config.routingAgent;
   }
 
   // ==========
@@ -1009,6 +1070,22 @@ export class DataDigitaloceanKubernetesCluster extends cdktf.TerraformDataSource
     return this._clusterAutoscalerConfiguration.internalValue;
   }
 
+  // routing_agent - computed: false, optional: true, required: false
+  private _routingAgent = new DataDigitaloceanKubernetesClusterRoutingAgentOutputReference(this, "routing_agent");
+  public get routingAgent() {
+    return this._routingAgent;
+  }
+  public putRoutingAgent(value: DataDigitaloceanKubernetesClusterRoutingAgent) {
+    this._routingAgent.internalValue = value;
+  }
+  public resetRoutingAgent() {
+    this._routingAgent.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routingAgentInput() {
+    return this._routingAgent.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -1020,6 +1097,7 @@ export class DataDigitaloceanKubernetesCluster extends cdktf.TerraformDataSource
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
       cluster_autoscaler_configuration: cdktf.listMapper(dataDigitaloceanKubernetesClusterClusterAutoscalerConfigurationToTerraform, true)(this._clusterAutoscalerConfiguration.internalValue),
+      routing_agent: dataDigitaloceanKubernetesClusterRoutingAgentToTerraform(this._routingAgent.internalValue),
     };
   }
 
@@ -1054,6 +1132,12 @@ export class DataDigitaloceanKubernetesCluster extends cdktf.TerraformDataSource
         isBlock: true,
         type: "list",
         storageClassType: "DataDigitaloceanKubernetesClusterClusterAutoscalerConfigurationList",
+      },
+      routing_agent: {
+        value: dataDigitaloceanKubernetesClusterRoutingAgentToHclTerraform(this._routingAgent.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataDigitaloceanKubernetesClusterRoutingAgentList",
       },
     };
 

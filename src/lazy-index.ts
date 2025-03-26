@@ -45,6 +45,7 @@ Object.defineProperty(exports, 'spacesBucket', { get: function () { return requi
 Object.defineProperty(exports, 'spacesBucketCorsConfiguration', { get: function () { return require('./spaces-bucket-cors-configuration'); } });
 Object.defineProperty(exports, 'spacesBucketObject', { get: function () { return require('./spaces-bucket-object'); } });
 Object.defineProperty(exports, 'spacesBucketPolicy', { get: function () { return require('./spaces-bucket-policy'); } });
+Object.defineProperty(exports, 'spacesKey', { get: function () { return require('./spaces-key'); } });
 Object.defineProperty(exports, 'sshKey', { get: function () { return require('./ssh-key'); } });
 Object.defineProperty(exports, 'tag', { get: function () { return require('./tag'); } });
 Object.defineProperty(exports, 'uptimeAlert', { get: function () { return require('./uptime-alert'); } });
@@ -89,6 +90,7 @@ Object.defineProperty(exports, 'dataDigitaloceanSpacesBucket', { get: function (
 Object.defineProperty(exports, 'dataDigitaloceanSpacesBucketObject', { get: function () { return require('./data-digitalocean-spaces-bucket-object'); } });
 Object.defineProperty(exports, 'dataDigitaloceanSpacesBucketObjects', { get: function () { return require('./data-digitalocean-spaces-bucket-objects'); } });
 Object.defineProperty(exports, 'dataDigitaloceanSpacesBuckets', { get: function () { return require('./data-digitalocean-spaces-buckets'); } });
+Object.defineProperty(exports, 'dataDigitaloceanSpacesKey', { get: function () { return require('./data-digitalocean-spaces-key'); } });
 Object.defineProperty(exports, 'dataDigitaloceanSshKey', { get: function () { return require('./data-digitalocean-ssh-key'); } });
 Object.defineProperty(exports, 'dataDigitaloceanSshKeys', { get: function () { return require('./data-digitalocean-ssh-keys'); } });
 Object.defineProperty(exports, 'dataDigitaloceanTag', { get: function () { return require('./data-digitalocean-tag'); } });
