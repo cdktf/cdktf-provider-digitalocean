@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetescluster"
 
 kubernetescluster.NewKubernetesCluster(scope Construct, id *string, config KubernetesClusterConfig) KubernetesCluster
 ```
@@ -568,7 +568,7 @@ func ResetVpcUuid()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetescluster"
 
 kubernetescluster.KubernetesCluster_IsConstruct(x interface{}) *bool
 ```
@@ -600,7 +600,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetescluster"
 
 kubernetescluster.KubernetesCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -614,7 +614,7 @@ kubernetescluster.KubernetesCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetescluster"
 
 kubernetescluster.KubernetesCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -628,7 +628,7 @@ kubernetescluster.KubernetesCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetescluster"
 
 kubernetescluster.KubernetesCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1374,7 +1374,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterClusterAutoscalerConfiguration {
 	ScaleDownUnneededTime: *string,
@@ -1420,7 +1420,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterConfig {
 	Connection: interface{},
@@ -1431,24 +1431,24 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kuberne
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	NodePool: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.kubernetesCluster.KubernetesClusterNodePool,
+	NodePool: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.kubernetesCluster.KubernetesClusterNodePool,
 	Region: *string,
 	Version: *string,
 	AutoUpgrade: interface{},
 	ClusterAutoscalerConfiguration: interface{},
 	ClusterSubnet: *string,
-	ControlPlaneFirewall: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.kubernetesCluster.KubernetesClusterControlPlaneFirewall,
+	ControlPlaneFirewall: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.kubernetesCluster.KubernetesClusterControlPlaneFirewall,
 	DestroyAllAssociatedResources: interface{},
 	Ha: interface{},
 	Id: *string,
 	KubeconfigExpireSeconds: *f64,
-	MaintenancePolicy: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.kubernetesCluster.KubernetesClusterMaintenancePolicy,
+	MaintenancePolicy: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.kubernetesCluster.KubernetesClusterMaintenancePolicy,
 	RegistryIntegration: interface{},
-	RoutingAgent: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.kubernetesCluster.KubernetesClusterRoutingAgent,
+	RoutingAgent: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.kubernetesCluster.KubernetesClusterRoutingAgent,
 	ServiceSubnet: *string,
 	SurgeUpgrade: interface{},
 	Tags: *[]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11.kubernetesCluster.KubernetesClusterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.kubernetesCluster.KubernetesClusterTimeouts,
 	VpcUuid: *string,
 }
 ```
@@ -1817,7 +1817,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterControlPlaneFirewall.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterControlPlaneFirewall {
 	AllowedAddresses: *[]*string,
@@ -1863,7 +1863,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterKubeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterKubeConfig {
 
@@ -1876,7 +1876,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kuberne
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterMaintenancePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterMaintenancePolicy {
 	Day: *string,
@@ -1922,7 +1922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePool.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterNodePool {
 	Name: *string,
@@ -2068,7 +2068,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolNodes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterNodePoolNodes {
 
@@ -2081,7 +2081,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kuberne
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolTaint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterNodePoolTaint {
 	Effect: *string,
@@ -2141,7 +2141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterRoutingAgent.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterRoutingAgent {
 	Enabled: interface{},
@@ -2173,7 +2173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterTimeouts {
 	Create: *string,
@@ -2207,7 +2207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterClusterAutoscalerConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KubernetesClusterClusterAutoscalerConfigurationList
 ```
@@ -2367,7 +2367,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterClusterAutoscalerConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KubernetesClusterClusterAutoscalerConfigurationOutputReference
 ```
@@ -2692,7 +2692,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterControlPlaneFirewallOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterControlPlaneFirewallOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterControlPlaneFirewallOutputReference
 ```
@@ -2985,7 +2985,7 @@ func InternalValue() KubernetesClusterControlPlaneFirewall
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterKubeConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterKubeConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KubernetesClusterKubeConfigList
 ```
@@ -3134,7 +3134,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterKubeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterKubeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KubernetesClusterKubeConfigOutputReference
 ```
@@ -3478,7 +3478,7 @@ func InternalValue() KubernetesClusterKubeConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterMaintenancePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterMaintenancePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterMaintenancePolicyOutputReference
 ```
@@ -3796,7 +3796,7 @@ func InternalValue() KubernetesClusterMaintenancePolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolNodesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterNodePoolNodesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KubernetesClusterNodePoolNodesList
 ```
@@ -3945,7 +3945,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolNodesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterNodePoolNodesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KubernetesClusterNodePoolNodesOutputReference
 ```
@@ -4278,7 +4278,7 @@ func InternalValue() KubernetesClusterNodePoolNodes
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterNodePoolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterNodePoolOutputReference
 ```
@@ -4820,7 +4820,7 @@ func InternalValue() KubernetesClusterNodePool
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolTaintList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterNodePoolTaintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KubernetesClusterNodePoolTaintList
 ```
@@ -4980,7 +4980,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolTaintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterNodePoolTaintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KubernetesClusterNodePoolTaintOutputReference
 ```
@@ -5313,7 +5313,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterRoutingAgentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterRoutingAgentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterRoutingAgentOutputReference
 ```
@@ -5584,7 +5584,7 @@ func InternalValue() KubernetesClusterRoutingAgent
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterTimeoutsOutputReference
 ```
