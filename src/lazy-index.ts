@@ -34,6 +34,7 @@ Object.defineProperty(exports, 'kubernetesCluster', { get: function () { return 
 Object.defineProperty(exports, 'kubernetesNodePool', { get: function () { return require('./kubernetes-node-pool'); } });
 Object.defineProperty(exports, 'loadbalancer', { get: function () { return require('./loadbalancer'); } });
 Object.defineProperty(exports, 'monitorAlert', { get: function () { return require('./monitor-alert'); } });
+Object.defineProperty(exports, 'partnerAttachment', { get: function () { return require('./partner-attachment'); } });
 Object.defineProperty(exports, 'project', { get: function () { return require('./project'); } });
 Object.defineProperty(exports, 'projectResources', { get: function () { return require('./project-resources'); } });
 Object.defineProperty(exports, 'record', { get: function () { return require('./record'); } });
@@ -77,6 +78,7 @@ Object.defineProperty(exports, 'dataDigitaloceanImages', { get: function () { re
 Object.defineProperty(exports, 'dataDigitaloceanKubernetesCluster', { get: function () { return require('./data-digitalocean-kubernetes-cluster'); } });
 Object.defineProperty(exports, 'dataDigitaloceanKubernetesVersions', { get: function () { return require('./data-digitalocean-kubernetes-versions'); } });
 Object.defineProperty(exports, 'dataDigitaloceanLoadbalancer', { get: function () { return require('./data-digitalocean-loadbalancer'); } });
+Object.defineProperty(exports, 'dataDigitaloceanPartnerAttachment', { get: function () { return require('./data-digitalocean-partner-attachment'); } });
 Object.defineProperty(exports, 'dataDigitaloceanProject', { get: function () { return require('./data-digitalocean-project'); } });
 Object.defineProperty(exports, 'dataDigitaloceanProjects', { get: function () { return require('./data-digitalocean-projects'); } });
 Object.defineProperty(exports, 'dataDigitaloceanRecord', { get: function () { return require('./data-digitalocean-record'); } });
