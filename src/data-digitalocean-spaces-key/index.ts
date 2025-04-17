@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/data-sources/spaces_key
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.51.0/docs/data-sources/spaces_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface DataDigitaloceanSpacesKeyConfig extends cdktf.TerraformMetaArgu
   /**
   * The access key for the Spaces key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/data-sources/spaces_key#access_key DataDigitaloceanSpacesKey#access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.51.0/docs/data-sources/spaces_key#access_key DataDigitaloceanSpacesKey#access_key}
   */
   readonly accessKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/data-sources/spaces_key#id DataDigitaloceanSpacesKey#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.51.0/docs/data-sources/spaces_key#id DataDigitaloceanSpacesKey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -108,7 +103,7 @@ export class DataDigitaloceanSpacesKeyGrantList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/data-sources/spaces_key digitalocean_spaces_key}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.51.0/docs/data-sources/spaces_key digitalocean_spaces_key}
 */
 export class DataDigitaloceanSpacesKey extends cdktf.TerraformDataSource {
 
@@ -124,7 +119,7 @@ export class DataDigitaloceanSpacesKey extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDigitaloceanSpacesKey resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDigitaloceanSpacesKey to import
-  * @param importFromId The id of the existing DataDigitaloceanSpacesKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/data-sources/spaces_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDigitaloceanSpacesKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.51.0/docs/data-sources/spaces_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDigitaloceanSpacesKey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -136,7 +131,7 @@ export class DataDigitaloceanSpacesKey extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/data-sources/spaces_key digitalocean_spaces_key} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.51.0/docs/data-sources/spaces_key digitalocean_spaces_key} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -147,7 +142,7 @@ export class DataDigitaloceanSpacesKey extends cdktf.TerraformDataSource {
       terraformResourceType: 'digitalocean_spaces_key',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.50.0',
+        providerVersion: '2.51.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
