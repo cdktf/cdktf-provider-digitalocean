@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.51.0/docs/data-sources/droplet_autoscale
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/data-sources/droplet_autoscale
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +10,7 @@ export interface DataDigitaloceanDropletAutoscaleConfig extends cdktf.TerraformM
   /**
   * ID of the Droplet autoscale pool
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.51.0/docs/data-sources/droplet_autoscale#id DataDigitaloceanDropletAutoscale#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/data-sources/droplet_autoscale#id DataDigitaloceanDropletAutoscale#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,7 +19,7 @@ export interface DataDigitaloceanDropletAutoscaleConfig extends cdktf.TerraformM
   /**
   * Name of the Droplet autoscale pool
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.51.0/docs/data-sources/droplet_autoscale#name DataDigitaloceanDropletAutoscale#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/data-sources/droplet_autoscale#name DataDigitaloceanDropletAutoscale#name}
   */
   readonly name?: string;
 }
@@ -330,7 +325,7 @@ export class DataDigitaloceanDropletAutoscaleDropletTemplateList extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.51.0/docs/data-sources/droplet_autoscale digitalocean_droplet_autoscale}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/data-sources/droplet_autoscale digitalocean_droplet_autoscale}
 */
 export class DataDigitaloceanDropletAutoscale extends cdktf.TerraformDataSource {
 
@@ -346,7 +341,7 @@ export class DataDigitaloceanDropletAutoscale extends cdktf.TerraformDataSource 
   * Generates CDKTF code for importing a DataDigitaloceanDropletAutoscale resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDigitaloceanDropletAutoscale to import
-  * @param importFromId The id of the existing DataDigitaloceanDropletAutoscale that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.51.0/docs/data-sources/droplet_autoscale#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDigitaloceanDropletAutoscale that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/data-sources/droplet_autoscale#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDigitaloceanDropletAutoscale to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -358,7 +353,7 @@ export class DataDigitaloceanDropletAutoscale extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.51.0/docs/data-sources/droplet_autoscale digitalocean_droplet_autoscale} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/data-sources/droplet_autoscale digitalocean_droplet_autoscale} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -369,7 +364,7 @@ export class DataDigitaloceanDropletAutoscale extends cdktf.TerraformDataSource 
       terraformResourceType: 'digitalocean_droplet_autoscale',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.51.0',
+        providerVersion: '2.52.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
