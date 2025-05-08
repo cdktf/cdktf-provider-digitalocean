@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/data-sources/tags
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/data-sources/tags
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataDigitaloceanTagsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/data-sources/tags#id DataDigitaloceanTags#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/data-sources/tags#id DataDigitaloceanTags#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +17,13 @@ export interface DataDigitaloceanTagsConfig extends cdktf.TerraformMetaArguments
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/data-sources/tags#filter DataDigitaloceanTags#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/data-sources/tags#filter DataDigitaloceanTags#filter}
   */
   readonly filter?: DataDigitaloceanTagsFilter[] | cdktf.IResolvable;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/data-sources/tags#sort DataDigitaloceanTags#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/data-sources/tags#sort DataDigitaloceanTags#sort}
   */
   readonly sort?: DataDigitaloceanTagsSort[] | cdktf.IResolvable;
 }
@@ -139,19 +134,19 @@ export class DataDigitaloceanTagsTagsList extends cdktf.ComplexList {
 }
 export interface DataDigitaloceanTagsFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/data-sources/tags#all DataDigitaloceanTags#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/data-sources/tags#all DataDigitaloceanTags#all}
   */
   readonly all?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/data-sources/tags#key DataDigitaloceanTags#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/data-sources/tags#key DataDigitaloceanTags#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/data-sources/tags#match_by DataDigitaloceanTags#match_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/data-sources/tags#match_by DataDigitaloceanTags#match_by}
   */
   readonly matchBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/data-sources/tags#values DataDigitaloceanTags#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/data-sources/tags#values DataDigitaloceanTags#values}
   */
   readonly values: string[];
 }
@@ -348,11 +343,11 @@ export class DataDigitaloceanTagsFilterList extends cdktf.ComplexList {
 }
 export interface DataDigitaloceanTagsSort {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/data-sources/tags#direction DataDigitaloceanTags#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/data-sources/tags#direction DataDigitaloceanTags#direction}
   */
   readonly direction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/data-sources/tags#key DataDigitaloceanTags#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/data-sources/tags#key DataDigitaloceanTags#key}
   */
   readonly key: string;
 }
@@ -494,7 +489,7 @@ export class DataDigitaloceanTagsSortList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/data-sources/tags digitalocean_tags}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/data-sources/tags digitalocean_tags}
 */
 export class DataDigitaloceanTags extends cdktf.TerraformDataSource {
 
@@ -510,7 +505,7 @@ export class DataDigitaloceanTags extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDigitaloceanTags resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDigitaloceanTags to import
-  * @param importFromId The id of the existing DataDigitaloceanTags that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/data-sources/tags#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDigitaloceanTags that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/data-sources/tags#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDigitaloceanTags to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -522,7 +517,7 @@ export class DataDigitaloceanTags extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/data-sources/tags digitalocean_tags} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/data-sources/tags digitalocean_tags} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -533,7 +528,7 @@ export class DataDigitaloceanTags extends cdktf.TerraformDataSource {
       terraformResourceType: 'digitalocean_tags',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.52.0',
+        providerVersion: '2.53.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
