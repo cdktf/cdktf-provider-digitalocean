@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/data-sources/partner_attachment
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/data-sources/partner_attachment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +10,7 @@ export interface DataDigitaloceanPartnerAttachmentConfig extends cdktf.Terraform
   /**
   * The ID of the Partner Attachment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/data-sources/partner_attachment#id DataDigitaloceanPartnerAttachment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/data-sources/partner_attachment#id DataDigitaloceanPartnerAttachment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,27 +19,27 @@ export interface DataDigitaloceanPartnerAttachmentConfig extends cdktf.Terraform
   /**
   * The name of the Partner Attachment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/data-sources/partner_attachment#name DataDigitaloceanPartnerAttachment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/data-sources/partner_attachment#name DataDigitaloceanPartnerAttachment#name}
   */
   readonly name?: string;
   /**
   * bgp block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/data-sources/partner_attachment#bgp DataDigitaloceanPartnerAttachment#bgp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/data-sources/partner_attachment#bgp DataDigitaloceanPartnerAttachment#bgp}
   */
   readonly bgp?: DataDigitaloceanPartnerAttachmentBgp;
 }
 export interface DataDigitaloceanPartnerAttachmentBgp {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/data-sources/partner_attachment#local_router_ip DataDigitaloceanPartnerAttachment#local_router_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/data-sources/partner_attachment#local_router_ip DataDigitaloceanPartnerAttachment#local_router_ip}
   */
   readonly localRouterIp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/data-sources/partner_attachment#peer_router_asn DataDigitaloceanPartnerAttachment#peer_router_asn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/data-sources/partner_attachment#peer_router_asn DataDigitaloceanPartnerAttachment#peer_router_asn}
   */
   readonly peerRouterAsn?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/data-sources/partner_attachment#peer_router_ip DataDigitaloceanPartnerAttachment#peer_router_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/data-sources/partner_attachment#peer_router_ip DataDigitaloceanPartnerAttachment#peer_router_ip}
   */
   readonly peerRouterIp?: string;
 }
@@ -186,7 +181,7 @@ export class DataDigitaloceanPartnerAttachmentBgpOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/data-sources/partner_attachment digitalocean_partner_attachment}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/data-sources/partner_attachment digitalocean_partner_attachment}
 */
 export class DataDigitaloceanPartnerAttachment extends cdktf.TerraformDataSource {
 
@@ -202,7 +197,7 @@ export class DataDigitaloceanPartnerAttachment extends cdktf.TerraformDataSource
   * Generates CDKTF code for importing a DataDigitaloceanPartnerAttachment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDigitaloceanPartnerAttachment to import
-  * @param importFromId The id of the existing DataDigitaloceanPartnerAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/data-sources/partner_attachment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDigitaloceanPartnerAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/data-sources/partner_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDigitaloceanPartnerAttachment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -214,7 +209,7 @@ export class DataDigitaloceanPartnerAttachment extends cdktf.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/data-sources/partner_attachment digitalocean_partner_attachment} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/data-sources/partner_attachment digitalocean_partner_attachment} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -225,7 +220,7 @@ export class DataDigitaloceanPartnerAttachment extends cdktf.TerraformDataSource
       terraformResourceType: 'digitalocean_partner_attachment',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.53.0',
+        providerVersion: '2.54.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
