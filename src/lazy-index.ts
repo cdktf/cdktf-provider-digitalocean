@@ -44,6 +44,7 @@ Object.defineProperty(exports, 'reservedIpv6', { get: function () { return requi
 Object.defineProperty(exports, 'reservedIpv6Assignment', { get: function () { return require('./reserved-ipv6-assignment'); } });
 Object.defineProperty(exports, 'spacesBucket', { get: function () { return require('./spaces-bucket'); } });
 Object.defineProperty(exports, 'spacesBucketCorsConfiguration', { get: function () { return require('./spaces-bucket-cors-configuration'); } });
+Object.defineProperty(exports, 'spacesBucketLogging', { get: function () { return require('./spaces-bucket-logging'); } });
 Object.defineProperty(exports, 'spacesBucketObject', { get: function () { return require('./spaces-bucket-object'); } });
 Object.defineProperty(exports, 'spacesBucketPolicy', { get: function () { return require('./spaces-bucket-policy'); } });
 Object.defineProperty(exports, 'spacesKey', { get: function () { return require('./spaces-key'); } });

@@ -90,6 +90,7 @@ The following submodules are available:
 - [reservedIpv6Assignment](./reservedIpv6Assignment.python.md)
 - [spacesBucket](./spacesBucket.python.md)
 - [spacesBucketCorsConfiguration](./spacesBucketCorsConfiguration.python.md)
+- [spacesBucketLogging](./spacesBucketLogging.python.md)
 - [spacesBucketObject](./spacesBucketObject.python.md)
 - [spacesBucketPolicy](./spacesBucketPolicy.python.md)
 - [spacesKey](./spacesKey.python.md)

@@ -44,6 +44,7 @@ export * as reservedIpv6 from './reserved-ipv6';
 export * as reservedIpv6Assignment from './reserved-ipv6-assignment';
 export * as spacesBucket from './spaces-bucket';
 export * as spacesBucketCorsConfiguration from './spaces-bucket-cors-configuration';
+export * as spacesBucketLogging from './spaces-bucket-logging';
 export * as spacesBucketObject from './spaces-bucket-object';
 export * as spacesBucketPolicy from './spaces-bucket-policy';
 export * as spacesKey from './spaces-key';

@@ -90,6 +90,7 @@ The following submodules are available:
 - [reservedIpv6Assignment](./reservedIpv6Assignment.csharp.md)
 - [spacesBucket](./spacesBucket.csharp.md)
 - [spacesBucketCorsConfiguration](./spacesBucketCorsConfiguration.csharp.md)
+- [spacesBucketLogging](./spacesBucketLogging.csharp.md)
 - [spacesBucketObject](./spacesBucketObject.csharp.md)
 - [spacesBucketPolicy](./spacesBucketPolicy.csharp.md)
 - [spacesKey](./spacesKey.csharp.md)

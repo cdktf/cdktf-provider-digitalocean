@@ -90,6 +90,7 @@ The following submodules are available:
 - [reservedIpv6Assignment](./reservedIpv6Assignment.go.md)
 - [spacesBucket](./spacesBucket.go.md)
 - [spacesBucketCorsConfiguration](./spacesBucketCorsConfiguration.go.md)
+- [spacesBucketLogging](./spacesBucketLogging.go.md)
 - [spacesBucketObject](./spacesBucketObject.go.md)
 - [spacesBucketPolicy](./spacesBucketPolicy.go.md)
 - [spacesKey](./spacesKey.go.md)

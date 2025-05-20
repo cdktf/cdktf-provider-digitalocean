@@ -90,6 +90,7 @@ The following submodules are available:
 - [reservedIpv6Assignment](./reservedIpv6Assignment.java.md)
 - [spacesBucket](./spacesBucket.java.md)
 - [spacesBucketCorsConfiguration](./spacesBucketCorsConfiguration.java.md)
+- [spacesBucketLogging](./spacesBucketLogging.java.md)
 - [spacesBucketObject](./spacesBucketObject.java.md)
 - [spacesBucketPolicy](./spacesBucketPolicy.java.md)
 - [spacesKey](./spacesKey.java.md)

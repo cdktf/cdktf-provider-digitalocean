@@ -90,6 +90,7 @@ The following submodules are available:
 - [reservedIpv6Assignment](./reservedIpv6Assignment.typescript.md)
 - [spacesBucket](./spacesBucket.typescript.md)
 - [spacesBucketCorsConfiguration](./spacesBucketCorsConfiguration.typescript.md)
+- [spacesBucketLogging](./spacesBucketLogging.typescript.md)
 - [spacesBucketObject](./spacesBucketObject.typescript.md)
 - [spacesBucketPolicy](./spacesBucketPolicy.typescript.md)
 - [spacesKey](./spacesKey.typescript.md)
