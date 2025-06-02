@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanVpcPeering.DataDigitaloceanVpcPeering.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanvpcpeering"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/datadigitaloceanvpcpeering"
 
 datadigitaloceanvpcpeering.NewDataDigitaloceanVpcPeering(scope Construct, id *string, config DataDigitaloceanVpcPeeringConfig) DataDigitaloceanVpcPeering
 ```
@@ -297,7 +297,7 @@ func ResetVpcIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanVpcPeering.DataDigitaloceanVpcPeering.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanvpcpeering"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/datadigitaloceanvpcpeering"
 
 datadigitaloceanvpcpeering.DataDigitaloceanVpcPeering_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanVpcPeering.DataDigitaloceanVpcPeering.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanvpcpeering"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/datadigitaloceanvpcpeering"
 
 datadigitaloceanvpcpeering.DataDigitaloceanVpcPeering_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datadigitaloceanvpcpeering.DataDigitaloceanVpcPeering_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanVpcPeering.DataDigitaloceanVpcPeering.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanvpcpeering"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/datadigitaloceanvpcpeering"
 
 datadigitaloceanvpcpeering.DataDigitaloceanVpcPeering_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datadigitaloceanvpcpeering.DataDigitaloceanVpcPeering_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.dataDigitaloceanVpcPeering.DataDigitaloceanVpcPeering.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanvpcpeering"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/datadigitaloceanvpcpeering"
 
 datadigitaloceanvpcpeering.DataDigitaloceanVpcPeering_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -652,7 +652,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanVpcPeering.DataDigitaloceanVpcPeeringConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanvpcpeering"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/datadigitaloceanvpcpeering"
 
 &datadigitaloceanvpcpeering.DataDigitaloceanVpcPeeringConfig {
 	Connection: interface{},

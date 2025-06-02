@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.spacesKey.SpacesKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/spaceskey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/spaceskey"
 
 spaceskey.NewSpacesKey(scope Construct, id *string, config SpacesKeyConfig) SpacesKey
 ```
@@ -405,7 +405,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.spacesKey.SpacesKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/spaceskey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/spaceskey"
 
 spaceskey.SpacesKey_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.spacesKey.SpacesKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/spaceskey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/spaceskey"
 
 spaceskey.SpacesKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ spaceskey.SpacesKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.spacesKey.SpacesKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/spaceskey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/spaceskey"
 
 spaceskey.SpacesKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ spaceskey.SpacesKey_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.spacesKey.SpacesKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/spaceskey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/spaceskey"
 
 spaceskey.SpacesKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -793,7 +793,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.spacesKey.SpacesKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/spaceskey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/spaceskey"
 
 &spaceskey.SpacesKeyConfig {
 	Connection: interface{},
@@ -944,7 +944,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.spacesKey.SpacesKeyGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/spaceskey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/spaceskey"
 
 &spaceskey.SpacesKeyGrant {
 	Bucket: *string,
@@ -996,7 +996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.spacesKey.SpacesKeyGrantList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/spaceskey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/spaceskey"
 
 spaceskey.NewSpacesKeyGrantList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SpacesKeyGrantList
 ```
@@ -1156,7 +1156,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.spacesKey.SpacesKeyGrantOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/spaceskey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/spaceskey"
 
 spaceskey.NewSpacesKeyGrantOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SpacesKeyGrantOutputReference
 ```
