@@ -54,6 +54,7 @@ The following submodules are available:
 - [dataDigitaloceanVolume](./dataDigitaloceanVolume.go.md)
 - [dataDigitaloceanVolumeSnapshot](./dataDigitaloceanVolumeSnapshot.go.md)
 - [dataDigitaloceanVpc](./dataDigitaloceanVpc.go.md)
+- [dataDigitaloceanVpcNatGateway](./dataDigitaloceanVpcNatGateway.go.md)
 - [dataDigitaloceanVpcPeering](./dataDigitaloceanVpcPeering.go.md)
 - [databaseCluster](./databaseCluster.go.md)
 - [databaseConnectionPool](./databaseConnectionPool.go.md)
@@ -102,6 +103,7 @@ The following submodules are available:
 - [volumeAttachment](./volumeAttachment.go.md)
 - [volumeSnapshot](./volumeSnapshot.go.md)
 - [vpc](./vpc.go.md)
+- [vpcNatGateway](./vpcNatGateway.go.md)
 - [vpcPeering](./vpcPeering.go.md)
 
 

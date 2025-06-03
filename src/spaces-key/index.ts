@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/spaces_key
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/spaces_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface SpacesKeyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/spaces_key#id SpacesKey#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/spaces_key#id SpacesKey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +22,13 @@ export interface SpacesKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * A name for the key. This is used to identify the key in the DigitalOcean control panel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/spaces_key#name SpacesKey#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/spaces_key#name SpacesKey#name}
   */
   readonly name: string;
   /**
   * grant block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/spaces_key#grant SpacesKey#grant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/spaces_key#grant SpacesKey#grant}
   */
   readonly grant?: SpacesKeyGrant[] | cdktf.IResolvable;
 }
@@ -36,13 +36,13 @@ export interface SpacesKeyGrant {
   /**
   * The name of the bucket to grant the key access to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/spaces_key#bucket SpacesKey#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/spaces_key#bucket SpacesKey#bucket}
   */
   readonly bucket: string;
   /**
   * The permission to grant the key. Valid values are `read`, `readwrite`, or `fullaccess`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/spaces_key#permission SpacesKey#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/spaces_key#permission SpacesKey#permission}
   */
   readonly permission: string;
 }
@@ -181,7 +181,7 @@ export class SpacesKeyGrantList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/spaces_key digitalocean_spaces_key}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/spaces_key digitalocean_spaces_key}
 */
 export class SpacesKey extends cdktf.TerraformResource {
 
@@ -197,7 +197,7 @@ export class SpacesKey extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SpacesKey resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SpacesKey to import
-  * @param importFromId The id of the existing SpacesKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/spaces_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SpacesKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/spaces_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SpacesKey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -209,7 +209,7 @@ export class SpacesKey extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/spaces_key digitalocean_spaces_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/spaces_key digitalocean_spaces_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -220,7 +220,7 @@ export class SpacesKey extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_spaces_key',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.54.0',
+        providerVersion: '2.55.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,

@@ -56,6 +56,7 @@ Object.defineProperty(exports, 'volume', { get: function () { return require('./
 Object.defineProperty(exports, 'volumeAttachment', { get: function () { return require('./volume-attachment'); } });
 Object.defineProperty(exports, 'volumeSnapshot', { get: function () { return require('./volume-snapshot'); } });
 Object.defineProperty(exports, 'vpc', { get: function () { return require('./vpc'); } });
+Object.defineProperty(exports, 'vpcNatGateway', { get: function () { return require('./vpc-nat-gateway'); } });
 Object.defineProperty(exports, 'vpcPeering', { get: function () { return require('./vpc-peering'); } });
 Object.defineProperty(exports, 'dataDigitaloceanAccount', { get: function () { return require('./data-digitalocean-account'); } });
 Object.defineProperty(exports, 'dataDigitaloceanApp', { get: function () { return require('./data-digitalocean-app'); } });
@@ -101,6 +102,7 @@ Object.defineProperty(exports, 'dataDigitaloceanTags', { get: function () { retu
 Object.defineProperty(exports, 'dataDigitaloceanVolume', { get: function () { return require('./data-digitalocean-volume'); } });
 Object.defineProperty(exports, 'dataDigitaloceanVolumeSnapshot', { get: function () { return require('./data-digitalocean-volume-snapshot'); } });
 Object.defineProperty(exports, 'dataDigitaloceanVpc', { get: function () { return require('./data-digitalocean-vpc'); } });
+Object.defineProperty(exports, 'dataDigitaloceanVpcNatGateway', { get: function () { return require('./data-digitalocean-vpc-nat-gateway'); } });
 Object.defineProperty(exports, 'dataDigitaloceanVpcPeering', { get: function () { return require('./data-digitalocean-vpc-peering'); } });
 Object.defineProperty(exports, 'provider', { get: function () { return require('./provider'); } });
 

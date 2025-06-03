@@ -54,6 +54,7 @@ The following submodules are available:
 - [dataDigitaloceanVolume](./dataDigitaloceanVolume.typescript.md)
 - [dataDigitaloceanVolumeSnapshot](./dataDigitaloceanVolumeSnapshot.typescript.md)
 - [dataDigitaloceanVpc](./dataDigitaloceanVpc.typescript.md)
+- [dataDigitaloceanVpcNatGateway](./dataDigitaloceanVpcNatGateway.typescript.md)
 - [dataDigitaloceanVpcPeering](./dataDigitaloceanVpcPeering.typescript.md)
 - [databaseCluster](./databaseCluster.typescript.md)
 - [databaseConnectionPool](./databaseConnectionPool.typescript.md)
@@ -102,6 +103,7 @@ The following submodules are available:
 - [volumeAttachment](./volumeAttachment.typescript.md)
 - [volumeSnapshot](./volumeSnapshot.typescript.md)
 - [vpc](./vpc.typescript.md)
+- [vpcNatGateway](./vpcNatGateway.typescript.md)
 - [vpcPeering](./vpcPeering.typescript.md)
 
 
