@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,61 +10,67 @@ export interface PartnerAttachmentConfig extends cdktf.TerraformMetaArguments {
   /**
   * The connection bandwidth in Mbps
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#connection_bandwidth_in_mbps PartnerAttachment#connection_bandwidth_in_mbps}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#connection_bandwidth_in_mbps PartnerAttachment#connection_bandwidth_in_mbps}
   */
   readonly connectionBandwidthInMbps: number;
   /**
   * The NaaS provider
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#naas_provider PartnerAttachment#naas_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#naas_provider PartnerAttachment#naas_provider}
   */
   readonly naasProvider: string;
   /**
   * The name of the Partner Attachment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#name PartnerAttachment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#name PartnerAttachment#name}
   */
   readonly name: string;
   /**
+  * The redundancy zone for the NaaS
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#redundancy_zone PartnerAttachment#redundancy_zone}
+  */
+  readonly redundancyZone?: string;
+  /**
   * The region where the Partner Attachment will be created
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#region PartnerAttachment#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#region PartnerAttachment#region}
   */
   readonly region: string;
   /**
   * The list of VPC IDs to attach the Partner Attachment to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#vpc_ids PartnerAttachment#vpc_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#vpc_ids PartnerAttachment#vpc_ids}
   */
   readonly vpcIds: string[];
   /**
   * bgp block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#bgp PartnerAttachment#bgp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#bgp PartnerAttachment#bgp}
   */
   readonly bgp?: PartnerAttachmentBgp;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#timeouts PartnerAttachment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#timeouts PartnerAttachment#timeouts}
   */
   readonly timeouts?: PartnerAttachmentTimeouts;
 }
 export interface PartnerAttachmentBgp {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#auth_key PartnerAttachment#auth_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#auth_key PartnerAttachment#auth_key}
   */
   readonly authKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#local_router_ip PartnerAttachment#local_router_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#local_router_ip PartnerAttachment#local_router_ip}
   */
   readonly localRouterIp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#peer_router_asn PartnerAttachment#peer_router_asn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#peer_router_asn PartnerAttachment#peer_router_asn}
   */
   readonly peerRouterAsn?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#peer_router_ip PartnerAttachment#peer_router_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#peer_router_ip PartnerAttachment#peer_router_ip}
   */
   readonly peerRouterIp?: string;
 }
@@ -240,11 +241,11 @@ export class PartnerAttachmentBgpOutputReference extends cdktf.ComplexObject {
 }
 export interface PartnerAttachmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#create PartnerAttachment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#create PartnerAttachment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#delete PartnerAttachment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#delete PartnerAttachment#delete}
   */
   readonly delete?: string;
 }
@@ -367,7 +368,7 @@ export class PartnerAttachmentTimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment digitalocean_partner_attachment}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment digitalocean_partner_attachment}
 */
 export class PartnerAttachment extends cdktf.TerraformResource {
 
@@ -383,7 +384,7 @@ export class PartnerAttachment extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a PartnerAttachment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PartnerAttachment to import
-  * @param importFromId The id of the existing PartnerAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PartnerAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PartnerAttachment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -395,7 +396,7 @@ export class PartnerAttachment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment digitalocean_partner_attachment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment digitalocean_partner_attachment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -406,7 +407,7 @@ export class PartnerAttachment extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_partner_attachment',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.54.0',
+        providerVersion: '2.55.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
@@ -420,6 +421,7 @@ export class PartnerAttachment extends cdktf.TerraformResource {
     this._connectionBandwidthInMbps = config.connectionBandwidthInMbps;
     this._naasProvider = config.naasProvider;
     this._name = config.name;
+    this._redundancyZone = config.redundancyZone;
     this._region = config.region;
     this._vpcIds = config.vpcIds;
     this._bgp.internalValue = config.bgp;
@@ -477,6 +479,22 @@ export class PartnerAttachment extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // redundancy_zone - computed: false, optional: true, required: false
+  private _redundancyZone?: string; 
+  public get redundancyZone() {
+    return this.getStringAttribute('redundancy_zone');
+  }
+  public set redundancyZone(value: string) {
+    this._redundancyZone = value;
+  }
+  public resetRedundancyZone() {
+    this._redundancyZone = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get redundancyZoneInput() {
+    return this._redundancyZone;
   }
 
   // region - computed: false, optional: false, required: true
@@ -551,6 +569,7 @@ export class PartnerAttachment extends cdktf.TerraformResource {
       connection_bandwidth_in_mbps: cdktf.numberToTerraform(this._connectionBandwidthInMbps),
       naas_provider: cdktf.stringToTerraform(this._naasProvider),
       name: cdktf.stringToTerraform(this._name),
+      redundancy_zone: cdktf.stringToTerraform(this._redundancyZone),
       region: cdktf.stringToTerraform(this._region),
       vpc_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._vpcIds),
       bgp: partnerAttachmentBgpToTerraform(this._bgp.internalValue),
@@ -574,6 +593,12 @@ export class PartnerAttachment extends cdktf.TerraformResource {
       },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      redundancy_zone: {
+        value: cdktf.stringToHclTerraform(this._redundancyZone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
