@@ -4,7 +4,7 @@
 
 ### PartnerAttachment <a name="PartnerAttachment" id="@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment digitalocean_partner_attachment}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment digitalocean_partner_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.Initializer"></a>
 
@@ -29,6 +29,7 @@ PartnerAttachment.Builder.create(Construct scope, java.lang.String id)
     .region(java.lang.String)
     .vpcIds(java.util.List<java.lang.String>)
 //  .bgp(PartnerAttachmentBgp)
+//  .redundancyZone(java.lang.String)
 //  .timeouts(PartnerAttachmentTimeouts)
     .build();
 ```
@@ -50,6 +51,7 @@ PartnerAttachment.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | The region where the Partner Attachment will be created. |
 | <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.Initializer.parameter.vpcIds">vpcIds</a></code> | <code>java.util.List<java.lang.String></code> | The list of VPC IDs to attach the Partner Attachment to. |
 | <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.Initializer.parameter.bgp">bgp</a></code> | <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentBgp">PartnerAttachmentBgp</a></code> | bgp block. |
+| <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.Initializer.parameter.redundancyZone">redundancyZone</a></code> | <code>java.lang.String</code> | The redundancy zone for the NaaS. |
 | <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentTimeouts">PartnerAttachmentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -120,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 The connection bandwidth in Mbps.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#connection_bandwidth_in_mbps PartnerAttachment#connection_bandwidth_in_mbps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#connection_bandwidth_in_mbps PartnerAttachment#connection_bandwidth_in_mbps}
 
 ---
 
@@ -130,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The NaaS provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#naas_provider PartnerAttachment#naas_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#naas_provider PartnerAttachment#naas_provider}
 
 ---
 
@@ -140,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The name of the Partner Attachment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#name PartnerAttachment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#name PartnerAttachment#name}
 
 ---
 
@@ -150,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The region where the Partner Attachment will be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#region PartnerAttachment#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#region PartnerAttachment#region}
 
 ---
 
@@ -160,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The list of VPC IDs to attach the Partner Attachment to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#vpc_ids PartnerAttachment#vpc_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#vpc_ids PartnerAttachment#vpc_ids}
 
 ---
 
@@ -170,7 +172,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 bgp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#bgp PartnerAttachment#bgp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#bgp PartnerAttachment#bgp}
+
+---
+
+##### `redundancyZone`<sup>Optional</sup> <a name="redundancyZone" id="@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.Initializer.parameter.redundancyZone"></a>
+
+- *Type:* java.lang.String
+
+The redundancy zone for the NaaS.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#redundancy_zone PartnerAttachment#redundancy_zone}
 
 ---
 
@@ -180,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#timeouts PartnerAttachment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#timeouts PartnerAttachment#timeouts}
 
 ---
 
@@ -214,6 +226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 | <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.putBgp">putBgp</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.resetBgp">resetBgp</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.resetRedundancyZone">resetRedundancyZone</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
@@ -538,6 +551,12 @@ public void putTimeouts(PartnerAttachmentTimeouts value)
 public void resetBgp()
 ```
 
+##### `resetRedundancyZone` <a name="resetRedundancyZone" id="@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.resetRedundancyZone"></a>
+
+```java
+public void resetRedundancyZone()
+```
+
 ##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.resetTimeouts"></a>
 
 ```java
@@ -647,7 +666,7 @@ The construct id used in the generated config for the PartnerAttachment to impor
 
 The id of the existing PartnerAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -686,12 +705,14 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.property.connectionBandwidthInMbpsInput">connectionBandwidthInMbpsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.property.naasProviderInput">naasProviderInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.property.redundancyZoneInput">redundancyZoneInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentTimeouts">PartnerAttachmentTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.property.vpcIdsInput">vpcIdsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.property.connectionBandwidthInMbps">connectionBandwidthInMbps</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.property.naasProvider">naasProvider</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.property.redundancyZone">redundancyZone</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.property.vpcIds">vpcIds</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 
@@ -929,6 +950,16 @@ public java.lang.String getNameInput();
 
 ---
 
+##### `redundancyZoneInput`<sup>Optional</sup> <a name="redundancyZoneInput" id="@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.property.redundancyZoneInput"></a>
+
+```java
+public java.lang.String getRedundancyZoneInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.property.regionInput"></a>
 
 ```java
@@ -983,6 +1014,16 @@ public java.lang.String getNaasProvider();
 
 ```java
 public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `redundancyZone`<sup>Required</sup> <a name="redundancyZone" id="@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.property.redundancyZone"></a>
+
+```java
+public java.lang.String getRedundancyZone();
 ```
 
 - *Type:* java.lang.String
@@ -1048,10 +1089,10 @@ PartnerAttachmentBgp.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentBgp.property.authKey">authKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#auth_key PartnerAttachment#auth_key}. |
-| <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentBgp.property.localRouterIp">localRouterIp</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#local_router_ip PartnerAttachment#local_router_ip}. |
-| <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentBgp.property.peerRouterAsn">peerRouterAsn</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#peer_router_asn PartnerAttachment#peer_router_asn}. |
-| <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentBgp.property.peerRouterIp">peerRouterIp</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#peer_router_ip PartnerAttachment#peer_router_ip}. |
+| <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentBgp.property.authKey">authKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#auth_key PartnerAttachment#auth_key}. |
+| <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentBgp.property.localRouterIp">localRouterIp</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#local_router_ip PartnerAttachment#local_router_ip}. |
+| <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentBgp.property.peerRouterAsn">peerRouterAsn</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#peer_router_asn PartnerAttachment#peer_router_asn}. |
+| <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentBgp.property.peerRouterIp">peerRouterIp</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#peer_router_ip PartnerAttachment#peer_router_ip}. |
 
 ---
 
@@ -1063,7 +1104,7 @@ public java.lang.String getAuthKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#auth_key PartnerAttachment#auth_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#auth_key PartnerAttachment#auth_key}.
 
 ---
 
@@ -1075,7 +1116,7 @@ public java.lang.String getLocalRouterIp();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#local_router_ip PartnerAttachment#local_router_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#local_router_ip PartnerAttachment#local_router_ip}.
 
 ---
 
@@ -1087,7 +1128,7 @@ public java.lang.Number getPeerRouterAsn();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#peer_router_asn PartnerAttachment#peer_router_asn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#peer_router_asn PartnerAttachment#peer_router_asn}.
 
 ---
 
@@ -1099,7 +1140,7 @@ public java.lang.String getPeerRouterIp();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#peer_router_ip PartnerAttachment#peer_router_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#peer_router_ip PartnerAttachment#peer_router_ip}.
 
 ---
 
@@ -1128,6 +1169,7 @@ PartnerAttachmentConfig.builder()
     .region(java.lang.String)
     .vpcIds(java.util.List<java.lang.String>)
 //  .bgp(PartnerAttachmentBgp)
+//  .redundancyZone(java.lang.String)
 //  .timeouts(PartnerAttachmentTimeouts)
     .build();
 ```
@@ -1149,6 +1191,7 @@ PartnerAttachmentConfig.builder()
 | <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentConfig.property.region">region</a></code> | <code>java.lang.String</code> | The region where the Partner Attachment will be created. |
 | <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentConfig.property.vpcIds">vpcIds</a></code> | <code>java.util.List<java.lang.String></code> | The list of VPC IDs to attach the Partner Attachment to. |
 | <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentConfig.property.bgp">bgp</a></code> | <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentBgp">PartnerAttachmentBgp</a></code> | bgp block. |
+| <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentConfig.property.redundancyZone">redundancyZone</a></code> | <code>java.lang.String</code> | The redundancy zone for the NaaS. |
 | <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentTimeouts">PartnerAttachmentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1233,7 +1276,7 @@ public java.lang.Number getConnectionBandwidthInMbps();
 
 The connection bandwidth in Mbps.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#connection_bandwidth_in_mbps PartnerAttachment#connection_bandwidth_in_mbps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#connection_bandwidth_in_mbps PartnerAttachment#connection_bandwidth_in_mbps}
 
 ---
 
@@ -1247,7 +1290,7 @@ public java.lang.String getNaasProvider();
 
 The NaaS provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#naas_provider PartnerAttachment#naas_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#naas_provider PartnerAttachment#naas_provider}
 
 ---
 
@@ -1261,7 +1304,7 @@ public java.lang.String getName();
 
 The name of the Partner Attachment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#name PartnerAttachment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#name PartnerAttachment#name}
 
 ---
 
@@ -1275,7 +1318,7 @@ public java.lang.String getRegion();
 
 The region where the Partner Attachment will be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#region PartnerAttachment#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#region PartnerAttachment#region}
 
 ---
 
@@ -1289,7 +1332,7 @@ public java.util.List<java.lang.String> getVpcIds();
 
 The list of VPC IDs to attach the Partner Attachment to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#vpc_ids PartnerAttachment#vpc_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#vpc_ids PartnerAttachment#vpc_ids}
 
 ---
 
@@ -1303,7 +1346,21 @@ public PartnerAttachmentBgp getBgp();
 
 bgp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#bgp PartnerAttachment#bgp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#bgp PartnerAttachment#bgp}
+
+---
+
+##### `redundancyZone`<sup>Optional</sup> <a name="redundancyZone" id="@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentConfig.property.redundancyZone"></a>
+
+```java
+public java.lang.String getRedundancyZone();
+```
+
+- *Type:* java.lang.String
+
+The redundancy zone for the NaaS.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#redundancy_zone PartnerAttachment#redundancy_zone}
 
 ---
 
@@ -1317,7 +1374,7 @@ public PartnerAttachmentTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#timeouts PartnerAttachment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#timeouts PartnerAttachment#timeouts}
 
 ---
 
@@ -1338,8 +1395,8 @@ PartnerAttachmentTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#create PartnerAttachment#create}. |
-| <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#delete PartnerAttachment#delete}. |
+| <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#create PartnerAttachment#create}. |
+| <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#delete PartnerAttachment#delete}. |
 
 ---
 
@@ -1351,7 +1408,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#create PartnerAttachment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#create PartnerAttachment#create}.
 
 ---
 
@@ -1363,7 +1420,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/partner_attachment#delete PartnerAttachment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/partner_attachment#delete PartnerAttachment#delete}.
 
 ---
 

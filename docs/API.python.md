@@ -54,6 +54,7 @@ The following submodules are available:
 - [dataDigitaloceanVolume](./dataDigitaloceanVolume.python.md)
 - [dataDigitaloceanVolumeSnapshot](./dataDigitaloceanVolumeSnapshot.python.md)
 - [dataDigitaloceanVpc](./dataDigitaloceanVpc.python.md)
+- [dataDigitaloceanVpcNatGateway](./dataDigitaloceanVpcNatGateway.python.md)
 - [dataDigitaloceanVpcPeering](./dataDigitaloceanVpcPeering.python.md)
 - [databaseCluster](./databaseCluster.python.md)
 - [databaseConnectionPool](./databaseConnectionPool.python.md)
@@ -102,6 +103,7 @@ The following submodules are available:
 - [volumeAttachment](./volumeAttachment.python.md)
 - [volumeSnapshot](./volumeSnapshot.python.md)
 - [vpc](./vpc.python.md)
+- [vpcNatGateway](./vpcNatGateway.python.md)
 - [vpcPeering](./vpcPeering.python.md)
 
 
