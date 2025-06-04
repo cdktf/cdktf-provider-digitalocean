@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.uptimeAlert.UptimeAlert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/uptimealert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/uptimealert"
 
 uptimealert.NewUptimeAlert(scope Construct, id *string, config UptimeAlertConfig) UptimeAlert
 ```
@@ -412,7 +412,7 @@ func ResetThreshold()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.uptimeAlert.UptimeAlert.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/uptimealert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/uptimealert"
 
 uptimealert.UptimeAlert_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.uptimeAlert.UptimeAlert.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/uptimealert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/uptimealert"
 
 uptimealert.UptimeAlert_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ uptimealert.UptimeAlert_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.uptimeAlert.UptimeAlert.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/uptimealert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/uptimealert"
 
 uptimealert.UptimeAlert_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ uptimealert.UptimeAlert_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.uptimeAlert.UptimeAlert.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/uptimealert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/uptimealert"
 
 uptimealert.UptimeAlert_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.uptimeAlert.UptimeAlertConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/uptimealert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/uptimealert"
 
 &uptimealert.UptimeAlertConfig {
 	Connection: interface{},
@@ -1084,7 +1084,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.uptimeAlert.UptimeAlertNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/uptimealert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/uptimealert"
 
 &uptimealert.UptimeAlertNotifications {
 	Email: *[]*string,
@@ -1134,7 +1134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.uptimeAlert.UptimeAlertNotificationsSlack.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/uptimealert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/uptimealert"
 
 &uptimealert.UptimeAlertNotificationsSlack {
 	Channel: *string,
@@ -1186,7 +1186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.uptimeAlert.UptimeAlertNotificationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/uptimealert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/uptimealert"
 
 uptimealert.NewUptimeAlertNotificationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UptimeAlertNotificationsList
 ```
@@ -1346,7 +1346,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.uptimeAlert.UptimeAlertNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/uptimealert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/uptimealert"
 
 uptimealert.NewUptimeAlertNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UptimeAlertNotificationsOutputReference
 ```
@@ -1684,7 +1684,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.uptimeAlert.UptimeAlertNotificationsSlackList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/uptimealert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/uptimealert"
 
 uptimealert.NewUptimeAlertNotificationsSlackList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UptimeAlertNotificationsSlackList
 ```
@@ -1844,7 +1844,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.uptimeAlert.UptimeAlertNotificationsSlackOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/uptimealert"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/uptimealert"
 
 uptimealert.NewUptimeAlertNotificationsSlackOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UptimeAlertNotificationsSlackOutputReference
 ```

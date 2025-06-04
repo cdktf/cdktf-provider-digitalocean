@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/vpcnatgateway"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/vpcnatgateway"
 
 vpcnatgateway.NewVpcNatGateway(scope Construct, id *string, config VpcNatGatewayConfig) VpcNatGateway
 ```
@@ -412,7 +412,7 @@ func ResetUdpTimeoutSeconds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/vpcnatgateway"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/vpcnatgateway"
 
 vpcnatgateway.VpcNatGateway_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/vpcnatgateway"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/vpcnatgateway"
 
 vpcnatgateway.VpcNatGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ vpcnatgateway.VpcNatGateway_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGateway.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/vpcnatgateway"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/vpcnatgateway"
 
 vpcnatgateway.VpcNatGateway_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ vpcnatgateway.VpcNatGateway_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/vpcnatgateway"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/vpcnatgateway"
 
 vpcnatgateway.VpcNatGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -932,7 +932,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/vpcnatgateway"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/vpcnatgateway"
 
 &vpcnatgateway.VpcNatGatewayConfig {
 	Connection: interface{},
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGatewayEgresses.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/vpcnatgateway"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/vpcnatgateway"
 
 &vpcnatgateway.VpcNatGatewayEgresses {
 
@@ -1175,7 +1175,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/vpcnatg
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGatewayEgressesPublicGateways.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/vpcnatgateway"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/vpcnatgateway"
 
 &vpcnatgateway.VpcNatGatewayEgressesPublicGateways {
 
@@ -1188,7 +1188,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/vpcnatg
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGatewayVpcs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/vpcnatgateway"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/vpcnatgateway"
 
 &vpcnatgateway.VpcNatGatewayVpcs {
 	VpcUuid: *string,
@@ -1240,7 +1240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGatewayEgressesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/vpcnatgateway"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/vpcnatgateway"
 
 vpcnatgateway.NewVpcNatGatewayEgressesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpcNatGatewayEgressesList
 ```
@@ -1389,7 +1389,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGatewayEgressesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/vpcnatgateway"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/vpcnatgateway"
 
 vpcnatgateway.NewVpcNatGatewayEgressesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpcNatGatewayEgressesOutputReference
 ```
@@ -1667,7 +1667,7 @@ func InternalValue() VpcNatGatewayEgresses
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGatewayEgressesPublicGatewaysList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/vpcnatgateway"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/vpcnatgateway"
 
 vpcnatgateway.NewVpcNatGatewayEgressesPublicGatewaysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpcNatGatewayEgressesPublicGatewaysList
 ```
@@ -1816,7 +1816,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGatewayEgressesPublicGatewaysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/vpcnatgateway"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/vpcnatgateway"
 
 vpcnatgateway.NewVpcNatGatewayEgressesPublicGatewaysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpcNatGatewayEgressesPublicGatewaysOutputReference
 ```
@@ -2094,7 +2094,7 @@ func InternalValue() VpcNatGatewayEgressesPublicGateways
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGatewayVpcsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/vpcnatgateway"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/vpcnatgateway"
 
 vpcnatgateway.NewVpcNatGatewayVpcsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpcNatGatewayVpcsList
 ```
@@ -2254,7 +2254,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGatewayVpcsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/vpcnatgateway"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/vpcnatgateway"
 
 vpcnatgateway.NewVpcNatGatewayVpcsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpcNatGatewayVpcsOutputReference
 ```

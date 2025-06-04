@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/datadigitaloceanspacesbucketobject"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceanspacesbucketobject"
 
 datadigitaloceanspacesbucketobject.NewDataDigitaloceanSpacesBucketObject(scope Construct, id *string, config DataDigitaloceanSpacesBucketObjectConfig) DataDigitaloceanSpacesBucketObject
 ```
@@ -297,7 +297,7 @@ func ResetVersionId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObject.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/datadigitaloceanspacesbucketobject"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceanspacesbucketobject"
 
 datadigitaloceanspacesbucketobject.DataDigitaloceanSpacesBucketObject_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObject.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/datadigitaloceanspacesbucketobject"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceanspacesbucketobject"
 
 datadigitaloceanspacesbucketobject.DataDigitaloceanSpacesBucketObject_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datadigitaloceanspacesbucketobject.DataDigitaloceanSpacesBucketObject_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObject.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/datadigitaloceanspacesbucketobject"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceanspacesbucketobject"
 
 datadigitaloceanspacesbucketobject.DataDigitaloceanSpacesBucketObject_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datadigitaloceanspacesbucketobject.DataDigitaloceanSpacesBucketObject_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObject.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/datadigitaloceanspacesbucketobject"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceanspacesbucketobject"
 
 datadigitaloceanspacesbucketobject.DataDigitaloceanSpacesBucketObject_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -839,7 +839,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesBucketObject.DataDigitaloceanSpacesBucketObjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/datadigitaloceanspacesbucketobject"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceanspacesbucketobject"
 
 &datadigitaloceanspacesbucketobject.DataDigitaloceanSpacesBucketObjectConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dropletAutoscale.DropletAutoscale.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/dropletautoscale"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/dropletautoscale"
 
 dropletautoscale.NewDropletAutoscale(scope Construct, id *string, config DropletAutoscaleConfig) DropletAutoscale
 ```
@@ -404,7 +404,7 @@ func PutDropletTemplate(value DropletAutoscaleDropletTemplate)
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dropletAutoscale.DropletAutoscale.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/dropletautoscale"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/dropletautoscale"
 
 dropletautoscale.DropletAutoscale_IsConstruct(x interface{}) *bool
 ```
@@ -436,7 +436,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dropletAutoscale.DropletAutoscale.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/dropletautoscale"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/dropletautoscale"
 
 dropletautoscale.DropletAutoscale_IsTerraformElement(x interface{}) *bool
 ```
@@ -450,7 +450,7 @@ dropletautoscale.DropletAutoscale_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.dropletAutoscale.DropletAutoscale.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/dropletautoscale"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/dropletautoscale"
 
 dropletautoscale.DropletAutoscale_IsTerraformResource(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ dropletautoscale.DropletAutoscale_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.dropletAutoscale.DropletAutoscale.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/dropletautoscale"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/dropletautoscale"
 
 dropletautoscale.DropletAutoscale_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -814,7 +814,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dropletAutoscale.DropletAutoscaleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/dropletautoscale"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/dropletautoscale"
 
 &dropletautoscale.DropletAutoscaleConfig {
 	Connection: interface{},
@@ -824,8 +824,8 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/droplet
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Config: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12.dropletAutoscale.DropletAutoscaleConfigA,
-	DropletTemplate: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12.dropletAutoscale.DropletAutoscaleDropletTemplate,
+	Config: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13.dropletAutoscale.DropletAutoscaleConfigA,
+	DropletTemplate: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13.dropletAutoscale.DropletAutoscaleDropletTemplate,
 	Name: *string,
 }
 ```
@@ -964,7 +964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dropletAutoscale.DropletAutoscaleConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/dropletautoscale"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/dropletautoscale"
 
 &dropletautoscale.DropletAutoscaleConfigA {
 	CooldownMinutes: *f64,
@@ -1078,7 +1078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dropletAutoscale.DropletAutoscaleCurrentUtilization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/dropletautoscale"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/dropletautoscale"
 
 &dropletautoscale.DropletAutoscaleCurrentUtilization {
 
@@ -1091,7 +1091,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/droplet
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dropletAutoscale.DropletAutoscaleDropletTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/dropletautoscale"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/dropletautoscale"
 
 &dropletautoscale.DropletAutoscaleDropletTemplate {
 	Image: *string,
@@ -1271,7 +1271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dropletAutoscale.DropletAutoscaleConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/dropletautoscale"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/dropletautoscale"
 
 dropletautoscale.NewDropletAutoscaleConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DropletAutoscaleConfigAOutputReference
 ```
@@ -1694,7 +1694,7 @@ func InternalValue() DropletAutoscaleConfigA
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dropletAutoscale.DropletAutoscaleCurrentUtilizationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/dropletautoscale"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/dropletautoscale"
 
 dropletautoscale.NewDropletAutoscaleCurrentUtilizationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DropletAutoscaleCurrentUtilizationList
 ```
@@ -1843,7 +1843,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dropletAutoscale.DropletAutoscaleCurrentUtilizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/dropletautoscale"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/dropletautoscale"
 
 dropletautoscale.NewDropletAutoscaleCurrentUtilizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DropletAutoscaleCurrentUtilizationOutputReference
 ```
@@ -2132,7 +2132,7 @@ func InternalValue() DropletAutoscaleCurrentUtilization
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dropletAutoscale.DropletAutoscaleDropletTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/dropletautoscale"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/dropletautoscale"
 
 dropletautoscale.NewDropletAutoscaleDropletTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DropletAutoscaleDropletTemplateOutputReference
 ```

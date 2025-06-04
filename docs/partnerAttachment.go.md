@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/partnerattachment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/partnerattachment"
 
 partnerattachment.NewPartnerAttachment(scope Construct, id *string, config PartnerAttachmentConfig) PartnerAttachment
 ```
@@ -425,7 +425,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/partnerattachment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/partnerattachment"
 
 partnerattachment.PartnerAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/partnerattachment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/partnerattachment"
 
 partnerattachment.PartnerAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ partnerattachment.PartnerAttachment_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/partnerattachment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/partnerattachment"
 
 partnerattachment.PartnerAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ partnerattachment.PartnerAttachment_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/partnerattachment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/partnerattachment"
 
 partnerattachment.PartnerAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -923,7 +923,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentBgp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/partnerattachment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/partnerattachment"
 
 &partnerattachment.PartnerAttachmentBgp {
 	AuthKey: *string,
@@ -997,7 +997,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/partnerattachment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/partnerattachment"
 
 &partnerattachment.PartnerAttachmentConfig {
 	Connection: interface{},
@@ -1012,9 +1012,9 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/partner
 	Name: *string,
 	Region: *string,
 	VpcIds: *[]*string,
-	Bgp: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12.partnerAttachment.PartnerAttachmentBgp,
+	Bgp: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13.partnerAttachment.PartnerAttachmentBgp,
 	RedundancyZone: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12.partnerAttachment.PartnerAttachmentTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13.partnerAttachment.PartnerAttachmentTimeouts,
 }
 ```
 
@@ -1227,7 +1227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/partnerattachment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/partnerattachment"
 
 &partnerattachment.PartnerAttachmentTimeouts {
 	Create: *string,
@@ -1275,7 +1275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentBgpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/partnerattachment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/partnerattachment"
 
 partnerattachment.NewPartnerAttachmentBgpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PartnerAttachmentBgpOutputReference
 ```
@@ -1640,7 +1640,7 @@ func InternalValue() PartnerAttachmentBgp
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/partnerattachment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/partnerattachment"
 
 partnerattachment.NewPartnerAttachmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PartnerAttachmentTimeoutsOutputReference
 ```

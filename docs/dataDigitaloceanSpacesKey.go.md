@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesKey.DataDigitaloceanSpacesKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/datadigitaloceanspaceskey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceanspaceskey"
 
 datadigitaloceanspaceskey.NewDataDigitaloceanSpacesKey(scope Construct, id *string, config DataDigitaloceanSpacesKeyConfig) DataDigitaloceanSpacesKey
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesKey.DataDigitaloceanSpacesKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/datadigitaloceanspaceskey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceanspaceskey"
 
 datadigitaloceanspaceskey.DataDigitaloceanSpacesKey_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesKey.DataDigitaloceanSpacesKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/datadigitaloceanspaceskey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceanspaceskey"
 
 datadigitaloceanspaceskey.DataDigitaloceanSpacesKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datadigitaloceanspaceskey.DataDigitaloceanSpacesKey_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesKey.DataDigitaloceanSpacesKey.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/datadigitaloceanspaceskey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceanspaceskey"
 
 datadigitaloceanspaceskey.DataDigitaloceanSpacesKey_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datadigitaloceanspaceskey.DataDigitaloceanSpacesKey_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesKey.DataDigitaloceanSpacesKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/datadigitaloceanspaceskey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceanspaceskey"
 
 datadigitaloceanspaceskey.DataDigitaloceanSpacesKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -627,7 +627,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesKey.DataDigitaloceanSpacesKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/datadigitaloceanspaceskey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceanspaceskey"
 
 &datadigitaloceanspaceskey.DataDigitaloceanSpacesKeyConfig {
 	Connection: interface{},
@@ -762,7 +762,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesKey.DataDigitaloceanSpacesKeyGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/datadigitaloceanspaceskey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceanspaceskey"
 
 &datadigitaloceanspaceskey.DataDigitaloceanSpacesKeyGrant {
 
@@ -777,7 +777,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/datadig
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesKey.DataDigitaloceanSpacesKeyGrantList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/datadigitaloceanspaceskey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceanspaceskey"
 
 datadigitaloceanspaceskey.NewDataDigitaloceanSpacesKeyGrantList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanSpacesKeyGrantList
 ```
@@ -926,7 +926,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesKey.DataDigitaloceanSpacesKeyGrantOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/datadigitaloceanspaceskey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceanspaceskey"
 
 datadigitaloceanspaceskey.NewDataDigitaloceanSpacesKeyGrantOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanSpacesKeyGrantOutputReference
 ```
