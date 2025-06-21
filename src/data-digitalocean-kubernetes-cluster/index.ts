@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/kubernetes_cluster
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/data-sources/kubernetes_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,34 +13,34 @@ import * as cdktf from 'cdktf';
 
 export interface DataDigitaloceanKubernetesClusterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/kubernetes_cluster#id DataDigitaloceanKubernetesCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/data-sources/kubernetes_cluster#id DataDigitaloceanKubernetesCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/kubernetes_cluster#kubeconfig_expire_seconds DataDigitaloceanKubernetesCluster#kubeconfig_expire_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/data-sources/kubernetes_cluster#kubeconfig_expire_seconds DataDigitaloceanKubernetesCluster#kubeconfig_expire_seconds}
   */
   readonly kubeconfigExpireSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/kubernetes_cluster#name DataDigitaloceanKubernetesCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/data-sources/kubernetes_cluster#name DataDigitaloceanKubernetesCluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/kubernetes_cluster#tags DataDigitaloceanKubernetesCluster#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/data-sources/kubernetes_cluster#tags DataDigitaloceanKubernetesCluster#tags}
   */
   readonly tags?: string[];
   /**
   * cluster_autoscaler_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/kubernetes_cluster#cluster_autoscaler_configuration DataDigitaloceanKubernetesCluster#cluster_autoscaler_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/data-sources/kubernetes_cluster#cluster_autoscaler_configuration DataDigitaloceanKubernetesCluster#cluster_autoscaler_configuration}
   */
   readonly clusterAutoscalerConfiguration?: DataDigitaloceanKubernetesClusterClusterAutoscalerConfiguration[] | cdktf.IResolvable;
   /**
   * routing_agent block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/kubernetes_cluster#routing_agent DataDigitaloceanKubernetesCluster#routing_agent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/data-sources/kubernetes_cluster#routing_agent DataDigitaloceanKubernetesCluster#routing_agent}
   */
   readonly routingAgent?: DataDigitaloceanKubernetesClusterRoutingAgent;
 }
@@ -634,11 +634,15 @@ export class DataDigitaloceanKubernetesClusterNodePoolList extends cdktf.Complex
 }
 export interface DataDigitaloceanKubernetesClusterClusterAutoscalerConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/kubernetes_cluster#scale_down_unneeded_time DataDigitaloceanKubernetesCluster#scale_down_unneeded_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/data-sources/kubernetes_cluster#expanders DataDigitaloceanKubernetesCluster#expanders}
+  */
+  readonly expanders?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/data-sources/kubernetes_cluster#scale_down_unneeded_time DataDigitaloceanKubernetesCluster#scale_down_unneeded_time}
   */
   readonly scaleDownUnneededTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/kubernetes_cluster#scale_down_utilization_threshold DataDigitaloceanKubernetesCluster#scale_down_utilization_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/data-sources/kubernetes_cluster#scale_down_utilization_threshold DataDigitaloceanKubernetesCluster#scale_down_utilization_threshold}
   */
   readonly scaleDownUtilizationThreshold?: number;
 }
@@ -649,6 +653,7 @@ export function dataDigitaloceanKubernetesClusterClusterAutoscalerConfigurationT
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    expanders: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.expanders),
     scale_down_unneeded_time: cdktf.stringToTerraform(struct!.scaleDownUnneededTime),
     scale_down_utilization_threshold: cdktf.numberToTerraform(struct!.scaleDownUtilizationThreshold),
   }
@@ -661,6 +666,12 @@ export function dataDigitaloceanKubernetesClusterClusterAutoscalerConfigurationT
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    expanders: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.expanders),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
     scale_down_unneeded_time: {
       value: cdktf.stringToHclTerraform(struct!.scaleDownUnneededTime),
       isBlock: false,
@@ -699,6 +710,10 @@ export class DataDigitaloceanKubernetesClusterClusterAutoscalerConfigurationOutp
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._expanders !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.expanders = this._expanders;
+    }
     if (this._scaleDownUnneededTime !== undefined) {
       hasAnyValues = true;
       internalValueResult.scaleDownUnneededTime = this._scaleDownUnneededTime;
@@ -714,6 +729,7 @@ export class DataDigitaloceanKubernetesClusterClusterAutoscalerConfigurationOutp
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
+      this._expanders = undefined;
       this._scaleDownUnneededTime = undefined;
       this._scaleDownUtilizationThreshold = undefined;
     }
@@ -724,9 +740,26 @@ export class DataDigitaloceanKubernetesClusterClusterAutoscalerConfigurationOutp
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
+      this._expanders = value.expanders;
       this._scaleDownUnneededTime = value.scaleDownUnneededTime;
       this._scaleDownUtilizationThreshold = value.scaleDownUtilizationThreshold;
     }
+  }
+
+  // expanders - computed: false, optional: true, required: false
+  private _expanders?: string[]; 
+  public get expanders() {
+    return this.getListAttribute('expanders');
+  }
+  public set expanders(value: string[]) {
+    this._expanders = value;
+  }
+  public resetExpanders() {
+    this._expanders = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get expandersInput() {
+    return this._expanders;
   }
 
   // scale_down_unneeded_time - computed: false, optional: true, required: false
@@ -837,7 +870,7 @@ export class DataDigitaloceanKubernetesClusterRoutingAgentOutputReference extend
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/kubernetes_cluster digitalocean_kubernetes_cluster}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/data-sources/kubernetes_cluster digitalocean_kubernetes_cluster}
 */
 export class DataDigitaloceanKubernetesCluster extends cdktf.TerraformDataSource {
 
@@ -853,7 +886,7 @@ export class DataDigitaloceanKubernetesCluster extends cdktf.TerraformDataSource
   * Generates CDKTF code for importing a DataDigitaloceanKubernetesCluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDigitaloceanKubernetesCluster to import
-  * @param importFromId The id of the existing DataDigitaloceanKubernetesCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/kubernetes_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDigitaloceanKubernetesCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/data-sources/kubernetes_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDigitaloceanKubernetesCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -865,7 +898,7 @@ export class DataDigitaloceanKubernetesCluster extends cdktf.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/kubernetes_cluster digitalocean_kubernetes_cluster} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/data-sources/kubernetes_cluster digitalocean_kubernetes_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -876,7 +909,7 @@ export class DataDigitaloceanKubernetesCluster extends cdktf.TerraformDataSource
       terraformResourceType: 'digitalocean_kubernetes_cluster',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.55.0',
+        providerVersion: '2.57.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
