@@ -1,3 +1,3 @@
 # `digitalocean_uptime_alert`
 
-Refer to the Terraform Registry for docs: [`digitalocean_uptime_alert`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/resources/uptime_alert).
+Refer to the Terraform Registry for docs: [`digitalocean_uptime_alert`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/uptime_alert).
