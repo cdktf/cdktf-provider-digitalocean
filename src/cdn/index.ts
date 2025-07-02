@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/resources/cdn
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/cdn
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,21 +15,21 @@ export interface CdnConfig extends cdktf.TerraformMetaArguments {
   /**
   * ID of a DigitalOcean managed TLS certificate for use with custom domains
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/resources/cdn#certificate_id Cdn#certificate_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/cdn#certificate_id Cdn#certificate_id}
   */
   readonly certificateId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/resources/cdn#certificate_name Cdn#certificate_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/cdn#certificate_name Cdn#certificate_name}
   */
   readonly certificateName?: string;
   /**
   * fully qualified domain name (FQDN) for custom subdomain, (requires certificate_id)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/resources/cdn#custom_domain Cdn#custom_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/cdn#custom_domain Cdn#custom_domain}
   */
   readonly customDomain?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/resources/cdn#id Cdn#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/cdn#id Cdn#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -38,19 +38,19 @@ export interface CdnConfig extends cdktf.TerraformMetaArguments {
   /**
   * fully qualified domain name (FQDN) for the origin server
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/resources/cdn#origin Cdn#origin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/cdn#origin Cdn#origin}
   */
   readonly origin: string;
   /**
   * The amount of time the content is cached in the CDN
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/resources/cdn#ttl Cdn#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/cdn#ttl Cdn#ttl}
   */
   readonly ttl?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/resources/cdn digitalocean_cdn}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/cdn digitalocean_cdn}
 */
 export class Cdn extends cdktf.TerraformResource {
 
@@ -66,7 +66,7 @@ export class Cdn extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Cdn resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Cdn to import
-  * @param importFromId The id of the existing Cdn that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/resources/cdn#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Cdn that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/cdn#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Cdn to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -78,7 +78,7 @@ export class Cdn extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/resources/cdn digitalocean_cdn} Resource
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/cdn digitalocean_cdn} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,7 +89,7 @@ export class Cdn extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_cdn',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.57.0',
+        providerVersion: '2.58.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,

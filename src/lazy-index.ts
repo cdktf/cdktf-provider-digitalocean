@@ -30,6 +30,7 @@ Object.defineProperty(exports, 'dropletSnapshot', { get: function () { return re
 Object.defineProperty(exports, 'firewall', { get: function () { return require('./firewall'); } });
 Object.defineProperty(exports, 'floatingIp', { get: function () { return require('./floating-ip'); } });
 Object.defineProperty(exports, 'floatingIpAssignment', { get: function () { return require('./floating-ip-assignment'); } });
+Object.defineProperty(exports, 'genaiAgent', { get: function () { return require('./genai-agent'); } });
 Object.defineProperty(exports, 'kubernetesCluster', { get: function () { return require('./kubernetes-cluster'); } });
 Object.defineProperty(exports, 'kubernetesNodePool', { get: function () { return require('./kubernetes-node-pool'); } });
 Object.defineProperty(exports, 'loadbalancer', { get: function () { return require('./loadbalancer'); } });
@@ -75,12 +76,15 @@ Object.defineProperty(exports, 'dataDigitaloceanDropletSnapshot', { get: functio
 Object.defineProperty(exports, 'dataDigitaloceanDroplets', { get: function () { return require('./data-digitalocean-droplets'); } });
 Object.defineProperty(exports, 'dataDigitaloceanFirewall', { get: function () { return require('./data-digitalocean-firewall'); } });
 Object.defineProperty(exports, 'dataDigitaloceanFloatingIp', { get: function () { return require('./data-digitalocean-floating-ip'); } });
+Object.defineProperty(exports, 'dataDigitaloceanGenaiAgent', { get: function () { return require('./data-digitalocean-genai-agent'); } });
+Object.defineProperty(exports, 'dataDigitaloceanGenaiAgents', { get: function () { return require('./data-digitalocean-genai-agents'); } });
 Object.defineProperty(exports, 'dataDigitaloceanImage', { get: function () { return require('./data-digitalocean-image'); } });
 Object.defineProperty(exports, 'dataDigitaloceanImages', { get: function () { return require('./data-digitalocean-images'); } });
 Object.defineProperty(exports, 'dataDigitaloceanKubernetesCluster', { get: function () { return require('./data-digitalocean-kubernetes-cluster'); } });
 Object.defineProperty(exports, 'dataDigitaloceanKubernetesVersions', { get: function () { return require('./data-digitalocean-kubernetes-versions'); } });
 Object.defineProperty(exports, 'dataDigitaloceanLoadbalancer', { get: function () { return require('./data-digitalocean-loadbalancer'); } });
 Object.defineProperty(exports, 'dataDigitaloceanPartnerAttachment', { get: function () { return require('./data-digitalocean-partner-attachment'); } });
+Object.defineProperty(exports, 'dataDigitaloceanPartnerAttachmentServiceKey', { get: function () { return require('./data-digitalocean-partner-attachment-service-key'); } });
 Object.defineProperty(exports, 'dataDigitaloceanProject', { get: function () { return require('./data-digitalocean-project'); } });
 Object.defineProperty(exports, 'dataDigitaloceanProjects', { get: function () { return require('./data-digitalocean-projects'); } });
 Object.defineProperty(exports, 'dataDigitaloceanRecord', { get: function () { return require('./data-digitalocean-record'); } });
