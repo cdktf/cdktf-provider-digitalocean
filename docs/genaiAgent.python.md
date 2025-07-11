@@ -4,7 +4,7 @@
 
 ### GenaiAgent <a name="GenaiAgent" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent digitalocean_genai_agent}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent digitalocean_genai_agent}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer"></a>
 
@@ -90,7 +90,7 @@ genaiAgent.GenaiAgent(
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.deployment">deployment</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>]]</code> | deployment block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.description">description</a></code> | <code>str</code> | Description for the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.functions">functions</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>]]</code> | functions block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#id GenaiAgent#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#id GenaiAgent#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.ifCase">if_case</a></code> | <code>str</code> | If case condition. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.k">k</a></code> | <code>typing.Union[int, float]</code> | K value. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.knowledgeBases">knowledge_bases</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>]]</code> | knowledge_bases block. |
@@ -180,7 +180,7 @@ Must be unique amongst siblings in the same scope
 
 Instruction for the Agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#instruction GenaiAgent#instruction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#instruction GenaiAgent#instruction}
 
 ---
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Model UUID of the Agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#model_uuid GenaiAgent#model_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#model_uuid GenaiAgent#model_uuid}
 
 ---
 
@@ -200,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Name of the Agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#name GenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#name GenaiAgent#name}
 
 ---
 
@@ -210,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Project ID of the Agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#project_id GenaiAgent#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#project_id GenaiAgent#project_id}
 
 ---
 
@@ -220,7 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Region where the Agent is deployed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#region GenaiAgent#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#region GenaiAgent#region}
 
 ---
 
@@ -230,7 +230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 agent_guardrail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#agent_guardrail GenaiAgent#agent_guardrail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#agent_guardrail GenaiAgent#agent_guardrail}
 
 ---
 
@@ -240,7 +240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 anthropic_api_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#anthropic_api_key GenaiAgent#anthropic_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#anthropic_api_key GenaiAgent#anthropic_api_key}
 
 ---
 
@@ -250,7 +250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Optional Anthropic API key ID to use with Anthropic models.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#anthropic_key_uuid GenaiAgent#anthropic_key_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#anthropic_key_uuid GenaiAgent#anthropic_key_uuid}
 
 ---
 
@@ -260,7 +260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 api_key_infos block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#api_key_infos GenaiAgent#api_key_infos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#api_key_infos GenaiAgent#api_key_infos}
 
 ---
 
@@ -270,7 +270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 api_keys block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#api_keys GenaiAgent#api_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#api_keys GenaiAgent#api_keys}
 
 ---
 
@@ -280,7 +280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 chatbot block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#chatbot GenaiAgent#chatbot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#chatbot GenaiAgent#chatbot}
 
 ---
 
@@ -290,7 +290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 chatbot_identifiers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#chatbot_identifiers GenaiAgent#chatbot_identifiers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#chatbot_identifiers GenaiAgent#chatbot_identifiers}
 
 ---
 
@@ -300,7 +300,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 child_agents block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#child_agents GenaiAgent#child_agents}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#child_agents GenaiAgent#child_agents}
 
 ---
 
@@ -310,7 +310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Timestamp when the Agent was created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#created_at GenaiAgent#created_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#created_at GenaiAgent#created_at}
 
 ---
 
@@ -320,7 +320,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 deployment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#deployment GenaiAgent#deployment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#deployment GenaiAgent#deployment}
 
 ---
 
@@ -330,7 +330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Description for the Agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#description GenaiAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#description GenaiAgent#description}
 
 ---
 
@@ -340,7 +340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 functions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#functions GenaiAgent#functions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#functions GenaiAgent#functions}
 
 ---
 
@@ -348,7 +348,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#id GenaiAgent#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#id GenaiAgent#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -361,7 +361,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 If case condition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#if_case GenaiAgent#if_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#if_case GenaiAgent#if_case}
 
 ---
 
@@ -371,7 +371,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 K value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#k GenaiAgent#k}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#k GenaiAgent#k}
 
 ---
 
@@ -381,7 +381,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 knowledge_bases block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#knowledge_bases GenaiAgent#knowledge_bases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#knowledge_bases GenaiAgent#knowledge_bases}
 
 ---
 
@@ -391,7 +391,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Ids of the knowledge base(s) to attach to the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#knowledge_base_uuid GenaiAgent#knowledge_base_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#knowledge_base_uuid GenaiAgent#knowledge_base_uuid}
 
 ---
 
@@ -401,7 +401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Maximum tokens allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#max_tokens GenaiAgent#max_tokens}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#max_tokens GenaiAgent#max_tokens}
 
 ---
 
@@ -411,7 +411,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 model block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#model GenaiAgent#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#model GenaiAgent#model}
 
 ---
 
@@ -421,7 +421,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 open_ai_api_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#open_ai_api_key GenaiAgent#open_ai_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#open_ai_api_key GenaiAgent#open_ai_api_key}
 
 ---
 
@@ -431,7 +431,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Optional OpenAI API key ID to use with OpenAI models.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#open_ai_key_uuid GenaiAgent#open_ai_key_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#open_ai_key_uuid GenaiAgent#open_ai_key_uuid}
 
 ---
 
@@ -441,7 +441,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 parent_agents block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#parent_agents GenaiAgent#parent_agents}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#parent_agents GenaiAgent#parent_agents}
 
 ---
 
@@ -451,7 +451,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Indicates if the agent should provide citations in responses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#provide_citations GenaiAgent#provide_citations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#provide_citations GenaiAgent#provide_citations}
 
 ---
 
@@ -461,7 +461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Retrieval method used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#retrieval_method GenaiAgent#retrieval_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#retrieval_method GenaiAgent#retrieval_method}
 
 ---
 
@@ -471,7 +471,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 User who created the route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#route_created_by GenaiAgent#route_created_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#route_created_by GenaiAgent#route_created_by}
 
 ---
 
@@ -481,7 +481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Route name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#route_name GenaiAgent#route_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#route_name GenaiAgent#route_name}
 
 ---
 
@@ -491,7 +491,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Route UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#route_uuid GenaiAgent#route_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#route_uuid GenaiAgent#route_uuid}
 
 ---
 
@@ -501,7 +501,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 List of Tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#tags GenaiAgent#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#tags GenaiAgent#tags}
 
 ---
 
@@ -511,7 +511,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Agent temperature setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#temperature GenaiAgent#temperature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#temperature GenaiAgent#temperature}
 
 ---
 
@@ -521,7 +521,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#template GenaiAgent#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#template GenaiAgent#template}
 
 ---
 
@@ -531,7 +531,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Top P sampling parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#top_p GenaiAgent#top_p}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#top_p GenaiAgent#top_p}
 
 ---
 
@@ -541,7 +541,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 URL for the Agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#url GenaiAgent#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#url GenaiAgent#url}
 
 ---
 
@@ -551,7 +551,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 User ID linked with the Agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#user_id GenaiAgent#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#user_id GenaiAgent#user_id}
 
 ---
 
@@ -1465,7 +1465,7 @@ The construct id used in the generated config for the GenaiAgent to import.
 
 The id of the existing GenaiAgent that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -2564,7 +2564,7 @@ agent_uuid: str
 
 Agent UUID for the Guardrail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#agent_uuid GenaiAgent#agent_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#agent_uuid GenaiAgent#agent_uuid}
 
 ---
 
@@ -2578,7 +2578,7 @@ default_response: str
 
 Default response for the Guardrail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#default_response GenaiAgent#default_response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#default_response GenaiAgent#default_response}
 
 ---
 
@@ -2592,7 +2592,7 @@ description: str
 
 Description of the Guardrail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#description GenaiAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#description GenaiAgent#description}
 
 ---
 
@@ -2606,7 +2606,7 @@ guardrail_uuid: str
 
 Guardrail UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#guardrail_uuid GenaiAgent#guardrail_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#guardrail_uuid GenaiAgent#guardrail_uuid}
 
 ---
 
@@ -2620,7 +2620,7 @@ is_default: typing.Union[bool, IResolvable]
 
 Indicates if the Guardrail is default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#is_default GenaiAgent#is_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#is_default GenaiAgent#is_default}
 
 ---
 
@@ -2634,7 +2634,7 @@ name: str
 
 Name of Guardrail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#name GenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#name GenaiAgent#name}
 
 ---
 
@@ -2648,7 +2648,7 @@ priority: typing.Union[int, float]
 
 Priority of the Guardrail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#priority GenaiAgent#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#priority GenaiAgent#priority}
 
 ---
 
@@ -2662,7 +2662,7 @@ type: str
 
 Type of the Guardrail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#type GenaiAgent#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#type GenaiAgent#type}
 
 ---
 
@@ -2676,7 +2676,7 @@ uuid: str
 
 Guardrail UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
 
 ---
 
@@ -2714,7 +2714,7 @@ created_by: str
 
 Created By user ID for the API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#created_by GenaiAgent#created_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#created_by GenaiAgent#created_by}
 
 ---
 
@@ -2728,7 +2728,7 @@ name: str
 
 Name of the API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#name GenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#name GenaiAgent#name}
 
 ---
 
@@ -2742,7 +2742,7 @@ uuid: str
 
 API Key value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
 
 ---
 
@@ -2782,7 +2782,7 @@ created_by: str
 
 Created By user ID for the API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#created_by GenaiAgent#created_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#created_by GenaiAgent#created_by}
 
 ---
 
@@ -2796,7 +2796,7 @@ name: str
 
 Name of the API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#name GenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#name GenaiAgent#name}
 
 ---
 
@@ -2810,7 +2810,7 @@ secret_key: str
 
 Updated At timestamp for the API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#secret_key GenaiAgent#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#secret_key GenaiAgent#secret_key}
 
 ---
 
@@ -2824,7 +2824,7 @@ uuid: str
 
 API Key value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
 
 ---
 
@@ -2858,7 +2858,7 @@ api_key: str
 
 API Key value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#api_key GenaiAgent#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#api_key GenaiAgent#api_key}
 
 ---
 
@@ -2902,7 +2902,7 @@ button_background_color: str
 
 Background color for the chatbot button.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#button_background_color GenaiAgent#button_background_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#button_background_color GenaiAgent#button_background_color}
 
 ---
 
@@ -2916,7 +2916,7 @@ logo: str
 
 Logo for the chatbot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#logo GenaiAgent#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#logo GenaiAgent#logo}
 
 ---
 
@@ -2930,7 +2930,7 @@ name: str
 
 Name of the chatbot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#name GenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#name GenaiAgent#name}
 
 ---
 
@@ -2944,7 +2944,7 @@ primary_color: str
 
 Primary color for the chatbot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#primary_color GenaiAgent#primary_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#primary_color GenaiAgent#primary_color}
 
 ---
 
@@ -2958,7 +2958,7 @@ secondary_color: str
 
 Secondary color for the chatbot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#secondary_color GenaiAgent#secondary_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#secondary_color GenaiAgent#secondary_color}
 
 ---
 
@@ -2972,7 +2972,7 @@ starting_message: str
 
 Starting message for the chatbot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#starting_message GenaiAgent#starting_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#starting_message GenaiAgent#starting_message}
 
 ---
 
@@ -3039,7 +3039,7 @@ instruction: str
 
 Instruction for the Agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#instruction GenaiAgent#instruction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#instruction GenaiAgent#instruction}
 
 ---
 
@@ -3053,7 +3053,7 @@ model_uuid: str
 
 Model UUID of the Agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#model_uuid GenaiAgent#model_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#model_uuid GenaiAgent#model_uuid}
 
 ---
 
@@ -3067,7 +3067,7 @@ name: str
 
 Name of the Agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#name GenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#name GenaiAgent#name}
 
 ---
 
@@ -3081,7 +3081,7 @@ project_id: str
 
 Project ID of the Agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#project_id GenaiAgent#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#project_id GenaiAgent#project_id}
 
 ---
 
@@ -3095,7 +3095,7 @@ region: str
 
 Region where the Agent is deployed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#region GenaiAgent#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#region GenaiAgent#region}
 
 ---
 
@@ -3109,7 +3109,7 @@ anthropic_api_key: typing.Union[IResolvable, typing.List[GenaiAgentChildAgentsAn
 
 anthropic_api_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#anthropic_api_key GenaiAgent#anthropic_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#anthropic_api_key GenaiAgent#anthropic_api_key}
 
 ---
 
@@ -3123,7 +3123,7 @@ api_key_infos: typing.Union[IResolvable, typing.List[GenaiAgentChildAgentsApiKey
 
 api_key_infos block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#api_key_infos GenaiAgent#api_key_infos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#api_key_infos GenaiAgent#api_key_infos}
 
 ---
 
@@ -3137,7 +3137,7 @@ api_keys: typing.Union[IResolvable, typing.List[GenaiAgentChildAgentsApiKeys]]
 
 api_keys block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#api_keys GenaiAgent#api_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#api_keys GenaiAgent#api_keys}
 
 ---
 
@@ -3151,7 +3151,7 @@ chatbot: typing.Union[IResolvable, typing.List[GenaiAgentChildAgentsChatbot]]
 
 chatbot block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#chatbot GenaiAgent#chatbot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#chatbot GenaiAgent#chatbot}
 
 ---
 
@@ -3165,7 +3165,7 @@ chatbot_identifiers: typing.Union[IResolvable, typing.List[GenaiAgentChildAgents
 
 chatbot_identifiers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#chatbot_identifiers GenaiAgent#chatbot_identifiers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#chatbot_identifiers GenaiAgent#chatbot_identifiers}
 
 ---
 
@@ -3179,7 +3179,7 @@ deployment: typing.Union[IResolvable, typing.List[GenaiAgentChildAgentsDeploymen
 
 deployment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#deployment GenaiAgent#deployment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#deployment GenaiAgent#deployment}
 
 ---
 
@@ -3193,7 +3193,7 @@ description: str
 
 Description for the Agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#description GenaiAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#description GenaiAgent#description}
 
 ---
 
@@ -3231,7 +3231,7 @@ created_by: str
 
 Created By user ID for the API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#created_by GenaiAgent#created_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#created_by GenaiAgent#created_by}
 
 ---
 
@@ -3245,7 +3245,7 @@ name: str
 
 Name of the API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#name GenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#name GenaiAgent#name}
 
 ---
 
@@ -3259,7 +3259,7 @@ uuid: str
 
 API Key value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
 
 ---
 
@@ -3299,7 +3299,7 @@ created_by: str
 
 Created By user ID for the API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#created_by GenaiAgent#created_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#created_by GenaiAgent#created_by}
 
 ---
 
@@ -3313,7 +3313,7 @@ name: str
 
 Name of the API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#name GenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#name GenaiAgent#name}
 
 ---
 
@@ -3327,7 +3327,7 @@ secret_key: str
 
 Updated At timestamp for the API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#secret_key GenaiAgent#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#secret_key GenaiAgent#secret_key}
 
 ---
 
@@ -3341,7 +3341,7 @@ uuid: str
 
 API Key value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
 
 ---
 
@@ -3375,7 +3375,7 @@ api_key: str
 
 API Key value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#api_key GenaiAgent#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#api_key GenaiAgent#api_key}
 
 ---
 
@@ -3419,7 +3419,7 @@ button_background_color: str
 
 Background color for the chatbot button.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#button_background_color GenaiAgent#button_background_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#button_background_color GenaiAgent#button_background_color}
 
 ---
 
@@ -3433,7 +3433,7 @@ logo: str
 
 Logo for the chatbot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#logo GenaiAgent#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#logo GenaiAgent#logo}
 
 ---
 
@@ -3447,7 +3447,7 @@ name: str
 
 Name of the chatbot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#name GenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#name GenaiAgent#name}
 
 ---
 
@@ -3461,7 +3461,7 @@ primary_color: str
 
 Primary color for the chatbot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#primary_color GenaiAgent#primary_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#primary_color GenaiAgent#primary_color}
 
 ---
 
@@ -3475,7 +3475,7 @@ secondary_color: str
 
 Secondary color for the chatbot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#secondary_color GenaiAgent#secondary_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#secondary_color GenaiAgent#secondary_color}
 
 ---
 
@@ -3489,7 +3489,7 @@ starting_message: str
 
 Starting message for the chatbot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#starting_message GenaiAgent#starting_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#starting_message GenaiAgent#starting_message}
 
 ---
 
@@ -3542,7 +3542,7 @@ name: str
 
 Name of the API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#name GenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#name GenaiAgent#name}
 
 ---
 
@@ -3556,7 +3556,7 @@ status: str
 
 Status of the Deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#status GenaiAgent#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#status GenaiAgent#status}
 
 ---
 
@@ -3570,7 +3570,7 @@ url: str
 
 Url of the Deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#url GenaiAgent#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#url GenaiAgent#url}
 
 ---
 
@@ -3584,7 +3584,7 @@ uuid: str
 
 API Key value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
 
 ---
 
@@ -3598,7 +3598,7 @@ visibility: str
 
 Visibility of the Deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#visibility GenaiAgent#visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#visibility GenaiAgent#visibility}
 
 ---
 
@@ -3686,7 +3686,7 @@ genaiAgent.GenaiAgentConfig(
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.deployment">deployment</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>]]</code> | deployment block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.description">description</a></code> | <code>str</code> | Description for the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.functions">functions</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>]]</code> | functions block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#id GenaiAgent#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#id GenaiAgent#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.ifCase">if_case</a></code> | <code>str</code> | If case condition. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.k">k</a></code> | <code>typing.Union[int, float]</code> | K value. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.knowledgeBases">knowledge_bases</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>]]</code> | knowledge_bases block. |
@@ -3790,7 +3790,7 @@ instruction: str
 
 Instruction for the Agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#instruction GenaiAgent#instruction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#instruction GenaiAgent#instruction}
 
 ---
 
@@ -3804,7 +3804,7 @@ model_uuid: str
 
 Model UUID of the Agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#model_uuid GenaiAgent#model_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#model_uuid GenaiAgent#model_uuid}
 
 ---
 
@@ -3818,7 +3818,7 @@ name: str
 
 Name of the Agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#name GenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#name GenaiAgent#name}
 
 ---
 
@@ -3832,7 +3832,7 @@ project_id: str
 
 Project ID of the Agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#project_id GenaiAgent#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#project_id GenaiAgent#project_id}
 
 ---
 
@@ -3846,7 +3846,7 @@ region: str
 
 Region where the Agent is deployed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#region GenaiAgent#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#region GenaiAgent#region}
 
 ---
 
@@ -3860,7 +3860,7 @@ agent_guardrail: typing.Union[IResolvable, typing.List[GenaiAgentAgentGuardrail]
 
 agent_guardrail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#agent_guardrail GenaiAgent#agent_guardrail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#agent_guardrail GenaiAgent#agent_guardrail}
 
 ---
 
@@ -3874,7 +3874,7 @@ anthropic_api_key: typing.Union[IResolvable, typing.List[GenaiAgentAnthropicApiK
 
 anthropic_api_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#anthropic_api_key GenaiAgent#anthropic_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#anthropic_api_key GenaiAgent#anthropic_api_key}
 
 ---
 
@@ -3888,7 +3888,7 @@ anthropic_key_uuid: str
 
 Optional Anthropic API key ID to use with Anthropic models.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#anthropic_key_uuid GenaiAgent#anthropic_key_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#anthropic_key_uuid GenaiAgent#anthropic_key_uuid}
 
 ---
 
@@ -3902,7 +3902,7 @@ api_key_infos: typing.Union[IResolvable, typing.List[GenaiAgentApiKeyInfos]]
 
 api_key_infos block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#api_key_infos GenaiAgent#api_key_infos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#api_key_infos GenaiAgent#api_key_infos}
 
 ---
 
@@ -3916,7 +3916,7 @@ api_keys: typing.Union[IResolvable, typing.List[GenaiAgentApiKeys]]
 
 api_keys block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#api_keys GenaiAgent#api_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#api_keys GenaiAgent#api_keys}
 
 ---
 
@@ -3930,7 +3930,7 @@ chatbot: typing.Union[IResolvable, typing.List[GenaiAgentChatbot]]
 
 chatbot block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#chatbot GenaiAgent#chatbot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#chatbot GenaiAgent#chatbot}
 
 ---
 
@@ -3944,7 +3944,7 @@ chatbot_identifiers: typing.Union[IResolvable, typing.List[GenaiAgentChatbotIden
 
 chatbot_identifiers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#chatbot_identifiers GenaiAgent#chatbot_identifiers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#chatbot_identifiers GenaiAgent#chatbot_identifiers}
 
 ---
 
@@ -3958,7 +3958,7 @@ child_agents: typing.Union[IResolvable, typing.List[GenaiAgentChildAgents]]
 
 child_agents block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#child_agents GenaiAgent#child_agents}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#child_agents GenaiAgent#child_agents}
 
 ---
 
@@ -3972,7 +3972,7 @@ created_at: str
 
 Timestamp when the Agent was created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#created_at GenaiAgent#created_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#created_at GenaiAgent#created_at}
 
 ---
 
@@ -3986,7 +3986,7 @@ deployment: typing.Union[IResolvable, typing.List[GenaiAgentDeployment]]
 
 deployment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#deployment GenaiAgent#deployment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#deployment GenaiAgent#deployment}
 
 ---
 
@@ -4000,7 +4000,7 @@ description: str
 
 Description for the Agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#description GenaiAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#description GenaiAgent#description}
 
 ---
 
@@ -4014,7 +4014,7 @@ functions: typing.Union[IResolvable, typing.List[GenaiAgentFunctions]]
 
 functions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#functions GenaiAgent#functions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#functions GenaiAgent#functions}
 
 ---
 
@@ -4026,7 +4026,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#id GenaiAgent#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#id GenaiAgent#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4043,7 +4043,7 @@ if_case: str
 
 If case condition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#if_case GenaiAgent#if_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#if_case GenaiAgent#if_case}
 
 ---
 
@@ -4057,7 +4057,7 @@ k: typing.Union[int, float]
 
 K value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#k GenaiAgent#k}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#k GenaiAgent#k}
 
 ---
 
@@ -4071,7 +4071,7 @@ knowledge_bases: typing.Union[IResolvable, typing.List[GenaiAgentKnowledgeBases]
 
 knowledge_bases block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#knowledge_bases GenaiAgent#knowledge_bases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#knowledge_bases GenaiAgent#knowledge_bases}
 
 ---
 
@@ -4085,7 +4085,7 @@ knowledge_base_uuid: typing.List[str]
 
 Ids of the knowledge base(s) to attach to the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#knowledge_base_uuid GenaiAgent#knowledge_base_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#knowledge_base_uuid GenaiAgent#knowledge_base_uuid}
 
 ---
 
@@ -4099,7 +4099,7 @@ max_tokens: typing.Union[int, float]
 
 Maximum tokens allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#max_tokens GenaiAgent#max_tokens}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#max_tokens GenaiAgent#max_tokens}
 
 ---
 
@@ -4113,7 +4113,7 @@ model: typing.Union[IResolvable, typing.List[GenaiAgentModel]]
 
 model block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#model GenaiAgent#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#model GenaiAgent#model}
 
 ---
 
@@ -4127,7 +4127,7 @@ open_ai_api_key: typing.Union[IResolvable, typing.List[GenaiAgentOpenAiApiKey]]
 
 open_ai_api_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#open_ai_api_key GenaiAgent#open_ai_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#open_ai_api_key GenaiAgent#open_ai_api_key}
 
 ---
 
@@ -4141,7 +4141,7 @@ open_ai_key_uuid: str
 
 Optional OpenAI API key ID to use with OpenAI models.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#open_ai_key_uuid GenaiAgent#open_ai_key_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#open_ai_key_uuid GenaiAgent#open_ai_key_uuid}
 
 ---
 
@@ -4155,7 +4155,7 @@ parent_agents: typing.Union[IResolvable, typing.List[GenaiAgentParentAgents]]
 
 parent_agents block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#parent_agents GenaiAgent#parent_agents}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#parent_agents GenaiAgent#parent_agents}
 
 ---
 
@@ -4169,7 +4169,7 @@ provide_citations: typing.Union[bool, IResolvable]
 
 Indicates if the agent should provide citations in responses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#provide_citations GenaiAgent#provide_citations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#provide_citations GenaiAgent#provide_citations}
 
 ---
 
@@ -4183,7 +4183,7 @@ retrieval_method: str
 
 Retrieval method used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#retrieval_method GenaiAgent#retrieval_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#retrieval_method GenaiAgent#retrieval_method}
 
 ---
 
@@ -4197,7 +4197,7 @@ route_created_by: str
 
 User who created the route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#route_created_by GenaiAgent#route_created_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#route_created_by GenaiAgent#route_created_by}
 
 ---
 
@@ -4211,7 +4211,7 @@ route_name: str
 
 Route name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#route_name GenaiAgent#route_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#route_name GenaiAgent#route_name}
 
 ---
 
@@ -4225,7 +4225,7 @@ route_uuid: str
 
 Route UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#route_uuid GenaiAgent#route_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#route_uuid GenaiAgent#route_uuid}
 
 ---
 
@@ -4239,7 +4239,7 @@ tags: typing.List[str]
 
 List of Tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#tags GenaiAgent#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#tags GenaiAgent#tags}
 
 ---
 
@@ -4253,7 +4253,7 @@ temperature: typing.Union[int, float]
 
 Agent temperature setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#temperature GenaiAgent#temperature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#temperature GenaiAgent#temperature}
 
 ---
 
@@ -4267,7 +4267,7 @@ template: typing.Union[IResolvable, typing.List[GenaiAgentTemplate]]
 
 template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#template GenaiAgent#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#template GenaiAgent#template}
 
 ---
 
@@ -4281,7 +4281,7 @@ top_p: typing.Union[int, float]
 
 Top P sampling parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#top_p GenaiAgent#top_p}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#top_p GenaiAgent#top_p}
 
 ---
 
@@ -4295,7 +4295,7 @@ url: str
 
 URL for the Agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#url GenaiAgent#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#url GenaiAgent#url}
 
 ---
 
@@ -4309,7 +4309,7 @@ user_id: str
 
 User ID linked with the Agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#user_id GenaiAgent#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#user_id GenaiAgent#user_id}
 
 ---
 
@@ -4351,7 +4351,7 @@ name: str
 
 Name of the API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#name GenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#name GenaiAgent#name}
 
 ---
 
@@ -4365,7 +4365,7 @@ status: str
 
 Status of the Deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#status GenaiAgent#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#status GenaiAgent#status}
 
 ---
 
@@ -4379,7 +4379,7 @@ url: str
 
 Url of the Deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#url GenaiAgent#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#url GenaiAgent#url}
 
 ---
 
@@ -4393,7 +4393,7 @@ uuid: str
 
 API Key value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
 
 ---
 
@@ -4407,7 +4407,7 @@ visibility: str
 
 Visibility of the Deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#visibility GenaiAgent#visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#visibility GenaiAgent#visibility}
 
 ---
 
@@ -4455,7 +4455,7 @@ api_key: str
 
 API Key value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#api_key GenaiAgent#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#api_key GenaiAgent#api_key}
 
 ---
 
@@ -4469,7 +4469,7 @@ description: str
 
 Description of the Function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#description GenaiAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#description GenaiAgent#description}
 
 ---
 
@@ -4483,7 +4483,7 @@ faasname: str
 
 Name of function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#faasname GenaiAgent#faasname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#faasname GenaiAgent#faasname}
 
 ---
 
@@ -4497,7 +4497,7 @@ faasnamespace: str
 
 Namespace of function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#faasnamespace GenaiAgent#faasnamespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#faasnamespace GenaiAgent#faasnamespace}
 
 ---
 
@@ -4511,7 +4511,7 @@ guardrail_uuid: str
 
 Guardrail UUID for the Function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#guardrail_uuid GenaiAgent#guardrail_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#guardrail_uuid GenaiAgent#guardrail_uuid}
 
 ---
 
@@ -4525,7 +4525,7 @@ name: str
 
 Name of function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#name GenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#name GenaiAgent#name}
 
 ---
 
@@ -4539,7 +4539,7 @@ url: str
 
 Url of the Deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#url GenaiAgent#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#url GenaiAgent#url}
 
 ---
 
@@ -4553,7 +4553,7 @@ uuid: str
 
 API Key value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
 
 ---
 
@@ -4565,11 +4565,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 from cdktf_cdktf_provider_digitalocean import genai_agent
 
 genaiAgent.GenaiAgentKnowledgeBases(
-  last_indexing_job: typing.Union[IResolvable, typing.List[GenaiAgentKnowledgeBasesLastIndexingJob]] = None,
+  database_id: str = None,
+  embedding_model_uuid: str = None,
+  is_public: typing.Union[bool, IResolvable] = None,
+  last_indexing_job: GenaiAgentKnowledgeBasesLastIndexingJob = None,
+  name: str = None,
+  project_id: str = None,
   region: str = None,
   tags: typing.List[str] = None,
-  user_id: str = None,
-  uuid: str = None
+  user_id: str = None
 )
 ```
 
@@ -4577,25 +4581,99 @@ genaiAgent.GenaiAgentKnowledgeBases(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.lastIndexingJob">last_indexing_job</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob">GenaiAgentKnowledgeBasesLastIndexingJob</a>]]</code> | last_indexing_job block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.databaseId">database_id</a></code> | <code>str</code> | Database ID of the Knowledge Base. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.embeddingModelUuid">embedding_model_uuid</a></code> | <code>str</code> | Embedding model UUID for the Knowledge Base. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.isPublic">is_public</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates if the Knowledge Base is public. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.lastIndexingJob">last_indexing_job</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob">GenaiAgentKnowledgeBasesLastIndexingJob</a></code> | last_indexing_job block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.name">name</a></code> | <code>str</code> | Name of the Knowledge Base. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.projectId">project_id</a></code> | <code>str</code> | Project ID of the Knowledge Base. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.region">region</a></code> | <code>str</code> | Region of the Knowledge Base. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.tags">tags</a></code> | <code>typing.List[str]</code> | List of tags. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.userId">user_id</a></code> | <code>str</code> | User ID of the Knowledge Base. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.uuid">uuid</a></code> | <code>str</code> | UUID of the Knowledge Base. |
+
+---
+
+##### `database_id`<sup>Optional</sup> <a name="database_id" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.databaseId"></a>
+
+```python
+database_id: str
+```
+
+- *Type:* str
+
+Database ID of the Knowledge Base.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#database_id GenaiAgent#database_id}
+
+---
+
+##### `embedding_model_uuid`<sup>Optional</sup> <a name="embedding_model_uuid" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.embeddingModelUuid"></a>
+
+```python
+embedding_model_uuid: str
+```
+
+- *Type:* str
+
+Embedding model UUID for the Knowledge Base.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#embedding_model_uuid GenaiAgent#embedding_model_uuid}
+
+---
+
+##### `is_public`<sup>Optional</sup> <a name="is_public" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.isPublic"></a>
+
+```python
+is_public: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Indicates if the Knowledge Base is public.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#is_public GenaiAgent#is_public}
 
 ---
 
 ##### `last_indexing_job`<sup>Optional</sup> <a name="last_indexing_job" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.lastIndexingJob"></a>
 
 ```python
-last_indexing_job: typing.Union[IResolvable, typing.List[GenaiAgentKnowledgeBasesLastIndexingJob]]
+last_indexing_job: GenaiAgentKnowledgeBasesLastIndexingJob
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob">GenaiAgentKnowledgeBasesLastIndexingJob</a>]]
+- *Type:* <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob">GenaiAgentKnowledgeBasesLastIndexingJob</a>
 
 last_indexing_job block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#last_indexing_job GenaiAgent#last_indexing_job}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#last_indexing_job GenaiAgent#last_indexing_job}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+Name of the Knowledge Base.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#name GenaiAgent#name}
+
+---
+
+##### `project_id`<sup>Optional</sup> <a name="project_id" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.projectId"></a>
+
+```python
+project_id: str
+```
+
+- *Type:* str
+
+Project ID of the Knowledge Base.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#project_id GenaiAgent#project_id}
 
 ---
 
@@ -4609,7 +4687,7 @@ region: str
 
 Region of the Knowledge Base.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#region GenaiAgent#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#region GenaiAgent#region}
 
 ---
 
@@ -4623,7 +4701,7 @@ tags: typing.List[str]
 
 List of tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#tags GenaiAgent#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#tags GenaiAgent#tags}
 
 ---
 
@@ -4637,21 +4715,7 @@ user_id: str
 
 User ID of the Knowledge Base.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#user_id GenaiAgent#user_id}
-
----
-
-##### `uuid`<sup>Optional</sup> <a name="uuid" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.uuid"></a>
-
-```python
-uuid: str
-```
-
-- *Type:* str
-
-UUID of the Knowledge Base.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#user_id GenaiAgent#user_id}
 
 ---
 
@@ -4664,8 +4728,7 @@ from cdktf_cdktf_provider_digitalocean import genai_agent
 
 genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob(
   completed_datasources: typing.Union[int, float] = None,
-  datasource_uuids: typing.List[str] = None,
-  knowledge_base_uuid: str = None,
+  data_source_uuids: typing.List[str] = None,
   phase: str = None,
   tokens: typing.Union[int, float] = None,
   total_datasources: typing.Union[int, float] = None,
@@ -4678,12 +4741,11 @@ genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob.property.completedDatasources">completed_datasources</a></code> | <code>typing.Union[int, float]</code> | Number of completed datasources in the last indexing job. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob.property.datasourceUuids">datasource_uuids</a></code> | <code>typing.List[str]</code> | Datasource UUIDs for the last indexing job. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob.property.knowledgeBaseUuid">knowledge_base_uuid</a></code> | <code>str</code> | UUID	of the Knowledge Base for the last indexing job. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob.property.dataSourceUuids">data_source_uuids</a></code> | <code>typing.List[str]</code> | Datasource UUIDs for the last indexing job. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob.property.phase">phase</a></code> | <code>str</code> | Phase of the last indexing job. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob.property.tokens">tokens</a></code> | <code>typing.Union[int, float]</code> | Number of tokens processed in the last indexing job. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob.property.totalDatasources">total_datasources</a></code> | <code>typing.Union[int, float]</code> | Total number of datasources in the last indexing job. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob.property.uuid">uuid</a></code> | <code>str</code> | UUID	of the last indexing job. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob.property.uuid">uuid</a></code> | <code>str</code> | UUID  of the last indexing job. |
 
 ---
 
@@ -4697,35 +4759,21 @@ completed_datasources: typing.Union[int, float]
 
 Number of completed datasources in the last indexing job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#completed_datasources GenaiAgent#completed_datasources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#completed_datasources GenaiAgent#completed_datasources}
 
 ---
 
-##### `datasource_uuids`<sup>Optional</sup> <a name="datasource_uuids" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob.property.datasourceUuids"></a>
+##### `data_source_uuids`<sup>Optional</sup> <a name="data_source_uuids" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob.property.dataSourceUuids"></a>
 
 ```python
-datasource_uuids: typing.List[str]
+data_source_uuids: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
 
 Datasource UUIDs for the last indexing job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#datasource_uuids GenaiAgent#datasource_uuids}
-
----
-
-##### `knowledge_base_uuid`<sup>Optional</sup> <a name="knowledge_base_uuid" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob.property.knowledgeBaseUuid"></a>
-
-```python
-knowledge_base_uuid: str
-```
-
-- *Type:* str
-
-UUID	of the Knowledge Base for the last indexing job.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#knowledge_base_uuid GenaiAgent#knowledge_base_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#data_source_uuids GenaiAgent#data_source_uuids}
 
 ---
 
@@ -4739,7 +4787,7 @@ phase: str
 
 Phase of the last indexing job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#phase GenaiAgent#phase}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#phase GenaiAgent#phase}
 
 ---
 
@@ -4753,7 +4801,7 @@ tokens: typing.Union[int, float]
 
 Number of tokens processed in the last indexing job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#tokens GenaiAgent#tokens}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#tokens GenaiAgent#tokens}
 
 ---
 
@@ -4767,7 +4815,7 @@ total_datasources: typing.Union[int, float]
 
 Total number of datasources in the last indexing job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#total_datasources GenaiAgent#total_datasources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#total_datasources GenaiAgent#total_datasources}
 
 ---
 
@@ -4779,9 +4827,9 @@ uuid: str
 
 - *Type:* str
 
-UUID	of the last indexing job.
+UUID  of the last indexing job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
 
 ---
 
@@ -4835,7 +4883,7 @@ agreement: typing.Union[IResolvable, typing.List[GenaiAgentModelAgreement]]
 
 agreement block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#agreement GenaiAgent#agreement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#agreement GenaiAgent#agreement}
 
 ---
 
@@ -4849,7 +4897,7 @@ inference_name: str
 
 Inference name of the model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#inference_name GenaiAgent#inference_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#inference_name GenaiAgent#inference_name}
 
 ---
 
@@ -4863,7 +4911,7 @@ inference_version: str
 
 Infernce version of the model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#inference_version GenaiAgent#inference_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#inference_version GenaiAgent#inference_version}
 
 ---
 
@@ -4877,7 +4925,7 @@ is_foundational: typing.Union[bool, IResolvable]
 
 Indicates if the Model Base is foundational.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#is_foundational GenaiAgent#is_foundational}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#is_foundational GenaiAgent#is_foundational}
 
 ---
 
@@ -4891,7 +4939,7 @@ name: str
 
 Name of the Knowledge Base.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#name GenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#name GenaiAgent#name}
 
 ---
 
@@ -4905,7 +4953,7 @@ parent_uuid: str
 
 Parent UUID of the Model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#parent_uuid GenaiAgent#parent_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#parent_uuid GenaiAgent#parent_uuid}
 
 ---
 
@@ -4919,7 +4967,7 @@ provider: str
 
 Provider of the Model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#provider GenaiAgent#provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#provider GenaiAgent#provider}
 
 ---
 
@@ -4933,7 +4981,7 @@ upload_complete: typing.Union[bool, IResolvable]
 
 Indicates if the Model upload is complete.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#upload_complete GenaiAgent#upload_complete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#upload_complete GenaiAgent#upload_complete}
 
 ---
 
@@ -4947,7 +4995,7 @@ url: str
 
 URL of the Model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#url GenaiAgent#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#url GenaiAgent#url}
 
 ---
 
@@ -4961,7 +5009,7 @@ usecases: typing.List[str]
 
 List of Usecases for the Model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#usecases GenaiAgent#usecases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#usecases GenaiAgent#usecases}
 
 ---
 
@@ -4975,7 +5023,7 @@ versions: typing.Union[IResolvable, typing.List[GenaiAgentModelVersions]]
 
 versions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#versions GenaiAgent#versions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#versions GenaiAgent#versions}
 
 ---
 
@@ -5015,7 +5063,7 @@ description: str
 
 Description of the agreement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#description GenaiAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#description GenaiAgent#description}
 
 ---
 
@@ -5029,7 +5077,7 @@ name: str
 
 Name of the agreement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#name GenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#name GenaiAgent#name}
 
 ---
 
@@ -5043,7 +5091,7 @@ url: str
 
 URL of the agreement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#url GenaiAgent#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#url GenaiAgent#url}
 
 ---
 
@@ -5057,7 +5105,7 @@ uuid: str
 
 UUID of the agreement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
 
 ---
 
@@ -5095,7 +5143,7 @@ major: typing.Union[int, float]
 
 Major version of the model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#major GenaiAgent#major}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#major GenaiAgent#major}
 
 ---
 
@@ -5109,7 +5157,7 @@ minor: typing.Union[int, float]
 
 Minor version of the model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#minor GenaiAgent#minor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#minor GenaiAgent#minor}
 
 ---
 
@@ -5123,7 +5171,7 @@ patch: typing.Union[int, float]
 
 Patch version of the model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#patch GenaiAgent#patch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#patch GenaiAgent#patch}
 
 ---
 
@@ -5161,7 +5209,7 @@ created_by: str
 
 Created By user ID for the API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#created_by GenaiAgent#created_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#created_by GenaiAgent#created_by}
 
 ---
 
@@ -5175,7 +5223,7 @@ name: str
 
 Name of the API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#name GenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#name GenaiAgent#name}
 
 ---
 
@@ -5189,7 +5237,7 @@ uuid: str
 
 API Key value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
 
 ---
 
@@ -5245,7 +5293,7 @@ instruction: str
 
 Instruction for the Agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#instruction GenaiAgent#instruction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#instruction GenaiAgent#instruction}
 
 ---
 
@@ -5259,7 +5307,7 @@ model_uuid: str
 
 Model UUID of the Agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#model_uuid GenaiAgent#model_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#model_uuid GenaiAgent#model_uuid}
 
 ---
 
@@ -5273,7 +5321,7 @@ name: str
 
 Name of the Agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#name GenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#name GenaiAgent#name}
 
 ---
 
@@ -5287,7 +5335,7 @@ project_id: str
 
 Project ID of the Agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#project_id GenaiAgent#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#project_id GenaiAgent#project_id}
 
 ---
 
@@ -5301,7 +5349,7 @@ region: str
 
 Region where the Agent is deployed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#region GenaiAgent#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#region GenaiAgent#region}
 
 ---
 
@@ -5315,7 +5363,7 @@ anthropic_api_key: typing.Union[IResolvable, typing.List[GenaiAgentParentAgentsA
 
 anthropic_api_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#anthropic_api_key GenaiAgent#anthropic_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#anthropic_api_key GenaiAgent#anthropic_api_key}
 
 ---
 
@@ -5329,7 +5377,7 @@ api_key_infos: typing.Union[IResolvable, typing.List[GenaiAgentParentAgentsApiKe
 
 api_key_infos block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#api_key_infos GenaiAgent#api_key_infos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#api_key_infos GenaiAgent#api_key_infos}
 
 ---
 
@@ -5343,7 +5391,7 @@ api_keys: typing.Union[IResolvable, typing.List[GenaiAgentParentAgentsApiKeys]]
 
 api_keys block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#api_keys GenaiAgent#api_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#api_keys GenaiAgent#api_keys}
 
 ---
 
@@ -5357,7 +5405,7 @@ chatbot: typing.Union[IResolvable, typing.List[GenaiAgentParentAgentsChatbot]]
 
 chatbot block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#chatbot GenaiAgent#chatbot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#chatbot GenaiAgent#chatbot}
 
 ---
 
@@ -5371,7 +5419,7 @@ chatbot_identifiers: typing.Union[IResolvable, typing.List[GenaiAgentParentAgent
 
 chatbot_identifiers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#chatbot_identifiers GenaiAgent#chatbot_identifiers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#chatbot_identifiers GenaiAgent#chatbot_identifiers}
 
 ---
 
@@ -5385,7 +5433,7 @@ deployment: typing.Union[IResolvable, typing.List[GenaiAgentParentAgentsDeployme
 
 deployment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#deployment GenaiAgent#deployment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#deployment GenaiAgent#deployment}
 
 ---
 
@@ -5399,7 +5447,7 @@ description: str
 
 Description for the Agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#description GenaiAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#description GenaiAgent#description}
 
 ---
 
@@ -5437,7 +5485,7 @@ created_by: str
 
 Created By user ID for the API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#created_by GenaiAgent#created_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#created_by GenaiAgent#created_by}
 
 ---
 
@@ -5451,7 +5499,7 @@ name: str
 
 Name of the API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#name GenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#name GenaiAgent#name}
 
 ---
 
@@ -5465,7 +5513,7 @@ uuid: str
 
 API Key value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
 
 ---
 
@@ -5505,7 +5553,7 @@ created_by: str
 
 Created By user ID for the API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#created_by GenaiAgent#created_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#created_by GenaiAgent#created_by}
 
 ---
 
@@ -5519,7 +5567,7 @@ name: str
 
 Name of the API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#name GenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#name GenaiAgent#name}
 
 ---
 
@@ -5533,7 +5581,7 @@ secret_key: str
 
 Updated At timestamp for the API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#secret_key GenaiAgent#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#secret_key GenaiAgent#secret_key}
 
 ---
 
@@ -5547,7 +5595,7 @@ uuid: str
 
 API Key value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
 
 ---
 
@@ -5581,7 +5629,7 @@ api_key: str
 
 API Key value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#api_key GenaiAgent#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#api_key GenaiAgent#api_key}
 
 ---
 
@@ -5625,7 +5673,7 @@ button_background_color: str
 
 Background color for the chatbot button.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#button_background_color GenaiAgent#button_background_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#button_background_color GenaiAgent#button_background_color}
 
 ---
 
@@ -5639,7 +5687,7 @@ logo: str
 
 Logo for the chatbot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#logo GenaiAgent#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#logo GenaiAgent#logo}
 
 ---
 
@@ -5653,7 +5701,7 @@ name: str
 
 Name of the chatbot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#name GenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#name GenaiAgent#name}
 
 ---
 
@@ -5667,7 +5715,7 @@ primary_color: str
 
 Primary color for the chatbot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#primary_color GenaiAgent#primary_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#primary_color GenaiAgent#primary_color}
 
 ---
 
@@ -5681,7 +5729,7 @@ secondary_color: str
 
 Secondary color for the chatbot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#secondary_color GenaiAgent#secondary_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#secondary_color GenaiAgent#secondary_color}
 
 ---
 
@@ -5695,7 +5743,7 @@ starting_message: str
 
 Starting message for the chatbot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#starting_message GenaiAgent#starting_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#starting_message GenaiAgent#starting_message}
 
 ---
 
@@ -5748,7 +5796,7 @@ name: str
 
 Name of the API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#name GenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#name GenaiAgent#name}
 
 ---
 
@@ -5762,7 +5810,7 @@ status: str
 
 Status of the Deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#status GenaiAgent#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#status GenaiAgent#status}
 
 ---
 
@@ -5776,7 +5824,7 @@ url: str
 
 Url of the Deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#url GenaiAgent#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#url GenaiAgent#url}
 
 ---
 
@@ -5790,7 +5838,7 @@ uuid: str
 
 API Key value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
 
 ---
 
@@ -5804,7 +5852,7 @@ visibility: str
 
 Visibility of the Deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#visibility GenaiAgent#visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#visibility GenaiAgent#visibility}
 
 ---
 
@@ -5856,7 +5904,7 @@ description: str
 
 Description of the Agent Template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#description GenaiAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#description GenaiAgent#description}
 
 ---
 
@@ -5870,7 +5918,7 @@ instruction: str
 
 Instruction for the Agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#instruction GenaiAgent#instruction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#instruction GenaiAgent#instruction}
 
 ---
 
@@ -5884,7 +5932,7 @@ k: typing.Union[int, float]
 
 K value for the Agent Template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#k GenaiAgent#k}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#k GenaiAgent#k}
 
 ---
 
@@ -5898,7 +5946,7 @@ knowledge_bases: typing.Union[IResolvable, typing.List[GenaiAgentTemplateKnowled
 
 knowledge_bases block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#knowledge_bases GenaiAgent#knowledge_bases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#knowledge_bases GenaiAgent#knowledge_bases}
 
 ---
 
@@ -5912,7 +5960,7 @@ max_tokens: typing.Union[int, float]
 
 Maximum tokens allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#max_tokens GenaiAgent#max_tokens}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#max_tokens GenaiAgent#max_tokens}
 
 ---
 
@@ -5926,7 +5974,7 @@ model: typing.Union[IResolvable, typing.List[GenaiAgentTemplateModel]]
 
 model block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#model GenaiAgent#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#model GenaiAgent#model}
 
 ---
 
@@ -5940,7 +5988,7 @@ name: str
 
 Name of the Agent Template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#name GenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#name GenaiAgent#name}
 
 ---
 
@@ -5954,7 +6002,7 @@ temperature: typing.Union[int, float]
 
 Agent temperature setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#temperature GenaiAgent#temperature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#temperature GenaiAgent#temperature}
 
 ---
 
@@ -5968,7 +6016,7 @@ top_p: typing.Union[int, float]
 
 Top P sampling parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#top_p GenaiAgent#top_p}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#top_p GenaiAgent#top_p}
 
 ---
 
@@ -5982,7 +6030,7 @@ uuid: str
 
 uuid of the Agent Template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
 
 ---
 
@@ -5994,11 +6042,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 from cdktf_cdktf_provider_digitalocean import genai_agent
 
 genaiAgent.GenaiAgentTemplateKnowledgeBases(
-  last_indexing_job: typing.Union[IResolvable, typing.List[GenaiAgentTemplateKnowledgeBasesLastIndexingJob]] = None,
+  database_id: str = None,
+  embedding_model_uuid: str = None,
+  is_public: typing.Union[bool, IResolvable] = None,
+  last_indexing_job: GenaiAgentTemplateKnowledgeBasesLastIndexingJob = None,
+  name: str = None,
+  project_id: str = None,
   region: str = None,
   tags: typing.List[str] = None,
-  user_id: str = None,
-  uuid: str = None
+  user_id: str = None
 )
 ```
 
@@ -6006,25 +6058,99 @@ genaiAgent.GenaiAgentTemplateKnowledgeBases(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.lastIndexingJob">last_indexing_job</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob">GenaiAgentTemplateKnowledgeBasesLastIndexingJob</a>]]</code> | last_indexing_job block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.databaseId">database_id</a></code> | <code>str</code> | Database ID of the Knowledge Base. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.embeddingModelUuid">embedding_model_uuid</a></code> | <code>str</code> | Embedding model UUID for the Knowledge Base. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.isPublic">is_public</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates if the Knowledge Base is public. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.lastIndexingJob">last_indexing_job</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob">GenaiAgentTemplateKnowledgeBasesLastIndexingJob</a></code> | last_indexing_job block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.name">name</a></code> | <code>str</code> | Name of the Knowledge Base. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.projectId">project_id</a></code> | <code>str</code> | Project ID of the Knowledge Base. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.region">region</a></code> | <code>str</code> | Region of the Knowledge Base. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.tags">tags</a></code> | <code>typing.List[str]</code> | List of tags. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.userId">user_id</a></code> | <code>str</code> | User ID of the Knowledge Base. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.uuid">uuid</a></code> | <code>str</code> | UUID of the Knowledge Base. |
+
+---
+
+##### `database_id`<sup>Optional</sup> <a name="database_id" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.databaseId"></a>
+
+```python
+database_id: str
+```
+
+- *Type:* str
+
+Database ID of the Knowledge Base.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#database_id GenaiAgent#database_id}
+
+---
+
+##### `embedding_model_uuid`<sup>Optional</sup> <a name="embedding_model_uuid" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.embeddingModelUuid"></a>
+
+```python
+embedding_model_uuid: str
+```
+
+- *Type:* str
+
+Embedding model UUID for the Knowledge Base.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#embedding_model_uuid GenaiAgent#embedding_model_uuid}
+
+---
+
+##### `is_public`<sup>Optional</sup> <a name="is_public" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.isPublic"></a>
+
+```python
+is_public: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Indicates if the Knowledge Base is public.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#is_public GenaiAgent#is_public}
 
 ---
 
 ##### `last_indexing_job`<sup>Optional</sup> <a name="last_indexing_job" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.lastIndexingJob"></a>
 
 ```python
-last_indexing_job: typing.Union[IResolvable, typing.List[GenaiAgentTemplateKnowledgeBasesLastIndexingJob]]
+last_indexing_job: GenaiAgentTemplateKnowledgeBasesLastIndexingJob
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob">GenaiAgentTemplateKnowledgeBasesLastIndexingJob</a>]]
+- *Type:* <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob">GenaiAgentTemplateKnowledgeBasesLastIndexingJob</a>
 
 last_indexing_job block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#last_indexing_job GenaiAgent#last_indexing_job}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#last_indexing_job GenaiAgent#last_indexing_job}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+Name of the Knowledge Base.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#name GenaiAgent#name}
+
+---
+
+##### `project_id`<sup>Optional</sup> <a name="project_id" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.projectId"></a>
+
+```python
+project_id: str
+```
+
+- *Type:* str
+
+Project ID of the Knowledge Base.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#project_id GenaiAgent#project_id}
 
 ---
 
@@ -6038,7 +6164,7 @@ region: str
 
 Region of the Knowledge Base.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#region GenaiAgent#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#region GenaiAgent#region}
 
 ---
 
@@ -6052,7 +6178,7 @@ tags: typing.List[str]
 
 List of tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#tags GenaiAgent#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#tags GenaiAgent#tags}
 
 ---
 
@@ -6066,21 +6192,7 @@ user_id: str
 
 User ID of the Knowledge Base.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#user_id GenaiAgent#user_id}
-
----
-
-##### `uuid`<sup>Optional</sup> <a name="uuid" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.uuid"></a>
-
-```python
-uuid: str
-```
-
-- *Type:* str
-
-UUID of the Knowledge Base.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#user_id GenaiAgent#user_id}
 
 ---
 
@@ -6093,8 +6205,7 @@ from cdktf_cdktf_provider_digitalocean import genai_agent
 
 genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob(
   completed_datasources: typing.Union[int, float] = None,
-  datasource_uuids: typing.List[str] = None,
-  knowledge_base_uuid: str = None,
+  data_source_uuids: typing.List[str] = None,
   phase: str = None,
   tokens: typing.Union[int, float] = None,
   total_datasources: typing.Union[int, float] = None,
@@ -6107,12 +6218,11 @@ genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob.property.completedDatasources">completed_datasources</a></code> | <code>typing.Union[int, float]</code> | Number of completed datasources in the last indexing job. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob.property.datasourceUuids">datasource_uuids</a></code> | <code>typing.List[str]</code> | Datasource UUIDs for the last indexing job. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob.property.knowledgeBaseUuid">knowledge_base_uuid</a></code> | <code>str</code> | UUID	of the Knowledge Base for the last indexing job. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob.property.dataSourceUuids">data_source_uuids</a></code> | <code>typing.List[str]</code> | Datasource UUIDs for the last indexing job. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob.property.phase">phase</a></code> | <code>str</code> | Phase of the last indexing job. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob.property.tokens">tokens</a></code> | <code>typing.Union[int, float]</code> | Number of tokens processed in the last indexing job. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob.property.totalDatasources">total_datasources</a></code> | <code>typing.Union[int, float]</code> | Total number of datasources in the last indexing job. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob.property.uuid">uuid</a></code> | <code>str</code> | UUID	of the last indexing job. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob.property.uuid">uuid</a></code> | <code>str</code> | UUID  of the last indexing job. |
 
 ---
 
@@ -6126,35 +6236,21 @@ completed_datasources: typing.Union[int, float]
 
 Number of completed datasources in the last indexing job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#completed_datasources GenaiAgent#completed_datasources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#completed_datasources GenaiAgent#completed_datasources}
 
 ---
 
-##### `datasource_uuids`<sup>Optional</sup> <a name="datasource_uuids" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob.property.datasourceUuids"></a>
+##### `data_source_uuids`<sup>Optional</sup> <a name="data_source_uuids" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob.property.dataSourceUuids"></a>
 
 ```python
-datasource_uuids: typing.List[str]
+data_source_uuids: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
 
 Datasource UUIDs for the last indexing job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#datasource_uuids GenaiAgent#datasource_uuids}
-
----
-
-##### `knowledge_base_uuid`<sup>Optional</sup> <a name="knowledge_base_uuid" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob.property.knowledgeBaseUuid"></a>
-
-```python
-knowledge_base_uuid: str
-```
-
-- *Type:* str
-
-UUID	of the Knowledge Base for the last indexing job.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#knowledge_base_uuid GenaiAgent#knowledge_base_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#data_source_uuids GenaiAgent#data_source_uuids}
 
 ---
 
@@ -6168,7 +6264,7 @@ phase: str
 
 Phase of the last indexing job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#phase GenaiAgent#phase}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#phase GenaiAgent#phase}
 
 ---
 
@@ -6182,7 +6278,7 @@ tokens: typing.Union[int, float]
 
 Number of tokens processed in the last indexing job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#tokens GenaiAgent#tokens}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#tokens GenaiAgent#tokens}
 
 ---
 
@@ -6196,7 +6292,7 @@ total_datasources: typing.Union[int, float]
 
 Total number of datasources in the last indexing job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#total_datasources GenaiAgent#total_datasources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#total_datasources GenaiAgent#total_datasources}
 
 ---
 
@@ -6208,9 +6304,9 @@ uuid: str
 
 - *Type:* str
 
-UUID	of the last indexing job.
+UUID  of the last indexing job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
 
 ---
 
@@ -6264,7 +6360,7 @@ agreement: typing.Union[IResolvable, typing.List[GenaiAgentTemplateModelAgreemen
 
 agreement block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#agreement GenaiAgent#agreement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#agreement GenaiAgent#agreement}
 
 ---
 
@@ -6278,7 +6374,7 @@ inference_name: str
 
 Inference name of the model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#inference_name GenaiAgent#inference_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#inference_name GenaiAgent#inference_name}
 
 ---
 
@@ -6292,7 +6388,7 @@ inference_version: str
 
 Infernce version of the model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#inference_version GenaiAgent#inference_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#inference_version GenaiAgent#inference_version}
 
 ---
 
@@ -6306,7 +6402,7 @@ is_foundational: typing.Union[bool, IResolvable]
 
 Indicates if the Model Base is foundational.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#is_foundational GenaiAgent#is_foundational}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#is_foundational GenaiAgent#is_foundational}
 
 ---
 
@@ -6320,7 +6416,7 @@ name: str
 
 Name of the Knowledge Base.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#name GenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#name GenaiAgent#name}
 
 ---
 
@@ -6334,7 +6430,7 @@ parent_uuid: str
 
 Parent UUID of the Model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#parent_uuid GenaiAgent#parent_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#parent_uuid GenaiAgent#parent_uuid}
 
 ---
 
@@ -6348,7 +6444,7 @@ provider: str
 
 Provider of the Model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#provider GenaiAgent#provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#provider GenaiAgent#provider}
 
 ---
 
@@ -6362,7 +6458,7 @@ upload_complete: typing.Union[bool, IResolvable]
 
 Indicates if the Model upload is complete.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#upload_complete GenaiAgent#upload_complete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#upload_complete GenaiAgent#upload_complete}
 
 ---
 
@@ -6376,7 +6472,7 @@ url: str
 
 URL of the Model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#url GenaiAgent#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#url GenaiAgent#url}
 
 ---
 
@@ -6390,7 +6486,7 @@ usecases: typing.List[str]
 
 List of Usecases for the Model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#usecases GenaiAgent#usecases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#usecases GenaiAgent#usecases}
 
 ---
 
@@ -6404,7 +6500,7 @@ versions: typing.Union[IResolvable, typing.List[GenaiAgentTemplateModelVersions]
 
 versions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#versions GenaiAgent#versions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#versions GenaiAgent#versions}
 
 ---
 
@@ -6444,7 +6540,7 @@ description: str
 
 Description of the agreement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#description GenaiAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#description GenaiAgent#description}
 
 ---
 
@@ -6458,7 +6554,7 @@ name: str
 
 Name of the agreement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#name GenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#name GenaiAgent#name}
 
 ---
 
@@ -6472,7 +6568,7 @@ url: str
 
 URL of the agreement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#url GenaiAgent#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#url GenaiAgent#url}
 
 ---
 
@@ -6486,7 +6582,7 @@ uuid: str
 
 UUID of the agreement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
 
 ---
 
@@ -6524,7 +6620,7 @@ major: typing.Union[int, float]
 
 Major version of the model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#major GenaiAgent#major}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#major GenaiAgent#major}
 
 ---
 
@@ -6538,7 +6634,7 @@ minor: typing.Union[int, float]
 
 Minor version of the model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#minor GenaiAgent#minor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#minor GenaiAgent#minor}
 
 ---
 
@@ -6552,7 +6648,7 @@ patch: typing.Union[int, float]
 
 Patch version of the model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/genai_agent#patch GenaiAgent#patch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#patch GenaiAgent#patch}
 
 ---
 
@@ -15758,176 +15854,6 @@ internal_value: typing.Union[IResolvable, GenaiAgentFunctions]
 ---
 
 
-### GenaiAgentKnowledgeBasesLastIndexingJobList <a name="GenaiAgentKnowledgeBasesLastIndexingJobList" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobList"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobList.Initializer"></a>
-
-```python
-from cdktf_cdktf_provider_digitalocean import genai_agent
-
-genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobList(
-  terraform_resource: IInterpolatingParent,
-  terraform_attribute: str,
-  wraps_set: bool
-)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobList.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobList.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobList.Initializer.parameter.wrapsSet"></a>
-
-- *Type:* bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobList.get">get</a></code> | *No description.* |
-
----
-
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobList.allWithMapKey"></a>
-
-```python
-def all_with_map_key(
-  map_key_attribute_name: str
-) -> DynamicListTerraformIterator
-```
-
-Creating an iterator for this complex list.
-
-The list will be converted into a map with the mapKeyAttributeName as the key.
-
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobList.allWithMapKey.parameter.mapKeyAttributeName"></a>
-
-- *Type:* str
-
----
-
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobList.computeFqn"></a>
-
-```python
-def compute_fqn() -> str
-```
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobList.resolve"></a>
-
-```python
-def resolve(
-  _context: IResolveContext
-) -> typing.Any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobList.resolve.parameter._context"></a>
-
-- *Type:* cdktf.IResolveContext
-
----
-
-##### `to_string` <a name="to_string" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobList.toString"></a>
-
-```python
-def to_string() -> str
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `get` <a name="get" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobList.get"></a>
-
-```python
-def get(
-  index: typing.Union[int, float]
-) -> GenaiAgentKnowledgeBasesLastIndexingJobOutputReference
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobList.get.parameter.index"></a>
-
-- *Type:* typing.Union[int, float]
-
-the index of the item to return.
-
----
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob">GenaiAgentKnowledgeBasesLastIndexingJob</a>]]</code> | *No description.* |
-
----
-
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobList.property.creationStack"></a>
-
-```python
-creation_stack: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobList.property.fqn"></a>
-
-```python
-fqn: str
-```
-
-- *Type:* str
-
----
-
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobList.property.internalValue"></a>
-
-```python
-internal_value: typing.Union[IResolvable, typing.List[GenaiAgentKnowledgeBasesLastIndexingJob]]
-```
-
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob">GenaiAgentKnowledgeBasesLastIndexingJob</a>]]
-
----
-
-
 ### GenaiAgentKnowledgeBasesLastIndexingJobOutputReference <a name="GenaiAgentKnowledgeBasesLastIndexingJobOutputReference" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.Initializer"></a>
@@ -15937,9 +15863,7 @@ from cdktf_cdktf_provider_digitalocean import genai_agent
 
 genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference(
   terraform_resource: IInterpolatingParent,
-  terraform_attribute: str,
-  complex_object_index: typing.Union[int, float],
-  complex_object_is_from_set: bool
+  terraform_attribute: str
 )
 ```
 
@@ -15947,8 +15871,6 @@ genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -15965,22 +15887,6 @@ The parent resource.
 - *Type:* str
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.Initializer.parameter.complexObjectIndex"></a>
-
-- *Type:* typing.Union[int, float]
-
-the index of this item in the list.
-
----
-
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
-
-- *Type:* bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -16002,8 +15908,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.resetCompletedDatasources">reset_completed_datasources</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.resetDatasourceUuids">reset_datasource_uuids</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.resetKnowledgeBaseUuid">reset_knowledge_base_uuid</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.resetDataSourceUuids">reset_data_source_uuids</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.resetPhase">reset_phase</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.resetTokens">reset_tokens</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.resetTotalDatasources">reset_total_datasources</a></code> | *No description.* |
@@ -16189,16 +16094,10 @@ Returns a reversible string representation.
 def reset_completed_datasources() -> None
 ```
 
-##### `reset_datasource_uuids` <a name="reset_datasource_uuids" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.resetDatasourceUuids"></a>
+##### `reset_data_source_uuids` <a name="reset_data_source_uuids" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.resetDataSourceUuids"></a>
 
 ```python
-def reset_datasource_uuids() -> None
-```
-
-##### `reset_knowledge_base_uuid` <a name="reset_knowledge_base_uuid" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.resetKnowledgeBaseUuid"></a>
-
-```python
-def reset_knowledge_base_uuid() -> None
+def reset_data_source_uuids() -> None
 ```
 
 ##### `reset_phase` <a name="reset_phase" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.resetPhase"></a>
@@ -16234,23 +16133,22 @@ def reset_uuid() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.property.createdAt">created_at</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.property.finishedAt">finished_at</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.property.knowledgeBaseUuid">knowledge_base_uuid</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.property.startedAt">started_at</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.property.updatedAt">updated_at</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.property.completedDatasourcesInput">completed_datasources_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.property.datasourceUuidsInput">datasource_uuids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.property.knowledgeBaseUuidInput">knowledge_base_uuid_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.property.dataSourceUuidsInput">data_source_uuids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.property.phaseInput">phase_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.property.tokensInput">tokens_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.property.totalDatasourcesInput">total_datasources_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.property.uuidInput">uuid_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.property.completedDatasources">completed_datasources</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.property.datasourceUuids">datasource_uuids</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.property.knowledgeBaseUuid">knowledge_base_uuid</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.property.dataSourceUuids">data_source_uuids</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.property.phase">phase</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.property.tokens">tokens</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.property.totalDatasources">total_datasources</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.property.uuid">uuid</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob">GenaiAgentKnowledgeBasesLastIndexingJob</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob">GenaiAgentKnowledgeBasesLastIndexingJob</a></code> | *No description.* |
 
 ---
 
@@ -16298,6 +16196,16 @@ finished_at: str
 
 ---
 
+##### `knowledge_base_uuid`<sup>Required</sup> <a name="knowledge_base_uuid" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.property.knowledgeBaseUuid"></a>
+
+```python
+knowledge_base_uuid: str
+```
+
+- *Type:* str
+
+---
+
 ##### `started_at`<sup>Required</sup> <a name="started_at" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.property.startedAt"></a>
 
 ```python
@@ -16328,23 +16236,13 @@ completed_datasources_input: typing.Union[int, float]
 
 ---
 
-##### `datasource_uuids_input`<sup>Optional</sup> <a name="datasource_uuids_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.property.datasourceUuidsInput"></a>
+##### `data_source_uuids_input`<sup>Optional</sup> <a name="data_source_uuids_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.property.dataSourceUuidsInput"></a>
 
 ```python
-datasource_uuids_input: typing.List[str]
+data_source_uuids_input: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
-
----
-
-##### `knowledge_base_uuid_input`<sup>Optional</sup> <a name="knowledge_base_uuid_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.property.knowledgeBaseUuidInput"></a>
-
-```python
-knowledge_base_uuid_input: str
-```
-
-- *Type:* str
 
 ---
 
@@ -16398,23 +16296,13 @@ completed_datasources: typing.Union[int, float]
 
 ---
 
-##### `datasource_uuids`<sup>Required</sup> <a name="datasource_uuids" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.property.datasourceUuids"></a>
+##### `data_source_uuids`<sup>Required</sup> <a name="data_source_uuids" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.property.dataSourceUuids"></a>
 
 ```python
-datasource_uuids: typing.List[str]
+data_source_uuids: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
-
----
-
-##### `knowledge_base_uuid`<sup>Required</sup> <a name="knowledge_base_uuid" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.property.knowledgeBaseUuid"></a>
-
-```python
-knowledge_base_uuid: str
-```
-
-- *Type:* str
 
 ---
 
@@ -16461,10 +16349,10 @@ uuid: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GenaiAgentKnowledgeBasesLastIndexingJob]
+internal_value: GenaiAgentKnowledgeBasesLastIndexingJob
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob">GenaiAgentKnowledgeBasesLastIndexingJob</a>]
+- *Type:* <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob">GenaiAgentKnowledgeBasesLastIndexingJob</a>
 
 ---
 
@@ -16713,11 +16601,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.putLastIndexingJob">put_last_indexing_job</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.resetDatabaseId">reset_database_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.resetEmbeddingModelUuid">reset_embedding_model_uuid</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.resetIsPublic">reset_is_public</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.resetLastIndexingJob">reset_last_indexing_job</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.resetName">reset_name</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.resetProjectId">reset_project_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.resetRegion">reset_region</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.resetTags">reset_tags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.resetUserId">reset_user_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.resetUuid">reset_uuid</a></code> | *No description.* |
 
 ---
 
@@ -16897,20 +16789,109 @@ Returns a reversible string representation.
 
 ```python
 def put_last_indexing_job(
-  value: typing.Union[IResolvable, typing.List[GenaiAgentKnowledgeBasesLastIndexingJob]]
+  completed_datasources: typing.Union[int, float] = None,
+  data_source_uuids: typing.List[str] = None,
+  phase: str = None,
+  tokens: typing.Union[int, float] = None,
+  total_datasources: typing.Union[int, float] = None,
+  uuid: str = None
 ) -> None
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.putLastIndexingJob.parameter.value"></a>
+###### `completed_datasources`<sup>Optional</sup> <a name="completed_datasources" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.putLastIndexingJob.parameter.completedDatasources"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob">GenaiAgentKnowledgeBasesLastIndexingJob</a>]]
+- *Type:* typing.Union[int, float]
+
+Number of completed datasources in the last indexing job.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#completed_datasources GenaiAgent#completed_datasources}
 
 ---
+
+###### `data_source_uuids`<sup>Optional</sup> <a name="data_source_uuids" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.putLastIndexingJob.parameter.dataSourceUuids"></a>
+
+- *Type:* typing.List[str]
+
+Datasource UUIDs for the last indexing job.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#data_source_uuids GenaiAgent#data_source_uuids}
+
+---
+
+###### `phase`<sup>Optional</sup> <a name="phase" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.putLastIndexingJob.parameter.phase"></a>
+
+- *Type:* str
+
+Phase of the last indexing job.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#phase GenaiAgent#phase}
+
+---
+
+###### `tokens`<sup>Optional</sup> <a name="tokens" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.putLastIndexingJob.parameter.tokens"></a>
+
+- *Type:* typing.Union[int, float]
+
+Number of tokens processed in the last indexing job.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#tokens GenaiAgent#tokens}
+
+---
+
+###### `total_datasources`<sup>Optional</sup> <a name="total_datasources" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.putLastIndexingJob.parameter.totalDatasources"></a>
+
+- *Type:* typing.Union[int, float]
+
+Total number of datasources in the last indexing job.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#total_datasources GenaiAgent#total_datasources}
+
+---
+
+###### `uuid`<sup>Optional</sup> <a name="uuid" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.putLastIndexingJob.parameter.uuid"></a>
+
+- *Type:* str
+
+UUID  of the last indexing job.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+
+---
+
+##### `reset_database_id` <a name="reset_database_id" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.resetDatabaseId"></a>
+
+```python
+def reset_database_id() -> None
+```
+
+##### `reset_embedding_model_uuid` <a name="reset_embedding_model_uuid" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.resetEmbeddingModelUuid"></a>
+
+```python
+def reset_embedding_model_uuid() -> None
+```
+
+##### `reset_is_public` <a name="reset_is_public" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.resetIsPublic"></a>
+
+```python
+def reset_is_public() -> None
+```
 
 ##### `reset_last_indexing_job` <a name="reset_last_indexing_job" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.resetLastIndexingJob"></a>
 
 ```python
 def reset_last_indexing_job() -> None
+```
+
+##### `reset_name` <a name="reset_name" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.resetName"></a>
+
+```python
+def reset_name() -> None
+```
+
+##### `reset_project_id` <a name="reset_project_id" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.resetProjectId"></a>
+
+```python
+def reset_project_id() -> None
 ```
 
 ##### `reset_region` <a name="reset_region" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.resetRegion"></a>
@@ -16931,12 +16912,6 @@ def reset_tags() -> None
 def reset_user_id() -> None
 ```
 
-##### `reset_uuid` <a name="reset_uuid" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.resetUuid"></a>
-
-```python
-def reset_uuid() -> None
-```
-
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -16946,22 +16921,25 @@ def reset_uuid() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.addedToAgentAt">added_to_agent_at</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.createdAt">created_at</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.databaseId">database_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.embeddingModelUuid">embedding_model_uuid</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.isPublic">is_public</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.lastIndexingJob">last_indexing_job</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobList">GenaiAgentKnowledgeBasesLastIndexingJobList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.projectId">project_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.lastIndexingJob">last_indexing_job</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference">GenaiAgentKnowledgeBasesLastIndexingJobOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.updatedAt">updated_at</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.lastIndexingJobInput">last_indexing_job_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob">GenaiAgentKnowledgeBasesLastIndexingJob</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.databaseIdInput">database_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.embeddingModelUuidInput">embedding_model_uuid_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.isPublicInput">is_public_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.lastIndexingJobInput">last_indexing_job_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob">GenaiAgentKnowledgeBasesLastIndexingJob</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.projectIdInput">project_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.tagsInput">tags_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.userIdInput">user_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.uuidInput">uuid_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.databaseId">database_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.embeddingModelUuid">embedding_model_uuid</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.isPublic">is_public</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.projectId">project_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.tags">tags</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.userId">user_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.uuid">uuid</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>]</code> | *No description.* |
 
 ---
@@ -17010,63 +16988,13 @@ created_at: str
 
 ---
 
-##### `database_id`<sup>Required</sup> <a name="database_id" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.databaseId"></a>
-
-```python
-database_id: str
-```
-
-- *Type:* str
-
----
-
-##### `embedding_model_uuid`<sup>Required</sup> <a name="embedding_model_uuid" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.embeddingModelUuid"></a>
-
-```python
-embedding_model_uuid: str
-```
-
-- *Type:* str
-
----
-
-##### `is_public`<sup>Required</sup> <a name="is_public" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.isPublic"></a>
-
-```python
-is_public: IResolvable
-```
-
-- *Type:* cdktf.IResolvable
-
----
-
 ##### `last_indexing_job`<sup>Required</sup> <a name="last_indexing_job" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.lastIndexingJob"></a>
 
 ```python
-last_indexing_job: GenaiAgentKnowledgeBasesLastIndexingJobList
+last_indexing_job: GenaiAgentKnowledgeBasesLastIndexingJobOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobList">GenaiAgentKnowledgeBasesLastIndexingJobList</a>
-
----
-
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.name"></a>
-
-```python
-name: str
-```
-
-- *Type:* str
-
----
-
-##### `project_id`<sup>Required</sup> <a name="project_id" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.projectId"></a>
-
-```python
-project_id: str
-```
-
-- *Type:* str
+- *Type:* <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference">GenaiAgentKnowledgeBasesLastIndexingJobOutputReference</a>
 
 ---
 
@@ -17080,13 +17008,63 @@ updated_at: str
 
 ---
 
+##### `database_id_input`<sup>Optional</sup> <a name="database_id_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.databaseIdInput"></a>
+
+```python
+database_id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `embedding_model_uuid_input`<sup>Optional</sup> <a name="embedding_model_uuid_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.embeddingModelUuidInput"></a>
+
+```python
+embedding_model_uuid_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `is_public_input`<sup>Optional</sup> <a name="is_public_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.isPublicInput"></a>
+
+```python
+is_public_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `last_indexing_job_input`<sup>Optional</sup> <a name="last_indexing_job_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.lastIndexingJobInput"></a>
 
 ```python
-last_indexing_job_input: typing.Union[IResolvable, typing.List[GenaiAgentKnowledgeBasesLastIndexingJob]]
+last_indexing_job_input: GenaiAgentKnowledgeBasesLastIndexingJob
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob">GenaiAgentKnowledgeBasesLastIndexingJob</a>]]
+- *Type:* <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob">GenaiAgentKnowledgeBasesLastIndexingJob</a>
+
+---
+
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.nameInput"></a>
+
+```python
+name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `project_id_input`<sup>Optional</sup> <a name="project_id_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.projectIdInput"></a>
+
+```python
+project_id_input: str
+```
+
+- *Type:* str
 
 ---
 
@@ -17120,10 +17098,50 @@ user_id_input: str
 
 ---
 
-##### `uuid_input`<sup>Optional</sup> <a name="uuid_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.uuidInput"></a>
+##### `database_id`<sup>Required</sup> <a name="database_id" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.databaseId"></a>
 
 ```python
-uuid_input: str
+database_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `embedding_model_uuid`<sup>Required</sup> <a name="embedding_model_uuid" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.embeddingModelUuid"></a>
+
+```python
+embedding_model_uuid: str
+```
+
+- *Type:* str
+
+---
+
+##### `is_public`<sup>Required</sup> <a name="is_public" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.isPublic"></a>
+
+```python
+is_public: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
+##### `project_id`<sup>Required</sup> <a name="project_id" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.projectId"></a>
+
+```python
+project_id: str
 ```
 
 - *Type:* str
@@ -17154,16 +17172,6 @@ tags: typing.List[str]
 
 ```python
 user_id: str
-```
-
-- *Type:* str
-
----
-
-##### `uuid`<sup>Required</sup> <a name="uuid" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.uuid"></a>
-
-```python
-uuid: str
 ```
 
 - *Type:* str
@@ -24032,176 +24040,6 @@ internal_value: typing.Union[IResolvable, GenaiAgentParentAgents]
 ---
 
 
-### GenaiAgentTemplateKnowledgeBasesLastIndexingJobList <a name="GenaiAgentTemplateKnowledgeBasesLastIndexingJobList" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobList"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobList.Initializer"></a>
-
-```python
-from cdktf_cdktf_provider_digitalocean import genai_agent
-
-genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobList(
-  terraform_resource: IInterpolatingParent,
-  terraform_attribute: str,
-  wraps_set: bool
-)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobList.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobList.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobList.Initializer.parameter.wrapsSet"></a>
-
-- *Type:* bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobList.get">get</a></code> | *No description.* |
-
----
-
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobList.allWithMapKey"></a>
-
-```python
-def all_with_map_key(
-  map_key_attribute_name: str
-) -> DynamicListTerraformIterator
-```
-
-Creating an iterator for this complex list.
-
-The list will be converted into a map with the mapKeyAttributeName as the key.
-
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobList.allWithMapKey.parameter.mapKeyAttributeName"></a>
-
-- *Type:* str
-
----
-
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobList.computeFqn"></a>
-
-```python
-def compute_fqn() -> str
-```
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobList.resolve"></a>
-
-```python
-def resolve(
-  _context: IResolveContext
-) -> typing.Any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobList.resolve.parameter._context"></a>
-
-- *Type:* cdktf.IResolveContext
-
----
-
-##### `to_string` <a name="to_string" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobList.toString"></a>
-
-```python
-def to_string() -> str
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `get` <a name="get" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobList.get"></a>
-
-```python
-def get(
-  index: typing.Union[int, float]
-) -> GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobList.get.parameter.index"></a>
-
-- *Type:* typing.Union[int, float]
-
-the index of the item to return.
-
----
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob">GenaiAgentTemplateKnowledgeBasesLastIndexingJob</a>]]</code> | *No description.* |
-
----
-
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobList.property.creationStack"></a>
-
-```python
-creation_stack: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobList.property.fqn"></a>
-
-```python
-fqn: str
-```
-
-- *Type:* str
-
----
-
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobList.property.internalValue"></a>
-
-```python
-internal_value: typing.Union[IResolvable, typing.List[GenaiAgentTemplateKnowledgeBasesLastIndexingJob]]
-```
-
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob">GenaiAgentTemplateKnowledgeBasesLastIndexingJob</a>]]
-
----
-
-
 ### GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference <a name="GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.Initializer"></a>
@@ -24211,9 +24049,7 @@ from cdktf_cdktf_provider_digitalocean import genai_agent
 
 genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference(
   terraform_resource: IInterpolatingParent,
-  terraform_attribute: str,
-  complex_object_index: typing.Union[int, float],
-  complex_object_is_from_set: bool
+  terraform_attribute: str
 )
 ```
 
@@ -24221,8 +24057,6 @@ genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -24239,22 +24073,6 @@ The parent resource.
 - *Type:* str
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.Initializer.parameter.complexObjectIndex"></a>
-
-- *Type:* typing.Union[int, float]
-
-the index of this item in the list.
-
----
-
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
-
-- *Type:* bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -24276,8 +24094,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.resetCompletedDatasources">reset_completed_datasources</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.resetDatasourceUuids">reset_datasource_uuids</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.resetKnowledgeBaseUuid">reset_knowledge_base_uuid</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.resetDataSourceUuids">reset_data_source_uuids</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.resetPhase">reset_phase</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.resetTokens">reset_tokens</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.resetTotalDatasources">reset_total_datasources</a></code> | *No description.* |
@@ -24463,16 +24280,10 @@ Returns a reversible string representation.
 def reset_completed_datasources() -> None
 ```
 
-##### `reset_datasource_uuids` <a name="reset_datasource_uuids" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.resetDatasourceUuids"></a>
+##### `reset_data_source_uuids` <a name="reset_data_source_uuids" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.resetDataSourceUuids"></a>
 
 ```python
-def reset_datasource_uuids() -> None
-```
-
-##### `reset_knowledge_base_uuid` <a name="reset_knowledge_base_uuid" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.resetKnowledgeBaseUuid"></a>
-
-```python
-def reset_knowledge_base_uuid() -> None
+def reset_data_source_uuids() -> None
 ```
 
 ##### `reset_phase` <a name="reset_phase" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.resetPhase"></a>
@@ -24508,23 +24319,22 @@ def reset_uuid() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.property.createdAt">created_at</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.property.finishedAt">finished_at</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.property.knowledgeBaseUuid">knowledge_base_uuid</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.property.startedAt">started_at</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.property.updatedAt">updated_at</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.property.completedDatasourcesInput">completed_datasources_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.property.datasourceUuidsInput">datasource_uuids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.property.knowledgeBaseUuidInput">knowledge_base_uuid_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.property.dataSourceUuidsInput">data_source_uuids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.property.phaseInput">phase_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.property.tokensInput">tokens_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.property.totalDatasourcesInput">total_datasources_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.property.uuidInput">uuid_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.property.completedDatasources">completed_datasources</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.property.datasourceUuids">datasource_uuids</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.property.knowledgeBaseUuid">knowledge_base_uuid</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.property.dataSourceUuids">data_source_uuids</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.property.phase">phase</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.property.tokens">tokens</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.property.totalDatasources">total_datasources</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.property.uuid">uuid</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob">GenaiAgentTemplateKnowledgeBasesLastIndexingJob</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob">GenaiAgentTemplateKnowledgeBasesLastIndexingJob</a></code> | *No description.* |
 
 ---
 
@@ -24572,6 +24382,16 @@ finished_at: str
 
 ---
 
+##### `knowledge_base_uuid`<sup>Required</sup> <a name="knowledge_base_uuid" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.property.knowledgeBaseUuid"></a>
+
+```python
+knowledge_base_uuid: str
+```
+
+- *Type:* str
+
+---
+
 ##### `started_at`<sup>Required</sup> <a name="started_at" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.property.startedAt"></a>
 
 ```python
@@ -24602,23 +24422,13 @@ completed_datasources_input: typing.Union[int, float]
 
 ---
 
-##### `datasource_uuids_input`<sup>Optional</sup> <a name="datasource_uuids_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.property.datasourceUuidsInput"></a>
+##### `data_source_uuids_input`<sup>Optional</sup> <a name="data_source_uuids_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.property.dataSourceUuidsInput"></a>
 
 ```python
-datasource_uuids_input: typing.List[str]
+data_source_uuids_input: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
-
----
-
-##### `knowledge_base_uuid_input`<sup>Optional</sup> <a name="knowledge_base_uuid_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.property.knowledgeBaseUuidInput"></a>
-
-```python
-knowledge_base_uuid_input: str
-```
-
-- *Type:* str
 
 ---
 
@@ -24672,23 +24482,13 @@ completed_datasources: typing.Union[int, float]
 
 ---
 
-##### `datasource_uuids`<sup>Required</sup> <a name="datasource_uuids" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.property.datasourceUuids"></a>
+##### `data_source_uuids`<sup>Required</sup> <a name="data_source_uuids" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.property.dataSourceUuids"></a>
 
 ```python
-datasource_uuids: typing.List[str]
+data_source_uuids: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
-
----
-
-##### `knowledge_base_uuid`<sup>Required</sup> <a name="knowledge_base_uuid" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.property.knowledgeBaseUuid"></a>
-
-```python
-knowledge_base_uuid: str
-```
-
-- *Type:* str
 
 ---
 
@@ -24735,10 +24535,10 @@ uuid: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GenaiAgentTemplateKnowledgeBasesLastIndexingJob]
+internal_value: GenaiAgentTemplateKnowledgeBasesLastIndexingJob
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob">GenaiAgentTemplateKnowledgeBasesLastIndexingJob</a>]
+- *Type:* <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob">GenaiAgentTemplateKnowledgeBasesLastIndexingJob</a>
 
 ---
 
@@ -24987,11 +24787,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.putLastIndexingJob">put_last_indexing_job</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.resetDatabaseId">reset_database_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.resetEmbeddingModelUuid">reset_embedding_model_uuid</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.resetIsPublic">reset_is_public</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.resetLastIndexingJob">reset_last_indexing_job</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.resetName">reset_name</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.resetProjectId">reset_project_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.resetRegion">reset_region</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.resetTags">reset_tags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.resetUserId">reset_user_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.resetUuid">reset_uuid</a></code> | *No description.* |
 
 ---
 
@@ -25171,20 +24975,109 @@ Returns a reversible string representation.
 
 ```python
 def put_last_indexing_job(
-  value: typing.Union[IResolvable, typing.List[GenaiAgentTemplateKnowledgeBasesLastIndexingJob]]
+  completed_datasources: typing.Union[int, float] = None,
+  data_source_uuids: typing.List[str] = None,
+  phase: str = None,
+  tokens: typing.Union[int, float] = None,
+  total_datasources: typing.Union[int, float] = None,
+  uuid: str = None
 ) -> None
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.putLastIndexingJob.parameter.value"></a>
+###### `completed_datasources`<sup>Optional</sup> <a name="completed_datasources" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.putLastIndexingJob.parameter.completedDatasources"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob">GenaiAgentTemplateKnowledgeBasesLastIndexingJob</a>]]
+- *Type:* typing.Union[int, float]
+
+Number of completed datasources in the last indexing job.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#completed_datasources GenaiAgent#completed_datasources}
 
 ---
+
+###### `data_source_uuids`<sup>Optional</sup> <a name="data_source_uuids" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.putLastIndexingJob.parameter.dataSourceUuids"></a>
+
+- *Type:* typing.List[str]
+
+Datasource UUIDs for the last indexing job.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#data_source_uuids GenaiAgent#data_source_uuids}
+
+---
+
+###### `phase`<sup>Optional</sup> <a name="phase" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.putLastIndexingJob.parameter.phase"></a>
+
+- *Type:* str
+
+Phase of the last indexing job.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#phase GenaiAgent#phase}
+
+---
+
+###### `tokens`<sup>Optional</sup> <a name="tokens" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.putLastIndexingJob.parameter.tokens"></a>
+
+- *Type:* typing.Union[int, float]
+
+Number of tokens processed in the last indexing job.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#tokens GenaiAgent#tokens}
+
+---
+
+###### `total_datasources`<sup>Optional</sup> <a name="total_datasources" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.putLastIndexingJob.parameter.totalDatasources"></a>
+
+- *Type:* typing.Union[int, float]
+
+Total number of datasources in the last indexing job.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#total_datasources GenaiAgent#total_datasources}
+
+---
+
+###### `uuid`<sup>Optional</sup> <a name="uuid" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.putLastIndexingJob.parameter.uuid"></a>
+
+- *Type:* str
+
+UUID  of the last indexing job.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+
+---
+
+##### `reset_database_id` <a name="reset_database_id" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.resetDatabaseId"></a>
+
+```python
+def reset_database_id() -> None
+```
+
+##### `reset_embedding_model_uuid` <a name="reset_embedding_model_uuid" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.resetEmbeddingModelUuid"></a>
+
+```python
+def reset_embedding_model_uuid() -> None
+```
+
+##### `reset_is_public` <a name="reset_is_public" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.resetIsPublic"></a>
+
+```python
+def reset_is_public() -> None
+```
 
 ##### `reset_last_indexing_job` <a name="reset_last_indexing_job" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.resetLastIndexingJob"></a>
 
 ```python
 def reset_last_indexing_job() -> None
+```
+
+##### `reset_name` <a name="reset_name" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.resetName"></a>
+
+```python
+def reset_name() -> None
+```
+
+##### `reset_project_id` <a name="reset_project_id" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.resetProjectId"></a>
+
+```python
+def reset_project_id() -> None
 ```
 
 ##### `reset_region` <a name="reset_region" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.resetRegion"></a>
@@ -25205,12 +25098,6 @@ def reset_tags() -> None
 def reset_user_id() -> None
 ```
 
-##### `reset_uuid` <a name="reset_uuid" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.resetUuid"></a>
-
-```python
-def reset_uuid() -> None
-```
-
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -25220,22 +25107,25 @@ def reset_uuid() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.addedToAgentAt">added_to_agent_at</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.createdAt">created_at</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.databaseId">database_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.embeddingModelUuid">embedding_model_uuid</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.isPublic">is_public</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.lastIndexingJob">last_indexing_job</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobList">GenaiAgentTemplateKnowledgeBasesLastIndexingJobList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.projectId">project_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.lastIndexingJob">last_indexing_job</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference">GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.updatedAt">updated_at</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.lastIndexingJobInput">last_indexing_job_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob">GenaiAgentTemplateKnowledgeBasesLastIndexingJob</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.databaseIdInput">database_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.embeddingModelUuidInput">embedding_model_uuid_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.isPublicInput">is_public_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.lastIndexingJobInput">last_indexing_job_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob">GenaiAgentTemplateKnowledgeBasesLastIndexingJob</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.projectIdInput">project_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.tagsInput">tags_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.userIdInput">user_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.uuidInput">uuid_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.databaseId">database_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.embeddingModelUuid">embedding_model_uuid</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.isPublic">is_public</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.projectId">project_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.tags">tags</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.userId">user_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.uuid">uuid</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>]</code> | *No description.* |
 
 ---
@@ -25284,63 +25174,13 @@ created_at: str
 
 ---
 
-##### `database_id`<sup>Required</sup> <a name="database_id" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.databaseId"></a>
-
-```python
-database_id: str
-```
-
-- *Type:* str
-
----
-
-##### `embedding_model_uuid`<sup>Required</sup> <a name="embedding_model_uuid" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.embeddingModelUuid"></a>
-
-```python
-embedding_model_uuid: str
-```
-
-- *Type:* str
-
----
-
-##### `is_public`<sup>Required</sup> <a name="is_public" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.isPublic"></a>
-
-```python
-is_public: IResolvable
-```
-
-- *Type:* cdktf.IResolvable
-
----
-
 ##### `last_indexing_job`<sup>Required</sup> <a name="last_indexing_job" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.lastIndexingJob"></a>
 
 ```python
-last_indexing_job: GenaiAgentTemplateKnowledgeBasesLastIndexingJobList
+last_indexing_job: GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobList">GenaiAgentTemplateKnowledgeBasesLastIndexingJobList</a>
-
----
-
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.name"></a>
-
-```python
-name: str
-```
-
-- *Type:* str
-
----
-
-##### `project_id`<sup>Required</sup> <a name="project_id" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.projectId"></a>
-
-```python
-project_id: str
-```
-
-- *Type:* str
+- *Type:* <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference">GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference</a>
 
 ---
 
@@ -25354,13 +25194,63 @@ updated_at: str
 
 ---
 
+##### `database_id_input`<sup>Optional</sup> <a name="database_id_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.databaseIdInput"></a>
+
+```python
+database_id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `embedding_model_uuid_input`<sup>Optional</sup> <a name="embedding_model_uuid_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.embeddingModelUuidInput"></a>
+
+```python
+embedding_model_uuid_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `is_public_input`<sup>Optional</sup> <a name="is_public_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.isPublicInput"></a>
+
+```python
+is_public_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `last_indexing_job_input`<sup>Optional</sup> <a name="last_indexing_job_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.lastIndexingJobInput"></a>
 
 ```python
-last_indexing_job_input: typing.Union[IResolvable, typing.List[GenaiAgentTemplateKnowledgeBasesLastIndexingJob]]
+last_indexing_job_input: GenaiAgentTemplateKnowledgeBasesLastIndexingJob
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob">GenaiAgentTemplateKnowledgeBasesLastIndexingJob</a>]]
+- *Type:* <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob">GenaiAgentTemplateKnowledgeBasesLastIndexingJob</a>
+
+---
+
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.nameInput"></a>
+
+```python
+name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `project_id_input`<sup>Optional</sup> <a name="project_id_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.projectIdInput"></a>
+
+```python
+project_id_input: str
+```
+
+- *Type:* str
 
 ---
 
@@ -25394,10 +25284,50 @@ user_id_input: str
 
 ---
 
-##### `uuid_input`<sup>Optional</sup> <a name="uuid_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.uuidInput"></a>
+##### `database_id`<sup>Required</sup> <a name="database_id" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.databaseId"></a>
 
 ```python
-uuid_input: str
+database_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `embedding_model_uuid`<sup>Required</sup> <a name="embedding_model_uuid" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.embeddingModelUuid"></a>
+
+```python
+embedding_model_uuid: str
+```
+
+- *Type:* str
+
+---
+
+##### `is_public`<sup>Required</sup> <a name="is_public" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.isPublic"></a>
+
+```python
+is_public: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
+##### `project_id`<sup>Required</sup> <a name="project_id" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.projectId"></a>
+
+```python
+project_id: str
 ```
 
 - *Type:* str
@@ -25428,16 +25358,6 @@ tags: typing.List[str]
 
 ```python
 user_id: str
-```
-
-- *Type:* str
-
----
-
-##### `uuid`<sup>Required</sup> <a name="uuid" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.uuid"></a>
-
-```python
-uuid: str
 ```
 
 - *Type:* str
