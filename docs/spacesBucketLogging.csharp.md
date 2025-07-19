@@ -4,7 +4,7 @@
 
 ### SpacesBucketLogging <a name="SpacesBucketLogging" id="@cdktf/provider-digitalocean.spacesBucketLogging.SpacesBucketLogging"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/spaces_bucket_logging digitalocean_spaces_bucket_logging}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/spaces_bucket_logging digitalocean_spaces_bucket_logging}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.spacesBucketLogging.SpacesBucketLogging.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the SpacesBucketLogging to imp
 
 The id of the existing SpacesBucketLogging that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/spaces_bucket_logging#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/spaces_bucket_logging#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -813,11 +813,11 @@ new SpacesBucketLoggingConfig {
 | <code><a href="#@cdktf/provider-digitalocean.spacesBucketLogging.SpacesBucketLoggingConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.spacesBucketLogging.SpacesBucketLoggingConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.spacesBucketLogging.SpacesBucketLoggingConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.spacesBucketLogging.SpacesBucketLoggingConfig.property.bucket">Bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/spaces_bucket_logging#bucket SpacesBucketLogging#bucket}. |
-| <code><a href="#@cdktf/provider-digitalocean.spacesBucketLogging.SpacesBucketLoggingConfig.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/spaces_bucket_logging#region SpacesBucketLogging#region}. |
-| <code><a href="#@cdktf/provider-digitalocean.spacesBucketLogging.SpacesBucketLoggingConfig.property.targetBucket">TargetBucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/spaces_bucket_logging#target_bucket SpacesBucketLogging#target_bucket}. |
-| <code><a href="#@cdktf/provider-digitalocean.spacesBucketLogging.SpacesBucketLoggingConfig.property.targetPrefix">TargetPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/spaces_bucket_logging#target_prefix SpacesBucketLogging#target_prefix}. |
-| <code><a href="#@cdktf/provider-digitalocean.spacesBucketLogging.SpacesBucketLoggingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/spaces_bucket_logging#id SpacesBucketLogging#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.spacesBucketLogging.SpacesBucketLoggingConfig.property.bucket">Bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/spaces_bucket_logging#bucket SpacesBucketLogging#bucket}. |
+| <code><a href="#@cdktf/provider-digitalocean.spacesBucketLogging.SpacesBucketLoggingConfig.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/spaces_bucket_logging#region SpacesBucketLogging#region}. |
+| <code><a href="#@cdktf/provider-digitalocean.spacesBucketLogging.SpacesBucketLoggingConfig.property.targetBucket">TargetBucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/spaces_bucket_logging#target_bucket SpacesBucketLogging#target_bucket}. |
+| <code><a href="#@cdktf/provider-digitalocean.spacesBucketLogging.SpacesBucketLoggingConfig.property.targetPrefix">TargetPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/spaces_bucket_logging#target_prefix SpacesBucketLogging#target_prefix}. |
+| <code><a href="#@cdktf/provider-digitalocean.spacesBucketLogging.SpacesBucketLoggingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/spaces_bucket_logging#id SpacesBucketLogging#id}. |
 
 ---
 
@@ -899,7 +899,7 @@ public string Bucket { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/spaces_bucket_logging#bucket SpacesBucketLogging#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/spaces_bucket_logging#bucket SpacesBucketLogging#bucket}.
 
 ---
 
@@ -911,7 +911,7 @@ public string Region { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/spaces_bucket_logging#region SpacesBucketLogging#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/spaces_bucket_logging#region SpacesBucketLogging#region}.
 
 ---
 
@@ -923,7 +923,7 @@ public string TargetBucket { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/spaces_bucket_logging#target_bucket SpacesBucketLogging#target_bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/spaces_bucket_logging#target_bucket SpacesBucketLogging#target_bucket}.
 
 ---
 
@@ -935,7 +935,7 @@ public string TargetPrefix { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/spaces_bucket_logging#target_prefix SpacesBucketLogging#target_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/spaces_bucket_logging#target_prefix SpacesBucketLogging#target_prefix}.
 
 ---
 
@@ -947,7 +947,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/spaces_bucket_logging#id SpacesBucketLogging#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/spaces_bucket_logging#id SpacesBucketLogging#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
