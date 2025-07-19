@@ -1,3 +1,3 @@
 # `digitalocean_droplet_autoscale`
 
-Refer to the Terraform Registry for docs: [`digitalocean_droplet_autoscale`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/droplet_autoscale).
+Refer to the Terraform Registry for docs: [`digitalocean_droplet_autoscale`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/droplet_autoscale).
