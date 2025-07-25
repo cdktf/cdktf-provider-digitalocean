@@ -4,7 +4,7 @@
 
 ### DatabaseMongodbConfig <a name="DatabaseMongodbConfig" id="@cdktf/provider-digitalocean.databaseMongodbConfig.DatabaseMongodbConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/database_mongodb_config digitalocean_database_mongodb_config}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/database_mongodb_config digitalocean_database_mongodb_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databaseMongodbConfig.DatabaseMongodbConfig.Initializer"></a>
 
@@ -509,7 +509,7 @@ The construct id used in the generated config for the DatabaseMongodbConfig to i
 
 The id of the existing DatabaseMongodbConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/database_mongodb_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/database_mongodb_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -879,13 +879,13 @@ const databaseMongodbConfigConfig: databaseMongodbConfig.DatabaseMongodbConfigCo
 | <code><a href="#@cdktf/provider-digitalocean.databaseMongodbConfig.DatabaseMongodbConfigConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseMongodbConfig.DatabaseMongodbConfigConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseMongodbConfig.DatabaseMongodbConfigConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseMongodbConfig.DatabaseMongodbConfigConfig.property.clusterId">clusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/database_mongodb_config#cluster_id DatabaseMongodbConfig#cluster_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseMongodbConfig.DatabaseMongodbConfigConfig.property.defaultReadConcern">defaultReadConcern</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/database_mongodb_config#default_read_concern DatabaseMongodbConfig#default_read_concern}. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseMongodbConfig.DatabaseMongodbConfigConfig.property.defaultWriteConcern">defaultWriteConcern</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/database_mongodb_config#default_write_concern DatabaseMongodbConfig#default_write_concern}. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseMongodbConfig.DatabaseMongodbConfigConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/database_mongodb_config#id DatabaseMongodbConfig#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseMongodbConfig.DatabaseMongodbConfigConfig.property.slowOpThresholdMs">slowOpThresholdMs</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/database_mongodb_config#slow_op_threshold_ms DatabaseMongodbConfig#slow_op_threshold_ms}. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseMongodbConfig.DatabaseMongodbConfigConfig.property.transactionLifetimeLimitSeconds">transactionLifetimeLimitSeconds</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/database_mongodb_config#transaction_lifetime_limit_seconds DatabaseMongodbConfig#transaction_lifetime_limit_seconds}. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseMongodbConfig.DatabaseMongodbConfigConfig.property.verbosity">verbosity</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/database_mongodb_config#verbosity DatabaseMongodbConfig#verbosity}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseMongodbConfig.DatabaseMongodbConfigConfig.property.clusterId">clusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/database_mongodb_config#cluster_id DatabaseMongodbConfig#cluster_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseMongodbConfig.DatabaseMongodbConfigConfig.property.defaultReadConcern">defaultReadConcern</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/database_mongodb_config#default_read_concern DatabaseMongodbConfig#default_read_concern}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseMongodbConfig.DatabaseMongodbConfigConfig.property.defaultWriteConcern">defaultWriteConcern</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/database_mongodb_config#default_write_concern DatabaseMongodbConfig#default_write_concern}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseMongodbConfig.DatabaseMongodbConfigConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/database_mongodb_config#id DatabaseMongodbConfig#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseMongodbConfig.DatabaseMongodbConfigConfig.property.slowOpThresholdMs">slowOpThresholdMs</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/database_mongodb_config#slow_op_threshold_ms DatabaseMongodbConfig#slow_op_threshold_ms}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseMongodbConfig.DatabaseMongodbConfigConfig.property.transactionLifetimeLimitSeconds">transactionLifetimeLimitSeconds</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/database_mongodb_config#transaction_lifetime_limit_seconds DatabaseMongodbConfig#transaction_lifetime_limit_seconds}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseMongodbConfig.DatabaseMongodbConfigConfig.property.verbosity">verbosity</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/database_mongodb_config#verbosity DatabaseMongodbConfig#verbosity}. |
 
 ---
 
@@ -967,7 +967,7 @@ public readonly clusterId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/database_mongodb_config#cluster_id DatabaseMongodbConfig#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/database_mongodb_config#cluster_id DatabaseMongodbConfig#cluster_id}.
 
 ---
 
@@ -979,7 +979,7 @@ public readonly defaultReadConcern: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/database_mongodb_config#default_read_concern DatabaseMongodbConfig#default_read_concern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/database_mongodb_config#default_read_concern DatabaseMongodbConfig#default_read_concern}.
 
 ---
 
@@ -991,7 +991,7 @@ public readonly defaultWriteConcern: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/database_mongodb_config#default_write_concern DatabaseMongodbConfig#default_write_concern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/database_mongodb_config#default_write_concern DatabaseMongodbConfig#default_write_concern}.
 
 ---
 
@@ -1003,7 +1003,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/database_mongodb_config#id DatabaseMongodbConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/database_mongodb_config#id DatabaseMongodbConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1018,7 +1018,7 @@ public readonly slowOpThresholdMs: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/database_mongodb_config#slow_op_threshold_ms DatabaseMongodbConfig#slow_op_threshold_ms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/database_mongodb_config#slow_op_threshold_ms DatabaseMongodbConfig#slow_op_threshold_ms}.
 
 ---
 
@@ -1030,7 +1030,7 @@ public readonly transactionLifetimeLimitSeconds: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/database_mongodb_config#transaction_lifetime_limit_seconds DatabaseMongodbConfig#transaction_lifetime_limit_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/database_mongodb_config#transaction_lifetime_limit_seconds DatabaseMongodbConfig#transaction_lifetime_limit_seconds}.
 
 ---
 
@@ -1042,7 +1042,7 @@ public readonly verbosity: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/database_mongodb_config#verbosity DatabaseMongodbConfig#verbosity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/database_mongodb_config#verbosity DatabaseMongodbConfig#verbosity}.
 
 ---
 
