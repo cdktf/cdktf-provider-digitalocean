@@ -4,7 +4,7 @@
 
 ### PartnerAttachment <a name="PartnerAttachment" id="@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/partner_attachment digitalocean_partner_attachment}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/partner_attachment digitalocean_partner_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachment.Initializer"></a>
 
@@ -521,7 +521,7 @@ The construct id used in the generated config for the PartnerAttachment to impor
 
 The id of the existing PartnerAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/partner_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/partner_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -972,10 +972,10 @@ const partnerAttachmentBgp: partnerAttachment.PartnerAttachmentBgp = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentBgp.property.authKey">authKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/partner_attachment#auth_key PartnerAttachment#auth_key}. |
-| <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentBgp.property.localRouterIp">localRouterIp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/partner_attachment#local_router_ip PartnerAttachment#local_router_ip}. |
-| <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentBgp.property.peerRouterAsn">peerRouterAsn</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/partner_attachment#peer_router_asn PartnerAttachment#peer_router_asn}. |
-| <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentBgp.property.peerRouterIp">peerRouterIp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/partner_attachment#peer_router_ip PartnerAttachment#peer_router_ip}. |
+| <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentBgp.property.authKey">authKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/partner_attachment#auth_key PartnerAttachment#auth_key}. |
+| <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentBgp.property.localRouterIp">localRouterIp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/partner_attachment#local_router_ip PartnerAttachment#local_router_ip}. |
+| <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentBgp.property.peerRouterAsn">peerRouterAsn</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/partner_attachment#peer_router_asn PartnerAttachment#peer_router_asn}. |
+| <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentBgp.property.peerRouterIp">peerRouterIp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/partner_attachment#peer_router_ip PartnerAttachment#peer_router_ip}. |
 
 ---
 
@@ -987,7 +987,7 @@ public readonly authKey: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/partner_attachment#auth_key PartnerAttachment#auth_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/partner_attachment#auth_key PartnerAttachment#auth_key}.
 
 ---
 
@@ -999,7 +999,7 @@ public readonly localRouterIp: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/partner_attachment#local_router_ip PartnerAttachment#local_router_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/partner_attachment#local_router_ip PartnerAttachment#local_router_ip}.
 
 ---
 
@@ -1011,7 +1011,7 @@ public readonly peerRouterAsn: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/partner_attachment#peer_router_asn PartnerAttachment#peer_router_asn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/partner_attachment#peer_router_asn PartnerAttachment#peer_router_asn}.
 
 ---
 
@@ -1023,7 +1023,7 @@ public readonly peerRouterIp: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/partner_attachment#peer_router_ip PartnerAttachment#peer_router_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/partner_attachment#peer_router_ip PartnerAttachment#peer_router_ip}.
 
 ---
 
@@ -1140,7 +1140,7 @@ public readonly connectionBandwidthInMbps: number;
 
 The connection bandwidth in Mbps.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/partner_attachment#connection_bandwidth_in_mbps PartnerAttachment#connection_bandwidth_in_mbps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/partner_attachment#connection_bandwidth_in_mbps PartnerAttachment#connection_bandwidth_in_mbps}
 
 ---
 
@@ -1154,7 +1154,7 @@ public readonly naasProvider: string;
 
 The NaaS provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/partner_attachment#naas_provider PartnerAttachment#naas_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/partner_attachment#naas_provider PartnerAttachment#naas_provider}
 
 ---
 
@@ -1168,7 +1168,7 @@ public readonly name: string;
 
 The name of the Partner Attachment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/partner_attachment#name PartnerAttachment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/partner_attachment#name PartnerAttachment#name}
 
 ---
 
@@ -1182,7 +1182,7 @@ public readonly region: string;
 
 The region where the Partner Attachment will be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/partner_attachment#region PartnerAttachment#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/partner_attachment#region PartnerAttachment#region}
 
 ---
 
@@ -1196,7 +1196,7 @@ public readonly vpcIds: string[];
 
 The list of VPC IDs to attach the Partner Attachment to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/partner_attachment#vpc_ids PartnerAttachment#vpc_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/partner_attachment#vpc_ids PartnerAttachment#vpc_ids}
 
 ---
 
@@ -1210,7 +1210,7 @@ public readonly bgp: PartnerAttachmentBgp;
 
 bgp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/partner_attachment#bgp PartnerAttachment#bgp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/partner_attachment#bgp PartnerAttachment#bgp}
 
 ---
 
@@ -1224,7 +1224,7 @@ public readonly parentUuid: string;
 
 The UUID of the Parent Partner Attachment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/partner_attachment#parent_uuid PartnerAttachment#parent_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/partner_attachment#parent_uuid PartnerAttachment#parent_uuid}
 
 ---
 
@@ -1238,7 +1238,7 @@ public readonly redundancyZone: string;
 
 The redundancy zone for the NaaS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/partner_attachment#redundancy_zone PartnerAttachment#redundancy_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/partner_attachment#redundancy_zone PartnerAttachment#redundancy_zone}
 
 ---
 
@@ -1252,7 +1252,7 @@ public readonly timeouts: PartnerAttachmentTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/partner_attachment#timeouts PartnerAttachment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/partner_attachment#timeouts PartnerAttachment#timeouts}
 
 ---
 
@@ -1270,8 +1270,8 @@ const partnerAttachmentTimeouts: partnerAttachment.PartnerAttachmentTimeouts = {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/partner_attachment#create PartnerAttachment#create}. |
-| <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/partner_attachment#delete PartnerAttachment#delete}. |
+| <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/partner_attachment#create PartnerAttachment#create}. |
+| <code><a href="#@cdktf/provider-digitalocean.partnerAttachment.PartnerAttachmentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/partner_attachment#delete PartnerAttachment#delete}. |
 
 ---
 
@@ -1283,7 +1283,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/partner_attachment#create PartnerAttachment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/partner_attachment#create PartnerAttachment#create}.
 
 ---
 
@@ -1295,7 +1295,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/partner_attachment#delete PartnerAttachment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/partner_attachment#delete PartnerAttachment#delete}.
 
 ---
 
