@@ -79,6 +79,7 @@ The following submodules are available:
 - [databaseRedisConfig](./databaseRedisConfig.python.md)
 - [databaseReplica](./databaseReplica.python.md)
 - [databaseUser](./databaseUser.python.md)
+- [databaseValkeyConfig](./databaseValkeyConfig.python.md)
 - [domain](./domain.python.md)
 - [droplet](./droplet.python.md)
 - [dropletAutoscale](./dropletAutoscale.python.md)
