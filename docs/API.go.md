@@ -79,6 +79,7 @@ The following submodules are available:
 - [databaseRedisConfig](./databaseRedisConfig.go.md)
 - [databaseReplica](./databaseReplica.go.md)
 - [databaseUser](./databaseUser.go.md)
+- [databaseValkeyConfig](./databaseValkeyConfig.go.md)
 - [domain](./domain.go.md)
 - [droplet](./droplet.go.md)
 - [dropletAutoscale](./dropletAutoscale.go.md)

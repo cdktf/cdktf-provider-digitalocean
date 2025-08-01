@@ -79,6 +79,7 @@ The following submodules are available:
 - [databaseRedisConfig](./databaseRedisConfig.java.md)
 - [databaseReplica](./databaseReplica.java.md)
 - [databaseUser](./databaseUser.java.md)
+- [databaseValkeyConfig](./databaseValkeyConfig.java.md)
 - [domain](./domain.java.md)
 - [droplet](./droplet.java.md)
 - [dropletAutoscale](./dropletAutoscale.java.md)

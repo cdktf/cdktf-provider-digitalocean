@@ -79,6 +79,7 @@ The following submodules are available:
 - [databaseRedisConfig](./databaseRedisConfig.csharp.md)
 - [databaseReplica](./databaseReplica.csharp.md)
 - [databaseUser](./databaseUser.csharp.md)
+- [databaseValkeyConfig](./databaseValkeyConfig.csharp.md)
 - [domain](./domain.csharp.md)
 - [droplet](./droplet.csharp.md)
 - [dropletAutoscale](./dropletAutoscale.csharp.md)

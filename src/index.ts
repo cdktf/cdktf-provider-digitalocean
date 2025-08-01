@@ -23,6 +23,7 @@ export * as databasePostgresqlConfig from './database-postgresql-config';
 export * as databaseRedisConfig from './database-redis-config';
 export * as databaseReplica from './database-replica';
 export * as databaseUser from './database-user';
+export * as databaseValkeyConfig from './database-valkey-config';
 export * as domain from './domain';
 export * as droplet from './droplet';
 export * as dropletAutoscale from './droplet-autoscale';

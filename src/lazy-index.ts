@@ -23,6 +23,7 @@ Object.defineProperty(exports, 'databasePostgresqlConfig', { get: function () { 
 Object.defineProperty(exports, 'databaseRedisConfig', { get: function () { return require('./database-redis-config'); } });
 Object.defineProperty(exports, 'databaseReplica', { get: function () { return require('./database-replica'); } });
 Object.defineProperty(exports, 'databaseUser', { get: function () { return require('./database-user'); } });
+Object.defineProperty(exports, 'databaseValkeyConfig', { get: function () { return require('./database-valkey-config'); } });
 Object.defineProperty(exports, 'domain', { get: function () { return require('./domain'); } });
 Object.defineProperty(exports, 'droplet', { get: function () { return require('./droplet'); } });
 Object.defineProperty(exports, 'dropletAutoscale', { get: function () { return require('./droplet-autoscale'); } });

@@ -79,6 +79,7 @@ The following submodules are available:
 - [databaseRedisConfig](./databaseRedisConfig.typescript.md)
 - [databaseReplica](./databaseReplica.typescript.md)
 - [databaseUser](./databaseUser.typescript.md)
+- [databaseValkeyConfig](./databaseValkeyConfig.typescript.md)
 - [domain](./domain.typescript.md)
 - [droplet](./droplet.typescript.md)
 - [dropletAutoscale](./dropletAutoscale.typescript.md)
