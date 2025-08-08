@@ -1,3 +1,3 @@
 # `digitalocean_vpc`
 
-Refer to the Terraform Registry for docs: [`digitalocean_vpc`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.62.0/docs/resources/vpc).
+Refer to the Terraform Registry for docs: [`digitalocean_vpc`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/vpc).

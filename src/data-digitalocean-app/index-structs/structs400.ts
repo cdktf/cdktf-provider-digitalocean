@@ -4,8 +4,7 @@
  */
 
 import * as cdktf from 'cdktf';
-import { DataDigitaloceanAppSpecWorkerLogDestinationDatadogList,
-DataDigitaloceanAppSpecWorkerAlertList,
+import { DataDigitaloceanAppSpecWorkerAlertList,
 DataDigitaloceanAppSpecWorkerAutoscalingList,
 DataDigitaloceanAppSpecWorkerBitbucketList,
 DataDigitaloceanAppSpecWorkerEnvList,
@@ -21,9 +20,90 @@ DataDigitaloceanAppSpecEnvList,
 DataDigitaloceanAppSpecFunctionList,
 DataDigitaloceanAppSpecIngressList,
 DataDigitaloceanAppSpecJobList,
+DataDigitaloceanAppSpecMaintenanceList,
 DataDigitaloceanAppSpecServiceList,
 DataDigitaloceanAppSpecStaticSiteList,
 DataDigitaloceanAppSpecVpcList } from './structs0'
+export interface DataDigitaloceanAppSpecWorkerLogDestinationDatadog {
+}
+
+export function dataDigitaloceanAppSpecWorkerLogDestinationDatadogToTerraform(struct?: DataDigitaloceanAppSpecWorkerLogDestinationDatadog): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataDigitaloceanAppSpecWorkerLogDestinationDatadogToHclTerraform(struct?: DataDigitaloceanAppSpecWorkerLogDestinationDatadog): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDigitaloceanAppSpecWorkerLogDestinationDatadogOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataDigitaloceanAppSpecWorkerLogDestinationDatadog | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDigitaloceanAppSpecWorkerLogDestinationDatadog | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // api_key - computed: true, optional: false, required: false
+  public get apiKey() {
+    return this.getStringAttribute('api_key');
+  }
+
+  // endpoint - computed: true, optional: false, required: false
+  public get endpoint() {
+    return this.getStringAttribute('endpoint');
+  }
+}
+
+export class DataDigitaloceanAppSpecWorkerLogDestinationDatadogList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataDigitaloceanAppSpecWorkerLogDestinationDatadogOutputReference {
+    return new DataDigitaloceanAppSpecWorkerLogDestinationDatadogOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataDigitaloceanAppSpecWorkerLogDestinationLogtail {
 }
 
@@ -813,6 +893,12 @@ export class DataDigitaloceanAppSpecOutputReference extends cdktf.ComplexObject 
     return this._job;
   }
 
+  // maintenance - computed: true, optional: false, required: false
+  private _maintenance = new DataDigitaloceanAppSpecMaintenanceList(this, "maintenance", false);
+  public get maintenance() {
+    return this._maintenance;
+  }
+
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
@@ -870,7 +956,7 @@ export interface DataDigitaloceanAppDedicatedIps {
   /**
   * The ID of the dedicated egress IP.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.62.0/docs/data-sources/app#id DataDigitaloceanApp#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/app#id DataDigitaloceanApp#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -879,13 +965,13 @@ export interface DataDigitaloceanAppDedicatedIps {
   /**
   * The IP address of the dedicated egress IP.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.62.0/docs/data-sources/app#ip DataDigitaloceanApp#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/app#ip DataDigitaloceanApp#ip}
   */
   readonly ip?: string;
   /**
   * The status of the dedicated egress IP: 'UNKNOWN', 'ASSIGNING', 'ASSIGNED', or 'REMOVED'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.62.0/docs/data-sources/app#status DataDigitaloceanApp#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/app#status DataDigitaloceanApp#status}
   */
   readonly status?: string;
 }

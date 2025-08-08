@@ -1,3 +1,3 @@
 # `digitalocean_genai_agent`
 
-Refer to the Terraform Registry for docs: [`digitalocean_genai_agent`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.62.0/docs/resources/genai_agent).
+Refer to the Terraform Registry for docs: [`digitalocean_genai_agent`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/genai_agent).
