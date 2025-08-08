@@ -18,6 +18,7 @@ Object.defineProperty(exports, 'databaseKafkaConfig', { get: function () { retur
 Object.defineProperty(exports, 'databaseKafkaTopic', { get: function () { return require('./database-kafka-topic'); } });
 Object.defineProperty(exports, 'databaseMongodbConfig', { get: function () { return require('./database-mongodb-config'); } });
 Object.defineProperty(exports, 'databaseMysqlConfig', { get: function () { return require('./database-mysql-config'); } });
+Object.defineProperty(exports, 'databaseOnlineMigration', { get: function () { return require('./database-online-migration'); } });
 Object.defineProperty(exports, 'databaseOpensearchConfig', { get: function () { return require('./database-opensearch-config'); } });
 Object.defineProperty(exports, 'databasePostgresqlConfig', { get: function () { return require('./database-postgresql-config'); } });
 Object.defineProperty(exports, 'databaseRedisConfig', { get: function () { return require('./database-redis-config'); } });
@@ -33,6 +34,7 @@ Object.defineProperty(exports, 'floatingIp', { get: function () { return require
 Object.defineProperty(exports, 'floatingIpAssignment', { get: function () { return require('./floating-ip-assignment'); } });
 Object.defineProperty(exports, 'genaiAgent', { get: function () { return require('./genai-agent'); } });
 Object.defineProperty(exports, 'genaiAgentKnowledgeBaseAttachment', { get: function () { return require('./genai-agent-knowledge-base-attachment'); } });
+Object.defineProperty(exports, 'genaiAgentRoute', { get: function () { return require('./genai-agent-route'); } });
 Object.defineProperty(exports, 'genaiFunction', { get: function () { return require('./genai-function'); } });
 Object.defineProperty(exports, 'genaiKnowledgeBase', { get: function () { return require('./genai-knowledge-base'); } });
 Object.defineProperty(exports, 'genaiKnowledgeBaseDataSource', { get: function () { return require('./genai-knowledge-base-data-source'); } });
@@ -72,6 +74,7 @@ Object.defineProperty(exports, 'dataDigitaloceanContainerRegistry', { get: funct
 Object.defineProperty(exports, 'dataDigitaloceanDatabaseCa', { get: function () { return require('./data-digitalocean-database-ca'); } });
 Object.defineProperty(exports, 'dataDigitaloceanDatabaseCluster', { get: function () { return require('./data-digitalocean-database-cluster'); } });
 Object.defineProperty(exports, 'dataDigitaloceanDatabaseConnectionPool', { get: function () { return require('./data-digitalocean-database-connection-pool'); } });
+Object.defineProperty(exports, 'dataDigitaloceanDatabaseMetricsCredentials', { get: function () { return require('./data-digitalocean-database-metrics-credentials'); } });
 Object.defineProperty(exports, 'dataDigitaloceanDatabaseReplica', { get: function () { return require('./data-digitalocean-database-replica'); } });
 Object.defineProperty(exports, 'dataDigitaloceanDatabaseUser', { get: function () { return require('./data-digitalocean-database-user'); } });
 Object.defineProperty(exports, 'dataDigitaloceanDomain', { get: function () { return require('./data-digitalocean-domain'); } });

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.62.0/docs/data-sources/genai_agents_by_openai_api_key
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/genai_agents_by_openai_api_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataDigitaloceanGenaiAgentsByOpenaiApiKeyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.62.0/docs/data-sources/genai_agents_by_openai_api_key#id DataDigitaloceanGenaiAgentsByOpenaiApiKey#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/genai_agents_by_openai_api_key#id DataDigitaloceanGenaiAgentsByOpenaiApiKey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,7 +22,7 @@ export interface DataDigitaloceanGenaiAgentsByOpenaiApiKeyConfig extends cdktf.T
   /**
   * The UUID of the OpenAI API key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.62.0/docs/data-sources/genai_agents_by_openai_api_key#uuid DataDigitaloceanGenaiAgentsByOpenaiApiKey#uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/genai_agents_by_openai_api_key#uuid DataDigitaloceanGenaiAgentsByOpenaiApiKey#uuid}
   */
   readonly uuid: string;
 }
@@ -1763,6 +1763,11 @@ export class DataDigitaloceanGenaiAgentsByOpenaiApiKeyAgentsKnowledgeBasesOutput
   public get userId() {
     return this.getStringAttribute('user_id');
   }
+
+  // uuid - computed: true, optional: false, required: false
+  public get uuid() {
+    return this.getStringAttribute('uuid');
+  }
 }
 
 export class DataDigitaloceanGenaiAgentsByOpenaiApiKeyAgentsKnowledgeBasesList extends cdktf.ComplexList {
@@ -3102,6 +3107,11 @@ export class DataDigitaloceanGenaiAgentsByOpenaiApiKeyAgentsTemplateKnowledgeBas
   public get userId() {
     return this.getStringAttribute('user_id');
   }
+
+  // uuid - computed: true, optional: false, required: false
+  public get uuid() {
+    return this.getStringAttribute('uuid');
+  }
 }
 
 export class DataDigitaloceanGenaiAgentsByOpenaiApiKeyAgentsTemplateKnowledgeBasesList extends cdktf.ComplexList {
@@ -3832,7 +3842,7 @@ export class DataDigitaloceanGenaiAgentsByOpenaiApiKeyAgentsList extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.62.0/docs/data-sources/genai_agents_by_openai_api_key digitalocean_genai_agents_by_openai_api_key}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/genai_agents_by_openai_api_key digitalocean_genai_agents_by_openai_api_key}
 */
 export class DataDigitaloceanGenaiAgentsByOpenaiApiKey extends cdktf.TerraformDataSource {
 
@@ -3848,7 +3858,7 @@ export class DataDigitaloceanGenaiAgentsByOpenaiApiKey extends cdktf.TerraformDa
   * Generates CDKTF code for importing a DataDigitaloceanGenaiAgentsByOpenaiApiKey resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDigitaloceanGenaiAgentsByOpenaiApiKey to import
-  * @param importFromId The id of the existing DataDigitaloceanGenaiAgentsByOpenaiApiKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.62.0/docs/data-sources/genai_agents_by_openai_api_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDigitaloceanGenaiAgentsByOpenaiApiKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/genai_agents_by_openai_api_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDigitaloceanGenaiAgentsByOpenaiApiKey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -3860,7 +3870,7 @@ export class DataDigitaloceanGenaiAgentsByOpenaiApiKey extends cdktf.TerraformDa
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.62.0/docs/data-sources/genai_agents_by_openai_api_key digitalocean_genai_agents_by_openai_api_key} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/genai_agents_by_openai_api_key digitalocean_genai_agents_by_openai_api_key} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3871,7 +3881,7 @@ export class DataDigitaloceanGenaiAgentsByOpenaiApiKey extends cdktf.TerraformDa
       terraformResourceType: 'digitalocean_genai_agents_by_openai_api_key',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.62.0',
+        providerVersion: '2.63.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
