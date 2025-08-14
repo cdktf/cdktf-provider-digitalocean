@@ -4,7 +4,7 @@
 
 ### GenaiOpenaiApiKey <a name="GenaiOpenaiApiKey" id="@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/genai_openai_api_key digitalocean_genai_openai_api_key}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key digitalocean_genai_openai_api_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKey.Initializer"></a>
 
@@ -44,7 +44,7 @@ GenaiOpenaiApiKey.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKey.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKey.Initializer.parameter.apiKey">apiKey</a></code> | <code>java.lang.String</code> | The OpenAI API key. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKey.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | A name for the API key. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKey.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/genai_openai_api_key#id GenaiOpenaiApiKey#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKey.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#id GenaiOpenaiApiKey#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKey.Initializer.parameter.model">model</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKeyModel">GenaiOpenaiApiKeyModel</a>></code> | model block. |
 
 ---
@@ -115,7 +115,7 @@ Must be unique amongst siblings in the same scope
 
 The OpenAI API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/genai_openai_api_key#api_key GenaiOpenaiApiKey#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#api_key GenaiOpenaiApiKey#api_key}
 
 ---
 
@@ -125,7 +125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 A name for the API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/genai_openai_api_key#name GenaiOpenaiApiKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#name GenaiOpenaiApiKey#name}
 
 ---
 
@@ -133,7 +133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/genai_openai_api_key#id GenaiOpenaiApiKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#id GenaiOpenaiApiKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -146,7 +146,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 model block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/genai_openai_api_key#model GenaiOpenaiApiKey#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#model GenaiOpenaiApiKey#model}
 
 ---
 
@@ -600,7 +600,7 @@ The construct id used in the generated config for the GenaiOpenaiApiKey to impor
 
 The id of the existing GenaiOpenaiApiKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/genai_openai_api_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -978,7 +978,7 @@ GenaiOpenaiApiKeyConfig.builder()
 | <code><a href="#@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKeyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKeyConfig.property.apiKey">apiKey</a></code> | <code>java.lang.String</code> | The OpenAI API key. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKeyConfig.property.name">name</a></code> | <code>java.lang.String</code> | A name for the API key. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKeyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/genai_openai_api_key#id GenaiOpenaiApiKey#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKeyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#id GenaiOpenaiApiKey#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKeyConfig.property.model">model</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKeyModel">GenaiOpenaiApiKeyModel</a>></code> | model block. |
 
 ---
@@ -1063,7 +1063,7 @@ public java.lang.String getApiKey();
 
 The OpenAI API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/genai_openai_api_key#api_key GenaiOpenaiApiKey#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#api_key GenaiOpenaiApiKey#api_key}
 
 ---
 
@@ -1077,7 +1077,7 @@ public java.lang.String getName();
 
 A name for the API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/genai_openai_api_key#name GenaiOpenaiApiKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#name GenaiOpenaiApiKey#name}
 
 ---
 
@@ -1089,7 +1089,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/genai_openai_api_key#id GenaiOpenaiApiKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#id GenaiOpenaiApiKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1106,7 +1106,7 @@ public java.lang.Object getModel();
 
 model block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/genai_openai_api_key#model GenaiOpenaiApiKey#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#model GenaiOpenaiApiKey#model}
 
 ---
 
@@ -1164,7 +1164,7 @@ public java.lang.Object getAgreement();
 
 agreement block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/genai_openai_api_key#agreement GenaiOpenaiApiKey#agreement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#agreement GenaiOpenaiApiKey#agreement}
 
 ---
 
@@ -1178,7 +1178,7 @@ public java.lang.String getInferenceName();
 
 Inference name of the model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/genai_openai_api_key#inference_name GenaiOpenaiApiKey#inference_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#inference_name GenaiOpenaiApiKey#inference_name}
 
 ---
 
@@ -1192,7 +1192,7 @@ public java.lang.String getInferenceVersion();
 
 Infernce version of the model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/genai_openai_api_key#inference_version GenaiOpenaiApiKey#inference_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#inference_version GenaiOpenaiApiKey#inference_version}
 
 ---
 
@@ -1206,7 +1206,7 @@ public java.lang.Object getIsFoundational();
 
 Indicates if the Model Base is foundational.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/genai_openai_api_key#is_foundational GenaiOpenaiApiKey#is_foundational}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#is_foundational GenaiOpenaiApiKey#is_foundational}
 
 ---
 
@@ -1220,7 +1220,7 @@ public java.lang.String getName();
 
 Name of the Knowledge Base.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/genai_openai_api_key#name GenaiOpenaiApiKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#name GenaiOpenaiApiKey#name}
 
 ---
 
@@ -1234,7 +1234,7 @@ public java.lang.String getParentUuid();
 
 Parent UUID of the Model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/genai_openai_api_key#parent_uuid GenaiOpenaiApiKey#parent_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#parent_uuid GenaiOpenaiApiKey#parent_uuid}
 
 ---
 
@@ -1248,7 +1248,7 @@ public java.lang.String getProvider();
 
 Provider of the Model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/genai_openai_api_key#provider GenaiOpenaiApiKey#provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#provider GenaiOpenaiApiKey#provider}
 
 ---
 
@@ -1262,7 +1262,7 @@ public java.lang.Object getUploadComplete();
 
 Indicates if the Model upload is complete.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/genai_openai_api_key#upload_complete GenaiOpenaiApiKey#upload_complete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#upload_complete GenaiOpenaiApiKey#upload_complete}
 
 ---
 
@@ -1276,7 +1276,7 @@ public java.lang.String getUrl();
 
 URL of the Model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/genai_openai_api_key#url GenaiOpenaiApiKey#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#url GenaiOpenaiApiKey#url}
 
 ---
 
@@ -1290,7 +1290,7 @@ public java.util.List<java.lang.String> getUsecases();
 
 List of Usecases for the Model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/genai_openai_api_key#usecases GenaiOpenaiApiKey#usecases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#usecases GenaiOpenaiApiKey#usecases}
 
 ---
 
@@ -1304,7 +1304,7 @@ public java.lang.Object getVersions();
 
 versions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/genai_openai_api_key#versions GenaiOpenaiApiKey#versions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#versions GenaiOpenaiApiKey#versions}
 
 ---
 
@@ -1344,7 +1344,7 @@ public java.lang.String getDescription();
 
 Description of the agreement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/genai_openai_api_key#description GenaiOpenaiApiKey#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#description GenaiOpenaiApiKey#description}
 
 ---
 
@@ -1358,7 +1358,7 @@ public java.lang.String getName();
 
 Name of the agreement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/genai_openai_api_key#name GenaiOpenaiApiKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#name GenaiOpenaiApiKey#name}
 
 ---
 
@@ -1372,7 +1372,7 @@ public java.lang.String getUrl();
 
 URL of the agreement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/genai_openai_api_key#url GenaiOpenaiApiKey#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#url GenaiOpenaiApiKey#url}
 
 ---
 
@@ -1386,7 +1386,7 @@ public java.lang.String getUuid();
 
 UUID of the agreement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/genai_openai_api_key#uuid GenaiOpenaiApiKey#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#uuid GenaiOpenaiApiKey#uuid}
 
 ---
 
@@ -1424,7 +1424,7 @@ public java.lang.Number getMajor();
 
 Major version of the model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/genai_openai_api_key#major GenaiOpenaiApiKey#major}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#major GenaiOpenaiApiKey#major}
 
 ---
 
@@ -1438,7 +1438,7 @@ public java.lang.Number getMinor();
 
 Minor version of the model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/genai_openai_api_key#minor GenaiOpenaiApiKey#minor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#minor GenaiOpenaiApiKey#minor}
 
 ---
 
@@ -1452,7 +1452,7 @@ public java.lang.Number getPatch();
 
 Patch version of the model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/genai_openai_api_key#patch GenaiOpenaiApiKey#patch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#patch GenaiOpenaiApiKey#patch}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataDigitaloceanSpacesKey <a name="DataDigitaloceanSpacesKey" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesKey.DataDigitaloceanSpacesKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/spaces_key digitalocean_spaces_key}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/data-sources/spaces_key digitalocean_spaces_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanSpacesKey.DataDigitaloceanSpacesKey.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataDigitaloceanSpacesKey 
 
 The id of the existing DataDigitaloceanSpacesKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/spaces_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/data-sources/spaces_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -654,7 +654,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadig
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesKey.DataDigitaloceanSpacesKeyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesKey.DataDigitaloceanSpacesKeyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesKey.DataDigitaloceanSpacesKeyConfig.property.accessKey">AccessKey</a></code> | <code>*string</code> | The access key for the Spaces key. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesKey.DataDigitaloceanSpacesKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/spaces_key#id DataDigitaloceanSpacesKey#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSpacesKey.DataDigitaloceanSpacesKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/data-sources/spaces_key#id DataDigitaloceanSpacesKey#id}. |
 
 ---
 
@@ -738,7 +738,7 @@ AccessKey *string
 
 The access key for the Spaces key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/spaces_key#access_key DataDigitaloceanSpacesKey#access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/data-sources/spaces_key#access_key DataDigitaloceanSpacesKey#access_key}
 
 ---
 
@@ -750,7 +750,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/spaces_key#id DataDigitaloceanSpacesKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/data-sources/spaces_key#id DataDigitaloceanSpacesKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
