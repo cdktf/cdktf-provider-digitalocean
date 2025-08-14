@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/database_valkey_config
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_valkey_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface DatabaseValkeyConfigConfig extends cdktf.TerraformMetaArguments
   /**
   * Determines default pub/sub channels' ACL for new users if ACL is not supplied. When this option is not defined, all_channels is assumed to keep backward compatibility. This option doesn't affect Valkey configuration acl-pubsub-default.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/database_valkey_config#acl_channels_default DatabaseValkeyConfig#acl_channels_default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_valkey_config#acl_channels_default DatabaseValkeyConfig#acl_channels_default}
   */
   readonly aclChannelsDefault?: string;
   /**
   * A unique identifier for the database cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/database_valkey_config#cluster_id DatabaseValkeyConfig#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_valkey_config#cluster_id DatabaseValkeyConfig#cluster_id}
   */
   readonly clusterId: string;
   /**
   * Frequent RDB snapshots. When enabled, Valkey will create frequent local RDB snapshots. When disabled, Valkey will only take RDB snapshots when a backup is created, based on the backup schedule. This setting is ignored when valkey_persistence is set to off.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/database_valkey_config#frequent_snapshots DatabaseValkeyConfig#frequent_snapshots}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_valkey_config#frequent_snapshots DatabaseValkeyConfig#frequent_snapshots}
   */
   readonly frequentSnapshots?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/database_valkey_config#id DatabaseValkeyConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_valkey_config#id DatabaseValkeyConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,19 +40,19 @@ export interface DatabaseValkeyConfigConfig extends cdktf.TerraformMetaArguments
   /**
   * The number of IO threads used by Valkey. Must be between 1 and 32.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/database_valkey_config#io_threads DatabaseValkeyConfig#io_threads}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_valkey_config#io_threads DatabaseValkeyConfig#io_threads}
   */
   readonly ioThreads?: number;
   /**
   * The decay time for Valkey's LFU cache eviction. Must be between 1 and 120.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/database_valkey_config#lfu_decay_time DatabaseValkeyConfig#lfu_decay_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_valkey_config#lfu_decay_time DatabaseValkeyConfig#lfu_decay_time}
   */
   readonly lfuDecayTime?: number;
   /**
   * The log factor for Valkey's LFU (Least Frequently Used) cache eviction. Must be between 1 and 100.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/database_valkey_config#lfu_log_factor DatabaseValkeyConfig#lfu_log_factor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_valkey_config#lfu_log_factor DatabaseValkeyConfig#lfu_log_factor}
   */
   readonly lfuLogFactor?: number;
   /**
@@ -74,49 +74,49 @@ export interface DatabaseValkeyConfigConfig extends cdktf.TerraformMetaArguments
   * n — New key events
   * A — Alias for "g$lshztxed"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/database_valkey_config#notify_keyspace_events DatabaseValkeyConfig#notify_keyspace_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_valkey_config#notify_keyspace_events DatabaseValkeyConfig#notify_keyspace_events}
   */
   readonly notifyKeyspaceEvents?: string;
   /**
   * The number of logical databases in the Valkey cluster. Must be between 1 and 128.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/database_valkey_config#number_of_databases DatabaseValkeyConfig#number_of_databases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_valkey_config#number_of_databases DatabaseValkeyConfig#number_of_databases}
   */
   readonly numberOfDatabases?: number;
   /**
   * When persistence is 'rdb', Valkey does RDB dumps each 10 minutes if any key is changed. Also RDB dumps are done according to backup schedule for backup purposes. When persistence is 'off', no RDB dumps and backups are done, so data can be lost at any moment if service is restarted for any reason, or if service is powered off. Also service can't be forked.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/database_valkey_config#persistence DatabaseValkeyConfig#persistence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_valkey_config#persistence DatabaseValkeyConfig#persistence}
   */
   readonly persistence?: string;
   /**
   * Set output buffer limit for pub / sub clients in MB. The value is the hard limit, the soft limit is 1/4 of the hard limit. When setting the limit, be mindful of the available memory in the selected service plan.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/database_valkey_config#pubsub_client_output_buffer_limit DatabaseValkeyConfig#pubsub_client_output_buffer_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_valkey_config#pubsub_client_output_buffer_limit DatabaseValkeyConfig#pubsub_client_output_buffer_limit}
   */
   readonly pubsubClientOutputBufferLimit?: number;
   /**
   * Whether to enable SSL/TLS for connections to the Valkey cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/database_valkey_config#ssl DatabaseValkeyConfig#ssl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_valkey_config#ssl DatabaseValkeyConfig#ssl}
   */
   readonly ssl?: boolean | cdktf.IResolvable;
   /**
   * The timeout (in seconds) for Valkey client connections.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/database_valkey_config#timeout DatabaseValkeyConfig#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_valkey_config#timeout DatabaseValkeyConfig#timeout}
   */
   readonly timeout?: number;
   /**
   * Active expire effort. Valkey reclaims expired keys both when accessed and in the background. The background process scans for expired keys to free memory. Increasing the active-expire-effort setting (default 1, max 10) uses more CPU to reclaim expired keys faster, reducing memory usage but potentially increasing latency.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/database_valkey_config#valkey_active_expire_effort DatabaseValkeyConfig#valkey_active_expire_effort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_valkey_config#valkey_active_expire_effort DatabaseValkeyConfig#valkey_active_expire_effort}
   */
   readonly valkeyActiveExpireEffort?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/database_valkey_config digitalocean_database_valkey_config}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_valkey_config digitalocean_database_valkey_config}
 */
 export class DatabaseValkeyConfig extends cdktf.TerraformResource {
 
@@ -132,7 +132,7 @@ export class DatabaseValkeyConfig extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DatabaseValkeyConfig resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatabaseValkeyConfig to import
-  * @param importFromId The id of the existing DatabaseValkeyConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/database_valkey_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DatabaseValkeyConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_valkey_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatabaseValkeyConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -144,7 +144,7 @@ export class DatabaseValkeyConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/database_valkey_config digitalocean_database_valkey_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_valkey_config digitalocean_database_valkey_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -155,7 +155,7 @@ export class DatabaseValkeyConfig extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_database_valkey_config',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.63.0',
+        providerVersion: '2.64.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
