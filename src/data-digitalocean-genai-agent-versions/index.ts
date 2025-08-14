@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/genai_agent_versions
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/data-sources/genai_agent_versions
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataDigitaloceanGenaiAgentVersionsConfig extends cdktf.Terrafor
   /**
   * The ID of the agent to fetch versions for
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/genai_agent_versions#agent_id DataDigitaloceanGenaiAgentVersions#agent_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/data-sources/genai_agent_versions#agent_id DataDigitaloceanGenaiAgentVersions#agent_id}
   */
   readonly agentId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/genai_agent_versions#id DataDigitaloceanGenaiAgentVersions#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/data-sources/genai_agent_versions#id DataDigitaloceanGenaiAgentVersions#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +28,13 @@ export interface DataDigitaloceanGenaiAgentVersionsConfig extends cdktf.Terrafor
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/genai_agent_versions#filter DataDigitaloceanGenaiAgentVersions#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/data-sources/genai_agent_versions#filter DataDigitaloceanGenaiAgentVersions#filter}
   */
   readonly filter?: DataDigitaloceanGenaiAgentVersionsFilter[] | cdktf.IResolvable;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/genai_agent_versions#sort DataDigitaloceanGenaiAgentVersions#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/data-sources/genai_agent_versions#sort DataDigitaloceanGenaiAgentVersions#sort}
   */
   readonly sort?: DataDigitaloceanGenaiAgentVersionsSort[] | cdktf.IResolvable;
 }
@@ -594,19 +594,19 @@ export class DataDigitaloceanGenaiAgentVersionsAgentVersionsList extends cdktf.C
 }
 export interface DataDigitaloceanGenaiAgentVersionsFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/genai_agent_versions#all DataDigitaloceanGenaiAgentVersions#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/data-sources/genai_agent_versions#all DataDigitaloceanGenaiAgentVersions#all}
   */
   readonly all?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/genai_agent_versions#key DataDigitaloceanGenaiAgentVersions#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/data-sources/genai_agent_versions#key DataDigitaloceanGenaiAgentVersions#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/genai_agent_versions#match_by DataDigitaloceanGenaiAgentVersions#match_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/data-sources/genai_agent_versions#match_by DataDigitaloceanGenaiAgentVersions#match_by}
   */
   readonly matchBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/genai_agent_versions#values DataDigitaloceanGenaiAgentVersions#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/data-sources/genai_agent_versions#values DataDigitaloceanGenaiAgentVersions#values}
   */
   readonly values: string[];
 }
@@ -803,11 +803,11 @@ export class DataDigitaloceanGenaiAgentVersionsFilterList extends cdktf.ComplexL
 }
 export interface DataDigitaloceanGenaiAgentVersionsSort {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/genai_agent_versions#direction DataDigitaloceanGenaiAgentVersions#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/data-sources/genai_agent_versions#direction DataDigitaloceanGenaiAgentVersions#direction}
   */
   readonly direction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/genai_agent_versions#key DataDigitaloceanGenaiAgentVersions#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/data-sources/genai_agent_versions#key DataDigitaloceanGenaiAgentVersions#key}
   */
   readonly key: string;
 }
@@ -949,7 +949,7 @@ export class DataDigitaloceanGenaiAgentVersionsSortList extends cdktf.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/genai_agent_versions digitalocean_genai_agent_versions}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/data-sources/genai_agent_versions digitalocean_genai_agent_versions}
 */
 export class DataDigitaloceanGenaiAgentVersions extends cdktf.TerraformDataSource {
 
@@ -965,7 +965,7 @@ export class DataDigitaloceanGenaiAgentVersions extends cdktf.TerraformDataSourc
   * Generates CDKTF code for importing a DataDigitaloceanGenaiAgentVersions resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDigitaloceanGenaiAgentVersions to import
-  * @param importFromId The id of the existing DataDigitaloceanGenaiAgentVersions that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/genai_agent_versions#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDigitaloceanGenaiAgentVersions that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/data-sources/genai_agent_versions#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDigitaloceanGenaiAgentVersions to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -977,7 +977,7 @@ export class DataDigitaloceanGenaiAgentVersions extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/genai_agent_versions digitalocean_genai_agent_versions} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/data-sources/genai_agent_versions digitalocean_genai_agent_versions} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -988,7 +988,7 @@ export class DataDigitaloceanGenaiAgentVersions extends cdktf.TerraformDataSourc
       terraformResourceType: 'digitalocean_genai_agent_versions',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.63.0',
+        providerVersion: '2.64.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
