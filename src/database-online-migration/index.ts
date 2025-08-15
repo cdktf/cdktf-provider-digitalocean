@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_online_migration
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/database_online_migration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,25 @@ import * as cdktf from 'cdktf';
 
 export interface DatabaseOnlineMigrationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_online_migration#cluster_id DatabaseOnlineMigration#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/database_online_migration#cluster_id DatabaseOnlineMigration#cluster_id}
   */
   readonly clusterId: string;
   /**
   * Disables SSL encryption when connecting to the source database
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_online_migration#disable_ssl DatabaseOnlineMigration#disable_ssl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/database_online_migration#disable_ssl DatabaseOnlineMigration#disable_ssl}
   */
   readonly disableSsl?: boolean | cdktf.IResolvable;
   /**
   * The list of databases to be ignored during the migration
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_online_migration#ignore_dbs DatabaseOnlineMigration#ignore_dbs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/database_online_migration#ignore_dbs DatabaseOnlineMigration#ignore_dbs}
   */
   readonly ignoreDbs?: string[];
   /**
   * source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_online_migration#source DatabaseOnlineMigration#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/database_online_migration#source DatabaseOnlineMigration#source}
   */
   readonly source: DatabaseOnlineMigrationSource;
 }
@@ -39,31 +39,31 @@ export interface DatabaseOnlineMigrationSource {
   /**
   * The name of the default database
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_online_migration#db_name DatabaseOnlineMigration#db_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/database_online_migration#db_name DatabaseOnlineMigration#db_name}
   */
   readonly dbName: string;
   /**
   * The FQDN pointing to the database cluster's current primary node
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_online_migration#host DatabaseOnlineMigration#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/database_online_migration#host DatabaseOnlineMigration#host}
   */
   readonly host: string;
   /**
   * The password of the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_online_migration#password DatabaseOnlineMigration#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/database_online_migration#password DatabaseOnlineMigration#password}
   */
   readonly password: string;
   /**
   * The port on which the database cluster is listening
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_online_migration#port DatabaseOnlineMigration#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/database_online_migration#port DatabaseOnlineMigration#port}
   */
   readonly port: number;
   /**
   * The default user of the database
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_online_migration#username DatabaseOnlineMigration#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/database_online_migration#username DatabaseOnlineMigration#username}
   */
   readonly username: string;
 }
@@ -248,7 +248,7 @@ export class DatabaseOnlineMigrationSourceOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_online_migration digitalocean_database_online_migration}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/database_online_migration digitalocean_database_online_migration}
 */
 export class DatabaseOnlineMigration extends cdktf.TerraformResource {
 
@@ -264,7 +264,7 @@ export class DatabaseOnlineMigration extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DatabaseOnlineMigration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatabaseOnlineMigration to import
-  * @param importFromId The id of the existing DatabaseOnlineMigration that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_online_migration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DatabaseOnlineMigration that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/database_online_migration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatabaseOnlineMigration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -276,7 +276,7 @@ export class DatabaseOnlineMigration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_online_migration digitalocean_database_online_migration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/database_online_migration digitalocean_database_online_migration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -287,7 +287,7 @@ export class DatabaseOnlineMigration extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_database_online_migration',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.64.0',
+        providerVersion: '2.65.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
