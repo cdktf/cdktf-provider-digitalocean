@@ -4,7 +4,7 @@
 
 ### GenaiOpenaiApiKey <a name="GenaiOpenaiApiKey" id="@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key digitalocean_genai_openai_api_key}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/genai_openai_api_key digitalocean_genai_openai_api_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKey.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the GenaiOpenaiApiKey to impor
 
 The id of the existing GenaiOpenaiApiKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/genai_openai_api_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -855,7 +855,7 @@ const genaiOpenaiApiKeyConfig: genaiOpenaiApiKey.GenaiOpenaiApiKeyConfig = { ...
 | <code><a href="#@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKeyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKeyConfig.property.apiKey">apiKey</a></code> | <code>string</code> | The OpenAI API key. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKeyConfig.property.name">name</a></code> | <code>string</code> | A name for the API key. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKeyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#id GenaiOpenaiApiKey#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKeyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/genai_openai_api_key#id GenaiOpenaiApiKey#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKeyConfig.property.model">model</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKeyModel">GenaiOpenaiApiKeyModel</a>[]</code> | model block. |
 
 ---
@@ -940,7 +940,7 @@ public readonly apiKey: string;
 
 The OpenAI API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#api_key GenaiOpenaiApiKey#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/genai_openai_api_key#api_key GenaiOpenaiApiKey#api_key}
 
 ---
 
@@ -954,7 +954,7 @@ public readonly name: string;
 
 A name for the API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#name GenaiOpenaiApiKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/genai_openai_api_key#name GenaiOpenaiApiKey#name}
 
 ---
 
@@ -966,7 +966,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#id GenaiOpenaiApiKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/genai_openai_api_key#id GenaiOpenaiApiKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -983,7 +983,7 @@ public readonly model: IResolvable | GenaiOpenaiApiKeyModel[];
 
 model block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#model GenaiOpenaiApiKey#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/genai_openai_api_key#model GenaiOpenaiApiKey#model}
 
 ---
 
@@ -1025,7 +1025,7 @@ public readonly agreement: IResolvable | GenaiOpenaiApiKeyModelAgreement[];
 
 agreement block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#agreement GenaiOpenaiApiKey#agreement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/genai_openai_api_key#agreement GenaiOpenaiApiKey#agreement}
 
 ---
 
@@ -1039,7 +1039,7 @@ public readonly inferenceName: string;
 
 Inference name of the model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#inference_name GenaiOpenaiApiKey#inference_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/genai_openai_api_key#inference_name GenaiOpenaiApiKey#inference_name}
 
 ---
 
@@ -1053,7 +1053,7 @@ public readonly inferenceVersion: string;
 
 Infernce version of the model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#inference_version GenaiOpenaiApiKey#inference_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/genai_openai_api_key#inference_version GenaiOpenaiApiKey#inference_version}
 
 ---
 
@@ -1067,7 +1067,7 @@ public readonly isFoundational: boolean | IResolvable;
 
 Indicates if the Model Base is foundational.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#is_foundational GenaiOpenaiApiKey#is_foundational}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/genai_openai_api_key#is_foundational GenaiOpenaiApiKey#is_foundational}
 
 ---
 
@@ -1081,7 +1081,7 @@ public readonly name: string;
 
 Name of the Knowledge Base.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#name GenaiOpenaiApiKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/genai_openai_api_key#name GenaiOpenaiApiKey#name}
 
 ---
 
@@ -1095,7 +1095,7 @@ public readonly parentUuid: string;
 
 Parent UUID of the Model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#parent_uuid GenaiOpenaiApiKey#parent_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/genai_openai_api_key#parent_uuid GenaiOpenaiApiKey#parent_uuid}
 
 ---
 
@@ -1109,7 +1109,7 @@ public readonly provider: string;
 
 Provider of the Model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#provider GenaiOpenaiApiKey#provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/genai_openai_api_key#provider GenaiOpenaiApiKey#provider}
 
 ---
 
@@ -1123,7 +1123,7 @@ public readonly uploadComplete: boolean | IResolvable;
 
 Indicates if the Model upload is complete.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#upload_complete GenaiOpenaiApiKey#upload_complete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/genai_openai_api_key#upload_complete GenaiOpenaiApiKey#upload_complete}
 
 ---
 
@@ -1137,7 +1137,7 @@ public readonly url: string;
 
 URL of the Model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#url GenaiOpenaiApiKey#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/genai_openai_api_key#url GenaiOpenaiApiKey#url}
 
 ---
 
@@ -1151,7 +1151,7 @@ public readonly usecases: string[];
 
 List of Usecases for the Model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#usecases GenaiOpenaiApiKey#usecases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/genai_openai_api_key#usecases GenaiOpenaiApiKey#usecases}
 
 ---
 
@@ -1165,7 +1165,7 @@ public readonly versions: IResolvable | GenaiOpenaiApiKeyModelVersions[];
 
 versions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#versions GenaiOpenaiApiKey#versions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/genai_openai_api_key#versions GenaiOpenaiApiKey#versions}
 
 ---
 
@@ -1200,7 +1200,7 @@ public readonly description: string;
 
 Description of the agreement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#description GenaiOpenaiApiKey#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/genai_openai_api_key#description GenaiOpenaiApiKey#description}
 
 ---
 
@@ -1214,7 +1214,7 @@ public readonly name: string;
 
 Name of the agreement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#name GenaiOpenaiApiKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/genai_openai_api_key#name GenaiOpenaiApiKey#name}
 
 ---
 
@@ -1228,7 +1228,7 @@ public readonly url: string;
 
 URL of the agreement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#url GenaiOpenaiApiKey#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/genai_openai_api_key#url GenaiOpenaiApiKey#url}
 
 ---
 
@@ -1242,7 +1242,7 @@ public readonly uuid: string;
 
 UUID of the agreement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#uuid GenaiOpenaiApiKey#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/genai_openai_api_key#uuid GenaiOpenaiApiKey#uuid}
 
 ---
 
@@ -1276,7 +1276,7 @@ public readonly major: number;
 
 Major version of the model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#major GenaiOpenaiApiKey#major}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/genai_openai_api_key#major GenaiOpenaiApiKey#major}
 
 ---
 
@@ -1290,7 +1290,7 @@ public readonly minor: number;
 
 Minor version of the model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#minor GenaiOpenaiApiKey#minor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/genai_openai_api_key#minor GenaiOpenaiApiKey#minor}
 
 ---
 
@@ -1304,7 +1304,7 @@ public readonly patch: number;
 
 Patch version of the model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_openai_api_key#patch GenaiOpenaiApiKey#patch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/genai_openai_api_key#patch GenaiOpenaiApiKey#patch}
 
 ---
 

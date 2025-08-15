@@ -4,7 +4,7 @@
 
 ### DataDigitaloceanPartnerAttachmentServiceKey <a name="DataDigitaloceanPartnerAttachmentServiceKey" id="@cdktf/provider-digitalocean.dataDigitaloceanPartnerAttachmentServiceKey.DataDigitaloceanPartnerAttachmentServiceKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/data-sources/partner_attachment_service_key digitalocean_partner_attachment_service_key}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/data-sources/partner_attachment_service_key digitalocean_partner_attachment_service_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanPartnerAttachmentServiceKey.DataDigitaloceanPartnerAttachmentServiceKey.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataDigitaloceanPartnerAtt
 
 The id of the existing DataDigitaloceanPartnerAttachmentServiceKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/data-sources/partner_attachment_service_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/data-sources/partner_attachment_service_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -654,7 +654,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadig
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanPartnerAttachmentServiceKey.DataDigitaloceanPartnerAttachmentServiceKeyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanPartnerAttachmentServiceKey.DataDigitaloceanPartnerAttachmentServiceKeyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanPartnerAttachmentServiceKey.DataDigitaloceanPartnerAttachmentServiceKeyConfig.property.attachmentId">AttachmentId</a></code> | <code>*string</code> | The ID of the Partner Attachment for which to retrieve the service key. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanPartnerAttachmentServiceKey.DataDigitaloceanPartnerAttachmentServiceKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/data-sources/partner_attachment_service_key#id DataDigitaloceanPartnerAttachmentServiceKey#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanPartnerAttachmentServiceKey.DataDigitaloceanPartnerAttachmentServiceKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/data-sources/partner_attachment_service_key#id DataDigitaloceanPartnerAttachmentServiceKey#id}. |
 
 ---
 
@@ -738,7 +738,7 @@ AttachmentId *string
 
 The ID of the Partner Attachment for which to retrieve the service key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/data-sources/partner_attachment_service_key#attachment_id DataDigitaloceanPartnerAttachmentServiceKey#attachment_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/data-sources/partner_attachment_service_key#attachment_id DataDigitaloceanPartnerAttachmentServiceKey#attachment_id}
 
 ---
 
@@ -750,7 +750,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/data-sources/partner_attachment_service_key#id DataDigitaloceanPartnerAttachmentServiceKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/data-sources/partner_attachment_service_key#id DataDigitaloceanPartnerAttachmentServiceKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

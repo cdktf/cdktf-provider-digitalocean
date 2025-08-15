@@ -4,7 +4,7 @@
 
 ### SpacesKey <a name="SpacesKey" id="@cdktf/provider-digitalocean.spacesKey.SpacesKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/spaces_key digitalocean_spaces_key}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/spaces_key digitalocean_spaces_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.spacesKey.SpacesKey.Initializer"></a>
 
@@ -43,7 +43,7 @@ SpacesKey.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-digitalocean.spacesKey.SpacesKey.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.spacesKey.SpacesKey.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | A name for the key. This is used to identify the key in the DigitalOcean control panel. |
 | <code><a href="#@cdktf/provider-digitalocean.spacesKey.SpacesKey.Initializer.parameter.grant">grant</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.spacesKey.SpacesKeyGrant">SpacesKeyGrant</a>></code> | grant block. |
-| <code><a href="#@cdktf/provider-digitalocean.spacesKey.SpacesKey.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/spaces_key#id SpacesKey#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.spacesKey.SpacesKey.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/spaces_key#id SpacesKey#id}. |
 
 ---
 
@@ -113,7 +113,7 @@ Must be unique amongst siblings in the same scope
 
 A name for the key. This is used to identify the key in the DigitalOcean control panel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/spaces_key#name SpacesKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/spaces_key#name SpacesKey#name}
 
 ---
 
@@ -123,7 +123,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 grant block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/spaces_key#grant SpacesKey#grant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/spaces_key#grant SpacesKey#grant}
 
 ---
 
@@ -131,7 +131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/spaces_key#id SpacesKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/spaces_key#id SpacesKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -588,7 +588,7 @@ The construct id used in the generated config for the SpacesKey to import.
 
 The id of the existing SpacesKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/spaces_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/spaces_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -921,7 +921,7 @@ SpacesKeyConfig.builder()
 | <code><a href="#@cdktf/provider-digitalocean.spacesKey.SpacesKeyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.spacesKey.SpacesKeyConfig.property.name">name</a></code> | <code>java.lang.String</code> | A name for the key. This is used to identify the key in the DigitalOcean control panel. |
 | <code><a href="#@cdktf/provider-digitalocean.spacesKey.SpacesKeyConfig.property.grant">grant</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.spacesKey.SpacesKeyGrant">SpacesKeyGrant</a>></code> | grant block. |
-| <code><a href="#@cdktf/provider-digitalocean.spacesKey.SpacesKeyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/spaces_key#id SpacesKey#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.spacesKey.SpacesKeyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/spaces_key#id SpacesKey#id}. |
 
 ---
 
@@ -1005,7 +1005,7 @@ public java.lang.String getName();
 
 A name for the key. This is used to identify the key in the DigitalOcean control panel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/spaces_key#name SpacesKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/spaces_key#name SpacesKey#name}
 
 ---
 
@@ -1019,7 +1019,7 @@ public java.lang.Object getGrant();
 
 grant block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/spaces_key#grant SpacesKey#grant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/spaces_key#grant SpacesKey#grant}
 
 ---
 
@@ -1031,7 +1031,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/spaces_key#id SpacesKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/spaces_key#id SpacesKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1070,7 +1070,7 @@ public java.lang.String getBucket();
 
 The name of the bucket to grant the key access to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/spaces_key#bucket SpacesKey#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/spaces_key#bucket SpacesKey#bucket}
 
 ---
 
@@ -1084,7 +1084,7 @@ public java.lang.String getPermission();
 
 The permission to grant the key. Valid values are `read`, `readwrite`, or `fullaccess`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/spaces_key#permission SpacesKey#permission}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/spaces_key#permission SpacesKey#permission}
 
 ---
 
