@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/data-sources/genai_agents
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agents
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,26 +13,26 @@ import * as cdktf from 'cdktf';
 
 export interface DataDigitaloceanGenaiAgentsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/data-sources/genai_agents#id DataDigitaloceanGenaiAgents#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agents#id DataDigitaloceanGenaiAgents#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/data-sources/genai_agents#only_deployed DataDigitaloceanGenaiAgents#only_deployed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agents#only_deployed DataDigitaloceanGenaiAgents#only_deployed}
   */
   readonly onlyDeployed?: boolean | cdktf.IResolvable;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/data-sources/genai_agents#filter DataDigitaloceanGenaiAgents#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agents#filter DataDigitaloceanGenaiAgents#filter}
   */
   readonly filter?: DataDigitaloceanGenaiAgentsFilter[] | cdktf.IResolvable;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/data-sources/genai_agents#sort DataDigitaloceanGenaiAgents#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agents#sort DataDigitaloceanGenaiAgents#sort}
   */
   readonly sort?: DataDigitaloceanGenaiAgentsSort[] | cdktf.IResolvable;
 }
@@ -3852,19 +3852,19 @@ export class DataDigitaloceanGenaiAgentsAgentsList extends cdktf.ComplexList {
 }
 export interface DataDigitaloceanGenaiAgentsFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/data-sources/genai_agents#all DataDigitaloceanGenaiAgents#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agents#all DataDigitaloceanGenaiAgents#all}
   */
   readonly all?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/data-sources/genai_agents#key DataDigitaloceanGenaiAgents#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agents#key DataDigitaloceanGenaiAgents#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/data-sources/genai_agents#match_by DataDigitaloceanGenaiAgents#match_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agents#match_by DataDigitaloceanGenaiAgents#match_by}
   */
   readonly matchBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/data-sources/genai_agents#values DataDigitaloceanGenaiAgents#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agents#values DataDigitaloceanGenaiAgents#values}
   */
   readonly values: string[];
 }
@@ -4061,11 +4061,11 @@ export class DataDigitaloceanGenaiAgentsFilterList extends cdktf.ComplexList {
 }
 export interface DataDigitaloceanGenaiAgentsSort {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/data-sources/genai_agents#direction DataDigitaloceanGenaiAgents#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agents#direction DataDigitaloceanGenaiAgents#direction}
   */
   readonly direction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/data-sources/genai_agents#key DataDigitaloceanGenaiAgents#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agents#key DataDigitaloceanGenaiAgents#key}
   */
   readonly key: string;
 }
@@ -4207,7 +4207,7 @@ export class DataDigitaloceanGenaiAgentsSortList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/data-sources/genai_agents digitalocean_genai_agents}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agents digitalocean_genai_agents}
 */
 export class DataDigitaloceanGenaiAgents extends cdktf.TerraformDataSource {
 
@@ -4223,7 +4223,7 @@ export class DataDigitaloceanGenaiAgents extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDigitaloceanGenaiAgents resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDigitaloceanGenaiAgents to import
-  * @param importFromId The id of the existing DataDigitaloceanGenaiAgents that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/data-sources/genai_agents#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDigitaloceanGenaiAgents that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agents#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDigitaloceanGenaiAgents to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -4235,7 +4235,7 @@ export class DataDigitaloceanGenaiAgents extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/data-sources/genai_agents digitalocean_genai_agents} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agents digitalocean_genai_agents} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -4246,7 +4246,7 @@ export class DataDigitaloceanGenaiAgents extends cdktf.TerraformDataSource {
       terraformResourceType: 'digitalocean_genai_agents',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.65.0',
+        providerVersion: '2.66.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,

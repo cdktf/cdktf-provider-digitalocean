@@ -2469,6 +2469,81 @@ export class DataDigitaloceanAppSpecIngressRuleCorsList extends cdktf.ComplexLis
     return new DataDigitaloceanAppSpecIngressRuleCorsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataDigitaloceanAppSpecIngressRuleMatchAuthority {
+}
+
+export function dataDigitaloceanAppSpecIngressRuleMatchAuthorityToTerraform(struct?: DataDigitaloceanAppSpecIngressRuleMatchAuthority): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataDigitaloceanAppSpecIngressRuleMatchAuthorityToHclTerraform(struct?: DataDigitaloceanAppSpecIngressRuleMatchAuthority): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDigitaloceanAppSpecIngressRuleMatchAuthorityOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataDigitaloceanAppSpecIngressRuleMatchAuthority | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDigitaloceanAppSpecIngressRuleMatchAuthority | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // exact - computed: true, optional: false, required: false
+  public get exact() {
+    return this.getStringAttribute('exact');
+  }
+}
+
+export class DataDigitaloceanAppSpecIngressRuleMatchAuthorityList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataDigitaloceanAppSpecIngressRuleMatchAuthorityOutputReference {
+    return new DataDigitaloceanAppSpecIngressRuleMatchAuthorityOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataDigitaloceanAppSpecIngressRuleMatchPath {
 }
 
@@ -2593,6 +2668,12 @@ export class DataDigitaloceanAppSpecIngressRuleMatchOutputReference extends cdkt
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
     }
+  }
+
+  // authority - computed: true, optional: false, required: false
+  private _authority = new DataDigitaloceanAppSpecIngressRuleMatchAuthorityList(this, "authority", false);
+  public get authority() {
+    return this._authority;
   }
 
   // path - computed: true, optional: false, required: false
@@ -8756,111 +8837,5 @@ export class DataDigitaloceanAppSpecWorkerImageDeployOnPushList extends cdktf.Co
   */
   public get(index: number): DataDigitaloceanAppSpecWorkerImageDeployOnPushOutputReference {
     return new DataDigitaloceanAppSpecWorkerImageDeployOnPushOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface DataDigitaloceanAppSpecWorkerImage {
-}
-
-export function dataDigitaloceanAppSpecWorkerImageToTerraform(struct?: DataDigitaloceanAppSpecWorkerImage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function dataDigitaloceanAppSpecWorkerImageToHclTerraform(struct?: DataDigitaloceanAppSpecWorkerImage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class DataDigitaloceanAppSpecWorkerImageOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): DataDigitaloceanAppSpecWorkerImage | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DataDigitaloceanAppSpecWorkerImage | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // deploy_on_push - computed: true, optional: false, required: false
-  private _deployOnPush = new DataDigitaloceanAppSpecWorkerImageDeployOnPushList(this, "deploy_on_push", false);
-  public get deployOnPush() {
-    return this._deployOnPush;
-  }
-
-  // digest - computed: true, optional: false, required: false
-  public get digest() {
-    return this.getStringAttribute('digest');
-  }
-
-  // registry - computed: true, optional: false, required: false
-  public get registry() {
-    return this.getStringAttribute('registry');
-  }
-
-  // registry_credentials - computed: true, optional: false, required: false
-  public get registryCredentials() {
-    return this.getStringAttribute('registry_credentials');
-  }
-
-  // registry_type - computed: true, optional: false, required: false
-  public get registryType() {
-    return this.getStringAttribute('registry_type');
-  }
-
-  // repository - computed: true, optional: false, required: false
-  public get repository() {
-    return this.getStringAttribute('repository');
-  }
-
-  // tag - computed: true, optional: false, required: false
-  public get tag() {
-    return this.getStringAttribute('tag');
-  }
-}
-
-export class DataDigitaloceanAppSpecWorkerImageList extends cdktf.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): DataDigitaloceanAppSpecWorkerImageOutputReference {
-    return new DataDigitaloceanAppSpecWorkerImageOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
