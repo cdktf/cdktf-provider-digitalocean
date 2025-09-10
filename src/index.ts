@@ -15,6 +15,7 @@ export * as databaseConnectionPool from './database-connection-pool';
 export * as databaseDb from './database-db';
 export * as databaseFirewall from './database-firewall';
 export * as databaseKafkaConfig from './database-kafka-config';
+export * as databaseKafkaSchemaRegistry from './database-kafka-schema-registry';
 export * as databaseKafkaTopic from './database-kafka-topic';
 export * as databaseMongodbConfig from './database-mongodb-config';
 export * as databaseMysqlConfig from './database-mysql-config';
