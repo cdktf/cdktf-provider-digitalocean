@@ -4,7 +4,7 @@
 
 ### DataDigitaloceanGenaiAgent <a name="DataDigitaloceanGenaiAgent" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgent.DataDigitaloceanGenaiAgent"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent digitalocean_genai_agent}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent digitalocean_genai_agent}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgent.DataDigitaloceanGenaiAgent.Initializer"></a>
 
@@ -86,7 +86,7 @@ DataDigitaloceanGenaiAgent.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgent.DataDigitaloceanGenaiAgent.Initializer.parameter.deployment">deployment</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgent.DataDigitaloceanGenaiAgentDeployment">DataDigitaloceanGenaiAgentDeployment</a>></code> | deployment block. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgent.DataDigitaloceanGenaiAgent.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Description for the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgent.DataDigitaloceanGenaiAgent.Initializer.parameter.functions">functions</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgent.DataDigitaloceanGenaiAgentFunctions">DataDigitaloceanGenaiAgentFunctions</a>></code> | functions block. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgent.DataDigitaloceanGenaiAgent.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#id DataDigitaloceanGenaiAgent#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgent.DataDigitaloceanGenaiAgent.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#id DataDigitaloceanGenaiAgent#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgent.DataDigitaloceanGenaiAgent.Initializer.parameter.ifCase">ifCase</a></code> | <code>java.lang.String</code> | If case condition. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgent.DataDigitaloceanGenaiAgent.Initializer.parameter.k">k</a></code> | <code>java.lang.Number</code> | K value. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgent.DataDigitaloceanGenaiAgent.Initializer.parameter.knowledgeBases">knowledgeBases</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgent.DataDigitaloceanGenaiAgentKnowledgeBases">DataDigitaloceanGenaiAgentKnowledgeBases</a>></code> | knowledge_bases block. |
@@ -172,7 +172,7 @@ Must be unique amongst siblings in the same scope
 
 ID of the Agent to retrieve.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#agent_id DataDigitaloceanGenaiAgent#agent_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#agent_id DataDigitaloceanGenaiAgent#agent_id}
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 agent_guardrail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#agent_guardrail DataDigitaloceanGenaiAgent#agent_guardrail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#agent_guardrail DataDigitaloceanGenaiAgent#agent_guardrail}
 
 ---
 
@@ -192,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 anthropic_api_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#anthropic_api_key DataDigitaloceanGenaiAgent#anthropic_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#anthropic_api_key DataDigitaloceanGenaiAgent#anthropic_api_key}
 
 ---
 
@@ -202,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 api_key_infos block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#api_key_infos DataDigitaloceanGenaiAgent#api_key_infos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#api_key_infos DataDigitaloceanGenaiAgent#api_key_infos}
 
 ---
 
@@ -212,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 api_keys block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#api_keys DataDigitaloceanGenaiAgent#api_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#api_keys DataDigitaloceanGenaiAgent#api_keys}
 
 ---
 
@@ -222,7 +222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 chatbot block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#chatbot DataDigitaloceanGenaiAgent#chatbot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#chatbot DataDigitaloceanGenaiAgent#chatbot}
 
 ---
 
@@ -232,7 +232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 chatbot_identifiers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#chatbot_identifiers DataDigitaloceanGenaiAgent#chatbot_identifiers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#chatbot_identifiers DataDigitaloceanGenaiAgent#chatbot_identifiers}
 
 ---
 
@@ -242,7 +242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 deployment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#deployment DataDigitaloceanGenaiAgent#deployment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#deployment DataDigitaloceanGenaiAgent#deployment}
 
 ---
 
@@ -252,7 +252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Description for the Agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#description DataDigitaloceanGenaiAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#description DataDigitaloceanGenaiAgent#description}
 
 ---
 
@@ -262,7 +262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 functions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#functions DataDigitaloceanGenaiAgent#functions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#functions DataDigitaloceanGenaiAgent#functions}
 
 ---
 
@@ -270,7 +270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#id DataDigitaloceanGenaiAgent#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#id DataDigitaloceanGenaiAgent#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -283,7 +283,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 If case condition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#if_case DataDigitaloceanGenaiAgent#if_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#if_case DataDigitaloceanGenaiAgent#if_case}
 
 ---
 
@@ -293,7 +293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 K value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#k DataDigitaloceanGenaiAgent#k}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#k DataDigitaloceanGenaiAgent#k}
 
 ---
 
@@ -303,7 +303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 knowledge_bases block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#knowledge_bases DataDigitaloceanGenaiAgent#knowledge_bases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#knowledge_bases DataDigitaloceanGenaiAgent#knowledge_bases}
 
 ---
 
@@ -313,7 +313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Maximum tokens allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#max_tokens DataDigitaloceanGenaiAgent#max_tokens}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#max_tokens DataDigitaloceanGenaiAgent#max_tokens}
 
 ---
 
@@ -323,7 +323,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 model block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#model DataDigitaloceanGenaiAgent#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#model DataDigitaloceanGenaiAgent#model}
 
 ---
 
@@ -333,7 +333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 open_ai_api_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#open_ai_api_key DataDigitaloceanGenaiAgent#open_ai_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#open_ai_api_key DataDigitaloceanGenaiAgent#open_ai_api_key}
 
 ---
 
@@ -343,7 +343,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Retrieval method used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#retrieval_method DataDigitaloceanGenaiAgent#retrieval_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#retrieval_method DataDigitaloceanGenaiAgent#retrieval_method}
 
 ---
 
@@ -353,7 +353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 User who created the route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#route_created_by DataDigitaloceanGenaiAgent#route_created_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#route_created_by DataDigitaloceanGenaiAgent#route_created_by}
 
 ---
 
@@ -363,7 +363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Route name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#route_name DataDigitaloceanGenaiAgent#route_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#route_name DataDigitaloceanGenaiAgent#route_name}
 
 ---
 
@@ -373,7 +373,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Route UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#route_uuid DataDigitaloceanGenaiAgent#route_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#route_uuid DataDigitaloceanGenaiAgent#route_uuid}
 
 ---
 
@@ -383,7 +383,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 List of Tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#tags DataDigitaloceanGenaiAgent#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#tags DataDigitaloceanGenaiAgent#tags}
 
 ---
 
@@ -393,7 +393,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Agent temperature setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#temperature DataDigitaloceanGenaiAgent#temperature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#temperature DataDigitaloceanGenaiAgent#temperature}
 
 ---
 
@@ -403,7 +403,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#template DataDigitaloceanGenaiAgent#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#template DataDigitaloceanGenaiAgent#template}
 
 ---
 
@@ -413,7 +413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Top P sampling parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#top_p DataDigitaloceanGenaiAgent#top_p}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#top_p DataDigitaloceanGenaiAgent#top_p}
 
 ---
 
@@ -423,7 +423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 URL for the Agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#url DataDigitaloceanGenaiAgent#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#url DataDigitaloceanGenaiAgent#url}
 
 ---
 
@@ -433,7 +433,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 User ID linked with the Agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#user_id DataDigitaloceanGenaiAgent#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#user_id DataDigitaloceanGenaiAgent#user_id}
 
 ---
 
@@ -1094,7 +1094,7 @@ The construct id used in the generated config for the DataDigitaloceanGenaiAgent
 
 The id of the existing DataDigitaloceanGenaiAgent that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -2018,7 +2018,7 @@ public java.lang.String getAgentUuid();
 
 Agent UUID for the Guardrail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#agent_uuid DataDigitaloceanGenaiAgent#agent_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#agent_uuid DataDigitaloceanGenaiAgent#agent_uuid}
 
 ---
 
@@ -2032,7 +2032,7 @@ public java.lang.String getDefaultResponse();
 
 Default response for the Guardrail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#default_response DataDigitaloceanGenaiAgent#default_response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#default_response DataDigitaloceanGenaiAgent#default_response}
 
 ---
 
@@ -2046,7 +2046,7 @@ public java.lang.String getDescription();
 
 Description of the Guardrail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#description DataDigitaloceanGenaiAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#description DataDigitaloceanGenaiAgent#description}
 
 ---
 
@@ -2060,7 +2060,7 @@ public java.lang.String getGuardrailUuid();
 
 Guardrail UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#guardrail_uuid DataDigitaloceanGenaiAgent#guardrail_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#guardrail_uuid DataDigitaloceanGenaiAgent#guardrail_uuid}
 
 ---
 
@@ -2074,7 +2074,7 @@ public java.lang.Object getIsDefault();
 
 Indicates if the Guardrail is default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#is_default DataDigitaloceanGenaiAgent#is_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#is_default DataDigitaloceanGenaiAgent#is_default}
 
 ---
 
@@ -2088,7 +2088,7 @@ public java.lang.String getName();
 
 Name of Guardrail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#name DataDigitaloceanGenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#name DataDigitaloceanGenaiAgent#name}
 
 ---
 
@@ -2102,7 +2102,7 @@ public java.lang.Number getPriority();
 
 Priority of the Guardrail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#priority DataDigitaloceanGenaiAgent#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#priority DataDigitaloceanGenaiAgent#priority}
 
 ---
 
@@ -2116,7 +2116,7 @@ public java.lang.String getType();
 
 Type of the Guardrail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#type DataDigitaloceanGenaiAgent#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#type DataDigitaloceanGenaiAgent#type}
 
 ---
 
@@ -2130,7 +2130,7 @@ public java.lang.String getUuid();
 
 Guardrail UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#uuid DataDigitaloceanGenaiAgent#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#uuid DataDigitaloceanGenaiAgent#uuid}
 
 ---
 
@@ -2168,7 +2168,7 @@ public java.lang.String getCreatedBy();
 
 Created By user ID for the API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#created_by DataDigitaloceanGenaiAgent#created_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#created_by DataDigitaloceanGenaiAgent#created_by}
 
 ---
 
@@ -2182,7 +2182,7 @@ public java.lang.String getName();
 
 Name of the API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#name DataDigitaloceanGenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#name DataDigitaloceanGenaiAgent#name}
 
 ---
 
@@ -2196,7 +2196,7 @@ public java.lang.String getUuid();
 
 API Key value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#uuid DataDigitaloceanGenaiAgent#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#uuid DataDigitaloceanGenaiAgent#uuid}
 
 ---
 
@@ -2236,7 +2236,7 @@ public java.lang.String getCreatedBy();
 
 Created By user ID for the API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#created_by DataDigitaloceanGenaiAgent#created_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#created_by DataDigitaloceanGenaiAgent#created_by}
 
 ---
 
@@ -2250,7 +2250,7 @@ public java.lang.String getName();
 
 Name of the API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#name DataDigitaloceanGenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#name DataDigitaloceanGenaiAgent#name}
 
 ---
 
@@ -2264,7 +2264,7 @@ public java.lang.String getSecretKey();
 
 Updated At timestamp for the API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#secret_key DataDigitaloceanGenaiAgent#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#secret_key DataDigitaloceanGenaiAgent#secret_key}
 
 ---
 
@@ -2278,7 +2278,7 @@ public java.lang.String getUuid();
 
 API Key value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#uuid DataDigitaloceanGenaiAgent#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#uuid DataDigitaloceanGenaiAgent#uuid}
 
 ---
 
@@ -2312,7 +2312,7 @@ public java.lang.String getApiKey();
 
 API Key value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#api_key DataDigitaloceanGenaiAgent#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#api_key DataDigitaloceanGenaiAgent#api_key}
 
 ---
 
@@ -2356,7 +2356,7 @@ public java.lang.String getButtonBackgroundColor();
 
 Background color for the chatbot button.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#button_background_color DataDigitaloceanGenaiAgent#button_background_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#button_background_color DataDigitaloceanGenaiAgent#button_background_color}
 
 ---
 
@@ -2370,7 +2370,7 @@ public java.lang.String getLogo();
 
 Logo for the chatbot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#logo DataDigitaloceanGenaiAgent#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#logo DataDigitaloceanGenaiAgent#logo}
 
 ---
 
@@ -2384,7 +2384,7 @@ public java.lang.String getName();
 
 Name of the chatbot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#name DataDigitaloceanGenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#name DataDigitaloceanGenaiAgent#name}
 
 ---
 
@@ -2398,7 +2398,7 @@ public java.lang.String getPrimaryColor();
 
 Primary color for the chatbot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#primary_color DataDigitaloceanGenaiAgent#primary_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#primary_color DataDigitaloceanGenaiAgent#primary_color}
 
 ---
 
@@ -2412,7 +2412,7 @@ public java.lang.String getSecondaryColor();
 
 Secondary color for the chatbot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#secondary_color DataDigitaloceanGenaiAgent#secondary_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#secondary_color DataDigitaloceanGenaiAgent#secondary_color}
 
 ---
 
@@ -2426,7 +2426,7 @@ public java.lang.String getStartingMessage();
 
 Starting message for the chatbot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#starting_message DataDigitaloceanGenaiAgent#starting_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#starting_message DataDigitaloceanGenaiAgent#starting_message}
 
 ---
 
@@ -2460,7 +2460,7 @@ public java.lang.String getChatbotId();
 
 Chatbot ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#chatbot_id DataDigitaloceanGenaiAgent#chatbot_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#chatbot_id DataDigitaloceanGenaiAgent#chatbot_id}
 
 ---
 
@@ -2630,7 +2630,7 @@ DataDigitaloceanGenaiAgentConfig.builder()
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgent.DataDigitaloceanGenaiAgentConfig.property.deployment">deployment</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgent.DataDigitaloceanGenaiAgentDeployment">DataDigitaloceanGenaiAgentDeployment</a>></code> | deployment block. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgent.DataDigitaloceanGenaiAgentConfig.property.description">description</a></code> | <code>java.lang.String</code> | Description for the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgent.DataDigitaloceanGenaiAgentConfig.property.functions">functions</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgent.DataDigitaloceanGenaiAgentFunctions">DataDigitaloceanGenaiAgentFunctions</a>></code> | functions block. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgent.DataDigitaloceanGenaiAgentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#id DataDigitaloceanGenaiAgent#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgent.DataDigitaloceanGenaiAgentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#id DataDigitaloceanGenaiAgent#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgent.DataDigitaloceanGenaiAgentConfig.property.ifCase">ifCase</a></code> | <code>java.lang.String</code> | If case condition. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgent.DataDigitaloceanGenaiAgentConfig.property.k">k</a></code> | <code>java.lang.Number</code> | K value. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgent.DataDigitaloceanGenaiAgentConfig.property.knowledgeBases">knowledgeBases</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgent.DataDigitaloceanGenaiAgentKnowledgeBases">DataDigitaloceanGenaiAgentKnowledgeBases</a>></code> | knowledge_bases block. |
@@ -2730,7 +2730,7 @@ public java.lang.String getAgentId();
 
 ID of the Agent to retrieve.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#agent_id DataDigitaloceanGenaiAgent#agent_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#agent_id DataDigitaloceanGenaiAgent#agent_id}
 
 ---
 
@@ -2744,7 +2744,7 @@ public java.lang.Object getAgentGuardrail();
 
 agent_guardrail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#agent_guardrail DataDigitaloceanGenaiAgent#agent_guardrail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#agent_guardrail DataDigitaloceanGenaiAgent#agent_guardrail}
 
 ---
 
@@ -2758,7 +2758,7 @@ public java.lang.Object getAnthropicApiKey();
 
 anthropic_api_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#anthropic_api_key DataDigitaloceanGenaiAgent#anthropic_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#anthropic_api_key DataDigitaloceanGenaiAgent#anthropic_api_key}
 
 ---
 
@@ -2772,7 +2772,7 @@ public java.lang.Object getApiKeyInfos();
 
 api_key_infos block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#api_key_infos DataDigitaloceanGenaiAgent#api_key_infos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#api_key_infos DataDigitaloceanGenaiAgent#api_key_infos}
 
 ---
 
@@ -2786,7 +2786,7 @@ public java.lang.Object getApiKeys();
 
 api_keys block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#api_keys DataDigitaloceanGenaiAgent#api_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#api_keys DataDigitaloceanGenaiAgent#api_keys}
 
 ---
 
@@ -2800,7 +2800,7 @@ public java.lang.Object getChatbot();
 
 chatbot block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#chatbot DataDigitaloceanGenaiAgent#chatbot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#chatbot DataDigitaloceanGenaiAgent#chatbot}
 
 ---
 
@@ -2814,7 +2814,7 @@ public java.lang.Object getChatbotIdentifiers();
 
 chatbot_identifiers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#chatbot_identifiers DataDigitaloceanGenaiAgent#chatbot_identifiers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#chatbot_identifiers DataDigitaloceanGenaiAgent#chatbot_identifiers}
 
 ---
 
@@ -2828,7 +2828,7 @@ public java.lang.Object getDeployment();
 
 deployment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#deployment DataDigitaloceanGenaiAgent#deployment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#deployment DataDigitaloceanGenaiAgent#deployment}
 
 ---
 
@@ -2842,7 +2842,7 @@ public java.lang.String getDescription();
 
 Description for the Agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#description DataDigitaloceanGenaiAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#description DataDigitaloceanGenaiAgent#description}
 
 ---
 
@@ -2856,7 +2856,7 @@ public java.lang.Object getFunctions();
 
 functions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#functions DataDigitaloceanGenaiAgent#functions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#functions DataDigitaloceanGenaiAgent#functions}
 
 ---
 
@@ -2868,7 +2868,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#id DataDigitaloceanGenaiAgent#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#id DataDigitaloceanGenaiAgent#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2885,7 +2885,7 @@ public java.lang.String getIfCase();
 
 If case condition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#if_case DataDigitaloceanGenaiAgent#if_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#if_case DataDigitaloceanGenaiAgent#if_case}
 
 ---
 
@@ -2899,7 +2899,7 @@ public java.lang.Number getK();
 
 K value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#k DataDigitaloceanGenaiAgent#k}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#k DataDigitaloceanGenaiAgent#k}
 
 ---
 
@@ -2913,7 +2913,7 @@ public java.lang.Object getKnowledgeBases();
 
 knowledge_bases block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#knowledge_bases DataDigitaloceanGenaiAgent#knowledge_bases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#knowledge_bases DataDigitaloceanGenaiAgent#knowledge_bases}
 
 ---
 
@@ -2927,7 +2927,7 @@ public java.lang.Number getMaxTokens();
 
 Maximum tokens allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#max_tokens DataDigitaloceanGenaiAgent#max_tokens}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#max_tokens DataDigitaloceanGenaiAgent#max_tokens}
 
 ---
 
@@ -2941,7 +2941,7 @@ public java.lang.Object getModel();
 
 model block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#model DataDigitaloceanGenaiAgent#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#model DataDigitaloceanGenaiAgent#model}
 
 ---
 
@@ -2955,7 +2955,7 @@ public java.lang.Object getOpenAiApiKey();
 
 open_ai_api_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#open_ai_api_key DataDigitaloceanGenaiAgent#open_ai_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#open_ai_api_key DataDigitaloceanGenaiAgent#open_ai_api_key}
 
 ---
 
@@ -2969,7 +2969,7 @@ public java.lang.String getRetrievalMethod();
 
 Retrieval method used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#retrieval_method DataDigitaloceanGenaiAgent#retrieval_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#retrieval_method DataDigitaloceanGenaiAgent#retrieval_method}
 
 ---
 
@@ -2983,7 +2983,7 @@ public java.lang.String getRouteCreatedBy();
 
 User who created the route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#route_created_by DataDigitaloceanGenaiAgent#route_created_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#route_created_by DataDigitaloceanGenaiAgent#route_created_by}
 
 ---
 
@@ -2997,7 +2997,7 @@ public java.lang.String getRouteName();
 
 Route name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#route_name DataDigitaloceanGenaiAgent#route_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#route_name DataDigitaloceanGenaiAgent#route_name}
 
 ---
 
@@ -3011,7 +3011,7 @@ public java.lang.String getRouteUuid();
 
 Route UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#route_uuid DataDigitaloceanGenaiAgent#route_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#route_uuid DataDigitaloceanGenaiAgent#route_uuid}
 
 ---
 
@@ -3025,7 +3025,7 @@ public java.util.List<java.lang.String> getTags();
 
 List of Tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#tags DataDigitaloceanGenaiAgent#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#tags DataDigitaloceanGenaiAgent#tags}
 
 ---
 
@@ -3039,7 +3039,7 @@ public java.lang.Number getTemperature();
 
 Agent temperature setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#temperature DataDigitaloceanGenaiAgent#temperature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#temperature DataDigitaloceanGenaiAgent#temperature}
 
 ---
 
@@ -3053,7 +3053,7 @@ public java.lang.Object getTemplate();
 
 template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#template DataDigitaloceanGenaiAgent#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#template DataDigitaloceanGenaiAgent#template}
 
 ---
 
@@ -3067,7 +3067,7 @@ public java.lang.Number getTopP();
 
 Top P sampling parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#top_p DataDigitaloceanGenaiAgent#top_p}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#top_p DataDigitaloceanGenaiAgent#top_p}
 
 ---
 
@@ -3081,7 +3081,7 @@ public java.lang.String getUrl();
 
 URL for the Agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#url DataDigitaloceanGenaiAgent#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#url DataDigitaloceanGenaiAgent#url}
 
 ---
 
@@ -3095,7 +3095,7 @@ public java.lang.String getUserId();
 
 User ID linked with the Agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#user_id DataDigitaloceanGenaiAgent#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#user_id DataDigitaloceanGenaiAgent#user_id}
 
 ---
 
@@ -3137,7 +3137,7 @@ public java.lang.String getName();
 
 Name of the API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#name DataDigitaloceanGenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#name DataDigitaloceanGenaiAgent#name}
 
 ---
 
@@ -3151,7 +3151,7 @@ public java.lang.String getStatus();
 
 Status of the Deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#status DataDigitaloceanGenaiAgent#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#status DataDigitaloceanGenaiAgent#status}
 
 ---
 
@@ -3165,7 +3165,7 @@ public java.lang.String getUrl();
 
 Url of the Deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#url DataDigitaloceanGenaiAgent#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#url DataDigitaloceanGenaiAgent#url}
 
 ---
 
@@ -3179,7 +3179,7 @@ public java.lang.String getUuid();
 
 API Key value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#uuid DataDigitaloceanGenaiAgent#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#uuid DataDigitaloceanGenaiAgent#uuid}
 
 ---
 
@@ -3193,7 +3193,7 @@ public java.lang.String getVisibility();
 
 Visibility of the Deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#visibility DataDigitaloceanGenaiAgent#visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#visibility DataDigitaloceanGenaiAgent#visibility}
 
 ---
 
@@ -3241,7 +3241,7 @@ public java.lang.String getApiKey();
 
 API Key value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#api_key DataDigitaloceanGenaiAgent#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#api_key DataDigitaloceanGenaiAgent#api_key}
 
 ---
 
@@ -3255,7 +3255,7 @@ public java.lang.String getDescription();
 
 Description of the Function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#description DataDigitaloceanGenaiAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#description DataDigitaloceanGenaiAgent#description}
 
 ---
 
@@ -3269,7 +3269,7 @@ public java.lang.String getFaasname();
 
 Name of function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#faasname DataDigitaloceanGenaiAgent#faasname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#faasname DataDigitaloceanGenaiAgent#faasname}
 
 ---
 
@@ -3283,7 +3283,7 @@ public java.lang.String getFaasnamespace();
 
 Namespace of function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#faasnamespace DataDigitaloceanGenaiAgent#faasnamespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#faasnamespace DataDigitaloceanGenaiAgent#faasnamespace}
 
 ---
 
@@ -3297,7 +3297,7 @@ public java.lang.String getGuardrailUuid();
 
 Guardrail UUID for the Function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#guardrail_uuid DataDigitaloceanGenaiAgent#guardrail_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#guardrail_uuid DataDigitaloceanGenaiAgent#guardrail_uuid}
 
 ---
 
@@ -3311,7 +3311,7 @@ public java.lang.String getName();
 
 Name of function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#name DataDigitaloceanGenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#name DataDigitaloceanGenaiAgent#name}
 
 ---
 
@@ -3325,7 +3325,7 @@ public java.lang.String getUrl();
 
 Url of the Deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#url DataDigitaloceanGenaiAgent#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#url DataDigitaloceanGenaiAgent#url}
 
 ---
 
@@ -3339,7 +3339,7 @@ public java.lang.String getUuid();
 
 API Key value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#uuid DataDigitaloceanGenaiAgent#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#uuid DataDigitaloceanGenaiAgent#uuid}
 
 ---
 
@@ -3390,7 +3390,7 @@ public java.lang.String getDatabaseId();
 
 Database ID of the Knowledge Base.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#database_id DataDigitaloceanGenaiAgent#database_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#database_id DataDigitaloceanGenaiAgent#database_id}
 
 ---
 
@@ -3404,7 +3404,7 @@ public java.lang.String getEmbeddingModelUuid();
 
 Embedding model UUID for the Knowledge Base.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#embedding_model_uuid DataDigitaloceanGenaiAgent#embedding_model_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#embedding_model_uuid DataDigitaloceanGenaiAgent#embedding_model_uuid}
 
 ---
 
@@ -3418,7 +3418,7 @@ public java.lang.Object getIsPublic();
 
 Indicates if the Knowledge Base is public.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#is_public DataDigitaloceanGenaiAgent#is_public}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#is_public DataDigitaloceanGenaiAgent#is_public}
 
 ---
 
@@ -3432,7 +3432,7 @@ public DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJob getLastIndexingJo
 
 last_indexing_job block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#last_indexing_job DataDigitaloceanGenaiAgent#last_indexing_job}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#last_indexing_job DataDigitaloceanGenaiAgent#last_indexing_job}
 
 ---
 
@@ -3446,7 +3446,7 @@ public java.lang.String getName();
 
 Name of the Knowledge Base.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#name DataDigitaloceanGenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#name DataDigitaloceanGenaiAgent#name}
 
 ---
 
@@ -3460,7 +3460,7 @@ public java.lang.String getProjectId();
 
 Project ID of the Knowledge Base.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#project_id DataDigitaloceanGenaiAgent#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#project_id DataDigitaloceanGenaiAgent#project_id}
 
 ---
 
@@ -3474,7 +3474,7 @@ public java.lang.String getRegion();
 
 Region of the Knowledge Base.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#region DataDigitaloceanGenaiAgent#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#region DataDigitaloceanGenaiAgent#region}
 
 ---
 
@@ -3488,7 +3488,7 @@ public java.util.List<java.lang.String> getTags();
 
 List of tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#tags DataDigitaloceanGenaiAgent#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#tags DataDigitaloceanGenaiAgent#tags}
 
 ---
 
@@ -3502,7 +3502,7 @@ public java.lang.String getUserId();
 
 User ID of the Knowledge Base.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#user_id DataDigitaloceanGenaiAgent#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#user_id DataDigitaloceanGenaiAgent#user_id}
 
 ---
 
@@ -3546,7 +3546,7 @@ public java.lang.Number getCompletedDatasources();
 
 Number of completed datasources in the last indexing job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#completed_datasources DataDigitaloceanGenaiAgent#completed_datasources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#completed_datasources DataDigitaloceanGenaiAgent#completed_datasources}
 
 ---
 
@@ -3560,7 +3560,7 @@ public java.util.List<java.lang.String> getDataSourceUuids();
 
 Datasource UUIDs for the last indexing job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#data_source_uuids DataDigitaloceanGenaiAgent#data_source_uuids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#data_source_uuids DataDigitaloceanGenaiAgent#data_source_uuids}
 
 ---
 
@@ -3574,7 +3574,7 @@ public java.lang.String getPhase();
 
 Phase of the last indexing job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#phase DataDigitaloceanGenaiAgent#phase}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#phase DataDigitaloceanGenaiAgent#phase}
 
 ---
 
@@ -3588,7 +3588,7 @@ public java.lang.Number getTokens();
 
 Number of tokens processed in the last indexing job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#tokens DataDigitaloceanGenaiAgent#tokens}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#tokens DataDigitaloceanGenaiAgent#tokens}
 
 ---
 
@@ -3602,7 +3602,7 @@ public java.lang.Number getTotalDatasources();
 
 Total number of datasources in the last indexing job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#total_datasources DataDigitaloceanGenaiAgent#total_datasources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#total_datasources DataDigitaloceanGenaiAgent#total_datasources}
 
 ---
 
@@ -3616,7 +3616,7 @@ public java.lang.String getUuid();
 
 UUID  of the last indexing job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#uuid DataDigitaloceanGenaiAgent#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#uuid DataDigitaloceanGenaiAgent#uuid}
 
 ---
 
@@ -3674,7 +3674,7 @@ public java.lang.Object getAgreement();
 
 agreement block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#agreement DataDigitaloceanGenaiAgent#agreement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#agreement DataDigitaloceanGenaiAgent#agreement}
 
 ---
 
@@ -3688,7 +3688,7 @@ public java.lang.String getInferenceName();
 
 Inference name of the model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#inference_name DataDigitaloceanGenaiAgent#inference_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#inference_name DataDigitaloceanGenaiAgent#inference_name}
 
 ---
 
@@ -3702,7 +3702,7 @@ public java.lang.String getInferenceVersion();
 
 Infernce version of the model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#inference_version DataDigitaloceanGenaiAgent#inference_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#inference_version DataDigitaloceanGenaiAgent#inference_version}
 
 ---
 
@@ -3716,7 +3716,7 @@ public java.lang.Object getIsFoundational();
 
 Indicates if the Model Base is foundational.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#is_foundational DataDigitaloceanGenaiAgent#is_foundational}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#is_foundational DataDigitaloceanGenaiAgent#is_foundational}
 
 ---
 
@@ -3730,7 +3730,7 @@ public java.lang.String getName();
 
 Name of the Knowledge Base.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#name DataDigitaloceanGenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#name DataDigitaloceanGenaiAgent#name}
 
 ---
 
@@ -3744,7 +3744,7 @@ public java.lang.String getParentUuid();
 
 Parent UUID of the Model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#parent_uuid DataDigitaloceanGenaiAgent#parent_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#parent_uuid DataDigitaloceanGenaiAgent#parent_uuid}
 
 ---
 
@@ -3758,7 +3758,7 @@ public java.lang.String getProvider();
 
 Provider of the Model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#provider DataDigitaloceanGenaiAgent#provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#provider DataDigitaloceanGenaiAgent#provider}
 
 ---
 
@@ -3772,7 +3772,7 @@ public java.lang.Object getUploadComplete();
 
 Indicates if the Model upload is complete.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#upload_complete DataDigitaloceanGenaiAgent#upload_complete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#upload_complete DataDigitaloceanGenaiAgent#upload_complete}
 
 ---
 
@@ -3786,7 +3786,7 @@ public java.lang.String getUrl();
 
 URL of the Model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#url DataDigitaloceanGenaiAgent#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#url DataDigitaloceanGenaiAgent#url}
 
 ---
 
@@ -3800,7 +3800,7 @@ public java.util.List<java.lang.String> getUsecases();
 
 List of Usecases for the Model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#usecases DataDigitaloceanGenaiAgent#usecases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#usecases DataDigitaloceanGenaiAgent#usecases}
 
 ---
 
@@ -3814,7 +3814,7 @@ public java.lang.Object getVersions();
 
 versions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#versions DataDigitaloceanGenaiAgent#versions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#versions DataDigitaloceanGenaiAgent#versions}
 
 ---
 
@@ -3854,7 +3854,7 @@ public java.lang.String getDescription();
 
 Description of the agreement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#description DataDigitaloceanGenaiAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#description DataDigitaloceanGenaiAgent#description}
 
 ---
 
@@ -3868,7 +3868,7 @@ public java.lang.String getName();
 
 Name of the agreement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#name DataDigitaloceanGenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#name DataDigitaloceanGenaiAgent#name}
 
 ---
 
@@ -3882,7 +3882,7 @@ public java.lang.String getUrl();
 
 URL of the agreement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#url DataDigitaloceanGenaiAgent#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#url DataDigitaloceanGenaiAgent#url}
 
 ---
 
@@ -3896,7 +3896,7 @@ public java.lang.String getUuid();
 
 UUID of the agreement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#uuid DataDigitaloceanGenaiAgent#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#uuid DataDigitaloceanGenaiAgent#uuid}
 
 ---
 
@@ -3934,7 +3934,7 @@ public java.lang.Number getMajor();
 
 Major version of the model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#major DataDigitaloceanGenaiAgent#major}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#major DataDigitaloceanGenaiAgent#major}
 
 ---
 
@@ -3948,7 +3948,7 @@ public java.lang.Number getMinor();
 
 Minor version of the model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#minor DataDigitaloceanGenaiAgent#minor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#minor DataDigitaloceanGenaiAgent#minor}
 
 ---
 
@@ -3962,7 +3962,7 @@ public java.lang.Number getPatch();
 
 Patch version of the model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#patch DataDigitaloceanGenaiAgent#patch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#patch DataDigitaloceanGenaiAgent#patch}
 
 ---
 
@@ -3996,7 +3996,7 @@ public java.lang.String getApiKey();
 
 OpenAI API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#api_key DataDigitaloceanGenaiAgent#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#api_key DataDigitaloceanGenaiAgent#api_key}
 
 ---
 
@@ -4134,7 +4134,7 @@ public java.lang.String getDescription();
 
 Description of the Agent Template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#description DataDigitaloceanGenaiAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#description DataDigitaloceanGenaiAgent#description}
 
 ---
 
@@ -4148,7 +4148,7 @@ public java.lang.String getInstruction();
 
 Instruction for the Agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#instruction DataDigitaloceanGenaiAgent#instruction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#instruction DataDigitaloceanGenaiAgent#instruction}
 
 ---
 
@@ -4162,7 +4162,7 @@ public java.lang.Number getK();
 
 K value for the Agent Template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#k DataDigitaloceanGenaiAgent#k}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#k DataDigitaloceanGenaiAgent#k}
 
 ---
 
@@ -4176,7 +4176,7 @@ public java.lang.Object getKnowledgeBases();
 
 knowledge_bases block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#knowledge_bases DataDigitaloceanGenaiAgent#knowledge_bases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#knowledge_bases DataDigitaloceanGenaiAgent#knowledge_bases}
 
 ---
 
@@ -4190,7 +4190,7 @@ public java.lang.Number getMaxTokens();
 
 Maximum tokens allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#max_tokens DataDigitaloceanGenaiAgent#max_tokens}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#max_tokens DataDigitaloceanGenaiAgent#max_tokens}
 
 ---
 
@@ -4204,7 +4204,7 @@ public java.lang.Object getModel();
 
 model block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#model DataDigitaloceanGenaiAgent#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#model DataDigitaloceanGenaiAgent#model}
 
 ---
 
@@ -4218,7 +4218,7 @@ public java.lang.String getName();
 
 Name of the Agent Template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#name DataDigitaloceanGenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#name DataDigitaloceanGenaiAgent#name}
 
 ---
 
@@ -4232,7 +4232,7 @@ public java.lang.Number getTemperature();
 
 Agent temperature setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#temperature DataDigitaloceanGenaiAgent#temperature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#temperature DataDigitaloceanGenaiAgent#temperature}
 
 ---
 
@@ -4246,7 +4246,7 @@ public java.lang.Number getTopP();
 
 Top P sampling parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#top_p DataDigitaloceanGenaiAgent#top_p}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#top_p DataDigitaloceanGenaiAgent#top_p}
 
 ---
 
@@ -4260,7 +4260,7 @@ public java.lang.String getUuid();
 
 uuid of the Agent Template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#uuid DataDigitaloceanGenaiAgent#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#uuid DataDigitaloceanGenaiAgent#uuid}
 
 ---
 
@@ -4311,7 +4311,7 @@ public java.lang.String getDatabaseId();
 
 Database ID of the Knowledge Base.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#database_id DataDigitaloceanGenaiAgent#database_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#database_id DataDigitaloceanGenaiAgent#database_id}
 
 ---
 
@@ -4325,7 +4325,7 @@ public java.lang.String getEmbeddingModelUuid();
 
 Embedding model UUID for the Knowledge Base.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#embedding_model_uuid DataDigitaloceanGenaiAgent#embedding_model_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#embedding_model_uuid DataDigitaloceanGenaiAgent#embedding_model_uuid}
 
 ---
 
@@ -4339,7 +4339,7 @@ public java.lang.Object getIsPublic();
 
 Indicates if the Knowledge Base is public.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#is_public DataDigitaloceanGenaiAgent#is_public}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#is_public DataDigitaloceanGenaiAgent#is_public}
 
 ---
 
@@ -4353,7 +4353,7 @@ public DataDigitaloceanGenaiAgentTemplateKnowledgeBasesLastIndexingJob getLastIn
 
 last_indexing_job block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#last_indexing_job DataDigitaloceanGenaiAgent#last_indexing_job}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#last_indexing_job DataDigitaloceanGenaiAgent#last_indexing_job}
 
 ---
 
@@ -4367,7 +4367,7 @@ public java.lang.String getName();
 
 Name of the Knowledge Base.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#name DataDigitaloceanGenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#name DataDigitaloceanGenaiAgent#name}
 
 ---
 
@@ -4381,7 +4381,7 @@ public java.lang.String getProjectId();
 
 Project ID of the Knowledge Base.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#project_id DataDigitaloceanGenaiAgent#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#project_id DataDigitaloceanGenaiAgent#project_id}
 
 ---
 
@@ -4395,7 +4395,7 @@ public java.lang.String getRegion();
 
 Region of the Knowledge Base.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#region DataDigitaloceanGenaiAgent#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#region DataDigitaloceanGenaiAgent#region}
 
 ---
 
@@ -4409,7 +4409,7 @@ public java.util.List<java.lang.String> getTags();
 
 List of tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#tags DataDigitaloceanGenaiAgent#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#tags DataDigitaloceanGenaiAgent#tags}
 
 ---
 
@@ -4423,7 +4423,7 @@ public java.lang.String getUserId();
 
 User ID of the Knowledge Base.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#user_id DataDigitaloceanGenaiAgent#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#user_id DataDigitaloceanGenaiAgent#user_id}
 
 ---
 
@@ -4467,7 +4467,7 @@ public java.lang.Number getCompletedDatasources();
 
 Number of completed datasources in the last indexing job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#completed_datasources DataDigitaloceanGenaiAgent#completed_datasources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#completed_datasources DataDigitaloceanGenaiAgent#completed_datasources}
 
 ---
 
@@ -4481,7 +4481,7 @@ public java.util.List<java.lang.String> getDataSourceUuids();
 
 Datasource UUIDs for the last indexing job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#data_source_uuids DataDigitaloceanGenaiAgent#data_source_uuids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#data_source_uuids DataDigitaloceanGenaiAgent#data_source_uuids}
 
 ---
 
@@ -4495,7 +4495,7 @@ public java.lang.String getPhase();
 
 Phase of the last indexing job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#phase DataDigitaloceanGenaiAgent#phase}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#phase DataDigitaloceanGenaiAgent#phase}
 
 ---
 
@@ -4509,7 +4509,7 @@ public java.lang.Number getTokens();
 
 Number of tokens processed in the last indexing job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#tokens DataDigitaloceanGenaiAgent#tokens}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#tokens DataDigitaloceanGenaiAgent#tokens}
 
 ---
 
@@ -4523,7 +4523,7 @@ public java.lang.Number getTotalDatasources();
 
 Total number of datasources in the last indexing job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#total_datasources DataDigitaloceanGenaiAgent#total_datasources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#total_datasources DataDigitaloceanGenaiAgent#total_datasources}
 
 ---
 
@@ -4537,7 +4537,7 @@ public java.lang.String getUuid();
 
 UUID  of the last indexing job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#uuid DataDigitaloceanGenaiAgent#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#uuid DataDigitaloceanGenaiAgent#uuid}
 
 ---
 
@@ -4595,7 +4595,7 @@ public java.lang.Object getAgreement();
 
 agreement block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#agreement DataDigitaloceanGenaiAgent#agreement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#agreement DataDigitaloceanGenaiAgent#agreement}
 
 ---
 
@@ -4609,7 +4609,7 @@ public java.lang.String getInferenceName();
 
 Inference name of the model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#inference_name DataDigitaloceanGenaiAgent#inference_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#inference_name DataDigitaloceanGenaiAgent#inference_name}
 
 ---
 
@@ -4623,7 +4623,7 @@ public java.lang.String getInferenceVersion();
 
 Infernce version of the model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#inference_version DataDigitaloceanGenaiAgent#inference_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#inference_version DataDigitaloceanGenaiAgent#inference_version}
 
 ---
 
@@ -4637,7 +4637,7 @@ public java.lang.Object getIsFoundational();
 
 Indicates if the Model Base is foundational.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#is_foundational DataDigitaloceanGenaiAgent#is_foundational}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#is_foundational DataDigitaloceanGenaiAgent#is_foundational}
 
 ---
 
@@ -4651,7 +4651,7 @@ public java.lang.String getName();
 
 Name of the Knowledge Base.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#name DataDigitaloceanGenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#name DataDigitaloceanGenaiAgent#name}
 
 ---
 
@@ -4665,7 +4665,7 @@ public java.lang.String getParentUuid();
 
 Parent UUID of the Model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#parent_uuid DataDigitaloceanGenaiAgent#parent_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#parent_uuid DataDigitaloceanGenaiAgent#parent_uuid}
 
 ---
 
@@ -4679,7 +4679,7 @@ public java.lang.String getProvider();
 
 Provider of the Model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#provider DataDigitaloceanGenaiAgent#provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#provider DataDigitaloceanGenaiAgent#provider}
 
 ---
 
@@ -4693,7 +4693,7 @@ public java.lang.Object getUploadComplete();
 
 Indicates if the Model upload is complete.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#upload_complete DataDigitaloceanGenaiAgent#upload_complete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#upload_complete DataDigitaloceanGenaiAgent#upload_complete}
 
 ---
 
@@ -4707,7 +4707,7 @@ public java.lang.String getUrl();
 
 URL of the Model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#url DataDigitaloceanGenaiAgent#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#url DataDigitaloceanGenaiAgent#url}
 
 ---
 
@@ -4721,7 +4721,7 @@ public java.util.List<java.lang.String> getUsecases();
 
 List of Usecases for the Model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#usecases DataDigitaloceanGenaiAgent#usecases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#usecases DataDigitaloceanGenaiAgent#usecases}
 
 ---
 
@@ -4735,7 +4735,7 @@ public java.lang.Object getVersions();
 
 versions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#versions DataDigitaloceanGenaiAgent#versions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#versions DataDigitaloceanGenaiAgent#versions}
 
 ---
 
@@ -4775,7 +4775,7 @@ public java.lang.String getDescription();
 
 Description of the agreement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#description DataDigitaloceanGenaiAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#description DataDigitaloceanGenaiAgent#description}
 
 ---
 
@@ -4789,7 +4789,7 @@ public java.lang.String getName();
 
 Name of the agreement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#name DataDigitaloceanGenaiAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#name DataDigitaloceanGenaiAgent#name}
 
 ---
 
@@ -4803,7 +4803,7 @@ public java.lang.String getUrl();
 
 URL of the agreement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#url DataDigitaloceanGenaiAgent#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#url DataDigitaloceanGenaiAgent#url}
 
 ---
 
@@ -4817,7 +4817,7 @@ public java.lang.String getUuid();
 
 UUID of the agreement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#uuid DataDigitaloceanGenaiAgent#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#uuid DataDigitaloceanGenaiAgent#uuid}
 
 ---
 
@@ -4855,7 +4855,7 @@ public java.lang.Number getMajor();
 
 Major version of the model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#major DataDigitaloceanGenaiAgent#major}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#major DataDigitaloceanGenaiAgent#major}
 
 ---
 
@@ -4869,7 +4869,7 @@ public java.lang.Number getMinor();
 
 Minor version of the model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#minor DataDigitaloceanGenaiAgent#minor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#minor DataDigitaloceanGenaiAgent#minor}
 
 ---
 
@@ -4883,7 +4883,7 @@ public java.lang.Number getPatch();
 
 Patch version of the model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#patch DataDigitaloceanGenaiAgent#patch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agent#patch DataDigitaloceanGenaiAgent#patch}
 
 ---
 

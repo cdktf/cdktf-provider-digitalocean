@@ -72,6 +72,7 @@ The following submodules are available:
 - [databaseDb](./databaseDb.csharp.md)
 - [databaseFirewall](./databaseFirewall.csharp.md)
 - [databaseKafkaConfig](./databaseKafkaConfig.csharp.md)
+- [databaseKafkaSchemaRegistry](./databaseKafkaSchemaRegistry.csharp.md)
 - [databaseKafkaTopic](./databaseKafkaTopic.csharp.md)
 - [databaseMongodbConfig](./databaseMongodbConfig.csharp.md)
 - [databaseMysqlConfig](./databaseMysqlConfig.csharp.md)

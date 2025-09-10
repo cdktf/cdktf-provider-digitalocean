@@ -72,6 +72,7 @@ The following submodules are available:
 - [databaseDb](./databaseDb.go.md)
 - [databaseFirewall](./databaseFirewall.go.md)
 - [databaseKafkaConfig](./databaseKafkaConfig.go.md)
+- [databaseKafkaSchemaRegistry](./databaseKafkaSchemaRegistry.go.md)
 - [databaseKafkaTopic](./databaseKafkaTopic.go.md)
 - [databaseMongodbConfig](./databaseMongodbConfig.go.md)
 - [databaseMysqlConfig](./databaseMysqlConfig.go.md)

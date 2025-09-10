@@ -72,6 +72,7 @@ The following submodules are available:
 - [databaseDb](./databaseDb.typescript.md)
 - [databaseFirewall](./databaseFirewall.typescript.md)
 - [databaseKafkaConfig](./databaseKafkaConfig.typescript.md)
+- [databaseKafkaSchemaRegistry](./databaseKafkaSchemaRegistry.typescript.md)
 - [databaseKafkaTopic](./databaseKafkaTopic.typescript.md)
 - [databaseMongodbConfig](./databaseMongodbConfig.typescript.md)
 - [databaseMysqlConfig](./databaseMysqlConfig.typescript.md)
