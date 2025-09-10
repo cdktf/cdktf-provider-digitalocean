@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/kubernetes_node_pool
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_node_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,58 +13,58 @@ import * as cdktf from 'cdktf';
 
 export interface KubernetesNodePoolConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/kubernetes_node_pool#auto_scale KubernetesNodePool#auto_scale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_node_pool#auto_scale KubernetesNodePool#auto_scale}
   */
   readonly autoScale?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/kubernetes_node_pool#cluster_id KubernetesNodePool#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_node_pool#cluster_id KubernetesNodePool#cluster_id}
   */
   readonly clusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/kubernetes_node_pool#id KubernetesNodePool#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_node_pool#id KubernetesNodePool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/kubernetes_node_pool#labels KubernetesNodePool#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_node_pool#labels KubernetesNodePool#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/kubernetes_node_pool#max_nodes KubernetesNodePool#max_nodes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_node_pool#max_nodes KubernetesNodePool#max_nodes}
   */
   readonly maxNodes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/kubernetes_node_pool#min_nodes KubernetesNodePool#min_nodes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_node_pool#min_nodes KubernetesNodePool#min_nodes}
   */
   readonly minNodes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/kubernetes_node_pool#name KubernetesNodePool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_node_pool#name KubernetesNodePool#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/kubernetes_node_pool#node_count KubernetesNodePool#node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_node_pool#node_count KubernetesNodePool#node_count}
   */
   readonly nodeCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/kubernetes_node_pool#size KubernetesNodePool#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_node_pool#size KubernetesNodePool#size}
   */
   readonly size: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/kubernetes_node_pool#tags KubernetesNodePool#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_node_pool#tags KubernetesNodePool#tags}
   */
   readonly tags?: string[];
   /**
   * taint block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/kubernetes_node_pool#taint KubernetesNodePool#taint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_node_pool#taint KubernetesNodePool#taint}
   */
   readonly taint?: KubernetesNodePoolTaint[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/kubernetes_node_pool#timeouts KubernetesNodePool#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_node_pool#timeouts KubernetesNodePool#timeouts}
   */
   readonly timeouts?: KubernetesNodePoolTimeouts;
 }
@@ -170,15 +170,15 @@ export class KubernetesNodePoolNodesList extends cdktf.ComplexList {
 }
 export interface KubernetesNodePoolTaint {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/kubernetes_node_pool#effect KubernetesNodePool#effect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_node_pool#effect KubernetesNodePool#effect}
   */
   readonly effect: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/kubernetes_node_pool#key KubernetesNodePool#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_node_pool#key KubernetesNodePool#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/kubernetes_node_pool#value KubernetesNodePool#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_node_pool#value KubernetesNodePool#value}
   */
   readonly value: string;
 }
@@ -343,11 +343,11 @@ export class KubernetesNodePoolTaintList extends cdktf.ComplexList {
 }
 export interface KubernetesNodePoolTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/kubernetes_node_pool#create KubernetesNodePool#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_node_pool#create KubernetesNodePool#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/kubernetes_node_pool#delete KubernetesNodePool#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_node_pool#delete KubernetesNodePool#delete}
   */
   readonly delete?: string;
 }
@@ -470,7 +470,7 @@ export class KubernetesNodePoolTimeoutsOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/kubernetes_node_pool digitalocean_kubernetes_node_pool}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_node_pool digitalocean_kubernetes_node_pool}
 */
 export class KubernetesNodePool extends cdktf.TerraformResource {
 
@@ -486,7 +486,7 @@ export class KubernetesNodePool extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a KubernetesNodePool resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KubernetesNodePool to import
-  * @param importFromId The id of the existing KubernetesNodePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/kubernetes_node_pool#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KubernetesNodePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_node_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KubernetesNodePool to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -498,7 +498,7 @@ export class KubernetesNodePool extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/kubernetes_node_pool digitalocean_kubernetes_node_pool} Resource
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_node_pool digitalocean_kubernetes_node_pool} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -509,7 +509,7 @@ export class KubernetesNodePool extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_kubernetes_node_pool',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.66.0',
+        providerVersion: '2.67.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
