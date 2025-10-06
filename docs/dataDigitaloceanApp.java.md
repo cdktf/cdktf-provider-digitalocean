@@ -12,20 +12,15 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 import com.hashicorp.cdktf.providers.digitalocean.data_digitalocean_app.DataDigitaloceanApp;
 
 DataDigitaloceanApp.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .appId(java.lang.String)
-//  .dedicatedIps(IResolvable)
-//  .dedicatedIps(java.util.List<DataDigitaloceanAppDedicatedIps>)
+//  .dedicatedIps(IResolvable|java.util.List<DataDigitaloceanAppDedicatedIps>)
 //  .id(java.lang.String)
     .build();
 ```
@@ -34,15 +29,15 @@ DataDigitaloceanApp.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.Initializer.parameter.appId">appId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/app#app_id DataDigitaloceanApp#app_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.Initializer.parameter.dedicatedIps">dedicatedIps</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIps">DataDigitaloceanAppDedicatedIps</a>></code> | dedicated_ips block. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.Initializer.parameter.dedicatedIps">dedicatedIps</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIps">DataDigitaloceanAppDedicatedIps</a>></code> | dedicated_ips block. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/app#id DataDigitaloceanApp#id}. |
 
 ---
@@ -67,13 +62,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -103,7 +98,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -117,7 +112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `dedicatedIps`<sup>Optional</sup> <a name="dedicatedIps" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.Initializer.parameter.dedicatedIps"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIps">DataDigitaloceanAppDedicatedIps</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIps">DataDigitaloceanAppDedicatedIps</a>>
 
 dedicated_ips block.
 
@@ -358,12 +353,12 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 ##### `putDedicatedIps` <a name="putDedicatedIps" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.putDedicatedIps"></a>
 
 ```java
-public void putDedicatedIps(IResolvable OR java.util.List<DataDigitaloceanAppDedicatedIps> value)
+public void putDedicatedIps(IResolvable|java.util.List<DataDigitaloceanAppDedicatedIps> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.putDedicatedIps.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIps">DataDigitaloceanAppDedicatedIps</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIps">DataDigitaloceanAppDedicatedIps</a>>
 
 ---
 
@@ -505,7 +500,7 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -521,7 +516,7 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.updatedAt">updatedAt</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.urn">urn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.appIdInput">appIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.dedicatedIpsInput">dedicatedIpsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIps">DataDigitaloceanAppDedicatedIps</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.dedicatedIpsInput">dedicatedIpsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIps">DataDigitaloceanAppDedicatedIps</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.appId">appId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -603,10 +598,10 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -763,10 +758,10 @@ public java.lang.String getAppIdInput();
 ##### `dedicatedIpsInput`<sup>Optional</sup> <a name="dedicatedIpsInput" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanApp.property.dedicatedIpsInput"></a>
 
 ```java
-public java.lang.Object getDedicatedIpsInput();
+public IResolvable|java.util.List<DataDigitaloceanAppDedicatedIps> getDedicatedIpsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIps">DataDigitaloceanAppDedicatedIps</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIps">DataDigitaloceanAppDedicatedIps</a>>
 
 ---
 
@@ -828,20 +823,15 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.digitalocean.data_digitalocean_app.DataDigitaloceanAppConfig;
 
 DataDigitaloceanAppConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .appId(java.lang.String)
-//  .dedicatedIps(IResolvable)
-//  .dedicatedIps(java.util.List<DataDigitaloceanAppDedicatedIps>)
+//  .dedicatedIps(IResolvable|java.util.List<DataDigitaloceanAppDedicatedIps>)
 //  .id(java.lang.String)
     .build();
 ```
@@ -850,15 +840,15 @@ DataDigitaloceanAppConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.appId">appId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/app#app_id DataDigitaloceanApp#app_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.dedicatedIps">dedicatedIps</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIps">DataDigitaloceanAppDedicatedIps</a>></code> | dedicated_ips block. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.dedicatedIps">dedicatedIps</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIps">DataDigitaloceanAppDedicatedIps</a>></code> | dedicated_ips block. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/app#id DataDigitaloceanApp#id}. |
 
 ---
@@ -866,20 +856,20 @@ DataDigitaloceanAppConfig.builder()
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -926,10 +916,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -948,10 +938,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `dedicatedIps`<sup>Optional</sup> <a name="dedicatedIps" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppConfig.property.dedicatedIps"></a>
 
 ```java
-public java.lang.Object getDedicatedIps();
+public IResolvable|java.util.List<DataDigitaloceanAppDedicatedIps> getDedicatedIps();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIps">DataDigitaloceanAppDedicatedIps</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIps">DataDigitaloceanAppDedicatedIps</a>>
 
 dedicated_ips block.
 
@@ -2486,7 +2476,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIps">DataDigitaloceanAppDedicatedIps</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIps">DataDigitaloceanAppDedicatedIps</a>></code> | *No description.* |
 
 ---
 
@@ -2517,10 +2507,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDigitaloceanAppDedicatedIps> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIps">DataDigitaloceanAppDedicatedIps</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIps">DataDigitaloceanAppDedicatedIps</a>>
 
 ---
 
@@ -2780,7 +2770,7 @@ public void resetStatus()
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.property.ip">ip</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.property.status">status</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIps">DataDigitaloceanAppDedicatedIps</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIps">DataDigitaloceanAppDedicatedIps</a></code> | *No description.* |
 
 ---
 
@@ -2871,10 +2861,10 @@ public java.lang.String getStatus();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIpsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDigitaloceanAppDedicatedIps getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIps">DataDigitaloceanAppDedicatedIps</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppDedicatedIps">DataDigitaloceanAppDedicatedIps</a>
 
 ---
 

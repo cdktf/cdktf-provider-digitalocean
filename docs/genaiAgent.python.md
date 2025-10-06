@@ -14,48 +14,48 @@ from cdktf_cdktf_provider_digitalocean import genai_agent
 genaiAgent.GenaiAgent(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   instruction: str,
   model_uuid: str,
   name: str,
   project_id: str,
   region: str,
-  agent_guardrail: typing.Union[IResolvable, typing.List[GenaiAgentAgentGuardrail]] = None,
-  anthropic_api_key: typing.Union[IResolvable, typing.List[GenaiAgentAnthropicApiKey]] = None,
+  agent_guardrail: IResolvable | typing.List[GenaiAgentAgentGuardrail] = None,
+  anthropic_api_key: IResolvable | typing.List[GenaiAgentAnthropicApiKey] = None,
   anthropic_key_uuid: str = None,
-  api_key_infos: typing.Union[IResolvable, typing.List[GenaiAgentApiKeyInfos]] = None,
-  api_keys: typing.Union[IResolvable, typing.List[GenaiAgentApiKeys]] = None,
-  chatbot: typing.Union[IResolvable, typing.List[GenaiAgentChatbot]] = None,
-  chatbot_identifiers: typing.Union[IResolvable, typing.List[GenaiAgentChatbotIdentifiers]] = None,
-  child_agents: typing.Union[IResolvable, typing.List[GenaiAgentChildAgents]] = None,
+  api_key_infos: IResolvable | typing.List[GenaiAgentApiKeyInfos] = None,
+  api_keys: IResolvable | typing.List[GenaiAgentApiKeys] = None,
+  chatbot: IResolvable | typing.List[GenaiAgentChatbot] = None,
+  chatbot_identifiers: IResolvable | typing.List[GenaiAgentChatbotIdentifiers] = None,
+  child_agents: IResolvable | typing.List[GenaiAgentChildAgents] = None,
   created_at: str = None,
-  deployment: typing.Union[IResolvable, typing.List[GenaiAgentDeployment]] = None,
+  deployment: IResolvable | typing.List[GenaiAgentDeployment] = None,
   description: str = None,
-  functions: typing.Union[IResolvable, typing.List[GenaiAgentFunctions]] = None,
+  functions: IResolvable | typing.List[GenaiAgentFunctions] = None,
   id: str = None,
   if_case: str = None,
   k: typing.Union[int, float] = None,
-  knowledge_bases: typing.Union[IResolvable, typing.List[GenaiAgentKnowledgeBases]] = None,
+  knowledge_bases: IResolvable | typing.List[GenaiAgentKnowledgeBases] = None,
   knowledge_base_uuid: typing.List[str] = None,
   max_tokens: typing.Union[int, float] = None,
-  model: typing.Union[IResolvable, typing.List[GenaiAgentModel]] = None,
-  open_ai_api_key: typing.Union[IResolvable, typing.List[GenaiAgentOpenAiApiKey]] = None,
+  model: IResolvable | typing.List[GenaiAgentModel] = None,
+  open_ai_api_key: IResolvable | typing.List[GenaiAgentOpenAiApiKey] = None,
   open_ai_key_uuid: str = None,
-  parent_agents: typing.Union[IResolvable, typing.List[GenaiAgentParentAgents]] = None,
-  provide_citations: typing.Union[bool, IResolvable] = None,
+  parent_agents: IResolvable | typing.List[GenaiAgentParentAgents] = None,
+  provide_citations: bool | IResolvable = None,
   retrieval_method: str = None,
   route_created_by: str = None,
   route_name: str = None,
   route_uuid: str = None,
   tags: typing.List[str] = None,
   temperature: typing.Union[int, float] = None,
-  template: typing.Union[IResolvable, typing.List[GenaiAgentTemplate]] = None,
+  template: IResolvable | typing.List[GenaiAgentTemplate] = None,
   top_p: typing.Union[int, float] = None,
   url: str = None,
   user_id: str = None
@@ -66,48 +66,48 @@ genaiAgent.GenaiAgent(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.instruction">instruction</a></code> | <code>str</code> | Instruction for the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.modelUuid">model_uuid</a></code> | <code>str</code> | Model UUID of the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.projectId">project_id</a></code> | <code>str</code> | Project ID of the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where the Agent is deployed. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.agentGuardrail">agent_guardrail</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>]]</code> | agent_guardrail block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.anthropicApiKey">anthropic_api_key</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>]]</code> | anthropic_api_key block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.agentGuardrail">agent_guardrail</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>]</code> | agent_guardrail block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.anthropicApiKey">anthropic_api_key</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>]</code> | anthropic_api_key block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.anthropicKeyUuid">anthropic_key_uuid</a></code> | <code>str</code> | Optional Anthropic API key ID to use with Anthropic models. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.apiKeyInfos">api_key_infos</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>]]</code> | api_key_infos block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.apiKeys">api_keys</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>]]</code> | api_keys block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.chatbot">chatbot</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>]]</code> | chatbot block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.chatbotIdentifiers">chatbot_identifiers</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>]]</code> | chatbot_identifiers block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.childAgents">child_agents</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>]]</code> | child_agents block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.apiKeyInfos">api_key_infos</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>]</code> | api_key_infos block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.apiKeys">api_keys</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>]</code> | api_keys block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.chatbot">chatbot</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>]</code> | chatbot block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.chatbotIdentifiers">chatbot_identifiers</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>]</code> | chatbot_identifiers block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.childAgents">child_agents</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>]</code> | child_agents block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.createdAt">created_at</a></code> | <code>str</code> | Timestamp when the Agent was created. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.deployment">deployment</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>]]</code> | deployment block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.deployment">deployment</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>]</code> | deployment block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.description">description</a></code> | <code>str</code> | Description for the Agent. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.functions">functions</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>]]</code> | functions block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.functions">functions</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>]</code> | functions block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/genai_agent#id GenaiAgent#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.ifCase">if_case</a></code> | <code>str</code> | If case condition. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.k">k</a></code> | <code>typing.Union[int, float]</code> | K value. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.knowledgeBases">knowledge_bases</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>]]</code> | knowledge_bases block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.knowledgeBases">knowledge_bases</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>]</code> | knowledge_bases block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.knowledgeBaseUuid">knowledge_base_uuid</a></code> | <code>typing.List[str]</code> | Ids of the knowledge base(s) to attach to the agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.maxTokens">max_tokens</a></code> | <code>typing.Union[int, float]</code> | Maximum tokens allowed. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.model">model</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>]]</code> | model block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.openAiApiKey">open_ai_api_key</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>]]</code> | open_ai_api_key block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.model">model</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>]</code> | model block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.openAiApiKey">open_ai_api_key</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>]</code> | open_ai_api_key block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.openAiKeyUuid">open_ai_key_uuid</a></code> | <code>str</code> | Optional OpenAI API key ID to use with OpenAI models. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.parentAgents">parent_agents</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>]]</code> | parent_agents block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.provideCitations">provide_citations</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates if the agent should provide citations in responses. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.parentAgents">parent_agents</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>]</code> | parent_agents block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.provideCitations">provide_citations</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates if the agent should provide citations in responses. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.retrievalMethod">retrieval_method</a></code> | <code>str</code> | Retrieval method used. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.routeCreatedBy">route_created_by</a></code> | <code>str</code> | User who created the route. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.routeName">route_name</a></code> | <code>str</code> | Route name. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.routeUuid">route_uuid</a></code> | <code>str</code> | Route UUID. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.tags">tags</a></code> | <code>typing.List[str]</code> | List of Tags. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.temperature">temperature</a></code> | <code>typing.Union[int, float]</code> | Agent temperature setting. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.template">template</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>]]</code> | template block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.template">template</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>]</code> | template block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.topP">top_p</a></code> | <code>typing.Union[int, float]</code> | Top P sampling parameter. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.url">url</a></code> | <code>str</code> | URL for the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.userId">user_id</a></code> | <code>str</code> | User ID linked with the Agent. |
@@ -134,13 +134,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -170,7 +170,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -226,7 +226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `agent_guardrail`<sup>Optional</sup> <a name="agent_guardrail" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.agentGuardrail"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>]
 
 agent_guardrail block.
 
@@ -236,7 +236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `anthropic_api_key`<sup>Optional</sup> <a name="anthropic_api_key" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.anthropicApiKey"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>]
 
 anthropic_api_key block.
 
@@ -256,7 +256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `api_key_infos`<sup>Optional</sup> <a name="api_key_infos" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.apiKeyInfos"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>]
 
 api_key_infos block.
 
@@ -266,7 +266,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `api_keys`<sup>Optional</sup> <a name="api_keys" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.apiKeys"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>]
 
 api_keys block.
 
@@ -276,7 +276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `chatbot`<sup>Optional</sup> <a name="chatbot" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.chatbot"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>]
 
 chatbot block.
 
@@ -286,7 +286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `chatbot_identifiers`<sup>Optional</sup> <a name="chatbot_identifiers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.chatbotIdentifiers"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>]
 
 chatbot_identifiers block.
 
@@ -296,7 +296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `child_agents`<sup>Optional</sup> <a name="child_agents" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.childAgents"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>]
 
 child_agents block.
 
@@ -316,7 +316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `deployment`<sup>Optional</sup> <a name="deployment" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.deployment"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>]
 
 deployment block.
 
@@ -336,7 +336,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `functions`<sup>Optional</sup> <a name="functions" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.functions"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>]
 
 functions block.
 
@@ -377,7 +377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `knowledge_bases`<sup>Optional</sup> <a name="knowledge_bases" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.knowledgeBases"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>]
 
 knowledge_bases block.
 
@@ -407,7 +407,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `model`<sup>Optional</sup> <a name="model" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.model"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>]
 
 model block.
 
@@ -417,7 +417,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `open_ai_api_key`<sup>Optional</sup> <a name="open_ai_api_key" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.openAiApiKey"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>]
 
 open_ai_api_key block.
 
@@ -437,7 +437,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `parent_agents`<sup>Optional</sup> <a name="parent_agents" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.parentAgents"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>]
 
 parent_agents block.
 
@@ -447,7 +447,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `provide_citations`<sup>Optional</sup> <a name="provide_citations" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.provideCitations"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates if the agent should provide citations in responses.
 
@@ -517,7 +517,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `template`<sup>Optional</sup> <a name="template" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.template"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>]
 
 template block.
 
@@ -854,7 +854,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.importFrom"></a>
@@ -917,7 +917,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -933,7 +933,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -961,13 +961,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_agent_guardrail(
-  value: typing.Union[IResolvable, typing.List[GenaiAgentAgentGuardrail]]
+  value: IResolvable | typing.List[GenaiAgentAgentGuardrail]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putAgentGuardrail.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>]
 
 ---
 
@@ -975,13 +975,13 @@ def put_agent_guardrail(
 
 ```python
 def put_anthropic_api_key(
-  value: typing.Union[IResolvable, typing.List[GenaiAgentAnthropicApiKey]]
+  value: IResolvable | typing.List[GenaiAgentAnthropicApiKey]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putAnthropicApiKey.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>]
 
 ---
 
@@ -989,13 +989,13 @@ def put_anthropic_api_key(
 
 ```python
 def put_api_key_infos(
-  value: typing.Union[IResolvable, typing.List[GenaiAgentApiKeyInfos]]
+  value: IResolvable | typing.List[GenaiAgentApiKeyInfos]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putApiKeyInfos.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>]
 
 ---
 
@@ -1003,13 +1003,13 @@ def put_api_key_infos(
 
 ```python
 def put_api_keys(
-  value: typing.Union[IResolvable, typing.List[GenaiAgentApiKeys]]
+  value: IResolvable | typing.List[GenaiAgentApiKeys]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putApiKeys.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>]
 
 ---
 
@@ -1017,13 +1017,13 @@ def put_api_keys(
 
 ```python
 def put_chatbot(
-  value: typing.Union[IResolvable, typing.List[GenaiAgentChatbot]]
+  value: IResolvable | typing.List[GenaiAgentChatbot]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putChatbot.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>]
 
 ---
 
@@ -1031,13 +1031,13 @@ def put_chatbot(
 
 ```python
 def put_chatbot_identifiers(
-  value: typing.Union[IResolvable, typing.List[GenaiAgentChatbotIdentifiers]]
+  value: IResolvable | typing.List[GenaiAgentChatbotIdentifiers]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putChatbotIdentifiers.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>]
 
 ---
 
@@ -1045,13 +1045,13 @@ def put_chatbot_identifiers(
 
 ```python
 def put_child_agents(
-  value: typing.Union[IResolvable, typing.List[GenaiAgentChildAgents]]
+  value: IResolvable | typing.List[GenaiAgentChildAgents]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putChildAgents.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>]
 
 ---
 
@@ -1059,13 +1059,13 @@ def put_child_agents(
 
 ```python
 def put_deployment(
-  value: typing.Union[IResolvable, typing.List[GenaiAgentDeployment]]
+  value: IResolvable | typing.List[GenaiAgentDeployment]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putDeployment.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>]
 
 ---
 
@@ -1073,13 +1073,13 @@ def put_deployment(
 
 ```python
 def put_functions(
-  value: typing.Union[IResolvable, typing.List[GenaiAgentFunctions]]
+  value: IResolvable | typing.List[GenaiAgentFunctions]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putFunctions.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>]
 
 ---
 
@@ -1087,13 +1087,13 @@ def put_functions(
 
 ```python
 def put_knowledge_bases(
-  value: typing.Union[IResolvable, typing.List[GenaiAgentKnowledgeBases]]
+  value: IResolvable | typing.List[GenaiAgentKnowledgeBases]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putKnowledgeBases.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>]
 
 ---
 
@@ -1101,13 +1101,13 @@ def put_knowledge_bases(
 
 ```python
 def put_model(
-  value: typing.Union[IResolvable, typing.List[GenaiAgentModel]]
+  value: IResolvable | typing.List[GenaiAgentModel]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putModel.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>]
 
 ---
 
@@ -1115,13 +1115,13 @@ def put_model(
 
 ```python
 def put_open_ai_api_key(
-  value: typing.Union[IResolvable, typing.List[GenaiAgentOpenAiApiKey]]
+  value: IResolvable | typing.List[GenaiAgentOpenAiApiKey]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putOpenAiApiKey.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>]
 
 ---
 
@@ -1129,13 +1129,13 @@ def put_open_ai_api_key(
 
 ```python
 def put_parent_agents(
-  value: typing.Union[IResolvable, typing.List[GenaiAgentParentAgents]]
+  value: IResolvable | typing.List[GenaiAgentParentAgents]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putParentAgents.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>]
 
 ---
 
@@ -1143,13 +1143,13 @@ def put_parent_agents(
 
 ```python
 def put_template(
-  value: typing.Union[IResolvable, typing.List[GenaiAgentTemplate]]
+  value: IResolvable | typing.List[GenaiAgentTemplate]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putTemplate.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>]
 
 ---
 
@@ -1488,13 +1488,13 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.agentGuardrail">agent_guardrail</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailList">GenaiAgentAgentGuardrailList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.anthropicApiKey">anthropic_api_key</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyList">GenaiAgentAnthropicApiKeyList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.apiKeyInfos">api_key_infos</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosList">GenaiAgentApiKeyInfosList</a></code> | *No description.* |
@@ -1511,33 +1511,33 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.routeCreatedAt">route_created_at</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.template">template</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateList">GenaiAgentTemplateList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.updatedAt">updated_at</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.agentGuardrailInput">agent_guardrail_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.anthropicApiKeyInput">anthropic_api_key_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.agentGuardrailInput">agent_guardrail_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.anthropicApiKeyInput">anthropic_api_key_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.anthropicKeyUuidInput">anthropic_key_uuid_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.apiKeyInfosInput">api_key_infos_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.apiKeysInput">api_keys_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.chatbotIdentifiersInput">chatbot_identifiers_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.chatbotInput">chatbot_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.childAgentsInput">child_agents_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.apiKeyInfosInput">api_key_infos_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.apiKeysInput">api_keys_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.chatbotIdentifiersInput">chatbot_identifiers_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.chatbotInput">chatbot_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.childAgentsInput">child_agents_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.createdAtInput">created_at_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.deploymentInput">deployment_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.deploymentInput">deployment_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.functionsInput">functions_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.functionsInput">functions_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.ifCaseInput">if_case_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.instructionInput">instruction_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.kInput">k_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.knowledgeBasesInput">knowledge_bases_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.knowledgeBasesInput">knowledge_bases_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.knowledgeBaseUuidInput">knowledge_base_uuid_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.maxTokensInput">max_tokens_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.modelInput">model_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.modelInput">model_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.modelUuidInput">model_uuid_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.openAiApiKeyInput">open_ai_api_key_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.openAiApiKeyInput">open_ai_api_key_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.openAiKeyUuidInput">open_ai_key_uuid_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.parentAgentsInput">parent_agents_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.parentAgentsInput">parent_agents_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.projectIdInput">project_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.provideCitationsInput">provide_citations_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.provideCitationsInput">provide_citations_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.retrievalMethodInput">retrieval_method_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.routeCreatedByInput">route_created_by_input</a></code> | <code>str</code> | *No description.* |
@@ -1545,7 +1545,7 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.routeUuidInput">route_uuid_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.tagsInput">tags_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.temperatureInput">temperature_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.templateInput">template_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.templateInput">template_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.topPInput">top_p_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.urlInput">url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.userIdInput">user_id_input</a></code> | <code>str</code> | *No description.* |
@@ -1562,7 +1562,7 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.openAiKeyUuid">open_ai_key_uuid</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.projectId">project_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.provideCitations">provide_citations</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.provideCitations">provide_citations</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.retrievalMethod">retrieval_method</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.routeCreatedBy">route_created_by</a></code> | <code>str</code> | *No description.* |
@@ -1651,20 +1651,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1711,10 +1711,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1881,20 +1881,20 @@ updated_at: str
 ##### `agent_guardrail_input`<sup>Optional</sup> <a name="agent_guardrail_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.agentGuardrailInput"></a>
 
 ```python
-agent_guardrail_input: typing.Union[IResolvable, typing.List[GenaiAgentAgentGuardrail]]
+agent_guardrail_input: IResolvable | typing.List[GenaiAgentAgentGuardrail]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>]
 
 ---
 
 ##### `anthropic_api_key_input`<sup>Optional</sup> <a name="anthropic_api_key_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.anthropicApiKeyInput"></a>
 
 ```python
-anthropic_api_key_input: typing.Union[IResolvable, typing.List[GenaiAgentAnthropicApiKey]]
+anthropic_api_key_input: IResolvable | typing.List[GenaiAgentAnthropicApiKey]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>]
 
 ---
 
@@ -1911,50 +1911,50 @@ anthropic_key_uuid_input: str
 ##### `api_key_infos_input`<sup>Optional</sup> <a name="api_key_infos_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.apiKeyInfosInput"></a>
 
 ```python
-api_key_infos_input: typing.Union[IResolvable, typing.List[GenaiAgentApiKeyInfos]]
+api_key_infos_input: IResolvable | typing.List[GenaiAgentApiKeyInfos]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>]
 
 ---
 
 ##### `api_keys_input`<sup>Optional</sup> <a name="api_keys_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.apiKeysInput"></a>
 
 ```python
-api_keys_input: typing.Union[IResolvable, typing.List[GenaiAgentApiKeys]]
+api_keys_input: IResolvable | typing.List[GenaiAgentApiKeys]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>]
 
 ---
 
 ##### `chatbot_identifiers_input`<sup>Optional</sup> <a name="chatbot_identifiers_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.chatbotIdentifiersInput"></a>
 
 ```python
-chatbot_identifiers_input: typing.Union[IResolvable, typing.List[GenaiAgentChatbotIdentifiers]]
+chatbot_identifiers_input: IResolvable | typing.List[GenaiAgentChatbotIdentifiers]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>]
 
 ---
 
 ##### `chatbot_input`<sup>Optional</sup> <a name="chatbot_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.chatbotInput"></a>
 
 ```python
-chatbot_input: typing.Union[IResolvable, typing.List[GenaiAgentChatbot]]
+chatbot_input: IResolvable | typing.List[GenaiAgentChatbot]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>]
 
 ---
 
 ##### `child_agents_input`<sup>Optional</sup> <a name="child_agents_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.childAgentsInput"></a>
 
 ```python
-child_agents_input: typing.Union[IResolvable, typing.List[GenaiAgentChildAgents]]
+child_agents_input: IResolvable | typing.List[GenaiAgentChildAgents]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>]
 
 ---
 
@@ -1971,10 +1971,10 @@ created_at_input: str
 ##### `deployment_input`<sup>Optional</sup> <a name="deployment_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.deploymentInput"></a>
 
 ```python
-deployment_input: typing.Union[IResolvable, typing.List[GenaiAgentDeployment]]
+deployment_input: IResolvable | typing.List[GenaiAgentDeployment]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>]
 
 ---
 
@@ -1991,10 +1991,10 @@ description_input: str
 ##### `functions_input`<sup>Optional</sup> <a name="functions_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.functionsInput"></a>
 
 ```python
-functions_input: typing.Union[IResolvable, typing.List[GenaiAgentFunctions]]
+functions_input: IResolvable | typing.List[GenaiAgentFunctions]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>]
 
 ---
 
@@ -2041,10 +2041,10 @@ k_input: typing.Union[int, float]
 ##### `knowledge_bases_input`<sup>Optional</sup> <a name="knowledge_bases_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.knowledgeBasesInput"></a>
 
 ```python
-knowledge_bases_input: typing.Union[IResolvable, typing.List[GenaiAgentKnowledgeBases]]
+knowledge_bases_input: IResolvable | typing.List[GenaiAgentKnowledgeBases]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>]
 
 ---
 
@@ -2071,10 +2071,10 @@ max_tokens_input: typing.Union[int, float]
 ##### `model_input`<sup>Optional</sup> <a name="model_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.modelInput"></a>
 
 ```python
-model_input: typing.Union[IResolvable, typing.List[GenaiAgentModel]]
+model_input: IResolvable | typing.List[GenaiAgentModel]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>]
 
 ---
 
@@ -2101,10 +2101,10 @@ name_input: str
 ##### `open_ai_api_key_input`<sup>Optional</sup> <a name="open_ai_api_key_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.openAiApiKeyInput"></a>
 
 ```python
-open_ai_api_key_input: typing.Union[IResolvable, typing.List[GenaiAgentOpenAiApiKey]]
+open_ai_api_key_input: IResolvable | typing.List[GenaiAgentOpenAiApiKey]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>]
 
 ---
 
@@ -2121,10 +2121,10 @@ open_ai_key_uuid_input: str
 ##### `parent_agents_input`<sup>Optional</sup> <a name="parent_agents_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.parentAgentsInput"></a>
 
 ```python
-parent_agents_input: typing.Union[IResolvable, typing.List[GenaiAgentParentAgents]]
+parent_agents_input: IResolvable | typing.List[GenaiAgentParentAgents]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>]
 
 ---
 
@@ -2141,10 +2141,10 @@ project_id_input: str
 ##### `provide_citations_input`<sup>Optional</sup> <a name="provide_citations_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.provideCitationsInput"></a>
 
 ```python
-provide_citations_input: typing.Union[bool, IResolvable]
+provide_citations_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2221,10 +2221,10 @@ temperature_input: typing.Union[int, float]
 ##### `template_input`<sup>Optional</sup> <a name="template_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.templateInput"></a>
 
 ```python
-template_input: typing.Union[IResolvable, typing.List[GenaiAgentTemplate]]
+template_input: IResolvable | typing.List[GenaiAgentTemplate]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>]
 
 ---
 
@@ -2391,10 +2391,10 @@ project_id: str
 ##### `provide_citations`<sup>Required</sup> <a name="provide_citations" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.provideCitations"></a>
 
 ```python
-provide_citations: typing.Union[bool, IResolvable]
+provide_citations: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2530,7 +2530,7 @@ genaiAgent.GenaiAgentAgentGuardrail(
   default_response: str = None,
   description: str = None,
   guardrail_uuid: str = None,
-  is_default: typing.Union[bool, IResolvable] = None,
+  is_default: bool | IResolvable = None,
   name: str = None,
   priority: typing.Union[int, float] = None,
   type: str = None,
@@ -2546,7 +2546,7 @@ genaiAgent.GenaiAgentAgentGuardrail(
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail.property.defaultResponse">default_response</a></code> | <code>str</code> | Default response for the Guardrail. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail.property.description">description</a></code> | <code>str</code> | Description of the Guardrail. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail.property.guardrailUuid">guardrail_uuid</a></code> | <code>str</code> | Guardrail UUID. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail.property.isDefault">is_default</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates if the Guardrail is default. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail.property.isDefault">is_default</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates if the Guardrail is default. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail.property.name">name</a></code> | <code>str</code> | Name of Guardrail. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | Priority of the Guardrail. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail.property.type">type</a></code> | <code>str</code> | Type of the Guardrail. |
@@ -2613,10 +2613,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `is_default`<sup>Optional</sup> <a name="is_default" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail.property.isDefault"></a>
 
 ```python
-is_default: typing.Union[bool, IResolvable]
+is_default: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates if the Guardrail is default.
 
@@ -3000,12 +3000,12 @@ genaiAgent.GenaiAgentChildAgents(
   name: str,
   project_id: str,
   region: str,
-  anthropic_api_key: typing.Union[IResolvable, typing.List[GenaiAgentChildAgentsAnthropicApiKey]] = None,
-  api_key_infos: typing.Union[IResolvable, typing.List[GenaiAgentChildAgentsApiKeyInfos]] = None,
-  api_keys: typing.Union[IResolvable, typing.List[GenaiAgentChildAgentsApiKeys]] = None,
-  chatbot: typing.Union[IResolvable, typing.List[GenaiAgentChildAgentsChatbot]] = None,
-  chatbot_identifiers: typing.Union[IResolvable, typing.List[GenaiAgentChildAgentsChatbotIdentifiers]] = None,
-  deployment: typing.Union[IResolvable, typing.List[GenaiAgentChildAgentsDeployment]] = None,
+  anthropic_api_key: IResolvable | typing.List[GenaiAgentChildAgentsAnthropicApiKey] = None,
+  api_key_infos: IResolvable | typing.List[GenaiAgentChildAgentsApiKeyInfos] = None,
+  api_keys: IResolvable | typing.List[GenaiAgentChildAgentsApiKeys] = None,
+  chatbot: IResolvable | typing.List[GenaiAgentChildAgentsChatbot] = None,
+  chatbot_identifiers: IResolvable | typing.List[GenaiAgentChildAgentsChatbotIdentifiers] = None,
+  deployment: IResolvable | typing.List[GenaiAgentChildAgentsDeployment] = None,
   description: str = None
 )
 ```
@@ -3019,12 +3019,12 @@ genaiAgent.GenaiAgentChildAgents(
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.name">name</a></code> | <code>str</code> | Name of the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.projectId">project_id</a></code> | <code>str</code> | Project ID of the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.region">region</a></code> | <code>str</code> | Region where the Agent is deployed. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.anthropicApiKey">anthropic_api_key</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>]]</code> | anthropic_api_key block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.apiKeyInfos">api_key_infos</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>]]</code> | api_key_infos block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.apiKeys">api_keys</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>]]</code> | api_keys block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.chatbot">chatbot</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>]]</code> | chatbot block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.chatbotIdentifiers">chatbot_identifiers</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>]]</code> | chatbot_identifiers block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.deployment">deployment</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>]]</code> | deployment block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.anthropicApiKey">anthropic_api_key</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>]</code> | anthropic_api_key block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.apiKeyInfos">api_key_infos</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>]</code> | api_key_infos block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.apiKeys">api_keys</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>]</code> | api_keys block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.chatbot">chatbot</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>]</code> | chatbot block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.chatbotIdentifiers">chatbot_identifiers</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>]</code> | chatbot_identifiers block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.deployment">deployment</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>]</code> | deployment block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.description">description</a></code> | <code>str</code> | Description for the Agent. |
 
 ---
@@ -3102,10 +3102,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `anthropic_api_key`<sup>Optional</sup> <a name="anthropic_api_key" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.anthropicApiKey"></a>
 
 ```python
-anthropic_api_key: typing.Union[IResolvable, typing.List[GenaiAgentChildAgentsAnthropicApiKey]]
+anthropic_api_key: IResolvable | typing.List[GenaiAgentChildAgentsAnthropicApiKey]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>]
 
 anthropic_api_key block.
 
@@ -3116,10 +3116,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `api_key_infos`<sup>Optional</sup> <a name="api_key_infos" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.apiKeyInfos"></a>
 
 ```python
-api_key_infos: typing.Union[IResolvable, typing.List[GenaiAgentChildAgentsApiKeyInfos]]
+api_key_infos: IResolvable | typing.List[GenaiAgentChildAgentsApiKeyInfos]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>]
 
 api_key_infos block.
 
@@ -3130,10 +3130,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `api_keys`<sup>Optional</sup> <a name="api_keys" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.apiKeys"></a>
 
 ```python
-api_keys: typing.Union[IResolvable, typing.List[GenaiAgentChildAgentsApiKeys]]
+api_keys: IResolvable | typing.List[GenaiAgentChildAgentsApiKeys]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>]
 
 api_keys block.
 
@@ -3144,10 +3144,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `chatbot`<sup>Optional</sup> <a name="chatbot" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.chatbot"></a>
 
 ```python
-chatbot: typing.Union[IResolvable, typing.List[GenaiAgentChildAgentsChatbot]]
+chatbot: IResolvable | typing.List[GenaiAgentChildAgentsChatbot]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>]
 
 chatbot block.
 
@@ -3158,10 +3158,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `chatbot_identifiers`<sup>Optional</sup> <a name="chatbot_identifiers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.chatbotIdentifiers"></a>
 
 ```python
-chatbot_identifiers: typing.Union[IResolvable, typing.List[GenaiAgentChildAgentsChatbotIdentifiers]]
+chatbot_identifiers: IResolvable | typing.List[GenaiAgentChildAgentsChatbotIdentifiers]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>]
 
 chatbot_identifiers block.
 
@@ -3172,10 +3172,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deployment`<sup>Optional</sup> <a name="deployment" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.deployment"></a>
 
 ```python
-deployment: typing.Union[IResolvable, typing.List[GenaiAgentChildAgentsDeployment]]
+deployment: IResolvable | typing.List[GenaiAgentChildAgentsDeployment]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>]
 
 deployment block.
 
@@ -3610,48 +3610,48 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 from cdktf_cdktf_provider_digitalocean import genai_agent
 
 genaiAgent.GenaiAgentConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   instruction: str,
   model_uuid: str,
   name: str,
   project_id: str,
   region: str,
-  agent_guardrail: typing.Union[IResolvable, typing.List[GenaiAgentAgentGuardrail]] = None,
-  anthropic_api_key: typing.Union[IResolvable, typing.List[GenaiAgentAnthropicApiKey]] = None,
+  agent_guardrail: IResolvable | typing.List[GenaiAgentAgentGuardrail] = None,
+  anthropic_api_key: IResolvable | typing.List[GenaiAgentAnthropicApiKey] = None,
   anthropic_key_uuid: str = None,
-  api_key_infos: typing.Union[IResolvable, typing.List[GenaiAgentApiKeyInfos]] = None,
-  api_keys: typing.Union[IResolvable, typing.List[GenaiAgentApiKeys]] = None,
-  chatbot: typing.Union[IResolvable, typing.List[GenaiAgentChatbot]] = None,
-  chatbot_identifiers: typing.Union[IResolvable, typing.List[GenaiAgentChatbotIdentifiers]] = None,
-  child_agents: typing.Union[IResolvable, typing.List[GenaiAgentChildAgents]] = None,
+  api_key_infos: IResolvable | typing.List[GenaiAgentApiKeyInfos] = None,
+  api_keys: IResolvable | typing.List[GenaiAgentApiKeys] = None,
+  chatbot: IResolvable | typing.List[GenaiAgentChatbot] = None,
+  chatbot_identifiers: IResolvable | typing.List[GenaiAgentChatbotIdentifiers] = None,
+  child_agents: IResolvable | typing.List[GenaiAgentChildAgents] = None,
   created_at: str = None,
-  deployment: typing.Union[IResolvable, typing.List[GenaiAgentDeployment]] = None,
+  deployment: IResolvable | typing.List[GenaiAgentDeployment] = None,
   description: str = None,
-  functions: typing.Union[IResolvable, typing.List[GenaiAgentFunctions]] = None,
+  functions: IResolvable | typing.List[GenaiAgentFunctions] = None,
   id: str = None,
   if_case: str = None,
   k: typing.Union[int, float] = None,
-  knowledge_bases: typing.Union[IResolvable, typing.List[GenaiAgentKnowledgeBases]] = None,
+  knowledge_bases: IResolvable | typing.List[GenaiAgentKnowledgeBases] = None,
   knowledge_base_uuid: typing.List[str] = None,
   max_tokens: typing.Union[int, float] = None,
-  model: typing.Union[IResolvable, typing.List[GenaiAgentModel]] = None,
-  open_ai_api_key: typing.Union[IResolvable, typing.List[GenaiAgentOpenAiApiKey]] = None,
+  model: IResolvable | typing.List[GenaiAgentModel] = None,
+  open_ai_api_key: IResolvable | typing.List[GenaiAgentOpenAiApiKey] = None,
   open_ai_key_uuid: str = None,
-  parent_agents: typing.Union[IResolvable, typing.List[GenaiAgentParentAgents]] = None,
-  provide_citations: typing.Union[bool, IResolvable] = None,
+  parent_agents: IResolvable | typing.List[GenaiAgentParentAgents] = None,
+  provide_citations: bool | IResolvable = None,
   retrieval_method: str = None,
   route_created_by: str = None,
   route_name: str = None,
   route_uuid: str = None,
   tags: typing.List[str] = None,
   temperature: typing.Union[int, float] = None,
-  template: typing.Union[IResolvable, typing.List[GenaiAgentTemplate]] = None,
+  template: IResolvable | typing.List[GenaiAgentTemplate] = None,
   top_p: typing.Union[int, float] = None,
   url: str = None,
   user_id: str = None
@@ -3662,48 +3662,48 @@ genaiAgent.GenaiAgentConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.instruction">instruction</a></code> | <code>str</code> | Instruction for the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.modelUuid">model_uuid</a></code> | <code>str</code> | Model UUID of the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.name">name</a></code> | <code>str</code> | Name of the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.projectId">project_id</a></code> | <code>str</code> | Project ID of the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.region">region</a></code> | <code>str</code> | Region where the Agent is deployed. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.agentGuardrail">agent_guardrail</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>]]</code> | agent_guardrail block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.anthropicApiKey">anthropic_api_key</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>]]</code> | anthropic_api_key block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.agentGuardrail">agent_guardrail</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>]</code> | agent_guardrail block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.anthropicApiKey">anthropic_api_key</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>]</code> | anthropic_api_key block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.anthropicKeyUuid">anthropic_key_uuid</a></code> | <code>str</code> | Optional Anthropic API key ID to use with Anthropic models. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.apiKeyInfos">api_key_infos</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>]]</code> | api_key_infos block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.apiKeys">api_keys</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>]]</code> | api_keys block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.chatbot">chatbot</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>]]</code> | chatbot block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.chatbotIdentifiers">chatbot_identifiers</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>]]</code> | chatbot_identifiers block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.childAgents">child_agents</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>]]</code> | child_agents block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.apiKeyInfos">api_key_infos</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>]</code> | api_key_infos block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.apiKeys">api_keys</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>]</code> | api_keys block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.chatbot">chatbot</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>]</code> | chatbot block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.chatbotIdentifiers">chatbot_identifiers</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>]</code> | chatbot_identifiers block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.childAgents">child_agents</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>]</code> | child_agents block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.createdAt">created_at</a></code> | <code>str</code> | Timestamp when the Agent was created. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.deployment">deployment</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>]]</code> | deployment block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.deployment">deployment</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>]</code> | deployment block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.description">description</a></code> | <code>str</code> | Description for the Agent. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.functions">functions</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>]]</code> | functions block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.functions">functions</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>]</code> | functions block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/genai_agent#id GenaiAgent#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.ifCase">if_case</a></code> | <code>str</code> | If case condition. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.k">k</a></code> | <code>typing.Union[int, float]</code> | K value. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.knowledgeBases">knowledge_bases</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>]]</code> | knowledge_bases block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.knowledgeBases">knowledge_bases</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>]</code> | knowledge_bases block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.knowledgeBaseUuid">knowledge_base_uuid</a></code> | <code>typing.List[str]</code> | Ids of the knowledge base(s) to attach to the agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.maxTokens">max_tokens</a></code> | <code>typing.Union[int, float]</code> | Maximum tokens allowed. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.model">model</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>]]</code> | model block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.openAiApiKey">open_ai_api_key</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>]]</code> | open_ai_api_key block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.model">model</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>]</code> | model block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.openAiApiKey">open_ai_api_key</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>]</code> | open_ai_api_key block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.openAiKeyUuid">open_ai_key_uuid</a></code> | <code>str</code> | Optional OpenAI API key ID to use with OpenAI models. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.parentAgents">parent_agents</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>]]</code> | parent_agents block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.provideCitations">provide_citations</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates if the agent should provide citations in responses. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.parentAgents">parent_agents</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>]</code> | parent_agents block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.provideCitations">provide_citations</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates if the agent should provide citations in responses. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.retrievalMethod">retrieval_method</a></code> | <code>str</code> | Retrieval method used. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.routeCreatedBy">route_created_by</a></code> | <code>str</code> | User who created the route. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.routeName">route_name</a></code> | <code>str</code> | Route name. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.routeUuid">route_uuid</a></code> | <code>str</code> | Route UUID. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.tags">tags</a></code> | <code>typing.List[str]</code> | List of Tags. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.temperature">temperature</a></code> | <code>typing.Union[int, float]</code> | Agent temperature setting. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.template">template</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>]]</code> | template block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.template">template</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>]</code> | template block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.topP">top_p</a></code> | <code>typing.Union[int, float]</code> | Top P sampling parameter. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.url">url</a></code> | <code>str</code> | URL for the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.userId">user_id</a></code> | <code>str</code> | User ID linked with the Agent. |
@@ -3713,20 +3713,20 @@ genaiAgent.GenaiAgentConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -3773,10 +3773,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -3853,10 +3853,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `agent_guardrail`<sup>Optional</sup> <a name="agent_guardrail" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.agentGuardrail"></a>
 
 ```python
-agent_guardrail: typing.Union[IResolvable, typing.List[GenaiAgentAgentGuardrail]]
+agent_guardrail: IResolvable | typing.List[GenaiAgentAgentGuardrail]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>]
 
 agent_guardrail block.
 
@@ -3867,10 +3867,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `anthropic_api_key`<sup>Optional</sup> <a name="anthropic_api_key" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.anthropicApiKey"></a>
 
 ```python
-anthropic_api_key: typing.Union[IResolvable, typing.List[GenaiAgentAnthropicApiKey]]
+anthropic_api_key: IResolvable | typing.List[GenaiAgentAnthropicApiKey]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>]
 
 anthropic_api_key block.
 
@@ -3895,10 +3895,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `api_key_infos`<sup>Optional</sup> <a name="api_key_infos" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.apiKeyInfos"></a>
 
 ```python
-api_key_infos: typing.Union[IResolvable, typing.List[GenaiAgentApiKeyInfos]]
+api_key_infos: IResolvable | typing.List[GenaiAgentApiKeyInfos]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>]
 
 api_key_infos block.
 
@@ -3909,10 +3909,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `api_keys`<sup>Optional</sup> <a name="api_keys" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.apiKeys"></a>
 
 ```python
-api_keys: typing.Union[IResolvable, typing.List[GenaiAgentApiKeys]]
+api_keys: IResolvable | typing.List[GenaiAgentApiKeys]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>]
 
 api_keys block.
 
@@ -3923,10 +3923,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `chatbot`<sup>Optional</sup> <a name="chatbot" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.chatbot"></a>
 
 ```python
-chatbot: typing.Union[IResolvable, typing.List[GenaiAgentChatbot]]
+chatbot: IResolvable | typing.List[GenaiAgentChatbot]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>]
 
 chatbot block.
 
@@ -3937,10 +3937,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `chatbot_identifiers`<sup>Optional</sup> <a name="chatbot_identifiers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.chatbotIdentifiers"></a>
 
 ```python
-chatbot_identifiers: typing.Union[IResolvable, typing.List[GenaiAgentChatbotIdentifiers]]
+chatbot_identifiers: IResolvable | typing.List[GenaiAgentChatbotIdentifiers]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>]
 
 chatbot_identifiers block.
 
@@ -3951,10 +3951,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `child_agents`<sup>Optional</sup> <a name="child_agents" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.childAgents"></a>
 
 ```python
-child_agents: typing.Union[IResolvable, typing.List[GenaiAgentChildAgents]]
+child_agents: IResolvable | typing.List[GenaiAgentChildAgents]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>]
 
 child_agents block.
 
@@ -3979,10 +3979,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deployment`<sup>Optional</sup> <a name="deployment" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.deployment"></a>
 
 ```python
-deployment: typing.Union[IResolvable, typing.List[GenaiAgentDeployment]]
+deployment: IResolvable | typing.List[GenaiAgentDeployment]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>]
 
 deployment block.
 
@@ -4007,10 +4007,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `functions`<sup>Optional</sup> <a name="functions" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.functions"></a>
 
 ```python
-functions: typing.Union[IResolvable, typing.List[GenaiAgentFunctions]]
+functions: IResolvable | typing.List[GenaiAgentFunctions]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>]
 
 functions block.
 
@@ -4064,10 +4064,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `knowledge_bases`<sup>Optional</sup> <a name="knowledge_bases" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.knowledgeBases"></a>
 
 ```python
-knowledge_bases: typing.Union[IResolvable, typing.List[GenaiAgentKnowledgeBases]]
+knowledge_bases: IResolvable | typing.List[GenaiAgentKnowledgeBases]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>]
 
 knowledge_bases block.
 
@@ -4106,10 +4106,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `model`<sup>Optional</sup> <a name="model" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.model"></a>
 
 ```python
-model: typing.Union[IResolvable, typing.List[GenaiAgentModel]]
+model: IResolvable | typing.List[GenaiAgentModel]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>]
 
 model block.
 
@@ -4120,10 +4120,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `open_ai_api_key`<sup>Optional</sup> <a name="open_ai_api_key" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.openAiApiKey"></a>
 
 ```python
-open_ai_api_key: typing.Union[IResolvable, typing.List[GenaiAgentOpenAiApiKey]]
+open_ai_api_key: IResolvable | typing.List[GenaiAgentOpenAiApiKey]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>]
 
 open_ai_api_key block.
 
@@ -4148,10 +4148,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `parent_agents`<sup>Optional</sup> <a name="parent_agents" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.parentAgents"></a>
 
 ```python
-parent_agents: typing.Union[IResolvable, typing.List[GenaiAgentParentAgents]]
+parent_agents: IResolvable | typing.List[GenaiAgentParentAgents]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>]
 
 parent_agents block.
 
@@ -4162,10 +4162,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `provide_citations`<sup>Optional</sup> <a name="provide_citations" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.provideCitations"></a>
 
 ```python
-provide_citations: typing.Union[bool, IResolvable]
+provide_citations: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates if the agent should provide citations in responses.
 
@@ -4260,10 +4260,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `template`<sup>Optional</sup> <a name="template" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.template"></a>
 
 ```python
-template: typing.Union[IResolvable, typing.List[GenaiAgentTemplate]]
+template: IResolvable | typing.List[GenaiAgentTemplate]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>]
 
 template block.
 
@@ -4567,7 +4567,7 @@ from cdktf_cdktf_provider_digitalocean import genai_agent
 genaiAgent.GenaiAgentKnowledgeBases(
   database_id: str = None,
   embedding_model_uuid: str = None,
-  is_public: typing.Union[bool, IResolvable] = None,
+  is_public: bool | IResolvable = None,
   last_indexing_job: GenaiAgentKnowledgeBasesLastIndexingJob = None,
   name: str = None,
   project_id: str = None,
@@ -4583,7 +4583,7 @@ genaiAgent.GenaiAgentKnowledgeBases(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.databaseId">database_id</a></code> | <code>str</code> | Database ID of the Knowledge Base. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.embeddingModelUuid">embedding_model_uuid</a></code> | <code>str</code> | Embedding model UUID for the Knowledge Base. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.isPublic">is_public</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates if the Knowledge Base is public. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.isPublic">is_public</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates if the Knowledge Base is public. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.lastIndexingJob">last_indexing_job</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob">GenaiAgentKnowledgeBasesLastIndexingJob</a></code> | last_indexing_job block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.name">name</a></code> | <code>str</code> | Name of the Knowledge Base. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.projectId">project_id</a></code> | <code>str</code> | Project ID of the Knowledge Base. |
@@ -4624,10 +4624,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `is_public`<sup>Optional</sup> <a name="is_public" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.isPublic"></a>
 
 ```python
-is_public: typing.Union[bool, IResolvable]
+is_public: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates if the Knowledge Base is public.
 
@@ -4841,17 +4841,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 from cdktf_cdktf_provider_digitalocean import genai_agent
 
 genaiAgent.GenaiAgentModel(
-  agreement: typing.Union[IResolvable, typing.List[GenaiAgentModelAgreement]] = None,
+  agreement: IResolvable | typing.List[GenaiAgentModelAgreement] = None,
   inference_name: str = None,
   inference_version: str = None,
-  is_foundational: typing.Union[bool, IResolvable] = None,
+  is_foundational: bool | IResolvable = None,
   name: str = None,
   parent_uuid: str = None,
   provider: str = None,
-  upload_complete: typing.Union[bool, IResolvable] = None,
+  upload_complete: bool | IResolvable = None,
   url: str = None,
   usecases: typing.List[str] = None,
-  versions: typing.Union[IResolvable, typing.List[GenaiAgentModelVersions]] = None
+  versions: IResolvable | typing.List[GenaiAgentModelVersions] = None
 )
 ```
 
@@ -4859,27 +4859,27 @@ genaiAgent.GenaiAgentModel(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.agreement">agreement</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>]]</code> | agreement block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.agreement">agreement</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>]</code> | agreement block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.inferenceName">inference_name</a></code> | <code>str</code> | Inference name of the model. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.inferenceVersion">inference_version</a></code> | <code>str</code> | Infernce version of the model. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.isFoundational">is_foundational</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates if the Model Base is foundational. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.isFoundational">is_foundational</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates if the Model Base is foundational. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.name">name</a></code> | <code>str</code> | Name of the Knowledge Base. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.parentUuid">parent_uuid</a></code> | <code>str</code> | Parent UUID of the Model. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.provider">provider</a></code> | <code>str</code> | Provider of the Model. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.uploadComplete">upload_complete</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates if the Model upload is complete. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.uploadComplete">upload_complete</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates if the Model upload is complete. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.url">url</a></code> | <code>str</code> | URL of the Model. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.usecases">usecases</a></code> | <code>typing.List[str]</code> | List of Usecases for the Model. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.versions">versions</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>]]</code> | versions block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.versions">versions</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>]</code> | versions block. |
 
 ---
 
 ##### `agreement`<sup>Optional</sup> <a name="agreement" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.agreement"></a>
 
 ```python
-agreement: typing.Union[IResolvable, typing.List[GenaiAgentModelAgreement]]
+agreement: IResolvable | typing.List[GenaiAgentModelAgreement]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>]
 
 agreement block.
 
@@ -4918,10 +4918,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `is_foundational`<sup>Optional</sup> <a name="is_foundational" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.isFoundational"></a>
 
 ```python
-is_foundational: typing.Union[bool, IResolvable]
+is_foundational: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates if the Model Base is foundational.
 
@@ -4974,10 +4974,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `upload_complete`<sup>Optional</sup> <a name="upload_complete" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.uploadComplete"></a>
 
 ```python
-upload_complete: typing.Union[bool, IResolvable]
+upload_complete: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates if the Model upload is complete.
 
@@ -5016,10 +5016,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `versions`<sup>Optional</sup> <a name="versions" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.versions"></a>
 
 ```python
-versions: typing.Union[IResolvable, typing.List[GenaiAgentModelVersions]]
+versions: IResolvable | typing.List[GenaiAgentModelVersions]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>]
 
 versions block.
 
@@ -5254,12 +5254,12 @@ genaiAgent.GenaiAgentParentAgents(
   name: str,
   project_id: str,
   region: str,
-  anthropic_api_key: typing.Union[IResolvable, typing.List[GenaiAgentParentAgentsAnthropicApiKey]] = None,
-  api_key_infos: typing.Union[IResolvable, typing.List[GenaiAgentParentAgentsApiKeyInfos]] = None,
-  api_keys: typing.Union[IResolvable, typing.List[GenaiAgentParentAgentsApiKeys]] = None,
-  chatbot: typing.Union[IResolvable, typing.List[GenaiAgentParentAgentsChatbot]] = None,
-  chatbot_identifiers: typing.Union[IResolvable, typing.List[GenaiAgentParentAgentsChatbotIdentifiers]] = None,
-  deployment: typing.Union[IResolvable, typing.List[GenaiAgentParentAgentsDeployment]] = None,
+  anthropic_api_key: IResolvable | typing.List[GenaiAgentParentAgentsAnthropicApiKey] = None,
+  api_key_infos: IResolvable | typing.List[GenaiAgentParentAgentsApiKeyInfos] = None,
+  api_keys: IResolvable | typing.List[GenaiAgentParentAgentsApiKeys] = None,
+  chatbot: IResolvable | typing.List[GenaiAgentParentAgentsChatbot] = None,
+  chatbot_identifiers: IResolvable | typing.List[GenaiAgentParentAgentsChatbotIdentifiers] = None,
+  deployment: IResolvable | typing.List[GenaiAgentParentAgentsDeployment] = None,
   description: str = None
 )
 ```
@@ -5273,12 +5273,12 @@ genaiAgent.GenaiAgentParentAgents(
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.name">name</a></code> | <code>str</code> | Name of the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.projectId">project_id</a></code> | <code>str</code> | Project ID of the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.region">region</a></code> | <code>str</code> | Region where the Agent is deployed. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.anthropicApiKey">anthropic_api_key</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>]]</code> | anthropic_api_key block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.apiKeyInfos">api_key_infos</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>]]</code> | api_key_infos block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.apiKeys">api_keys</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>]]</code> | api_keys block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.chatbot">chatbot</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>]]</code> | chatbot block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.chatbotIdentifiers">chatbot_identifiers</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>]]</code> | chatbot_identifiers block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.deployment">deployment</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>]]</code> | deployment block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.anthropicApiKey">anthropic_api_key</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>]</code> | anthropic_api_key block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.apiKeyInfos">api_key_infos</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>]</code> | api_key_infos block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.apiKeys">api_keys</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>]</code> | api_keys block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.chatbot">chatbot</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>]</code> | chatbot block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.chatbotIdentifiers">chatbot_identifiers</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>]</code> | chatbot_identifiers block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.deployment">deployment</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>]</code> | deployment block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.description">description</a></code> | <code>str</code> | Description for the Agent. |
 
 ---
@@ -5356,10 +5356,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `anthropic_api_key`<sup>Optional</sup> <a name="anthropic_api_key" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.anthropicApiKey"></a>
 
 ```python
-anthropic_api_key: typing.Union[IResolvable, typing.List[GenaiAgentParentAgentsAnthropicApiKey]]
+anthropic_api_key: IResolvable | typing.List[GenaiAgentParentAgentsAnthropicApiKey]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>]
 
 anthropic_api_key block.
 
@@ -5370,10 +5370,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `api_key_infos`<sup>Optional</sup> <a name="api_key_infos" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.apiKeyInfos"></a>
 
 ```python
-api_key_infos: typing.Union[IResolvable, typing.List[GenaiAgentParentAgentsApiKeyInfos]]
+api_key_infos: IResolvable | typing.List[GenaiAgentParentAgentsApiKeyInfos]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>]
 
 api_key_infos block.
 
@@ -5384,10 +5384,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `api_keys`<sup>Optional</sup> <a name="api_keys" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.apiKeys"></a>
 
 ```python
-api_keys: typing.Union[IResolvable, typing.List[GenaiAgentParentAgentsApiKeys]]
+api_keys: IResolvable | typing.List[GenaiAgentParentAgentsApiKeys]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>]
 
 api_keys block.
 
@@ -5398,10 +5398,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `chatbot`<sup>Optional</sup> <a name="chatbot" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.chatbot"></a>
 
 ```python
-chatbot: typing.Union[IResolvable, typing.List[GenaiAgentParentAgentsChatbot]]
+chatbot: IResolvable | typing.List[GenaiAgentParentAgentsChatbot]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>]
 
 chatbot block.
 
@@ -5412,10 +5412,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `chatbot_identifiers`<sup>Optional</sup> <a name="chatbot_identifiers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.chatbotIdentifiers"></a>
 
 ```python
-chatbot_identifiers: typing.Union[IResolvable, typing.List[GenaiAgentParentAgentsChatbotIdentifiers]]
+chatbot_identifiers: IResolvable | typing.List[GenaiAgentParentAgentsChatbotIdentifiers]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>]
 
 chatbot_identifiers block.
 
@@ -5426,10 +5426,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deployment`<sup>Optional</sup> <a name="deployment" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.deployment"></a>
 
 ```python
-deployment: typing.Union[IResolvable, typing.List[GenaiAgentParentAgentsDeployment]]
+deployment: IResolvable | typing.List[GenaiAgentParentAgentsDeployment]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>]
 
 deployment block.
 
@@ -5867,9 +5867,9 @@ genaiAgent.GenaiAgentTemplate(
   description: str = None,
   instruction: str = None,
   k: typing.Union[int, float] = None,
-  knowledge_bases: typing.Union[IResolvable, typing.List[GenaiAgentTemplateKnowledgeBases]] = None,
+  knowledge_bases: IResolvable | typing.List[GenaiAgentTemplateKnowledgeBases] = None,
   max_tokens: typing.Union[int, float] = None,
-  model: typing.Union[IResolvable, typing.List[GenaiAgentTemplateModel]] = None,
+  model: IResolvable | typing.List[GenaiAgentTemplateModel] = None,
   name: str = None,
   temperature: typing.Union[int, float] = None,
   top_p: typing.Union[int, float] = None,
@@ -5884,9 +5884,9 @@ genaiAgent.GenaiAgentTemplate(
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.description">description</a></code> | <code>str</code> | Description of the Agent Template. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.instruction">instruction</a></code> | <code>str</code> | Instruction for the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.k">k</a></code> | <code>typing.Union[int, float]</code> | K value for the Agent Template. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.knowledgeBases">knowledge_bases</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>]]</code> | knowledge_bases block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.knowledgeBases">knowledge_bases</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>]</code> | knowledge_bases block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.maxTokens">max_tokens</a></code> | <code>typing.Union[int, float]</code> | Maximum tokens allowed. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.model">model</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>]]</code> | model block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.model">model</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>]</code> | model block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.name">name</a></code> | <code>str</code> | Name of the Agent Template. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.temperature">temperature</a></code> | <code>typing.Union[int, float]</code> | Agent temperature setting. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.topP">top_p</a></code> | <code>typing.Union[int, float]</code> | Top P sampling parameter. |
@@ -5939,10 +5939,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `knowledge_bases`<sup>Optional</sup> <a name="knowledge_bases" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.knowledgeBases"></a>
 
 ```python
-knowledge_bases: typing.Union[IResolvable, typing.List[GenaiAgentTemplateKnowledgeBases]]
+knowledge_bases: IResolvable | typing.List[GenaiAgentTemplateKnowledgeBases]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>]
 
 knowledge_bases block.
 
@@ -5967,10 +5967,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `model`<sup>Optional</sup> <a name="model" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.model"></a>
 
 ```python
-model: typing.Union[IResolvable, typing.List[GenaiAgentTemplateModel]]
+model: IResolvable | typing.List[GenaiAgentTemplateModel]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>]
 
 model block.
 
@@ -6044,7 +6044,7 @@ from cdktf_cdktf_provider_digitalocean import genai_agent
 genaiAgent.GenaiAgentTemplateKnowledgeBases(
   database_id: str = None,
   embedding_model_uuid: str = None,
-  is_public: typing.Union[bool, IResolvable] = None,
+  is_public: bool | IResolvable = None,
   last_indexing_job: GenaiAgentTemplateKnowledgeBasesLastIndexingJob = None,
   name: str = None,
   project_id: str = None,
@@ -6060,7 +6060,7 @@ genaiAgent.GenaiAgentTemplateKnowledgeBases(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.databaseId">database_id</a></code> | <code>str</code> | Database ID of the Knowledge Base. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.embeddingModelUuid">embedding_model_uuid</a></code> | <code>str</code> | Embedding model UUID for the Knowledge Base. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.isPublic">is_public</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates if the Knowledge Base is public. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.isPublic">is_public</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates if the Knowledge Base is public. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.lastIndexingJob">last_indexing_job</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob">GenaiAgentTemplateKnowledgeBasesLastIndexingJob</a></code> | last_indexing_job block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.name">name</a></code> | <code>str</code> | Name of the Knowledge Base. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.projectId">project_id</a></code> | <code>str</code> | Project ID of the Knowledge Base. |
@@ -6101,10 +6101,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `is_public`<sup>Optional</sup> <a name="is_public" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.isPublic"></a>
 
 ```python
-is_public: typing.Union[bool, IResolvable]
+is_public: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates if the Knowledge Base is public.
 
@@ -6318,17 +6318,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 from cdktf_cdktf_provider_digitalocean import genai_agent
 
 genaiAgent.GenaiAgentTemplateModel(
-  agreement: typing.Union[IResolvable, typing.List[GenaiAgentTemplateModelAgreement]] = None,
+  agreement: IResolvable | typing.List[GenaiAgentTemplateModelAgreement] = None,
   inference_name: str = None,
   inference_version: str = None,
-  is_foundational: typing.Union[bool, IResolvable] = None,
+  is_foundational: bool | IResolvable = None,
   name: str = None,
   parent_uuid: str = None,
   provider: str = None,
-  upload_complete: typing.Union[bool, IResolvable] = None,
+  upload_complete: bool | IResolvable = None,
   url: str = None,
   usecases: typing.List[str] = None,
-  versions: typing.Union[IResolvable, typing.List[GenaiAgentTemplateModelVersions]] = None
+  versions: IResolvable | typing.List[GenaiAgentTemplateModelVersions] = None
 )
 ```
 
@@ -6336,27 +6336,27 @@ genaiAgent.GenaiAgentTemplateModel(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.agreement">agreement</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>]]</code> | agreement block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.agreement">agreement</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>]</code> | agreement block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.inferenceName">inference_name</a></code> | <code>str</code> | Inference name of the model. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.inferenceVersion">inference_version</a></code> | <code>str</code> | Infernce version of the model. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.isFoundational">is_foundational</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates if the Model Base is foundational. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.isFoundational">is_foundational</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates if the Model Base is foundational. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.name">name</a></code> | <code>str</code> | Name of the Knowledge Base. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.parentUuid">parent_uuid</a></code> | <code>str</code> | Parent UUID of the Model. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.provider">provider</a></code> | <code>str</code> | Provider of the Model. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.uploadComplete">upload_complete</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates if the Model upload is complete. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.uploadComplete">upload_complete</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates if the Model upload is complete. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.url">url</a></code> | <code>str</code> | URL of the Model. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.usecases">usecases</a></code> | <code>typing.List[str]</code> | List of Usecases for the Model. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.versions">versions</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>]]</code> | versions block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.versions">versions</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>]</code> | versions block. |
 
 ---
 
 ##### `agreement`<sup>Optional</sup> <a name="agreement" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.agreement"></a>
 
 ```python
-agreement: typing.Union[IResolvable, typing.List[GenaiAgentTemplateModelAgreement]]
+agreement: IResolvable | typing.List[GenaiAgentTemplateModelAgreement]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>]
 
 agreement block.
 
@@ -6395,10 +6395,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `is_foundational`<sup>Optional</sup> <a name="is_foundational" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.isFoundational"></a>
 
 ```python
-is_foundational: typing.Union[bool, IResolvable]
+is_foundational: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates if the Model Base is foundational.
 
@@ -6451,10 +6451,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `upload_complete`<sup>Optional</sup> <a name="upload_complete" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.uploadComplete"></a>
 
 ```python
-upload_complete: typing.Union[bool, IResolvable]
+upload_complete: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates if the Model upload is complete.
 
@@ -6493,10 +6493,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `versions`<sup>Optional</sup> <a name="versions" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.versions"></a>
 
 ```python
-versions: typing.Union[IResolvable, typing.List[GenaiAgentTemplateModelVersions]]
+versions: IResolvable | typing.List[GenaiAgentTemplateModelVersions]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>]
 
 versions block.
 
@@ -6785,7 +6785,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>]</code> | *No description.* |
 
 ---
 
@@ -6816,10 +6816,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[GenaiAgentAgentGuardrail]]
+internal_value: IResolvable | typing.List[GenaiAgentAgentGuardrail]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>]
 
 ---
 
@@ -7149,7 +7149,7 @@ def reset_uuid() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.defaultResponseInput">default_response_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.guardrailUuidInput">guardrail_uuid_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.isDefaultInput">is_default_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.isDefaultInput">is_default_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.priorityInput">priority_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
@@ -7158,12 +7158,12 @@ def reset_uuid() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.defaultResponse">default_response</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.guardrailUuid">guardrail_uuid</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.isDefault">is_default</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.isDefault">is_default</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.uuid">uuid</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a></code> | *No description.* |
 
 ---
 
@@ -7264,10 +7264,10 @@ guardrail_uuid_input: str
 ##### `is_default_input`<sup>Optional</sup> <a name="is_default_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.isDefaultInput"></a>
 
 ```python
-is_default_input: typing.Union[bool, IResolvable]
+is_default_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -7354,10 +7354,10 @@ guardrail_uuid: str
 ##### `is_default`<sup>Required</sup> <a name="is_default" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.isDefault"></a>
 
 ```python
-is_default: typing.Union[bool, IResolvable]
+is_default: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -7404,10 +7404,10 @@ uuid: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GenaiAgentAgentGuardrail]
+internal_value: IResolvable | GenaiAgentAgentGuardrail
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>
 
 ---
 
@@ -7543,7 +7543,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>]</code> | *No description.* |
 
 ---
 
@@ -7574,10 +7574,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[GenaiAgentAnthropicApiKey]]
+internal_value: IResolvable | typing.List[GenaiAgentAnthropicApiKey]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>]
 
 ---
 
@@ -7867,7 +7867,7 @@ def reset_uuid() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyOutputReference.property.createdBy">created_by</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyOutputReference.property.uuid">uuid</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a></code> | *No description.* |
 
 ---
 
@@ -7988,10 +7988,10 @@ uuid: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GenaiAgentAnthropicApiKey]
+internal_value: IResolvable | GenaiAgentAnthropicApiKey
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>
 
 ---
 
@@ -8127,7 +8127,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>]</code> | *No description.* |
 
 ---
 
@@ -8158,10 +8158,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[GenaiAgentApiKeyInfos]]
+internal_value: IResolvable | typing.List[GenaiAgentApiKeyInfos]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>]
 
 ---
 
@@ -8459,7 +8459,7 @@ def reset_uuid() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosOutputReference.property.secretKey">secret_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosOutputReference.property.uuid">uuid</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a></code> | *No description.* |
 
 ---
 
@@ -8590,10 +8590,10 @@ uuid: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GenaiAgentApiKeyInfos]
+internal_value: IResolvable | GenaiAgentApiKeyInfos
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>
 
 ---
 
@@ -8729,7 +8729,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeysList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeysList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeysList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeysList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>]</code> | *No description.* |
 
 ---
 
@@ -8760,10 +8760,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeysList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[GenaiAgentApiKeys]]
+internal_value: IResolvable | typing.List[GenaiAgentApiKeys]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>]
 
 ---
 
@@ -9032,7 +9032,7 @@ def reset_api_key() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeysOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeysOutputReference.property.apiKeyInput">api_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeysOutputReference.property.apiKey">api_key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeysOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeysOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a></code> | *No description.* |
 
 ---
 
@@ -9083,10 +9083,10 @@ api_key: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeysOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GenaiAgentApiKeys]
+internal_value: IResolvable | GenaiAgentApiKeys
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>
 
 ---
 
@@ -9222,7 +9222,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiersList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiersList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiersList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiersList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>]</code> | *No description.* |
 
 ---
 
@@ -9253,10 +9253,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiersList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[GenaiAgentChatbotIdentifiers]]
+internal_value: IResolvable | typing.List[GenaiAgentChatbotIdentifiers]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>]
 
 ---
 
@@ -9517,7 +9517,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiersOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiersOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiersOutputReference.property.chatbotId">chatbot_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiersOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a></code> | *No description.* |
 
 ---
 
@@ -9558,10 +9558,10 @@ chatbot_id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiersOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GenaiAgentChatbotIdentifiers]
+internal_value: IResolvable | GenaiAgentChatbotIdentifiers
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>
 
 ---
 
@@ -9697,7 +9697,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>]</code> | *No description.* |
 
 ---
 
@@ -9728,10 +9728,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[GenaiAgentChatbot]]
+internal_value: IResolvable | typing.List[GenaiAgentChatbot]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>]
 
 ---
 
@@ -10045,7 +10045,7 @@ def reset_starting_message() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotOutputReference.property.primaryColor">primary_color</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotOutputReference.property.secondaryColor">secondary_color</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotOutputReference.property.startingMessage">starting_message</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a></code> | *No description.* |
 
 ---
 
@@ -10196,10 +10196,10 @@ starting_message: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GenaiAgentChatbot]
+internal_value: IResolvable | GenaiAgentChatbot
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>
 
 ---
 
@@ -10335,7 +10335,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKeyList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKeyList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKeyList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKeyList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>]</code> | *No description.* |
 
 ---
 
@@ -10366,10 +10366,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKeyList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[GenaiAgentChildAgentsAnthropicApiKey]]
+internal_value: IResolvable | typing.List[GenaiAgentChildAgentsAnthropicApiKey]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>]
 
 ---
 
@@ -10659,7 +10659,7 @@ def reset_uuid() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKeyOutputReference.property.createdBy">created_by</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKeyOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKeyOutputReference.property.uuid">uuid</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKeyOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKeyOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a></code> | *No description.* |
 
 ---
 
@@ -10780,10 +10780,10 @@ uuid: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKeyOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GenaiAgentChildAgentsAnthropicApiKey]
+internal_value: IResolvable | GenaiAgentChildAgentsAnthropicApiKey
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>
 
 ---
 
@@ -10919,7 +10919,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfosList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfosList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfosList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfosList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>]</code> | *No description.* |
 
 ---
 
@@ -10950,10 +10950,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfosList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[GenaiAgentChildAgentsApiKeyInfos]]
+internal_value: IResolvable | typing.List[GenaiAgentChildAgentsApiKeyInfos]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>]
 
 ---
 
@@ -11251,7 +11251,7 @@ def reset_uuid() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfosOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfosOutputReference.property.secretKey">secret_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfosOutputReference.property.uuid">uuid</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfosOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfosOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a></code> | *No description.* |
 
 ---
 
@@ -11382,10 +11382,10 @@ uuid: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfosOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GenaiAgentChildAgentsApiKeyInfos]
+internal_value: IResolvable | GenaiAgentChildAgentsApiKeyInfos
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>
 
 ---
 
@@ -11521,7 +11521,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeysList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeysList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeysList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeysList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>]</code> | *No description.* |
 
 ---
 
@@ -11552,10 +11552,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeysList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[GenaiAgentChildAgentsApiKeys]]
+internal_value: IResolvable | typing.List[GenaiAgentChildAgentsApiKeys]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>]
 
 ---
 
@@ -11824,7 +11824,7 @@ def reset_api_key() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeysOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeysOutputReference.property.apiKeyInput">api_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeysOutputReference.property.apiKey">api_key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeysOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeysOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a></code> | *No description.* |
 
 ---
 
@@ -11875,10 +11875,10 @@ api_key: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeysOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GenaiAgentChildAgentsApiKeys]
+internal_value: IResolvable | GenaiAgentChildAgentsApiKeys
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>
 
 ---
 
@@ -12014,7 +12014,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>]</code> | *No description.* |
 
 ---
 
@@ -12045,10 +12045,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[GenaiAgentChildAgentsChatbotIdentifiers]]
+internal_value: IResolvable | typing.List[GenaiAgentChildAgentsChatbotIdentifiers]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>]
 
 ---
 
@@ -12309,7 +12309,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersOutputReference.property.chatbotId">chatbot_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a></code> | *No description.* |
 
 ---
 
@@ -12350,10 +12350,10 @@ chatbot_id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GenaiAgentChildAgentsChatbotIdentifiers]
+internal_value: IResolvable | GenaiAgentChildAgentsChatbotIdentifiers
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>
 
 ---
 
@@ -12489,7 +12489,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>]</code> | *No description.* |
 
 ---
 
@@ -12520,10 +12520,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[GenaiAgentChildAgentsChatbot]]
+internal_value: IResolvable | typing.List[GenaiAgentChildAgentsChatbot]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>]
 
 ---
 
@@ -12837,7 +12837,7 @@ def reset_starting_message() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotOutputReference.property.primaryColor">primary_color</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotOutputReference.property.secondaryColor">secondary_color</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotOutputReference.property.startingMessage">starting_message</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a></code> | *No description.* |
 
 ---
 
@@ -12988,10 +12988,10 @@ starting_message: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GenaiAgentChildAgentsChatbot]
+internal_value: IResolvable | GenaiAgentChildAgentsChatbot
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>
 
 ---
 
@@ -13127,7 +13127,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>]</code> | *No description.* |
 
 ---
 
@@ -13158,10 +13158,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[GenaiAgentChildAgentsDeployment]]
+internal_value: IResolvable | typing.List[GenaiAgentChildAgentsDeployment]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>]
 
 ---
 
@@ -13468,7 +13468,7 @@ def reset_visibility() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentOutputReference.property.url">url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentOutputReference.property.uuid">uuid</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentOutputReference.property.visibility">visibility</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a></code> | *No description.* |
 
 ---
 
@@ -13619,10 +13619,10 @@ visibility: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GenaiAgentChildAgentsDeployment]
+internal_value: IResolvable | GenaiAgentChildAgentsDeployment
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>
 
 ---
 
@@ -13758,7 +13758,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>]</code> | *No description.* |
 
 ---
 
@@ -13789,10 +13789,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[GenaiAgentChildAgents]]
+internal_value: IResolvable | typing.List[GenaiAgentChildAgents]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>]
 
 ---
 
@@ -14062,13 +14062,13 @@ Returns a reversible string representation.
 
 ```python
 def put_anthropic_api_key(
-  value: typing.Union[IResolvable, typing.List[GenaiAgentChildAgentsAnthropicApiKey]]
+  value: IResolvable | typing.List[GenaiAgentChildAgentsAnthropicApiKey]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.putAnthropicApiKey.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>]
 
 ---
 
@@ -14076,13 +14076,13 @@ def put_anthropic_api_key(
 
 ```python
 def put_api_key_infos(
-  value: typing.Union[IResolvable, typing.List[GenaiAgentChildAgentsApiKeyInfos]]
+  value: IResolvable | typing.List[GenaiAgentChildAgentsApiKeyInfos]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.putApiKeyInfos.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>]
 
 ---
 
@@ -14090,13 +14090,13 @@ def put_api_key_infos(
 
 ```python
 def put_api_keys(
-  value: typing.Union[IResolvable, typing.List[GenaiAgentChildAgentsApiKeys]]
+  value: IResolvable | typing.List[GenaiAgentChildAgentsApiKeys]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.putApiKeys.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>]
 
 ---
 
@@ -14104,13 +14104,13 @@ def put_api_keys(
 
 ```python
 def put_chatbot(
-  value: typing.Union[IResolvable, typing.List[GenaiAgentChildAgentsChatbot]]
+  value: IResolvable | typing.List[GenaiAgentChildAgentsChatbot]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.putChatbot.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>]
 
 ---
 
@@ -14118,13 +14118,13 @@ def put_chatbot(
 
 ```python
 def put_chatbot_identifiers(
-  value: typing.Union[IResolvable, typing.List[GenaiAgentChildAgentsChatbotIdentifiers]]
+  value: IResolvable | typing.List[GenaiAgentChildAgentsChatbotIdentifiers]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.putChatbotIdentifiers.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>]
 
 ---
 
@@ -14132,13 +14132,13 @@ def put_chatbot_identifiers(
 
 ```python
 def put_deployment(
-  value: typing.Union[IResolvable, typing.List[GenaiAgentChildAgentsDeployment]]
+  value: IResolvable | typing.List[GenaiAgentChildAgentsDeployment]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.putDeployment.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>]
 
 ---
 
@@ -14198,12 +14198,12 @@ def reset_description() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.chatbot">chatbot</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotList">GenaiAgentChildAgentsChatbotList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.chatbotIdentifiers">chatbot_identifiers</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersList">GenaiAgentChildAgentsChatbotIdentifiersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.deployment">deployment</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentList">GenaiAgentChildAgentsDeploymentList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.anthropicApiKeyInput">anthropic_api_key_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.apiKeyInfosInput">api_key_infos_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.apiKeysInput">api_keys_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.chatbotIdentifiersInput">chatbot_identifiers_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.chatbotInput">chatbot_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.deploymentInput">deployment_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.anthropicApiKeyInput">anthropic_api_key_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.apiKeyInfosInput">api_key_infos_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.apiKeysInput">api_keys_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.chatbotIdentifiersInput">chatbot_identifiers_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.chatbotInput">chatbot_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.deploymentInput">deployment_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.instructionInput">instruction_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.modelUuidInput">model_uuid_input</a></code> | <code>str</code> | *No description.* |
@@ -14216,7 +14216,7 @@ def reset_description() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.projectId">project_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.region">region</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a></code> | *No description.* |
 
 ---
 
@@ -14317,60 +14317,60 @@ deployment: GenaiAgentChildAgentsDeploymentList
 ##### `anthropic_api_key_input`<sup>Optional</sup> <a name="anthropic_api_key_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.anthropicApiKeyInput"></a>
 
 ```python
-anthropic_api_key_input: typing.Union[IResolvable, typing.List[GenaiAgentChildAgentsAnthropicApiKey]]
+anthropic_api_key_input: IResolvable | typing.List[GenaiAgentChildAgentsAnthropicApiKey]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>]
 
 ---
 
 ##### `api_key_infos_input`<sup>Optional</sup> <a name="api_key_infos_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.apiKeyInfosInput"></a>
 
 ```python
-api_key_infos_input: typing.Union[IResolvable, typing.List[GenaiAgentChildAgentsApiKeyInfos]]
+api_key_infos_input: IResolvable | typing.List[GenaiAgentChildAgentsApiKeyInfos]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>]
 
 ---
 
 ##### `api_keys_input`<sup>Optional</sup> <a name="api_keys_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.apiKeysInput"></a>
 
 ```python
-api_keys_input: typing.Union[IResolvable, typing.List[GenaiAgentChildAgentsApiKeys]]
+api_keys_input: IResolvable | typing.List[GenaiAgentChildAgentsApiKeys]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>]
 
 ---
 
 ##### `chatbot_identifiers_input`<sup>Optional</sup> <a name="chatbot_identifiers_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.chatbotIdentifiersInput"></a>
 
 ```python
-chatbot_identifiers_input: typing.Union[IResolvable, typing.List[GenaiAgentChildAgentsChatbotIdentifiers]]
+chatbot_identifiers_input: IResolvable | typing.List[GenaiAgentChildAgentsChatbotIdentifiers]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>]
 
 ---
 
 ##### `chatbot_input`<sup>Optional</sup> <a name="chatbot_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.chatbotInput"></a>
 
 ```python
-chatbot_input: typing.Union[IResolvable, typing.List[GenaiAgentChildAgentsChatbot]]
+chatbot_input: IResolvable | typing.List[GenaiAgentChildAgentsChatbot]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>]
 
 ---
 
 ##### `deployment_input`<sup>Optional</sup> <a name="deployment_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.deploymentInput"></a>
 
 ```python
-deployment_input: typing.Union[IResolvable, typing.List[GenaiAgentChildAgentsDeployment]]
+deployment_input: IResolvable | typing.List[GenaiAgentChildAgentsDeployment]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>]
 
 ---
 
@@ -14497,10 +14497,10 @@ region: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GenaiAgentChildAgents]
+internal_value: IResolvable | GenaiAgentChildAgents
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>
 
 ---
 
@@ -14636,7 +14636,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeploymentList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeploymentList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeploymentList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeploymentList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>]</code> | *No description.* |
 
 ---
 
@@ -14667,10 +14667,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeploymentList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[GenaiAgentDeployment]]
+internal_value: IResolvable | typing.List[GenaiAgentDeployment]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>]
 
 ---
 
@@ -14977,7 +14977,7 @@ def reset_visibility() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeploymentOutputReference.property.url">url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeploymentOutputReference.property.uuid">uuid</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeploymentOutputReference.property.visibility">visibility</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeploymentOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeploymentOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a></code> | *No description.* |
 
 ---
 
@@ -15128,10 +15128,10 @@ visibility: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeploymentOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GenaiAgentDeployment]
+internal_value: IResolvable | GenaiAgentDeployment
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>
 
 ---
 
@@ -15267,7 +15267,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctionsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctionsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctionsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctionsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>]</code> | *No description.* |
 
 ---
 
@@ -15298,10 +15298,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctionsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[GenaiAgentFunctions]]
+internal_value: IResolvable | typing.List[GenaiAgentFunctions]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>]
 
 ---
 
@@ -15635,7 +15635,7 @@ def reset_uuid() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctionsOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctionsOutputReference.property.url">url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctionsOutputReference.property.uuid">uuid</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctionsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctionsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a></code> | *No description.* |
 
 ---
 
@@ -15846,10 +15846,10 @@ uuid: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctionsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GenaiAgentFunctions]
+internal_value: IResolvable | GenaiAgentFunctions
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>
 
 ---
 
@@ -16488,7 +16488,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>]</code> | *No description.* |
 
 ---
 
@@ -16519,10 +16519,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[GenaiAgentKnowledgeBases]]
+internal_value: IResolvable | typing.List[GenaiAgentKnowledgeBases]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>]
 
 ---
 
@@ -16926,7 +16926,7 @@ def reset_user_id() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.uuid">uuid</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.databaseIdInput">database_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.embeddingModelUuidInput">embedding_model_uuid_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.isPublicInput">is_public_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.isPublicInput">is_public_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.lastIndexingJobInput">last_indexing_job_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob">GenaiAgentKnowledgeBasesLastIndexingJob</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.projectIdInput">project_id_input</a></code> | <code>str</code> | *No description.* |
@@ -16935,13 +16935,13 @@ def reset_user_id() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.userIdInput">user_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.databaseId">database_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.embeddingModelUuid">embedding_model_uuid</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.isPublic">is_public</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.isPublic">is_public</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.projectId">project_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.tags">tags</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.userId">user_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a></code> | *No description.* |
 
 ---
 
@@ -17042,10 +17042,10 @@ embedding_model_uuid_input: str
 ##### `is_public_input`<sup>Optional</sup> <a name="is_public_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.isPublicInput"></a>
 
 ```python
-is_public_input: typing.Union[bool, IResolvable]
+is_public_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -17132,10 +17132,10 @@ embedding_model_uuid: str
 ##### `is_public`<sup>Required</sup> <a name="is_public" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.isPublic"></a>
 
 ```python
-is_public: typing.Union[bool, IResolvable]
+is_public: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -17192,10 +17192,10 @@ user_id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GenaiAgentKnowledgeBases]
+internal_value: IResolvable | GenaiAgentKnowledgeBases
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>
 
 ---
 
@@ -17331,7 +17331,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreementList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreementList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreementList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreementList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>]</code> | *No description.* |
 
 ---
 
@@ -17362,10 +17362,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreementList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[GenaiAgentModelAgreement]]
+internal_value: IResolvable | typing.List[GenaiAgentModelAgreement]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>]
 
 ---
 
@@ -17661,7 +17661,7 @@ def reset_uuid() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreementOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreementOutputReference.property.url">url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreementOutputReference.property.uuid">uuid</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreementOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreementOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a></code> | *No description.* |
 
 ---
 
@@ -17772,10 +17772,10 @@ uuid: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreementOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GenaiAgentModelAgreement]
+internal_value: IResolvable | GenaiAgentModelAgreement
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>
 
 ---
 
@@ -17911,7 +17911,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>]</code> | *No description.* |
 
 ---
 
@@ -17942,10 +17942,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[GenaiAgentModel]]
+internal_value: IResolvable | typing.List[GenaiAgentModel]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>]
 
 ---
 
@@ -18215,13 +18215,13 @@ Returns a reversible string representation.
 
 ```python
 def put_agreement(
-  value: typing.Union[IResolvable, typing.List[GenaiAgentModelAgreement]]
+  value: IResolvable | typing.List[GenaiAgentModelAgreement]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.putAgreement.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>]
 
 ---
 
@@ -18229,13 +18229,13 @@ def put_agreement(
 
 ```python
 def put_versions(
-  value: typing.Union[IResolvable, typing.List[GenaiAgentModelVersions]]
+  value: IResolvable | typing.List[GenaiAgentModelVersions]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.putVersions.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>]
 
 ---
 
@@ -18316,27 +18316,27 @@ def reset_versions() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.createdAt">created_at</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.updatedAt">updated_at</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.versions">versions</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsList">GenaiAgentModelVersionsList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.agreementInput">agreement_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.agreementInput">agreement_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.inferenceNameInput">inference_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.inferenceVersionInput">inference_version_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.isFoundationalInput">is_foundational_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.isFoundationalInput">is_foundational_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.parentUuidInput">parent_uuid_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.providerInput">provider_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.uploadCompleteInput">upload_complete_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.uploadCompleteInput">upload_complete_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.urlInput">url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.usecasesInput">usecases_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.versionsInput">versions_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.versionsInput">versions_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.inferenceName">inference_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.inferenceVersion">inference_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.isFoundational">is_foundational</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.isFoundational">is_foundational</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.parentUuid">parent_uuid</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.provider">provider</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.uploadComplete">upload_complete</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.uploadComplete">upload_complete</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.url">url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.usecases">usecases</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a></code> | *No description.* |
 
 ---
 
@@ -18407,10 +18407,10 @@ versions: GenaiAgentModelVersionsList
 ##### `agreement_input`<sup>Optional</sup> <a name="agreement_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.agreementInput"></a>
 
 ```python
-agreement_input: typing.Union[IResolvable, typing.List[GenaiAgentModelAgreement]]
+agreement_input: IResolvable | typing.List[GenaiAgentModelAgreement]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>]
 
 ---
 
@@ -18437,10 +18437,10 @@ inference_version_input: str
 ##### `is_foundational_input`<sup>Optional</sup> <a name="is_foundational_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.isFoundationalInput"></a>
 
 ```python
-is_foundational_input: typing.Union[bool, IResolvable]
+is_foundational_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -18477,10 +18477,10 @@ provider_input: str
 ##### `upload_complete_input`<sup>Optional</sup> <a name="upload_complete_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.uploadCompleteInput"></a>
 
 ```python
-upload_complete_input: typing.Union[bool, IResolvable]
+upload_complete_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -18507,10 +18507,10 @@ usecases_input: typing.List[str]
 ##### `versions_input`<sup>Optional</sup> <a name="versions_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.versionsInput"></a>
 
 ```python
-versions_input: typing.Union[IResolvable, typing.List[GenaiAgentModelVersions]]
+versions_input: IResolvable | typing.List[GenaiAgentModelVersions]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>]
 
 ---
 
@@ -18537,10 +18537,10 @@ inference_version: str
 ##### `is_foundational`<sup>Required</sup> <a name="is_foundational" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.isFoundational"></a>
 
 ```python
-is_foundational: typing.Union[bool, IResolvable]
+is_foundational: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -18577,10 +18577,10 @@ provider: str
 ##### `upload_complete`<sup>Required</sup> <a name="upload_complete" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.uploadComplete"></a>
 
 ```python
-upload_complete: typing.Union[bool, IResolvable]
+upload_complete: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -18607,10 +18607,10 @@ usecases: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GenaiAgentModel]
+internal_value: IResolvable | GenaiAgentModel
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>
 
 ---
 
@@ -18746,7 +18746,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>]</code> | *No description.* |
 
 ---
 
@@ -18777,10 +18777,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[GenaiAgentModelVersions]]
+internal_value: IResolvable | typing.List[GenaiAgentModelVersions]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>]
 
 ---
 
@@ -19067,7 +19067,7 @@ def reset_patch() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsOutputReference.property.major">major</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsOutputReference.property.minor">minor</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsOutputReference.property.patch">patch</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a></code> | *No description.* |
 
 ---
 
@@ -19158,10 +19158,10 @@ patch: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GenaiAgentModelVersions]
+internal_value: IResolvable | GenaiAgentModelVersions
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>
 
 ---
 
@@ -19297,7 +19297,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKeyList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKeyList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKeyList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKeyList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>]</code> | *No description.* |
 
 ---
 
@@ -19328,10 +19328,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKeyList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[GenaiAgentOpenAiApiKey]]
+internal_value: IResolvable | typing.List[GenaiAgentOpenAiApiKey]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>]
 
 ---
 
@@ -19621,7 +19621,7 @@ def reset_uuid() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKeyOutputReference.property.createdBy">created_by</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKeyOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKeyOutputReference.property.uuid">uuid</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKeyOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKeyOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a></code> | *No description.* |
 
 ---
 
@@ -19742,10 +19742,10 @@ uuid: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKeyOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GenaiAgentOpenAiApiKey]
+internal_value: IResolvable | GenaiAgentOpenAiApiKey
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>
 
 ---
 
@@ -19881,7 +19881,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKeyList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKeyList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKeyList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKeyList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>]</code> | *No description.* |
 
 ---
 
@@ -19912,10 +19912,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKeyList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[GenaiAgentParentAgentsAnthropicApiKey]]
+internal_value: IResolvable | typing.List[GenaiAgentParentAgentsAnthropicApiKey]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>]
 
 ---
 
@@ -20205,7 +20205,7 @@ def reset_uuid() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKeyOutputReference.property.createdBy">created_by</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKeyOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKeyOutputReference.property.uuid">uuid</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKeyOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKeyOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a></code> | *No description.* |
 
 ---
 
@@ -20326,10 +20326,10 @@ uuid: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKeyOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GenaiAgentParentAgentsAnthropicApiKey]
+internal_value: IResolvable | GenaiAgentParentAgentsAnthropicApiKey
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>
 
 ---
 
@@ -20465,7 +20465,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfosList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfosList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfosList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfosList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>]</code> | *No description.* |
 
 ---
 
@@ -20496,10 +20496,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfosList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[GenaiAgentParentAgentsApiKeyInfos]]
+internal_value: IResolvable | typing.List[GenaiAgentParentAgentsApiKeyInfos]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>]
 
 ---
 
@@ -20797,7 +20797,7 @@ def reset_uuid() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfosOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfosOutputReference.property.secretKey">secret_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfosOutputReference.property.uuid">uuid</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfosOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfosOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a></code> | *No description.* |
 
 ---
 
@@ -20928,10 +20928,10 @@ uuid: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfosOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GenaiAgentParentAgentsApiKeyInfos]
+internal_value: IResolvable | GenaiAgentParentAgentsApiKeyInfos
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>
 
 ---
 
@@ -21067,7 +21067,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeysList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeysList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeysList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeysList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>]</code> | *No description.* |
 
 ---
 
@@ -21098,10 +21098,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeysList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[GenaiAgentParentAgentsApiKeys]]
+internal_value: IResolvable | typing.List[GenaiAgentParentAgentsApiKeys]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>]
 
 ---
 
@@ -21370,7 +21370,7 @@ def reset_api_key() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeysOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeysOutputReference.property.apiKeyInput">api_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeysOutputReference.property.apiKey">api_key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeysOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeysOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a></code> | *No description.* |
 
 ---
 
@@ -21421,10 +21421,10 @@ api_key: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeysOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GenaiAgentParentAgentsApiKeys]
+internal_value: IResolvable | GenaiAgentParentAgentsApiKeys
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>
 
 ---
 
@@ -21560,7 +21560,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>]</code> | *No description.* |
 
 ---
 
@@ -21591,10 +21591,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[GenaiAgentParentAgentsChatbotIdentifiers]]
+internal_value: IResolvable | typing.List[GenaiAgentParentAgentsChatbotIdentifiers]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>]
 
 ---
 
@@ -21855,7 +21855,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersOutputReference.property.chatbotId">chatbot_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a></code> | *No description.* |
 
 ---
 
@@ -21896,10 +21896,10 @@ chatbot_id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GenaiAgentParentAgentsChatbotIdentifiers]
+internal_value: IResolvable | GenaiAgentParentAgentsChatbotIdentifiers
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>
 
 ---
 
@@ -22035,7 +22035,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>]</code> | *No description.* |
 
 ---
 
@@ -22066,10 +22066,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[GenaiAgentParentAgentsChatbot]]
+internal_value: IResolvable | typing.List[GenaiAgentParentAgentsChatbot]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>]
 
 ---
 
@@ -22383,7 +22383,7 @@ def reset_starting_message() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotOutputReference.property.primaryColor">primary_color</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotOutputReference.property.secondaryColor">secondary_color</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotOutputReference.property.startingMessage">starting_message</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a></code> | *No description.* |
 
 ---
 
@@ -22534,10 +22534,10 @@ starting_message: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GenaiAgentParentAgentsChatbot]
+internal_value: IResolvable | GenaiAgentParentAgentsChatbot
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>
 
 ---
 
@@ -22673,7 +22673,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>]</code> | *No description.* |
 
 ---
 
@@ -22704,10 +22704,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[GenaiAgentParentAgentsDeployment]]
+internal_value: IResolvable | typing.List[GenaiAgentParentAgentsDeployment]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>]
 
 ---
 
@@ -23014,7 +23014,7 @@ def reset_visibility() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentOutputReference.property.url">url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentOutputReference.property.uuid">uuid</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentOutputReference.property.visibility">visibility</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a></code> | *No description.* |
 
 ---
 
@@ -23165,10 +23165,10 @@ visibility: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GenaiAgentParentAgentsDeployment]
+internal_value: IResolvable | GenaiAgentParentAgentsDeployment
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>
 
 ---
 
@@ -23304,7 +23304,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>]</code> | *No description.* |
 
 ---
 
@@ -23335,10 +23335,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[GenaiAgentParentAgents]]
+internal_value: IResolvable | typing.List[GenaiAgentParentAgents]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>]
 
 ---
 
@@ -23608,13 +23608,13 @@ Returns a reversible string representation.
 
 ```python
 def put_anthropic_api_key(
-  value: typing.Union[IResolvable, typing.List[GenaiAgentParentAgentsAnthropicApiKey]]
+  value: IResolvable | typing.List[GenaiAgentParentAgentsAnthropicApiKey]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.putAnthropicApiKey.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>]
 
 ---
 
@@ -23622,13 +23622,13 @@ def put_anthropic_api_key(
 
 ```python
 def put_api_key_infos(
-  value: typing.Union[IResolvable, typing.List[GenaiAgentParentAgentsApiKeyInfos]]
+  value: IResolvable | typing.List[GenaiAgentParentAgentsApiKeyInfos]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.putApiKeyInfos.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>]
 
 ---
 
@@ -23636,13 +23636,13 @@ def put_api_key_infos(
 
 ```python
 def put_api_keys(
-  value: typing.Union[IResolvable, typing.List[GenaiAgentParentAgentsApiKeys]]
+  value: IResolvable | typing.List[GenaiAgentParentAgentsApiKeys]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.putApiKeys.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>]
 
 ---
 
@@ -23650,13 +23650,13 @@ def put_api_keys(
 
 ```python
 def put_chatbot(
-  value: typing.Union[IResolvable, typing.List[GenaiAgentParentAgentsChatbot]]
+  value: IResolvable | typing.List[GenaiAgentParentAgentsChatbot]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.putChatbot.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>]
 
 ---
 
@@ -23664,13 +23664,13 @@ def put_chatbot(
 
 ```python
 def put_chatbot_identifiers(
-  value: typing.Union[IResolvable, typing.List[GenaiAgentParentAgentsChatbotIdentifiers]]
+  value: IResolvable | typing.List[GenaiAgentParentAgentsChatbotIdentifiers]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.putChatbotIdentifiers.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>]
 
 ---
 
@@ -23678,13 +23678,13 @@ def put_chatbot_identifiers(
 
 ```python
 def put_deployment(
-  value: typing.Union[IResolvable, typing.List[GenaiAgentParentAgentsDeployment]]
+  value: IResolvable | typing.List[GenaiAgentParentAgentsDeployment]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.putDeployment.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>]
 
 ---
 
@@ -23744,12 +23744,12 @@ def reset_description() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.chatbot">chatbot</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotList">GenaiAgentParentAgentsChatbotList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.chatbotIdentifiers">chatbot_identifiers</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersList">GenaiAgentParentAgentsChatbotIdentifiersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.deployment">deployment</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentList">GenaiAgentParentAgentsDeploymentList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.anthropicApiKeyInput">anthropic_api_key_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.apiKeyInfosInput">api_key_infos_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.apiKeysInput">api_keys_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.chatbotIdentifiersInput">chatbot_identifiers_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.chatbotInput">chatbot_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.deploymentInput">deployment_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.anthropicApiKeyInput">anthropic_api_key_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.apiKeyInfosInput">api_key_infos_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.apiKeysInput">api_keys_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.chatbotIdentifiersInput">chatbot_identifiers_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.chatbotInput">chatbot_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.deploymentInput">deployment_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.instructionInput">instruction_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.modelUuidInput">model_uuid_input</a></code> | <code>str</code> | *No description.* |
@@ -23762,7 +23762,7 @@ def reset_description() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.projectId">project_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.region">region</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a></code> | *No description.* |
 
 ---
 
@@ -23863,60 +23863,60 @@ deployment: GenaiAgentParentAgentsDeploymentList
 ##### `anthropic_api_key_input`<sup>Optional</sup> <a name="anthropic_api_key_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.anthropicApiKeyInput"></a>
 
 ```python
-anthropic_api_key_input: typing.Union[IResolvable, typing.List[GenaiAgentParentAgentsAnthropicApiKey]]
+anthropic_api_key_input: IResolvable | typing.List[GenaiAgentParentAgentsAnthropicApiKey]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>]
 
 ---
 
 ##### `api_key_infos_input`<sup>Optional</sup> <a name="api_key_infos_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.apiKeyInfosInput"></a>
 
 ```python
-api_key_infos_input: typing.Union[IResolvable, typing.List[GenaiAgentParentAgentsApiKeyInfos]]
+api_key_infos_input: IResolvable | typing.List[GenaiAgentParentAgentsApiKeyInfos]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>]
 
 ---
 
 ##### `api_keys_input`<sup>Optional</sup> <a name="api_keys_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.apiKeysInput"></a>
 
 ```python
-api_keys_input: typing.Union[IResolvable, typing.List[GenaiAgentParentAgentsApiKeys]]
+api_keys_input: IResolvable | typing.List[GenaiAgentParentAgentsApiKeys]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>]
 
 ---
 
 ##### `chatbot_identifiers_input`<sup>Optional</sup> <a name="chatbot_identifiers_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.chatbotIdentifiersInput"></a>
 
 ```python
-chatbot_identifiers_input: typing.Union[IResolvable, typing.List[GenaiAgentParentAgentsChatbotIdentifiers]]
+chatbot_identifiers_input: IResolvable | typing.List[GenaiAgentParentAgentsChatbotIdentifiers]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>]
 
 ---
 
 ##### `chatbot_input`<sup>Optional</sup> <a name="chatbot_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.chatbotInput"></a>
 
 ```python
-chatbot_input: typing.Union[IResolvable, typing.List[GenaiAgentParentAgentsChatbot]]
+chatbot_input: IResolvable | typing.List[GenaiAgentParentAgentsChatbot]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>]
 
 ---
 
 ##### `deployment_input`<sup>Optional</sup> <a name="deployment_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.deploymentInput"></a>
 
 ```python
-deployment_input: typing.Union[IResolvable, typing.List[GenaiAgentParentAgentsDeployment]]
+deployment_input: IResolvable | typing.List[GenaiAgentParentAgentsDeployment]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>]
 
 ---
 
@@ -24043,10 +24043,10 @@ region: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GenaiAgentParentAgents]
+internal_value: IResolvable | GenaiAgentParentAgents
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>
 
 ---
 
@@ -24685,7 +24685,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>]</code> | *No description.* |
 
 ---
 
@@ -24716,10 +24716,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[GenaiAgentTemplateKnowledgeBases]]
+internal_value: IResolvable | typing.List[GenaiAgentTemplateKnowledgeBases]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>]
 
 ---
 
@@ -25123,7 +25123,7 @@ def reset_user_id() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.uuid">uuid</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.databaseIdInput">database_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.embeddingModelUuidInput">embedding_model_uuid_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.isPublicInput">is_public_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.isPublicInput">is_public_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.lastIndexingJobInput">last_indexing_job_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob">GenaiAgentTemplateKnowledgeBasesLastIndexingJob</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.projectIdInput">project_id_input</a></code> | <code>str</code> | *No description.* |
@@ -25132,13 +25132,13 @@ def reset_user_id() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.userIdInput">user_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.databaseId">database_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.embeddingModelUuid">embedding_model_uuid</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.isPublic">is_public</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.isPublic">is_public</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.projectId">project_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.tags">tags</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.userId">user_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a></code> | *No description.* |
 
 ---
 
@@ -25239,10 +25239,10 @@ embedding_model_uuid_input: str
 ##### `is_public_input`<sup>Optional</sup> <a name="is_public_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.isPublicInput"></a>
 
 ```python
-is_public_input: typing.Union[bool, IResolvable]
+is_public_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -25329,10 +25329,10 @@ embedding_model_uuid: str
 ##### `is_public`<sup>Required</sup> <a name="is_public" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.isPublic"></a>
 
 ```python
-is_public: typing.Union[bool, IResolvable]
+is_public: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -25389,10 +25389,10 @@ user_id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GenaiAgentTemplateKnowledgeBases]
+internal_value: IResolvable | GenaiAgentTemplateKnowledgeBases
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>
 
 ---
 
@@ -25528,7 +25528,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>]</code> | *No description.* |
 
 ---
 
@@ -25559,10 +25559,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[GenaiAgentTemplate]]
+internal_value: IResolvable | typing.List[GenaiAgentTemplate]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>]
 
 ---
 
@@ -25698,7 +25698,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreementList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreementList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreementList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreementList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>]</code> | *No description.* |
 
 ---
 
@@ -25729,10 +25729,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreementList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[GenaiAgentTemplateModelAgreement]]
+internal_value: IResolvable | typing.List[GenaiAgentTemplateModelAgreement]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>]
 
 ---
 
@@ -26028,7 +26028,7 @@ def reset_uuid() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreementOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreementOutputReference.property.url">url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreementOutputReference.property.uuid">uuid</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreementOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreementOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a></code> | *No description.* |
 
 ---
 
@@ -26139,10 +26139,10 @@ uuid: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreementOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GenaiAgentTemplateModelAgreement]
+internal_value: IResolvable | GenaiAgentTemplateModelAgreement
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>
 
 ---
 
@@ -26278,7 +26278,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>]</code> | *No description.* |
 
 ---
 
@@ -26309,10 +26309,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[GenaiAgentTemplateModel]]
+internal_value: IResolvable | typing.List[GenaiAgentTemplateModel]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>]
 
 ---
 
@@ -26582,13 +26582,13 @@ Returns a reversible string representation.
 
 ```python
 def put_agreement(
-  value: typing.Union[IResolvable, typing.List[GenaiAgentTemplateModelAgreement]]
+  value: IResolvable | typing.List[GenaiAgentTemplateModelAgreement]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.putAgreement.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>]
 
 ---
 
@@ -26596,13 +26596,13 @@ def put_agreement(
 
 ```python
 def put_versions(
-  value: typing.Union[IResolvable, typing.List[GenaiAgentTemplateModelVersions]]
+  value: IResolvable | typing.List[GenaiAgentTemplateModelVersions]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.putVersions.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>]
 
 ---
 
@@ -26683,27 +26683,27 @@ def reset_versions() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.createdAt">created_at</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.updatedAt">updated_at</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.versions">versions</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsList">GenaiAgentTemplateModelVersionsList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.agreementInput">agreement_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.agreementInput">agreement_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.inferenceNameInput">inference_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.inferenceVersionInput">inference_version_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.isFoundationalInput">is_foundational_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.isFoundationalInput">is_foundational_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.parentUuidInput">parent_uuid_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.providerInput">provider_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.uploadCompleteInput">upload_complete_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.uploadCompleteInput">upload_complete_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.urlInput">url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.usecasesInput">usecases_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.versionsInput">versions_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.versionsInput">versions_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.inferenceName">inference_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.inferenceVersion">inference_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.isFoundational">is_foundational</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.isFoundational">is_foundational</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.parentUuid">parent_uuid</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.provider">provider</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.uploadComplete">upload_complete</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.uploadComplete">upload_complete</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.url">url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.usecases">usecases</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a></code> | *No description.* |
 
 ---
 
@@ -26774,10 +26774,10 @@ versions: GenaiAgentTemplateModelVersionsList
 ##### `agreement_input`<sup>Optional</sup> <a name="agreement_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.agreementInput"></a>
 
 ```python
-agreement_input: typing.Union[IResolvable, typing.List[GenaiAgentTemplateModelAgreement]]
+agreement_input: IResolvable | typing.List[GenaiAgentTemplateModelAgreement]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>]
 
 ---
 
@@ -26804,10 +26804,10 @@ inference_version_input: str
 ##### `is_foundational_input`<sup>Optional</sup> <a name="is_foundational_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.isFoundationalInput"></a>
 
 ```python
-is_foundational_input: typing.Union[bool, IResolvable]
+is_foundational_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -26844,10 +26844,10 @@ provider_input: str
 ##### `upload_complete_input`<sup>Optional</sup> <a name="upload_complete_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.uploadCompleteInput"></a>
 
 ```python
-upload_complete_input: typing.Union[bool, IResolvable]
+upload_complete_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -26874,10 +26874,10 @@ usecases_input: typing.List[str]
 ##### `versions_input`<sup>Optional</sup> <a name="versions_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.versionsInput"></a>
 
 ```python
-versions_input: typing.Union[IResolvable, typing.List[GenaiAgentTemplateModelVersions]]
+versions_input: IResolvable | typing.List[GenaiAgentTemplateModelVersions]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>]
 
 ---
 
@@ -26904,10 +26904,10 @@ inference_version: str
 ##### `is_foundational`<sup>Required</sup> <a name="is_foundational" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.isFoundational"></a>
 
 ```python
-is_foundational: typing.Union[bool, IResolvable]
+is_foundational: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -26944,10 +26944,10 @@ provider: str
 ##### `upload_complete`<sup>Required</sup> <a name="upload_complete" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.uploadComplete"></a>
 
 ```python
-upload_complete: typing.Union[bool, IResolvable]
+upload_complete: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -26974,10 +26974,10 @@ usecases: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GenaiAgentTemplateModel]
+internal_value: IResolvable | GenaiAgentTemplateModel
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>
 
 ---
 
@@ -27113,7 +27113,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>]</code> | *No description.* |
 
 ---
 
@@ -27144,10 +27144,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[GenaiAgentTemplateModelVersions]]
+internal_value: IResolvable | typing.List[GenaiAgentTemplateModelVersions]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>]
 
 ---
 
@@ -27434,7 +27434,7 @@ def reset_patch() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsOutputReference.property.major">major</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsOutputReference.property.minor">minor</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsOutputReference.property.patch">patch</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a></code> | *No description.* |
 
 ---
 
@@ -27525,10 +27525,10 @@ patch: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GenaiAgentTemplateModelVersions]
+internal_value: IResolvable | GenaiAgentTemplateModelVersions
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>
 
 ---
 
@@ -27797,13 +27797,13 @@ Returns a reversible string representation.
 
 ```python
 def put_knowledge_bases(
-  value: typing.Union[IResolvable, typing.List[GenaiAgentTemplateKnowledgeBases]]
+  value: IResolvable | typing.List[GenaiAgentTemplateKnowledgeBases]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.putKnowledgeBases.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>]
 
 ---
 
@@ -27811,13 +27811,13 @@ def put_knowledge_bases(
 
 ```python
 def put_model(
-  value: typing.Union[IResolvable, typing.List[GenaiAgentTemplateModel]]
+  value: IResolvable | typing.List[GenaiAgentTemplateModel]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.putModel.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>]
 
 ---
 
@@ -27895,9 +27895,9 @@ def reset_uuid() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.instructionInput">instruction_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.kInput">k_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.knowledgeBasesInput">knowledge_bases_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.knowledgeBasesInput">knowledge_bases_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.maxTokensInput">max_tokens_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.modelInput">model_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.modelInput">model_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.temperatureInput">temperature_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.topPInput">top_p_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -27910,7 +27910,7 @@ def reset_uuid() -> None
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.temperature">temperature</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.topP">top_p</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.uuid">uuid</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a></code> | *No description.* |
 
 ---
 
@@ -28011,10 +28011,10 @@ k_input: typing.Union[int, float]
 ##### `knowledge_bases_input`<sup>Optional</sup> <a name="knowledge_bases_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.knowledgeBasesInput"></a>
 
 ```python
-knowledge_bases_input: typing.Union[IResolvable, typing.List[GenaiAgentTemplateKnowledgeBases]]
+knowledge_bases_input: IResolvable | typing.List[GenaiAgentTemplateKnowledgeBases]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>]
 
 ---
 
@@ -28031,10 +28031,10 @@ max_tokens_input: typing.Union[int, float]
 ##### `model_input`<sup>Optional</sup> <a name="model_input" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.modelInput"></a>
 
 ```python
-model_input: typing.Union[IResolvable, typing.List[GenaiAgentTemplateModel]]
+model_input: IResolvable | typing.List[GenaiAgentTemplateModel]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>]
 
 ---
 
@@ -28161,10 +28161,10 @@ uuid: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GenaiAgentTemplate]
+internal_value: IResolvable | GenaiAgentTemplate
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>
 
 ---
 

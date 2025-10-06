@@ -14,13 +14,13 @@ from cdktf_cdktf_provider_digitalocean import volume_attachment
 volumeAttachment.VolumeAttachment(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   droplet_id: typing.Union[int, float],
   volume_id: str,
   id: str = None
@@ -31,13 +31,13 @@ volumeAttachment.VolumeAttachment(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.Initializer.parameter.dropletId">droplet_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/volume_attachment#droplet_id VolumeAttachment#droplet_id}. |
 | <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.Initializer.parameter.volumeId">volume_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/volume_attachment#volume_id VolumeAttachment#volume_id}. |
 | <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/volume_attachment#id VolumeAttachment#id}. |
@@ -64,13 +64,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -100,7 +100,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -384,7 +384,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.importFrom"></a>
@@ -447,7 +447,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -463,7 +463,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -630,13 +630,13 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.property.dropletIdInput">droplet_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.property.volumeIdInput">volume_id_input</a></code> | <code>str</code> | *No description.* |
@@ -721,20 +721,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -781,10 +781,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachment.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -876,13 +876,13 @@ tfResourceType: str
 from cdktf_cdktf_provider_digitalocean import volume_attachment
 
 volumeAttachment.VolumeAttachmentConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   droplet_id: typing.Union[int, float],
   volume_id: str,
   id: str = None
@@ -893,13 +893,13 @@ volumeAttachment.VolumeAttachmentConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachmentConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachmentConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachmentConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachmentConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachmentConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachmentConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachmentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachmentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachmentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachmentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachmentConfig.property.dropletId">droplet_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/volume_attachment#droplet_id VolumeAttachment#droplet_id}. |
 | <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachmentConfig.property.volumeId">volume_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/volume_attachment#volume_id VolumeAttachment#volume_id}. |
 | <code><a href="#@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/volume_attachment#id VolumeAttachment#id}. |
@@ -909,20 +909,20 @@ volumeAttachment.VolumeAttachmentConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachmentConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachmentConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -969,10 +969,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.volumeAttachment.VolumeAttachmentConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 

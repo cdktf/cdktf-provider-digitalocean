@@ -14,16 +14,16 @@ from cdktf_cdktf_provider_digitalocean import database_kafka_topic
 databaseKafkaTopic.DatabaseKafkaTopic(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   cluster_id: str,
   name: str,
-  config: typing.Union[IResolvable, typing.List[DatabaseKafkaTopicConfigA]] = None,
+  config: IResolvable | typing.List[DatabaseKafkaTopicConfigA] = None,
   id: str = None,
   partition_count: typing.Union[int, float] = None,
   replication_factor: typing.Union[int, float] = None
@@ -34,16 +34,16 @@ databaseKafkaTopic.DatabaseKafkaTopic(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.Initializer.parameter.clusterId">cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_kafka_topic#cluster_id DatabaseKafkaTopic#cluster_id}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_kafka_topic#name DatabaseKafkaTopic#name}. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.Initializer.parameter.config">config</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA">DatabaseKafkaTopicConfigA</a>]]</code> | config block. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.Initializer.parameter.config">config</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA">DatabaseKafkaTopicConfigA</a>]</code> | config block. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_kafka_topic#id DatabaseKafkaTopic#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.Initializer.parameter.partitionCount">partition_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_kafka_topic#partition_count DatabaseKafkaTopic#partition_count}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.Initializer.parameter.replicationFactor">replication_factor</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_kafka_topic#replication_factor DatabaseKafkaTopic#replication_factor}. |
@@ -70,13 +70,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.Initializer.parameter.config"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA">DatabaseKafkaTopicConfigA</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA">DatabaseKafkaTopicConfigA</a>]
 
 config block.
 
@@ -420,7 +420,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.importFrom"></a>
@@ -483,7 +483,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -499,7 +499,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -527,13 +527,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_config(
-  value: typing.Union[IResolvable, typing.List[DatabaseKafkaTopicConfigA]]
+  value: IResolvable | typing.List[DatabaseKafkaTopicConfigA]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.putConfig.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA">DatabaseKafkaTopicConfigA</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA">DatabaseKafkaTopicConfigA</a>]
 
 ---
 
@@ -698,17 +698,17 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.property.config">config</a></code> | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAList">DatabaseKafkaTopicConfigAList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.property.state">state</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.property.clusterIdInput">cluster_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.property.configInput">config_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA">DatabaseKafkaTopicConfigA</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.property.configInput">config_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA">DatabaseKafkaTopicConfigA</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.property.partitionCountInput">partition_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -796,20 +796,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -856,10 +856,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -896,10 +896,10 @@ cluster_id_input: str
 ##### `config_input`<sup>Optional</sup> <a name="config_input" id="@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopic.property.configInput"></a>
 
 ```python
-config_input: typing.Union[IResolvable, typing.List[DatabaseKafkaTopicConfigA]]
+config_input: IResolvable | typing.List[DatabaseKafkaTopicConfigA]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA">DatabaseKafkaTopicConfigA</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA">DatabaseKafkaTopicConfigA</a>]
 
 ---
 
@@ -1021,16 +1021,16 @@ tfResourceType: str
 from cdktf_cdktf_provider_digitalocean import database_kafka_topic
 
 databaseKafkaTopic.DatabaseKafkaTopicConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   cluster_id: str,
   name: str,
-  config: typing.Union[IResolvable, typing.List[DatabaseKafkaTopicConfigA]] = None,
+  config: IResolvable | typing.List[DatabaseKafkaTopicConfigA] = None,
   id: str = None,
   partition_count: typing.Union[int, float] = None,
   replication_factor: typing.Union[int, float] = None
@@ -1041,16 +1041,16 @@ databaseKafkaTopic.DatabaseKafkaTopicConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfig.property.clusterId">cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_kafka_topic#cluster_id DatabaseKafkaTopic#cluster_id}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_kafka_topic#name DatabaseKafkaTopic#name}. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfig.property.config">config</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA">DatabaseKafkaTopicConfigA</a>]]</code> | config block. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfig.property.config">config</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA">DatabaseKafkaTopicConfigA</a>]</code> | config block. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_kafka_topic#id DatabaseKafkaTopic#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfig.property.partitionCount">partition_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_kafka_topic#partition_count DatabaseKafkaTopic#partition_count}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfig.property.replicationFactor">replication_factor</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_kafka_topic#replication_factor DatabaseKafkaTopic#replication_factor}. |
@@ -1060,20 +1060,20 @@ databaseKafkaTopic.DatabaseKafkaTopicConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1120,10 +1120,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1154,10 +1154,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfig.property.config"></a>
 
 ```python
-config: typing.Union[IResolvable, typing.List[DatabaseKafkaTopicConfigA]]
+config: IResolvable | typing.List[DatabaseKafkaTopicConfigA]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA">DatabaseKafkaTopicConfigA</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA">DatabaseKafkaTopicConfigA</a>]
 
 config block.
 
@@ -1221,14 +1221,14 @@ databaseKafkaTopic.DatabaseKafkaTopicConfigA(
   index_interval_bytes: str = None,
   max_compaction_lag_ms: str = None,
   max_message_bytes: str = None,
-  message_down_conversion_enable: typing.Union[bool, IResolvable] = None,
+  message_down_conversion_enable: bool | IResolvable = None,
   message_format_version: str = None,
   message_timestamp_difference_max_ms: str = None,
   message_timestamp_type: str = None,
   min_cleanable_dirty_ratio: typing.Union[int, float] = None,
   min_compaction_lag_ms: str = None,
   min_insync_replicas: typing.Union[int, float] = None,
-  preallocate: typing.Union[bool, IResolvable] = None,
+  preallocate: bool | IResolvable = None,
   retention_bytes: str = None,
   retention_ms: str = None,
   segment_bytes: str = None,
@@ -1251,14 +1251,14 @@ databaseKafkaTopic.DatabaseKafkaTopicConfigA(
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA.property.indexIntervalBytes">index_interval_bytes</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_kafka_topic#index_interval_bytes DatabaseKafkaTopic#index_interval_bytes}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA.property.maxCompactionLagMs">max_compaction_lag_ms</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_kafka_topic#max_compaction_lag_ms DatabaseKafkaTopic#max_compaction_lag_ms}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA.property.maxMessageBytes">max_message_bytes</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_kafka_topic#max_message_bytes DatabaseKafkaTopic#max_message_bytes}. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA.property.messageDownConversionEnable">message_down_conversion_enable</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_kafka_topic#message_down_conversion_enable DatabaseKafkaTopic#message_down_conversion_enable}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA.property.messageDownConversionEnable">message_down_conversion_enable</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_kafka_topic#message_down_conversion_enable DatabaseKafkaTopic#message_down_conversion_enable}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA.property.messageFormatVersion">message_format_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_kafka_topic#message_format_version DatabaseKafkaTopic#message_format_version}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA.property.messageTimestampDifferenceMaxMs">message_timestamp_difference_max_ms</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_kafka_topic#message_timestamp_difference_max_ms DatabaseKafkaTopic#message_timestamp_difference_max_ms}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA.property.messageTimestampType">message_timestamp_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_kafka_topic#message_timestamp_type DatabaseKafkaTopic#message_timestamp_type}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA.property.minCleanableDirtyRatio">min_cleanable_dirty_ratio</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_kafka_topic#min_cleanable_dirty_ratio DatabaseKafkaTopic#min_cleanable_dirty_ratio}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA.property.minCompactionLagMs">min_compaction_lag_ms</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_kafka_topic#min_compaction_lag_ms DatabaseKafkaTopic#min_compaction_lag_ms}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA.property.minInsyncReplicas">min_insync_replicas</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_kafka_topic#min_insync_replicas DatabaseKafkaTopic#min_insync_replicas}. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA.property.preallocate">preallocate</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_kafka_topic#preallocate DatabaseKafkaTopic#preallocate}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA.property.preallocate">preallocate</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_kafka_topic#preallocate DatabaseKafkaTopic#preallocate}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA.property.retentionBytes">retention_bytes</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_kafka_topic#retention_bytes DatabaseKafkaTopic#retention_bytes}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA.property.retentionMs">retention_ms</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_kafka_topic#retention_ms DatabaseKafkaTopic#retention_ms}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA.property.segmentBytes">segment_bytes</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_kafka_topic#segment_bytes DatabaseKafkaTopic#segment_bytes}. |
@@ -1379,10 +1379,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `message_down_conversion_enable`<sup>Optional</sup> <a name="message_down_conversion_enable" id="@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA.property.messageDownConversionEnable"></a>
 
 ```python
-message_down_conversion_enable: typing.Union[bool, IResolvable]
+message_down_conversion_enable: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_kafka_topic#message_down_conversion_enable DatabaseKafkaTopic#message_down_conversion_enable}.
 
@@ -1463,10 +1463,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `preallocate`<sup>Optional</sup> <a name="preallocate" id="@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA.property.preallocate"></a>
 
 ```python
-preallocate: typing.Union[bool, IResolvable]
+preallocate: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_kafka_topic#preallocate DatabaseKafkaTopic#preallocate}.
 
@@ -1677,7 +1677,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA">DatabaseKafkaTopicConfigA</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA">DatabaseKafkaTopicConfigA</a>]</code> | *No description.* |
 
 ---
 
@@ -1708,10 +1708,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[DatabaseKafkaTopicConfigA]]
+internal_value: IResolvable | typing.List[DatabaseKafkaTopicConfigA]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA">DatabaseKafkaTopicConfigA</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA">DatabaseKafkaTopicConfigA</a>]
 
 ---
 
@@ -2141,14 +2141,14 @@ def reset_segment_ms() -> None
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.indexIntervalBytesInput">index_interval_bytes_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.maxCompactionLagMsInput">max_compaction_lag_ms_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.maxMessageBytesInput">max_message_bytes_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.messageDownConversionEnableInput">message_down_conversion_enable_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.messageDownConversionEnableInput">message_down_conversion_enable_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.messageFormatVersionInput">message_format_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.messageTimestampDifferenceMaxMsInput">message_timestamp_difference_max_ms_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.messageTimestampTypeInput">message_timestamp_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.minCleanableDirtyRatioInput">min_cleanable_dirty_ratio_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.minCompactionLagMsInput">min_compaction_lag_ms_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.minInsyncReplicasInput">min_insync_replicas_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.preallocateInput">preallocate_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.preallocateInput">preallocate_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.retentionBytesInput">retention_bytes_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.retentionMsInput">retention_ms_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.segmentBytesInput">segment_bytes_input</a></code> | <code>str</code> | *No description.* |
@@ -2164,21 +2164,21 @@ def reset_segment_ms() -> None
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.indexIntervalBytes">index_interval_bytes</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.maxCompactionLagMs">max_compaction_lag_ms</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.maxMessageBytes">max_message_bytes</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.messageDownConversionEnable">message_down_conversion_enable</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.messageDownConversionEnable">message_down_conversion_enable</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.messageFormatVersion">message_format_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.messageTimestampDifferenceMaxMs">message_timestamp_difference_max_ms</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.messageTimestampType">message_timestamp_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.minCleanableDirtyRatio">min_cleanable_dirty_ratio</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.minCompactionLagMs">min_compaction_lag_ms</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.minInsyncReplicas">min_insync_replicas</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.preallocate">preallocate</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.preallocate">preallocate</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.retentionBytes">retention_bytes</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.retentionMs">retention_ms</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.segmentBytes">segment_bytes</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.segmentIndexBytes">segment_index_bytes</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.segmentJitterMs">segment_jitter_ms</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.segmentMs">segment_ms</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA">DatabaseKafkaTopicConfigA</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA">DatabaseKafkaTopicConfigA</a></code> | *No description.* |
 
 ---
 
@@ -2299,10 +2299,10 @@ max_message_bytes_input: str
 ##### `message_down_conversion_enable_input`<sup>Optional</sup> <a name="message_down_conversion_enable_input" id="@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.messageDownConversionEnableInput"></a>
 
 ```python
-message_down_conversion_enable_input: typing.Union[bool, IResolvable]
+message_down_conversion_enable_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2369,10 +2369,10 @@ min_insync_replicas_input: typing.Union[int, float]
 ##### `preallocate_input`<sup>Optional</sup> <a name="preallocate_input" id="@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.preallocateInput"></a>
 
 ```python
-preallocate_input: typing.Union[bool, IResolvable]
+preallocate_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2529,10 +2529,10 @@ max_message_bytes: str
 ##### `message_down_conversion_enable`<sup>Required</sup> <a name="message_down_conversion_enable" id="@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.messageDownConversionEnable"></a>
 
 ```python
-message_down_conversion_enable: typing.Union[bool, IResolvable]
+message_down_conversion_enable: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2599,10 +2599,10 @@ min_insync_replicas: typing.Union[int, float]
 ##### `preallocate`<sup>Required</sup> <a name="preallocate" id="@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.preallocate"></a>
 
 ```python
-preallocate: typing.Union[bool, IResolvable]
+preallocate: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2669,10 +2669,10 @@ segment_ms: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigAOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, DatabaseKafkaTopicConfigA]
+internal_value: IResolvable | DatabaseKafkaTopicConfigA
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA">DatabaseKafkaTopicConfigA</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.databaseKafkaTopic.DatabaseKafkaTopicConfigA">DatabaseKafkaTopicConfigA</a>
 
 ---
 

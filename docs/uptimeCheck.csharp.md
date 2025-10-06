@@ -276,7 +276,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.importFrom"></a>
@@ -330,7 +330,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -345,7 +345,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -511,20 +511,20 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.enabledInput">EnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.enabledInput">EnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.regionsInput">RegionsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.targetInput">TargetInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.enabled">Enabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.regions">Regions</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.target">Target</a></code> | <code>string</code> | *No description.* |
@@ -607,20 +607,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -667,10 +667,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -687,10 +687,10 @@ public string Id { get; }
 ##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.enabledInput"></a>
 
 ```csharp
-public object EnabledInput { get; }
+public bool|IResolvable EnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -737,10 +737,10 @@ public string TypeInput { get; }
 ##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheck.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; }
+public bool|IResolvable Enabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -812,16 +812,16 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new UptimeCheckConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Name,
     string Target,
-    object Enabled = null,
+    bool|IResolvable Enabled = null,
     string[] Regions = null,
     string Type = null
 };
@@ -831,16 +831,16 @@ new UptimeCheckConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.property.name">Name</a></code> | <code>string</code> | A human-friendly display name for the check. |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.property.target">Target</a></code> | <code>string</code> | The endpoint to perform healthchecks on. |
-| <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.property.enabled">Enabled</a></code> | <code>object</code> | A boolean value indicating whether the check is enabled/disabled. |
+| <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | A boolean value indicating whether the check is enabled/disabled. |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.property.regions">Regions</a></code> | <code>string[]</code> | An array containing the selected regions to perform healthchecks from. |
 | <code><a href="#@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.property.type">Type</a></code> | <code>string</code> | The type of health check to perform. Enum: 'ping' 'http' 'https'. |
 
@@ -849,20 +849,20 @@ new UptimeCheckConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -909,10 +909,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -947,10 +947,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Enabled`<sup>Optional</sup> <a name="Enabled" id="@cdktf/provider-digitalocean.uptimeCheck.UptimeCheckConfig.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; set; }
+public bool|IResolvable Enabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 A boolean value indicating whether the check is enabled/disabled.
 

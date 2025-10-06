@@ -14,16 +14,16 @@ from cdktf_cdktf_provider_digitalocean import data_digitalocean_images
 dataDigitaloceanImages.DataDigitaloceanImages(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  filter: typing.Union[IResolvable, typing.List[DataDigitaloceanImagesFilter]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  filter: IResolvable | typing.List[DataDigitaloceanImagesFilter] = None,
   id: str = None,
-  sort: typing.Union[IResolvable, typing.List[DataDigitaloceanImagesSort]] = None
+  sort: IResolvable | typing.List[DataDigitaloceanImagesSort] = None
 )
 ```
 
@@ -31,16 +31,16 @@ dataDigitaloceanImages.DataDigitaloceanImages(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.Initializer.parameter.filter">filter</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter">DataDigitaloceanImagesFilter</a>]]</code> | filter block. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.Initializer.parameter.filter">filter</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter">DataDigitaloceanImagesFilter</a>]</code> | filter block. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/images#id DataDigitaloceanImages#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.Initializer.parameter.sort">sort</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSort">DataDigitaloceanImagesSort</a>]]</code> | sort block. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.Initializer.parameter.sort">sort</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSort">DataDigitaloceanImagesSort</a>]</code> | sort block. |
 
 ---
 
@@ -64,13 +64,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -100,13 +100,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
 ##### `filter`<sup>Optional</sup> <a name="filter" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.Initializer.parameter.filter"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter">DataDigitaloceanImagesFilter</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter">DataDigitaloceanImagesFilter</a>]
 
 filter block.
 
@@ -127,7 +127,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `sort`<sup>Optional</sup> <a name="sort" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.Initializer.parameter.sort"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSort">DataDigitaloceanImagesSort</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSort">DataDigitaloceanImagesSort</a>]
 
 sort block.
 
@@ -385,13 +385,13 @@ def interpolation_for_attribute(
 
 ```python
 def put_filter(
-  value: typing.Union[IResolvable, typing.List[DataDigitaloceanImagesFilter]]
+  value: IResolvable | typing.List[DataDigitaloceanImagesFilter]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.putFilter.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter">DataDigitaloceanImagesFilter</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter">DataDigitaloceanImagesFilter</a>]
 
 ---
 
@@ -399,13 +399,13 @@ def put_filter(
 
 ```python
 def put_sort(
-  value: typing.Union[IResolvable, typing.List[DataDigitaloceanImagesSort]]
+  value: IResolvable | typing.List[DataDigitaloceanImagesSort]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.putSort.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSort">DataDigitaloceanImagesSort</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSort">DataDigitaloceanImagesSort</a>]
 
 ---
 
@@ -564,7 +564,7 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -572,9 +572,9 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.property.filter">filter</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilterList">DataDigitaloceanImagesFilterList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.property.images">images</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesImagesList">DataDigitaloceanImagesImagesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.property.sort">sort</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSortList">DataDigitaloceanImagesSortList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.property.filterInput">filter_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter">DataDigitaloceanImagesFilter</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.property.filterInput">filter_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter">DataDigitaloceanImagesFilter</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.property.sortInput">sort_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSort">DataDigitaloceanImagesSort</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.property.sortInput">sort_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSort">DataDigitaloceanImagesSort</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.property.id">id</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -654,10 +654,10 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -734,10 +734,10 @@ sort: DataDigitaloceanImagesSortList
 ##### `filter_input`<sup>Optional</sup> <a name="filter_input" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.property.filterInput"></a>
 
 ```python
-filter_input: typing.Union[IResolvable, typing.List[DataDigitaloceanImagesFilter]]
+filter_input: IResolvable | typing.List[DataDigitaloceanImagesFilter]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter">DataDigitaloceanImagesFilter</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter">DataDigitaloceanImagesFilter</a>]
 
 ---
 
@@ -754,10 +754,10 @@ id_input: str
 ##### `sort_input`<sup>Optional</sup> <a name="sort_input" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImages.property.sortInput"></a>
 
 ```python
-sort_input: typing.Union[IResolvable, typing.List[DataDigitaloceanImagesSort]]
+sort_input: IResolvable | typing.List[DataDigitaloceanImagesSort]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSort">DataDigitaloceanImagesSort</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSort">DataDigitaloceanImagesSort</a>]
 
 ---
 
@@ -799,16 +799,16 @@ tfResourceType: str
 from cdktf_cdktf_provider_digitalocean import data_digitalocean_images
 
 dataDigitaloceanImages.DataDigitaloceanImagesConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  filter: typing.Union[IResolvable, typing.List[DataDigitaloceanImagesFilter]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  filter: IResolvable | typing.List[DataDigitaloceanImagesFilter] = None,
   id: str = None,
-  sort: typing.Union[IResolvable, typing.List[DataDigitaloceanImagesSort]] = None
+  sort: IResolvable | typing.List[DataDigitaloceanImagesSort] = None
 )
 ```
 
@@ -816,36 +816,36 @@ dataDigitaloceanImages.DataDigitaloceanImagesConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesConfig.property.filter">filter</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter">DataDigitaloceanImagesFilter</a>]]</code> | filter block. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesConfig.property.filter">filter</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter">DataDigitaloceanImagesFilter</a>]</code> | filter block. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/images#id DataDigitaloceanImages#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesConfig.property.sort">sort</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSort">DataDigitaloceanImagesSort</a>]]</code> | sort block. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesConfig.property.sort">sort</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSort">DataDigitaloceanImagesSort</a>]</code> | sort block. |
 
 ---
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -892,20 +892,20 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
 ##### `filter`<sup>Optional</sup> <a name="filter" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesConfig.property.filter"></a>
 
 ```python
-filter: typing.Union[IResolvable, typing.List[DataDigitaloceanImagesFilter]]
+filter: IResolvable | typing.List[DataDigitaloceanImagesFilter]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter">DataDigitaloceanImagesFilter</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter">DataDigitaloceanImagesFilter</a>]
 
 filter block.
 
@@ -931,10 +931,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `sort`<sup>Optional</sup> <a name="sort" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesConfig.property.sort"></a>
 
 ```python
-sort: typing.Union[IResolvable, typing.List[DataDigitaloceanImagesSort]]
+sort: IResolvable | typing.List[DataDigitaloceanImagesSort]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSort">DataDigitaloceanImagesSort</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSort">DataDigitaloceanImagesSort</a>]
 
 sort block.
 
@@ -952,7 +952,7 @@ from cdktf_cdktf_provider_digitalocean import data_digitalocean_images
 dataDigitaloceanImages.DataDigitaloceanImagesFilter(
   key: str,
   values: typing.List[str],
-  all: typing.Union[bool, IResolvable] = None,
+  all: bool | IResolvable = None,
   match_by: str = None
 )
 ```
@@ -963,7 +963,7 @@ dataDigitaloceanImages.DataDigitaloceanImagesFilter(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/images#key DataDigitaloceanImages#key}. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/images#values DataDigitaloceanImages#values}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter.property.all">all</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/images#all DataDigitaloceanImages#all}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter.property.all">all</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/images#all DataDigitaloceanImages#all}. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter.property.matchBy">match_by</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/images#match_by DataDigitaloceanImages#match_by}. |
 
 ---
@@ -995,10 +995,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `all`<sup>Optional</sup> <a name="all" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter.property.all"></a>
 
 ```python
-all: typing.Union[bool, IResolvable]
+all: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/images#all DataDigitaloceanImages#all}.
 
@@ -1206,7 +1206,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilterList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilterList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilterList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter">DataDigitaloceanImagesFilter</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilterList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter">DataDigitaloceanImagesFilter</a>]</code> | *No description.* |
 
 ---
 
@@ -1237,10 +1237,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilterList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[DataDigitaloceanImagesFilter]]
+internal_value: IResolvable | typing.List[DataDigitaloceanImagesFilter]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter">DataDigitaloceanImagesFilter</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter">DataDigitaloceanImagesFilter</a>]
 
 ---
 
@@ -1514,15 +1514,15 @@ def reset_match_by() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilterOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilterOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilterOutputReference.property.allInput">all_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilterOutputReference.property.allInput">all_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilterOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilterOutputReference.property.matchByInput">match_by_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilterOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilterOutputReference.property.all">all</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilterOutputReference.property.all">all</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilterOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilterOutputReference.property.matchBy">match_by</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilterOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilterOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter">DataDigitaloceanImagesFilter</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilterOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter">DataDigitaloceanImagesFilter</a></code> | *No description.* |
 
 ---
 
@@ -1553,10 +1553,10 @@ fqn: str
 ##### `all_input`<sup>Optional</sup> <a name="all_input" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilterOutputReference.property.allInput"></a>
 
 ```python
-all_input: typing.Union[bool, IResolvable]
+all_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1593,10 +1593,10 @@ values_input: typing.List[str]
 ##### `all`<sup>Required</sup> <a name="all" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilterOutputReference.property.all"></a>
 
 ```python
-all: typing.Union[bool, IResolvable]
+all: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1633,10 +1633,10 @@ values: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilterOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, DataDigitaloceanImagesFilter]
+internal_value: IResolvable | DataDigitaloceanImagesFilter
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter">DataDigitaloceanImagesFilter</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesFilter">DataDigitaloceanImagesFilter</a>
 
 ---
 
@@ -2390,7 +2390,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSortList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSortList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSortList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSort">DataDigitaloceanImagesSort</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSortList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSort">DataDigitaloceanImagesSort</a>]</code> | *No description.* |
 
 ---
 
@@ -2421,10 +2421,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSortList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[DataDigitaloceanImagesSort]]
+internal_value: IResolvable | typing.List[DataDigitaloceanImagesSort]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSort">DataDigitaloceanImagesSort</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSort">DataDigitaloceanImagesSort</a>]
 
 ---
 
@@ -2695,7 +2695,7 @@ def reset_direction() -> None
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSortOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSortOutputReference.property.direction">direction</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSortOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSortOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSort">DataDigitaloceanImagesSort</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSortOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSort">DataDigitaloceanImagesSort</a></code> | *No description.* |
 
 ---
 
@@ -2766,10 +2766,10 @@ key: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSortOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, DataDigitaloceanImagesSort]
+internal_value: IResolvable | DataDigitaloceanImagesSort
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSort">DataDigitaloceanImagesSort</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.dataDigitaloceanImages.DataDigitaloceanImagesSort">DataDigitaloceanImagesSort</a>
 
 ---
 

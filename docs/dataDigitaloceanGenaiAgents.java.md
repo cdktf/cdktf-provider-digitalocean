@@ -12,24 +12,17 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 import com.hashicorp.cdktf.providers.digitalocean.data_digitalocean_genai_agents.DataDigitaloceanGenaiAgents;
 
 DataDigitaloceanGenaiAgents.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
-//  .filter(IResolvable)
-//  .filter(java.util.List<DataDigitaloceanGenaiAgentsFilter>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
+//  .filter(IResolvable|java.util.List<DataDigitaloceanGenaiAgentsFilter>)
 //  .id(java.lang.String)
-//  .onlyDeployed(java.lang.Boolean)
-//  .onlyDeployed(IResolvable)
-//  .sort(IResolvable)
-//  .sort(java.util.List<DataDigitaloceanGenaiAgentsSort>)
+//  .onlyDeployed(java.lang.Boolean|IResolvable)
+//  .sort(IResolvable|java.util.List<DataDigitaloceanGenaiAgentsSort>)
     .build();
 ```
 
@@ -37,17 +30,17 @@ DataDigitaloceanGenaiAgents.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.filter">filter</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>></code> | filter block. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.filter">filter</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>></code> | filter block. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#id DataDigitaloceanGenaiAgents#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.onlyDeployed">onlyDeployed</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#only_deployed DataDigitaloceanGenaiAgents#only_deployed}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.sort">sort</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>></code> | sort block. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.onlyDeployed">onlyDeployed</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#only_deployed DataDigitaloceanGenaiAgents#only_deployed}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.sort">sort</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>></code> | sort block. |
 
 ---
 
@@ -71,13 +64,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -107,13 +100,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
 ##### `filter`<sup>Optional</sup> <a name="filter" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.filter"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>>
 
 filter block.
 
@@ -134,7 +127,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `onlyDeployed`<sup>Optional</sup> <a name="onlyDeployed" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.onlyDeployed"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#only_deployed DataDigitaloceanGenaiAgents#only_deployed}.
 
@@ -142,7 +135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `sort`<sup>Optional</sup> <a name="sort" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.sort"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>>
 
 sort block.
 
@@ -375,24 +368,24 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 ##### `putFilter` <a name="putFilter" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.putFilter"></a>
 
 ```java
-public void putFilter(IResolvable OR java.util.List<DataDigitaloceanGenaiAgentsFilter> value)
+public void putFilter(IResolvable|java.util.List<DataDigitaloceanGenaiAgentsFilter> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.putFilter.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>>
 
 ---
 
 ##### `putSort` <a name="putSort" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.putSort"></a>
 
 ```java
-public void putSort(IResolvable OR java.util.List<DataDigitaloceanGenaiAgentsSort> value)
+public void putSort(IResolvable|java.util.List<DataDigitaloceanGenaiAgentsSort> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.putSort.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>>
 
 ---
 
@@ -546,7 +539,7 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -554,12 +547,12 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.agents">agents</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsAgentsList">DataDigitaloceanGenaiAgentsAgentsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.filter">filter</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterList">DataDigitaloceanGenaiAgentsFilterList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.sort">sort</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortList">DataDigitaloceanGenaiAgentsSortList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.filterInput">filterInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.filterInput">filterInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.onlyDeployedInput">onlyDeployedInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.sortInput">sortInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.onlyDeployedInput">onlyDeployedInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.sortInput">sortInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.onlyDeployed">onlyDeployed</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.onlyDeployed">onlyDeployed</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -638,10 +631,10 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -718,10 +711,10 @@ public DataDigitaloceanGenaiAgentsSortList getSort();
 ##### `filterInput`<sup>Optional</sup> <a name="filterInput" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.filterInput"></a>
 
 ```java
-public java.lang.Object getFilterInput();
+public IResolvable|java.util.List<DataDigitaloceanGenaiAgentsFilter> getFilterInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>>
 
 ---
 
@@ -738,20 +731,20 @@ public java.lang.String getIdInput();
 ##### `onlyDeployedInput`<sup>Optional</sup> <a name="onlyDeployedInput" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.onlyDeployedInput"></a>
 
 ```java
-public java.lang.Object getOnlyDeployedInput();
+public java.lang.Boolean|IResolvable getOnlyDeployedInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `sortInput`<sup>Optional</sup> <a name="sortInput" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.sortInput"></a>
 
 ```java
-public java.lang.Object getSortInput();
+public IResolvable|java.util.List<DataDigitaloceanGenaiAgentsSort> getSortInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>>
 
 ---
 
@@ -768,10 +761,10 @@ public java.lang.String getId();
 ##### `onlyDeployed`<sup>Required</sup> <a name="onlyDeployed" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.onlyDeployed"></a>
 
 ```java
-public java.lang.Object getOnlyDeployed();
+public java.lang.Boolean|IResolvable getOnlyDeployed();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1223,24 +1216,17 @@ DataDigitaloceanGenaiAgentsAgentsTemplateModelVersions.builder()
 import com.hashicorp.cdktf.providers.digitalocean.data_digitalocean_genai_agents.DataDigitaloceanGenaiAgentsConfig;
 
 DataDigitaloceanGenaiAgentsConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
-//  .filter(IResolvable)
-//  .filter(java.util.List<DataDigitaloceanGenaiAgentsFilter>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
+//  .filter(IResolvable|java.util.List<DataDigitaloceanGenaiAgentsFilter>)
 //  .id(java.lang.String)
-//  .onlyDeployed(java.lang.Boolean)
-//  .onlyDeployed(IResolvable)
-//  .sort(IResolvable)
-//  .sort(java.util.List<DataDigitaloceanGenaiAgentsSort>)
+//  .onlyDeployed(java.lang.Boolean|IResolvable)
+//  .sort(IResolvable|java.util.List<DataDigitaloceanGenaiAgentsSort>)
     .build();
 ```
 
@@ -1248,37 +1234,37 @@ DataDigitaloceanGenaiAgentsConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.filter">filter</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>></code> | filter block. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.filter">filter</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>></code> | filter block. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#id DataDigitaloceanGenaiAgents#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.onlyDeployed">onlyDeployed</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#only_deployed DataDigitaloceanGenaiAgents#only_deployed}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.sort">sort</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>></code> | sort block. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.onlyDeployed">onlyDeployed</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#only_deployed DataDigitaloceanGenaiAgents#only_deployed}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.sort">sort</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>></code> | sort block. |
 
 ---
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1325,20 +1311,20 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
 ##### `filter`<sup>Optional</sup> <a name="filter" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.filter"></a>
 
 ```java
-public java.lang.Object getFilter();
+public IResolvable|java.util.List<DataDigitaloceanGenaiAgentsFilter> getFilter();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>>
 
 filter block.
 
@@ -1364,10 +1350,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `onlyDeployed`<sup>Optional</sup> <a name="onlyDeployed" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.onlyDeployed"></a>
 
 ```java
-public java.lang.Object getOnlyDeployed();
+public java.lang.Boolean|IResolvable getOnlyDeployed();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#only_deployed DataDigitaloceanGenaiAgents#only_deployed}.
 
@@ -1376,10 +1362,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `sort`<sup>Optional</sup> <a name="sort" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.sort"></a>
 
 ```java
-public java.lang.Object getSort();
+public IResolvable|java.util.List<DataDigitaloceanGenaiAgentsSort> getSort();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>>
 
 sort block.
 
@@ -1397,8 +1383,7 @@ import com.hashicorp.cdktf.providers.digitalocean.data_digitalocean_genai_agents
 DataDigitaloceanGenaiAgentsFilter.builder()
     .key(java.lang.String)
     .values(java.util.List<java.lang.String>)
-//  .all(java.lang.Boolean)
-//  .all(IResolvable)
+//  .all(java.lang.Boolean|IResolvable)
 //  .matchBy(java.lang.String)
     .build();
 ```
@@ -1409,7 +1394,7 @@ DataDigitaloceanGenaiAgentsFilter.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#key DataDigitaloceanGenaiAgents#key}. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter.property.values">values</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#values DataDigitaloceanGenaiAgents#values}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter.property.all">all</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#all DataDigitaloceanGenaiAgents#all}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter.property.all">all</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#all DataDigitaloceanGenaiAgents#all}. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter.property.matchBy">matchBy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#match_by DataDigitaloceanGenaiAgents#match_by}. |
 
 ---
@@ -1441,10 +1426,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `all`<sup>Optional</sup> <a name="all" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter.property.all"></a>
 
 ```java
-public java.lang.Object getAll();
+public java.lang.Boolean|IResolvable getAll();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#all DataDigitaloceanGenaiAgents#all}.
 
@@ -19117,7 +19102,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>></code> | *No description.* |
 
 ---
 
@@ -19148,10 +19133,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDigitaloceanGenaiAgentsFilter> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>>
 
 ---
 
@@ -19398,15 +19383,15 @@ public void resetMatchBy()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.allInput">allInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.allInput">allInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.keyInput">keyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.matchByInput">matchByInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.valuesInput">valuesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.all">all</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.all">all</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.matchBy">matchBy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.values">values</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a></code> | *No description.* |
 
 ---
 
@@ -19437,10 +19422,10 @@ public java.lang.String getFqn();
 ##### `allInput`<sup>Optional</sup> <a name="allInput" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.allInput"></a>
 
 ```java
-public java.lang.Object getAllInput();
+public java.lang.Boolean|IResolvable getAllInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -19477,10 +19462,10 @@ public java.util.List<java.lang.String> getValuesInput();
 ##### `all`<sup>Required</sup> <a name="all" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.all"></a>
 
 ```java
-public java.lang.Object getAll();
+public java.lang.Boolean|IResolvable getAll();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -19517,10 +19502,10 @@ public java.util.List<java.lang.String> getValues();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDigitaloceanGenaiAgentsFilter getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>
 
 ---
 
@@ -19646,7 +19631,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>></code> | *No description.* |
 
 ---
 
@@ -19677,10 +19662,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDigitaloceanGenaiAgentsSort> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>>
 
 ---
 
@@ -19924,7 +19909,7 @@ public void resetDirection()
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortOutputReference.property.keyInput">keyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortOutputReference.property.direction">direction</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortOutputReference.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a></code> | *No description.* |
 
 ---
 
@@ -19995,10 +19980,10 @@ public java.lang.String getKey();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDigitaloceanGenaiAgentsSort getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>
 
 ---
 

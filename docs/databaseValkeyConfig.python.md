@@ -14,16 +14,16 @@ from cdktf_cdktf_provider_digitalocean import database_valkey_config
 databaseValkeyConfig.DatabaseValkeyConfig(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   cluster_id: str,
   acl_channels_default: str = None,
-  frequent_snapshots: typing.Union[bool, IResolvable] = None,
+  frequent_snapshots: bool | IResolvable = None,
   id: str = None,
   io_threads: typing.Union[int, float] = None,
   lfu_decay_time: typing.Union[int, float] = None,
@@ -32,7 +32,7 @@ databaseValkeyConfig.DatabaseValkeyConfig(
   number_of_databases: typing.Union[int, float] = None,
   persistence: str = None,
   pubsub_client_output_buffer_limit: typing.Union[int, float] = None,
-  ssl: typing.Union[bool, IResolvable] = None,
+  ssl: bool | IResolvable = None,
   timeout: typing.Union[int, float] = None,
   valkey_active_expire_effort: typing.Union[int, float] = None
 )
@@ -42,16 +42,16 @@ databaseValkeyConfig.DatabaseValkeyConfig(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.Initializer.parameter.clusterId">cluster_id</a></code> | <code>str</code> | A unique identifier for the database cluster. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.Initializer.parameter.aclChannelsDefault">acl_channels_default</a></code> | <code>str</code> | Determines default pub/sub channels' ACL for new users if ACL is not supplied. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.Initializer.parameter.frequentSnapshots">frequent_snapshots</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Frequent RDB snapshots. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.Initializer.parameter.frequentSnapshots">frequent_snapshots</a></code> | <code>bool \| cdktf.IResolvable</code> | Frequent RDB snapshots. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_valkey_config#id DatabaseValkeyConfig#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.Initializer.parameter.ioThreads">io_threads</a></code> | <code>typing.Union[int, float]</code> | The number of IO threads used by Valkey. Must be between 1 and 32. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.Initializer.parameter.lfuDecayTime">lfu_decay_time</a></code> | <code>typing.Union[int, float]</code> | The decay time for Valkey's LFU cache eviction. Must be between 1 and 120. |
@@ -60,7 +60,7 @@ databaseValkeyConfig.DatabaseValkeyConfig(
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.Initializer.parameter.numberOfDatabases">number_of_databases</a></code> | <code>typing.Union[int, float]</code> | The number of logical databases in the Valkey cluster. Must be between 1 and 128. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.Initializer.parameter.persistence">persistence</a></code> | <code>str</code> | When persistence is 'rdb', Valkey does RDB dumps each 10 minutes if any key is changed. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.Initializer.parameter.pubsubClientOutputBufferLimit">pubsub_client_output_buffer_limit</a></code> | <code>typing.Union[int, float]</code> | Set output buffer limit for pub / sub clients in MB. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.Initializer.parameter.ssl">ssl</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to enable SSL/TLS for connections to the Valkey cluster. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.Initializer.parameter.ssl">ssl</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to enable SSL/TLS for connections to the Valkey cluster. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.Initializer.parameter.timeout">timeout</a></code> | <code>typing.Union[int, float]</code> | The timeout (in seconds) for Valkey client connections. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.Initializer.parameter.valkeyActiveExpireEffort">valkey_active_expire_effort</a></code> | <code>typing.Union[int, float]</code> | Active expire effort. |
 
@@ -86,13 +86,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `frequent_snapshots`<sup>Optional</sup> <a name="frequent_snapshots" id="@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.Initializer.parameter.frequentSnapshots"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Frequent RDB snapshots.
 
@@ -265,7 +265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `ssl`<sup>Optional</sup> <a name="ssl" id="@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.Initializer.parameter.ssl"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to enable SSL/TLS for connections to the Valkey cluster.
 
@@ -560,7 +560,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.importFrom"></a>
@@ -623,7 +623,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -639,7 +639,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -878,16 +878,16 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.aclChannelsDefaultInput">acl_channels_default_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.clusterIdInput">cluster_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.frequentSnapshotsInput">frequent_snapshots_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.frequentSnapshotsInput">frequent_snapshots_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.ioThreadsInput">io_threads_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.lfuDecayTimeInput">lfu_decay_time_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -896,12 +896,12 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.numberOfDatabasesInput">number_of_databases_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.persistenceInput">persistence_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.pubsubClientOutputBufferLimitInput">pubsub_client_output_buffer_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.sslInput">ssl_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.sslInput">ssl_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.timeoutInput">timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.valkeyActiveExpireEffortInput">valkey_active_expire_effort_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.aclChannelsDefault">acl_channels_default</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.clusterId">cluster_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.frequentSnapshots">frequent_snapshots</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.frequentSnapshots">frequent_snapshots</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.ioThreads">io_threads</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.lfuDecayTime">lfu_decay_time</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -910,7 +910,7 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.numberOfDatabases">number_of_databases</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.persistence">persistence</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.pubsubClientOutputBufferLimit">pubsub_client_output_buffer_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.ssl">ssl</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.ssl">ssl</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.timeout">timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.valkeyActiveExpireEffort">valkey_active_expire_effort</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 
@@ -991,20 +991,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1051,10 +1051,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1081,10 +1081,10 @@ cluster_id_input: str
 ##### `frequent_snapshots_input`<sup>Optional</sup> <a name="frequent_snapshots_input" id="@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.frequentSnapshotsInput"></a>
 
 ```python
-frequent_snapshots_input: typing.Union[bool, IResolvable]
+frequent_snapshots_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1171,10 +1171,10 @@ pubsub_client_output_buffer_limit_input: typing.Union[int, float]
 ##### `ssl_input`<sup>Optional</sup> <a name="ssl_input" id="@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.sslInput"></a>
 
 ```python
-ssl_input: typing.Union[bool, IResolvable]
+ssl_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1221,10 +1221,10 @@ cluster_id: str
 ##### `frequent_snapshots`<sup>Required</sup> <a name="frequent_snapshots" id="@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.frequentSnapshots"></a>
 
 ```python
-frequent_snapshots: typing.Union[bool, IResolvable]
+frequent_snapshots: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1311,10 +1311,10 @@ pubsub_client_output_buffer_limit: typing.Union[int, float]
 ##### `ssl`<sup>Required</sup> <a name="ssl" id="@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfig.property.ssl"></a>
 
 ```python
-ssl: typing.Union[bool, IResolvable]
+ssl: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1366,16 +1366,16 @@ tfResourceType: str
 from cdktf_cdktf_provider_digitalocean import database_valkey_config
 
 databaseValkeyConfig.DatabaseValkeyConfigConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   cluster_id: str,
   acl_channels_default: str = None,
-  frequent_snapshots: typing.Union[bool, IResolvable] = None,
+  frequent_snapshots: bool | IResolvable = None,
   id: str = None,
   io_threads: typing.Union[int, float] = None,
   lfu_decay_time: typing.Union[int, float] = None,
@@ -1384,7 +1384,7 @@ databaseValkeyConfig.DatabaseValkeyConfigConfig(
   number_of_databases: typing.Union[int, float] = None,
   persistence: str = None,
   pubsub_client_output_buffer_limit: typing.Union[int, float] = None,
-  ssl: typing.Union[bool, IResolvable] = None,
+  ssl: bool | IResolvable = None,
   timeout: typing.Union[int, float] = None,
   valkey_active_expire_effort: typing.Union[int, float] = None
 )
@@ -1394,16 +1394,16 @@ databaseValkeyConfig.DatabaseValkeyConfigConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfigConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfigConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfigConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfigConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfigConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfigConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfigConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfigConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfigConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfigConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfigConfig.property.clusterId">cluster_id</a></code> | <code>str</code> | A unique identifier for the database cluster. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfigConfig.property.aclChannelsDefault">acl_channels_default</a></code> | <code>str</code> | Determines default pub/sub channels' ACL for new users if ACL is not supplied. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfigConfig.property.frequentSnapshots">frequent_snapshots</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Frequent RDB snapshots. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfigConfig.property.frequentSnapshots">frequent_snapshots</a></code> | <code>bool \| cdktf.IResolvable</code> | Frequent RDB snapshots. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfigConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_valkey_config#id DatabaseValkeyConfig#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfigConfig.property.ioThreads">io_threads</a></code> | <code>typing.Union[int, float]</code> | The number of IO threads used by Valkey. Must be between 1 and 32. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfigConfig.property.lfuDecayTime">lfu_decay_time</a></code> | <code>typing.Union[int, float]</code> | The decay time for Valkey's LFU cache eviction. Must be between 1 and 120. |
@@ -1412,7 +1412,7 @@ databaseValkeyConfig.DatabaseValkeyConfigConfig(
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfigConfig.property.numberOfDatabases">number_of_databases</a></code> | <code>typing.Union[int, float]</code> | The number of logical databases in the Valkey cluster. Must be between 1 and 128. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfigConfig.property.persistence">persistence</a></code> | <code>str</code> | When persistence is 'rdb', Valkey does RDB dumps each 10 minutes if any key is changed. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfigConfig.property.pubsubClientOutputBufferLimit">pubsub_client_output_buffer_limit</a></code> | <code>typing.Union[int, float]</code> | Set output buffer limit for pub / sub clients in MB. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfigConfig.property.ssl">ssl</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to enable SSL/TLS for connections to the Valkey cluster. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfigConfig.property.ssl">ssl</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to enable SSL/TLS for connections to the Valkey cluster. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfigConfig.property.timeout">timeout</a></code> | <code>typing.Union[int, float]</code> | The timeout (in seconds) for Valkey client connections. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfigConfig.property.valkeyActiveExpireEffort">valkey_active_expire_effort</a></code> | <code>typing.Union[int, float]</code> | Active expire effort. |
 
@@ -1421,20 +1421,20 @@ databaseValkeyConfig.DatabaseValkeyConfigConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfigConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfigConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1481,10 +1481,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfigConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1521,10 +1521,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `frequent_snapshots`<sup>Optional</sup> <a name="frequent_snapshots" id="@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfigConfig.property.frequentSnapshots"></a>
 
 ```python
-frequent_snapshots: typing.Union[bool, IResolvable]
+frequent_snapshots: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Frequent RDB snapshots.
 
@@ -1672,10 +1672,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `ssl`<sup>Optional</sup> <a name="ssl" id="@cdktf/provider-digitalocean.databaseValkeyConfig.DatabaseValkeyConfigConfig.property.ssl"></a>
 
 ```python
-ssl: typing.Union[bool, IResolvable]
+ssl: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to enable SSL/TLS for connections to the Valkey cluster.
 

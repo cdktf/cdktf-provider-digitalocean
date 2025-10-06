@@ -270,24 +270,24 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 ##### `PutFilter` <a name="PutFilter" id="@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizes.putFilter"></a>
 
 ```csharp
-private void PutFilter(object Value)
+private void PutFilter(IResolvable|DataDigitaloceanSizesFilter[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizes.putFilter.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilter">DataDigitaloceanSizesFilter</a>[]
 
 ---
 
 ##### `PutSort` <a name="PutSort" id="@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizes.putSort"></a>
 
 ```csharp
-private void PutSort(object Value)
+private void PutSort(IResolvable|DataDigitaloceanSizesSort[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizes.putSort.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesSort">DataDigitaloceanSizesSort</a>[]
 
 ---
 
@@ -435,7 +435,7 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizes.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizes.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizes.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizes.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizes.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizes.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizes.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizes.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -443,9 +443,9 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizes.property.filter">Filter</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilterList">DataDigitaloceanSizesFilterList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizes.property.sizes">Sizes</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesSizesList">DataDigitaloceanSizesSizesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizes.property.sort">Sort</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesSortList">DataDigitaloceanSizesSortList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizes.property.filterInput">FilterInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizes.property.filterInput">FilterInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilter">DataDigitaloceanSizesFilter</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizes.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizes.property.sortInput">SortInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizes.property.sortInput">SortInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesSort">DataDigitaloceanSizesSort</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizes.property.id">Id</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -525,10 +525,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizes.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -605,10 +605,10 @@ public DataDigitaloceanSizesSortList Sort { get; }
 ##### `FilterInput`<sup>Optional</sup> <a name="FilterInput" id="@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizes.property.filterInput"></a>
 
 ```csharp
-public object FilterInput { get; }
+public IResolvable|DataDigitaloceanSizesFilter[] FilterInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilter">DataDigitaloceanSizesFilter</a>[]
 
 ---
 
@@ -625,10 +625,10 @@ public string IdInput { get; }
 ##### `SortInput`<sup>Optional</sup> <a name="SortInput" id="@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizes.property.sortInput"></a>
 
 ```csharp
-public object SortInput { get; }
+public IResolvable|DataDigitaloceanSizesSort[] SortInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesSort">DataDigitaloceanSizesSort</a>[]
 
 ---
 
@@ -670,16 +670,16 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new DataDigitaloceanSizesConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
-    object Filter = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
+    IResolvable|DataDigitaloceanSizesFilter[] Filter = null,
     string Id = null,
-    object Sort = null
+    IResolvable|DataDigitaloceanSizesSort[] Sort = null
 };
 ```
 
@@ -687,36 +687,36 @@ new DataDigitaloceanSizesConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesConfig.property.filter">Filter</a></code> | <code>object</code> | filter block. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesConfig.property.filter">Filter</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilter">DataDigitaloceanSizesFilter</a>[]</code> | filter block. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/sizes#id DataDigitaloceanSizes#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesConfig.property.sort">Sort</a></code> | <code>object</code> | sort block. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesConfig.property.sort">Sort</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesSort">DataDigitaloceanSizesSort</a>[]</code> | sort block. |
 
 ---
 
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -763,20 +763,20 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
 ##### `Filter`<sup>Optional</sup> <a name="Filter" id="@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesConfig.property.filter"></a>
 
 ```csharp
-public object Filter { get; set; }
+public IResolvable|DataDigitaloceanSizesFilter[] Filter { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilter">DataDigitaloceanSizesFilter</a>[]
 
 filter block.
 
@@ -802,10 +802,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `Sort`<sup>Optional</sup> <a name="Sort" id="@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesConfig.property.sort"></a>
 
 ```csharp
-public object Sort { get; set; }
+public IResolvable|DataDigitaloceanSizesSort[] Sort { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesSort">DataDigitaloceanSizesSort</a>[]
 
 sort block.
 
@@ -823,7 +823,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 new DataDigitaloceanSizesFilter {
     string Key,
     string[] Values,
-    object All = null,
+    bool|IResolvable All = null,
     string MatchBy = null
 };
 ```
@@ -834,7 +834,7 @@ new DataDigitaloceanSizesFilter {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilter.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/sizes#key DataDigitaloceanSizes#key}. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilter.property.values">Values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/sizes#values DataDigitaloceanSizes#values}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilter.property.all">All</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/sizes#all DataDigitaloceanSizes#all}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilter.property.all">All</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/sizes#all DataDigitaloceanSizes#all}. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilter.property.matchBy">MatchBy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/sizes#match_by DataDigitaloceanSizes#match_by}. |
 
 ---
@@ -866,10 +866,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `All`<sup>Optional</sup> <a name="All" id="@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilter.property.all"></a>
 
 ```csharp
-public object All { get; set; }
+public bool|IResolvable All { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/sizes#all DataDigitaloceanSizes#all}.
 
@@ -1069,7 +1069,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilterList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilterList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilterList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilterList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilter">DataDigitaloceanSizesFilter</a>[]</code> | *No description.* |
 
 ---
 
@@ -1100,10 +1100,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilterList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DataDigitaloceanSizesFilter[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilter">DataDigitaloceanSizesFilter</a>[]
 
 ---
 
@@ -1350,15 +1350,15 @@ private void ResetMatchBy()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilterOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilterOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilterOutputReference.property.allInput">AllInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilterOutputReference.property.allInput">AllInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilterOutputReference.property.keyInput">KeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilterOutputReference.property.matchByInput">MatchByInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilterOutputReference.property.valuesInput">ValuesInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilterOutputReference.property.all">All</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilterOutputReference.property.all">All</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilterOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilterOutputReference.property.matchBy">MatchBy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilterOutputReference.property.values">Values</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilterOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilterOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilter">DataDigitaloceanSizesFilter</a></code> | *No description.* |
 
 ---
 
@@ -1389,10 +1389,10 @@ public string Fqn { get; }
 ##### `AllInput`<sup>Optional</sup> <a name="AllInput" id="@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilterOutputReference.property.allInput"></a>
 
 ```csharp
-public object AllInput { get; }
+public bool|IResolvable AllInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1429,10 +1429,10 @@ public string[] ValuesInput { get; }
 ##### `All`<sup>Required</sup> <a name="All" id="@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilterOutputReference.property.all"></a>
 
 ```csharp
-public object All { get; }
+public bool|IResolvable All { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1469,10 +1469,10 @@ public string[] Values { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilterOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DataDigitaloceanSizesFilter InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesFilter">DataDigitaloceanSizesFilter</a>
 
 ---
 
@@ -2113,7 +2113,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesSortList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesSortList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesSortList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesSortList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesSort">DataDigitaloceanSizesSort</a>[]</code> | *No description.* |
 
 ---
 
@@ -2144,10 +2144,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesSortList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DataDigitaloceanSizesSort[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesSort">DataDigitaloceanSizesSort</a>[]
 
 ---
 
@@ -2391,7 +2391,7 @@ private void ResetDirection()
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesSortOutputReference.property.keyInput">KeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesSortOutputReference.property.direction">Direction</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesSortOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesSortOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesSortOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesSort">DataDigitaloceanSizesSort</a></code> | *No description.* |
 
 ---
 
@@ -2462,10 +2462,10 @@ public string Key { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesSortOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DataDigitaloceanSizesSort InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanSizes.DataDigitaloceanSizesSort">DataDigitaloceanSizesSort</a>
 
 ---
 

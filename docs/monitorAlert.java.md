@@ -12,25 +12,20 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 import com.hashicorp.cdktf.providers.digitalocean.monitor_alert.MonitorAlert;
 
 MonitorAlert.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .alerts(MonitorAlertAlerts)
     .compare(java.lang.String)
     .description(java.lang.String)
     .type(java.lang.String)
     .value(java.lang.Number)
     .window(java.lang.String)
-//  .enabled(java.lang.Boolean)
-//  .enabled(IResolvable)
+//  .enabled(java.lang.Boolean|IResolvable)
 //  .entities(java.util.List<java.lang.String>)
 //  .id(java.lang.String)
 //  .tags(java.util.List<java.lang.String>)
@@ -41,20 +36,20 @@ MonitorAlert.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.Initializer.parameter.alerts">alerts</a></code> | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlerts">MonitorAlertAlerts</a></code> | alerts block. |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.Initializer.parameter.compare">compare</a></code> | <code>java.lang.String</code> | The comparison operator to use for value. |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Description of the alert policy. |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/monitor_alert#type MonitorAlert#type}. |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.Initializer.parameter.value">value</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/monitor_alert#value MonitorAlert#value}. |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.Initializer.parameter.window">window</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/monitor_alert#window MonitorAlert#window}. |
-| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/monitor_alert#enabled MonitorAlert#enabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/monitor_alert#enabled MonitorAlert#enabled}. |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.Initializer.parameter.entities">entities</a></code> | <code>java.util.List<java.lang.String></code> | The droplets to apply the alert policy to. |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/monitor_alert#id MonitorAlert#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.Initializer.parameter.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/monitor_alert#tags MonitorAlert#tags}. |
@@ -81,13 +76,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -117,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -177,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.Initializer.parameter.enabled"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/monitor_alert#enabled MonitorAlert#enabled}.
 
@@ -444,7 +439,7 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 ##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.hasResourceMove"></a>
 
 ```java
-public TerraformResourceMoveByTarget OR TerraformResourceMoveById hasResourceMove()
+public TerraformResourceMoveByTarget|TerraformResourceMoveById hasResourceMove()
 ```
 
 ##### `importFrom` <a name="importFrom" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.importFrom"></a>
@@ -500,7 +495,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ```java
 public void moveTo(java.lang.String moveTarget)
-public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+public void moveTo(java.lang.String moveTarget, java.lang.String|java.lang.Number index)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -515,7 +510,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.moveTo.parameter.index"></a>
 
-- *Type:* java.lang.String OR java.lang.Number
+- *Type:* java.lang.String|java.lang.Number
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -699,19 +694,19 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.alerts">alerts</a></code> | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsOutputReference">MonitorAlertAlertsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.uuid">uuid</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.alertsInput">alertsInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlerts">MonitorAlertAlerts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.compareInput">compareInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.entitiesInput">entitiesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.tagsInput">tagsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -720,7 +715,7 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.windowInput">windowInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.compare">compare</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.entities">entities</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -805,20 +800,20 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -865,10 +860,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -925,10 +920,10 @@ public java.lang.String getDescriptionInput();
 ##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.enabledInput"></a>
 
 ```java
-public java.lang.Object getEnabledInput();
+public java.lang.Boolean|IResolvable getEnabledInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1015,10 +1010,10 @@ public java.lang.String getDescription();
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlert.property.enabled"></a>
 
 ```java
-public java.lang.Object getEnabled();
+public java.lang.Boolean|IResolvable getEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1111,8 +1106,7 @@ import com.hashicorp.cdktf.providers.digitalocean.monitor_alert.MonitorAlertAler
 
 MonitorAlertAlerts.builder()
 //  .email(java.util.List<java.lang.String>)
-//  .slack(IResolvable)
-//  .slack(java.util.List<MonitorAlertAlertsSlack>)
+//  .slack(IResolvable|java.util.List<MonitorAlertAlertsSlack>)
     .build();
 ```
 
@@ -1121,7 +1115,7 @@ MonitorAlertAlerts.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlerts.property.email">email</a></code> | <code>java.util.List<java.lang.String></code> | List of email addresses to sent notifications to. |
-| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlerts.property.slack">slack</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlack">MonitorAlertAlertsSlack</a>></code> | slack block. |
+| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlerts.property.slack">slack</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlack">MonitorAlertAlertsSlack</a>></code> | slack block. |
 
 ---
 
@@ -1142,10 +1136,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `slack`<sup>Optional</sup> <a name="slack" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlerts.property.slack"></a>
 
 ```java
-public java.lang.Object getSlack();
+public IResolvable|java.util.List<MonitorAlertAlertsSlack> getSlack();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlack">MonitorAlertAlertsSlack</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlack">MonitorAlertAlertsSlack</a>>
 
 slack block.
 
@@ -1211,25 +1205,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 import com.hashicorp.cdktf.providers.digitalocean.monitor_alert.MonitorAlertConfig;
 
 MonitorAlertConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .alerts(MonitorAlertAlerts)
     .compare(java.lang.String)
     .description(java.lang.String)
     .type(java.lang.String)
     .value(java.lang.Number)
     .window(java.lang.String)
-//  .enabled(java.lang.Boolean)
-//  .enabled(IResolvable)
+//  .enabled(java.lang.Boolean|IResolvable)
 //  .entities(java.util.List<java.lang.String>)
 //  .id(java.lang.String)
 //  .tags(java.util.List<java.lang.String>)
@@ -1240,20 +1229,20 @@ MonitorAlertConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.alerts">alerts</a></code> | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlerts">MonitorAlertAlerts</a></code> | alerts block. |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.compare">compare</a></code> | <code>java.lang.String</code> | The comparison operator to use for value. |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.description">description</a></code> | <code>java.lang.String</code> | Description of the alert policy. |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/monitor_alert#type MonitorAlert#type}. |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.value">value</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/monitor_alert#value MonitorAlert#value}. |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.window">window</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/monitor_alert#window MonitorAlert#window}. |
-| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/monitor_alert#enabled MonitorAlert#enabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/monitor_alert#enabled MonitorAlert#enabled}. |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.entities">entities</a></code> | <code>java.util.List<java.lang.String></code> | The droplets to apply the alert policy to. |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/monitor_alert#id MonitorAlert#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/monitor_alert#tags MonitorAlert#tags}. |
@@ -1263,20 +1252,20 @@ MonitorAlertConfig.builder()
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1323,10 +1312,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1411,10 +1400,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlertConfig.property.enabled"></a>
 
 ```java
-public java.lang.Object getEnabled();
+public java.lang.Boolean|IResolvable getEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/monitor_alert#enabled MonitorAlert#enabled}.
 
@@ -1672,12 +1661,12 @@ Returns a reversible string representation.
 ##### `putSlack` <a name="putSlack" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsOutputReference.putSlack"></a>
 
 ```java
-public void putSlack(IResolvable OR java.util.List<MonitorAlertAlertsSlack> value)
+public void putSlack(IResolvable|java.util.List<MonitorAlertAlertsSlack> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsOutputReference.putSlack.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlack">MonitorAlertAlertsSlack</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlack">MonitorAlertAlertsSlack</a>>
 
 ---
 
@@ -1702,7 +1691,7 @@ public void resetSlack()
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsOutputReference.property.slack">slack</a></code> | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlackList">MonitorAlertAlertsSlackList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsOutputReference.property.emailInput">emailInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsOutputReference.property.slackInput">slackInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlack">MonitorAlertAlertsSlack</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsOutputReference.property.slackInput">slackInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlack">MonitorAlertAlertsSlack</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsOutputReference.property.email">email</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlerts">MonitorAlertAlerts</a></code> | *No description.* |
 
@@ -1755,10 +1744,10 @@ public java.util.List<java.lang.String> getEmailInput();
 ##### `slackInput`<sup>Optional</sup> <a name="slackInput" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsOutputReference.property.slackInput"></a>
 
 ```java
-public java.lang.Object getSlackInput();
+public IResolvable|java.util.List<MonitorAlertAlertsSlack> getSlackInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlack">MonitorAlertAlertsSlack</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlack">MonitorAlertAlertsSlack</a>>
 
 ---
 
@@ -1904,7 +1893,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlackList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlackList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlackList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlack">MonitorAlertAlertsSlack</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlackList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlack">MonitorAlertAlertsSlack</a>></code> | *No description.* |
 
 ---
 
@@ -1935,10 +1924,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlackList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<MonitorAlertAlertsSlack> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlack">MonitorAlertAlertsSlack</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlack">MonitorAlertAlertsSlack</a>>
 
 ---
 
@@ -2175,7 +2164,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlackOutputReference.property.urlInput">urlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlackOutputReference.property.channel">channel</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlackOutputReference.property.url">url</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlackOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlack">MonitorAlertAlertsSlack</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlackOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlack">MonitorAlertAlertsSlack</a></code> | *No description.* |
 
 ---
 
@@ -2246,10 +2235,10 @@ public java.lang.String getUrl();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlackOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|MonitorAlertAlertsSlack getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlack">MonitorAlertAlertsSlack</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.monitorAlert.MonitorAlertAlertsSlack">MonitorAlertAlertsSlack</a>
 
 ---
 

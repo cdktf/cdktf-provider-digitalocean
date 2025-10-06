@@ -12,42 +12,32 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 import com.hashicorp.cdktf.providers.digitalocean.kubernetes_cluster.KubernetesCluster;
 
 KubernetesCluster.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .name(java.lang.String)
     .nodePool(KubernetesClusterNodePool)
     .region(java.lang.String)
     .version(java.lang.String)
 //  .amdGpuDeviceMetricsExporterPlugin(KubernetesClusterAmdGpuDeviceMetricsExporterPlugin)
 //  .amdGpuDevicePlugin(KubernetesClusterAmdGpuDevicePlugin)
-//  .autoUpgrade(java.lang.Boolean)
-//  .autoUpgrade(IResolvable)
-//  .clusterAutoscalerConfiguration(IResolvable)
-//  .clusterAutoscalerConfiguration(java.util.List<KubernetesClusterClusterAutoscalerConfiguration>)
+//  .autoUpgrade(java.lang.Boolean|IResolvable)
+//  .clusterAutoscalerConfiguration(IResolvable|java.util.List<KubernetesClusterClusterAutoscalerConfiguration>)
 //  .clusterSubnet(java.lang.String)
 //  .controlPlaneFirewall(KubernetesClusterControlPlaneFirewall)
-//  .destroyAllAssociatedResources(java.lang.Boolean)
-//  .destroyAllAssociatedResources(IResolvable)
-//  .ha(java.lang.Boolean)
-//  .ha(IResolvable)
+//  .destroyAllAssociatedResources(java.lang.Boolean|IResolvable)
+//  .ha(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
 //  .kubeconfigExpireSeconds(java.lang.Number)
 //  .maintenancePolicy(KubernetesClusterMaintenancePolicy)
-//  .registryIntegration(java.lang.Boolean)
-//  .registryIntegration(IResolvable)
+//  .registryIntegration(java.lang.Boolean|IResolvable)
 //  .routingAgent(KubernetesClusterRoutingAgent)
 //  .serviceSubnet(java.lang.String)
-//  .surgeUpgrade(java.lang.Boolean)
-//  .surgeUpgrade(IResolvable)
+//  .surgeUpgrade(java.lang.Boolean|IResolvable)
 //  .tags(java.util.List<java.lang.String>)
 //  .timeouts(KubernetesClusterTimeouts)
 //  .vpcUuid(java.lang.String)
@@ -58,32 +48,32 @@ KubernetesCluster.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#name KubernetesCluster#name}. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.nodePool">nodePool</a></code> | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePool">KubernetesClusterNodePool</a></code> | node_pool block. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#region KubernetesCluster#region}. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.version">version</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#version KubernetesCluster#version}. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.amdGpuDeviceMetricsExporterPlugin">amdGpuDeviceMetricsExporterPlugin</a></code> | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterAmdGpuDeviceMetricsExporterPlugin">KubernetesClusterAmdGpuDeviceMetricsExporterPlugin</a></code> | amd_gpu_device_metrics_exporter_plugin block. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.amdGpuDevicePlugin">amdGpuDevicePlugin</a></code> | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterAmdGpuDevicePlugin">KubernetesClusterAmdGpuDevicePlugin</a></code> | amd_gpu_device_plugin block. |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.autoUpgrade">autoUpgrade</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#auto_upgrade KubernetesCluster#auto_upgrade}. |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.clusterAutoscalerConfiguration">clusterAutoscalerConfiguration</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfiguration">KubernetesClusterClusterAutoscalerConfiguration</a>></code> | cluster_autoscaler_configuration block. |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.autoUpgrade">autoUpgrade</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#auto_upgrade KubernetesCluster#auto_upgrade}. |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.clusterAutoscalerConfiguration">clusterAutoscalerConfiguration</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfiguration">KubernetesClusterClusterAutoscalerConfiguration</a>></code> | cluster_autoscaler_configuration block. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.clusterSubnet">clusterSubnet</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#cluster_subnet KubernetesCluster#cluster_subnet}. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.controlPlaneFirewall">controlPlaneFirewall</a></code> | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterControlPlaneFirewall">KubernetesClusterControlPlaneFirewall</a></code> | control_plane_firewall block. |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.destroyAllAssociatedResources">destroyAllAssociatedResources</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#destroy_all_associated_resources KubernetesCluster#destroy_all_associated_resources}. |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.ha">ha</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#ha KubernetesCluster#ha}. |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.destroyAllAssociatedResources">destroyAllAssociatedResources</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#destroy_all_associated_resources KubernetesCluster#destroy_all_associated_resources}. |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.ha">ha</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#ha KubernetesCluster#ha}. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#id KubernetesCluster#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.kubeconfigExpireSeconds">kubeconfigExpireSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#kubeconfig_expire_seconds KubernetesCluster#kubeconfig_expire_seconds}. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.maintenancePolicy">maintenancePolicy</a></code> | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterMaintenancePolicy">KubernetesClusterMaintenancePolicy</a></code> | maintenance_policy block. |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.registryIntegration">registryIntegration</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#registry_integration KubernetesCluster#registry_integration}. |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.registryIntegration">registryIntegration</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#registry_integration KubernetesCluster#registry_integration}. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.routingAgent">routingAgent</a></code> | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterRoutingAgent">KubernetesClusterRoutingAgent</a></code> | routing_agent block. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.serviceSubnet">serviceSubnet</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#service_subnet KubernetesCluster#service_subnet}. |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.surgeUpgrade">surgeUpgrade</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#surge_upgrade KubernetesCluster#surge_upgrade}. |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.surgeUpgrade">surgeUpgrade</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#surge_upgrade KubernetesCluster#surge_upgrade}. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#tags KubernetesCluster#tags}. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterTimeouts">KubernetesClusterTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.vpcUuid">vpcUuid</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#vpc_uuid KubernetesCluster#vpc_uuid}. |
@@ -110,13 +100,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -146,7 +136,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -206,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `autoUpgrade`<sup>Optional</sup> <a name="autoUpgrade" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.autoUpgrade"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#auto_upgrade KubernetesCluster#auto_upgrade}.
 
@@ -214,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `clusterAutoscalerConfiguration`<sup>Optional</sup> <a name="clusterAutoscalerConfiguration" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.clusterAutoscalerConfiguration"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfiguration">KubernetesClusterClusterAutoscalerConfiguration</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfiguration">KubernetesClusterClusterAutoscalerConfiguration</a>>
 
 cluster_autoscaler_configuration block.
 
@@ -242,7 +232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `destroyAllAssociatedResources`<sup>Optional</sup> <a name="destroyAllAssociatedResources" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.destroyAllAssociatedResources"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#destroy_all_associated_resources KubernetesCluster#destroy_all_associated_resources}.
 
@@ -250,7 +240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `ha`<sup>Optional</sup> <a name="ha" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.ha"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#ha KubernetesCluster#ha}.
 
@@ -287,7 +277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `registryIntegration`<sup>Optional</sup> <a name="registryIntegration" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.registryIntegration"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#registry_integration KubernetesCluster#registry_integration}.
 
@@ -313,7 +303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `surgeUpgrade`<sup>Optional</sup> <a name="surgeUpgrade" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.Initializer.parameter.surgeUpgrade"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#surge_upgrade KubernetesCluster#surge_upgrade}.
 
@@ -598,7 +588,7 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 ##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.hasResourceMove"></a>
 
 ```java
-public TerraformResourceMoveByTarget OR TerraformResourceMoveById hasResourceMove()
+public TerraformResourceMoveByTarget|TerraformResourceMoveById hasResourceMove()
 ```
 
 ##### `importFrom` <a name="importFrom" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.importFrom"></a>
@@ -654,7 +644,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ```java
 public void moveTo(java.lang.String moveTarget)
-public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+public void moveTo(java.lang.String moveTarget, java.lang.String|java.lang.Number index)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -669,7 +659,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.moveTo.parameter.index"></a>
 
-- *Type:* java.lang.String OR java.lang.Number
+- *Type:* java.lang.String|java.lang.Number
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -718,12 +708,12 @@ public void putAmdGpuDevicePlugin(KubernetesClusterAmdGpuDevicePlugin value)
 ##### `putClusterAutoscalerConfiguration` <a name="putClusterAutoscalerConfiguration" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.putClusterAutoscalerConfiguration"></a>
 
 ```java
-public void putClusterAutoscalerConfiguration(IResolvable OR java.util.List<KubernetesClusterClusterAutoscalerConfiguration> value)
+public void putClusterAutoscalerConfiguration(IResolvable|java.util.List<KubernetesClusterClusterAutoscalerConfiguration> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.putClusterAutoscalerConfiguration.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfiguration">KubernetesClusterClusterAutoscalerConfiguration</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfiguration">KubernetesClusterClusterAutoscalerConfiguration</a>>
 
 ---
 
@@ -1021,13 +1011,13 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.amdGpuDeviceMetricsExporterPlugin">amdGpuDeviceMetricsExporterPlugin</a></code> | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterAmdGpuDeviceMetricsExporterPluginOutputReference">KubernetesClusterAmdGpuDeviceMetricsExporterPluginOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.amdGpuDevicePlugin">amdGpuDevicePlugin</a></code> | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterAmdGpuDevicePluginOutputReference">KubernetesClusterAmdGpuDevicePluginOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.clusterAutoscalerConfiguration">clusterAutoscalerConfiguration</a></code> | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfigurationList">KubernetesClusterClusterAutoscalerConfigurationList</a></code> | *No description.* |
@@ -1045,37 +1035,37 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.urn">urn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.amdGpuDeviceMetricsExporterPluginInput">amdGpuDeviceMetricsExporterPluginInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterAmdGpuDeviceMetricsExporterPlugin">KubernetesClusterAmdGpuDeviceMetricsExporterPlugin</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.amdGpuDevicePluginInput">amdGpuDevicePluginInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterAmdGpuDevicePlugin">KubernetesClusterAmdGpuDevicePlugin</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.autoUpgradeInput">autoUpgradeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.clusterAutoscalerConfigurationInput">clusterAutoscalerConfigurationInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfiguration">KubernetesClusterClusterAutoscalerConfiguration</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.autoUpgradeInput">autoUpgradeInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.clusterAutoscalerConfigurationInput">clusterAutoscalerConfigurationInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfiguration">KubernetesClusterClusterAutoscalerConfiguration</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.clusterSubnetInput">clusterSubnetInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.controlPlaneFirewallInput">controlPlaneFirewallInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterControlPlaneFirewall">KubernetesClusterControlPlaneFirewall</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.destroyAllAssociatedResourcesInput">destroyAllAssociatedResourcesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.haInput">haInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.destroyAllAssociatedResourcesInput">destroyAllAssociatedResourcesInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.haInput">haInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.kubeconfigExpireSecondsInput">kubeconfigExpireSecondsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.maintenancePolicyInput">maintenancePolicyInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterMaintenancePolicy">KubernetesClusterMaintenancePolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.nodePoolInput">nodePoolInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePool">KubernetesClusterNodePool</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.registryIntegrationInput">registryIntegrationInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.registryIntegrationInput">registryIntegrationInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.routingAgentInput">routingAgentInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterRoutingAgent">KubernetesClusterRoutingAgent</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.serviceSubnetInput">serviceSubnetInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.surgeUpgradeInput">surgeUpgradeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.surgeUpgradeInput">surgeUpgradeInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.tagsInput">tagsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterTimeouts">KubernetesClusterTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterTimeouts">KubernetesClusterTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.versionInput">versionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.vpcUuidInput">vpcUuidInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.autoUpgrade">autoUpgrade</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.autoUpgrade">autoUpgrade</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.clusterSubnet">clusterSubnet</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.destroyAllAssociatedResources">destroyAllAssociatedResources</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.ha">ha</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.destroyAllAssociatedResources">destroyAllAssociatedResources</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.ha">ha</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.kubeconfigExpireSeconds">kubeconfigExpireSeconds</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.registryIntegration">registryIntegration</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.registryIntegration">registryIntegration</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.serviceSubnet">serviceSubnet</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.surgeUpgrade">surgeUpgrade</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.surgeUpgrade">surgeUpgrade</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.version">version</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.vpcUuid">vpcUuid</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1157,20 +1147,20 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1217,10 +1207,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1397,20 +1387,20 @@ public KubernetesClusterAmdGpuDevicePlugin getAmdGpuDevicePluginInput();
 ##### `autoUpgradeInput`<sup>Optional</sup> <a name="autoUpgradeInput" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.autoUpgradeInput"></a>
 
 ```java
-public java.lang.Object getAutoUpgradeInput();
+public java.lang.Boolean|IResolvable getAutoUpgradeInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `clusterAutoscalerConfigurationInput`<sup>Optional</sup> <a name="clusterAutoscalerConfigurationInput" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.clusterAutoscalerConfigurationInput"></a>
 
 ```java
-public java.lang.Object getClusterAutoscalerConfigurationInput();
+public IResolvable|java.util.List<KubernetesClusterClusterAutoscalerConfiguration> getClusterAutoscalerConfigurationInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfiguration">KubernetesClusterClusterAutoscalerConfiguration</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfiguration">KubernetesClusterClusterAutoscalerConfiguration</a>>
 
 ---
 
@@ -1437,20 +1427,20 @@ public KubernetesClusterControlPlaneFirewall getControlPlaneFirewallInput();
 ##### `destroyAllAssociatedResourcesInput`<sup>Optional</sup> <a name="destroyAllAssociatedResourcesInput" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.destroyAllAssociatedResourcesInput"></a>
 
 ```java
-public java.lang.Object getDestroyAllAssociatedResourcesInput();
+public java.lang.Boolean|IResolvable getDestroyAllAssociatedResourcesInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `haInput`<sup>Optional</sup> <a name="haInput" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.haInput"></a>
 
 ```java
-public java.lang.Object getHaInput();
+public java.lang.Boolean|IResolvable getHaInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1517,10 +1507,10 @@ public java.lang.String getRegionInput();
 ##### `registryIntegrationInput`<sup>Optional</sup> <a name="registryIntegrationInput" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.registryIntegrationInput"></a>
 
 ```java
-public java.lang.Object getRegistryIntegrationInput();
+public java.lang.Boolean|IResolvable getRegistryIntegrationInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1547,10 +1537,10 @@ public java.lang.String getServiceSubnetInput();
 ##### `surgeUpgradeInput`<sup>Optional</sup> <a name="surgeUpgradeInput" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.surgeUpgradeInput"></a>
 
 ```java
-public java.lang.Object getSurgeUpgradeInput();
+public java.lang.Boolean|IResolvable getSurgeUpgradeInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1567,10 +1557,10 @@ public java.util.List<java.lang.String> getTagsInput();
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.timeoutsInput"></a>
 
 ```java
-public java.lang.Object getTimeoutsInput();
+public IResolvable|KubernetesClusterTimeouts getTimeoutsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterTimeouts">KubernetesClusterTimeouts</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterTimeouts">KubernetesClusterTimeouts</a>
 
 ---
 
@@ -1597,10 +1587,10 @@ public java.lang.String getVpcUuidInput();
 ##### `autoUpgrade`<sup>Required</sup> <a name="autoUpgrade" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.autoUpgrade"></a>
 
 ```java
-public java.lang.Object getAutoUpgrade();
+public java.lang.Boolean|IResolvable getAutoUpgrade();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1617,20 +1607,20 @@ public java.lang.String getClusterSubnet();
 ##### `destroyAllAssociatedResources`<sup>Required</sup> <a name="destroyAllAssociatedResources" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.destroyAllAssociatedResources"></a>
 
 ```java
-public java.lang.Object getDestroyAllAssociatedResources();
+public java.lang.Boolean|IResolvable getDestroyAllAssociatedResources();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `ha`<sup>Required</sup> <a name="ha" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.ha"></a>
 
 ```java
-public java.lang.Object getHa();
+public java.lang.Boolean|IResolvable getHa();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1677,10 +1667,10 @@ public java.lang.String getRegion();
 ##### `registryIntegration`<sup>Required</sup> <a name="registryIntegration" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.registryIntegration"></a>
 
 ```java
-public java.lang.Object getRegistryIntegration();
+public java.lang.Boolean|IResolvable getRegistryIntegration();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1697,10 +1687,10 @@ public java.lang.String getServiceSubnet();
 ##### `surgeUpgrade`<sup>Required</sup> <a name="surgeUpgrade" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesCluster.property.surgeUpgrade"></a>
 
 ```java
-public java.lang.Object getSurgeUpgrade();
+public java.lang.Boolean|IResolvable getSurgeUpgrade();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1762,8 +1752,7 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.digitalocean.kubernetes_cluster.KubernetesClusterAmdGpuDeviceMetricsExporterPlugin;
 
 KubernetesClusterAmdGpuDeviceMetricsExporterPlugin.builder()
-    .enabled(java.lang.Boolean)
-    .enabled(IResolvable)
+    .enabled(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -1771,17 +1760,17 @@ KubernetesClusterAmdGpuDeviceMetricsExporterPlugin.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterAmdGpuDeviceMetricsExporterPlugin.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#enabled KubernetesCluster#enabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterAmdGpuDeviceMetricsExporterPlugin.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#enabled KubernetesCluster#enabled}. |
 
 ---
 
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterAmdGpuDeviceMetricsExporterPlugin.property.enabled"></a>
 
 ```java
-public java.lang.Object getEnabled();
+public java.lang.Boolean|IResolvable getEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#enabled KubernetesCluster#enabled}.
 
@@ -1795,8 +1784,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 import com.hashicorp.cdktf.providers.digitalocean.kubernetes_cluster.KubernetesClusterAmdGpuDevicePlugin;
 
 KubernetesClusterAmdGpuDevicePlugin.builder()
-    .enabled(java.lang.Boolean)
-    .enabled(IResolvable)
+    .enabled(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -1804,17 +1792,17 @@ KubernetesClusterAmdGpuDevicePlugin.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterAmdGpuDevicePlugin.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#enabled KubernetesCluster#enabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterAmdGpuDevicePlugin.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#enabled KubernetesCluster#enabled}. |
 
 ---
 
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterAmdGpuDevicePlugin.property.enabled"></a>
 
 ```java
-public java.lang.Object getEnabled();
+public java.lang.Boolean|IResolvable getEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#enabled KubernetesCluster#enabled}.
 
@@ -1888,42 +1876,32 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 import com.hashicorp.cdktf.providers.digitalocean.kubernetes_cluster.KubernetesClusterConfig;
 
 KubernetesClusterConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .name(java.lang.String)
     .nodePool(KubernetesClusterNodePool)
     .region(java.lang.String)
     .version(java.lang.String)
 //  .amdGpuDeviceMetricsExporterPlugin(KubernetesClusterAmdGpuDeviceMetricsExporterPlugin)
 //  .amdGpuDevicePlugin(KubernetesClusterAmdGpuDevicePlugin)
-//  .autoUpgrade(java.lang.Boolean)
-//  .autoUpgrade(IResolvable)
-//  .clusterAutoscalerConfiguration(IResolvable)
-//  .clusterAutoscalerConfiguration(java.util.List<KubernetesClusterClusterAutoscalerConfiguration>)
+//  .autoUpgrade(java.lang.Boolean|IResolvable)
+//  .clusterAutoscalerConfiguration(IResolvable|java.util.List<KubernetesClusterClusterAutoscalerConfiguration>)
 //  .clusterSubnet(java.lang.String)
 //  .controlPlaneFirewall(KubernetesClusterControlPlaneFirewall)
-//  .destroyAllAssociatedResources(java.lang.Boolean)
-//  .destroyAllAssociatedResources(IResolvable)
-//  .ha(java.lang.Boolean)
-//  .ha(IResolvable)
+//  .destroyAllAssociatedResources(java.lang.Boolean|IResolvable)
+//  .ha(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
 //  .kubeconfigExpireSeconds(java.lang.Number)
 //  .maintenancePolicy(KubernetesClusterMaintenancePolicy)
-//  .registryIntegration(java.lang.Boolean)
-//  .registryIntegration(IResolvable)
+//  .registryIntegration(java.lang.Boolean|IResolvable)
 //  .routingAgent(KubernetesClusterRoutingAgent)
 //  .serviceSubnet(java.lang.String)
-//  .surgeUpgrade(java.lang.Boolean)
-//  .surgeUpgrade(IResolvable)
+//  .surgeUpgrade(java.lang.Boolean|IResolvable)
 //  .tags(java.util.List<java.lang.String>)
 //  .timeouts(KubernetesClusterTimeouts)
 //  .vpcUuid(java.lang.String)
@@ -1934,32 +1912,32 @@ KubernetesClusterConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#name KubernetesCluster#name}. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.nodePool">nodePool</a></code> | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePool">KubernetesClusterNodePool</a></code> | node_pool block. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#region KubernetesCluster#region}. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.version">version</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#version KubernetesCluster#version}. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.amdGpuDeviceMetricsExporterPlugin">amdGpuDeviceMetricsExporterPlugin</a></code> | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterAmdGpuDeviceMetricsExporterPlugin">KubernetesClusterAmdGpuDeviceMetricsExporterPlugin</a></code> | amd_gpu_device_metrics_exporter_plugin block. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.amdGpuDevicePlugin">amdGpuDevicePlugin</a></code> | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterAmdGpuDevicePlugin">KubernetesClusterAmdGpuDevicePlugin</a></code> | amd_gpu_device_plugin block. |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.autoUpgrade">autoUpgrade</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#auto_upgrade KubernetesCluster#auto_upgrade}. |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.clusterAutoscalerConfiguration">clusterAutoscalerConfiguration</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfiguration">KubernetesClusterClusterAutoscalerConfiguration</a>></code> | cluster_autoscaler_configuration block. |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.autoUpgrade">autoUpgrade</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#auto_upgrade KubernetesCluster#auto_upgrade}. |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.clusterAutoscalerConfiguration">clusterAutoscalerConfiguration</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfiguration">KubernetesClusterClusterAutoscalerConfiguration</a>></code> | cluster_autoscaler_configuration block. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.clusterSubnet">clusterSubnet</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#cluster_subnet KubernetesCluster#cluster_subnet}. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.controlPlaneFirewall">controlPlaneFirewall</a></code> | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterControlPlaneFirewall">KubernetesClusterControlPlaneFirewall</a></code> | control_plane_firewall block. |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.destroyAllAssociatedResources">destroyAllAssociatedResources</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#destroy_all_associated_resources KubernetesCluster#destroy_all_associated_resources}. |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.ha">ha</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#ha KubernetesCluster#ha}. |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.destroyAllAssociatedResources">destroyAllAssociatedResources</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#destroy_all_associated_resources KubernetesCluster#destroy_all_associated_resources}. |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.ha">ha</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#ha KubernetesCluster#ha}. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#id KubernetesCluster#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.kubeconfigExpireSeconds">kubeconfigExpireSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#kubeconfig_expire_seconds KubernetesCluster#kubeconfig_expire_seconds}. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.maintenancePolicy">maintenancePolicy</a></code> | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterMaintenancePolicy">KubernetesClusterMaintenancePolicy</a></code> | maintenance_policy block. |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.registryIntegration">registryIntegration</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#registry_integration KubernetesCluster#registry_integration}. |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.registryIntegration">registryIntegration</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#registry_integration KubernetesCluster#registry_integration}. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.routingAgent">routingAgent</a></code> | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterRoutingAgent">KubernetesClusterRoutingAgent</a></code> | routing_agent block. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.serviceSubnet">serviceSubnet</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#service_subnet KubernetesCluster#service_subnet}. |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.surgeUpgrade">surgeUpgrade</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#surge_upgrade KubernetesCluster#surge_upgrade}. |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.surgeUpgrade">surgeUpgrade</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#surge_upgrade KubernetesCluster#surge_upgrade}. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#tags KubernetesCluster#tags}. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterTimeouts">KubernetesClusterTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.vpcUuid">vpcUuid</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#vpc_uuid KubernetesCluster#vpc_uuid}. |
@@ -1969,20 +1947,20 @@ KubernetesClusterConfig.builder()
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -2029,10 +2007,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -2117,10 +2095,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `autoUpgrade`<sup>Optional</sup> <a name="autoUpgrade" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.autoUpgrade"></a>
 
 ```java
-public java.lang.Object getAutoUpgrade();
+public java.lang.Boolean|IResolvable getAutoUpgrade();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#auto_upgrade KubernetesCluster#auto_upgrade}.
 
@@ -2129,10 +2107,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `clusterAutoscalerConfiguration`<sup>Optional</sup> <a name="clusterAutoscalerConfiguration" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.clusterAutoscalerConfiguration"></a>
 
 ```java
-public java.lang.Object getClusterAutoscalerConfiguration();
+public IResolvable|java.util.List<KubernetesClusterClusterAutoscalerConfiguration> getClusterAutoscalerConfiguration();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfiguration">KubernetesClusterClusterAutoscalerConfiguration</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfiguration">KubernetesClusterClusterAutoscalerConfiguration</a>>
 
 cluster_autoscaler_configuration block.
 
@@ -2169,10 +2147,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `destroyAllAssociatedResources`<sup>Optional</sup> <a name="destroyAllAssociatedResources" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.destroyAllAssociatedResources"></a>
 
 ```java
-public java.lang.Object getDestroyAllAssociatedResources();
+public java.lang.Boolean|IResolvable getDestroyAllAssociatedResources();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#destroy_all_associated_resources KubernetesCluster#destroy_all_associated_resources}.
 
@@ -2181,10 +2159,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `ha`<sup>Optional</sup> <a name="ha" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.ha"></a>
 
 ```java
-public java.lang.Object getHa();
+public java.lang.Boolean|IResolvable getHa();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#ha KubernetesCluster#ha}.
 
@@ -2234,10 +2212,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `registryIntegration`<sup>Optional</sup> <a name="registryIntegration" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.registryIntegration"></a>
 
 ```java
-public java.lang.Object getRegistryIntegration();
+public java.lang.Boolean|IResolvable getRegistryIntegration();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#registry_integration KubernetesCluster#registry_integration}.
 
@@ -2272,10 +2250,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `surgeUpgrade`<sup>Optional</sup> <a name="surgeUpgrade" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterConfig.property.surgeUpgrade"></a>
 
 ```java
-public java.lang.Object getSurgeUpgrade();
+public java.lang.Boolean|IResolvable getSurgeUpgrade();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#surge_upgrade KubernetesCluster#surge_upgrade}.
 
@@ -2328,8 +2306,7 @@ import com.hashicorp.cdktf.providers.digitalocean.kubernetes_cluster.KubernetesC
 
 KubernetesClusterControlPlaneFirewall.builder()
     .allowedAddresses(java.util.List<java.lang.String>)
-    .enabled(java.lang.Boolean)
-    .enabled(IResolvable)
+    .enabled(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -2338,7 +2315,7 @@ KubernetesClusterControlPlaneFirewall.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterControlPlaneFirewall.property.allowedAddresses">allowedAddresses</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#allowed_addresses KubernetesCluster#allowed_addresses}. |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterControlPlaneFirewall.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#enabled KubernetesCluster#enabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterControlPlaneFirewall.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#enabled KubernetesCluster#enabled}. |
 
 ---
 
@@ -2357,10 +2334,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterControlPlaneFirewall.property.enabled"></a>
 
 ```java
-public java.lang.Object getEnabled();
+public java.lang.Boolean|IResolvable getEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#enabled KubernetesCluster#enabled}.
 
@@ -2434,15 +2411,13 @@ import com.hashicorp.cdktf.providers.digitalocean.kubernetes_cluster.KubernetesC
 KubernetesClusterNodePool.builder()
     .name(java.lang.String)
     .size(java.lang.String)
-//  .autoScale(java.lang.Boolean)
-//  .autoScale(IResolvable)
+//  .autoScale(java.lang.Boolean|IResolvable)
 //  .labels(java.util.Map<java.lang.String, java.lang.String>)
 //  .maxNodes(java.lang.Number)
 //  .minNodes(java.lang.Number)
 //  .nodeCount(java.lang.Number)
 //  .tags(java.util.List<java.lang.String>)
-//  .taint(IResolvable)
-//  .taint(java.util.List<KubernetesClusterNodePoolTaint>)
+//  .taint(IResolvable|java.util.List<KubernetesClusterNodePoolTaint>)
     .build();
 ```
 
@@ -2452,13 +2427,13 @@ KubernetesClusterNodePool.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePool.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#name KubernetesCluster#name}. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePool.property.size">size</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#size KubernetesCluster#size}. |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePool.property.autoScale">autoScale</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#auto_scale KubernetesCluster#auto_scale}. |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePool.property.autoScale">autoScale</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#auto_scale KubernetesCluster#auto_scale}. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePool.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#labels KubernetesCluster#labels}. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePool.property.maxNodes">maxNodes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#max_nodes KubernetesCluster#max_nodes}. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePool.property.minNodes">minNodes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#min_nodes KubernetesCluster#min_nodes}. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePool.property.nodeCount">nodeCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#node_count KubernetesCluster#node_count}. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePool.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#tags KubernetesCluster#tags}. |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePool.property.taint">taint</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolTaint">KubernetesClusterNodePoolTaint</a>></code> | taint block. |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePool.property.taint">taint</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolTaint">KubernetesClusterNodePoolTaint</a>></code> | taint block. |
 
 ---
 
@@ -2489,10 +2464,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `autoScale`<sup>Optional</sup> <a name="autoScale" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePool.property.autoScale"></a>
 
 ```java
-public java.lang.Object getAutoScale();
+public java.lang.Boolean|IResolvable getAutoScale();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#auto_scale KubernetesCluster#auto_scale}.
 
@@ -2561,10 +2536,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `taint`<sup>Optional</sup> <a name="taint" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePool.property.taint"></a>
 
 ```java
-public java.lang.Object getTaint();
+public IResolvable|java.util.List<KubernetesClusterNodePoolTaint> getTaint();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolTaint">KubernetesClusterNodePoolTaint</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolTaint">KubernetesClusterNodePoolTaint</a>>
 
 taint block.
 
@@ -2652,8 +2627,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 import com.hashicorp.cdktf.providers.digitalocean.kubernetes_cluster.KubernetesClusterRoutingAgent;
 
 KubernetesClusterRoutingAgent.builder()
-    .enabled(java.lang.Boolean)
-    .enabled(IResolvable)
+    .enabled(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -2661,17 +2635,17 @@ KubernetesClusterRoutingAgent.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterRoutingAgent.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#enabled KubernetesCluster#enabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterRoutingAgent.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#enabled KubernetesCluster#enabled}. |
 
 ---
 
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterRoutingAgent.property.enabled"></a>
 
 ```java
-public java.lang.Object getEnabled();
+public java.lang.Boolean|IResolvable getEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#enabled KubernetesCluster#enabled}.
 
@@ -2921,8 +2895,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterAmdGpuDeviceMetricsExporterPluginOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterAmdGpuDeviceMetricsExporterPluginOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterAmdGpuDeviceMetricsExporterPluginOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterAmdGpuDeviceMetricsExporterPluginOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterAmdGpuDeviceMetricsExporterPluginOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterAmdGpuDeviceMetricsExporterPluginOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterAmdGpuDeviceMetricsExporterPluginOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterAmdGpuDeviceMetricsExporterPlugin">KubernetesClusterAmdGpuDeviceMetricsExporterPlugin</a></code> | *No description.* |
 
 ---
@@ -2954,20 +2928,20 @@ public java.lang.String getFqn();
 ##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterAmdGpuDeviceMetricsExporterPluginOutputReference.property.enabledInput"></a>
 
 ```java
-public java.lang.Object getEnabledInput();
+public java.lang.Boolean|IResolvable getEnabledInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterAmdGpuDeviceMetricsExporterPluginOutputReference.property.enabled"></a>
 
 ```java
-public java.lang.Object getEnabled();
+public java.lang.Boolean|IResolvable getEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -3192,8 +3166,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterAmdGpuDevicePluginOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterAmdGpuDevicePluginOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterAmdGpuDevicePluginOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterAmdGpuDevicePluginOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterAmdGpuDevicePluginOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterAmdGpuDevicePluginOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterAmdGpuDevicePluginOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterAmdGpuDevicePlugin">KubernetesClusterAmdGpuDevicePlugin</a></code> | *No description.* |
 
 ---
@@ -3225,20 +3199,20 @@ public java.lang.String getFqn();
 ##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterAmdGpuDevicePluginOutputReference.property.enabledInput"></a>
 
 ```java
-public java.lang.Object getEnabledInput();
+public java.lang.Boolean|IResolvable getEnabledInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterAmdGpuDevicePluginOutputReference.property.enabled"></a>
 
 ```java
-public java.lang.Object getEnabled();
+public java.lang.Boolean|IResolvable getEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -3374,7 +3348,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfigurationList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfigurationList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfigurationList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfiguration">KubernetesClusterClusterAutoscalerConfiguration</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfigurationList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfiguration">KubernetesClusterClusterAutoscalerConfiguration</a>></code> | *No description.* |
 
 ---
 
@@ -3405,10 +3379,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfigurationList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<KubernetesClusterClusterAutoscalerConfiguration> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfiguration">KubernetesClusterClusterAutoscalerConfiguration</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfiguration">KubernetesClusterClusterAutoscalerConfiguration</a>>
 
 ---
 
@@ -3668,7 +3642,7 @@ public void resetScaleDownUtilizationThreshold()
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfigurationOutputReference.property.expanders">expanders</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfigurationOutputReference.property.scaleDownUnneededTime">scaleDownUnneededTime</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfigurationOutputReference.property.scaleDownUtilizationThreshold">scaleDownUtilizationThreshold</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfigurationOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfiguration">KubernetesClusterClusterAutoscalerConfiguration</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfigurationOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfiguration">KubernetesClusterClusterAutoscalerConfiguration</a></code> | *No description.* |
 
 ---
 
@@ -3759,10 +3733,10 @@ public java.lang.Number getScaleDownUtilizationThreshold();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfigurationOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|KubernetesClusterClusterAutoscalerConfiguration getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfiguration">KubernetesClusterClusterAutoscalerConfiguration</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterClusterAutoscalerConfiguration">KubernetesClusterClusterAutoscalerConfiguration</a>
 
 ---
 
@@ -3978,9 +3952,9 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterControlPlaneFirewallOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterControlPlaneFirewallOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterControlPlaneFirewallOutputReference.property.allowedAddressesInput">allowedAddressesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterControlPlaneFirewallOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterControlPlaneFirewallOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterControlPlaneFirewallOutputReference.property.allowedAddresses">allowedAddresses</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterControlPlaneFirewallOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterControlPlaneFirewallOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterControlPlaneFirewallOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterControlPlaneFirewall">KubernetesClusterControlPlaneFirewall</a></code> | *No description.* |
 
 ---
@@ -4022,10 +3996,10 @@ public java.util.List<java.lang.String> getAllowedAddressesInput();
 ##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterControlPlaneFirewallOutputReference.property.enabledInput"></a>
 
 ```java
-public java.lang.Object getEnabledInput();
+public java.lang.Boolean|IResolvable getEnabledInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -4042,10 +4016,10 @@ public java.util.List<java.lang.String> getAllowedAddresses();
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterControlPlaneFirewallOutputReference.property.enabled"></a>
 
 ```java
-public java.lang.Object getEnabled();
+public java.lang.Boolean|IResolvable getEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -5567,12 +5541,12 @@ Returns a reversible string representation.
 ##### `putTaint` <a name="putTaint" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolOutputReference.putTaint"></a>
 
 ```java
-public void putTaint(IResolvable OR java.util.List<KubernetesClusterNodePoolTaint> value)
+public void putTaint(IResolvable|java.util.List<KubernetesClusterNodePoolTaint> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolOutputReference.putTaint.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolTaint">KubernetesClusterNodePoolTaint</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolTaint">KubernetesClusterNodePoolTaint</a>>
 
 ---
 
@@ -5629,7 +5603,7 @@ public void resetTaint()
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolOutputReference.property.nodes">nodes</a></code> | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolNodesList">KubernetesClusterNodePoolNodesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolOutputReference.property.taint">taint</a></code> | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolTaintList">KubernetesClusterNodePoolTaintList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolOutputReference.property.autoScaleInput">autoScaleInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolOutputReference.property.autoScaleInput">autoScaleInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolOutputReference.property.labelsInput">labelsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolOutputReference.property.maxNodesInput">maxNodesInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolOutputReference.property.minNodesInput">minNodesInput</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -5637,8 +5611,8 @@ public void resetTaint()
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolOutputReference.property.nodeCountInput">nodeCountInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolOutputReference.property.sizeInput">sizeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolOutputReference.property.tagsInput">tagsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolOutputReference.property.taintInput">taintInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolTaint">KubernetesClusterNodePoolTaint</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolOutputReference.property.autoScale">autoScale</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolOutputReference.property.taintInput">taintInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolTaint">KubernetesClusterNodePoolTaint</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolOutputReference.property.autoScale">autoScale</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolOutputReference.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolOutputReference.property.maxNodes">maxNodes</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolOutputReference.property.minNodes">minNodes</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -5717,10 +5691,10 @@ public KubernetesClusterNodePoolTaintList getTaint();
 ##### `autoScaleInput`<sup>Optional</sup> <a name="autoScaleInput" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolOutputReference.property.autoScaleInput"></a>
 
 ```java
-public java.lang.Object getAutoScaleInput();
+public java.lang.Boolean|IResolvable getAutoScaleInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -5797,20 +5771,20 @@ public java.util.List<java.lang.String> getTagsInput();
 ##### `taintInput`<sup>Optional</sup> <a name="taintInput" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolOutputReference.property.taintInput"></a>
 
 ```java
-public java.lang.Object getTaintInput();
+public IResolvable|java.util.List<KubernetesClusterNodePoolTaint> getTaintInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolTaint">KubernetesClusterNodePoolTaint</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolTaint">KubernetesClusterNodePoolTaint</a>>
 
 ---
 
 ##### `autoScale`<sup>Required</sup> <a name="autoScale" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolOutputReference.property.autoScale"></a>
 
 ```java
-public java.lang.Object getAutoScale();
+public java.lang.Boolean|IResolvable getAutoScale();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -6016,7 +5990,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolTaintList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolTaintList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolTaintList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolTaint">KubernetesClusterNodePoolTaint</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolTaintList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolTaint">KubernetesClusterNodePoolTaint</a>></code> | *No description.* |
 
 ---
 
@@ -6047,10 +6021,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolTaintList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<KubernetesClusterNodePoolTaint> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolTaint">KubernetesClusterNodePoolTaint</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolTaint">KubernetesClusterNodePoolTaint</a>>
 
 ---
 
@@ -6289,7 +6263,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolTaintOutputReference.property.effect">effect</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolTaintOutputReference.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolTaintOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolTaintOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolTaint">KubernetesClusterNodePoolTaint</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolTaintOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolTaint">KubernetesClusterNodePoolTaint</a></code> | *No description.* |
 
 ---
 
@@ -6380,10 +6354,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolTaintOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|KubernetesClusterNodePoolTaint getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolTaint">KubernetesClusterNodePoolTaint</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterNodePoolTaint">KubernetesClusterNodePoolTaint</a>
 
 ---
 
@@ -6598,8 +6572,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterRoutingAgentOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterRoutingAgentOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterRoutingAgentOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterRoutingAgentOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterRoutingAgentOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterRoutingAgentOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterRoutingAgentOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterRoutingAgent">KubernetesClusterRoutingAgent</a></code> | *No description.* |
 
 ---
@@ -6631,20 +6605,20 @@ public java.lang.String getFqn();
 ##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterRoutingAgentOutputReference.property.enabledInput"></a>
 
 ```java
-public java.lang.Object getEnabledInput();
+public java.lang.Boolean|IResolvable getEnabledInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterRoutingAgentOutputReference.property.enabled"></a>
 
 ```java
-public java.lang.Object getEnabled();
+public java.lang.Boolean|IResolvable getEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -6878,7 +6852,7 @@ public void resetCreate()
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterTimeoutsOutputReference.property.create">create</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterTimeouts">KubernetesClusterTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterTimeouts">KubernetesClusterTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -6929,10 +6903,10 @@ public java.lang.String getCreate();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterTimeoutsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|KubernetesClusterTimeouts getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterTimeouts">KubernetesClusterTimeouts</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.kubernetesCluster.KubernetesClusterTimeouts">KubernetesClusterTimeouts</a>
 
 ---
 

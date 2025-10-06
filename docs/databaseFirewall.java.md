@@ -12,20 +12,15 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 import com.hashicorp.cdktf.providers.digitalocean.database_firewall.DatabaseFirewall;
 
 DatabaseFirewall.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .clusterId(java.lang.String)
-    .rule(IResolvable)
-    .rule(java.util.List<DatabaseFirewallRule>)
+    .rule(IResolvable|java.util.List<DatabaseFirewallRule>)
 //  .id(java.lang.String)
     .build();
 ```
@@ -34,15 +29,15 @@ DatabaseFirewall.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.Initializer.parameter.clusterId">clusterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_firewall#cluster_id DatabaseFirewall#cluster_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.Initializer.parameter.rule">rule</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRule">DatabaseFirewallRule</a>></code> | rule block. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.Initializer.parameter.rule">rule</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRule">DatabaseFirewallRule</a>></code> | rule block. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_firewall#id DatabaseFirewall#id}. |
 
 ---
@@ -67,13 +62,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -103,7 +98,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -117,7 +112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `rule`<sup>Required</sup> <a name="rule" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.Initializer.parameter.rule"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRule">DatabaseFirewallRule</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRule">DatabaseFirewallRule</a>>
 
 rule block.
 
@@ -365,7 +360,7 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 ##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.hasResourceMove"></a>
 
 ```java
-public TerraformResourceMoveByTarget OR TerraformResourceMoveById hasResourceMove()
+public TerraformResourceMoveByTarget|TerraformResourceMoveById hasResourceMove()
 ```
 
 ##### `importFrom` <a name="importFrom" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.importFrom"></a>
@@ -421,7 +416,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ```java
 public void moveTo(java.lang.String moveTarget)
-public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+public void moveTo(java.lang.String moveTarget, java.lang.String|java.lang.Number index)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -436,7 +431,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.moveTo.parameter.index"></a>
 
-- *Type:* java.lang.String OR java.lang.Number
+- *Type:* java.lang.String|java.lang.Number
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -461,12 +456,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `putRule` <a name="putRule" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.putRule"></a>
 
 ```java
-public void putRule(IResolvable OR java.util.List<DatabaseFirewallRule> value)
+public void putRule(IResolvable|java.util.List<DatabaseFirewallRule> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.putRule.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRule">DatabaseFirewallRule</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRule">DatabaseFirewallRule</a>>
 
 ---
 
@@ -602,17 +597,17 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.property.rule">rule</a></code> | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRuleList">DatabaseFirewallRuleList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.property.clusterIdInput">clusterIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.property.ruleInput">ruleInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRule">DatabaseFirewallRule</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.property.ruleInput">ruleInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRule">DatabaseFirewallRule</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.property.clusterId">clusterId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 
@@ -693,20 +688,20 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -753,10 +748,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -793,10 +788,10 @@ public java.lang.String getIdInput();
 ##### `ruleInput`<sup>Optional</sup> <a name="ruleInput" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewall.property.ruleInput"></a>
 
 ```java
-public java.lang.Object getRuleInput();
+public IResolvable|java.util.List<DatabaseFirewallRule> getRuleInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRule">DatabaseFirewallRule</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRule">DatabaseFirewallRule</a>>
 
 ---
 
@@ -848,20 +843,15 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.digitalocean.database_firewall.DatabaseFirewallConfig;
 
 DatabaseFirewallConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .clusterId(java.lang.String)
-    .rule(IResolvable)
-    .rule(java.util.List<DatabaseFirewallRule>)
+    .rule(IResolvable|java.util.List<DatabaseFirewallRule>)
 //  .id(java.lang.String)
     .build();
 ```
@@ -870,15 +860,15 @@ DatabaseFirewallConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.clusterId">clusterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_firewall#cluster_id DatabaseFirewall#cluster_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.rule">rule</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRule">DatabaseFirewallRule</a>></code> | rule block. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.rule">rule</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRule">DatabaseFirewallRule</a>></code> | rule block. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_firewall#id DatabaseFirewall#id}. |
 
 ---
@@ -886,20 +876,20 @@ DatabaseFirewallConfig.builder()
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -946,10 +936,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -968,10 +958,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `rule`<sup>Required</sup> <a name="rule" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallConfig.property.rule"></a>
 
 ```java
-public java.lang.Object getRule();
+public IResolvable|java.util.List<DatabaseFirewallRule> getRule();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRule">DatabaseFirewallRule</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRule">DatabaseFirewallRule</a>>
 
 rule block.
 
@@ -1163,7 +1153,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRuleList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRuleList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRuleList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRule">DatabaseFirewallRule</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRuleList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRule">DatabaseFirewallRule</a>></code> | *No description.* |
 
 ---
 
@@ -1194,10 +1184,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRuleList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DatabaseFirewallRule> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRule">DatabaseFirewallRule</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRule">DatabaseFirewallRule</a>>
 
 ---
 
@@ -1436,7 +1426,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRuleOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRuleOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRuleOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRuleOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRule">DatabaseFirewallRule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRuleOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRule">DatabaseFirewallRule</a></code> | *No description.* |
 
 ---
 
@@ -1527,10 +1517,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRuleOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DatabaseFirewallRule getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRule">DatabaseFirewallRule</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.databaseFirewall.DatabaseFirewallRule">DatabaseFirewallRule</a>
 
 ---
 

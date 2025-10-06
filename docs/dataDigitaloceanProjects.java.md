@@ -12,22 +12,16 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 import com.hashicorp.cdktf.providers.digitalocean.data_digitalocean_projects.DataDigitaloceanProjects;
 
 DataDigitaloceanProjects.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
-//  .filter(IResolvable)
-//  .filter(java.util.List<DataDigitaloceanProjectsFilter>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
+//  .filter(IResolvable|java.util.List<DataDigitaloceanProjectsFilter>)
 //  .id(java.lang.String)
-//  .sort(IResolvable)
-//  .sort(java.util.List<DataDigitaloceanProjectsSort>)
+//  .sort(IResolvable|java.util.List<DataDigitaloceanProjectsSort>)
     .build();
 ```
 
@@ -35,16 +29,16 @@ DataDigitaloceanProjects.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.Initializer.parameter.filter">filter</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilter">DataDigitaloceanProjectsFilter</a>></code> | filter block. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.Initializer.parameter.filter">filter</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilter">DataDigitaloceanProjectsFilter</a>></code> | filter block. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/projects#id DataDigitaloceanProjects#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.Initializer.parameter.sort">sort</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSort">DataDigitaloceanProjectsSort</a>></code> | sort block. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.Initializer.parameter.sort">sort</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSort">DataDigitaloceanProjectsSort</a>></code> | sort block. |
 
 ---
 
@@ -68,13 +62,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -104,13 +98,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
 ##### `filter`<sup>Optional</sup> <a name="filter" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.Initializer.parameter.filter"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilter">DataDigitaloceanProjectsFilter</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilter">DataDigitaloceanProjectsFilter</a>>
 
 filter block.
 
@@ -131,7 +125,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `sort`<sup>Optional</sup> <a name="sort" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.Initializer.parameter.sort"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSort">DataDigitaloceanProjectsSort</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSort">DataDigitaloceanProjectsSort</a>>
 
 sort block.
 
@@ -363,24 +357,24 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 ##### `putFilter` <a name="putFilter" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.putFilter"></a>
 
 ```java
-public void putFilter(IResolvable OR java.util.List<DataDigitaloceanProjectsFilter> value)
+public void putFilter(IResolvable|java.util.List<DataDigitaloceanProjectsFilter> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.putFilter.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilter">DataDigitaloceanProjectsFilter</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilter">DataDigitaloceanProjectsFilter</a>>
 
 ---
 
 ##### `putSort` <a name="putSort" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.putSort"></a>
 
 ```java
-public void putSort(IResolvable OR java.util.List<DataDigitaloceanProjectsSort> value)
+public void putSort(IResolvable|java.util.List<DataDigitaloceanProjectsSort> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.putSort.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSort">DataDigitaloceanProjectsSort</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSort">DataDigitaloceanProjectsSort</a>>
 
 ---
 
@@ -528,7 +522,7 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -536,9 +530,9 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.property.filter">filter</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilterList">DataDigitaloceanProjectsFilterList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.property.projects">projects</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsProjectsList">DataDigitaloceanProjectsProjectsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.property.sort">sort</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSortList">DataDigitaloceanProjectsSortList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.property.filterInput">filterInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilter">DataDigitaloceanProjectsFilter</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.property.filterInput">filterInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilter">DataDigitaloceanProjectsFilter</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.property.sortInput">sortInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSort">DataDigitaloceanProjectsSort</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.property.sortInput">sortInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSort">DataDigitaloceanProjectsSort</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -618,10 +612,10 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -698,10 +692,10 @@ public DataDigitaloceanProjectsSortList getSort();
 ##### `filterInput`<sup>Optional</sup> <a name="filterInput" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.property.filterInput"></a>
 
 ```java
-public java.lang.Object getFilterInput();
+public IResolvable|java.util.List<DataDigitaloceanProjectsFilter> getFilterInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilter">DataDigitaloceanProjectsFilter</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilter">DataDigitaloceanProjectsFilter</a>>
 
 ---
 
@@ -718,10 +712,10 @@ public java.lang.String getIdInput();
 ##### `sortInput`<sup>Optional</sup> <a name="sortInput" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjects.property.sortInput"></a>
 
 ```java
-public java.lang.Object getSortInput();
+public IResolvable|java.util.List<DataDigitaloceanProjectsSort> getSortInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSort">DataDigitaloceanProjectsSort</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSort">DataDigitaloceanProjectsSort</a>>
 
 ---
 
@@ -763,22 +757,16 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.digitalocean.data_digitalocean_projects.DataDigitaloceanProjectsConfig;
 
 DataDigitaloceanProjectsConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
-//  .filter(IResolvable)
-//  .filter(java.util.List<DataDigitaloceanProjectsFilter>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
+//  .filter(IResolvable|java.util.List<DataDigitaloceanProjectsFilter>)
 //  .id(java.lang.String)
-//  .sort(IResolvable)
-//  .sort(java.util.List<DataDigitaloceanProjectsSort>)
+//  .sort(IResolvable|java.util.List<DataDigitaloceanProjectsSort>)
     .build();
 ```
 
@@ -786,36 +774,36 @@ DataDigitaloceanProjectsConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsConfig.property.filter">filter</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilter">DataDigitaloceanProjectsFilter</a>></code> | filter block. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsConfig.property.filter">filter</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilter">DataDigitaloceanProjectsFilter</a>></code> | filter block. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/projects#id DataDigitaloceanProjects#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsConfig.property.sort">sort</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSort">DataDigitaloceanProjectsSort</a>></code> | sort block. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsConfig.property.sort">sort</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSort">DataDigitaloceanProjectsSort</a>></code> | sort block. |
 
 ---
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -862,20 +850,20 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
 ##### `filter`<sup>Optional</sup> <a name="filter" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsConfig.property.filter"></a>
 
 ```java
-public java.lang.Object getFilter();
+public IResolvable|java.util.List<DataDigitaloceanProjectsFilter> getFilter();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilter">DataDigitaloceanProjectsFilter</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilter">DataDigitaloceanProjectsFilter</a>>
 
 filter block.
 
@@ -901,10 +889,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `sort`<sup>Optional</sup> <a name="sort" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsConfig.property.sort"></a>
 
 ```java
-public java.lang.Object getSort();
+public IResolvable|java.util.List<DataDigitaloceanProjectsSort> getSort();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSort">DataDigitaloceanProjectsSort</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSort">DataDigitaloceanProjectsSort</a>>
 
 sort block.
 
@@ -922,8 +910,7 @@ import com.hashicorp.cdktf.providers.digitalocean.data_digitalocean_projects.Dat
 DataDigitaloceanProjectsFilter.builder()
     .key(java.lang.String)
     .values(java.util.List<java.lang.String>)
-//  .all(java.lang.Boolean)
-//  .all(IResolvable)
+//  .all(java.lang.Boolean|IResolvable)
 //  .matchBy(java.lang.String)
     .build();
 ```
@@ -934,7 +921,7 @@ DataDigitaloceanProjectsFilter.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilter.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/projects#key DataDigitaloceanProjects#key}. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilter.property.values">values</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/projects#values DataDigitaloceanProjects#values}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilter.property.all">all</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/projects#all DataDigitaloceanProjects#all}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilter.property.all">all</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/projects#all DataDigitaloceanProjects#all}. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilter.property.matchBy">matchBy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/projects#match_by DataDigitaloceanProjects#match_by}. |
 
 ---
@@ -966,10 +953,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `all`<sup>Optional</sup> <a name="all" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilter.property.all"></a>
 
 ```java
-public java.lang.Object getAll();
+public java.lang.Boolean|IResolvable getAll();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/projects#all DataDigitaloceanProjects#all}.
 
@@ -1168,7 +1155,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilterList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilterList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilterList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilter">DataDigitaloceanProjectsFilter</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilterList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilter">DataDigitaloceanProjectsFilter</a>></code> | *No description.* |
 
 ---
 
@@ -1199,10 +1186,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilterList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDigitaloceanProjectsFilter> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilter">DataDigitaloceanProjectsFilter</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilter">DataDigitaloceanProjectsFilter</a>>
 
 ---
 
@@ -1449,15 +1436,15 @@ public void resetMatchBy()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilterOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilterOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilterOutputReference.property.allInput">allInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilterOutputReference.property.allInput">allInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilterOutputReference.property.keyInput">keyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilterOutputReference.property.matchByInput">matchByInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilterOutputReference.property.valuesInput">valuesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilterOutputReference.property.all">all</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilterOutputReference.property.all">all</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilterOutputReference.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilterOutputReference.property.matchBy">matchBy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilterOutputReference.property.values">values</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilterOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilter">DataDigitaloceanProjectsFilter</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilterOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilter">DataDigitaloceanProjectsFilter</a></code> | *No description.* |
 
 ---
 
@@ -1488,10 +1475,10 @@ public java.lang.String getFqn();
 ##### `allInput`<sup>Optional</sup> <a name="allInput" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilterOutputReference.property.allInput"></a>
 
 ```java
-public java.lang.Object getAllInput();
+public java.lang.Boolean|IResolvable getAllInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1528,10 +1515,10 @@ public java.util.List<java.lang.String> getValuesInput();
 ##### `all`<sup>Required</sup> <a name="all" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilterOutputReference.property.all"></a>
 
 ```java
-public java.lang.Object getAll();
+public java.lang.Boolean|IResolvable getAll();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1568,10 +1555,10 @@ public java.util.List<java.lang.String> getValues();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilterOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDigitaloceanProjectsFilter getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilter">DataDigitaloceanProjectsFilter</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsFilter">DataDigitaloceanProjectsFilter</a>
 
 ---
 
@@ -2234,7 +2221,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSortList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSortList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSortList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSort">DataDigitaloceanProjectsSort</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSortList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSort">DataDigitaloceanProjectsSort</a>></code> | *No description.* |
 
 ---
 
@@ -2265,10 +2252,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSortList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDigitaloceanProjectsSort> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSort">DataDigitaloceanProjectsSort</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSort">DataDigitaloceanProjectsSort</a>>
 
 ---
 
@@ -2512,7 +2499,7 @@ public void resetDirection()
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSortOutputReference.property.keyInput">keyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSortOutputReference.property.direction">direction</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSortOutputReference.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSortOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSort">DataDigitaloceanProjectsSort</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSortOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSort">DataDigitaloceanProjectsSort</a></code> | *No description.* |
 
 ---
 
@@ -2583,10 +2570,10 @@ public java.lang.String getKey();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSortOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDigitaloceanProjectsSort getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSort">DataDigitaloceanProjectsSort</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanProjects.DataDigitaloceanProjectsSort">DataDigitaloceanProjectsSort</a>
 
 ---
 

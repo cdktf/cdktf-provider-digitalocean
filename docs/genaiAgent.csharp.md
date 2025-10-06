@@ -320,7 +320,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.importFrom"></a>
@@ -374,7 +374,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -389,7 +389,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -414,168 +414,168 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `PutAgentGuardrail` <a name="PutAgentGuardrail" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putAgentGuardrail"></a>
 
 ```csharp
-private void PutAgentGuardrail(object Value)
+private void PutAgentGuardrail(IResolvable|GenaiAgentAgentGuardrail[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putAgentGuardrail.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>[]
 
 ---
 
 ##### `PutAnthropicApiKey` <a name="PutAnthropicApiKey" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putAnthropicApiKey"></a>
 
 ```csharp
-private void PutAnthropicApiKey(object Value)
+private void PutAnthropicApiKey(IResolvable|GenaiAgentAnthropicApiKey[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putAnthropicApiKey.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>[]
 
 ---
 
 ##### `PutApiKeyInfos` <a name="PutApiKeyInfos" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putApiKeyInfos"></a>
 
 ```csharp
-private void PutApiKeyInfos(object Value)
+private void PutApiKeyInfos(IResolvable|GenaiAgentApiKeyInfos[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putApiKeyInfos.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>[]
 
 ---
 
 ##### `PutApiKeys` <a name="PutApiKeys" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putApiKeys"></a>
 
 ```csharp
-private void PutApiKeys(object Value)
+private void PutApiKeys(IResolvable|GenaiAgentApiKeys[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putApiKeys.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>[]
 
 ---
 
 ##### `PutChatbot` <a name="PutChatbot" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putChatbot"></a>
 
 ```csharp
-private void PutChatbot(object Value)
+private void PutChatbot(IResolvable|GenaiAgentChatbot[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putChatbot.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>[]
 
 ---
 
 ##### `PutChatbotIdentifiers` <a name="PutChatbotIdentifiers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putChatbotIdentifiers"></a>
 
 ```csharp
-private void PutChatbotIdentifiers(object Value)
+private void PutChatbotIdentifiers(IResolvable|GenaiAgentChatbotIdentifiers[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putChatbotIdentifiers.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>[]
 
 ---
 
 ##### `PutChildAgents` <a name="PutChildAgents" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putChildAgents"></a>
 
 ```csharp
-private void PutChildAgents(object Value)
+private void PutChildAgents(IResolvable|GenaiAgentChildAgents[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putChildAgents.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>[]
 
 ---
 
 ##### `PutDeployment` <a name="PutDeployment" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putDeployment"></a>
 
 ```csharp
-private void PutDeployment(object Value)
+private void PutDeployment(IResolvable|GenaiAgentDeployment[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putDeployment.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>[]
 
 ---
 
 ##### `PutFunctions` <a name="PutFunctions" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putFunctions"></a>
 
 ```csharp
-private void PutFunctions(object Value)
+private void PutFunctions(IResolvable|GenaiAgentFunctions[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putFunctions.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>[]
 
 ---
 
 ##### `PutKnowledgeBases` <a name="PutKnowledgeBases" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putKnowledgeBases"></a>
 
 ```csharp
-private void PutKnowledgeBases(object Value)
+private void PutKnowledgeBases(IResolvable|GenaiAgentKnowledgeBases[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putKnowledgeBases.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>[]
 
 ---
 
 ##### `PutModel` <a name="PutModel" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putModel"></a>
 
 ```csharp
-private void PutModel(object Value)
+private void PutModel(IResolvable|GenaiAgentModel[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putModel.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>[]
 
 ---
 
 ##### `PutOpenAiApiKey` <a name="PutOpenAiApiKey" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putOpenAiApiKey"></a>
 
 ```csharp
-private void PutOpenAiApiKey(object Value)
+private void PutOpenAiApiKey(IResolvable|GenaiAgentOpenAiApiKey[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putOpenAiApiKey.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>[]
 
 ---
 
 ##### `PutParentAgents` <a name="PutParentAgents" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putParentAgents"></a>
 
 ```csharp
-private void PutParentAgents(object Value)
+private void PutParentAgents(IResolvable|GenaiAgentParentAgents[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putParentAgents.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>[]
 
 ---
 
 ##### `PutTemplate` <a name="PutTemplate" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putTemplate"></a>
 
 ```csharp
-private void PutTemplate(object Value)
+private void PutTemplate(IResolvable|GenaiAgentTemplate[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putTemplate.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>[]
 
 ---
 
@@ -903,13 +903,13 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.agentGuardrail">AgentGuardrail</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailList">GenaiAgentAgentGuardrailList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.anthropicApiKey">AnthropicApiKey</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyList">GenaiAgentAnthropicApiKeyList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.apiKeyInfos">ApiKeyInfos</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosList">GenaiAgentApiKeyInfosList</a></code> | *No description.* |
@@ -926,33 +926,33 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.routeCreatedAt">RouteCreatedAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.template">Template</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateList">GenaiAgentTemplateList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.updatedAt">UpdatedAt</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.agentGuardrailInput">AgentGuardrailInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.anthropicApiKeyInput">AnthropicApiKeyInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.agentGuardrailInput">AgentGuardrailInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.anthropicApiKeyInput">AnthropicApiKeyInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.anthropicKeyUuidInput">AnthropicKeyUuidInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.apiKeyInfosInput">ApiKeyInfosInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.apiKeysInput">ApiKeysInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.chatbotIdentifiersInput">ChatbotIdentifiersInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.chatbotInput">ChatbotInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.childAgentsInput">ChildAgentsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.apiKeyInfosInput">ApiKeyInfosInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.apiKeysInput">ApiKeysInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.chatbotIdentifiersInput">ChatbotIdentifiersInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.chatbotInput">ChatbotInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.childAgentsInput">ChildAgentsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.createdAtInput">CreatedAtInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.deploymentInput">DeploymentInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.deploymentInput">DeploymentInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.functionsInput">FunctionsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.functionsInput">FunctionsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.ifCaseInput">IfCaseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.instructionInput">InstructionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.kInput">KInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.knowledgeBasesInput">KnowledgeBasesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.knowledgeBasesInput">KnowledgeBasesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.knowledgeBaseUuidInput">KnowledgeBaseUuidInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.maxTokensInput">MaxTokensInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.modelInput">ModelInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.modelInput">ModelInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.modelUuidInput">ModelUuidInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.openAiApiKeyInput">OpenAiApiKeyInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.openAiApiKeyInput">OpenAiApiKeyInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.openAiKeyUuidInput">OpenAiKeyUuidInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.parentAgentsInput">ParentAgentsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.parentAgentsInput">ParentAgentsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.projectIdInput">ProjectIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.provideCitationsInput">ProvideCitationsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.provideCitationsInput">ProvideCitationsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.retrievalMethodInput">RetrievalMethodInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.routeCreatedByInput">RouteCreatedByInput</a></code> | <code>string</code> | *No description.* |
@@ -960,7 +960,7 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.routeUuidInput">RouteUuidInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.tagsInput">TagsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.temperatureInput">TemperatureInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.templateInput">TemplateInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.templateInput">TemplateInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.topPInput">TopPInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.urlInput">UrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.userIdInput">UserIdInput</a></code> | <code>string</code> | *No description.* |
@@ -977,7 +977,7 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.openAiKeyUuid">OpenAiKeyUuid</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.projectId">ProjectId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.provideCitations">ProvideCitations</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.provideCitations">ProvideCitations</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.region">Region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.retrievalMethod">RetrievalMethod</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.routeCreatedBy">RouteCreatedBy</a></code> | <code>string</code> | *No description.* |
@@ -1066,20 +1066,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1126,10 +1126,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1296,20 +1296,20 @@ public string UpdatedAt { get; }
 ##### `AgentGuardrailInput`<sup>Optional</sup> <a name="AgentGuardrailInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.agentGuardrailInput"></a>
 
 ```csharp
-public object AgentGuardrailInput { get; }
+public IResolvable|GenaiAgentAgentGuardrail[] AgentGuardrailInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>[]
 
 ---
 
 ##### `AnthropicApiKeyInput`<sup>Optional</sup> <a name="AnthropicApiKeyInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.anthropicApiKeyInput"></a>
 
 ```csharp
-public object AnthropicApiKeyInput { get; }
+public IResolvable|GenaiAgentAnthropicApiKey[] AnthropicApiKeyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>[]
 
 ---
 
@@ -1326,50 +1326,50 @@ public string AnthropicKeyUuidInput { get; }
 ##### `ApiKeyInfosInput`<sup>Optional</sup> <a name="ApiKeyInfosInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.apiKeyInfosInput"></a>
 
 ```csharp
-public object ApiKeyInfosInput { get; }
+public IResolvable|GenaiAgentApiKeyInfos[] ApiKeyInfosInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>[]
 
 ---
 
 ##### `ApiKeysInput`<sup>Optional</sup> <a name="ApiKeysInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.apiKeysInput"></a>
 
 ```csharp
-public object ApiKeysInput { get; }
+public IResolvable|GenaiAgentApiKeys[] ApiKeysInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>[]
 
 ---
 
 ##### `ChatbotIdentifiersInput`<sup>Optional</sup> <a name="ChatbotIdentifiersInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.chatbotIdentifiersInput"></a>
 
 ```csharp
-public object ChatbotIdentifiersInput { get; }
+public IResolvable|GenaiAgentChatbotIdentifiers[] ChatbotIdentifiersInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>[]
 
 ---
 
 ##### `ChatbotInput`<sup>Optional</sup> <a name="ChatbotInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.chatbotInput"></a>
 
 ```csharp
-public object ChatbotInput { get; }
+public IResolvable|GenaiAgentChatbot[] ChatbotInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>[]
 
 ---
 
 ##### `ChildAgentsInput`<sup>Optional</sup> <a name="ChildAgentsInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.childAgentsInput"></a>
 
 ```csharp
-public object ChildAgentsInput { get; }
+public IResolvable|GenaiAgentChildAgents[] ChildAgentsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>[]
 
 ---
 
@@ -1386,10 +1386,10 @@ public string CreatedAtInput { get; }
 ##### `DeploymentInput`<sup>Optional</sup> <a name="DeploymentInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.deploymentInput"></a>
 
 ```csharp
-public object DeploymentInput { get; }
+public IResolvable|GenaiAgentDeployment[] DeploymentInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>[]
 
 ---
 
@@ -1406,10 +1406,10 @@ public string DescriptionInput { get; }
 ##### `FunctionsInput`<sup>Optional</sup> <a name="FunctionsInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.functionsInput"></a>
 
 ```csharp
-public object FunctionsInput { get; }
+public IResolvable|GenaiAgentFunctions[] FunctionsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>[]
 
 ---
 
@@ -1456,10 +1456,10 @@ public double KInput { get; }
 ##### `KnowledgeBasesInput`<sup>Optional</sup> <a name="KnowledgeBasesInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.knowledgeBasesInput"></a>
 
 ```csharp
-public object KnowledgeBasesInput { get; }
+public IResolvable|GenaiAgentKnowledgeBases[] KnowledgeBasesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>[]
 
 ---
 
@@ -1486,10 +1486,10 @@ public double MaxTokensInput { get; }
 ##### `ModelInput`<sup>Optional</sup> <a name="ModelInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.modelInput"></a>
 
 ```csharp
-public object ModelInput { get; }
+public IResolvable|GenaiAgentModel[] ModelInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>[]
 
 ---
 
@@ -1516,10 +1516,10 @@ public string NameInput { get; }
 ##### `OpenAiApiKeyInput`<sup>Optional</sup> <a name="OpenAiApiKeyInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.openAiApiKeyInput"></a>
 
 ```csharp
-public object OpenAiApiKeyInput { get; }
+public IResolvable|GenaiAgentOpenAiApiKey[] OpenAiApiKeyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>[]
 
 ---
 
@@ -1536,10 +1536,10 @@ public string OpenAiKeyUuidInput { get; }
 ##### `ParentAgentsInput`<sup>Optional</sup> <a name="ParentAgentsInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.parentAgentsInput"></a>
 
 ```csharp
-public object ParentAgentsInput { get; }
+public IResolvable|GenaiAgentParentAgents[] ParentAgentsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>[]
 
 ---
 
@@ -1556,10 +1556,10 @@ public string ProjectIdInput { get; }
 ##### `ProvideCitationsInput`<sup>Optional</sup> <a name="ProvideCitationsInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.provideCitationsInput"></a>
 
 ```csharp
-public object ProvideCitationsInput { get; }
+public bool|IResolvable ProvideCitationsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1636,10 +1636,10 @@ public double TemperatureInput { get; }
 ##### `TemplateInput`<sup>Optional</sup> <a name="TemplateInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.templateInput"></a>
 
 ```csharp
-public object TemplateInput { get; }
+public IResolvable|GenaiAgentTemplate[] TemplateInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>[]
 
 ---
 
@@ -1806,10 +1806,10 @@ public string ProjectId { get; }
 ##### `ProvideCitations`<sup>Required</sup> <a name="ProvideCitations" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.provideCitations"></a>
 
 ```csharp
-public object ProvideCitations { get; }
+public bool|IResolvable ProvideCitations { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1945,7 +1945,7 @@ new GenaiAgentAgentGuardrail {
     string DefaultResponse = null,
     string Description = null,
     string GuardrailUuid = null,
-    object IsDefault = null,
+    bool|IResolvable IsDefault = null,
     string Name = null,
     double Priority = null,
     string Type = null,
@@ -1961,7 +1961,7 @@ new GenaiAgentAgentGuardrail {
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail.property.defaultResponse">DefaultResponse</a></code> | <code>string</code> | Default response for the Guardrail. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail.property.description">Description</a></code> | <code>string</code> | Description of the Guardrail. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail.property.guardrailUuid">GuardrailUuid</a></code> | <code>string</code> | Guardrail UUID. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail.property.isDefault">IsDefault</a></code> | <code>object</code> | Indicates if the Guardrail is default. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail.property.isDefault">IsDefault</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Indicates if the Guardrail is default. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail.property.name">Name</a></code> | <code>string</code> | Name of Guardrail. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail.property.priority">Priority</a></code> | <code>double</code> | Priority of the Guardrail. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail.property.type">Type</a></code> | <code>string</code> | Type of the Guardrail. |
@@ -2028,10 +2028,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `IsDefault`<sup>Optional</sup> <a name="IsDefault" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail.property.isDefault"></a>
 
 ```csharp
-public object IsDefault { get; set; }
+public bool|IResolvable IsDefault { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Indicates if the Guardrail is default.
 
@@ -2417,12 +2417,12 @@ new GenaiAgentChildAgents {
     string Name,
     string ProjectId,
     string Region,
-    object AnthropicApiKey = null,
-    object ApiKeyInfos = null,
-    object ApiKeys = null,
-    object Chatbot = null,
-    object ChatbotIdentifiers = null,
-    object Deployment = null,
+    IResolvable|GenaiAgentChildAgentsAnthropicApiKey[] AnthropicApiKey = null,
+    IResolvable|GenaiAgentChildAgentsApiKeyInfos[] ApiKeyInfos = null,
+    IResolvable|GenaiAgentChildAgentsApiKeys[] ApiKeys = null,
+    IResolvable|GenaiAgentChildAgentsChatbot[] Chatbot = null,
+    IResolvable|GenaiAgentChildAgentsChatbotIdentifiers[] ChatbotIdentifiers = null,
+    IResolvable|GenaiAgentChildAgentsDeployment[] Deployment = null,
     string Description = null
 };
 ```
@@ -2436,12 +2436,12 @@ new GenaiAgentChildAgents {
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.name">Name</a></code> | <code>string</code> | Name of the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.projectId">ProjectId</a></code> | <code>string</code> | Project ID of the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.region">Region</a></code> | <code>string</code> | Region where the Agent is deployed. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.anthropicApiKey">AnthropicApiKey</a></code> | <code>object</code> | anthropic_api_key block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.apiKeyInfos">ApiKeyInfos</a></code> | <code>object</code> | api_key_infos block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.apiKeys">ApiKeys</a></code> | <code>object</code> | api_keys block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.chatbot">Chatbot</a></code> | <code>object</code> | chatbot block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.chatbotIdentifiers">ChatbotIdentifiers</a></code> | <code>object</code> | chatbot_identifiers block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.deployment">Deployment</a></code> | <code>object</code> | deployment block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.anthropicApiKey">AnthropicApiKey</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>[]</code> | anthropic_api_key block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.apiKeyInfos">ApiKeyInfos</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>[]</code> | api_key_infos block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.apiKeys">ApiKeys</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>[]</code> | api_keys block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.chatbot">Chatbot</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>[]</code> | chatbot block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.chatbotIdentifiers">ChatbotIdentifiers</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>[]</code> | chatbot_identifiers block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.deployment">Deployment</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>[]</code> | deployment block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.description">Description</a></code> | <code>string</code> | Description for the Agent. |
 
 ---
@@ -2519,10 +2519,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `AnthropicApiKey`<sup>Optional</sup> <a name="AnthropicApiKey" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.anthropicApiKey"></a>
 
 ```csharp
-public object AnthropicApiKey { get; set; }
+public IResolvable|GenaiAgentChildAgentsAnthropicApiKey[] AnthropicApiKey { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>[]
 
 anthropic_api_key block.
 
@@ -2533,10 +2533,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `ApiKeyInfos`<sup>Optional</sup> <a name="ApiKeyInfos" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.apiKeyInfos"></a>
 
 ```csharp
-public object ApiKeyInfos { get; set; }
+public IResolvable|GenaiAgentChildAgentsApiKeyInfos[] ApiKeyInfos { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>[]
 
 api_key_infos block.
 
@@ -2547,10 +2547,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `ApiKeys`<sup>Optional</sup> <a name="ApiKeys" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.apiKeys"></a>
 
 ```csharp
-public object ApiKeys { get; set; }
+public IResolvable|GenaiAgentChildAgentsApiKeys[] ApiKeys { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>[]
 
 api_keys block.
 
@@ -2561,10 +2561,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Chatbot`<sup>Optional</sup> <a name="Chatbot" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.chatbot"></a>
 
 ```csharp
-public object Chatbot { get; set; }
+public IResolvable|GenaiAgentChildAgentsChatbot[] Chatbot { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>[]
 
 chatbot block.
 
@@ -2575,10 +2575,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `ChatbotIdentifiers`<sup>Optional</sup> <a name="ChatbotIdentifiers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.chatbotIdentifiers"></a>
 
 ```csharp
-public object ChatbotIdentifiers { get; set; }
+public IResolvable|GenaiAgentChildAgentsChatbotIdentifiers[] ChatbotIdentifiers { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>[]
 
 chatbot_identifiers block.
 
@@ -2589,10 +2589,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Deployment`<sup>Optional</sup> <a name="Deployment" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.deployment"></a>
 
 ```csharp
-public object Deployment { get; set; }
+public IResolvable|GenaiAgentChildAgentsDeployment[] Deployment { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>[]
 
 deployment block.
 
@@ -3029,48 +3029,48 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new GenaiAgentConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Instruction,
     string ModelUuid,
     string Name,
     string ProjectId,
     string Region,
-    object AgentGuardrail = null,
-    object AnthropicApiKey = null,
+    IResolvable|GenaiAgentAgentGuardrail[] AgentGuardrail = null,
+    IResolvable|GenaiAgentAnthropicApiKey[] AnthropicApiKey = null,
     string AnthropicKeyUuid = null,
-    object ApiKeyInfos = null,
-    object ApiKeys = null,
-    object Chatbot = null,
-    object ChatbotIdentifiers = null,
-    object ChildAgents = null,
+    IResolvable|GenaiAgentApiKeyInfos[] ApiKeyInfos = null,
+    IResolvable|GenaiAgentApiKeys[] ApiKeys = null,
+    IResolvable|GenaiAgentChatbot[] Chatbot = null,
+    IResolvable|GenaiAgentChatbotIdentifiers[] ChatbotIdentifiers = null,
+    IResolvable|GenaiAgentChildAgents[] ChildAgents = null,
     string CreatedAt = null,
-    object Deployment = null,
+    IResolvable|GenaiAgentDeployment[] Deployment = null,
     string Description = null,
-    object Functions = null,
+    IResolvable|GenaiAgentFunctions[] Functions = null,
     string Id = null,
     string IfCase = null,
     double K = null,
-    object KnowledgeBases = null,
+    IResolvable|GenaiAgentKnowledgeBases[] KnowledgeBases = null,
     string[] KnowledgeBaseUuid = null,
     double MaxTokens = null,
-    object Model = null,
-    object OpenAiApiKey = null,
+    IResolvable|GenaiAgentModel[] Model = null,
+    IResolvable|GenaiAgentOpenAiApiKey[] OpenAiApiKey = null,
     string OpenAiKeyUuid = null,
-    object ParentAgents = null,
-    object ProvideCitations = null,
+    IResolvable|GenaiAgentParentAgents[] ParentAgents = null,
+    bool|IResolvable ProvideCitations = null,
     string RetrievalMethod = null,
     string RouteCreatedBy = null,
     string RouteName = null,
     string RouteUuid = null,
     string[] Tags = null,
     double Temperature = null,
-    object Template = null,
+    IResolvable|GenaiAgentTemplate[] Template = null,
     double TopP = null,
     string Url = null,
     string UserId = null
@@ -3081,48 +3081,48 @@ new GenaiAgentConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.instruction">Instruction</a></code> | <code>string</code> | Instruction for the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.modelUuid">ModelUuid</a></code> | <code>string</code> | Model UUID of the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.name">Name</a></code> | <code>string</code> | Name of the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.projectId">ProjectId</a></code> | <code>string</code> | Project ID of the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.region">Region</a></code> | <code>string</code> | Region where the Agent is deployed. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.agentGuardrail">AgentGuardrail</a></code> | <code>object</code> | agent_guardrail block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.anthropicApiKey">AnthropicApiKey</a></code> | <code>object</code> | anthropic_api_key block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.agentGuardrail">AgentGuardrail</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>[]</code> | agent_guardrail block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.anthropicApiKey">AnthropicApiKey</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>[]</code> | anthropic_api_key block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.anthropicKeyUuid">AnthropicKeyUuid</a></code> | <code>string</code> | Optional Anthropic API key ID to use with Anthropic models. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.apiKeyInfos">ApiKeyInfos</a></code> | <code>object</code> | api_key_infos block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.apiKeys">ApiKeys</a></code> | <code>object</code> | api_keys block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.chatbot">Chatbot</a></code> | <code>object</code> | chatbot block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.chatbotIdentifiers">ChatbotIdentifiers</a></code> | <code>object</code> | chatbot_identifiers block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.childAgents">ChildAgents</a></code> | <code>object</code> | child_agents block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.apiKeyInfos">ApiKeyInfos</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>[]</code> | api_key_infos block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.apiKeys">ApiKeys</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>[]</code> | api_keys block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.chatbot">Chatbot</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>[]</code> | chatbot block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.chatbotIdentifiers">ChatbotIdentifiers</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>[]</code> | chatbot_identifiers block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.childAgents">ChildAgents</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>[]</code> | child_agents block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.createdAt">CreatedAt</a></code> | <code>string</code> | Timestamp when the Agent was created. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.deployment">Deployment</a></code> | <code>object</code> | deployment block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.deployment">Deployment</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>[]</code> | deployment block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.description">Description</a></code> | <code>string</code> | Description for the Agent. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.functions">Functions</a></code> | <code>object</code> | functions block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.functions">Functions</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>[]</code> | functions block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/genai_agent#id GenaiAgent#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.ifCase">IfCase</a></code> | <code>string</code> | If case condition. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.k">K</a></code> | <code>double</code> | K value. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.knowledgeBases">KnowledgeBases</a></code> | <code>object</code> | knowledge_bases block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.knowledgeBases">KnowledgeBases</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>[]</code> | knowledge_bases block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.knowledgeBaseUuid">KnowledgeBaseUuid</a></code> | <code>string[]</code> | Ids of the knowledge base(s) to attach to the agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.maxTokens">MaxTokens</a></code> | <code>double</code> | Maximum tokens allowed. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.model">Model</a></code> | <code>object</code> | model block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.openAiApiKey">OpenAiApiKey</a></code> | <code>object</code> | open_ai_api_key block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.model">Model</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>[]</code> | model block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.openAiApiKey">OpenAiApiKey</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>[]</code> | open_ai_api_key block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.openAiKeyUuid">OpenAiKeyUuid</a></code> | <code>string</code> | Optional OpenAI API key ID to use with OpenAI models. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.parentAgents">ParentAgents</a></code> | <code>object</code> | parent_agents block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.provideCitations">ProvideCitations</a></code> | <code>object</code> | Indicates if the agent should provide citations in responses. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.parentAgents">ParentAgents</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>[]</code> | parent_agents block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.provideCitations">ProvideCitations</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Indicates if the agent should provide citations in responses. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.retrievalMethod">RetrievalMethod</a></code> | <code>string</code> | Retrieval method used. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.routeCreatedBy">RouteCreatedBy</a></code> | <code>string</code> | User who created the route. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.routeName">RouteName</a></code> | <code>string</code> | Route name. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.routeUuid">RouteUuid</a></code> | <code>string</code> | Route UUID. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.tags">Tags</a></code> | <code>string[]</code> | List of Tags. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.temperature">Temperature</a></code> | <code>double</code> | Agent temperature setting. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.template">Template</a></code> | <code>object</code> | template block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.template">Template</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>[]</code> | template block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.topP">TopP</a></code> | <code>double</code> | Top P sampling parameter. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.url">Url</a></code> | <code>string</code> | URL for the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.userId">UserId</a></code> | <code>string</code> | User ID linked with the Agent. |
@@ -3132,20 +3132,20 @@ new GenaiAgentConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -3192,10 +3192,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -3272,10 +3272,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `AgentGuardrail`<sup>Optional</sup> <a name="AgentGuardrail" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.agentGuardrail"></a>
 
 ```csharp
-public object AgentGuardrail { get; set; }
+public IResolvable|GenaiAgentAgentGuardrail[] AgentGuardrail { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>[]
 
 agent_guardrail block.
 
@@ -3286,10 +3286,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `AnthropicApiKey`<sup>Optional</sup> <a name="AnthropicApiKey" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.anthropicApiKey"></a>
 
 ```csharp
-public object AnthropicApiKey { get; set; }
+public IResolvable|GenaiAgentAnthropicApiKey[] AnthropicApiKey { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>[]
 
 anthropic_api_key block.
 
@@ -3314,10 +3314,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `ApiKeyInfos`<sup>Optional</sup> <a name="ApiKeyInfos" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.apiKeyInfos"></a>
 
 ```csharp
-public object ApiKeyInfos { get; set; }
+public IResolvable|GenaiAgentApiKeyInfos[] ApiKeyInfos { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>[]
 
 api_key_infos block.
 
@@ -3328,10 +3328,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `ApiKeys`<sup>Optional</sup> <a name="ApiKeys" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.apiKeys"></a>
 
 ```csharp
-public object ApiKeys { get; set; }
+public IResolvable|GenaiAgentApiKeys[] ApiKeys { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>[]
 
 api_keys block.
 
@@ -3342,10 +3342,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Chatbot`<sup>Optional</sup> <a name="Chatbot" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.chatbot"></a>
 
 ```csharp
-public object Chatbot { get; set; }
+public IResolvable|GenaiAgentChatbot[] Chatbot { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>[]
 
 chatbot block.
 
@@ -3356,10 +3356,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `ChatbotIdentifiers`<sup>Optional</sup> <a name="ChatbotIdentifiers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.chatbotIdentifiers"></a>
 
 ```csharp
-public object ChatbotIdentifiers { get; set; }
+public IResolvable|GenaiAgentChatbotIdentifiers[] ChatbotIdentifiers { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>[]
 
 chatbot_identifiers block.
 
@@ -3370,10 +3370,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `ChildAgents`<sup>Optional</sup> <a name="ChildAgents" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.childAgents"></a>
 
 ```csharp
-public object ChildAgents { get; set; }
+public IResolvable|GenaiAgentChildAgents[] ChildAgents { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>[]
 
 child_agents block.
 
@@ -3398,10 +3398,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Deployment`<sup>Optional</sup> <a name="Deployment" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.deployment"></a>
 
 ```csharp
-public object Deployment { get; set; }
+public IResolvable|GenaiAgentDeployment[] Deployment { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>[]
 
 deployment block.
 
@@ -3426,10 +3426,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Functions`<sup>Optional</sup> <a name="Functions" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.functions"></a>
 
 ```csharp
-public object Functions { get; set; }
+public IResolvable|GenaiAgentFunctions[] Functions { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>[]
 
 functions block.
 
@@ -3483,10 +3483,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `KnowledgeBases`<sup>Optional</sup> <a name="KnowledgeBases" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.knowledgeBases"></a>
 
 ```csharp
-public object KnowledgeBases { get; set; }
+public IResolvable|GenaiAgentKnowledgeBases[] KnowledgeBases { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>[]
 
 knowledge_bases block.
 
@@ -3525,10 +3525,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Model`<sup>Optional</sup> <a name="Model" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.model"></a>
 
 ```csharp
-public object Model { get; set; }
+public IResolvable|GenaiAgentModel[] Model { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>[]
 
 model block.
 
@@ -3539,10 +3539,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `OpenAiApiKey`<sup>Optional</sup> <a name="OpenAiApiKey" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.openAiApiKey"></a>
 
 ```csharp
-public object OpenAiApiKey { get; set; }
+public IResolvable|GenaiAgentOpenAiApiKey[] OpenAiApiKey { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>[]
 
 open_ai_api_key block.
 
@@ -3567,10 +3567,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `ParentAgents`<sup>Optional</sup> <a name="ParentAgents" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.parentAgents"></a>
 
 ```csharp
-public object ParentAgents { get; set; }
+public IResolvable|GenaiAgentParentAgents[] ParentAgents { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>[]
 
 parent_agents block.
 
@@ -3581,10 +3581,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `ProvideCitations`<sup>Optional</sup> <a name="ProvideCitations" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.provideCitations"></a>
 
 ```csharp
-public object ProvideCitations { get; set; }
+public bool|IResolvable ProvideCitations { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Indicates if the agent should provide citations in responses.
 
@@ -3679,10 +3679,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Template`<sup>Optional</sup> <a name="Template" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.template"></a>
 
 ```csharp
-public object Template { get; set; }
+public IResolvable|GenaiAgentTemplate[] Template { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>[]
 
 template block.
 
@@ -3986,7 +3986,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 new GenaiAgentKnowledgeBases {
     string DatabaseId = null,
     string EmbeddingModelUuid = null,
-    object IsPublic = null,
+    bool|IResolvable IsPublic = null,
     GenaiAgentKnowledgeBasesLastIndexingJob LastIndexingJob = null,
     string Name = null,
     string ProjectId = null,
@@ -4002,7 +4002,7 @@ new GenaiAgentKnowledgeBases {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.databaseId">DatabaseId</a></code> | <code>string</code> | Database ID of the Knowledge Base. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.embeddingModelUuid">EmbeddingModelUuid</a></code> | <code>string</code> | Embedding model UUID for the Knowledge Base. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.isPublic">IsPublic</a></code> | <code>object</code> | Indicates if the Knowledge Base is public. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.isPublic">IsPublic</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Indicates if the Knowledge Base is public. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.lastIndexingJob">LastIndexingJob</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob">GenaiAgentKnowledgeBasesLastIndexingJob</a></code> | last_indexing_job block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.name">Name</a></code> | <code>string</code> | Name of the Knowledge Base. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.projectId">ProjectId</a></code> | <code>string</code> | Project ID of the Knowledge Base. |
@@ -4043,10 +4043,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `IsPublic`<sup>Optional</sup> <a name="IsPublic" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.isPublic"></a>
 
 ```csharp
-public object IsPublic { get; set; }
+public bool|IResolvable IsPublic { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Indicates if the Knowledge Base is public.
 
@@ -4260,17 +4260,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new GenaiAgentModel {
-    object Agreement = null,
+    IResolvable|GenaiAgentModelAgreement[] Agreement = null,
     string InferenceName = null,
     string InferenceVersion = null,
-    object IsFoundational = null,
+    bool|IResolvable IsFoundational = null,
     string Name = null,
     string ParentUuid = null,
     string Provider = null,
-    object UploadComplete = null,
+    bool|IResolvable UploadComplete = null,
     string Url = null,
     string[] Usecases = null,
-    object Versions = null
+    IResolvable|GenaiAgentModelVersions[] Versions = null
 };
 ```
 
@@ -4278,27 +4278,27 @@ new GenaiAgentModel {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.agreement">Agreement</a></code> | <code>object</code> | agreement block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.agreement">Agreement</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>[]</code> | agreement block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.inferenceName">InferenceName</a></code> | <code>string</code> | Inference name of the model. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.inferenceVersion">InferenceVersion</a></code> | <code>string</code> | Infernce version of the model. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.isFoundational">IsFoundational</a></code> | <code>object</code> | Indicates if the Model Base is foundational. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.isFoundational">IsFoundational</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Indicates if the Model Base is foundational. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.name">Name</a></code> | <code>string</code> | Name of the Knowledge Base. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.parentUuid">ParentUuid</a></code> | <code>string</code> | Parent UUID of the Model. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.provider">Provider</a></code> | <code>string</code> | Provider of the Model. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.uploadComplete">UploadComplete</a></code> | <code>object</code> | Indicates if the Model upload is complete. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.uploadComplete">UploadComplete</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Indicates if the Model upload is complete. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.url">Url</a></code> | <code>string</code> | URL of the Model. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.usecases">Usecases</a></code> | <code>string[]</code> | List of Usecases for the Model. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.versions">Versions</a></code> | <code>object</code> | versions block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.versions">Versions</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>[]</code> | versions block. |
 
 ---
 
 ##### `Agreement`<sup>Optional</sup> <a name="Agreement" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.agreement"></a>
 
 ```csharp
-public object Agreement { get; set; }
+public IResolvable|GenaiAgentModelAgreement[] Agreement { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>[]
 
 agreement block.
 
@@ -4337,10 +4337,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `IsFoundational`<sup>Optional</sup> <a name="IsFoundational" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.isFoundational"></a>
 
 ```csharp
-public object IsFoundational { get; set; }
+public bool|IResolvable IsFoundational { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Indicates if the Model Base is foundational.
 
@@ -4393,10 +4393,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `UploadComplete`<sup>Optional</sup> <a name="UploadComplete" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.uploadComplete"></a>
 
 ```csharp
-public object UploadComplete { get; set; }
+public bool|IResolvable UploadComplete { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Indicates if the Model upload is complete.
 
@@ -4435,10 +4435,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Versions`<sup>Optional</sup> <a name="Versions" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.versions"></a>
 
 ```csharp
-public object Versions { get; set; }
+public IResolvable|GenaiAgentModelVersions[] Versions { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>[]
 
 versions block.
 
@@ -4673,12 +4673,12 @@ new GenaiAgentParentAgents {
     string Name,
     string ProjectId,
     string Region,
-    object AnthropicApiKey = null,
-    object ApiKeyInfos = null,
-    object ApiKeys = null,
-    object Chatbot = null,
-    object ChatbotIdentifiers = null,
-    object Deployment = null,
+    IResolvable|GenaiAgentParentAgentsAnthropicApiKey[] AnthropicApiKey = null,
+    IResolvable|GenaiAgentParentAgentsApiKeyInfos[] ApiKeyInfos = null,
+    IResolvable|GenaiAgentParentAgentsApiKeys[] ApiKeys = null,
+    IResolvable|GenaiAgentParentAgentsChatbot[] Chatbot = null,
+    IResolvable|GenaiAgentParentAgentsChatbotIdentifiers[] ChatbotIdentifiers = null,
+    IResolvable|GenaiAgentParentAgentsDeployment[] Deployment = null,
     string Description = null
 };
 ```
@@ -4692,12 +4692,12 @@ new GenaiAgentParentAgents {
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.name">Name</a></code> | <code>string</code> | Name of the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.projectId">ProjectId</a></code> | <code>string</code> | Project ID of the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.region">Region</a></code> | <code>string</code> | Region where the Agent is deployed. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.anthropicApiKey">AnthropicApiKey</a></code> | <code>object</code> | anthropic_api_key block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.apiKeyInfos">ApiKeyInfos</a></code> | <code>object</code> | api_key_infos block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.apiKeys">ApiKeys</a></code> | <code>object</code> | api_keys block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.chatbot">Chatbot</a></code> | <code>object</code> | chatbot block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.chatbotIdentifiers">ChatbotIdentifiers</a></code> | <code>object</code> | chatbot_identifiers block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.deployment">Deployment</a></code> | <code>object</code> | deployment block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.anthropicApiKey">AnthropicApiKey</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>[]</code> | anthropic_api_key block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.apiKeyInfos">ApiKeyInfos</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>[]</code> | api_key_infos block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.apiKeys">ApiKeys</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>[]</code> | api_keys block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.chatbot">Chatbot</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>[]</code> | chatbot block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.chatbotIdentifiers">ChatbotIdentifiers</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>[]</code> | chatbot_identifiers block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.deployment">Deployment</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>[]</code> | deployment block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.description">Description</a></code> | <code>string</code> | Description for the Agent. |
 
 ---
@@ -4775,10 +4775,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `AnthropicApiKey`<sup>Optional</sup> <a name="AnthropicApiKey" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.anthropicApiKey"></a>
 
 ```csharp
-public object AnthropicApiKey { get; set; }
+public IResolvable|GenaiAgentParentAgentsAnthropicApiKey[] AnthropicApiKey { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>[]
 
 anthropic_api_key block.
 
@@ -4789,10 +4789,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `ApiKeyInfos`<sup>Optional</sup> <a name="ApiKeyInfos" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.apiKeyInfos"></a>
 
 ```csharp
-public object ApiKeyInfos { get; set; }
+public IResolvable|GenaiAgentParentAgentsApiKeyInfos[] ApiKeyInfos { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>[]
 
 api_key_infos block.
 
@@ -4803,10 +4803,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `ApiKeys`<sup>Optional</sup> <a name="ApiKeys" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.apiKeys"></a>
 
 ```csharp
-public object ApiKeys { get; set; }
+public IResolvable|GenaiAgentParentAgentsApiKeys[] ApiKeys { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>[]
 
 api_keys block.
 
@@ -4817,10 +4817,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Chatbot`<sup>Optional</sup> <a name="Chatbot" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.chatbot"></a>
 
 ```csharp
-public object Chatbot { get; set; }
+public IResolvable|GenaiAgentParentAgentsChatbot[] Chatbot { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>[]
 
 chatbot block.
 
@@ -4831,10 +4831,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `ChatbotIdentifiers`<sup>Optional</sup> <a name="ChatbotIdentifiers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.chatbotIdentifiers"></a>
 
 ```csharp
-public object ChatbotIdentifiers { get; set; }
+public IResolvable|GenaiAgentParentAgentsChatbotIdentifiers[] ChatbotIdentifiers { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>[]
 
 chatbot_identifiers block.
 
@@ -4845,10 +4845,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Deployment`<sup>Optional</sup> <a name="Deployment" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.deployment"></a>
 
 ```csharp
-public object Deployment { get; set; }
+public IResolvable|GenaiAgentParentAgentsDeployment[] Deployment { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>[]
 
 deployment block.
 
@@ -5288,9 +5288,9 @@ new GenaiAgentTemplate {
     string Description = null,
     string Instruction = null,
     double K = null,
-    object KnowledgeBases = null,
+    IResolvable|GenaiAgentTemplateKnowledgeBases[] KnowledgeBases = null,
     double MaxTokens = null,
-    object Model = null,
+    IResolvable|GenaiAgentTemplateModel[] Model = null,
     string Name = null,
     double Temperature = null,
     double TopP = null,
@@ -5305,9 +5305,9 @@ new GenaiAgentTemplate {
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.description">Description</a></code> | <code>string</code> | Description of the Agent Template. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.instruction">Instruction</a></code> | <code>string</code> | Instruction for the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.k">K</a></code> | <code>double</code> | K value for the Agent Template. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.knowledgeBases">KnowledgeBases</a></code> | <code>object</code> | knowledge_bases block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.knowledgeBases">KnowledgeBases</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>[]</code> | knowledge_bases block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.maxTokens">MaxTokens</a></code> | <code>double</code> | Maximum tokens allowed. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.model">Model</a></code> | <code>object</code> | model block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.model">Model</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>[]</code> | model block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.name">Name</a></code> | <code>string</code> | Name of the Agent Template. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.temperature">Temperature</a></code> | <code>double</code> | Agent temperature setting. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.topP">TopP</a></code> | <code>double</code> | Top P sampling parameter. |
@@ -5360,10 +5360,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `KnowledgeBases`<sup>Optional</sup> <a name="KnowledgeBases" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.knowledgeBases"></a>
 
 ```csharp
-public object KnowledgeBases { get; set; }
+public IResolvable|GenaiAgentTemplateKnowledgeBases[] KnowledgeBases { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>[]
 
 knowledge_bases block.
 
@@ -5388,10 +5388,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Model`<sup>Optional</sup> <a name="Model" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.model"></a>
 
 ```csharp
-public object Model { get; set; }
+public IResolvable|GenaiAgentTemplateModel[] Model { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>[]
 
 model block.
 
@@ -5465,7 +5465,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 new GenaiAgentTemplateKnowledgeBases {
     string DatabaseId = null,
     string EmbeddingModelUuid = null,
-    object IsPublic = null,
+    bool|IResolvable IsPublic = null,
     GenaiAgentTemplateKnowledgeBasesLastIndexingJob LastIndexingJob = null,
     string Name = null,
     string ProjectId = null,
@@ -5481,7 +5481,7 @@ new GenaiAgentTemplateKnowledgeBases {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.databaseId">DatabaseId</a></code> | <code>string</code> | Database ID of the Knowledge Base. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.embeddingModelUuid">EmbeddingModelUuid</a></code> | <code>string</code> | Embedding model UUID for the Knowledge Base. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.isPublic">IsPublic</a></code> | <code>object</code> | Indicates if the Knowledge Base is public. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.isPublic">IsPublic</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Indicates if the Knowledge Base is public. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.lastIndexingJob">LastIndexingJob</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob">GenaiAgentTemplateKnowledgeBasesLastIndexingJob</a></code> | last_indexing_job block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.name">Name</a></code> | <code>string</code> | Name of the Knowledge Base. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.projectId">ProjectId</a></code> | <code>string</code> | Project ID of the Knowledge Base. |
@@ -5522,10 +5522,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `IsPublic`<sup>Optional</sup> <a name="IsPublic" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.isPublic"></a>
 
 ```csharp
-public object IsPublic { get; set; }
+public bool|IResolvable IsPublic { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Indicates if the Knowledge Base is public.
 
@@ -5739,17 +5739,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new GenaiAgentTemplateModel {
-    object Agreement = null,
+    IResolvable|GenaiAgentTemplateModelAgreement[] Agreement = null,
     string InferenceName = null,
     string InferenceVersion = null,
-    object IsFoundational = null,
+    bool|IResolvable IsFoundational = null,
     string Name = null,
     string ParentUuid = null,
     string Provider = null,
-    object UploadComplete = null,
+    bool|IResolvable UploadComplete = null,
     string Url = null,
     string[] Usecases = null,
-    object Versions = null
+    IResolvable|GenaiAgentTemplateModelVersions[] Versions = null
 };
 ```
 
@@ -5757,27 +5757,27 @@ new GenaiAgentTemplateModel {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.agreement">Agreement</a></code> | <code>object</code> | agreement block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.agreement">Agreement</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>[]</code> | agreement block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.inferenceName">InferenceName</a></code> | <code>string</code> | Inference name of the model. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.inferenceVersion">InferenceVersion</a></code> | <code>string</code> | Infernce version of the model. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.isFoundational">IsFoundational</a></code> | <code>object</code> | Indicates if the Model Base is foundational. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.isFoundational">IsFoundational</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Indicates if the Model Base is foundational. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.name">Name</a></code> | <code>string</code> | Name of the Knowledge Base. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.parentUuid">ParentUuid</a></code> | <code>string</code> | Parent UUID of the Model. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.provider">Provider</a></code> | <code>string</code> | Provider of the Model. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.uploadComplete">UploadComplete</a></code> | <code>object</code> | Indicates if the Model upload is complete. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.uploadComplete">UploadComplete</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Indicates if the Model upload is complete. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.url">Url</a></code> | <code>string</code> | URL of the Model. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.usecases">Usecases</a></code> | <code>string[]</code> | List of Usecases for the Model. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.versions">Versions</a></code> | <code>object</code> | versions block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.versions">Versions</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>[]</code> | versions block. |
 
 ---
 
 ##### `Agreement`<sup>Optional</sup> <a name="Agreement" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.agreement"></a>
 
 ```csharp
-public object Agreement { get; set; }
+public IResolvable|GenaiAgentTemplateModelAgreement[] Agreement { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>[]
 
 agreement block.
 
@@ -5816,10 +5816,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `IsFoundational`<sup>Optional</sup> <a name="IsFoundational" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.isFoundational"></a>
 
 ```csharp
-public object IsFoundational { get; set; }
+public bool|IResolvable IsFoundational { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Indicates if the Model Base is foundational.
 
@@ -5872,10 +5872,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `UploadComplete`<sup>Optional</sup> <a name="UploadComplete" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.uploadComplete"></a>
 
 ```csharp
-public object UploadComplete { get; set; }
+public bool|IResolvable UploadComplete { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Indicates if the Model upload is complete.
 
@@ -5914,10 +5914,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Versions`<sup>Optional</sup> <a name="Versions" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.versions"></a>
 
 ```csharp
-public object Versions { get; set; }
+public IResolvable|GenaiAgentTemplateModelVersions[] Versions { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>[]
 
 versions block.
 
@@ -6196,7 +6196,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>[]</code> | *No description.* |
 
 ---
 
@@ -6227,10 +6227,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentAgentGuardrail[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>[]
 
 ---
 
@@ -6533,7 +6533,7 @@ private void ResetUuid()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.defaultResponseInput">DefaultResponseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.guardrailUuidInput">GuardrailUuidInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.isDefaultInput">IsDefaultInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.isDefaultInput">IsDefaultInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.priorityInput">PriorityInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
@@ -6542,12 +6542,12 @@ private void ResetUuid()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.defaultResponse">DefaultResponse</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.guardrailUuid">GuardrailUuid</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.isDefault">IsDefault</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.isDefault">IsDefault</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.priority">Priority</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.uuid">Uuid</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a></code> | *No description.* |
 
 ---
 
@@ -6648,10 +6648,10 @@ public string GuardrailUuidInput { get; }
 ##### `IsDefaultInput`<sup>Optional</sup> <a name="IsDefaultInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.isDefaultInput"></a>
 
 ```csharp
-public object IsDefaultInput { get; }
+public bool|IResolvable IsDefaultInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6738,10 +6738,10 @@ public string GuardrailUuid { get; }
 ##### `IsDefault`<sup>Required</sup> <a name="IsDefault" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.isDefault"></a>
 
 ```csharp
-public object IsDefault { get; }
+public bool|IResolvable IsDefault { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6788,10 +6788,10 @@ public string Uuid { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentAgentGuardrail InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>
 
 ---
 
@@ -6917,7 +6917,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>[]</code> | *No description.* |
 
 ---
 
@@ -6948,10 +6948,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentAnthropicApiKey[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>[]
 
 ---
 
@@ -7214,7 +7214,7 @@ private void ResetUuid()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyOutputReference.property.createdBy">CreatedBy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyOutputReference.property.uuid">Uuid</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a></code> | *No description.* |
 
 ---
 
@@ -7335,10 +7335,10 @@ public string Uuid { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentAnthropicApiKey InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>
 
 ---
 
@@ -7464,7 +7464,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>[]</code> | *No description.* |
 
 ---
 
@@ -7495,10 +7495,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentApiKeyInfos[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>[]
 
 ---
 
@@ -7769,7 +7769,7 @@ private void ResetUuid()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosOutputReference.property.secretKey">SecretKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosOutputReference.property.uuid">Uuid</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a></code> | *No description.* |
 
 ---
 
@@ -7900,10 +7900,10 @@ public string Uuid { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentApiKeyInfos InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>
 
 ---
 
@@ -8029,7 +8029,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeysList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeysList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeysList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeysList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>[]</code> | *No description.* |
 
 ---
 
@@ -8060,10 +8060,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeysList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentApiKeys[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>[]
 
 ---
 
@@ -8305,7 +8305,7 @@ private void ResetApiKey()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeysOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeysOutputReference.property.apiKeyInput">ApiKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeysOutputReference.property.apiKey">ApiKey</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeysOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeysOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a></code> | *No description.* |
 
 ---
 
@@ -8356,10 +8356,10 @@ public string ApiKey { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeysOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentApiKeys InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>
 
 ---
 
@@ -8485,7 +8485,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiersList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiersList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiersList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiersList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>[]</code> | *No description.* |
 
 ---
 
@@ -8516,10 +8516,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiersList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentChatbotIdentifiers[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>[]
 
 ---
 
@@ -8753,7 +8753,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiersOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiersOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiersOutputReference.property.chatbotId">ChatbotId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiersOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiersOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a></code> | *No description.* |
 
 ---
 
@@ -8794,10 +8794,10 @@ public string ChatbotId { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiersOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentChatbotIdentifiers InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>
 
 ---
 
@@ -8923,7 +8923,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>[]</code> | *No description.* |
 
 ---
 
@@ -8954,10 +8954,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentChatbot[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>[]
 
 ---
 
@@ -9244,7 +9244,7 @@ private void ResetStartingMessage()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotOutputReference.property.primaryColor">PrimaryColor</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotOutputReference.property.secondaryColor">SecondaryColor</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotOutputReference.property.startingMessage">StartingMessage</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a></code> | *No description.* |
 
 ---
 
@@ -9395,10 +9395,10 @@ public string StartingMessage { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentChatbot InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>
 
 ---
 
@@ -9524,7 +9524,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKeyList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKeyList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKeyList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKeyList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>[]</code> | *No description.* |
 
 ---
 
@@ -9555,10 +9555,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKeyList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentChildAgentsAnthropicApiKey[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>[]
 
 ---
 
@@ -9821,7 +9821,7 @@ private void ResetUuid()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKeyOutputReference.property.createdBy">CreatedBy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKeyOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKeyOutputReference.property.uuid">Uuid</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKeyOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKeyOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a></code> | *No description.* |
 
 ---
 
@@ -9942,10 +9942,10 @@ public string Uuid { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKeyOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentChildAgentsAnthropicApiKey InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>
 
 ---
 
@@ -10071,7 +10071,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfosList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfosList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfosList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfosList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>[]</code> | *No description.* |
 
 ---
 
@@ -10102,10 +10102,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfosList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentChildAgentsApiKeyInfos[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>[]
 
 ---
 
@@ -10376,7 +10376,7 @@ private void ResetUuid()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfosOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfosOutputReference.property.secretKey">SecretKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfosOutputReference.property.uuid">Uuid</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfosOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfosOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a></code> | *No description.* |
 
 ---
 
@@ -10507,10 +10507,10 @@ public string Uuid { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfosOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentChildAgentsApiKeyInfos InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>
 
 ---
 
@@ -10636,7 +10636,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeysList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeysList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeysList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeysList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>[]</code> | *No description.* |
 
 ---
 
@@ -10667,10 +10667,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeysList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentChildAgentsApiKeys[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>[]
 
 ---
 
@@ -10912,7 +10912,7 @@ private void ResetApiKey()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeysOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeysOutputReference.property.apiKeyInput">ApiKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeysOutputReference.property.apiKey">ApiKey</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeysOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeysOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a></code> | *No description.* |
 
 ---
 
@@ -10963,10 +10963,10 @@ public string ApiKey { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeysOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentChildAgentsApiKeys InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>
 
 ---
 
@@ -11092,7 +11092,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>[]</code> | *No description.* |
 
 ---
 
@@ -11123,10 +11123,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentChildAgentsChatbotIdentifiers[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>[]
 
 ---
 
@@ -11360,7 +11360,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersOutputReference.property.chatbotId">ChatbotId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a></code> | *No description.* |
 
 ---
 
@@ -11401,10 +11401,10 @@ public string ChatbotId { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentChildAgentsChatbotIdentifiers InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>
 
 ---
 
@@ -11530,7 +11530,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>[]</code> | *No description.* |
 
 ---
 
@@ -11561,10 +11561,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentChildAgentsChatbot[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>[]
 
 ---
 
@@ -11851,7 +11851,7 @@ private void ResetStartingMessage()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotOutputReference.property.primaryColor">PrimaryColor</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotOutputReference.property.secondaryColor">SecondaryColor</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotOutputReference.property.startingMessage">StartingMessage</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a></code> | *No description.* |
 
 ---
 
@@ -12002,10 +12002,10 @@ public string StartingMessage { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentChildAgentsChatbot InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>
 
 ---
 
@@ -12131,7 +12131,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>[]</code> | *No description.* |
 
 ---
 
@@ -12162,10 +12162,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentChildAgentsDeployment[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>[]
 
 ---
 
@@ -12445,7 +12445,7 @@ private void ResetVisibility()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentOutputReference.property.url">Url</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentOutputReference.property.uuid">Uuid</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentOutputReference.property.visibility">Visibility</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a></code> | *No description.* |
 
 ---
 
@@ -12596,10 +12596,10 @@ public string Visibility { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentChildAgentsDeployment InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>
 
 ---
 
@@ -12725,7 +12725,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>[]</code> | *No description.* |
 
 ---
 
@@ -12756,10 +12756,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentChildAgents[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>[]
 
 ---
 
@@ -13001,72 +13001,72 @@ Returns a reversible string representation.
 ##### `PutAnthropicApiKey` <a name="PutAnthropicApiKey" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.putAnthropicApiKey"></a>
 
 ```csharp
-private void PutAnthropicApiKey(object Value)
+private void PutAnthropicApiKey(IResolvable|GenaiAgentChildAgentsAnthropicApiKey[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.putAnthropicApiKey.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>[]
 
 ---
 
 ##### `PutApiKeyInfos` <a name="PutApiKeyInfos" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.putApiKeyInfos"></a>
 
 ```csharp
-private void PutApiKeyInfos(object Value)
+private void PutApiKeyInfos(IResolvable|GenaiAgentChildAgentsApiKeyInfos[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.putApiKeyInfos.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>[]
 
 ---
 
 ##### `PutApiKeys` <a name="PutApiKeys" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.putApiKeys"></a>
 
 ```csharp
-private void PutApiKeys(object Value)
+private void PutApiKeys(IResolvable|GenaiAgentChildAgentsApiKeys[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.putApiKeys.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>[]
 
 ---
 
 ##### `PutChatbot` <a name="PutChatbot" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.putChatbot"></a>
 
 ```csharp
-private void PutChatbot(object Value)
+private void PutChatbot(IResolvable|GenaiAgentChildAgentsChatbot[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.putChatbot.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>[]
 
 ---
 
 ##### `PutChatbotIdentifiers` <a name="PutChatbotIdentifiers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.putChatbotIdentifiers"></a>
 
 ```csharp
-private void PutChatbotIdentifiers(object Value)
+private void PutChatbotIdentifiers(IResolvable|GenaiAgentChildAgentsChatbotIdentifiers[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.putChatbotIdentifiers.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>[]
 
 ---
 
 ##### `PutDeployment` <a name="PutDeployment" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.putDeployment"></a>
 
 ```csharp
-private void PutDeployment(object Value)
+private void PutDeployment(IResolvable|GenaiAgentChildAgentsDeployment[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.putDeployment.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>[]
 
 ---
 
@@ -13126,12 +13126,12 @@ private void ResetDescription()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.chatbot">Chatbot</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotList">GenaiAgentChildAgentsChatbotList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.chatbotIdentifiers">ChatbotIdentifiers</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersList">GenaiAgentChildAgentsChatbotIdentifiersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.deployment">Deployment</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentList">GenaiAgentChildAgentsDeploymentList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.anthropicApiKeyInput">AnthropicApiKeyInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.apiKeyInfosInput">ApiKeyInfosInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.apiKeysInput">ApiKeysInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.chatbotIdentifiersInput">ChatbotIdentifiersInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.chatbotInput">ChatbotInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.deploymentInput">DeploymentInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.anthropicApiKeyInput">AnthropicApiKeyInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.apiKeyInfosInput">ApiKeyInfosInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.apiKeysInput">ApiKeysInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.chatbotIdentifiersInput">ChatbotIdentifiersInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.chatbotInput">ChatbotInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.deploymentInput">DeploymentInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.instructionInput">InstructionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.modelUuidInput">ModelUuidInput</a></code> | <code>string</code> | *No description.* |
@@ -13144,7 +13144,7 @@ private void ResetDescription()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.projectId">ProjectId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.region">Region</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a></code> | *No description.* |
 
 ---
 
@@ -13245,60 +13245,60 @@ public GenaiAgentChildAgentsDeploymentList Deployment { get; }
 ##### `AnthropicApiKeyInput`<sup>Optional</sup> <a name="AnthropicApiKeyInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.anthropicApiKeyInput"></a>
 
 ```csharp
-public object AnthropicApiKeyInput { get; }
+public IResolvable|GenaiAgentChildAgentsAnthropicApiKey[] AnthropicApiKeyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>[]
 
 ---
 
 ##### `ApiKeyInfosInput`<sup>Optional</sup> <a name="ApiKeyInfosInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.apiKeyInfosInput"></a>
 
 ```csharp
-public object ApiKeyInfosInput { get; }
+public IResolvable|GenaiAgentChildAgentsApiKeyInfos[] ApiKeyInfosInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>[]
 
 ---
 
 ##### `ApiKeysInput`<sup>Optional</sup> <a name="ApiKeysInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.apiKeysInput"></a>
 
 ```csharp
-public object ApiKeysInput { get; }
+public IResolvable|GenaiAgentChildAgentsApiKeys[] ApiKeysInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>[]
 
 ---
 
 ##### `ChatbotIdentifiersInput`<sup>Optional</sup> <a name="ChatbotIdentifiersInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.chatbotIdentifiersInput"></a>
 
 ```csharp
-public object ChatbotIdentifiersInput { get; }
+public IResolvable|GenaiAgentChildAgentsChatbotIdentifiers[] ChatbotIdentifiersInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>[]
 
 ---
 
 ##### `ChatbotInput`<sup>Optional</sup> <a name="ChatbotInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.chatbotInput"></a>
 
 ```csharp
-public object ChatbotInput { get; }
+public IResolvable|GenaiAgentChildAgentsChatbot[] ChatbotInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>[]
 
 ---
 
 ##### `DeploymentInput`<sup>Optional</sup> <a name="DeploymentInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.deploymentInput"></a>
 
 ```csharp
-public object DeploymentInput { get; }
+public IResolvable|GenaiAgentChildAgentsDeployment[] DeploymentInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>[]
 
 ---
 
@@ -13425,10 +13425,10 @@ public string Region { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentChildAgents InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>
 
 ---
 
@@ -13554,7 +13554,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeploymentList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeploymentList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeploymentList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeploymentList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>[]</code> | *No description.* |
 
 ---
 
@@ -13585,10 +13585,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeploymentList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentDeployment[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>[]
 
 ---
 
@@ -13868,7 +13868,7 @@ private void ResetVisibility()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeploymentOutputReference.property.url">Url</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeploymentOutputReference.property.uuid">Uuid</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeploymentOutputReference.property.visibility">Visibility</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeploymentOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeploymentOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a></code> | *No description.* |
 
 ---
 
@@ -14019,10 +14019,10 @@ public string Visibility { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeploymentOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentDeployment InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>
 
 ---
 
@@ -14148,7 +14148,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctionsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctionsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctionsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctionsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>[]</code> | *No description.* |
 
 ---
 
@@ -14179,10 +14179,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctionsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentFunctions[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>[]
 
 ---
 
@@ -14489,7 +14489,7 @@ private void ResetUuid()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctionsOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctionsOutputReference.property.url">Url</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctionsOutputReference.property.uuid">Uuid</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctionsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctionsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a></code> | *No description.* |
 
 ---
 
@@ -14700,10 +14700,10 @@ public string Uuid { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctionsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentFunctions InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>
 
 ---
 
@@ -15307,7 +15307,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>[]</code> | *No description.* |
 
 ---
 
@@ -15338,10 +15338,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentKnowledgeBases[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>[]
 
 ---
 
@@ -15657,7 +15657,7 @@ private void ResetUserId()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.uuid">Uuid</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.databaseIdInput">DatabaseIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.embeddingModelUuidInput">EmbeddingModelUuidInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.isPublicInput">IsPublicInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.isPublicInput">IsPublicInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.lastIndexingJobInput">LastIndexingJobInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob">GenaiAgentKnowledgeBasesLastIndexingJob</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.projectIdInput">ProjectIdInput</a></code> | <code>string</code> | *No description.* |
@@ -15666,13 +15666,13 @@ private void ResetUserId()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.userIdInput">UserIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.databaseId">DatabaseId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.embeddingModelUuid">EmbeddingModelUuid</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.isPublic">IsPublic</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.isPublic">IsPublic</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.projectId">ProjectId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.region">Region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.tags">Tags</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.userId">UserId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a></code> | *No description.* |
 
 ---
 
@@ -15773,10 +15773,10 @@ public string EmbeddingModelUuidInput { get; }
 ##### `IsPublicInput`<sup>Optional</sup> <a name="IsPublicInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.isPublicInput"></a>
 
 ```csharp
-public object IsPublicInput { get; }
+public bool|IResolvable IsPublicInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -15863,10 +15863,10 @@ public string EmbeddingModelUuid { get; }
 ##### `IsPublic`<sup>Required</sup> <a name="IsPublic" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.isPublic"></a>
 
 ```csharp
-public object IsPublic { get; }
+public bool|IResolvable IsPublic { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -15923,10 +15923,10 @@ public string UserId { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentKnowledgeBases InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>
 
 ---
 
@@ -16052,7 +16052,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreementList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreementList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreementList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreementList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>[]</code> | *No description.* |
 
 ---
 
@@ -16083,10 +16083,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreementList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentModelAgreement[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>[]
 
 ---
 
@@ -16355,7 +16355,7 @@ private void ResetUuid()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreementOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreementOutputReference.property.url">Url</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreementOutputReference.property.uuid">Uuid</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreementOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreementOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a></code> | *No description.* |
 
 ---
 
@@ -16466,10 +16466,10 @@ public string Uuid { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreementOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentModelAgreement InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>
 
 ---
 
@@ -16595,7 +16595,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>[]</code> | *No description.* |
 
 ---
 
@@ -16626,10 +16626,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentModel[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>[]
 
 ---
 
@@ -16871,24 +16871,24 @@ Returns a reversible string representation.
 ##### `PutAgreement` <a name="PutAgreement" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.putAgreement"></a>
 
 ```csharp
-private void PutAgreement(object Value)
+private void PutAgreement(IResolvable|GenaiAgentModelAgreement[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.putAgreement.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>[]
 
 ---
 
 ##### `PutVersions` <a name="PutVersions" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.putVersions"></a>
 
 ```csharp
-private void PutVersions(object Value)
+private void PutVersions(IResolvable|GenaiAgentModelVersions[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.putVersions.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>[]
 
 ---
 
@@ -16969,27 +16969,27 @@ private void ResetVersions()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.createdAt">CreatedAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.updatedAt">UpdatedAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.versions">Versions</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsList">GenaiAgentModelVersionsList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.agreementInput">AgreementInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.agreementInput">AgreementInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.inferenceNameInput">InferenceNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.inferenceVersionInput">InferenceVersionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.isFoundationalInput">IsFoundationalInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.isFoundationalInput">IsFoundationalInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.parentUuidInput">ParentUuidInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.providerInput">ProviderInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.uploadCompleteInput">UploadCompleteInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.uploadCompleteInput">UploadCompleteInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.urlInput">UrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.usecasesInput">UsecasesInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.versionsInput">VersionsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.versionsInput">VersionsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.inferenceName">InferenceName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.inferenceVersion">InferenceVersion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.isFoundational">IsFoundational</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.isFoundational">IsFoundational</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.parentUuid">ParentUuid</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.provider">Provider</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.uploadComplete">UploadComplete</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.uploadComplete">UploadComplete</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.url">Url</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.usecases">Usecases</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a></code> | *No description.* |
 
 ---
 
@@ -17060,10 +17060,10 @@ public GenaiAgentModelVersionsList Versions { get; }
 ##### `AgreementInput`<sup>Optional</sup> <a name="AgreementInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.agreementInput"></a>
 
 ```csharp
-public object AgreementInput { get; }
+public IResolvable|GenaiAgentModelAgreement[] AgreementInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>[]
 
 ---
 
@@ -17090,10 +17090,10 @@ public string InferenceVersionInput { get; }
 ##### `IsFoundationalInput`<sup>Optional</sup> <a name="IsFoundationalInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.isFoundationalInput"></a>
 
 ```csharp
-public object IsFoundationalInput { get; }
+public bool|IResolvable IsFoundationalInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -17130,10 +17130,10 @@ public string ProviderInput { get; }
 ##### `UploadCompleteInput`<sup>Optional</sup> <a name="UploadCompleteInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.uploadCompleteInput"></a>
 
 ```csharp
-public object UploadCompleteInput { get; }
+public bool|IResolvable UploadCompleteInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -17160,10 +17160,10 @@ public string[] UsecasesInput { get; }
 ##### `VersionsInput`<sup>Optional</sup> <a name="VersionsInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.versionsInput"></a>
 
 ```csharp
-public object VersionsInput { get; }
+public IResolvable|GenaiAgentModelVersions[] VersionsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>[]
 
 ---
 
@@ -17190,10 +17190,10 @@ public string InferenceVersion { get; }
 ##### `IsFoundational`<sup>Required</sup> <a name="IsFoundational" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.isFoundational"></a>
 
 ```csharp
-public object IsFoundational { get; }
+public bool|IResolvable IsFoundational { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -17230,10 +17230,10 @@ public string Provider { get; }
 ##### `UploadComplete`<sup>Required</sup> <a name="UploadComplete" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.uploadComplete"></a>
 
 ```csharp
-public object UploadComplete { get; }
+public bool|IResolvable UploadComplete { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -17260,10 +17260,10 @@ public string[] Usecases { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentModel InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>
 
 ---
 
@@ -17389,7 +17389,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>[]</code> | *No description.* |
 
 ---
 
@@ -17420,10 +17420,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentModelVersions[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>[]
 
 ---
 
@@ -17683,7 +17683,7 @@ private void ResetPatch()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsOutputReference.property.major">Major</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsOutputReference.property.minor">Minor</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsOutputReference.property.patch">Patch</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a></code> | *No description.* |
 
 ---
 
@@ -17774,10 +17774,10 @@ public double Patch { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentModelVersions InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>
 
 ---
 
@@ -17903,7 +17903,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKeyList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKeyList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKeyList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKeyList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>[]</code> | *No description.* |
 
 ---
 
@@ -17934,10 +17934,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKeyList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentOpenAiApiKey[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>[]
 
 ---
 
@@ -18200,7 +18200,7 @@ private void ResetUuid()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKeyOutputReference.property.createdBy">CreatedBy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKeyOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKeyOutputReference.property.uuid">Uuid</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKeyOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKeyOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a></code> | *No description.* |
 
 ---
 
@@ -18321,10 +18321,10 @@ public string Uuid { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKeyOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentOpenAiApiKey InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>
 
 ---
 
@@ -18450,7 +18450,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKeyList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKeyList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKeyList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKeyList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>[]</code> | *No description.* |
 
 ---
 
@@ -18481,10 +18481,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKeyList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentParentAgentsAnthropicApiKey[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>[]
 
 ---
 
@@ -18747,7 +18747,7 @@ private void ResetUuid()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKeyOutputReference.property.createdBy">CreatedBy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKeyOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKeyOutputReference.property.uuid">Uuid</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKeyOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKeyOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a></code> | *No description.* |
 
 ---
 
@@ -18868,10 +18868,10 @@ public string Uuid { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKeyOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentParentAgentsAnthropicApiKey InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>
 
 ---
 
@@ -18997,7 +18997,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfosList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfosList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfosList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfosList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>[]</code> | *No description.* |
 
 ---
 
@@ -19028,10 +19028,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfosList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentParentAgentsApiKeyInfos[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>[]
 
 ---
 
@@ -19302,7 +19302,7 @@ private void ResetUuid()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfosOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfosOutputReference.property.secretKey">SecretKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfosOutputReference.property.uuid">Uuid</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfosOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfosOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a></code> | *No description.* |
 
 ---
 
@@ -19433,10 +19433,10 @@ public string Uuid { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfosOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentParentAgentsApiKeyInfos InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>
 
 ---
 
@@ -19562,7 +19562,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeysList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeysList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeysList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeysList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>[]</code> | *No description.* |
 
 ---
 
@@ -19593,10 +19593,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeysList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentParentAgentsApiKeys[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>[]
 
 ---
 
@@ -19838,7 +19838,7 @@ private void ResetApiKey()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeysOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeysOutputReference.property.apiKeyInput">ApiKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeysOutputReference.property.apiKey">ApiKey</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeysOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeysOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a></code> | *No description.* |
 
 ---
 
@@ -19889,10 +19889,10 @@ public string ApiKey { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeysOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentParentAgentsApiKeys InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>
 
 ---
 
@@ -20018,7 +20018,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>[]</code> | *No description.* |
 
 ---
 
@@ -20049,10 +20049,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentParentAgentsChatbotIdentifiers[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>[]
 
 ---
 
@@ -20286,7 +20286,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersOutputReference.property.chatbotId">ChatbotId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a></code> | *No description.* |
 
 ---
 
@@ -20327,10 +20327,10 @@ public string ChatbotId { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentParentAgentsChatbotIdentifiers InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>
 
 ---
 
@@ -20456,7 +20456,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>[]</code> | *No description.* |
 
 ---
 
@@ -20487,10 +20487,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentParentAgentsChatbot[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>[]
 
 ---
 
@@ -20777,7 +20777,7 @@ private void ResetStartingMessage()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotOutputReference.property.primaryColor">PrimaryColor</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotOutputReference.property.secondaryColor">SecondaryColor</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotOutputReference.property.startingMessage">StartingMessage</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a></code> | *No description.* |
 
 ---
 
@@ -20928,10 +20928,10 @@ public string StartingMessage { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentParentAgentsChatbot InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>
 
 ---
 
@@ -21057,7 +21057,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>[]</code> | *No description.* |
 
 ---
 
@@ -21088,10 +21088,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentParentAgentsDeployment[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>[]
 
 ---
 
@@ -21371,7 +21371,7 @@ private void ResetVisibility()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentOutputReference.property.url">Url</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentOutputReference.property.uuid">Uuid</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentOutputReference.property.visibility">Visibility</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a></code> | *No description.* |
 
 ---
 
@@ -21522,10 +21522,10 @@ public string Visibility { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentParentAgentsDeployment InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>
 
 ---
 
@@ -21651,7 +21651,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>[]</code> | *No description.* |
 
 ---
 
@@ -21682,10 +21682,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentParentAgents[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>[]
 
 ---
 
@@ -21927,72 +21927,72 @@ Returns a reversible string representation.
 ##### `PutAnthropicApiKey` <a name="PutAnthropicApiKey" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.putAnthropicApiKey"></a>
 
 ```csharp
-private void PutAnthropicApiKey(object Value)
+private void PutAnthropicApiKey(IResolvable|GenaiAgentParentAgentsAnthropicApiKey[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.putAnthropicApiKey.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>[]
 
 ---
 
 ##### `PutApiKeyInfos` <a name="PutApiKeyInfos" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.putApiKeyInfos"></a>
 
 ```csharp
-private void PutApiKeyInfos(object Value)
+private void PutApiKeyInfos(IResolvable|GenaiAgentParentAgentsApiKeyInfos[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.putApiKeyInfos.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>[]
 
 ---
 
 ##### `PutApiKeys` <a name="PutApiKeys" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.putApiKeys"></a>
 
 ```csharp
-private void PutApiKeys(object Value)
+private void PutApiKeys(IResolvable|GenaiAgentParentAgentsApiKeys[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.putApiKeys.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>[]
 
 ---
 
 ##### `PutChatbot` <a name="PutChatbot" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.putChatbot"></a>
 
 ```csharp
-private void PutChatbot(object Value)
+private void PutChatbot(IResolvable|GenaiAgentParentAgentsChatbot[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.putChatbot.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>[]
 
 ---
 
 ##### `PutChatbotIdentifiers` <a name="PutChatbotIdentifiers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.putChatbotIdentifiers"></a>
 
 ```csharp
-private void PutChatbotIdentifiers(object Value)
+private void PutChatbotIdentifiers(IResolvable|GenaiAgentParentAgentsChatbotIdentifiers[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.putChatbotIdentifiers.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>[]
 
 ---
 
 ##### `PutDeployment` <a name="PutDeployment" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.putDeployment"></a>
 
 ```csharp
-private void PutDeployment(object Value)
+private void PutDeployment(IResolvable|GenaiAgentParentAgentsDeployment[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.putDeployment.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>[]
 
 ---
 
@@ -22052,12 +22052,12 @@ private void ResetDescription()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.chatbot">Chatbot</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotList">GenaiAgentParentAgentsChatbotList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.chatbotIdentifiers">ChatbotIdentifiers</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersList">GenaiAgentParentAgentsChatbotIdentifiersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.deployment">Deployment</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentList">GenaiAgentParentAgentsDeploymentList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.anthropicApiKeyInput">AnthropicApiKeyInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.apiKeyInfosInput">ApiKeyInfosInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.apiKeysInput">ApiKeysInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.chatbotIdentifiersInput">ChatbotIdentifiersInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.chatbotInput">ChatbotInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.deploymentInput">DeploymentInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.anthropicApiKeyInput">AnthropicApiKeyInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.apiKeyInfosInput">ApiKeyInfosInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.apiKeysInput">ApiKeysInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.chatbotIdentifiersInput">ChatbotIdentifiersInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.chatbotInput">ChatbotInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.deploymentInput">DeploymentInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.instructionInput">InstructionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.modelUuidInput">ModelUuidInput</a></code> | <code>string</code> | *No description.* |
@@ -22070,7 +22070,7 @@ private void ResetDescription()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.projectId">ProjectId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.region">Region</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a></code> | *No description.* |
 
 ---
 
@@ -22171,60 +22171,60 @@ public GenaiAgentParentAgentsDeploymentList Deployment { get; }
 ##### `AnthropicApiKeyInput`<sup>Optional</sup> <a name="AnthropicApiKeyInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.anthropicApiKeyInput"></a>
 
 ```csharp
-public object AnthropicApiKeyInput { get; }
+public IResolvable|GenaiAgentParentAgentsAnthropicApiKey[] AnthropicApiKeyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>[]
 
 ---
 
 ##### `ApiKeyInfosInput`<sup>Optional</sup> <a name="ApiKeyInfosInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.apiKeyInfosInput"></a>
 
 ```csharp
-public object ApiKeyInfosInput { get; }
+public IResolvable|GenaiAgentParentAgentsApiKeyInfos[] ApiKeyInfosInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>[]
 
 ---
 
 ##### `ApiKeysInput`<sup>Optional</sup> <a name="ApiKeysInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.apiKeysInput"></a>
 
 ```csharp
-public object ApiKeysInput { get; }
+public IResolvable|GenaiAgentParentAgentsApiKeys[] ApiKeysInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>[]
 
 ---
 
 ##### `ChatbotIdentifiersInput`<sup>Optional</sup> <a name="ChatbotIdentifiersInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.chatbotIdentifiersInput"></a>
 
 ```csharp
-public object ChatbotIdentifiersInput { get; }
+public IResolvable|GenaiAgentParentAgentsChatbotIdentifiers[] ChatbotIdentifiersInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>[]
 
 ---
 
 ##### `ChatbotInput`<sup>Optional</sup> <a name="ChatbotInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.chatbotInput"></a>
 
 ```csharp
-public object ChatbotInput { get; }
+public IResolvable|GenaiAgentParentAgentsChatbot[] ChatbotInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>[]
 
 ---
 
 ##### `DeploymentInput`<sup>Optional</sup> <a name="DeploymentInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.deploymentInput"></a>
 
 ```csharp
-public object DeploymentInput { get; }
+public IResolvable|GenaiAgentParentAgentsDeployment[] DeploymentInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>[]
 
 ---
 
@@ -22351,10 +22351,10 @@ public string Region { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentParentAgents InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>
 
 ---
 
@@ -22958,7 +22958,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>[]</code> | *No description.* |
 
 ---
 
@@ -22989,10 +22989,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentTemplateKnowledgeBases[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>[]
 
 ---
 
@@ -23308,7 +23308,7 @@ private void ResetUserId()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.uuid">Uuid</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.databaseIdInput">DatabaseIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.embeddingModelUuidInput">EmbeddingModelUuidInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.isPublicInput">IsPublicInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.isPublicInput">IsPublicInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.lastIndexingJobInput">LastIndexingJobInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob">GenaiAgentTemplateKnowledgeBasesLastIndexingJob</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.projectIdInput">ProjectIdInput</a></code> | <code>string</code> | *No description.* |
@@ -23317,13 +23317,13 @@ private void ResetUserId()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.userIdInput">UserIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.databaseId">DatabaseId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.embeddingModelUuid">EmbeddingModelUuid</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.isPublic">IsPublic</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.isPublic">IsPublic</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.projectId">ProjectId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.region">Region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.tags">Tags</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.userId">UserId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a></code> | *No description.* |
 
 ---
 
@@ -23424,10 +23424,10 @@ public string EmbeddingModelUuidInput { get; }
 ##### `IsPublicInput`<sup>Optional</sup> <a name="IsPublicInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.isPublicInput"></a>
 
 ```csharp
-public object IsPublicInput { get; }
+public bool|IResolvable IsPublicInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -23514,10 +23514,10 @@ public string EmbeddingModelUuid { get; }
 ##### `IsPublic`<sup>Required</sup> <a name="IsPublic" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.isPublic"></a>
 
 ```csharp
-public object IsPublic { get; }
+public bool|IResolvable IsPublic { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -23574,10 +23574,10 @@ public string UserId { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentTemplateKnowledgeBases InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>
 
 ---
 
@@ -23703,7 +23703,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>[]</code> | *No description.* |
 
 ---
 
@@ -23734,10 +23734,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentTemplate[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>[]
 
 ---
 
@@ -23863,7 +23863,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreementList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreementList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreementList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreementList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>[]</code> | *No description.* |
 
 ---
 
@@ -23894,10 +23894,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreementList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentTemplateModelAgreement[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>[]
 
 ---
 
@@ -24166,7 +24166,7 @@ private void ResetUuid()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreementOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreementOutputReference.property.url">Url</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreementOutputReference.property.uuid">Uuid</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreementOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreementOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a></code> | *No description.* |
 
 ---
 
@@ -24277,10 +24277,10 @@ public string Uuid { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreementOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentTemplateModelAgreement InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>
 
 ---
 
@@ -24406,7 +24406,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>[]</code> | *No description.* |
 
 ---
 
@@ -24437,10 +24437,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentTemplateModel[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>[]
 
 ---
 
@@ -24682,24 +24682,24 @@ Returns a reversible string representation.
 ##### `PutAgreement` <a name="PutAgreement" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.putAgreement"></a>
 
 ```csharp
-private void PutAgreement(object Value)
+private void PutAgreement(IResolvable|GenaiAgentTemplateModelAgreement[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.putAgreement.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>[]
 
 ---
 
 ##### `PutVersions` <a name="PutVersions" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.putVersions"></a>
 
 ```csharp
-private void PutVersions(object Value)
+private void PutVersions(IResolvable|GenaiAgentTemplateModelVersions[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.putVersions.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>[]
 
 ---
 
@@ -24780,27 +24780,27 @@ private void ResetVersions()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.createdAt">CreatedAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.updatedAt">UpdatedAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.versions">Versions</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsList">GenaiAgentTemplateModelVersionsList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.agreementInput">AgreementInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.agreementInput">AgreementInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.inferenceNameInput">InferenceNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.inferenceVersionInput">InferenceVersionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.isFoundationalInput">IsFoundationalInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.isFoundationalInput">IsFoundationalInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.parentUuidInput">ParentUuidInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.providerInput">ProviderInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.uploadCompleteInput">UploadCompleteInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.uploadCompleteInput">UploadCompleteInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.urlInput">UrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.usecasesInput">UsecasesInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.versionsInput">VersionsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.versionsInput">VersionsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.inferenceName">InferenceName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.inferenceVersion">InferenceVersion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.isFoundational">IsFoundational</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.isFoundational">IsFoundational</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.parentUuid">ParentUuid</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.provider">Provider</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.uploadComplete">UploadComplete</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.uploadComplete">UploadComplete</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.url">Url</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.usecases">Usecases</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a></code> | *No description.* |
 
 ---
 
@@ -24871,10 +24871,10 @@ public GenaiAgentTemplateModelVersionsList Versions { get; }
 ##### `AgreementInput`<sup>Optional</sup> <a name="AgreementInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.agreementInput"></a>
 
 ```csharp
-public object AgreementInput { get; }
+public IResolvable|GenaiAgentTemplateModelAgreement[] AgreementInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>[]
 
 ---
 
@@ -24901,10 +24901,10 @@ public string InferenceVersionInput { get; }
 ##### `IsFoundationalInput`<sup>Optional</sup> <a name="IsFoundationalInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.isFoundationalInput"></a>
 
 ```csharp
-public object IsFoundationalInput { get; }
+public bool|IResolvable IsFoundationalInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -24941,10 +24941,10 @@ public string ProviderInput { get; }
 ##### `UploadCompleteInput`<sup>Optional</sup> <a name="UploadCompleteInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.uploadCompleteInput"></a>
 
 ```csharp
-public object UploadCompleteInput { get; }
+public bool|IResolvable UploadCompleteInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -24971,10 +24971,10 @@ public string[] UsecasesInput { get; }
 ##### `VersionsInput`<sup>Optional</sup> <a name="VersionsInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.versionsInput"></a>
 
 ```csharp
-public object VersionsInput { get; }
+public IResolvable|GenaiAgentTemplateModelVersions[] VersionsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>[]
 
 ---
 
@@ -25001,10 +25001,10 @@ public string InferenceVersion { get; }
 ##### `IsFoundational`<sup>Required</sup> <a name="IsFoundational" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.isFoundational"></a>
 
 ```csharp
-public object IsFoundational { get; }
+public bool|IResolvable IsFoundational { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -25041,10 +25041,10 @@ public string Provider { get; }
 ##### `UploadComplete`<sup>Required</sup> <a name="UploadComplete" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.uploadComplete"></a>
 
 ```csharp
-public object UploadComplete { get; }
+public bool|IResolvable UploadComplete { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -25071,10 +25071,10 @@ public string[] Usecases { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentTemplateModel InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>
 
 ---
 
@@ -25200,7 +25200,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>[]</code> | *No description.* |
 
 ---
 
@@ -25231,10 +25231,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentTemplateModelVersions[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>[]
 
 ---
 
@@ -25494,7 +25494,7 @@ private void ResetPatch()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsOutputReference.property.major">Major</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsOutputReference.property.minor">Minor</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsOutputReference.property.patch">Patch</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a></code> | *No description.* |
 
 ---
 
@@ -25585,10 +25585,10 @@ public double Patch { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentTemplateModelVersions InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>
 
 ---
 
@@ -25829,24 +25829,24 @@ Returns a reversible string representation.
 ##### `PutKnowledgeBases` <a name="PutKnowledgeBases" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.putKnowledgeBases"></a>
 
 ```csharp
-private void PutKnowledgeBases(object Value)
+private void PutKnowledgeBases(IResolvable|GenaiAgentTemplateKnowledgeBases[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.putKnowledgeBases.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>[]
 
 ---
 
 ##### `PutModel` <a name="PutModel" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.putModel"></a>
 
 ```csharp
-private void PutModel(object Value)
+private void PutModel(IResolvable|GenaiAgentTemplateModel[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.putModel.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>[]
 
 ---
 
@@ -25924,9 +25924,9 @@ private void ResetUuid()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.instructionInput">InstructionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.kInput">KInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.knowledgeBasesInput">KnowledgeBasesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.knowledgeBasesInput">KnowledgeBasesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.maxTokensInput">MaxTokensInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.modelInput">ModelInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.modelInput">ModelInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.temperatureInput">TemperatureInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.topPInput">TopPInput</a></code> | <code>double</code> | *No description.* |
@@ -25939,7 +25939,7 @@ private void ResetUuid()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.temperature">Temperature</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.topP">TopP</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.uuid">Uuid</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a></code> | *No description.* |
 
 ---
 
@@ -26040,10 +26040,10 @@ public double KInput { get; }
 ##### `KnowledgeBasesInput`<sup>Optional</sup> <a name="KnowledgeBasesInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.knowledgeBasesInput"></a>
 
 ```csharp
-public object KnowledgeBasesInput { get; }
+public IResolvable|GenaiAgentTemplateKnowledgeBases[] KnowledgeBasesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>[]
 
 ---
 
@@ -26060,10 +26060,10 @@ public double MaxTokensInput { get; }
 ##### `ModelInput`<sup>Optional</sup> <a name="ModelInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.modelInput"></a>
 
 ```csharp
-public object ModelInput { get; }
+public IResolvable|GenaiAgentTemplateModel[] ModelInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>[]
 
 ---
 
@@ -26190,10 +26190,10 @@ public string Uuid { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GenaiAgentTemplate InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>
 
 ---
 

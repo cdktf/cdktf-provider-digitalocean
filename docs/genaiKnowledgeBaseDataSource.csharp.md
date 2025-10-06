@@ -278,7 +278,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSource.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSource.importFrom"></a>
@@ -332,7 +332,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSource.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -347,7 +347,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSource.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -537,13 +537,13 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSource.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSource.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSource.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSource.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSource.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSource.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSource.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSource.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSource.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSource.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSource.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSource.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSource.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSource.property.spacesDataSource">SpacesDataSource</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceSpacesDataSourceOutputReference">GenaiKnowledgeBaseDataSourceSpacesDataSourceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSource.property.webCrawlerDataSource">WebCrawlerDataSource</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceWebCrawlerDataSourceOutputReference">GenaiKnowledgeBaseDataSourceWebCrawlerDataSourceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSource.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
@@ -630,20 +630,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSource.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSource.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -690,10 +690,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSource.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -805,13 +805,13 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new GenaiKnowledgeBaseDataSourceConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string KnowledgeBaseUuid,
     string Id = null,
     GenaiKnowledgeBaseDataSourceSpacesDataSource SpacesDataSource = null,
@@ -823,13 +823,13 @@ new GenaiKnowledgeBaseDataSourceConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceConfig.property.knowledgeBaseUuid">KnowledgeBaseUuid</a></code> | <code>string</code> | UUID of the Knowledge Base. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/genai_knowledge_base_data_source#id GenaiKnowledgeBaseDataSource#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceConfig.property.spacesDataSource">SpacesDataSource</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceSpacesDataSource">GenaiKnowledgeBaseDataSourceSpacesDataSource</a></code> | spaces_data_source block. |
@@ -840,20 +840,20 @@ new GenaiKnowledgeBaseDataSourceConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -900,10 +900,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1040,7 +1040,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 new GenaiKnowledgeBaseDataSourceWebCrawlerDataSource {
     string BaseUrl = null,
     string CrawlingOption = null,
-    object EmbedMedia = null
+    bool|IResolvable EmbedMedia = null
 };
 ```
 
@@ -1050,7 +1050,7 @@ new GenaiKnowledgeBaseDataSourceWebCrawlerDataSource {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceWebCrawlerDataSource.property.baseUrl">BaseUrl</a></code> | <code>string</code> | The base URL to crawl. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceWebCrawlerDataSource.property.crawlingOption">CrawlingOption</a></code> | <code>string</code> | Options for specifying how URLs found on pages should be handled. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceWebCrawlerDataSource.property.embedMedia">EmbedMedia</a></code> | <code>object</code> | Whether to embed media content. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceWebCrawlerDataSource.property.embedMedia">EmbedMedia</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to embed media content. |
 
 ---
 
@@ -1091,10 +1091,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `EmbedMedia`<sup>Optional</sup> <a name="EmbedMedia" id="@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceWebCrawlerDataSource.property.embedMedia"></a>
 
 ```csharp
-public object EmbedMedia { get; set; }
+public bool|IResolvable EmbedMedia { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to embed media content.
 
@@ -1673,10 +1673,10 @@ private void ResetEmbedMedia()
 | <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceWebCrawlerDataSourceOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceWebCrawlerDataSourceOutputReference.property.baseUrlInput">BaseUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceWebCrawlerDataSourceOutputReference.property.crawlingOptionInput">CrawlingOptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceWebCrawlerDataSourceOutputReference.property.embedMediaInput">EmbedMediaInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceWebCrawlerDataSourceOutputReference.property.embedMediaInput">EmbedMediaInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceWebCrawlerDataSourceOutputReference.property.baseUrl">BaseUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceWebCrawlerDataSourceOutputReference.property.crawlingOption">CrawlingOption</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceWebCrawlerDataSourceOutputReference.property.embedMedia">EmbedMedia</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceWebCrawlerDataSourceOutputReference.property.embedMedia">EmbedMedia</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceWebCrawlerDataSourceOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceWebCrawlerDataSource">GenaiKnowledgeBaseDataSourceWebCrawlerDataSource</a></code> | *No description.* |
 
 ---
@@ -1728,10 +1728,10 @@ public string CrawlingOptionInput { get; }
 ##### `EmbedMediaInput`<sup>Optional</sup> <a name="EmbedMediaInput" id="@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceWebCrawlerDataSourceOutputReference.property.embedMediaInput"></a>
 
 ```csharp
-public object EmbedMediaInput { get; }
+public bool|IResolvable EmbedMediaInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1758,10 +1758,10 @@ public string CrawlingOption { get; }
 ##### `EmbedMedia`<sup>Required</sup> <a name="EmbedMedia" id="@cdktf/provider-digitalocean.genaiKnowledgeBaseDataSource.GenaiKnowledgeBaseDataSourceWebCrawlerDataSourceOutputReference.property.embedMedia"></a>
 
 ```csharp
-public object EmbedMedia { get; }
+public bool|IResolvable EmbedMedia { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 

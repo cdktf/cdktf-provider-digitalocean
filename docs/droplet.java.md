@@ -12,38 +12,27 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 import com.hashicorp.cdktf.providers.digitalocean.droplet.Droplet;
 
 Droplet.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .image(java.lang.String)
     .name(java.lang.String)
     .size(java.lang.String)
 //  .backupPolicy(DropletBackupPolicy)
-//  .backups(java.lang.Boolean)
-//  .backups(IResolvable)
-//  .dropletAgent(java.lang.Boolean)
-//  .dropletAgent(IResolvable)
-//  .gracefulShutdown(java.lang.Boolean)
-//  .gracefulShutdown(IResolvable)
+//  .backups(java.lang.Boolean|IResolvable)
+//  .dropletAgent(java.lang.Boolean|IResolvable)
+//  .gracefulShutdown(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
-//  .ipv6(java.lang.Boolean)
-//  .ipv6(IResolvable)
+//  .ipv6(java.lang.Boolean|IResolvable)
 //  .ipv6Address(java.lang.String)
-//  .monitoring(java.lang.Boolean)
-//  .monitoring(IResolvable)
-//  .privateNetworking(java.lang.Boolean)
-//  .privateNetworking(IResolvable)
+//  .monitoring(java.lang.Boolean|IResolvable)
+//  .privateNetworking(java.lang.Boolean|IResolvable)
 //  .region(java.lang.String)
-//  .resizeDisk(java.lang.Boolean)
-//  .resizeDisk(IResolvable)
+//  .resizeDisk(java.lang.Boolean|IResolvable)
 //  .sshKeys(java.util.List<java.lang.String>)
 //  .tags(java.util.List<java.lang.String>)
 //  .timeouts(DropletTimeouts)
@@ -57,27 +46,27 @@ Droplet.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.image">image</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#image Droplet#image}. |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#name Droplet#name}. |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.size">size</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#size Droplet#size}. |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.backupPolicy">backupPolicy</a></code> | <code><a href="#@cdktf/provider-digitalocean.droplet.DropletBackupPolicy">DropletBackupPolicy</a></code> | backup_policy block. |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.backups">backups</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#backups Droplet#backups}. |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.dropletAgent">dropletAgent</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#droplet_agent Droplet#droplet_agent}. |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.gracefulShutdown">gracefulShutdown</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#graceful_shutdown Droplet#graceful_shutdown}. |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.backups">backups</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#backups Droplet#backups}. |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.dropletAgent">dropletAgent</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#droplet_agent Droplet#droplet_agent}. |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.gracefulShutdown">gracefulShutdown</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#graceful_shutdown Droplet#graceful_shutdown}. |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#id Droplet#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.ipv6">ipv6</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#ipv6 Droplet#ipv6}. |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.ipv6">ipv6</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#ipv6 Droplet#ipv6}. |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.ipv6Address">ipv6Address</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#ipv6_address Droplet#ipv6_address}. |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.monitoring">monitoring</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#monitoring Droplet#monitoring}. |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.privateNetworking">privateNetworking</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#private_networking Droplet#private_networking}. |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.monitoring">monitoring</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#monitoring Droplet#monitoring}. |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.privateNetworking">privateNetworking</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#private_networking Droplet#private_networking}. |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#region Droplet#region}. |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.resizeDisk">resizeDisk</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#resize_disk Droplet#resize_disk}. |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.resizeDisk">resizeDisk</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#resize_disk Droplet#resize_disk}. |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.sshKeys">sshKeys</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#ssh_keys Droplet#ssh_keys}. |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#tags Droplet#tags}. |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-digitalocean.droplet.DropletTimeouts">DropletTimeouts</a></code> | timeouts block. |
@@ -107,13 +96,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -143,7 +132,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -183,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `backups`<sup>Optional</sup> <a name="backups" id="@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.backups"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#backups Droplet#backups}.
 
@@ -191,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `dropletAgent`<sup>Optional</sup> <a name="dropletAgent" id="@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.dropletAgent"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#droplet_agent Droplet#droplet_agent}.
 
@@ -199,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `gracefulShutdown`<sup>Optional</sup> <a name="gracefulShutdown" id="@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.gracefulShutdown"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#graceful_shutdown Droplet#graceful_shutdown}.
 
@@ -218,7 +207,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `ipv6`<sup>Optional</sup> <a name="ipv6" id="@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.ipv6"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#ipv6 Droplet#ipv6}.
 
@@ -234,7 +223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `monitoring`<sup>Optional</sup> <a name="monitoring" id="@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.monitoring"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#monitoring Droplet#monitoring}.
 
@@ -242,7 +231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `privateNetworking`<sup>Optional</sup> <a name="privateNetworking" id="@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.privateNetworking"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#private_networking Droplet#private_networking}.
 
@@ -258,7 +247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `resizeDisk`<sup>Optional</sup> <a name="resizeDisk" id="@cdktf/provider-digitalocean.droplet.Droplet.Initializer.parameter.resizeDisk"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#resize_disk Droplet#resize_disk}.
 
@@ -560,7 +549,7 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 ##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-digitalocean.droplet.Droplet.hasResourceMove"></a>
 
 ```java
-public TerraformResourceMoveByTarget OR TerraformResourceMoveById hasResourceMove()
+public TerraformResourceMoveByTarget|TerraformResourceMoveById hasResourceMove()
 ```
 
 ##### `importFrom` <a name="importFrom" id="@cdktf/provider-digitalocean.droplet.Droplet.importFrom"></a>
@@ -616,7 +605,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ```java
 public void moveTo(java.lang.String moveTarget)
-public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+public void moveTo(java.lang.String moveTarget, java.lang.String|java.lang.Number index)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -631,7 +620,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-digitalocean.droplet.Droplet.moveTo.parameter.index"></a>
 
-- *Type:* java.lang.String OR java.lang.Number
+- *Type:* java.lang.String|java.lang.Number
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -905,13 +894,13 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.backupPolicy">backupPolicy</a></code> | <code><a href="#@cdktf/provider-digitalocean.droplet.DropletBackupPolicyOutputReference">DropletBackupPolicyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.createdAt">createdAt</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.disk">disk</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -926,37 +915,37 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.urn">urn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.vcpus">vcpus</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.backupPolicyInput">backupPolicyInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.droplet.DropletBackupPolicy">DropletBackupPolicy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.backupsInput">backupsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.dropletAgentInput">dropletAgentInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.gracefulShutdownInput">gracefulShutdownInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.backupsInput">backupsInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.dropletAgentInput">dropletAgentInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.gracefulShutdownInput">gracefulShutdownInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.imageInput">imageInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.ipv6AddressInput">ipv6AddressInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.ipv6Input">ipv6Input</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.monitoringInput">monitoringInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.ipv6Input">ipv6Input</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.monitoringInput">monitoringInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.privateNetworkingInput">privateNetworkingInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.privateNetworkingInput">privateNetworkingInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.resizeDiskInput">resizeDiskInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.resizeDiskInput">resizeDiskInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.sizeInput">sizeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.sshKeysInput">sshKeysInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.tagsInput">tagsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.droplet.DropletTimeouts">DropletTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.droplet.DropletTimeouts">DropletTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.userDataInput">userDataInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.volumeIdsInput">volumeIdsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.vpcUuidInput">vpcUuidInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.backups">backups</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.dropletAgent">dropletAgent</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.gracefulShutdown">gracefulShutdown</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.backups">backups</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.dropletAgent">dropletAgent</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.gracefulShutdown">gracefulShutdown</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.image">image</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.ipv6">ipv6</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.ipv6">ipv6</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.ipv6Address">ipv6Address</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.monitoring">monitoring</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.monitoring">monitoring</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.privateNetworking">privateNetworking</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.privateNetworking">privateNetworking</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.resizeDisk">resizeDisk</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.resizeDisk">resizeDisk</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.size">size</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.sshKeys">sshKeys</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.Droplet.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -1041,20 +1030,20 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.droplet.Droplet.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.droplet.Droplet.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1101,10 +1090,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.droplet.Droplet.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1251,30 +1240,30 @@ public DropletBackupPolicy getBackupPolicyInput();
 ##### `backupsInput`<sup>Optional</sup> <a name="backupsInput" id="@cdktf/provider-digitalocean.droplet.Droplet.property.backupsInput"></a>
 
 ```java
-public java.lang.Object getBackupsInput();
+public java.lang.Boolean|IResolvable getBackupsInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `dropletAgentInput`<sup>Optional</sup> <a name="dropletAgentInput" id="@cdktf/provider-digitalocean.droplet.Droplet.property.dropletAgentInput"></a>
 
 ```java
-public java.lang.Object getDropletAgentInput();
+public java.lang.Boolean|IResolvable getDropletAgentInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `gracefulShutdownInput`<sup>Optional</sup> <a name="gracefulShutdownInput" id="@cdktf/provider-digitalocean.droplet.Droplet.property.gracefulShutdownInput"></a>
 
 ```java
-public java.lang.Object getGracefulShutdownInput();
+public java.lang.Boolean|IResolvable getGracefulShutdownInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1311,20 +1300,20 @@ public java.lang.String getIpv6AddressInput();
 ##### `ipv6Input`<sup>Optional</sup> <a name="ipv6Input" id="@cdktf/provider-digitalocean.droplet.Droplet.property.ipv6Input"></a>
 
 ```java
-public java.lang.Object getIpv6Input();
+public java.lang.Boolean|IResolvable getIpv6Input();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `monitoringInput`<sup>Optional</sup> <a name="monitoringInput" id="@cdktf/provider-digitalocean.droplet.Droplet.property.monitoringInput"></a>
 
 ```java
-public java.lang.Object getMonitoringInput();
+public java.lang.Boolean|IResolvable getMonitoringInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1341,10 +1330,10 @@ public java.lang.String getNameInput();
 ##### `privateNetworkingInput`<sup>Optional</sup> <a name="privateNetworkingInput" id="@cdktf/provider-digitalocean.droplet.Droplet.property.privateNetworkingInput"></a>
 
 ```java
-public java.lang.Object getPrivateNetworkingInput();
+public java.lang.Boolean|IResolvable getPrivateNetworkingInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1361,10 +1350,10 @@ public java.lang.String getRegionInput();
 ##### `resizeDiskInput`<sup>Optional</sup> <a name="resizeDiskInput" id="@cdktf/provider-digitalocean.droplet.Droplet.property.resizeDiskInput"></a>
 
 ```java
-public java.lang.Object getResizeDiskInput();
+public java.lang.Boolean|IResolvable getResizeDiskInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1401,10 +1390,10 @@ public java.util.List<java.lang.String> getTagsInput();
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-digitalocean.droplet.Droplet.property.timeoutsInput"></a>
 
 ```java
-public java.lang.Object getTimeoutsInput();
+public IResolvable|DropletTimeouts getTimeoutsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.droplet.DropletTimeouts">DropletTimeouts</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.droplet.DropletTimeouts">DropletTimeouts</a>
 
 ---
 
@@ -1441,30 +1430,30 @@ public java.lang.String getVpcUuidInput();
 ##### `backups`<sup>Required</sup> <a name="backups" id="@cdktf/provider-digitalocean.droplet.Droplet.property.backups"></a>
 
 ```java
-public java.lang.Object getBackups();
+public java.lang.Boolean|IResolvable getBackups();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `dropletAgent`<sup>Required</sup> <a name="dropletAgent" id="@cdktf/provider-digitalocean.droplet.Droplet.property.dropletAgent"></a>
 
 ```java
-public java.lang.Object getDropletAgent();
+public java.lang.Boolean|IResolvable getDropletAgent();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `gracefulShutdown`<sup>Required</sup> <a name="gracefulShutdown" id="@cdktf/provider-digitalocean.droplet.Droplet.property.gracefulShutdown"></a>
 
 ```java
-public java.lang.Object getGracefulShutdown();
+public java.lang.Boolean|IResolvable getGracefulShutdown();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1491,10 +1480,10 @@ public java.lang.String getImage();
 ##### `ipv6`<sup>Required</sup> <a name="ipv6" id="@cdktf/provider-digitalocean.droplet.Droplet.property.ipv6"></a>
 
 ```java
-public java.lang.Object getIpv6();
+public java.lang.Boolean|IResolvable getIpv6();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1511,10 +1500,10 @@ public java.lang.String getIpv6Address();
 ##### `monitoring`<sup>Required</sup> <a name="monitoring" id="@cdktf/provider-digitalocean.droplet.Droplet.property.monitoring"></a>
 
 ```java
-public java.lang.Object getMonitoring();
+public java.lang.Boolean|IResolvable getMonitoring();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1531,10 +1520,10 @@ public java.lang.String getName();
 ##### `privateNetworking`<sup>Required</sup> <a name="privateNetworking" id="@cdktf/provider-digitalocean.droplet.Droplet.property.privateNetworking"></a>
 
 ```java
-public java.lang.Object getPrivateNetworking();
+public java.lang.Boolean|IResolvable getPrivateNetworking();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1551,10 +1540,10 @@ public java.lang.String getRegion();
 ##### `resizeDisk`<sup>Required</sup> <a name="resizeDisk" id="@cdktf/provider-digitalocean.droplet.Droplet.property.resizeDisk"></a>
 
 ```java
-public java.lang.Object getResizeDisk();
+public java.lang.Boolean|IResolvable getResizeDisk();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1706,38 +1695,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 import com.hashicorp.cdktf.providers.digitalocean.droplet.DropletConfig;
 
 DropletConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .image(java.lang.String)
     .name(java.lang.String)
     .size(java.lang.String)
 //  .backupPolicy(DropletBackupPolicy)
-//  .backups(java.lang.Boolean)
-//  .backups(IResolvable)
-//  .dropletAgent(java.lang.Boolean)
-//  .dropletAgent(IResolvable)
-//  .gracefulShutdown(java.lang.Boolean)
-//  .gracefulShutdown(IResolvable)
+//  .backups(java.lang.Boolean|IResolvable)
+//  .dropletAgent(java.lang.Boolean|IResolvable)
+//  .gracefulShutdown(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
-//  .ipv6(java.lang.Boolean)
-//  .ipv6(IResolvable)
+//  .ipv6(java.lang.Boolean|IResolvable)
 //  .ipv6Address(java.lang.String)
-//  .monitoring(java.lang.Boolean)
-//  .monitoring(IResolvable)
-//  .privateNetworking(java.lang.Boolean)
-//  .privateNetworking(IResolvable)
+//  .monitoring(java.lang.Boolean|IResolvable)
+//  .privateNetworking(java.lang.Boolean|IResolvable)
 //  .region(java.lang.String)
-//  .resizeDisk(java.lang.Boolean)
-//  .resizeDisk(IResolvable)
+//  .resizeDisk(java.lang.Boolean|IResolvable)
 //  .sshKeys(java.util.List<java.lang.String>)
 //  .tags(java.util.List<java.lang.String>)
 //  .timeouts(DropletTimeouts)
@@ -1751,27 +1729,27 @@ DropletConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.image">image</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#image Droplet#image}. |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#name Droplet#name}. |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.size">size</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#size Droplet#size}. |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.backupPolicy">backupPolicy</a></code> | <code><a href="#@cdktf/provider-digitalocean.droplet.DropletBackupPolicy">DropletBackupPolicy</a></code> | backup_policy block. |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.backups">backups</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#backups Droplet#backups}. |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.dropletAgent">dropletAgent</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#droplet_agent Droplet#droplet_agent}. |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.gracefulShutdown">gracefulShutdown</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#graceful_shutdown Droplet#graceful_shutdown}. |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.backups">backups</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#backups Droplet#backups}. |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.dropletAgent">dropletAgent</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#droplet_agent Droplet#droplet_agent}. |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.gracefulShutdown">gracefulShutdown</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#graceful_shutdown Droplet#graceful_shutdown}. |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#id Droplet#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.ipv6">ipv6</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#ipv6 Droplet#ipv6}. |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.ipv6">ipv6</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#ipv6 Droplet#ipv6}. |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.ipv6Address">ipv6Address</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#ipv6_address Droplet#ipv6_address}. |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.monitoring">monitoring</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#monitoring Droplet#monitoring}. |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.privateNetworking">privateNetworking</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#private_networking Droplet#private_networking}. |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.monitoring">monitoring</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#monitoring Droplet#monitoring}. |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.privateNetworking">privateNetworking</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#private_networking Droplet#private_networking}. |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#region Droplet#region}. |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.resizeDisk">resizeDisk</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#resize_disk Droplet#resize_disk}. |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.resizeDisk">resizeDisk</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#resize_disk Droplet#resize_disk}. |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.sshKeys">sshKeys</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#ssh_keys Droplet#ssh_keys}. |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#tags Droplet#tags}. |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.DropletConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-digitalocean.droplet.DropletTimeouts">DropletTimeouts</a></code> | timeouts block. |
@@ -1784,20 +1762,20 @@ DropletConfig.builder()
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.droplet.DropletConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.droplet.DropletConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1844,10 +1822,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.droplet.DropletConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1904,10 +1882,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `backups`<sup>Optional</sup> <a name="backups" id="@cdktf/provider-digitalocean.droplet.DropletConfig.property.backups"></a>
 
 ```java
-public java.lang.Object getBackups();
+public java.lang.Boolean|IResolvable getBackups();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#backups Droplet#backups}.
 
@@ -1916,10 +1894,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `dropletAgent`<sup>Optional</sup> <a name="dropletAgent" id="@cdktf/provider-digitalocean.droplet.DropletConfig.property.dropletAgent"></a>
 
 ```java
-public java.lang.Object getDropletAgent();
+public java.lang.Boolean|IResolvable getDropletAgent();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#droplet_agent Droplet#droplet_agent}.
 
@@ -1928,10 +1906,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `gracefulShutdown`<sup>Optional</sup> <a name="gracefulShutdown" id="@cdktf/provider-digitalocean.droplet.DropletConfig.property.gracefulShutdown"></a>
 
 ```java
-public java.lang.Object getGracefulShutdown();
+public java.lang.Boolean|IResolvable getGracefulShutdown();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#graceful_shutdown Droplet#graceful_shutdown}.
 
@@ -1955,10 +1933,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `ipv6`<sup>Optional</sup> <a name="ipv6" id="@cdktf/provider-digitalocean.droplet.DropletConfig.property.ipv6"></a>
 
 ```java
-public java.lang.Object getIpv6();
+public java.lang.Boolean|IResolvable getIpv6();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#ipv6 Droplet#ipv6}.
 
@@ -1979,10 +1957,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `monitoring`<sup>Optional</sup> <a name="monitoring" id="@cdktf/provider-digitalocean.droplet.DropletConfig.property.monitoring"></a>
 
 ```java
-public java.lang.Object getMonitoring();
+public java.lang.Boolean|IResolvable getMonitoring();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#monitoring Droplet#monitoring}.
 
@@ -1991,10 +1969,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `privateNetworking`<sup>Optional</sup> <a name="privateNetworking" id="@cdktf/provider-digitalocean.droplet.DropletConfig.property.privateNetworking"></a>
 
 ```java
-public java.lang.Object getPrivateNetworking();
+public java.lang.Boolean|IResolvable getPrivateNetworking();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#private_networking Droplet#private_networking}.
 
@@ -2015,10 +1993,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `resizeDisk`<sup>Optional</sup> <a name="resizeDisk" id="@cdktf/provider-digitalocean.droplet.DropletConfig.property.resizeDisk"></a>
 
 ```java
-public java.lang.Object getResizeDisk();
+public java.lang.Boolean|IResolvable getResizeDisk();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/droplet#resize_disk Droplet#resize_disk}.
 
@@ -2733,7 +2711,7 @@ public void resetUpdate()
 | <code><a href="#@cdktf/provider-digitalocean.droplet.DropletTimeoutsOutputReference.property.create">create</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.DropletTimeoutsOutputReference.property.delete">delete</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.droplet.DropletTimeoutsOutputReference.property.update">update</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.droplet.DropletTimeouts">DropletTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.droplet.DropletTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.droplet.DropletTimeouts">DropletTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -2824,10 +2802,10 @@ public java.lang.String getUpdate();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.droplet.DropletTimeoutsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DropletTimeouts getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.droplet.DropletTimeouts">DropletTimeouts</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.droplet.DropletTimeouts">DropletTimeouts</a>
 
 ---
 

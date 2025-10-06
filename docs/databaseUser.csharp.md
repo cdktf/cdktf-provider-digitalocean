@@ -277,7 +277,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUser.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUser.importFrom"></a>
@@ -331,7 +331,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUser.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -346,7 +346,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUser.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -371,12 +371,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `PutSettings` <a name="PutSettings" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUser.putSettings"></a>
 
 ```csharp
-private void PutSettings(object Value)
+private void PutSettings(IResolvable|DatabaseUserSettings[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUser.putSettings.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettings">DatabaseUserSettings</a>[]
 
 ---
 
@@ -524,13 +524,13 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUser.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUser.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUser.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUser.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUser.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUser.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUser.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUser.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUser.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUser.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUser.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUser.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUser.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUser.property.accessCert">AccessCert</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUser.property.accessKey">AccessKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUser.property.password">Password</a></code> | <code>string</code> | *No description.* |
@@ -540,7 +540,7 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUser.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUser.property.mysqlAuthPluginInput">MysqlAuthPluginInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUser.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUser.property.settingsInput">SettingsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUser.property.settingsInput">SettingsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettings">DatabaseUserSettings</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUser.property.clusterId">ClusterId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUser.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUser.property.mysqlAuthPlugin">MysqlAuthPlugin</a></code> | <code>string</code> | *No description.* |
@@ -623,20 +623,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUser.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUser.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -683,10 +683,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUser.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -783,10 +783,10 @@ public string NameInput { get; }
 ##### `SettingsInput`<sup>Optional</sup> <a name="SettingsInput" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUser.property.settingsInput"></a>
 
 ```csharp
-public object SettingsInput { get; }
+public IResolvable|DatabaseUserSettings[] SettingsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettings">DatabaseUserSettings</a>[]
 
 ---
 
@@ -858,18 +858,18 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new DatabaseUserConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string ClusterId,
     string Name,
     string Id = null,
     string MysqlAuthPlugin = null,
-    object Settings = null
+    IResolvable|DatabaseUserSettings[] Settings = null
 };
 ```
 
@@ -877,38 +877,38 @@ new DatabaseUserConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserConfig.property.clusterId">ClusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_user#cluster_id DatabaseUser#cluster_id}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_user#name DatabaseUser#name}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_user#id DatabaseUser#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserConfig.property.mysqlAuthPlugin">MysqlAuthPlugin</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_user#mysql_auth_plugin DatabaseUser#mysql_auth_plugin}. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserConfig.property.settings">Settings</a></code> | <code>object</code> | settings block. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserConfig.property.settings">Settings</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettings">DatabaseUserSettings</a>[]</code> | settings block. |
 
 ---
 
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUserConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUserConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -955,10 +955,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUserConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1016,10 +1016,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Settings`<sup>Optional</sup> <a name="Settings" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUserConfig.property.settings"></a>
 
 ```csharp
-public object Settings { get; set; }
+public IResolvable|DatabaseUserSettings[] Settings { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettings">DatabaseUserSettings</a>[]
 
 settings block.
 
@@ -1035,8 +1035,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new DatabaseUserSettings {
-    object Acl = null,
-    object OpensearchAcl = null
+    IResolvable|DatabaseUserSettingsAcl[] Acl = null,
+    IResolvable|DatabaseUserSettingsOpensearchAcl[] OpensearchAcl = null
 };
 ```
 
@@ -1044,18 +1044,18 @@ new DatabaseUserSettings {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettings.property.acl">Acl</a></code> | <code>object</code> | acl block. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettings.property.opensearchAcl">OpensearchAcl</a></code> | <code>object</code> | opensearch_acl block. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettings.property.acl">Acl</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsAcl">DatabaseUserSettingsAcl</a>[]</code> | acl block. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettings.property.opensearchAcl">OpensearchAcl</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOpensearchAcl">DatabaseUserSettingsOpensearchAcl</a>[]</code> | opensearch_acl block. |
 
 ---
 
 ##### `Acl`<sup>Optional</sup> <a name="Acl" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettings.property.acl"></a>
 
 ```csharp
-public object Acl { get; set; }
+public IResolvable|DatabaseUserSettingsAcl[] Acl { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsAcl">DatabaseUserSettingsAcl</a>[]
 
 acl block.
 
@@ -1066,10 +1066,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `OpensearchAcl`<sup>Optional</sup> <a name="OpensearchAcl" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettings.property.opensearchAcl"></a>
 
 ```csharp
-public object OpensearchAcl { get; set; }
+public IResolvable|DatabaseUserSettingsOpensearchAcl[] OpensearchAcl { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOpensearchAcl">DatabaseUserSettingsOpensearchAcl</a>[]
 
 opensearch_acl block.
 
@@ -1292,7 +1292,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsAclList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsAclList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsAclList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsAclList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsAcl">DatabaseUserSettingsAcl</a>[]</code> | *No description.* |
 
 ---
 
@@ -1323,10 +1323,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsAclList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseUserSettingsAcl[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsAcl">DatabaseUserSettingsAcl</a>[]
 
 ---
 
@@ -1564,7 +1564,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsAclOutputReference.property.topicInput">TopicInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsAclOutputReference.property.permission">Permission</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsAclOutputReference.property.topic">Topic</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsAclOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsAclOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsAcl">DatabaseUserSettingsAcl</a></code> | *No description.* |
 
 ---
 
@@ -1645,10 +1645,10 @@ public string Topic { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsAclOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseUserSettingsAcl InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsAcl">DatabaseUserSettingsAcl</a>
 
 ---
 
@@ -1774,7 +1774,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettings">DatabaseUserSettings</a>[]</code> | *No description.* |
 
 ---
 
@@ -1805,10 +1805,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseUserSettings[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettings">DatabaseUserSettings</a>[]
 
 ---
 
@@ -1934,7 +1934,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOpensearchAclList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOpensearchAclList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOpensearchAclList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOpensearchAclList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOpensearchAcl">DatabaseUserSettingsOpensearchAcl</a>[]</code> | *No description.* |
 
 ---
 
@@ -1965,10 +1965,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOpensearchAclList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseUserSettingsOpensearchAcl[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOpensearchAcl">DatabaseUserSettingsOpensearchAcl</a>[]
 
 ---
 
@@ -2205,7 +2205,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOpensearchAclOutputReference.property.permissionInput">PermissionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOpensearchAclOutputReference.property.index">Index</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOpensearchAclOutputReference.property.permission">Permission</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOpensearchAclOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOpensearchAclOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOpensearchAcl">DatabaseUserSettingsOpensearchAcl</a></code> | *No description.* |
 
 ---
 
@@ -2276,10 +2276,10 @@ public string Permission { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOpensearchAclOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseUserSettingsOpensearchAcl InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOpensearchAcl">DatabaseUserSettingsOpensearchAcl</a>
 
 ---
 
@@ -2512,24 +2512,24 @@ Returns a reversible string representation.
 ##### `PutAcl` <a name="PutAcl" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOutputReference.putAcl"></a>
 
 ```csharp
-private void PutAcl(object Value)
+private void PutAcl(IResolvable|DatabaseUserSettingsAcl[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOutputReference.putAcl.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsAcl">DatabaseUserSettingsAcl</a>[]
 
 ---
 
 ##### `PutOpensearchAcl` <a name="PutOpensearchAcl" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOutputReference.putOpensearchAcl"></a>
 
 ```csharp
-private void PutOpensearchAcl(object Value)
+private void PutOpensearchAcl(IResolvable|DatabaseUserSettingsOpensearchAcl[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOutputReference.putOpensearchAcl.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOpensearchAcl">DatabaseUserSettingsOpensearchAcl</a>[]
 
 ---
 
@@ -2554,9 +2554,9 @@ private void ResetOpensearchAcl()
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOutputReference.property.acl">Acl</a></code> | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsAclList">DatabaseUserSettingsAclList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOutputReference.property.opensearchAcl">OpensearchAcl</a></code> | <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOpensearchAclList">DatabaseUserSettingsOpensearchAclList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOutputReference.property.aclInput">AclInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOutputReference.property.opensearchAclInput">OpensearchAclInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOutputReference.property.aclInput">AclInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsAcl">DatabaseUserSettingsAcl</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOutputReference.property.opensearchAclInput">OpensearchAclInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOpensearchAcl">DatabaseUserSettingsOpensearchAcl</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettings">DatabaseUserSettings</a></code> | *No description.* |
 
 ---
 
@@ -2607,30 +2607,30 @@ public DatabaseUserSettingsOpensearchAclList OpensearchAcl { get; }
 ##### `AclInput`<sup>Optional</sup> <a name="AclInput" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOutputReference.property.aclInput"></a>
 
 ```csharp
-public object AclInput { get; }
+public IResolvable|DatabaseUserSettingsAcl[] AclInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsAcl">DatabaseUserSettingsAcl</a>[]
 
 ---
 
 ##### `OpensearchAclInput`<sup>Optional</sup> <a name="OpensearchAclInput" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOutputReference.property.opensearchAclInput"></a>
 
 ```csharp
-public object OpensearchAclInput { get; }
+public IResolvable|DatabaseUserSettingsOpensearchAcl[] OpensearchAclInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOpensearchAcl">DatabaseUserSettingsOpensearchAcl</a>[]
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettingsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseUserSettings InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.databaseUser.DatabaseUserSettings">DatabaseUserSettings</a>
 
 ---
 

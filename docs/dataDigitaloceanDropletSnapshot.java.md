@@ -12,20 +12,15 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 import com.hashicorp.cdktf.providers.digitalocean.data_digitalocean_droplet_snapshot.DataDigitaloceanDropletSnapshot;
 
 DataDigitaloceanDropletSnapshot.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
 //  .id(java.lang.String)
-//  .mostRecent(java.lang.Boolean)
-//  .mostRecent(IResolvable)
+//  .mostRecent(java.lang.Boolean|IResolvable)
 //  .name(java.lang.String)
 //  .nameRegex(java.lang.String)
 //  .region(java.lang.String)
@@ -36,15 +31,15 @@ DataDigitaloceanDropletSnapshot.Builder.create(Construct scope, java.lang.String
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/droplet_snapshot#id DataDigitaloceanDropletSnapshot#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.Initializer.parameter.mostRecent">mostRecent</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/droplet_snapshot#most_recent DataDigitaloceanDropletSnapshot#most_recent}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.Initializer.parameter.mostRecent">mostRecent</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/droplet_snapshot#most_recent DataDigitaloceanDropletSnapshot#most_recent}. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/droplet_snapshot#name DataDigitaloceanDropletSnapshot#name}. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.Initializer.parameter.nameRegex">nameRegex</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/droplet_snapshot#name_regex DataDigitaloceanDropletSnapshot#name_regex}. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/droplet_snapshot#region DataDigitaloceanDropletSnapshot#region}. |
@@ -71,13 +66,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -107,7 +102,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -124,7 +119,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `mostRecent`<sup>Optional</sup> <a name="mostRecent" id="@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.Initializer.parameter.mostRecent"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/droplet_snapshot#most_recent DataDigitaloceanDropletSnapshot#most_recent}.
 
@@ -531,7 +526,7 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -542,12 +537,12 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.property.regions">regions</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.property.size">size</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.property.mostRecentInput">mostRecentInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.property.mostRecentInput">mostRecentInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.property.nameRegexInput">nameRegexInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.property.mostRecent">mostRecent</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.property.mostRecent">mostRecent</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.property.nameRegex">nameRegex</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -629,10 +624,10 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -739,10 +734,10 @@ public java.lang.String getIdInput();
 ##### `mostRecentInput`<sup>Optional</sup> <a name="mostRecentInput" id="@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.property.mostRecentInput"></a>
 
 ```java
-public java.lang.Object getMostRecentInput();
+public java.lang.Boolean|IResolvable getMostRecentInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -789,10 +784,10 @@ public java.lang.String getId();
 ##### `mostRecent`<sup>Required</sup> <a name="mostRecent" id="@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshot.property.mostRecent"></a>
 
 ```java
-public java.lang.Object getMostRecent();
+public java.lang.Boolean|IResolvable getMostRecent();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -854,20 +849,15 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.digitalocean.data_digitalocean_droplet_snapshot.DataDigitaloceanDropletSnapshotConfig;
 
 DataDigitaloceanDropletSnapshotConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
 //  .id(java.lang.String)
-//  .mostRecent(java.lang.Boolean)
-//  .mostRecent(IResolvable)
+//  .mostRecent(java.lang.Boolean|IResolvable)
 //  .name(java.lang.String)
 //  .nameRegex(java.lang.String)
 //  .region(java.lang.String)
@@ -878,15 +868,15 @@ DataDigitaloceanDropletSnapshotConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshotConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshotConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshotConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshotConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshotConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshotConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshotConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshotConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshotConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshotConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshotConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/droplet_snapshot#id DataDigitaloceanDropletSnapshot#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshotConfig.property.mostRecent">mostRecent</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/droplet_snapshot#most_recent DataDigitaloceanDropletSnapshot#most_recent}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshotConfig.property.mostRecent">mostRecent</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/droplet_snapshot#most_recent DataDigitaloceanDropletSnapshot#most_recent}. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshotConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/droplet_snapshot#name DataDigitaloceanDropletSnapshot#name}. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshotConfig.property.nameRegex">nameRegex</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/droplet_snapshot#name_regex DataDigitaloceanDropletSnapshot#name_regex}. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshotConfig.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/droplet_snapshot#region DataDigitaloceanDropletSnapshot#region}. |
@@ -896,20 +886,20 @@ DataDigitaloceanDropletSnapshotConfig.builder()
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshotConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshotConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -956,10 +946,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshotConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -981,10 +971,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `mostRecent`<sup>Optional</sup> <a name="mostRecent" id="@cdktf/provider-digitalocean.dataDigitaloceanDropletSnapshot.DataDigitaloceanDropletSnapshotConfig.property.mostRecent"></a>
 
 ```java
-public java.lang.Object getMostRecent();
+public java.lang.Boolean|IResolvable getMostRecent();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/droplet_snapshot#most_recent DataDigitaloceanDropletSnapshot#most_recent}.
 

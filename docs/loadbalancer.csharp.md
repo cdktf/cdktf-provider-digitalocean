@@ -304,7 +304,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.importFrom"></a>
@@ -358,7 +358,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -373,7 +373,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -398,12 +398,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `PutDomains` <a name="PutDomains" id="@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.putDomains"></a>
 
 ```csharp
-private void PutDomains(object Value)
+private void PutDomains(IResolvable|LoadbalancerDomains[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.putDomains.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomains">LoadbalancerDomains</a>[]
 
 ---
 
@@ -422,12 +422,12 @@ private void PutFirewall(LoadbalancerFirewall Value)
 ##### `PutForwardingRule` <a name="PutForwardingRule" id="@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.putForwardingRule"></a>
 
 ```csharp
-private void PutForwardingRule(object Value)
+private void PutForwardingRule(IResolvable|LoadbalancerForwardingRule[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.putForwardingRule.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRule">LoadbalancerForwardingRule</a>[]
 
 ---
 
@@ -743,13 +743,13 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.domains">Domains</a></code> | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomainsList">LoadbalancerDomainsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.firewall">Firewall</a></code> | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerFirewallOutputReference">LoadbalancerFirewallOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.forwardingRule">ForwardingRule</a></code> | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRuleList">LoadbalancerForwardingRuleList</a></code> | *No description.* |
@@ -761,14 +761,14 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.stickySessions">StickySessions</a></code> | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerStickySessionsOutputReference">LoadbalancerStickySessionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.urn">Urn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.algorithmInput">AlgorithmInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.disableLetsEncryptDnsRecordsInput">DisableLetsEncryptDnsRecordsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.domainsInput">DomainsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.disableLetsEncryptDnsRecordsInput">DisableLetsEncryptDnsRecordsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.domainsInput">DomainsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomains">LoadbalancerDomains</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.dropletIdsInput">DropletIdsInput</a></code> | <code>double[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.dropletTagInput">DropletTagInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.enableBackendKeepaliveInput">EnableBackendKeepaliveInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.enableProxyProtocolInput">EnableProxyProtocolInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.enableBackendKeepaliveInput">EnableBackendKeepaliveInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.enableProxyProtocolInput">EnableProxyProtocolInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.firewallInput">FirewallInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerFirewall">LoadbalancerFirewall</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.forwardingRuleInput">ForwardingRuleInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.forwardingRuleInput">ForwardingRuleInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRule">LoadbalancerForwardingRule</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.glbSettingsInput">GlbSettingsInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerGlbSettings">LoadbalancerGlbSettings</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.healthcheckInput">HealthcheckInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerHealthcheck">LoadbalancerHealthcheck</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.httpIdleTimeoutSecondsInput">HttpIdleTimeoutSecondsInput</a></code> | <code>double</code> | *No description.* |
@@ -777,7 +777,7 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.networkInput">NetworkInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.networkStackInput">NetworkStackInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.projectIdInput">ProjectIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.redirectHttpToHttpsInput">RedirectHttpToHttpsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.redirectHttpToHttpsInput">RedirectHttpToHttpsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.sizeInput">SizeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.sizeUnitInput">SizeUnitInput</a></code> | <code>double</code> | *No description.* |
@@ -787,18 +787,18 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.vpcUuidInput">VpcUuidInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.algorithm">Algorithm</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.disableLetsEncryptDnsRecords">DisableLetsEncryptDnsRecords</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.disableLetsEncryptDnsRecords">DisableLetsEncryptDnsRecords</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.dropletIds">DropletIds</a></code> | <code>double[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.dropletTag">DropletTag</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.enableBackendKeepalive">EnableBackendKeepalive</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.enableProxyProtocol">EnableProxyProtocol</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.enableBackendKeepalive">EnableBackendKeepalive</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.enableProxyProtocol">EnableProxyProtocol</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.httpIdleTimeoutSeconds">HttpIdleTimeoutSeconds</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.network">Network</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.networkStack">NetworkStack</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.projectId">ProjectId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.redirectHttpToHttps">RedirectHttpToHttps</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.redirectHttpToHttps">RedirectHttpToHttps</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.region">Region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.size">Size</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.sizeUnit">SizeUnit</a></code> | <code>double</code> | *No description.* |
@@ -884,20 +884,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -944,10 +944,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1064,20 +1064,20 @@ public string AlgorithmInput { get; }
 ##### `DisableLetsEncryptDnsRecordsInput`<sup>Optional</sup> <a name="DisableLetsEncryptDnsRecordsInput" id="@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.disableLetsEncryptDnsRecordsInput"></a>
 
 ```csharp
-public object DisableLetsEncryptDnsRecordsInput { get; }
+public bool|IResolvable DisableLetsEncryptDnsRecordsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DomainsInput`<sup>Optional</sup> <a name="DomainsInput" id="@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.domainsInput"></a>
 
 ```csharp
-public object DomainsInput { get; }
+public IResolvable|LoadbalancerDomains[] DomainsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomains">LoadbalancerDomains</a>[]
 
 ---
 
@@ -1104,20 +1104,20 @@ public string DropletTagInput { get; }
 ##### `EnableBackendKeepaliveInput`<sup>Optional</sup> <a name="EnableBackendKeepaliveInput" id="@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.enableBackendKeepaliveInput"></a>
 
 ```csharp
-public object EnableBackendKeepaliveInput { get; }
+public bool|IResolvable EnableBackendKeepaliveInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableProxyProtocolInput`<sup>Optional</sup> <a name="EnableProxyProtocolInput" id="@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.enableProxyProtocolInput"></a>
 
 ```csharp
-public object EnableProxyProtocolInput { get; }
+public bool|IResolvable EnableProxyProtocolInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1134,10 +1134,10 @@ public LoadbalancerFirewall FirewallInput { get; }
 ##### `ForwardingRuleInput`<sup>Optional</sup> <a name="ForwardingRuleInput" id="@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.forwardingRuleInput"></a>
 
 ```csharp
-public object ForwardingRuleInput { get; }
+public IResolvable|LoadbalancerForwardingRule[] ForwardingRuleInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRule">LoadbalancerForwardingRule</a>[]
 
 ---
 
@@ -1224,10 +1224,10 @@ public string ProjectIdInput { get; }
 ##### `RedirectHttpToHttpsInput`<sup>Optional</sup> <a name="RedirectHttpToHttpsInput" id="@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.redirectHttpToHttpsInput"></a>
 
 ```csharp
-public object RedirectHttpToHttpsInput { get; }
+public bool|IResolvable RedirectHttpToHttpsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1324,10 +1324,10 @@ public string Algorithm { get; }
 ##### `DisableLetsEncryptDnsRecords`<sup>Required</sup> <a name="DisableLetsEncryptDnsRecords" id="@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.disableLetsEncryptDnsRecords"></a>
 
 ```csharp
-public object DisableLetsEncryptDnsRecords { get; }
+public bool|IResolvable DisableLetsEncryptDnsRecords { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1354,20 +1354,20 @@ public string DropletTag { get; }
 ##### `EnableBackendKeepalive`<sup>Required</sup> <a name="EnableBackendKeepalive" id="@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.enableBackendKeepalive"></a>
 
 ```csharp
-public object EnableBackendKeepalive { get; }
+public bool|IResolvable EnableBackendKeepalive { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableProxyProtocol`<sup>Required</sup> <a name="EnableProxyProtocol" id="@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.enableProxyProtocol"></a>
 
 ```csharp
-public object EnableProxyProtocol { get; }
+public bool|IResolvable EnableProxyProtocol { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1434,10 +1434,10 @@ public string ProjectId { get; }
 ##### `RedirectHttpToHttps`<sup>Required</sup> <a name="RedirectHttpToHttps" id="@cdktf/provider-digitalocean.loadbalancer.Loadbalancer.property.redirectHttpToHttps"></a>
 
 ```csharp
-public object RedirectHttpToHttps { get; }
+public bool|IResolvable RedirectHttpToHttps { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1539,23 +1539,23 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new LoadbalancerConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Name,
     string Algorithm = null,
-    object DisableLetsEncryptDnsRecords = null,
-    object Domains = null,
+    bool|IResolvable DisableLetsEncryptDnsRecords = null,
+    IResolvable|LoadbalancerDomains[] Domains = null,
     double[] DropletIds = null,
     string DropletTag = null,
-    object EnableBackendKeepalive = null,
-    object EnableProxyProtocol = null,
+    bool|IResolvable EnableBackendKeepalive = null,
+    bool|IResolvable EnableProxyProtocol = null,
     LoadbalancerFirewall Firewall = null,
-    object ForwardingRule = null,
+    IResolvable|LoadbalancerForwardingRule[] ForwardingRule = null,
     LoadbalancerGlbSettings GlbSettings = null,
     LoadbalancerHealthcheck Healthcheck = null,
     double HttpIdleTimeoutSeconds = null,
@@ -1563,7 +1563,7 @@ new LoadbalancerConfig {
     string Network = null,
     string NetworkStack = null,
     string ProjectId = null,
-    object RedirectHttpToHttps = null,
+    bool|IResolvable RedirectHttpToHttps = null,
     string Region = null,
     string Size = null,
     double SizeUnit = null,
@@ -1579,23 +1579,23 @@ new LoadbalancerConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/loadbalancer#name Loadbalancer#name}. |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.algorithm">Algorithm</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/loadbalancer#algorithm Loadbalancer#algorithm}. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.disableLetsEncryptDnsRecords">DisableLetsEncryptDnsRecords</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/loadbalancer#disable_lets_encrypt_dns_records Loadbalancer#disable_lets_encrypt_dns_records}. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.domains">Domains</a></code> | <code>object</code> | domains block. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.disableLetsEncryptDnsRecords">DisableLetsEncryptDnsRecords</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/loadbalancer#disable_lets_encrypt_dns_records Loadbalancer#disable_lets_encrypt_dns_records}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.domains">Domains</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomains">LoadbalancerDomains</a>[]</code> | domains block. |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.dropletIds">DropletIds</a></code> | <code>double[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/loadbalancer#droplet_ids Loadbalancer#droplet_ids}. |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.dropletTag">DropletTag</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/loadbalancer#droplet_tag Loadbalancer#droplet_tag}. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.enableBackendKeepalive">EnableBackendKeepalive</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/loadbalancer#enable_backend_keepalive Loadbalancer#enable_backend_keepalive}. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.enableProxyProtocol">EnableProxyProtocol</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/loadbalancer#enable_proxy_protocol Loadbalancer#enable_proxy_protocol}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.enableBackendKeepalive">EnableBackendKeepalive</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/loadbalancer#enable_backend_keepalive Loadbalancer#enable_backend_keepalive}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.enableProxyProtocol">EnableProxyProtocol</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/loadbalancer#enable_proxy_protocol Loadbalancer#enable_proxy_protocol}. |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.firewall">Firewall</a></code> | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerFirewall">LoadbalancerFirewall</a></code> | firewall block. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.forwardingRule">ForwardingRule</a></code> | <code>object</code> | forwarding_rule block. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.forwardingRule">ForwardingRule</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRule">LoadbalancerForwardingRule</a>[]</code> | forwarding_rule block. |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.glbSettings">GlbSettings</a></code> | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerGlbSettings">LoadbalancerGlbSettings</a></code> | glb_settings block. |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.healthcheck">Healthcheck</a></code> | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerHealthcheck">LoadbalancerHealthcheck</a></code> | healthcheck block. |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.httpIdleTimeoutSeconds">HttpIdleTimeoutSeconds</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/loadbalancer#http_idle_timeout_seconds Loadbalancer#http_idle_timeout_seconds}. |
@@ -1603,7 +1603,7 @@ new LoadbalancerConfig {
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.network">Network</a></code> | <code>string</code> | the type of network the load balancer is accessible from (EXTERNAL or INTERNAL). |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.networkStack">NetworkStack</a></code> | <code>string</code> | The network stack determines the allocation of ipv4/ipv6 addresses to the load balancer. Enum: 'IPV4' 'DUALSTACK'. |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.projectId">ProjectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/loadbalancer#project_id Loadbalancer#project_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.redirectHttpToHttps">RedirectHttpToHttps</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/loadbalancer#redirect_http_to_https Loadbalancer#redirect_http_to_https}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.redirectHttpToHttps">RedirectHttpToHttps</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/loadbalancer#redirect_http_to_https Loadbalancer#redirect_http_to_https}. |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/loadbalancer#region Loadbalancer#region}. |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.size">Size</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/loadbalancer#size Loadbalancer#size}. |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.sizeUnit">SizeUnit</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/loadbalancer#size_unit Loadbalancer#size_unit}. |
@@ -1618,20 +1618,20 @@ new LoadbalancerConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1678,10 +1678,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1712,10 +1712,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `DisableLetsEncryptDnsRecords`<sup>Optional</sup> <a name="DisableLetsEncryptDnsRecords" id="@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.disableLetsEncryptDnsRecords"></a>
 
 ```csharp
-public object DisableLetsEncryptDnsRecords { get; set; }
+public bool|IResolvable DisableLetsEncryptDnsRecords { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/loadbalancer#disable_lets_encrypt_dns_records Loadbalancer#disable_lets_encrypt_dns_records}.
 
@@ -1724,10 +1724,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Domains`<sup>Optional</sup> <a name="Domains" id="@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.domains"></a>
 
 ```csharp
-public object Domains { get; set; }
+public IResolvable|LoadbalancerDomains[] Domains { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomains">LoadbalancerDomains</a>[]
 
 domains block.
 
@@ -1762,10 +1762,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `EnableBackendKeepalive`<sup>Optional</sup> <a name="EnableBackendKeepalive" id="@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.enableBackendKeepalive"></a>
 
 ```csharp
-public object EnableBackendKeepalive { get; set; }
+public bool|IResolvable EnableBackendKeepalive { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/loadbalancer#enable_backend_keepalive Loadbalancer#enable_backend_keepalive}.
 
@@ -1774,10 +1774,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `EnableProxyProtocol`<sup>Optional</sup> <a name="EnableProxyProtocol" id="@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.enableProxyProtocol"></a>
 
 ```csharp
-public object EnableProxyProtocol { get; set; }
+public bool|IResolvable EnableProxyProtocol { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/loadbalancer#enable_proxy_protocol Loadbalancer#enable_proxy_protocol}.
 
@@ -1800,10 +1800,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `ForwardingRule`<sup>Optional</sup> <a name="ForwardingRule" id="@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.forwardingRule"></a>
 
 ```csharp
-public object ForwardingRule { get; set; }
+public IResolvable|LoadbalancerForwardingRule[] ForwardingRule { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRule">LoadbalancerForwardingRule</a>[]
 
 forwarding_rule block.
 
@@ -1909,10 +1909,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `RedirectHttpToHttps`<sup>Optional</sup> <a name="RedirectHttpToHttps" id="@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig.property.redirectHttpToHttps"></a>
 
 ```csharp
-public object RedirectHttpToHttps { get; set; }
+public bool|IResolvable RedirectHttpToHttps { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/loadbalancer#redirect_http_to_https Loadbalancer#redirect_http_to_https}.
 
@@ -2032,7 +2032,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 new LoadbalancerDomains {
     string Name,
     string CertificateName = null,
-    object IsManaged = null
+    bool|IResolvable IsManaged = null
 };
 ```
 
@@ -2042,7 +2042,7 @@ new LoadbalancerDomains {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomains.property.name">Name</a></code> | <code>string</code> | domain name. |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomains.property.certificateName">CertificateName</a></code> | <code>string</code> | name of certificate required for TLS handshaking. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomains.property.isManaged">IsManaged</a></code> | <code>object</code> | flag indicating if domain is managed by DigitalOcean. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomains.property.isManaged">IsManaged</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | flag indicating if domain is managed by DigitalOcean. |
 
 ---
 
@@ -2077,10 +2077,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `IsManaged`<sup>Optional</sup> <a name="IsManaged" id="@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomains.property.isManaged"></a>
 
 ```csharp
-public object IsManaged { get; set; }
+public bool|IResolvable IsManaged { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 flag indicating if domain is managed by DigitalOcean.
 
@@ -2152,7 +2152,7 @@ new LoadbalancerForwardingRule {
     string TargetProtocol,
     string CertificateId = null,
     string CertificateName = null,
-    object TlsPassthrough = null
+    bool|IResolvable TlsPassthrough = null
 };
 ```
 
@@ -2166,7 +2166,7 @@ new LoadbalancerForwardingRule {
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRule.property.targetProtocol">TargetProtocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/loadbalancer#target_protocol Loadbalancer#target_protocol}. |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRule.property.certificateId">CertificateId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/loadbalancer#certificate_id Loadbalancer#certificate_id}. |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRule.property.certificateName">CertificateName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/loadbalancer#certificate_name Loadbalancer#certificate_name}. |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRule.property.tlsPassthrough">TlsPassthrough</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/loadbalancer#tls_passthrough Loadbalancer#tls_passthrough}. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRule.property.tlsPassthrough">TlsPassthrough</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/loadbalancer#tls_passthrough Loadbalancer#tls_passthrough}. |
 
 ---
 
@@ -2245,10 +2245,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `TlsPassthrough`<sup>Optional</sup> <a name="TlsPassthrough" id="@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRule.property.tlsPassthrough"></a>
 
 ```csharp
-public object TlsPassthrough { get; set; }
+public bool|IResolvable TlsPassthrough { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/loadbalancer#tls_passthrough Loadbalancer#tls_passthrough}.
 
@@ -2360,7 +2360,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new LoadbalancerGlbSettingsCdn {
-    object IsEnabled = null
+    bool|IResolvable IsEnabled = null
 };
 ```
 
@@ -2368,17 +2368,17 @@ new LoadbalancerGlbSettingsCdn {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerGlbSettingsCdn.property.isEnabled">IsEnabled</a></code> | <code>object</code> | cache enable flag. |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerGlbSettingsCdn.property.isEnabled">IsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | cache enable flag. |
 
 ---
 
 ##### `IsEnabled`<sup>Optional</sup> <a name="IsEnabled" id="@cdktf/provider-digitalocean.loadbalancer.LoadbalancerGlbSettingsCdn.property.isEnabled"></a>
 
 ```csharp
-public object IsEnabled { get; set; }
+public bool|IResolvable IsEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 cache enable flag.
 
@@ -2685,7 +2685,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomainsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomainsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomainsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomainsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomains">LoadbalancerDomains</a>[]</code> | *No description.* |
 
 ---
 
@@ -2716,10 +2716,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomainsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|LoadbalancerDomains[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomains">LoadbalancerDomains</a>[]
 
 ---
 
@@ -2970,12 +2970,12 @@ private void ResetIsManaged()
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomainsOutputReference.property.sslValidationErrorReasons">SslValidationErrorReasons</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomainsOutputReference.property.verificationErrorReasons">VerificationErrorReasons</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomainsOutputReference.property.certificateNameInput">CertificateNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomainsOutputReference.property.isManagedInput">IsManagedInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomainsOutputReference.property.isManagedInput">IsManagedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomainsOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomainsOutputReference.property.certificateName">CertificateName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomainsOutputReference.property.isManaged">IsManaged</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomainsOutputReference.property.isManaged">IsManaged</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomainsOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomainsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomainsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomains">LoadbalancerDomains</a></code> | *No description.* |
 
 ---
 
@@ -3046,10 +3046,10 @@ public string CertificateNameInput { get; }
 ##### `IsManagedInput`<sup>Optional</sup> <a name="IsManagedInput" id="@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomainsOutputReference.property.isManagedInput"></a>
 
 ```csharp
-public object IsManagedInput { get; }
+public bool|IResolvable IsManagedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3076,10 +3076,10 @@ public string CertificateName { get; }
 ##### `IsManaged`<sup>Required</sup> <a name="IsManaged" id="@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomainsOutputReference.property.isManaged"></a>
 
 ```csharp
-public object IsManaged { get; }
+public bool|IResolvable IsManaged { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3096,10 +3096,10 @@ public string Name { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomainsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|LoadbalancerDomains InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomains">LoadbalancerDomains</a>
 
 ---
 
@@ -3532,7 +3532,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRuleList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRuleList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRuleList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRuleList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRule">LoadbalancerForwardingRule</a>[]</code> | *No description.* |
 
 ---
 
@@ -3563,10 +3563,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRuleList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|LoadbalancerForwardingRule[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRule">LoadbalancerForwardingRule</a>[]
 
 ---
 
@@ -3826,15 +3826,15 @@ private void ResetTlsPassthrough()
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRuleOutputReference.property.entryProtocolInput">EntryProtocolInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRuleOutputReference.property.targetPortInput">TargetPortInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRuleOutputReference.property.targetProtocolInput">TargetProtocolInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRuleOutputReference.property.tlsPassthroughInput">TlsPassthroughInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRuleOutputReference.property.tlsPassthroughInput">TlsPassthroughInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRuleOutputReference.property.certificateId">CertificateId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRuleOutputReference.property.certificateName">CertificateName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRuleOutputReference.property.entryPort">EntryPort</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRuleOutputReference.property.entryProtocol">EntryProtocol</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRuleOutputReference.property.targetPort">TargetPort</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRuleOutputReference.property.targetProtocol">TargetProtocol</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRuleOutputReference.property.tlsPassthrough">TlsPassthrough</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRuleOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRuleOutputReference.property.tlsPassthrough">TlsPassthrough</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRuleOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRule">LoadbalancerForwardingRule</a></code> | *No description.* |
 
 ---
 
@@ -3925,10 +3925,10 @@ public string TargetProtocolInput { get; }
 ##### `TlsPassthroughInput`<sup>Optional</sup> <a name="TlsPassthroughInput" id="@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRuleOutputReference.property.tlsPassthroughInput"></a>
 
 ```csharp
-public object TlsPassthroughInput { get; }
+public bool|IResolvable TlsPassthroughInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3995,20 +3995,20 @@ public string TargetProtocol { get; }
 ##### `TlsPassthrough`<sup>Required</sup> <a name="TlsPassthrough" id="@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRuleOutputReference.property.tlsPassthrough"></a>
 
 ```csharp
-public object TlsPassthrough { get; }
+public bool|IResolvable TlsPassthrough { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRuleOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|LoadbalancerForwardingRule InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRule">LoadbalancerForwardingRule</a>
 
 ---
 
@@ -4230,8 +4230,8 @@ private void ResetIsEnabled()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerGlbSettingsCdnOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerGlbSettingsCdnOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerGlbSettingsCdnOutputReference.property.isEnabledInput">IsEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerGlbSettingsCdnOutputReference.property.isEnabled">IsEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerGlbSettingsCdnOutputReference.property.isEnabledInput">IsEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerGlbSettingsCdnOutputReference.property.isEnabled">IsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerGlbSettingsCdnOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.loadbalancer.LoadbalancerGlbSettingsCdn">LoadbalancerGlbSettingsCdn</a></code> | *No description.* |
 
 ---
@@ -4263,20 +4263,20 @@ public string Fqn { get; }
 ##### `IsEnabledInput`<sup>Optional</sup> <a name="IsEnabledInput" id="@cdktf/provider-digitalocean.loadbalancer.LoadbalancerGlbSettingsCdnOutputReference.property.isEnabledInput"></a>
 
 ```csharp
-public object IsEnabledInput { get; }
+public bool|IResolvable IsEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `IsEnabled`<sup>Required</sup> <a name="IsEnabled" id="@cdktf/provider-digitalocean.loadbalancer.LoadbalancerGlbSettingsCdnOutputReference.property.isEnabled"></a>
 
 ```csharp
-public object IsEnabled { get; }
+public bool|IResolvable IsEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 

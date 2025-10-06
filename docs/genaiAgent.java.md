@@ -12,67 +12,48 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 import com.hashicorp.cdktf.providers.digitalocean.genai_agent.GenaiAgent;
 
 GenaiAgent.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .instruction(java.lang.String)
     .modelUuid(java.lang.String)
     .name(java.lang.String)
     .projectId(java.lang.String)
     .region(java.lang.String)
-//  .agentGuardrail(IResolvable)
-//  .agentGuardrail(java.util.List<GenaiAgentAgentGuardrail>)
-//  .anthropicApiKey(IResolvable)
-//  .anthropicApiKey(java.util.List<GenaiAgentAnthropicApiKey>)
+//  .agentGuardrail(IResolvable|java.util.List<GenaiAgentAgentGuardrail>)
+//  .anthropicApiKey(IResolvable|java.util.List<GenaiAgentAnthropicApiKey>)
 //  .anthropicKeyUuid(java.lang.String)
-//  .apiKeyInfos(IResolvable)
-//  .apiKeyInfos(java.util.List<GenaiAgentApiKeyInfos>)
-//  .apiKeys(IResolvable)
-//  .apiKeys(java.util.List<GenaiAgentApiKeys>)
-//  .chatbot(IResolvable)
-//  .chatbot(java.util.List<GenaiAgentChatbot>)
-//  .chatbotIdentifiers(IResolvable)
-//  .chatbotIdentifiers(java.util.List<GenaiAgentChatbotIdentifiers>)
-//  .childAgents(IResolvable)
-//  .childAgents(java.util.List<GenaiAgentChildAgents>)
+//  .apiKeyInfos(IResolvable|java.util.List<GenaiAgentApiKeyInfos>)
+//  .apiKeys(IResolvable|java.util.List<GenaiAgentApiKeys>)
+//  .chatbot(IResolvable|java.util.List<GenaiAgentChatbot>)
+//  .chatbotIdentifiers(IResolvable|java.util.List<GenaiAgentChatbotIdentifiers>)
+//  .childAgents(IResolvable|java.util.List<GenaiAgentChildAgents>)
 //  .createdAt(java.lang.String)
-//  .deployment(IResolvable)
-//  .deployment(java.util.List<GenaiAgentDeployment>)
+//  .deployment(IResolvable|java.util.List<GenaiAgentDeployment>)
 //  .description(java.lang.String)
-//  .functions(IResolvable)
-//  .functions(java.util.List<GenaiAgentFunctions>)
+//  .functions(IResolvable|java.util.List<GenaiAgentFunctions>)
 //  .id(java.lang.String)
 //  .ifCase(java.lang.String)
 //  .k(java.lang.Number)
-//  .knowledgeBases(IResolvable)
-//  .knowledgeBases(java.util.List<GenaiAgentKnowledgeBases>)
+//  .knowledgeBases(IResolvable|java.util.List<GenaiAgentKnowledgeBases>)
 //  .knowledgeBaseUuid(java.util.List<java.lang.String>)
 //  .maxTokens(java.lang.Number)
-//  .model(IResolvable)
-//  .model(java.util.List<GenaiAgentModel>)
-//  .openAiApiKey(IResolvable)
-//  .openAiApiKey(java.util.List<GenaiAgentOpenAiApiKey>)
+//  .model(IResolvable|java.util.List<GenaiAgentModel>)
+//  .openAiApiKey(IResolvable|java.util.List<GenaiAgentOpenAiApiKey>)
 //  .openAiKeyUuid(java.lang.String)
-//  .parentAgents(IResolvable)
-//  .parentAgents(java.util.List<GenaiAgentParentAgents>)
-//  .provideCitations(java.lang.Boolean)
-//  .provideCitations(IResolvable)
+//  .parentAgents(IResolvable|java.util.List<GenaiAgentParentAgents>)
+//  .provideCitations(java.lang.Boolean|IResolvable)
 //  .retrievalMethod(java.lang.String)
 //  .routeCreatedBy(java.lang.String)
 //  .routeName(java.lang.String)
 //  .routeUuid(java.lang.String)
 //  .tags(java.util.List<java.lang.String>)
 //  .temperature(java.lang.Number)
-//  .template(IResolvable)
-//  .template(java.util.List<GenaiAgentTemplate>)
+//  .template(IResolvable|java.util.List<GenaiAgentTemplate>)
 //  .topP(java.lang.Number)
 //  .url(java.lang.String)
 //  .userId(java.lang.String)
@@ -83,48 +64,48 @@ GenaiAgent.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.instruction">instruction</a></code> | <code>java.lang.String</code> | Instruction for the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.modelUuid">modelUuid</a></code> | <code>java.lang.String</code> | Model UUID of the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.projectId">projectId</a></code> | <code>java.lang.String</code> | Project ID of the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where the Agent is deployed. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.agentGuardrail">agentGuardrail</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>></code> | agent_guardrail block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.anthropicApiKey">anthropicApiKey</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>></code> | anthropic_api_key block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.agentGuardrail">agentGuardrail</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>></code> | agent_guardrail block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.anthropicApiKey">anthropicApiKey</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>></code> | anthropic_api_key block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.anthropicKeyUuid">anthropicKeyUuid</a></code> | <code>java.lang.String</code> | Optional Anthropic API key ID to use with Anthropic models. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.apiKeyInfos">apiKeyInfos</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>></code> | api_key_infos block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.apiKeys">apiKeys</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>></code> | api_keys block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.chatbot">chatbot</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>></code> | chatbot block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.chatbotIdentifiers">chatbotIdentifiers</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>></code> | chatbot_identifiers block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.childAgents">childAgents</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>></code> | child_agents block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.apiKeyInfos">apiKeyInfos</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>></code> | api_key_infos block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.apiKeys">apiKeys</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>></code> | api_keys block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.chatbot">chatbot</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>></code> | chatbot block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.chatbotIdentifiers">chatbotIdentifiers</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>></code> | chatbot_identifiers block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.childAgents">childAgents</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>></code> | child_agents block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.createdAt">createdAt</a></code> | <code>java.lang.String</code> | Timestamp when the Agent was created. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.deployment">deployment</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>></code> | deployment block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.deployment">deployment</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>></code> | deployment block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Description for the Agent. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.functions">functions</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>></code> | functions block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.functions">functions</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>></code> | functions block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/genai_agent#id GenaiAgent#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.ifCase">ifCase</a></code> | <code>java.lang.String</code> | If case condition. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.k">k</a></code> | <code>java.lang.Number</code> | K value. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.knowledgeBases">knowledgeBases</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>></code> | knowledge_bases block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.knowledgeBases">knowledgeBases</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>></code> | knowledge_bases block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.knowledgeBaseUuid">knowledgeBaseUuid</a></code> | <code>java.util.List<java.lang.String></code> | Ids of the knowledge base(s) to attach to the agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.maxTokens">maxTokens</a></code> | <code>java.lang.Number</code> | Maximum tokens allowed. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.model">model</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>></code> | model block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.openAiApiKey">openAiApiKey</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>></code> | open_ai_api_key block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.model">model</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>></code> | model block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.openAiApiKey">openAiApiKey</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>></code> | open_ai_api_key block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.openAiKeyUuid">openAiKeyUuid</a></code> | <code>java.lang.String</code> | Optional OpenAI API key ID to use with OpenAI models. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.parentAgents">parentAgents</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>></code> | parent_agents block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.provideCitations">provideCitations</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicates if the agent should provide citations in responses. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.parentAgents">parentAgents</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>></code> | parent_agents block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.provideCitations">provideCitations</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Indicates if the agent should provide citations in responses. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.retrievalMethod">retrievalMethod</a></code> | <code>java.lang.String</code> | Retrieval method used. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.routeCreatedBy">routeCreatedBy</a></code> | <code>java.lang.String</code> | User who created the route. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.routeName">routeName</a></code> | <code>java.lang.String</code> | Route name. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.routeUuid">routeUuid</a></code> | <code>java.lang.String</code> | Route UUID. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | List of Tags. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.temperature">temperature</a></code> | <code>java.lang.Number</code> | Agent temperature setting. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.template">template</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>></code> | template block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.template">template</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>></code> | template block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.topP">topP</a></code> | <code>java.lang.Number</code> | Top P sampling parameter. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.url">url</a></code> | <code>java.lang.String</code> | URL for the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.userId">userId</a></code> | <code>java.lang.String</code> | User ID linked with the Agent. |
@@ -151,13 +132,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -187,7 +168,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -243,7 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `agentGuardrail`<sup>Optional</sup> <a name="agentGuardrail" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.agentGuardrail"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>>
 
 agent_guardrail block.
 
@@ -253,7 +234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `anthropicApiKey`<sup>Optional</sup> <a name="anthropicApiKey" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.anthropicApiKey"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>>
 
 anthropic_api_key block.
 
@@ -273,7 +254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `apiKeyInfos`<sup>Optional</sup> <a name="apiKeyInfos" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.apiKeyInfos"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>>
 
 api_key_infos block.
 
@@ -283,7 +264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `apiKeys`<sup>Optional</sup> <a name="apiKeys" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.apiKeys"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>>
 
 api_keys block.
 
@@ -293,7 +274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `chatbot`<sup>Optional</sup> <a name="chatbot" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.chatbot"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>>
 
 chatbot block.
 
@@ -303,7 +284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `chatbotIdentifiers`<sup>Optional</sup> <a name="chatbotIdentifiers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.chatbotIdentifiers"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>>
 
 chatbot_identifiers block.
 
@@ -313,7 +294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `childAgents`<sup>Optional</sup> <a name="childAgents" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.childAgents"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>>
 
 child_agents block.
 
@@ -333,7 +314,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `deployment`<sup>Optional</sup> <a name="deployment" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.deployment"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>>
 
 deployment block.
 
@@ -353,7 +334,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `functions`<sup>Optional</sup> <a name="functions" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.functions"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>>
 
 functions block.
 
@@ -394,7 +375,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `knowledgeBases`<sup>Optional</sup> <a name="knowledgeBases" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.knowledgeBases"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>>
 
 knowledge_bases block.
 
@@ -424,7 +405,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `model`<sup>Optional</sup> <a name="model" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.model"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>>
 
 model block.
 
@@ -434,7 +415,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `openAiApiKey`<sup>Optional</sup> <a name="openAiApiKey" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.openAiApiKey"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>>
 
 open_ai_api_key block.
 
@@ -454,7 +435,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `parentAgents`<sup>Optional</sup> <a name="parentAgents" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.parentAgents"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>>
 
 parent_agents block.
 
@@ -464,7 +445,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `provideCitations`<sup>Optional</sup> <a name="provideCitations" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.provideCitations"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Indicates if the agent should provide citations in responses.
 
@@ -534,7 +515,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `template`<sup>Optional</sup> <a name="template" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer.parameter.template"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>>
 
 template block.
 
@@ -846,7 +827,7 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 ##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.hasResourceMove"></a>
 
 ```java
-public TerraformResourceMoveByTarget OR TerraformResourceMoveById hasResourceMove()
+public TerraformResourceMoveByTarget|TerraformResourceMoveById hasResourceMove()
 ```
 
 ##### `importFrom` <a name="importFrom" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.importFrom"></a>
@@ -902,7 +883,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ```java
 public void moveTo(java.lang.String moveTarget)
-public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+public void moveTo(java.lang.String moveTarget, java.lang.String|java.lang.Number index)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -917,7 +898,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.moveTo.parameter.index"></a>
 
-- *Type:* java.lang.String OR java.lang.Number
+- *Type:* java.lang.String|java.lang.Number
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -942,168 +923,168 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `putAgentGuardrail` <a name="putAgentGuardrail" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putAgentGuardrail"></a>
 
 ```java
-public void putAgentGuardrail(IResolvable OR java.util.List<GenaiAgentAgentGuardrail> value)
+public void putAgentGuardrail(IResolvable|java.util.List<GenaiAgentAgentGuardrail> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putAgentGuardrail.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>>
 
 ---
 
 ##### `putAnthropicApiKey` <a name="putAnthropicApiKey" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putAnthropicApiKey"></a>
 
 ```java
-public void putAnthropicApiKey(IResolvable OR java.util.List<GenaiAgentAnthropicApiKey> value)
+public void putAnthropicApiKey(IResolvable|java.util.List<GenaiAgentAnthropicApiKey> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putAnthropicApiKey.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>>
 
 ---
 
 ##### `putApiKeyInfos` <a name="putApiKeyInfos" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putApiKeyInfos"></a>
 
 ```java
-public void putApiKeyInfos(IResolvable OR java.util.List<GenaiAgentApiKeyInfos> value)
+public void putApiKeyInfos(IResolvable|java.util.List<GenaiAgentApiKeyInfos> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putApiKeyInfos.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>>
 
 ---
 
 ##### `putApiKeys` <a name="putApiKeys" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putApiKeys"></a>
 
 ```java
-public void putApiKeys(IResolvable OR java.util.List<GenaiAgentApiKeys> value)
+public void putApiKeys(IResolvable|java.util.List<GenaiAgentApiKeys> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putApiKeys.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>>
 
 ---
 
 ##### `putChatbot` <a name="putChatbot" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putChatbot"></a>
 
 ```java
-public void putChatbot(IResolvable OR java.util.List<GenaiAgentChatbot> value)
+public void putChatbot(IResolvable|java.util.List<GenaiAgentChatbot> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putChatbot.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>>
 
 ---
 
 ##### `putChatbotIdentifiers` <a name="putChatbotIdentifiers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putChatbotIdentifiers"></a>
 
 ```java
-public void putChatbotIdentifiers(IResolvable OR java.util.List<GenaiAgentChatbotIdentifiers> value)
+public void putChatbotIdentifiers(IResolvable|java.util.List<GenaiAgentChatbotIdentifiers> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putChatbotIdentifiers.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>>
 
 ---
 
 ##### `putChildAgents` <a name="putChildAgents" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putChildAgents"></a>
 
 ```java
-public void putChildAgents(IResolvable OR java.util.List<GenaiAgentChildAgents> value)
+public void putChildAgents(IResolvable|java.util.List<GenaiAgentChildAgents> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putChildAgents.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>>
 
 ---
 
 ##### `putDeployment` <a name="putDeployment" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putDeployment"></a>
 
 ```java
-public void putDeployment(IResolvable OR java.util.List<GenaiAgentDeployment> value)
+public void putDeployment(IResolvable|java.util.List<GenaiAgentDeployment> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putDeployment.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>>
 
 ---
 
 ##### `putFunctions` <a name="putFunctions" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putFunctions"></a>
 
 ```java
-public void putFunctions(IResolvable OR java.util.List<GenaiAgentFunctions> value)
+public void putFunctions(IResolvable|java.util.List<GenaiAgentFunctions> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putFunctions.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>>
 
 ---
 
 ##### `putKnowledgeBases` <a name="putKnowledgeBases" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putKnowledgeBases"></a>
 
 ```java
-public void putKnowledgeBases(IResolvable OR java.util.List<GenaiAgentKnowledgeBases> value)
+public void putKnowledgeBases(IResolvable|java.util.List<GenaiAgentKnowledgeBases> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putKnowledgeBases.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>>
 
 ---
 
 ##### `putModel` <a name="putModel" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putModel"></a>
 
 ```java
-public void putModel(IResolvable OR java.util.List<GenaiAgentModel> value)
+public void putModel(IResolvable|java.util.List<GenaiAgentModel> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putModel.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>>
 
 ---
 
 ##### `putOpenAiApiKey` <a name="putOpenAiApiKey" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putOpenAiApiKey"></a>
 
 ```java
-public void putOpenAiApiKey(IResolvable OR java.util.List<GenaiAgentOpenAiApiKey> value)
+public void putOpenAiApiKey(IResolvable|java.util.List<GenaiAgentOpenAiApiKey> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putOpenAiApiKey.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>>
 
 ---
 
 ##### `putParentAgents` <a name="putParentAgents" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putParentAgents"></a>
 
 ```java
-public void putParentAgents(IResolvable OR java.util.List<GenaiAgentParentAgents> value)
+public void putParentAgents(IResolvable|java.util.List<GenaiAgentParentAgents> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putParentAgents.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>>
 
 ---
 
 ##### `putTemplate` <a name="putTemplate" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putTemplate"></a>
 
 ```java
-public void putTemplate(IResolvable OR java.util.List<GenaiAgentTemplate> value)
+public void putTemplate(IResolvable|java.util.List<GenaiAgentTemplate> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.putTemplate.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>>
 
 ---
 
@@ -1431,13 +1412,13 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.agentGuardrail">agentGuardrail</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailList">GenaiAgentAgentGuardrailList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.anthropicApiKey">anthropicApiKey</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyList">GenaiAgentAnthropicApiKeyList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.apiKeyInfos">apiKeyInfos</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosList">GenaiAgentApiKeyInfosList</a></code> | *No description.* |
@@ -1454,33 +1435,33 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.routeCreatedAt">routeCreatedAt</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.template">template</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateList">GenaiAgentTemplateList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.updatedAt">updatedAt</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.agentGuardrailInput">agentGuardrailInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.anthropicApiKeyInput">anthropicApiKeyInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.agentGuardrailInput">agentGuardrailInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.anthropicApiKeyInput">anthropicApiKeyInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.anthropicKeyUuidInput">anthropicKeyUuidInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.apiKeyInfosInput">apiKeyInfosInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.apiKeysInput">apiKeysInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.chatbotIdentifiersInput">chatbotIdentifiersInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.chatbotInput">chatbotInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.childAgentsInput">childAgentsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.apiKeyInfosInput">apiKeyInfosInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.apiKeysInput">apiKeysInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.chatbotIdentifiersInput">chatbotIdentifiersInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.chatbotInput">chatbotInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.childAgentsInput">childAgentsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.createdAtInput">createdAtInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.deploymentInput">deploymentInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.deploymentInput">deploymentInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.functionsInput">functionsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.functionsInput">functionsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.ifCaseInput">ifCaseInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.instructionInput">instructionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.kInput">kInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.knowledgeBasesInput">knowledgeBasesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.knowledgeBasesInput">knowledgeBasesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.knowledgeBaseUuidInput">knowledgeBaseUuidInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.maxTokensInput">maxTokensInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.modelInput">modelInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.modelInput">modelInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.modelUuidInput">modelUuidInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.openAiApiKeyInput">openAiApiKeyInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.openAiApiKeyInput">openAiApiKeyInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.openAiKeyUuidInput">openAiKeyUuidInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.parentAgentsInput">parentAgentsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.parentAgentsInput">parentAgentsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.projectIdInput">projectIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.provideCitationsInput">provideCitationsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.provideCitationsInput">provideCitationsInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.retrievalMethodInput">retrievalMethodInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.routeCreatedByInput">routeCreatedByInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1488,7 +1469,7 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.routeUuidInput">routeUuidInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.tagsInput">tagsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.temperatureInput">temperatureInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.templateInput">templateInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.templateInput">templateInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.topPInput">topPInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.urlInput">urlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.userIdInput">userIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1505,7 +1486,7 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.openAiKeyUuid">openAiKeyUuid</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.projectId">projectId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.provideCitations">provideCitations</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.provideCitations">provideCitations</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.retrievalMethod">retrievalMethod</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.routeCreatedBy">routeCreatedBy</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1594,20 +1575,20 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1654,10 +1635,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1824,20 +1805,20 @@ public java.lang.String getUpdatedAt();
 ##### `agentGuardrailInput`<sup>Optional</sup> <a name="agentGuardrailInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.agentGuardrailInput"></a>
 
 ```java
-public java.lang.Object getAgentGuardrailInput();
+public IResolvable|java.util.List<GenaiAgentAgentGuardrail> getAgentGuardrailInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>>
 
 ---
 
 ##### `anthropicApiKeyInput`<sup>Optional</sup> <a name="anthropicApiKeyInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.anthropicApiKeyInput"></a>
 
 ```java
-public java.lang.Object getAnthropicApiKeyInput();
+public IResolvable|java.util.List<GenaiAgentAnthropicApiKey> getAnthropicApiKeyInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>>
 
 ---
 
@@ -1854,50 +1835,50 @@ public java.lang.String getAnthropicKeyUuidInput();
 ##### `apiKeyInfosInput`<sup>Optional</sup> <a name="apiKeyInfosInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.apiKeyInfosInput"></a>
 
 ```java
-public java.lang.Object getApiKeyInfosInput();
+public IResolvable|java.util.List<GenaiAgentApiKeyInfos> getApiKeyInfosInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>>
 
 ---
 
 ##### `apiKeysInput`<sup>Optional</sup> <a name="apiKeysInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.apiKeysInput"></a>
 
 ```java
-public java.lang.Object getApiKeysInput();
+public IResolvable|java.util.List<GenaiAgentApiKeys> getApiKeysInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>>
 
 ---
 
 ##### `chatbotIdentifiersInput`<sup>Optional</sup> <a name="chatbotIdentifiersInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.chatbotIdentifiersInput"></a>
 
 ```java
-public java.lang.Object getChatbotIdentifiersInput();
+public IResolvable|java.util.List<GenaiAgentChatbotIdentifiers> getChatbotIdentifiersInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>>
 
 ---
 
 ##### `chatbotInput`<sup>Optional</sup> <a name="chatbotInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.chatbotInput"></a>
 
 ```java
-public java.lang.Object getChatbotInput();
+public IResolvable|java.util.List<GenaiAgentChatbot> getChatbotInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>>
 
 ---
 
 ##### `childAgentsInput`<sup>Optional</sup> <a name="childAgentsInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.childAgentsInput"></a>
 
 ```java
-public java.lang.Object getChildAgentsInput();
+public IResolvable|java.util.List<GenaiAgentChildAgents> getChildAgentsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>>
 
 ---
 
@@ -1914,10 +1895,10 @@ public java.lang.String getCreatedAtInput();
 ##### `deploymentInput`<sup>Optional</sup> <a name="deploymentInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.deploymentInput"></a>
 
 ```java
-public java.lang.Object getDeploymentInput();
+public IResolvable|java.util.List<GenaiAgentDeployment> getDeploymentInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>>
 
 ---
 
@@ -1934,10 +1915,10 @@ public java.lang.String getDescriptionInput();
 ##### `functionsInput`<sup>Optional</sup> <a name="functionsInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.functionsInput"></a>
 
 ```java
-public java.lang.Object getFunctionsInput();
+public IResolvable|java.util.List<GenaiAgentFunctions> getFunctionsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>>
 
 ---
 
@@ -1984,10 +1965,10 @@ public java.lang.Number getKInput();
 ##### `knowledgeBasesInput`<sup>Optional</sup> <a name="knowledgeBasesInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.knowledgeBasesInput"></a>
 
 ```java
-public java.lang.Object getKnowledgeBasesInput();
+public IResolvable|java.util.List<GenaiAgentKnowledgeBases> getKnowledgeBasesInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>>
 
 ---
 
@@ -2014,10 +1995,10 @@ public java.lang.Number getMaxTokensInput();
 ##### `modelInput`<sup>Optional</sup> <a name="modelInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.modelInput"></a>
 
 ```java
-public java.lang.Object getModelInput();
+public IResolvable|java.util.List<GenaiAgentModel> getModelInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>>
 
 ---
 
@@ -2044,10 +2025,10 @@ public java.lang.String getNameInput();
 ##### `openAiApiKeyInput`<sup>Optional</sup> <a name="openAiApiKeyInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.openAiApiKeyInput"></a>
 
 ```java
-public java.lang.Object getOpenAiApiKeyInput();
+public IResolvable|java.util.List<GenaiAgentOpenAiApiKey> getOpenAiApiKeyInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>>
 
 ---
 
@@ -2064,10 +2045,10 @@ public java.lang.String getOpenAiKeyUuidInput();
 ##### `parentAgentsInput`<sup>Optional</sup> <a name="parentAgentsInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.parentAgentsInput"></a>
 
 ```java
-public java.lang.Object getParentAgentsInput();
+public IResolvable|java.util.List<GenaiAgentParentAgents> getParentAgentsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>>
 
 ---
 
@@ -2084,10 +2065,10 @@ public java.lang.String getProjectIdInput();
 ##### `provideCitationsInput`<sup>Optional</sup> <a name="provideCitationsInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.provideCitationsInput"></a>
 
 ```java
-public java.lang.Object getProvideCitationsInput();
+public java.lang.Boolean|IResolvable getProvideCitationsInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -2164,10 +2145,10 @@ public java.lang.Number getTemperatureInput();
 ##### `templateInput`<sup>Optional</sup> <a name="templateInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.templateInput"></a>
 
 ```java
-public java.lang.Object getTemplateInput();
+public IResolvable|java.util.List<GenaiAgentTemplate> getTemplateInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>>
 
 ---
 
@@ -2334,10 +2315,10 @@ public java.lang.String getProjectId();
 ##### `provideCitations`<sup>Required</sup> <a name="provideCitations" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.property.provideCitations"></a>
 
 ```java
-public java.lang.Object getProvideCitations();
+public java.lang.Boolean|IResolvable getProvideCitations();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -2473,8 +2454,7 @@ GenaiAgentAgentGuardrail.builder()
 //  .defaultResponse(java.lang.String)
 //  .description(java.lang.String)
 //  .guardrailUuid(java.lang.String)
-//  .isDefault(java.lang.Boolean)
-//  .isDefault(IResolvable)
+//  .isDefault(java.lang.Boolean|IResolvable)
 //  .name(java.lang.String)
 //  .priority(java.lang.Number)
 //  .type(java.lang.String)
@@ -2490,7 +2470,7 @@ GenaiAgentAgentGuardrail.builder()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail.property.defaultResponse">defaultResponse</a></code> | <code>java.lang.String</code> | Default response for the Guardrail. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail.property.description">description</a></code> | <code>java.lang.String</code> | Description of the Guardrail. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail.property.guardrailUuid">guardrailUuid</a></code> | <code>java.lang.String</code> | Guardrail UUID. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail.property.isDefault">isDefault</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicates if the Guardrail is default. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail.property.isDefault">isDefault</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Indicates if the Guardrail is default. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail.property.name">name</a></code> | <code>java.lang.String</code> | Name of Guardrail. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail.property.priority">priority</a></code> | <code>java.lang.Number</code> | Priority of the Guardrail. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail.property.type">type</a></code> | <code>java.lang.String</code> | Type of the Guardrail. |
@@ -2557,10 +2537,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `isDefault`<sup>Optional</sup> <a name="isDefault" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail.property.isDefault"></a>
 
 ```java
-public java.lang.Object getIsDefault();
+public java.lang.Boolean|IResolvable getIsDefault();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Indicates if the Guardrail is default.
 
@@ -2945,18 +2925,12 @@ GenaiAgentChildAgents.builder()
     .name(java.lang.String)
     .projectId(java.lang.String)
     .region(java.lang.String)
-//  .anthropicApiKey(IResolvable)
-//  .anthropicApiKey(java.util.List<GenaiAgentChildAgentsAnthropicApiKey>)
-//  .apiKeyInfos(IResolvable)
-//  .apiKeyInfos(java.util.List<GenaiAgentChildAgentsApiKeyInfos>)
-//  .apiKeys(IResolvable)
-//  .apiKeys(java.util.List<GenaiAgentChildAgentsApiKeys>)
-//  .chatbot(IResolvable)
-//  .chatbot(java.util.List<GenaiAgentChildAgentsChatbot>)
-//  .chatbotIdentifiers(IResolvable)
-//  .chatbotIdentifiers(java.util.List<GenaiAgentChildAgentsChatbotIdentifiers>)
-//  .deployment(IResolvable)
-//  .deployment(java.util.List<GenaiAgentChildAgentsDeployment>)
+//  .anthropicApiKey(IResolvable|java.util.List<GenaiAgentChildAgentsAnthropicApiKey>)
+//  .apiKeyInfos(IResolvable|java.util.List<GenaiAgentChildAgentsApiKeyInfos>)
+//  .apiKeys(IResolvable|java.util.List<GenaiAgentChildAgentsApiKeys>)
+//  .chatbot(IResolvable|java.util.List<GenaiAgentChildAgentsChatbot>)
+//  .chatbotIdentifiers(IResolvable|java.util.List<GenaiAgentChildAgentsChatbotIdentifiers>)
+//  .deployment(IResolvable|java.util.List<GenaiAgentChildAgentsDeployment>)
 //  .description(java.lang.String)
     .build();
 ```
@@ -2970,12 +2944,12 @@ GenaiAgentChildAgents.builder()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.name">name</a></code> | <code>java.lang.String</code> | Name of the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.projectId">projectId</a></code> | <code>java.lang.String</code> | Project ID of the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.region">region</a></code> | <code>java.lang.String</code> | Region where the Agent is deployed. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.anthropicApiKey">anthropicApiKey</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>></code> | anthropic_api_key block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.apiKeyInfos">apiKeyInfos</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>></code> | api_key_infos block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.apiKeys">apiKeys</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>></code> | api_keys block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.chatbot">chatbot</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>></code> | chatbot block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.chatbotIdentifiers">chatbotIdentifiers</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>></code> | chatbot_identifiers block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.deployment">deployment</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>></code> | deployment block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.anthropicApiKey">anthropicApiKey</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>></code> | anthropic_api_key block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.apiKeyInfos">apiKeyInfos</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>></code> | api_key_infos block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.apiKeys">apiKeys</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>></code> | api_keys block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.chatbot">chatbot</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>></code> | chatbot block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.chatbotIdentifiers">chatbotIdentifiers</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>></code> | chatbot_identifiers block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.deployment">deployment</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>></code> | deployment block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.description">description</a></code> | <code>java.lang.String</code> | Description for the Agent. |
 
 ---
@@ -3053,10 +3027,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `anthropicApiKey`<sup>Optional</sup> <a name="anthropicApiKey" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.anthropicApiKey"></a>
 
 ```java
-public java.lang.Object getAnthropicApiKey();
+public IResolvable|java.util.List<GenaiAgentChildAgentsAnthropicApiKey> getAnthropicApiKey();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>>
 
 anthropic_api_key block.
 
@@ -3067,10 +3041,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `apiKeyInfos`<sup>Optional</sup> <a name="apiKeyInfos" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.apiKeyInfos"></a>
 
 ```java
-public java.lang.Object getApiKeyInfos();
+public IResolvable|java.util.List<GenaiAgentChildAgentsApiKeyInfos> getApiKeyInfos();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>>
 
 api_key_infos block.
 
@@ -3081,10 +3055,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `apiKeys`<sup>Optional</sup> <a name="apiKeys" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.apiKeys"></a>
 
 ```java
-public java.lang.Object getApiKeys();
+public IResolvable|java.util.List<GenaiAgentChildAgentsApiKeys> getApiKeys();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>>
 
 api_keys block.
 
@@ -3095,10 +3069,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `chatbot`<sup>Optional</sup> <a name="chatbot" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.chatbot"></a>
 
 ```java
-public java.lang.Object getChatbot();
+public IResolvable|java.util.List<GenaiAgentChildAgentsChatbot> getChatbot();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>>
 
 chatbot block.
 
@@ -3109,10 +3083,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `chatbotIdentifiers`<sup>Optional</sup> <a name="chatbotIdentifiers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.chatbotIdentifiers"></a>
 
 ```java
-public java.lang.Object getChatbotIdentifiers();
+public IResolvable|java.util.List<GenaiAgentChildAgentsChatbotIdentifiers> getChatbotIdentifiers();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>>
 
 chatbot_identifiers block.
 
@@ -3123,10 +3097,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deployment`<sup>Optional</sup> <a name="deployment" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.property.deployment"></a>
 
 ```java
-public java.lang.Object getDeployment();
+public IResolvable|java.util.List<GenaiAgentChildAgentsDeployment> getDeployment();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>>
 
 deployment block.
 
@@ -3562,67 +3536,48 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 import com.hashicorp.cdktf.providers.digitalocean.genai_agent.GenaiAgentConfig;
 
 GenaiAgentConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .instruction(java.lang.String)
     .modelUuid(java.lang.String)
     .name(java.lang.String)
     .projectId(java.lang.String)
     .region(java.lang.String)
-//  .agentGuardrail(IResolvable)
-//  .agentGuardrail(java.util.List<GenaiAgentAgentGuardrail>)
-//  .anthropicApiKey(IResolvable)
-//  .anthropicApiKey(java.util.List<GenaiAgentAnthropicApiKey>)
+//  .agentGuardrail(IResolvable|java.util.List<GenaiAgentAgentGuardrail>)
+//  .anthropicApiKey(IResolvable|java.util.List<GenaiAgentAnthropicApiKey>)
 //  .anthropicKeyUuid(java.lang.String)
-//  .apiKeyInfos(IResolvable)
-//  .apiKeyInfos(java.util.List<GenaiAgentApiKeyInfos>)
-//  .apiKeys(IResolvable)
-//  .apiKeys(java.util.List<GenaiAgentApiKeys>)
-//  .chatbot(IResolvable)
-//  .chatbot(java.util.List<GenaiAgentChatbot>)
-//  .chatbotIdentifiers(IResolvable)
-//  .chatbotIdentifiers(java.util.List<GenaiAgentChatbotIdentifiers>)
-//  .childAgents(IResolvable)
-//  .childAgents(java.util.List<GenaiAgentChildAgents>)
+//  .apiKeyInfos(IResolvable|java.util.List<GenaiAgentApiKeyInfos>)
+//  .apiKeys(IResolvable|java.util.List<GenaiAgentApiKeys>)
+//  .chatbot(IResolvable|java.util.List<GenaiAgentChatbot>)
+//  .chatbotIdentifiers(IResolvable|java.util.List<GenaiAgentChatbotIdentifiers>)
+//  .childAgents(IResolvable|java.util.List<GenaiAgentChildAgents>)
 //  .createdAt(java.lang.String)
-//  .deployment(IResolvable)
-//  .deployment(java.util.List<GenaiAgentDeployment>)
+//  .deployment(IResolvable|java.util.List<GenaiAgentDeployment>)
 //  .description(java.lang.String)
-//  .functions(IResolvable)
-//  .functions(java.util.List<GenaiAgentFunctions>)
+//  .functions(IResolvable|java.util.List<GenaiAgentFunctions>)
 //  .id(java.lang.String)
 //  .ifCase(java.lang.String)
 //  .k(java.lang.Number)
-//  .knowledgeBases(IResolvable)
-//  .knowledgeBases(java.util.List<GenaiAgentKnowledgeBases>)
+//  .knowledgeBases(IResolvable|java.util.List<GenaiAgentKnowledgeBases>)
 //  .knowledgeBaseUuid(java.util.List<java.lang.String>)
 //  .maxTokens(java.lang.Number)
-//  .model(IResolvable)
-//  .model(java.util.List<GenaiAgentModel>)
-//  .openAiApiKey(IResolvable)
-//  .openAiApiKey(java.util.List<GenaiAgentOpenAiApiKey>)
+//  .model(IResolvable|java.util.List<GenaiAgentModel>)
+//  .openAiApiKey(IResolvable|java.util.List<GenaiAgentOpenAiApiKey>)
 //  .openAiKeyUuid(java.lang.String)
-//  .parentAgents(IResolvable)
-//  .parentAgents(java.util.List<GenaiAgentParentAgents>)
-//  .provideCitations(java.lang.Boolean)
-//  .provideCitations(IResolvable)
+//  .parentAgents(IResolvable|java.util.List<GenaiAgentParentAgents>)
+//  .provideCitations(java.lang.Boolean|IResolvable)
 //  .retrievalMethod(java.lang.String)
 //  .routeCreatedBy(java.lang.String)
 //  .routeName(java.lang.String)
 //  .routeUuid(java.lang.String)
 //  .tags(java.util.List<java.lang.String>)
 //  .temperature(java.lang.Number)
-//  .template(IResolvable)
-//  .template(java.util.List<GenaiAgentTemplate>)
+//  .template(IResolvable|java.util.List<GenaiAgentTemplate>)
 //  .topP(java.lang.Number)
 //  .url(java.lang.String)
 //  .userId(java.lang.String)
@@ -3633,48 +3588,48 @@ GenaiAgentConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.instruction">instruction</a></code> | <code>java.lang.String</code> | Instruction for the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.modelUuid">modelUuid</a></code> | <code>java.lang.String</code> | Model UUID of the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.projectId">projectId</a></code> | <code>java.lang.String</code> | Project ID of the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where the Agent is deployed. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.agentGuardrail">agentGuardrail</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>></code> | agent_guardrail block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.anthropicApiKey">anthropicApiKey</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>></code> | anthropic_api_key block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.agentGuardrail">agentGuardrail</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>></code> | agent_guardrail block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.anthropicApiKey">anthropicApiKey</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>></code> | anthropic_api_key block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.anthropicKeyUuid">anthropicKeyUuid</a></code> | <code>java.lang.String</code> | Optional Anthropic API key ID to use with Anthropic models. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.apiKeyInfos">apiKeyInfos</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>></code> | api_key_infos block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.apiKeys">apiKeys</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>></code> | api_keys block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.chatbot">chatbot</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>></code> | chatbot block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.chatbotIdentifiers">chatbotIdentifiers</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>></code> | chatbot_identifiers block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.childAgents">childAgents</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>></code> | child_agents block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.apiKeyInfos">apiKeyInfos</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>></code> | api_key_infos block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.apiKeys">apiKeys</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>></code> | api_keys block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.chatbot">chatbot</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>></code> | chatbot block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.chatbotIdentifiers">chatbotIdentifiers</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>></code> | chatbot_identifiers block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.childAgents">childAgents</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>></code> | child_agents block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.createdAt">createdAt</a></code> | <code>java.lang.String</code> | Timestamp when the Agent was created. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.deployment">deployment</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>></code> | deployment block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.deployment">deployment</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>></code> | deployment block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.description">description</a></code> | <code>java.lang.String</code> | Description for the Agent. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.functions">functions</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>></code> | functions block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.functions">functions</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>></code> | functions block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/genai_agent#id GenaiAgent#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.ifCase">ifCase</a></code> | <code>java.lang.String</code> | If case condition. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.k">k</a></code> | <code>java.lang.Number</code> | K value. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.knowledgeBases">knowledgeBases</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>></code> | knowledge_bases block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.knowledgeBases">knowledgeBases</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>></code> | knowledge_bases block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.knowledgeBaseUuid">knowledgeBaseUuid</a></code> | <code>java.util.List<java.lang.String></code> | Ids of the knowledge base(s) to attach to the agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.maxTokens">maxTokens</a></code> | <code>java.lang.Number</code> | Maximum tokens allowed. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.model">model</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>></code> | model block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.openAiApiKey">openAiApiKey</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>></code> | open_ai_api_key block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.model">model</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>></code> | model block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.openAiApiKey">openAiApiKey</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>></code> | open_ai_api_key block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.openAiKeyUuid">openAiKeyUuid</a></code> | <code>java.lang.String</code> | Optional OpenAI API key ID to use with OpenAI models. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.parentAgents">parentAgents</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>></code> | parent_agents block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.provideCitations">provideCitations</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicates if the agent should provide citations in responses. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.parentAgents">parentAgents</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>></code> | parent_agents block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.provideCitations">provideCitations</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Indicates if the agent should provide citations in responses. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.retrievalMethod">retrievalMethod</a></code> | <code>java.lang.String</code> | Retrieval method used. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.routeCreatedBy">routeCreatedBy</a></code> | <code>java.lang.String</code> | User who created the route. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.routeName">routeName</a></code> | <code>java.lang.String</code> | Route name. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.routeUuid">routeUuid</a></code> | <code>java.lang.String</code> | Route UUID. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | List of Tags. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.temperature">temperature</a></code> | <code>java.lang.Number</code> | Agent temperature setting. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.template">template</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>></code> | template block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.template">template</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>></code> | template block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.topP">topP</a></code> | <code>java.lang.Number</code> | Top P sampling parameter. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.url">url</a></code> | <code>java.lang.String</code> | URL for the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.userId">userId</a></code> | <code>java.lang.String</code> | User ID linked with the Agent. |
@@ -3684,20 +3639,20 @@ GenaiAgentConfig.builder()
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -3744,10 +3699,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -3824,10 +3779,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `agentGuardrail`<sup>Optional</sup> <a name="agentGuardrail" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.agentGuardrail"></a>
 
 ```java
-public java.lang.Object getAgentGuardrail();
+public IResolvable|java.util.List<GenaiAgentAgentGuardrail> getAgentGuardrail();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>>
 
 agent_guardrail block.
 
@@ -3838,10 +3793,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `anthropicApiKey`<sup>Optional</sup> <a name="anthropicApiKey" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.anthropicApiKey"></a>
 
 ```java
-public java.lang.Object getAnthropicApiKey();
+public IResolvable|java.util.List<GenaiAgentAnthropicApiKey> getAnthropicApiKey();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>>
 
 anthropic_api_key block.
 
@@ -3866,10 +3821,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `apiKeyInfos`<sup>Optional</sup> <a name="apiKeyInfos" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.apiKeyInfos"></a>
 
 ```java
-public java.lang.Object getApiKeyInfos();
+public IResolvable|java.util.List<GenaiAgentApiKeyInfos> getApiKeyInfos();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>>
 
 api_key_infos block.
 
@@ -3880,10 +3835,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `apiKeys`<sup>Optional</sup> <a name="apiKeys" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.apiKeys"></a>
 
 ```java
-public java.lang.Object getApiKeys();
+public IResolvable|java.util.List<GenaiAgentApiKeys> getApiKeys();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>>
 
 api_keys block.
 
@@ -3894,10 +3849,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `chatbot`<sup>Optional</sup> <a name="chatbot" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.chatbot"></a>
 
 ```java
-public java.lang.Object getChatbot();
+public IResolvable|java.util.List<GenaiAgentChatbot> getChatbot();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>>
 
 chatbot block.
 
@@ -3908,10 +3863,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `chatbotIdentifiers`<sup>Optional</sup> <a name="chatbotIdentifiers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.chatbotIdentifiers"></a>
 
 ```java
-public java.lang.Object getChatbotIdentifiers();
+public IResolvable|java.util.List<GenaiAgentChatbotIdentifiers> getChatbotIdentifiers();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>>
 
 chatbot_identifiers block.
 
@@ -3922,10 +3877,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `childAgents`<sup>Optional</sup> <a name="childAgents" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.childAgents"></a>
 
 ```java
-public java.lang.Object getChildAgents();
+public IResolvable|java.util.List<GenaiAgentChildAgents> getChildAgents();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>>
 
 child_agents block.
 
@@ -3950,10 +3905,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deployment`<sup>Optional</sup> <a name="deployment" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.deployment"></a>
 
 ```java
-public java.lang.Object getDeployment();
+public IResolvable|java.util.List<GenaiAgentDeployment> getDeployment();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>>
 
 deployment block.
 
@@ -3978,10 +3933,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `functions`<sup>Optional</sup> <a name="functions" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.functions"></a>
 
 ```java
-public java.lang.Object getFunctions();
+public IResolvable|java.util.List<GenaiAgentFunctions> getFunctions();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>>
 
 functions block.
 
@@ -4035,10 +3990,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `knowledgeBases`<sup>Optional</sup> <a name="knowledgeBases" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.knowledgeBases"></a>
 
 ```java
-public java.lang.Object getKnowledgeBases();
+public IResolvable|java.util.List<GenaiAgentKnowledgeBases> getKnowledgeBases();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>>
 
 knowledge_bases block.
 
@@ -4077,10 +4032,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `model`<sup>Optional</sup> <a name="model" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.model"></a>
 
 ```java
-public java.lang.Object getModel();
+public IResolvable|java.util.List<GenaiAgentModel> getModel();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>>
 
 model block.
 
@@ -4091,10 +4046,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `openAiApiKey`<sup>Optional</sup> <a name="openAiApiKey" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.openAiApiKey"></a>
 
 ```java
-public java.lang.Object getOpenAiApiKey();
+public IResolvable|java.util.List<GenaiAgentOpenAiApiKey> getOpenAiApiKey();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>>
 
 open_ai_api_key block.
 
@@ -4119,10 +4074,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `parentAgents`<sup>Optional</sup> <a name="parentAgents" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.parentAgents"></a>
 
 ```java
-public java.lang.Object getParentAgents();
+public IResolvable|java.util.List<GenaiAgentParentAgents> getParentAgents();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>>
 
 parent_agents block.
 
@@ -4133,10 +4088,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `provideCitations`<sup>Optional</sup> <a name="provideCitations" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.provideCitations"></a>
 
 ```java
-public java.lang.Object getProvideCitations();
+public java.lang.Boolean|IResolvable getProvideCitations();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Indicates if the agent should provide citations in responses.
 
@@ -4231,10 +4186,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `template`<sup>Optional</sup> <a name="template" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.property.template"></a>
 
 ```java
-public java.lang.Object getTemplate();
+public IResolvable|java.util.List<GenaiAgentTemplate> getTemplate();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>>
 
 template block.
 
@@ -4538,8 +4493,7 @@ import com.hashicorp.cdktf.providers.digitalocean.genai_agent.GenaiAgentKnowledg
 GenaiAgentKnowledgeBases.builder()
 //  .databaseId(java.lang.String)
 //  .embeddingModelUuid(java.lang.String)
-//  .isPublic(java.lang.Boolean)
-//  .isPublic(IResolvable)
+//  .isPublic(java.lang.Boolean|IResolvable)
 //  .lastIndexingJob(GenaiAgentKnowledgeBasesLastIndexingJob)
 //  .name(java.lang.String)
 //  .projectId(java.lang.String)
@@ -4555,7 +4509,7 @@ GenaiAgentKnowledgeBases.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.databaseId">databaseId</a></code> | <code>java.lang.String</code> | Database ID of the Knowledge Base. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.embeddingModelUuid">embeddingModelUuid</a></code> | <code>java.lang.String</code> | Embedding model UUID for the Knowledge Base. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.isPublic">isPublic</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicates if the Knowledge Base is public. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.isPublic">isPublic</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Indicates if the Knowledge Base is public. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.lastIndexingJob">lastIndexingJob</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob">GenaiAgentKnowledgeBasesLastIndexingJob</a></code> | last_indexing_job block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.name">name</a></code> | <code>java.lang.String</code> | Name of the Knowledge Base. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.projectId">projectId</a></code> | <code>java.lang.String</code> | Project ID of the Knowledge Base. |
@@ -4596,10 +4550,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `isPublic`<sup>Optional</sup> <a name="isPublic" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.property.isPublic"></a>
 
 ```java
-public java.lang.Object getIsPublic();
+public java.lang.Boolean|IResolvable getIsPublic();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Indicates if the Knowledge Base is public.
 
@@ -4813,21 +4767,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 import com.hashicorp.cdktf.providers.digitalocean.genai_agent.GenaiAgentModel;
 
 GenaiAgentModel.builder()
-//  .agreement(IResolvable)
-//  .agreement(java.util.List<GenaiAgentModelAgreement>)
+//  .agreement(IResolvable|java.util.List<GenaiAgentModelAgreement>)
 //  .inferenceName(java.lang.String)
 //  .inferenceVersion(java.lang.String)
-//  .isFoundational(java.lang.Boolean)
-//  .isFoundational(IResolvable)
+//  .isFoundational(java.lang.Boolean|IResolvable)
 //  .name(java.lang.String)
 //  .parentUuid(java.lang.String)
 //  .provider(java.lang.String)
-//  .uploadComplete(java.lang.Boolean)
-//  .uploadComplete(IResolvable)
+//  .uploadComplete(java.lang.Boolean|IResolvable)
 //  .url(java.lang.String)
 //  .usecases(java.util.List<java.lang.String>)
-//  .versions(IResolvable)
-//  .versions(java.util.List<GenaiAgentModelVersions>)
+//  .versions(IResolvable|java.util.List<GenaiAgentModelVersions>)
     .build();
 ```
 
@@ -4835,27 +4785,27 @@ GenaiAgentModel.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.agreement">agreement</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>></code> | agreement block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.agreement">agreement</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>></code> | agreement block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.inferenceName">inferenceName</a></code> | <code>java.lang.String</code> | Inference name of the model. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.inferenceVersion">inferenceVersion</a></code> | <code>java.lang.String</code> | Infernce version of the model. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.isFoundational">isFoundational</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicates if the Model Base is foundational. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.isFoundational">isFoundational</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Indicates if the Model Base is foundational. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.name">name</a></code> | <code>java.lang.String</code> | Name of the Knowledge Base. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.parentUuid">parentUuid</a></code> | <code>java.lang.String</code> | Parent UUID of the Model. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.provider">provider</a></code> | <code>java.lang.String</code> | Provider of the Model. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.uploadComplete">uploadComplete</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicates if the Model upload is complete. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.uploadComplete">uploadComplete</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Indicates if the Model upload is complete. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.url">url</a></code> | <code>java.lang.String</code> | URL of the Model. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.usecases">usecases</a></code> | <code>java.util.List<java.lang.String></code> | List of Usecases for the Model. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.versions">versions</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>></code> | versions block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.versions">versions</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>></code> | versions block. |
 
 ---
 
 ##### `agreement`<sup>Optional</sup> <a name="agreement" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.agreement"></a>
 
 ```java
-public java.lang.Object getAgreement();
+public IResolvable|java.util.List<GenaiAgentModelAgreement> getAgreement();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>>
 
 agreement block.
 
@@ -4894,10 +4844,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `isFoundational`<sup>Optional</sup> <a name="isFoundational" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.isFoundational"></a>
 
 ```java
-public java.lang.Object getIsFoundational();
+public java.lang.Boolean|IResolvable getIsFoundational();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Indicates if the Model Base is foundational.
 
@@ -4950,10 +4900,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `uploadComplete`<sup>Optional</sup> <a name="uploadComplete" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.uploadComplete"></a>
 
 ```java
-public java.lang.Object getUploadComplete();
+public java.lang.Boolean|IResolvable getUploadComplete();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Indicates if the Model upload is complete.
 
@@ -4992,10 +4942,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `versions`<sup>Optional</sup> <a name="versions" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.property.versions"></a>
 
 ```java
-public java.lang.Object getVersions();
+public IResolvable|java.util.List<GenaiAgentModelVersions> getVersions();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>>
 
 versions block.
 
@@ -5230,18 +5180,12 @@ GenaiAgentParentAgents.builder()
     .name(java.lang.String)
     .projectId(java.lang.String)
     .region(java.lang.String)
-//  .anthropicApiKey(IResolvable)
-//  .anthropicApiKey(java.util.List<GenaiAgentParentAgentsAnthropicApiKey>)
-//  .apiKeyInfos(IResolvable)
-//  .apiKeyInfos(java.util.List<GenaiAgentParentAgentsApiKeyInfos>)
-//  .apiKeys(IResolvable)
-//  .apiKeys(java.util.List<GenaiAgentParentAgentsApiKeys>)
-//  .chatbot(IResolvable)
-//  .chatbot(java.util.List<GenaiAgentParentAgentsChatbot>)
-//  .chatbotIdentifiers(IResolvable)
-//  .chatbotIdentifiers(java.util.List<GenaiAgentParentAgentsChatbotIdentifiers>)
-//  .deployment(IResolvable)
-//  .deployment(java.util.List<GenaiAgentParentAgentsDeployment>)
+//  .anthropicApiKey(IResolvable|java.util.List<GenaiAgentParentAgentsAnthropicApiKey>)
+//  .apiKeyInfos(IResolvable|java.util.List<GenaiAgentParentAgentsApiKeyInfos>)
+//  .apiKeys(IResolvable|java.util.List<GenaiAgentParentAgentsApiKeys>)
+//  .chatbot(IResolvable|java.util.List<GenaiAgentParentAgentsChatbot>)
+//  .chatbotIdentifiers(IResolvable|java.util.List<GenaiAgentParentAgentsChatbotIdentifiers>)
+//  .deployment(IResolvable|java.util.List<GenaiAgentParentAgentsDeployment>)
 //  .description(java.lang.String)
     .build();
 ```
@@ -5255,12 +5199,12 @@ GenaiAgentParentAgents.builder()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.name">name</a></code> | <code>java.lang.String</code> | Name of the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.projectId">projectId</a></code> | <code>java.lang.String</code> | Project ID of the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.region">region</a></code> | <code>java.lang.String</code> | Region where the Agent is deployed. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.anthropicApiKey">anthropicApiKey</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>></code> | anthropic_api_key block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.apiKeyInfos">apiKeyInfos</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>></code> | api_key_infos block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.apiKeys">apiKeys</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>></code> | api_keys block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.chatbot">chatbot</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>></code> | chatbot block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.chatbotIdentifiers">chatbotIdentifiers</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>></code> | chatbot_identifiers block. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.deployment">deployment</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>></code> | deployment block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.anthropicApiKey">anthropicApiKey</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>></code> | anthropic_api_key block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.apiKeyInfos">apiKeyInfos</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>></code> | api_key_infos block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.apiKeys">apiKeys</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>></code> | api_keys block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.chatbot">chatbot</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>></code> | chatbot block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.chatbotIdentifiers">chatbotIdentifiers</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>></code> | chatbot_identifiers block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.deployment">deployment</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>></code> | deployment block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.description">description</a></code> | <code>java.lang.String</code> | Description for the Agent. |
 
 ---
@@ -5338,10 +5282,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `anthropicApiKey`<sup>Optional</sup> <a name="anthropicApiKey" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.anthropicApiKey"></a>
 
 ```java
-public java.lang.Object getAnthropicApiKey();
+public IResolvable|java.util.List<GenaiAgentParentAgentsAnthropicApiKey> getAnthropicApiKey();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>>
 
 anthropic_api_key block.
 
@@ -5352,10 +5296,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `apiKeyInfos`<sup>Optional</sup> <a name="apiKeyInfos" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.apiKeyInfos"></a>
 
 ```java
-public java.lang.Object getApiKeyInfos();
+public IResolvable|java.util.List<GenaiAgentParentAgentsApiKeyInfos> getApiKeyInfos();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>>
 
 api_key_infos block.
 
@@ -5366,10 +5310,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `apiKeys`<sup>Optional</sup> <a name="apiKeys" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.apiKeys"></a>
 
 ```java
-public java.lang.Object getApiKeys();
+public IResolvable|java.util.List<GenaiAgentParentAgentsApiKeys> getApiKeys();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>>
 
 api_keys block.
 
@@ -5380,10 +5324,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `chatbot`<sup>Optional</sup> <a name="chatbot" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.chatbot"></a>
 
 ```java
-public java.lang.Object getChatbot();
+public IResolvable|java.util.List<GenaiAgentParentAgentsChatbot> getChatbot();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>>
 
 chatbot block.
 
@@ -5394,10 +5338,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `chatbotIdentifiers`<sup>Optional</sup> <a name="chatbotIdentifiers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.chatbotIdentifiers"></a>
 
 ```java
-public java.lang.Object getChatbotIdentifiers();
+public IResolvable|java.util.List<GenaiAgentParentAgentsChatbotIdentifiers> getChatbotIdentifiers();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>>
 
 chatbot_identifiers block.
 
@@ -5408,10 +5352,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deployment`<sup>Optional</sup> <a name="deployment" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.property.deployment"></a>
 
 ```java
-public java.lang.Object getDeployment();
+public IResolvable|java.util.List<GenaiAgentParentAgentsDeployment> getDeployment();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>>
 
 deployment block.
 
@@ -5850,11 +5794,9 @@ GenaiAgentTemplate.builder()
 //  .description(java.lang.String)
 //  .instruction(java.lang.String)
 //  .k(java.lang.Number)
-//  .knowledgeBases(IResolvable)
-//  .knowledgeBases(java.util.List<GenaiAgentTemplateKnowledgeBases>)
+//  .knowledgeBases(IResolvable|java.util.List<GenaiAgentTemplateKnowledgeBases>)
 //  .maxTokens(java.lang.Number)
-//  .model(IResolvable)
-//  .model(java.util.List<GenaiAgentTemplateModel>)
+//  .model(IResolvable|java.util.List<GenaiAgentTemplateModel>)
 //  .name(java.lang.String)
 //  .temperature(java.lang.Number)
 //  .topP(java.lang.Number)
@@ -5869,9 +5811,9 @@ GenaiAgentTemplate.builder()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.description">description</a></code> | <code>java.lang.String</code> | Description of the Agent Template. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.instruction">instruction</a></code> | <code>java.lang.String</code> | Instruction for the Agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.k">k</a></code> | <code>java.lang.Number</code> | K value for the Agent Template. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.knowledgeBases">knowledgeBases</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>></code> | knowledge_bases block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.knowledgeBases">knowledgeBases</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>></code> | knowledge_bases block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.maxTokens">maxTokens</a></code> | <code>java.lang.Number</code> | Maximum tokens allowed. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.model">model</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>></code> | model block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.model">model</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>></code> | model block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.name">name</a></code> | <code>java.lang.String</code> | Name of the Agent Template. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.temperature">temperature</a></code> | <code>java.lang.Number</code> | Agent temperature setting. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.topP">topP</a></code> | <code>java.lang.Number</code> | Top P sampling parameter. |
@@ -5924,10 +5866,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `knowledgeBases`<sup>Optional</sup> <a name="knowledgeBases" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.knowledgeBases"></a>
 
 ```java
-public java.lang.Object getKnowledgeBases();
+public IResolvable|java.util.List<GenaiAgentTemplateKnowledgeBases> getKnowledgeBases();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>>
 
 knowledge_bases block.
 
@@ -5952,10 +5894,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `model`<sup>Optional</sup> <a name="model" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.property.model"></a>
 
 ```java
-public java.lang.Object getModel();
+public IResolvable|java.util.List<GenaiAgentTemplateModel> getModel();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>>
 
 model block.
 
@@ -6029,8 +5971,7 @@ import com.hashicorp.cdktf.providers.digitalocean.genai_agent.GenaiAgentTemplate
 GenaiAgentTemplateKnowledgeBases.builder()
 //  .databaseId(java.lang.String)
 //  .embeddingModelUuid(java.lang.String)
-//  .isPublic(java.lang.Boolean)
-//  .isPublic(IResolvable)
+//  .isPublic(java.lang.Boolean|IResolvable)
 //  .lastIndexingJob(GenaiAgentTemplateKnowledgeBasesLastIndexingJob)
 //  .name(java.lang.String)
 //  .projectId(java.lang.String)
@@ -6046,7 +5987,7 @@ GenaiAgentTemplateKnowledgeBases.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.databaseId">databaseId</a></code> | <code>java.lang.String</code> | Database ID of the Knowledge Base. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.embeddingModelUuid">embeddingModelUuid</a></code> | <code>java.lang.String</code> | Embedding model UUID for the Knowledge Base. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.isPublic">isPublic</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicates if the Knowledge Base is public. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.isPublic">isPublic</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Indicates if the Knowledge Base is public. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.lastIndexingJob">lastIndexingJob</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob">GenaiAgentTemplateKnowledgeBasesLastIndexingJob</a></code> | last_indexing_job block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.name">name</a></code> | <code>java.lang.String</code> | Name of the Knowledge Base. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.projectId">projectId</a></code> | <code>java.lang.String</code> | Project ID of the Knowledge Base. |
@@ -6087,10 +6028,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `isPublic`<sup>Optional</sup> <a name="isPublic" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.property.isPublic"></a>
 
 ```java
-public java.lang.Object getIsPublic();
+public java.lang.Boolean|IResolvable getIsPublic();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Indicates if the Knowledge Base is public.
 
@@ -6304,21 +6245,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 import com.hashicorp.cdktf.providers.digitalocean.genai_agent.GenaiAgentTemplateModel;
 
 GenaiAgentTemplateModel.builder()
-//  .agreement(IResolvable)
-//  .agreement(java.util.List<GenaiAgentTemplateModelAgreement>)
+//  .agreement(IResolvable|java.util.List<GenaiAgentTemplateModelAgreement>)
 //  .inferenceName(java.lang.String)
 //  .inferenceVersion(java.lang.String)
-//  .isFoundational(java.lang.Boolean)
-//  .isFoundational(IResolvable)
+//  .isFoundational(java.lang.Boolean|IResolvable)
 //  .name(java.lang.String)
 //  .parentUuid(java.lang.String)
 //  .provider(java.lang.String)
-//  .uploadComplete(java.lang.Boolean)
-//  .uploadComplete(IResolvable)
+//  .uploadComplete(java.lang.Boolean|IResolvable)
 //  .url(java.lang.String)
 //  .usecases(java.util.List<java.lang.String>)
-//  .versions(IResolvable)
-//  .versions(java.util.List<GenaiAgentTemplateModelVersions>)
+//  .versions(IResolvable|java.util.List<GenaiAgentTemplateModelVersions>)
     .build();
 ```
 
@@ -6326,27 +6263,27 @@ GenaiAgentTemplateModel.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.agreement">agreement</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>></code> | agreement block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.agreement">agreement</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>></code> | agreement block. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.inferenceName">inferenceName</a></code> | <code>java.lang.String</code> | Inference name of the model. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.inferenceVersion">inferenceVersion</a></code> | <code>java.lang.String</code> | Infernce version of the model. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.isFoundational">isFoundational</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicates if the Model Base is foundational. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.isFoundational">isFoundational</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Indicates if the Model Base is foundational. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.name">name</a></code> | <code>java.lang.String</code> | Name of the Knowledge Base. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.parentUuid">parentUuid</a></code> | <code>java.lang.String</code> | Parent UUID of the Model. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.provider">provider</a></code> | <code>java.lang.String</code> | Provider of the Model. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.uploadComplete">uploadComplete</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicates if the Model upload is complete. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.uploadComplete">uploadComplete</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Indicates if the Model upload is complete. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.url">url</a></code> | <code>java.lang.String</code> | URL of the Model. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.usecases">usecases</a></code> | <code>java.util.List<java.lang.String></code> | List of Usecases for the Model. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.versions">versions</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>></code> | versions block. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.versions">versions</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>></code> | versions block. |
 
 ---
 
 ##### `agreement`<sup>Optional</sup> <a name="agreement" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.agreement"></a>
 
 ```java
-public java.lang.Object getAgreement();
+public IResolvable|java.util.List<GenaiAgentTemplateModelAgreement> getAgreement();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>>
 
 agreement block.
 
@@ -6385,10 +6322,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `isFoundational`<sup>Optional</sup> <a name="isFoundational" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.isFoundational"></a>
 
 ```java
-public java.lang.Object getIsFoundational();
+public java.lang.Boolean|IResolvable getIsFoundational();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Indicates if the Model Base is foundational.
 
@@ -6441,10 +6378,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `uploadComplete`<sup>Optional</sup> <a name="uploadComplete" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.uploadComplete"></a>
 
 ```java
-public java.lang.Object getUploadComplete();
+public java.lang.Boolean|IResolvable getUploadComplete();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Indicates if the Model upload is complete.
 
@@ -6483,10 +6420,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `versions`<sup>Optional</sup> <a name="versions" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.property.versions"></a>
 
 ```java
-public java.lang.Object getVersions();
+public IResolvable|java.util.List<GenaiAgentTemplateModelVersions> getVersions();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>>
 
 versions block.
 
@@ -6765,7 +6702,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>></code> | *No description.* |
 
 ---
 
@@ -6796,10 +6733,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<GenaiAgentAgentGuardrail> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>>
 
 ---
 
@@ -7102,7 +7039,7 @@ public void resetUuid()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.defaultResponseInput">defaultResponseInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.guardrailUuidInput">guardrailUuidInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.isDefaultInput">isDefaultInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.isDefaultInput">isDefaultInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.priorityInput">priorityInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -7111,12 +7048,12 @@ public void resetUuid()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.defaultResponse">defaultResponse</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.guardrailUuid">guardrailUuid</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.isDefault">isDefault</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.isDefault">isDefault</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.priority">priority</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.uuid">uuid</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a></code> | *No description.* |
 
 ---
 
@@ -7217,10 +7154,10 @@ public java.lang.String getGuardrailUuidInput();
 ##### `isDefaultInput`<sup>Optional</sup> <a name="isDefaultInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.isDefaultInput"></a>
 
 ```java
-public java.lang.Object getIsDefaultInput();
+public java.lang.Boolean|IResolvable getIsDefaultInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -7307,10 +7244,10 @@ public java.lang.String getGuardrailUuid();
 ##### `isDefault`<sup>Required</sup> <a name="isDefault" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.isDefault"></a>
 
 ```java
-public java.lang.Object getIsDefault();
+public java.lang.Boolean|IResolvable getIsDefault();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -7357,10 +7294,10 @@ public java.lang.String getUuid();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|GenaiAgentAgentGuardrail getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail">GenaiAgentAgentGuardrail</a>
 
 ---
 
@@ -7486,7 +7423,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>></code> | *No description.* |
 
 ---
 
@@ -7517,10 +7454,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<GenaiAgentAnthropicApiKey> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>>
 
 ---
 
@@ -7783,7 +7720,7 @@ public void resetUuid()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyOutputReference.property.createdBy">createdBy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyOutputReference.property.uuid">uuid</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a></code> | *No description.* |
 
 ---
 
@@ -7904,10 +7841,10 @@ public java.lang.String getUuid();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|GenaiAgentAnthropicApiKey getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey">GenaiAgentAnthropicApiKey</a>
 
 ---
 
@@ -8033,7 +7970,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>></code> | *No description.* |
 
 ---
 
@@ -8064,10 +8001,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<GenaiAgentApiKeyInfos> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>>
 
 ---
 
@@ -8338,7 +8275,7 @@ public void resetUuid()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosOutputReference.property.secretKey">secretKey</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosOutputReference.property.uuid">uuid</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a></code> | *No description.* |
 
 ---
 
@@ -8469,10 +8406,10 @@ public java.lang.String getUuid();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|GenaiAgentApiKeyInfos getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos">GenaiAgentApiKeyInfos</a>
 
 ---
 
@@ -8598,7 +8535,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeysList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeysList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeysList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeysList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>></code> | *No description.* |
 
 ---
 
@@ -8629,10 +8566,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeysList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<GenaiAgentApiKeys> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>>
 
 ---
 
@@ -8874,7 +8811,7 @@ public void resetApiKey()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeysOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeysOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeysOutputReference.property.apiKey">apiKey</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeysOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeysOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a></code> | *No description.* |
 
 ---
 
@@ -8925,10 +8862,10 @@ public java.lang.String getApiKey();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeysOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|GenaiAgentApiKeys getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys">GenaiAgentApiKeys</a>
 
 ---
 
@@ -9054,7 +8991,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiersList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiersList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiersList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiersList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>></code> | *No description.* |
 
 ---
 
@@ -9085,10 +9022,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiersList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<GenaiAgentChatbotIdentifiers> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>>
 
 ---
 
@@ -9322,7 +9259,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiersOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiersOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiersOutputReference.property.chatbotId">chatbotId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiersOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiersOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a></code> | *No description.* |
 
 ---
 
@@ -9363,10 +9300,10 @@ public java.lang.String getChatbotId();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiersOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|GenaiAgentChatbotIdentifiers getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers">GenaiAgentChatbotIdentifiers</a>
 
 ---
 
@@ -9492,7 +9429,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>></code> | *No description.* |
 
 ---
 
@@ -9523,10 +9460,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<GenaiAgentChatbot> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>>
 
 ---
 
@@ -9813,7 +9750,7 @@ public void resetStartingMessage()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotOutputReference.property.primaryColor">primaryColor</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotOutputReference.property.secondaryColor">secondaryColor</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotOutputReference.property.startingMessage">startingMessage</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a></code> | *No description.* |
 
 ---
 
@@ -9964,10 +9901,10 @@ public java.lang.String getStartingMessage();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|GenaiAgentChatbot getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot">GenaiAgentChatbot</a>
 
 ---
 
@@ -10093,7 +10030,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKeyList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKeyList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKeyList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKeyList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>></code> | *No description.* |
 
 ---
 
@@ -10124,10 +10061,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKeyList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<GenaiAgentChildAgentsAnthropicApiKey> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>>
 
 ---
 
@@ -10390,7 +10327,7 @@ public void resetUuid()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKeyOutputReference.property.createdBy">createdBy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKeyOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKeyOutputReference.property.uuid">uuid</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a></code> | *No description.* |
 
 ---
 
@@ -10511,10 +10448,10 @@ public java.lang.String getUuid();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKeyOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|GenaiAgentChildAgentsAnthropicApiKey getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>
 
 ---
 
@@ -10640,7 +10577,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfosList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfosList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfosList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfosList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>></code> | *No description.* |
 
 ---
 
@@ -10671,10 +10608,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfosList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<GenaiAgentChildAgentsApiKeyInfos> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>>
 
 ---
 
@@ -10945,7 +10882,7 @@ public void resetUuid()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfosOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfosOutputReference.property.secretKey">secretKey</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfosOutputReference.property.uuid">uuid</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfosOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfosOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a></code> | *No description.* |
 
 ---
 
@@ -11076,10 +11013,10 @@ public java.lang.String getUuid();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfosOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|GenaiAgentChildAgentsApiKeyInfos getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>
 
 ---
 
@@ -11205,7 +11142,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeysList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeysList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeysList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeysList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>></code> | *No description.* |
 
 ---
 
@@ -11236,10 +11173,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeysList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<GenaiAgentChildAgentsApiKeys> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>>
 
 ---
 
@@ -11481,7 +11418,7 @@ public void resetApiKey()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeysOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeysOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeysOutputReference.property.apiKey">apiKey</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeysOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeysOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a></code> | *No description.* |
 
 ---
 
@@ -11532,10 +11469,10 @@ public java.lang.String getApiKey();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeysOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|GenaiAgentChildAgentsApiKeys getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>
 
 ---
 
@@ -11661,7 +11598,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>></code> | *No description.* |
 
 ---
 
@@ -11692,10 +11629,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<GenaiAgentChildAgentsChatbotIdentifiers> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>>
 
 ---
 
@@ -11929,7 +11866,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersOutputReference.property.chatbotId">chatbotId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a></code> | *No description.* |
 
 ---
 
@@ -11970,10 +11907,10 @@ public java.lang.String getChatbotId();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|GenaiAgentChildAgentsChatbotIdentifiers getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>
 
 ---
 
@@ -12099,7 +12036,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>></code> | *No description.* |
 
 ---
 
@@ -12130,10 +12067,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<GenaiAgentChildAgentsChatbot> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>>
 
 ---
 
@@ -12420,7 +12357,7 @@ public void resetStartingMessage()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotOutputReference.property.primaryColor">primaryColor</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotOutputReference.property.secondaryColor">secondaryColor</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotOutputReference.property.startingMessage">startingMessage</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a></code> | *No description.* |
 
 ---
 
@@ -12571,10 +12508,10 @@ public java.lang.String getStartingMessage();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|GenaiAgentChildAgentsChatbot getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>
 
 ---
 
@@ -12700,7 +12637,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>></code> | *No description.* |
 
 ---
 
@@ -12731,10 +12668,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<GenaiAgentChildAgentsDeployment> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>>
 
 ---
 
@@ -13014,7 +12951,7 @@ public void resetVisibility()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentOutputReference.property.url">url</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentOutputReference.property.uuid">uuid</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentOutputReference.property.visibility">visibility</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a></code> | *No description.* |
 
 ---
 
@@ -13165,10 +13102,10 @@ public java.lang.String getVisibility();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|GenaiAgentChildAgentsDeployment getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>
 
 ---
 
@@ -13294,7 +13231,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>></code> | *No description.* |
 
 ---
 
@@ -13325,10 +13262,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<GenaiAgentChildAgents> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>>
 
 ---
 
@@ -13570,72 +13507,72 @@ Returns a reversible string representation.
 ##### `putAnthropicApiKey` <a name="putAnthropicApiKey" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.putAnthropicApiKey"></a>
 
 ```java
-public void putAnthropicApiKey(IResolvable OR java.util.List<GenaiAgentChildAgentsAnthropicApiKey> value)
+public void putAnthropicApiKey(IResolvable|java.util.List<GenaiAgentChildAgentsAnthropicApiKey> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.putAnthropicApiKey.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>>
 
 ---
 
 ##### `putApiKeyInfos` <a name="putApiKeyInfos" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.putApiKeyInfos"></a>
 
 ```java
-public void putApiKeyInfos(IResolvable OR java.util.List<GenaiAgentChildAgentsApiKeyInfos> value)
+public void putApiKeyInfos(IResolvable|java.util.List<GenaiAgentChildAgentsApiKeyInfos> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.putApiKeyInfos.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>>
 
 ---
 
 ##### `putApiKeys` <a name="putApiKeys" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.putApiKeys"></a>
 
 ```java
-public void putApiKeys(IResolvable OR java.util.List<GenaiAgentChildAgentsApiKeys> value)
+public void putApiKeys(IResolvable|java.util.List<GenaiAgentChildAgentsApiKeys> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.putApiKeys.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>>
 
 ---
 
 ##### `putChatbot` <a name="putChatbot" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.putChatbot"></a>
 
 ```java
-public void putChatbot(IResolvable OR java.util.List<GenaiAgentChildAgentsChatbot> value)
+public void putChatbot(IResolvable|java.util.List<GenaiAgentChildAgentsChatbot> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.putChatbot.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>>
 
 ---
 
 ##### `putChatbotIdentifiers` <a name="putChatbotIdentifiers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.putChatbotIdentifiers"></a>
 
 ```java
-public void putChatbotIdentifiers(IResolvable OR java.util.List<GenaiAgentChildAgentsChatbotIdentifiers> value)
+public void putChatbotIdentifiers(IResolvable|java.util.List<GenaiAgentChildAgentsChatbotIdentifiers> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.putChatbotIdentifiers.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>>
 
 ---
 
 ##### `putDeployment` <a name="putDeployment" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.putDeployment"></a>
 
 ```java
-public void putDeployment(IResolvable OR java.util.List<GenaiAgentChildAgentsDeployment> value)
+public void putDeployment(IResolvable|java.util.List<GenaiAgentChildAgentsDeployment> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.putDeployment.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>>
 
 ---
 
@@ -13695,12 +13632,12 @@ public void resetDescription()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.chatbot">chatbot</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotList">GenaiAgentChildAgentsChatbotList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.chatbotIdentifiers">chatbotIdentifiers</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersList">GenaiAgentChildAgentsChatbotIdentifiersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.deployment">deployment</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentList">GenaiAgentChildAgentsDeploymentList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.anthropicApiKeyInput">anthropicApiKeyInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.apiKeyInfosInput">apiKeyInfosInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.apiKeysInput">apiKeysInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.chatbotIdentifiersInput">chatbotIdentifiersInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.chatbotInput">chatbotInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.deploymentInput">deploymentInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.anthropicApiKeyInput">anthropicApiKeyInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.apiKeyInfosInput">apiKeyInfosInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.apiKeysInput">apiKeysInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.chatbotIdentifiersInput">chatbotIdentifiersInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.chatbotInput">chatbotInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.deploymentInput">deploymentInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.instructionInput">instructionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.modelUuidInput">modelUuidInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -13713,7 +13650,7 @@ public void resetDescription()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.projectId">projectId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a></code> | *No description.* |
 
 ---
 
@@ -13814,60 +13751,60 @@ public GenaiAgentChildAgentsDeploymentList getDeployment();
 ##### `anthropicApiKeyInput`<sup>Optional</sup> <a name="anthropicApiKeyInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.anthropicApiKeyInput"></a>
 
 ```java
-public java.lang.Object getAnthropicApiKeyInput();
+public IResolvable|java.util.List<GenaiAgentChildAgentsAnthropicApiKey> getAnthropicApiKeyInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey">GenaiAgentChildAgentsAnthropicApiKey</a>>
 
 ---
 
 ##### `apiKeyInfosInput`<sup>Optional</sup> <a name="apiKeyInfosInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.apiKeyInfosInput"></a>
 
 ```java
-public java.lang.Object getApiKeyInfosInput();
+public IResolvable|java.util.List<GenaiAgentChildAgentsApiKeyInfos> getApiKeyInfosInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos">GenaiAgentChildAgentsApiKeyInfos</a>>
 
 ---
 
 ##### `apiKeysInput`<sup>Optional</sup> <a name="apiKeysInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.apiKeysInput"></a>
 
 ```java
-public java.lang.Object getApiKeysInput();
+public IResolvable|java.util.List<GenaiAgentChildAgentsApiKeys> getApiKeysInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys">GenaiAgentChildAgentsApiKeys</a>>
 
 ---
 
 ##### `chatbotIdentifiersInput`<sup>Optional</sup> <a name="chatbotIdentifiersInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.chatbotIdentifiersInput"></a>
 
 ```java
-public java.lang.Object getChatbotIdentifiersInput();
+public IResolvable|java.util.List<GenaiAgentChildAgentsChatbotIdentifiers> getChatbotIdentifiersInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers">GenaiAgentChildAgentsChatbotIdentifiers</a>>
 
 ---
 
 ##### `chatbotInput`<sup>Optional</sup> <a name="chatbotInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.chatbotInput"></a>
 
 ```java
-public java.lang.Object getChatbotInput();
+public IResolvable|java.util.List<GenaiAgentChildAgentsChatbot> getChatbotInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot">GenaiAgentChildAgentsChatbot</a>>
 
 ---
 
 ##### `deploymentInput`<sup>Optional</sup> <a name="deploymentInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.deploymentInput"></a>
 
 ```java
-public java.lang.Object getDeploymentInput();
+public IResolvable|java.util.List<GenaiAgentChildAgentsDeployment> getDeploymentInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment">GenaiAgentChildAgentsDeployment</a>>
 
 ---
 
@@ -13994,10 +13931,10 @@ public java.lang.String getRegion();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|GenaiAgentChildAgents getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents">GenaiAgentChildAgents</a>
 
 ---
 
@@ -14123,7 +14060,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeploymentList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeploymentList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeploymentList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeploymentList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>></code> | *No description.* |
 
 ---
 
@@ -14154,10 +14091,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeploymentList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<GenaiAgentDeployment> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>>
 
 ---
 
@@ -14437,7 +14374,7 @@ public void resetVisibility()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeploymentOutputReference.property.url">url</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeploymentOutputReference.property.uuid">uuid</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeploymentOutputReference.property.visibility">visibility</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeploymentOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeploymentOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a></code> | *No description.* |
 
 ---
 
@@ -14588,10 +14525,10 @@ public java.lang.String getVisibility();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeploymentOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|GenaiAgentDeployment getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment">GenaiAgentDeployment</a>
 
 ---
 
@@ -14717,7 +14654,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctionsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctionsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctionsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctionsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>></code> | *No description.* |
 
 ---
 
@@ -14748,10 +14685,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctionsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<GenaiAgentFunctions> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>>
 
 ---
 
@@ -15058,7 +14995,7 @@ public void resetUuid()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctionsOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctionsOutputReference.property.url">url</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctionsOutputReference.property.uuid">uuid</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctionsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctionsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a></code> | *No description.* |
 
 ---
 
@@ -15269,10 +15206,10 @@ public java.lang.String getUuid();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctionsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|GenaiAgentFunctions getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions">GenaiAgentFunctions</a>
 
 ---
 
@@ -15876,7 +15813,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>></code> | *No description.* |
 
 ---
 
@@ -15907,10 +15844,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<GenaiAgentKnowledgeBases> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>>
 
 ---
 
@@ -16226,7 +16163,7 @@ public void resetUserId()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.uuid">uuid</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.databaseIdInput">databaseIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.embeddingModelUuidInput">embeddingModelUuidInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.isPublicInput">isPublicInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.isPublicInput">isPublicInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.lastIndexingJobInput">lastIndexingJobInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob">GenaiAgentKnowledgeBasesLastIndexingJob</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.projectIdInput">projectIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -16235,13 +16172,13 @@ public void resetUserId()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.userIdInput">userIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.databaseId">databaseId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.embeddingModelUuid">embeddingModelUuid</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.isPublic">isPublic</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.isPublic">isPublic</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.projectId">projectId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.userId">userId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a></code> | *No description.* |
 
 ---
 
@@ -16342,10 +16279,10 @@ public java.lang.String getEmbeddingModelUuidInput();
 ##### `isPublicInput`<sup>Optional</sup> <a name="isPublicInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.isPublicInput"></a>
 
 ```java
-public java.lang.Object getIsPublicInput();
+public java.lang.Boolean|IResolvable getIsPublicInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -16432,10 +16369,10 @@ public java.lang.String getEmbeddingModelUuid();
 ##### `isPublic`<sup>Required</sup> <a name="isPublic" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.isPublic"></a>
 
 ```java
-public java.lang.Object getIsPublic();
+public java.lang.Boolean|IResolvable getIsPublic();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -16492,10 +16429,10 @@ public java.lang.String getUserId();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|GenaiAgentKnowledgeBases getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases">GenaiAgentKnowledgeBases</a>
 
 ---
 
@@ -16621,7 +16558,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreementList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreementList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreementList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreementList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>></code> | *No description.* |
 
 ---
 
@@ -16652,10 +16589,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreementList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<GenaiAgentModelAgreement> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>>
 
 ---
 
@@ -16924,7 +16861,7 @@ public void resetUuid()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreementOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreementOutputReference.property.url">url</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreementOutputReference.property.uuid">uuid</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreementOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreementOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a></code> | *No description.* |
 
 ---
 
@@ -17035,10 +16972,10 @@ public java.lang.String getUuid();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreementOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|GenaiAgentModelAgreement getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>
 
 ---
 
@@ -17164,7 +17101,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>></code> | *No description.* |
 
 ---
 
@@ -17195,10 +17132,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<GenaiAgentModel> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>>
 
 ---
 
@@ -17440,24 +17377,24 @@ Returns a reversible string representation.
 ##### `putAgreement` <a name="putAgreement" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.putAgreement"></a>
 
 ```java
-public void putAgreement(IResolvable OR java.util.List<GenaiAgentModelAgreement> value)
+public void putAgreement(IResolvable|java.util.List<GenaiAgentModelAgreement> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.putAgreement.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>>
 
 ---
 
 ##### `putVersions` <a name="putVersions" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.putVersions"></a>
 
 ```java
-public void putVersions(IResolvable OR java.util.List<GenaiAgentModelVersions> value)
+public void putVersions(IResolvable|java.util.List<GenaiAgentModelVersions> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.putVersions.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>>
 
 ---
 
@@ -17538,27 +17475,27 @@ public void resetVersions()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.createdAt">createdAt</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.updatedAt">updatedAt</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.versions">versions</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsList">GenaiAgentModelVersionsList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.agreementInput">agreementInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.agreementInput">agreementInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.inferenceNameInput">inferenceNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.inferenceVersionInput">inferenceVersionInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.isFoundationalInput">isFoundationalInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.isFoundationalInput">isFoundationalInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.parentUuidInput">parentUuidInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.providerInput">providerInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.uploadCompleteInput">uploadCompleteInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.uploadCompleteInput">uploadCompleteInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.urlInput">urlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.usecasesInput">usecasesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.versionsInput">versionsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.versionsInput">versionsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.inferenceName">inferenceName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.inferenceVersion">inferenceVersion</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.isFoundational">isFoundational</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.isFoundational">isFoundational</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.parentUuid">parentUuid</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.provider">provider</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.uploadComplete">uploadComplete</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.uploadComplete">uploadComplete</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.url">url</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.usecases">usecases</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a></code> | *No description.* |
 
 ---
 
@@ -17629,10 +17566,10 @@ public GenaiAgentModelVersionsList getVersions();
 ##### `agreementInput`<sup>Optional</sup> <a name="agreementInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.agreementInput"></a>
 
 ```java
-public java.lang.Object getAgreementInput();
+public IResolvable|java.util.List<GenaiAgentModelAgreement> getAgreementInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement">GenaiAgentModelAgreement</a>>
 
 ---
 
@@ -17659,10 +17596,10 @@ public java.lang.String getInferenceVersionInput();
 ##### `isFoundationalInput`<sup>Optional</sup> <a name="isFoundationalInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.isFoundationalInput"></a>
 
 ```java
-public java.lang.Object getIsFoundationalInput();
+public java.lang.Boolean|IResolvable getIsFoundationalInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -17699,10 +17636,10 @@ public java.lang.String getProviderInput();
 ##### `uploadCompleteInput`<sup>Optional</sup> <a name="uploadCompleteInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.uploadCompleteInput"></a>
 
 ```java
-public java.lang.Object getUploadCompleteInput();
+public java.lang.Boolean|IResolvable getUploadCompleteInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -17729,10 +17666,10 @@ public java.util.List<java.lang.String> getUsecasesInput();
 ##### `versionsInput`<sup>Optional</sup> <a name="versionsInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.versionsInput"></a>
 
 ```java
-public java.lang.Object getVersionsInput();
+public IResolvable|java.util.List<GenaiAgentModelVersions> getVersionsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>>
 
 ---
 
@@ -17759,10 +17696,10 @@ public java.lang.String getInferenceVersion();
 ##### `isFoundational`<sup>Required</sup> <a name="isFoundational" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.isFoundational"></a>
 
 ```java
-public java.lang.Object getIsFoundational();
+public java.lang.Boolean|IResolvable getIsFoundational();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -17799,10 +17736,10 @@ public java.lang.String getProvider();
 ##### `uploadComplete`<sup>Required</sup> <a name="uploadComplete" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.uploadComplete"></a>
 
 ```java
-public java.lang.Object getUploadComplete();
+public java.lang.Boolean|IResolvable getUploadComplete();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -17829,10 +17766,10 @@ public java.util.List<java.lang.String> getUsecases();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|GenaiAgentModel getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel">GenaiAgentModel</a>
 
 ---
 
@@ -17958,7 +17895,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>></code> | *No description.* |
 
 ---
 
@@ -17989,10 +17926,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<GenaiAgentModelVersions> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>>
 
 ---
 
@@ -18252,7 +18189,7 @@ public void resetPatch()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsOutputReference.property.major">major</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsOutputReference.property.minor">minor</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsOutputReference.property.patch">patch</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a></code> | *No description.* |
 
 ---
 
@@ -18343,10 +18280,10 @@ public java.lang.Number getPatch();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|GenaiAgentModelVersions getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions">GenaiAgentModelVersions</a>
 
 ---
 
@@ -18472,7 +18409,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKeyList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKeyList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKeyList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKeyList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>></code> | *No description.* |
 
 ---
 
@@ -18503,10 +18440,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKeyList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<GenaiAgentOpenAiApiKey> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>>
 
 ---
 
@@ -18769,7 +18706,7 @@ public void resetUuid()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKeyOutputReference.property.createdBy">createdBy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKeyOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKeyOutputReference.property.uuid">uuid</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a></code> | *No description.* |
 
 ---
 
@@ -18890,10 +18827,10 @@ public java.lang.String getUuid();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKeyOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|GenaiAgentOpenAiApiKey getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey">GenaiAgentOpenAiApiKey</a>
 
 ---
 
@@ -19019,7 +18956,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKeyList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKeyList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKeyList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKeyList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>></code> | *No description.* |
 
 ---
 
@@ -19050,10 +18987,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKeyList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<GenaiAgentParentAgentsAnthropicApiKey> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>>
 
 ---
 
@@ -19316,7 +19253,7 @@ public void resetUuid()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKeyOutputReference.property.createdBy">createdBy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKeyOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKeyOutputReference.property.uuid">uuid</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a></code> | *No description.* |
 
 ---
 
@@ -19437,10 +19374,10 @@ public java.lang.String getUuid();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKeyOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|GenaiAgentParentAgentsAnthropicApiKey getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>
 
 ---
 
@@ -19566,7 +19503,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfosList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfosList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfosList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfosList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>></code> | *No description.* |
 
 ---
 
@@ -19597,10 +19534,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfosList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<GenaiAgentParentAgentsApiKeyInfos> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>>
 
 ---
 
@@ -19871,7 +19808,7 @@ public void resetUuid()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfosOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfosOutputReference.property.secretKey">secretKey</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfosOutputReference.property.uuid">uuid</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfosOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfosOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a></code> | *No description.* |
 
 ---
 
@@ -20002,10 +19939,10 @@ public java.lang.String getUuid();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfosOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|GenaiAgentParentAgentsApiKeyInfos getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>
 
 ---
 
@@ -20131,7 +20068,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeysList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeysList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeysList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeysList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>></code> | *No description.* |
 
 ---
 
@@ -20162,10 +20099,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeysList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<GenaiAgentParentAgentsApiKeys> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>>
 
 ---
 
@@ -20407,7 +20344,7 @@ public void resetApiKey()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeysOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeysOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeysOutputReference.property.apiKey">apiKey</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeysOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeysOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a></code> | *No description.* |
 
 ---
 
@@ -20458,10 +20395,10 @@ public java.lang.String getApiKey();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeysOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|GenaiAgentParentAgentsApiKeys getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>
 
 ---
 
@@ -20587,7 +20524,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>></code> | *No description.* |
 
 ---
 
@@ -20618,10 +20555,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<GenaiAgentParentAgentsChatbotIdentifiers> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>>
 
 ---
 
@@ -20855,7 +20792,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersOutputReference.property.chatbotId">chatbotId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a></code> | *No description.* |
 
 ---
 
@@ -20896,10 +20833,10 @@ public java.lang.String getChatbotId();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|GenaiAgentParentAgentsChatbotIdentifiers getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>
 
 ---
 
@@ -21025,7 +20962,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>></code> | *No description.* |
 
 ---
 
@@ -21056,10 +20993,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<GenaiAgentParentAgentsChatbot> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>>
 
 ---
 
@@ -21346,7 +21283,7 @@ public void resetStartingMessage()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotOutputReference.property.primaryColor">primaryColor</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotOutputReference.property.secondaryColor">secondaryColor</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotOutputReference.property.startingMessage">startingMessage</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a></code> | *No description.* |
 
 ---
 
@@ -21497,10 +21434,10 @@ public java.lang.String getStartingMessage();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|GenaiAgentParentAgentsChatbot getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>
 
 ---
 
@@ -21626,7 +21563,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>></code> | *No description.* |
 
 ---
 
@@ -21657,10 +21594,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<GenaiAgentParentAgentsDeployment> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>>
 
 ---
 
@@ -21940,7 +21877,7 @@ public void resetVisibility()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentOutputReference.property.url">url</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentOutputReference.property.uuid">uuid</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentOutputReference.property.visibility">visibility</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a></code> | *No description.* |
 
 ---
 
@@ -22091,10 +22028,10 @@ public java.lang.String getVisibility();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|GenaiAgentParentAgentsDeployment getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>
 
 ---
 
@@ -22220,7 +22157,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>></code> | *No description.* |
 
 ---
 
@@ -22251,10 +22188,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<GenaiAgentParentAgents> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>>
 
 ---
 
@@ -22496,72 +22433,72 @@ Returns a reversible string representation.
 ##### `putAnthropicApiKey` <a name="putAnthropicApiKey" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.putAnthropicApiKey"></a>
 
 ```java
-public void putAnthropicApiKey(IResolvable OR java.util.List<GenaiAgentParentAgentsAnthropicApiKey> value)
+public void putAnthropicApiKey(IResolvable|java.util.List<GenaiAgentParentAgentsAnthropicApiKey> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.putAnthropicApiKey.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>>
 
 ---
 
 ##### `putApiKeyInfos` <a name="putApiKeyInfos" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.putApiKeyInfos"></a>
 
 ```java
-public void putApiKeyInfos(IResolvable OR java.util.List<GenaiAgentParentAgentsApiKeyInfos> value)
+public void putApiKeyInfos(IResolvable|java.util.List<GenaiAgentParentAgentsApiKeyInfos> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.putApiKeyInfos.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>>
 
 ---
 
 ##### `putApiKeys` <a name="putApiKeys" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.putApiKeys"></a>
 
 ```java
-public void putApiKeys(IResolvable OR java.util.List<GenaiAgentParentAgentsApiKeys> value)
+public void putApiKeys(IResolvable|java.util.List<GenaiAgentParentAgentsApiKeys> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.putApiKeys.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>>
 
 ---
 
 ##### `putChatbot` <a name="putChatbot" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.putChatbot"></a>
 
 ```java
-public void putChatbot(IResolvable OR java.util.List<GenaiAgentParentAgentsChatbot> value)
+public void putChatbot(IResolvable|java.util.List<GenaiAgentParentAgentsChatbot> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.putChatbot.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>>
 
 ---
 
 ##### `putChatbotIdentifiers` <a name="putChatbotIdentifiers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.putChatbotIdentifiers"></a>
 
 ```java
-public void putChatbotIdentifiers(IResolvable OR java.util.List<GenaiAgentParentAgentsChatbotIdentifiers> value)
+public void putChatbotIdentifiers(IResolvable|java.util.List<GenaiAgentParentAgentsChatbotIdentifiers> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.putChatbotIdentifiers.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>>
 
 ---
 
 ##### `putDeployment` <a name="putDeployment" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.putDeployment"></a>
 
 ```java
-public void putDeployment(IResolvable OR java.util.List<GenaiAgentParentAgentsDeployment> value)
+public void putDeployment(IResolvable|java.util.List<GenaiAgentParentAgentsDeployment> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.putDeployment.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>>
 
 ---
 
@@ -22621,12 +22558,12 @@ public void resetDescription()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.chatbot">chatbot</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotList">GenaiAgentParentAgentsChatbotList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.chatbotIdentifiers">chatbotIdentifiers</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersList">GenaiAgentParentAgentsChatbotIdentifiersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.deployment">deployment</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentList">GenaiAgentParentAgentsDeploymentList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.anthropicApiKeyInput">anthropicApiKeyInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.apiKeyInfosInput">apiKeyInfosInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.apiKeysInput">apiKeysInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.chatbotIdentifiersInput">chatbotIdentifiersInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.chatbotInput">chatbotInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.deploymentInput">deploymentInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.anthropicApiKeyInput">anthropicApiKeyInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.apiKeyInfosInput">apiKeyInfosInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.apiKeysInput">apiKeysInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.chatbotIdentifiersInput">chatbotIdentifiersInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.chatbotInput">chatbotInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.deploymentInput">deploymentInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.instructionInput">instructionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.modelUuidInput">modelUuidInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -22639,7 +22576,7 @@ public void resetDescription()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.projectId">projectId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a></code> | *No description.* |
 
 ---
 
@@ -22740,60 +22677,60 @@ public GenaiAgentParentAgentsDeploymentList getDeployment();
 ##### `anthropicApiKeyInput`<sup>Optional</sup> <a name="anthropicApiKeyInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.anthropicApiKeyInput"></a>
 
 ```java
-public java.lang.Object getAnthropicApiKeyInput();
+public IResolvable|java.util.List<GenaiAgentParentAgentsAnthropicApiKey> getAnthropicApiKeyInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey">GenaiAgentParentAgentsAnthropicApiKey</a>>
 
 ---
 
 ##### `apiKeyInfosInput`<sup>Optional</sup> <a name="apiKeyInfosInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.apiKeyInfosInput"></a>
 
 ```java
-public java.lang.Object getApiKeyInfosInput();
+public IResolvable|java.util.List<GenaiAgentParentAgentsApiKeyInfos> getApiKeyInfosInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos">GenaiAgentParentAgentsApiKeyInfos</a>>
 
 ---
 
 ##### `apiKeysInput`<sup>Optional</sup> <a name="apiKeysInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.apiKeysInput"></a>
 
 ```java
-public java.lang.Object getApiKeysInput();
+public IResolvable|java.util.List<GenaiAgentParentAgentsApiKeys> getApiKeysInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys">GenaiAgentParentAgentsApiKeys</a>>
 
 ---
 
 ##### `chatbotIdentifiersInput`<sup>Optional</sup> <a name="chatbotIdentifiersInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.chatbotIdentifiersInput"></a>
 
 ```java
-public java.lang.Object getChatbotIdentifiersInput();
+public IResolvable|java.util.List<GenaiAgentParentAgentsChatbotIdentifiers> getChatbotIdentifiersInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers">GenaiAgentParentAgentsChatbotIdentifiers</a>>
 
 ---
 
 ##### `chatbotInput`<sup>Optional</sup> <a name="chatbotInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.chatbotInput"></a>
 
 ```java
-public java.lang.Object getChatbotInput();
+public IResolvable|java.util.List<GenaiAgentParentAgentsChatbot> getChatbotInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot">GenaiAgentParentAgentsChatbot</a>>
 
 ---
 
 ##### `deploymentInput`<sup>Optional</sup> <a name="deploymentInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.deploymentInput"></a>
 
 ```java
-public java.lang.Object getDeploymentInput();
+public IResolvable|java.util.List<GenaiAgentParentAgentsDeployment> getDeploymentInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment">GenaiAgentParentAgentsDeployment</a>>
 
 ---
 
@@ -22920,10 +22857,10 @@ public java.lang.String getRegion();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|GenaiAgentParentAgents getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents">GenaiAgentParentAgents</a>
 
 ---
 
@@ -23527,7 +23464,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>></code> | *No description.* |
 
 ---
 
@@ -23558,10 +23495,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<GenaiAgentTemplateKnowledgeBases> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>>
 
 ---
 
@@ -23877,7 +23814,7 @@ public void resetUserId()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.uuid">uuid</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.databaseIdInput">databaseIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.embeddingModelUuidInput">embeddingModelUuidInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.isPublicInput">isPublicInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.isPublicInput">isPublicInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.lastIndexingJobInput">lastIndexingJobInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob">GenaiAgentTemplateKnowledgeBasesLastIndexingJob</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.projectIdInput">projectIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -23886,13 +23823,13 @@ public void resetUserId()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.userIdInput">userIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.databaseId">databaseId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.embeddingModelUuid">embeddingModelUuid</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.isPublic">isPublic</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.isPublic">isPublic</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.projectId">projectId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.userId">userId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a></code> | *No description.* |
 
 ---
 
@@ -23993,10 +23930,10 @@ public java.lang.String getEmbeddingModelUuidInput();
 ##### `isPublicInput`<sup>Optional</sup> <a name="isPublicInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.isPublicInput"></a>
 
 ```java
-public java.lang.Object getIsPublicInput();
+public java.lang.Boolean|IResolvable getIsPublicInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -24083,10 +24020,10 @@ public java.lang.String getEmbeddingModelUuid();
 ##### `isPublic`<sup>Required</sup> <a name="isPublic" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.isPublic"></a>
 
 ```java
-public java.lang.Object getIsPublic();
+public java.lang.Boolean|IResolvable getIsPublic();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -24143,10 +24080,10 @@ public java.lang.String getUserId();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|GenaiAgentTemplateKnowledgeBases getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>
 
 ---
 
@@ -24272,7 +24209,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>></code> | *No description.* |
 
 ---
 
@@ -24303,10 +24240,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<GenaiAgentTemplate> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>>
 
 ---
 
@@ -24432,7 +24369,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreementList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreementList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreementList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreementList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>></code> | *No description.* |
 
 ---
 
@@ -24463,10 +24400,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreementList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<GenaiAgentTemplateModelAgreement> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>>
 
 ---
 
@@ -24735,7 +24672,7 @@ public void resetUuid()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreementOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreementOutputReference.property.url">url</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreementOutputReference.property.uuid">uuid</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreementOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreementOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a></code> | *No description.* |
 
 ---
 
@@ -24846,10 +24783,10 @@ public java.lang.String getUuid();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreementOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|GenaiAgentTemplateModelAgreement getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>
 
 ---
 
@@ -24975,7 +24912,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>></code> | *No description.* |
 
 ---
 
@@ -25006,10 +24943,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<GenaiAgentTemplateModel> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>>
 
 ---
 
@@ -25251,24 +25188,24 @@ Returns a reversible string representation.
 ##### `putAgreement` <a name="putAgreement" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.putAgreement"></a>
 
 ```java
-public void putAgreement(IResolvable OR java.util.List<GenaiAgentTemplateModelAgreement> value)
+public void putAgreement(IResolvable|java.util.List<GenaiAgentTemplateModelAgreement> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.putAgreement.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>>
 
 ---
 
 ##### `putVersions` <a name="putVersions" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.putVersions"></a>
 
 ```java
-public void putVersions(IResolvable OR java.util.List<GenaiAgentTemplateModelVersions> value)
+public void putVersions(IResolvable|java.util.List<GenaiAgentTemplateModelVersions> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.putVersions.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>>
 
 ---
 
@@ -25349,27 +25286,27 @@ public void resetVersions()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.createdAt">createdAt</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.updatedAt">updatedAt</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.versions">versions</a></code> | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsList">GenaiAgentTemplateModelVersionsList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.agreementInput">agreementInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.agreementInput">agreementInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.inferenceNameInput">inferenceNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.inferenceVersionInput">inferenceVersionInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.isFoundationalInput">isFoundationalInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.isFoundationalInput">isFoundationalInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.parentUuidInput">parentUuidInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.providerInput">providerInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.uploadCompleteInput">uploadCompleteInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.uploadCompleteInput">uploadCompleteInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.urlInput">urlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.usecasesInput">usecasesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.versionsInput">versionsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.versionsInput">versionsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.inferenceName">inferenceName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.inferenceVersion">inferenceVersion</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.isFoundational">isFoundational</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.isFoundational">isFoundational</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.parentUuid">parentUuid</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.provider">provider</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.uploadComplete">uploadComplete</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.uploadComplete">uploadComplete</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.url">url</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.usecases">usecases</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a></code> | *No description.* |
 
 ---
 
@@ -25440,10 +25377,10 @@ public GenaiAgentTemplateModelVersionsList getVersions();
 ##### `agreementInput`<sup>Optional</sup> <a name="agreementInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.agreementInput"></a>
 
 ```java
-public java.lang.Object getAgreementInput();
+public IResolvable|java.util.List<GenaiAgentTemplateModelAgreement> getAgreementInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement">GenaiAgentTemplateModelAgreement</a>>
 
 ---
 
@@ -25470,10 +25407,10 @@ public java.lang.String getInferenceVersionInput();
 ##### `isFoundationalInput`<sup>Optional</sup> <a name="isFoundationalInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.isFoundationalInput"></a>
 
 ```java
-public java.lang.Object getIsFoundationalInput();
+public java.lang.Boolean|IResolvable getIsFoundationalInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -25510,10 +25447,10 @@ public java.lang.String getProviderInput();
 ##### `uploadCompleteInput`<sup>Optional</sup> <a name="uploadCompleteInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.uploadCompleteInput"></a>
 
 ```java
-public java.lang.Object getUploadCompleteInput();
+public java.lang.Boolean|IResolvable getUploadCompleteInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -25540,10 +25477,10 @@ public java.util.List<java.lang.String> getUsecasesInput();
 ##### `versionsInput`<sup>Optional</sup> <a name="versionsInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.versionsInput"></a>
 
 ```java
-public java.lang.Object getVersionsInput();
+public IResolvable|java.util.List<GenaiAgentTemplateModelVersions> getVersionsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>>
 
 ---
 
@@ -25570,10 +25507,10 @@ public java.lang.String getInferenceVersion();
 ##### `isFoundational`<sup>Required</sup> <a name="isFoundational" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.isFoundational"></a>
 
 ```java
-public java.lang.Object getIsFoundational();
+public java.lang.Boolean|IResolvable getIsFoundational();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -25610,10 +25547,10 @@ public java.lang.String getProvider();
 ##### `uploadComplete`<sup>Required</sup> <a name="uploadComplete" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.uploadComplete"></a>
 
 ```java
-public java.lang.Object getUploadComplete();
+public java.lang.Boolean|IResolvable getUploadComplete();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -25640,10 +25577,10 @@ public java.util.List<java.lang.String> getUsecases();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|GenaiAgentTemplateModel getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>
 
 ---
 
@@ -25769,7 +25706,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>></code> | *No description.* |
 
 ---
 
@@ -25800,10 +25737,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<GenaiAgentTemplateModelVersions> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>>
 
 ---
 
@@ -26063,7 +26000,7 @@ public void resetPatch()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsOutputReference.property.major">major</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsOutputReference.property.minor">minor</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsOutputReference.property.patch">patch</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a></code> | *No description.* |
 
 ---
 
@@ -26154,10 +26091,10 @@ public java.lang.Number getPatch();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|GenaiAgentTemplateModelVersions getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions">GenaiAgentTemplateModelVersions</a>
 
 ---
 
@@ -26398,24 +26335,24 @@ Returns a reversible string representation.
 ##### `putKnowledgeBases` <a name="putKnowledgeBases" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.putKnowledgeBases"></a>
 
 ```java
-public void putKnowledgeBases(IResolvable OR java.util.List<GenaiAgentTemplateKnowledgeBases> value)
+public void putKnowledgeBases(IResolvable|java.util.List<GenaiAgentTemplateKnowledgeBases> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.putKnowledgeBases.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>>
 
 ---
 
 ##### `putModel` <a name="putModel" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.putModel"></a>
 
 ```java
-public void putModel(IResolvable OR java.util.List<GenaiAgentTemplateModel> value)
+public void putModel(IResolvable|java.util.List<GenaiAgentTemplateModel> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.putModel.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>>
 
 ---
 
@@ -26493,9 +26430,9 @@ public void resetUuid()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.instructionInput">instructionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.kInput">kInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.knowledgeBasesInput">knowledgeBasesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.knowledgeBasesInput">knowledgeBasesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.maxTokensInput">maxTokensInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.modelInput">modelInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.modelInput">modelInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.temperatureInput">temperatureInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.topPInput">topPInput</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -26508,7 +26445,7 @@ public void resetUuid()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.temperature">temperature</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.topP">topP</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.uuid">uuid</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a></code> | *No description.* |
 
 ---
 
@@ -26609,10 +26546,10 @@ public java.lang.Number getKInput();
 ##### `knowledgeBasesInput`<sup>Optional</sup> <a name="knowledgeBasesInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.knowledgeBasesInput"></a>
 
 ```java
-public java.lang.Object getKnowledgeBasesInput();
+public IResolvable|java.util.List<GenaiAgentTemplateKnowledgeBases> getKnowledgeBasesInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases">GenaiAgentTemplateKnowledgeBases</a>>
 
 ---
 
@@ -26629,10 +26566,10 @@ public java.lang.Number getMaxTokensInput();
 ##### `modelInput`<sup>Optional</sup> <a name="modelInput" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.modelInput"></a>
 
 ```java
-public java.lang.Object getModelInput();
+public IResolvable|java.util.List<GenaiAgentTemplateModel> getModelInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel">GenaiAgentTemplateModel</a>>
 
 ---
 
@@ -26759,10 +26696,10 @@ public java.lang.String getUuid();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|GenaiAgentTemplate getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate">GenaiAgentTemplate</a>
 
 ---
 

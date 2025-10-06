@@ -271,24 +271,24 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 ##### `PutFilter` <a name="PutFilter" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.putFilter"></a>
 
 ```csharp
-private void PutFilter(object Value)
+private void PutFilter(IResolvable|DataDigitaloceanGenaiAgentsFilter[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.putFilter.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>[]
 
 ---
 
 ##### `PutSort` <a name="PutSort" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.putSort"></a>
 
 ```csharp
-private void PutSort(object Value)
+private void PutSort(IResolvable|DataDigitaloceanGenaiAgentsSort[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.putSort.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>[]
 
 ---
 
@@ -442,7 +442,7 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -450,12 +450,12 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.agents">Agents</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsAgentsList">DataDigitaloceanGenaiAgentsAgentsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.filter">Filter</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterList">DataDigitaloceanGenaiAgentsFilterList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.sort">Sort</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortList">DataDigitaloceanGenaiAgentsSortList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.filterInput">FilterInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.filterInput">FilterInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.onlyDeployedInput">OnlyDeployedInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.sortInput">SortInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.onlyDeployedInput">OnlyDeployedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.sortInput">SortInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.onlyDeployed">OnlyDeployed</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.onlyDeployed">OnlyDeployed</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -534,10 +534,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -614,10 +614,10 @@ public DataDigitaloceanGenaiAgentsSortList Sort { get; }
 ##### `FilterInput`<sup>Optional</sup> <a name="FilterInput" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.filterInput"></a>
 
 ```csharp
-public object FilterInput { get; }
+public IResolvable|DataDigitaloceanGenaiAgentsFilter[] FilterInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>[]
 
 ---
 
@@ -634,20 +634,20 @@ public string IdInput { get; }
 ##### `OnlyDeployedInput`<sup>Optional</sup> <a name="OnlyDeployedInput" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.onlyDeployedInput"></a>
 
 ```csharp
-public object OnlyDeployedInput { get; }
+public bool|IResolvable OnlyDeployedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `SortInput`<sup>Optional</sup> <a name="SortInput" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.sortInput"></a>
 
 ```csharp
-public object SortInput { get; }
+public IResolvable|DataDigitaloceanGenaiAgentsSort[] SortInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>[]
 
 ---
 
@@ -664,10 +664,10 @@ public string Id { get; }
 ##### `OnlyDeployed`<sup>Required</sup> <a name="OnlyDeployed" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.onlyDeployed"></a>
 
 ```csharp
-public object OnlyDeployed { get; }
+public bool|IResolvable OnlyDeployed { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1154,17 +1154,17 @@ new DataDigitaloceanGenaiAgentsAgentsTemplateModelVersions {
 using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new DataDigitaloceanGenaiAgentsConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
-    object Filter = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
+    IResolvable|DataDigitaloceanGenaiAgentsFilter[] Filter = null,
     string Id = null,
-    object OnlyDeployed = null,
-    object Sort = null
+    bool|IResolvable OnlyDeployed = null,
+    IResolvable|DataDigitaloceanGenaiAgentsSort[] Sort = null
 };
 ```
 
@@ -1172,37 +1172,37 @@ new DataDigitaloceanGenaiAgentsConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.filter">Filter</a></code> | <code>object</code> | filter block. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.filter">Filter</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>[]</code> | filter block. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#id DataDigitaloceanGenaiAgents#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.onlyDeployed">OnlyDeployed</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#only_deployed DataDigitaloceanGenaiAgents#only_deployed}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.sort">Sort</a></code> | <code>object</code> | sort block. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.onlyDeployed">OnlyDeployed</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#only_deployed DataDigitaloceanGenaiAgents#only_deployed}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.sort">Sort</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>[]</code> | sort block. |
 
 ---
 
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1249,20 +1249,20 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
 ##### `Filter`<sup>Optional</sup> <a name="Filter" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.filter"></a>
 
 ```csharp
-public object Filter { get; set; }
+public IResolvable|DataDigitaloceanGenaiAgentsFilter[] Filter { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>[]
 
 filter block.
 
@@ -1288,10 +1288,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `OnlyDeployed`<sup>Optional</sup> <a name="OnlyDeployed" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.onlyDeployed"></a>
 
 ```csharp
-public object OnlyDeployed { get; set; }
+public bool|IResolvable OnlyDeployed { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#only_deployed DataDigitaloceanGenaiAgents#only_deployed}.
 
@@ -1300,10 +1300,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Sort`<sup>Optional</sup> <a name="Sort" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.sort"></a>
 
 ```csharp
-public object Sort { get; set; }
+public IResolvable|DataDigitaloceanGenaiAgentsSort[] Sort { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>[]
 
 sort block.
 
@@ -1321,7 +1321,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 new DataDigitaloceanGenaiAgentsFilter {
     string Key,
     string[] Values,
-    object All = null,
+    bool|IResolvable All = null,
     string MatchBy = null
 };
 ```
@@ -1332,7 +1332,7 @@ new DataDigitaloceanGenaiAgentsFilter {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#key DataDigitaloceanGenaiAgents#key}. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter.property.values">Values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#values DataDigitaloceanGenaiAgents#values}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter.property.all">All</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#all DataDigitaloceanGenaiAgents#all}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter.property.all">All</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#all DataDigitaloceanGenaiAgents#all}. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter.property.matchBy">MatchBy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#match_by DataDigitaloceanGenaiAgents#match_by}. |
 
 ---
@@ -1364,10 +1364,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `All`<sup>Optional</sup> <a name="All" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter.property.all"></a>
 
 ```csharp
-public object All { get; set; }
+public bool|IResolvable All { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#all DataDigitaloceanGenaiAgents#all}.
 
@@ -19040,7 +19040,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>[]</code> | *No description.* |
 
 ---
 
@@ -19071,10 +19071,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DataDigitaloceanGenaiAgentsFilter[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>[]
 
 ---
 
@@ -19321,15 +19321,15 @@ private void ResetMatchBy()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.allInput">AllInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.allInput">AllInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.keyInput">KeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.matchByInput">MatchByInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.valuesInput">ValuesInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.all">All</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.all">All</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.matchBy">MatchBy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.values">Values</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a></code> | *No description.* |
 
 ---
 
@@ -19360,10 +19360,10 @@ public string Fqn { get; }
 ##### `AllInput`<sup>Optional</sup> <a name="AllInput" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.allInput"></a>
 
 ```csharp
-public object AllInput { get; }
+public bool|IResolvable AllInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -19400,10 +19400,10 @@ public string[] ValuesInput { get; }
 ##### `All`<sup>Required</sup> <a name="All" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.all"></a>
 
 ```csharp
-public object All { get; }
+public bool|IResolvable All { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -19440,10 +19440,10 @@ public string[] Values { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DataDigitaloceanGenaiAgentsFilter InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>
 
 ---
 
@@ -19569,7 +19569,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>[]</code> | *No description.* |
 
 ---
 
@@ -19600,10 +19600,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DataDigitaloceanGenaiAgentsSort[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>[]
 
 ---
 
@@ -19847,7 +19847,7 @@ private void ResetDirection()
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortOutputReference.property.keyInput">KeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortOutputReference.property.direction">Direction</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a></code> | *No description.* |
 
 ---
 
@@ -19918,10 +19918,10 @@ public string Key { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DataDigitaloceanGenaiAgentsSort InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>
 
 ---
 
