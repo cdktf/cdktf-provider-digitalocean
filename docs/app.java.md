@@ -12,19 +12,14 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 import com.hashicorp.cdktf.providers.digitalocean.app.App;
 
 App.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
-//  .dedicatedIps(IResolvable)
-//  .dedicatedIps(java.util.List<AppDedicatedIps>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
+//  .dedicatedIps(IResolvable|java.util.List<AppDedicatedIps>)
 //  .id(java.lang.String)
 //  .projectId(java.lang.String)
 //  .spec(AppSpec)
@@ -36,14 +31,14 @@ App.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.dedicatedIps">dedicatedIps</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>></code> | dedicated_ips block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.dedicatedIps">dedicatedIps</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>></code> | dedicated_ips block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#id App#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#project_id App#project_id}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.spec">spec</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec">AppSpec</a></code> | spec block. |
@@ -71,13 +66,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.app.App.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.app.App.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -107,13 +102,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.app.App.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
 ##### `dedicatedIps`<sup>Optional</sup> <a name="dedicatedIps" id="@cdktf/provider-digitalocean.app.App.Initializer.parameter.dedicatedIps"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>>
 
 dedicated_ips block.
 
@@ -395,7 +390,7 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 ##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-digitalocean.app.App.hasResourceMove"></a>
 
 ```java
-public TerraformResourceMoveByTarget OR TerraformResourceMoveById hasResourceMove()
+public TerraformResourceMoveByTarget|TerraformResourceMoveById hasResourceMove()
 ```
 
 ##### `importFrom` <a name="importFrom" id="@cdktf/provider-digitalocean.app.App.importFrom"></a>
@@ -451,7 +446,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ```java
 public void moveTo(java.lang.String moveTarget)
-public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+public void moveTo(java.lang.String moveTarget, java.lang.String|java.lang.Number index)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -466,7 +461,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-digitalocean.app.App.moveTo.parameter.index"></a>
 
-- *Type:* java.lang.String OR java.lang.Number
+- *Type:* java.lang.String|java.lang.Number
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -491,12 +486,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `putDedicatedIps` <a name="putDedicatedIps" id="@cdktf/provider-digitalocean.app.App.putDedicatedIps"></a>
 
 ```java
-public void putDedicatedIps(IResolvable OR java.util.List<AppDedicatedIps> value)
+public void putDedicatedIps(IResolvable|java.util.List<AppDedicatedIps> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.App.putDedicatedIps.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>>
 
 ---
 
@@ -680,13 +675,13 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.App.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.App.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.App.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.App.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.App.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.App.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.activeDeploymentId">activeDeploymentId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.createdAt">createdAt</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.dedicatedIps">dedicatedIps</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppDedicatedIpsList">AppDedicatedIpsList</a></code> | *No description.* |
@@ -697,11 +692,11 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppTimeoutsOutputReference">AppTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.updatedAt">updatedAt</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.urn">urn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.App.property.dedicatedIpsInput">dedicatedIpsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.App.property.dedicatedIpsInput">dedicatedIpsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.projectIdInput">projectIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.specInput">specInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec">AppSpec</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.App.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppTimeouts">AppTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.App.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppTimeouts">AppTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.projectId">projectId</a></code> | <code>java.lang.String</code> | *No description.* |
 
@@ -782,20 +777,20 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.app.App.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.app.App.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -842,10 +837,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.app.App.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -952,10 +947,10 @@ public java.lang.String getUrn();
 ##### `dedicatedIpsInput`<sup>Optional</sup> <a name="dedicatedIpsInput" id="@cdktf/provider-digitalocean.app.App.property.dedicatedIpsInput"></a>
 
 ```java
-public java.lang.Object getDedicatedIpsInput();
+public IResolvable|java.util.List<AppDedicatedIps> getDedicatedIpsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>>
 
 ---
 
@@ -992,10 +987,10 @@ public AppSpec getSpecInput();
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-digitalocean.app.App.property.timeoutsInput"></a>
 
 ```java
-public java.lang.Object getTimeoutsInput();
+public IResolvable|AppTimeouts getTimeoutsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppTimeouts">AppTimeouts</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppTimeouts">AppTimeouts</a>
 
 ---
 
@@ -1047,19 +1042,14 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.digitalocean.app.AppConfig;
 
 AppConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
-//  .dedicatedIps(IResolvable)
-//  .dedicatedIps(java.util.List<AppDedicatedIps>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
+//  .dedicatedIps(IResolvable|java.util.List<AppDedicatedIps>)
 //  .id(java.lang.String)
 //  .projectId(java.lang.String)
 //  .spec(AppSpec)
@@ -1071,14 +1061,14 @@ AppConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.dedicatedIps">dedicatedIps</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>></code> | dedicated_ips block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.dedicatedIps">dedicatedIps</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>></code> | dedicated_ips block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#id App#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#project_id App#project_id}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.spec">spec</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec">AppSpec</a></code> | spec block. |
@@ -1089,20 +1079,20 @@ AppConfig.builder()
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.app.AppConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.app.AppConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1149,20 +1139,20 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.app.AppConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
 ##### `dedicatedIps`<sup>Optional</sup> <a name="dedicatedIps" id="@cdktf/provider-digitalocean.app.AppConfig.property.dedicatedIps"></a>
 
 ```java
-public java.lang.Object getDedicatedIps();
+public IResolvable|java.util.List<AppDedicatedIps> getDedicatedIps();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>>
 
 dedicated_ips block.
 
@@ -1303,39 +1293,25 @@ import com.hashicorp.cdktf.providers.digitalocean.app.AppSpec;
 
 AppSpec.builder()
     .name(java.lang.String)
-//  .alert(IResolvable)
-//  .alert(java.util.List<AppSpecAlert>)
-//  .database(IResolvable)
-//  .database(java.util.List<AppSpecDatabase>)
-//  .disableEdgeCache(java.lang.Boolean)
-//  .disableEdgeCache(IResolvable)
-//  .disableEmailObfuscation(java.lang.Boolean)
-//  .disableEmailObfuscation(IResolvable)
-//  .domain(IResolvable)
-//  .domain(java.util.List<AppSpecDomain>)
+//  .alert(IResolvable|java.util.List<AppSpecAlert>)
+//  .database(IResolvable|java.util.List<AppSpecDatabase>)
+//  .disableEdgeCache(java.lang.Boolean|IResolvable)
+//  .disableEmailObfuscation(java.lang.Boolean|IResolvable)
+//  .domain(IResolvable|java.util.List<AppSpecDomain>)
 //  .domains(java.util.List<java.lang.String>)
-//  .egress(IResolvable)
-//  .egress(java.util.List<AppSpecEgress>)
-//  .enhancedThreatControlEnabled(java.lang.Boolean)
-//  .enhancedThreatControlEnabled(IResolvable)
-//  .env(IResolvable)
-//  .env(java.util.List<AppSpecEnv>)
+//  .egress(IResolvable|java.util.List<AppSpecEgress>)
+//  .enhancedThreatControlEnabled(java.lang.Boolean|IResolvable)
+//  .env(IResolvable|java.util.List<AppSpecEnv>)
 //  .features(java.util.List<java.lang.String>)
-//  .function(IResolvable)
-//  .function(java.util.List<AppSpecFunction>)
+//  .function(IResolvable|java.util.List<AppSpecFunction>)
 //  .ingress(AppSpecIngress)
-//  .job(IResolvable)
-//  .job(java.util.List<AppSpecJob>)
+//  .job(IResolvable|java.util.List<AppSpecJob>)
 //  .maintenance(AppSpecMaintenance)
 //  .region(java.lang.String)
-//  .service(IResolvable)
-//  .service(java.util.List<AppSpecService>)
-//  .staticSite(IResolvable)
-//  .staticSite(java.util.List<AppSpecStaticSite>)
-//  .vpc(IResolvable)
-//  .vpc(java.util.List<AppSpecVpc>)
-//  .worker(IResolvable)
-//  .worker(java.util.List<AppSpecWorker>)
+//  .service(IResolvable|java.util.List<AppSpecService>)
+//  .staticSite(IResolvable|java.util.List<AppSpecStaticSite>)
+//  .vpc(IResolvable|java.util.List<AppSpecVpc>)
+//  .worker(IResolvable|java.util.List<AppSpecWorker>)
     .build();
 ```
 
@@ -1344,25 +1320,25 @@ AppSpec.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.name">name</a></code> | <code>java.lang.String</code> | The name of the app. Must be unique across all apps in the same account. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.alert">alert</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>></code> | alert block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.database">database</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>></code> | database block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.disableEdgeCache">disableEdgeCache</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to disable the edge cache for the app. Default is false, which enables the edge cache. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.disableEmailObfuscation">disableEmailObfuscation</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Email obfuscation configuration for the app. Default is false, which keeps the email obfuscated. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.domain">domain</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>></code> | domain block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.alert">alert</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>></code> | alert block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.database">database</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>></code> | database block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.disableEdgeCache">disableEdgeCache</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether to disable the edge cache for the app. Default is false, which enables the edge cache. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.disableEmailObfuscation">disableEmailObfuscation</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Email obfuscation configuration for the app. Default is false, which keeps the email obfuscated. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.domain">domain</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>></code> | domain block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.domains">domains</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#domains App#domains}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.egress">egress</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>></code> | egress block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.enhancedThreatControlEnabled">enhancedThreatControlEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to enable enhanced threat control for the app. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.env">env</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>></code> | env block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.egress">egress</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>></code> | egress block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.enhancedThreatControlEnabled">enhancedThreatControlEnabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether to enable enhanced threat control for the app. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.env">env</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>></code> | env block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.features">features</a></code> | <code>java.util.List<java.lang.String></code> | List of features which is applied to the app. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.function">function</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>></code> | function block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.function">function</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>></code> | function block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.ingress">ingress</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngress">AppSpecIngress</a></code> | ingress block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.job">job</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>></code> | job block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.job">job</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>></code> | job block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.maintenance">maintenance</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenance">AppSpecMaintenance</a></code> | maintenance block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.region">region</a></code> | <code>java.lang.String</code> | The slug for the DigitalOcean data center region hosting the app. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.service">service</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>></code> | service block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.staticSite">staticSite</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>></code> | static_site block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.vpc">vpc</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>></code> | vpc block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.worker">worker</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>></code> | worker block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.service">service</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>></code> | service block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.staticSite">staticSite</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>></code> | static_site block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.vpc">vpc</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>></code> | vpc block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.worker">worker</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>></code> | worker block. |
 
 ---
 
@@ -1383,10 +1359,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `alert`<sup>Optional</sup> <a name="alert" id="@cdktf/provider-digitalocean.app.AppSpec.property.alert"></a>
 
 ```java
-public java.lang.Object getAlert();
+public IResolvable|java.util.List<AppSpecAlert> getAlert();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>>
 
 alert block.
 
@@ -1397,10 +1373,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `database`<sup>Optional</sup> <a name="database" id="@cdktf/provider-digitalocean.app.AppSpec.property.database"></a>
 
 ```java
-public java.lang.Object getDatabase();
+public IResolvable|java.util.List<AppSpecDatabase> getDatabase();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>>
 
 database block.
 
@@ -1411,10 +1387,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `disableEdgeCache`<sup>Optional</sup> <a name="disableEdgeCache" id="@cdktf/provider-digitalocean.app.AppSpec.property.disableEdgeCache"></a>
 
 ```java
-public java.lang.Object getDisableEdgeCache();
+public java.lang.Boolean|IResolvable getDisableEdgeCache();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether to disable the edge cache for the app. Default is false, which enables the edge cache.
 
@@ -1425,10 +1401,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `disableEmailObfuscation`<sup>Optional</sup> <a name="disableEmailObfuscation" id="@cdktf/provider-digitalocean.app.AppSpec.property.disableEmailObfuscation"></a>
 
 ```java
-public java.lang.Object getDisableEmailObfuscation();
+public java.lang.Boolean|IResolvable getDisableEmailObfuscation();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Email obfuscation configuration for the app. Default is false, which keeps the email obfuscated.
 
@@ -1439,10 +1415,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `domain`<sup>Optional</sup> <a name="domain" id="@cdktf/provider-digitalocean.app.AppSpec.property.domain"></a>
 
 ```java
-public java.lang.Object getDomain();
+public IResolvable|java.util.List<AppSpecDomain> getDomain();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>>
 
 domain block.
 
@@ -1465,10 +1441,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `egress`<sup>Optional</sup> <a name="egress" id="@cdktf/provider-digitalocean.app.AppSpec.property.egress"></a>
 
 ```java
-public java.lang.Object getEgress();
+public IResolvable|java.util.List<AppSpecEgress> getEgress();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>>
 
 egress block.
 
@@ -1479,10 +1455,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `enhancedThreatControlEnabled`<sup>Optional</sup> <a name="enhancedThreatControlEnabled" id="@cdktf/provider-digitalocean.app.AppSpec.property.enhancedThreatControlEnabled"></a>
 
 ```java
-public java.lang.Object getEnhancedThreatControlEnabled();
+public java.lang.Boolean|IResolvable getEnhancedThreatControlEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether to enable enhanced threat control for the app.
 
@@ -1495,10 +1471,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `env`<sup>Optional</sup> <a name="env" id="@cdktf/provider-digitalocean.app.AppSpec.property.env"></a>
 
 ```java
-public java.lang.Object getEnv();
+public IResolvable|java.util.List<AppSpecEnv> getEnv();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>>
 
 env block.
 
@@ -1523,10 +1499,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `function`<sup>Optional</sup> <a name="function" id="@cdktf/provider-digitalocean.app.AppSpec.property.function"></a>
 
 ```java
-public java.lang.Object getFunction();
+public IResolvable|java.util.List<AppSpecFunction> getFunction();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>>
 
 function block.
 
@@ -1551,10 +1527,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `job`<sup>Optional</sup> <a name="job" id="@cdktf/provider-digitalocean.app.AppSpec.property.job"></a>
 
 ```java
-public java.lang.Object getJob();
+public IResolvable|java.util.List<AppSpecJob> getJob();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>>
 
 job block.
 
@@ -1593,10 +1569,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `service`<sup>Optional</sup> <a name="service" id="@cdktf/provider-digitalocean.app.AppSpec.property.service"></a>
 
 ```java
-public java.lang.Object getService();
+public IResolvable|java.util.List<AppSpecService> getService();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>>
 
 service block.
 
@@ -1607,10 +1583,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `staticSite`<sup>Optional</sup> <a name="staticSite" id="@cdktf/provider-digitalocean.app.AppSpec.property.staticSite"></a>
 
 ```java
-public java.lang.Object getStaticSite();
+public IResolvable|java.util.List<AppSpecStaticSite> getStaticSite();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>>
 
 static_site block.
 
@@ -1621,10 +1597,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `vpc`<sup>Optional</sup> <a name="vpc" id="@cdktf/provider-digitalocean.app.AppSpec.property.vpc"></a>
 
 ```java
-public java.lang.Object getVpc();
+public IResolvable|java.util.List<AppSpecVpc> getVpc();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>>
 
 vpc block.
 
@@ -1635,10 +1611,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `worker`<sup>Optional</sup> <a name="worker" id="@cdktf/provider-digitalocean.app.AppSpec.property.worker"></a>
 
 ```java
-public java.lang.Object getWorker();
+public IResolvable|java.util.List<AppSpecWorker> getWorker();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>>
 
 worker block.
 
@@ -1656,8 +1632,7 @@ import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecAlert;
 AppSpecAlert.builder()
     .rule(java.lang.String)
 //  .destinations(AppSpecAlertDestinations)
-//  .disabled(java.lang.Boolean)
-//  .disabled(IResolvable)
+//  .disabled(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -1667,7 +1642,7 @@ AppSpecAlert.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlert.property.rule">rule</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#rule App#rule}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlert.property.destinations">destinations</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinations">AppSpecAlertDestinations</a></code> | destinations block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlert.property.disabled">disabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlert.property.disabled">disabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -1700,10 +1675,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `disabled`<sup>Optional</sup> <a name="disabled" id="@cdktf/provider-digitalocean.app.AppSpecAlert.property.disabled"></a>
 
 ```java
-public java.lang.Object getDisabled();
+public java.lang.Boolean|IResolvable getDisabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}.
 
@@ -1718,8 +1693,7 @@ import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecAlertDestinations;
 
 AppSpecAlertDestinations.builder()
 //  .emails(java.util.List<java.lang.String>)
-//  .slackWebhooks(IResolvable)
-//  .slackWebhooks(java.util.List<AppSpecAlertDestinationsSlackWebhooks>)
+//  .slackWebhooks(IResolvable|java.util.List<AppSpecAlertDestinationsSlackWebhooks>)
     .build();
 ```
 
@@ -1728,7 +1702,7 @@ AppSpecAlertDestinations.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinations.property.emails">emails</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#emails App#emails}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinations.property.slackWebhooks">slackWebhooks</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>></code> | slack_webhooks block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinations.property.slackWebhooks">slackWebhooks</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>></code> | slack_webhooks block. |
 
 ---
 
@@ -1747,10 +1721,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `slackWebhooks`<sup>Optional</sup> <a name="slackWebhooks" id="@cdktf/provider-digitalocean.app.AppSpecAlertDestinations.property.slackWebhooks"></a>
 
 ```java
-public java.lang.Object getSlackWebhooks();
+public IResolvable|java.util.List<AppSpecAlertDestinationsSlackWebhooks> getSlackWebhooks();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>>
 
 slack_webhooks block.
 
@@ -1821,8 +1795,7 @@ AppSpecDatabase.builder()
 //  .dbUser(java.lang.String)
 //  .engine(java.lang.String)
 //  .name(java.lang.String)
-//  .production(java.lang.Boolean)
-//  .production(IResolvable)
+//  .production(java.lang.Boolean|IResolvable)
 //  .version(java.lang.String)
     .build();
 ```
@@ -1836,7 +1809,7 @@ AppSpecDatabase.builder()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase.property.dbUser">dbUser</a></code> | <code>java.lang.String</code> | The name of the MySQL or PostgreSQL user to configure. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase.property.engine">engine</a></code> | <code>java.lang.String</code> | The database engine to use. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase.property.name">name</a></code> | <code>java.lang.String</code> | The name of the component. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase.property.production">production</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether this is a production or dev database. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase.property.production">production</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether this is a production or dev database. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase.property.version">version</a></code> | <code>java.lang.String</code> | The version of the database engine. |
 
 ---
@@ -1916,10 +1889,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `production`<sup>Optional</sup> <a name="production" id="@cdktf/provider-digitalocean.app.AppSpecDatabase.property.production"></a>
 
 ```java
-public java.lang.Object getProduction();
+public java.lang.Boolean|IResolvable getProduction();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether this is a production or dev database.
 
@@ -1951,8 +1924,7 @@ import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecDomain;
 AppSpecDomain.builder()
     .name(java.lang.String)
 //  .type(java.lang.String)
-//  .wildcard(java.lang.Boolean)
-//  .wildcard(IResolvable)
+//  .wildcard(java.lang.Boolean|IResolvable)
 //  .zone(java.lang.String)
     .build();
 ```
@@ -1963,7 +1935,7 @@ AppSpecDomain.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomain.property.name">name</a></code> | <code>java.lang.String</code> | The hostname for the domain. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomain.property.type">type</a></code> | <code>java.lang.String</code> | The type of the domain. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomain.property.wildcard">wildcard</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicates whether the domain includes all sub-domains, in addition to the given domain. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomain.property.wildcard">wildcard</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Indicates whether the domain includes all sub-domains, in addition to the given domain. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomain.property.zone">zone</a></code> | <code>java.lang.String</code> | If the domain uses DigitalOcean DNS and you would like App Platform to automatically manage it for you, set this to the name of the domain on your account. |
 
 ---
@@ -1999,10 +1971,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `wildcard`<sup>Optional</sup> <a name="wildcard" id="@cdktf/provider-digitalocean.app.AppSpecDomain.property.wildcard"></a>
 
 ```java
-public java.lang.Object getWildcard();
+public java.lang.Boolean|IResolvable getWildcard();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Indicates whether the domain includes all sub-domains, in addition to the given domain.
 
@@ -2149,19 +2121,15 @@ import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecFunction;
 
 AppSpecFunction.builder()
     .name(java.lang.String)
-//  .alert(IResolvable)
-//  .alert(java.util.List<AppSpecFunctionAlert>)
+//  .alert(IResolvable|java.util.List<AppSpecFunctionAlert>)
 //  .bitbucket(AppSpecFunctionBitbucket)
 //  .cors(AppSpecFunctionCors)
-//  .env(IResolvable)
-//  .env(java.util.List<AppSpecFunctionEnv>)
+//  .env(IResolvable|java.util.List<AppSpecFunctionEnv>)
 //  .git(AppSpecFunctionGit)
 //  .github(AppSpecFunctionGithub)
 //  .gitlab(AppSpecFunctionGitlab)
-//  .logDestination(IResolvable)
-//  .logDestination(java.util.List<AppSpecFunctionLogDestination>)
-//  .routes(IResolvable)
-//  .routes(java.util.List<AppSpecFunctionRoutes>)
+//  .logDestination(IResolvable|java.util.List<AppSpecFunctionLogDestination>)
+//  .routes(IResolvable|java.util.List<AppSpecFunctionRoutes>)
 //  .sourceDir(java.lang.String)
     .build();
 ```
@@ -2171,15 +2139,15 @@ AppSpecFunction.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.name">name</a></code> | <code>java.lang.String</code> | The name of the component. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.alert">alert</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>></code> | alert block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.alert">alert</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>></code> | alert block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.bitbucket">bitbucket</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket">AppSpecFunctionBitbucket</a></code> | bitbucket block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.cors">cors</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCors">AppSpecFunctionCors</a></code> | cors block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.env">env</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>></code> | env block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.env">env</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>></code> | env block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.git">git</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGit">AppSpecFunctionGit</a></code> | git block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.github">github</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithub">AppSpecFunctionGithub</a></code> | github block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.gitlab">gitlab</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlab">AppSpecFunctionGitlab</a></code> | gitlab block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.logDestination">logDestination</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>></code> | log_destination block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.routes">routes</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>></code> | routes block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.logDestination">logDestination</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>></code> | log_destination block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.routes">routes</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>></code> | routes block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.sourceDir">sourceDir</a></code> | <code>java.lang.String</code> | An optional path to the working directory to use for the build. |
 
 ---
@@ -2201,10 +2169,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `alert`<sup>Optional</sup> <a name="alert" id="@cdktf/provider-digitalocean.app.AppSpecFunction.property.alert"></a>
 
 ```java
-public java.lang.Object getAlert();
+public IResolvable|java.util.List<AppSpecFunctionAlert> getAlert();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>>
 
 alert block.
 
@@ -2243,10 +2211,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `env`<sup>Optional</sup> <a name="env" id="@cdktf/provider-digitalocean.app.AppSpecFunction.property.env"></a>
 
 ```java
-public java.lang.Object getEnv();
+public IResolvable|java.util.List<AppSpecFunctionEnv> getEnv();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>>
 
 env block.
 
@@ -2299,10 +2267,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `logDestination`<sup>Optional</sup> <a name="logDestination" id="@cdktf/provider-digitalocean.app.AppSpecFunction.property.logDestination"></a>
 
 ```java
-public java.lang.Object getLogDestination();
+public IResolvable|java.util.List<AppSpecFunctionLogDestination> getLogDestination();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>>
 
 log_destination block.
 
@@ -2313,10 +2281,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `routes`<sup>Optional</sup> <a name="routes" id="@cdktf/provider-digitalocean.app.AppSpecFunction.property.routes"></a>
 
 ```java
-public java.lang.Object getRoutes();
+public IResolvable|java.util.List<AppSpecFunctionRoutes> getRoutes();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>>
 
 routes block.
 
@@ -2351,8 +2319,7 @@ AppSpecFunctionAlert.builder()
     .value(java.lang.Number)
     .window(java.lang.String)
 //  .destinations(AppSpecFunctionAlertDestinations)
-//  .disabled(java.lang.Boolean)
-//  .disabled(IResolvable)
+//  .disabled(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -2365,7 +2332,7 @@ AppSpecFunctionAlert.builder()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.value">value</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#value App#value}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.window">window</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#window App#window}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.destinations">destinations</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinations">AppSpecFunctionAlertDestinations</a></code> | destinations block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.disabled">disabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.disabled">disabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -2434,10 +2401,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `disabled`<sup>Optional</sup> <a name="disabled" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.disabled"></a>
 
 ```java
-public java.lang.Object getDisabled();
+public java.lang.Boolean|IResolvable getDisabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}.
 
@@ -2452,8 +2419,7 @@ import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecFunctionAlertDestin
 
 AppSpecFunctionAlertDestinations.builder()
 //  .emails(java.util.List<java.lang.String>)
-//  .slackWebhooks(IResolvable)
-//  .slackWebhooks(java.util.List<AppSpecFunctionAlertDestinationsSlackWebhooks>)
+//  .slackWebhooks(IResolvable|java.util.List<AppSpecFunctionAlertDestinationsSlackWebhooks>)
     .build();
 ```
 
@@ -2462,7 +2428,7 @@ AppSpecFunctionAlertDestinations.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinations.property.emails">emails</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#emails App#emails}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinations.property.slackWebhooks">slackWebhooks</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>></code> | slack_webhooks block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinations.property.slackWebhooks">slackWebhooks</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>></code> | slack_webhooks block. |
 
 ---
 
@@ -2481,10 +2447,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `slackWebhooks`<sup>Optional</sup> <a name="slackWebhooks" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinations.property.slackWebhooks"></a>
 
 ```java
-public java.lang.Object getSlackWebhooks();
+public IResolvable|java.util.List<AppSpecFunctionAlertDestinationsSlackWebhooks> getSlackWebhooks();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>>
 
 slack_webhooks block.
 
@@ -2551,8 +2517,7 @@ import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecFunctionBitbucket;
 
 AppSpecFunctionBitbucket.builder()
 //  .branch(java.lang.String)
-//  .deployOnPush(java.lang.Boolean)
-//  .deployOnPush(IResolvable)
+//  .deployOnPush(java.lang.Boolean|IResolvable)
 //  .repo(java.lang.String)
     .build();
 ```
@@ -2562,7 +2527,7 @@ AppSpecFunctionBitbucket.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket.property.branch">branch</a></code> | <code>java.lang.String</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket.property.repo">repo</a></code> | <code>java.lang.String</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -2584,10 +2549,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deployOnPush`<sup>Optional</sup> <a name="deployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket.property.deployOnPush"></a>
 
 ```java
-public java.lang.Object getDeployOnPush();
+public java.lang.Boolean|IResolvable getDeployOnPush();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -2617,8 +2582,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecFunctionCors;
 
 AppSpecFunctionCors.builder()
-//  .allowCredentials(java.lang.Boolean)
-//  .allowCredentials(IResolvable)
+//  .allowCredentials(java.lang.Boolean|IResolvable)
 //  .allowHeaders(java.util.List<java.lang.String>)
 //  .allowMethods(java.util.List<java.lang.String>)
 //  .allowOrigins(AppSpecFunctionCorsAllowOrigins)
@@ -2631,7 +2595,7 @@ AppSpecFunctionCors.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCors.property.allowCredentials">allowCredentials</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCors.property.allowCredentials">allowCredentials</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCors.property.allowHeaders">allowHeaders</a></code> | <code>java.util.List<java.lang.String></code> | The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCors.property.allowMethods">allowMethods</a></code> | <code>java.util.List<java.lang.String></code> | The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCors.property.allowOrigins">allowOrigins</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsAllowOrigins">AppSpecFunctionCorsAllowOrigins</a></code> | allow_origins block. |
@@ -2643,10 +2607,10 @@ AppSpecFunctionCors.builder()
 ##### `allowCredentials`<sup>Optional</sup> <a name="allowCredentials" id="@cdktf/provider-digitalocean.app.AppSpecFunctionCors.property.allowCredentials"></a>
 
 ```java
-public java.lang.Object getAllowCredentials();
+public java.lang.Boolean|IResolvable getAllowCredentials();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`.
 
@@ -2935,8 +2899,7 @@ import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecFunctionGithub;
 
 AppSpecFunctionGithub.builder()
 //  .branch(java.lang.String)
-//  .deployOnPush(java.lang.Boolean)
-//  .deployOnPush(IResolvable)
+//  .deployOnPush(java.lang.Boolean|IResolvable)
 //  .repo(java.lang.String)
     .build();
 ```
@@ -2946,7 +2909,7 @@ AppSpecFunctionGithub.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithub.property.branch">branch</a></code> | <code>java.lang.String</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithub.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithub.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithub.property.repo">repo</a></code> | <code>java.lang.String</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -2968,10 +2931,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deployOnPush`<sup>Optional</sup> <a name="deployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecFunctionGithub.property.deployOnPush"></a>
 
 ```java
-public java.lang.Object getDeployOnPush();
+public java.lang.Boolean|IResolvable getDeployOnPush();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -3002,8 +2965,7 @@ import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecFunctionGitlab;
 
 AppSpecFunctionGitlab.builder()
 //  .branch(java.lang.String)
-//  .deployOnPush(java.lang.Boolean)
-//  .deployOnPush(IResolvable)
+//  .deployOnPush(java.lang.Boolean|IResolvable)
 //  .repo(java.lang.String)
     .build();
 ```
@@ -3013,7 +2975,7 @@ AppSpecFunctionGitlab.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlab.property.branch">branch</a></code> | <code>java.lang.String</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlab.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlab.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlab.property.repo">repo</a></code> | <code>java.lang.String</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -3035,10 +2997,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deployOnPush`<sup>Optional</sup> <a name="deployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecFunctionGitlab.property.deployOnPush"></a>
 
 ```java
-public java.lang.Object getDeployOnPush();
+public java.lang.Boolean|IResolvable getDeployOnPush();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -3417,8 +3379,7 @@ import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecFunctionRoutes;
 
 AppSpecFunctionRoutes.builder()
 //  .path(java.lang.String)
-//  .preservePathPrefix(java.lang.Boolean)
-//  .preservePathPrefix(IResolvable)
+//  .preservePathPrefix(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -3427,7 +3388,7 @@ AppSpecFunctionRoutes.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes.property.path">path</a></code> | <code>java.lang.String</code> | Path specifies an route by HTTP path prefix. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes.property.preservePathPrefix">preservePathPrefix</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | An optional flag to preserve the path that is forwarded to the backend service. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes.property.preservePathPrefix">preservePathPrefix</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | An optional flag to preserve the path that is forwarded to the backend service. |
 
 ---
 
@@ -3450,10 +3411,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `preservePathPrefix`<sup>Optional</sup> <a name="preservePathPrefix" id="@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes.property.preservePathPrefix"></a>
 
 ```java
-public java.lang.Object getPreservePathPrefix();
+public java.lang.Boolean|IResolvable getPreservePathPrefix();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 An optional flag to preserve the path that is forwarded to the backend service.
 
@@ -3469,8 +3430,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecIngress;
 
 AppSpecIngress.builder()
-//  .rule(IResolvable)
-//  .rule(java.util.List<AppSpecIngressRule>)
+//  .rule(IResolvable|java.util.List<AppSpecIngressRule>)
     .build();
 ```
 
@@ -3478,17 +3438,17 @@ AppSpecIngress.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngress.property.rule">rule</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>></code> | rule block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngress.property.rule">rule</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>></code> | rule block. |
 
 ---
 
 ##### `rule`<sup>Optional</sup> <a name="rule" id="@cdktf/provider-digitalocean.app.AppSpecIngress.property.rule"></a>
 
 ```java
-public java.lang.Object getRule();
+public IResolvable|java.util.List<AppSpecIngressRule> getRule();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>>
 
 rule block.
 
@@ -3587,8 +3547,7 @@ import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecIngressRuleComponen
 
 AppSpecIngressRuleComponent.builder()
 //  .name(java.lang.String)
-//  .preservePathPrefix(java.lang.Boolean)
-//  .preservePathPrefix(IResolvable)
+//  .preservePathPrefix(java.lang.Boolean|IResolvable)
 //  .rewrite(java.lang.String)
     .build();
 ```
@@ -3598,7 +3557,7 @@ AppSpecIngressRuleComponent.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#name App#name}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.preservePathPrefix">preservePathPrefix</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.preservePathPrefix">preservePathPrefix</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.rewrite">rewrite</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#rewrite App#rewrite}. |
 
 ---
@@ -3618,10 +3577,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `preservePathPrefix`<sup>Optional</sup> <a name="preservePathPrefix" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.preservePathPrefix"></a>
 
 ```java
-public java.lang.Object getPreservePathPrefix();
+public java.lang.Boolean|IResolvable getPreservePathPrefix();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}.
 
@@ -3647,8 +3606,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecIngressRuleCors;
 
 AppSpecIngressRuleCors.builder()
-//  .allowCredentials(java.lang.Boolean)
-//  .allowCredentials(IResolvable)
+//  .allowCredentials(java.lang.Boolean|IResolvable)
 //  .allowHeaders(java.util.List<java.lang.String>)
 //  .allowMethods(java.util.List<java.lang.String>)
 //  .allowOrigins(AppSpecIngressRuleCorsAllowOrigins)
@@ -3661,7 +3619,7 @@ AppSpecIngressRuleCors.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors.property.allowCredentials">allowCredentials</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors.property.allowCredentials">allowCredentials</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors.property.allowHeaders">allowHeaders</a></code> | <code>java.util.List<java.lang.String></code> | The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors.property.allowMethods">allowMethods</a></code> | <code>java.util.List<java.lang.String></code> | The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors.property.allowOrigins">allowOrigins</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOrigins">AppSpecIngressRuleCorsAllowOrigins</a></code> | allow_origins block. |
@@ -3673,10 +3631,10 @@ AppSpecIngressRuleCors.builder()
 ##### `allowCredentials`<sup>Optional</sup> <a name="allowCredentials" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors.property.allowCredentials"></a>
 
 ```java
-public java.lang.Object getAllowCredentials();
+public java.lang.Boolean|IResolvable getAllowCredentials();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`.
 
@@ -4035,13 +3993,11 @@ import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecJob;
 
 AppSpecJob.builder()
     .name(java.lang.String)
-//  .alert(IResolvable)
-//  .alert(java.util.List<AppSpecJobAlert>)
+//  .alert(IResolvable|java.util.List<AppSpecJobAlert>)
 //  .bitbucket(AppSpecJobBitbucket)
 //  .buildCommand(java.lang.String)
 //  .dockerfilePath(java.lang.String)
-//  .env(IResolvable)
-//  .env(java.util.List<AppSpecJobEnv>)
+//  .env(IResolvable|java.util.List<AppSpecJobEnv>)
 //  .environmentSlug(java.lang.String)
 //  .git(AppSpecJobGit)
 //  .github(AppSpecJobGithub)
@@ -4050,8 +4006,7 @@ AppSpecJob.builder()
 //  .instanceCount(java.lang.Number)
 //  .instanceSizeSlug(java.lang.String)
 //  .kind(java.lang.String)
-//  .logDestination(IResolvable)
-//  .logDestination(java.util.List<AppSpecJobLogDestination>)
+//  .logDestination(IResolvable|java.util.List<AppSpecJobLogDestination>)
 //  .runCommand(java.lang.String)
 //  .sourceDir(java.lang.String)
 //  .termination(AppSpecJobTermination)
@@ -4063,11 +4018,11 @@ AppSpecJob.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.name">name</a></code> | <code>java.lang.String</code> | The name of the component. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.alert">alert</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>></code> | alert block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.alert">alert</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>></code> | alert block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.bitbucket">bitbucket</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucket">AppSpecJobBitbucket</a></code> | bitbucket block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.buildCommand">buildCommand</a></code> | <code>java.lang.String</code> | An optional build command to run while building this component from source. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.dockerfilePath">dockerfilePath</a></code> | <code>java.lang.String</code> | The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.env">env</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>></code> | env block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.env">env</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>></code> | env block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.environmentSlug">environmentSlug</a></code> | <code>java.lang.String</code> | An environment slug describing the type of this app. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.git">git</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGit">AppSpecJobGit</a></code> | git block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.github">github</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithub">AppSpecJobGithub</a></code> | github block. |
@@ -4076,7 +4031,7 @@ AppSpecJob.builder()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.instanceCount">instanceCount</a></code> | <code>java.lang.Number</code> | The amount of instances that this component should be scaled to. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.instanceSizeSlug">instanceSizeSlug</a></code> | <code>java.lang.String</code> | The instance size to use for this component. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.kind">kind</a></code> | <code>java.lang.String</code> | The type of job and when it will be run during the deployment process. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.logDestination">logDestination</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>></code> | log_destination block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.logDestination">logDestination</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>></code> | log_destination block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.runCommand">runCommand</a></code> | <code>java.lang.String</code> | An optional run command to override the component's default. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.sourceDir">sourceDir</a></code> | <code>java.lang.String</code> | An optional path to the working directory to use for the build. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.termination">termination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobTermination">AppSpecJobTermination</a></code> | termination block. |
@@ -4100,10 +4055,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `alert`<sup>Optional</sup> <a name="alert" id="@cdktf/provider-digitalocean.app.AppSpecJob.property.alert"></a>
 
 ```java
-public java.lang.Object getAlert();
+public IResolvable|java.util.List<AppSpecJobAlert> getAlert();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>>
 
 alert block.
 
@@ -4156,10 +4111,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `env`<sup>Optional</sup> <a name="env" id="@cdktf/provider-digitalocean.app.AppSpecJob.property.env"></a>
 
 ```java
-public java.lang.Object getEnv();
+public IResolvable|java.util.List<AppSpecJobEnv> getEnv();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>>
 
 env block.
 
@@ -4282,10 +4237,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `logDestination`<sup>Optional</sup> <a name="logDestination" id="@cdktf/provider-digitalocean.app.AppSpecJob.property.logDestination"></a>
 
 ```java
-public java.lang.Object getLogDestination();
+public IResolvable|java.util.List<AppSpecJobLogDestination> getLogDestination();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>>
 
 log_destination block.
 
@@ -4348,8 +4303,7 @@ AppSpecJobAlert.builder()
     .value(java.lang.Number)
     .window(java.lang.String)
 //  .destinations(AppSpecJobAlertDestinations)
-//  .disabled(java.lang.Boolean)
-//  .disabled(IResolvable)
+//  .disabled(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -4362,7 +4316,7 @@ AppSpecJobAlert.builder()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.value">value</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#value App#value}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.window">window</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#window App#window}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.destinations">destinations</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinations">AppSpecJobAlertDestinations</a></code> | destinations block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.disabled">disabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.disabled">disabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -4431,10 +4385,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `disabled`<sup>Optional</sup> <a name="disabled" id="@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.disabled"></a>
 
 ```java
-public java.lang.Object getDisabled();
+public java.lang.Boolean|IResolvable getDisabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}.
 
@@ -4449,8 +4403,7 @@ import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecJobAlertDestination
 
 AppSpecJobAlertDestinations.builder()
 //  .emails(java.util.List<java.lang.String>)
-//  .slackWebhooks(IResolvable)
-//  .slackWebhooks(java.util.List<AppSpecJobAlertDestinationsSlackWebhooks>)
+//  .slackWebhooks(IResolvable|java.util.List<AppSpecJobAlertDestinationsSlackWebhooks>)
     .build();
 ```
 
@@ -4459,7 +4412,7 @@ AppSpecJobAlertDestinations.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinations.property.emails">emails</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#emails App#emails}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinations.property.slackWebhooks">slackWebhooks</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>></code> | slack_webhooks block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinations.property.slackWebhooks">slackWebhooks</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>></code> | slack_webhooks block. |
 
 ---
 
@@ -4478,10 +4431,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `slackWebhooks`<sup>Optional</sup> <a name="slackWebhooks" id="@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinations.property.slackWebhooks"></a>
 
 ```java
-public java.lang.Object getSlackWebhooks();
+public IResolvable|java.util.List<AppSpecJobAlertDestinationsSlackWebhooks> getSlackWebhooks();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>>
 
 slack_webhooks block.
 
@@ -4548,8 +4501,7 @@ import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecJobBitbucket;
 
 AppSpecJobBitbucket.builder()
 //  .branch(java.lang.String)
-//  .deployOnPush(java.lang.Boolean)
-//  .deployOnPush(IResolvable)
+//  .deployOnPush(java.lang.Boolean|IResolvable)
 //  .repo(java.lang.String)
     .build();
 ```
@@ -4559,7 +4511,7 @@ AppSpecJobBitbucket.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucket.property.branch">branch</a></code> | <code>java.lang.String</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucket.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucket.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucket.property.repo">repo</a></code> | <code>java.lang.String</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -4581,10 +4533,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deployOnPush`<sup>Optional</sup> <a name="deployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucket.property.deployOnPush"></a>
 
 ```java
-public java.lang.Object getDeployOnPush();
+public java.lang.Boolean|IResolvable getDeployOnPush();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -4747,8 +4699,7 @@ import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecJobGithub;
 
 AppSpecJobGithub.builder()
 //  .branch(java.lang.String)
-//  .deployOnPush(java.lang.Boolean)
-//  .deployOnPush(IResolvable)
+//  .deployOnPush(java.lang.Boolean|IResolvable)
 //  .repo(java.lang.String)
     .build();
 ```
@@ -4758,7 +4709,7 @@ AppSpecJobGithub.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithub.property.branch">branch</a></code> | <code>java.lang.String</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithub.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithub.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithub.property.repo">repo</a></code> | <code>java.lang.String</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -4780,10 +4731,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deployOnPush`<sup>Optional</sup> <a name="deployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecJobGithub.property.deployOnPush"></a>
 
 ```java
-public java.lang.Object getDeployOnPush();
+public java.lang.Boolean|IResolvable getDeployOnPush();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -4814,8 +4765,7 @@ import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecJobGitlab;
 
 AppSpecJobGitlab.builder()
 //  .branch(java.lang.String)
-//  .deployOnPush(java.lang.Boolean)
-//  .deployOnPush(IResolvable)
+//  .deployOnPush(java.lang.Boolean|IResolvable)
 //  .repo(java.lang.String)
     .build();
 ```
@@ -4825,7 +4775,7 @@ AppSpecJobGitlab.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlab.property.branch">branch</a></code> | <code>java.lang.String</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlab.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlab.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlab.property.repo">repo</a></code> | <code>java.lang.String</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -4847,10 +4797,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deployOnPush`<sup>Optional</sup> <a name="deployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecJobGitlab.property.deployOnPush"></a>
 
 ```java
-public java.lang.Object getDeployOnPush();
+public java.lang.Boolean|IResolvable getDeployOnPush();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -4882,8 +4832,7 @@ import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecJobImage;
 AppSpecJobImage.builder()
     .registryType(java.lang.String)
     .repository(java.lang.String)
-//  .deployOnPush(IResolvable)
-//  .deployOnPush(java.util.List<AppSpecJobImageDeployOnPush>)
+//  .deployOnPush(IResolvable|java.util.List<AppSpecJobImageDeployOnPush>)
 //  .digest(java.lang.String)
 //  .registry(java.lang.String)
 //  .registryCredentials(java.lang.String)
@@ -4897,7 +4846,7 @@ AppSpecJobImage.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImage.property.registryType">registryType</a></code> | <code>java.lang.String</code> | The registry type. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImage.property.repository">repository</a></code> | <code>java.lang.String</code> | The repository name. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImage.property.deployOnPush">deployOnPush</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>></code> | deploy_on_push block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImage.property.deployOnPush">deployOnPush</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>></code> | deploy_on_push block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImage.property.digest">digest</a></code> | <code>java.lang.String</code> | The image digest. Cannot be specified if tag is provided. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImage.property.registry">registry</a></code> | <code>java.lang.String</code> | The registry name. Must be left empty for the DOCR registry type. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImage.property.registryCredentials">registryCredentials</a></code> | <code>java.lang.String</code> | Access credentials for third-party registries. |
@@ -4936,10 +4885,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deployOnPush`<sup>Optional</sup> <a name="deployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecJobImage.property.deployOnPush"></a>
 
 ```java
-public java.lang.Object getDeployOnPush();
+public IResolvable|java.util.List<AppSpecJobImageDeployOnPush> getDeployOnPush();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>>
 
 deploy_on_push block.
 
@@ -5011,8 +4960,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecJobImageDeployOnPush;
 
 AppSpecJobImageDeployOnPush.builder()
-//  .enabled(java.lang.Boolean)
-//  .enabled(IResolvable)
+//  .enabled(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -5020,17 +4968,17 @@ AppSpecJobImageDeployOnPush.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy images pushed to DOCR. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy images pushed to DOCR. |
 
 ---
 
 ##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush.property.enabled"></a>
 
 ```java
-public java.lang.Object getEnabled();
+public java.lang.Boolean|IResolvable getEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether to automatically deploy images pushed to DOCR.
 
@@ -5430,10 +5378,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecMaintenance;
 
 AppSpecMaintenance.builder()
-//  .archive(java.lang.Boolean)
-//  .archive(IResolvable)
-//  .enabled(java.lang.Boolean)
-//  .enabled(IResolvable)
+//  .archive(java.lang.Boolean|IResolvable)
+//  .enabled(java.lang.Boolean|IResolvable)
 //  .offlinePageUrl(java.lang.String)
     .build();
 ```
@@ -5442,8 +5388,8 @@ AppSpecMaintenance.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenance.property.archive">archive</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicates whether the app should be archived. Setting this to true implies that enabled is set to true. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenance.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicates whether maintenance mode should be enabled for the app. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenance.property.archive">archive</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Indicates whether the app should be archived. Setting this to true implies that enabled is set to true. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenance.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Indicates whether maintenance mode should be enabled for the app. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenance.property.offlinePageUrl">offlinePageUrl</a></code> | <code>java.lang.String</code> | A custom offline page to display when maintenance mode is enabled or the app is archived. |
 
 ---
@@ -5451,10 +5397,10 @@ AppSpecMaintenance.builder()
 ##### `archive`<sup>Optional</sup> <a name="archive" id="@cdktf/provider-digitalocean.app.AppSpecMaintenance.property.archive"></a>
 
 ```java
-public java.lang.Object getArchive();
+public java.lang.Boolean|IResolvable getArchive();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Indicates whether the app should be archived. Setting this to true implies that enabled is set to true.
 
@@ -5465,10 +5411,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-digitalocean.app.AppSpecMaintenance.property.enabled"></a>
 
 ```java
-public java.lang.Object getEnabled();
+public java.lang.Boolean|IResolvable getEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Indicates whether maintenance mode should be enabled for the app.
 
@@ -5499,15 +5445,13 @@ import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecService;
 
 AppSpecService.builder()
     .name(java.lang.String)
-//  .alert(IResolvable)
-//  .alert(java.util.List<AppSpecServiceAlert>)
+//  .alert(IResolvable|java.util.List<AppSpecServiceAlert>)
 //  .autoscaling(AppSpecServiceAutoscaling)
 //  .bitbucket(AppSpecServiceBitbucket)
 //  .buildCommand(java.lang.String)
 //  .cors(AppSpecServiceCors)
 //  .dockerfilePath(java.lang.String)
-//  .env(IResolvable)
-//  .env(java.util.List<AppSpecServiceEnv>)
+//  .env(IResolvable|java.util.List<AppSpecServiceEnv>)
 //  .environmentSlug(java.lang.String)
 //  .git(AppSpecServiceGit)
 //  .github(AppSpecServiceGithub)
@@ -5518,10 +5462,8 @@ AppSpecService.builder()
 //  .instanceCount(java.lang.Number)
 //  .instanceSizeSlug(java.lang.String)
 //  .internalPorts(java.util.List<java.lang.Number>)
-//  .logDestination(IResolvable)
-//  .logDestination(java.util.List<AppSpecServiceLogDestination>)
-//  .routes(IResolvable)
-//  .routes(java.util.List<AppSpecServiceRoutes>)
+//  .logDestination(IResolvable|java.util.List<AppSpecServiceLogDestination>)
+//  .routes(IResolvable|java.util.List<AppSpecServiceRoutes>)
 //  .runCommand(java.lang.String)
 //  .sourceDir(java.lang.String)
 //  .termination(AppSpecServiceTermination)
@@ -5533,13 +5475,13 @@ AppSpecService.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.name">name</a></code> | <code>java.lang.String</code> | The name of the component. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.alert">alert</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>></code> | alert block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.alert">alert</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>></code> | alert block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.autoscaling">autoscaling</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAutoscaling">AppSpecServiceAutoscaling</a></code> | autoscaling block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.bitbucket">bitbucket</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket">AppSpecServiceBitbucket</a></code> | bitbucket block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.buildCommand">buildCommand</a></code> | <code>java.lang.String</code> | An optional build command to run while building this component from source. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.cors">cors</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCors">AppSpecServiceCors</a></code> | cors block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.dockerfilePath">dockerfilePath</a></code> | <code>java.lang.String</code> | The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.env">env</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>></code> | env block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.env">env</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>></code> | env block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.environmentSlug">environmentSlug</a></code> | <code>java.lang.String</code> | An environment slug describing the type of this app. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.git">git</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGit">AppSpecServiceGit</a></code> | git block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.github">github</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithub">AppSpecServiceGithub</a></code> | github block. |
@@ -5550,8 +5492,8 @@ AppSpecService.builder()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.instanceCount">instanceCount</a></code> | <code>java.lang.Number</code> | The amount of instances that this component should be scaled to. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.instanceSizeSlug">instanceSizeSlug</a></code> | <code>java.lang.String</code> | The instance size to use for this component. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.internalPorts">internalPorts</a></code> | <code>java.util.List<java.lang.Number></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#internal_ports App#internal_ports}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.logDestination">logDestination</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>></code> | log_destination block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.routes">routes</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>></code> | routes block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.logDestination">logDestination</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>></code> | log_destination block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.routes">routes</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>></code> | routes block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.runCommand">runCommand</a></code> | <code>java.lang.String</code> | An optional run command to override the component's default. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.sourceDir">sourceDir</a></code> | <code>java.lang.String</code> | An optional path to the working directory to use for the build. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.termination">termination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTermination">AppSpecServiceTermination</a></code> | termination block. |
@@ -5575,10 +5517,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `alert`<sup>Optional</sup> <a name="alert" id="@cdktf/provider-digitalocean.app.AppSpecService.property.alert"></a>
 
 ```java
-public java.lang.Object getAlert();
+public IResolvable|java.util.List<AppSpecServiceAlert> getAlert();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>>
 
 alert block.
 
@@ -5659,10 +5601,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `env`<sup>Optional</sup> <a name="env" id="@cdktf/provider-digitalocean.app.AppSpecService.property.env"></a>
 
 ```java
-public java.lang.Object getEnv();
+public IResolvable|java.util.List<AppSpecServiceEnv> getEnv();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>>
 
 env block.
 
@@ -5811,10 +5753,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `logDestination`<sup>Optional</sup> <a name="logDestination" id="@cdktf/provider-digitalocean.app.AppSpecService.property.logDestination"></a>
 
 ```java
-public java.lang.Object getLogDestination();
+public IResolvable|java.util.List<AppSpecServiceLogDestination> getLogDestination();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>>
 
 log_destination block.
 
@@ -5825,10 +5767,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `routes`<sup>Optional</sup> <a name="routes" id="@cdktf/provider-digitalocean.app.AppSpecService.property.routes"></a>
 
 ```java
-public java.lang.Object getRoutes();
+public IResolvable|java.util.List<AppSpecServiceRoutes> getRoutes();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>>
 
 routes block.
 
@@ -5891,8 +5833,7 @@ AppSpecServiceAlert.builder()
     .value(java.lang.Number)
     .window(java.lang.String)
 //  .destinations(AppSpecServiceAlertDestinations)
-//  .disabled(java.lang.Boolean)
-//  .disabled(IResolvable)
+//  .disabled(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -5905,7 +5846,7 @@ AppSpecServiceAlert.builder()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.value">value</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#value App#value}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.window">window</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#window App#window}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.destinations">destinations</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinations">AppSpecServiceAlertDestinations</a></code> | destinations block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.disabled">disabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.disabled">disabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -5974,10 +5915,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `disabled`<sup>Optional</sup> <a name="disabled" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.disabled"></a>
 
 ```java
-public java.lang.Object getDisabled();
+public java.lang.Boolean|IResolvable getDisabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}.
 
@@ -5992,8 +5933,7 @@ import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecServiceAlertDestina
 
 AppSpecServiceAlertDestinations.builder()
 //  .emails(java.util.List<java.lang.String>)
-//  .slackWebhooks(IResolvable)
-//  .slackWebhooks(java.util.List<AppSpecServiceAlertDestinationsSlackWebhooks>)
+//  .slackWebhooks(IResolvable|java.util.List<AppSpecServiceAlertDestinationsSlackWebhooks>)
     .build();
 ```
 
@@ -6002,7 +5942,7 @@ AppSpecServiceAlertDestinations.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinations.property.emails">emails</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#emails App#emails}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinations.property.slackWebhooks">slackWebhooks</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>></code> | slack_webhooks block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinations.property.slackWebhooks">slackWebhooks</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>></code> | slack_webhooks block. |
 
 ---
 
@@ -6021,10 +5961,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `slackWebhooks`<sup>Optional</sup> <a name="slackWebhooks" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinations.property.slackWebhooks"></a>
 
 ```java
-public java.lang.Object getSlackWebhooks();
+public IResolvable|java.util.List<AppSpecServiceAlertDestinationsSlackWebhooks> getSlackWebhooks();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>>
 
 slack_webhooks block.
 
@@ -6225,8 +6165,7 @@ import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecServiceBitbucket;
 
 AppSpecServiceBitbucket.builder()
 //  .branch(java.lang.String)
-//  .deployOnPush(java.lang.Boolean)
-//  .deployOnPush(IResolvable)
+//  .deployOnPush(java.lang.Boolean|IResolvable)
 //  .repo(java.lang.String)
     .build();
 ```
@@ -6236,7 +6175,7 @@ AppSpecServiceBitbucket.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket.property.branch">branch</a></code> | <code>java.lang.String</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket.property.repo">repo</a></code> | <code>java.lang.String</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -6258,10 +6197,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deployOnPush`<sup>Optional</sup> <a name="deployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket.property.deployOnPush"></a>
 
 ```java
-public java.lang.Object getDeployOnPush();
+public java.lang.Boolean|IResolvable getDeployOnPush();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -6291,8 +6230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecServiceCors;
 
 AppSpecServiceCors.builder()
-//  .allowCredentials(java.lang.Boolean)
-//  .allowCredentials(IResolvable)
+//  .allowCredentials(java.lang.Boolean|IResolvable)
 //  .allowHeaders(java.util.List<java.lang.String>)
 //  .allowMethods(java.util.List<java.lang.String>)
 //  .allowOrigins(AppSpecServiceCorsAllowOrigins)
@@ -6305,7 +6243,7 @@ AppSpecServiceCors.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCors.property.allowCredentials">allowCredentials</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCors.property.allowCredentials">allowCredentials</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCors.property.allowHeaders">allowHeaders</a></code> | <code>java.util.List<java.lang.String></code> | The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCors.property.allowMethods">allowMethods</a></code> | <code>java.util.List<java.lang.String></code> | The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCors.property.allowOrigins">allowOrigins</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsAllowOrigins">AppSpecServiceCorsAllowOrigins</a></code> | allow_origins block. |
@@ -6317,10 +6255,10 @@ AppSpecServiceCors.builder()
 ##### `allowCredentials`<sup>Optional</sup> <a name="allowCredentials" id="@cdktf/provider-digitalocean.app.AppSpecServiceCors.property.allowCredentials"></a>
 
 ```java
-public java.lang.Object getAllowCredentials();
+public java.lang.Boolean|IResolvable getAllowCredentials();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`.
 
@@ -6609,8 +6547,7 @@ import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecServiceGithub;
 
 AppSpecServiceGithub.builder()
 //  .branch(java.lang.String)
-//  .deployOnPush(java.lang.Boolean)
-//  .deployOnPush(IResolvable)
+//  .deployOnPush(java.lang.Boolean|IResolvable)
 //  .repo(java.lang.String)
     .build();
 ```
@@ -6620,7 +6557,7 @@ AppSpecServiceGithub.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithub.property.branch">branch</a></code> | <code>java.lang.String</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithub.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithub.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithub.property.repo">repo</a></code> | <code>java.lang.String</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -6642,10 +6579,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deployOnPush`<sup>Optional</sup> <a name="deployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecServiceGithub.property.deployOnPush"></a>
 
 ```java
-public java.lang.Object getDeployOnPush();
+public java.lang.Boolean|IResolvable getDeployOnPush();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -6676,8 +6613,7 @@ import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecServiceGitlab;
 
 AppSpecServiceGitlab.builder()
 //  .branch(java.lang.String)
-//  .deployOnPush(java.lang.Boolean)
-//  .deployOnPush(IResolvable)
+//  .deployOnPush(java.lang.Boolean|IResolvable)
 //  .repo(java.lang.String)
     .build();
 ```
@@ -6687,7 +6623,7 @@ AppSpecServiceGitlab.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlab.property.branch">branch</a></code> | <code>java.lang.String</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlab.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlab.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlab.property.repo">repo</a></code> | <code>java.lang.String</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -6709,10 +6645,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deployOnPush`<sup>Optional</sup> <a name="deployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecServiceGitlab.property.deployOnPush"></a>
 
 ```java
-public java.lang.Object getDeployOnPush();
+public java.lang.Boolean|IResolvable getDeployOnPush();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -6876,8 +6812,7 @@ import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecServiceImage;
 AppSpecServiceImage.builder()
     .registryType(java.lang.String)
     .repository(java.lang.String)
-//  .deployOnPush(IResolvable)
-//  .deployOnPush(java.util.List<AppSpecServiceImageDeployOnPush>)
+//  .deployOnPush(IResolvable|java.util.List<AppSpecServiceImageDeployOnPush>)
 //  .digest(java.lang.String)
 //  .registry(java.lang.String)
 //  .registryCredentials(java.lang.String)
@@ -6891,7 +6826,7 @@ AppSpecServiceImage.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImage.property.registryType">registryType</a></code> | <code>java.lang.String</code> | The registry type. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImage.property.repository">repository</a></code> | <code>java.lang.String</code> | The repository name. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImage.property.deployOnPush">deployOnPush</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>></code> | deploy_on_push block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImage.property.deployOnPush">deployOnPush</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>></code> | deploy_on_push block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImage.property.digest">digest</a></code> | <code>java.lang.String</code> | The image digest. Cannot be specified if tag is provided. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImage.property.registry">registry</a></code> | <code>java.lang.String</code> | The registry name. Must be left empty for the DOCR registry type. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImage.property.registryCredentials">registryCredentials</a></code> | <code>java.lang.String</code> | Access credentials for third-party registries. |
@@ -6930,10 +6865,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deployOnPush`<sup>Optional</sup> <a name="deployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecServiceImage.property.deployOnPush"></a>
 
 ```java
-public java.lang.Object getDeployOnPush();
+public IResolvable|java.util.List<AppSpecServiceImageDeployOnPush> getDeployOnPush();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>>
 
 deploy_on_push block.
 
@@ -7005,8 +6940,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecServiceImageDeployOnPush;
 
 AppSpecServiceImageDeployOnPush.builder()
-//  .enabled(java.lang.Boolean)
-//  .enabled(IResolvable)
+//  .enabled(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -7014,17 +6948,17 @@ AppSpecServiceImageDeployOnPush.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy images pushed to DOCR. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy images pushed to DOCR. |
 
 ---
 
 ##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush.property.enabled"></a>
 
 ```java
-public java.lang.Object getEnabled();
+public java.lang.Boolean|IResolvable getEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether to automatically deploy images pushed to DOCR.
 
@@ -7389,8 +7323,7 @@ import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecServiceRoutes;
 
 AppSpecServiceRoutes.builder()
 //  .path(java.lang.String)
-//  .preservePathPrefix(java.lang.Boolean)
-//  .preservePathPrefix(IResolvable)
+//  .preservePathPrefix(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -7399,7 +7332,7 @@ AppSpecServiceRoutes.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes.property.path">path</a></code> | <code>java.lang.String</code> | Path specifies an route by HTTP path prefix. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes.property.preservePathPrefix">preservePathPrefix</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | An optional flag to preserve the path that is forwarded to the backend service. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes.property.preservePathPrefix">preservePathPrefix</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | An optional flag to preserve the path that is forwarded to the backend service. |
 
 ---
 
@@ -7422,10 +7355,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `preservePathPrefix`<sup>Optional</sup> <a name="preservePathPrefix" id="@cdktf/provider-digitalocean.app.AppSpecServiceRoutes.property.preservePathPrefix"></a>
 
 ```java
-public java.lang.Object getPreservePathPrefix();
+public java.lang.Boolean|IResolvable getPreservePathPrefix();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 An optional flag to preserve the path that is forwarded to the backend service.
 
@@ -7501,8 +7434,7 @@ AppSpecStaticSite.builder()
 //  .catchallDocument(java.lang.String)
 //  .cors(AppSpecStaticSiteCors)
 //  .dockerfilePath(java.lang.String)
-//  .env(IResolvable)
-//  .env(java.util.List<AppSpecStaticSiteEnv>)
+//  .env(IResolvable|java.util.List<AppSpecStaticSiteEnv>)
 //  .environmentSlug(java.lang.String)
 //  .errorDocument(java.lang.String)
 //  .git(AppSpecStaticSiteGit)
@@ -7510,8 +7442,7 @@ AppSpecStaticSite.builder()
 //  .gitlab(AppSpecStaticSiteGitlab)
 //  .indexDocument(java.lang.String)
 //  .outputDir(java.lang.String)
-//  .routes(IResolvable)
-//  .routes(java.util.List<AppSpecStaticSiteRoutes>)
+//  .routes(IResolvable|java.util.List<AppSpecStaticSiteRoutes>)
 //  .sourceDir(java.lang.String)
     .build();
 ```
@@ -7526,7 +7457,7 @@ AppSpecStaticSite.builder()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.catchallDocument">catchallDocument</a></code> | <code>java.lang.String</code> | The name of the document to use as the fallback for any requests to documents that are not found when serving this static site. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.cors">cors</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCors">AppSpecStaticSiteCors</a></code> | cors block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.dockerfilePath">dockerfilePath</a></code> | <code>java.lang.String</code> | The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.env">env</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>></code> | env block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.env">env</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>></code> | env block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.environmentSlug">environmentSlug</a></code> | <code>java.lang.String</code> | An environment slug describing the type of this app. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.errorDocument">errorDocument</a></code> | <code>java.lang.String</code> | The name of the error document to use when serving this static site. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.git">git</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGit">AppSpecStaticSiteGit</a></code> | git block. |
@@ -7534,7 +7465,7 @@ AppSpecStaticSite.builder()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.gitlab">gitlab</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlab">AppSpecStaticSiteGitlab</a></code> | gitlab block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.indexDocument">indexDocument</a></code> | <code>java.lang.String</code> | The name of the index document to use when serving this static site. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.outputDir">outputDir</a></code> | <code>java.lang.String</code> | An optional path to where the built assets will be located, relative to the build context. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.routes">routes</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>></code> | routes block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.routes">routes</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>></code> | routes block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.sourceDir">sourceDir</a></code> | <code>java.lang.String</code> | An optional path to the working directory to use for the build. |
 
 ---
@@ -7626,10 +7557,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `env`<sup>Optional</sup> <a name="env" id="@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.env"></a>
 
 ```java
-public java.lang.Object getEnv();
+public IResolvable|java.util.List<AppSpecStaticSiteEnv> getEnv();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>>
 
 env block.
 
@@ -7740,10 +7671,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `routes`<sup>Optional</sup> <a name="routes" id="@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.routes"></a>
 
 ```java
-public java.lang.Object getRoutes();
+public IResolvable|java.util.List<AppSpecStaticSiteRoutes> getRoutes();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>>
 
 routes block.
 
@@ -7774,8 +7705,7 @@ import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecStaticSiteBitbucket
 
 AppSpecStaticSiteBitbucket.builder()
 //  .branch(java.lang.String)
-//  .deployOnPush(java.lang.Boolean)
-//  .deployOnPush(IResolvable)
+//  .deployOnPush(java.lang.Boolean|IResolvable)
 //  .repo(java.lang.String)
     .build();
 ```
@@ -7785,7 +7715,7 @@ AppSpecStaticSiteBitbucket.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucket.property.branch">branch</a></code> | <code>java.lang.String</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucket.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucket.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucket.property.repo">repo</a></code> | <code>java.lang.String</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -7807,10 +7737,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deployOnPush`<sup>Optional</sup> <a name="deployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucket.property.deployOnPush"></a>
 
 ```java
-public java.lang.Object getDeployOnPush();
+public java.lang.Boolean|IResolvable getDeployOnPush();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -7840,8 +7770,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecStaticSiteCors;
 
 AppSpecStaticSiteCors.builder()
-//  .allowCredentials(java.lang.Boolean)
-//  .allowCredentials(IResolvable)
+//  .allowCredentials(java.lang.Boolean|IResolvable)
 //  .allowHeaders(java.util.List<java.lang.String>)
 //  .allowMethods(java.util.List<java.lang.String>)
 //  .allowOrigins(AppSpecStaticSiteCorsAllowOrigins)
@@ -7854,7 +7783,7 @@ AppSpecStaticSiteCors.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCors.property.allowCredentials">allowCredentials</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCors.property.allowCredentials">allowCredentials</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCors.property.allowHeaders">allowHeaders</a></code> | <code>java.util.List<java.lang.String></code> | The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCors.property.allowMethods">allowMethods</a></code> | <code>java.util.List<java.lang.String></code> | The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCors.property.allowOrigins">allowOrigins</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsAllowOrigins">AppSpecStaticSiteCorsAllowOrigins</a></code> | allow_origins block. |
@@ -7866,10 +7795,10 @@ AppSpecStaticSiteCors.builder()
 ##### `allowCredentials`<sup>Optional</sup> <a name="allowCredentials" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteCors.property.allowCredentials"></a>
 
 ```java
-public java.lang.Object getAllowCredentials();
+public java.lang.Boolean|IResolvable getAllowCredentials();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`.
 
@@ -8158,8 +8087,7 @@ import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecStaticSiteGithub;
 
 AppSpecStaticSiteGithub.builder()
 //  .branch(java.lang.String)
-//  .deployOnPush(java.lang.Boolean)
-//  .deployOnPush(IResolvable)
+//  .deployOnPush(java.lang.Boolean|IResolvable)
 //  .repo(java.lang.String)
     .build();
 ```
@@ -8169,7 +8097,7 @@ AppSpecStaticSiteGithub.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithub.property.branch">branch</a></code> | <code>java.lang.String</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithub.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithub.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithub.property.repo">repo</a></code> | <code>java.lang.String</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -8191,10 +8119,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deployOnPush`<sup>Optional</sup> <a name="deployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithub.property.deployOnPush"></a>
 
 ```java
-public java.lang.Object getDeployOnPush();
+public java.lang.Boolean|IResolvable getDeployOnPush();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -8225,8 +8153,7 @@ import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecStaticSiteGitlab;
 
 AppSpecStaticSiteGitlab.builder()
 //  .branch(java.lang.String)
-//  .deployOnPush(java.lang.Boolean)
-//  .deployOnPush(IResolvable)
+//  .deployOnPush(java.lang.Boolean|IResolvable)
 //  .repo(java.lang.String)
     .build();
 ```
@@ -8236,7 +8163,7 @@ AppSpecStaticSiteGitlab.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlab.property.branch">branch</a></code> | <code>java.lang.String</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlab.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlab.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlab.property.repo">repo</a></code> | <code>java.lang.String</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -8258,10 +8185,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deployOnPush`<sup>Optional</sup> <a name="deployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlab.property.deployOnPush"></a>
 
 ```java
-public java.lang.Object getDeployOnPush();
+public java.lang.Boolean|IResolvable getDeployOnPush();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -8292,8 +8219,7 @@ import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecStaticSiteRoutes;
 
 AppSpecStaticSiteRoutes.builder()
 //  .path(java.lang.String)
-//  .preservePathPrefix(java.lang.Boolean)
-//  .preservePathPrefix(IResolvable)
+//  .preservePathPrefix(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -8302,7 +8228,7 @@ AppSpecStaticSiteRoutes.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes.property.path">path</a></code> | <code>java.lang.String</code> | Path specifies an route by HTTP path prefix. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes.property.preservePathPrefix">preservePathPrefix</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | An optional flag to preserve the path that is forwarded to the backend service. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes.property.preservePathPrefix">preservePathPrefix</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | An optional flag to preserve the path that is forwarded to the backend service. |
 
 ---
 
@@ -8325,10 +8251,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `preservePathPrefix`<sup>Optional</sup> <a name="preservePathPrefix" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes.property.preservePathPrefix"></a>
 
 ```java
-public java.lang.Object getPreservePathPrefix();
+public java.lang.Boolean|IResolvable getPreservePathPrefix();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 An optional flag to preserve the path that is forwarded to the backend service.
 
@@ -8382,14 +8308,12 @@ import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecWorker;
 
 AppSpecWorker.builder()
     .name(java.lang.String)
-//  .alert(IResolvable)
-//  .alert(java.util.List<AppSpecWorkerAlert>)
+//  .alert(IResolvable|java.util.List<AppSpecWorkerAlert>)
 //  .autoscaling(AppSpecWorkerAutoscaling)
 //  .bitbucket(AppSpecWorkerBitbucket)
 //  .buildCommand(java.lang.String)
 //  .dockerfilePath(java.lang.String)
-//  .env(IResolvable)
-//  .env(java.util.List<AppSpecWorkerEnv>)
+//  .env(IResolvable|java.util.List<AppSpecWorkerEnv>)
 //  .environmentSlug(java.lang.String)
 //  .git(AppSpecWorkerGit)
 //  .github(AppSpecWorkerGithub)
@@ -8397,8 +8321,7 @@ AppSpecWorker.builder()
 //  .image(AppSpecWorkerImage)
 //  .instanceCount(java.lang.Number)
 //  .instanceSizeSlug(java.lang.String)
-//  .logDestination(IResolvable)
-//  .logDestination(java.util.List<AppSpecWorkerLogDestination>)
+//  .logDestination(IResolvable|java.util.List<AppSpecWorkerLogDestination>)
 //  .runCommand(java.lang.String)
 //  .sourceDir(java.lang.String)
 //  .termination(AppSpecWorkerTermination)
@@ -8410,12 +8333,12 @@ AppSpecWorker.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.name">name</a></code> | <code>java.lang.String</code> | The name of the component. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.alert">alert</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>></code> | alert block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.alert">alert</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>></code> | alert block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.autoscaling">autoscaling</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscaling">AppSpecWorkerAutoscaling</a></code> | autoscaling block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.bitbucket">bitbucket</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket">AppSpecWorkerBitbucket</a></code> | bitbucket block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.buildCommand">buildCommand</a></code> | <code>java.lang.String</code> | An optional build command to run while building this component from source. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.dockerfilePath">dockerfilePath</a></code> | <code>java.lang.String</code> | The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.env">env</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>></code> | env block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.env">env</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>></code> | env block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.environmentSlug">environmentSlug</a></code> | <code>java.lang.String</code> | An environment slug describing the type of this app. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.git">git</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGit">AppSpecWorkerGit</a></code> | git block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.github">github</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithub">AppSpecWorkerGithub</a></code> | github block. |
@@ -8423,7 +8346,7 @@ AppSpecWorker.builder()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.image">image</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImage">AppSpecWorkerImage</a></code> | image block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.instanceCount">instanceCount</a></code> | <code>java.lang.Number</code> | The amount of instances that this component should be scaled to. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.instanceSizeSlug">instanceSizeSlug</a></code> | <code>java.lang.String</code> | The instance size to use for this component. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.logDestination">logDestination</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>></code> | log_destination block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.logDestination">logDestination</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>></code> | log_destination block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.runCommand">runCommand</a></code> | <code>java.lang.String</code> | An optional run command to override the component's default. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.sourceDir">sourceDir</a></code> | <code>java.lang.String</code> | An optional path to the working directory to use for the build. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.termination">termination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTermination">AppSpecWorkerTermination</a></code> | termination block. |
@@ -8447,10 +8370,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `alert`<sup>Optional</sup> <a name="alert" id="@cdktf/provider-digitalocean.app.AppSpecWorker.property.alert"></a>
 
 ```java
-public java.lang.Object getAlert();
+public IResolvable|java.util.List<AppSpecWorkerAlert> getAlert();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>>
 
 alert block.
 
@@ -8517,10 +8440,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `env`<sup>Optional</sup> <a name="env" id="@cdktf/provider-digitalocean.app.AppSpecWorker.property.env"></a>
 
 ```java
-public java.lang.Object getEnv();
+public IResolvable|java.util.List<AppSpecWorkerEnv> getEnv();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>>
 
 env block.
 
@@ -8629,10 +8552,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `logDestination`<sup>Optional</sup> <a name="logDestination" id="@cdktf/provider-digitalocean.app.AppSpecWorker.property.logDestination"></a>
 
 ```java
-public java.lang.Object getLogDestination();
+public IResolvable|java.util.List<AppSpecWorkerLogDestination> getLogDestination();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>>
 
 log_destination block.
 
@@ -8695,8 +8618,7 @@ AppSpecWorkerAlert.builder()
     .value(java.lang.Number)
     .window(java.lang.String)
 //  .destinations(AppSpecWorkerAlertDestinations)
-//  .disabled(java.lang.Boolean)
-//  .disabled(IResolvable)
+//  .disabled(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -8709,7 +8631,7 @@ AppSpecWorkerAlert.builder()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.value">value</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#value App#value}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.window">window</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#window App#window}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.destinations">destinations</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinations">AppSpecWorkerAlertDestinations</a></code> | destinations block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.disabled">disabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.disabled">disabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -8778,10 +8700,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `disabled`<sup>Optional</sup> <a name="disabled" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.disabled"></a>
 
 ```java
-public java.lang.Object getDisabled();
+public java.lang.Boolean|IResolvable getDisabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}.
 
@@ -8796,8 +8718,7 @@ import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecWorkerAlertDestinat
 
 AppSpecWorkerAlertDestinations.builder()
 //  .emails(java.util.List<java.lang.String>)
-//  .slackWebhooks(IResolvable)
-//  .slackWebhooks(java.util.List<AppSpecWorkerAlertDestinationsSlackWebhooks>)
+//  .slackWebhooks(IResolvable|java.util.List<AppSpecWorkerAlertDestinationsSlackWebhooks>)
     .build();
 ```
 
@@ -8806,7 +8727,7 @@ AppSpecWorkerAlertDestinations.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinations.property.emails">emails</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#emails App#emails}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinations.property.slackWebhooks">slackWebhooks</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>></code> | slack_webhooks block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinations.property.slackWebhooks">slackWebhooks</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>></code> | slack_webhooks block. |
 
 ---
 
@@ -8825,10 +8746,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `slackWebhooks`<sup>Optional</sup> <a name="slackWebhooks" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinations.property.slackWebhooks"></a>
 
 ```java
-public java.lang.Object getSlackWebhooks();
+public IResolvable|java.util.List<AppSpecWorkerAlertDestinationsSlackWebhooks> getSlackWebhooks();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>>
 
 slack_webhooks block.
 
@@ -9029,8 +8950,7 @@ import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecWorkerBitbucket;
 
 AppSpecWorkerBitbucket.builder()
 //  .branch(java.lang.String)
-//  .deployOnPush(java.lang.Boolean)
-//  .deployOnPush(IResolvable)
+//  .deployOnPush(java.lang.Boolean|IResolvable)
 //  .repo(java.lang.String)
     .build();
 ```
@@ -9040,7 +8960,7 @@ AppSpecWorkerBitbucket.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket.property.branch">branch</a></code> | <code>java.lang.String</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket.property.repo">repo</a></code> | <code>java.lang.String</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -9062,10 +8982,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deployOnPush`<sup>Optional</sup> <a name="deployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket.property.deployOnPush"></a>
 
 ```java
-public java.lang.Object getDeployOnPush();
+public java.lang.Boolean|IResolvable getDeployOnPush();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -9228,8 +9148,7 @@ import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecWorkerGithub;
 
 AppSpecWorkerGithub.builder()
 //  .branch(java.lang.String)
-//  .deployOnPush(java.lang.Boolean)
-//  .deployOnPush(IResolvable)
+//  .deployOnPush(java.lang.Boolean|IResolvable)
 //  .repo(java.lang.String)
     .build();
 ```
@@ -9239,7 +9158,7 @@ AppSpecWorkerGithub.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithub.property.branch">branch</a></code> | <code>java.lang.String</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithub.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithub.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithub.property.repo">repo</a></code> | <code>java.lang.String</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -9261,10 +9180,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deployOnPush`<sup>Optional</sup> <a name="deployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecWorkerGithub.property.deployOnPush"></a>
 
 ```java
-public java.lang.Object getDeployOnPush();
+public java.lang.Boolean|IResolvable getDeployOnPush();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -9295,8 +9214,7 @@ import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecWorkerGitlab;
 
 AppSpecWorkerGitlab.builder()
 //  .branch(java.lang.String)
-//  .deployOnPush(java.lang.Boolean)
-//  .deployOnPush(IResolvable)
+//  .deployOnPush(java.lang.Boolean|IResolvable)
 //  .repo(java.lang.String)
     .build();
 ```
@@ -9306,7 +9224,7 @@ AppSpecWorkerGitlab.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlab.property.branch">branch</a></code> | <code>java.lang.String</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlab.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlab.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlab.property.repo">repo</a></code> | <code>java.lang.String</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -9328,10 +9246,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deployOnPush`<sup>Optional</sup> <a name="deployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecWorkerGitlab.property.deployOnPush"></a>
 
 ```java
-public java.lang.Object getDeployOnPush();
+public java.lang.Boolean|IResolvable getDeployOnPush();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -9363,8 +9281,7 @@ import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecWorkerImage;
 AppSpecWorkerImage.builder()
     .registryType(java.lang.String)
     .repository(java.lang.String)
-//  .deployOnPush(IResolvable)
-//  .deployOnPush(java.util.List<AppSpecWorkerImageDeployOnPush>)
+//  .deployOnPush(IResolvable|java.util.List<AppSpecWorkerImageDeployOnPush>)
 //  .digest(java.lang.String)
 //  .registry(java.lang.String)
 //  .registryCredentials(java.lang.String)
@@ -9378,7 +9295,7 @@ AppSpecWorkerImage.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImage.property.registryType">registryType</a></code> | <code>java.lang.String</code> | The registry type. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImage.property.repository">repository</a></code> | <code>java.lang.String</code> | The repository name. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImage.property.deployOnPush">deployOnPush</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>></code> | deploy_on_push block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImage.property.deployOnPush">deployOnPush</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>></code> | deploy_on_push block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImage.property.digest">digest</a></code> | <code>java.lang.String</code> | The image digest. Cannot be specified if tag is provided. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImage.property.registry">registry</a></code> | <code>java.lang.String</code> | The registry name. Must be left empty for the DOCR registry type. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImage.property.registryCredentials">registryCredentials</a></code> | <code>java.lang.String</code> | Access credentials for third-party registries. |
@@ -9417,10 +9334,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deployOnPush`<sup>Optional</sup> <a name="deployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImage.property.deployOnPush"></a>
 
 ```java
-public java.lang.Object getDeployOnPush();
+public IResolvable|java.util.List<AppSpecWorkerImageDeployOnPush> getDeployOnPush();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>>
 
 deploy_on_push block.
 
@@ -9492,8 +9409,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 import com.hashicorp.cdktf.providers.digitalocean.app.AppSpecWorkerImageDeployOnPush;
 
 AppSpecWorkerImageDeployOnPush.builder()
-//  .enabled(java.lang.Boolean)
-//  .enabled(IResolvable)
+//  .enabled(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -9501,17 +9417,17 @@ AppSpecWorkerImageDeployOnPush.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy images pushed to DOCR. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether to automatically deploy images pushed to DOCR. |
 
 ---
 
 ##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush.property.enabled"></a>
 
 ```java
-public java.lang.Object getEnabled();
+public java.lang.Boolean|IResolvable getEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether to automatically deploy images pushed to DOCR.
 
@@ -10058,7 +9974,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppDedicatedIpsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppDedicatedIpsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppDedicatedIpsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppDedicatedIpsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>></code> | *No description.* |
 
 ---
 
@@ -10089,10 +10005,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppDedicatedIpsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppDedicatedIps> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>>
 
 ---
 
@@ -10352,7 +10268,7 @@ public void resetStatus()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppDedicatedIpsOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppDedicatedIpsOutputReference.property.ip">ip</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppDedicatedIpsOutputReference.property.status">status</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppDedicatedIpsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppDedicatedIpsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -10443,10 +10359,10 @@ public java.lang.String getStatus();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppDedicatedIpsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public AppDedicatedIps|IResolvable getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -10660,12 +10576,12 @@ Returns a reversible string representation.
 ##### `putSlackWebhooks` <a name="putSlackWebhooks" id="@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsOutputReference.putSlackWebhooks"></a>
 
 ```java
-public void putSlackWebhooks(IResolvable OR java.util.List<AppSpecAlertDestinationsSlackWebhooks> value)
+public void putSlackWebhooks(IResolvable|java.util.List<AppSpecAlertDestinationsSlackWebhooks> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsOutputReference.putSlackWebhooks.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>>
 
 ---
 
@@ -10690,7 +10606,7 @@ public void resetSlackWebhooks()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsOutputReference.property.slackWebhooks">slackWebhooks</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksList">AppSpecAlertDestinationsSlackWebhooksList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsOutputReference.property.emailsInput">emailsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsOutputReference.property.slackWebhooksInput">slackWebhooksInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsOutputReference.property.slackWebhooksInput">slackWebhooksInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsOutputReference.property.emails">emails</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinations">AppSpecAlertDestinations</a></code> | *No description.* |
 
@@ -10743,10 +10659,10 @@ public java.util.List<java.lang.String> getEmailsInput();
 ##### `slackWebhooksInput`<sup>Optional</sup> <a name="slackWebhooksInput" id="@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsOutputReference.property.slackWebhooksInput"></a>
 
 ```java
-public java.lang.Object getSlackWebhooksInput();
+public IResolvable|java.util.List<AppSpecAlertDestinationsSlackWebhooks> getSlackWebhooksInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>>
 
 ---
 
@@ -10892,7 +10808,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>></code> | *No description.* |
 
 ---
 
@@ -10923,10 +10839,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecAlertDestinationsSlackWebhooks> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>>
 
 ---
 
@@ -11163,7 +11079,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksOutputReference.property.urlInput">urlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksOutputReference.property.channel">channel</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksOutputReference.property.url">url</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a></code> | *No description.* |
 
 ---
 
@@ -11234,10 +11150,10 @@ public java.lang.String getUrl();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecAlertDestinationsSlackWebhooks getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>
 
 ---
 
@@ -11363,7 +11279,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>></code> | *No description.* |
 
 ---
 
@@ -11394,10 +11310,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecAlertList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecAlert> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>>
 
 ---
 
@@ -11659,11 +11575,11 @@ public void resetDisabled()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.destinations">destinations</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsOutputReference">AppSpecAlertDestinationsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.destinationsInput">destinationsInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinations">AppSpecAlertDestinations</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.disabledInput">disabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.disabledInput">disabledInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.ruleInput">ruleInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.disabled">disabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.disabled">disabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.rule">rule</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a></code> | *No description.* |
 
 ---
 
@@ -11714,10 +11630,10 @@ public AppSpecAlertDestinations getDestinationsInput();
 ##### `disabledInput`<sup>Optional</sup> <a name="disabledInput" id="@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.disabledInput"></a>
 
 ```java
-public java.lang.Object getDisabledInput();
+public java.lang.Boolean|IResolvable getDisabledInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -11734,10 +11650,10 @@ public java.lang.String getRuleInput();
 ##### `disabled`<sup>Required</sup> <a name="disabled" id="@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.disabled"></a>
 
 ```java
-public java.lang.Object getDisabled();
+public java.lang.Boolean|IResolvable getDisabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -11754,10 +11670,10 @@ public java.lang.String getRule();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecAlert getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>
 
 ---
 
@@ -11883,7 +11799,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>></code> | *No description.* |
 
 ---
 
@@ -11914,10 +11830,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecDatabaseList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecDatabase> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>>
 
 ---
 
@@ -12204,16 +12120,16 @@ public void resetVersion()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.dbUserInput">dbUserInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.engineInput">engineInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.productionInput">productionInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.productionInput">productionInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.versionInput">versionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.clusterName">clusterName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.dbName">dbName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.dbUser">dbUser</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.engine">engine</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.production">production</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.production">production</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.version">version</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a></code> | *No description.* |
 
 ---
 
@@ -12294,10 +12210,10 @@ public java.lang.String getNameInput();
 ##### `productionInput`<sup>Optional</sup> <a name="productionInput" id="@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.productionInput"></a>
 
 ```java
-public java.lang.Object getProductionInput();
+public java.lang.Boolean|IResolvable getProductionInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -12364,10 +12280,10 @@ public java.lang.String getName();
 ##### `production`<sup>Required</sup> <a name="production" id="@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.production"></a>
 
 ```java
-public java.lang.Object getProduction();
+public java.lang.Boolean|IResolvable getProduction();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -12384,10 +12300,10 @@ public java.lang.String getVersion();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecDatabase getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>
 
 ---
 
@@ -12513,7 +12429,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>></code> | *No description.* |
 
 ---
 
@@ -12544,10 +12460,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecDomainList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecDomain> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>>
 
 ---
 
@@ -12803,13 +12719,13 @@ public void resetZone()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.wildcardInput">wildcardInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.wildcardInput">wildcardInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.zoneInput">zoneInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.wildcard">wildcard</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.wildcard">wildcard</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.zone">zone</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a></code> | *No description.* |
 
 ---
 
@@ -12860,10 +12776,10 @@ public java.lang.String getTypeInput();
 ##### `wildcardInput`<sup>Optional</sup> <a name="wildcardInput" id="@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.wildcardInput"></a>
 
 ```java
-public java.lang.Object getWildcardInput();
+public java.lang.Boolean|IResolvable getWildcardInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -12900,10 +12816,10 @@ public java.lang.String getType();
 ##### `wildcard`<sup>Required</sup> <a name="wildcard" id="@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.wildcard"></a>
 
 ```java
-public java.lang.Object getWildcard();
+public java.lang.Boolean|IResolvable getWildcard();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -12920,10 +12836,10 @@ public java.lang.String getZone();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecDomain getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>
 
 ---
 
@@ -13049,7 +12965,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEgressList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEgressList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEgressList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEgressList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>></code> | *No description.* |
 
 ---
 
@@ -13080,10 +12996,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecEgressList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecEgress> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>>
 
 ---
 
@@ -13325,7 +13241,7 @@ public void resetType()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEgressOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEgressOutputReference.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEgressOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEgressOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEgressOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a></code> | *No description.* |
 
 ---
 
@@ -13376,10 +13292,10 @@ public java.lang.String getType();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecEgressOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecEgress getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>
 
 ---
 
@@ -13505,7 +13421,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEnvList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEnvList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEnvList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEnvList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>></code> | *No description.* |
 
 ---
 
@@ -13536,10 +13452,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecEnvList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecEnv> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>>
 
 ---
 
@@ -13808,7 +13724,7 @@ public void resetValue()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEnvOutputReference.property.scope">scope</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEnvOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEnvOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEnvOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEnvOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a></code> | *No description.* |
 
 ---
 
@@ -13919,10 +13835,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecEnvOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecEnv getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>
 
 ---
 
@@ -14136,12 +14052,12 @@ Returns a reversible string representation.
 ##### `putSlackWebhooks` <a name="putSlackWebhooks" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsOutputReference.putSlackWebhooks"></a>
 
 ```java
-public void putSlackWebhooks(IResolvable OR java.util.List<AppSpecFunctionAlertDestinationsSlackWebhooks> value)
+public void putSlackWebhooks(IResolvable|java.util.List<AppSpecFunctionAlertDestinationsSlackWebhooks> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsOutputReference.putSlackWebhooks.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>>
 
 ---
 
@@ -14166,7 +14082,7 @@ public void resetSlackWebhooks()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsOutputReference.property.slackWebhooks">slackWebhooks</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksList">AppSpecFunctionAlertDestinationsSlackWebhooksList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsOutputReference.property.emailsInput">emailsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsOutputReference.property.slackWebhooksInput">slackWebhooksInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsOutputReference.property.slackWebhooksInput">slackWebhooksInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsOutputReference.property.emails">emails</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinations">AppSpecFunctionAlertDestinations</a></code> | *No description.* |
 
@@ -14219,10 +14135,10 @@ public java.util.List<java.lang.String> getEmailsInput();
 ##### `slackWebhooksInput`<sup>Optional</sup> <a name="slackWebhooksInput" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsOutputReference.property.slackWebhooksInput"></a>
 
 ```java
-public java.lang.Object getSlackWebhooksInput();
+public IResolvable|java.util.List<AppSpecFunctionAlertDestinationsSlackWebhooks> getSlackWebhooksInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>>
 
 ---
 
@@ -14368,7 +14284,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>></code> | *No description.* |
 
 ---
 
@@ -14399,10 +14315,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecFunctionAlertDestinationsSlackWebhooks> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>>
 
 ---
 
@@ -14639,7 +14555,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksOutputReference.property.urlInput">urlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksOutputReference.property.channel">channel</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksOutputReference.property.url">url</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a></code> | *No description.* |
 
 ---
 
@@ -14710,10 +14626,10 @@ public java.lang.String getUrl();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecFunctionAlertDestinationsSlackWebhooks getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>
 
 ---
 
@@ -14839,7 +14755,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>></code> | *No description.* |
 
 ---
 
@@ -14870,10 +14786,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlertList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecFunctionAlert> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>>
 
 ---
 
@@ -15135,17 +15051,17 @@ public void resetDisabled()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.destinations">destinations</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsOutputReference">AppSpecFunctionAlertDestinationsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.destinationsInput">destinationsInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinations">AppSpecFunctionAlertDestinations</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.disabledInput">disabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.disabledInput">disabledInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.operatorInput">operatorInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.ruleInput">ruleInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.windowInput">windowInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.disabled">disabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.disabled">disabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.operator">operator</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.rule">rule</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.value">value</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.window">window</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a></code> | *No description.* |
 
 ---
 
@@ -15196,10 +15112,10 @@ public AppSpecFunctionAlertDestinations getDestinationsInput();
 ##### `disabledInput`<sup>Optional</sup> <a name="disabledInput" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.disabledInput"></a>
 
 ```java
-public java.lang.Object getDisabledInput();
+public java.lang.Boolean|IResolvable getDisabledInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -15246,10 +15162,10 @@ public java.lang.String getWindowInput();
 ##### `disabled`<sup>Required</sup> <a name="disabled" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.disabled"></a>
 
 ```java
-public java.lang.Object getDisabled();
+public java.lang.Boolean|IResolvable getDisabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -15296,10 +15212,10 @@ public java.lang.String getWindow();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecFunctionAlert getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>
 
 ---
 
@@ -15536,10 +15452,10 @@ public void resetRepo()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.branchInput">branchInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.repoInput">repoInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.branch">branch</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.repo">repo</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket">AppSpecFunctionBitbucket</a></code> | *No description.* |
 
@@ -15582,10 +15498,10 @@ public java.lang.String getBranchInput();
 ##### `deployOnPushInput`<sup>Optional</sup> <a name="deployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.deployOnPushInput"></a>
 
 ```java
-public java.lang.Object getDeployOnPushInput();
+public java.lang.Boolean|IResolvable getDeployOnPushInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -15612,10 +15528,10 @@ public java.lang.String getBranch();
 ##### `deployOnPush`<sup>Required</sup> <a name="deployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.deployOnPush"></a>
 
 ```java
-public java.lang.Object getDeployOnPush();
+public java.lang.Boolean|IResolvable getDeployOnPush();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -16242,13 +16158,13 @@ public void resetMaxAge()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowOrigins">allowOrigins</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsAllowOriginsOutputReference">AppSpecFunctionCorsAllowOriginsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowCredentialsInput">allowCredentialsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowCredentialsInput">allowCredentialsInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowHeadersInput">allowHeadersInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowMethodsInput">allowMethodsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowOriginsInput">allowOriginsInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsAllowOrigins">AppSpecFunctionCorsAllowOrigins</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.exposeHeadersInput">exposeHeadersInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.maxAgeInput">maxAgeInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowCredentials">allowCredentials</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowCredentials">allowCredentials</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowHeaders">allowHeaders</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowMethods">allowMethods</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.exposeHeaders">exposeHeaders</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -16294,10 +16210,10 @@ public AppSpecFunctionCorsAllowOriginsOutputReference getAllowOrigins();
 ##### `allowCredentialsInput`<sup>Optional</sup> <a name="allowCredentialsInput" id="@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowCredentialsInput"></a>
 
 ```java
-public java.lang.Object getAllowCredentialsInput();
+public java.lang.Boolean|IResolvable getAllowCredentialsInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -16354,10 +16270,10 @@ public java.lang.String getMaxAgeInput();
 ##### `allowCredentials`<sup>Required</sup> <a name="allowCredentials" id="@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowCredentials"></a>
 
 ```java
-public java.lang.Object getAllowCredentials();
+public java.lang.Boolean|IResolvable getAllowCredentials();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -16533,7 +16449,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnvList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnvList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnvList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnvList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>></code> | *No description.* |
 
 ---
 
@@ -16564,10 +16480,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecFunctionEnvList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecFunctionEnv> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>>
 
 ---
 
@@ -16836,7 +16752,7 @@ public void resetValue()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnvOutputReference.property.scope">scope</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnvOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnvOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnvOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnvOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a></code> | *No description.* |
 
 ---
 
@@ -16947,10 +16863,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecFunctionEnvOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecFunctionEnv getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>
 
 ---
 
@@ -17187,10 +17103,10 @@ public void resetRepo()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.branchInput">branchInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.repoInput">repoInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.branch">branch</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.repo">repo</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithub">AppSpecFunctionGithub</a></code> | *No description.* |
 
@@ -17233,10 +17149,10 @@ public java.lang.String getBranchInput();
 ##### `deployOnPushInput`<sup>Optional</sup> <a name="deployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.deployOnPushInput"></a>
 
 ```java
-public java.lang.Object getDeployOnPushInput();
+public java.lang.Boolean|IResolvable getDeployOnPushInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -17263,10 +17179,10 @@ public java.lang.String getBranch();
 ##### `deployOnPush`<sup>Required</sup> <a name="deployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.deployOnPush"></a>
 
 ```java
-public java.lang.Object getDeployOnPush();
+public java.lang.Boolean|IResolvable getDeployOnPush();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -17523,10 +17439,10 @@ public void resetRepo()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.branchInput">branchInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.repoInput">repoInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.branch">branch</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.repo">repo</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlab">AppSpecFunctionGitlab</a></code> | *No description.* |
 
@@ -17569,10 +17485,10 @@ public java.lang.String getBranchInput();
 ##### `deployOnPushInput`<sup>Optional</sup> <a name="deployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.deployOnPushInput"></a>
 
 ```java
-public java.lang.Object getDeployOnPushInput();
+public java.lang.Boolean|IResolvable getDeployOnPushInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -17599,10 +17515,10 @@ public java.lang.String getBranch();
 ##### `deployOnPush`<sup>Required</sup> <a name="deployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.deployOnPush"></a>
 
 ```java
-public java.lang.Object getDeployOnPush();
+public java.lang.Boolean|IResolvable getDeployOnPush();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -18055,7 +17971,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>></code> | *No description.* |
 
 ---
 
@@ -18086,10 +18002,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecFunctionList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecFunction> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>>
 
 ---
 
@@ -18515,7 +18431,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>></code> | *No description.* |
 
 ---
 
@@ -18546,10 +18462,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecFunctionLogDestination> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>>
 
 ---
 
@@ -19821,7 +19737,7 @@ public void resetPapertrail()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationOutputReference.property.openSearchInput">openSearchInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationOpenSearch">AppSpecFunctionLogDestinationOpenSearch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationOutputReference.property.papertrailInput">papertrailInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationPapertrail">AppSpecFunctionLogDestinationPapertrail</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a></code> | *No description.* |
 
 ---
 
@@ -19952,10 +19868,10 @@ public java.lang.String getName();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecFunctionLogDestination getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>
 
 ---
 
@@ -20474,12 +20390,12 @@ Returns a reversible string representation.
 ##### `putAlert` <a name="putAlert" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.putAlert"></a>
 
 ```java
-public void putAlert(IResolvable OR java.util.List<AppSpecFunctionAlert> value)
+public void putAlert(IResolvable|java.util.List<AppSpecFunctionAlert> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.putAlert.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>>
 
 ---
 
@@ -20510,12 +20426,12 @@ public void putCors(AppSpecFunctionCors value)
 ##### `putEnv` <a name="putEnv" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.putEnv"></a>
 
 ```java
-public void putEnv(IResolvable OR java.util.List<AppSpecFunctionEnv> value)
+public void putEnv(IResolvable|java.util.List<AppSpecFunctionEnv> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.putEnv.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>>
 
 ---
 
@@ -20558,24 +20474,24 @@ public void putGitlab(AppSpecFunctionGitlab value)
 ##### `putLogDestination` <a name="putLogDestination" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.putLogDestination"></a>
 
 ```java
-public void putLogDestination(IResolvable OR java.util.List<AppSpecFunctionLogDestination> value)
+public void putLogDestination(IResolvable|java.util.List<AppSpecFunctionLogDestination> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.putLogDestination.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>>
 
 ---
 
 ##### `putRoutes` <a name="putRoutes" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.putRoutes"></a>
 
 ```java
-public void putRoutes(IResolvable OR java.util.List<AppSpecFunctionRoutes> value)
+public void putRoutes(IResolvable|java.util.List<AppSpecFunctionRoutes> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.putRoutes.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>>
 
 ---
 
@@ -20655,20 +20571,20 @@ public void resetSourceDir()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.gitlab">gitlab</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference">AppSpecFunctionGitlabOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.logDestination">logDestination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationList">AppSpecFunctionLogDestinationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.routes">routes</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesList">AppSpecFunctionRoutesList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.alertInput">alertInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.alertInput">alertInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.bitbucketInput">bitbucketInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket">AppSpecFunctionBitbucket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.corsInput">corsInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCors">AppSpecFunctionCors</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.envInput">envInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.envInput">envInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.githubInput">githubInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithub">AppSpecFunctionGithub</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.gitInput">gitInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGit">AppSpecFunctionGit</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.gitlabInput">gitlabInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlab">AppSpecFunctionGitlab</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.logDestinationInput">logDestinationInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.logDestinationInput">logDestinationInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.routesInput">routesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.routesInput">routesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.sourceDirInput">sourceDirInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.sourceDir">sourceDir</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a></code> | *No description.* |
 
 ---
 
@@ -20789,10 +20705,10 @@ public AppSpecFunctionRoutesList getRoutes();
 ##### `alertInput`<sup>Optional</sup> <a name="alertInput" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.alertInput"></a>
 
 ```java
-public java.lang.Object getAlertInput();
+public IResolvable|java.util.List<AppSpecFunctionAlert> getAlertInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>>
 
 ---
 
@@ -20819,10 +20735,10 @@ public AppSpecFunctionCors getCorsInput();
 ##### `envInput`<sup>Optional</sup> <a name="envInput" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.envInput"></a>
 
 ```java
-public java.lang.Object getEnvInput();
+public IResolvable|java.util.List<AppSpecFunctionEnv> getEnvInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>>
 
 ---
 
@@ -20859,10 +20775,10 @@ public AppSpecFunctionGitlab getGitlabInput();
 ##### `logDestinationInput`<sup>Optional</sup> <a name="logDestinationInput" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.logDestinationInput"></a>
 
 ```java
-public java.lang.Object getLogDestinationInput();
+public IResolvable|java.util.List<AppSpecFunctionLogDestination> getLogDestinationInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>>
 
 ---
 
@@ -20879,10 +20795,10 @@ public java.lang.String getNameInput();
 ##### `routesInput`<sup>Optional</sup> <a name="routesInput" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.routesInput"></a>
 
 ```java
-public java.lang.Object getRoutesInput();
+public IResolvable|java.util.List<AppSpecFunctionRoutes> getRoutesInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>>
 
 ---
 
@@ -20919,10 +20835,10 @@ public java.lang.String getSourceDir();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecFunction getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>
 
 ---
 
@@ -21048,7 +20964,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>></code> | *No description.* |
 
 ---
 
@@ -21079,10 +20995,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecFunctionRoutes> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>>
 
 ---
 
@@ -21330,10 +21246,10 @@ public void resetPreservePathPrefix()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.pathInput">pathInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.preservePathPrefixInput">preservePathPrefixInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.preservePathPrefixInput">preservePathPrefixInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.path">path</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.preservePathPrefix">preservePathPrefix</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.preservePathPrefix">preservePathPrefix</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a></code> | *No description.* |
 
 ---
 
@@ -21374,10 +21290,10 @@ public java.lang.String getPathInput();
 ##### `preservePathPrefixInput`<sup>Optional</sup> <a name="preservePathPrefixInput" id="@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.preservePathPrefixInput"></a>
 
 ```java
-public java.lang.Object getPreservePathPrefixInput();
+public java.lang.Boolean|IResolvable getPreservePathPrefixInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -21394,20 +21310,20 @@ public java.lang.String getPath();
 ##### `preservePathPrefix`<sup>Required</sup> <a name="preservePathPrefix" id="@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.preservePathPrefix"></a>
 
 ```java
-public java.lang.Object getPreservePathPrefix();
+public java.lang.Boolean|IResolvable getPreservePathPrefix();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecFunctionRoutes getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>
 
 ---
 
@@ -21620,12 +21536,12 @@ Returns a reversible string representation.
 ##### `putRule` <a name="putRule" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.putRule"></a>
 
 ```java
-public void putRule(IResolvable OR java.util.List<AppSpecIngressRule> value)
+public void putRule(IResolvable|java.util.List<AppSpecIngressRule> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.putRule.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>>
 
 ---
 
@@ -21643,7 +21559,7 @@ public void resetRule()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.property.rule">rule</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleList">AppSpecIngressRuleList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.property.ruleInput">ruleInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.property.ruleInput">ruleInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngress">AppSpecIngress</a></code> | *No description.* |
 
 ---
@@ -21685,10 +21601,10 @@ public AppSpecIngressRuleList getRule();
 ##### `ruleInput`<sup>Optional</sup> <a name="ruleInput" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.property.ruleInput"></a>
 
 ```java
-public java.lang.Object getRuleInput();
+public IResolvable|java.util.List<AppSpecIngressRule> getRuleInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>>
 
 ---
 
@@ -21935,10 +21851,10 @@ public void resetRewrite()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.preservePathPrefixInput">preservePathPrefixInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.preservePathPrefixInput">preservePathPrefixInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.rewriteInput">rewriteInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.preservePathPrefix">preservePathPrefix</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.preservePathPrefix">preservePathPrefix</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.rewrite">rewrite</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent">AppSpecIngressRuleComponent</a></code> | *No description.* |
 
@@ -21981,10 +21897,10 @@ public java.lang.String getNameInput();
 ##### `preservePathPrefixInput`<sup>Optional</sup> <a name="preservePathPrefixInput" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.preservePathPrefixInput"></a>
 
 ```java
-public java.lang.Object getPreservePathPrefixInput();
+public java.lang.Boolean|IResolvable getPreservePathPrefixInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -22011,10 +21927,10 @@ public java.lang.String getName();
 ##### `preservePathPrefix`<sup>Required</sup> <a name="preservePathPrefix" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.preservePathPrefix"></a>
 
 ```java
-public java.lang.Object getPreservePathPrefix();
+public java.lang.Boolean|IResolvable getPreservePathPrefix();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -22641,13 +22557,13 @@ public void resetMaxAge()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowOrigins">allowOrigins</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference">AppSpecIngressRuleCorsAllowOriginsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowCredentialsInput">allowCredentialsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowCredentialsInput">allowCredentialsInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowHeadersInput">allowHeadersInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowMethodsInput">allowMethodsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowOriginsInput">allowOriginsInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOrigins">AppSpecIngressRuleCorsAllowOrigins</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.exposeHeadersInput">exposeHeadersInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.maxAgeInput">maxAgeInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowCredentials">allowCredentials</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowCredentials">allowCredentials</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowHeaders">allowHeaders</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowMethods">allowMethods</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.exposeHeaders">exposeHeaders</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -22693,10 +22609,10 @@ public AppSpecIngressRuleCorsAllowOriginsOutputReference getAllowOrigins();
 ##### `allowCredentialsInput`<sup>Optional</sup> <a name="allowCredentialsInput" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowCredentialsInput"></a>
 
 ```java
-public java.lang.Object getAllowCredentialsInput();
+public java.lang.Boolean|IResolvable getAllowCredentialsInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -22753,10 +22669,10 @@ public java.lang.String getMaxAgeInput();
 ##### `allowCredentials`<sup>Required</sup> <a name="allowCredentials" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowCredentials"></a>
 
 ```java
-public java.lang.Object getAllowCredentials();
+public java.lang.Boolean|IResolvable getAllowCredentials();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -22932,7 +22848,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>></code> | *No description.* |
 
 ---
 
@@ -22963,10 +22879,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecIngressRule> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>>
 
 ---
 
@@ -24176,7 +24092,7 @@ public void resetRedirect()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.corsInput">corsInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors">AppSpecIngressRuleCors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.matchInput">matchInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatch">AppSpecIngressRuleMatch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.redirectInput">redirectInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect">AppSpecIngressRuleRedirect</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a></code> | *No description.* |
 
 ---
 
@@ -24287,10 +24203,10 @@ public AppSpecIngressRuleRedirect getRedirectInput();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecIngressRule getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>
 
 ---
 
@@ -24898,12 +24814,12 @@ Returns a reversible string representation.
 ##### `putSlackWebhooks` <a name="putSlackWebhooks" id="@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsOutputReference.putSlackWebhooks"></a>
 
 ```java
-public void putSlackWebhooks(IResolvable OR java.util.List<AppSpecJobAlertDestinationsSlackWebhooks> value)
+public void putSlackWebhooks(IResolvable|java.util.List<AppSpecJobAlertDestinationsSlackWebhooks> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsOutputReference.putSlackWebhooks.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>>
 
 ---
 
@@ -24928,7 +24844,7 @@ public void resetSlackWebhooks()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsOutputReference.property.slackWebhooks">slackWebhooks</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksList">AppSpecJobAlertDestinationsSlackWebhooksList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsOutputReference.property.emailsInput">emailsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsOutputReference.property.slackWebhooksInput">slackWebhooksInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsOutputReference.property.slackWebhooksInput">slackWebhooksInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsOutputReference.property.emails">emails</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinations">AppSpecJobAlertDestinations</a></code> | *No description.* |
 
@@ -24981,10 +24897,10 @@ public java.util.List<java.lang.String> getEmailsInput();
 ##### `slackWebhooksInput`<sup>Optional</sup> <a name="slackWebhooksInput" id="@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsOutputReference.property.slackWebhooksInput"></a>
 
 ```java
-public java.lang.Object getSlackWebhooksInput();
+public IResolvable|java.util.List<AppSpecJobAlertDestinationsSlackWebhooks> getSlackWebhooksInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>>
 
 ---
 
@@ -25130,7 +25046,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>></code> | *No description.* |
 
 ---
 
@@ -25161,10 +25077,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecJobAlertDestinationsSlackWebhooks> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>>
 
 ---
 
@@ -25401,7 +25317,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksOutputReference.property.urlInput">urlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksOutputReference.property.channel">channel</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksOutputReference.property.url">url</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a></code> | *No description.* |
 
 ---
 
@@ -25472,10 +25388,10 @@ public java.lang.String getUrl();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecJobAlertDestinationsSlackWebhooks getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>
 
 ---
 
@@ -25601,7 +25517,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>></code> | *No description.* |
 
 ---
 
@@ -25632,10 +25548,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecJobAlertList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecJobAlert> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>>
 
 ---
 
@@ -25897,17 +25813,17 @@ public void resetDisabled()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.destinations">destinations</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsOutputReference">AppSpecJobAlertDestinationsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.destinationsInput">destinationsInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinations">AppSpecJobAlertDestinations</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.disabledInput">disabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.disabledInput">disabledInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.operatorInput">operatorInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.ruleInput">ruleInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.windowInput">windowInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.disabled">disabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.disabled">disabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.operator">operator</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.rule">rule</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.value">value</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.window">window</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a></code> | *No description.* |
 
 ---
 
@@ -25958,10 +25874,10 @@ public AppSpecJobAlertDestinations getDestinationsInput();
 ##### `disabledInput`<sup>Optional</sup> <a name="disabledInput" id="@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.disabledInput"></a>
 
 ```java
-public java.lang.Object getDisabledInput();
+public java.lang.Boolean|IResolvable getDisabledInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -26008,10 +25924,10 @@ public java.lang.String getWindowInput();
 ##### `disabled`<sup>Required</sup> <a name="disabled" id="@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.disabled"></a>
 
 ```java
-public java.lang.Object getDisabled();
+public java.lang.Boolean|IResolvable getDisabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -26058,10 +25974,10 @@ public java.lang.String getWindow();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecJobAlert getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>
 
 ---
 
@@ -26298,10 +26214,10 @@ public void resetRepo()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.branchInput">branchInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.repoInput">repoInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.branch">branch</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.repo">repo</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucket">AppSpecJobBitbucket</a></code> | *No description.* |
 
@@ -26344,10 +26260,10 @@ public java.lang.String getBranchInput();
 ##### `deployOnPushInput`<sup>Optional</sup> <a name="deployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.deployOnPushInput"></a>
 
 ```java
-public java.lang.Object getDeployOnPushInput();
+public java.lang.Boolean|IResolvable getDeployOnPushInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -26374,10 +26290,10 @@ public java.lang.String getBranch();
 ##### `deployOnPush`<sup>Required</sup> <a name="deployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.deployOnPush"></a>
 
 ```java
-public java.lang.Object getDeployOnPush();
+public java.lang.Boolean|IResolvable getDeployOnPush();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -26523,7 +26439,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnvList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnvList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnvList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnvList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>></code> | *No description.* |
 
 ---
 
@@ -26554,10 +26470,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecJobEnvList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecJobEnv> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>>
 
 ---
 
@@ -26826,7 +26742,7 @@ public void resetValue()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnvOutputReference.property.scope">scope</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnvOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnvOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnvOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnvOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a></code> | *No description.* |
 
 ---
 
@@ -26937,10 +26853,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecJobEnvOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecJobEnv getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>
 
 ---
 
@@ -27177,10 +27093,10 @@ public void resetRepo()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.branchInput">branchInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.repoInput">repoInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.branch">branch</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.repo">repo</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithub">AppSpecJobGithub</a></code> | *No description.* |
 
@@ -27223,10 +27139,10 @@ public java.lang.String getBranchInput();
 ##### `deployOnPushInput`<sup>Optional</sup> <a name="deployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.deployOnPushInput"></a>
 
 ```java
-public java.lang.Object getDeployOnPushInput();
+public java.lang.Boolean|IResolvable getDeployOnPushInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -27253,10 +27169,10 @@ public java.lang.String getBranch();
 ##### `deployOnPush`<sup>Required</sup> <a name="deployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.deployOnPush"></a>
 
 ```java
-public java.lang.Object getDeployOnPush();
+public java.lang.Boolean|IResolvable getDeployOnPush();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -27513,10 +27429,10 @@ public void resetRepo()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.branchInput">branchInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.repoInput">repoInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.branch">branch</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.repo">repo</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlab">AppSpecJobGitlab</a></code> | *No description.* |
 
@@ -27559,10 +27475,10 @@ public java.lang.String getBranchInput();
 ##### `deployOnPushInput`<sup>Optional</sup> <a name="deployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.deployOnPushInput"></a>
 
 ```java
-public java.lang.Object getDeployOnPushInput();
+public java.lang.Boolean|IResolvable getDeployOnPushInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -27589,10 +27505,10 @@ public java.lang.String getBranch();
 ##### `deployOnPush`<sup>Required</sup> <a name="deployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.deployOnPush"></a>
 
 ```java
-public java.lang.Object getDeployOnPush();
+public java.lang.Boolean|IResolvable getDeployOnPush();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -28045,7 +27961,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>></code> | *No description.* |
 
 ---
 
@@ -28076,10 +27992,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecJobImageDeployOnPush> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>>
 
 ---
 
@@ -28319,9 +28235,9 @@ public void resetEnabled()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a></code> | *No description.* |
 
 ---
 
@@ -28352,30 +28268,30 @@ public java.lang.String getFqn();
 ##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.enabledInput"></a>
 
 ```java
-public java.lang.Object getEnabledInput();
+public java.lang.Boolean|IResolvable getEnabledInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.enabled"></a>
 
 ```java
-public java.lang.Object getEnabled();
+public java.lang.Boolean|IResolvable getEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecJobImageDeployOnPush getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>
 
 ---
 
@@ -28592,12 +28508,12 @@ Returns a reversible string representation.
 ##### `putDeployOnPush` <a name="putDeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.putDeployOnPush"></a>
 
 ```java
-public void putDeployOnPush(IResolvable OR java.util.List<AppSpecJobImageDeployOnPush> value)
+public void putDeployOnPush(IResolvable|java.util.List<AppSpecJobImageDeployOnPush> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.putDeployOnPush.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>>
 
 ---
 
@@ -28639,7 +28555,7 @@ public void resetTag()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.deployOnPush">deployOnPush</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushList">AppSpecJobImageDeployOnPushList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.digestInput">digestInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.registryCredentialsInput">registryCredentialsInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.registryInput">registryInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -28693,10 +28609,10 @@ public AppSpecJobImageDeployOnPushList getDeployOnPush();
 ##### `deployOnPushInput`<sup>Optional</sup> <a name="deployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.deployOnPushInput"></a>
 
 ```java
-public java.lang.Object getDeployOnPushInput();
+public IResolvable|java.util.List<AppSpecJobImageDeployOnPush> getDeployOnPushInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>>
 
 ---
 
@@ -28952,7 +28868,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>></code> | *No description.* |
 
 ---
 
@@ -28983,10 +28899,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecJobList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecJob> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>>
 
 ---
 
@@ -29412,7 +29328,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>></code> | *No description.* |
 
 ---
 
@@ -29443,10 +29359,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecJobLogDestination> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>>
 
 ---
 
@@ -30718,7 +30634,7 @@ public void resetPapertrail()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationOutputReference.property.openSearchInput">openSearchInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationOpenSearch">AppSpecJobLogDestinationOpenSearch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationOutputReference.property.papertrailInput">papertrailInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationPapertrail">AppSpecJobLogDestinationPapertrail</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a></code> | *No description.* |
 
 ---
 
@@ -30849,10 +30765,10 @@ public java.lang.String getName();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecJobLogDestination getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>
 
 ---
 
@@ -31378,12 +31294,12 @@ Returns a reversible string representation.
 ##### `putAlert` <a name="putAlert" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.putAlert"></a>
 
 ```java
-public void putAlert(IResolvable OR java.util.List<AppSpecJobAlert> value)
+public void putAlert(IResolvable|java.util.List<AppSpecJobAlert> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.putAlert.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>>
 
 ---
 
@@ -31402,12 +31318,12 @@ public void putBitbucket(AppSpecJobBitbucket value)
 ##### `putEnv` <a name="putEnv" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.putEnv"></a>
 
 ```java
-public void putEnv(IResolvable OR java.util.List<AppSpecJobEnv> value)
+public void putEnv(IResolvable|java.util.List<AppSpecJobEnv> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.putEnv.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>>
 
 ---
 
@@ -31462,12 +31378,12 @@ public void putImage(AppSpecJobImage value)
 ##### `putLogDestination` <a name="putLogDestination" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.putLogDestination"></a>
 
 ```java
-public void putLogDestination(IResolvable OR java.util.List<AppSpecJobLogDestination> value)
+public void putLogDestination(IResolvable|java.util.List<AppSpecJobLogDestination> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.putLogDestination.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>>
 
 ---
 
@@ -31601,11 +31517,11 @@ public void resetTermination()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.image">image</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference">AppSpecJobImageOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.logDestination">logDestination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationList">AppSpecJobLogDestinationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.termination">termination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference">AppSpecJobTerminationOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.alertInput">alertInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.alertInput">alertInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.bitbucketInput">bitbucketInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucket">AppSpecJobBitbucket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.buildCommandInput">buildCommandInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.dockerfilePathInput">dockerfilePathInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.envInput">envInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.envInput">envInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.environmentSlugInput">environmentSlugInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.githubInput">githubInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithub">AppSpecJobGithub</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.gitInput">gitInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGit">AppSpecJobGit</a></code> | *No description.* |
@@ -31614,7 +31530,7 @@ public void resetTermination()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.instanceCountInput">instanceCountInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.instanceSizeSlugInput">instanceSizeSlugInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.kindInput">kindInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.logDestinationInput">logDestinationInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.logDestinationInput">logDestinationInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.runCommandInput">runCommandInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.sourceDirInput">sourceDirInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -31628,7 +31544,7 @@ public void resetTermination()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.runCommand">runCommand</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.sourceDir">sourceDir</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a></code> | *No description.* |
 
 ---
 
@@ -31749,10 +31665,10 @@ public AppSpecJobTerminationOutputReference getTermination();
 ##### `alertInput`<sup>Optional</sup> <a name="alertInput" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.alertInput"></a>
 
 ```java
-public java.lang.Object getAlertInput();
+public IResolvable|java.util.List<AppSpecJobAlert> getAlertInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>>
 
 ---
 
@@ -31789,10 +31705,10 @@ public java.lang.String getDockerfilePathInput();
 ##### `envInput`<sup>Optional</sup> <a name="envInput" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.envInput"></a>
 
 ```java
-public java.lang.Object getEnvInput();
+public IResolvable|java.util.List<AppSpecJobEnv> getEnvInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>>
 
 ---
 
@@ -31879,10 +31795,10 @@ public java.lang.String getKindInput();
 ##### `logDestinationInput`<sup>Optional</sup> <a name="logDestinationInput" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.logDestinationInput"></a>
 
 ```java
-public java.lang.Object getLogDestinationInput();
+public IResolvable|java.util.List<AppSpecJobLogDestination> getLogDestinationInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>>
 
 ---
 
@@ -32019,10 +31935,10 @@ public java.lang.String getSourceDir();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecJob getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>
 
 ---
 
@@ -32536,11 +32452,11 @@ public void resetOfflinePageUrl()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.archiveInput">archiveInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.archiveInput">archiveInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.offlinePageUrlInput">offlinePageUrlInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.archive">archive</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.archive">archive</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.offlinePageUrl">offlinePageUrl</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenance">AppSpecMaintenance</a></code> | *No description.* |
 
@@ -32573,20 +32489,20 @@ public java.lang.String getFqn();
 ##### `archiveInput`<sup>Optional</sup> <a name="archiveInput" id="@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.archiveInput"></a>
 
 ```java
-public java.lang.Object getArchiveInput();
+public java.lang.Boolean|IResolvable getArchiveInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.enabledInput"></a>
 
 ```java
-public java.lang.Object getEnabledInput();
+public java.lang.Boolean|IResolvable getEnabledInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -32603,20 +32519,20 @@ public java.lang.String getOfflinePageUrlInput();
 ##### `archive`<sup>Required</sup> <a name="archive" id="@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.archive"></a>
 
 ```java
-public java.lang.Object getArchive();
+public java.lang.Boolean|IResolvable getArchive();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.enabled"></a>
 
 ```java
-public java.lang.Object getEnabled();
+public java.lang.Boolean|IResolvable getEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -32879,72 +32795,72 @@ Returns a reversible string representation.
 ##### `putAlert` <a name="putAlert" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putAlert"></a>
 
 ```java
-public void putAlert(IResolvable OR java.util.List<AppSpecAlert> value)
+public void putAlert(IResolvable|java.util.List<AppSpecAlert> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putAlert.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>>
 
 ---
 
 ##### `putDatabase` <a name="putDatabase" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putDatabase"></a>
 
 ```java
-public void putDatabase(IResolvable OR java.util.List<AppSpecDatabase> value)
+public void putDatabase(IResolvable|java.util.List<AppSpecDatabase> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putDatabase.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>>
 
 ---
 
 ##### `putDomain` <a name="putDomain" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putDomain"></a>
 
 ```java
-public void putDomain(IResolvable OR java.util.List<AppSpecDomain> value)
+public void putDomain(IResolvable|java.util.List<AppSpecDomain> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putDomain.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>>
 
 ---
 
 ##### `putEgress` <a name="putEgress" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putEgress"></a>
 
 ```java
-public void putEgress(IResolvable OR java.util.List<AppSpecEgress> value)
+public void putEgress(IResolvable|java.util.List<AppSpecEgress> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putEgress.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>>
 
 ---
 
 ##### `putEnv` <a name="putEnv" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putEnv"></a>
 
 ```java
-public void putEnv(IResolvable OR java.util.List<AppSpecEnv> value)
+public void putEnv(IResolvable|java.util.List<AppSpecEnv> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putEnv.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>>
 
 ---
 
 ##### `putFunction` <a name="putFunction" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putFunction"></a>
 
 ```java
-public void putFunction(IResolvable OR java.util.List<AppSpecFunction> value)
+public void putFunction(IResolvable|java.util.List<AppSpecFunction> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putFunction.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>>
 
 ---
 
@@ -32963,12 +32879,12 @@ public void putIngress(AppSpecIngress value)
 ##### `putJob` <a name="putJob" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putJob"></a>
 
 ```java
-public void putJob(IResolvable OR java.util.List<AppSpecJob> value)
+public void putJob(IResolvable|java.util.List<AppSpecJob> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putJob.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>>
 
 ---
 
@@ -32987,48 +32903,48 @@ public void putMaintenance(AppSpecMaintenance value)
 ##### `putService` <a name="putService" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putService"></a>
 
 ```java
-public void putService(IResolvable OR java.util.List<AppSpecService> value)
+public void putService(IResolvable|java.util.List<AppSpecService> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putService.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>>
 
 ---
 
 ##### `putStaticSite` <a name="putStaticSite" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putStaticSite"></a>
 
 ```java
-public void putStaticSite(IResolvable OR java.util.List<AppSpecStaticSite> value)
+public void putStaticSite(IResolvable|java.util.List<AppSpecStaticSite> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putStaticSite.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>>
 
 ---
 
 ##### `putVpc` <a name="putVpc" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putVpc"></a>
 
 ```java
-public void putVpc(IResolvable OR java.util.List<AppSpecVpc> value)
+public void putVpc(IResolvable|java.util.List<AppSpecVpc> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putVpc.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>>
 
 ---
 
 ##### `putWorker` <a name="putWorker" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putWorker"></a>
 
 ```java
-public void putWorker(IResolvable OR java.util.List<AppSpecWorker> value)
+public void putWorker(IResolvable|java.util.List<AppSpecWorker> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putWorker.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>>
 
 ---
 
@@ -33166,30 +33082,30 @@ public void resetWorker()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.staticSite">staticSite</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteList">AppSpecStaticSiteList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.vpc">vpc</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecVpcList">AppSpecVpcList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.worker">worker</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerList">AppSpecWorkerList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.alertInput">alertInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.databaseInput">databaseInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEdgeCacheInput">disableEdgeCacheInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEmailObfuscationInput">disableEmailObfuscationInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.domainInput">domainInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.alertInput">alertInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.databaseInput">databaseInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEdgeCacheInput">disableEdgeCacheInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEmailObfuscationInput">disableEmailObfuscationInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.domainInput">domainInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.domainsInput">domainsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.egressInput">egressInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.enhancedThreatControlEnabledInput">enhancedThreatControlEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.envInput">envInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.egressInput">egressInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.enhancedThreatControlEnabledInput">enhancedThreatControlEnabledInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.envInput">envInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.featuresInput">featuresInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.functionInput">functionInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.functionInput">functionInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.ingressInput">ingressInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngress">AppSpecIngress</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.jobInput">jobInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.jobInput">jobInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.maintenanceInput">maintenanceInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenance">AppSpecMaintenance</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.serviceInput">serviceInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.staticSiteInput">staticSiteInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.vpcInput">vpcInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.workerInput">workerInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEdgeCache">disableEdgeCache</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEmailObfuscation">disableEmailObfuscation</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.serviceInput">serviceInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.staticSiteInput">staticSiteInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.vpcInput">vpcInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.workerInput">workerInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEdgeCache">disableEdgeCache</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEmailObfuscation">disableEmailObfuscation</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.domains">domains</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.enhancedThreatControlEnabled">enhancedThreatControlEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.enhancedThreatControlEnabled">enhancedThreatControlEnabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.features">features</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -33354,50 +33270,50 @@ public AppSpecWorkerList getWorker();
 ##### `alertInput`<sup>Optional</sup> <a name="alertInput" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.alertInput"></a>
 
 ```java
-public java.lang.Object getAlertInput();
+public IResolvable|java.util.List<AppSpecAlert> getAlertInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>>
 
 ---
 
 ##### `databaseInput`<sup>Optional</sup> <a name="databaseInput" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.databaseInput"></a>
 
 ```java
-public java.lang.Object getDatabaseInput();
+public IResolvable|java.util.List<AppSpecDatabase> getDatabaseInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>>
 
 ---
 
 ##### `disableEdgeCacheInput`<sup>Optional</sup> <a name="disableEdgeCacheInput" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEdgeCacheInput"></a>
 
 ```java
-public java.lang.Object getDisableEdgeCacheInput();
+public java.lang.Boolean|IResolvable getDisableEdgeCacheInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `disableEmailObfuscationInput`<sup>Optional</sup> <a name="disableEmailObfuscationInput" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEmailObfuscationInput"></a>
 
 ```java
-public java.lang.Object getDisableEmailObfuscationInput();
+public java.lang.Boolean|IResolvable getDisableEmailObfuscationInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `domainInput`<sup>Optional</sup> <a name="domainInput" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.domainInput"></a>
 
 ```java
-public java.lang.Object getDomainInput();
+public IResolvable|java.util.List<AppSpecDomain> getDomainInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>>
 
 ---
 
@@ -33414,30 +33330,30 @@ public java.util.List<java.lang.String> getDomainsInput();
 ##### `egressInput`<sup>Optional</sup> <a name="egressInput" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.egressInput"></a>
 
 ```java
-public java.lang.Object getEgressInput();
+public IResolvable|java.util.List<AppSpecEgress> getEgressInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>>
 
 ---
 
 ##### `enhancedThreatControlEnabledInput`<sup>Optional</sup> <a name="enhancedThreatControlEnabledInput" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.enhancedThreatControlEnabledInput"></a>
 
 ```java
-public java.lang.Object getEnhancedThreatControlEnabledInput();
+public java.lang.Boolean|IResolvable getEnhancedThreatControlEnabledInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `envInput`<sup>Optional</sup> <a name="envInput" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.envInput"></a>
 
 ```java
-public java.lang.Object getEnvInput();
+public IResolvable|java.util.List<AppSpecEnv> getEnvInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>>
 
 ---
 
@@ -33454,10 +33370,10 @@ public java.util.List<java.lang.String> getFeaturesInput();
 ##### `functionInput`<sup>Optional</sup> <a name="functionInput" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.functionInput"></a>
 
 ```java
-public java.lang.Object getFunctionInput();
+public IResolvable|java.util.List<AppSpecFunction> getFunctionInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>>
 
 ---
 
@@ -33474,10 +33390,10 @@ public AppSpecIngress getIngressInput();
 ##### `jobInput`<sup>Optional</sup> <a name="jobInput" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.jobInput"></a>
 
 ```java
-public java.lang.Object getJobInput();
+public IResolvable|java.util.List<AppSpecJob> getJobInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>>
 
 ---
 
@@ -33514,60 +33430,60 @@ public java.lang.String getRegionInput();
 ##### `serviceInput`<sup>Optional</sup> <a name="serviceInput" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.serviceInput"></a>
 
 ```java
-public java.lang.Object getServiceInput();
+public IResolvable|java.util.List<AppSpecService> getServiceInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>>
 
 ---
 
 ##### `staticSiteInput`<sup>Optional</sup> <a name="staticSiteInput" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.staticSiteInput"></a>
 
 ```java
-public java.lang.Object getStaticSiteInput();
+public IResolvable|java.util.List<AppSpecStaticSite> getStaticSiteInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>>
 
 ---
 
 ##### `vpcInput`<sup>Optional</sup> <a name="vpcInput" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.vpcInput"></a>
 
 ```java
-public java.lang.Object getVpcInput();
+public IResolvable|java.util.List<AppSpecVpc> getVpcInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>>
 
 ---
 
 ##### `workerInput`<sup>Optional</sup> <a name="workerInput" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.workerInput"></a>
 
 ```java
-public java.lang.Object getWorkerInput();
+public IResolvable|java.util.List<AppSpecWorker> getWorkerInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>>
 
 ---
 
 ##### `disableEdgeCache`<sup>Required</sup> <a name="disableEdgeCache" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEdgeCache"></a>
 
 ```java
-public java.lang.Object getDisableEdgeCache();
+public java.lang.Boolean|IResolvable getDisableEdgeCache();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `disableEmailObfuscation`<sup>Required</sup> <a name="disableEmailObfuscation" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEmailObfuscation"></a>
 
 ```java
-public java.lang.Object getDisableEmailObfuscation();
+public java.lang.Boolean|IResolvable getDisableEmailObfuscation();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -33584,10 +33500,10 @@ public java.util.List<java.lang.String> getDomains();
 ##### `enhancedThreatControlEnabled`<sup>Required</sup> <a name="enhancedThreatControlEnabled" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.enhancedThreatControlEnabled"></a>
 
 ```java
-public java.lang.Object getEnhancedThreatControlEnabled();
+public java.lang.Boolean|IResolvable getEnhancedThreatControlEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -33841,12 +33757,12 @@ Returns a reversible string representation.
 ##### `putSlackWebhooks` <a name="putSlackWebhooks" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsOutputReference.putSlackWebhooks"></a>
 
 ```java
-public void putSlackWebhooks(IResolvable OR java.util.List<AppSpecServiceAlertDestinationsSlackWebhooks> value)
+public void putSlackWebhooks(IResolvable|java.util.List<AppSpecServiceAlertDestinationsSlackWebhooks> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsOutputReference.putSlackWebhooks.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>>
 
 ---
 
@@ -33871,7 +33787,7 @@ public void resetSlackWebhooks()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsOutputReference.property.slackWebhooks">slackWebhooks</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksList">AppSpecServiceAlertDestinationsSlackWebhooksList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsOutputReference.property.emailsInput">emailsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsOutputReference.property.slackWebhooksInput">slackWebhooksInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsOutputReference.property.slackWebhooksInput">slackWebhooksInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsOutputReference.property.emails">emails</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinations">AppSpecServiceAlertDestinations</a></code> | *No description.* |
 
@@ -33924,10 +33840,10 @@ public java.util.List<java.lang.String> getEmailsInput();
 ##### `slackWebhooksInput`<sup>Optional</sup> <a name="slackWebhooksInput" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsOutputReference.property.slackWebhooksInput"></a>
 
 ```java
-public java.lang.Object getSlackWebhooksInput();
+public IResolvable|java.util.List<AppSpecServiceAlertDestinationsSlackWebhooks> getSlackWebhooksInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>>
 
 ---
 
@@ -34073,7 +33989,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>></code> | *No description.* |
 
 ---
 
@@ -34104,10 +34020,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecServiceAlertDestinationsSlackWebhooks> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>>
 
 ---
 
@@ -34344,7 +34260,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksOutputReference.property.urlInput">urlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksOutputReference.property.channel">channel</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksOutputReference.property.url">url</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a></code> | *No description.* |
 
 ---
 
@@ -34415,10 +34331,10 @@ public java.lang.String getUrl();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecServiceAlertDestinationsSlackWebhooks getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>
 
 ---
 
@@ -34544,7 +34460,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>></code> | *No description.* |
 
 ---
 
@@ -34575,10 +34491,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlertList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecServiceAlert> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>>
 
 ---
 
@@ -34840,17 +34756,17 @@ public void resetDisabled()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.destinations">destinations</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsOutputReference">AppSpecServiceAlertDestinationsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.destinationsInput">destinationsInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinations">AppSpecServiceAlertDestinations</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.disabledInput">disabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.disabledInput">disabledInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.operatorInput">operatorInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.ruleInput">ruleInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.windowInput">windowInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.disabled">disabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.disabled">disabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.operator">operator</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.rule">rule</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.value">value</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.window">window</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a></code> | *No description.* |
 
 ---
 
@@ -34901,10 +34817,10 @@ public AppSpecServiceAlertDestinations getDestinationsInput();
 ##### `disabledInput`<sup>Optional</sup> <a name="disabledInput" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.disabledInput"></a>
 
 ```java
-public java.lang.Object getDisabledInput();
+public java.lang.Boolean|IResolvable getDisabledInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -34951,10 +34867,10 @@ public java.lang.String getWindowInput();
 ##### `disabled`<sup>Required</sup> <a name="disabled" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.disabled"></a>
 
 ```java
-public java.lang.Object getDisabled();
+public java.lang.Boolean|IResolvable getDisabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -35001,10 +34917,10 @@ public java.lang.String getWindow();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecServiceAlert getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>
 
 ---
 
@@ -36131,10 +36047,10 @@ public void resetRepo()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.branchInput">branchInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.repoInput">repoInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.branch">branch</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.repo">repo</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket">AppSpecServiceBitbucket</a></code> | *No description.* |
 
@@ -36177,10 +36093,10 @@ public java.lang.String getBranchInput();
 ##### `deployOnPushInput`<sup>Optional</sup> <a name="deployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.deployOnPushInput"></a>
 
 ```java
-public java.lang.Object getDeployOnPushInput();
+public java.lang.Boolean|IResolvable getDeployOnPushInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -36207,10 +36123,10 @@ public java.lang.String getBranch();
 ##### `deployOnPush`<sup>Required</sup> <a name="deployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.deployOnPush"></a>
 
 ```java
-public java.lang.Object getDeployOnPush();
+public java.lang.Boolean|IResolvable getDeployOnPush();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -36837,13 +36753,13 @@ public void resetMaxAge()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowOrigins">allowOrigins</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsAllowOriginsOutputReference">AppSpecServiceCorsAllowOriginsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowCredentialsInput">allowCredentialsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowCredentialsInput">allowCredentialsInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowHeadersInput">allowHeadersInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowMethodsInput">allowMethodsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowOriginsInput">allowOriginsInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsAllowOrigins">AppSpecServiceCorsAllowOrigins</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.exposeHeadersInput">exposeHeadersInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.maxAgeInput">maxAgeInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowCredentials">allowCredentials</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowCredentials">allowCredentials</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowHeaders">allowHeaders</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowMethods">allowMethods</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.exposeHeaders">exposeHeaders</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -36889,10 +36805,10 @@ public AppSpecServiceCorsAllowOriginsOutputReference getAllowOrigins();
 ##### `allowCredentialsInput`<sup>Optional</sup> <a name="allowCredentialsInput" id="@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowCredentialsInput"></a>
 
 ```java
-public java.lang.Object getAllowCredentialsInput();
+public java.lang.Boolean|IResolvable getAllowCredentialsInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -36949,10 +36865,10 @@ public java.lang.String getMaxAgeInput();
 ##### `allowCredentials`<sup>Required</sup> <a name="allowCredentials" id="@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowCredentials"></a>
 
 ```java
-public java.lang.Object getAllowCredentials();
+public java.lang.Boolean|IResolvable getAllowCredentials();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -37128,7 +37044,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnvList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnvList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnvList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnvList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>></code> | *No description.* |
 
 ---
 
@@ -37159,10 +37075,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceEnvList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecServiceEnv> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>>
 
 ---
 
@@ -37431,7 +37347,7 @@ public void resetValue()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnvOutputReference.property.scope">scope</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnvOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnvOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnvOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnvOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a></code> | *No description.* |
 
 ---
 
@@ -37542,10 +37458,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceEnvOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecServiceEnv getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>
 
 ---
 
@@ -37782,10 +37698,10 @@ public void resetRepo()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.branchInput">branchInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.repoInput">repoInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.branch">branch</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.repo">repo</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithub">AppSpecServiceGithub</a></code> | *No description.* |
 
@@ -37828,10 +37744,10 @@ public java.lang.String getBranchInput();
 ##### `deployOnPushInput`<sup>Optional</sup> <a name="deployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.deployOnPushInput"></a>
 
 ```java
-public java.lang.Object getDeployOnPushInput();
+public java.lang.Boolean|IResolvable getDeployOnPushInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -37858,10 +37774,10 @@ public java.lang.String getBranch();
 ##### `deployOnPush`<sup>Required</sup> <a name="deployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.deployOnPush"></a>
 
 ```java
-public java.lang.Object getDeployOnPush();
+public java.lang.Boolean|IResolvable getDeployOnPush();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -38118,10 +38034,10 @@ public void resetRepo()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.branchInput">branchInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.repoInput">repoInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.branch">branch</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.repo">repo</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlab">AppSpecServiceGitlab</a></code> | *No description.* |
 
@@ -38164,10 +38080,10 @@ public java.lang.String getBranchInput();
 ##### `deployOnPushInput`<sup>Optional</sup> <a name="deployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.deployOnPushInput"></a>
 
 ```java
-public java.lang.Object getDeployOnPushInput();
+public java.lang.Boolean|IResolvable getDeployOnPushInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -38194,10 +38110,10 @@ public java.lang.String getBranch();
 ##### `deployOnPush`<sup>Required</sup> <a name="deployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.deployOnPush"></a>
 
 ```java
-public java.lang.Object getDeployOnPush();
+public java.lang.Boolean|IResolvable getDeployOnPush();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -39102,7 +39018,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>></code> | *No description.* |
 
 ---
 
@@ -39133,10 +39049,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecServiceImageDeployOnPush> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>>
 
 ---
 
@@ -39376,9 +39292,9 @@ public void resetEnabled()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a></code> | *No description.* |
 
 ---
 
@@ -39409,30 +39325,30 @@ public java.lang.String getFqn();
 ##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.enabledInput"></a>
 
 ```java
-public java.lang.Object getEnabledInput();
+public java.lang.Boolean|IResolvable getEnabledInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.enabled"></a>
 
 ```java
-public java.lang.Object getEnabled();
+public java.lang.Boolean|IResolvable getEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecServiceImageDeployOnPush getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>
 
 ---
 
@@ -39649,12 +39565,12 @@ Returns a reversible string representation.
 ##### `putDeployOnPush` <a name="putDeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.putDeployOnPush"></a>
 
 ```java
-public void putDeployOnPush(IResolvable OR java.util.List<AppSpecServiceImageDeployOnPush> value)
+public void putDeployOnPush(IResolvable|java.util.List<AppSpecServiceImageDeployOnPush> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.putDeployOnPush.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>>
 
 ---
 
@@ -39696,7 +39612,7 @@ public void resetTag()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.deployOnPush">deployOnPush</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushList">AppSpecServiceImageDeployOnPushList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.digestInput">digestInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.registryCredentialsInput">registryCredentialsInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.registryInput">registryInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -39750,10 +39666,10 @@ public AppSpecServiceImageDeployOnPushList getDeployOnPush();
 ##### `deployOnPushInput`<sup>Optional</sup> <a name="deployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.deployOnPushInput"></a>
 
 ```java
-public java.lang.Object getDeployOnPushInput();
+public IResolvable|java.util.List<AppSpecServiceImageDeployOnPush> getDeployOnPushInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>>
 
 ---
 
@@ -40009,7 +39925,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>></code> | *No description.* |
 
 ---
 
@@ -40040,10 +39956,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecService> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>>
 
 ---
 
@@ -40469,7 +40385,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>></code> | *No description.* |
 
 ---
 
@@ -40500,10 +40416,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecServiceLogDestination> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>>
 
 ---
 
@@ -41775,7 +41691,7 @@ public void resetPapertrail()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationOutputReference.property.openSearchInput">openSearchInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationOpenSearch">AppSpecServiceLogDestinationOpenSearch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationOutputReference.property.papertrailInput">papertrailInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationPapertrail">AppSpecServiceLogDestinationPapertrail</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a></code> | *No description.* |
 
 ---
 
@@ -41906,10 +41822,10 @@ public java.lang.String getName();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecServiceLogDestination getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>
 
 ---
 
@@ -42444,12 +42360,12 @@ Returns a reversible string representation.
 ##### `putAlert` <a name="putAlert" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putAlert"></a>
 
 ```java
-public void putAlert(IResolvable OR java.util.List<AppSpecServiceAlert> value)
+public void putAlert(IResolvable|java.util.List<AppSpecServiceAlert> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putAlert.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>>
 
 ---
 
@@ -42492,12 +42408,12 @@ public void putCors(AppSpecServiceCors value)
 ##### `putEnv` <a name="putEnv" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putEnv"></a>
 
 ```java
-public void putEnv(IResolvable OR java.util.List<AppSpecServiceEnv> value)
+public void putEnv(IResolvable|java.util.List<AppSpecServiceEnv> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putEnv.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>>
 
 ---
 
@@ -42564,24 +42480,24 @@ public void putImage(AppSpecServiceImage value)
 ##### `putLogDestination` <a name="putLogDestination" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putLogDestination"></a>
 
 ```java
-public void putLogDestination(IResolvable OR java.util.List<AppSpecServiceLogDestination> value)
+public void putLogDestination(IResolvable|java.util.List<AppSpecServiceLogDestination> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putLogDestination.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>>
 
 ---
 
 ##### `putRoutes` <a name="putRoutes" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putRoutes"></a>
 
 ```java
-public void putRoutes(IResolvable OR java.util.List<AppSpecServiceRoutes> value)
+public void putRoutes(IResolvable|java.util.List<AppSpecServiceRoutes> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putRoutes.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>>
 
 ---
 
@@ -42749,13 +42665,13 @@ public void resetTermination()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.logDestination">logDestination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationList">AppSpecServiceLogDestinationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.routes">routes</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesList">AppSpecServiceRoutesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.termination">termination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference">AppSpecServiceTerminationOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.alertInput">alertInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.alertInput">alertInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.autoscalingInput">autoscalingInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAutoscaling">AppSpecServiceAutoscaling</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.bitbucketInput">bitbucketInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket">AppSpecServiceBitbucket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.buildCommandInput">buildCommandInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.corsInput">corsInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCors">AppSpecServiceCors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.dockerfilePathInput">dockerfilePathInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.envInput">envInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.envInput">envInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.environmentSlugInput">environmentSlugInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.githubInput">githubInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithub">AppSpecServiceGithub</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.gitInput">gitInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGit">AppSpecServiceGit</a></code> | *No description.* |
@@ -42766,9 +42682,9 @@ public void resetTermination()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.instanceCountInput">instanceCountInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.instanceSizeSlugInput">instanceSizeSlugInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.internalPortsInput">internalPortsInput</a></code> | <code>java.util.List<java.lang.Number></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.logDestinationInput">logDestinationInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.logDestinationInput">logDestinationInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.routesInput">routesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.routesInput">routesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.runCommandInput">runCommandInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.sourceDirInput">sourceDirInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.terminationInput">terminationInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTermination">AppSpecServiceTermination</a></code> | *No description.* |
@@ -42782,7 +42698,7 @@ public void resetTermination()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.runCommand">runCommand</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.sourceDir">sourceDir</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a></code> | *No description.* |
 
 ---
 
@@ -42943,10 +42859,10 @@ public AppSpecServiceTerminationOutputReference getTermination();
 ##### `alertInput`<sup>Optional</sup> <a name="alertInput" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.alertInput"></a>
 
 ```java
-public java.lang.Object getAlertInput();
+public IResolvable|java.util.List<AppSpecServiceAlert> getAlertInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>>
 
 ---
 
@@ -43003,10 +42919,10 @@ public java.lang.String getDockerfilePathInput();
 ##### `envInput`<sup>Optional</sup> <a name="envInput" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.envInput"></a>
 
 ```java
-public java.lang.Object getEnvInput();
+public IResolvable|java.util.List<AppSpecServiceEnv> getEnvInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>>
 
 ---
 
@@ -43113,10 +43029,10 @@ public java.util.List<java.lang.Number> getInternalPortsInput();
 ##### `logDestinationInput`<sup>Optional</sup> <a name="logDestinationInput" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.logDestinationInput"></a>
 
 ```java
-public java.lang.Object getLogDestinationInput();
+public IResolvable|java.util.List<AppSpecServiceLogDestination> getLogDestinationInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>>
 
 ---
 
@@ -43133,10 +43049,10 @@ public java.lang.String getNameInput();
 ##### `routesInput`<sup>Optional</sup> <a name="routesInput" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.routesInput"></a>
 
 ```java
-public java.lang.Object getRoutesInput();
+public IResolvable|java.util.List<AppSpecServiceRoutes> getRoutesInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>>
 
 ---
 
@@ -43273,10 +43189,10 @@ public java.lang.String getSourceDir();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecService getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>
 
 ---
 
@@ -43402,7 +43318,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>></code> | *No description.* |
 
 ---
 
@@ -43433,10 +43349,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceRoutesList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecServiceRoutes> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>>
 
 ---
 
@@ -43684,10 +43600,10 @@ public void resetPreservePathPrefix()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.pathInput">pathInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.preservePathPrefixInput">preservePathPrefixInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.preservePathPrefixInput">preservePathPrefixInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.path">path</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.preservePathPrefix">preservePathPrefix</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.preservePathPrefix">preservePathPrefix</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a></code> | *No description.* |
 
 ---
 
@@ -43728,10 +43644,10 @@ public java.lang.String getPathInput();
 ##### `preservePathPrefixInput`<sup>Optional</sup> <a name="preservePathPrefixInput" id="@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.preservePathPrefixInput"></a>
 
 ```java
-public java.lang.Object getPreservePathPrefixInput();
+public java.lang.Boolean|IResolvable getPreservePathPrefixInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -43748,20 +43664,20 @@ public java.lang.String getPath();
 ##### `preservePathPrefix`<sup>Required</sup> <a name="preservePathPrefix" id="@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.preservePathPrefix"></a>
 
 ```java
-public java.lang.Object getPreservePathPrefix();
+public java.lang.Boolean|IResolvable getPreservePathPrefix();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecServiceRoutes getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>
 
 ---
 
@@ -44305,10 +44221,10 @@ public void resetRepo()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.branchInput">branchInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.repoInput">repoInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.branch">branch</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.repo">repo</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucket">AppSpecStaticSiteBitbucket</a></code> | *No description.* |
 
@@ -44351,10 +44267,10 @@ public java.lang.String getBranchInput();
 ##### `deployOnPushInput`<sup>Optional</sup> <a name="deployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.deployOnPushInput"></a>
 
 ```java
-public java.lang.Object getDeployOnPushInput();
+public java.lang.Boolean|IResolvable getDeployOnPushInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -44381,10 +44297,10 @@ public java.lang.String getBranch();
 ##### `deployOnPush`<sup>Required</sup> <a name="deployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.deployOnPush"></a>
 
 ```java
-public java.lang.Object getDeployOnPush();
+public java.lang.Boolean|IResolvable getDeployOnPush();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -45011,13 +44927,13 @@ public void resetMaxAge()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowOrigins">allowOrigins</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsAllowOriginsOutputReference">AppSpecStaticSiteCorsAllowOriginsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowCredentialsInput">allowCredentialsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowCredentialsInput">allowCredentialsInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowHeadersInput">allowHeadersInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowMethodsInput">allowMethodsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowOriginsInput">allowOriginsInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsAllowOrigins">AppSpecStaticSiteCorsAllowOrigins</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.exposeHeadersInput">exposeHeadersInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.maxAgeInput">maxAgeInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowCredentials">allowCredentials</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowCredentials">allowCredentials</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowHeaders">allowHeaders</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowMethods">allowMethods</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.exposeHeaders">exposeHeaders</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -45063,10 +44979,10 @@ public AppSpecStaticSiteCorsAllowOriginsOutputReference getAllowOrigins();
 ##### `allowCredentialsInput`<sup>Optional</sup> <a name="allowCredentialsInput" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowCredentialsInput"></a>
 
 ```java
-public java.lang.Object getAllowCredentialsInput();
+public java.lang.Boolean|IResolvable getAllowCredentialsInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -45123,10 +45039,10 @@ public java.lang.String getMaxAgeInput();
 ##### `allowCredentials`<sup>Required</sup> <a name="allowCredentials" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowCredentials"></a>
 
 ```java
-public java.lang.Object getAllowCredentials();
+public java.lang.Boolean|IResolvable getAllowCredentials();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -45302,7 +45218,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>></code> | *No description.* |
 
 ---
 
@@ -45333,10 +45249,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecStaticSiteEnv> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>>
 
 ---
 
@@ -45605,7 +45521,7 @@ public void resetValue()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvOutputReference.property.scope">scope</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a></code> | *No description.* |
 
 ---
 
@@ -45716,10 +45632,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecStaticSiteEnv getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>
 
 ---
 
@@ -45956,10 +45872,10 @@ public void resetRepo()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.branchInput">branchInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.repoInput">repoInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.branch">branch</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.repo">repo</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithub">AppSpecStaticSiteGithub</a></code> | *No description.* |
 
@@ -46002,10 +45918,10 @@ public java.lang.String getBranchInput();
 ##### `deployOnPushInput`<sup>Optional</sup> <a name="deployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.deployOnPushInput"></a>
 
 ```java
-public java.lang.Object getDeployOnPushInput();
+public java.lang.Boolean|IResolvable getDeployOnPushInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -46032,10 +45948,10 @@ public java.lang.String getBranch();
 ##### `deployOnPush`<sup>Required</sup> <a name="deployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.deployOnPush"></a>
 
 ```java
-public java.lang.Object getDeployOnPush();
+public java.lang.Boolean|IResolvable getDeployOnPush();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -46292,10 +46208,10 @@ public void resetRepo()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.branchInput">branchInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.repoInput">repoInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.branch">branch</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.repo">repo</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlab">AppSpecStaticSiteGitlab</a></code> | *No description.* |
 
@@ -46338,10 +46254,10 @@ public java.lang.String getBranchInput();
 ##### `deployOnPushInput`<sup>Optional</sup> <a name="deployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.deployOnPushInput"></a>
 
 ```java
-public java.lang.Object getDeployOnPushInput();
+public java.lang.Boolean|IResolvable getDeployOnPushInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -46368,10 +46284,10 @@ public java.lang.String getBranch();
 ##### `deployOnPush`<sup>Required</sup> <a name="deployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.deployOnPush"></a>
 
 ```java
-public java.lang.Object getDeployOnPush();
+public java.lang.Boolean|IResolvable getDeployOnPush();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -46824,7 +46740,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>></code> | *No description.* |
 
 ---
 
@@ -46855,10 +46771,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecStaticSite> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>>
 
 ---
 
@@ -47133,12 +47049,12 @@ public void putCors(AppSpecStaticSiteCors value)
 ##### `putEnv` <a name="putEnv" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.putEnv"></a>
 
 ```java
-public void putEnv(IResolvable OR java.util.List<AppSpecStaticSiteEnv> value)
+public void putEnv(IResolvable|java.util.List<AppSpecStaticSiteEnv> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.putEnv.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>>
 
 ---
 
@@ -47181,12 +47097,12 @@ public void putGitlab(AppSpecStaticSiteGitlab value)
 ##### `putRoutes` <a name="putRoutes" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.putRoutes"></a>
 
 ```java
-public void putRoutes(IResolvable OR java.util.List<AppSpecStaticSiteRoutes> value)
+public void putRoutes(IResolvable|java.util.List<AppSpecStaticSiteRoutes> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.putRoutes.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>>
 
 ---
 
@@ -47299,7 +47215,7 @@ public void resetSourceDir()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.catchallDocumentInput">catchallDocumentInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.corsInput">corsInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCors">AppSpecStaticSiteCors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.dockerfilePathInput">dockerfilePathInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.envInput">envInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.envInput">envInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.environmentSlugInput">environmentSlugInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.errorDocumentInput">errorDocumentInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.githubInput">githubInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithub">AppSpecStaticSiteGithub</a></code> | *No description.* |
@@ -47308,7 +47224,7 @@ public void resetSourceDir()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.indexDocumentInput">indexDocumentInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.outputDirInput">outputDirInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.routesInput">routesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.routesInput">routesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.sourceDirInput">sourceDirInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.buildCommand">buildCommand</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.catchallDocument">catchallDocument</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -47319,7 +47235,7 @@ public void resetSourceDir()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.outputDir">outputDir</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.sourceDir">sourceDir</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a></code> | *No description.* |
 
 ---
 
@@ -47470,10 +47386,10 @@ public java.lang.String getDockerfilePathInput();
 ##### `envInput`<sup>Optional</sup> <a name="envInput" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.envInput"></a>
 
 ```java
-public java.lang.Object getEnvInput();
+public IResolvable|java.util.List<AppSpecStaticSiteEnv> getEnvInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>>
 
 ---
 
@@ -47560,10 +47476,10 @@ public java.lang.String getOutputDirInput();
 ##### `routesInput`<sup>Optional</sup> <a name="routesInput" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.routesInput"></a>
 
 ```java
-public java.lang.Object getRoutesInput();
+public IResolvable|java.util.List<AppSpecStaticSiteRoutes> getRoutesInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>>
 
 ---
 
@@ -47670,10 +47586,10 @@ public java.lang.String getSourceDir();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecStaticSite getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>
 
 ---
 
@@ -47799,7 +47715,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>></code> | *No description.* |
 
 ---
 
@@ -47830,10 +47746,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecStaticSiteRoutes> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>>
 
 ---
 
@@ -48081,10 +47997,10 @@ public void resetPreservePathPrefix()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.pathInput">pathInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.preservePathPrefixInput">preservePathPrefixInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.preservePathPrefixInput">preservePathPrefixInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.path">path</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.preservePathPrefix">preservePathPrefix</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.preservePathPrefix">preservePathPrefix</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a></code> | *No description.* |
 
 ---
 
@@ -48125,10 +48041,10 @@ public java.lang.String getPathInput();
 ##### `preservePathPrefixInput`<sup>Optional</sup> <a name="preservePathPrefixInput" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.preservePathPrefixInput"></a>
 
 ```java
-public java.lang.Object getPreservePathPrefixInput();
+public java.lang.Boolean|IResolvable getPreservePathPrefixInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -48145,20 +48061,20 @@ public java.lang.String getPath();
 ##### `preservePathPrefix`<sup>Required</sup> <a name="preservePathPrefix" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.preservePathPrefix"></a>
 
 ```java
-public java.lang.Object getPreservePathPrefix();
+public java.lang.Boolean|IResolvable getPreservePathPrefix();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecStaticSiteRoutes getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>
 
 ---
 
@@ -48284,7 +48200,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecVpcList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecVpcList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecVpcList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecVpcList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>></code> | *No description.* |
 
 ---
 
@@ -48315,10 +48231,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecVpcList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecVpc> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>>
 
 ---
 
@@ -48553,7 +48469,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecVpcOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecVpcOutputReference.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecVpcOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecVpcOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecVpcOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a></code> | *No description.* |
 
 ---
 
@@ -48604,10 +48520,10 @@ public java.lang.String getId();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecVpcOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecVpc getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>
 
 ---
 
@@ -48821,12 +48737,12 @@ Returns a reversible string representation.
 ##### `putSlackWebhooks` <a name="putSlackWebhooks" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsOutputReference.putSlackWebhooks"></a>
 
 ```java
-public void putSlackWebhooks(IResolvable OR java.util.List<AppSpecWorkerAlertDestinationsSlackWebhooks> value)
+public void putSlackWebhooks(IResolvable|java.util.List<AppSpecWorkerAlertDestinationsSlackWebhooks> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsOutputReference.putSlackWebhooks.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>>
 
 ---
 
@@ -48851,7 +48767,7 @@ public void resetSlackWebhooks()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsOutputReference.property.slackWebhooks">slackWebhooks</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksList">AppSpecWorkerAlertDestinationsSlackWebhooksList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsOutputReference.property.emailsInput">emailsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsOutputReference.property.slackWebhooksInput">slackWebhooksInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsOutputReference.property.slackWebhooksInput">slackWebhooksInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsOutputReference.property.emails">emails</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinations">AppSpecWorkerAlertDestinations</a></code> | *No description.* |
 
@@ -48904,10 +48820,10 @@ public java.util.List<java.lang.String> getEmailsInput();
 ##### `slackWebhooksInput`<sup>Optional</sup> <a name="slackWebhooksInput" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsOutputReference.property.slackWebhooksInput"></a>
 
 ```java
-public java.lang.Object getSlackWebhooksInput();
+public IResolvable|java.util.List<AppSpecWorkerAlertDestinationsSlackWebhooks> getSlackWebhooksInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>>
 
 ---
 
@@ -49053,7 +48969,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>></code> | *No description.* |
 
 ---
 
@@ -49084,10 +49000,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecWorkerAlertDestinationsSlackWebhooks> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>>
 
 ---
 
@@ -49324,7 +49240,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksOutputReference.property.urlInput">urlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksOutputReference.property.channel">channel</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksOutputReference.property.url">url</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a></code> | *No description.* |
 
 ---
 
@@ -49395,10 +49311,10 @@ public java.lang.String getUrl();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecWorkerAlertDestinationsSlackWebhooks getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>
 
 ---
 
@@ -49524,7 +49440,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>></code> | *No description.* |
 
 ---
 
@@ -49555,10 +49471,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlertList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecWorkerAlert> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>>
 
 ---
 
@@ -49820,17 +49736,17 @@ public void resetDisabled()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.destinations">destinations</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsOutputReference">AppSpecWorkerAlertDestinationsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.destinationsInput">destinationsInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinations">AppSpecWorkerAlertDestinations</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.disabledInput">disabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.disabledInput">disabledInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.operatorInput">operatorInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.ruleInput">ruleInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.windowInput">windowInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.disabled">disabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.disabled">disabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.operator">operator</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.rule">rule</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.value">value</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.window">window</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a></code> | *No description.* |
 
 ---
 
@@ -49881,10 +49797,10 @@ public AppSpecWorkerAlertDestinations getDestinationsInput();
 ##### `disabledInput`<sup>Optional</sup> <a name="disabledInput" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.disabledInput"></a>
 
 ```java
-public java.lang.Object getDisabledInput();
+public java.lang.Boolean|IResolvable getDisabledInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -49931,10 +49847,10 @@ public java.lang.String getWindowInput();
 ##### `disabled`<sup>Required</sup> <a name="disabled" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.disabled"></a>
 
 ```java
-public java.lang.Object getDisabled();
+public java.lang.Boolean|IResolvable getDisabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -49981,10 +49897,10 @@ public java.lang.String getWindow();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecWorkerAlert getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>
 
 ---
 
@@ -51111,10 +51027,10 @@ public void resetRepo()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.branchInput">branchInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.repoInput">repoInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.branch">branch</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.repo">repo</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket">AppSpecWorkerBitbucket</a></code> | *No description.* |
 
@@ -51157,10 +51073,10 @@ public java.lang.String getBranchInput();
 ##### `deployOnPushInput`<sup>Optional</sup> <a name="deployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.deployOnPushInput"></a>
 
 ```java
-public java.lang.Object getDeployOnPushInput();
+public java.lang.Boolean|IResolvable getDeployOnPushInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -51187,10 +51103,10 @@ public java.lang.String getBranch();
 ##### `deployOnPush`<sup>Required</sup> <a name="deployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.deployOnPush"></a>
 
 ```java
-public java.lang.Object getDeployOnPush();
+public java.lang.Boolean|IResolvable getDeployOnPush();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -51336,7 +51252,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnvList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnvList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnvList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnvList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>></code> | *No description.* |
 
 ---
 
@@ -51367,10 +51283,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecWorkerEnvList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecWorkerEnv> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>>
 
 ---
 
@@ -51639,7 +51555,7 @@ public void resetValue()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnvOutputReference.property.scope">scope</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnvOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnvOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnvOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnvOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a></code> | *No description.* |
 
 ---
 
@@ -51750,10 +51666,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecWorkerEnvOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecWorkerEnv getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>
 
 ---
 
@@ -51990,10 +51906,10 @@ public void resetRepo()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.branchInput">branchInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.repoInput">repoInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.branch">branch</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.repo">repo</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithub">AppSpecWorkerGithub</a></code> | *No description.* |
 
@@ -52036,10 +51952,10 @@ public java.lang.String getBranchInput();
 ##### `deployOnPushInput`<sup>Optional</sup> <a name="deployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.deployOnPushInput"></a>
 
 ```java
-public java.lang.Object getDeployOnPushInput();
+public java.lang.Boolean|IResolvable getDeployOnPushInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -52066,10 +51982,10 @@ public java.lang.String getBranch();
 ##### `deployOnPush`<sup>Required</sup> <a name="deployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.deployOnPush"></a>
 
 ```java
-public java.lang.Object getDeployOnPush();
+public java.lang.Boolean|IResolvable getDeployOnPush();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -52326,10 +52242,10 @@ public void resetRepo()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.branchInput">branchInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.repoInput">repoInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.branch">branch</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.deployOnPush">deployOnPush</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.repo">repo</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlab">AppSpecWorkerGitlab</a></code> | *No description.* |
 
@@ -52372,10 +52288,10 @@ public java.lang.String getBranchInput();
 ##### `deployOnPushInput`<sup>Optional</sup> <a name="deployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.deployOnPushInput"></a>
 
 ```java
-public java.lang.Object getDeployOnPushInput();
+public java.lang.Boolean|IResolvable getDeployOnPushInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -52402,10 +52318,10 @@ public java.lang.String getBranch();
 ##### `deployOnPush`<sup>Required</sup> <a name="deployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.deployOnPush"></a>
 
 ```java
-public java.lang.Object getDeployOnPush();
+public java.lang.Boolean|IResolvable getDeployOnPush();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -52858,7 +52774,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>></code> | *No description.* |
 
 ---
 
@@ -52889,10 +52805,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecWorkerImageDeployOnPush> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>>
 
 ---
 
@@ -53132,9 +53048,9 @@ public void resetEnabled()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a></code> | *No description.* |
 
 ---
 
@@ -53165,30 +53081,30 @@ public java.lang.String getFqn();
 ##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.enabledInput"></a>
 
 ```java
-public java.lang.Object getEnabledInput();
+public java.lang.Boolean|IResolvable getEnabledInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.enabled"></a>
 
 ```java
-public java.lang.Object getEnabled();
+public java.lang.Boolean|IResolvable getEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecWorkerImageDeployOnPush getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>
 
 ---
 
@@ -53405,12 +53321,12 @@ Returns a reversible string representation.
 ##### `putDeployOnPush` <a name="putDeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.putDeployOnPush"></a>
 
 ```java
-public void putDeployOnPush(IResolvable OR java.util.List<AppSpecWorkerImageDeployOnPush> value)
+public void putDeployOnPush(IResolvable|java.util.List<AppSpecWorkerImageDeployOnPush> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.putDeployOnPush.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>>
 
 ---
 
@@ -53452,7 +53368,7 @@ public void resetTag()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.deployOnPush">deployOnPush</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushList">AppSpecWorkerImageDeployOnPushList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.deployOnPushInput">deployOnPushInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.digestInput">digestInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.registryCredentialsInput">registryCredentialsInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.registryInput">registryInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -53506,10 +53422,10 @@ public AppSpecWorkerImageDeployOnPushList getDeployOnPush();
 ##### `deployOnPushInput`<sup>Optional</sup> <a name="deployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.deployOnPushInput"></a>
 
 ```java
-public java.lang.Object getDeployOnPushInput();
+public IResolvable|java.util.List<AppSpecWorkerImageDeployOnPush> getDeployOnPushInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>>
 
 ---
 
@@ -53765,7 +53681,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>></code> | *No description.* |
 
 ---
 
@@ -53796,10 +53712,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecWorkerList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecWorker> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>>
 
 ---
 
@@ -54225,7 +54141,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>></code> | *No description.* |
 
 ---
 
@@ -54256,10 +54172,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AppSpecWorkerLogDestination> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>>
 
 ---
 
@@ -55531,7 +55447,7 @@ public void resetPapertrail()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationOutputReference.property.openSearchInput">openSearchInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationOpenSearch">AppSpecWorkerLogDestinationOpenSearch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationOutputReference.property.papertrailInput">papertrailInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationPapertrail">AppSpecWorkerLogDestinationPapertrail</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a></code> | *No description.* |
 
 ---
 
@@ -55662,10 +55578,10 @@ public java.lang.String getName();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecWorkerLogDestination getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>
 
 ---
 
@@ -56192,12 +56108,12 @@ Returns a reversible string representation.
 ##### `putAlert` <a name="putAlert" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putAlert"></a>
 
 ```java
-public void putAlert(IResolvable OR java.util.List<AppSpecWorkerAlert> value)
+public void putAlert(IResolvable|java.util.List<AppSpecWorkerAlert> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putAlert.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>>
 
 ---
 
@@ -56228,12 +56144,12 @@ public void putBitbucket(AppSpecWorkerBitbucket value)
 ##### `putEnv` <a name="putEnv" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putEnv"></a>
 
 ```java
-public void putEnv(IResolvable OR java.util.List<AppSpecWorkerEnv> value)
+public void putEnv(IResolvable|java.util.List<AppSpecWorkerEnv> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putEnv.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>>
 
 ---
 
@@ -56288,12 +56204,12 @@ public void putImage(AppSpecWorkerImage value)
 ##### `putLogDestination` <a name="putLogDestination" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putLogDestination"></a>
 
 ```java
-public void putLogDestination(IResolvable OR java.util.List<AppSpecWorkerLogDestination> value)
+public void putLogDestination(IResolvable|java.util.List<AppSpecWorkerLogDestination> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putLogDestination.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>>
 
 ---
 
@@ -56428,12 +56344,12 @@ public void resetTermination()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.image">image</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference">AppSpecWorkerImageOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.logDestination">logDestination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationList">AppSpecWorkerLogDestinationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.termination">termination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference">AppSpecWorkerTerminationOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.alertInput">alertInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.alertInput">alertInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.autoscalingInput">autoscalingInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscaling">AppSpecWorkerAutoscaling</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.bitbucketInput">bitbucketInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket">AppSpecWorkerBitbucket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.buildCommandInput">buildCommandInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.dockerfilePathInput">dockerfilePathInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.envInput">envInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.envInput">envInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.environmentSlugInput">environmentSlugInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.githubInput">githubInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithub">AppSpecWorkerGithub</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.gitInput">gitInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGit">AppSpecWorkerGit</a></code> | *No description.* |
@@ -56441,7 +56357,7 @@ public void resetTermination()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.imageInput">imageInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImage">AppSpecWorkerImage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.instanceCountInput">instanceCountInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.instanceSizeSlugInput">instanceSizeSlugInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.logDestinationInput">logDestinationInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.logDestinationInput">logDestinationInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.runCommandInput">runCommandInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.sourceDirInput">sourceDirInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -56454,7 +56370,7 @@ public void resetTermination()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.runCommand">runCommand</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.sourceDir">sourceDir</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a></code> | *No description.* |
 
 ---
 
@@ -56585,10 +56501,10 @@ public AppSpecWorkerTerminationOutputReference getTermination();
 ##### `alertInput`<sup>Optional</sup> <a name="alertInput" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.alertInput"></a>
 
 ```java
-public java.lang.Object getAlertInput();
+public IResolvable|java.util.List<AppSpecWorkerAlert> getAlertInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>>
 
 ---
 
@@ -56635,10 +56551,10 @@ public java.lang.String getDockerfilePathInput();
 ##### `envInput`<sup>Optional</sup> <a name="envInput" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.envInput"></a>
 
 ```java
-public java.lang.Object getEnvInput();
+public IResolvable|java.util.List<AppSpecWorkerEnv> getEnvInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>>
 
 ---
 
@@ -56715,10 +56631,10 @@ public java.lang.String getInstanceSizeSlugInput();
 ##### `logDestinationInput`<sup>Optional</sup> <a name="logDestinationInput" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.logDestinationInput"></a>
 
 ```java
-public java.lang.Object getLogDestinationInput();
+public IResolvable|java.util.List<AppSpecWorkerLogDestination> getLogDestinationInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>>
 
 ---
 
@@ -56845,10 +56761,10 @@ public java.lang.String getSourceDir();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppSpecWorker getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>
 
 ---
 
@@ -57350,7 +57266,7 @@ public void resetCreate()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppTimeoutsOutputReference.property.create">create</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppTimeouts">AppTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppTimeouts">AppTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -57401,10 +57317,10 @@ public java.lang.String getCreate();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-digitalocean.app.AppTimeoutsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AppTimeouts getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-digitalocean.app.AppTimeouts">AppTimeouts</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppTimeouts">AppTimeouts</a>
 
 ---
 

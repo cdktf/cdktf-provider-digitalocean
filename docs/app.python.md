@@ -14,14 +14,14 @@ from cdktf_cdktf_provider_digitalocean import app
 app.App(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  dedicated_ips: typing.Union[IResolvable, typing.List[AppDedicatedIps]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  dedicated_ips: IResolvable | typing.List[AppDedicatedIps] = None,
   id: str = None,
   project_id: str = None,
   spec: AppSpec = None,
@@ -33,14 +33,14 @@ app.App(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.dedicatedIps">dedicated_ips</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>]]</code> | dedicated_ips block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.dedicatedIps">dedicated_ips</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>]</code> | dedicated_ips block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#id App#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.projectId">project_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#project_id App#project_id}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.Initializer.parameter.spec">spec</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec">AppSpec</a></code> | spec block. |
@@ -68,13 +68,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.app.App.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.app.App.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -104,13 +104,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.app.App.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
 ##### `dedicated_ips`<sup>Optional</sup> <a name="dedicated_ips" id="@cdktf/provider-digitalocean.app.App.Initializer.parameter.dedicatedIps"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>]
 
 dedicated_ips block.
 
@@ -417,7 +417,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-digitalocean.app.App.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-digitalocean.app.App.importFrom"></a>
@@ -480,7 +480,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -496,7 +496,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-digitalocean.app.App.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -524,13 +524,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_dedicated_ips(
-  value: typing.Union[IResolvable, typing.List[AppDedicatedIps]]
+  value: IResolvable | typing.List[AppDedicatedIps]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.App.putDedicatedIps.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>]
 
 ---
 
@@ -539,25 +539,25 @@ def put_dedicated_ips(
 ```python
 def put_spec(
   name: str,
-  alert: typing.Union[IResolvable, typing.List[AppSpecAlert]] = None,
-  database: typing.Union[IResolvable, typing.List[AppSpecDatabase]] = None,
-  disable_edge_cache: typing.Union[bool, IResolvable] = None,
-  disable_email_obfuscation: typing.Union[bool, IResolvable] = None,
-  domain: typing.Union[IResolvable, typing.List[AppSpecDomain]] = None,
+  alert: IResolvable | typing.List[AppSpecAlert] = None,
+  database: IResolvable | typing.List[AppSpecDatabase] = None,
+  disable_edge_cache: bool | IResolvable = None,
+  disable_email_obfuscation: bool | IResolvable = None,
+  domain: IResolvable | typing.List[AppSpecDomain] = None,
   domains: typing.List[str] = None,
-  egress: typing.Union[IResolvable, typing.List[AppSpecEgress]] = None,
-  enhanced_threat_control_enabled: typing.Union[bool, IResolvable] = None,
-  env: typing.Union[IResolvable, typing.List[AppSpecEnv]] = None,
+  egress: IResolvable | typing.List[AppSpecEgress] = None,
+  enhanced_threat_control_enabled: bool | IResolvable = None,
+  env: IResolvable | typing.List[AppSpecEnv] = None,
   features: typing.List[str] = None,
-  function: typing.Union[IResolvable, typing.List[AppSpecFunction]] = None,
+  function: IResolvable | typing.List[AppSpecFunction] = None,
   ingress: AppSpecIngress = None,
-  job: typing.Union[IResolvable, typing.List[AppSpecJob]] = None,
+  job: IResolvable | typing.List[AppSpecJob] = None,
   maintenance: AppSpecMaintenance = None,
   region: str = None,
-  service: typing.Union[IResolvable, typing.List[AppSpecService]] = None,
-  static_site: typing.Union[IResolvable, typing.List[AppSpecStaticSite]] = None,
-  vpc: typing.Union[IResolvable, typing.List[AppSpecVpc]] = None,
-  worker: typing.Union[IResolvable, typing.List[AppSpecWorker]] = None
+  service: IResolvable | typing.List[AppSpecService] = None,
+  static_site: IResolvable | typing.List[AppSpecStaticSite] = None,
+  vpc: IResolvable | typing.List[AppSpecVpc] = None,
+  worker: IResolvable | typing.List[AppSpecWorker] = None
 ) -> None
 ```
 
@@ -573,7 +573,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `alert`<sup>Optional</sup> <a name="alert" id="@cdktf/provider-digitalocean.app.App.putSpec.parameter.alert"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>]
 
 alert block.
 
@@ -583,7 +583,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `database`<sup>Optional</sup> <a name="database" id="@cdktf/provider-digitalocean.app.App.putSpec.parameter.database"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>]
 
 database block.
 
@@ -593,7 +593,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `disable_edge_cache`<sup>Optional</sup> <a name="disable_edge_cache" id="@cdktf/provider-digitalocean.app.App.putSpec.parameter.disableEdgeCache"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to disable the edge cache for the app. Default is false, which enables the edge cache.
 
@@ -603,7 +603,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `disable_email_obfuscation`<sup>Optional</sup> <a name="disable_email_obfuscation" id="@cdktf/provider-digitalocean.app.App.putSpec.parameter.disableEmailObfuscation"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Email obfuscation configuration for the app. Default is false, which keeps the email obfuscated.
 
@@ -613,7 +613,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `domain`<sup>Optional</sup> <a name="domain" id="@cdktf/provider-digitalocean.app.App.putSpec.parameter.domain"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>]
 
 domain block.
 
@@ -631,7 +631,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `egress`<sup>Optional</sup> <a name="egress" id="@cdktf/provider-digitalocean.app.App.putSpec.parameter.egress"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>]
 
 egress block.
 
@@ -641,7 +641,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `enhanced_threat_control_enabled`<sup>Optional</sup> <a name="enhanced_threat_control_enabled" id="@cdktf/provider-digitalocean.app.App.putSpec.parameter.enhancedThreatControlEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to enable enhanced threat control for the app.
 
@@ -653,7 +653,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `env`<sup>Optional</sup> <a name="env" id="@cdktf/provider-digitalocean.app.App.putSpec.parameter.env"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>]
 
 env block.
 
@@ -673,7 +673,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `function`<sup>Optional</sup> <a name="function" id="@cdktf/provider-digitalocean.app.App.putSpec.parameter.function"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>]
 
 function block.
 
@@ -693,7 +693,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `job`<sup>Optional</sup> <a name="job" id="@cdktf/provider-digitalocean.app.App.putSpec.parameter.job"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>]
 
 job block.
 
@@ -723,7 +723,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `service`<sup>Optional</sup> <a name="service" id="@cdktf/provider-digitalocean.app.App.putSpec.parameter.service"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>]
 
 service block.
 
@@ -733,7 +733,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `static_site`<sup>Optional</sup> <a name="static_site" id="@cdktf/provider-digitalocean.app.App.putSpec.parameter.staticSite"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>]
 
 static_site block.
 
@@ -743,7 +743,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `vpc`<sup>Optional</sup> <a name="vpc" id="@cdktf/provider-digitalocean.app.App.putSpec.parameter.vpc"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>]
 
 vpc block.
 
@@ -753,7 +753,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `worker`<sup>Optional</sup> <a name="worker" id="@cdktf/provider-digitalocean.app.App.putSpec.parameter.worker"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>]
 
 worker block.
 
@@ -944,13 +944,13 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.App.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.App.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.App.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.App.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.App.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.App.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.activeDeploymentId">active_deployment_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.createdAt">created_at</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.dedicatedIps">dedicated_ips</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppDedicatedIpsList">AppDedicatedIpsList</a></code> | *No description.* |
@@ -961,11 +961,11 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppTimeoutsOutputReference">AppTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.updatedAt">updated_at</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.urn">urn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.App.property.dedicatedIpsInput">dedicated_ips_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.App.property.dedicatedIpsInput">dedicated_ips_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.projectIdInput">project_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.specInput">spec_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec">AppSpec</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.App.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppTimeouts">AppTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.App.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppTimeouts">AppTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.projectId">project_id</a></code> | <code>str</code> | *No description.* |
 
@@ -1046,20 +1046,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.app.App.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.app.App.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1106,10 +1106,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.app.App.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1216,10 +1216,10 @@ urn: str
 ##### `dedicated_ips_input`<sup>Optional</sup> <a name="dedicated_ips_input" id="@cdktf/provider-digitalocean.app.App.property.dedicatedIpsInput"></a>
 
 ```python
-dedicated_ips_input: typing.Union[IResolvable, typing.List[AppDedicatedIps]]
+dedicated_ips_input: IResolvable | typing.List[AppDedicatedIps]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>]
 
 ---
 
@@ -1256,10 +1256,10 @@ spec_input: AppSpec
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-digitalocean.app.App.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[IResolvable, AppTimeouts]
+timeouts_input: IResolvable | AppTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppTimeouts">AppTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppTimeouts">AppTimeouts</a>
 
 ---
 
@@ -1311,14 +1311,14 @@ tfResourceType: str
 from cdktf_cdktf_provider_digitalocean import app
 
 app.AppConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  dedicated_ips: typing.Union[IResolvable, typing.List[AppDedicatedIps]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  dedicated_ips: IResolvable | typing.List[AppDedicatedIps] = None,
   id: str = None,
   project_id: str = None,
   spec: AppSpec = None,
@@ -1330,14 +1330,14 @@ app.AppConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.dedicatedIps">dedicated_ips</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>]]</code> | dedicated_ips block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.dedicatedIps">dedicated_ips</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>]</code> | dedicated_ips block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#id App#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.projectId">project_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#project_id App#project_id}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.spec">spec</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec">AppSpec</a></code> | spec block. |
@@ -1348,20 +1348,20 @@ app.AppConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.app.AppConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.app.AppConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1408,20 +1408,20 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.app.AppConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
 ##### `dedicated_ips`<sup>Optional</sup> <a name="dedicated_ips" id="@cdktf/provider-digitalocean.app.AppConfig.property.dedicatedIps"></a>
 
 ```python
-dedicated_ips: typing.Union[IResolvable, typing.List[AppDedicatedIps]]
+dedicated_ips: IResolvable | typing.List[AppDedicatedIps]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>]
 
 dedicated_ips block.
 
@@ -1562,25 +1562,25 @@ from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpec(
   name: str,
-  alert: typing.Union[IResolvable, typing.List[AppSpecAlert]] = None,
-  database: typing.Union[IResolvable, typing.List[AppSpecDatabase]] = None,
-  disable_edge_cache: typing.Union[bool, IResolvable] = None,
-  disable_email_obfuscation: typing.Union[bool, IResolvable] = None,
-  domain: typing.Union[IResolvable, typing.List[AppSpecDomain]] = None,
+  alert: IResolvable | typing.List[AppSpecAlert] = None,
+  database: IResolvable | typing.List[AppSpecDatabase] = None,
+  disable_edge_cache: bool | IResolvable = None,
+  disable_email_obfuscation: bool | IResolvable = None,
+  domain: IResolvable | typing.List[AppSpecDomain] = None,
   domains: typing.List[str] = None,
-  egress: typing.Union[IResolvable, typing.List[AppSpecEgress]] = None,
-  enhanced_threat_control_enabled: typing.Union[bool, IResolvable] = None,
-  env: typing.Union[IResolvable, typing.List[AppSpecEnv]] = None,
+  egress: IResolvable | typing.List[AppSpecEgress] = None,
+  enhanced_threat_control_enabled: bool | IResolvable = None,
+  env: IResolvable | typing.List[AppSpecEnv] = None,
   features: typing.List[str] = None,
-  function: typing.Union[IResolvable, typing.List[AppSpecFunction]] = None,
+  function: IResolvable | typing.List[AppSpecFunction] = None,
   ingress: AppSpecIngress = None,
-  job: typing.Union[IResolvable, typing.List[AppSpecJob]] = None,
+  job: IResolvable | typing.List[AppSpecJob] = None,
   maintenance: AppSpecMaintenance = None,
   region: str = None,
-  service: typing.Union[IResolvable, typing.List[AppSpecService]] = None,
-  static_site: typing.Union[IResolvable, typing.List[AppSpecStaticSite]] = None,
-  vpc: typing.Union[IResolvable, typing.List[AppSpecVpc]] = None,
-  worker: typing.Union[IResolvable, typing.List[AppSpecWorker]] = None
+  service: IResolvable | typing.List[AppSpecService] = None,
+  static_site: IResolvable | typing.List[AppSpecStaticSite] = None,
+  vpc: IResolvable | typing.List[AppSpecVpc] = None,
+  worker: IResolvable | typing.List[AppSpecWorker] = None
 )
 ```
 
@@ -1589,25 +1589,25 @@ app.AppSpec(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.name">name</a></code> | <code>str</code> | The name of the app. Must be unique across all apps in the same account. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.alert">alert</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>]]</code> | alert block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.database">database</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>]]</code> | database block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.disableEdgeCache">disable_edge_cache</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to disable the edge cache for the app. Default is false, which enables the edge cache. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.disableEmailObfuscation">disable_email_obfuscation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Email obfuscation configuration for the app. Default is false, which keeps the email obfuscated. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.domain">domain</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>]]</code> | domain block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.alert">alert</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>]</code> | alert block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.database">database</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>]</code> | database block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.disableEdgeCache">disable_edge_cache</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to disable the edge cache for the app. Default is false, which enables the edge cache. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.disableEmailObfuscation">disable_email_obfuscation</a></code> | <code>bool \| cdktf.IResolvable</code> | Email obfuscation configuration for the app. Default is false, which keeps the email obfuscated. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.domain">domain</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>]</code> | domain block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.domains">domains</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#domains App#domains}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.egress">egress</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>]]</code> | egress block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.enhancedThreatControlEnabled">enhanced_threat_control_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to enable enhanced threat control for the app. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.env">env</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>]]</code> | env block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.egress">egress</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>]</code> | egress block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.enhancedThreatControlEnabled">enhanced_threat_control_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to enable enhanced threat control for the app. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.env">env</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>]</code> | env block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.features">features</a></code> | <code>typing.List[str]</code> | List of features which is applied to the app. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.function">function</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>]]</code> | function block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.function">function</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>]</code> | function block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.ingress">ingress</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngress">AppSpecIngress</a></code> | ingress block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.job">job</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>]]</code> | job block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.job">job</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>]</code> | job block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.maintenance">maintenance</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenance">AppSpecMaintenance</a></code> | maintenance block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.region">region</a></code> | <code>str</code> | The slug for the DigitalOcean data center region hosting the app. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.service">service</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>]]</code> | service block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.staticSite">static_site</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>]]</code> | static_site block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.vpc">vpc</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>]]</code> | vpc block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.worker">worker</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>]]</code> | worker block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.service">service</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>]</code> | service block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.staticSite">static_site</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>]</code> | static_site block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.vpc">vpc</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>]</code> | vpc block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.worker">worker</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>]</code> | worker block. |
 
 ---
 
@@ -1628,10 +1628,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `alert`<sup>Optional</sup> <a name="alert" id="@cdktf/provider-digitalocean.app.AppSpec.property.alert"></a>
 
 ```python
-alert: typing.Union[IResolvable, typing.List[AppSpecAlert]]
+alert: IResolvable | typing.List[AppSpecAlert]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>]
 
 alert block.
 
@@ -1642,10 +1642,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `database`<sup>Optional</sup> <a name="database" id="@cdktf/provider-digitalocean.app.AppSpec.property.database"></a>
 
 ```python
-database: typing.Union[IResolvable, typing.List[AppSpecDatabase]]
+database: IResolvable | typing.List[AppSpecDatabase]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>]
 
 database block.
 
@@ -1656,10 +1656,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `disable_edge_cache`<sup>Optional</sup> <a name="disable_edge_cache" id="@cdktf/provider-digitalocean.app.AppSpec.property.disableEdgeCache"></a>
 
 ```python
-disable_edge_cache: typing.Union[bool, IResolvable]
+disable_edge_cache: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to disable the edge cache for the app. Default is false, which enables the edge cache.
 
@@ -1670,10 +1670,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `disable_email_obfuscation`<sup>Optional</sup> <a name="disable_email_obfuscation" id="@cdktf/provider-digitalocean.app.AppSpec.property.disableEmailObfuscation"></a>
 
 ```python
-disable_email_obfuscation: typing.Union[bool, IResolvable]
+disable_email_obfuscation: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Email obfuscation configuration for the app. Default is false, which keeps the email obfuscated.
 
@@ -1684,10 +1684,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `domain`<sup>Optional</sup> <a name="domain" id="@cdktf/provider-digitalocean.app.AppSpec.property.domain"></a>
 
 ```python
-domain: typing.Union[IResolvable, typing.List[AppSpecDomain]]
+domain: IResolvable | typing.List[AppSpecDomain]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>]
 
 domain block.
 
@@ -1710,10 +1710,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `egress`<sup>Optional</sup> <a name="egress" id="@cdktf/provider-digitalocean.app.AppSpec.property.egress"></a>
 
 ```python
-egress: typing.Union[IResolvable, typing.List[AppSpecEgress]]
+egress: IResolvable | typing.List[AppSpecEgress]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>]
 
 egress block.
 
@@ -1724,10 +1724,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `enhanced_threat_control_enabled`<sup>Optional</sup> <a name="enhanced_threat_control_enabled" id="@cdktf/provider-digitalocean.app.AppSpec.property.enhancedThreatControlEnabled"></a>
 
 ```python
-enhanced_threat_control_enabled: typing.Union[bool, IResolvable]
+enhanced_threat_control_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to enable enhanced threat control for the app.
 
@@ -1740,10 +1740,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `env`<sup>Optional</sup> <a name="env" id="@cdktf/provider-digitalocean.app.AppSpec.property.env"></a>
 
 ```python
-env: typing.Union[IResolvable, typing.List[AppSpecEnv]]
+env: IResolvable | typing.List[AppSpecEnv]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>]
 
 env block.
 
@@ -1768,10 +1768,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `function`<sup>Optional</sup> <a name="function" id="@cdktf/provider-digitalocean.app.AppSpec.property.function"></a>
 
 ```python
-function: typing.Union[IResolvable, typing.List[AppSpecFunction]]
+function: IResolvable | typing.List[AppSpecFunction]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>]
 
 function block.
 
@@ -1796,10 +1796,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `job`<sup>Optional</sup> <a name="job" id="@cdktf/provider-digitalocean.app.AppSpec.property.job"></a>
 
 ```python
-job: typing.Union[IResolvable, typing.List[AppSpecJob]]
+job: IResolvable | typing.List[AppSpecJob]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>]
 
 job block.
 
@@ -1838,10 +1838,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `service`<sup>Optional</sup> <a name="service" id="@cdktf/provider-digitalocean.app.AppSpec.property.service"></a>
 
 ```python
-service: typing.Union[IResolvable, typing.List[AppSpecService]]
+service: IResolvable | typing.List[AppSpecService]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>]
 
 service block.
 
@@ -1852,10 +1852,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `static_site`<sup>Optional</sup> <a name="static_site" id="@cdktf/provider-digitalocean.app.AppSpec.property.staticSite"></a>
 
 ```python
-static_site: typing.Union[IResolvable, typing.List[AppSpecStaticSite]]
+static_site: IResolvable | typing.List[AppSpecStaticSite]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>]
 
 static_site block.
 
@@ -1866,10 +1866,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `vpc`<sup>Optional</sup> <a name="vpc" id="@cdktf/provider-digitalocean.app.AppSpec.property.vpc"></a>
 
 ```python
-vpc: typing.Union[IResolvable, typing.List[AppSpecVpc]]
+vpc: IResolvable | typing.List[AppSpecVpc]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>]
 
 vpc block.
 
@@ -1880,10 +1880,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `worker`<sup>Optional</sup> <a name="worker" id="@cdktf/provider-digitalocean.app.AppSpec.property.worker"></a>
 
 ```python
-worker: typing.Union[IResolvable, typing.List[AppSpecWorker]]
+worker: IResolvable | typing.List[AppSpecWorker]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>]
 
 worker block.
 
@@ -1901,7 +1901,7 @@ from cdktf_cdktf_provider_digitalocean import app
 app.AppSpecAlert(
   rule: str,
   destinations: AppSpecAlertDestinations = None,
-  disabled: typing.Union[bool, IResolvable] = None
+  disabled: bool | IResolvable = None
 )
 ```
 
@@ -1911,7 +1911,7 @@ app.AppSpecAlert(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlert.property.rule">rule</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#rule App#rule}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlert.property.destinations">destinations</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinations">AppSpecAlertDestinations</a></code> | destinations block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlert.property.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlert.property.disabled">disabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -1944,10 +1944,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `disabled`<sup>Optional</sup> <a name="disabled" id="@cdktf/provider-digitalocean.app.AppSpecAlert.property.disabled"></a>
 
 ```python
-disabled: typing.Union[bool, IResolvable]
+disabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}.
 
@@ -1962,7 +1962,7 @@ from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecAlertDestinations(
   emails: typing.List[str] = None,
-  slack_webhooks: typing.Union[IResolvable, typing.List[AppSpecAlertDestinationsSlackWebhooks]] = None
+  slack_webhooks: IResolvable | typing.List[AppSpecAlertDestinationsSlackWebhooks] = None
 )
 ```
 
@@ -1971,7 +1971,7 @@ app.AppSpecAlertDestinations(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinations.property.emails">emails</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#emails App#emails}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinations.property.slackWebhooks">slack_webhooks</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>]]</code> | slack_webhooks block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinations.property.slackWebhooks">slack_webhooks</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>]</code> | slack_webhooks block. |
 
 ---
 
@@ -1990,10 +1990,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `slack_webhooks`<sup>Optional</sup> <a name="slack_webhooks" id="@cdktf/provider-digitalocean.app.AppSpecAlertDestinations.property.slackWebhooks"></a>
 
 ```python
-slack_webhooks: typing.Union[IResolvable, typing.List[AppSpecAlertDestinationsSlackWebhooks]]
+slack_webhooks: IResolvable | typing.List[AppSpecAlertDestinationsSlackWebhooks]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>]
 
 slack_webhooks block.
 
@@ -2064,7 +2064,7 @@ app.AppSpecDatabase(
   db_user: str = None,
   engine: str = None,
   name: str = None,
-  production: typing.Union[bool, IResolvable] = None,
+  production: bool | IResolvable = None,
   version: str = None
 )
 ```
@@ -2078,7 +2078,7 @@ app.AppSpecDatabase(
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase.property.dbUser">db_user</a></code> | <code>str</code> | The name of the MySQL or PostgreSQL user to configure. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase.property.engine">engine</a></code> | <code>str</code> | The database engine to use. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase.property.name">name</a></code> | <code>str</code> | The name of the component. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase.property.production">production</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether this is a production or dev database. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase.property.production">production</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether this is a production or dev database. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase.property.version">version</a></code> | <code>str</code> | The version of the database engine. |
 
 ---
@@ -2158,10 +2158,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `production`<sup>Optional</sup> <a name="production" id="@cdktf/provider-digitalocean.app.AppSpecDatabase.property.production"></a>
 
 ```python
-production: typing.Union[bool, IResolvable]
+production: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether this is a production or dev database.
 
@@ -2193,7 +2193,7 @@ from cdktf_cdktf_provider_digitalocean import app
 app.AppSpecDomain(
   name: str,
   type: str = None,
-  wildcard: typing.Union[bool, IResolvable] = None,
+  wildcard: bool | IResolvable = None,
   zone: str = None
 )
 ```
@@ -2204,7 +2204,7 @@ app.AppSpecDomain(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomain.property.name">name</a></code> | <code>str</code> | The hostname for the domain. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomain.property.type">type</a></code> | <code>str</code> | The type of the domain. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomain.property.wildcard">wildcard</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether the domain includes all sub-domains, in addition to the given domain. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomain.property.wildcard">wildcard</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether the domain includes all sub-domains, in addition to the given domain. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomain.property.zone">zone</a></code> | <code>str</code> | If the domain uses DigitalOcean DNS and you would like App Platform to automatically manage it for you, set this to the name of the domain on your account. |
 
 ---
@@ -2240,10 +2240,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `wildcard`<sup>Optional</sup> <a name="wildcard" id="@cdktf/provider-digitalocean.app.AppSpecDomain.property.wildcard"></a>
 
 ```python
-wildcard: typing.Union[bool, IResolvable]
+wildcard: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether the domain includes all sub-domains, in addition to the given domain.
 
@@ -2390,15 +2390,15 @@ from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecFunction(
   name: str,
-  alert: typing.Union[IResolvable, typing.List[AppSpecFunctionAlert]] = None,
+  alert: IResolvable | typing.List[AppSpecFunctionAlert] = None,
   bitbucket: AppSpecFunctionBitbucket = None,
   cors: AppSpecFunctionCors = None,
-  env: typing.Union[IResolvable, typing.List[AppSpecFunctionEnv]] = None,
+  env: IResolvable | typing.List[AppSpecFunctionEnv] = None,
   git: AppSpecFunctionGit = None,
   github: AppSpecFunctionGithub = None,
   gitlab: AppSpecFunctionGitlab = None,
-  log_destination: typing.Union[IResolvable, typing.List[AppSpecFunctionLogDestination]] = None,
-  routes: typing.Union[IResolvable, typing.List[AppSpecFunctionRoutes]] = None,
+  log_destination: IResolvable | typing.List[AppSpecFunctionLogDestination] = None,
+  routes: IResolvable | typing.List[AppSpecFunctionRoutes] = None,
   source_dir: str = None
 )
 ```
@@ -2408,15 +2408,15 @@ app.AppSpecFunction(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.name">name</a></code> | <code>str</code> | The name of the component. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.alert">alert</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>]]</code> | alert block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.alert">alert</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>]</code> | alert block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.bitbucket">bitbucket</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket">AppSpecFunctionBitbucket</a></code> | bitbucket block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.cors">cors</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCors">AppSpecFunctionCors</a></code> | cors block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.env">env</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>]]</code> | env block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.env">env</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>]</code> | env block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.git">git</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGit">AppSpecFunctionGit</a></code> | git block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.github">github</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithub">AppSpecFunctionGithub</a></code> | github block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.gitlab">gitlab</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlab">AppSpecFunctionGitlab</a></code> | gitlab block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.logDestination">log_destination</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>]]</code> | log_destination block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.routes">routes</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>]]</code> | routes block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.logDestination">log_destination</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>]</code> | log_destination block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.routes">routes</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>]</code> | routes block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.sourceDir">source_dir</a></code> | <code>str</code> | An optional path to the working directory to use for the build. |
 
 ---
@@ -2438,10 +2438,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `alert`<sup>Optional</sup> <a name="alert" id="@cdktf/provider-digitalocean.app.AppSpecFunction.property.alert"></a>
 
 ```python
-alert: typing.Union[IResolvable, typing.List[AppSpecFunctionAlert]]
+alert: IResolvable | typing.List[AppSpecFunctionAlert]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>]
 
 alert block.
 
@@ -2480,10 +2480,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `env`<sup>Optional</sup> <a name="env" id="@cdktf/provider-digitalocean.app.AppSpecFunction.property.env"></a>
 
 ```python
-env: typing.Union[IResolvable, typing.List[AppSpecFunctionEnv]]
+env: IResolvable | typing.List[AppSpecFunctionEnv]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>]
 
 env block.
 
@@ -2536,10 +2536,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `log_destination`<sup>Optional</sup> <a name="log_destination" id="@cdktf/provider-digitalocean.app.AppSpecFunction.property.logDestination"></a>
 
 ```python
-log_destination: typing.Union[IResolvable, typing.List[AppSpecFunctionLogDestination]]
+log_destination: IResolvable | typing.List[AppSpecFunctionLogDestination]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>]
 
 log_destination block.
 
@@ -2550,10 +2550,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `routes`<sup>Optional</sup> <a name="routes" id="@cdktf/provider-digitalocean.app.AppSpecFunction.property.routes"></a>
 
 ```python
-routes: typing.Union[IResolvable, typing.List[AppSpecFunctionRoutes]]
+routes: IResolvable | typing.List[AppSpecFunctionRoutes]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>]
 
 routes block.
 
@@ -2588,7 +2588,7 @@ app.AppSpecFunctionAlert(
   value: typing.Union[int, float],
   window: str,
   destinations: AppSpecFunctionAlertDestinations = None,
-  disabled: typing.Union[bool, IResolvable] = None
+  disabled: bool | IResolvable = None
 )
 ```
 
@@ -2601,7 +2601,7 @@ app.AppSpecFunctionAlert(
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#value App#value}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.window">window</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#window App#window}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.destinations">destinations</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinations">AppSpecFunctionAlertDestinations</a></code> | destinations block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.disabled">disabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -2670,10 +2670,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `disabled`<sup>Optional</sup> <a name="disabled" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.disabled"></a>
 
 ```python
-disabled: typing.Union[bool, IResolvable]
+disabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}.
 
@@ -2688,7 +2688,7 @@ from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecFunctionAlertDestinations(
   emails: typing.List[str] = None,
-  slack_webhooks: typing.Union[IResolvable, typing.List[AppSpecFunctionAlertDestinationsSlackWebhooks]] = None
+  slack_webhooks: IResolvable | typing.List[AppSpecFunctionAlertDestinationsSlackWebhooks] = None
 )
 ```
 
@@ -2697,7 +2697,7 @@ app.AppSpecFunctionAlertDestinations(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinations.property.emails">emails</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#emails App#emails}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinations.property.slackWebhooks">slack_webhooks</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>]]</code> | slack_webhooks block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinations.property.slackWebhooks">slack_webhooks</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>]</code> | slack_webhooks block. |
 
 ---
 
@@ -2716,10 +2716,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `slack_webhooks`<sup>Optional</sup> <a name="slack_webhooks" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinations.property.slackWebhooks"></a>
 
 ```python
-slack_webhooks: typing.Union[IResolvable, typing.List[AppSpecFunctionAlertDestinationsSlackWebhooks]]
+slack_webhooks: IResolvable | typing.List[AppSpecFunctionAlertDestinationsSlackWebhooks]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>]
 
 slack_webhooks block.
 
@@ -2786,7 +2786,7 @@ from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecFunctionBitbucket(
   branch: str = None,
-  deploy_on_push: typing.Union[bool, IResolvable] = None,
+  deploy_on_push: bool | IResolvable = None,
   repo: str = None
 )
 ```
@@ -2796,7 +2796,7 @@ app.AppSpecFunctionBitbucket(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket.property.branch">branch</a></code> | <code>str</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket.property.deployOnPush">deploy_on_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket.property.deployOnPush">deploy_on_push</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket.property.repo">repo</a></code> | <code>str</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -2818,10 +2818,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket.property.deployOnPush"></a>
 
 ```python
-deploy_on_push: typing.Union[bool, IResolvable]
+deploy_on_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -2851,7 +2851,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecFunctionCors(
-  allow_credentials: typing.Union[bool, IResolvable] = None,
+  allow_credentials: bool | IResolvable = None,
   allow_headers: typing.List[str] = None,
   allow_methods: typing.List[str] = None,
   allow_origins: AppSpecFunctionCorsAllowOrigins = None,
@@ -2864,7 +2864,7 @@ app.AppSpecFunctionCors(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCors.property.allowCredentials">allow_credentials</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCors.property.allowCredentials">allow_credentials</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCors.property.allowHeaders">allow_headers</a></code> | <code>typing.List[str]</code> | The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCors.property.allowMethods">allow_methods</a></code> | <code>typing.List[str]</code> | The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCors.property.allowOrigins">allow_origins</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsAllowOrigins">AppSpecFunctionCorsAllowOrigins</a></code> | allow_origins block. |
@@ -2876,10 +2876,10 @@ app.AppSpecFunctionCors(
 ##### `allow_credentials`<sup>Optional</sup> <a name="allow_credentials" id="@cdktf/provider-digitalocean.app.AppSpecFunctionCors.property.allowCredentials"></a>
 
 ```python
-allow_credentials: typing.Union[bool, IResolvable]
+allow_credentials: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`.
 
@@ -3168,7 +3168,7 @@ from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecFunctionGithub(
   branch: str = None,
-  deploy_on_push: typing.Union[bool, IResolvable] = None,
+  deploy_on_push: bool | IResolvable = None,
   repo: str = None
 )
 ```
@@ -3178,7 +3178,7 @@ app.AppSpecFunctionGithub(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithub.property.branch">branch</a></code> | <code>str</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithub.property.deployOnPush">deploy_on_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithub.property.deployOnPush">deploy_on_push</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithub.property.repo">repo</a></code> | <code>str</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -3200,10 +3200,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecFunctionGithub.property.deployOnPush"></a>
 
 ```python
-deploy_on_push: typing.Union[bool, IResolvable]
+deploy_on_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -3234,7 +3234,7 @@ from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecFunctionGitlab(
   branch: str = None,
-  deploy_on_push: typing.Union[bool, IResolvable] = None,
+  deploy_on_push: bool | IResolvable = None,
   repo: str = None
 )
 ```
@@ -3244,7 +3244,7 @@ app.AppSpecFunctionGitlab(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlab.property.branch">branch</a></code> | <code>str</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlab.property.deployOnPush">deploy_on_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlab.property.deployOnPush">deploy_on_push</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlab.property.repo">repo</a></code> | <code>str</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -3266,10 +3266,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecFunctionGitlab.property.deployOnPush"></a>
 
 ```python
-deploy_on_push: typing.Union[bool, IResolvable]
+deploy_on_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -3648,7 +3648,7 @@ from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecFunctionRoutes(
   path: str = None,
-  preserve_path_prefix: typing.Union[bool, IResolvable] = None
+  preserve_path_prefix: bool | IResolvable = None
 )
 ```
 
@@ -3657,7 +3657,7 @@ app.AppSpecFunctionRoutes(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes.property.path">path</a></code> | <code>str</code> | Path specifies an route by HTTP path prefix. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes.property.preservePathPrefix">preserve_path_prefix</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | An optional flag to preserve the path that is forwarded to the backend service. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes.property.preservePathPrefix">preserve_path_prefix</a></code> | <code>bool \| cdktf.IResolvable</code> | An optional flag to preserve the path that is forwarded to the backend service. |
 
 ---
 
@@ -3680,10 +3680,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `preserve_path_prefix`<sup>Optional</sup> <a name="preserve_path_prefix" id="@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes.property.preservePathPrefix"></a>
 
 ```python
-preserve_path_prefix: typing.Union[bool, IResolvable]
+preserve_path_prefix: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 An optional flag to preserve the path that is forwarded to the backend service.
 
@@ -3699,7 +3699,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecIngress(
-  rule: typing.Union[IResolvable, typing.List[AppSpecIngressRule]] = None
+  rule: IResolvable | typing.List[AppSpecIngressRule] = None
 )
 ```
 
@@ -3707,17 +3707,17 @@ app.AppSpecIngress(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngress.property.rule">rule</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>]]</code> | rule block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngress.property.rule">rule</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>]</code> | rule block. |
 
 ---
 
 ##### `rule`<sup>Optional</sup> <a name="rule" id="@cdktf/provider-digitalocean.app.AppSpecIngress.property.rule"></a>
 
 ```python
-rule: typing.Union[IResolvable, typing.List[AppSpecIngressRule]]
+rule: IResolvable | typing.List[AppSpecIngressRule]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>]
 
 rule block.
 
@@ -3816,7 +3816,7 @@ from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecIngressRuleComponent(
   name: str = None,
-  preserve_path_prefix: typing.Union[bool, IResolvable] = None,
+  preserve_path_prefix: bool | IResolvable = None,
   rewrite: str = None
 )
 ```
@@ -3826,7 +3826,7 @@ app.AppSpecIngressRuleComponent(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#name App#name}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.preservePathPrefix">preserve_path_prefix</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.preservePathPrefix">preserve_path_prefix</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.rewrite">rewrite</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#rewrite App#rewrite}. |
 
 ---
@@ -3846,10 +3846,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `preserve_path_prefix`<sup>Optional</sup> <a name="preserve_path_prefix" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.preservePathPrefix"></a>
 
 ```python
-preserve_path_prefix: typing.Union[bool, IResolvable]
+preserve_path_prefix: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}.
 
@@ -3875,7 +3875,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecIngressRuleCors(
-  allow_credentials: typing.Union[bool, IResolvable] = None,
+  allow_credentials: bool | IResolvable = None,
   allow_headers: typing.List[str] = None,
   allow_methods: typing.List[str] = None,
   allow_origins: AppSpecIngressRuleCorsAllowOrigins = None,
@@ -3888,7 +3888,7 @@ app.AppSpecIngressRuleCors(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors.property.allowCredentials">allow_credentials</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors.property.allowCredentials">allow_credentials</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors.property.allowHeaders">allow_headers</a></code> | <code>typing.List[str]</code> | The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors.property.allowMethods">allow_methods</a></code> | <code>typing.List[str]</code> | The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors.property.allowOrigins">allow_origins</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOrigins">AppSpecIngressRuleCorsAllowOrigins</a></code> | allow_origins block. |
@@ -3900,10 +3900,10 @@ app.AppSpecIngressRuleCors(
 ##### `allow_credentials`<sup>Optional</sup> <a name="allow_credentials" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors.property.allowCredentials"></a>
 
 ```python
-allow_credentials: typing.Union[bool, IResolvable]
+allow_credentials: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`.
 
@@ -4262,11 +4262,11 @@ from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecJob(
   name: str,
-  alert: typing.Union[IResolvable, typing.List[AppSpecJobAlert]] = None,
+  alert: IResolvable | typing.List[AppSpecJobAlert] = None,
   bitbucket: AppSpecJobBitbucket = None,
   build_command: str = None,
   dockerfile_path: str = None,
-  env: typing.Union[IResolvable, typing.List[AppSpecJobEnv]] = None,
+  env: IResolvable | typing.List[AppSpecJobEnv] = None,
   environment_slug: str = None,
   git: AppSpecJobGit = None,
   github: AppSpecJobGithub = None,
@@ -4275,7 +4275,7 @@ app.AppSpecJob(
   instance_count: typing.Union[int, float] = None,
   instance_size_slug: str = None,
   kind: str = None,
-  log_destination: typing.Union[IResolvable, typing.List[AppSpecJobLogDestination]] = None,
+  log_destination: IResolvable | typing.List[AppSpecJobLogDestination] = None,
   run_command: str = None,
   source_dir: str = None,
   termination: AppSpecJobTermination = None
@@ -4287,11 +4287,11 @@ app.AppSpecJob(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.name">name</a></code> | <code>str</code> | The name of the component. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.alert">alert</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>]]</code> | alert block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.alert">alert</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>]</code> | alert block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.bitbucket">bitbucket</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucket">AppSpecJobBitbucket</a></code> | bitbucket block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.buildCommand">build_command</a></code> | <code>str</code> | An optional build command to run while building this component from source. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.dockerfilePath">dockerfile_path</a></code> | <code>str</code> | The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.env">env</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>]]</code> | env block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.env">env</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>]</code> | env block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.environmentSlug">environment_slug</a></code> | <code>str</code> | An environment slug describing the type of this app. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.git">git</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGit">AppSpecJobGit</a></code> | git block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.github">github</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithub">AppSpecJobGithub</a></code> | github block. |
@@ -4300,7 +4300,7 @@ app.AppSpecJob(
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.instanceCount">instance_count</a></code> | <code>typing.Union[int, float]</code> | The amount of instances that this component should be scaled to. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.instanceSizeSlug">instance_size_slug</a></code> | <code>str</code> | The instance size to use for this component. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.kind">kind</a></code> | <code>str</code> | The type of job and when it will be run during the deployment process. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.logDestination">log_destination</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>]]</code> | log_destination block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.logDestination">log_destination</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>]</code> | log_destination block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.runCommand">run_command</a></code> | <code>str</code> | An optional run command to override the component's default. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.sourceDir">source_dir</a></code> | <code>str</code> | An optional path to the working directory to use for the build. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.termination">termination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobTermination">AppSpecJobTermination</a></code> | termination block. |
@@ -4324,10 +4324,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `alert`<sup>Optional</sup> <a name="alert" id="@cdktf/provider-digitalocean.app.AppSpecJob.property.alert"></a>
 
 ```python
-alert: typing.Union[IResolvable, typing.List[AppSpecJobAlert]]
+alert: IResolvable | typing.List[AppSpecJobAlert]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>]
 
 alert block.
 
@@ -4380,10 +4380,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `env`<sup>Optional</sup> <a name="env" id="@cdktf/provider-digitalocean.app.AppSpecJob.property.env"></a>
 
 ```python
-env: typing.Union[IResolvable, typing.List[AppSpecJobEnv]]
+env: IResolvable | typing.List[AppSpecJobEnv]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>]
 
 env block.
 
@@ -4506,10 +4506,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `log_destination`<sup>Optional</sup> <a name="log_destination" id="@cdktf/provider-digitalocean.app.AppSpecJob.property.logDestination"></a>
 
 ```python
-log_destination: typing.Union[IResolvable, typing.List[AppSpecJobLogDestination]]
+log_destination: IResolvable | typing.List[AppSpecJobLogDestination]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>]
 
 log_destination block.
 
@@ -4572,7 +4572,7 @@ app.AppSpecJobAlert(
   value: typing.Union[int, float],
   window: str,
   destinations: AppSpecJobAlertDestinations = None,
-  disabled: typing.Union[bool, IResolvable] = None
+  disabled: bool | IResolvable = None
 )
 ```
 
@@ -4585,7 +4585,7 @@ app.AppSpecJobAlert(
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#value App#value}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.window">window</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#window App#window}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.destinations">destinations</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinations">AppSpecJobAlertDestinations</a></code> | destinations block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.disabled">disabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -4654,10 +4654,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `disabled`<sup>Optional</sup> <a name="disabled" id="@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.disabled"></a>
 
 ```python
-disabled: typing.Union[bool, IResolvable]
+disabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}.
 
@@ -4672,7 +4672,7 @@ from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecJobAlertDestinations(
   emails: typing.List[str] = None,
-  slack_webhooks: typing.Union[IResolvable, typing.List[AppSpecJobAlertDestinationsSlackWebhooks]] = None
+  slack_webhooks: IResolvable | typing.List[AppSpecJobAlertDestinationsSlackWebhooks] = None
 )
 ```
 
@@ -4681,7 +4681,7 @@ app.AppSpecJobAlertDestinations(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinations.property.emails">emails</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#emails App#emails}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinations.property.slackWebhooks">slack_webhooks</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>]]</code> | slack_webhooks block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinations.property.slackWebhooks">slack_webhooks</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>]</code> | slack_webhooks block. |
 
 ---
 
@@ -4700,10 +4700,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `slack_webhooks`<sup>Optional</sup> <a name="slack_webhooks" id="@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinations.property.slackWebhooks"></a>
 
 ```python
-slack_webhooks: typing.Union[IResolvable, typing.List[AppSpecJobAlertDestinationsSlackWebhooks]]
+slack_webhooks: IResolvable | typing.List[AppSpecJobAlertDestinationsSlackWebhooks]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>]
 
 slack_webhooks block.
 
@@ -4770,7 +4770,7 @@ from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecJobBitbucket(
   branch: str = None,
-  deploy_on_push: typing.Union[bool, IResolvable] = None,
+  deploy_on_push: bool | IResolvable = None,
   repo: str = None
 )
 ```
@@ -4780,7 +4780,7 @@ app.AppSpecJobBitbucket(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucket.property.branch">branch</a></code> | <code>str</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucket.property.deployOnPush">deploy_on_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucket.property.deployOnPush">deploy_on_push</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucket.property.repo">repo</a></code> | <code>str</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -4802,10 +4802,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucket.property.deployOnPush"></a>
 
 ```python
-deploy_on_push: typing.Union[bool, IResolvable]
+deploy_on_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -4968,7 +4968,7 @@ from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecJobGithub(
   branch: str = None,
-  deploy_on_push: typing.Union[bool, IResolvable] = None,
+  deploy_on_push: bool | IResolvable = None,
   repo: str = None
 )
 ```
@@ -4978,7 +4978,7 @@ app.AppSpecJobGithub(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithub.property.branch">branch</a></code> | <code>str</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithub.property.deployOnPush">deploy_on_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithub.property.deployOnPush">deploy_on_push</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithub.property.repo">repo</a></code> | <code>str</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -5000,10 +5000,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecJobGithub.property.deployOnPush"></a>
 
 ```python
-deploy_on_push: typing.Union[bool, IResolvable]
+deploy_on_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -5034,7 +5034,7 @@ from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecJobGitlab(
   branch: str = None,
-  deploy_on_push: typing.Union[bool, IResolvable] = None,
+  deploy_on_push: bool | IResolvable = None,
   repo: str = None
 )
 ```
@@ -5044,7 +5044,7 @@ app.AppSpecJobGitlab(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlab.property.branch">branch</a></code> | <code>str</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlab.property.deployOnPush">deploy_on_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlab.property.deployOnPush">deploy_on_push</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlab.property.repo">repo</a></code> | <code>str</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -5066,10 +5066,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecJobGitlab.property.deployOnPush"></a>
 
 ```python
-deploy_on_push: typing.Union[bool, IResolvable]
+deploy_on_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -5101,7 +5101,7 @@ from cdktf_cdktf_provider_digitalocean import app
 app.AppSpecJobImage(
   registry_type: str,
   repository: str,
-  deploy_on_push: typing.Union[IResolvable, typing.List[AppSpecJobImageDeployOnPush]] = None,
+  deploy_on_push: IResolvable | typing.List[AppSpecJobImageDeployOnPush] = None,
   digest: str = None,
   registry: str = None,
   registry_credentials: str = None,
@@ -5115,7 +5115,7 @@ app.AppSpecJobImage(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImage.property.registryType">registry_type</a></code> | <code>str</code> | The registry type. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImage.property.repository">repository</a></code> | <code>str</code> | The repository name. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImage.property.deployOnPush">deploy_on_push</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>]]</code> | deploy_on_push block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImage.property.deployOnPush">deploy_on_push</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>]</code> | deploy_on_push block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImage.property.digest">digest</a></code> | <code>str</code> | The image digest. Cannot be specified if tag is provided. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImage.property.registry">registry</a></code> | <code>str</code> | The registry name. Must be left empty for the DOCR registry type. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImage.property.registryCredentials">registry_credentials</a></code> | <code>str</code> | Access credentials for third-party registries. |
@@ -5154,10 +5154,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecJobImage.property.deployOnPush"></a>
 
 ```python
-deploy_on_push: typing.Union[IResolvable, typing.List[AppSpecJobImageDeployOnPush]]
+deploy_on_push: IResolvable | typing.List[AppSpecJobImageDeployOnPush]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>]
 
 deploy_on_push block.
 
@@ -5229,7 +5229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecJobImageDeployOnPush(
-  enabled: typing.Union[bool, IResolvable] = None
+  enabled: bool | IResolvable = None
 )
 ```
 
@@ -5237,17 +5237,17 @@ app.AppSpecJobImageDeployOnPush(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to automatically deploy images pushed to DOCR. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to automatically deploy images pushed to DOCR. |
 
 ---
 
 ##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush.property.enabled"></a>
 
 ```python
-enabled: typing.Union[bool, IResolvable]
+enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to automatically deploy images pushed to DOCR.
 
@@ -5647,8 +5647,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecMaintenance(
-  archive: typing.Union[bool, IResolvable] = None,
-  enabled: typing.Union[bool, IResolvable] = None,
+  archive: bool | IResolvable = None,
+  enabled: bool | IResolvable = None,
   offline_page_url: str = None
 )
 ```
@@ -5657,8 +5657,8 @@ app.AppSpecMaintenance(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenance.property.archive">archive</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether the app should be archived. Setting this to true implies that enabled is set to true. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenance.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether maintenance mode should be enabled for the app. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenance.property.archive">archive</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether the app should be archived. Setting this to true implies that enabled is set to true. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenance.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether maintenance mode should be enabled for the app. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenance.property.offlinePageUrl">offline_page_url</a></code> | <code>str</code> | A custom offline page to display when maintenance mode is enabled or the app is archived. |
 
 ---
@@ -5666,10 +5666,10 @@ app.AppSpecMaintenance(
 ##### `archive`<sup>Optional</sup> <a name="archive" id="@cdktf/provider-digitalocean.app.AppSpecMaintenance.property.archive"></a>
 
 ```python
-archive: typing.Union[bool, IResolvable]
+archive: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether the app should be archived. Setting this to true implies that enabled is set to true.
 
@@ -5680,10 +5680,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-digitalocean.app.AppSpecMaintenance.property.enabled"></a>
 
 ```python
-enabled: typing.Union[bool, IResolvable]
+enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether maintenance mode should be enabled for the app.
 
@@ -5714,13 +5714,13 @@ from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecService(
   name: str,
-  alert: typing.Union[IResolvable, typing.List[AppSpecServiceAlert]] = None,
+  alert: IResolvable | typing.List[AppSpecServiceAlert] = None,
   autoscaling: AppSpecServiceAutoscaling = None,
   bitbucket: AppSpecServiceBitbucket = None,
   build_command: str = None,
   cors: AppSpecServiceCors = None,
   dockerfile_path: str = None,
-  env: typing.Union[IResolvable, typing.List[AppSpecServiceEnv]] = None,
+  env: IResolvable | typing.List[AppSpecServiceEnv] = None,
   environment_slug: str = None,
   git: AppSpecServiceGit = None,
   github: AppSpecServiceGithub = None,
@@ -5731,8 +5731,8 @@ app.AppSpecService(
   instance_count: typing.Union[int, float] = None,
   instance_size_slug: str = None,
   internal_ports: typing.List[typing.Union[int, float]] = None,
-  log_destination: typing.Union[IResolvable, typing.List[AppSpecServiceLogDestination]] = None,
-  routes: typing.Union[IResolvable, typing.List[AppSpecServiceRoutes]] = None,
+  log_destination: IResolvable | typing.List[AppSpecServiceLogDestination] = None,
+  routes: IResolvable | typing.List[AppSpecServiceRoutes] = None,
   run_command: str = None,
   source_dir: str = None,
   termination: AppSpecServiceTermination = None
@@ -5744,13 +5744,13 @@ app.AppSpecService(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.name">name</a></code> | <code>str</code> | The name of the component. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.alert">alert</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>]]</code> | alert block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.alert">alert</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>]</code> | alert block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.autoscaling">autoscaling</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAutoscaling">AppSpecServiceAutoscaling</a></code> | autoscaling block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.bitbucket">bitbucket</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket">AppSpecServiceBitbucket</a></code> | bitbucket block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.buildCommand">build_command</a></code> | <code>str</code> | An optional build command to run while building this component from source. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.cors">cors</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCors">AppSpecServiceCors</a></code> | cors block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.dockerfilePath">dockerfile_path</a></code> | <code>str</code> | The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.env">env</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>]]</code> | env block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.env">env</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>]</code> | env block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.environmentSlug">environment_slug</a></code> | <code>str</code> | An environment slug describing the type of this app. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.git">git</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGit">AppSpecServiceGit</a></code> | git block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.github">github</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithub">AppSpecServiceGithub</a></code> | github block. |
@@ -5761,8 +5761,8 @@ app.AppSpecService(
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.instanceCount">instance_count</a></code> | <code>typing.Union[int, float]</code> | The amount of instances that this component should be scaled to. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.instanceSizeSlug">instance_size_slug</a></code> | <code>str</code> | The instance size to use for this component. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.internalPorts">internal_ports</a></code> | <code>typing.List[typing.Union[int, float]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#internal_ports App#internal_ports}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.logDestination">log_destination</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>]]</code> | log_destination block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.routes">routes</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>]]</code> | routes block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.logDestination">log_destination</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>]</code> | log_destination block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.routes">routes</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>]</code> | routes block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.runCommand">run_command</a></code> | <code>str</code> | An optional run command to override the component's default. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.sourceDir">source_dir</a></code> | <code>str</code> | An optional path to the working directory to use for the build. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.termination">termination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTermination">AppSpecServiceTermination</a></code> | termination block. |
@@ -5786,10 +5786,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `alert`<sup>Optional</sup> <a name="alert" id="@cdktf/provider-digitalocean.app.AppSpecService.property.alert"></a>
 
 ```python
-alert: typing.Union[IResolvable, typing.List[AppSpecServiceAlert]]
+alert: IResolvable | typing.List[AppSpecServiceAlert]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>]
 
 alert block.
 
@@ -5870,10 +5870,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `env`<sup>Optional</sup> <a name="env" id="@cdktf/provider-digitalocean.app.AppSpecService.property.env"></a>
 
 ```python
-env: typing.Union[IResolvable, typing.List[AppSpecServiceEnv]]
+env: IResolvable | typing.List[AppSpecServiceEnv]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>]
 
 env block.
 
@@ -6022,10 +6022,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `log_destination`<sup>Optional</sup> <a name="log_destination" id="@cdktf/provider-digitalocean.app.AppSpecService.property.logDestination"></a>
 
 ```python
-log_destination: typing.Union[IResolvable, typing.List[AppSpecServiceLogDestination]]
+log_destination: IResolvable | typing.List[AppSpecServiceLogDestination]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>]
 
 log_destination block.
 
@@ -6036,10 +6036,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `routes`<sup>Optional</sup> <a name="routes" id="@cdktf/provider-digitalocean.app.AppSpecService.property.routes"></a>
 
 ```python
-routes: typing.Union[IResolvable, typing.List[AppSpecServiceRoutes]]
+routes: IResolvable | typing.List[AppSpecServiceRoutes]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>]
 
 routes block.
 
@@ -6102,7 +6102,7 @@ app.AppSpecServiceAlert(
   value: typing.Union[int, float],
   window: str,
   destinations: AppSpecServiceAlertDestinations = None,
-  disabled: typing.Union[bool, IResolvable] = None
+  disabled: bool | IResolvable = None
 )
 ```
 
@@ -6115,7 +6115,7 @@ app.AppSpecServiceAlert(
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#value App#value}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.window">window</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#window App#window}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.destinations">destinations</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinations">AppSpecServiceAlertDestinations</a></code> | destinations block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.disabled">disabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -6184,10 +6184,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `disabled`<sup>Optional</sup> <a name="disabled" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.disabled"></a>
 
 ```python
-disabled: typing.Union[bool, IResolvable]
+disabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}.
 
@@ -6202,7 +6202,7 @@ from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecServiceAlertDestinations(
   emails: typing.List[str] = None,
-  slack_webhooks: typing.Union[IResolvable, typing.List[AppSpecServiceAlertDestinationsSlackWebhooks]] = None
+  slack_webhooks: IResolvable | typing.List[AppSpecServiceAlertDestinationsSlackWebhooks] = None
 )
 ```
 
@@ -6211,7 +6211,7 @@ app.AppSpecServiceAlertDestinations(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinations.property.emails">emails</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#emails App#emails}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinations.property.slackWebhooks">slack_webhooks</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>]]</code> | slack_webhooks block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinations.property.slackWebhooks">slack_webhooks</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>]</code> | slack_webhooks block. |
 
 ---
 
@@ -6230,10 +6230,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `slack_webhooks`<sup>Optional</sup> <a name="slack_webhooks" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinations.property.slackWebhooks"></a>
 
 ```python
-slack_webhooks: typing.Union[IResolvable, typing.List[AppSpecServiceAlertDestinationsSlackWebhooks]]
+slack_webhooks: IResolvable | typing.List[AppSpecServiceAlertDestinationsSlackWebhooks]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>]
 
 slack_webhooks block.
 
@@ -6434,7 +6434,7 @@ from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecServiceBitbucket(
   branch: str = None,
-  deploy_on_push: typing.Union[bool, IResolvable] = None,
+  deploy_on_push: bool | IResolvable = None,
   repo: str = None
 )
 ```
@@ -6444,7 +6444,7 @@ app.AppSpecServiceBitbucket(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket.property.branch">branch</a></code> | <code>str</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket.property.deployOnPush">deploy_on_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket.property.deployOnPush">deploy_on_push</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket.property.repo">repo</a></code> | <code>str</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -6466,10 +6466,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket.property.deployOnPush"></a>
 
 ```python
-deploy_on_push: typing.Union[bool, IResolvable]
+deploy_on_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -6499,7 +6499,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecServiceCors(
-  allow_credentials: typing.Union[bool, IResolvable] = None,
+  allow_credentials: bool | IResolvable = None,
   allow_headers: typing.List[str] = None,
   allow_methods: typing.List[str] = None,
   allow_origins: AppSpecServiceCorsAllowOrigins = None,
@@ -6512,7 +6512,7 @@ app.AppSpecServiceCors(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCors.property.allowCredentials">allow_credentials</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCors.property.allowCredentials">allow_credentials</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCors.property.allowHeaders">allow_headers</a></code> | <code>typing.List[str]</code> | The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCors.property.allowMethods">allow_methods</a></code> | <code>typing.List[str]</code> | The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCors.property.allowOrigins">allow_origins</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsAllowOrigins">AppSpecServiceCorsAllowOrigins</a></code> | allow_origins block. |
@@ -6524,10 +6524,10 @@ app.AppSpecServiceCors(
 ##### `allow_credentials`<sup>Optional</sup> <a name="allow_credentials" id="@cdktf/provider-digitalocean.app.AppSpecServiceCors.property.allowCredentials"></a>
 
 ```python
-allow_credentials: typing.Union[bool, IResolvable]
+allow_credentials: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`.
 
@@ -6816,7 +6816,7 @@ from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecServiceGithub(
   branch: str = None,
-  deploy_on_push: typing.Union[bool, IResolvable] = None,
+  deploy_on_push: bool | IResolvable = None,
   repo: str = None
 )
 ```
@@ -6826,7 +6826,7 @@ app.AppSpecServiceGithub(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithub.property.branch">branch</a></code> | <code>str</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithub.property.deployOnPush">deploy_on_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithub.property.deployOnPush">deploy_on_push</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithub.property.repo">repo</a></code> | <code>str</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -6848,10 +6848,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecServiceGithub.property.deployOnPush"></a>
 
 ```python
-deploy_on_push: typing.Union[bool, IResolvable]
+deploy_on_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -6882,7 +6882,7 @@ from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecServiceGitlab(
   branch: str = None,
-  deploy_on_push: typing.Union[bool, IResolvable] = None,
+  deploy_on_push: bool | IResolvable = None,
   repo: str = None
 )
 ```
@@ -6892,7 +6892,7 @@ app.AppSpecServiceGitlab(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlab.property.branch">branch</a></code> | <code>str</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlab.property.deployOnPush">deploy_on_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlab.property.deployOnPush">deploy_on_push</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlab.property.repo">repo</a></code> | <code>str</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -6914,10 +6914,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecServiceGitlab.property.deployOnPush"></a>
 
 ```python
-deploy_on_push: typing.Union[bool, IResolvable]
+deploy_on_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -7081,7 +7081,7 @@ from cdktf_cdktf_provider_digitalocean import app
 app.AppSpecServiceImage(
   registry_type: str,
   repository: str,
-  deploy_on_push: typing.Union[IResolvable, typing.List[AppSpecServiceImageDeployOnPush]] = None,
+  deploy_on_push: IResolvable | typing.List[AppSpecServiceImageDeployOnPush] = None,
   digest: str = None,
   registry: str = None,
   registry_credentials: str = None,
@@ -7095,7 +7095,7 @@ app.AppSpecServiceImage(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImage.property.registryType">registry_type</a></code> | <code>str</code> | The registry type. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImage.property.repository">repository</a></code> | <code>str</code> | The repository name. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImage.property.deployOnPush">deploy_on_push</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>]]</code> | deploy_on_push block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImage.property.deployOnPush">deploy_on_push</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>]</code> | deploy_on_push block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImage.property.digest">digest</a></code> | <code>str</code> | The image digest. Cannot be specified if tag is provided. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImage.property.registry">registry</a></code> | <code>str</code> | The registry name. Must be left empty for the DOCR registry type. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImage.property.registryCredentials">registry_credentials</a></code> | <code>str</code> | Access credentials for third-party registries. |
@@ -7134,10 +7134,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecServiceImage.property.deployOnPush"></a>
 
 ```python
-deploy_on_push: typing.Union[IResolvable, typing.List[AppSpecServiceImageDeployOnPush]]
+deploy_on_push: IResolvable | typing.List[AppSpecServiceImageDeployOnPush]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>]
 
 deploy_on_push block.
 
@@ -7209,7 +7209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecServiceImageDeployOnPush(
-  enabled: typing.Union[bool, IResolvable] = None
+  enabled: bool | IResolvable = None
 )
 ```
 
@@ -7217,17 +7217,17 @@ app.AppSpecServiceImageDeployOnPush(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to automatically deploy images pushed to DOCR. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to automatically deploy images pushed to DOCR. |
 
 ---
 
 ##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush.property.enabled"></a>
 
 ```python
-enabled: typing.Union[bool, IResolvable]
+enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to automatically deploy images pushed to DOCR.
 
@@ -7592,7 +7592,7 @@ from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecServiceRoutes(
   path: str = None,
-  preserve_path_prefix: typing.Union[bool, IResolvable] = None
+  preserve_path_prefix: bool | IResolvable = None
 )
 ```
 
@@ -7601,7 +7601,7 @@ app.AppSpecServiceRoutes(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes.property.path">path</a></code> | <code>str</code> | Path specifies an route by HTTP path prefix. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes.property.preservePathPrefix">preserve_path_prefix</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | An optional flag to preserve the path that is forwarded to the backend service. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes.property.preservePathPrefix">preserve_path_prefix</a></code> | <code>bool \| cdktf.IResolvable</code> | An optional flag to preserve the path that is forwarded to the backend service. |
 
 ---
 
@@ -7624,10 +7624,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `preserve_path_prefix`<sup>Optional</sup> <a name="preserve_path_prefix" id="@cdktf/provider-digitalocean.app.AppSpecServiceRoutes.property.preservePathPrefix"></a>
 
 ```python
-preserve_path_prefix: typing.Union[bool, IResolvable]
+preserve_path_prefix: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 An optional flag to preserve the path that is forwarded to the backend service.
 
@@ -7703,7 +7703,7 @@ app.AppSpecStaticSite(
   catchall_document: str = None,
   cors: AppSpecStaticSiteCors = None,
   dockerfile_path: str = None,
-  env: typing.Union[IResolvable, typing.List[AppSpecStaticSiteEnv]] = None,
+  env: IResolvable | typing.List[AppSpecStaticSiteEnv] = None,
   environment_slug: str = None,
   error_document: str = None,
   git: AppSpecStaticSiteGit = None,
@@ -7711,7 +7711,7 @@ app.AppSpecStaticSite(
   gitlab: AppSpecStaticSiteGitlab = None,
   index_document: str = None,
   output_dir: str = None,
-  routes: typing.Union[IResolvable, typing.List[AppSpecStaticSiteRoutes]] = None,
+  routes: IResolvable | typing.List[AppSpecStaticSiteRoutes] = None,
   source_dir: str = None
 )
 ```
@@ -7726,7 +7726,7 @@ app.AppSpecStaticSite(
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.catchallDocument">catchall_document</a></code> | <code>str</code> | The name of the document to use as the fallback for any requests to documents that are not found when serving this static site. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.cors">cors</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCors">AppSpecStaticSiteCors</a></code> | cors block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.dockerfilePath">dockerfile_path</a></code> | <code>str</code> | The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.env">env</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>]]</code> | env block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.env">env</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>]</code> | env block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.environmentSlug">environment_slug</a></code> | <code>str</code> | An environment slug describing the type of this app. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.errorDocument">error_document</a></code> | <code>str</code> | The name of the error document to use when serving this static site. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.git">git</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGit">AppSpecStaticSiteGit</a></code> | git block. |
@@ -7734,7 +7734,7 @@ app.AppSpecStaticSite(
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.gitlab">gitlab</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlab">AppSpecStaticSiteGitlab</a></code> | gitlab block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.indexDocument">index_document</a></code> | <code>str</code> | The name of the index document to use when serving this static site. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.outputDir">output_dir</a></code> | <code>str</code> | An optional path to where the built assets will be located, relative to the build context. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.routes">routes</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>]]</code> | routes block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.routes">routes</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>]</code> | routes block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.sourceDir">source_dir</a></code> | <code>str</code> | An optional path to the working directory to use for the build. |
 
 ---
@@ -7826,10 +7826,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `env`<sup>Optional</sup> <a name="env" id="@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.env"></a>
 
 ```python
-env: typing.Union[IResolvable, typing.List[AppSpecStaticSiteEnv]]
+env: IResolvable | typing.List[AppSpecStaticSiteEnv]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>]
 
 env block.
 
@@ -7940,10 +7940,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `routes`<sup>Optional</sup> <a name="routes" id="@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.routes"></a>
 
 ```python
-routes: typing.Union[IResolvable, typing.List[AppSpecStaticSiteRoutes]]
+routes: IResolvable | typing.List[AppSpecStaticSiteRoutes]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>]
 
 routes block.
 
@@ -7974,7 +7974,7 @@ from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecStaticSiteBitbucket(
   branch: str = None,
-  deploy_on_push: typing.Union[bool, IResolvable] = None,
+  deploy_on_push: bool | IResolvable = None,
   repo: str = None
 )
 ```
@@ -7984,7 +7984,7 @@ app.AppSpecStaticSiteBitbucket(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucket.property.branch">branch</a></code> | <code>str</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucket.property.deployOnPush">deploy_on_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucket.property.deployOnPush">deploy_on_push</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucket.property.repo">repo</a></code> | <code>str</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -8006,10 +8006,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucket.property.deployOnPush"></a>
 
 ```python
-deploy_on_push: typing.Union[bool, IResolvable]
+deploy_on_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -8039,7 +8039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecStaticSiteCors(
-  allow_credentials: typing.Union[bool, IResolvable] = None,
+  allow_credentials: bool | IResolvable = None,
   allow_headers: typing.List[str] = None,
   allow_methods: typing.List[str] = None,
   allow_origins: AppSpecStaticSiteCorsAllowOrigins = None,
@@ -8052,7 +8052,7 @@ app.AppSpecStaticSiteCors(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCors.property.allowCredentials">allow_credentials</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCors.property.allowCredentials">allow_credentials</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCors.property.allowHeaders">allow_headers</a></code> | <code>typing.List[str]</code> | The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCors.property.allowMethods">allow_methods</a></code> | <code>typing.List[str]</code> | The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCors.property.allowOrigins">allow_origins</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsAllowOrigins">AppSpecStaticSiteCorsAllowOrigins</a></code> | allow_origins block. |
@@ -8064,10 +8064,10 @@ app.AppSpecStaticSiteCors(
 ##### `allow_credentials`<sup>Optional</sup> <a name="allow_credentials" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteCors.property.allowCredentials"></a>
 
 ```python
-allow_credentials: typing.Union[bool, IResolvable]
+allow_credentials: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`.
 
@@ -8356,7 +8356,7 @@ from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecStaticSiteGithub(
   branch: str = None,
-  deploy_on_push: typing.Union[bool, IResolvable] = None,
+  deploy_on_push: bool | IResolvable = None,
   repo: str = None
 )
 ```
@@ -8366,7 +8366,7 @@ app.AppSpecStaticSiteGithub(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithub.property.branch">branch</a></code> | <code>str</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithub.property.deployOnPush">deploy_on_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithub.property.deployOnPush">deploy_on_push</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithub.property.repo">repo</a></code> | <code>str</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -8388,10 +8388,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithub.property.deployOnPush"></a>
 
 ```python
-deploy_on_push: typing.Union[bool, IResolvable]
+deploy_on_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -8422,7 +8422,7 @@ from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecStaticSiteGitlab(
   branch: str = None,
-  deploy_on_push: typing.Union[bool, IResolvable] = None,
+  deploy_on_push: bool | IResolvable = None,
   repo: str = None
 )
 ```
@@ -8432,7 +8432,7 @@ app.AppSpecStaticSiteGitlab(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlab.property.branch">branch</a></code> | <code>str</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlab.property.deployOnPush">deploy_on_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlab.property.deployOnPush">deploy_on_push</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlab.property.repo">repo</a></code> | <code>str</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -8454,10 +8454,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlab.property.deployOnPush"></a>
 
 ```python
-deploy_on_push: typing.Union[bool, IResolvable]
+deploy_on_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -8488,7 +8488,7 @@ from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecStaticSiteRoutes(
   path: str = None,
-  preserve_path_prefix: typing.Union[bool, IResolvable] = None
+  preserve_path_prefix: bool | IResolvable = None
 )
 ```
 
@@ -8497,7 +8497,7 @@ app.AppSpecStaticSiteRoutes(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes.property.path">path</a></code> | <code>str</code> | Path specifies an route by HTTP path prefix. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes.property.preservePathPrefix">preserve_path_prefix</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | An optional flag to preserve the path that is forwarded to the backend service. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes.property.preservePathPrefix">preserve_path_prefix</a></code> | <code>bool \| cdktf.IResolvable</code> | An optional flag to preserve the path that is forwarded to the backend service. |
 
 ---
 
@@ -8520,10 +8520,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `preserve_path_prefix`<sup>Optional</sup> <a name="preserve_path_prefix" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes.property.preservePathPrefix"></a>
 
 ```python
-preserve_path_prefix: typing.Union[bool, IResolvable]
+preserve_path_prefix: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 An optional flag to preserve the path that is forwarded to the backend service.
 
@@ -8577,12 +8577,12 @@ from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecWorker(
   name: str,
-  alert: typing.Union[IResolvable, typing.List[AppSpecWorkerAlert]] = None,
+  alert: IResolvable | typing.List[AppSpecWorkerAlert] = None,
   autoscaling: AppSpecWorkerAutoscaling = None,
   bitbucket: AppSpecWorkerBitbucket = None,
   build_command: str = None,
   dockerfile_path: str = None,
-  env: typing.Union[IResolvable, typing.List[AppSpecWorkerEnv]] = None,
+  env: IResolvable | typing.List[AppSpecWorkerEnv] = None,
   environment_slug: str = None,
   git: AppSpecWorkerGit = None,
   github: AppSpecWorkerGithub = None,
@@ -8590,7 +8590,7 @@ app.AppSpecWorker(
   image: AppSpecWorkerImage = None,
   instance_count: typing.Union[int, float] = None,
   instance_size_slug: str = None,
-  log_destination: typing.Union[IResolvable, typing.List[AppSpecWorkerLogDestination]] = None,
+  log_destination: IResolvable | typing.List[AppSpecWorkerLogDestination] = None,
   run_command: str = None,
   source_dir: str = None,
   termination: AppSpecWorkerTermination = None
@@ -8602,12 +8602,12 @@ app.AppSpecWorker(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.name">name</a></code> | <code>str</code> | The name of the component. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.alert">alert</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>]]</code> | alert block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.alert">alert</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>]</code> | alert block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.autoscaling">autoscaling</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscaling">AppSpecWorkerAutoscaling</a></code> | autoscaling block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.bitbucket">bitbucket</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket">AppSpecWorkerBitbucket</a></code> | bitbucket block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.buildCommand">build_command</a></code> | <code>str</code> | An optional build command to run while building this component from source. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.dockerfilePath">dockerfile_path</a></code> | <code>str</code> | The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.env">env</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>]]</code> | env block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.env">env</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>]</code> | env block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.environmentSlug">environment_slug</a></code> | <code>str</code> | An environment slug describing the type of this app. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.git">git</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGit">AppSpecWorkerGit</a></code> | git block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.github">github</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithub">AppSpecWorkerGithub</a></code> | github block. |
@@ -8615,7 +8615,7 @@ app.AppSpecWorker(
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.image">image</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImage">AppSpecWorkerImage</a></code> | image block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.instanceCount">instance_count</a></code> | <code>typing.Union[int, float]</code> | The amount of instances that this component should be scaled to. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.instanceSizeSlug">instance_size_slug</a></code> | <code>str</code> | The instance size to use for this component. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.logDestination">log_destination</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>]]</code> | log_destination block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.logDestination">log_destination</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>]</code> | log_destination block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.runCommand">run_command</a></code> | <code>str</code> | An optional run command to override the component's default. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.sourceDir">source_dir</a></code> | <code>str</code> | An optional path to the working directory to use for the build. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.termination">termination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTermination">AppSpecWorkerTermination</a></code> | termination block. |
@@ -8639,10 +8639,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `alert`<sup>Optional</sup> <a name="alert" id="@cdktf/provider-digitalocean.app.AppSpecWorker.property.alert"></a>
 
 ```python
-alert: typing.Union[IResolvable, typing.List[AppSpecWorkerAlert]]
+alert: IResolvable | typing.List[AppSpecWorkerAlert]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>]
 
 alert block.
 
@@ -8709,10 +8709,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `env`<sup>Optional</sup> <a name="env" id="@cdktf/provider-digitalocean.app.AppSpecWorker.property.env"></a>
 
 ```python
-env: typing.Union[IResolvable, typing.List[AppSpecWorkerEnv]]
+env: IResolvable | typing.List[AppSpecWorkerEnv]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>]
 
 env block.
 
@@ -8821,10 +8821,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `log_destination`<sup>Optional</sup> <a name="log_destination" id="@cdktf/provider-digitalocean.app.AppSpecWorker.property.logDestination"></a>
 
 ```python
-log_destination: typing.Union[IResolvable, typing.List[AppSpecWorkerLogDestination]]
+log_destination: IResolvable | typing.List[AppSpecWorkerLogDestination]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>]
 
 log_destination block.
 
@@ -8887,7 +8887,7 @@ app.AppSpecWorkerAlert(
   value: typing.Union[int, float],
   window: str,
   destinations: AppSpecWorkerAlertDestinations = None,
-  disabled: typing.Union[bool, IResolvable] = None
+  disabled: bool | IResolvable = None
 )
 ```
 
@@ -8900,7 +8900,7 @@ app.AppSpecWorkerAlert(
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#value App#value}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.window">window</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#window App#window}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.destinations">destinations</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinations">AppSpecWorkerAlertDestinations</a></code> | destinations block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.disabled">disabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -8969,10 +8969,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `disabled`<sup>Optional</sup> <a name="disabled" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.disabled"></a>
 
 ```python
-disabled: typing.Union[bool, IResolvable]
+disabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}.
 
@@ -8987,7 +8987,7 @@ from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecWorkerAlertDestinations(
   emails: typing.List[str] = None,
-  slack_webhooks: typing.Union[IResolvable, typing.List[AppSpecWorkerAlertDestinationsSlackWebhooks]] = None
+  slack_webhooks: IResolvable | typing.List[AppSpecWorkerAlertDestinationsSlackWebhooks] = None
 )
 ```
 
@@ -8996,7 +8996,7 @@ app.AppSpecWorkerAlertDestinations(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinations.property.emails">emails</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#emails App#emails}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinations.property.slackWebhooks">slack_webhooks</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>]]</code> | slack_webhooks block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinations.property.slackWebhooks">slack_webhooks</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>]</code> | slack_webhooks block. |
 
 ---
 
@@ -9015,10 +9015,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `slack_webhooks`<sup>Optional</sup> <a name="slack_webhooks" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinations.property.slackWebhooks"></a>
 
 ```python
-slack_webhooks: typing.Union[IResolvable, typing.List[AppSpecWorkerAlertDestinationsSlackWebhooks]]
+slack_webhooks: IResolvable | typing.List[AppSpecWorkerAlertDestinationsSlackWebhooks]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>]
 
 slack_webhooks block.
 
@@ -9219,7 +9219,7 @@ from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecWorkerBitbucket(
   branch: str = None,
-  deploy_on_push: typing.Union[bool, IResolvable] = None,
+  deploy_on_push: bool | IResolvable = None,
   repo: str = None
 )
 ```
@@ -9229,7 +9229,7 @@ app.AppSpecWorkerBitbucket(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket.property.branch">branch</a></code> | <code>str</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket.property.deployOnPush">deploy_on_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket.property.deployOnPush">deploy_on_push</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket.property.repo">repo</a></code> | <code>str</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -9251,10 +9251,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket.property.deployOnPush"></a>
 
 ```python
-deploy_on_push: typing.Union[bool, IResolvable]
+deploy_on_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -9417,7 +9417,7 @@ from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecWorkerGithub(
   branch: str = None,
-  deploy_on_push: typing.Union[bool, IResolvable] = None,
+  deploy_on_push: bool | IResolvable = None,
   repo: str = None
 )
 ```
@@ -9427,7 +9427,7 @@ app.AppSpecWorkerGithub(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithub.property.branch">branch</a></code> | <code>str</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithub.property.deployOnPush">deploy_on_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithub.property.deployOnPush">deploy_on_push</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithub.property.repo">repo</a></code> | <code>str</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -9449,10 +9449,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecWorkerGithub.property.deployOnPush"></a>
 
 ```python
-deploy_on_push: typing.Union[bool, IResolvable]
+deploy_on_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -9483,7 +9483,7 @@ from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecWorkerGitlab(
   branch: str = None,
-  deploy_on_push: typing.Union[bool, IResolvable] = None,
+  deploy_on_push: bool | IResolvable = None,
   repo: str = None
 )
 ```
@@ -9493,7 +9493,7 @@ app.AppSpecWorkerGitlab(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlab.property.branch">branch</a></code> | <code>str</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlab.property.deployOnPush">deploy_on_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlab.property.deployOnPush">deploy_on_push</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlab.property.repo">repo</a></code> | <code>str</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -9515,10 +9515,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecWorkerGitlab.property.deployOnPush"></a>
 
 ```python
-deploy_on_push: typing.Union[bool, IResolvable]
+deploy_on_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -9550,7 +9550,7 @@ from cdktf_cdktf_provider_digitalocean import app
 app.AppSpecWorkerImage(
   registry_type: str,
   repository: str,
-  deploy_on_push: typing.Union[IResolvable, typing.List[AppSpecWorkerImageDeployOnPush]] = None,
+  deploy_on_push: IResolvable | typing.List[AppSpecWorkerImageDeployOnPush] = None,
   digest: str = None,
   registry: str = None,
   registry_credentials: str = None,
@@ -9564,7 +9564,7 @@ app.AppSpecWorkerImage(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImage.property.registryType">registry_type</a></code> | <code>str</code> | The registry type. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImage.property.repository">repository</a></code> | <code>str</code> | The repository name. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImage.property.deployOnPush">deploy_on_push</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>]]</code> | deploy_on_push block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImage.property.deployOnPush">deploy_on_push</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>]</code> | deploy_on_push block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImage.property.digest">digest</a></code> | <code>str</code> | The image digest. Cannot be specified if tag is provided. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImage.property.registry">registry</a></code> | <code>str</code> | The registry name. Must be left empty for the DOCR registry type. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImage.property.registryCredentials">registry_credentials</a></code> | <code>str</code> | Access credentials for third-party registries. |
@@ -9603,10 +9603,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImage.property.deployOnPush"></a>
 
 ```python
-deploy_on_push: typing.Union[IResolvable, typing.List[AppSpecWorkerImageDeployOnPush]]
+deploy_on_push: IResolvable | typing.List[AppSpecWorkerImageDeployOnPush]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>]
 
 deploy_on_push block.
 
@@ -9678,7 +9678,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 from cdktf_cdktf_provider_digitalocean import app
 
 app.AppSpecWorkerImageDeployOnPush(
-  enabled: typing.Union[bool, IResolvable] = None
+  enabled: bool | IResolvable = None
 )
 ```
 
@@ -9686,17 +9686,17 @@ app.AppSpecWorkerImageDeployOnPush(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to automatically deploy images pushed to DOCR. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to automatically deploy images pushed to DOCR. |
 
 ---
 
 ##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush.property.enabled"></a>
 
 ```python
-enabled: typing.Union[bool, IResolvable]
+enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to automatically deploy images pushed to DOCR.
 
@@ -10253,7 +10253,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppDedicatedIpsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppDedicatedIpsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppDedicatedIpsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppDedicatedIpsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>]</code> | *No description.* |
 
 ---
 
@@ -10284,10 +10284,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppDedicatedIpsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppDedicatedIps]]
+internal_value: IResolvable | typing.List[AppDedicatedIps]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>]
 
 ---
 
@@ -10574,7 +10574,7 @@ def reset_status() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppDedicatedIpsOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppDedicatedIpsOutputReference.property.ip">ip</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppDedicatedIpsOutputReference.property.status">status</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppDedicatedIpsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppDedicatedIpsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a> \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -10665,10 +10665,10 @@ status: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppDedicatedIpsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[AppDedicatedIps, IResolvable]
+internal_value: AppDedicatedIps | IResolvable
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>, cdktf.IResolvable]
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a> | cdktf.IResolvable
 
 ---
 
@@ -10908,13 +10908,13 @@ Returns a reversible string representation.
 
 ```python
 def put_slack_webhooks(
-  value: typing.Union[IResolvable, typing.List[AppSpecAlertDestinationsSlackWebhooks]]
+  value: IResolvable | typing.List[AppSpecAlertDestinationsSlackWebhooks]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsOutputReference.putSlackWebhooks.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>]
 
 ---
 
@@ -10939,7 +10939,7 @@ def reset_slack_webhooks() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsOutputReference.property.slackWebhooks">slack_webhooks</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksList">AppSpecAlertDestinationsSlackWebhooksList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsOutputReference.property.emailsInput">emails_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsOutputReference.property.slackWebhooksInput">slack_webhooks_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsOutputReference.property.slackWebhooksInput">slack_webhooks_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsOutputReference.property.emails">emails</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinations">AppSpecAlertDestinations</a></code> | *No description.* |
 
@@ -10992,10 +10992,10 @@ emails_input: typing.List[str]
 ##### `slack_webhooks_input`<sup>Optional</sup> <a name="slack_webhooks_input" id="@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsOutputReference.property.slackWebhooksInput"></a>
 
 ```python
-slack_webhooks_input: typing.Union[IResolvable, typing.List[AppSpecAlertDestinationsSlackWebhooks]]
+slack_webhooks_input: IResolvable | typing.List[AppSpecAlertDestinationsSlackWebhooks]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>]
 
 ---
 
@@ -11151,7 +11151,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>]</code> | *No description.* |
 
 ---
 
@@ -11182,10 +11182,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecAlertDestinationsSlackWebhooks]]
+internal_value: IResolvable | typing.List[AppSpecAlertDestinationsSlackWebhooks]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>]
 
 ---
 
@@ -11449,7 +11449,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksOutputReference.property.urlInput">url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksOutputReference.property.channel">channel</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksOutputReference.property.url">url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a></code> | *No description.* |
 
 ---
 
@@ -11520,10 +11520,10 @@ url: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecAlertDestinationsSlackWebhooks]
+internal_value: IResolvable | AppSpecAlertDestinationsSlackWebhooks
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>
 
 ---
 
@@ -11659,7 +11659,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>]</code> | *No description.* |
 
 ---
 
@@ -11690,10 +11690,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecAlertList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecAlert]]
+internal_value: IResolvable | typing.List[AppSpecAlert]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>]
 
 ---
 
@@ -11954,7 +11954,7 @@ Returns a reversible string representation.
 ```python
 def put_destinations(
   emails: typing.List[str] = None,
-  slack_webhooks: typing.Union[IResolvable, typing.List[AppSpecAlertDestinationsSlackWebhooks]] = None
+  slack_webhooks: IResolvable | typing.List[AppSpecAlertDestinationsSlackWebhooks] = None
 ) -> None
 ```
 
@@ -11968,7 +11968,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `slack_webhooks`<sup>Optional</sup> <a name="slack_webhooks" id="@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.putDestinations.parameter.slackWebhooks"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>]
 
 slack_webhooks block.
 
@@ -11997,11 +11997,11 @@ def reset_disabled() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.destinations">destinations</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsOutputReference">AppSpecAlertDestinationsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.destinationsInput">destinations_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinations">AppSpecAlertDestinations</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.disabledInput">disabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.disabledInput">disabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.ruleInput">rule_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.disabled">disabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.rule">rule</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a></code> | *No description.* |
 
 ---
 
@@ -12052,10 +12052,10 @@ destinations_input: AppSpecAlertDestinations
 ##### `disabled_input`<sup>Optional</sup> <a name="disabled_input" id="@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.disabledInput"></a>
 
 ```python
-disabled_input: typing.Union[bool, IResolvable]
+disabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12072,10 +12072,10 @@ rule_input: str
 ##### `disabled`<sup>Required</sup> <a name="disabled" id="@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.disabled"></a>
 
 ```python
-disabled: typing.Union[bool, IResolvable]
+disabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12092,10 +12092,10 @@ rule: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecAlert]
+internal_value: IResolvable | AppSpecAlert
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>
 
 ---
 
@@ -12231,7 +12231,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>]</code> | *No description.* |
 
 ---
 
@@ -12262,10 +12262,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecDatabaseList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecDatabase]]
+internal_value: IResolvable | typing.List[AppSpecDatabase]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>]
 
 ---
 
@@ -12579,16 +12579,16 @@ def reset_version() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.dbUserInput">db_user_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.engineInput">engine_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.productionInput">production_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.productionInput">production_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.versionInput">version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.clusterName">cluster_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.dbName">db_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.dbUser">db_user</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.engine">engine</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.production">production</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.production">production</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.version">version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a></code> | *No description.* |
 
 ---
 
@@ -12669,10 +12669,10 @@ name_input: str
 ##### `production_input`<sup>Optional</sup> <a name="production_input" id="@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.productionInput"></a>
 
 ```python
-production_input: typing.Union[bool, IResolvable]
+production_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12739,10 +12739,10 @@ name: str
 ##### `production`<sup>Required</sup> <a name="production" id="@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.production"></a>
 
 ```python
-production: typing.Union[bool, IResolvable]
+production: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12759,10 +12759,10 @@ version: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecDatabase]
+internal_value: IResolvable | AppSpecDatabase
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>
 
 ---
 
@@ -12898,7 +12898,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>]</code> | *No description.* |
 
 ---
 
@@ -12929,10 +12929,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecDomainList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecDomain]]
+internal_value: IResolvable | typing.List[AppSpecDomain]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>]
 
 ---
 
@@ -13215,13 +13215,13 @@ def reset_zone() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.wildcardInput">wildcard_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.wildcardInput">wildcard_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.zoneInput">zone_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.wildcard">wildcard</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.wildcard">wildcard</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.zone">zone</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a></code> | *No description.* |
 
 ---
 
@@ -13272,10 +13272,10 @@ type_input: str
 ##### `wildcard_input`<sup>Optional</sup> <a name="wildcard_input" id="@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.wildcardInput"></a>
 
 ```python
-wildcard_input: typing.Union[bool, IResolvable]
+wildcard_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -13312,10 +13312,10 @@ type: str
 ##### `wildcard`<sup>Required</sup> <a name="wildcard" id="@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.wildcard"></a>
 
 ```python
-wildcard: typing.Union[bool, IResolvable]
+wildcard: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -13332,10 +13332,10 @@ zone: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecDomain]
+internal_value: IResolvable | AppSpecDomain
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>
 
 ---
 
@@ -13471,7 +13471,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEgressList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEgressList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEgressList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEgressList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>]</code> | *No description.* |
 
 ---
 
@@ -13502,10 +13502,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecEgressList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecEgress]]
+internal_value: IResolvable | typing.List[AppSpecEgress]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>]
 
 ---
 
@@ -13774,7 +13774,7 @@ def reset_type() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEgressOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEgressOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEgressOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEgressOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEgressOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a></code> | *No description.* |
 
 ---
 
@@ -13825,10 +13825,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecEgressOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecEgress]
+internal_value: IResolvable | AppSpecEgress
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>
 
 ---
 
@@ -13964,7 +13964,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEnvList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEnvList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEnvList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEnvList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>]</code> | *No description.* |
 
 ---
 
@@ -13995,10 +13995,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecEnvList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecEnv]]
+internal_value: IResolvable | typing.List[AppSpecEnv]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>]
 
 ---
 
@@ -14294,7 +14294,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEnvOutputReference.property.scope">scope</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEnvOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEnvOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEnvOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEnvOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a></code> | *No description.* |
 
 ---
 
@@ -14405,10 +14405,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecEnvOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecEnv]
+internal_value: IResolvable | AppSpecEnv
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>
 
 ---
 
@@ -14648,13 +14648,13 @@ Returns a reversible string representation.
 
 ```python
 def put_slack_webhooks(
-  value: typing.Union[IResolvable, typing.List[AppSpecFunctionAlertDestinationsSlackWebhooks]]
+  value: IResolvable | typing.List[AppSpecFunctionAlertDestinationsSlackWebhooks]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsOutputReference.putSlackWebhooks.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>]
 
 ---
 
@@ -14679,7 +14679,7 @@ def reset_slack_webhooks() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsOutputReference.property.slackWebhooks">slack_webhooks</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksList">AppSpecFunctionAlertDestinationsSlackWebhooksList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsOutputReference.property.emailsInput">emails_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsOutputReference.property.slackWebhooksInput">slack_webhooks_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsOutputReference.property.slackWebhooksInput">slack_webhooks_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsOutputReference.property.emails">emails</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinations">AppSpecFunctionAlertDestinations</a></code> | *No description.* |
 
@@ -14732,10 +14732,10 @@ emails_input: typing.List[str]
 ##### `slack_webhooks_input`<sup>Optional</sup> <a name="slack_webhooks_input" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsOutputReference.property.slackWebhooksInput"></a>
 
 ```python
-slack_webhooks_input: typing.Union[IResolvable, typing.List[AppSpecFunctionAlertDestinationsSlackWebhooks]]
+slack_webhooks_input: IResolvable | typing.List[AppSpecFunctionAlertDestinationsSlackWebhooks]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>]
 
 ---
 
@@ -14891,7 +14891,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>]</code> | *No description.* |
 
 ---
 
@@ -14922,10 +14922,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecFunctionAlertDestinationsSlackWebhooks]]
+internal_value: IResolvable | typing.List[AppSpecFunctionAlertDestinationsSlackWebhooks]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>]
 
 ---
 
@@ -15189,7 +15189,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksOutputReference.property.urlInput">url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksOutputReference.property.channel">channel</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksOutputReference.property.url">url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a></code> | *No description.* |
 
 ---
 
@@ -15260,10 +15260,10 @@ url: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecFunctionAlertDestinationsSlackWebhooks]
+internal_value: IResolvable | AppSpecFunctionAlertDestinationsSlackWebhooks
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>
 
 ---
 
@@ -15399,7 +15399,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>]</code> | *No description.* |
 
 ---
 
@@ -15430,10 +15430,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlertList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecFunctionAlert]]
+internal_value: IResolvable | typing.List[AppSpecFunctionAlert]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>]
 
 ---
 
@@ -15694,7 +15694,7 @@ Returns a reversible string representation.
 ```python
 def put_destinations(
   emails: typing.List[str] = None,
-  slack_webhooks: typing.Union[IResolvable, typing.List[AppSpecFunctionAlertDestinationsSlackWebhooks]] = None
+  slack_webhooks: IResolvable | typing.List[AppSpecFunctionAlertDestinationsSlackWebhooks] = None
 ) -> None
 ```
 
@@ -15708,7 +15708,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `slack_webhooks`<sup>Optional</sup> <a name="slack_webhooks" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.putDestinations.parameter.slackWebhooks"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>]
 
 slack_webhooks block.
 
@@ -15737,17 +15737,17 @@ def reset_disabled() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.destinations">destinations</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsOutputReference">AppSpecFunctionAlertDestinationsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.destinationsInput">destinations_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinations">AppSpecFunctionAlertDestinations</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.disabledInput">disabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.disabledInput">disabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.operatorInput">operator_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.ruleInput">rule_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.valueInput">value_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.windowInput">window_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.disabled">disabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.operator">operator</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.rule">rule</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.value">value</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.window">window</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a></code> | *No description.* |
 
 ---
 
@@ -15798,10 +15798,10 @@ destinations_input: AppSpecFunctionAlertDestinations
 ##### `disabled_input`<sup>Optional</sup> <a name="disabled_input" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.disabledInput"></a>
 
 ```python
-disabled_input: typing.Union[bool, IResolvable]
+disabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -15848,10 +15848,10 @@ window_input: str
 ##### `disabled`<sup>Required</sup> <a name="disabled" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.disabled"></a>
 
 ```python
-disabled: typing.Union[bool, IResolvable]
+disabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -15898,10 +15898,10 @@ window: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecFunctionAlert]
+internal_value: IResolvable | AppSpecFunctionAlert
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>
 
 ---
 
@@ -16163,10 +16163,10 @@ def reset_repo() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.branchInput">branch_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.repoInput">repo_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.branch">branch</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.deployOnPush">deploy_on_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.deployOnPush">deploy_on_push</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.repo">repo</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket">AppSpecFunctionBitbucket</a></code> | *No description.* |
 
@@ -16209,10 +16209,10 @@ branch_input: str
 ##### `deploy_on_push_input`<sup>Optional</sup> <a name="deploy_on_push_input" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.deployOnPushInput"></a>
 
 ```python
-deploy_on_push_input: typing.Union[bool, IResolvable]
+deploy_on_push_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -16239,10 +16239,10 @@ branch: str
 ##### `deploy_on_push`<sup>Required</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.deployOnPush"></a>
 
 ```python
-deploy_on_push: typing.Union[bool, IResolvable]
+deploy_on_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -16947,13 +16947,13 @@ def reset_max_age() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowOrigins">allow_origins</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsAllowOriginsOutputReference">AppSpecFunctionCorsAllowOriginsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowCredentialsInput">allow_credentials_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowCredentialsInput">allow_credentials_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowHeadersInput">allow_headers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowMethodsInput">allow_methods_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowOriginsInput">allow_origins_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsAllowOrigins">AppSpecFunctionCorsAllowOrigins</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.exposeHeadersInput">expose_headers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.maxAgeInput">max_age_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowCredentials">allow_credentials</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowCredentials">allow_credentials</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowHeaders">allow_headers</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowMethods">allow_methods</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.exposeHeaders">expose_headers</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -16999,10 +16999,10 @@ allow_origins: AppSpecFunctionCorsAllowOriginsOutputReference
 ##### `allow_credentials_input`<sup>Optional</sup> <a name="allow_credentials_input" id="@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowCredentialsInput"></a>
 
 ```python
-allow_credentials_input: typing.Union[bool, IResolvable]
+allow_credentials_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -17059,10 +17059,10 @@ max_age_input: str
 ##### `allow_credentials`<sup>Required</sup> <a name="allow_credentials" id="@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowCredentials"></a>
 
 ```python
-allow_credentials: typing.Union[bool, IResolvable]
+allow_credentials: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -17248,7 +17248,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnvList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnvList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnvList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnvList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>]</code> | *No description.* |
 
 ---
 
@@ -17279,10 +17279,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecFunctionEnvList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecFunctionEnv]]
+internal_value: IResolvable | typing.List[AppSpecFunctionEnv]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>]
 
 ---
 
@@ -17578,7 +17578,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnvOutputReference.property.scope">scope</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnvOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnvOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnvOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnvOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a></code> | *No description.* |
 
 ---
 
@@ -17689,10 +17689,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecFunctionEnvOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecFunctionEnv]
+internal_value: IResolvable | AppSpecFunctionEnv
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>
 
 ---
 
@@ -17954,10 +17954,10 @@ def reset_repo() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.branchInput">branch_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.repoInput">repo_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.branch">branch</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.deployOnPush">deploy_on_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.deployOnPush">deploy_on_push</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.repo">repo</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithub">AppSpecFunctionGithub</a></code> | *No description.* |
 
@@ -18000,10 +18000,10 @@ branch_input: str
 ##### `deploy_on_push_input`<sup>Optional</sup> <a name="deploy_on_push_input" id="@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.deployOnPushInput"></a>
 
 ```python
-deploy_on_push_input: typing.Union[bool, IResolvable]
+deploy_on_push_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -18030,10 +18030,10 @@ branch: str
 ##### `deploy_on_push`<sup>Required</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.deployOnPush"></a>
 
 ```python
-deploy_on_push: typing.Union[bool, IResolvable]
+deploy_on_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -18315,10 +18315,10 @@ def reset_repo() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.branchInput">branch_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.repoInput">repo_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.branch">branch</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.deployOnPush">deploy_on_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.deployOnPush">deploy_on_push</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.repo">repo</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlab">AppSpecFunctionGitlab</a></code> | *No description.* |
 
@@ -18361,10 +18361,10 @@ branch_input: str
 ##### `deploy_on_push_input`<sup>Optional</sup> <a name="deploy_on_push_input" id="@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.deployOnPushInput"></a>
 
 ```python
-deploy_on_push_input: typing.Union[bool, IResolvable]
+deploy_on_push_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -18391,10 +18391,10 @@ branch: str
 ##### `deploy_on_push`<sup>Required</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.deployOnPush"></a>
 
 ```python
-deploy_on_push: typing.Union[bool, IResolvable]
+deploy_on_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -18882,7 +18882,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>]</code> | *No description.* |
 
 ---
 
@@ -18913,10 +18913,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecFunctionList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecFunction]]
+internal_value: IResolvable | typing.List[AppSpecFunction]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>]
 
 ---
 
@@ -19377,7 +19377,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>]</code> | *No description.* |
 
 ---
 
@@ -19408,10 +19408,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecFunctionLogDestination]]
+internal_value: IResolvable | typing.List[AppSpecFunctionLogDestination]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>]
 
 ---
 
@@ -20870,7 +20870,7 @@ def reset_papertrail() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationOutputReference.property.openSearchInput">open_search_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationOpenSearch">AppSpecFunctionLogDestinationOpenSearch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationOutputReference.property.papertrailInput">papertrail_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationPapertrail">AppSpecFunctionLogDestinationPapertrail</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a></code> | *No description.* |
 
 ---
 
@@ -21001,10 +21001,10 @@ name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecFunctionLogDestination]
+internal_value: IResolvable | AppSpecFunctionLogDestination
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>
 
 ---
 
@@ -21576,13 +21576,13 @@ Returns a reversible string representation.
 
 ```python
 def put_alert(
-  value: typing.Union[IResolvable, typing.List[AppSpecFunctionAlert]]
+  value: IResolvable | typing.List[AppSpecFunctionAlert]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.putAlert.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>]
 
 ---
 
@@ -21591,7 +21591,7 @@ def put_alert(
 ```python
 def put_bitbucket(
   branch: str = None,
-  deploy_on_push: typing.Union[bool, IResolvable] = None,
+  deploy_on_push: bool | IResolvable = None,
   repo: str = None
 ) -> None
 ```
@@ -21608,7 +21608,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.putBitbucket.parameter.deployOnPush"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -21630,7 +21630,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ```python
 def put_cors(
-  allow_credentials: typing.Union[bool, IResolvable] = None,
+  allow_credentials: bool | IResolvable = None,
   allow_headers: typing.List[str] = None,
   allow_methods: typing.List[str] = None,
   allow_origins: AppSpecFunctionCorsAllowOrigins = None,
@@ -21641,7 +21641,7 @@ def put_cors(
 
 ###### `allow_credentials`<sup>Optional</sup> <a name="allow_credentials" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.putCors.parameter.allowCredentials"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`.
 
@@ -21707,13 +21707,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ```python
 def put_env(
-  value: typing.Union[IResolvable, typing.List[AppSpecFunctionEnv]]
+  value: IResolvable | typing.List[AppSpecFunctionEnv]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.putEnv.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>]
 
 ---
 
@@ -21751,7 +21751,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ```python
 def put_github(
   branch: str = None,
-  deploy_on_push: typing.Union[bool, IResolvable] = None,
+  deploy_on_push: bool | IResolvable = None,
   repo: str = None
 ) -> None
 ```
@@ -21768,7 +21768,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.putGithub.parameter.deployOnPush"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -21791,7 +21791,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ```python
 def put_gitlab(
   branch: str = None,
-  deploy_on_push: typing.Union[bool, IResolvable] = None,
+  deploy_on_push: bool | IResolvable = None,
   repo: str = None
 ) -> None
 ```
@@ -21808,7 +21808,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.putGitlab.parameter.deployOnPush"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -21830,13 +21830,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ```python
 def put_log_destination(
-  value: typing.Union[IResolvable, typing.List[AppSpecFunctionLogDestination]]
+  value: IResolvable | typing.List[AppSpecFunctionLogDestination]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.putLogDestination.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>]
 
 ---
 
@@ -21844,13 +21844,13 @@ def put_log_destination(
 
 ```python
 def put_routes(
-  value: typing.Union[IResolvable, typing.List[AppSpecFunctionRoutes]]
+  value: IResolvable | typing.List[AppSpecFunctionRoutes]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.putRoutes.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>]
 
 ---
 
@@ -21930,20 +21930,20 @@ def reset_source_dir() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.gitlab">gitlab</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference">AppSpecFunctionGitlabOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.logDestination">log_destination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationList">AppSpecFunctionLogDestinationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.routes">routes</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesList">AppSpecFunctionRoutesList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.alertInput">alert_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.alertInput">alert_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.bitbucketInput">bitbucket_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket">AppSpecFunctionBitbucket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.corsInput">cors_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCors">AppSpecFunctionCors</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.envInput">env_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.envInput">env_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.githubInput">github_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithub">AppSpecFunctionGithub</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.gitInput">git_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGit">AppSpecFunctionGit</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.gitlabInput">gitlab_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlab">AppSpecFunctionGitlab</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.logDestinationInput">log_destination_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.logDestinationInput">log_destination_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.routesInput">routes_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.routesInput">routes_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.sourceDirInput">source_dir_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.sourceDir">source_dir</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a></code> | *No description.* |
 
 ---
 
@@ -22064,10 +22064,10 @@ routes: AppSpecFunctionRoutesList
 ##### `alert_input`<sup>Optional</sup> <a name="alert_input" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.alertInput"></a>
 
 ```python
-alert_input: typing.Union[IResolvable, typing.List[AppSpecFunctionAlert]]
+alert_input: IResolvable | typing.List[AppSpecFunctionAlert]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>]
 
 ---
 
@@ -22094,10 +22094,10 @@ cors_input: AppSpecFunctionCors
 ##### `env_input`<sup>Optional</sup> <a name="env_input" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.envInput"></a>
 
 ```python
-env_input: typing.Union[IResolvable, typing.List[AppSpecFunctionEnv]]
+env_input: IResolvable | typing.List[AppSpecFunctionEnv]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>]
 
 ---
 
@@ -22134,10 +22134,10 @@ gitlab_input: AppSpecFunctionGitlab
 ##### `log_destination_input`<sup>Optional</sup> <a name="log_destination_input" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.logDestinationInput"></a>
 
 ```python
-log_destination_input: typing.Union[IResolvable, typing.List[AppSpecFunctionLogDestination]]
+log_destination_input: IResolvable | typing.List[AppSpecFunctionLogDestination]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>]
 
 ---
 
@@ -22154,10 +22154,10 @@ name_input: str
 ##### `routes_input`<sup>Optional</sup> <a name="routes_input" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.routesInput"></a>
 
 ```python
-routes_input: typing.Union[IResolvable, typing.List[AppSpecFunctionRoutes]]
+routes_input: IResolvable | typing.List[AppSpecFunctionRoutes]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>]
 
 ---
 
@@ -22194,10 +22194,10 @@ source_dir: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecFunction]
+internal_value: IResolvable | AppSpecFunction
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>
 
 ---
 
@@ -22333,7 +22333,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>]</code> | *No description.* |
 
 ---
 
@@ -22364,10 +22364,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecFunctionRoutes]]
+internal_value: IResolvable | typing.List[AppSpecFunctionRoutes]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>]
 
 ---
 
@@ -22642,10 +22642,10 @@ def reset_preserve_path_prefix() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.pathInput">path_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.preservePathPrefixInput">preserve_path_prefix_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.preservePathPrefixInput">preserve_path_prefix_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.path">path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.preservePathPrefix">preserve_path_prefix</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.preservePathPrefix">preserve_path_prefix</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a></code> | *No description.* |
 
 ---
 
@@ -22686,10 +22686,10 @@ path_input: str
 ##### `preserve_path_prefix_input`<sup>Optional</sup> <a name="preserve_path_prefix_input" id="@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.preservePathPrefixInput"></a>
 
 ```python
-preserve_path_prefix_input: typing.Union[bool, IResolvable]
+preserve_path_prefix_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -22706,20 +22706,20 @@ path: str
 ##### `preserve_path_prefix`<sup>Required</sup> <a name="preserve_path_prefix" id="@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.preservePathPrefix"></a>
 
 ```python
-preserve_path_prefix: typing.Union[bool, IResolvable]
+preserve_path_prefix: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecFunctionRoutes]
+internal_value: IResolvable | AppSpecFunctionRoutes
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>
 
 ---
 
@@ -22958,13 +22958,13 @@ Returns a reversible string representation.
 
 ```python
 def put_rule(
-  value: typing.Union[IResolvable, typing.List[AppSpecIngressRule]]
+  value: IResolvable | typing.List[AppSpecIngressRule]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.putRule.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>]
 
 ---
 
@@ -22982,7 +22982,7 @@ def reset_rule() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.property.rule">rule</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleList">AppSpecIngressRuleList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.property.ruleInput">rule_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.property.ruleInput">rule_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngress">AppSpecIngress</a></code> | *No description.* |
 
 ---
@@ -23024,10 +23024,10 @@ rule: AppSpecIngressRuleList
 ##### `rule_input`<sup>Optional</sup> <a name="rule_input" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.property.ruleInput"></a>
 
 ```python
-rule_input: typing.Union[IResolvable, typing.List[AppSpecIngressRule]]
+rule_input: IResolvable | typing.List[AppSpecIngressRule]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>]
 
 ---
 
@@ -23299,10 +23299,10 @@ def reset_rewrite() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.preservePathPrefixInput">preserve_path_prefix_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.preservePathPrefixInput">preserve_path_prefix_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.rewriteInput">rewrite_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.preservePathPrefix">preserve_path_prefix</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.preservePathPrefix">preserve_path_prefix</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.rewrite">rewrite</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent">AppSpecIngressRuleComponent</a></code> | *No description.* |
 
@@ -23345,10 +23345,10 @@ name_input: str
 ##### `preserve_path_prefix_input`<sup>Optional</sup> <a name="preserve_path_prefix_input" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.preservePathPrefixInput"></a>
 
 ```python
-preserve_path_prefix_input: typing.Union[bool, IResolvable]
+preserve_path_prefix_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -23375,10 +23375,10 @@ name: str
 ##### `preserve_path_prefix`<sup>Required</sup> <a name="preserve_path_prefix" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.preservePathPrefix"></a>
 
 ```python
-preserve_path_prefix: typing.Union[bool, IResolvable]
+preserve_path_prefix: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -24083,13 +24083,13 @@ def reset_max_age() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowOrigins">allow_origins</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference">AppSpecIngressRuleCorsAllowOriginsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowCredentialsInput">allow_credentials_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowCredentialsInput">allow_credentials_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowHeadersInput">allow_headers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowMethodsInput">allow_methods_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowOriginsInput">allow_origins_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOrigins">AppSpecIngressRuleCorsAllowOrigins</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.exposeHeadersInput">expose_headers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.maxAgeInput">max_age_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowCredentials">allow_credentials</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowCredentials">allow_credentials</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowHeaders">allow_headers</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowMethods">allow_methods</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.exposeHeaders">expose_headers</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -24135,10 +24135,10 @@ allow_origins: AppSpecIngressRuleCorsAllowOriginsOutputReference
 ##### `allow_credentials_input`<sup>Optional</sup> <a name="allow_credentials_input" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowCredentialsInput"></a>
 
 ```python
-allow_credentials_input: typing.Union[bool, IResolvable]
+allow_credentials_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -24195,10 +24195,10 @@ max_age_input: str
 ##### `allow_credentials`<sup>Required</sup> <a name="allow_credentials" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowCredentials"></a>
 
 ```python
-allow_credentials: typing.Union[bool, IResolvable]
+allow_credentials: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -24384,7 +24384,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>]</code> | *No description.* |
 
 ---
 
@@ -24415,10 +24415,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecIngressRule]]
+internal_value: IResolvable | typing.List[AppSpecIngressRule]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>]
 
 ---
 
@@ -25656,7 +25656,7 @@ Returns a reversible string representation.
 ```python
 def put_component(
   name: str = None,
-  preserve_path_prefix: typing.Union[bool, IResolvable] = None,
+  preserve_path_prefix: bool | IResolvable = None,
   rewrite: str = None
 ) -> None
 ```
@@ -25671,7 +25671,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `preserve_path_prefix`<sup>Optional</sup> <a name="preserve_path_prefix" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.putComponent.parameter.preservePathPrefix"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}.
 
@@ -25689,7 +25689,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ```python
 def put_cors(
-  allow_credentials: typing.Union[bool, IResolvable] = None,
+  allow_credentials: bool | IResolvable = None,
   allow_headers: typing.List[str] = None,
   allow_methods: typing.List[str] = None,
   allow_origins: AppSpecIngressRuleCorsAllowOrigins = None,
@@ -25700,7 +25700,7 @@ def put_cors(
 
 ###### `allow_credentials`<sup>Optional</sup> <a name="allow_credentials" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.putCors.parameter.allowCredentials"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`.
 
@@ -25882,7 +25882,7 @@ def reset_redirect() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.corsInput">cors_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors">AppSpecIngressRuleCors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.matchInput">match_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatch">AppSpecIngressRuleMatch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.redirectInput">redirect_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect">AppSpecIngressRuleRedirect</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a></code> | *No description.* |
 
 ---
 
@@ -25993,10 +25993,10 @@ redirect_input: AppSpecIngressRuleRedirect
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecIngressRule]
+internal_value: IResolvable | AppSpecIngressRule
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>
 
 ---
 
@@ -26655,13 +26655,13 @@ Returns a reversible string representation.
 
 ```python
 def put_slack_webhooks(
-  value: typing.Union[IResolvable, typing.List[AppSpecJobAlertDestinationsSlackWebhooks]]
+  value: IResolvable | typing.List[AppSpecJobAlertDestinationsSlackWebhooks]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsOutputReference.putSlackWebhooks.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>]
 
 ---
 
@@ -26686,7 +26686,7 @@ def reset_slack_webhooks() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsOutputReference.property.slackWebhooks">slack_webhooks</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksList">AppSpecJobAlertDestinationsSlackWebhooksList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsOutputReference.property.emailsInput">emails_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsOutputReference.property.slackWebhooksInput">slack_webhooks_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsOutputReference.property.slackWebhooksInput">slack_webhooks_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsOutputReference.property.emails">emails</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinations">AppSpecJobAlertDestinations</a></code> | *No description.* |
 
@@ -26739,10 +26739,10 @@ emails_input: typing.List[str]
 ##### `slack_webhooks_input`<sup>Optional</sup> <a name="slack_webhooks_input" id="@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsOutputReference.property.slackWebhooksInput"></a>
 
 ```python
-slack_webhooks_input: typing.Union[IResolvable, typing.List[AppSpecJobAlertDestinationsSlackWebhooks]]
+slack_webhooks_input: IResolvable | typing.List[AppSpecJobAlertDestinationsSlackWebhooks]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>]
 
 ---
 
@@ -26898,7 +26898,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>]</code> | *No description.* |
 
 ---
 
@@ -26929,10 +26929,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecJobAlertDestinationsSlackWebhooks]]
+internal_value: IResolvable | typing.List[AppSpecJobAlertDestinationsSlackWebhooks]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>]
 
 ---
 
@@ -27196,7 +27196,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksOutputReference.property.urlInput">url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksOutputReference.property.channel">channel</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksOutputReference.property.url">url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a></code> | *No description.* |
 
 ---
 
@@ -27267,10 +27267,10 @@ url: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecJobAlertDestinationsSlackWebhooks]
+internal_value: IResolvable | AppSpecJobAlertDestinationsSlackWebhooks
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>
 
 ---
 
@@ -27406,7 +27406,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>]</code> | *No description.* |
 
 ---
 
@@ -27437,10 +27437,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecJobAlertList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecJobAlert]]
+internal_value: IResolvable | typing.List[AppSpecJobAlert]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>]
 
 ---
 
@@ -27701,7 +27701,7 @@ Returns a reversible string representation.
 ```python
 def put_destinations(
   emails: typing.List[str] = None,
-  slack_webhooks: typing.Union[IResolvable, typing.List[AppSpecJobAlertDestinationsSlackWebhooks]] = None
+  slack_webhooks: IResolvable | typing.List[AppSpecJobAlertDestinationsSlackWebhooks] = None
 ) -> None
 ```
 
@@ -27715,7 +27715,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `slack_webhooks`<sup>Optional</sup> <a name="slack_webhooks" id="@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.putDestinations.parameter.slackWebhooks"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>]
 
 slack_webhooks block.
 
@@ -27744,17 +27744,17 @@ def reset_disabled() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.destinations">destinations</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsOutputReference">AppSpecJobAlertDestinationsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.destinationsInput">destinations_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinations">AppSpecJobAlertDestinations</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.disabledInput">disabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.disabledInput">disabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.operatorInput">operator_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.ruleInput">rule_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.valueInput">value_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.windowInput">window_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.disabled">disabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.operator">operator</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.rule">rule</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.value">value</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.window">window</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a></code> | *No description.* |
 
 ---
 
@@ -27805,10 +27805,10 @@ destinations_input: AppSpecJobAlertDestinations
 ##### `disabled_input`<sup>Optional</sup> <a name="disabled_input" id="@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.disabledInput"></a>
 
 ```python
-disabled_input: typing.Union[bool, IResolvable]
+disabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -27855,10 +27855,10 @@ window_input: str
 ##### `disabled`<sup>Required</sup> <a name="disabled" id="@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.disabled"></a>
 
 ```python
-disabled: typing.Union[bool, IResolvable]
+disabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -27905,10 +27905,10 @@ window: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecJobAlert]
+internal_value: IResolvable | AppSpecJobAlert
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>
 
 ---
 
@@ -28170,10 +28170,10 @@ def reset_repo() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.branchInput">branch_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.repoInput">repo_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.branch">branch</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.deployOnPush">deploy_on_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.deployOnPush">deploy_on_push</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.repo">repo</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucket">AppSpecJobBitbucket</a></code> | *No description.* |
 
@@ -28216,10 +28216,10 @@ branch_input: str
 ##### `deploy_on_push_input`<sup>Optional</sup> <a name="deploy_on_push_input" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.deployOnPushInput"></a>
 
 ```python
-deploy_on_push_input: typing.Union[bool, IResolvable]
+deploy_on_push_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -28246,10 +28246,10 @@ branch: str
 ##### `deploy_on_push`<sup>Required</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.deployOnPush"></a>
 
 ```python
-deploy_on_push: typing.Union[bool, IResolvable]
+deploy_on_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -28405,7 +28405,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnvList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnvList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnvList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnvList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>]</code> | *No description.* |
 
 ---
 
@@ -28436,10 +28436,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecJobEnvList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecJobEnv]]
+internal_value: IResolvable | typing.List[AppSpecJobEnv]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>]
 
 ---
 
@@ -28735,7 +28735,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnvOutputReference.property.scope">scope</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnvOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnvOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnvOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnvOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a></code> | *No description.* |
 
 ---
 
@@ -28846,10 +28846,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecJobEnvOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecJobEnv]
+internal_value: IResolvable | AppSpecJobEnv
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>
 
 ---
 
@@ -29111,10 +29111,10 @@ def reset_repo() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.branchInput">branch_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.repoInput">repo_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.branch">branch</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.deployOnPush">deploy_on_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.deployOnPush">deploy_on_push</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.repo">repo</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithub">AppSpecJobGithub</a></code> | *No description.* |
 
@@ -29157,10 +29157,10 @@ branch_input: str
 ##### `deploy_on_push_input`<sup>Optional</sup> <a name="deploy_on_push_input" id="@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.deployOnPushInput"></a>
 
 ```python
-deploy_on_push_input: typing.Union[bool, IResolvable]
+deploy_on_push_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -29187,10 +29187,10 @@ branch: str
 ##### `deploy_on_push`<sup>Required</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.deployOnPush"></a>
 
 ```python
-deploy_on_push: typing.Union[bool, IResolvable]
+deploy_on_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -29472,10 +29472,10 @@ def reset_repo() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.branchInput">branch_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.repoInput">repo_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.branch">branch</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.deployOnPush">deploy_on_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.deployOnPush">deploy_on_push</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.repo">repo</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlab">AppSpecJobGitlab</a></code> | *No description.* |
 
@@ -29518,10 +29518,10 @@ branch_input: str
 ##### `deploy_on_push_input`<sup>Optional</sup> <a name="deploy_on_push_input" id="@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.deployOnPushInput"></a>
 
 ```python
-deploy_on_push_input: typing.Union[bool, IResolvable]
+deploy_on_push_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -29548,10 +29548,10 @@ branch: str
 ##### `deploy_on_push`<sup>Required</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.deployOnPush"></a>
 
 ```python
-deploy_on_push: typing.Union[bool, IResolvable]
+deploy_on_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -30039,7 +30039,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>]</code> | *No description.* |
 
 ---
 
@@ -30070,10 +30070,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecJobImageDeployOnPush]]
+internal_value: IResolvable | typing.List[AppSpecJobImageDeployOnPush]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>]
 
 ---
 
@@ -30340,9 +30340,9 @@ def reset_enabled() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.enabledInput">enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a></code> | *No description.* |
 
 ---
 
@@ -30373,30 +30373,30 @@ fqn: str
 ##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.enabledInput"></a>
 
 ```python
-enabled_input: typing.Union[bool, IResolvable]
+enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.enabled"></a>
 
 ```python
-enabled: typing.Union[bool, IResolvable]
+enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecJobImageDeployOnPush]
+internal_value: IResolvable | AppSpecJobImageDeployOnPush
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>
 
 ---
 
@@ -30639,13 +30639,13 @@ Returns a reversible string representation.
 
 ```python
 def put_deploy_on_push(
-  value: typing.Union[IResolvable, typing.List[AppSpecJobImageDeployOnPush]]
+  value: IResolvable | typing.List[AppSpecJobImageDeployOnPush]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.putDeployOnPush.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>]
 
 ---
 
@@ -30687,7 +30687,7 @@ def reset_tag() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.deployOnPush">deploy_on_push</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushList">AppSpecJobImageDeployOnPushList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.digestInput">digest_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.registryCredentialsInput">registry_credentials_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.registryInput">registry_input</a></code> | <code>str</code> | *No description.* |
@@ -30741,10 +30741,10 @@ deploy_on_push: AppSpecJobImageDeployOnPushList
 ##### `deploy_on_push_input`<sup>Optional</sup> <a name="deploy_on_push_input" id="@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.deployOnPushInput"></a>
 
 ```python
-deploy_on_push_input: typing.Union[IResolvable, typing.List[AppSpecJobImageDeployOnPush]]
+deploy_on_push_input: IResolvable | typing.List[AppSpecJobImageDeployOnPush]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>]
 
 ---
 
@@ -31010,7 +31010,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>]</code> | *No description.* |
 
 ---
 
@@ -31041,10 +31041,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecJobList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecJob]]
+internal_value: IResolvable | typing.List[AppSpecJob]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>]
 
 ---
 
@@ -31505,7 +31505,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>]</code> | *No description.* |
 
 ---
 
@@ -31536,10 +31536,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecJobLogDestination]]
+internal_value: IResolvable | typing.List[AppSpecJobLogDestination]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>]
 
 ---
 
@@ -32998,7 +32998,7 @@ def reset_papertrail() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationOutputReference.property.openSearchInput">open_search_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationOpenSearch">AppSpecJobLogDestinationOpenSearch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationOutputReference.property.papertrailInput">papertrail_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationPapertrail">AppSpecJobLogDestinationPapertrail</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a></code> | *No description.* |
 
 ---
 
@@ -33129,10 +33129,10 @@ name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecJobLogDestination]
+internal_value: IResolvable | AppSpecJobLogDestination
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>
 
 ---
 
@@ -33711,13 +33711,13 @@ Returns a reversible string representation.
 
 ```python
 def put_alert(
-  value: typing.Union[IResolvable, typing.List[AppSpecJobAlert]]
+  value: IResolvable | typing.List[AppSpecJobAlert]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.putAlert.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>]
 
 ---
 
@@ -33726,7 +33726,7 @@ def put_alert(
 ```python
 def put_bitbucket(
   branch: str = None,
-  deploy_on_push: typing.Union[bool, IResolvable] = None,
+  deploy_on_push: bool | IResolvable = None,
   repo: str = None
 ) -> None
 ```
@@ -33743,7 +33743,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.putBitbucket.parameter.deployOnPush"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -33765,13 +33765,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ```python
 def put_env(
-  value: typing.Union[IResolvable, typing.List[AppSpecJobEnv]]
+  value: IResolvable | typing.List[AppSpecJobEnv]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.putEnv.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>]
 
 ---
 
@@ -33809,7 +33809,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ```python
 def put_github(
   branch: str = None,
-  deploy_on_push: typing.Union[bool, IResolvable] = None,
+  deploy_on_push: bool | IResolvable = None,
   repo: str = None
 ) -> None
 ```
@@ -33826,7 +33826,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.putGithub.parameter.deployOnPush"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -33849,7 +33849,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ```python
 def put_gitlab(
   branch: str = None,
-  deploy_on_push: typing.Union[bool, IResolvable] = None,
+  deploy_on_push: bool | IResolvable = None,
   repo: str = None
 ) -> None
 ```
@@ -33866,7 +33866,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.putGitlab.parameter.deployOnPush"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -33890,7 +33890,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 def put_image(
   registry_type: str,
   repository: str,
-  deploy_on_push: typing.Union[IResolvable, typing.List[AppSpecJobImageDeployOnPush]] = None,
+  deploy_on_push: IResolvable | typing.List[AppSpecJobImageDeployOnPush] = None,
   digest: str = None,
   registry: str = None,
   registry_credentials: str = None,
@@ -33920,7 +33920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.putImage.parameter.deployOnPush"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>]
 
 deploy_on_push block.
 
@@ -33972,13 +33972,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ```python
 def put_log_destination(
-  value: typing.Union[IResolvable, typing.List[AppSpecJobLogDestination]]
+  value: IResolvable | typing.List[AppSpecJobLogDestination]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.putLogDestination.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>]
 
 ---
 
@@ -34120,11 +34120,11 @@ def reset_termination() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.image">image</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference">AppSpecJobImageOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.logDestination">log_destination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationList">AppSpecJobLogDestinationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.termination">termination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference">AppSpecJobTerminationOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.alertInput">alert_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.alertInput">alert_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.bitbucketInput">bitbucket_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucket">AppSpecJobBitbucket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.buildCommandInput">build_command_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.dockerfilePathInput">dockerfile_path_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.envInput">env_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.envInput">env_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.environmentSlugInput">environment_slug_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.githubInput">github_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithub">AppSpecJobGithub</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.gitInput">git_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGit">AppSpecJobGit</a></code> | *No description.* |
@@ -34133,7 +34133,7 @@ def reset_termination() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.instanceCountInput">instance_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.instanceSizeSlugInput">instance_size_slug_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.kindInput">kind_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.logDestinationInput">log_destination_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.logDestinationInput">log_destination_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.runCommandInput">run_command_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.sourceDirInput">source_dir_input</a></code> | <code>str</code> | *No description.* |
@@ -34147,7 +34147,7 @@ def reset_termination() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.runCommand">run_command</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.sourceDir">source_dir</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a></code> | *No description.* |
 
 ---
 
@@ -34268,10 +34268,10 @@ termination: AppSpecJobTerminationOutputReference
 ##### `alert_input`<sup>Optional</sup> <a name="alert_input" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.alertInput"></a>
 
 ```python
-alert_input: typing.Union[IResolvable, typing.List[AppSpecJobAlert]]
+alert_input: IResolvable | typing.List[AppSpecJobAlert]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>]
 
 ---
 
@@ -34308,10 +34308,10 @@ dockerfile_path_input: str
 ##### `env_input`<sup>Optional</sup> <a name="env_input" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.envInput"></a>
 
 ```python
-env_input: typing.Union[IResolvable, typing.List[AppSpecJobEnv]]
+env_input: IResolvable | typing.List[AppSpecJobEnv]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>]
 
 ---
 
@@ -34398,10 +34398,10 @@ kind_input: str
 ##### `log_destination_input`<sup>Optional</sup> <a name="log_destination_input" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.logDestinationInput"></a>
 
 ```python
-log_destination_input: typing.Union[IResolvable, typing.List[AppSpecJobLogDestination]]
+log_destination_input: IResolvable | typing.List[AppSpecJobLogDestination]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>]
 
 ---
 
@@ -34538,10 +34538,10 @@ source_dir: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecJob]
+internal_value: IResolvable | AppSpecJob
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>
 
 ---
 
@@ -35105,11 +35105,11 @@ def reset_offline_page_url() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.archiveInput">archive_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.enabledInput">enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.archiveInput">archive_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.offlinePageUrlInput">offline_page_url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.archive">archive</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.archive">archive</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.offlinePageUrl">offline_page_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenance">AppSpecMaintenance</a></code> | *No description.* |
 
@@ -35142,20 +35142,20 @@ fqn: str
 ##### `archive_input`<sup>Optional</sup> <a name="archive_input" id="@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.archiveInput"></a>
 
 ```python
-archive_input: typing.Union[bool, IResolvable]
+archive_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.enabledInput"></a>
 
 ```python
-enabled_input: typing.Union[bool, IResolvable]
+enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -35172,20 +35172,20 @@ offline_page_url_input: str
 ##### `archive`<sup>Required</sup> <a name="archive" id="@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.archive"></a>
 
 ```python
-archive: typing.Union[bool, IResolvable]
+archive: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.enabled"></a>
 
 ```python
-enabled: typing.Union[bool, IResolvable]
+enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -35474,13 +35474,13 @@ Returns a reversible string representation.
 
 ```python
 def put_alert(
-  value: typing.Union[IResolvable, typing.List[AppSpecAlert]]
+  value: IResolvable | typing.List[AppSpecAlert]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putAlert.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>]
 
 ---
 
@@ -35488,13 +35488,13 @@ def put_alert(
 
 ```python
 def put_database(
-  value: typing.Union[IResolvable, typing.List[AppSpecDatabase]]
+  value: IResolvable | typing.List[AppSpecDatabase]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putDatabase.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>]
 
 ---
 
@@ -35502,13 +35502,13 @@ def put_database(
 
 ```python
 def put_domain(
-  value: typing.Union[IResolvable, typing.List[AppSpecDomain]]
+  value: IResolvable | typing.List[AppSpecDomain]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putDomain.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>]
 
 ---
 
@@ -35516,13 +35516,13 @@ def put_domain(
 
 ```python
 def put_egress(
-  value: typing.Union[IResolvable, typing.List[AppSpecEgress]]
+  value: IResolvable | typing.List[AppSpecEgress]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putEgress.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>]
 
 ---
 
@@ -35530,13 +35530,13 @@ def put_egress(
 
 ```python
 def put_env(
-  value: typing.Union[IResolvable, typing.List[AppSpecEnv]]
+  value: IResolvable | typing.List[AppSpecEnv]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putEnv.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>]
 
 ---
 
@@ -35544,13 +35544,13 @@ def put_env(
 
 ```python
 def put_function(
-  value: typing.Union[IResolvable, typing.List[AppSpecFunction]]
+  value: IResolvable | typing.List[AppSpecFunction]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putFunction.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>]
 
 ---
 
@@ -35558,13 +35558,13 @@ def put_function(
 
 ```python
 def put_ingress(
-  rule: typing.Union[IResolvable, typing.List[AppSpecIngressRule]] = None
+  rule: IResolvable | typing.List[AppSpecIngressRule] = None
 ) -> None
 ```
 
 ###### `rule`<sup>Optional</sup> <a name="rule" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putIngress.parameter.rule"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>]
 
 rule block.
 
@@ -35576,13 +35576,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ```python
 def put_job(
-  value: typing.Union[IResolvable, typing.List[AppSpecJob]]
+  value: IResolvable | typing.List[AppSpecJob]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putJob.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>]
 
 ---
 
@@ -35590,15 +35590,15 @@ def put_job(
 
 ```python
 def put_maintenance(
-  archive: typing.Union[bool, IResolvable] = None,
-  enabled: typing.Union[bool, IResolvable] = None,
+  archive: bool | IResolvable = None,
+  enabled: bool | IResolvable = None,
   offline_page_url: str = None
 ) -> None
 ```
 
 ###### `archive`<sup>Optional</sup> <a name="archive" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putMaintenance.parameter.archive"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether the app should be archived. Setting this to true implies that enabled is set to true.
 
@@ -35608,7 +35608,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putMaintenance.parameter.enabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether maintenance mode should be enabled for the app.
 
@@ -35630,13 +35630,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ```python
 def put_service(
-  value: typing.Union[IResolvable, typing.List[AppSpecService]]
+  value: IResolvable | typing.List[AppSpecService]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putService.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>]
 
 ---
 
@@ -35644,13 +35644,13 @@ def put_service(
 
 ```python
 def put_static_site(
-  value: typing.Union[IResolvable, typing.List[AppSpecStaticSite]]
+  value: IResolvable | typing.List[AppSpecStaticSite]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putStaticSite.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>]
 
 ---
 
@@ -35658,13 +35658,13 @@ def put_static_site(
 
 ```python
 def put_vpc(
-  value: typing.Union[IResolvable, typing.List[AppSpecVpc]]
+  value: IResolvable | typing.List[AppSpecVpc]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putVpc.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>]
 
 ---
 
@@ -35672,13 +35672,13 @@ def put_vpc(
 
 ```python
 def put_worker(
-  value: typing.Union[IResolvable, typing.List[AppSpecWorker]]
+  value: IResolvable | typing.List[AppSpecWorker]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putWorker.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>]
 
 ---
 
@@ -35816,30 +35816,30 @@ def reset_worker() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.staticSite">static_site</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteList">AppSpecStaticSiteList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.vpc">vpc</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecVpcList">AppSpecVpcList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.worker">worker</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerList">AppSpecWorkerList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.alertInput">alert_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.databaseInput">database_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEdgeCacheInput">disable_edge_cache_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEmailObfuscationInput">disable_email_obfuscation_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.domainInput">domain_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.alertInput">alert_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.databaseInput">database_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEdgeCacheInput">disable_edge_cache_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEmailObfuscationInput">disable_email_obfuscation_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.domainInput">domain_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.domainsInput">domains_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.egressInput">egress_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.enhancedThreatControlEnabledInput">enhanced_threat_control_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.envInput">env_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.egressInput">egress_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.enhancedThreatControlEnabledInput">enhanced_threat_control_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.envInput">env_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.featuresInput">features_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.functionInput">function_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.functionInput">function_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.ingressInput">ingress_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngress">AppSpecIngress</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.jobInput">job_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.jobInput">job_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.maintenanceInput">maintenance_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenance">AppSpecMaintenance</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.serviceInput">service_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.staticSiteInput">static_site_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.vpcInput">vpc_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.workerInput">worker_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEdgeCache">disable_edge_cache</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEmailObfuscation">disable_email_obfuscation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.serviceInput">service_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.staticSiteInput">static_site_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.vpcInput">vpc_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.workerInput">worker_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEdgeCache">disable_edge_cache</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEmailObfuscation">disable_email_obfuscation</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.domains">domains</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.enhancedThreatControlEnabled">enhanced_threat_control_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.enhancedThreatControlEnabled">enhanced_threat_control_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.features">features</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.region">region</a></code> | <code>str</code> | *No description.* |
@@ -36004,50 +36004,50 @@ worker: AppSpecWorkerList
 ##### `alert_input`<sup>Optional</sup> <a name="alert_input" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.alertInput"></a>
 
 ```python
-alert_input: typing.Union[IResolvable, typing.List[AppSpecAlert]]
+alert_input: IResolvable | typing.List[AppSpecAlert]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>]
 
 ---
 
 ##### `database_input`<sup>Optional</sup> <a name="database_input" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.databaseInput"></a>
 
 ```python
-database_input: typing.Union[IResolvable, typing.List[AppSpecDatabase]]
+database_input: IResolvable | typing.List[AppSpecDatabase]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>]
 
 ---
 
 ##### `disable_edge_cache_input`<sup>Optional</sup> <a name="disable_edge_cache_input" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEdgeCacheInput"></a>
 
 ```python
-disable_edge_cache_input: typing.Union[bool, IResolvable]
+disable_edge_cache_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `disable_email_obfuscation_input`<sup>Optional</sup> <a name="disable_email_obfuscation_input" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEmailObfuscationInput"></a>
 
 ```python
-disable_email_obfuscation_input: typing.Union[bool, IResolvable]
+disable_email_obfuscation_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `domain_input`<sup>Optional</sup> <a name="domain_input" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.domainInput"></a>
 
 ```python
-domain_input: typing.Union[IResolvable, typing.List[AppSpecDomain]]
+domain_input: IResolvable | typing.List[AppSpecDomain]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>]
 
 ---
 
@@ -36064,30 +36064,30 @@ domains_input: typing.List[str]
 ##### `egress_input`<sup>Optional</sup> <a name="egress_input" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.egressInput"></a>
 
 ```python
-egress_input: typing.Union[IResolvable, typing.List[AppSpecEgress]]
+egress_input: IResolvable | typing.List[AppSpecEgress]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>]
 
 ---
 
 ##### `enhanced_threat_control_enabled_input`<sup>Optional</sup> <a name="enhanced_threat_control_enabled_input" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.enhancedThreatControlEnabledInput"></a>
 
 ```python
-enhanced_threat_control_enabled_input: typing.Union[bool, IResolvable]
+enhanced_threat_control_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `env_input`<sup>Optional</sup> <a name="env_input" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.envInput"></a>
 
 ```python
-env_input: typing.Union[IResolvable, typing.List[AppSpecEnv]]
+env_input: IResolvable | typing.List[AppSpecEnv]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>]
 
 ---
 
@@ -36104,10 +36104,10 @@ features_input: typing.List[str]
 ##### `function_input`<sup>Optional</sup> <a name="function_input" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.functionInput"></a>
 
 ```python
-function_input: typing.Union[IResolvable, typing.List[AppSpecFunction]]
+function_input: IResolvable | typing.List[AppSpecFunction]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>]
 
 ---
 
@@ -36124,10 +36124,10 @@ ingress_input: AppSpecIngress
 ##### `job_input`<sup>Optional</sup> <a name="job_input" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.jobInput"></a>
 
 ```python
-job_input: typing.Union[IResolvable, typing.List[AppSpecJob]]
+job_input: IResolvable | typing.List[AppSpecJob]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>]
 
 ---
 
@@ -36164,60 +36164,60 @@ region_input: str
 ##### `service_input`<sup>Optional</sup> <a name="service_input" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.serviceInput"></a>
 
 ```python
-service_input: typing.Union[IResolvable, typing.List[AppSpecService]]
+service_input: IResolvable | typing.List[AppSpecService]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>]
 
 ---
 
 ##### `static_site_input`<sup>Optional</sup> <a name="static_site_input" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.staticSiteInput"></a>
 
 ```python
-static_site_input: typing.Union[IResolvable, typing.List[AppSpecStaticSite]]
+static_site_input: IResolvable | typing.List[AppSpecStaticSite]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>]
 
 ---
 
 ##### `vpc_input`<sup>Optional</sup> <a name="vpc_input" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.vpcInput"></a>
 
 ```python
-vpc_input: typing.Union[IResolvable, typing.List[AppSpecVpc]]
+vpc_input: IResolvable | typing.List[AppSpecVpc]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>]
 
 ---
 
 ##### `worker_input`<sup>Optional</sup> <a name="worker_input" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.workerInput"></a>
 
 ```python
-worker_input: typing.Union[IResolvable, typing.List[AppSpecWorker]]
+worker_input: IResolvable | typing.List[AppSpecWorker]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>]
 
 ---
 
 ##### `disable_edge_cache`<sup>Required</sup> <a name="disable_edge_cache" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEdgeCache"></a>
 
 ```python
-disable_edge_cache: typing.Union[bool, IResolvable]
+disable_edge_cache: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `disable_email_obfuscation`<sup>Required</sup> <a name="disable_email_obfuscation" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEmailObfuscation"></a>
 
 ```python
-disable_email_obfuscation: typing.Union[bool, IResolvable]
+disable_email_obfuscation: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -36234,10 +36234,10 @@ domains: typing.List[str]
 ##### `enhanced_threat_control_enabled`<sup>Required</sup> <a name="enhanced_threat_control_enabled" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.enhancedThreatControlEnabled"></a>
 
 ```python
-enhanced_threat_control_enabled: typing.Union[bool, IResolvable]
+enhanced_threat_control_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -36517,13 +36517,13 @@ Returns a reversible string representation.
 
 ```python
 def put_slack_webhooks(
-  value: typing.Union[IResolvable, typing.List[AppSpecServiceAlertDestinationsSlackWebhooks]]
+  value: IResolvable | typing.List[AppSpecServiceAlertDestinationsSlackWebhooks]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsOutputReference.putSlackWebhooks.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>]
 
 ---
 
@@ -36548,7 +36548,7 @@ def reset_slack_webhooks() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsOutputReference.property.slackWebhooks">slack_webhooks</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksList">AppSpecServiceAlertDestinationsSlackWebhooksList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsOutputReference.property.emailsInput">emails_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsOutputReference.property.slackWebhooksInput">slack_webhooks_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsOutputReference.property.slackWebhooksInput">slack_webhooks_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsOutputReference.property.emails">emails</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinations">AppSpecServiceAlertDestinations</a></code> | *No description.* |
 
@@ -36601,10 +36601,10 @@ emails_input: typing.List[str]
 ##### `slack_webhooks_input`<sup>Optional</sup> <a name="slack_webhooks_input" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsOutputReference.property.slackWebhooksInput"></a>
 
 ```python
-slack_webhooks_input: typing.Union[IResolvable, typing.List[AppSpecServiceAlertDestinationsSlackWebhooks]]
+slack_webhooks_input: IResolvable | typing.List[AppSpecServiceAlertDestinationsSlackWebhooks]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>]
 
 ---
 
@@ -36760,7 +36760,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>]</code> | *No description.* |
 
 ---
 
@@ -36791,10 +36791,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecServiceAlertDestinationsSlackWebhooks]]
+internal_value: IResolvable | typing.List[AppSpecServiceAlertDestinationsSlackWebhooks]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>]
 
 ---
 
@@ -37058,7 +37058,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksOutputReference.property.urlInput">url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksOutputReference.property.channel">channel</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksOutputReference.property.url">url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a></code> | *No description.* |
 
 ---
 
@@ -37129,10 +37129,10 @@ url: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecServiceAlertDestinationsSlackWebhooks]
+internal_value: IResolvable | AppSpecServiceAlertDestinationsSlackWebhooks
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>
 
 ---
 
@@ -37268,7 +37268,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>]</code> | *No description.* |
 
 ---
 
@@ -37299,10 +37299,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlertList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecServiceAlert]]
+internal_value: IResolvable | typing.List[AppSpecServiceAlert]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>]
 
 ---
 
@@ -37563,7 +37563,7 @@ Returns a reversible string representation.
 ```python
 def put_destinations(
   emails: typing.List[str] = None,
-  slack_webhooks: typing.Union[IResolvable, typing.List[AppSpecServiceAlertDestinationsSlackWebhooks]] = None
+  slack_webhooks: IResolvable | typing.List[AppSpecServiceAlertDestinationsSlackWebhooks] = None
 ) -> None
 ```
 
@@ -37577,7 +37577,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `slack_webhooks`<sup>Optional</sup> <a name="slack_webhooks" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.putDestinations.parameter.slackWebhooks"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>]
 
 slack_webhooks block.
 
@@ -37606,17 +37606,17 @@ def reset_disabled() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.destinations">destinations</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsOutputReference">AppSpecServiceAlertDestinationsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.destinationsInput">destinations_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinations">AppSpecServiceAlertDestinations</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.disabledInput">disabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.disabledInput">disabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.operatorInput">operator_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.ruleInput">rule_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.valueInput">value_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.windowInput">window_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.disabled">disabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.operator">operator</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.rule">rule</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.value">value</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.window">window</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a></code> | *No description.* |
 
 ---
 
@@ -37667,10 +37667,10 @@ destinations_input: AppSpecServiceAlertDestinations
 ##### `disabled_input`<sup>Optional</sup> <a name="disabled_input" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.disabledInput"></a>
 
 ```python
-disabled_input: typing.Union[bool, IResolvable]
+disabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -37717,10 +37717,10 @@ window_input: str
 ##### `disabled`<sup>Required</sup> <a name="disabled" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.disabled"></a>
 
 ```python
-disabled: typing.Union[bool, IResolvable]
+disabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -37767,10 +37767,10 @@ window: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecServiceAlert]
+internal_value: IResolvable | AppSpecServiceAlert
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>
 
 ---
 
@@ -39009,10 +39009,10 @@ def reset_repo() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.branchInput">branch_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.repoInput">repo_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.branch">branch</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.deployOnPush">deploy_on_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.deployOnPush">deploy_on_push</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.repo">repo</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket">AppSpecServiceBitbucket</a></code> | *No description.* |
 
@@ -39055,10 +39055,10 @@ branch_input: str
 ##### `deploy_on_push_input`<sup>Optional</sup> <a name="deploy_on_push_input" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.deployOnPushInput"></a>
 
 ```python
-deploy_on_push_input: typing.Union[bool, IResolvable]
+deploy_on_push_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -39085,10 +39085,10 @@ branch: str
 ##### `deploy_on_push`<sup>Required</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.deployOnPush"></a>
 
 ```python
-deploy_on_push: typing.Union[bool, IResolvable]
+deploy_on_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -39793,13 +39793,13 @@ def reset_max_age() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowOrigins">allow_origins</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsAllowOriginsOutputReference">AppSpecServiceCorsAllowOriginsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowCredentialsInput">allow_credentials_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowCredentialsInput">allow_credentials_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowHeadersInput">allow_headers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowMethodsInput">allow_methods_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowOriginsInput">allow_origins_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsAllowOrigins">AppSpecServiceCorsAllowOrigins</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.exposeHeadersInput">expose_headers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.maxAgeInput">max_age_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowCredentials">allow_credentials</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowCredentials">allow_credentials</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowHeaders">allow_headers</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowMethods">allow_methods</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.exposeHeaders">expose_headers</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -39845,10 +39845,10 @@ allow_origins: AppSpecServiceCorsAllowOriginsOutputReference
 ##### `allow_credentials_input`<sup>Optional</sup> <a name="allow_credentials_input" id="@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowCredentialsInput"></a>
 
 ```python
-allow_credentials_input: typing.Union[bool, IResolvable]
+allow_credentials_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -39905,10 +39905,10 @@ max_age_input: str
 ##### `allow_credentials`<sup>Required</sup> <a name="allow_credentials" id="@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowCredentials"></a>
 
 ```python
-allow_credentials: typing.Union[bool, IResolvable]
+allow_credentials: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -40094,7 +40094,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnvList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnvList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnvList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnvList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>]</code> | *No description.* |
 
 ---
 
@@ -40125,10 +40125,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecServiceEnvList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecServiceEnv]]
+internal_value: IResolvable | typing.List[AppSpecServiceEnv]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>]
 
 ---
 
@@ -40424,7 +40424,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnvOutputReference.property.scope">scope</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnvOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnvOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnvOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnvOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a></code> | *No description.* |
 
 ---
 
@@ -40535,10 +40535,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecServiceEnvOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecServiceEnv]
+internal_value: IResolvable | AppSpecServiceEnv
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>
 
 ---
 
@@ -40800,10 +40800,10 @@ def reset_repo() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.branchInput">branch_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.repoInput">repo_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.branch">branch</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.deployOnPush">deploy_on_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.deployOnPush">deploy_on_push</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.repo">repo</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithub">AppSpecServiceGithub</a></code> | *No description.* |
 
@@ -40846,10 +40846,10 @@ branch_input: str
 ##### `deploy_on_push_input`<sup>Optional</sup> <a name="deploy_on_push_input" id="@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.deployOnPushInput"></a>
 
 ```python
-deploy_on_push_input: typing.Union[bool, IResolvable]
+deploy_on_push_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -40876,10 +40876,10 @@ branch: str
 ##### `deploy_on_push`<sup>Required</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.deployOnPush"></a>
 
 ```python
-deploy_on_push: typing.Union[bool, IResolvable]
+deploy_on_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -41161,10 +41161,10 @@ def reset_repo() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.branchInput">branch_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.repoInput">repo_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.branch">branch</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.deployOnPush">deploy_on_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.deployOnPush">deploy_on_push</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.repo">repo</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlab">AppSpecServiceGitlab</a></code> | *No description.* |
 
@@ -41207,10 +41207,10 @@ branch_input: str
 ##### `deploy_on_push_input`<sup>Optional</sup> <a name="deploy_on_push_input" id="@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.deployOnPushInput"></a>
 
 ```python
-deploy_on_push_input: typing.Union[bool, IResolvable]
+deploy_on_push_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -41237,10 +41237,10 @@ branch: str
 ##### `deploy_on_push`<sup>Required</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.deployOnPush"></a>
 
 ```python
-deploy_on_push: typing.Union[bool, IResolvable]
+deploy_on_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -42205,7 +42205,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>]</code> | *No description.* |
 
 ---
 
@@ -42236,10 +42236,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecServiceImageDeployOnPush]]
+internal_value: IResolvable | typing.List[AppSpecServiceImageDeployOnPush]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>]
 
 ---
 
@@ -42506,9 +42506,9 @@ def reset_enabled() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.enabledInput">enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a></code> | *No description.* |
 
 ---
 
@@ -42539,30 +42539,30 @@ fqn: str
 ##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.enabledInput"></a>
 
 ```python
-enabled_input: typing.Union[bool, IResolvable]
+enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.enabled"></a>
 
 ```python
-enabled: typing.Union[bool, IResolvable]
+enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecServiceImageDeployOnPush]
+internal_value: IResolvable | AppSpecServiceImageDeployOnPush
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>
 
 ---
 
@@ -42805,13 +42805,13 @@ Returns a reversible string representation.
 
 ```python
 def put_deploy_on_push(
-  value: typing.Union[IResolvable, typing.List[AppSpecServiceImageDeployOnPush]]
+  value: IResolvable | typing.List[AppSpecServiceImageDeployOnPush]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.putDeployOnPush.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>]
 
 ---
 
@@ -42853,7 +42853,7 @@ def reset_tag() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.deployOnPush">deploy_on_push</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushList">AppSpecServiceImageDeployOnPushList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.digestInput">digest_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.registryCredentialsInput">registry_credentials_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.registryInput">registry_input</a></code> | <code>str</code> | *No description.* |
@@ -42907,10 +42907,10 @@ deploy_on_push: AppSpecServiceImageDeployOnPushList
 ##### `deploy_on_push_input`<sup>Optional</sup> <a name="deploy_on_push_input" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.deployOnPushInput"></a>
 
 ```python
-deploy_on_push_input: typing.Union[IResolvable, typing.List[AppSpecServiceImageDeployOnPush]]
+deploy_on_push_input: IResolvable | typing.List[AppSpecServiceImageDeployOnPush]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>]
 
 ---
 
@@ -43176,7 +43176,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>]</code> | *No description.* |
 
 ---
 
@@ -43207,10 +43207,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecServiceList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecService]]
+internal_value: IResolvable | typing.List[AppSpecService]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>]
 
 ---
 
@@ -43671,7 +43671,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>]</code> | *No description.* |
 
 ---
 
@@ -43702,10 +43702,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecServiceLogDestination]]
+internal_value: IResolvable | typing.List[AppSpecServiceLogDestination]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>]
 
 ---
 
@@ -45164,7 +45164,7 @@ def reset_papertrail() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationOutputReference.property.openSearchInput">open_search_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationOpenSearch">AppSpecServiceLogDestinationOpenSearch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationOutputReference.property.papertrailInput">papertrail_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationPapertrail">AppSpecServiceLogDestinationPapertrail</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a></code> | *No description.* |
 
 ---
 
@@ -45295,10 +45295,10 @@ name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecServiceLogDestination]
+internal_value: IResolvable | AppSpecServiceLogDestination
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>
 
 ---
 
@@ -45886,13 +45886,13 @@ Returns a reversible string representation.
 
 ```python
 def put_alert(
-  value: typing.Union[IResolvable, typing.List[AppSpecServiceAlert]]
+  value: IResolvable | typing.List[AppSpecServiceAlert]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putAlert.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>]
 
 ---
 
@@ -45941,7 +45941,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ```python
 def put_bitbucket(
   branch: str = None,
-  deploy_on_push: typing.Union[bool, IResolvable] = None,
+  deploy_on_push: bool | IResolvable = None,
   repo: str = None
 ) -> None
 ```
@@ -45958,7 +45958,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putBitbucket.parameter.deployOnPush"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -45980,7 +45980,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ```python
 def put_cors(
-  allow_credentials: typing.Union[bool, IResolvable] = None,
+  allow_credentials: bool | IResolvable = None,
   allow_headers: typing.List[str] = None,
   allow_methods: typing.List[str] = None,
   allow_origins: AppSpecServiceCorsAllowOrigins = None,
@@ -45991,7 +45991,7 @@ def put_cors(
 
 ###### `allow_credentials`<sup>Optional</sup> <a name="allow_credentials" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putCors.parameter.allowCredentials"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`.
 
@@ -46057,13 +46057,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ```python
 def put_env(
-  value: typing.Union[IResolvable, typing.List[AppSpecServiceEnv]]
+  value: IResolvable | typing.List[AppSpecServiceEnv]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putEnv.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>]
 
 ---
 
@@ -46101,7 +46101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ```python
 def put_github(
   branch: str = None,
-  deploy_on_push: typing.Union[bool, IResolvable] = None,
+  deploy_on_push: bool | IResolvable = None,
   repo: str = None
 ) -> None
 ```
@@ -46118,7 +46118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putGithub.parameter.deployOnPush"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -46141,7 +46141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ```python
 def put_gitlab(
   branch: str = None,
-  deploy_on_push: typing.Union[bool, IResolvable] = None,
+  deploy_on_push: bool | IResolvable = None,
   repo: str = None
 ) -> None
 ```
@@ -46158,7 +46158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putGitlab.parameter.deployOnPush"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -46268,7 +46268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 def put_image(
   registry_type: str,
   repository: str,
-  deploy_on_push: typing.Union[IResolvable, typing.List[AppSpecServiceImageDeployOnPush]] = None,
+  deploy_on_push: IResolvable | typing.List[AppSpecServiceImageDeployOnPush] = None,
   digest: str = None,
   registry: str = None,
   registry_credentials: str = None,
@@ -46298,7 +46298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putImage.parameter.deployOnPush"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>]
 
 deploy_on_push block.
 
@@ -46350,13 +46350,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ```python
 def put_log_destination(
-  value: typing.Union[IResolvable, typing.List[AppSpecServiceLogDestination]]
+  value: IResolvable | typing.List[AppSpecServiceLogDestination]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putLogDestination.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>]
 
 ---
 
@@ -46364,13 +46364,13 @@ def put_log_destination(
 
 ```python
 def put_routes(
-  value: typing.Union[IResolvable, typing.List[AppSpecServiceRoutes]]
+  value: IResolvable | typing.List[AppSpecServiceRoutes]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putRoutes.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>]
 
 ---
 
@@ -46559,13 +46559,13 @@ def reset_termination() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.logDestination">log_destination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationList">AppSpecServiceLogDestinationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.routes">routes</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesList">AppSpecServiceRoutesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.termination">termination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference">AppSpecServiceTerminationOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.alertInput">alert_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.alertInput">alert_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.autoscalingInput">autoscaling_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAutoscaling">AppSpecServiceAutoscaling</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.bitbucketInput">bitbucket_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket">AppSpecServiceBitbucket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.buildCommandInput">build_command_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.corsInput">cors_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCors">AppSpecServiceCors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.dockerfilePathInput">dockerfile_path_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.envInput">env_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.envInput">env_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.environmentSlugInput">environment_slug_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.githubInput">github_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithub">AppSpecServiceGithub</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.gitInput">git_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGit">AppSpecServiceGit</a></code> | *No description.* |
@@ -46576,9 +46576,9 @@ def reset_termination() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.instanceCountInput">instance_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.instanceSizeSlugInput">instance_size_slug_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.internalPortsInput">internal_ports_input</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.logDestinationInput">log_destination_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.logDestinationInput">log_destination_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.routesInput">routes_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.routesInput">routes_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.runCommandInput">run_command_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.sourceDirInput">source_dir_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.terminationInput">termination_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTermination">AppSpecServiceTermination</a></code> | *No description.* |
@@ -46592,7 +46592,7 @@ def reset_termination() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.runCommand">run_command</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.sourceDir">source_dir</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a></code> | *No description.* |
 
 ---
 
@@ -46753,10 +46753,10 @@ termination: AppSpecServiceTerminationOutputReference
 ##### `alert_input`<sup>Optional</sup> <a name="alert_input" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.alertInput"></a>
 
 ```python
-alert_input: typing.Union[IResolvable, typing.List[AppSpecServiceAlert]]
+alert_input: IResolvable | typing.List[AppSpecServiceAlert]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>]
 
 ---
 
@@ -46813,10 +46813,10 @@ dockerfile_path_input: str
 ##### `env_input`<sup>Optional</sup> <a name="env_input" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.envInput"></a>
 
 ```python
-env_input: typing.Union[IResolvable, typing.List[AppSpecServiceEnv]]
+env_input: IResolvable | typing.List[AppSpecServiceEnv]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>]
 
 ---
 
@@ -46923,10 +46923,10 @@ internal_ports_input: typing.List[typing.Union[int, float]]
 ##### `log_destination_input`<sup>Optional</sup> <a name="log_destination_input" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.logDestinationInput"></a>
 
 ```python
-log_destination_input: typing.Union[IResolvable, typing.List[AppSpecServiceLogDestination]]
+log_destination_input: IResolvable | typing.List[AppSpecServiceLogDestination]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>]
 
 ---
 
@@ -46943,10 +46943,10 @@ name_input: str
 ##### `routes_input`<sup>Optional</sup> <a name="routes_input" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.routesInput"></a>
 
 ```python
-routes_input: typing.Union[IResolvable, typing.List[AppSpecServiceRoutes]]
+routes_input: IResolvable | typing.List[AppSpecServiceRoutes]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>]
 
 ---
 
@@ -47083,10 +47083,10 @@ source_dir: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecService]
+internal_value: IResolvable | AppSpecService
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>
 
 ---
 
@@ -47222,7 +47222,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>]</code> | *No description.* |
 
 ---
 
@@ -47253,10 +47253,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecServiceRoutesList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecServiceRoutes]]
+internal_value: IResolvable | typing.List[AppSpecServiceRoutes]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>]
 
 ---
 
@@ -47531,10 +47531,10 @@ def reset_preserve_path_prefix() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.pathInput">path_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.preservePathPrefixInput">preserve_path_prefix_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.preservePathPrefixInput">preserve_path_prefix_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.path">path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.preservePathPrefix">preserve_path_prefix</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.preservePathPrefix">preserve_path_prefix</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a></code> | *No description.* |
 
 ---
 
@@ -47575,10 +47575,10 @@ path_input: str
 ##### `preserve_path_prefix_input`<sup>Optional</sup> <a name="preserve_path_prefix_input" id="@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.preservePathPrefixInput"></a>
 
 ```python
-preserve_path_prefix_input: typing.Union[bool, IResolvable]
+preserve_path_prefix_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -47595,20 +47595,20 @@ path: str
 ##### `preserve_path_prefix`<sup>Required</sup> <a name="preserve_path_prefix" id="@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.preservePathPrefix"></a>
 
 ```python
-preserve_path_prefix: typing.Union[bool, IResolvable]
+preserve_path_prefix: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecServiceRoutes]
+internal_value: IResolvable | AppSpecServiceRoutes
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>
 
 ---
 
@@ -48202,10 +48202,10 @@ def reset_repo() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.branchInput">branch_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.repoInput">repo_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.branch">branch</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.deployOnPush">deploy_on_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.deployOnPush">deploy_on_push</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.repo">repo</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucket">AppSpecStaticSiteBitbucket</a></code> | *No description.* |
 
@@ -48248,10 +48248,10 @@ branch_input: str
 ##### `deploy_on_push_input`<sup>Optional</sup> <a name="deploy_on_push_input" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.deployOnPushInput"></a>
 
 ```python
-deploy_on_push_input: typing.Union[bool, IResolvable]
+deploy_on_push_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -48278,10 +48278,10 @@ branch: str
 ##### `deploy_on_push`<sup>Required</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.deployOnPush"></a>
 
 ```python
-deploy_on_push: typing.Union[bool, IResolvable]
+deploy_on_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -48986,13 +48986,13 @@ def reset_max_age() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowOrigins">allow_origins</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsAllowOriginsOutputReference">AppSpecStaticSiteCorsAllowOriginsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowCredentialsInput">allow_credentials_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowCredentialsInput">allow_credentials_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowHeadersInput">allow_headers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowMethodsInput">allow_methods_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowOriginsInput">allow_origins_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsAllowOrigins">AppSpecStaticSiteCorsAllowOrigins</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.exposeHeadersInput">expose_headers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.maxAgeInput">max_age_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowCredentials">allow_credentials</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowCredentials">allow_credentials</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowHeaders">allow_headers</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowMethods">allow_methods</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.exposeHeaders">expose_headers</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -49038,10 +49038,10 @@ allow_origins: AppSpecStaticSiteCorsAllowOriginsOutputReference
 ##### `allow_credentials_input`<sup>Optional</sup> <a name="allow_credentials_input" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowCredentialsInput"></a>
 
 ```python
-allow_credentials_input: typing.Union[bool, IResolvable]
+allow_credentials_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -49098,10 +49098,10 @@ max_age_input: str
 ##### `allow_credentials`<sup>Required</sup> <a name="allow_credentials" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowCredentials"></a>
 
 ```python
-allow_credentials: typing.Union[bool, IResolvable]
+allow_credentials: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -49287,7 +49287,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>]</code> | *No description.* |
 
 ---
 
@@ -49318,10 +49318,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecStaticSiteEnv]]
+internal_value: IResolvable | typing.List[AppSpecStaticSiteEnv]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>]
 
 ---
 
@@ -49617,7 +49617,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvOutputReference.property.scope">scope</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a></code> | *No description.* |
 
 ---
 
@@ -49728,10 +49728,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecStaticSiteEnv]
+internal_value: IResolvable | AppSpecStaticSiteEnv
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>
 
 ---
 
@@ -49993,10 +49993,10 @@ def reset_repo() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.branchInput">branch_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.repoInput">repo_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.branch">branch</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.deployOnPush">deploy_on_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.deployOnPush">deploy_on_push</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.repo">repo</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithub">AppSpecStaticSiteGithub</a></code> | *No description.* |
 
@@ -50039,10 +50039,10 @@ branch_input: str
 ##### `deploy_on_push_input`<sup>Optional</sup> <a name="deploy_on_push_input" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.deployOnPushInput"></a>
 
 ```python
-deploy_on_push_input: typing.Union[bool, IResolvable]
+deploy_on_push_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -50069,10 +50069,10 @@ branch: str
 ##### `deploy_on_push`<sup>Required</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.deployOnPush"></a>
 
 ```python
-deploy_on_push: typing.Union[bool, IResolvable]
+deploy_on_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -50354,10 +50354,10 @@ def reset_repo() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.branchInput">branch_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.repoInput">repo_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.branch">branch</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.deployOnPush">deploy_on_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.deployOnPush">deploy_on_push</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.repo">repo</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlab">AppSpecStaticSiteGitlab</a></code> | *No description.* |
 
@@ -50400,10 +50400,10 @@ branch_input: str
 ##### `deploy_on_push_input`<sup>Optional</sup> <a name="deploy_on_push_input" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.deployOnPushInput"></a>
 
 ```python
-deploy_on_push_input: typing.Union[bool, IResolvable]
+deploy_on_push_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -50430,10 +50430,10 @@ branch: str
 ##### `deploy_on_push`<sup>Required</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.deployOnPush"></a>
 
 ```python
-deploy_on_push: typing.Union[bool, IResolvable]
+deploy_on_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -50921,7 +50921,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>]</code> | *No description.* |
 
 ---
 
@@ -50952,10 +50952,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecStaticSite]]
+internal_value: IResolvable | typing.List[AppSpecStaticSite]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>]
 
 ---
 
@@ -51235,7 +51235,7 @@ Returns a reversible string representation.
 ```python
 def put_bitbucket(
   branch: str = None,
-  deploy_on_push: typing.Union[bool, IResolvable] = None,
+  deploy_on_push: bool | IResolvable = None,
   repo: str = None
 ) -> None
 ```
@@ -51252,7 +51252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.putBitbucket.parameter.deployOnPush"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -51274,7 +51274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ```python
 def put_cors(
-  allow_credentials: typing.Union[bool, IResolvable] = None,
+  allow_credentials: bool | IResolvable = None,
   allow_headers: typing.List[str] = None,
   allow_methods: typing.List[str] = None,
   allow_origins: AppSpecStaticSiteCorsAllowOrigins = None,
@@ -51285,7 +51285,7 @@ def put_cors(
 
 ###### `allow_credentials`<sup>Optional</sup> <a name="allow_credentials" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.putCors.parameter.allowCredentials"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`.
 
@@ -51351,13 +51351,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ```python
 def put_env(
-  value: typing.Union[IResolvable, typing.List[AppSpecStaticSiteEnv]]
+  value: IResolvable | typing.List[AppSpecStaticSiteEnv]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.putEnv.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>]
 
 ---
 
@@ -51395,7 +51395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ```python
 def put_github(
   branch: str = None,
-  deploy_on_push: typing.Union[bool, IResolvable] = None,
+  deploy_on_push: bool | IResolvable = None,
   repo: str = None
 ) -> None
 ```
@@ -51412,7 +51412,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.putGithub.parameter.deployOnPush"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -51435,7 +51435,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ```python
 def put_gitlab(
   branch: str = None,
-  deploy_on_push: typing.Union[bool, IResolvable] = None,
+  deploy_on_push: bool | IResolvable = None,
   repo: str = None
 ) -> None
 ```
@@ -51452,7 +51452,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.putGitlab.parameter.deployOnPush"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -51474,13 +51474,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ```python
 def put_routes(
-  value: typing.Union[IResolvable, typing.List[AppSpecStaticSiteRoutes]]
+  value: IResolvable | typing.List[AppSpecStaticSiteRoutes]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.putRoutes.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>]
 
 ---
 
@@ -51593,7 +51593,7 @@ def reset_source_dir() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.catchallDocumentInput">catchall_document_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.corsInput">cors_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCors">AppSpecStaticSiteCors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.dockerfilePathInput">dockerfile_path_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.envInput">env_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.envInput">env_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.environmentSlugInput">environment_slug_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.errorDocumentInput">error_document_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.githubInput">github_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithub">AppSpecStaticSiteGithub</a></code> | *No description.* |
@@ -51602,7 +51602,7 @@ def reset_source_dir() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.indexDocumentInput">index_document_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.outputDirInput">output_dir_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.routesInput">routes_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.routesInput">routes_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.sourceDirInput">source_dir_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.buildCommand">build_command</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.catchallDocument">catchall_document</a></code> | <code>str</code> | *No description.* |
@@ -51613,7 +51613,7 @@ def reset_source_dir() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.outputDir">output_dir</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.sourceDir">source_dir</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a></code> | *No description.* |
 
 ---
 
@@ -51764,10 +51764,10 @@ dockerfile_path_input: str
 ##### `env_input`<sup>Optional</sup> <a name="env_input" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.envInput"></a>
 
 ```python
-env_input: typing.Union[IResolvable, typing.List[AppSpecStaticSiteEnv]]
+env_input: IResolvable | typing.List[AppSpecStaticSiteEnv]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>]
 
 ---
 
@@ -51854,10 +51854,10 @@ output_dir_input: str
 ##### `routes_input`<sup>Optional</sup> <a name="routes_input" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.routesInput"></a>
 
 ```python
-routes_input: typing.Union[IResolvable, typing.List[AppSpecStaticSiteRoutes]]
+routes_input: IResolvable | typing.List[AppSpecStaticSiteRoutes]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>]
 
 ---
 
@@ -51964,10 +51964,10 @@ source_dir: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecStaticSite]
+internal_value: IResolvable | AppSpecStaticSite
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>
 
 ---
 
@@ -52103,7 +52103,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>]</code> | *No description.* |
 
 ---
 
@@ -52134,10 +52134,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecStaticSiteRoutes]]
+internal_value: IResolvable | typing.List[AppSpecStaticSiteRoutes]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>]
 
 ---
 
@@ -52412,10 +52412,10 @@ def reset_preserve_path_prefix() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.pathInput">path_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.preservePathPrefixInput">preserve_path_prefix_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.preservePathPrefixInput">preserve_path_prefix_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.path">path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.preservePathPrefix">preserve_path_prefix</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.preservePathPrefix">preserve_path_prefix</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a></code> | *No description.* |
 
 ---
 
@@ -52456,10 +52456,10 @@ path_input: str
 ##### `preserve_path_prefix_input`<sup>Optional</sup> <a name="preserve_path_prefix_input" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.preservePathPrefixInput"></a>
 
 ```python
-preserve_path_prefix_input: typing.Union[bool, IResolvable]
+preserve_path_prefix_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -52476,20 +52476,20 @@ path: str
 ##### `preserve_path_prefix`<sup>Required</sup> <a name="preserve_path_prefix" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.preservePathPrefix"></a>
 
 ```python
-preserve_path_prefix: typing.Union[bool, IResolvable]
+preserve_path_prefix: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecStaticSiteRoutes]
+internal_value: IResolvable | AppSpecStaticSiteRoutes
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>
 
 ---
 
@@ -52625,7 +52625,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecVpcList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecVpcList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecVpcList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecVpcList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>]</code> | *No description.* |
 
 ---
 
@@ -52656,10 +52656,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecVpcList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecVpc]]
+internal_value: IResolvable | typing.List[AppSpecVpc]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>]
 
 ---
 
@@ -52921,7 +52921,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecVpcOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecVpcOutputReference.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecVpcOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecVpcOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecVpcOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a></code> | *No description.* |
 
 ---
 
@@ -52972,10 +52972,10 @@ id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecVpcOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecVpc]
+internal_value: IResolvable | AppSpecVpc
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>
 
 ---
 
@@ -53215,13 +53215,13 @@ Returns a reversible string representation.
 
 ```python
 def put_slack_webhooks(
-  value: typing.Union[IResolvable, typing.List[AppSpecWorkerAlertDestinationsSlackWebhooks]]
+  value: IResolvable | typing.List[AppSpecWorkerAlertDestinationsSlackWebhooks]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsOutputReference.putSlackWebhooks.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>]
 
 ---
 
@@ -53246,7 +53246,7 @@ def reset_slack_webhooks() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsOutputReference.property.slackWebhooks">slack_webhooks</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksList">AppSpecWorkerAlertDestinationsSlackWebhooksList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsOutputReference.property.emailsInput">emails_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsOutputReference.property.slackWebhooksInput">slack_webhooks_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsOutputReference.property.slackWebhooksInput">slack_webhooks_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsOutputReference.property.emails">emails</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinations">AppSpecWorkerAlertDestinations</a></code> | *No description.* |
 
@@ -53299,10 +53299,10 @@ emails_input: typing.List[str]
 ##### `slack_webhooks_input`<sup>Optional</sup> <a name="slack_webhooks_input" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsOutputReference.property.slackWebhooksInput"></a>
 
 ```python
-slack_webhooks_input: typing.Union[IResolvable, typing.List[AppSpecWorkerAlertDestinationsSlackWebhooks]]
+slack_webhooks_input: IResolvable | typing.List[AppSpecWorkerAlertDestinationsSlackWebhooks]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>]
 
 ---
 
@@ -53458,7 +53458,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>]</code> | *No description.* |
 
 ---
 
@@ -53489,10 +53489,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecWorkerAlertDestinationsSlackWebhooks]]
+internal_value: IResolvable | typing.List[AppSpecWorkerAlertDestinationsSlackWebhooks]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>]
 
 ---
 
@@ -53756,7 +53756,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksOutputReference.property.urlInput">url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksOutputReference.property.channel">channel</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksOutputReference.property.url">url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a></code> | *No description.* |
 
 ---
 
@@ -53827,10 +53827,10 @@ url: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecWorkerAlertDestinationsSlackWebhooks]
+internal_value: IResolvable | AppSpecWorkerAlertDestinationsSlackWebhooks
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>
 
 ---
 
@@ -53966,7 +53966,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>]</code> | *No description.* |
 
 ---
 
@@ -53997,10 +53997,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlertList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecWorkerAlert]]
+internal_value: IResolvable | typing.List[AppSpecWorkerAlert]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>]
 
 ---
 
@@ -54261,7 +54261,7 @@ Returns a reversible string representation.
 ```python
 def put_destinations(
   emails: typing.List[str] = None,
-  slack_webhooks: typing.Union[IResolvable, typing.List[AppSpecWorkerAlertDestinationsSlackWebhooks]] = None
+  slack_webhooks: IResolvable | typing.List[AppSpecWorkerAlertDestinationsSlackWebhooks] = None
 ) -> None
 ```
 
@@ -54275,7 +54275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `slack_webhooks`<sup>Optional</sup> <a name="slack_webhooks" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.putDestinations.parameter.slackWebhooks"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>]
 
 slack_webhooks block.
 
@@ -54304,17 +54304,17 @@ def reset_disabled() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.destinations">destinations</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsOutputReference">AppSpecWorkerAlertDestinationsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.destinationsInput">destinations_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinations">AppSpecWorkerAlertDestinations</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.disabledInput">disabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.disabledInput">disabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.operatorInput">operator_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.ruleInput">rule_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.valueInput">value_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.windowInput">window_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.disabled">disabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.operator">operator</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.rule">rule</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.value">value</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.window">window</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a></code> | *No description.* |
 
 ---
 
@@ -54365,10 +54365,10 @@ destinations_input: AppSpecWorkerAlertDestinations
 ##### `disabled_input`<sup>Optional</sup> <a name="disabled_input" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.disabledInput"></a>
 
 ```python
-disabled_input: typing.Union[bool, IResolvable]
+disabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -54415,10 +54415,10 @@ window_input: str
 ##### `disabled`<sup>Required</sup> <a name="disabled" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.disabled"></a>
 
 ```python
-disabled: typing.Union[bool, IResolvable]
+disabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -54465,10 +54465,10 @@ window: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecWorkerAlert]
+internal_value: IResolvable | AppSpecWorkerAlert
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>
 
 ---
 
@@ -55707,10 +55707,10 @@ def reset_repo() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.branchInput">branch_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.repoInput">repo_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.branch">branch</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.deployOnPush">deploy_on_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.deployOnPush">deploy_on_push</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.repo">repo</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket">AppSpecWorkerBitbucket</a></code> | *No description.* |
 
@@ -55753,10 +55753,10 @@ branch_input: str
 ##### `deploy_on_push_input`<sup>Optional</sup> <a name="deploy_on_push_input" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.deployOnPushInput"></a>
 
 ```python
-deploy_on_push_input: typing.Union[bool, IResolvable]
+deploy_on_push_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -55783,10 +55783,10 @@ branch: str
 ##### `deploy_on_push`<sup>Required</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.deployOnPush"></a>
 
 ```python
-deploy_on_push: typing.Union[bool, IResolvable]
+deploy_on_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -55942,7 +55942,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnvList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnvList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnvList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnvList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>]</code> | *No description.* |
 
 ---
 
@@ -55973,10 +55973,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecWorkerEnvList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecWorkerEnv]]
+internal_value: IResolvable | typing.List[AppSpecWorkerEnv]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>]
 
 ---
 
@@ -56272,7 +56272,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnvOutputReference.property.scope">scope</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnvOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnvOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnvOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnvOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a></code> | *No description.* |
 
 ---
 
@@ -56383,10 +56383,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecWorkerEnvOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecWorkerEnv]
+internal_value: IResolvable | AppSpecWorkerEnv
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>
 
 ---
 
@@ -56648,10 +56648,10 @@ def reset_repo() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.branchInput">branch_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.repoInput">repo_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.branch">branch</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.deployOnPush">deploy_on_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.deployOnPush">deploy_on_push</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.repo">repo</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithub">AppSpecWorkerGithub</a></code> | *No description.* |
 
@@ -56694,10 +56694,10 @@ branch_input: str
 ##### `deploy_on_push_input`<sup>Optional</sup> <a name="deploy_on_push_input" id="@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.deployOnPushInput"></a>
 
 ```python
-deploy_on_push_input: typing.Union[bool, IResolvable]
+deploy_on_push_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -56724,10 +56724,10 @@ branch: str
 ##### `deploy_on_push`<sup>Required</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.deployOnPush"></a>
 
 ```python
-deploy_on_push: typing.Union[bool, IResolvable]
+deploy_on_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -57009,10 +57009,10 @@ def reset_repo() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.branchInput">branch_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.repoInput">repo_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.branch">branch</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.deployOnPush">deploy_on_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.deployOnPush">deploy_on_push</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.repo">repo</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlab">AppSpecWorkerGitlab</a></code> | *No description.* |
 
@@ -57055,10 +57055,10 @@ branch_input: str
 ##### `deploy_on_push_input`<sup>Optional</sup> <a name="deploy_on_push_input" id="@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.deployOnPushInput"></a>
 
 ```python
-deploy_on_push_input: typing.Union[bool, IResolvable]
+deploy_on_push_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -57085,10 +57085,10 @@ branch: str
 ##### `deploy_on_push`<sup>Required</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.deployOnPush"></a>
 
 ```python
-deploy_on_push: typing.Union[bool, IResolvable]
+deploy_on_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -57576,7 +57576,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>]</code> | *No description.* |
 
 ---
 
@@ -57607,10 +57607,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecWorkerImageDeployOnPush]]
+internal_value: IResolvable | typing.List[AppSpecWorkerImageDeployOnPush]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>]
 
 ---
 
@@ -57877,9 +57877,9 @@ def reset_enabled() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.enabledInput">enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a></code> | *No description.* |
 
 ---
 
@@ -57910,30 +57910,30 @@ fqn: str
 ##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.enabledInput"></a>
 
 ```python
-enabled_input: typing.Union[bool, IResolvable]
+enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.enabled"></a>
 
 ```python
-enabled: typing.Union[bool, IResolvable]
+enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecWorkerImageDeployOnPush]
+internal_value: IResolvable | AppSpecWorkerImageDeployOnPush
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>
 
 ---
 
@@ -58176,13 +58176,13 @@ Returns a reversible string representation.
 
 ```python
 def put_deploy_on_push(
-  value: typing.Union[IResolvable, typing.List[AppSpecWorkerImageDeployOnPush]]
+  value: IResolvable | typing.List[AppSpecWorkerImageDeployOnPush]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.putDeployOnPush.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>]
 
 ---
 
@@ -58224,7 +58224,7 @@ def reset_tag() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.deployOnPush">deploy_on_push</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushList">AppSpecWorkerImageDeployOnPushList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.deployOnPushInput">deploy_on_push_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.digestInput">digest_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.registryCredentialsInput">registry_credentials_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.registryInput">registry_input</a></code> | <code>str</code> | *No description.* |
@@ -58278,10 +58278,10 @@ deploy_on_push: AppSpecWorkerImageDeployOnPushList
 ##### `deploy_on_push_input`<sup>Optional</sup> <a name="deploy_on_push_input" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.deployOnPushInput"></a>
 
 ```python
-deploy_on_push_input: typing.Union[IResolvable, typing.List[AppSpecWorkerImageDeployOnPush]]
+deploy_on_push_input: IResolvable | typing.List[AppSpecWorkerImageDeployOnPush]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>]
 
 ---
 
@@ -58547,7 +58547,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>]</code> | *No description.* |
 
 ---
 
@@ -58578,10 +58578,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecWorkerList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecWorker]]
+internal_value: IResolvable | typing.List[AppSpecWorker]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>]
 
 ---
 
@@ -59042,7 +59042,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>]</code> | *No description.* |
 
 ---
 
@@ -59073,10 +59073,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSpecWorkerLogDestination]]
+internal_value: IResolvable | typing.List[AppSpecWorkerLogDestination]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>]
 
 ---
 
@@ -60535,7 +60535,7 @@ def reset_papertrail() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationOutputReference.property.openSearchInput">open_search_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationOpenSearch">AppSpecWorkerLogDestinationOpenSearch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationOutputReference.property.papertrailInput">papertrail_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationPapertrail">AppSpecWorkerLogDestinationPapertrail</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a></code> | *No description.* |
 
 ---
 
@@ -60666,10 +60666,10 @@ name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecWorkerLogDestination]
+internal_value: IResolvable | AppSpecWorkerLogDestination
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>
 
 ---
 
@@ -61249,13 +61249,13 @@ Returns a reversible string representation.
 
 ```python
 def put_alert(
-  value: typing.Union[IResolvable, typing.List[AppSpecWorkerAlert]]
+  value: IResolvable | typing.List[AppSpecWorkerAlert]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putAlert.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>]
 
 ---
 
@@ -61304,7 +61304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ```python
 def put_bitbucket(
   branch: str = None,
-  deploy_on_push: typing.Union[bool, IResolvable] = None,
+  deploy_on_push: bool | IResolvable = None,
   repo: str = None
 ) -> None
 ```
@@ -61321,7 +61321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putBitbucket.parameter.deployOnPush"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -61343,13 +61343,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ```python
 def put_env(
-  value: typing.Union[IResolvable, typing.List[AppSpecWorkerEnv]]
+  value: IResolvable | typing.List[AppSpecWorkerEnv]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putEnv.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>]
 
 ---
 
@@ -61387,7 +61387,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ```python
 def put_github(
   branch: str = None,
-  deploy_on_push: typing.Union[bool, IResolvable] = None,
+  deploy_on_push: bool | IResolvable = None,
   repo: str = None
 ) -> None
 ```
@@ -61404,7 +61404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putGithub.parameter.deployOnPush"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -61427,7 +61427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ```python
 def put_gitlab(
   branch: str = None,
-  deploy_on_push: typing.Union[bool, IResolvable] = None,
+  deploy_on_push: bool | IResolvable = None,
   repo: str = None
 ) -> None
 ```
@@ -61444,7 +61444,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putGitlab.parameter.deployOnPush"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -61468,7 +61468,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 def put_image(
   registry_type: str,
   repository: str,
-  deploy_on_push: typing.Union[IResolvable, typing.List[AppSpecWorkerImageDeployOnPush]] = None,
+  deploy_on_push: IResolvable | typing.List[AppSpecWorkerImageDeployOnPush] = None,
   digest: str = None,
   registry: str = None,
   registry_credentials: str = None,
@@ -61498,7 +61498,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ###### `deploy_on_push`<sup>Optional</sup> <a name="deploy_on_push" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putImage.parameter.deployOnPush"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>]
 
 deploy_on_push block.
 
@@ -61550,13 +61550,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ```python
 def put_log_destination(
-  value: typing.Union[IResolvable, typing.List[AppSpecWorkerLogDestination]]
+  value: IResolvable | typing.List[AppSpecWorkerLogDestination]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putLogDestination.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>]
 
 ---
 
@@ -61699,12 +61699,12 @@ def reset_termination() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.image">image</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference">AppSpecWorkerImageOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.logDestination">log_destination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationList">AppSpecWorkerLogDestinationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.termination">termination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference">AppSpecWorkerTerminationOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.alertInput">alert_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.alertInput">alert_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.autoscalingInput">autoscaling_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscaling">AppSpecWorkerAutoscaling</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.bitbucketInput">bitbucket_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket">AppSpecWorkerBitbucket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.buildCommandInput">build_command_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.dockerfilePathInput">dockerfile_path_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.envInput">env_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.envInput">env_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.environmentSlugInput">environment_slug_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.githubInput">github_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithub">AppSpecWorkerGithub</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.gitInput">git_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGit">AppSpecWorkerGit</a></code> | *No description.* |
@@ -61712,7 +61712,7 @@ def reset_termination() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.imageInput">image_input</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImage">AppSpecWorkerImage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.instanceCountInput">instance_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.instanceSizeSlugInput">instance_size_slug_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.logDestinationInput">log_destination_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.logDestinationInput">log_destination_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.runCommandInput">run_command_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.sourceDirInput">source_dir_input</a></code> | <code>str</code> | *No description.* |
@@ -61725,7 +61725,7 @@ def reset_termination() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.runCommand">run_command</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.sourceDir">source_dir</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a></code> | *No description.* |
 
 ---
 
@@ -61856,10 +61856,10 @@ termination: AppSpecWorkerTerminationOutputReference
 ##### `alert_input`<sup>Optional</sup> <a name="alert_input" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.alertInput"></a>
 
 ```python
-alert_input: typing.Union[IResolvable, typing.List[AppSpecWorkerAlert]]
+alert_input: IResolvable | typing.List[AppSpecWorkerAlert]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>]
 
 ---
 
@@ -61906,10 +61906,10 @@ dockerfile_path_input: str
 ##### `env_input`<sup>Optional</sup> <a name="env_input" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.envInput"></a>
 
 ```python
-env_input: typing.Union[IResolvable, typing.List[AppSpecWorkerEnv]]
+env_input: IResolvable | typing.List[AppSpecWorkerEnv]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>]
 
 ---
 
@@ -61986,10 +61986,10 @@ instance_size_slug_input: str
 ##### `log_destination_input`<sup>Optional</sup> <a name="log_destination_input" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.logDestinationInput"></a>
 
 ```python
-log_destination_input: typing.Union[IResolvable, typing.List[AppSpecWorkerLogDestination]]
+log_destination_input: IResolvable | typing.List[AppSpecWorkerLogDestination]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>]
 
 ---
 
@@ -62116,10 +62116,10 @@ source_dir: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSpecWorker]
+internal_value: IResolvable | AppSpecWorker
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>
 
 ---
 
@@ -62671,7 +62671,7 @@ def reset_create() -> None
 | <code><a href="#@cdktf/provider-digitalocean.app.AppTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppTimeouts">AppTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.app.AppTimeouts">AppTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -62722,10 +62722,10 @@ create: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.app.AppTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppTimeouts]
+internal_value: IResolvable | AppTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.app.AppTimeouts">AppTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.app.AppTimeouts">AppTimeouts</a>
 
 ---
 

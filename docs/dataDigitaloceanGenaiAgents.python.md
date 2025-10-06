@@ -14,17 +14,17 @@ from cdktf_cdktf_provider_digitalocean import data_digitalocean_genai_agents
 dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  filter: typing.Union[IResolvable, typing.List[DataDigitaloceanGenaiAgentsFilter]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  filter: IResolvable | typing.List[DataDigitaloceanGenaiAgentsFilter] = None,
   id: str = None,
-  only_deployed: typing.Union[bool, IResolvable] = None,
-  sort: typing.Union[IResolvable, typing.List[DataDigitaloceanGenaiAgentsSort]] = None
+  only_deployed: bool | IResolvable = None,
+  sort: IResolvable | typing.List[DataDigitaloceanGenaiAgentsSort] = None
 )
 ```
 
@@ -32,17 +32,17 @@ dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.filter">filter</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>]]</code> | filter block. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.filter">filter</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>]</code> | filter block. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#id DataDigitaloceanGenaiAgents#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.onlyDeployed">only_deployed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#only_deployed DataDigitaloceanGenaiAgents#only_deployed}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.sort">sort</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>]]</code> | sort block. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.onlyDeployed">only_deployed</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#only_deployed DataDigitaloceanGenaiAgents#only_deployed}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.sort">sort</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>]</code> | sort block. |
 
 ---
 
@@ -66,13 +66,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -102,13 +102,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
 ##### `filter`<sup>Optional</sup> <a name="filter" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.filter"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>]
 
 filter block.
 
@@ -129,7 +129,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `only_deployed`<sup>Optional</sup> <a name="only_deployed" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.onlyDeployed"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#only_deployed DataDigitaloceanGenaiAgents#only_deployed}.
 
@@ -137,7 +137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 ##### `sort`<sup>Optional</sup> <a name="sort" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.Initializer.parameter.sort"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>]
 
 sort block.
 
@@ -396,13 +396,13 @@ def interpolation_for_attribute(
 
 ```python
 def put_filter(
-  value: typing.Union[IResolvable, typing.List[DataDigitaloceanGenaiAgentsFilter]]
+  value: IResolvable | typing.List[DataDigitaloceanGenaiAgentsFilter]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.putFilter.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>]
 
 ---
 
@@ -410,13 +410,13 @@ def put_filter(
 
 ```python
 def put_sort(
-  value: typing.Union[IResolvable, typing.List[DataDigitaloceanGenaiAgentsSort]]
+  value: IResolvable | typing.List[DataDigitaloceanGenaiAgentsSort]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.putSort.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>]
 
 ---
 
@@ -581,7 +581,7 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -589,12 +589,12 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.agents">agents</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsAgentsList">DataDigitaloceanGenaiAgentsAgentsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.filter">filter</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterList">DataDigitaloceanGenaiAgentsFilterList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.sort">sort</a></code> | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortList">DataDigitaloceanGenaiAgentsSortList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.filterInput">filter_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.filterInput">filter_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.onlyDeployedInput">only_deployed_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.sortInput">sort_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.onlyDeployedInput">only_deployed_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.sortInput">sort_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.onlyDeployed">only_deployed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.onlyDeployed">only_deployed</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -673,10 +673,10 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -753,10 +753,10 @@ sort: DataDigitaloceanGenaiAgentsSortList
 ##### `filter_input`<sup>Optional</sup> <a name="filter_input" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.filterInput"></a>
 
 ```python
-filter_input: typing.Union[IResolvable, typing.List[DataDigitaloceanGenaiAgentsFilter]]
+filter_input: IResolvable | typing.List[DataDigitaloceanGenaiAgentsFilter]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>]
 
 ---
 
@@ -773,20 +773,20 @@ id_input: str
 ##### `only_deployed_input`<sup>Optional</sup> <a name="only_deployed_input" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.onlyDeployedInput"></a>
 
 ```python
-only_deployed_input: typing.Union[bool, IResolvable]
+only_deployed_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `sort_input`<sup>Optional</sup> <a name="sort_input" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.sortInput"></a>
 
 ```python
-sort_input: typing.Union[IResolvable, typing.List[DataDigitaloceanGenaiAgentsSort]]
+sort_input: IResolvable | typing.List[DataDigitaloceanGenaiAgentsSort]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>]
 
 ---
 
@@ -803,10 +803,10 @@ id: str
 ##### `only_deployed`<sup>Required</sup> <a name="only_deployed" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgents.property.onlyDeployed"></a>
 
 ```python
-only_deployed: typing.Union[bool, IResolvable]
+only_deployed: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1223,17 +1223,17 @@ dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsAgentsTemplateModelVersio
 from cdktf_cdktf_provider_digitalocean import data_digitalocean_genai_agents
 
 dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  filter: typing.Union[IResolvable, typing.List[DataDigitaloceanGenaiAgentsFilter]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  filter: IResolvable | typing.List[DataDigitaloceanGenaiAgentsFilter] = None,
   id: str = None,
-  only_deployed: typing.Union[bool, IResolvable] = None,
-  sort: typing.Union[IResolvable, typing.List[DataDigitaloceanGenaiAgentsSort]] = None
+  only_deployed: bool | IResolvable = None,
+  sort: IResolvable | typing.List[DataDigitaloceanGenaiAgentsSort] = None
 )
 ```
 
@@ -1241,37 +1241,37 @@ dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.filter">filter</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>]]</code> | filter block. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.filter">filter</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>]</code> | filter block. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#id DataDigitaloceanGenaiAgents#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.onlyDeployed">only_deployed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#only_deployed DataDigitaloceanGenaiAgents#only_deployed}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.sort">sort</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>]]</code> | sort block. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.onlyDeployed">only_deployed</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#only_deployed DataDigitaloceanGenaiAgents#only_deployed}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.sort">sort</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>]</code> | sort block. |
 
 ---
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1318,20 +1318,20 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
 ##### `filter`<sup>Optional</sup> <a name="filter" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.filter"></a>
 
 ```python
-filter: typing.Union[IResolvable, typing.List[DataDigitaloceanGenaiAgentsFilter]]
+filter: IResolvable | typing.List[DataDigitaloceanGenaiAgentsFilter]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>]
 
 filter block.
 
@@ -1357,10 +1357,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `only_deployed`<sup>Optional</sup> <a name="only_deployed" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.onlyDeployed"></a>
 
 ```python
-only_deployed: typing.Union[bool, IResolvable]
+only_deployed: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#only_deployed DataDigitaloceanGenaiAgents#only_deployed}.
 
@@ -1369,10 +1369,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `sort`<sup>Optional</sup> <a name="sort" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsConfig.property.sort"></a>
 
 ```python
-sort: typing.Union[IResolvable, typing.List[DataDigitaloceanGenaiAgentsSort]]
+sort: IResolvable | typing.List[DataDigitaloceanGenaiAgentsSort]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>]
 
 sort block.
 
@@ -1390,7 +1390,7 @@ from cdktf_cdktf_provider_digitalocean import data_digitalocean_genai_agents
 dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter(
   key: str,
   values: typing.List[str],
-  all: typing.Union[bool, IResolvable] = None,
+  all: bool | IResolvable = None,
   match_by: str = None
 )
 ```
@@ -1401,7 +1401,7 @@ dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#key DataDigitaloceanGenaiAgents#key}. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#values DataDigitaloceanGenaiAgents#values}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter.property.all">all</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#all DataDigitaloceanGenaiAgents#all}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter.property.all">all</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#all DataDigitaloceanGenaiAgents#all}. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter.property.matchBy">match_by</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#match_by DataDigitaloceanGenaiAgents#match_by}. |
 
 ---
@@ -1433,10 +1433,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `all`<sup>Optional</sup> <a name="all" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter.property.all"></a>
 
 ```python
-all: typing.Union[bool, IResolvable]
+all: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents#all DataDigitaloceanGenaiAgents#all}.
 
@@ -20414,7 +20414,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>]</code> | *No description.* |
 
 ---
 
@@ -20445,10 +20445,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[DataDigitaloceanGenaiAgentsFilter]]
+internal_value: IResolvable | typing.List[DataDigitaloceanGenaiAgentsFilter]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>]
 
 ---
 
@@ -20722,15 +20722,15 @@ def reset_match_by() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.allInput">all_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.allInput">all_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.matchByInput">match_by_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.all">all</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.all">all</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.matchBy">match_by</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a></code> | *No description.* |
 
 ---
 
@@ -20761,10 +20761,10 @@ fqn: str
 ##### `all_input`<sup>Optional</sup> <a name="all_input" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.allInput"></a>
 
 ```python
-all_input: typing.Union[bool, IResolvable]
+all_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -20801,10 +20801,10 @@ values_input: typing.List[str]
 ##### `all`<sup>Required</sup> <a name="all" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.all"></a>
 
 ```python
-all: typing.Union[bool, IResolvable]
+all: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -20841,10 +20841,10 @@ values: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilterOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, DataDigitaloceanGenaiAgentsFilter]
+internal_value: IResolvable | DataDigitaloceanGenaiAgentsFilter
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsFilter">DataDigitaloceanGenaiAgentsFilter</a>
 
 ---
 
@@ -20980,7 +20980,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>]</code> | *No description.* |
 
 ---
 
@@ -21011,10 +21011,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[DataDigitaloceanGenaiAgentsSort]]
+internal_value: IResolvable | typing.List[DataDigitaloceanGenaiAgentsSort]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>]
 
 ---
 
@@ -21285,7 +21285,7 @@ def reset_direction() -> None
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortOutputReference.property.direction">direction</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a></code> | *No description.* |
 
 ---
 
@@ -21356,10 +21356,10 @@ key: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSortOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, DataDigitaloceanGenaiAgentsSort]
+internal_value: IResolvable | DataDigitaloceanGenaiAgentsSort
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgents.DataDigitaloceanGenaiAgentsSort">DataDigitaloceanGenaiAgentsSort</a>
 
 ---
 

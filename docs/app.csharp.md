@@ -281,7 +281,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-digitalocean.app.App.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-digitalocean.app.App.importFrom"></a>
@@ -335,7 +335,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-digitalocean.app.App.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -350,7 +350,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-digitalocean.app.App.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -375,12 +375,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `PutDedicatedIps` <a name="PutDedicatedIps" id="@cdktf/provider-digitalocean.app.App.putDedicatedIps"></a>
 
 ```csharp
-private void PutDedicatedIps(object Value)
+private void PutDedicatedIps(IResolvable|AppDedicatedIps[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.App.putDedicatedIps.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>[]
 
 ---
 
@@ -564,13 +564,13 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.App.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.App.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.App.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.App.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.App.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.App.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.activeDeploymentId">ActiveDeploymentId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.createdAt">CreatedAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.dedicatedIps">DedicatedIps</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppDedicatedIpsList">AppDedicatedIpsList</a></code> | *No description.* |
@@ -581,11 +581,11 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppTimeoutsOutputReference">AppTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.updatedAt">UpdatedAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.urn">Urn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.App.property.dedicatedIpsInput">DedicatedIpsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.App.property.dedicatedIpsInput">DedicatedIpsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.projectIdInput">ProjectIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.specInput">SpecInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec">AppSpec</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.App.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.App.property.timeoutsInput">TimeoutsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppTimeouts">AppTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.App.property.projectId">ProjectId</a></code> | <code>string</code> | *No description.* |
 
@@ -666,20 +666,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-digitalocean.app.App.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-digitalocean.app.App.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -726,10 +726,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-digitalocean.app.App.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -836,10 +836,10 @@ public string Urn { get; }
 ##### `DedicatedIpsInput`<sup>Optional</sup> <a name="DedicatedIpsInput" id="@cdktf/provider-digitalocean.app.App.property.dedicatedIpsInput"></a>
 
 ```csharp
-public object DedicatedIpsInput { get; }
+public IResolvable|AppDedicatedIps[] DedicatedIpsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>[]
 
 ---
 
@@ -876,10 +876,10 @@ public AppSpec SpecInput { get; }
 ##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-digitalocean.app.App.property.timeoutsInput"></a>
 
 ```csharp
-public object TimeoutsInput { get; }
+public IResolvable|AppTimeouts TimeoutsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppTimeouts">AppTimeouts</a>
 
 ---
 
@@ -931,14 +931,14 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
-    object DedicatedIps = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
+    IResolvable|AppDedicatedIps[] DedicatedIps = null,
     string Id = null,
     string ProjectId = null,
     AppSpec Spec = null,
@@ -950,14 +950,14 @@ new AppConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.dedicatedIps">DedicatedIps</a></code> | <code>object</code> | dedicated_ips block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.dedicatedIps">DedicatedIps</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>[]</code> | dedicated_ips block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#id App#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.projectId">ProjectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#project_id App#project_id}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppConfig.property.spec">Spec</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec">AppSpec</a></code> | spec block. |
@@ -968,20 +968,20 @@ new AppConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-digitalocean.app.AppConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-digitalocean.app.AppConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1028,20 +1028,20 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-digitalocean.app.AppConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
 ##### `DedicatedIps`<sup>Optional</sup> <a name="DedicatedIps" id="@cdktf/provider-digitalocean.app.AppConfig.property.dedicatedIps"></a>
 
 ```csharp
-public object DedicatedIps { get; set; }
+public IResolvable|AppDedicatedIps[] DedicatedIps { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>[]
 
 dedicated_ips block.
 
@@ -1182,25 +1182,25 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpec {
     string Name,
-    object Alert = null,
-    object Database = null,
-    object DisableEdgeCache = null,
-    object DisableEmailObfuscation = null,
-    object Domain = null,
+    IResolvable|AppSpecAlert[] Alert = null,
+    IResolvable|AppSpecDatabase[] Database = null,
+    bool|IResolvable DisableEdgeCache = null,
+    bool|IResolvable DisableEmailObfuscation = null,
+    IResolvable|AppSpecDomain[] Domain = null,
     string[] Domains = null,
-    object Egress = null,
-    object EnhancedThreatControlEnabled = null,
-    object Env = null,
+    IResolvable|AppSpecEgress[] Egress = null,
+    bool|IResolvable EnhancedThreatControlEnabled = null,
+    IResolvable|AppSpecEnv[] Env = null,
     string[] Features = null,
-    object Function = null,
+    IResolvable|AppSpecFunction[] Function = null,
     AppSpecIngress Ingress = null,
-    object Job = null,
+    IResolvable|AppSpecJob[] Job = null,
     AppSpecMaintenance Maintenance = null,
     string Region = null,
-    object Service = null,
-    object StaticSite = null,
-    object Vpc = null,
-    object Worker = null
+    IResolvable|AppSpecService[] Service = null,
+    IResolvable|AppSpecStaticSite[] StaticSite = null,
+    IResolvable|AppSpecVpc[] Vpc = null,
+    IResolvable|AppSpecWorker[] Worker = null
 };
 ```
 
@@ -1209,25 +1209,25 @@ new AppSpec {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.name">Name</a></code> | <code>string</code> | The name of the app. Must be unique across all apps in the same account. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.alert">Alert</a></code> | <code>object</code> | alert block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.database">Database</a></code> | <code>object</code> | database block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.disableEdgeCache">DisableEdgeCache</a></code> | <code>object</code> | Whether to disable the edge cache for the app. Default is false, which enables the edge cache. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.disableEmailObfuscation">DisableEmailObfuscation</a></code> | <code>object</code> | Email obfuscation configuration for the app. Default is false, which keeps the email obfuscated. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.domain">Domain</a></code> | <code>object</code> | domain block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.alert">Alert</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>[]</code> | alert block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.database">Database</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>[]</code> | database block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.disableEdgeCache">DisableEdgeCache</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to disable the edge cache for the app. Default is false, which enables the edge cache. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.disableEmailObfuscation">DisableEmailObfuscation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Email obfuscation configuration for the app. Default is false, which keeps the email obfuscated. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.domain">Domain</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>[]</code> | domain block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.domains">Domains</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#domains App#domains}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.egress">Egress</a></code> | <code>object</code> | egress block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.enhancedThreatControlEnabled">EnhancedThreatControlEnabled</a></code> | <code>object</code> | Whether to enable enhanced threat control for the app. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.env">Env</a></code> | <code>object</code> | env block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.egress">Egress</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>[]</code> | egress block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.enhancedThreatControlEnabled">EnhancedThreatControlEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to enable enhanced threat control for the app. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.env">Env</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>[]</code> | env block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.features">Features</a></code> | <code>string[]</code> | List of features which is applied to the app. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.function">Function</a></code> | <code>object</code> | function block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.function">Function</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>[]</code> | function block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.ingress">Ingress</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngress">AppSpecIngress</a></code> | ingress block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.job">Job</a></code> | <code>object</code> | job block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.job">Job</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>[]</code> | job block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.maintenance">Maintenance</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenance">AppSpecMaintenance</a></code> | maintenance block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.region">Region</a></code> | <code>string</code> | The slug for the DigitalOcean data center region hosting the app. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.service">Service</a></code> | <code>object</code> | service block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.staticSite">StaticSite</a></code> | <code>object</code> | static_site block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.vpc">Vpc</a></code> | <code>object</code> | vpc block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.worker">Worker</a></code> | <code>object</code> | worker block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.service">Service</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>[]</code> | service block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.staticSite">StaticSite</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>[]</code> | static_site block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.vpc">Vpc</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>[]</code> | vpc block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpec.property.worker">Worker</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>[]</code> | worker block. |
 
 ---
 
@@ -1248,10 +1248,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Alert`<sup>Optional</sup> <a name="Alert" id="@cdktf/provider-digitalocean.app.AppSpec.property.alert"></a>
 
 ```csharp
-public object Alert { get; set; }
+public IResolvable|AppSpecAlert[] Alert { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>[]
 
 alert block.
 
@@ -1262,10 +1262,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Database`<sup>Optional</sup> <a name="Database" id="@cdktf/provider-digitalocean.app.AppSpec.property.database"></a>
 
 ```csharp
-public object Database { get; set; }
+public IResolvable|AppSpecDatabase[] Database { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>[]
 
 database block.
 
@@ -1276,10 +1276,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `DisableEdgeCache`<sup>Optional</sup> <a name="DisableEdgeCache" id="@cdktf/provider-digitalocean.app.AppSpec.property.disableEdgeCache"></a>
 
 ```csharp
-public object DisableEdgeCache { get; set; }
+public bool|IResolvable DisableEdgeCache { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to disable the edge cache for the app. Default is false, which enables the edge cache.
 
@@ -1290,10 +1290,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `DisableEmailObfuscation`<sup>Optional</sup> <a name="DisableEmailObfuscation" id="@cdktf/provider-digitalocean.app.AppSpec.property.disableEmailObfuscation"></a>
 
 ```csharp
-public object DisableEmailObfuscation { get; set; }
+public bool|IResolvable DisableEmailObfuscation { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Email obfuscation configuration for the app. Default is false, which keeps the email obfuscated.
 
@@ -1304,10 +1304,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Domain`<sup>Optional</sup> <a name="Domain" id="@cdktf/provider-digitalocean.app.AppSpec.property.domain"></a>
 
 ```csharp
-public object Domain { get; set; }
+public IResolvable|AppSpecDomain[] Domain { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>[]
 
 domain block.
 
@@ -1330,10 +1330,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Egress`<sup>Optional</sup> <a name="Egress" id="@cdktf/provider-digitalocean.app.AppSpec.property.egress"></a>
 
 ```csharp
-public object Egress { get; set; }
+public IResolvable|AppSpecEgress[] Egress { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>[]
 
 egress block.
 
@@ -1344,10 +1344,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `EnhancedThreatControlEnabled`<sup>Optional</sup> <a name="EnhancedThreatControlEnabled" id="@cdktf/provider-digitalocean.app.AppSpec.property.enhancedThreatControlEnabled"></a>
 
 ```csharp
-public object EnhancedThreatControlEnabled { get; set; }
+public bool|IResolvable EnhancedThreatControlEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to enable enhanced threat control for the app.
 
@@ -1360,10 +1360,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Env`<sup>Optional</sup> <a name="Env" id="@cdktf/provider-digitalocean.app.AppSpec.property.env"></a>
 
 ```csharp
-public object Env { get; set; }
+public IResolvable|AppSpecEnv[] Env { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>[]
 
 env block.
 
@@ -1388,10 +1388,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Function`<sup>Optional</sup> <a name="Function" id="@cdktf/provider-digitalocean.app.AppSpec.property.function"></a>
 
 ```csharp
-public object Function { get; set; }
+public IResolvable|AppSpecFunction[] Function { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>[]
 
 function block.
 
@@ -1416,10 +1416,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Job`<sup>Optional</sup> <a name="Job" id="@cdktf/provider-digitalocean.app.AppSpec.property.job"></a>
 
 ```csharp
-public object Job { get; set; }
+public IResolvable|AppSpecJob[] Job { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>[]
 
 job block.
 
@@ -1458,10 +1458,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Service`<sup>Optional</sup> <a name="Service" id="@cdktf/provider-digitalocean.app.AppSpec.property.service"></a>
 
 ```csharp
-public object Service { get; set; }
+public IResolvable|AppSpecService[] Service { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>[]
 
 service block.
 
@@ -1472,10 +1472,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `StaticSite`<sup>Optional</sup> <a name="StaticSite" id="@cdktf/provider-digitalocean.app.AppSpec.property.staticSite"></a>
 
 ```csharp
-public object StaticSite { get; set; }
+public IResolvable|AppSpecStaticSite[] StaticSite { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>[]
 
 static_site block.
 
@@ -1486,10 +1486,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Vpc`<sup>Optional</sup> <a name="Vpc" id="@cdktf/provider-digitalocean.app.AppSpec.property.vpc"></a>
 
 ```csharp
-public object Vpc { get; set; }
+public IResolvable|AppSpecVpc[] Vpc { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>[]
 
 vpc block.
 
@@ -1500,10 +1500,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Worker`<sup>Optional</sup> <a name="Worker" id="@cdktf/provider-digitalocean.app.AppSpec.property.worker"></a>
 
 ```csharp
-public object Worker { get; set; }
+public IResolvable|AppSpecWorker[] Worker { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>[]
 
 worker block.
 
@@ -1521,7 +1521,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 new AppSpecAlert {
     string Rule,
     AppSpecAlertDestinations Destinations = null,
-    object Disabled = null
+    bool|IResolvable Disabled = null
 };
 ```
 
@@ -1531,7 +1531,7 @@ new AppSpecAlert {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlert.property.rule">Rule</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#rule App#rule}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlert.property.destinations">Destinations</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinations">AppSpecAlertDestinations</a></code> | destinations block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlert.property.disabled">Disabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlert.property.disabled">Disabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -1564,10 +1564,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Disabled`<sup>Optional</sup> <a name="Disabled" id="@cdktf/provider-digitalocean.app.AppSpecAlert.property.disabled"></a>
 
 ```csharp
-public object Disabled { get; set; }
+public bool|IResolvable Disabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}.
 
@@ -1582,7 +1582,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecAlertDestinations {
     string[] Emails = null,
-    object SlackWebhooks = null
+    IResolvable|AppSpecAlertDestinationsSlackWebhooks[] SlackWebhooks = null
 };
 ```
 
@@ -1591,7 +1591,7 @@ new AppSpecAlertDestinations {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinations.property.emails">Emails</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#emails App#emails}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinations.property.slackWebhooks">SlackWebhooks</a></code> | <code>object</code> | slack_webhooks block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinations.property.slackWebhooks">SlackWebhooks</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>[]</code> | slack_webhooks block. |
 
 ---
 
@@ -1610,10 +1610,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `SlackWebhooks`<sup>Optional</sup> <a name="SlackWebhooks" id="@cdktf/provider-digitalocean.app.AppSpecAlertDestinations.property.slackWebhooks"></a>
 
 ```csharp
-public object SlackWebhooks { get; set; }
+public IResolvable|AppSpecAlertDestinationsSlackWebhooks[] SlackWebhooks { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>[]
 
 slack_webhooks block.
 
@@ -1684,7 +1684,7 @@ new AppSpecDatabase {
     string DbUser = null,
     string Engine = null,
     string Name = null,
-    object Production = null,
+    bool|IResolvable Production = null,
     string Version = null
 };
 ```
@@ -1698,7 +1698,7 @@ new AppSpecDatabase {
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase.property.dbUser">DbUser</a></code> | <code>string</code> | The name of the MySQL or PostgreSQL user to configure. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase.property.engine">Engine</a></code> | <code>string</code> | The database engine to use. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase.property.name">Name</a></code> | <code>string</code> | The name of the component. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase.property.production">Production</a></code> | <code>object</code> | Whether this is a production or dev database. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase.property.production">Production</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether this is a production or dev database. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase.property.version">Version</a></code> | <code>string</code> | The version of the database engine. |
 
 ---
@@ -1778,10 +1778,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Production`<sup>Optional</sup> <a name="Production" id="@cdktf/provider-digitalocean.app.AppSpecDatabase.property.production"></a>
 
 ```csharp
-public object Production { get; set; }
+public bool|IResolvable Production { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether this is a production or dev database.
 
@@ -1813,7 +1813,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 new AppSpecDomain {
     string Name,
     string Type = null,
-    object Wildcard = null,
+    bool|IResolvable Wildcard = null,
     string Zone = null
 };
 ```
@@ -1824,7 +1824,7 @@ new AppSpecDomain {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomain.property.name">Name</a></code> | <code>string</code> | The hostname for the domain. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomain.property.type">Type</a></code> | <code>string</code> | The type of the domain. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomain.property.wildcard">Wildcard</a></code> | <code>object</code> | Indicates whether the domain includes all sub-domains, in addition to the given domain. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomain.property.wildcard">Wildcard</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Indicates whether the domain includes all sub-domains, in addition to the given domain. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomain.property.zone">Zone</a></code> | <code>string</code> | If the domain uses DigitalOcean DNS and you would like App Platform to automatically manage it for you, set this to the name of the domain on your account. |
 
 ---
@@ -1860,10 +1860,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Wildcard`<sup>Optional</sup> <a name="Wildcard" id="@cdktf/provider-digitalocean.app.AppSpecDomain.property.wildcard"></a>
 
 ```csharp
-public object Wildcard { get; set; }
+public bool|IResolvable Wildcard { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Indicates whether the domain includes all sub-domains, in addition to the given domain.
 
@@ -2010,15 +2010,15 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecFunction {
     string Name,
-    object Alert = null,
+    IResolvable|AppSpecFunctionAlert[] Alert = null,
     AppSpecFunctionBitbucket Bitbucket = null,
     AppSpecFunctionCors Cors = null,
-    object Env = null,
+    IResolvable|AppSpecFunctionEnv[] Env = null,
     AppSpecFunctionGit Git = null,
     AppSpecFunctionGithub Github = null,
     AppSpecFunctionGitlab Gitlab = null,
-    object LogDestination = null,
-    object Routes = null,
+    IResolvable|AppSpecFunctionLogDestination[] LogDestination = null,
+    IResolvable|AppSpecFunctionRoutes[] Routes = null,
     string SourceDir = null
 };
 ```
@@ -2028,15 +2028,15 @@ new AppSpecFunction {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.name">Name</a></code> | <code>string</code> | The name of the component. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.alert">Alert</a></code> | <code>object</code> | alert block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.alert">Alert</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>[]</code> | alert block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.bitbucket">Bitbucket</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket">AppSpecFunctionBitbucket</a></code> | bitbucket block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.cors">Cors</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCors">AppSpecFunctionCors</a></code> | cors block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.env">Env</a></code> | <code>object</code> | env block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.env">Env</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>[]</code> | env block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.git">Git</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGit">AppSpecFunctionGit</a></code> | git block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.github">Github</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithub">AppSpecFunctionGithub</a></code> | github block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.gitlab">Gitlab</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlab">AppSpecFunctionGitlab</a></code> | gitlab block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.logDestination">LogDestination</a></code> | <code>object</code> | log_destination block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.routes">Routes</a></code> | <code>object</code> | routes block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.logDestination">LogDestination</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>[]</code> | log_destination block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.routes">Routes</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>[]</code> | routes block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunction.property.sourceDir">SourceDir</a></code> | <code>string</code> | An optional path to the working directory to use for the build. |
 
 ---
@@ -2058,10 +2058,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Alert`<sup>Optional</sup> <a name="Alert" id="@cdktf/provider-digitalocean.app.AppSpecFunction.property.alert"></a>
 
 ```csharp
-public object Alert { get; set; }
+public IResolvable|AppSpecFunctionAlert[] Alert { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>[]
 
 alert block.
 
@@ -2100,10 +2100,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Env`<sup>Optional</sup> <a name="Env" id="@cdktf/provider-digitalocean.app.AppSpecFunction.property.env"></a>
 
 ```csharp
-public object Env { get; set; }
+public IResolvable|AppSpecFunctionEnv[] Env { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>[]
 
 env block.
 
@@ -2156,10 +2156,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `LogDestination`<sup>Optional</sup> <a name="LogDestination" id="@cdktf/provider-digitalocean.app.AppSpecFunction.property.logDestination"></a>
 
 ```csharp
-public object LogDestination { get; set; }
+public IResolvable|AppSpecFunctionLogDestination[] LogDestination { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>[]
 
 log_destination block.
 
@@ -2170,10 +2170,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Routes`<sup>Optional</sup> <a name="Routes" id="@cdktf/provider-digitalocean.app.AppSpecFunction.property.routes"></a>
 
 ```csharp
-public object Routes { get; set; }
+public IResolvable|AppSpecFunctionRoutes[] Routes { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>[]
 
 routes block.
 
@@ -2208,7 +2208,7 @@ new AppSpecFunctionAlert {
     double Value,
     string Window,
     AppSpecFunctionAlertDestinations Destinations = null,
-    object Disabled = null
+    bool|IResolvable Disabled = null
 };
 ```
 
@@ -2221,7 +2221,7 @@ new AppSpecFunctionAlert {
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.value">Value</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#value App#value}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.window">Window</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#window App#window}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.destinations">Destinations</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinations">AppSpecFunctionAlertDestinations</a></code> | destinations block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.disabled">Disabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.disabled">Disabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -2290,10 +2290,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Disabled`<sup>Optional</sup> <a name="Disabled" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlert.property.disabled"></a>
 
 ```csharp
-public object Disabled { get; set; }
+public bool|IResolvable Disabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}.
 
@@ -2308,7 +2308,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecFunctionAlertDestinations {
     string[] Emails = null,
-    object SlackWebhooks = null
+    IResolvable|AppSpecFunctionAlertDestinationsSlackWebhooks[] SlackWebhooks = null
 };
 ```
 
@@ -2317,7 +2317,7 @@ new AppSpecFunctionAlertDestinations {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinations.property.emails">Emails</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#emails App#emails}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinations.property.slackWebhooks">SlackWebhooks</a></code> | <code>object</code> | slack_webhooks block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinations.property.slackWebhooks">SlackWebhooks</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>[]</code> | slack_webhooks block. |
 
 ---
 
@@ -2336,10 +2336,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `SlackWebhooks`<sup>Optional</sup> <a name="SlackWebhooks" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinations.property.slackWebhooks"></a>
 
 ```csharp
-public object SlackWebhooks { get; set; }
+public IResolvable|AppSpecFunctionAlertDestinationsSlackWebhooks[] SlackWebhooks { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>[]
 
 slack_webhooks block.
 
@@ -2406,7 +2406,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecFunctionBitbucket {
     string Branch = null,
-    object DeployOnPush = null,
+    bool|IResolvable DeployOnPush = null,
     string Repo = null
 };
 ```
@@ -2416,7 +2416,7 @@ new AppSpecFunctionBitbucket {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket.property.branch">Branch</a></code> | <code>string</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket.property.deployOnPush">DeployOnPush</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket.property.repo">Repo</a></code> | <code>string</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -2438,10 +2438,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `DeployOnPush`<sup>Optional</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket.property.deployOnPush"></a>
 
 ```csharp
-public object DeployOnPush { get; set; }
+public bool|IResolvable DeployOnPush { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -2471,7 +2471,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecFunctionCors {
-    object AllowCredentials = null,
+    bool|IResolvable AllowCredentials = null,
     string[] AllowHeaders = null,
     string[] AllowMethods = null,
     AppSpecFunctionCorsAllowOrigins AllowOrigins = null,
@@ -2484,7 +2484,7 @@ new AppSpecFunctionCors {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCors.property.allowCredentials">AllowCredentials</a></code> | <code>object</code> | Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCors.property.allowCredentials">AllowCredentials</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCors.property.allowHeaders">AllowHeaders</a></code> | <code>string[]</code> | The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCors.property.allowMethods">AllowMethods</a></code> | <code>string[]</code> | The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCors.property.allowOrigins">AllowOrigins</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsAllowOrigins">AppSpecFunctionCorsAllowOrigins</a></code> | allow_origins block. |
@@ -2496,10 +2496,10 @@ new AppSpecFunctionCors {
 ##### `AllowCredentials`<sup>Optional</sup> <a name="AllowCredentials" id="@cdktf/provider-digitalocean.app.AppSpecFunctionCors.property.allowCredentials"></a>
 
 ```csharp
-public object AllowCredentials { get; set; }
+public bool|IResolvable AllowCredentials { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`.
 
@@ -2788,7 +2788,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecFunctionGithub {
     string Branch = null,
-    object DeployOnPush = null,
+    bool|IResolvable DeployOnPush = null,
     string Repo = null
 };
 ```
@@ -2798,7 +2798,7 @@ new AppSpecFunctionGithub {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithub.property.branch">Branch</a></code> | <code>string</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithub.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithub.property.deployOnPush">DeployOnPush</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithub.property.repo">Repo</a></code> | <code>string</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -2820,10 +2820,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `DeployOnPush`<sup>Optional</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecFunctionGithub.property.deployOnPush"></a>
 
 ```csharp
-public object DeployOnPush { get; set; }
+public bool|IResolvable DeployOnPush { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -2854,7 +2854,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecFunctionGitlab {
     string Branch = null,
-    object DeployOnPush = null,
+    bool|IResolvable DeployOnPush = null,
     string Repo = null
 };
 ```
@@ -2864,7 +2864,7 @@ new AppSpecFunctionGitlab {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlab.property.branch">Branch</a></code> | <code>string</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlab.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlab.property.deployOnPush">DeployOnPush</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlab.property.repo">Repo</a></code> | <code>string</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -2886,10 +2886,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `DeployOnPush`<sup>Optional</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecFunctionGitlab.property.deployOnPush"></a>
 
 ```csharp
-public object DeployOnPush { get; set; }
+public bool|IResolvable DeployOnPush { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -3268,7 +3268,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecFunctionRoutes {
     string Path = null,
-    object PreservePathPrefix = null
+    bool|IResolvable PreservePathPrefix = null
 };
 ```
 
@@ -3277,7 +3277,7 @@ new AppSpecFunctionRoutes {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes.property.path">Path</a></code> | <code>string</code> | Path specifies an route by HTTP path prefix. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes.property.preservePathPrefix">PreservePathPrefix</a></code> | <code>object</code> | An optional flag to preserve the path that is forwarded to the backend service. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes.property.preservePathPrefix">PreservePathPrefix</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | An optional flag to preserve the path that is forwarded to the backend service. |
 
 ---
 
@@ -3300,10 +3300,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `PreservePathPrefix`<sup>Optional</sup> <a name="PreservePathPrefix" id="@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes.property.preservePathPrefix"></a>
 
 ```csharp
-public object PreservePathPrefix { get; set; }
+public bool|IResolvable PreservePathPrefix { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 An optional flag to preserve the path that is forwarded to the backend service.
 
@@ -3319,7 +3319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecIngress {
-    object Rule = null
+    IResolvable|AppSpecIngressRule[] Rule = null
 };
 ```
 
@@ -3327,17 +3327,17 @@ new AppSpecIngress {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngress.property.rule">Rule</a></code> | <code>object</code> | rule block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngress.property.rule">Rule</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>[]</code> | rule block. |
 
 ---
 
 ##### `Rule`<sup>Optional</sup> <a name="Rule" id="@cdktf/provider-digitalocean.app.AppSpecIngress.property.rule"></a>
 
 ```csharp
-public object Rule { get; set; }
+public IResolvable|AppSpecIngressRule[] Rule { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>[]
 
 rule block.
 
@@ -3436,7 +3436,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecIngressRuleComponent {
     string Name = null,
-    object PreservePathPrefix = null,
+    bool|IResolvable PreservePathPrefix = null,
     string Rewrite = null
 };
 ```
@@ -3446,7 +3446,7 @@ new AppSpecIngressRuleComponent {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#name App#name}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.preservePathPrefix">PreservePathPrefix</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.preservePathPrefix">PreservePathPrefix</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.rewrite">Rewrite</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#rewrite App#rewrite}. |
 
 ---
@@ -3466,10 +3466,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `PreservePathPrefix`<sup>Optional</sup> <a name="PreservePathPrefix" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent.property.preservePathPrefix"></a>
 
 ```csharp
-public object PreservePathPrefix { get; set; }
+public bool|IResolvable PreservePathPrefix { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}.
 
@@ -3495,7 +3495,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecIngressRuleCors {
-    object AllowCredentials = null,
+    bool|IResolvable AllowCredentials = null,
     string[] AllowHeaders = null,
     string[] AllowMethods = null,
     AppSpecIngressRuleCorsAllowOrigins AllowOrigins = null,
@@ -3508,7 +3508,7 @@ new AppSpecIngressRuleCors {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors.property.allowCredentials">AllowCredentials</a></code> | <code>object</code> | Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors.property.allowCredentials">AllowCredentials</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors.property.allowHeaders">AllowHeaders</a></code> | <code>string[]</code> | The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors.property.allowMethods">AllowMethods</a></code> | <code>string[]</code> | The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors.property.allowOrigins">AllowOrigins</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOrigins">AppSpecIngressRuleCorsAllowOrigins</a></code> | allow_origins block. |
@@ -3520,10 +3520,10 @@ new AppSpecIngressRuleCors {
 ##### `AllowCredentials`<sup>Optional</sup> <a name="AllowCredentials" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors.property.allowCredentials"></a>
 
 ```csharp
-public object AllowCredentials { get; set; }
+public bool|IResolvable AllowCredentials { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`.
 
@@ -3882,11 +3882,11 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecJob {
     string Name,
-    object Alert = null,
+    IResolvable|AppSpecJobAlert[] Alert = null,
     AppSpecJobBitbucket Bitbucket = null,
     string BuildCommand = null,
     string DockerfilePath = null,
-    object Env = null,
+    IResolvable|AppSpecJobEnv[] Env = null,
     string EnvironmentSlug = null,
     AppSpecJobGit Git = null,
     AppSpecJobGithub Github = null,
@@ -3895,7 +3895,7 @@ new AppSpecJob {
     double InstanceCount = null,
     string InstanceSizeSlug = null,
     string Kind = null,
-    object LogDestination = null,
+    IResolvable|AppSpecJobLogDestination[] LogDestination = null,
     string RunCommand = null,
     string SourceDir = null,
     AppSpecJobTermination Termination = null
@@ -3907,11 +3907,11 @@ new AppSpecJob {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.name">Name</a></code> | <code>string</code> | The name of the component. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.alert">Alert</a></code> | <code>object</code> | alert block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.alert">Alert</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>[]</code> | alert block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.bitbucket">Bitbucket</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucket">AppSpecJobBitbucket</a></code> | bitbucket block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.buildCommand">BuildCommand</a></code> | <code>string</code> | An optional build command to run while building this component from source. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.dockerfilePath">DockerfilePath</a></code> | <code>string</code> | The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.env">Env</a></code> | <code>object</code> | env block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.env">Env</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>[]</code> | env block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.environmentSlug">EnvironmentSlug</a></code> | <code>string</code> | An environment slug describing the type of this app. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.git">Git</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGit">AppSpecJobGit</a></code> | git block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.github">Github</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithub">AppSpecJobGithub</a></code> | github block. |
@@ -3920,7 +3920,7 @@ new AppSpecJob {
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.instanceCount">InstanceCount</a></code> | <code>double</code> | The amount of instances that this component should be scaled to. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.instanceSizeSlug">InstanceSizeSlug</a></code> | <code>string</code> | The instance size to use for this component. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.kind">Kind</a></code> | <code>string</code> | The type of job and when it will be run during the deployment process. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.logDestination">LogDestination</a></code> | <code>object</code> | log_destination block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.logDestination">LogDestination</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>[]</code> | log_destination block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.runCommand">RunCommand</a></code> | <code>string</code> | An optional run command to override the component's default. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.sourceDir">SourceDir</a></code> | <code>string</code> | An optional path to the working directory to use for the build. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJob.property.termination">Termination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobTermination">AppSpecJobTermination</a></code> | termination block. |
@@ -3944,10 +3944,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Alert`<sup>Optional</sup> <a name="Alert" id="@cdktf/provider-digitalocean.app.AppSpecJob.property.alert"></a>
 
 ```csharp
-public object Alert { get; set; }
+public IResolvable|AppSpecJobAlert[] Alert { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>[]
 
 alert block.
 
@@ -4000,10 +4000,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Env`<sup>Optional</sup> <a name="Env" id="@cdktf/provider-digitalocean.app.AppSpecJob.property.env"></a>
 
 ```csharp
-public object Env { get; set; }
+public IResolvable|AppSpecJobEnv[] Env { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>[]
 
 env block.
 
@@ -4126,10 +4126,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `LogDestination`<sup>Optional</sup> <a name="LogDestination" id="@cdktf/provider-digitalocean.app.AppSpecJob.property.logDestination"></a>
 
 ```csharp
-public object LogDestination { get; set; }
+public IResolvable|AppSpecJobLogDestination[] LogDestination { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>[]
 
 log_destination block.
 
@@ -4192,7 +4192,7 @@ new AppSpecJobAlert {
     double Value,
     string Window,
     AppSpecJobAlertDestinations Destinations = null,
-    object Disabled = null
+    bool|IResolvable Disabled = null
 };
 ```
 
@@ -4205,7 +4205,7 @@ new AppSpecJobAlert {
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.value">Value</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#value App#value}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.window">Window</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#window App#window}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.destinations">Destinations</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinations">AppSpecJobAlertDestinations</a></code> | destinations block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.disabled">Disabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.disabled">Disabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -4274,10 +4274,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Disabled`<sup>Optional</sup> <a name="Disabled" id="@cdktf/provider-digitalocean.app.AppSpecJobAlert.property.disabled"></a>
 
 ```csharp
-public object Disabled { get; set; }
+public bool|IResolvable Disabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}.
 
@@ -4292,7 +4292,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecJobAlertDestinations {
     string[] Emails = null,
-    object SlackWebhooks = null
+    IResolvable|AppSpecJobAlertDestinationsSlackWebhooks[] SlackWebhooks = null
 };
 ```
 
@@ -4301,7 +4301,7 @@ new AppSpecJobAlertDestinations {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinations.property.emails">Emails</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#emails App#emails}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinations.property.slackWebhooks">SlackWebhooks</a></code> | <code>object</code> | slack_webhooks block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinations.property.slackWebhooks">SlackWebhooks</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>[]</code> | slack_webhooks block. |
 
 ---
 
@@ -4320,10 +4320,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `SlackWebhooks`<sup>Optional</sup> <a name="SlackWebhooks" id="@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinations.property.slackWebhooks"></a>
 
 ```csharp
-public object SlackWebhooks { get; set; }
+public IResolvable|AppSpecJobAlertDestinationsSlackWebhooks[] SlackWebhooks { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>[]
 
 slack_webhooks block.
 
@@ -4390,7 +4390,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecJobBitbucket {
     string Branch = null,
-    object DeployOnPush = null,
+    bool|IResolvable DeployOnPush = null,
     string Repo = null
 };
 ```
@@ -4400,7 +4400,7 @@ new AppSpecJobBitbucket {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucket.property.branch">Branch</a></code> | <code>string</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucket.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucket.property.deployOnPush">DeployOnPush</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucket.property.repo">Repo</a></code> | <code>string</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -4422,10 +4422,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `DeployOnPush`<sup>Optional</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucket.property.deployOnPush"></a>
 
 ```csharp
-public object DeployOnPush { get; set; }
+public bool|IResolvable DeployOnPush { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -4588,7 +4588,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecJobGithub {
     string Branch = null,
-    object DeployOnPush = null,
+    bool|IResolvable DeployOnPush = null,
     string Repo = null
 };
 ```
@@ -4598,7 +4598,7 @@ new AppSpecJobGithub {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithub.property.branch">Branch</a></code> | <code>string</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithub.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithub.property.deployOnPush">DeployOnPush</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithub.property.repo">Repo</a></code> | <code>string</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -4620,10 +4620,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `DeployOnPush`<sup>Optional</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecJobGithub.property.deployOnPush"></a>
 
 ```csharp
-public object DeployOnPush { get; set; }
+public bool|IResolvable DeployOnPush { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -4654,7 +4654,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecJobGitlab {
     string Branch = null,
-    object DeployOnPush = null,
+    bool|IResolvable DeployOnPush = null,
     string Repo = null
 };
 ```
@@ -4664,7 +4664,7 @@ new AppSpecJobGitlab {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlab.property.branch">Branch</a></code> | <code>string</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlab.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlab.property.deployOnPush">DeployOnPush</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlab.property.repo">Repo</a></code> | <code>string</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -4686,10 +4686,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `DeployOnPush`<sup>Optional</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecJobGitlab.property.deployOnPush"></a>
 
 ```csharp
-public object DeployOnPush { get; set; }
+public bool|IResolvable DeployOnPush { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -4721,7 +4721,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 new AppSpecJobImage {
     string RegistryType,
     string Repository,
-    object DeployOnPush = null,
+    IResolvable|AppSpecJobImageDeployOnPush[] DeployOnPush = null,
     string Digest = null,
     string Registry = null,
     string RegistryCredentials = null,
@@ -4735,7 +4735,7 @@ new AppSpecJobImage {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImage.property.registryType">RegistryType</a></code> | <code>string</code> | The registry type. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImage.property.repository">Repository</a></code> | <code>string</code> | The repository name. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImage.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | deploy_on_push block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImage.property.deployOnPush">DeployOnPush</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>[]</code> | deploy_on_push block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImage.property.digest">Digest</a></code> | <code>string</code> | The image digest. Cannot be specified if tag is provided. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImage.property.registry">Registry</a></code> | <code>string</code> | The registry name. Must be left empty for the DOCR registry type. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImage.property.registryCredentials">RegistryCredentials</a></code> | <code>string</code> | Access credentials for third-party registries. |
@@ -4774,10 +4774,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `DeployOnPush`<sup>Optional</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecJobImage.property.deployOnPush"></a>
 
 ```csharp
-public object DeployOnPush { get; set; }
+public IResolvable|AppSpecJobImageDeployOnPush[] DeployOnPush { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>[]
 
 deploy_on_push block.
 
@@ -4849,7 +4849,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecJobImageDeployOnPush {
-    object Enabled = null
+    bool|IResolvable Enabled = null
 };
 ```
 
@@ -4857,17 +4857,17 @@ new AppSpecJobImageDeployOnPush {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush.property.enabled">Enabled</a></code> | <code>object</code> | Whether to automatically deploy images pushed to DOCR. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to automatically deploy images pushed to DOCR. |
 
 ---
 
 ##### `Enabled`<sup>Optional</sup> <a name="Enabled" id="@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; set; }
+public bool|IResolvable Enabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to automatically deploy images pushed to DOCR.
 
@@ -5267,8 +5267,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecMaintenance {
-    object Archive = null,
-    object Enabled = null,
+    bool|IResolvable Archive = null,
+    bool|IResolvable Enabled = null,
     string OfflinePageUrl = null
 };
 ```
@@ -5277,8 +5277,8 @@ new AppSpecMaintenance {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenance.property.archive">Archive</a></code> | <code>object</code> | Indicates whether the app should be archived. Setting this to true implies that enabled is set to true. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenance.property.enabled">Enabled</a></code> | <code>object</code> | Indicates whether maintenance mode should be enabled for the app. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenance.property.archive">Archive</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Indicates whether the app should be archived. Setting this to true implies that enabled is set to true. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenance.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Indicates whether maintenance mode should be enabled for the app. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenance.property.offlinePageUrl">OfflinePageUrl</a></code> | <code>string</code> | A custom offline page to display when maintenance mode is enabled or the app is archived. |
 
 ---
@@ -5286,10 +5286,10 @@ new AppSpecMaintenance {
 ##### `Archive`<sup>Optional</sup> <a name="Archive" id="@cdktf/provider-digitalocean.app.AppSpecMaintenance.property.archive"></a>
 
 ```csharp
-public object Archive { get; set; }
+public bool|IResolvable Archive { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Indicates whether the app should be archived. Setting this to true implies that enabled is set to true.
 
@@ -5300,10 +5300,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Enabled`<sup>Optional</sup> <a name="Enabled" id="@cdktf/provider-digitalocean.app.AppSpecMaintenance.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; set; }
+public bool|IResolvable Enabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Indicates whether maintenance mode should be enabled for the app.
 
@@ -5334,13 +5334,13 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecService {
     string Name,
-    object Alert = null,
+    IResolvable|AppSpecServiceAlert[] Alert = null,
     AppSpecServiceAutoscaling Autoscaling = null,
     AppSpecServiceBitbucket Bitbucket = null,
     string BuildCommand = null,
     AppSpecServiceCors Cors = null,
     string DockerfilePath = null,
-    object Env = null,
+    IResolvable|AppSpecServiceEnv[] Env = null,
     string EnvironmentSlug = null,
     AppSpecServiceGit Git = null,
     AppSpecServiceGithub Github = null,
@@ -5351,8 +5351,8 @@ new AppSpecService {
     double InstanceCount = null,
     string InstanceSizeSlug = null,
     double[] InternalPorts = null,
-    object LogDestination = null,
-    object Routes = null,
+    IResolvable|AppSpecServiceLogDestination[] LogDestination = null,
+    IResolvable|AppSpecServiceRoutes[] Routes = null,
     string RunCommand = null,
     string SourceDir = null,
     AppSpecServiceTermination Termination = null
@@ -5364,13 +5364,13 @@ new AppSpecService {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.name">Name</a></code> | <code>string</code> | The name of the component. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.alert">Alert</a></code> | <code>object</code> | alert block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.alert">Alert</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>[]</code> | alert block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.autoscaling">Autoscaling</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAutoscaling">AppSpecServiceAutoscaling</a></code> | autoscaling block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.bitbucket">Bitbucket</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket">AppSpecServiceBitbucket</a></code> | bitbucket block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.buildCommand">BuildCommand</a></code> | <code>string</code> | An optional build command to run while building this component from source. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.cors">Cors</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCors">AppSpecServiceCors</a></code> | cors block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.dockerfilePath">DockerfilePath</a></code> | <code>string</code> | The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.env">Env</a></code> | <code>object</code> | env block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.env">Env</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>[]</code> | env block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.environmentSlug">EnvironmentSlug</a></code> | <code>string</code> | An environment slug describing the type of this app. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.git">Git</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGit">AppSpecServiceGit</a></code> | git block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.github">Github</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithub">AppSpecServiceGithub</a></code> | github block. |
@@ -5381,8 +5381,8 @@ new AppSpecService {
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.instanceCount">InstanceCount</a></code> | <code>double</code> | The amount of instances that this component should be scaled to. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.instanceSizeSlug">InstanceSizeSlug</a></code> | <code>string</code> | The instance size to use for this component. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.internalPorts">InternalPorts</a></code> | <code>double[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#internal_ports App#internal_ports}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.logDestination">LogDestination</a></code> | <code>object</code> | log_destination block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.routes">Routes</a></code> | <code>object</code> | routes block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.logDestination">LogDestination</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>[]</code> | log_destination block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.routes">Routes</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>[]</code> | routes block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.runCommand">RunCommand</a></code> | <code>string</code> | An optional run command to override the component's default. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.sourceDir">SourceDir</a></code> | <code>string</code> | An optional path to the working directory to use for the build. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecService.property.termination">Termination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTermination">AppSpecServiceTermination</a></code> | termination block. |
@@ -5406,10 +5406,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Alert`<sup>Optional</sup> <a name="Alert" id="@cdktf/provider-digitalocean.app.AppSpecService.property.alert"></a>
 
 ```csharp
-public object Alert { get; set; }
+public IResolvable|AppSpecServiceAlert[] Alert { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>[]
 
 alert block.
 
@@ -5490,10 +5490,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Env`<sup>Optional</sup> <a name="Env" id="@cdktf/provider-digitalocean.app.AppSpecService.property.env"></a>
 
 ```csharp
-public object Env { get; set; }
+public IResolvable|AppSpecServiceEnv[] Env { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>[]
 
 env block.
 
@@ -5642,10 +5642,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `LogDestination`<sup>Optional</sup> <a name="LogDestination" id="@cdktf/provider-digitalocean.app.AppSpecService.property.logDestination"></a>
 
 ```csharp
-public object LogDestination { get; set; }
+public IResolvable|AppSpecServiceLogDestination[] LogDestination { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>[]
 
 log_destination block.
 
@@ -5656,10 +5656,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Routes`<sup>Optional</sup> <a name="Routes" id="@cdktf/provider-digitalocean.app.AppSpecService.property.routes"></a>
 
 ```csharp
-public object Routes { get; set; }
+public IResolvable|AppSpecServiceRoutes[] Routes { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>[]
 
 routes block.
 
@@ -5722,7 +5722,7 @@ new AppSpecServiceAlert {
     double Value,
     string Window,
     AppSpecServiceAlertDestinations Destinations = null,
-    object Disabled = null
+    bool|IResolvable Disabled = null
 };
 ```
 
@@ -5735,7 +5735,7 @@ new AppSpecServiceAlert {
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.value">Value</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#value App#value}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.window">Window</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#window App#window}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.destinations">Destinations</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinations">AppSpecServiceAlertDestinations</a></code> | destinations block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.disabled">Disabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.disabled">Disabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -5804,10 +5804,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Disabled`<sup>Optional</sup> <a name="Disabled" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlert.property.disabled"></a>
 
 ```csharp
-public object Disabled { get; set; }
+public bool|IResolvable Disabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}.
 
@@ -5822,7 +5822,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecServiceAlertDestinations {
     string[] Emails = null,
-    object SlackWebhooks = null
+    IResolvable|AppSpecServiceAlertDestinationsSlackWebhooks[] SlackWebhooks = null
 };
 ```
 
@@ -5831,7 +5831,7 @@ new AppSpecServiceAlertDestinations {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinations.property.emails">Emails</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#emails App#emails}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinations.property.slackWebhooks">SlackWebhooks</a></code> | <code>object</code> | slack_webhooks block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinations.property.slackWebhooks">SlackWebhooks</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>[]</code> | slack_webhooks block. |
 
 ---
 
@@ -5850,10 +5850,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `SlackWebhooks`<sup>Optional</sup> <a name="SlackWebhooks" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinations.property.slackWebhooks"></a>
 
 ```csharp
-public object SlackWebhooks { get; set; }
+public IResolvable|AppSpecServiceAlertDestinationsSlackWebhooks[] SlackWebhooks { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>[]
 
 slack_webhooks block.
 
@@ -6054,7 +6054,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecServiceBitbucket {
     string Branch = null,
-    object DeployOnPush = null,
+    bool|IResolvable DeployOnPush = null,
     string Repo = null
 };
 ```
@@ -6064,7 +6064,7 @@ new AppSpecServiceBitbucket {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket.property.branch">Branch</a></code> | <code>string</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket.property.deployOnPush">DeployOnPush</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket.property.repo">Repo</a></code> | <code>string</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -6086,10 +6086,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `DeployOnPush`<sup>Optional</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket.property.deployOnPush"></a>
 
 ```csharp
-public object DeployOnPush { get; set; }
+public bool|IResolvable DeployOnPush { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -6119,7 +6119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecServiceCors {
-    object AllowCredentials = null,
+    bool|IResolvable AllowCredentials = null,
     string[] AllowHeaders = null,
     string[] AllowMethods = null,
     AppSpecServiceCorsAllowOrigins AllowOrigins = null,
@@ -6132,7 +6132,7 @@ new AppSpecServiceCors {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCors.property.allowCredentials">AllowCredentials</a></code> | <code>object</code> | Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCors.property.allowCredentials">AllowCredentials</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCors.property.allowHeaders">AllowHeaders</a></code> | <code>string[]</code> | The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCors.property.allowMethods">AllowMethods</a></code> | <code>string[]</code> | The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCors.property.allowOrigins">AllowOrigins</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsAllowOrigins">AppSpecServiceCorsAllowOrigins</a></code> | allow_origins block. |
@@ -6144,10 +6144,10 @@ new AppSpecServiceCors {
 ##### `AllowCredentials`<sup>Optional</sup> <a name="AllowCredentials" id="@cdktf/provider-digitalocean.app.AppSpecServiceCors.property.allowCredentials"></a>
 
 ```csharp
-public object AllowCredentials { get; set; }
+public bool|IResolvable AllowCredentials { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`.
 
@@ -6436,7 +6436,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecServiceGithub {
     string Branch = null,
-    object DeployOnPush = null,
+    bool|IResolvable DeployOnPush = null,
     string Repo = null
 };
 ```
@@ -6446,7 +6446,7 @@ new AppSpecServiceGithub {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithub.property.branch">Branch</a></code> | <code>string</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithub.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithub.property.deployOnPush">DeployOnPush</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithub.property.repo">Repo</a></code> | <code>string</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -6468,10 +6468,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `DeployOnPush`<sup>Optional</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecServiceGithub.property.deployOnPush"></a>
 
 ```csharp
-public object DeployOnPush { get; set; }
+public bool|IResolvable DeployOnPush { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -6502,7 +6502,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecServiceGitlab {
     string Branch = null,
-    object DeployOnPush = null,
+    bool|IResolvable DeployOnPush = null,
     string Repo = null
 };
 ```
@@ -6512,7 +6512,7 @@ new AppSpecServiceGitlab {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlab.property.branch">Branch</a></code> | <code>string</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlab.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlab.property.deployOnPush">DeployOnPush</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlab.property.repo">Repo</a></code> | <code>string</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -6534,10 +6534,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `DeployOnPush`<sup>Optional</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecServiceGitlab.property.deployOnPush"></a>
 
 ```csharp
-public object DeployOnPush { get; set; }
+public bool|IResolvable DeployOnPush { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -6701,7 +6701,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 new AppSpecServiceImage {
     string RegistryType,
     string Repository,
-    object DeployOnPush = null,
+    IResolvable|AppSpecServiceImageDeployOnPush[] DeployOnPush = null,
     string Digest = null,
     string Registry = null,
     string RegistryCredentials = null,
@@ -6715,7 +6715,7 @@ new AppSpecServiceImage {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImage.property.registryType">RegistryType</a></code> | <code>string</code> | The registry type. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImage.property.repository">Repository</a></code> | <code>string</code> | The repository name. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImage.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | deploy_on_push block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImage.property.deployOnPush">DeployOnPush</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>[]</code> | deploy_on_push block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImage.property.digest">Digest</a></code> | <code>string</code> | The image digest. Cannot be specified if tag is provided. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImage.property.registry">Registry</a></code> | <code>string</code> | The registry name. Must be left empty for the DOCR registry type. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImage.property.registryCredentials">RegistryCredentials</a></code> | <code>string</code> | Access credentials for third-party registries. |
@@ -6754,10 +6754,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `DeployOnPush`<sup>Optional</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecServiceImage.property.deployOnPush"></a>
 
 ```csharp
-public object DeployOnPush { get; set; }
+public IResolvable|AppSpecServiceImageDeployOnPush[] DeployOnPush { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>[]
 
 deploy_on_push block.
 
@@ -6829,7 +6829,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecServiceImageDeployOnPush {
-    object Enabled = null
+    bool|IResolvable Enabled = null
 };
 ```
 
@@ -6837,17 +6837,17 @@ new AppSpecServiceImageDeployOnPush {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush.property.enabled">Enabled</a></code> | <code>object</code> | Whether to automatically deploy images pushed to DOCR. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to automatically deploy images pushed to DOCR. |
 
 ---
 
 ##### `Enabled`<sup>Optional</sup> <a name="Enabled" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; set; }
+public bool|IResolvable Enabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to automatically deploy images pushed to DOCR.
 
@@ -7212,7 +7212,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecServiceRoutes {
     string Path = null,
-    object PreservePathPrefix = null
+    bool|IResolvable PreservePathPrefix = null
 };
 ```
 
@@ -7221,7 +7221,7 @@ new AppSpecServiceRoutes {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes.property.path">Path</a></code> | <code>string</code> | Path specifies an route by HTTP path prefix. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes.property.preservePathPrefix">PreservePathPrefix</a></code> | <code>object</code> | An optional flag to preserve the path that is forwarded to the backend service. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes.property.preservePathPrefix">PreservePathPrefix</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | An optional flag to preserve the path that is forwarded to the backend service. |
 
 ---
 
@@ -7244,10 +7244,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `PreservePathPrefix`<sup>Optional</sup> <a name="PreservePathPrefix" id="@cdktf/provider-digitalocean.app.AppSpecServiceRoutes.property.preservePathPrefix"></a>
 
 ```csharp
-public object PreservePathPrefix { get; set; }
+public bool|IResolvable PreservePathPrefix { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 An optional flag to preserve the path that is forwarded to the backend service.
 
@@ -7323,7 +7323,7 @@ new AppSpecStaticSite {
     string CatchallDocument = null,
     AppSpecStaticSiteCors Cors = null,
     string DockerfilePath = null,
-    object Env = null,
+    IResolvable|AppSpecStaticSiteEnv[] Env = null,
     string EnvironmentSlug = null,
     string ErrorDocument = null,
     AppSpecStaticSiteGit Git = null,
@@ -7331,7 +7331,7 @@ new AppSpecStaticSite {
     AppSpecStaticSiteGitlab Gitlab = null,
     string IndexDocument = null,
     string OutputDir = null,
-    object Routes = null,
+    IResolvable|AppSpecStaticSiteRoutes[] Routes = null,
     string SourceDir = null
 };
 ```
@@ -7346,7 +7346,7 @@ new AppSpecStaticSite {
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.catchallDocument">CatchallDocument</a></code> | <code>string</code> | The name of the document to use as the fallback for any requests to documents that are not found when serving this static site. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.cors">Cors</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCors">AppSpecStaticSiteCors</a></code> | cors block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.dockerfilePath">DockerfilePath</a></code> | <code>string</code> | The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.env">Env</a></code> | <code>object</code> | env block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.env">Env</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>[]</code> | env block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.environmentSlug">EnvironmentSlug</a></code> | <code>string</code> | An environment slug describing the type of this app. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.errorDocument">ErrorDocument</a></code> | <code>string</code> | The name of the error document to use when serving this static site. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.git">Git</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGit">AppSpecStaticSiteGit</a></code> | git block. |
@@ -7354,7 +7354,7 @@ new AppSpecStaticSite {
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.gitlab">Gitlab</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlab">AppSpecStaticSiteGitlab</a></code> | gitlab block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.indexDocument">IndexDocument</a></code> | <code>string</code> | The name of the index document to use when serving this static site. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.outputDir">OutputDir</a></code> | <code>string</code> | An optional path to where the built assets will be located, relative to the build context. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.routes">Routes</a></code> | <code>object</code> | routes block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.routes">Routes</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>[]</code> | routes block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.sourceDir">SourceDir</a></code> | <code>string</code> | An optional path to the working directory to use for the build. |
 
 ---
@@ -7446,10 +7446,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Env`<sup>Optional</sup> <a name="Env" id="@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.env"></a>
 
 ```csharp
-public object Env { get; set; }
+public IResolvable|AppSpecStaticSiteEnv[] Env { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>[]
 
 env block.
 
@@ -7560,10 +7560,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Routes`<sup>Optional</sup> <a name="Routes" id="@cdktf/provider-digitalocean.app.AppSpecStaticSite.property.routes"></a>
 
 ```csharp
-public object Routes { get; set; }
+public IResolvable|AppSpecStaticSiteRoutes[] Routes { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>[]
 
 routes block.
 
@@ -7594,7 +7594,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecStaticSiteBitbucket {
     string Branch = null,
-    object DeployOnPush = null,
+    bool|IResolvable DeployOnPush = null,
     string Repo = null
 };
 ```
@@ -7604,7 +7604,7 @@ new AppSpecStaticSiteBitbucket {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucket.property.branch">Branch</a></code> | <code>string</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucket.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucket.property.deployOnPush">DeployOnPush</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucket.property.repo">Repo</a></code> | <code>string</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -7626,10 +7626,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `DeployOnPush`<sup>Optional</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucket.property.deployOnPush"></a>
 
 ```csharp
-public object DeployOnPush { get; set; }
+public bool|IResolvable DeployOnPush { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -7659,7 +7659,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecStaticSiteCors {
-    object AllowCredentials = null,
+    bool|IResolvable AllowCredentials = null,
     string[] AllowHeaders = null,
     string[] AllowMethods = null,
     AppSpecStaticSiteCorsAllowOrigins AllowOrigins = null,
@@ -7672,7 +7672,7 @@ new AppSpecStaticSiteCors {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCors.property.allowCredentials">AllowCredentials</a></code> | <code>object</code> | Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCors.property.allowCredentials">AllowCredentials</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCors.property.allowHeaders">AllowHeaders</a></code> | <code>string[]</code> | The set of allowed HTTP request headers. This configures the Access-Control-Allow-Headers header. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCors.property.allowMethods">AllowMethods</a></code> | <code>string[]</code> | The set of allowed HTTP methods. This configures the Access-Control-Allow-Methods header. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCors.property.allowOrigins">AllowOrigins</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsAllowOrigins">AppSpecStaticSiteCorsAllowOrigins</a></code> | allow_origins block. |
@@ -7684,10 +7684,10 @@ new AppSpecStaticSiteCors {
 ##### `AllowCredentials`<sup>Optional</sup> <a name="AllowCredentials" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteCors.property.allowCredentials"></a>
 
 ```csharp
-public object AllowCredentials { get; set; }
+public bool|IResolvable AllowCredentials { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether browsers should expose the response to the client-side JavaScript code when the request’s credentials mode is `include`.
 
@@ -7976,7 +7976,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecStaticSiteGithub {
     string Branch = null,
-    object DeployOnPush = null,
+    bool|IResolvable DeployOnPush = null,
     string Repo = null
 };
 ```
@@ -7986,7 +7986,7 @@ new AppSpecStaticSiteGithub {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithub.property.branch">Branch</a></code> | <code>string</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithub.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithub.property.deployOnPush">DeployOnPush</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithub.property.repo">Repo</a></code> | <code>string</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -8008,10 +8008,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `DeployOnPush`<sup>Optional</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithub.property.deployOnPush"></a>
 
 ```csharp
-public object DeployOnPush { get; set; }
+public bool|IResolvable DeployOnPush { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -8042,7 +8042,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecStaticSiteGitlab {
     string Branch = null,
-    object DeployOnPush = null,
+    bool|IResolvable DeployOnPush = null,
     string Repo = null
 };
 ```
@@ -8052,7 +8052,7 @@ new AppSpecStaticSiteGitlab {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlab.property.branch">Branch</a></code> | <code>string</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlab.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlab.property.deployOnPush">DeployOnPush</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlab.property.repo">Repo</a></code> | <code>string</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -8074,10 +8074,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `DeployOnPush`<sup>Optional</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlab.property.deployOnPush"></a>
 
 ```csharp
-public object DeployOnPush { get; set; }
+public bool|IResolvable DeployOnPush { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -8108,7 +8108,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecStaticSiteRoutes {
     string Path = null,
-    object PreservePathPrefix = null
+    bool|IResolvable PreservePathPrefix = null
 };
 ```
 
@@ -8117,7 +8117,7 @@ new AppSpecStaticSiteRoutes {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes.property.path">Path</a></code> | <code>string</code> | Path specifies an route by HTTP path prefix. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes.property.preservePathPrefix">PreservePathPrefix</a></code> | <code>object</code> | An optional flag to preserve the path that is forwarded to the backend service. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes.property.preservePathPrefix">PreservePathPrefix</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | An optional flag to preserve the path that is forwarded to the backend service. |
 
 ---
 
@@ -8140,10 +8140,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `PreservePathPrefix`<sup>Optional</sup> <a name="PreservePathPrefix" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes.property.preservePathPrefix"></a>
 
 ```csharp
-public object PreservePathPrefix { get; set; }
+public bool|IResolvable PreservePathPrefix { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 An optional flag to preserve the path that is forwarded to the backend service.
 
@@ -8197,12 +8197,12 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecWorker {
     string Name,
-    object Alert = null,
+    IResolvable|AppSpecWorkerAlert[] Alert = null,
     AppSpecWorkerAutoscaling Autoscaling = null,
     AppSpecWorkerBitbucket Bitbucket = null,
     string BuildCommand = null,
     string DockerfilePath = null,
-    object Env = null,
+    IResolvable|AppSpecWorkerEnv[] Env = null,
     string EnvironmentSlug = null,
     AppSpecWorkerGit Git = null,
     AppSpecWorkerGithub Github = null,
@@ -8210,7 +8210,7 @@ new AppSpecWorker {
     AppSpecWorkerImage Image = null,
     double InstanceCount = null,
     string InstanceSizeSlug = null,
-    object LogDestination = null,
+    IResolvable|AppSpecWorkerLogDestination[] LogDestination = null,
     string RunCommand = null,
     string SourceDir = null,
     AppSpecWorkerTermination Termination = null
@@ -8222,12 +8222,12 @@ new AppSpecWorker {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.name">Name</a></code> | <code>string</code> | The name of the component. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.alert">Alert</a></code> | <code>object</code> | alert block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.alert">Alert</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>[]</code> | alert block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.autoscaling">Autoscaling</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscaling">AppSpecWorkerAutoscaling</a></code> | autoscaling block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.bitbucket">Bitbucket</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket">AppSpecWorkerBitbucket</a></code> | bitbucket block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.buildCommand">BuildCommand</a></code> | <code>string</code> | An optional build command to run while building this component from source. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.dockerfilePath">DockerfilePath</a></code> | <code>string</code> | The path to a Dockerfile relative to the root of the repo. If set, overrides usage of buildpacks. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.env">Env</a></code> | <code>object</code> | env block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.env">Env</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>[]</code> | env block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.environmentSlug">EnvironmentSlug</a></code> | <code>string</code> | An environment slug describing the type of this app. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.git">Git</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGit">AppSpecWorkerGit</a></code> | git block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.github">Github</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithub">AppSpecWorkerGithub</a></code> | github block. |
@@ -8235,7 +8235,7 @@ new AppSpecWorker {
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.image">Image</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImage">AppSpecWorkerImage</a></code> | image block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.instanceCount">InstanceCount</a></code> | <code>double</code> | The amount of instances that this component should be scaled to. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.instanceSizeSlug">InstanceSizeSlug</a></code> | <code>string</code> | The instance size to use for this component. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.logDestination">LogDestination</a></code> | <code>object</code> | log_destination block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.logDestination">LogDestination</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>[]</code> | log_destination block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.runCommand">RunCommand</a></code> | <code>string</code> | An optional run command to override the component's default. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.sourceDir">SourceDir</a></code> | <code>string</code> | An optional path to the working directory to use for the build. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorker.property.termination">Termination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTermination">AppSpecWorkerTermination</a></code> | termination block. |
@@ -8259,10 +8259,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Alert`<sup>Optional</sup> <a name="Alert" id="@cdktf/provider-digitalocean.app.AppSpecWorker.property.alert"></a>
 
 ```csharp
-public object Alert { get; set; }
+public IResolvable|AppSpecWorkerAlert[] Alert { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>[]
 
 alert block.
 
@@ -8329,10 +8329,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Env`<sup>Optional</sup> <a name="Env" id="@cdktf/provider-digitalocean.app.AppSpecWorker.property.env"></a>
 
 ```csharp
-public object Env { get; set; }
+public IResolvable|AppSpecWorkerEnv[] Env { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>[]
 
 env block.
 
@@ -8441,10 +8441,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `LogDestination`<sup>Optional</sup> <a name="LogDestination" id="@cdktf/provider-digitalocean.app.AppSpecWorker.property.logDestination"></a>
 
 ```csharp
-public object LogDestination { get; set; }
+public IResolvable|AppSpecWorkerLogDestination[] LogDestination { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>[]
 
 log_destination block.
 
@@ -8507,7 +8507,7 @@ new AppSpecWorkerAlert {
     double Value,
     string Window,
     AppSpecWorkerAlertDestinations Destinations = null,
-    object Disabled = null
+    bool|IResolvable Disabled = null
 };
 ```
 
@@ -8520,7 +8520,7 @@ new AppSpecWorkerAlert {
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.value">Value</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#value App#value}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.window">Window</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#window App#window}. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.destinations">Destinations</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinations">AppSpecWorkerAlertDestinations</a></code> | destinations block. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.disabled">Disabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.disabled">Disabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}. |
 
 ---
 
@@ -8589,10 +8589,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `Disabled`<sup>Optional</sup> <a name="Disabled" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlert.property.disabled"></a>
 
 ```csharp
-public object Disabled { get; set; }
+public bool|IResolvable Disabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#disabled App#disabled}.
 
@@ -8607,7 +8607,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecWorkerAlertDestinations {
     string[] Emails = null,
-    object SlackWebhooks = null
+    IResolvable|AppSpecWorkerAlertDestinationsSlackWebhooks[] SlackWebhooks = null
 };
 ```
 
@@ -8616,7 +8616,7 @@ new AppSpecWorkerAlertDestinations {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinations.property.emails">Emails</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/app#emails App#emails}. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinations.property.slackWebhooks">SlackWebhooks</a></code> | <code>object</code> | slack_webhooks block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinations.property.slackWebhooks">SlackWebhooks</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>[]</code> | slack_webhooks block. |
 
 ---
 
@@ -8635,10 +8635,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `SlackWebhooks`<sup>Optional</sup> <a name="SlackWebhooks" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinations.property.slackWebhooks"></a>
 
 ```csharp
-public object SlackWebhooks { get; set; }
+public IResolvable|AppSpecWorkerAlertDestinationsSlackWebhooks[] SlackWebhooks { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>[]
 
 slack_webhooks block.
 
@@ -8839,7 +8839,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecWorkerBitbucket {
     string Branch = null,
-    object DeployOnPush = null,
+    bool|IResolvable DeployOnPush = null,
     string Repo = null
 };
 ```
@@ -8849,7 +8849,7 @@ new AppSpecWorkerBitbucket {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket.property.branch">Branch</a></code> | <code>string</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket.property.deployOnPush">DeployOnPush</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket.property.repo">Repo</a></code> | <code>string</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -8871,10 +8871,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `DeployOnPush`<sup>Optional</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket.property.deployOnPush"></a>
 
 ```csharp
-public object DeployOnPush { get; set; }
+public bool|IResolvable DeployOnPush { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -9037,7 +9037,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecWorkerGithub {
     string Branch = null,
-    object DeployOnPush = null,
+    bool|IResolvable DeployOnPush = null,
     string Repo = null
 };
 ```
@@ -9047,7 +9047,7 @@ new AppSpecWorkerGithub {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithub.property.branch">Branch</a></code> | <code>string</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithub.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithub.property.deployOnPush">DeployOnPush</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithub.property.repo">Repo</a></code> | <code>string</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -9069,10 +9069,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `DeployOnPush`<sup>Optional</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecWorkerGithub.property.deployOnPush"></a>
 
 ```csharp
-public object DeployOnPush { get; set; }
+public bool|IResolvable DeployOnPush { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -9103,7 +9103,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecWorkerGitlab {
     string Branch = null,
-    object DeployOnPush = null,
+    bool|IResolvable DeployOnPush = null,
     string Repo = null
 };
 ```
@@ -9113,7 +9113,7 @@ new AppSpecWorkerGitlab {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlab.property.branch">Branch</a></code> | <code>string</code> | The name of the branch to use. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlab.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | Whether to automatically deploy new commits made to the repo. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlab.property.deployOnPush">DeployOnPush</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to automatically deploy new commits made to the repo. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlab.property.repo">Repo</a></code> | <code>string</code> | The name of the repo in the format `owner/repo`. |
 
 ---
@@ -9135,10 +9135,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `DeployOnPush`<sup>Optional</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecWorkerGitlab.property.deployOnPush"></a>
 
 ```csharp
-public object DeployOnPush { get; set; }
+public bool|IResolvable DeployOnPush { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to automatically deploy new commits made to the repo.
 
@@ -9170,7 +9170,7 @@ using HashiCorp.Cdktf.Providers.Digitalocean;
 new AppSpecWorkerImage {
     string RegistryType,
     string Repository,
-    object DeployOnPush = null,
+    IResolvable|AppSpecWorkerImageDeployOnPush[] DeployOnPush = null,
     string Digest = null,
     string Registry = null,
     string RegistryCredentials = null,
@@ -9184,7 +9184,7 @@ new AppSpecWorkerImage {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImage.property.registryType">RegistryType</a></code> | <code>string</code> | The registry type. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImage.property.repository">Repository</a></code> | <code>string</code> | The repository name. |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImage.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | deploy_on_push block. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImage.property.deployOnPush">DeployOnPush</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>[]</code> | deploy_on_push block. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImage.property.digest">Digest</a></code> | <code>string</code> | The image digest. Cannot be specified if tag is provided. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImage.property.registry">Registry</a></code> | <code>string</code> | The registry name. Must be left empty for the DOCR registry type. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImage.property.registryCredentials">RegistryCredentials</a></code> | <code>string</code> | Access credentials for third-party registries. |
@@ -9223,10 +9223,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 ##### `DeployOnPush`<sup>Optional</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImage.property.deployOnPush"></a>
 
 ```csharp
-public object DeployOnPush { get; set; }
+public IResolvable|AppSpecWorkerImageDeployOnPush[] DeployOnPush { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>[]
 
 deploy_on_push block.
 
@@ -9298,7 +9298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 using HashiCorp.Cdktf.Providers.Digitalocean;
 
 new AppSpecWorkerImageDeployOnPush {
-    object Enabled = null
+    bool|IResolvable Enabled = null
 };
 ```
 
@@ -9306,17 +9306,17 @@ new AppSpecWorkerImageDeployOnPush {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush.property.enabled">Enabled</a></code> | <code>object</code> | Whether to automatically deploy images pushed to DOCR. |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to automatically deploy images pushed to DOCR. |
 
 ---
 
 ##### `Enabled`<sup>Optional</sup> <a name="Enabled" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; set; }
+public bool|IResolvable Enabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to automatically deploy images pushed to DOCR.
 
@@ -9863,7 +9863,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppDedicatedIpsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppDedicatedIpsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppDedicatedIpsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppDedicatedIpsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>[]</code> | *No description.* |
 
 ---
 
@@ -9894,10 +9894,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppDedicatedIpsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppDedicatedIps[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>[]
 
 ---
 
@@ -10157,7 +10157,7 @@ private void ResetStatus()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppDedicatedIpsOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppDedicatedIpsOutputReference.property.ip">Ip</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppDedicatedIpsOutputReference.property.status">Status</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppDedicatedIpsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppDedicatedIpsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -10248,10 +10248,10 @@ public string Status { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppDedicatedIpsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public AppDedicatedIps|IResolvable InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* <a href="#@cdktf/provider-digitalocean.app.AppDedicatedIps">AppDedicatedIps</a>|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -10465,12 +10465,12 @@ Returns a reversible string representation.
 ##### `PutSlackWebhooks` <a name="PutSlackWebhooks" id="@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsOutputReference.putSlackWebhooks"></a>
 
 ```csharp
-private void PutSlackWebhooks(object Value)
+private void PutSlackWebhooks(IResolvable|AppSpecAlertDestinationsSlackWebhooks[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsOutputReference.putSlackWebhooks.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>[]
 
 ---
 
@@ -10495,7 +10495,7 @@ private void ResetSlackWebhooks()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsOutputReference.property.slackWebhooks">SlackWebhooks</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksList">AppSpecAlertDestinationsSlackWebhooksList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsOutputReference.property.emailsInput">EmailsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsOutputReference.property.slackWebhooksInput">SlackWebhooksInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsOutputReference.property.slackWebhooksInput">SlackWebhooksInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsOutputReference.property.emails">Emails</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinations">AppSpecAlertDestinations</a></code> | *No description.* |
 
@@ -10548,10 +10548,10 @@ public string[] EmailsInput { get; }
 ##### `SlackWebhooksInput`<sup>Optional</sup> <a name="SlackWebhooksInput" id="@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsOutputReference.property.slackWebhooksInput"></a>
 
 ```csharp
-public object SlackWebhooksInput { get; }
+public IResolvable|AppSpecAlertDestinationsSlackWebhooks[] SlackWebhooksInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>[]
 
 ---
 
@@ -10697,7 +10697,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>[]</code> | *No description.* |
 
 ---
 
@@ -10728,10 +10728,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecAlertDestinationsSlackWebhooks[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>[]
 
 ---
 
@@ -10968,7 +10968,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksOutputReference.property.urlInput">UrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksOutputReference.property.channel">Channel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksOutputReference.property.url">Url</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a></code> | *No description.* |
 
 ---
 
@@ -11039,10 +11039,10 @@ public string Url { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooksOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecAlertDestinationsSlackWebhooks InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsSlackWebhooks">AppSpecAlertDestinationsSlackWebhooks</a>
 
 ---
 
@@ -11168,7 +11168,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>[]</code> | *No description.* |
 
 ---
 
@@ -11199,10 +11199,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecAlertList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecAlert[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>[]
 
 ---
 
@@ -11464,11 +11464,11 @@ private void ResetDisabled()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.destinations">Destinations</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinationsOutputReference">AppSpecAlertDestinationsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.destinationsInput">DestinationsInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertDestinations">AppSpecAlertDestinations</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.disabledInput">DisabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.disabledInput">DisabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.ruleInput">RuleInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.disabled">Disabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.disabled">Disabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.rule">Rule</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a></code> | *No description.* |
 
 ---
 
@@ -11519,10 +11519,10 @@ public AppSpecAlertDestinations DestinationsInput { get; }
 ##### `DisabledInput`<sup>Optional</sup> <a name="DisabledInput" id="@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.disabledInput"></a>
 
 ```csharp
-public object DisabledInput { get; }
+public bool|IResolvable DisabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -11539,10 +11539,10 @@ public string RuleInput { get; }
 ##### `Disabled`<sup>Required</sup> <a name="Disabled" id="@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.disabled"></a>
 
 ```csharp
-public object Disabled { get; }
+public bool|IResolvable Disabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -11559,10 +11559,10 @@ public string Rule { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecAlertOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecAlert InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>
 
 ---
 
@@ -11688,7 +11688,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>[]</code> | *No description.* |
 
 ---
 
@@ -11719,10 +11719,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecDatabaseList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecDatabase[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>[]
 
 ---
 
@@ -12009,16 +12009,16 @@ private void ResetVersion()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.dbUserInput">DbUserInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.engineInput">EngineInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.productionInput">ProductionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.productionInput">ProductionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.versionInput">VersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.clusterName">ClusterName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.dbName">DbName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.dbUser">DbUser</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.engine">Engine</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.production">Production</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.production">Production</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.version">Version</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a></code> | *No description.* |
 
 ---
 
@@ -12099,10 +12099,10 @@ public string NameInput { get; }
 ##### `ProductionInput`<sup>Optional</sup> <a name="ProductionInput" id="@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.productionInput"></a>
 
 ```csharp
-public object ProductionInput { get; }
+public bool|IResolvable ProductionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -12169,10 +12169,10 @@ public string Name { get; }
 ##### `Production`<sup>Required</sup> <a name="Production" id="@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.production"></a>
 
 ```csharp
-public object Production { get; }
+public bool|IResolvable Production { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -12189,10 +12189,10 @@ public string Version { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecDatabaseOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecDatabase InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>
 
 ---
 
@@ -12318,7 +12318,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>[]</code> | *No description.* |
 
 ---
 
@@ -12349,10 +12349,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecDomainList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecDomain[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>[]
 
 ---
 
@@ -12608,13 +12608,13 @@ private void ResetZone()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.wildcardInput">WildcardInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.wildcardInput">WildcardInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.zoneInput">ZoneInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.wildcard">Wildcard</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.wildcard">Wildcard</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.zone">Zone</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a></code> | *No description.* |
 
 ---
 
@@ -12665,10 +12665,10 @@ public string TypeInput { get; }
 ##### `WildcardInput`<sup>Optional</sup> <a name="WildcardInput" id="@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.wildcardInput"></a>
 
 ```csharp
-public object WildcardInput { get; }
+public bool|IResolvable WildcardInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -12705,10 +12705,10 @@ public string Type { get; }
 ##### `Wildcard`<sup>Required</sup> <a name="Wildcard" id="@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.wildcard"></a>
 
 ```csharp
-public object Wildcard { get; }
+public bool|IResolvable Wildcard { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -12725,10 +12725,10 @@ public string Zone { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecDomainOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecDomain InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>
 
 ---
 
@@ -12854,7 +12854,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEgressList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEgressList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEgressList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEgressList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>[]</code> | *No description.* |
 
 ---
 
@@ -12885,10 +12885,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecEgressList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecEgress[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>[]
 
 ---
 
@@ -13130,7 +13130,7 @@ private void ResetType()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEgressOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEgressOutputReference.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEgressOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEgressOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEgressOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a></code> | *No description.* |
 
 ---
 
@@ -13181,10 +13181,10 @@ public string Type { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecEgressOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecEgress InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>
 
 ---
 
@@ -13310,7 +13310,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEnvList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEnvList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEnvList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEnvList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>[]</code> | *No description.* |
 
 ---
 
@@ -13341,10 +13341,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecEnvList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecEnv[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>[]
 
 ---
 
@@ -13613,7 +13613,7 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEnvOutputReference.property.scope">Scope</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEnvOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEnvOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEnvOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecEnvOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a></code> | *No description.* |
 
 ---
 
@@ -13724,10 +13724,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecEnvOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecEnv InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>
 
 ---
 
@@ -13941,12 +13941,12 @@ Returns a reversible string representation.
 ##### `PutSlackWebhooks` <a name="PutSlackWebhooks" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsOutputReference.putSlackWebhooks"></a>
 
 ```csharp
-private void PutSlackWebhooks(object Value)
+private void PutSlackWebhooks(IResolvable|AppSpecFunctionAlertDestinationsSlackWebhooks[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsOutputReference.putSlackWebhooks.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>[]
 
 ---
 
@@ -13971,7 +13971,7 @@ private void ResetSlackWebhooks()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsOutputReference.property.slackWebhooks">SlackWebhooks</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksList">AppSpecFunctionAlertDestinationsSlackWebhooksList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsOutputReference.property.emailsInput">EmailsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsOutputReference.property.slackWebhooksInput">SlackWebhooksInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsOutputReference.property.slackWebhooksInput">SlackWebhooksInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsOutputReference.property.emails">Emails</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinations">AppSpecFunctionAlertDestinations</a></code> | *No description.* |
 
@@ -14024,10 +14024,10 @@ public string[] EmailsInput { get; }
 ##### `SlackWebhooksInput`<sup>Optional</sup> <a name="SlackWebhooksInput" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsOutputReference.property.slackWebhooksInput"></a>
 
 ```csharp
-public object SlackWebhooksInput { get; }
+public IResolvable|AppSpecFunctionAlertDestinationsSlackWebhooks[] SlackWebhooksInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>[]
 
 ---
 
@@ -14173,7 +14173,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>[]</code> | *No description.* |
 
 ---
 
@@ -14204,10 +14204,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecFunctionAlertDestinationsSlackWebhooks[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>[]
 
 ---
 
@@ -14444,7 +14444,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksOutputReference.property.urlInput">UrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksOutputReference.property.channel">Channel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksOutputReference.property.url">Url</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a></code> | *No description.* |
 
 ---
 
@@ -14515,10 +14515,10 @@ public string Url { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooksOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecFunctionAlertDestinationsSlackWebhooks InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsSlackWebhooks">AppSpecFunctionAlertDestinationsSlackWebhooks</a>
 
 ---
 
@@ -14644,7 +14644,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>[]</code> | *No description.* |
 
 ---
 
@@ -14675,10 +14675,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlertList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecFunctionAlert[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>[]
 
 ---
 
@@ -14940,17 +14940,17 @@ private void ResetDisabled()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.destinations">Destinations</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinationsOutputReference">AppSpecFunctionAlertDestinationsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.destinationsInput">DestinationsInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertDestinations">AppSpecFunctionAlertDestinations</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.disabledInput">DisabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.disabledInput">DisabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.operatorInput">OperatorInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.ruleInput">RuleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.valueInput">ValueInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.windowInput">WindowInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.disabled">Disabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.disabled">Disabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.operator">Operator</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.rule">Rule</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.value">Value</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.window">Window</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a></code> | *No description.* |
 
 ---
 
@@ -15001,10 +15001,10 @@ public AppSpecFunctionAlertDestinations DestinationsInput { get; }
 ##### `DisabledInput`<sup>Optional</sup> <a name="DisabledInput" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.disabledInput"></a>
 
 ```csharp
-public object DisabledInput { get; }
+public bool|IResolvable DisabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -15051,10 +15051,10 @@ public string WindowInput { get; }
 ##### `Disabled`<sup>Required</sup> <a name="Disabled" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.disabled"></a>
 
 ```csharp
-public object Disabled { get; }
+public bool|IResolvable Disabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -15101,10 +15101,10 @@ public string Window { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecFunctionAlertOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecFunctionAlert InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>
 
 ---
 
@@ -15341,10 +15341,10 @@ private void ResetRepo()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.branchInput">BranchInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.repoInput">RepoInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.branch">Branch</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.repo">Repo</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket">AppSpecFunctionBitbucket</a></code> | *No description.* |
 
@@ -15387,10 +15387,10 @@ public string BranchInput { get; }
 ##### `DeployOnPushInput`<sup>Optional</sup> <a name="DeployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.deployOnPushInput"></a>
 
 ```csharp
-public object DeployOnPushInput { get; }
+public bool|IResolvable DeployOnPushInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -15417,10 +15417,10 @@ public string Branch { get; }
 ##### `DeployOnPush`<sup>Required</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference.property.deployOnPush"></a>
 
 ```csharp
-public object DeployOnPush { get; }
+public bool|IResolvable DeployOnPush { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -16047,13 +16047,13 @@ private void ResetMaxAge()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowOrigins">AllowOrigins</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsAllowOriginsOutputReference">AppSpecFunctionCorsAllowOriginsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowCredentialsInput">AllowCredentialsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowCredentialsInput">AllowCredentialsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowHeadersInput">AllowHeadersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowMethodsInput">AllowMethodsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowOriginsInput">AllowOriginsInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsAllowOrigins">AppSpecFunctionCorsAllowOrigins</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.exposeHeadersInput">ExposeHeadersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.maxAgeInput">MaxAgeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowCredentials">AllowCredentials</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowCredentials">AllowCredentials</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowHeaders">AllowHeaders</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowMethods">AllowMethods</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.exposeHeaders">ExposeHeaders</a></code> | <code>string[]</code> | *No description.* |
@@ -16099,10 +16099,10 @@ public AppSpecFunctionCorsAllowOriginsOutputReference AllowOrigins { get; }
 ##### `AllowCredentialsInput`<sup>Optional</sup> <a name="AllowCredentialsInput" id="@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowCredentialsInput"></a>
 
 ```csharp
-public object AllowCredentialsInput { get; }
+public bool|IResolvable AllowCredentialsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -16159,10 +16159,10 @@ public string MaxAgeInput { get; }
 ##### `AllowCredentials`<sup>Required</sup> <a name="AllowCredentials" id="@cdktf/provider-digitalocean.app.AppSpecFunctionCorsOutputReference.property.allowCredentials"></a>
 
 ```csharp
-public object AllowCredentials { get; }
+public bool|IResolvable AllowCredentials { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -16338,7 +16338,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnvList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnvList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnvList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnvList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>[]</code> | *No description.* |
 
 ---
 
@@ -16369,10 +16369,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecFunctionEnvList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecFunctionEnv[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>[]
 
 ---
 
@@ -16641,7 +16641,7 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnvOutputReference.property.scope">Scope</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnvOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnvOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnvOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnvOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a></code> | *No description.* |
 
 ---
 
@@ -16752,10 +16752,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecFunctionEnvOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecFunctionEnv InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>
 
 ---
 
@@ -16992,10 +16992,10 @@ private void ResetRepo()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.branchInput">BranchInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.repoInput">RepoInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.branch">Branch</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.repo">Repo</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithub">AppSpecFunctionGithub</a></code> | *No description.* |
 
@@ -17038,10 +17038,10 @@ public string BranchInput { get; }
 ##### `DeployOnPushInput`<sup>Optional</sup> <a name="DeployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.deployOnPushInput"></a>
 
 ```csharp
-public object DeployOnPushInput { get; }
+public bool|IResolvable DeployOnPushInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -17068,10 +17068,10 @@ public string Branch { get; }
 ##### `DeployOnPush`<sup>Required</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecFunctionGithubOutputReference.property.deployOnPush"></a>
 
 ```csharp
-public object DeployOnPush { get; }
+public bool|IResolvable DeployOnPush { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -17328,10 +17328,10 @@ private void ResetRepo()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.branchInput">BranchInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.repoInput">RepoInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.branch">Branch</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.repo">Repo</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlab">AppSpecFunctionGitlab</a></code> | *No description.* |
 
@@ -17374,10 +17374,10 @@ public string BranchInput { get; }
 ##### `DeployOnPushInput`<sup>Optional</sup> <a name="DeployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.deployOnPushInput"></a>
 
 ```csharp
-public object DeployOnPushInput { get; }
+public bool|IResolvable DeployOnPushInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -17404,10 +17404,10 @@ public string Branch { get; }
 ##### `DeployOnPush`<sup>Required</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference.property.deployOnPush"></a>
 
 ```csharp
-public object DeployOnPush { get; }
+public bool|IResolvable DeployOnPush { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -17860,7 +17860,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>[]</code> | *No description.* |
 
 ---
 
@@ -17891,10 +17891,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecFunctionList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecFunction[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>[]
 
 ---
 
@@ -18320,7 +18320,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>[]</code> | *No description.* |
 
 ---
 
@@ -18351,10 +18351,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecFunctionLogDestination[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>[]
 
 ---
 
@@ -19626,7 +19626,7 @@ private void ResetPapertrail()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationOutputReference.property.openSearchInput">OpenSearchInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationOpenSearch">AppSpecFunctionLogDestinationOpenSearch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationOutputReference.property.papertrailInput">PapertrailInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationPapertrail">AppSpecFunctionLogDestinationPapertrail</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a></code> | *No description.* |
 
 ---
 
@@ -19757,10 +19757,10 @@ public string Name { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecFunctionLogDestination InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>
 
 ---
 
@@ -20279,12 +20279,12 @@ Returns a reversible string representation.
 ##### `PutAlert` <a name="PutAlert" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.putAlert"></a>
 
 ```csharp
-private void PutAlert(object Value)
+private void PutAlert(IResolvable|AppSpecFunctionAlert[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.putAlert.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>[]
 
 ---
 
@@ -20315,12 +20315,12 @@ private void PutCors(AppSpecFunctionCors Value)
 ##### `PutEnv` <a name="PutEnv" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.putEnv"></a>
 
 ```csharp
-private void PutEnv(object Value)
+private void PutEnv(IResolvable|AppSpecFunctionEnv[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.putEnv.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>[]
 
 ---
 
@@ -20363,24 +20363,24 @@ private void PutGitlab(AppSpecFunctionGitlab Value)
 ##### `PutLogDestination` <a name="PutLogDestination" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.putLogDestination"></a>
 
 ```csharp
-private void PutLogDestination(object Value)
+private void PutLogDestination(IResolvable|AppSpecFunctionLogDestination[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.putLogDestination.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>[]
 
 ---
 
 ##### `PutRoutes` <a name="PutRoutes" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.putRoutes"></a>
 
 ```csharp
-private void PutRoutes(object Value)
+private void PutRoutes(IResolvable|AppSpecFunctionRoutes[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.putRoutes.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>[]
 
 ---
 
@@ -20460,20 +20460,20 @@ private void ResetSourceDir()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.gitlab">Gitlab</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlabOutputReference">AppSpecFunctionGitlabOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.logDestination">LogDestination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestinationList">AppSpecFunctionLogDestinationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.routes">Routes</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesList">AppSpecFunctionRoutesList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.alertInput">AlertInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.alertInput">AlertInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.bitbucketInput">BitbucketInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket">AppSpecFunctionBitbucket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.corsInput">CorsInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionCors">AppSpecFunctionCors</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.envInput">EnvInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.envInput">EnvInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.githubInput">GithubInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGithub">AppSpecFunctionGithub</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.gitInput">GitInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGit">AppSpecFunctionGit</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.gitlabInput">GitlabInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionGitlab">AppSpecFunctionGitlab</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.logDestinationInput">LogDestinationInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.logDestinationInput">LogDestinationInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.routesInput">RoutesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.routesInput">RoutesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.sourceDirInput">SourceDirInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.sourceDir">SourceDir</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a></code> | *No description.* |
 
 ---
 
@@ -20594,10 +20594,10 @@ public AppSpecFunctionRoutesList Routes { get; }
 ##### `AlertInput`<sup>Optional</sup> <a name="AlertInput" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.alertInput"></a>
 
 ```csharp
-public object AlertInput { get; }
+public IResolvable|AppSpecFunctionAlert[] AlertInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionAlert">AppSpecFunctionAlert</a>[]
 
 ---
 
@@ -20624,10 +20624,10 @@ public AppSpecFunctionCors CorsInput { get; }
 ##### `EnvInput`<sup>Optional</sup> <a name="EnvInput" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.envInput"></a>
 
 ```csharp
-public object EnvInput { get; }
+public IResolvable|AppSpecFunctionEnv[] EnvInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionEnv">AppSpecFunctionEnv</a>[]
 
 ---
 
@@ -20664,10 +20664,10 @@ public AppSpecFunctionGitlab GitlabInput { get; }
 ##### `LogDestinationInput`<sup>Optional</sup> <a name="LogDestinationInput" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.logDestinationInput"></a>
 
 ```csharp
-public object LogDestinationInput { get; }
+public IResolvable|AppSpecFunctionLogDestination[] LogDestinationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionLogDestination">AppSpecFunctionLogDestination</a>[]
 
 ---
 
@@ -20684,10 +20684,10 @@ public string NameInput { get; }
 ##### `RoutesInput`<sup>Optional</sup> <a name="RoutesInput" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.routesInput"></a>
 
 ```csharp
-public object RoutesInput { get; }
+public IResolvable|AppSpecFunctionRoutes[] RoutesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>[]
 
 ---
 
@@ -20724,10 +20724,10 @@ public string SourceDir { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecFunctionOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecFunction InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>
 
 ---
 
@@ -20853,7 +20853,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>[]</code> | *No description.* |
 
 ---
 
@@ -20884,10 +20884,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecFunctionRoutes[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>[]
 
 ---
 
@@ -21135,10 +21135,10 @@ private void ResetPreservePathPrefix()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.pathInput">PathInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.preservePathPrefixInput">PreservePathPrefixInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.preservePathPrefixInput">PreservePathPrefixInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.path">Path</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.preservePathPrefix">PreservePathPrefix</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.preservePathPrefix">PreservePathPrefix</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a></code> | *No description.* |
 
 ---
 
@@ -21179,10 +21179,10 @@ public string PathInput { get; }
 ##### `PreservePathPrefixInput`<sup>Optional</sup> <a name="PreservePathPrefixInput" id="@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.preservePathPrefixInput"></a>
 
 ```csharp
-public object PreservePathPrefixInput { get; }
+public bool|IResolvable PreservePathPrefixInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -21199,20 +21199,20 @@ public string Path { get; }
 ##### `PreservePathPrefix`<sup>Required</sup> <a name="PreservePathPrefix" id="@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.preservePathPrefix"></a>
 
 ```csharp
-public object PreservePathPrefix { get; }
+public bool|IResolvable PreservePathPrefix { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecFunctionRoutesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecFunctionRoutes InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunctionRoutes">AppSpecFunctionRoutes</a>
 
 ---
 
@@ -21425,12 +21425,12 @@ Returns a reversible string representation.
 ##### `PutRule` <a name="PutRule" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.putRule"></a>
 
 ```csharp
-private void PutRule(object Value)
+private void PutRule(IResolvable|AppSpecIngressRule[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.putRule.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>[]
 
 ---
 
@@ -21448,7 +21448,7 @@ private void ResetRule()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.property.rule">Rule</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleList">AppSpecIngressRuleList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.property.ruleInput">RuleInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.property.ruleInput">RuleInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngress">AppSpecIngress</a></code> | *No description.* |
 
 ---
@@ -21490,10 +21490,10 @@ public AppSpecIngressRuleList Rule { get; }
 ##### `RuleInput`<sup>Optional</sup> <a name="RuleInput" id="@cdktf/provider-digitalocean.app.AppSpecIngressOutputReference.property.ruleInput"></a>
 
 ```csharp
-public object RuleInput { get; }
+public IResolvable|AppSpecIngressRule[] RuleInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>[]
 
 ---
 
@@ -21740,10 +21740,10 @@ private void ResetRewrite()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.preservePathPrefixInput">PreservePathPrefixInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.preservePathPrefixInput">PreservePathPrefixInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.rewriteInput">RewriteInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.preservePathPrefix">PreservePathPrefix</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.preservePathPrefix">PreservePathPrefix</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.rewrite">Rewrite</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponent">AppSpecIngressRuleComponent</a></code> | *No description.* |
 
@@ -21786,10 +21786,10 @@ public string NameInput { get; }
 ##### `PreservePathPrefixInput`<sup>Optional</sup> <a name="PreservePathPrefixInput" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.preservePathPrefixInput"></a>
 
 ```csharp
-public object PreservePathPrefixInput { get; }
+public bool|IResolvable PreservePathPrefixInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -21816,10 +21816,10 @@ public string Name { get; }
 ##### `PreservePathPrefix`<sup>Required</sup> <a name="PreservePathPrefix" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleComponentOutputReference.property.preservePathPrefix"></a>
 
 ```csharp
-public object PreservePathPrefix { get; }
+public bool|IResolvable PreservePathPrefix { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -22446,13 +22446,13 @@ private void ResetMaxAge()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowOrigins">AllowOrigins</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOriginsOutputReference">AppSpecIngressRuleCorsAllowOriginsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowCredentialsInput">AllowCredentialsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowCredentialsInput">AllowCredentialsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowHeadersInput">AllowHeadersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowMethodsInput">AllowMethodsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowOriginsInput">AllowOriginsInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsAllowOrigins">AppSpecIngressRuleCorsAllowOrigins</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.exposeHeadersInput">ExposeHeadersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.maxAgeInput">MaxAgeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowCredentials">AllowCredentials</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowCredentials">AllowCredentials</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowHeaders">AllowHeaders</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowMethods">AllowMethods</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.exposeHeaders">ExposeHeaders</a></code> | <code>string[]</code> | *No description.* |
@@ -22498,10 +22498,10 @@ public AppSpecIngressRuleCorsAllowOriginsOutputReference AllowOrigins { get; }
 ##### `AllowCredentialsInput`<sup>Optional</sup> <a name="AllowCredentialsInput" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowCredentialsInput"></a>
 
 ```csharp
-public object AllowCredentialsInput { get; }
+public bool|IResolvable AllowCredentialsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -22558,10 +22558,10 @@ public string MaxAgeInput { get; }
 ##### `AllowCredentials`<sup>Required</sup> <a name="AllowCredentials" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleCorsOutputReference.property.allowCredentials"></a>
 
 ```csharp
-public object AllowCredentials { get; }
+public bool|IResolvable AllowCredentials { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -22737,7 +22737,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>[]</code> | *No description.* |
 
 ---
 
@@ -22768,10 +22768,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecIngressRule[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>[]
 
 ---
 
@@ -23981,7 +23981,7 @@ private void ResetRedirect()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.corsInput">CorsInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleCors">AppSpecIngressRuleCors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.matchInput">MatchInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleMatch">AppSpecIngressRuleMatch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.redirectInput">RedirectInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleRedirect">AppSpecIngressRuleRedirect</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a></code> | *No description.* |
 
 ---
 
@@ -24092,10 +24092,10 @@ public AppSpecIngressRuleRedirect RedirectInput { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecIngressRuleOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecIngressRule InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecIngressRule">AppSpecIngressRule</a>
 
 ---
 
@@ -24703,12 +24703,12 @@ Returns a reversible string representation.
 ##### `PutSlackWebhooks` <a name="PutSlackWebhooks" id="@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsOutputReference.putSlackWebhooks"></a>
 
 ```csharp
-private void PutSlackWebhooks(object Value)
+private void PutSlackWebhooks(IResolvable|AppSpecJobAlertDestinationsSlackWebhooks[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsOutputReference.putSlackWebhooks.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>[]
 
 ---
 
@@ -24733,7 +24733,7 @@ private void ResetSlackWebhooks()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsOutputReference.property.slackWebhooks">SlackWebhooks</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksList">AppSpecJobAlertDestinationsSlackWebhooksList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsOutputReference.property.emailsInput">EmailsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsOutputReference.property.slackWebhooksInput">SlackWebhooksInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsOutputReference.property.slackWebhooksInput">SlackWebhooksInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsOutputReference.property.emails">Emails</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinations">AppSpecJobAlertDestinations</a></code> | *No description.* |
 
@@ -24786,10 +24786,10 @@ public string[] EmailsInput { get; }
 ##### `SlackWebhooksInput`<sup>Optional</sup> <a name="SlackWebhooksInput" id="@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsOutputReference.property.slackWebhooksInput"></a>
 
 ```csharp
-public object SlackWebhooksInput { get; }
+public IResolvable|AppSpecJobAlertDestinationsSlackWebhooks[] SlackWebhooksInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>[]
 
 ---
 
@@ -24935,7 +24935,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>[]</code> | *No description.* |
 
 ---
 
@@ -24966,10 +24966,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecJobAlertDestinationsSlackWebhooks[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>[]
 
 ---
 
@@ -25206,7 +25206,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksOutputReference.property.urlInput">UrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksOutputReference.property.channel">Channel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksOutputReference.property.url">Url</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a></code> | *No description.* |
 
 ---
 
@@ -25277,10 +25277,10 @@ public string Url { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooksOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecJobAlertDestinationsSlackWebhooks InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsSlackWebhooks">AppSpecJobAlertDestinationsSlackWebhooks</a>
 
 ---
 
@@ -25406,7 +25406,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>[]</code> | *No description.* |
 
 ---
 
@@ -25437,10 +25437,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecJobAlertList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecJobAlert[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>[]
 
 ---
 
@@ -25702,17 +25702,17 @@ private void ResetDisabled()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.destinations">Destinations</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinationsOutputReference">AppSpecJobAlertDestinationsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.destinationsInput">DestinationsInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertDestinations">AppSpecJobAlertDestinations</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.disabledInput">DisabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.disabledInput">DisabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.operatorInput">OperatorInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.ruleInput">RuleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.valueInput">ValueInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.windowInput">WindowInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.disabled">Disabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.disabled">Disabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.operator">Operator</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.rule">Rule</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.value">Value</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.window">Window</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a></code> | *No description.* |
 
 ---
 
@@ -25763,10 +25763,10 @@ public AppSpecJobAlertDestinations DestinationsInput { get; }
 ##### `DisabledInput`<sup>Optional</sup> <a name="DisabledInput" id="@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.disabledInput"></a>
 
 ```csharp
-public object DisabledInput { get; }
+public bool|IResolvable DisabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -25813,10 +25813,10 @@ public string WindowInput { get; }
 ##### `Disabled`<sup>Required</sup> <a name="Disabled" id="@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.disabled"></a>
 
 ```csharp
-public object Disabled { get; }
+public bool|IResolvable Disabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -25863,10 +25863,10 @@ public string Window { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecJobAlertOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecJobAlert InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>
 
 ---
 
@@ -26103,10 +26103,10 @@ private void ResetRepo()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.branchInput">BranchInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.repoInput">RepoInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.branch">Branch</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.repo">Repo</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucket">AppSpecJobBitbucket</a></code> | *No description.* |
 
@@ -26149,10 +26149,10 @@ public string BranchInput { get; }
 ##### `DeployOnPushInput`<sup>Optional</sup> <a name="DeployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.deployOnPushInput"></a>
 
 ```csharp
-public object DeployOnPushInput { get; }
+public bool|IResolvable DeployOnPushInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -26179,10 +26179,10 @@ public string Branch { get; }
 ##### `DeployOnPush`<sup>Required</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference.property.deployOnPush"></a>
 
 ```csharp
-public object DeployOnPush { get; }
+public bool|IResolvable DeployOnPush { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -26328,7 +26328,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnvList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnvList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnvList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnvList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>[]</code> | *No description.* |
 
 ---
 
@@ -26359,10 +26359,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecJobEnvList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecJobEnv[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>[]
 
 ---
 
@@ -26631,7 +26631,7 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnvOutputReference.property.scope">Scope</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnvOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnvOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnvOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnvOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a></code> | *No description.* |
 
 ---
 
@@ -26742,10 +26742,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecJobEnvOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecJobEnv InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>
 
 ---
 
@@ -26982,10 +26982,10 @@ private void ResetRepo()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.branchInput">BranchInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.repoInput">RepoInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.branch">Branch</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.repo">Repo</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithub">AppSpecJobGithub</a></code> | *No description.* |
 
@@ -27028,10 +27028,10 @@ public string BranchInput { get; }
 ##### `DeployOnPushInput`<sup>Optional</sup> <a name="DeployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.deployOnPushInput"></a>
 
 ```csharp
-public object DeployOnPushInput { get; }
+public bool|IResolvable DeployOnPushInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -27058,10 +27058,10 @@ public string Branch { get; }
 ##### `DeployOnPush`<sup>Required</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecJobGithubOutputReference.property.deployOnPush"></a>
 
 ```csharp
-public object DeployOnPush { get; }
+public bool|IResolvable DeployOnPush { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -27318,10 +27318,10 @@ private void ResetRepo()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.branchInput">BranchInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.repoInput">RepoInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.branch">Branch</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.repo">Repo</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGitlab">AppSpecJobGitlab</a></code> | *No description.* |
 
@@ -27364,10 +27364,10 @@ public string BranchInput { get; }
 ##### `DeployOnPushInput`<sup>Optional</sup> <a name="DeployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.deployOnPushInput"></a>
 
 ```csharp
-public object DeployOnPushInput { get; }
+public bool|IResolvable DeployOnPushInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -27394,10 +27394,10 @@ public string Branch { get; }
 ##### `DeployOnPush`<sup>Required</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecJobGitlabOutputReference.property.deployOnPush"></a>
 
 ```csharp
-public object DeployOnPush { get; }
+public bool|IResolvable DeployOnPush { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -27850,7 +27850,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>[]</code> | *No description.* |
 
 ---
 
@@ -27881,10 +27881,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecJobImageDeployOnPush[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>[]
 
 ---
 
@@ -28124,9 +28124,9 @@ private void ResetEnabled()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.enabledInput">EnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.enabled">Enabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.enabledInput">EnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a></code> | *No description.* |
 
 ---
 
@@ -28157,30 +28157,30 @@ public string Fqn { get; }
 ##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.enabledInput"></a>
 
 ```csharp
-public object EnabledInput { get; }
+public bool|IResolvable EnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; }
+public bool|IResolvable Enabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecJobImageDeployOnPush InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>
 
 ---
 
@@ -28397,12 +28397,12 @@ Returns a reversible string representation.
 ##### `PutDeployOnPush` <a name="PutDeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.putDeployOnPush"></a>
 
 ```csharp
-private void PutDeployOnPush(object Value)
+private void PutDeployOnPush(IResolvable|AppSpecJobImageDeployOnPush[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.putDeployOnPush.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>[]
 
 ---
 
@@ -28444,7 +28444,7 @@ private void ResetTag()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushList">AppSpecJobImageDeployOnPushList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.digestInput">DigestInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.registryCredentialsInput">RegistryCredentialsInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.registryInput">RegistryInput</a></code> | <code>string</code> | *No description.* |
@@ -28498,10 +28498,10 @@ public AppSpecJobImageDeployOnPushList DeployOnPush { get; }
 ##### `DeployOnPushInput`<sup>Optional</sup> <a name="DeployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference.property.deployOnPushInput"></a>
 
 ```csharp
-public object DeployOnPushInput { get; }
+public IResolvable|AppSpecJobImageDeployOnPush[] DeployOnPushInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPush">AppSpecJobImageDeployOnPush</a>[]
 
 ---
 
@@ -28757,7 +28757,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>[]</code> | *No description.* |
 
 ---
 
@@ -28788,10 +28788,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecJobList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecJob[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>[]
 
 ---
 
@@ -29217,7 +29217,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>[]</code> | *No description.* |
 
 ---
 
@@ -29248,10 +29248,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecJobLogDestination[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>[]
 
 ---
 
@@ -30523,7 +30523,7 @@ private void ResetPapertrail()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationOutputReference.property.openSearchInput">OpenSearchInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationOpenSearch">AppSpecJobLogDestinationOpenSearch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationOutputReference.property.papertrailInput">PapertrailInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationPapertrail">AppSpecJobLogDestinationPapertrail</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a></code> | *No description.* |
 
 ---
 
@@ -30654,10 +30654,10 @@ public string Name { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecJobLogDestination InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>
 
 ---
 
@@ -31183,12 +31183,12 @@ Returns a reversible string representation.
 ##### `PutAlert` <a name="PutAlert" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.putAlert"></a>
 
 ```csharp
-private void PutAlert(object Value)
+private void PutAlert(IResolvable|AppSpecJobAlert[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.putAlert.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>[]
 
 ---
 
@@ -31207,12 +31207,12 @@ private void PutBitbucket(AppSpecJobBitbucket Value)
 ##### `PutEnv` <a name="PutEnv" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.putEnv"></a>
 
 ```csharp
-private void PutEnv(object Value)
+private void PutEnv(IResolvable|AppSpecJobEnv[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.putEnv.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>[]
 
 ---
 
@@ -31267,12 +31267,12 @@ private void PutImage(AppSpecJobImage Value)
 ##### `PutLogDestination` <a name="PutLogDestination" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.putLogDestination"></a>
 
 ```csharp
-private void PutLogDestination(object Value)
+private void PutLogDestination(IResolvable|AppSpecJobLogDestination[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.putLogDestination.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>[]
 
 ---
 
@@ -31406,11 +31406,11 @@ private void ResetTermination()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.image">Image</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference">AppSpecJobImageOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.logDestination">LogDestination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestinationList">AppSpecJobLogDestinationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.termination">Termination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobTerminationOutputReference">AppSpecJobTerminationOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.alertInput">AlertInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.alertInput">AlertInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.bitbucketInput">BitbucketInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobBitbucket">AppSpecJobBitbucket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.buildCommandInput">BuildCommandInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.dockerfilePathInput">DockerfilePathInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.envInput">EnvInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.envInput">EnvInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.environmentSlugInput">EnvironmentSlugInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.githubInput">GithubInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGithub">AppSpecJobGithub</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.gitInput">GitInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobGit">AppSpecJobGit</a></code> | *No description.* |
@@ -31419,7 +31419,7 @@ private void ResetTermination()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.instanceCountInput">InstanceCountInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.instanceSizeSlugInput">InstanceSizeSlugInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.kindInput">KindInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.logDestinationInput">LogDestinationInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.logDestinationInput">LogDestinationInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.runCommandInput">RunCommandInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.sourceDirInput">SourceDirInput</a></code> | <code>string</code> | *No description.* |
@@ -31433,7 +31433,7 @@ private void ResetTermination()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.runCommand">RunCommand</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.sourceDir">SourceDir</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a></code> | *No description.* |
 
 ---
 
@@ -31554,10 +31554,10 @@ public AppSpecJobTerminationOutputReference Termination { get; }
 ##### `AlertInput`<sup>Optional</sup> <a name="AlertInput" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.alertInput"></a>
 
 ```csharp
-public object AlertInput { get; }
+public IResolvable|AppSpecJobAlert[] AlertInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobAlert">AppSpecJobAlert</a>[]
 
 ---
 
@@ -31594,10 +31594,10 @@ public string DockerfilePathInput { get; }
 ##### `EnvInput`<sup>Optional</sup> <a name="EnvInput" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.envInput"></a>
 
 ```csharp
-public object EnvInput { get; }
+public IResolvable|AppSpecJobEnv[] EnvInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobEnv">AppSpecJobEnv</a>[]
 
 ---
 
@@ -31684,10 +31684,10 @@ public string KindInput { get; }
 ##### `LogDestinationInput`<sup>Optional</sup> <a name="LogDestinationInput" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.logDestinationInput"></a>
 
 ```csharp
-public object LogDestinationInput { get; }
+public IResolvable|AppSpecJobLogDestination[] LogDestinationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJobLogDestination">AppSpecJobLogDestination</a>[]
 
 ---
 
@@ -31824,10 +31824,10 @@ public string SourceDir { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecJobOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecJob InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>
 
 ---
 
@@ -32341,11 +32341,11 @@ private void ResetOfflinePageUrl()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.archiveInput">ArchiveInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.enabledInput">EnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.archiveInput">ArchiveInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.enabledInput">EnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.offlinePageUrlInput">OfflinePageUrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.archive">Archive</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.enabled">Enabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.archive">Archive</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.offlinePageUrl">OfflinePageUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenance">AppSpecMaintenance</a></code> | *No description.* |
 
@@ -32378,20 +32378,20 @@ public string Fqn { get; }
 ##### `ArchiveInput`<sup>Optional</sup> <a name="ArchiveInput" id="@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.archiveInput"></a>
 
 ```csharp
-public object ArchiveInput { get; }
+public bool|IResolvable ArchiveInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.enabledInput"></a>
 
 ```csharp
-public object EnabledInput { get; }
+public bool|IResolvable EnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -32408,20 +32408,20 @@ public string OfflinePageUrlInput { get; }
 ##### `Archive`<sup>Required</sup> <a name="Archive" id="@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.archive"></a>
 
 ```csharp
-public object Archive { get; }
+public bool|IResolvable Archive { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; }
+public bool|IResolvable Enabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -32684,72 +32684,72 @@ Returns a reversible string representation.
 ##### `PutAlert` <a name="PutAlert" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putAlert"></a>
 
 ```csharp
-private void PutAlert(object Value)
+private void PutAlert(IResolvable|AppSpecAlert[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putAlert.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>[]
 
 ---
 
 ##### `PutDatabase` <a name="PutDatabase" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putDatabase"></a>
 
 ```csharp
-private void PutDatabase(object Value)
+private void PutDatabase(IResolvable|AppSpecDatabase[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putDatabase.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>[]
 
 ---
 
 ##### `PutDomain` <a name="PutDomain" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putDomain"></a>
 
 ```csharp
-private void PutDomain(object Value)
+private void PutDomain(IResolvable|AppSpecDomain[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putDomain.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>[]
 
 ---
 
 ##### `PutEgress` <a name="PutEgress" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putEgress"></a>
 
 ```csharp
-private void PutEgress(object Value)
+private void PutEgress(IResolvable|AppSpecEgress[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putEgress.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>[]
 
 ---
 
 ##### `PutEnv` <a name="PutEnv" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putEnv"></a>
 
 ```csharp
-private void PutEnv(object Value)
+private void PutEnv(IResolvable|AppSpecEnv[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putEnv.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>[]
 
 ---
 
 ##### `PutFunction` <a name="PutFunction" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putFunction"></a>
 
 ```csharp
-private void PutFunction(object Value)
+private void PutFunction(IResolvable|AppSpecFunction[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putFunction.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>[]
 
 ---
 
@@ -32768,12 +32768,12 @@ private void PutIngress(AppSpecIngress Value)
 ##### `PutJob` <a name="PutJob" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putJob"></a>
 
 ```csharp
-private void PutJob(object Value)
+private void PutJob(IResolvable|AppSpecJob[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putJob.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>[]
 
 ---
 
@@ -32792,48 +32792,48 @@ private void PutMaintenance(AppSpecMaintenance Value)
 ##### `PutService` <a name="PutService" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putService"></a>
 
 ```csharp
-private void PutService(object Value)
+private void PutService(IResolvable|AppSpecService[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putService.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>[]
 
 ---
 
 ##### `PutStaticSite` <a name="PutStaticSite" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putStaticSite"></a>
 
 ```csharp
-private void PutStaticSite(object Value)
+private void PutStaticSite(IResolvable|AppSpecStaticSite[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putStaticSite.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>[]
 
 ---
 
 ##### `PutVpc` <a name="PutVpc" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putVpc"></a>
 
 ```csharp
-private void PutVpc(object Value)
+private void PutVpc(IResolvable|AppSpecVpc[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putVpc.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>[]
 
 ---
 
 ##### `PutWorker` <a name="PutWorker" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putWorker"></a>
 
 ```csharp
-private void PutWorker(object Value)
+private void PutWorker(IResolvable|AppSpecWorker[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.putWorker.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>[]
 
 ---
 
@@ -32971,30 +32971,30 @@ private void ResetWorker()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.staticSite">StaticSite</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteList">AppSpecStaticSiteList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.vpc">Vpc</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecVpcList">AppSpecVpcList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.worker">Worker</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerList">AppSpecWorkerList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.alertInput">AlertInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.databaseInput">DatabaseInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEdgeCacheInput">DisableEdgeCacheInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEmailObfuscationInput">DisableEmailObfuscationInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.domainInput">DomainInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.alertInput">AlertInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.databaseInput">DatabaseInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEdgeCacheInput">DisableEdgeCacheInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEmailObfuscationInput">DisableEmailObfuscationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.domainInput">DomainInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.domainsInput">DomainsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.egressInput">EgressInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.enhancedThreatControlEnabledInput">EnhancedThreatControlEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.envInput">EnvInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.egressInput">EgressInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.enhancedThreatControlEnabledInput">EnhancedThreatControlEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.envInput">EnvInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.featuresInput">FeaturesInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.functionInput">FunctionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.functionInput">FunctionInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.ingressInput">IngressInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecIngress">AppSpecIngress</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.jobInput">JobInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.jobInput">JobInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.maintenanceInput">MaintenanceInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecMaintenance">AppSpecMaintenance</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.serviceInput">ServiceInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.staticSiteInput">StaticSiteInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.vpcInput">VpcInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.workerInput">WorkerInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEdgeCache">DisableEdgeCache</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEmailObfuscation">DisableEmailObfuscation</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.serviceInput">ServiceInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.staticSiteInput">StaticSiteInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.vpcInput">VpcInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.workerInput">WorkerInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEdgeCache">DisableEdgeCache</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEmailObfuscation">DisableEmailObfuscation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.domains">Domains</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.enhancedThreatControlEnabled">EnhancedThreatControlEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.enhancedThreatControlEnabled">EnhancedThreatControlEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.features">Features</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.region">Region</a></code> | <code>string</code> | *No description.* |
@@ -33159,50 +33159,50 @@ public AppSpecWorkerList Worker { get; }
 ##### `AlertInput`<sup>Optional</sup> <a name="AlertInput" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.alertInput"></a>
 
 ```csharp
-public object AlertInput { get; }
+public IResolvable|AppSpecAlert[] AlertInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecAlert">AppSpecAlert</a>[]
 
 ---
 
 ##### `DatabaseInput`<sup>Optional</sup> <a name="DatabaseInput" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.databaseInput"></a>
 
 ```csharp
-public object DatabaseInput { get; }
+public IResolvable|AppSpecDatabase[] DatabaseInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecDatabase">AppSpecDatabase</a>[]
 
 ---
 
 ##### `DisableEdgeCacheInput`<sup>Optional</sup> <a name="DisableEdgeCacheInput" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEdgeCacheInput"></a>
 
 ```csharp
-public object DisableEdgeCacheInput { get; }
+public bool|IResolvable DisableEdgeCacheInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DisableEmailObfuscationInput`<sup>Optional</sup> <a name="DisableEmailObfuscationInput" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEmailObfuscationInput"></a>
 
 ```csharp
-public object DisableEmailObfuscationInput { get; }
+public bool|IResolvable DisableEmailObfuscationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DomainInput`<sup>Optional</sup> <a name="DomainInput" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.domainInput"></a>
 
 ```csharp
-public object DomainInput { get; }
+public IResolvable|AppSpecDomain[] DomainInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecDomain">AppSpecDomain</a>[]
 
 ---
 
@@ -33219,30 +33219,30 @@ public string[] DomainsInput { get; }
 ##### `EgressInput`<sup>Optional</sup> <a name="EgressInput" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.egressInput"></a>
 
 ```csharp
-public object EgressInput { get; }
+public IResolvable|AppSpecEgress[] EgressInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecEgress">AppSpecEgress</a>[]
 
 ---
 
 ##### `EnhancedThreatControlEnabledInput`<sup>Optional</sup> <a name="EnhancedThreatControlEnabledInput" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.enhancedThreatControlEnabledInput"></a>
 
 ```csharp
-public object EnhancedThreatControlEnabledInput { get; }
+public bool|IResolvable EnhancedThreatControlEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnvInput`<sup>Optional</sup> <a name="EnvInput" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.envInput"></a>
 
 ```csharp
-public object EnvInput { get; }
+public IResolvable|AppSpecEnv[] EnvInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecEnv">AppSpecEnv</a>[]
 
 ---
 
@@ -33259,10 +33259,10 @@ public string[] FeaturesInput { get; }
 ##### `FunctionInput`<sup>Optional</sup> <a name="FunctionInput" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.functionInput"></a>
 
 ```csharp
-public object FunctionInput { get; }
+public IResolvable|AppSpecFunction[] FunctionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecFunction">AppSpecFunction</a>[]
 
 ---
 
@@ -33279,10 +33279,10 @@ public AppSpecIngress IngressInput { get; }
 ##### `JobInput`<sup>Optional</sup> <a name="JobInput" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.jobInput"></a>
 
 ```csharp
-public object JobInput { get; }
+public IResolvable|AppSpecJob[] JobInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecJob">AppSpecJob</a>[]
 
 ---
 
@@ -33319,60 +33319,60 @@ public string RegionInput { get; }
 ##### `ServiceInput`<sup>Optional</sup> <a name="ServiceInput" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.serviceInput"></a>
 
 ```csharp
-public object ServiceInput { get; }
+public IResolvable|AppSpecService[] ServiceInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>[]
 
 ---
 
 ##### `StaticSiteInput`<sup>Optional</sup> <a name="StaticSiteInput" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.staticSiteInput"></a>
 
 ```csharp
-public object StaticSiteInput { get; }
+public IResolvable|AppSpecStaticSite[] StaticSiteInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>[]
 
 ---
 
 ##### `VpcInput`<sup>Optional</sup> <a name="VpcInput" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.vpcInput"></a>
 
 ```csharp
-public object VpcInput { get; }
+public IResolvable|AppSpecVpc[] VpcInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>[]
 
 ---
 
 ##### `WorkerInput`<sup>Optional</sup> <a name="WorkerInput" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.workerInput"></a>
 
 ```csharp
-public object WorkerInput { get; }
+public IResolvable|AppSpecWorker[] WorkerInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>[]
 
 ---
 
 ##### `DisableEdgeCache`<sup>Required</sup> <a name="DisableEdgeCache" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEdgeCache"></a>
 
 ```csharp
-public object DisableEdgeCache { get; }
+public bool|IResolvable DisableEdgeCache { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DisableEmailObfuscation`<sup>Required</sup> <a name="DisableEmailObfuscation" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.disableEmailObfuscation"></a>
 
 ```csharp
-public object DisableEmailObfuscation { get; }
+public bool|IResolvable DisableEmailObfuscation { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -33389,10 +33389,10 @@ public string[] Domains { get; }
 ##### `EnhancedThreatControlEnabled`<sup>Required</sup> <a name="EnhancedThreatControlEnabled" id="@cdktf/provider-digitalocean.app.AppSpecOutputReference.property.enhancedThreatControlEnabled"></a>
 
 ```csharp
-public object EnhancedThreatControlEnabled { get; }
+public bool|IResolvable EnhancedThreatControlEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -33646,12 +33646,12 @@ Returns a reversible string representation.
 ##### `PutSlackWebhooks` <a name="PutSlackWebhooks" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsOutputReference.putSlackWebhooks"></a>
 
 ```csharp
-private void PutSlackWebhooks(object Value)
+private void PutSlackWebhooks(IResolvable|AppSpecServiceAlertDestinationsSlackWebhooks[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsOutputReference.putSlackWebhooks.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>[]
 
 ---
 
@@ -33676,7 +33676,7 @@ private void ResetSlackWebhooks()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsOutputReference.property.slackWebhooks">SlackWebhooks</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksList">AppSpecServiceAlertDestinationsSlackWebhooksList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsOutputReference.property.emailsInput">EmailsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsOutputReference.property.slackWebhooksInput">SlackWebhooksInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsOutputReference.property.slackWebhooksInput">SlackWebhooksInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsOutputReference.property.emails">Emails</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinations">AppSpecServiceAlertDestinations</a></code> | *No description.* |
 
@@ -33729,10 +33729,10 @@ public string[] EmailsInput { get; }
 ##### `SlackWebhooksInput`<sup>Optional</sup> <a name="SlackWebhooksInput" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsOutputReference.property.slackWebhooksInput"></a>
 
 ```csharp
-public object SlackWebhooksInput { get; }
+public IResolvable|AppSpecServiceAlertDestinationsSlackWebhooks[] SlackWebhooksInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>[]
 
 ---
 
@@ -33878,7 +33878,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>[]</code> | *No description.* |
 
 ---
 
@@ -33909,10 +33909,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecServiceAlertDestinationsSlackWebhooks[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>[]
 
 ---
 
@@ -34149,7 +34149,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksOutputReference.property.urlInput">UrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksOutputReference.property.channel">Channel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksOutputReference.property.url">Url</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a></code> | *No description.* |
 
 ---
 
@@ -34220,10 +34220,10 @@ public string Url { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooksOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecServiceAlertDestinationsSlackWebhooks InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsSlackWebhooks">AppSpecServiceAlertDestinationsSlackWebhooks</a>
 
 ---
 
@@ -34349,7 +34349,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>[]</code> | *No description.* |
 
 ---
 
@@ -34380,10 +34380,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlertList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecServiceAlert[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>[]
 
 ---
 
@@ -34645,17 +34645,17 @@ private void ResetDisabled()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.destinations">Destinations</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinationsOutputReference">AppSpecServiceAlertDestinationsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.destinationsInput">DestinationsInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertDestinations">AppSpecServiceAlertDestinations</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.disabledInput">DisabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.disabledInput">DisabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.operatorInput">OperatorInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.ruleInput">RuleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.valueInput">ValueInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.windowInput">WindowInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.disabled">Disabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.disabled">Disabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.operator">Operator</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.rule">Rule</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.value">Value</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.window">Window</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a></code> | *No description.* |
 
 ---
 
@@ -34706,10 +34706,10 @@ public AppSpecServiceAlertDestinations DestinationsInput { get; }
 ##### `DisabledInput`<sup>Optional</sup> <a name="DisabledInput" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.disabledInput"></a>
 
 ```csharp
-public object DisabledInput { get; }
+public bool|IResolvable DisabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -34756,10 +34756,10 @@ public string WindowInput { get; }
 ##### `Disabled`<sup>Required</sup> <a name="Disabled" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.disabled"></a>
 
 ```csharp
-public object Disabled { get; }
+public bool|IResolvable Disabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -34806,10 +34806,10 @@ public string Window { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceAlertOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecServiceAlert InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>
 
 ---
 
@@ -35936,10 +35936,10 @@ private void ResetRepo()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.branchInput">BranchInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.repoInput">RepoInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.branch">Branch</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.repo">Repo</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket">AppSpecServiceBitbucket</a></code> | *No description.* |
 
@@ -35982,10 +35982,10 @@ public string BranchInput { get; }
 ##### `DeployOnPushInput`<sup>Optional</sup> <a name="DeployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.deployOnPushInput"></a>
 
 ```csharp
-public object DeployOnPushInput { get; }
+public bool|IResolvable DeployOnPushInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -36012,10 +36012,10 @@ public string Branch { get; }
 ##### `DeployOnPush`<sup>Required</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference.property.deployOnPush"></a>
 
 ```csharp
-public object DeployOnPush { get; }
+public bool|IResolvable DeployOnPush { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -36642,13 +36642,13 @@ private void ResetMaxAge()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowOrigins">AllowOrigins</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsAllowOriginsOutputReference">AppSpecServiceCorsAllowOriginsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowCredentialsInput">AllowCredentialsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowCredentialsInput">AllowCredentialsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowHeadersInput">AllowHeadersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowMethodsInput">AllowMethodsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowOriginsInput">AllowOriginsInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsAllowOrigins">AppSpecServiceCorsAllowOrigins</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.exposeHeadersInput">ExposeHeadersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.maxAgeInput">MaxAgeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowCredentials">AllowCredentials</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowCredentials">AllowCredentials</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowHeaders">AllowHeaders</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowMethods">AllowMethods</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.exposeHeaders">ExposeHeaders</a></code> | <code>string[]</code> | *No description.* |
@@ -36694,10 +36694,10 @@ public AppSpecServiceCorsAllowOriginsOutputReference AllowOrigins { get; }
 ##### `AllowCredentialsInput`<sup>Optional</sup> <a name="AllowCredentialsInput" id="@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowCredentialsInput"></a>
 
 ```csharp
-public object AllowCredentialsInput { get; }
+public bool|IResolvable AllowCredentialsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -36754,10 +36754,10 @@ public string MaxAgeInput { get; }
 ##### `AllowCredentials`<sup>Required</sup> <a name="AllowCredentials" id="@cdktf/provider-digitalocean.app.AppSpecServiceCorsOutputReference.property.allowCredentials"></a>
 
 ```csharp
-public object AllowCredentials { get; }
+public bool|IResolvable AllowCredentials { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -36933,7 +36933,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnvList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnvList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnvList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnvList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>[]</code> | *No description.* |
 
 ---
 
@@ -36964,10 +36964,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceEnvList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecServiceEnv[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>[]
 
 ---
 
@@ -37236,7 +37236,7 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnvOutputReference.property.scope">Scope</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnvOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnvOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnvOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnvOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a></code> | *No description.* |
 
 ---
 
@@ -37347,10 +37347,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceEnvOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecServiceEnv InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>
 
 ---
 
@@ -37587,10 +37587,10 @@ private void ResetRepo()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.branchInput">BranchInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.repoInput">RepoInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.branch">Branch</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.repo">Repo</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithub">AppSpecServiceGithub</a></code> | *No description.* |
 
@@ -37633,10 +37633,10 @@ public string BranchInput { get; }
 ##### `DeployOnPushInput`<sup>Optional</sup> <a name="DeployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.deployOnPushInput"></a>
 
 ```csharp
-public object DeployOnPushInput { get; }
+public bool|IResolvable DeployOnPushInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -37663,10 +37663,10 @@ public string Branch { get; }
 ##### `DeployOnPush`<sup>Required</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecServiceGithubOutputReference.property.deployOnPush"></a>
 
 ```csharp
-public object DeployOnPush { get; }
+public bool|IResolvable DeployOnPush { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -37923,10 +37923,10 @@ private void ResetRepo()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.branchInput">BranchInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.repoInput">RepoInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.branch">Branch</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.repo">Repo</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGitlab">AppSpecServiceGitlab</a></code> | *No description.* |
 
@@ -37969,10 +37969,10 @@ public string BranchInput { get; }
 ##### `DeployOnPushInput`<sup>Optional</sup> <a name="DeployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.deployOnPushInput"></a>
 
 ```csharp
-public object DeployOnPushInput { get; }
+public bool|IResolvable DeployOnPushInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -37999,10 +37999,10 @@ public string Branch { get; }
 ##### `DeployOnPush`<sup>Required</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecServiceGitlabOutputReference.property.deployOnPush"></a>
 
 ```csharp
-public object DeployOnPush { get; }
+public bool|IResolvable DeployOnPush { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -38907,7 +38907,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>[]</code> | *No description.* |
 
 ---
 
@@ -38938,10 +38938,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecServiceImageDeployOnPush[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>[]
 
 ---
 
@@ -39181,9 +39181,9 @@ private void ResetEnabled()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.enabledInput">EnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.enabled">Enabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.enabledInput">EnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a></code> | *No description.* |
 
 ---
 
@@ -39214,30 +39214,30 @@ public string Fqn { get; }
 ##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.enabledInput"></a>
 
 ```csharp
-public object EnabledInput { get; }
+public bool|IResolvable EnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; }
+public bool|IResolvable Enabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecServiceImageDeployOnPush InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>
 
 ---
 
@@ -39454,12 +39454,12 @@ Returns a reversible string representation.
 ##### `PutDeployOnPush` <a name="PutDeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.putDeployOnPush"></a>
 
 ```csharp
-private void PutDeployOnPush(object Value)
+private void PutDeployOnPush(IResolvable|AppSpecServiceImageDeployOnPush[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.putDeployOnPush.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>[]
 
 ---
 
@@ -39501,7 +39501,7 @@ private void ResetTag()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPushList">AppSpecServiceImageDeployOnPushList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.digestInput">DigestInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.registryCredentialsInput">RegistryCredentialsInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.registryInput">RegistryInput</a></code> | <code>string</code> | *No description.* |
@@ -39555,10 +39555,10 @@ public AppSpecServiceImageDeployOnPushList DeployOnPush { get; }
 ##### `DeployOnPushInput`<sup>Optional</sup> <a name="DeployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecServiceImageOutputReference.property.deployOnPushInput"></a>
 
 ```csharp
-public object DeployOnPushInput { get; }
+public IResolvable|AppSpecServiceImageDeployOnPush[] DeployOnPushInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceImageDeployOnPush">AppSpecServiceImageDeployOnPush</a>[]
 
 ---
 
@@ -39814,7 +39814,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>[]</code> | *No description.* |
 
 ---
 
@@ -39845,10 +39845,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecService[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>[]
 
 ---
 
@@ -40274,7 +40274,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>[]</code> | *No description.* |
 
 ---
 
@@ -40305,10 +40305,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecServiceLogDestination[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>[]
 
 ---
 
@@ -41580,7 +41580,7 @@ private void ResetPapertrail()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationOutputReference.property.openSearchInput">OpenSearchInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationOpenSearch">AppSpecServiceLogDestinationOpenSearch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationOutputReference.property.papertrailInput">PapertrailInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationPapertrail">AppSpecServiceLogDestinationPapertrail</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a></code> | *No description.* |
 
 ---
 
@@ -41711,10 +41711,10 @@ public string Name { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecServiceLogDestination InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>
 
 ---
 
@@ -42249,12 +42249,12 @@ Returns a reversible string representation.
 ##### `PutAlert` <a name="PutAlert" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putAlert"></a>
 
 ```csharp
-private void PutAlert(object Value)
+private void PutAlert(IResolvable|AppSpecServiceAlert[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putAlert.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>[]
 
 ---
 
@@ -42297,12 +42297,12 @@ private void PutCors(AppSpecServiceCors Value)
 ##### `PutEnv` <a name="PutEnv" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putEnv"></a>
 
 ```csharp
-private void PutEnv(object Value)
+private void PutEnv(IResolvable|AppSpecServiceEnv[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putEnv.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>[]
 
 ---
 
@@ -42369,24 +42369,24 @@ private void PutImage(AppSpecServiceImage Value)
 ##### `PutLogDestination` <a name="PutLogDestination" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putLogDestination"></a>
 
 ```csharp
-private void PutLogDestination(object Value)
+private void PutLogDestination(IResolvable|AppSpecServiceLogDestination[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putLogDestination.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>[]
 
 ---
 
 ##### `PutRoutes` <a name="PutRoutes" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putRoutes"></a>
 
 ```csharp
-private void PutRoutes(object Value)
+private void PutRoutes(IResolvable|AppSpecServiceRoutes[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.putRoutes.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>[]
 
 ---
 
@@ -42554,13 +42554,13 @@ private void ResetTermination()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.logDestination">LogDestination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestinationList">AppSpecServiceLogDestinationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.routes">Routes</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesList">AppSpecServiceRoutesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.termination">Termination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTerminationOutputReference">AppSpecServiceTerminationOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.alertInput">AlertInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.alertInput">AlertInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.autoscalingInput">AutoscalingInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAutoscaling">AppSpecServiceAutoscaling</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.bitbucketInput">BitbucketInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket">AppSpecServiceBitbucket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.buildCommandInput">BuildCommandInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.corsInput">CorsInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceCors">AppSpecServiceCors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.dockerfilePathInput">DockerfilePathInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.envInput">EnvInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.envInput">EnvInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.environmentSlugInput">EnvironmentSlugInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.githubInput">GithubInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGithub">AppSpecServiceGithub</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.gitInput">GitInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceGit">AppSpecServiceGit</a></code> | *No description.* |
@@ -42571,9 +42571,9 @@ private void ResetTermination()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.instanceCountInput">InstanceCountInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.instanceSizeSlugInput">InstanceSizeSlugInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.internalPortsInput">InternalPortsInput</a></code> | <code>double[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.logDestinationInput">LogDestinationInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.logDestinationInput">LogDestinationInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.routesInput">RoutesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.routesInput">RoutesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.runCommandInput">RunCommandInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.sourceDirInput">SourceDirInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.terminationInput">TerminationInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceTermination">AppSpecServiceTermination</a></code> | *No description.* |
@@ -42587,7 +42587,7 @@ private void ResetTermination()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.runCommand">RunCommand</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.sourceDir">SourceDir</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a></code> | *No description.* |
 
 ---
 
@@ -42748,10 +42748,10 @@ public AppSpecServiceTerminationOutputReference Termination { get; }
 ##### `AlertInput`<sup>Optional</sup> <a name="AlertInput" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.alertInput"></a>
 
 ```csharp
-public object AlertInput { get; }
+public IResolvable|AppSpecServiceAlert[] AlertInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceAlert">AppSpecServiceAlert</a>[]
 
 ---
 
@@ -42808,10 +42808,10 @@ public string DockerfilePathInput { get; }
 ##### `EnvInput`<sup>Optional</sup> <a name="EnvInput" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.envInput"></a>
 
 ```csharp
-public object EnvInput { get; }
+public IResolvable|AppSpecServiceEnv[] EnvInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceEnv">AppSpecServiceEnv</a>[]
 
 ---
 
@@ -42918,10 +42918,10 @@ public double[] InternalPortsInput { get; }
 ##### `LogDestinationInput`<sup>Optional</sup> <a name="LogDestinationInput" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.logDestinationInput"></a>
 
 ```csharp
-public object LogDestinationInput { get; }
+public IResolvable|AppSpecServiceLogDestination[] LogDestinationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceLogDestination">AppSpecServiceLogDestination</a>[]
 
 ---
 
@@ -42938,10 +42938,10 @@ public string NameInput { get; }
 ##### `RoutesInput`<sup>Optional</sup> <a name="RoutesInput" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.routesInput"></a>
 
 ```csharp
-public object RoutesInput { get; }
+public IResolvable|AppSpecServiceRoutes[] RoutesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>[]
 
 ---
 
@@ -43078,10 +43078,10 @@ public string SourceDir { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecService InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecService">AppSpecService</a>
 
 ---
 
@@ -43207,7 +43207,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>[]</code> | *No description.* |
 
 ---
 
@@ -43238,10 +43238,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceRoutesList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecServiceRoutes[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>[]
 
 ---
 
@@ -43489,10 +43489,10 @@ private void ResetPreservePathPrefix()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.pathInput">PathInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.preservePathPrefixInput">PreservePathPrefixInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.preservePathPrefixInput">PreservePathPrefixInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.path">Path</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.preservePathPrefix">PreservePathPrefix</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.preservePathPrefix">PreservePathPrefix</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a></code> | *No description.* |
 
 ---
 
@@ -43533,10 +43533,10 @@ public string PathInput { get; }
 ##### `PreservePathPrefixInput`<sup>Optional</sup> <a name="PreservePathPrefixInput" id="@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.preservePathPrefixInput"></a>
 
 ```csharp
-public object PreservePathPrefixInput { get; }
+public bool|IResolvable PreservePathPrefixInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -43553,20 +43553,20 @@ public string Path { get; }
 ##### `PreservePathPrefix`<sup>Required</sup> <a name="PreservePathPrefix" id="@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.preservePathPrefix"></a>
 
 ```csharp
-public object PreservePathPrefix { get; }
+public bool|IResolvable PreservePathPrefix { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecServiceRoutesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecServiceRoutes InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecServiceRoutes">AppSpecServiceRoutes</a>
 
 ---
 
@@ -44110,10 +44110,10 @@ private void ResetRepo()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.branchInput">BranchInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.repoInput">RepoInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.branch">Branch</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.repo">Repo</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucket">AppSpecStaticSiteBitbucket</a></code> | *No description.* |
 
@@ -44156,10 +44156,10 @@ public string BranchInput { get; }
 ##### `DeployOnPushInput`<sup>Optional</sup> <a name="DeployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.deployOnPushInput"></a>
 
 ```csharp
-public object DeployOnPushInput { get; }
+public bool|IResolvable DeployOnPushInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -44186,10 +44186,10 @@ public string Branch { get; }
 ##### `DeployOnPush`<sup>Required</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference.property.deployOnPush"></a>
 
 ```csharp
-public object DeployOnPush { get; }
+public bool|IResolvable DeployOnPush { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -44816,13 +44816,13 @@ private void ResetMaxAge()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowOrigins">AllowOrigins</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsAllowOriginsOutputReference">AppSpecStaticSiteCorsAllowOriginsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowCredentialsInput">AllowCredentialsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowCredentialsInput">AllowCredentialsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowHeadersInput">AllowHeadersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowMethodsInput">AllowMethodsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowOriginsInput">AllowOriginsInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsAllowOrigins">AppSpecStaticSiteCorsAllowOrigins</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.exposeHeadersInput">ExposeHeadersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.maxAgeInput">MaxAgeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowCredentials">AllowCredentials</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowCredentials">AllowCredentials</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowHeaders">AllowHeaders</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowMethods">AllowMethods</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.exposeHeaders">ExposeHeaders</a></code> | <code>string[]</code> | *No description.* |
@@ -44868,10 +44868,10 @@ public AppSpecStaticSiteCorsAllowOriginsOutputReference AllowOrigins { get; }
 ##### `AllowCredentialsInput`<sup>Optional</sup> <a name="AllowCredentialsInput" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowCredentialsInput"></a>
 
 ```csharp
-public object AllowCredentialsInput { get; }
+public bool|IResolvable AllowCredentialsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -44928,10 +44928,10 @@ public string MaxAgeInput { get; }
 ##### `AllowCredentials`<sup>Required</sup> <a name="AllowCredentials" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteCorsOutputReference.property.allowCredentials"></a>
 
 ```csharp
-public object AllowCredentials { get; }
+public bool|IResolvable AllowCredentials { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -45107,7 +45107,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>[]</code> | *No description.* |
 
 ---
 
@@ -45138,10 +45138,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecStaticSiteEnv[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>[]
 
 ---
 
@@ -45410,7 +45410,7 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvOutputReference.property.scope">Scope</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a></code> | *No description.* |
 
 ---
 
@@ -45521,10 +45521,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnvOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecStaticSiteEnv InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>
 
 ---
 
@@ -45761,10 +45761,10 @@ private void ResetRepo()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.branchInput">BranchInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.repoInput">RepoInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.branch">Branch</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.repo">Repo</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithub">AppSpecStaticSiteGithub</a></code> | *No description.* |
 
@@ -45807,10 +45807,10 @@ public string BranchInput { get; }
 ##### `DeployOnPushInput`<sup>Optional</sup> <a name="DeployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.deployOnPushInput"></a>
 
 ```csharp
-public object DeployOnPushInput { get; }
+public bool|IResolvable DeployOnPushInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -45837,10 +45837,10 @@ public string Branch { get; }
 ##### `DeployOnPush`<sup>Required</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithubOutputReference.property.deployOnPush"></a>
 
 ```csharp
-public object DeployOnPush { get; }
+public bool|IResolvable DeployOnPush { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -46097,10 +46097,10 @@ private void ResetRepo()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.branchInput">BranchInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.repoInput">RepoInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.branch">Branch</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.repo">Repo</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlab">AppSpecStaticSiteGitlab</a></code> | *No description.* |
 
@@ -46143,10 +46143,10 @@ public string BranchInput { get; }
 ##### `DeployOnPushInput`<sup>Optional</sup> <a name="DeployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.deployOnPushInput"></a>
 
 ```csharp
-public object DeployOnPushInput { get; }
+public bool|IResolvable DeployOnPushInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -46173,10 +46173,10 @@ public string Branch { get; }
 ##### `DeployOnPush`<sup>Required</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteGitlabOutputReference.property.deployOnPush"></a>
 
 ```csharp
-public object DeployOnPush { get; }
+public bool|IResolvable DeployOnPush { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -46629,7 +46629,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>[]</code> | *No description.* |
 
 ---
 
@@ -46660,10 +46660,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecStaticSite[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>[]
 
 ---
 
@@ -46938,12 +46938,12 @@ private void PutCors(AppSpecStaticSiteCors Value)
 ##### `PutEnv` <a name="PutEnv" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.putEnv"></a>
 
 ```csharp
-private void PutEnv(object Value)
+private void PutEnv(IResolvable|AppSpecStaticSiteEnv[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.putEnv.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>[]
 
 ---
 
@@ -46986,12 +46986,12 @@ private void PutGitlab(AppSpecStaticSiteGitlab Value)
 ##### `PutRoutes` <a name="PutRoutes" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.putRoutes"></a>
 
 ```csharp
-private void PutRoutes(object Value)
+private void PutRoutes(IResolvable|AppSpecStaticSiteRoutes[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.putRoutes.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>[]
 
 ---
 
@@ -47104,7 +47104,7 @@ private void ResetSourceDir()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.catchallDocumentInput">CatchallDocumentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.corsInput">CorsInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteCors">AppSpecStaticSiteCors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.dockerfilePathInput">DockerfilePathInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.envInput">EnvInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.envInput">EnvInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.environmentSlugInput">EnvironmentSlugInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.errorDocumentInput">ErrorDocumentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.githubInput">GithubInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteGithub">AppSpecStaticSiteGithub</a></code> | *No description.* |
@@ -47113,7 +47113,7 @@ private void ResetSourceDir()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.indexDocumentInput">IndexDocumentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.outputDirInput">OutputDirInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.routesInput">RoutesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.routesInput">RoutesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.sourceDirInput">SourceDirInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.buildCommand">BuildCommand</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.catchallDocument">CatchallDocument</a></code> | <code>string</code> | *No description.* |
@@ -47124,7 +47124,7 @@ private void ResetSourceDir()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.outputDir">OutputDir</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.sourceDir">SourceDir</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a></code> | *No description.* |
 
 ---
 
@@ -47275,10 +47275,10 @@ public string DockerfilePathInput { get; }
 ##### `EnvInput`<sup>Optional</sup> <a name="EnvInput" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.envInput"></a>
 
 ```csharp
-public object EnvInput { get; }
+public IResolvable|AppSpecStaticSiteEnv[] EnvInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteEnv">AppSpecStaticSiteEnv</a>[]
 
 ---
 
@@ -47365,10 +47365,10 @@ public string OutputDirInput { get; }
 ##### `RoutesInput`<sup>Optional</sup> <a name="RoutesInput" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.routesInput"></a>
 
 ```csharp
-public object RoutesInput { get; }
+public IResolvable|AppSpecStaticSiteRoutes[] RoutesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>[]
 
 ---
 
@@ -47475,10 +47475,10 @@ public string SourceDir { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecStaticSite InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSite">AppSpecStaticSite</a>
 
 ---
 
@@ -47604,7 +47604,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>[]</code> | *No description.* |
 
 ---
 
@@ -47635,10 +47635,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecStaticSiteRoutes[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>[]
 
 ---
 
@@ -47886,10 +47886,10 @@ private void ResetPreservePathPrefix()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.pathInput">PathInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.preservePathPrefixInput">PreservePathPrefixInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.preservePathPrefixInput">PreservePathPrefixInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.path">Path</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.preservePathPrefix">PreservePathPrefix</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.preservePathPrefix">PreservePathPrefix</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a></code> | *No description.* |
 
 ---
 
@@ -47930,10 +47930,10 @@ public string PathInput { get; }
 ##### `PreservePathPrefixInput`<sup>Optional</sup> <a name="PreservePathPrefixInput" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.preservePathPrefixInput"></a>
 
 ```csharp
-public object PreservePathPrefixInput { get; }
+public bool|IResolvable PreservePathPrefixInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -47950,20 +47950,20 @@ public string Path { get; }
 ##### `PreservePathPrefix`<sup>Required</sup> <a name="PreservePathPrefix" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.preservePathPrefix"></a>
 
 ```csharp
-public object PreservePathPrefix { get; }
+public bool|IResolvable PreservePathPrefix { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecStaticSiteRoutes InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecStaticSiteRoutes">AppSpecStaticSiteRoutes</a>
 
 ---
 
@@ -48089,7 +48089,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecVpcList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecVpcList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecVpcList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecVpcList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>[]</code> | *No description.* |
 
 ---
 
@@ -48120,10 +48120,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecVpcList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecVpc[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>[]
 
 ---
 
@@ -48358,7 +48358,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecVpcOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecVpcOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecVpcOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecVpcOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecVpcOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a></code> | *No description.* |
 
 ---
 
@@ -48409,10 +48409,10 @@ public string Id { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecVpcOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecVpc InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecVpc">AppSpecVpc</a>
 
 ---
 
@@ -48626,12 +48626,12 @@ Returns a reversible string representation.
 ##### `PutSlackWebhooks` <a name="PutSlackWebhooks" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsOutputReference.putSlackWebhooks"></a>
 
 ```csharp
-private void PutSlackWebhooks(object Value)
+private void PutSlackWebhooks(IResolvable|AppSpecWorkerAlertDestinationsSlackWebhooks[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsOutputReference.putSlackWebhooks.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>[]
 
 ---
 
@@ -48656,7 +48656,7 @@ private void ResetSlackWebhooks()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsOutputReference.property.slackWebhooks">SlackWebhooks</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksList">AppSpecWorkerAlertDestinationsSlackWebhooksList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsOutputReference.property.emailsInput">EmailsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsOutputReference.property.slackWebhooksInput">SlackWebhooksInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsOutputReference.property.slackWebhooksInput">SlackWebhooksInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsOutputReference.property.emails">Emails</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinations">AppSpecWorkerAlertDestinations</a></code> | *No description.* |
 
@@ -48709,10 +48709,10 @@ public string[] EmailsInput { get; }
 ##### `SlackWebhooksInput`<sup>Optional</sup> <a name="SlackWebhooksInput" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsOutputReference.property.slackWebhooksInput"></a>
 
 ```csharp
-public object SlackWebhooksInput { get; }
+public IResolvable|AppSpecWorkerAlertDestinationsSlackWebhooks[] SlackWebhooksInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>[]
 
 ---
 
@@ -48858,7 +48858,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>[]</code> | *No description.* |
 
 ---
 
@@ -48889,10 +48889,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecWorkerAlertDestinationsSlackWebhooks[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>[]
 
 ---
 
@@ -49129,7 +49129,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksOutputReference.property.urlInput">UrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksOutputReference.property.channel">Channel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksOutputReference.property.url">Url</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a></code> | *No description.* |
 
 ---
 
@@ -49200,10 +49200,10 @@ public string Url { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooksOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecWorkerAlertDestinationsSlackWebhooks InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsSlackWebhooks">AppSpecWorkerAlertDestinationsSlackWebhooks</a>
 
 ---
 
@@ -49329,7 +49329,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>[]</code> | *No description.* |
 
 ---
 
@@ -49360,10 +49360,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlertList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecWorkerAlert[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>[]
 
 ---
 
@@ -49625,17 +49625,17 @@ private void ResetDisabled()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.destinations">Destinations</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinationsOutputReference">AppSpecWorkerAlertDestinationsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.destinationsInput">DestinationsInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertDestinations">AppSpecWorkerAlertDestinations</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.disabledInput">DisabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.disabledInput">DisabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.operatorInput">OperatorInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.ruleInput">RuleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.valueInput">ValueInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.windowInput">WindowInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.disabled">Disabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.disabled">Disabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.operator">Operator</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.rule">Rule</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.value">Value</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.window">Window</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a></code> | *No description.* |
 
 ---
 
@@ -49686,10 +49686,10 @@ public AppSpecWorkerAlertDestinations DestinationsInput { get; }
 ##### `DisabledInput`<sup>Optional</sup> <a name="DisabledInput" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.disabledInput"></a>
 
 ```csharp
-public object DisabledInput { get; }
+public bool|IResolvable DisabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -49736,10 +49736,10 @@ public string WindowInput { get; }
 ##### `Disabled`<sup>Required</sup> <a name="Disabled" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.disabled"></a>
 
 ```csharp
-public object Disabled { get; }
+public bool|IResolvable Disabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -49786,10 +49786,10 @@ public string Window { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecWorkerAlertOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecWorkerAlert InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>
 
 ---
 
@@ -50916,10 +50916,10 @@ private void ResetRepo()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.branchInput">BranchInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.repoInput">RepoInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.branch">Branch</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.repo">Repo</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket">AppSpecWorkerBitbucket</a></code> | *No description.* |
 
@@ -50962,10 +50962,10 @@ public string BranchInput { get; }
 ##### `DeployOnPushInput`<sup>Optional</sup> <a name="DeployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.deployOnPushInput"></a>
 
 ```csharp
-public object DeployOnPushInput { get; }
+public bool|IResolvable DeployOnPushInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -50992,10 +50992,10 @@ public string Branch { get; }
 ##### `DeployOnPush`<sup>Required</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference.property.deployOnPush"></a>
 
 ```csharp
-public object DeployOnPush { get; }
+public bool|IResolvable DeployOnPush { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -51141,7 +51141,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnvList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnvList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnvList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnvList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>[]</code> | *No description.* |
 
 ---
 
@@ -51172,10 +51172,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecWorkerEnvList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecWorkerEnv[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>[]
 
 ---
 
@@ -51444,7 +51444,7 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnvOutputReference.property.scope">Scope</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnvOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnvOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnvOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnvOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a></code> | *No description.* |
 
 ---
 
@@ -51555,10 +51555,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecWorkerEnvOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecWorkerEnv InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>
 
 ---
 
@@ -51795,10 +51795,10 @@ private void ResetRepo()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.branchInput">BranchInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.repoInput">RepoInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.branch">Branch</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.repo">Repo</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithub">AppSpecWorkerGithub</a></code> | *No description.* |
 
@@ -51841,10 +51841,10 @@ public string BranchInput { get; }
 ##### `DeployOnPushInput`<sup>Optional</sup> <a name="DeployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.deployOnPushInput"></a>
 
 ```csharp
-public object DeployOnPushInput { get; }
+public bool|IResolvable DeployOnPushInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -51871,10 +51871,10 @@ public string Branch { get; }
 ##### `DeployOnPush`<sup>Required</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecWorkerGithubOutputReference.property.deployOnPush"></a>
 
 ```csharp
-public object DeployOnPush { get; }
+public bool|IResolvable DeployOnPush { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -52131,10 +52131,10 @@ private void ResetRepo()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.branchInput">BranchInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.repoInput">RepoInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.branch">Branch</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.repo">Repo</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGitlab">AppSpecWorkerGitlab</a></code> | *No description.* |
 
@@ -52177,10 +52177,10 @@ public string BranchInput { get; }
 ##### `DeployOnPushInput`<sup>Optional</sup> <a name="DeployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.deployOnPushInput"></a>
 
 ```csharp
-public object DeployOnPushInput { get; }
+public bool|IResolvable DeployOnPushInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -52207,10 +52207,10 @@ public string Branch { get; }
 ##### `DeployOnPush`<sup>Required</sup> <a name="DeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecWorkerGitlabOutputReference.property.deployOnPush"></a>
 
 ```csharp
-public object DeployOnPush { get; }
+public bool|IResolvable DeployOnPush { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -52663,7 +52663,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>[]</code> | *No description.* |
 
 ---
 
@@ -52694,10 +52694,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecWorkerImageDeployOnPush[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>[]
 
 ---
 
@@ -52937,9 +52937,9 @@ private void ResetEnabled()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.enabledInput">EnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.enabled">Enabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.enabledInput">EnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a></code> | *No description.* |
 
 ---
 
@@ -52970,30 +52970,30 @@ public string Fqn { get; }
 ##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.enabledInput"></a>
 
 ```csharp
-public object EnabledInput { get; }
+public bool|IResolvable EnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; }
+public bool|IResolvable Enabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecWorkerImageDeployOnPush InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>
 
 ---
 
@@ -53210,12 +53210,12 @@ Returns a reversible string representation.
 ##### `PutDeployOnPush` <a name="PutDeployOnPush" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.putDeployOnPush"></a>
 
 ```csharp
-private void PutDeployOnPush(object Value)
+private void PutDeployOnPush(IResolvable|AppSpecWorkerImageDeployOnPush[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.putDeployOnPush.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>[]
 
 ---
 
@@ -53257,7 +53257,7 @@ private void ResetTag()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.deployOnPush">DeployOnPush</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPushList">AppSpecWorkerImageDeployOnPushList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.deployOnPushInput">DeployOnPushInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.digestInput">DigestInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.registryCredentialsInput">RegistryCredentialsInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.registryInput">RegistryInput</a></code> | <code>string</code> | *No description.* |
@@ -53311,10 +53311,10 @@ public AppSpecWorkerImageDeployOnPushList DeployOnPush { get; }
 ##### `DeployOnPushInput`<sup>Optional</sup> <a name="DeployOnPushInput" id="@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference.property.deployOnPushInput"></a>
 
 ```csharp
-public object DeployOnPushInput { get; }
+public IResolvable|AppSpecWorkerImageDeployOnPush[] DeployOnPushInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageDeployOnPush">AppSpecWorkerImageDeployOnPush</a>[]
 
 ---
 
@@ -53570,7 +53570,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>[]</code> | *No description.* |
 
 ---
 
@@ -53601,10 +53601,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecWorkerList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecWorker[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>[]
 
 ---
 
@@ -54030,7 +54030,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>[]</code> | *No description.* |
 
 ---
 
@@ -54061,10 +54061,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecWorkerLogDestination[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>[]
 
 ---
 
@@ -55336,7 +55336,7 @@ private void ResetPapertrail()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationOutputReference.property.openSearchInput">OpenSearchInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationOpenSearch">AppSpecWorkerLogDestinationOpenSearch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationOutputReference.property.papertrailInput">PapertrailInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationPapertrail">AppSpecWorkerLogDestinationPapertrail</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a></code> | *No description.* |
 
 ---
 
@@ -55467,10 +55467,10 @@ public string Name { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecWorkerLogDestination InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>
 
 ---
 
@@ -55997,12 +55997,12 @@ Returns a reversible string representation.
 ##### `PutAlert` <a name="PutAlert" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putAlert"></a>
 
 ```csharp
-private void PutAlert(object Value)
+private void PutAlert(IResolvable|AppSpecWorkerAlert[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putAlert.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>[]
 
 ---
 
@@ -56033,12 +56033,12 @@ private void PutBitbucket(AppSpecWorkerBitbucket Value)
 ##### `PutEnv` <a name="PutEnv" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putEnv"></a>
 
 ```csharp
-private void PutEnv(object Value)
+private void PutEnv(IResolvable|AppSpecWorkerEnv[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putEnv.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>[]
 
 ---
 
@@ -56093,12 +56093,12 @@ private void PutImage(AppSpecWorkerImage Value)
 ##### `PutLogDestination` <a name="PutLogDestination" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putLogDestination"></a>
 
 ```csharp
-private void PutLogDestination(object Value)
+private void PutLogDestination(IResolvable|AppSpecWorkerLogDestination[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.putLogDestination.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>[]
 
 ---
 
@@ -56233,12 +56233,12 @@ private void ResetTermination()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.image">Image</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImageOutputReference">AppSpecWorkerImageOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.logDestination">LogDestination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestinationList">AppSpecWorkerLogDestinationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.termination">Termination</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerTerminationOutputReference">AppSpecWorkerTerminationOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.alertInput">AlertInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.alertInput">AlertInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.autoscalingInput">AutoscalingInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAutoscaling">AppSpecWorkerAutoscaling</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.bitbucketInput">BitbucketInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket">AppSpecWorkerBitbucket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.buildCommandInput">BuildCommandInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.dockerfilePathInput">DockerfilePathInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.envInput">EnvInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.envInput">EnvInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.environmentSlugInput">EnvironmentSlugInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.githubInput">GithubInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGithub">AppSpecWorkerGithub</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.gitInput">GitInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerGit">AppSpecWorkerGit</a></code> | *No description.* |
@@ -56246,7 +56246,7 @@ private void ResetTermination()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.imageInput">ImageInput</a></code> | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerImage">AppSpecWorkerImage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.instanceCountInput">InstanceCountInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.instanceSizeSlugInput">InstanceSizeSlugInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.logDestinationInput">LogDestinationInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.logDestinationInput">LogDestinationInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.runCommandInput">RunCommandInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.sourceDirInput">SourceDirInput</a></code> | <code>string</code> | *No description.* |
@@ -56259,7 +56259,7 @@ private void ResetTermination()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.runCommand">RunCommand</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.sourceDir">SourceDir</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a></code> | *No description.* |
 
 ---
 
@@ -56390,10 +56390,10 @@ public AppSpecWorkerTerminationOutputReference Termination { get; }
 ##### `AlertInput`<sup>Optional</sup> <a name="AlertInput" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.alertInput"></a>
 
 ```csharp
-public object AlertInput { get; }
+public IResolvable|AppSpecWorkerAlert[] AlertInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerAlert">AppSpecWorkerAlert</a>[]
 
 ---
 
@@ -56440,10 +56440,10 @@ public string DockerfilePathInput { get; }
 ##### `EnvInput`<sup>Optional</sup> <a name="EnvInput" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.envInput"></a>
 
 ```csharp
-public object EnvInput { get; }
+public IResolvable|AppSpecWorkerEnv[] EnvInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerEnv">AppSpecWorkerEnv</a>[]
 
 ---
 
@@ -56520,10 +56520,10 @@ public string InstanceSizeSlugInput { get; }
 ##### `LogDestinationInput`<sup>Optional</sup> <a name="LogDestinationInput" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.logDestinationInput"></a>
 
 ```csharp
-public object LogDestinationInput { get; }
+public IResolvable|AppSpecWorkerLogDestination[] LogDestinationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorkerLogDestination">AppSpecWorkerLogDestination</a>[]
 
 ---
 
@@ -56650,10 +56650,10 @@ public string SourceDir { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppSpecWorkerOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSpecWorker InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppSpecWorker">AppSpecWorker</a>
 
 ---
 
@@ -57155,7 +57155,7 @@ private void ResetCreate()
 | <code><a href="#@cdktf/provider-digitalocean.app.AppTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.app.AppTimeoutsOutputReference.property.create">Create</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.app.AppTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.app.AppTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.app.AppTimeouts">AppTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -57206,10 +57206,10 @@ public string Create { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-digitalocean.app.AppTimeoutsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppTimeouts InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-digitalocean.app.AppTimeouts">AppTimeouts</a>
 
 ---
 
