@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/projects
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/projects
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataDigitaloceanProjectsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/projects#id DataDigitaloceanProjects#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/projects#id DataDigitaloceanProjects#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +22,13 @@ export interface DataDigitaloceanProjectsConfig extends cdktf.TerraformMetaArgum
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/projects#filter DataDigitaloceanProjects#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/projects#filter DataDigitaloceanProjects#filter}
   */
   readonly filter?: DataDigitaloceanProjectsFilter[] | cdktf.IResolvable;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/projects#sort DataDigitaloceanProjects#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/projects#sort DataDigitaloceanProjects#sort}
   */
   readonly sort?: DataDigitaloceanProjectsSort[] | cdktf.IResolvable;
 }
@@ -159,19 +159,19 @@ export class DataDigitaloceanProjectsProjectsList extends cdktf.ComplexList {
 }
 export interface DataDigitaloceanProjectsFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/projects#all DataDigitaloceanProjects#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/projects#all DataDigitaloceanProjects#all}
   */
   readonly all?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/projects#key DataDigitaloceanProjects#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/projects#key DataDigitaloceanProjects#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/projects#match_by DataDigitaloceanProjects#match_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/projects#match_by DataDigitaloceanProjects#match_by}
   */
   readonly matchBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/projects#values DataDigitaloceanProjects#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/projects#values DataDigitaloceanProjects#values}
   */
   readonly values: string[];
 }
@@ -368,11 +368,11 @@ export class DataDigitaloceanProjectsFilterList extends cdktf.ComplexList {
 }
 export interface DataDigitaloceanProjectsSort {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/projects#direction DataDigitaloceanProjects#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/projects#direction DataDigitaloceanProjects#direction}
   */
   readonly direction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/projects#key DataDigitaloceanProjects#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/projects#key DataDigitaloceanProjects#key}
   */
   readonly key: string;
 }
@@ -514,7 +514,7 @@ export class DataDigitaloceanProjectsSortList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/projects digitalocean_projects}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/projects digitalocean_projects}
 */
 export class DataDigitaloceanProjects extends cdktf.TerraformDataSource {
 
@@ -530,7 +530,7 @@ export class DataDigitaloceanProjects extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDigitaloceanProjects resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDigitaloceanProjects to import
-  * @param importFromId The id of the existing DataDigitaloceanProjects that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/projects#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDigitaloceanProjects that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/projects#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDigitaloceanProjects to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -542,7 +542,7 @@ export class DataDigitaloceanProjects extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/projects digitalocean_projects} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/projects digitalocean_projects} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -553,7 +553,7 @@ export class DataDigitaloceanProjects extends cdktf.TerraformDataSource {
       terraformResourceType: 'digitalocean_projects',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.67.0',
+        providerVersion: '2.68.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### DatabaseOnlineMigration <a name="DatabaseOnlineMigration" id="@cdktf/provider-digitalocean.databaseOnlineMigration.DatabaseOnlineMigration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_online_migration digitalocean_database_online_migration}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/database_online_migration digitalocean_database_online_migration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databaseOnlineMigration.DatabaseOnlineMigration.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the DatabaseOnlineMigration to
 
 The id of the existing DatabaseOnlineMigration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_online_migration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/database_online_migration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -843,7 +843,7 @@ new DatabaseOnlineMigrationConfig {
 | <code><a href="#@cdktf/provider-digitalocean.databaseOnlineMigration.DatabaseOnlineMigrationConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseOnlineMigration.DatabaseOnlineMigrationConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseOnlineMigration.DatabaseOnlineMigrationConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseOnlineMigration.DatabaseOnlineMigrationConfig.property.clusterId">ClusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_online_migration#cluster_id DatabaseOnlineMigration#cluster_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseOnlineMigration.DatabaseOnlineMigrationConfig.property.clusterId">ClusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/database_online_migration#cluster_id DatabaseOnlineMigration#cluster_id}. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseOnlineMigration.DatabaseOnlineMigrationConfig.property.source">Source</a></code> | <code><a href="#@cdktf/provider-digitalocean.databaseOnlineMigration.DatabaseOnlineMigrationSource">DatabaseOnlineMigrationSource</a></code> | source block. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseOnlineMigration.DatabaseOnlineMigrationConfig.property.disableSsl">DisableSsl</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Disables SSL encryption when connecting to the source database. |
 | <code><a href="#@cdktf/provider-digitalocean.databaseOnlineMigration.DatabaseOnlineMigrationConfig.property.ignoreDbs">IgnoreDbs</a></code> | <code>string[]</code> | The list of databases to be ignored during the migration. |
@@ -928,7 +928,7 @@ public string ClusterId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_online_migration#cluster_id DatabaseOnlineMigration#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/database_online_migration#cluster_id DatabaseOnlineMigration#cluster_id}.
 
 ---
 
@@ -942,7 +942,7 @@ public DatabaseOnlineMigrationSource Source { get; set; }
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_online_migration#source DatabaseOnlineMigration#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/database_online_migration#source DatabaseOnlineMigration#source}
 
 ---
 
@@ -956,7 +956,7 @@ public bool|IResolvable DisableSsl { get; set; }
 
 Disables SSL encryption when connecting to the source database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_online_migration#disable_ssl DatabaseOnlineMigration#disable_ssl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/database_online_migration#disable_ssl DatabaseOnlineMigration#disable_ssl}
 
 ---
 
@@ -970,7 +970,7 @@ public string[] IgnoreDbs { get; set; }
 
 The list of databases to be ignored during the migration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_online_migration#ignore_dbs DatabaseOnlineMigration#ignore_dbs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/database_online_migration#ignore_dbs DatabaseOnlineMigration#ignore_dbs}
 
 ---
 
@@ -1012,7 +1012,7 @@ public string DbName { get; set; }
 
 The name of the default database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_online_migration#db_name DatabaseOnlineMigration#db_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/database_online_migration#db_name DatabaseOnlineMigration#db_name}
 
 ---
 
@@ -1026,7 +1026,7 @@ public string Host { get; set; }
 
 The FQDN pointing to the database cluster's current primary node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_online_migration#host DatabaseOnlineMigration#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/database_online_migration#host DatabaseOnlineMigration#host}
 
 ---
 
@@ -1040,7 +1040,7 @@ public string Password { get; set; }
 
 The password of the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_online_migration#password DatabaseOnlineMigration#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/database_online_migration#password DatabaseOnlineMigration#password}
 
 ---
 
@@ -1054,7 +1054,7 @@ public double Port { get; set; }
 
 The port on which the database cluster is listening.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_online_migration#port DatabaseOnlineMigration#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/database_online_migration#port DatabaseOnlineMigration#port}
 
 ---
 
@@ -1068,7 +1068,7 @@ public string Username { get; set; }
 
 The default user of the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/database_online_migration#username DatabaseOnlineMigration#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/database_online_migration#username DatabaseOnlineMigration#username}
 
 ---
 

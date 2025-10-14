@@ -93,8 +93,10 @@ Object.defineProperty(exports, 'dataDigitaloceanGenaiAgentsByOpenaiApiKey', { ge
 Object.defineProperty(exports, 'dataDigitaloceanGenaiKnowledgeBase', { get: function () { return require('./data-digitalocean-genai-knowledge-base'); } });
 Object.defineProperty(exports, 'dataDigitaloceanGenaiKnowledgeBaseDataSources', { get: function () { return require('./data-digitalocean-genai-knowledge-base-data-sources'); } });
 Object.defineProperty(exports, 'dataDigitaloceanGenaiKnowledgeBases', { get: function () { return require('./data-digitalocean-genai-knowledge-bases'); } });
+Object.defineProperty(exports, 'dataDigitaloceanGenaiModels', { get: function () { return require('./data-digitalocean-genai-models'); } });
 Object.defineProperty(exports, 'dataDigitaloceanGenaiOpenaiApiKey', { get: function () { return require('./data-digitalocean-genai-openai-api-key'); } });
 Object.defineProperty(exports, 'dataDigitaloceanGenaiOpenaiApiKeys', { get: function () { return require('./data-digitalocean-genai-openai-api-keys'); } });
+Object.defineProperty(exports, 'dataDigitaloceanGenaiRegions', { get: function () { return require('./data-digitalocean-genai-regions'); } });
 Object.defineProperty(exports, 'dataDigitaloceanImage', { get: function () { return require('./data-digitalocean-image'); } });
 Object.defineProperty(exports, 'dataDigitaloceanImages', { get: function () { return require('./data-digitalocean-images'); } });
 Object.defineProperty(exports, 'dataDigitaloceanKubernetesCluster', { get: function () { return require('./data-digitalocean-kubernetes-cluster'); } });

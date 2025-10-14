@@ -4,7 +4,7 @@
 
 ### ReservedIpv6 <a name="ReservedIpv6" id="@cdktf/provider-digitalocean.reservedIpv6.ReservedIpv6"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/reserved_ipv6 digitalocean_reserved_ipv6}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/reserved_ipv6 digitalocean_reserved_ipv6}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.reservedIpv6.ReservedIpv6.Initializer"></a>
 
@@ -39,10 +39,10 @@ reservedIpv6.ReservedIpv6(
 | <code><a href="#@cdktf/provider-digitalocean.reservedIpv6.ReservedIpv6.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIpv6.ReservedIpv6.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIpv6.ReservedIpv6.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIpv6.ReservedIpv6.Initializer.parameter.regionSlug">region_slug</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/reserved_ipv6#region_slug ReservedIpv6#region_slug}. |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIpv6.ReservedIpv6.Initializer.parameter.dropletId">droplet_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/reserved_ipv6#droplet_id ReservedIpv6#droplet_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIpv6.ReservedIpv6.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/reserved_ipv6#id ReservedIpv6#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIpv6.ReservedIpv6.Initializer.parameter.ip">ip</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/reserved_ipv6#ip ReservedIpv6#ip}. |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIpv6.ReservedIpv6.Initializer.parameter.regionSlug">region_slug</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/reserved_ipv6#region_slug ReservedIpv6#region_slug}. |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIpv6.ReservedIpv6.Initializer.parameter.dropletId">droplet_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/reserved_ipv6#droplet_id ReservedIpv6#droplet_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIpv6.ReservedIpv6.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/reserved_ipv6#id ReservedIpv6#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIpv6.ReservedIpv6.Initializer.parameter.ip">ip</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/reserved_ipv6#ip ReservedIpv6#ip}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/reserved_ipv6#region_slug ReservedIpv6#region_slug}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/reserved_ipv6#region_slug ReservedIpv6#region_slug}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/reserved_ipv6#droplet_id ReservedIpv6#droplet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/reserved_ipv6#droplet_id ReservedIpv6#droplet_id}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/reserved_ipv6#id ReservedIpv6#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/reserved_ipv6#id ReservedIpv6#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -137,7 +137,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/reserved_ipv6#ip ReservedIpv6#ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/reserved_ipv6#ip ReservedIpv6#ip}.
 
 ---
 
@@ -631,7 +631,7 @@ The construct id used in the generated config for the ReservedIpv6 to import.
 
 The id of the existing ReservedIpv6 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/reserved_ipv6#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/reserved_ipv6#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -958,10 +958,10 @@ reservedIpv6.ReservedIpv6Config(
 | <code><a href="#@cdktf/provider-digitalocean.reservedIpv6.ReservedIpv6Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIpv6.ReservedIpv6Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIpv6.ReservedIpv6Config.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIpv6.ReservedIpv6Config.property.regionSlug">region_slug</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/reserved_ipv6#region_slug ReservedIpv6#region_slug}. |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIpv6.ReservedIpv6Config.property.dropletId">droplet_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/reserved_ipv6#droplet_id ReservedIpv6#droplet_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIpv6.ReservedIpv6Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/reserved_ipv6#id ReservedIpv6#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIpv6.ReservedIpv6Config.property.ip">ip</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/reserved_ipv6#ip ReservedIpv6#ip}. |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIpv6.ReservedIpv6Config.property.regionSlug">region_slug</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/reserved_ipv6#region_slug ReservedIpv6#region_slug}. |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIpv6.ReservedIpv6Config.property.dropletId">droplet_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/reserved_ipv6#droplet_id ReservedIpv6#droplet_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIpv6.ReservedIpv6Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/reserved_ipv6#id ReservedIpv6#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIpv6.ReservedIpv6Config.property.ip">ip</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/reserved_ipv6#ip ReservedIpv6#ip}. |
 
 ---
 
@@ -1043,7 +1043,7 @@ region_slug: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/reserved_ipv6#region_slug ReservedIpv6#region_slug}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/reserved_ipv6#region_slug ReservedIpv6#region_slug}.
 
 ---
 
@@ -1055,7 +1055,7 @@ droplet_id: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/reserved_ipv6#droplet_id ReservedIpv6#droplet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/reserved_ipv6#droplet_id ReservedIpv6#droplet_id}.
 
 ---
 
@@ -1067,7 +1067,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/reserved_ipv6#id ReservedIpv6#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/reserved_ipv6#id ReservedIpv6#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1082,7 +1082,7 @@ ip: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/reserved_ipv6#ip ReservedIpv6#ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/reserved_ipv6#ip ReservedIpv6#ip}.
 
 ---
 
