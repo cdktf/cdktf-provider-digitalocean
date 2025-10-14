@@ -93,8 +93,10 @@ export * as dataDigitaloceanGenaiAgentsByOpenaiApiKey from './data-digitalocean-
 export * as dataDigitaloceanGenaiKnowledgeBase from './data-digitalocean-genai-knowledge-base';
 export * as dataDigitaloceanGenaiKnowledgeBaseDataSources from './data-digitalocean-genai-knowledge-base-data-sources';
 export * as dataDigitaloceanGenaiKnowledgeBases from './data-digitalocean-genai-knowledge-bases';
+export * as dataDigitaloceanGenaiModels from './data-digitalocean-genai-models';
 export * as dataDigitaloceanGenaiOpenaiApiKey from './data-digitalocean-genai-openai-api-key';
 export * as dataDigitaloceanGenaiOpenaiApiKeys from './data-digitalocean-genai-openai-api-keys';
+export * as dataDigitaloceanGenaiRegions from './data-digitalocean-genai-regions';
 export * as dataDigitaloceanImage from './data-digitalocean-image';
 export * as dataDigitaloceanImages from './data-digitalocean-images';
 export * as dataDigitaloceanKubernetesCluster from './data-digitalocean-kubernetes-cluster';
