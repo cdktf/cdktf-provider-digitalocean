@@ -4,7 +4,7 @@
 
 ### GenaiFunction <a name="GenaiFunction" id="@cdktf/provider-digitalocean.genaiFunction.GenaiFunction"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/genai_function digitalocean_genai_function}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_function digitalocean_genai_function}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiFunction.GenaiFunction.Initializer"></a>
 
@@ -49,7 +49,7 @@ genaiFunction.GenaiFunction(
 | <code><a href="#@cdktf/provider-digitalocean.genaiFunction.GenaiFunction.Initializer.parameter.functionName">function_name</a></code> | <code>str</code> | The creation timestamp of the GenAI resource. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiFunction.GenaiFunction.Initializer.parameter.inputSchema">input_schema</a></code> | <code>str</code> | The input schema of the GenAI resource. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiFunction.GenaiFunction.Initializer.parameter.faasName">faas_name</a></code> | <code>str</code> | The model to use for the GenAI resource. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiFunction.GenaiFunction.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/genai_function#id GenaiFunction#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiFunction.GenaiFunction.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_function#id GenaiFunction#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiFunction.GenaiFunction.Initializer.parameter.outputSchema">output_schema</a></code> | <code>str</code> | The output schema of the GenAI resource. |
 
 ---
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the GenAI resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/genai_function#agent_id GenaiFunction#agent_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_function#agent_id GenaiFunction#agent_id}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The region where the GenAI resource will be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/genai_function#description GenaiFunction#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_function#description GenaiFunction#description}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The current status of the GenAI resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/genai_function#faas_namespace GenaiFunction#faas_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_function#faas_namespace GenaiFunction#faas_namespace}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The creation timestamp of the GenAI resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/genai_function#function_name GenaiFunction#function_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_function#function_name GenaiFunction#function_name}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The input schema of the GenAI resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/genai_function#input_schema GenaiFunction#input_schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_function#input_schema GenaiFunction#input_schema}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 The model to use for the GenAI resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/genai_function#faas_name GenaiFunction#faas_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_function#faas_name GenaiFunction#faas_name}
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/genai_function#id GenaiFunction#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_function#id GenaiFunction#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -191,7 +191,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The output schema of the GenAI resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/genai_function#output_schema GenaiFunction#output_schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_function#output_schema GenaiFunction#output_schema}
 
 ---
 
@@ -685,7 +685,7 @@ The construct id used in the generated config for the GenaiFunction to import.
 
 The id of the existing GenaiFunction that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/genai_function#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_function#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1110,7 +1110,7 @@ genaiFunction.GenaiFunctionConfig(
 | <code><a href="#@cdktf/provider-digitalocean.genaiFunction.GenaiFunctionConfig.property.functionName">function_name</a></code> | <code>str</code> | The creation timestamp of the GenAI resource. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiFunction.GenaiFunctionConfig.property.inputSchema">input_schema</a></code> | <code>str</code> | The input schema of the GenAI resource. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiFunction.GenaiFunctionConfig.property.faasName">faas_name</a></code> | <code>str</code> | The model to use for the GenAI resource. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiFunction.GenaiFunctionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/genai_function#id GenaiFunction#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiFunction.GenaiFunctionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_function#id GenaiFunction#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiFunction.GenaiFunctionConfig.property.outputSchema">output_schema</a></code> | <code>str</code> | The output schema of the GenAI resource. |
 
 ---
@@ -1195,7 +1195,7 @@ agent_id: str
 
 The name of the GenAI resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/genai_function#agent_id GenaiFunction#agent_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_function#agent_id GenaiFunction#agent_id}
 
 ---
 
@@ -1209,7 +1209,7 @@ description: str
 
 The region where the GenAI resource will be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/genai_function#description GenaiFunction#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_function#description GenaiFunction#description}
 
 ---
 
@@ -1223,7 +1223,7 @@ faas_namespace: str
 
 The current status of the GenAI resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/genai_function#faas_namespace GenaiFunction#faas_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_function#faas_namespace GenaiFunction#faas_namespace}
 
 ---
 
@@ -1237,7 +1237,7 @@ function_name: str
 
 The creation timestamp of the GenAI resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/genai_function#function_name GenaiFunction#function_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_function#function_name GenaiFunction#function_name}
 
 ---
 
@@ -1251,7 +1251,7 @@ input_schema: str
 
 The input schema of the GenAI resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/genai_function#input_schema GenaiFunction#input_schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_function#input_schema GenaiFunction#input_schema}
 
 ---
 
@@ -1265,7 +1265,7 @@ faas_name: str
 
 The model to use for the GenAI resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/genai_function#faas_name GenaiFunction#faas_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_function#faas_name GenaiFunction#faas_name}
 
 ---
 
@@ -1277,7 +1277,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/genai_function#id GenaiFunction#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_function#id GenaiFunction#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1294,7 +1294,7 @@ output_schema: str
 
 The output schema of the GenAI resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/genai_function#output_schema GenaiFunction#output_schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_function#output_schema GenaiFunction#output_schema}
 
 ---
 
