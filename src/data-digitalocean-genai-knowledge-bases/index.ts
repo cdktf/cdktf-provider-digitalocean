@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_knowledge_bases
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_knowledge_bases
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataDigitaloceanGenaiKnowledgeBasesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_knowledge_bases#id DataDigitaloceanGenaiKnowledgeBases#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_knowledge_bases#id DataDigitaloceanGenaiKnowledgeBases#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +22,13 @@ export interface DataDigitaloceanGenaiKnowledgeBasesConfig extends cdktf.Terrafo
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_knowledge_bases#filter DataDigitaloceanGenaiKnowledgeBases#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_knowledge_bases#filter DataDigitaloceanGenaiKnowledgeBases#filter}
   */
   readonly filter?: DataDigitaloceanGenaiKnowledgeBasesFilter[] | cdktf.IResolvable;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_knowledge_bases#sort DataDigitaloceanGenaiKnowledgeBases#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_knowledge_bases#sort DataDigitaloceanGenaiKnowledgeBases#sort}
   */
   readonly sort?: DataDigitaloceanGenaiKnowledgeBasesSort[] | cdktf.IResolvable;
 }
@@ -295,19 +295,19 @@ export class DataDigitaloceanGenaiKnowledgeBasesKnowledgeBasesList extends cdktf
 }
 export interface DataDigitaloceanGenaiKnowledgeBasesFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_knowledge_bases#all DataDigitaloceanGenaiKnowledgeBases#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_knowledge_bases#all DataDigitaloceanGenaiKnowledgeBases#all}
   */
   readonly all?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_knowledge_bases#key DataDigitaloceanGenaiKnowledgeBases#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_knowledge_bases#key DataDigitaloceanGenaiKnowledgeBases#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_knowledge_bases#match_by DataDigitaloceanGenaiKnowledgeBases#match_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_knowledge_bases#match_by DataDigitaloceanGenaiKnowledgeBases#match_by}
   */
   readonly matchBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_knowledge_bases#values DataDigitaloceanGenaiKnowledgeBases#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_knowledge_bases#values DataDigitaloceanGenaiKnowledgeBases#values}
   */
   readonly values: string[];
 }
@@ -504,11 +504,11 @@ export class DataDigitaloceanGenaiKnowledgeBasesFilterList extends cdktf.Complex
 }
 export interface DataDigitaloceanGenaiKnowledgeBasesSort {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_knowledge_bases#direction DataDigitaloceanGenaiKnowledgeBases#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_knowledge_bases#direction DataDigitaloceanGenaiKnowledgeBases#direction}
   */
   readonly direction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_knowledge_bases#key DataDigitaloceanGenaiKnowledgeBases#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_knowledge_bases#key DataDigitaloceanGenaiKnowledgeBases#key}
   */
   readonly key: string;
 }
@@ -650,7 +650,7 @@ export class DataDigitaloceanGenaiKnowledgeBasesSortList extends cdktf.ComplexLi
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_knowledge_bases digitalocean_genai_knowledge_bases}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_knowledge_bases digitalocean_genai_knowledge_bases}
 */
 export class DataDigitaloceanGenaiKnowledgeBases extends cdktf.TerraformDataSource {
 
@@ -666,7 +666,7 @@ export class DataDigitaloceanGenaiKnowledgeBases extends cdktf.TerraformDataSour
   * Generates CDKTF code for importing a DataDigitaloceanGenaiKnowledgeBases resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDigitaloceanGenaiKnowledgeBases to import
-  * @param importFromId The id of the existing DataDigitaloceanGenaiKnowledgeBases that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_knowledge_bases#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDigitaloceanGenaiKnowledgeBases that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_knowledge_bases#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDigitaloceanGenaiKnowledgeBases to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -678,7 +678,7 @@ export class DataDigitaloceanGenaiKnowledgeBases extends cdktf.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_knowledge_bases digitalocean_genai_knowledge_bases} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_knowledge_bases digitalocean_genai_knowledge_bases} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -689,7 +689,7 @@ export class DataDigitaloceanGenaiKnowledgeBases extends cdktf.TerraformDataSour
       terraformResourceType: 'digitalocean_genai_knowledge_bases',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.68.0',
+        providerVersion: '2.69.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,

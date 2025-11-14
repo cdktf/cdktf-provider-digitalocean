@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface GenaiAgentConfig extends cdktf.TerraformMetaArguments {
   /**
   * Optional Anthropic API key ID to use with Anthropic models
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#anthropic_key_uuid GenaiAgent#anthropic_key_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#anthropic_key_uuid GenaiAgent#anthropic_key_uuid}
   */
   readonly anthropicKeyUuid?: string;
   /**
   * Timestamp when the Agent was created
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#created_at GenaiAgent#created_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#created_at GenaiAgent#created_at}
   */
   readonly createdAt?: string;
   /**
   * Description for the Agent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#description GenaiAgent#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#description GenaiAgent#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#id GenaiAgent#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#id GenaiAgent#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,205 +40,205 @@ export interface GenaiAgentConfig extends cdktf.TerraformMetaArguments {
   /**
   * If case condition
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#if_case GenaiAgent#if_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#if_case GenaiAgent#if_case}
   */
   readonly ifCase?: string;
   /**
   * Instruction for the Agent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#instruction GenaiAgent#instruction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#instruction GenaiAgent#instruction}
   */
   readonly instruction: string;
   /**
   * K value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#k GenaiAgent#k}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#k GenaiAgent#k}
   */
   readonly k?: number;
   /**
   * Ids of the knowledge base(s) to attach to the agent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#knowledge_base_uuid GenaiAgent#knowledge_base_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#knowledge_base_uuid GenaiAgent#knowledge_base_uuid}
   */
   readonly knowledgeBaseUuid?: string[];
   /**
   * Maximum tokens allowed
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#max_tokens GenaiAgent#max_tokens}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#max_tokens GenaiAgent#max_tokens}
   */
   readonly maxTokens?: number;
   /**
   * Model UUID of the Agent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#model_uuid GenaiAgent#model_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#model_uuid GenaiAgent#model_uuid}
   */
   readonly modelUuid: string;
   /**
   * Name of the Agent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#name GenaiAgent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#name GenaiAgent#name}
   */
   readonly name: string;
   /**
   * Optional OpenAI API key ID to use with OpenAI models
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#open_ai_key_uuid GenaiAgent#open_ai_key_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#open_ai_key_uuid GenaiAgent#open_ai_key_uuid}
   */
   readonly openAiKeyUuid?: string;
   /**
   * Project ID of the Agent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#project_id GenaiAgent#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#project_id GenaiAgent#project_id}
   */
   readonly projectId: string;
   /**
   * Indicates if the agent should provide citations in responses
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#provide_citations GenaiAgent#provide_citations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#provide_citations GenaiAgent#provide_citations}
   */
   readonly provideCitations?: boolean | cdktf.IResolvable;
   /**
   * Region where the Agent is deployed
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#region GenaiAgent#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#region GenaiAgent#region}
   */
   readonly region: string;
   /**
   * Retrieval method used
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#retrieval_method GenaiAgent#retrieval_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#retrieval_method GenaiAgent#retrieval_method}
   */
   readonly retrievalMethod?: string;
   /**
   * User who created the route
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#route_created_by GenaiAgent#route_created_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#route_created_by GenaiAgent#route_created_by}
   */
   readonly routeCreatedBy?: string;
   /**
   * Route name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#route_name GenaiAgent#route_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#route_name GenaiAgent#route_name}
   */
   readonly routeName?: string;
   /**
   * Route UUID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#route_uuid GenaiAgent#route_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#route_uuid GenaiAgent#route_uuid}
   */
   readonly routeUuid?: string;
   /**
   * List of Tags
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#tags GenaiAgent#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#tags GenaiAgent#tags}
   */
   readonly tags?: string[];
   /**
   * Agent temperature setting
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#temperature GenaiAgent#temperature}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#temperature GenaiAgent#temperature}
   */
   readonly temperature?: number;
   /**
   * Top P sampling parameter
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#top_p GenaiAgent#top_p}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#top_p GenaiAgent#top_p}
   */
   readonly topP?: number;
   /**
   * URL for the Agent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#url GenaiAgent#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#url GenaiAgent#url}
   */
   readonly url?: string;
   /**
   * User ID linked with the Agent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#user_id GenaiAgent#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#user_id GenaiAgent#user_id}
   */
   readonly userId?: string;
   /**
   * agent_guardrail block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#agent_guardrail GenaiAgent#agent_guardrail}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#agent_guardrail GenaiAgent#agent_guardrail}
   */
   readonly agentGuardrail?: GenaiAgentAgentGuardrail[] | cdktf.IResolvable;
   /**
   * anthropic_api_key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#anthropic_api_key GenaiAgent#anthropic_api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#anthropic_api_key GenaiAgent#anthropic_api_key}
   */
   readonly anthropicApiKey?: GenaiAgentAnthropicApiKey[] | cdktf.IResolvable;
   /**
   * api_key_infos block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#api_key_infos GenaiAgent#api_key_infos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#api_key_infos GenaiAgent#api_key_infos}
   */
   readonly apiKeyInfos?: GenaiAgentApiKeyInfos[] | cdktf.IResolvable;
   /**
   * api_keys block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#api_keys GenaiAgent#api_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#api_keys GenaiAgent#api_keys}
   */
   readonly apiKeys?: GenaiAgentApiKeys[] | cdktf.IResolvable;
   /**
   * chatbot block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#chatbot GenaiAgent#chatbot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#chatbot GenaiAgent#chatbot}
   */
   readonly chatbot?: GenaiAgentChatbot[] | cdktf.IResolvable;
   /**
   * chatbot_identifiers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#chatbot_identifiers GenaiAgent#chatbot_identifiers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#chatbot_identifiers GenaiAgent#chatbot_identifiers}
   */
   readonly chatbotIdentifiers?: GenaiAgentChatbotIdentifiers[] | cdktf.IResolvable;
   /**
   * child_agents block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#child_agents GenaiAgent#child_agents}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#child_agents GenaiAgent#child_agents}
   */
   readonly childAgents?: GenaiAgentChildAgents[] | cdktf.IResolvable;
   /**
   * deployment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#deployment GenaiAgent#deployment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#deployment GenaiAgent#deployment}
   */
   readonly deployment?: GenaiAgentDeployment[] | cdktf.IResolvable;
   /**
   * functions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#functions GenaiAgent#functions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#functions GenaiAgent#functions}
   */
   readonly functions?: GenaiAgentFunctions[] | cdktf.IResolvable;
   /**
   * knowledge_bases block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#knowledge_bases GenaiAgent#knowledge_bases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#knowledge_bases GenaiAgent#knowledge_bases}
   */
   readonly knowledgeBases?: GenaiAgentKnowledgeBases[] | cdktf.IResolvable;
   /**
   * model block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#model GenaiAgent#model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#model GenaiAgent#model}
   */
   readonly model?: GenaiAgentModel[] | cdktf.IResolvable;
   /**
   * open_ai_api_key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#open_ai_api_key GenaiAgent#open_ai_api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#open_ai_api_key GenaiAgent#open_ai_api_key}
   */
   readonly openAiApiKey?: GenaiAgentOpenAiApiKey[] | cdktf.IResolvable;
   /**
   * parent_agents block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#parent_agents GenaiAgent#parent_agents}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#parent_agents GenaiAgent#parent_agents}
   */
   readonly parentAgents?: GenaiAgentParentAgents[] | cdktf.IResolvable;
   /**
   * template block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#template GenaiAgent#template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#template GenaiAgent#template}
   */
   readonly template?: GenaiAgentTemplate[] | cdktf.IResolvable;
 }
@@ -246,55 +246,55 @@ export interface GenaiAgentAgentGuardrail {
   /**
   * Agent UUID for the Guardrail
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#agent_uuid GenaiAgent#agent_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#agent_uuid GenaiAgent#agent_uuid}
   */
   readonly agentUuid?: string;
   /**
   * Default response for the Guardrail
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#default_response GenaiAgent#default_response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#default_response GenaiAgent#default_response}
   */
   readonly defaultResponse?: string;
   /**
   * Description of the Guardrail
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#description GenaiAgent#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#description GenaiAgent#description}
   */
   readonly description?: string;
   /**
   * Guardrail UUID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#guardrail_uuid GenaiAgent#guardrail_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#guardrail_uuid GenaiAgent#guardrail_uuid}
   */
   readonly guardrailUuid?: string;
   /**
   * Indicates if the Guardrail is default
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#is_default GenaiAgent#is_default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#is_default GenaiAgent#is_default}
   */
   readonly isDefault?: boolean | cdktf.IResolvable;
   /**
   * Name of Guardrail
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#name GenaiAgent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#name GenaiAgent#name}
   */
   readonly name?: string;
   /**
   * Priority of the Guardrail
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#priority GenaiAgent#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#priority GenaiAgent#priority}
   */
   readonly priority?: number;
   /**
   * Type of the Guardrail
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#type GenaiAgent#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#type GenaiAgent#type}
   */
   readonly type?: string;
   /**
   * Guardrail UUID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
   */
   readonly uuid?: string;
 }
@@ -659,19 +659,19 @@ export interface GenaiAgentAnthropicApiKey {
   /**
   * Created By user ID for the API Key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#created_by GenaiAgent#created_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#created_by GenaiAgent#created_by}
   */
   readonly createdBy?: string;
   /**
   * Name of the API Key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#name GenaiAgent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#name GenaiAgent#name}
   */
   readonly name?: string;
   /**
   * API Key value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
   */
   readonly uuid?: string;
 }
@@ -862,25 +862,25 @@ export interface GenaiAgentApiKeyInfos {
   /**
   * Created By user ID for the API Key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#created_by GenaiAgent#created_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#created_by GenaiAgent#created_by}
   */
   readonly createdBy?: string;
   /**
   * Name of the API Key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#name GenaiAgent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#name GenaiAgent#name}
   */
   readonly name?: string;
   /**
   * Updated At timestamp for the API Key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#secret_key GenaiAgent#secret_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#secret_key GenaiAgent#secret_key}
   */
   readonly secretKey?: string;
   /**
   * API Key value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
   */
   readonly uuid?: string;
 }
@@ -1095,7 +1095,7 @@ export interface GenaiAgentApiKeys {
   /**
   * API Key value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#api_key GenaiAgent#api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#api_key GenaiAgent#api_key}
   */
   readonly apiKey?: string;
 }
@@ -1213,37 +1213,37 @@ export interface GenaiAgentChatbot {
   /**
   * Background color for the chatbot button
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#button_background_color GenaiAgent#button_background_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#button_background_color GenaiAgent#button_background_color}
   */
   readonly buttonBackgroundColor?: string;
   /**
   * Logo for the chatbot
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#logo GenaiAgent#logo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#logo GenaiAgent#logo}
   */
   readonly logo?: string;
   /**
   * Name of the chatbot
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#name GenaiAgent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#name GenaiAgent#name}
   */
   readonly name?: string;
   /**
   * Primary color for the chatbot
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#primary_color GenaiAgent#primary_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#primary_color GenaiAgent#primary_color}
   */
   readonly primaryColor?: string;
   /**
   * Secondary color for the chatbot
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#secondary_color GenaiAgent#secondary_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#secondary_color GenaiAgent#secondary_color}
   */
   readonly secondaryColor?: string;
   /**
   * Starting message for the chatbot
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#starting_message GenaiAgent#starting_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#starting_message GenaiAgent#starting_message}
   */
   readonly startingMessage?: string;
 }
@@ -1592,19 +1592,19 @@ export interface GenaiAgentChildAgentsAnthropicApiKey {
   /**
   * Created By user ID for the API Key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#created_by GenaiAgent#created_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#created_by GenaiAgent#created_by}
   */
   readonly createdBy?: string;
   /**
   * Name of the API Key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#name GenaiAgent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#name GenaiAgent#name}
   */
   readonly name?: string;
   /**
   * API Key value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
   */
   readonly uuid?: string;
 }
@@ -1795,25 +1795,25 @@ export interface GenaiAgentChildAgentsApiKeyInfos {
   /**
   * Created By user ID for the API Key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#created_by GenaiAgent#created_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#created_by GenaiAgent#created_by}
   */
   readonly createdBy?: string;
   /**
   * Name of the API Key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#name GenaiAgent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#name GenaiAgent#name}
   */
   readonly name?: string;
   /**
   * Updated At timestamp for the API Key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#secret_key GenaiAgent#secret_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#secret_key GenaiAgent#secret_key}
   */
   readonly secretKey?: string;
   /**
   * API Key value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
   */
   readonly uuid?: string;
 }
@@ -2028,7 +2028,7 @@ export interface GenaiAgentChildAgentsApiKeys {
   /**
   * API Key value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#api_key GenaiAgent#api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#api_key GenaiAgent#api_key}
   */
   readonly apiKey?: string;
 }
@@ -2146,37 +2146,37 @@ export interface GenaiAgentChildAgentsChatbot {
   /**
   * Background color for the chatbot button
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#button_background_color GenaiAgent#button_background_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#button_background_color GenaiAgent#button_background_color}
   */
   readonly buttonBackgroundColor?: string;
   /**
   * Logo for the chatbot
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#logo GenaiAgent#logo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#logo GenaiAgent#logo}
   */
   readonly logo?: string;
   /**
   * Name of the chatbot
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#name GenaiAgent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#name GenaiAgent#name}
   */
   readonly name?: string;
   /**
   * Primary color for the chatbot
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#primary_color GenaiAgent#primary_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#primary_color GenaiAgent#primary_color}
   */
   readonly primaryColor?: string;
   /**
   * Secondary color for the chatbot
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#secondary_color GenaiAgent#secondary_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#secondary_color GenaiAgent#secondary_color}
   */
   readonly secondaryColor?: string;
   /**
   * Starting message for the chatbot
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#starting_message GenaiAgent#starting_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#starting_message GenaiAgent#starting_message}
   */
   readonly startingMessage?: string;
 }
@@ -2525,31 +2525,31 @@ export interface GenaiAgentChildAgentsDeployment {
   /**
   * Name of the API Key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#name GenaiAgent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#name GenaiAgent#name}
   */
   readonly name?: string;
   /**
   * Status of the Deployment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#status GenaiAgent#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#status GenaiAgent#status}
   */
   readonly status?: string;
   /**
   * Url of the Deployment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#url GenaiAgent#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#url GenaiAgent#url}
   */
   readonly url?: string;
   /**
   * API Key value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
   */
   readonly uuid?: string;
   /**
   * Visibility of the Deployment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#visibility GenaiAgent#visibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#visibility GenaiAgent#visibility}
   */
   readonly visibility?: string;
 }
@@ -2793,73 +2793,73 @@ export interface GenaiAgentChildAgents {
   /**
   * Description for the Agent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#description GenaiAgent#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#description GenaiAgent#description}
   */
   readonly description?: string;
   /**
   * Instruction for the Agent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#instruction GenaiAgent#instruction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#instruction GenaiAgent#instruction}
   */
   readonly instruction: string;
   /**
   * Model UUID of the Agent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#model_uuid GenaiAgent#model_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#model_uuid GenaiAgent#model_uuid}
   */
   readonly modelUuid: string;
   /**
   * Name of the Agent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#name GenaiAgent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#name GenaiAgent#name}
   */
   readonly name: string;
   /**
   * Project ID of the Agent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#project_id GenaiAgent#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#project_id GenaiAgent#project_id}
   */
   readonly projectId: string;
   /**
   * Region where the Agent is deployed
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#region GenaiAgent#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#region GenaiAgent#region}
   */
   readonly region: string;
   /**
   * anthropic_api_key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#anthropic_api_key GenaiAgent#anthropic_api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#anthropic_api_key GenaiAgent#anthropic_api_key}
   */
   readonly anthropicApiKey?: GenaiAgentChildAgentsAnthropicApiKey[] | cdktf.IResolvable;
   /**
   * api_key_infos block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#api_key_infos GenaiAgent#api_key_infos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#api_key_infos GenaiAgent#api_key_infos}
   */
   readonly apiKeyInfos?: GenaiAgentChildAgentsApiKeyInfos[] | cdktf.IResolvable;
   /**
   * api_keys block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#api_keys GenaiAgent#api_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#api_keys GenaiAgent#api_keys}
   */
   readonly apiKeys?: GenaiAgentChildAgentsApiKeys[] | cdktf.IResolvable;
   /**
   * chatbot block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#chatbot GenaiAgent#chatbot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#chatbot GenaiAgent#chatbot}
   */
   readonly chatbot?: GenaiAgentChildAgentsChatbot[] | cdktf.IResolvable;
   /**
   * chatbot_identifiers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#chatbot_identifiers GenaiAgent#chatbot_identifiers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#chatbot_identifiers GenaiAgent#chatbot_identifiers}
   */
   readonly chatbotIdentifiers?: GenaiAgentChildAgentsChatbotIdentifiers[] | cdktf.IResolvable;
   /**
   * deployment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#deployment GenaiAgent#deployment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#deployment GenaiAgent#deployment}
   */
   readonly deployment?: GenaiAgentChildAgentsDeployment[] | cdktf.IResolvable;
 }
@@ -3286,31 +3286,31 @@ export interface GenaiAgentDeployment {
   /**
   * Name of the API Key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#name GenaiAgent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#name GenaiAgent#name}
   */
   readonly name?: string;
   /**
   * Status of the Deployment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#status GenaiAgent#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#status GenaiAgent#status}
   */
   readonly status?: string;
   /**
   * Url of the Deployment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#url GenaiAgent#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#url GenaiAgent#url}
   */
   readonly url?: string;
   /**
   * API Key value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
   */
   readonly uuid?: string;
   /**
   * Visibility of the Deployment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#visibility GenaiAgent#visibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#visibility GenaiAgent#visibility}
   */
   readonly visibility?: string;
 }
@@ -3554,49 +3554,49 @@ export interface GenaiAgentFunctions {
   /**
   * API Key value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#api_key GenaiAgent#api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#api_key GenaiAgent#api_key}
   */
   readonly apiKey?: string;
   /**
   * Description of the Function
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#description GenaiAgent#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#description GenaiAgent#description}
   */
   readonly description?: string;
   /**
   * Name of function
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#faasname GenaiAgent#faasname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#faasname GenaiAgent#faasname}
   */
   readonly faasname?: string;
   /**
   * Namespace of function
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#faasnamespace GenaiAgent#faasnamespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#faasnamespace GenaiAgent#faasnamespace}
   */
   readonly faasnamespace?: string;
   /**
   * Guardrail UUID for the Function
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#guardrail_uuid GenaiAgent#guardrail_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#guardrail_uuid GenaiAgent#guardrail_uuid}
   */
   readonly guardrailUuid?: string;
   /**
   * Name of function
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#name GenaiAgent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#name GenaiAgent#name}
   */
   readonly name?: string;
   /**
   * Url of the Deployment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#url GenaiAgent#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#url GenaiAgent#url}
   */
   readonly url?: string;
   /**
   * API Key value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
   */
   readonly uuid?: string;
 }
@@ -3927,37 +3927,37 @@ export interface GenaiAgentKnowledgeBasesLastIndexingJob {
   /**
   * Number of completed datasources in the last indexing job
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#completed_datasources GenaiAgent#completed_datasources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#completed_datasources GenaiAgent#completed_datasources}
   */
   readonly completedDatasources?: number;
   /**
   * Datasource UUIDs for the last indexing job
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#data_source_uuids GenaiAgent#data_source_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#data_source_uuids GenaiAgent#data_source_uuids}
   */
   readonly dataSourceUuids?: string[];
   /**
   * Phase of the last indexing job
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#phase GenaiAgent#phase}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#phase GenaiAgent#phase}
   */
   readonly phase?: string;
   /**
   * Number of tokens processed in the last indexing job
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#tokens GenaiAgent#tokens}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#tokens GenaiAgent#tokens}
   */
   readonly tokens?: number;
   /**
   * Total number of datasources in the last indexing job
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#total_datasources GenaiAgent#total_datasources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#total_datasources GenaiAgent#total_datasources}
   */
   readonly totalDatasources?: number;
   /**
   * UUID  of the last indexing job
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
   */
   readonly uuid?: string;
 }
@@ -4213,55 +4213,55 @@ export interface GenaiAgentKnowledgeBases {
   /**
   * Database ID of the Knowledge Base
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#database_id GenaiAgent#database_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#database_id GenaiAgent#database_id}
   */
   readonly databaseId?: string;
   /**
   * Embedding model UUID for the Knowledge Base
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#embedding_model_uuid GenaiAgent#embedding_model_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#embedding_model_uuid GenaiAgent#embedding_model_uuid}
   */
   readonly embeddingModelUuid?: string;
   /**
   * Indicates if the Knowledge Base is public
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#is_public GenaiAgent#is_public}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#is_public GenaiAgent#is_public}
   */
   readonly isPublic?: boolean | cdktf.IResolvable;
   /**
   * Name of the Knowledge Base
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#name GenaiAgent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#name GenaiAgent#name}
   */
   readonly name?: string;
   /**
   * Project ID of the Knowledge Base
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#project_id GenaiAgent#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#project_id GenaiAgent#project_id}
   */
   readonly projectId?: string;
   /**
   * Region of the Knowledge Base
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#region GenaiAgent#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#region GenaiAgent#region}
   */
   readonly region?: string;
   /**
   * List of tags
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#tags GenaiAgent#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#tags GenaiAgent#tags}
   */
   readonly tags?: string[];
   /**
   * User ID of the Knowledge Base
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#user_id GenaiAgent#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#user_id GenaiAgent#user_id}
   */
   readonly userId?: string;
   /**
   * last_indexing_job block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#last_indexing_job GenaiAgent#last_indexing_job}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#last_indexing_job GenaiAgent#last_indexing_job}
   */
   readonly lastIndexingJob?: GenaiAgentKnowledgeBasesLastIndexingJob;
 }
@@ -4631,25 +4631,25 @@ export interface GenaiAgentModelAgreement {
   /**
   * Description of the agreement
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#description GenaiAgent#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#description GenaiAgent#description}
   */
   readonly description?: string;
   /**
   * Name of the agreement
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#name GenaiAgent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#name GenaiAgent#name}
   */
   readonly name?: string;
   /**
   * URL of the agreement
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#url GenaiAgent#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#url GenaiAgent#url}
   */
   readonly url?: string;
   /**
   * UUID of the agreement
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
   */
   readonly uuid?: string;
 }
@@ -4854,19 +4854,19 @@ export interface GenaiAgentModelVersions {
   /**
   * Major version of the model
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#major GenaiAgent#major}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#major GenaiAgent#major}
   */
   readonly major?: number;
   /**
   * Minor version of the model
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#minor GenaiAgent#minor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#minor GenaiAgent#minor}
   */
   readonly minor?: number;
   /**
   * Patch version of the model
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#patch GenaiAgent#patch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#patch GenaiAgent#patch}
   */
   readonly patch?: number;
 }
@@ -5042,67 +5042,67 @@ export interface GenaiAgentModel {
   /**
   * Inference name of the model
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#inference_name GenaiAgent#inference_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#inference_name GenaiAgent#inference_name}
   */
   readonly inferenceName?: string;
   /**
   * Infernce version of the model
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#inference_version GenaiAgent#inference_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#inference_version GenaiAgent#inference_version}
   */
   readonly inferenceVersion?: string;
   /**
   * Indicates if the Model Base is foundational
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#is_foundational GenaiAgent#is_foundational}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#is_foundational GenaiAgent#is_foundational}
   */
   readonly isFoundational?: boolean | cdktf.IResolvable;
   /**
   * Name of the Knowledge Base
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#name GenaiAgent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#name GenaiAgent#name}
   */
   readonly name?: string;
   /**
   * Parent UUID of the Model
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#parent_uuid GenaiAgent#parent_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#parent_uuid GenaiAgent#parent_uuid}
   */
   readonly parentUuid?: string;
   /**
   * Provider of the Model
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#provider GenaiAgent#provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#provider GenaiAgent#provider}
   */
   readonly provider?: string;
   /**
   * Indicates if the Model upload is complete
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#upload_complete GenaiAgent#upload_complete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#upload_complete GenaiAgent#upload_complete}
   */
   readonly uploadComplete?: boolean | cdktf.IResolvable;
   /**
   * URL of the Model
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#url GenaiAgent#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#url GenaiAgent#url}
   */
   readonly url?: string;
   /**
   * List of Usecases for the Model
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#usecases GenaiAgent#usecases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#usecases GenaiAgent#usecases}
   */
   readonly usecases?: string[];
   /**
   * agreement block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#agreement GenaiAgent#agreement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#agreement GenaiAgent#agreement}
   */
   readonly agreement?: GenaiAgentModelAgreement[] | cdktf.IResolvable;
   /**
   * versions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#versions GenaiAgent#versions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#versions GenaiAgent#versions}
   */
   readonly versions?: GenaiAgentModelVersions[] | cdktf.IResolvable;
 }
@@ -5520,19 +5520,19 @@ export interface GenaiAgentOpenAiApiKey {
   /**
   * Created By user ID for the API Key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#created_by GenaiAgent#created_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#created_by GenaiAgent#created_by}
   */
   readonly createdBy?: string;
   /**
   * Name of the API Key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#name GenaiAgent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#name GenaiAgent#name}
   */
   readonly name?: string;
   /**
   * API Key value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
   */
   readonly uuid?: string;
 }
@@ -5723,19 +5723,19 @@ export interface GenaiAgentParentAgentsAnthropicApiKey {
   /**
   * Created By user ID for the API Key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#created_by GenaiAgent#created_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#created_by GenaiAgent#created_by}
   */
   readonly createdBy?: string;
   /**
   * Name of the API Key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#name GenaiAgent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#name GenaiAgent#name}
   */
   readonly name?: string;
   /**
   * API Key value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
   */
   readonly uuid?: string;
 }
@@ -5926,25 +5926,25 @@ export interface GenaiAgentParentAgentsApiKeyInfos {
   /**
   * Created By user ID for the API Key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#created_by GenaiAgent#created_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#created_by GenaiAgent#created_by}
   */
   readonly createdBy?: string;
   /**
   * Name of the API Key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#name GenaiAgent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#name GenaiAgent#name}
   */
   readonly name?: string;
   /**
   * Updated At timestamp for the API Key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#secret_key GenaiAgent#secret_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#secret_key GenaiAgent#secret_key}
   */
   readonly secretKey?: string;
   /**
   * API Key value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
   */
   readonly uuid?: string;
 }
@@ -6159,7 +6159,7 @@ export interface GenaiAgentParentAgentsApiKeys {
   /**
   * API Key value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#api_key GenaiAgent#api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#api_key GenaiAgent#api_key}
   */
   readonly apiKey?: string;
 }
@@ -6277,37 +6277,37 @@ export interface GenaiAgentParentAgentsChatbot {
   /**
   * Background color for the chatbot button
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#button_background_color GenaiAgent#button_background_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#button_background_color GenaiAgent#button_background_color}
   */
   readonly buttonBackgroundColor?: string;
   /**
   * Logo for the chatbot
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#logo GenaiAgent#logo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#logo GenaiAgent#logo}
   */
   readonly logo?: string;
   /**
   * Name of the chatbot
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#name GenaiAgent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#name GenaiAgent#name}
   */
   readonly name?: string;
   /**
   * Primary color for the chatbot
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#primary_color GenaiAgent#primary_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#primary_color GenaiAgent#primary_color}
   */
   readonly primaryColor?: string;
   /**
   * Secondary color for the chatbot
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#secondary_color GenaiAgent#secondary_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#secondary_color GenaiAgent#secondary_color}
   */
   readonly secondaryColor?: string;
   /**
   * Starting message for the chatbot
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#starting_message GenaiAgent#starting_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#starting_message GenaiAgent#starting_message}
   */
   readonly startingMessage?: string;
 }
@@ -6656,31 +6656,31 @@ export interface GenaiAgentParentAgentsDeployment {
   /**
   * Name of the API Key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#name GenaiAgent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#name GenaiAgent#name}
   */
   readonly name?: string;
   /**
   * Status of the Deployment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#status GenaiAgent#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#status GenaiAgent#status}
   */
   readonly status?: string;
   /**
   * Url of the Deployment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#url GenaiAgent#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#url GenaiAgent#url}
   */
   readonly url?: string;
   /**
   * API Key value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
   */
   readonly uuid?: string;
   /**
   * Visibility of the Deployment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#visibility GenaiAgent#visibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#visibility GenaiAgent#visibility}
   */
   readonly visibility?: string;
 }
@@ -6924,73 +6924,73 @@ export interface GenaiAgentParentAgents {
   /**
   * Description for the Agent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#description GenaiAgent#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#description GenaiAgent#description}
   */
   readonly description?: string;
   /**
   * Instruction for the Agent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#instruction GenaiAgent#instruction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#instruction GenaiAgent#instruction}
   */
   readonly instruction: string;
   /**
   * Model UUID of the Agent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#model_uuid GenaiAgent#model_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#model_uuid GenaiAgent#model_uuid}
   */
   readonly modelUuid: string;
   /**
   * Name of the Agent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#name GenaiAgent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#name GenaiAgent#name}
   */
   readonly name: string;
   /**
   * Project ID of the Agent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#project_id GenaiAgent#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#project_id GenaiAgent#project_id}
   */
   readonly projectId: string;
   /**
   * Region where the Agent is deployed
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#region GenaiAgent#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#region GenaiAgent#region}
   */
   readonly region: string;
   /**
   * anthropic_api_key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#anthropic_api_key GenaiAgent#anthropic_api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#anthropic_api_key GenaiAgent#anthropic_api_key}
   */
   readonly anthropicApiKey?: GenaiAgentParentAgentsAnthropicApiKey[] | cdktf.IResolvable;
   /**
   * api_key_infos block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#api_key_infos GenaiAgent#api_key_infos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#api_key_infos GenaiAgent#api_key_infos}
   */
   readonly apiKeyInfos?: GenaiAgentParentAgentsApiKeyInfos[] | cdktf.IResolvable;
   /**
   * api_keys block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#api_keys GenaiAgent#api_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#api_keys GenaiAgent#api_keys}
   */
   readonly apiKeys?: GenaiAgentParentAgentsApiKeys[] | cdktf.IResolvable;
   /**
   * chatbot block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#chatbot GenaiAgent#chatbot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#chatbot GenaiAgent#chatbot}
   */
   readonly chatbot?: GenaiAgentParentAgentsChatbot[] | cdktf.IResolvable;
   /**
   * chatbot_identifiers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#chatbot_identifiers GenaiAgent#chatbot_identifiers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#chatbot_identifiers GenaiAgent#chatbot_identifiers}
   */
   readonly chatbotIdentifiers?: GenaiAgentParentAgentsChatbotIdentifiers[] | cdktf.IResolvable;
   /**
   * deployment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#deployment GenaiAgent#deployment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#deployment GenaiAgent#deployment}
   */
   readonly deployment?: GenaiAgentParentAgentsDeployment[] | cdktf.IResolvable;
 }
@@ -7417,37 +7417,37 @@ export interface GenaiAgentTemplateKnowledgeBasesLastIndexingJob {
   /**
   * Number of completed datasources in the last indexing job
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#completed_datasources GenaiAgent#completed_datasources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#completed_datasources GenaiAgent#completed_datasources}
   */
   readonly completedDatasources?: number;
   /**
   * Datasource UUIDs for the last indexing job
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#data_source_uuids GenaiAgent#data_source_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#data_source_uuids GenaiAgent#data_source_uuids}
   */
   readonly dataSourceUuids?: string[];
   /**
   * Phase of the last indexing job
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#phase GenaiAgent#phase}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#phase GenaiAgent#phase}
   */
   readonly phase?: string;
   /**
   * Number of tokens processed in the last indexing job
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#tokens GenaiAgent#tokens}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#tokens GenaiAgent#tokens}
   */
   readonly tokens?: number;
   /**
   * Total number of datasources in the last indexing job
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#total_datasources GenaiAgent#total_datasources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#total_datasources GenaiAgent#total_datasources}
   */
   readonly totalDatasources?: number;
   /**
   * UUID  of the last indexing job
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
   */
   readonly uuid?: string;
 }
@@ -7703,55 +7703,55 @@ export interface GenaiAgentTemplateKnowledgeBases {
   /**
   * Database ID of the Knowledge Base
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#database_id GenaiAgent#database_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#database_id GenaiAgent#database_id}
   */
   readonly databaseId?: string;
   /**
   * Embedding model UUID for the Knowledge Base
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#embedding_model_uuid GenaiAgent#embedding_model_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#embedding_model_uuid GenaiAgent#embedding_model_uuid}
   */
   readonly embeddingModelUuid?: string;
   /**
   * Indicates if the Knowledge Base is public
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#is_public GenaiAgent#is_public}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#is_public GenaiAgent#is_public}
   */
   readonly isPublic?: boolean | cdktf.IResolvable;
   /**
   * Name of the Knowledge Base
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#name GenaiAgent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#name GenaiAgent#name}
   */
   readonly name?: string;
   /**
   * Project ID of the Knowledge Base
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#project_id GenaiAgent#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#project_id GenaiAgent#project_id}
   */
   readonly projectId?: string;
   /**
   * Region of the Knowledge Base
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#region GenaiAgent#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#region GenaiAgent#region}
   */
   readonly region?: string;
   /**
   * List of tags
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#tags GenaiAgent#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#tags GenaiAgent#tags}
   */
   readonly tags?: string[];
   /**
   * User ID of the Knowledge Base
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#user_id GenaiAgent#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#user_id GenaiAgent#user_id}
   */
   readonly userId?: string;
   /**
   * last_indexing_job block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#last_indexing_job GenaiAgent#last_indexing_job}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#last_indexing_job GenaiAgent#last_indexing_job}
   */
   readonly lastIndexingJob?: GenaiAgentTemplateKnowledgeBasesLastIndexingJob;
 }
@@ -8121,25 +8121,25 @@ export interface GenaiAgentTemplateModelAgreement {
   /**
   * Description of the agreement
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#description GenaiAgent#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#description GenaiAgent#description}
   */
   readonly description?: string;
   /**
   * Name of the agreement
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#name GenaiAgent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#name GenaiAgent#name}
   */
   readonly name?: string;
   /**
   * URL of the agreement
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#url GenaiAgent#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#url GenaiAgent#url}
   */
   readonly url?: string;
   /**
   * UUID of the agreement
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
   */
   readonly uuid?: string;
 }
@@ -8344,19 +8344,19 @@ export interface GenaiAgentTemplateModelVersions {
   /**
   * Major version of the model
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#major GenaiAgent#major}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#major GenaiAgent#major}
   */
   readonly major?: number;
   /**
   * Minor version of the model
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#minor GenaiAgent#minor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#minor GenaiAgent#minor}
   */
   readonly minor?: number;
   /**
   * Patch version of the model
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#patch GenaiAgent#patch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#patch GenaiAgent#patch}
   */
   readonly patch?: number;
 }
@@ -8532,67 +8532,67 @@ export interface GenaiAgentTemplateModel {
   /**
   * Inference name of the model
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#inference_name GenaiAgent#inference_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#inference_name GenaiAgent#inference_name}
   */
   readonly inferenceName?: string;
   /**
   * Infernce version of the model
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#inference_version GenaiAgent#inference_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#inference_version GenaiAgent#inference_version}
   */
   readonly inferenceVersion?: string;
   /**
   * Indicates if the Model Base is foundational
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#is_foundational GenaiAgent#is_foundational}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#is_foundational GenaiAgent#is_foundational}
   */
   readonly isFoundational?: boolean | cdktf.IResolvable;
   /**
   * Name of the Knowledge Base
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#name GenaiAgent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#name GenaiAgent#name}
   */
   readonly name?: string;
   /**
   * Parent UUID of the Model
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#parent_uuid GenaiAgent#parent_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#parent_uuid GenaiAgent#parent_uuid}
   */
   readonly parentUuid?: string;
   /**
   * Provider of the Model
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#provider GenaiAgent#provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#provider GenaiAgent#provider}
   */
   readonly provider?: string;
   /**
   * Indicates if the Model upload is complete
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#upload_complete GenaiAgent#upload_complete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#upload_complete GenaiAgent#upload_complete}
   */
   readonly uploadComplete?: boolean | cdktf.IResolvable;
   /**
   * URL of the Model
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#url GenaiAgent#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#url GenaiAgent#url}
   */
   readonly url?: string;
   /**
   * List of Usecases for the Model
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#usecases GenaiAgent#usecases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#usecases GenaiAgent#usecases}
   */
   readonly usecases?: string[];
   /**
   * agreement block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#agreement GenaiAgent#agreement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#agreement GenaiAgent#agreement}
   */
   readonly agreement?: GenaiAgentTemplateModelAgreement[] | cdktf.IResolvable;
   /**
   * versions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#versions GenaiAgent#versions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#versions GenaiAgent#versions}
   */
   readonly versions?: GenaiAgentTemplateModelVersions[] | cdktf.IResolvable;
 }
@@ -9010,61 +9010,61 @@ export interface GenaiAgentTemplate {
   /**
   * Description of the Agent Template
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#description GenaiAgent#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#description GenaiAgent#description}
   */
   readonly description?: string;
   /**
   * Instruction for the Agent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#instruction GenaiAgent#instruction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#instruction GenaiAgent#instruction}
   */
   readonly instruction?: string;
   /**
   * K value for the Agent Template
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#k GenaiAgent#k}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#k GenaiAgent#k}
   */
   readonly k?: number;
   /**
   * Maximum tokens allowed
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#max_tokens GenaiAgent#max_tokens}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#max_tokens GenaiAgent#max_tokens}
   */
   readonly maxTokens?: number;
   /**
   * Name of the Agent Template
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#name GenaiAgent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#name GenaiAgent#name}
   */
   readonly name?: string;
   /**
   * Agent temperature setting
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#temperature GenaiAgent#temperature}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#temperature GenaiAgent#temperature}
   */
   readonly temperature?: number;
   /**
   * Top P sampling parameter
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#top_p GenaiAgent#top_p}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#top_p GenaiAgent#top_p}
   */
   readonly topP?: number;
   /**
   * uuid of the Agent Template
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
   */
   readonly uuid?: string;
   /**
   * knowledge_bases block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#knowledge_bases GenaiAgent#knowledge_bases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#knowledge_bases GenaiAgent#knowledge_bases}
   */
   readonly knowledgeBases?: GenaiAgentTemplateKnowledgeBases[] | cdktf.IResolvable;
   /**
   * model block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#model GenaiAgent#model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#model GenaiAgent#model}
   */
   readonly model?: GenaiAgentTemplateModel[] | cdktf.IResolvable;
 }
@@ -9451,7 +9451,7 @@ export class GenaiAgentTemplateList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent digitalocean_genai_agent}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent digitalocean_genai_agent}
 */
 export class GenaiAgent extends cdktf.TerraformResource {
 
@@ -9467,7 +9467,7 @@ export class GenaiAgent extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GenaiAgent resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GenaiAgent to import
-  * @param importFromId The id of the existing GenaiAgent that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GenaiAgent that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GenaiAgent to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -9479,7 +9479,7 @@ export class GenaiAgent extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent digitalocean_genai_agent} Resource
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent digitalocean_genai_agent} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -9490,7 +9490,7 @@ export class GenaiAgent extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_genai_agent',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.68.0',
+        providerVersion: '2.69.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,

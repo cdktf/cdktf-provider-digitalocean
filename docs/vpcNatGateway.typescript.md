@@ -4,7 +4,7 @@
 
 ### VpcNatGateway <a name="VpcNatGateway" id="@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/vpc_nat_gateway digitalocean_vpc_nat_gateway}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/vpc_nat_gateway digitalocean_vpc_nat_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGateway.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGateway.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGateway.putVpcs">putVpcs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGateway.resetIcmpTimeoutSeconds">resetIcmpTimeoutSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGateway.resetProjectId">resetProjectId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGateway.resetTcpTimeoutSeconds">resetTcpTimeoutSeconds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGateway.resetUdpTimeoutSeconds">resetUdpTimeoutSeconds</a></code> | *No description.* |
 
@@ -386,6 +387,12 @@ public putVpcs(value: IResolvable | VpcNatGatewayVpcs[]): void
 public resetIcmpTimeoutSeconds(): void
 ```
 
+##### `resetProjectId` <a name="resetProjectId" id="@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGateway.resetProjectId"></a>
+
+```typescript
+public resetProjectId(): void
+```
+
 ##### `resetTcpTimeoutSeconds` <a name="resetTcpTimeoutSeconds" id="@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGateway.resetTcpTimeoutSeconds"></a>
 
 ```typescript
@@ -501,7 +508,7 @@ The construct id used in the generated config for the VpcNatGateway to import.
 
 The id of the existing VpcNatGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/vpc_nat_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/vpc_nat_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -539,6 +546,7 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGateway.property.vpcs">vpcs</a></code> | <code><a href="#@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGatewayVpcsList">VpcNatGatewayVpcsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGateway.property.icmpTimeoutSecondsInput">icmpTimeoutSecondsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGateway.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGateway.property.projectIdInput">projectIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGateway.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGateway.property.sizeInput">sizeInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGateway.property.tcpTimeoutSecondsInput">tcpTimeoutSecondsInput</a></code> | <code>number</code> | *No description.* |
@@ -547,6 +555,7 @@ Refer to the {@link https://registry.terraform.io/providers/digitalocean/digital
 | <code><a href="#@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGateway.property.vpcsInput">vpcsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGatewayVpcs">VpcNatGatewayVpcs</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGateway.property.icmpTimeoutSeconds">icmpTimeoutSeconds</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGateway.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGateway.property.projectId">projectId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGateway.property.region">region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGateway.property.size">size</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGateway.property.tcpTimeoutSeconds">tcpTimeoutSeconds</a></code> | <code>number</code> | *No description.* |
@@ -777,6 +786,16 @@ public readonly nameInput: string;
 
 ---
 
+##### `projectIdInput`<sup>Optional</sup> <a name="projectIdInput" id="@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGateway.property.projectIdInput"></a>
+
+```typescript
+public readonly projectIdInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGateway.property.regionInput"></a>
 
 ```typescript
@@ -851,6 +870,16 @@ public readonly icmpTimeoutSeconds: number;
 
 ```typescript
 public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `projectId`<sup>Required</sup> <a name="projectId" id="@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGateway.property.projectId"></a>
+
+```typescript
+public readonly projectId: string;
 ```
 
 - *Type:* string
@@ -954,6 +983,7 @@ const vpcNatGatewayConfig: vpcNatGateway.VpcNatGatewayConfig = { ... }
 | <code><a href="#@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGatewayConfig.property.type">type</a></code> | <code>string</code> | Type of the VPC NAT Gateway. |
 | <code><a href="#@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGatewayConfig.property.vpcs">vpcs</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGatewayVpcs">VpcNatGatewayVpcs</a>[]</code> | vpcs block. |
 | <code><a href="#@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGatewayConfig.property.icmpTimeoutSeconds">icmpTimeoutSeconds</a></code> | <code>number</code> | ICMP connection timeout (in seconds). |
+| <code><a href="#@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGatewayConfig.property.projectId">projectId</a></code> | <code>string</code> | ID of the project to which the VPC NAT Gateway will be assigned. |
 | <code><a href="#@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGatewayConfig.property.tcpTimeoutSeconds">tcpTimeoutSeconds</a></code> | <code>number</code> | TCP connection timeout (in seconds). |
 | <code><a href="#@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGatewayConfig.property.udpTimeoutSeconds">udpTimeoutSeconds</a></code> | <code>number</code> | UDP connection timeout (in seconds). |
 
@@ -1039,7 +1069,7 @@ public readonly name: string;
 
 Name of the VPC NAT Gateway.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/vpc_nat_gateway#name VpcNatGateway#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/vpc_nat_gateway#name VpcNatGateway#name}
 
 ---
 
@@ -1053,7 +1083,7 @@ public readonly region: string;
 
 Region of the VPC NAT Gateway.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/vpc_nat_gateway#region VpcNatGateway#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/vpc_nat_gateway#region VpcNatGateway#region}
 
 ---
 
@@ -1067,7 +1097,7 @@ public readonly size: number;
 
 Size of the VPC NAT Gateway.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/vpc_nat_gateway#size VpcNatGateway#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/vpc_nat_gateway#size VpcNatGateway#size}
 
 ---
 
@@ -1081,7 +1111,7 @@ public readonly type: string;
 
 Type of the VPC NAT Gateway.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/vpc_nat_gateway#type VpcNatGateway#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/vpc_nat_gateway#type VpcNatGateway#type}
 
 ---
 
@@ -1095,7 +1125,7 @@ public readonly vpcs: IResolvable | VpcNatGatewayVpcs[];
 
 vpcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/vpc_nat_gateway#vpcs VpcNatGateway#vpcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/vpc_nat_gateway#vpcs VpcNatGateway#vpcs}
 
 ---
 
@@ -1109,7 +1139,21 @@ public readonly icmpTimeoutSeconds: number;
 
 ICMP connection timeout (in seconds).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/vpc_nat_gateway#icmp_timeout_seconds VpcNatGateway#icmp_timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/vpc_nat_gateway#icmp_timeout_seconds VpcNatGateway#icmp_timeout_seconds}
+
+---
+
+##### `projectId`<sup>Optional</sup> <a name="projectId" id="@cdktf/provider-digitalocean.vpcNatGateway.VpcNatGatewayConfig.property.projectId"></a>
+
+```typescript
+public readonly projectId: string;
+```
+
+- *Type:* string
+
+ID of the project to which the VPC NAT Gateway will be assigned.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/vpc_nat_gateway#project_id VpcNatGateway#project_id}
 
 ---
 
@@ -1123,7 +1167,7 @@ public readonly tcpTimeoutSeconds: number;
 
 TCP connection timeout (in seconds).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/vpc_nat_gateway#tcp_timeout_seconds VpcNatGateway#tcp_timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/vpc_nat_gateway#tcp_timeout_seconds VpcNatGateway#tcp_timeout_seconds}
 
 ---
 
@@ -1137,7 +1181,7 @@ public readonly udpTimeoutSeconds: number;
 
 UDP connection timeout (in seconds).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/vpc_nat_gateway#udp_timeout_seconds VpcNatGateway#udp_timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/vpc_nat_gateway#udp_timeout_seconds VpcNatGateway#udp_timeout_seconds}
 
 ---
 
@@ -1192,7 +1236,7 @@ public readonly vpcUuid: string;
 
 ID of the ingress VPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/vpc_nat_gateway#vpc_uuid VpcNatGateway#vpc_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/vpc_nat_gateway#vpc_uuid VpcNatGateway#vpc_uuid}
 
 ---
 
@@ -1206,7 +1250,7 @@ public readonly defaultGateway: boolean | IResolvable;
 
 Indicates if this is the default VPC NAT Gateway in the VPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/vpc_nat_gateway#default_gateway VpcNatGateway#default_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/vpc_nat_gateway#default_gateway VpcNatGateway#default_gateway}
 
 ---
 

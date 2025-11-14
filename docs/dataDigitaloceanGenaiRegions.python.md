@@ -4,7 +4,7 @@
 
 ### DataDigitaloceanGenaiRegions <a name="DataDigitaloceanGenaiRegions" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_regions digitalocean_genai_regions}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_regions digitalocean_genai_regions}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegions.Initializer"></a>
 
@@ -39,7 +39,7 @@ dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegions(
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegions.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegions.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegions.Initializer.parameter.filter">filter</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegionsFilter">DataDigitaloceanGenaiRegionsFilter</a>]</code> | filter block. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegions.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_regions#id DataDigitaloceanGenaiRegions#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegions.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_regions#id DataDigitaloceanGenaiRegions#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegions.Initializer.parameter.sort">sort</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegionsSort">DataDigitaloceanGenaiRegionsSort</a>]</code> | sort block. |
 
 ---
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_regions#filter DataDigitaloceanGenaiRegions#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_regions#filter DataDigitaloceanGenaiRegions#filter}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_regions#id DataDigitaloceanGenaiRegions#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_regions#id DataDigitaloceanGenaiRegions#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -131,7 +131,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 sort block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_regions#sort DataDigitaloceanGenaiRegions#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_regions#sort DataDigitaloceanGenaiRegions#sort}
 
 ---
 
@@ -541,7 +541,7 @@ The construct id used in the generated config for the DataDigitaloceanGenaiRegio
 
 The id of the existing DataDigitaloceanGenaiRegions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_regions#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_regions#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -824,7 +824,7 @@ dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegionsConfig(
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegionsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegionsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegionsConfig.property.filter">filter</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegionsFilter">DataDigitaloceanGenaiRegionsFilter</a>]</code> | filter block. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegionsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_regions#id DataDigitaloceanGenaiRegions#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegionsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_regions#id DataDigitaloceanGenaiRegions#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegionsConfig.property.sort">sort</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegionsSort">DataDigitaloceanGenaiRegionsSort</a>]</code> | sort block. |
 
 ---
@@ -909,7 +909,7 @@ filter: IResolvable | typing.List[DataDigitaloceanGenaiRegionsFilter]
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_regions#filter DataDigitaloceanGenaiRegions#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_regions#filter DataDigitaloceanGenaiRegions#filter}
 
 ---
 
@@ -921,7 +921,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_regions#id DataDigitaloceanGenaiRegions#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_regions#id DataDigitaloceanGenaiRegions#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -938,7 +938,7 @@ sort: IResolvable | typing.List[DataDigitaloceanGenaiRegionsSort]
 
 sort block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_regions#sort DataDigitaloceanGenaiRegions#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_regions#sort DataDigitaloceanGenaiRegions#sort}
 
 ---
 
@@ -961,10 +961,10 @@ dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegionsFilter(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegionsFilter.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_regions#key DataDigitaloceanGenaiRegions#key}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegionsFilter.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_regions#values DataDigitaloceanGenaiRegions#values}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegionsFilter.property.all">all</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_regions#all DataDigitaloceanGenaiRegions#all}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegionsFilter.property.matchBy">match_by</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_regions#match_by DataDigitaloceanGenaiRegions#match_by}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegionsFilter.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_regions#key DataDigitaloceanGenaiRegions#key}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegionsFilter.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_regions#values DataDigitaloceanGenaiRegions#values}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegionsFilter.property.all">all</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_regions#all DataDigitaloceanGenaiRegions#all}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegionsFilter.property.matchBy">match_by</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_regions#match_by DataDigitaloceanGenaiRegions#match_by}. |
 
 ---
 
@@ -976,7 +976,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_regions#key DataDigitaloceanGenaiRegions#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_regions#key DataDigitaloceanGenaiRegions#key}.
 
 ---
 
@@ -988,7 +988,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_regions#values DataDigitaloceanGenaiRegions#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_regions#values DataDigitaloceanGenaiRegions#values}.
 
 ---
 
@@ -1000,7 +1000,7 @@ all: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_regions#all DataDigitaloceanGenaiRegions#all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_regions#all DataDigitaloceanGenaiRegions#all}.
 
 ---
 
@@ -1012,7 +1012,7 @@ match_by: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_regions#match_by DataDigitaloceanGenaiRegions#match_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_regions#match_by DataDigitaloceanGenaiRegions#match_by}.
 
 ---
 
@@ -1044,8 +1044,8 @@ dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegionsSort(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegionsSort.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_regions#key DataDigitaloceanGenaiRegions#key}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegionsSort.property.direction">direction</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_regions#direction DataDigitaloceanGenaiRegions#direction}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegionsSort.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_regions#key DataDigitaloceanGenaiRegions#key}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegionsSort.property.direction">direction</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_regions#direction DataDigitaloceanGenaiRegions#direction}. |
 
 ---
 
@@ -1057,7 +1057,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_regions#key DataDigitaloceanGenaiRegions#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_regions#key DataDigitaloceanGenaiRegions#key}.
 
 ---
 
@@ -1069,7 +1069,7 @@ direction: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_regions#direction DataDigitaloceanGenaiRegions#direction}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_regions#direction DataDigitaloceanGenaiRegions#direction}.
 
 ---
 

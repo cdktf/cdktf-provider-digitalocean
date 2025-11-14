@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/vpc_nat_gateway
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/vpc_nat_gateway
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,49 +15,55 @@ export interface VpcNatGatewayConfig extends cdktf.TerraformMetaArguments {
   /**
   * ICMP connection timeout (in seconds)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/vpc_nat_gateway#icmp_timeout_seconds VpcNatGateway#icmp_timeout_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/vpc_nat_gateway#icmp_timeout_seconds VpcNatGateway#icmp_timeout_seconds}
   */
   readonly icmpTimeoutSeconds?: number;
   /**
   * Name of the VPC NAT Gateway
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/vpc_nat_gateway#name VpcNatGateway#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/vpc_nat_gateway#name VpcNatGateway#name}
   */
   readonly name: string;
   /**
+  * ID of the project to which the VPC NAT Gateway will be assigned.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/vpc_nat_gateway#project_id VpcNatGateway#project_id}
+  */
+  readonly projectId?: string;
+  /**
   * Region of the VPC NAT Gateway
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/vpc_nat_gateway#region VpcNatGateway#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/vpc_nat_gateway#region VpcNatGateway#region}
   */
   readonly region: string;
   /**
   * Size of the VPC NAT Gateway
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/vpc_nat_gateway#size VpcNatGateway#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/vpc_nat_gateway#size VpcNatGateway#size}
   */
   readonly size: number;
   /**
   * TCP connection timeout (in seconds)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/vpc_nat_gateway#tcp_timeout_seconds VpcNatGateway#tcp_timeout_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/vpc_nat_gateway#tcp_timeout_seconds VpcNatGateway#tcp_timeout_seconds}
   */
   readonly tcpTimeoutSeconds?: number;
   /**
   * Type of the VPC NAT Gateway
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/vpc_nat_gateway#type VpcNatGateway#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/vpc_nat_gateway#type VpcNatGateway#type}
   */
   readonly type: string;
   /**
   * UDP connection timeout (in seconds)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/vpc_nat_gateway#udp_timeout_seconds VpcNatGateway#udp_timeout_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/vpc_nat_gateway#udp_timeout_seconds VpcNatGateway#udp_timeout_seconds}
   */
   readonly udpTimeoutSeconds?: number;
   /**
   * vpcs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/vpc_nat_gateway#vpcs VpcNatGateway#vpcs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/vpc_nat_gateway#vpcs VpcNatGateway#vpcs}
   */
   readonly vpcs: VpcNatGatewayVpcs[] | cdktf.IResolvable;
 }
@@ -216,13 +222,13 @@ export interface VpcNatGatewayVpcs {
   /**
   * Indicates if this is the default VPC NAT Gateway in the VPC
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/vpc_nat_gateway#default_gateway VpcNatGateway#default_gateway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/vpc_nat_gateway#default_gateway VpcNatGateway#default_gateway}
   */
   readonly defaultGateway?: boolean | cdktf.IResolvable;
   /**
   * ID of the ingress VPC
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/vpc_nat_gateway#vpc_uuid VpcNatGateway#vpc_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/vpc_nat_gateway#vpc_uuid VpcNatGateway#vpc_uuid}
   */
   readonly vpcUuid: string;
 }
@@ -369,7 +375,7 @@ export class VpcNatGatewayVpcsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/vpc_nat_gateway digitalocean_vpc_nat_gateway}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/vpc_nat_gateway digitalocean_vpc_nat_gateway}
 */
 export class VpcNatGateway extends cdktf.TerraformResource {
 
@@ -385,7 +391,7 @@ export class VpcNatGateway extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VpcNatGateway resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpcNatGateway to import
-  * @param importFromId The id of the existing VpcNatGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/vpc_nat_gateway#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VpcNatGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/vpc_nat_gateway#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpcNatGateway to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -397,7 +403,7 @@ export class VpcNatGateway extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/vpc_nat_gateway digitalocean_vpc_nat_gateway} Resource
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/vpc_nat_gateway digitalocean_vpc_nat_gateway} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -408,7 +414,7 @@ export class VpcNatGateway extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_vpc_nat_gateway',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.68.0',
+        providerVersion: '2.69.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
@@ -421,6 +427,7 @@ export class VpcNatGateway extends cdktf.TerraformResource {
     });
     this._icmpTimeoutSeconds = config.icmpTimeoutSeconds;
     this._name = config.name;
+    this._projectId = config.projectId;
     this._region = config.region;
     this._size = config.size;
     this._tcpTimeoutSeconds = config.tcpTimeoutSeconds;
@@ -476,6 +483,22 @@ export class VpcNatGateway extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // project_id - computed: true, optional: true, required: false
+  private _projectId?: string; 
+  public get projectId() {
+    return this.getStringAttribute('project_id');
+  }
+  public set projectId(value: string) {
+    this._projectId = value;
+  }
+  public resetProjectId() {
+    this._projectId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectIdInput() {
+    return this._projectId;
   }
 
   // region - computed: false, optional: false, required: true
@@ -580,6 +603,7 @@ export class VpcNatGateway extends cdktf.TerraformResource {
     return {
       icmp_timeout_seconds: cdktf.numberToTerraform(this._icmpTimeoutSeconds),
       name: cdktf.stringToTerraform(this._name),
+      project_id: cdktf.stringToTerraform(this._projectId),
       region: cdktf.stringToTerraform(this._region),
       size: cdktf.numberToTerraform(this._size),
       tcp_timeout_seconds: cdktf.numberToTerraform(this._tcpTimeoutSeconds),
@@ -599,6 +623,12 @@ export class VpcNatGateway extends cdktf.TerraformResource {
       },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

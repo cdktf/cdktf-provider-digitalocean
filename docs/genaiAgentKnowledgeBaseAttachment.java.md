@@ -4,7 +4,7 @@
 
 ### GenaiAgentKnowledgeBaseAttachment <a name="GenaiAgentKnowledgeBaseAttachment" id="@cdktf/provider-digitalocean.genaiAgentKnowledgeBaseAttachment.GenaiAgentKnowledgeBaseAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent_knowledge_base_attachment digitalocean_genai_agent_knowledge_base_attachment}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent_knowledge_base_attachment digitalocean_genai_agent_knowledge_base_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgentKnowledgeBaseAttachment.GenaiAgentKnowledgeBaseAttachment.Initializer"></a>
 
@@ -38,7 +38,7 @@ GenaiAgentKnowledgeBaseAttachment.Builder.create(Construct scope, java.lang.Stri
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgentKnowledgeBaseAttachment.GenaiAgentKnowledgeBaseAttachment.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgentKnowledgeBaseAttachment.GenaiAgentKnowledgeBaseAttachment.Initializer.parameter.agentUuid">agentUuid</a></code> | <code>java.lang.String</code> | A unique identifier for an agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgentKnowledgeBaseAttachment.GenaiAgentKnowledgeBaseAttachment.Initializer.parameter.knowledgeBaseUuid">knowledgeBaseUuid</a></code> | <code>java.lang.String</code> | A unique identifier for a knowledge base. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgentKnowledgeBaseAttachment.GenaiAgentKnowledgeBaseAttachment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent_knowledge_base_attachment#id GenaiAgentKnowledgeBaseAttachment#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgentKnowledgeBaseAttachment.GenaiAgentKnowledgeBaseAttachment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent_knowledge_base_attachment#id GenaiAgentKnowledgeBaseAttachment#id}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 A unique identifier for an agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent_knowledge_base_attachment#agent_uuid GenaiAgentKnowledgeBaseAttachment#agent_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent_knowledge_base_attachment#agent_uuid GenaiAgentKnowledgeBaseAttachment#agent_uuid}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 A unique identifier for a knowledge base.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent_knowledge_base_attachment#knowledge_base_uuid GenaiAgentKnowledgeBaseAttachment#knowledge_base_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent_knowledge_base_attachment#knowledge_base_uuid GenaiAgentKnowledgeBaseAttachment#knowledge_base_uuid}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent_knowledge_base_attachment#id GenaiAgentKnowledgeBaseAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent_knowledge_base_attachment#id GenaiAgentKnowledgeBaseAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -563,7 +563,7 @@ The construct id used in the generated config for the GenaiAgentKnowledgeBaseAtt
 
 The id of the existing GenaiAgentKnowledgeBaseAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent_knowledge_base_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent_knowledge_base_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -858,7 +858,7 @@ GenaiAgentKnowledgeBaseAttachmentConfig.builder()
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgentKnowledgeBaseAttachment.GenaiAgentKnowledgeBaseAttachmentConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgentKnowledgeBaseAttachment.GenaiAgentKnowledgeBaseAttachmentConfig.property.agentUuid">agentUuid</a></code> | <code>java.lang.String</code> | A unique identifier for an agent. |
 | <code><a href="#@cdktf/provider-digitalocean.genaiAgentKnowledgeBaseAttachment.GenaiAgentKnowledgeBaseAttachmentConfig.property.knowledgeBaseUuid">knowledgeBaseUuid</a></code> | <code>java.lang.String</code> | A unique identifier for a knowledge base. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiAgentKnowledgeBaseAttachment.GenaiAgentKnowledgeBaseAttachmentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent_knowledge_base_attachment#id GenaiAgentKnowledgeBaseAttachment#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiAgentKnowledgeBaseAttachment.GenaiAgentKnowledgeBaseAttachmentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent_knowledge_base_attachment#id GenaiAgentKnowledgeBaseAttachment#id}. |
 
 ---
 
@@ -942,7 +942,7 @@ public java.lang.String getAgentUuid();
 
 A unique identifier for an agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent_knowledge_base_attachment#agent_uuid GenaiAgentKnowledgeBaseAttachment#agent_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent_knowledge_base_attachment#agent_uuid GenaiAgentKnowledgeBaseAttachment#agent_uuid}
 
 ---
 
@@ -956,7 +956,7 @@ public java.lang.String getKnowledgeBaseUuid();
 
 A unique identifier for a knowledge base.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent_knowledge_base_attachment#knowledge_base_uuid GenaiAgentKnowledgeBaseAttachment#knowledge_base_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent_knowledge_base_attachment#knowledge_base_uuid GenaiAgentKnowledgeBaseAttachment#knowledge_base_uuid}
 
 ---
 
@@ -968,7 +968,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent_knowledge_base_attachment#id GenaiAgentKnowledgeBaseAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_agent_knowledge_base_attachment#id GenaiAgentKnowledgeBaseAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
