@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_regions
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_regions
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataDigitaloceanGenaiRegionsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_regions#id DataDigitaloceanGenaiRegions#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_regions#id DataDigitaloceanGenaiRegions#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +22,13 @@ export interface DataDigitaloceanGenaiRegionsConfig extends cdktf.TerraformMetaA
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_regions#filter DataDigitaloceanGenaiRegions#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_regions#filter DataDigitaloceanGenaiRegions#filter}
   */
   readonly filter?: DataDigitaloceanGenaiRegionsFilter[] | cdktf.IResolvable;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_regions#sort DataDigitaloceanGenaiRegions#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_regions#sort DataDigitaloceanGenaiRegions#sort}
   */
   readonly sort?: DataDigitaloceanGenaiRegionsSort[] | cdktf.IResolvable;
 }
@@ -129,19 +129,19 @@ export class DataDigitaloceanGenaiRegionsRegionsList extends cdktf.ComplexList {
 }
 export interface DataDigitaloceanGenaiRegionsFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_regions#all DataDigitaloceanGenaiRegions#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_regions#all DataDigitaloceanGenaiRegions#all}
   */
   readonly all?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_regions#key DataDigitaloceanGenaiRegions#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_regions#key DataDigitaloceanGenaiRegions#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_regions#match_by DataDigitaloceanGenaiRegions#match_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_regions#match_by DataDigitaloceanGenaiRegions#match_by}
   */
   readonly matchBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_regions#values DataDigitaloceanGenaiRegions#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_regions#values DataDigitaloceanGenaiRegions#values}
   */
   readonly values: string[];
 }
@@ -338,11 +338,11 @@ export class DataDigitaloceanGenaiRegionsFilterList extends cdktf.ComplexList {
 }
 export interface DataDigitaloceanGenaiRegionsSort {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_regions#direction DataDigitaloceanGenaiRegions#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_regions#direction DataDigitaloceanGenaiRegions#direction}
   */
   readonly direction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_regions#key DataDigitaloceanGenaiRegions#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_regions#key DataDigitaloceanGenaiRegions#key}
   */
   readonly key: string;
 }
@@ -484,7 +484,7 @@ export class DataDigitaloceanGenaiRegionsSortList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_regions digitalocean_genai_regions}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_regions digitalocean_genai_regions}
 */
 export class DataDigitaloceanGenaiRegions extends cdktf.TerraformDataSource {
 
@@ -500,7 +500,7 @@ export class DataDigitaloceanGenaiRegions extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDigitaloceanGenaiRegions resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDigitaloceanGenaiRegions to import
-  * @param importFromId The id of the existing DataDigitaloceanGenaiRegions that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_regions#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDigitaloceanGenaiRegions that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_regions#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDigitaloceanGenaiRegions to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -512,7 +512,7 @@ export class DataDigitaloceanGenaiRegions extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_regions digitalocean_genai_regions} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_regions digitalocean_genai_regions} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -523,7 +523,7 @@ export class DataDigitaloceanGenaiRegions extends cdktf.TerraformDataSource {
       terraformResourceType: 'digitalocean_genai_regions',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.68.0',
+        providerVersion: '2.69.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
