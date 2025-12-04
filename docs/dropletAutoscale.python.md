@@ -4,7 +4,7 @@
 
 ### DropletAutoscale <a name="DropletAutoscale" id="@cdktf/provider-digitalocean.dropletAutoscale.DropletAutoscale"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale digitalocean_droplet_autoscale}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale digitalocean_droplet_autoscale}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dropletAutoscale.DropletAutoscale.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#config DropletAutoscale#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#config DropletAutoscale#config}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 droplet_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#droplet_template DropletAutoscale#droplet_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#droplet_template DropletAutoscale#droplet_template}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Name of the Droplet autoscale pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#name DropletAutoscale#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#name DropletAutoscale#name}
 
 ---
 
@@ -510,7 +510,7 @@ def put_config(
 
 Cooldown duration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#cooldown_minutes DropletAutoscale#cooldown_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#cooldown_minutes DropletAutoscale#cooldown_minutes}
 
 ---
 
@@ -520,7 +520,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Max number of members.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#max_instances DropletAutoscale#max_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#max_instances DropletAutoscale#max_instances}
 
 ---
 
@@ -530,7 +530,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Min number of members.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#min_instances DropletAutoscale#min_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#min_instances DropletAutoscale#min_instances}
 
 ---
 
@@ -540,7 +540,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 CPU target threshold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#target_cpu_utilization DropletAutoscale#target_cpu_utilization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#target_cpu_utilization DropletAutoscale#target_cpu_utilization}
 
 ---
 
@@ -550,7 +550,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Memory target threshold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#target_memory_utilization DropletAutoscale#target_memory_utilization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#target_memory_utilization DropletAutoscale#target_memory_utilization}
 
 ---
 
@@ -560,7 +560,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Target number of members.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#target_number_instances DropletAutoscale#target_number_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#target_number_instances DropletAutoscale#target_number_instances}
 
 ---
 
@@ -587,7 +587,7 @@ def put_droplet_template(
 
 Droplet image.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#image DropletAutoscale#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#image DropletAutoscale#image}
 
 ---
 
@@ -597,7 +597,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Droplet region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#region DropletAutoscale#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#region DropletAutoscale#region}
 
 ---
 
@@ -607,7 +607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Droplet size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#size DropletAutoscale#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#size DropletAutoscale#size}
 
 ---
 
@@ -617,7 +617,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Droplet SSH keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#ssh_keys DropletAutoscale#ssh_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#ssh_keys DropletAutoscale#ssh_keys}
 
 ---
 
@@ -627,7 +627,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Enable droplet IPv6.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#ipv6 DropletAutoscale#ipv6}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#ipv6 DropletAutoscale#ipv6}
 
 ---
 
@@ -637,7 +637,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Droplet project ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#project_id DropletAutoscale#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#project_id DropletAutoscale#project_id}
 
 ---
 
@@ -647,7 +647,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Droplet tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#tags DropletAutoscale#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#tags DropletAutoscale#tags}
 
 ---
 
@@ -657,7 +657,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Droplet user data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#user_data DropletAutoscale#user_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#user_data DropletAutoscale#user_data}
 
 ---
 
@@ -667,7 +667,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Droplet VPC UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#vpc_uuid DropletAutoscale#vpc_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#vpc_uuid DropletAutoscale#vpc_uuid}
 
 ---
 
@@ -677,7 +677,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 Enable droplet agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#with_droplet_agent DropletAutoscale#with_droplet_agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#with_droplet_agent DropletAutoscale#with_droplet_agent}
 
 ---
 
@@ -795,7 +795,7 @@ The construct id used in the generated config for the DropletAutoscale to import
 
 The id of the existing DropletAutoscale that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1229,7 +1229,7 @@ config: DropletAutoscaleConfigA
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#config DropletAutoscale#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#config DropletAutoscale#config}
 
 ---
 
@@ -1243,7 +1243,7 @@ droplet_template: DropletAutoscaleDropletTemplate
 
 droplet_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#droplet_template DropletAutoscale#droplet_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#droplet_template DropletAutoscale#droplet_template}
 
 ---
 
@@ -1257,7 +1257,7 @@ name: str
 
 Name of the Droplet autoscale pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#name DropletAutoscale#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#name DropletAutoscale#name}
 
 ---
 
@@ -1301,7 +1301,7 @@ cooldown_minutes: typing.Union[int, float]
 
 Cooldown duration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#cooldown_minutes DropletAutoscale#cooldown_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#cooldown_minutes DropletAutoscale#cooldown_minutes}
 
 ---
 
@@ -1315,7 +1315,7 @@ max_instances: typing.Union[int, float]
 
 Max number of members.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#max_instances DropletAutoscale#max_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#max_instances DropletAutoscale#max_instances}
 
 ---
 
@@ -1329,7 +1329,7 @@ min_instances: typing.Union[int, float]
 
 Min number of members.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#min_instances DropletAutoscale#min_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#min_instances DropletAutoscale#min_instances}
 
 ---
 
@@ -1343,7 +1343,7 @@ target_cpu_utilization: typing.Union[int, float]
 
 CPU target threshold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#target_cpu_utilization DropletAutoscale#target_cpu_utilization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#target_cpu_utilization DropletAutoscale#target_cpu_utilization}
 
 ---
 
@@ -1357,7 +1357,7 @@ target_memory_utilization: typing.Union[int, float]
 
 Memory target threshold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#target_memory_utilization DropletAutoscale#target_memory_utilization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#target_memory_utilization DropletAutoscale#target_memory_utilization}
 
 ---
 
@@ -1371,7 +1371,7 @@ target_number_instances: typing.Union[int, float]
 
 Target number of members.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#target_number_instances DropletAutoscale#target_number_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#target_number_instances DropletAutoscale#target_number_instances}
 
 ---
 
@@ -1434,7 +1434,7 @@ image: str
 
 Droplet image.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#image DropletAutoscale#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#image DropletAutoscale#image}
 
 ---
 
@@ -1448,7 +1448,7 @@ region: str
 
 Droplet region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#region DropletAutoscale#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#region DropletAutoscale#region}
 
 ---
 
@@ -1462,7 +1462,7 @@ size: str
 
 Droplet size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#size DropletAutoscale#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#size DropletAutoscale#size}
 
 ---
 
@@ -1476,7 +1476,7 @@ ssh_keys: typing.List[str]
 
 Droplet SSH keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#ssh_keys DropletAutoscale#ssh_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#ssh_keys DropletAutoscale#ssh_keys}
 
 ---
 
@@ -1490,7 +1490,7 @@ ipv6: bool | IResolvable
 
 Enable droplet IPv6.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#ipv6 DropletAutoscale#ipv6}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#ipv6 DropletAutoscale#ipv6}
 
 ---
 
@@ -1504,7 +1504,7 @@ project_id: str
 
 Droplet project ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#project_id DropletAutoscale#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#project_id DropletAutoscale#project_id}
 
 ---
 
@@ -1518,7 +1518,7 @@ tags: typing.List[str]
 
 Droplet tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#tags DropletAutoscale#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#tags DropletAutoscale#tags}
 
 ---
 
@@ -1532,7 +1532,7 @@ user_data: str
 
 Droplet user data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#user_data DropletAutoscale#user_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#user_data DropletAutoscale#user_data}
 
 ---
 
@@ -1546,7 +1546,7 @@ vpc_uuid: str
 
 Droplet VPC UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#vpc_uuid DropletAutoscale#vpc_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#vpc_uuid DropletAutoscale#vpc_uuid}
 
 ---
 
@@ -1560,7 +1560,7 @@ with_droplet_agent: bool | IResolvable
 
 Enable droplet agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/droplet_autoscale#with_droplet_agent DropletAutoscale#with_droplet_agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/droplet_autoscale#with_droplet_agent DropletAutoscale#with_droplet_agent}
 
 ---
 

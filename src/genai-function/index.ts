@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_function
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_function
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,35 +15,35 @@ export interface GenaiFunctionConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the GenAI resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_function#agent_id GenaiFunction#agent_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_function#agent_id GenaiFunction#agent_id}
   */
   readonly agentId: string;
   /**
   * The region where the GenAI resource will be created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_function#description GenaiFunction#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_function#description GenaiFunction#description}
   */
   readonly description: string;
   /**
   * The model to use for the GenAI resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_function#faas_name GenaiFunction#faas_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_function#faas_name GenaiFunction#faas_name}
   */
   readonly faasName?: string;
   /**
   * The current status of the GenAI resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_function#faas_namespace GenaiFunction#faas_namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_function#faas_namespace GenaiFunction#faas_namespace}
   */
   readonly faasNamespace: string;
   /**
   * The creation timestamp of the GenAI resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_function#function_name GenaiFunction#function_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_function#function_name GenaiFunction#function_name}
   */
   readonly functionName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_function#id GenaiFunction#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_function#id GenaiFunction#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,19 +52,19 @@ export interface GenaiFunctionConfig extends cdktf.TerraformMetaArguments {
   /**
   * The input schema of the GenAI resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_function#input_schema GenaiFunction#input_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_function#input_schema GenaiFunction#input_schema}
   */
   readonly inputSchema: string;
   /**
   * The output schema of the GenAI resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_function#output_schema GenaiFunction#output_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_function#output_schema GenaiFunction#output_schema}
   */
   readonly outputSchema?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_function digitalocean_genai_function}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_function digitalocean_genai_function}
 */
 export class GenaiFunction extends cdktf.TerraformResource {
 
@@ -80,7 +80,7 @@ export class GenaiFunction extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GenaiFunction resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GenaiFunction to import
-  * @param importFromId The id of the existing GenaiFunction that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_function#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GenaiFunction that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_function#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GenaiFunction to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -92,7 +92,7 @@ export class GenaiFunction extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_function digitalocean_genai_function} Resource
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_function digitalocean_genai_function} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -103,7 +103,7 @@ export class GenaiFunction extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_genai_function',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.69.0',
+        providerVersion: '2.70.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### ReservedIpv6Assignment <a name="ReservedIpv6Assignment" id="@cdktf/provider-digitalocean.reservedIpv6Assignment.ReservedIpv6Assignment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/reserved_ipv6_assignment digitalocean_reserved_ipv6_assignment}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/reserved_ipv6_assignment digitalocean_reserved_ipv6_assignment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.reservedIpv6Assignment.ReservedIpv6Assignment.Initializer"></a>
 
@@ -38,9 +38,9 @@ reservedIpv6Assignment.ReservedIpv6Assignment(
 | <code><a href="#@cdktf/provider-digitalocean.reservedIpv6Assignment.ReservedIpv6Assignment.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIpv6Assignment.ReservedIpv6Assignment.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIpv6Assignment.ReservedIpv6Assignment.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIpv6Assignment.ReservedIpv6Assignment.Initializer.parameter.dropletId">droplet_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/reserved_ipv6_assignment#droplet_id ReservedIpv6Assignment#droplet_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIpv6Assignment.ReservedIpv6Assignment.Initializer.parameter.ip">ip</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/reserved_ipv6_assignment#ip ReservedIpv6Assignment#ip}. |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIpv6Assignment.ReservedIpv6Assignment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/reserved_ipv6_assignment#id ReservedIpv6Assignment#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIpv6Assignment.ReservedIpv6Assignment.Initializer.parameter.dropletId">droplet_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/reserved_ipv6_assignment#droplet_id ReservedIpv6Assignment#droplet_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIpv6Assignment.ReservedIpv6Assignment.Initializer.parameter.ip">ip</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/reserved_ipv6_assignment#ip ReservedIpv6Assignment#ip}. |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIpv6Assignment.ReservedIpv6Assignment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/reserved_ipv6_assignment#id ReservedIpv6Assignment#id}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/reserved_ipv6_assignment#droplet_id ReservedIpv6Assignment#droplet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/reserved_ipv6_assignment#droplet_id ReservedIpv6Assignment#droplet_id}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/reserved_ipv6_assignment#ip ReservedIpv6Assignment#ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/reserved_ipv6_assignment#ip ReservedIpv6Assignment#ip}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/reserved_ipv6_assignment#id ReservedIpv6Assignment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/reserved_ipv6_assignment#id ReservedIpv6Assignment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -607,7 +607,7 @@ The construct id used in the generated config for the ReservedIpv6Assignment to 
 
 The id of the existing ReservedIpv6Assignment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/reserved_ipv6_assignment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/reserved_ipv6_assignment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -900,9 +900,9 @@ reservedIpv6Assignment.ReservedIpv6AssignmentConfig(
 | <code><a href="#@cdktf/provider-digitalocean.reservedIpv6Assignment.ReservedIpv6AssignmentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIpv6Assignment.ReservedIpv6AssignmentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.reservedIpv6Assignment.ReservedIpv6AssignmentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIpv6Assignment.ReservedIpv6AssignmentConfig.property.dropletId">droplet_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/reserved_ipv6_assignment#droplet_id ReservedIpv6Assignment#droplet_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIpv6Assignment.ReservedIpv6AssignmentConfig.property.ip">ip</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/reserved_ipv6_assignment#ip ReservedIpv6Assignment#ip}. |
-| <code><a href="#@cdktf/provider-digitalocean.reservedIpv6Assignment.ReservedIpv6AssignmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/reserved_ipv6_assignment#id ReservedIpv6Assignment#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIpv6Assignment.ReservedIpv6AssignmentConfig.property.dropletId">droplet_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/reserved_ipv6_assignment#droplet_id ReservedIpv6Assignment#droplet_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIpv6Assignment.ReservedIpv6AssignmentConfig.property.ip">ip</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/reserved_ipv6_assignment#ip ReservedIpv6Assignment#ip}. |
+| <code><a href="#@cdktf/provider-digitalocean.reservedIpv6Assignment.ReservedIpv6AssignmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/reserved_ipv6_assignment#id ReservedIpv6Assignment#id}. |
 
 ---
 
@@ -984,7 +984,7 @@ droplet_id: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/reserved_ipv6_assignment#droplet_id ReservedIpv6Assignment#droplet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/reserved_ipv6_assignment#droplet_id ReservedIpv6Assignment#droplet_id}.
 
 ---
 
@@ -996,7 +996,7 @@ ip: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/reserved_ipv6_assignment#ip ReservedIpv6Assignment#ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/reserved_ipv6_assignment#ip ReservedIpv6Assignment#ip}.
 
 ---
 
@@ -1008,7 +1008,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/reserved_ipv6_assignment#id ReservedIpv6Assignment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/reserved_ipv6_assignment#id ReservedIpv6Assignment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

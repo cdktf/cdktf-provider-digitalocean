@@ -4,7 +4,7 @@
 
 ### DataDigitaloceanGenaiModels <a name="DataDigitaloceanGenaiModels" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModels"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_models digitalocean_genai_models}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_models digitalocean_genai_models}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModels.Initializer"></a>
 
@@ -412,7 +412,7 @@ The construct id used in the generated config for the DataDigitaloceanGenaiModel
 
 The id of the existing DataDigitaloceanGenaiModels that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_models#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_models#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -695,7 +695,7 @@ new DataDigitaloceanGenaiModelsConfig {
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsConfig.property.filter">Filter</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsFilter">DataDigitaloceanGenaiModelsFilter</a>[]</code> | filter block. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_models#id DataDigitaloceanGenaiModels#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_models#id DataDigitaloceanGenaiModels#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsConfig.property.sort">Sort</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsSort">DataDigitaloceanGenaiModelsSort</a>[]</code> | sort block. |
 
 ---
@@ -780,7 +780,7 @@ public IResolvable|DataDigitaloceanGenaiModelsFilter[] Filter { get; set; }
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_models#filter DataDigitaloceanGenaiModels#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_models#filter DataDigitaloceanGenaiModels#filter}
 
 ---
 
@@ -792,7 +792,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_models#id DataDigitaloceanGenaiModels#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_models#id DataDigitaloceanGenaiModels#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -809,7 +809,7 @@ public IResolvable|DataDigitaloceanGenaiModelsSort[] Sort { get; set; }
 
 sort block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_models#sort DataDigitaloceanGenaiModels#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_models#sort DataDigitaloceanGenaiModels#sort}
 
 ---
 
@@ -832,10 +832,10 @@ new DataDigitaloceanGenaiModelsFilter {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsFilter.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_models#key DataDigitaloceanGenaiModels#key}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsFilter.property.values">Values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_models#values DataDigitaloceanGenaiModels#values}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsFilter.property.all">All</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_models#all DataDigitaloceanGenaiModels#all}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsFilter.property.matchBy">MatchBy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_models#match_by DataDigitaloceanGenaiModels#match_by}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsFilter.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_models#key DataDigitaloceanGenaiModels#key}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsFilter.property.values">Values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_models#values DataDigitaloceanGenaiModels#values}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsFilter.property.all">All</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_models#all DataDigitaloceanGenaiModels#all}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsFilter.property.matchBy">MatchBy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_models#match_by DataDigitaloceanGenaiModels#match_by}. |
 
 ---
 
@@ -847,7 +847,7 @@ public string Key { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_models#key DataDigitaloceanGenaiModels#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_models#key DataDigitaloceanGenaiModels#key}.
 
 ---
 
@@ -859,7 +859,7 @@ public string[] Values { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_models#values DataDigitaloceanGenaiModels#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_models#values DataDigitaloceanGenaiModels#values}.
 
 ---
 
@@ -871,7 +871,7 @@ public bool|IResolvable All { get; set; }
 
 - *Type:* bool|HashiCorp.Cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_models#all DataDigitaloceanGenaiModels#all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_models#all DataDigitaloceanGenaiModels#all}.
 
 ---
 
@@ -883,7 +883,7 @@ public string MatchBy { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_models#match_by DataDigitaloceanGenaiModels#match_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_models#match_by DataDigitaloceanGenaiModels#match_by}.
 
 ---
 
@@ -943,8 +943,8 @@ new DataDigitaloceanGenaiModelsSort {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsSort.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_models#key DataDigitaloceanGenaiModels#key}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsSort.property.direction">Direction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_models#direction DataDigitaloceanGenaiModels#direction}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsSort.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_models#key DataDigitaloceanGenaiModels#key}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsSort.property.direction">Direction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_models#direction DataDigitaloceanGenaiModels#direction}. |
 
 ---
 
@@ -956,7 +956,7 @@ public string Key { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_models#key DataDigitaloceanGenaiModels#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_models#key DataDigitaloceanGenaiModels#key}.
 
 ---
 
@@ -968,7 +968,7 @@ public string Direction { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_models#direction DataDigitaloceanGenaiModels#direction}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_models#direction DataDigitaloceanGenaiModels#direction}.
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_knowledge_base_indexing_jobs
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_knowledge_base_indexing_jobs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataDigitaloceanGenaiKnowledgeBaseIndexingJobsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_knowledge_base_indexing_jobs#id DataDigitaloceanGenaiKnowledgeBaseIndexingJobs#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_knowledge_base_indexing_jobs#id DataDigitaloceanGenaiKnowledgeBaseIndexingJobs#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,7 +22,7 @@ export interface DataDigitaloceanGenaiKnowledgeBaseIndexingJobsConfig extends cd
   /**
   * UUID of the Knowledge Base
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_knowledge_base_indexing_jobs#knowledge_base_uuid DataDigitaloceanGenaiKnowledgeBaseIndexingJobs#knowledge_base_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_knowledge_base_indexing_jobs#knowledge_base_uuid DataDigitaloceanGenaiKnowledgeBaseIndexingJobs#knowledge_base_uuid}
   */
   readonly knowledgeBaseUuid: string;
 }
@@ -258,7 +258,7 @@ export class DataDigitaloceanGenaiKnowledgeBaseIndexingJobsMetaList extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_knowledge_base_indexing_jobs digitalocean_genai_knowledge_base_indexing_jobs}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_knowledge_base_indexing_jobs digitalocean_genai_knowledge_base_indexing_jobs}
 */
 export class DataDigitaloceanGenaiKnowledgeBaseIndexingJobs extends cdktf.TerraformDataSource {
 
@@ -274,7 +274,7 @@ export class DataDigitaloceanGenaiKnowledgeBaseIndexingJobs extends cdktf.Terraf
   * Generates CDKTF code for importing a DataDigitaloceanGenaiKnowledgeBaseIndexingJobs resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDigitaloceanGenaiKnowledgeBaseIndexingJobs to import
-  * @param importFromId The id of the existing DataDigitaloceanGenaiKnowledgeBaseIndexingJobs that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_knowledge_base_indexing_jobs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDigitaloceanGenaiKnowledgeBaseIndexingJobs that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_knowledge_base_indexing_jobs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDigitaloceanGenaiKnowledgeBaseIndexingJobs to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -286,7 +286,7 @@ export class DataDigitaloceanGenaiKnowledgeBaseIndexingJobs extends cdktf.Terraf
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_knowledge_base_indexing_jobs digitalocean_genai_knowledge_base_indexing_jobs} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_knowledge_base_indexing_jobs digitalocean_genai_knowledge_base_indexing_jobs} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -297,7 +297,7 @@ export class DataDigitaloceanGenaiKnowledgeBaseIndexingJobs extends cdktf.Terraf
       terraformResourceType: 'digitalocean_genai_knowledge_base_indexing_jobs',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.69.0',
+        providerVersion: '2.70.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,

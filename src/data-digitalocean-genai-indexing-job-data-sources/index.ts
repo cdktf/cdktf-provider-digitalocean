@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_indexing_job_data_sources
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_indexing_job_data_sources
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataDigitaloceanGenaiIndexingJobDataSourcesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_indexing_job_data_sources#id DataDigitaloceanGenaiIndexingJobDataSources#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_indexing_job_data_sources#id DataDigitaloceanGenaiIndexingJobDataSources#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,7 +22,7 @@ export interface DataDigitaloceanGenaiIndexingJobDataSourcesConfig extends cdktf
   /**
   * UUID of the indexing job
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_indexing_job_data_sources#indexing_job_uuid DataDigitaloceanGenaiIndexingJobDataSources#indexing_job_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_indexing_job_data_sources#indexing_job_uuid DataDigitaloceanGenaiIndexingJobDataSources#indexing_job_uuid}
   */
   readonly indexingJobUuid: string;
 }
@@ -168,7 +168,7 @@ export class DataDigitaloceanGenaiIndexingJobDataSourcesIndexedDataSourcesList e
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_indexing_job_data_sources digitalocean_genai_indexing_job_data_sources}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_indexing_job_data_sources digitalocean_genai_indexing_job_data_sources}
 */
 export class DataDigitaloceanGenaiIndexingJobDataSources extends cdktf.TerraformDataSource {
 
@@ -184,7 +184,7 @@ export class DataDigitaloceanGenaiIndexingJobDataSources extends cdktf.Terraform
   * Generates CDKTF code for importing a DataDigitaloceanGenaiIndexingJobDataSources resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDigitaloceanGenaiIndexingJobDataSources to import
-  * @param importFromId The id of the existing DataDigitaloceanGenaiIndexingJobDataSources that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_indexing_job_data_sources#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDigitaloceanGenaiIndexingJobDataSources that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_indexing_job_data_sources#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDigitaloceanGenaiIndexingJobDataSources to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -196,7 +196,7 @@ export class DataDigitaloceanGenaiIndexingJobDataSources extends cdktf.Terraform
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_indexing_job_data_sources digitalocean_genai_indexing_job_data_sources} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_indexing_job_data_sources digitalocean_genai_indexing_job_data_sources} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -207,7 +207,7 @@ export class DataDigitaloceanGenaiIndexingJobDataSources extends cdktf.Terraform
       terraformResourceType: 'digitalocean_genai_indexing_job_data_sources',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.69.0',
+        providerVersion: '2.70.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### SpacesKey <a name="SpacesKey" id="@cdktf/provider-digitalocean.spacesKey.SpacesKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/spaces_key digitalocean_spaces_key}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/spaces_key digitalocean_spaces_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.spacesKey.SpacesKey.Initializer"></a>
 
@@ -40,7 +40,7 @@ spacesKey.SpacesKey(
 | <code><a href="#@cdktf/provider-digitalocean.spacesKey.SpacesKey.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.spacesKey.SpacesKey.Initializer.parameter.name">name</a></code> | <code>str</code> | A name for the key. This is used to identify the key in the DigitalOcean control panel. |
 | <code><a href="#@cdktf/provider-digitalocean.spacesKey.SpacesKey.Initializer.parameter.grant">grant</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.spacesKey.SpacesKeyGrant">SpacesKeyGrant</a>]</code> | grant block. |
-| <code><a href="#@cdktf/provider-digitalocean.spacesKey.SpacesKey.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/spaces_key#id SpacesKey#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.spacesKey.SpacesKey.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/spaces_key#id SpacesKey#id}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 A name for the key. This is used to identify the key in the DigitalOcean control panel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/spaces_key#name SpacesKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/spaces_key#name SpacesKey#name}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 grant block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/spaces_key#grant SpacesKey#grant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/spaces_key#grant SpacesKey#grant}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/spaces_key#id SpacesKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/spaces_key#id SpacesKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -633,7 +633,7 @@ The construct id used in the generated config for the SpacesKey to import.
 
 The id of the existing SpacesKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/spaces_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/spaces_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -961,7 +961,7 @@ spacesKey.SpacesKeyConfig(
 | <code><a href="#@cdktf/provider-digitalocean.spacesKey.SpacesKeyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.spacesKey.SpacesKeyConfig.property.name">name</a></code> | <code>str</code> | A name for the key. This is used to identify the key in the DigitalOcean control panel. |
 | <code><a href="#@cdktf/provider-digitalocean.spacesKey.SpacesKeyConfig.property.grant">grant</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-digitalocean.spacesKey.SpacesKeyGrant">SpacesKeyGrant</a>]</code> | grant block. |
-| <code><a href="#@cdktf/provider-digitalocean.spacesKey.SpacesKeyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/spaces_key#id SpacesKey#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.spacesKey.SpacesKeyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/spaces_key#id SpacesKey#id}. |
 
 ---
 
@@ -1045,7 +1045,7 @@ name: str
 
 A name for the key. This is used to identify the key in the DigitalOcean control panel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/spaces_key#name SpacesKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/spaces_key#name SpacesKey#name}
 
 ---
 
@@ -1059,7 +1059,7 @@ grant: IResolvable | typing.List[SpacesKeyGrant]
 
 grant block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/spaces_key#grant SpacesKey#grant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/spaces_key#grant SpacesKey#grant}
 
 ---
 
@@ -1071,7 +1071,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/spaces_key#id SpacesKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/spaces_key#id SpacesKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1110,7 +1110,7 @@ bucket: str
 
 The name of the bucket to grant the key access to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/spaces_key#bucket SpacesKey#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/spaces_key#bucket SpacesKey#bucket}
 
 ---
 
@@ -1124,7 +1124,7 @@ permission: str
 
 The permission to grant the key. Valid values are `read`, `readwrite`, or `fullaccess`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/spaces_key#permission SpacesKey#permission}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/spaces_key#permission SpacesKey#permission}
 
 ---
 

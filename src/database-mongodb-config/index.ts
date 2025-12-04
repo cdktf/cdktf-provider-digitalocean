@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/database_mongodb_config
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/database_mongodb_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +13,40 @@ import * as cdktf from 'cdktf';
 
 export interface DatabaseMongodbConfigConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/database_mongodb_config#cluster_id DatabaseMongodbConfig#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/database_mongodb_config#cluster_id DatabaseMongodbConfig#cluster_id}
   */
   readonly clusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/database_mongodb_config#default_read_concern DatabaseMongodbConfig#default_read_concern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/database_mongodb_config#default_read_concern DatabaseMongodbConfig#default_read_concern}
   */
   readonly defaultReadConcern?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/database_mongodb_config#default_write_concern DatabaseMongodbConfig#default_write_concern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/database_mongodb_config#default_write_concern DatabaseMongodbConfig#default_write_concern}
   */
   readonly defaultWriteConcern?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/database_mongodb_config#id DatabaseMongodbConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/database_mongodb_config#id DatabaseMongodbConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/database_mongodb_config#slow_op_threshold_ms DatabaseMongodbConfig#slow_op_threshold_ms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/database_mongodb_config#slow_op_threshold_ms DatabaseMongodbConfig#slow_op_threshold_ms}
   */
   readonly slowOpThresholdMs?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/database_mongodb_config#transaction_lifetime_limit_seconds DatabaseMongodbConfig#transaction_lifetime_limit_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/database_mongodb_config#transaction_lifetime_limit_seconds DatabaseMongodbConfig#transaction_lifetime_limit_seconds}
   */
   readonly transactionLifetimeLimitSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/database_mongodb_config#verbosity DatabaseMongodbConfig#verbosity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/database_mongodb_config#verbosity DatabaseMongodbConfig#verbosity}
   */
   readonly verbosity?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/database_mongodb_config digitalocean_database_mongodb_config}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/database_mongodb_config digitalocean_database_mongodb_config}
 */
 export class DatabaseMongodbConfig extends cdktf.TerraformResource {
 
@@ -62,7 +62,7 @@ export class DatabaseMongodbConfig extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DatabaseMongodbConfig resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatabaseMongodbConfig to import
-  * @param importFromId The id of the existing DatabaseMongodbConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/database_mongodb_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DatabaseMongodbConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/database_mongodb_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatabaseMongodbConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +74,7 @@ export class DatabaseMongodbConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/database_mongodb_config digitalocean_database_mongodb_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/database_mongodb_config digitalocean_database_mongodb_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class DatabaseMongodbConfig extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_database_mongodb_config',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.69.0',
+        providerVersion: '2.70.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,

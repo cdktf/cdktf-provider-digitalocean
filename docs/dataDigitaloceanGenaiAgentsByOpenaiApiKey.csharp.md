@@ -4,7 +4,7 @@
 
 ### DataDigitaloceanGenaiAgentsByOpenaiApiKey <a name="DataDigitaloceanGenaiAgentsByOpenaiApiKey" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgentsByOpenaiApiKey.DataDigitaloceanGenaiAgentsByOpenaiApiKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_agents_by_openai_api_key digitalocean_genai_agents_by_openai_api_key}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_agents_by_openai_api_key digitalocean_genai_agents_by_openai_api_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgentsByOpenaiApiKey.DataDigitaloceanGenaiAgentsByOpenaiApiKey.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataDigitaloceanGenaiAgent
 
 The id of the existing DataDigitaloceanGenaiAgentsByOpenaiApiKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_agents_by_openai_api_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_agents_by_openai_api_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1087,7 +1087,7 @@ new DataDigitaloceanGenaiAgentsByOpenaiApiKeyConfig {
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgentsByOpenaiApiKey.DataDigitaloceanGenaiAgentsByOpenaiApiKeyConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgentsByOpenaiApiKey.DataDigitaloceanGenaiAgentsByOpenaiApiKeyConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgentsByOpenaiApiKey.DataDigitaloceanGenaiAgentsByOpenaiApiKeyConfig.property.uuid">Uuid</a></code> | <code>string</code> | The UUID of the OpenAI API key. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgentsByOpenaiApiKey.DataDigitaloceanGenaiAgentsByOpenaiApiKeyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_agents_by_openai_api_key#id DataDigitaloceanGenaiAgentsByOpenaiApiKey#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgentsByOpenaiApiKey.DataDigitaloceanGenaiAgentsByOpenaiApiKeyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_agents_by_openai_api_key#id DataDigitaloceanGenaiAgentsByOpenaiApiKey#id}. |
 
 ---
 
@@ -1171,7 +1171,7 @@ public string Uuid { get; set; }
 
 The UUID of the OpenAI API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_agents_by_openai_api_key#uuid DataDigitaloceanGenaiAgentsByOpenaiApiKey#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_agents_by_openai_api_key#uuid DataDigitaloceanGenaiAgentsByOpenaiApiKey#uuid}
 
 ---
 
@@ -1183,7 +1183,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_agents_by_openai_api_key#id DataDigitaloceanGenaiAgentsByOpenaiApiKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_agents_by_openai_api_key#id DataDigitaloceanGenaiAgentsByOpenaiApiKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
