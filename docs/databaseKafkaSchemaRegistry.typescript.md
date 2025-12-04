@@ -4,7 +4,7 @@
 
 ### DatabaseKafkaSchemaRegistry <a name="DatabaseKafkaSchemaRegistry" id="@cdktf/provider-digitalocean.databaseKafkaSchemaRegistry.DatabaseKafkaSchemaRegistry"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/database_kafka_schema_registry digitalocean_database_kafka_schema_registry}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/database_kafka_schema_registry digitalocean_database_kafka_schema_registry}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databaseKafkaSchemaRegistry.DatabaseKafkaSchemaRegistry.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the DatabaseKafkaSchemaRegistr
 
 The id of the existing DatabaseKafkaSchemaRegistry that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/database_kafka_schema_registry#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/database_kafka_schema_registry#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -800,11 +800,11 @@ const databaseKafkaSchemaRegistryConfig: databaseKafkaSchemaRegistry.DatabaseKaf
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaSchemaRegistry.DatabaseKafkaSchemaRegistryConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaSchemaRegistry.DatabaseKafkaSchemaRegistryConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.databaseKafkaSchemaRegistry.DatabaseKafkaSchemaRegistryConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaSchemaRegistry.DatabaseKafkaSchemaRegistryConfig.property.clusterId">clusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/database_kafka_schema_registry#cluster_id DatabaseKafkaSchemaRegistry#cluster_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaSchemaRegistry.DatabaseKafkaSchemaRegistryConfig.property.schema">schema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/database_kafka_schema_registry#schema DatabaseKafkaSchemaRegistry#schema}. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaSchemaRegistry.DatabaseKafkaSchemaRegistryConfig.property.schemaType">schemaType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/database_kafka_schema_registry#schema_type DatabaseKafkaSchemaRegistry#schema_type}. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaSchemaRegistry.DatabaseKafkaSchemaRegistryConfig.property.subjectName">subjectName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/database_kafka_schema_registry#subject_name DatabaseKafkaSchemaRegistry#subject_name}. |
-| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaSchemaRegistry.DatabaseKafkaSchemaRegistryConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/database_kafka_schema_registry#id DatabaseKafkaSchemaRegistry#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaSchemaRegistry.DatabaseKafkaSchemaRegistryConfig.property.clusterId">clusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/database_kafka_schema_registry#cluster_id DatabaseKafkaSchemaRegistry#cluster_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaSchemaRegistry.DatabaseKafkaSchemaRegistryConfig.property.schema">schema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/database_kafka_schema_registry#schema DatabaseKafkaSchemaRegistry#schema}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaSchemaRegistry.DatabaseKafkaSchemaRegistryConfig.property.schemaType">schemaType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/database_kafka_schema_registry#schema_type DatabaseKafkaSchemaRegistry#schema_type}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaSchemaRegistry.DatabaseKafkaSchemaRegistryConfig.property.subjectName">subjectName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/database_kafka_schema_registry#subject_name DatabaseKafkaSchemaRegistry#subject_name}. |
+| <code><a href="#@cdktf/provider-digitalocean.databaseKafkaSchemaRegistry.DatabaseKafkaSchemaRegistryConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/database_kafka_schema_registry#id DatabaseKafkaSchemaRegistry#id}. |
 
 ---
 
@@ -886,7 +886,7 @@ public readonly clusterId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/database_kafka_schema_registry#cluster_id DatabaseKafkaSchemaRegistry#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/database_kafka_schema_registry#cluster_id DatabaseKafkaSchemaRegistry#cluster_id}.
 
 ---
 
@@ -898,7 +898,7 @@ public readonly schema: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/database_kafka_schema_registry#schema DatabaseKafkaSchemaRegistry#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/database_kafka_schema_registry#schema DatabaseKafkaSchemaRegistry#schema}.
 
 ---
 
@@ -910,7 +910,7 @@ public readonly schemaType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/database_kafka_schema_registry#schema_type DatabaseKafkaSchemaRegistry#schema_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/database_kafka_schema_registry#schema_type DatabaseKafkaSchemaRegistry#schema_type}.
 
 ---
 
@@ -922,7 +922,7 @@ public readonly subjectName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/database_kafka_schema_registry#subject_name DatabaseKafkaSchemaRegistry#subject_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/database_kafka_schema_registry#subject_name DatabaseKafkaSchemaRegistry#subject_name}.
 
 ---
 
@@ -934,7 +934,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/database_kafka_schema_registry#id DatabaseKafkaSchemaRegistry#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/database_kafka_schema_registry#id DatabaseKafkaSchemaRegistry#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

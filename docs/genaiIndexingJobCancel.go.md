@@ -4,7 +4,7 @@
 
 ### GenaiIndexingJobCancel <a name="GenaiIndexingJobCancel" id="@cdktf/provider-digitalocean.genaiIndexingJobCancel.GenaiIndexingJobCancel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_indexing_job_cancel digitalocean_genai_indexing_job_cancel}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_indexing_job_cancel digitalocean_genai_indexing_job_cancel}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiIndexingJobCancel.GenaiIndexingJobCancel.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the GenaiIndexingJobCancel to 
 
 The id of the existing GenaiIndexingJobCancel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_indexing_job_cancel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_indexing_job_cancel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -899,7 +899,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiin
 | <code><a href="#@cdktf/provider-digitalocean.genaiIndexingJobCancel.GenaiIndexingJobCancelConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiIndexingJobCancel.GenaiIndexingJobCancelConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.genaiIndexingJobCancel.GenaiIndexingJobCancelConfig.property.uuid">Uuid</a></code> | <code>*string</code> | The UUID of the indexing job to cancel. |
-| <code><a href="#@cdktf/provider-digitalocean.genaiIndexingJobCancel.GenaiIndexingJobCancelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_indexing_job_cancel#id GenaiIndexingJobCancel#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.genaiIndexingJobCancel.GenaiIndexingJobCancelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_indexing_job_cancel#id GenaiIndexingJobCancel#id}. |
 
 ---
 
@@ -983,7 +983,7 @@ Uuid *string
 
 The UUID of the indexing job to cancel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_indexing_job_cancel#uuid GenaiIndexingJobCancel#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_indexing_job_cancel#uuid GenaiIndexingJobCancel#uuid}
 
 ---
 
@@ -995,7 +995,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_indexing_job_cancel#id GenaiIndexingJobCancel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_indexing_job_cancel#id GenaiIndexingJobCancel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
