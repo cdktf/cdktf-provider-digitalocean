@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_openai_api_key
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_openai_api_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface GenaiOpenaiApiKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * The OpenAI API key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_openai_api_key#api_key GenaiOpenaiApiKey#api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_openai_api_key#api_key GenaiOpenaiApiKey#api_key}
   */
   readonly apiKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_openai_api_key#id GenaiOpenaiApiKey#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_openai_api_key#id GenaiOpenaiApiKey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +28,13 @@ export interface GenaiOpenaiApiKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * A name for the API key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_openai_api_key#name GenaiOpenaiApiKey#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_openai_api_key#name GenaiOpenaiApiKey#name}
   */
   readonly name: string;
   /**
   * model block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_openai_api_key#model GenaiOpenaiApiKey#model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_openai_api_key#model GenaiOpenaiApiKey#model}
   */
   readonly model?: GenaiOpenaiApiKeyModel[] | cdktf.IResolvable;
 }
@@ -42,25 +42,25 @@ export interface GenaiOpenaiApiKeyModelAgreement {
   /**
   * Description of the agreement
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_openai_api_key#description GenaiOpenaiApiKey#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_openai_api_key#description GenaiOpenaiApiKey#description}
   */
   readonly description?: string;
   /**
   * Name of the agreement
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_openai_api_key#name GenaiOpenaiApiKey#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_openai_api_key#name GenaiOpenaiApiKey#name}
   */
   readonly name?: string;
   /**
   * URL of the agreement
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_openai_api_key#url GenaiOpenaiApiKey#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_openai_api_key#url GenaiOpenaiApiKey#url}
   */
   readonly url?: string;
   /**
   * UUID of the agreement
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_openai_api_key#uuid GenaiOpenaiApiKey#uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_openai_api_key#uuid GenaiOpenaiApiKey#uuid}
   */
   readonly uuid?: string;
 }
@@ -265,19 +265,19 @@ export interface GenaiOpenaiApiKeyModelVersions {
   /**
   * Major version of the model
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_openai_api_key#major GenaiOpenaiApiKey#major}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_openai_api_key#major GenaiOpenaiApiKey#major}
   */
   readonly major?: number;
   /**
   * Minor version of the model
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_openai_api_key#minor GenaiOpenaiApiKey#minor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_openai_api_key#minor GenaiOpenaiApiKey#minor}
   */
   readonly minor?: number;
   /**
   * Patch version of the model
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_openai_api_key#patch GenaiOpenaiApiKey#patch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_openai_api_key#patch GenaiOpenaiApiKey#patch}
   */
   readonly patch?: number;
 }
@@ -453,67 +453,67 @@ export interface GenaiOpenaiApiKeyModel {
   /**
   * Inference name of the model
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_openai_api_key#inference_name GenaiOpenaiApiKey#inference_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_openai_api_key#inference_name GenaiOpenaiApiKey#inference_name}
   */
   readonly inferenceName?: string;
   /**
   * Infernce version of the model
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_openai_api_key#inference_version GenaiOpenaiApiKey#inference_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_openai_api_key#inference_version GenaiOpenaiApiKey#inference_version}
   */
   readonly inferenceVersion?: string;
   /**
   * Indicates if the Model Base is foundational
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_openai_api_key#is_foundational GenaiOpenaiApiKey#is_foundational}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_openai_api_key#is_foundational GenaiOpenaiApiKey#is_foundational}
   */
   readonly isFoundational?: boolean | cdktf.IResolvable;
   /**
   * Name of the Knowledge Base
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_openai_api_key#name GenaiOpenaiApiKey#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_openai_api_key#name GenaiOpenaiApiKey#name}
   */
   readonly name?: string;
   /**
   * Parent UUID of the Model
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_openai_api_key#parent_uuid GenaiOpenaiApiKey#parent_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_openai_api_key#parent_uuid GenaiOpenaiApiKey#parent_uuid}
   */
   readonly parentUuid?: string;
   /**
   * Provider of the Model
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_openai_api_key#provider GenaiOpenaiApiKey#provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_openai_api_key#provider GenaiOpenaiApiKey#provider}
   */
   readonly provider?: string;
   /**
   * Indicates if the Model upload is complete
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_openai_api_key#upload_complete GenaiOpenaiApiKey#upload_complete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_openai_api_key#upload_complete GenaiOpenaiApiKey#upload_complete}
   */
   readonly uploadComplete?: boolean | cdktf.IResolvable;
   /**
   * URL of the Model
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_openai_api_key#url GenaiOpenaiApiKey#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_openai_api_key#url GenaiOpenaiApiKey#url}
   */
   readonly url?: string;
   /**
   * List of Usecases for the Model
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_openai_api_key#usecases GenaiOpenaiApiKey#usecases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_openai_api_key#usecases GenaiOpenaiApiKey#usecases}
   */
   readonly usecases?: string[];
   /**
   * agreement block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_openai_api_key#agreement GenaiOpenaiApiKey#agreement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_openai_api_key#agreement GenaiOpenaiApiKey#agreement}
   */
   readonly agreement?: GenaiOpenaiApiKeyModelAgreement[] | cdktf.IResolvable;
   /**
   * versions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_openai_api_key#versions GenaiOpenaiApiKey#versions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_openai_api_key#versions GenaiOpenaiApiKey#versions}
   */
   readonly versions?: GenaiOpenaiApiKeyModelVersions[] | cdktf.IResolvable;
 }
@@ -929,7 +929,7 @@ export class GenaiOpenaiApiKeyModelList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_openai_api_key digitalocean_genai_openai_api_key}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_openai_api_key digitalocean_genai_openai_api_key}
 */
 export class GenaiOpenaiApiKey extends cdktf.TerraformResource {
 
@@ -945,7 +945,7 @@ export class GenaiOpenaiApiKey extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GenaiOpenaiApiKey resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GenaiOpenaiApiKey to import
-  * @param importFromId The id of the existing GenaiOpenaiApiKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_openai_api_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GenaiOpenaiApiKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_openai_api_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GenaiOpenaiApiKey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -957,7 +957,7 @@ export class GenaiOpenaiApiKey extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_openai_api_key digitalocean_genai_openai_api_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_openai_api_key digitalocean_genai_openai_api_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -968,7 +968,7 @@ export class GenaiOpenaiApiKey extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_genai_openai_api_key',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.70.0',
+        providerVersion: '2.71.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,

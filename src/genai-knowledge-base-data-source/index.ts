@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_knowledge_base_data_source
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_knowledge_base_data_source
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface GenaiKnowledgeBaseDataSourceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_knowledge_base_data_source#id GenaiKnowledgeBaseDataSource#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_knowledge_base_data_source#id GenaiKnowledgeBaseDataSource#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +22,19 @@ export interface GenaiKnowledgeBaseDataSourceConfig extends cdktf.TerraformMetaA
   /**
   * UUID of the Knowledge Base
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_knowledge_base_data_source#knowledge_base_uuid GenaiKnowledgeBaseDataSource#knowledge_base_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_knowledge_base_data_source#knowledge_base_uuid GenaiKnowledgeBaseDataSource#knowledge_base_uuid}
   */
   readonly knowledgeBaseUuid: string;
   /**
   * spaces_data_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_knowledge_base_data_source#spaces_data_source GenaiKnowledgeBaseDataSource#spaces_data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_knowledge_base_data_source#spaces_data_source GenaiKnowledgeBaseDataSource#spaces_data_source}
   */
   readonly spacesDataSource?: GenaiKnowledgeBaseDataSourceSpacesDataSource;
   /**
   * web_crawler_data_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_knowledge_base_data_source#web_crawler_data_source GenaiKnowledgeBaseDataSource#web_crawler_data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_knowledge_base_data_source#web_crawler_data_source GenaiKnowledgeBaseDataSource#web_crawler_data_source}
   */
   readonly webCrawlerDataSource?: GenaiKnowledgeBaseDataSourceWebCrawlerDataSource;
 }
@@ -42,19 +42,19 @@ export interface GenaiKnowledgeBaseDataSourceSpacesDataSource {
   /**
   * The name of the Spaces bucket
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_knowledge_base_data_source#bucket_name GenaiKnowledgeBaseDataSource#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_knowledge_base_data_source#bucket_name GenaiKnowledgeBaseDataSource#bucket_name}
   */
   readonly bucketName?: string;
   /**
   * The path to the item in the bucket
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_knowledge_base_data_source#item_path GenaiKnowledgeBaseDataSource#item_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_knowledge_base_data_source#item_path GenaiKnowledgeBaseDataSource#item_path}
   */
   readonly itemPath?: string;
   /**
   * The region of the Spaces bucket
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_knowledge_base_data_source#region GenaiKnowledgeBaseDataSource#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_knowledge_base_data_source#region GenaiKnowledgeBaseDataSource#region}
   */
   readonly region?: string;
 }
@@ -198,7 +198,7 @@ export interface GenaiKnowledgeBaseDataSourceWebCrawlerDataSource {
   /**
   * The base URL to crawl
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_knowledge_base_data_source#base_url GenaiKnowledgeBaseDataSource#base_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_knowledge_base_data_source#base_url GenaiKnowledgeBaseDataSource#base_url}
   */
   readonly baseUrl?: string;
   /**
@@ -209,13 +209,13 @@ export interface GenaiKnowledgeBaseDataSourceWebCrawlerDataSource {
   * - DOMAIN: Crawl the base URL and linked pages within the same domain.
   * - SUBDOMAINS: Crawl the base URL and linked pages for any subdomain.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_knowledge_base_data_source#crawling_option GenaiKnowledgeBaseDataSource#crawling_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_knowledge_base_data_source#crawling_option GenaiKnowledgeBaseDataSource#crawling_option}
   */
   readonly crawlingOption?: string;
   /**
   * Whether to embed media content
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_knowledge_base_data_source#embed_media GenaiKnowledgeBaseDataSource#embed_media}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_knowledge_base_data_source#embed_media GenaiKnowledgeBaseDataSource#embed_media}
   */
   readonly embedMedia?: boolean | cdktf.IResolvable;
 }
@@ -357,7 +357,7 @@ export class GenaiKnowledgeBaseDataSourceWebCrawlerDataSourceOutputReference ext
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_knowledge_base_data_source digitalocean_genai_knowledge_base_data_source}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_knowledge_base_data_source digitalocean_genai_knowledge_base_data_source}
 */
 export class GenaiKnowledgeBaseDataSource extends cdktf.TerraformResource {
 
@@ -373,7 +373,7 @@ export class GenaiKnowledgeBaseDataSource extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GenaiKnowledgeBaseDataSource resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GenaiKnowledgeBaseDataSource to import
-  * @param importFromId The id of the existing GenaiKnowledgeBaseDataSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_knowledge_base_data_source#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GenaiKnowledgeBaseDataSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_knowledge_base_data_source#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GenaiKnowledgeBaseDataSource to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -385,7 +385,7 @@ export class GenaiKnowledgeBaseDataSource extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_knowledge_base_data_source digitalocean_genai_knowledge_base_data_source} Resource
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/genai_knowledge_base_data_source digitalocean_genai_knowledge_base_data_source} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -396,7 +396,7 @@ export class GenaiKnowledgeBaseDataSource extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_genai_knowledge_base_data_source',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.70.0',
+        providerVersion: '2.71.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
