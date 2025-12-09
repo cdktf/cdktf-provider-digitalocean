@@ -4,7 +4,7 @@
 
 ### NfsSnapshot <a name="NfsSnapshot" id="@cdktf/provider-digitalocean.nfsSnapshot.NfsSnapshot"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_snapshot digitalocean_nfs_snapshot}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_snapshot digitalocean_nfs_snapshot}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.nfsSnapshot.NfsSnapshot.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the NfsSnapshot to import.
 
 The id of the existing NfsSnapshot that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_snapshot#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_snapshot#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -823,10 +823,10 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/nfssnap
 | <code><a href="#@cdktf/provider-digitalocean.nfsSnapshot.NfsSnapshotConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.nfsSnapshot.NfsSnapshotConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.nfsSnapshot.NfsSnapshotConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.nfsSnapshot.NfsSnapshotConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_snapshot#name NfsSnapshot#name}. |
-| <code><a href="#@cdktf/provider-digitalocean.nfsSnapshot.NfsSnapshotConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_snapshot#region NfsSnapshot#region}. |
-| <code><a href="#@cdktf/provider-digitalocean.nfsSnapshot.NfsSnapshotConfig.property.shareId">ShareId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_snapshot#share_id NfsSnapshot#share_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.nfsSnapshot.NfsSnapshotConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_snapshot#id NfsSnapshot#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.nfsSnapshot.NfsSnapshotConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_snapshot#name NfsSnapshot#name}. |
+| <code><a href="#@cdktf/provider-digitalocean.nfsSnapshot.NfsSnapshotConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_snapshot#region NfsSnapshot#region}. |
+| <code><a href="#@cdktf/provider-digitalocean.nfsSnapshot.NfsSnapshotConfig.property.shareId">ShareId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_snapshot#share_id NfsSnapshot#share_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.nfsSnapshot.NfsSnapshotConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_snapshot#id NfsSnapshot#id}. |
 
 ---
 
@@ -908,7 +908,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_snapshot#name NfsSnapshot#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_snapshot#name NfsSnapshot#name}.
 
 ---
 
@@ -920,7 +920,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_snapshot#region NfsSnapshot#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_snapshot#region NfsSnapshot#region}.
 
 ---
 
@@ -932,7 +932,7 @@ ShareId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_snapshot#share_id NfsSnapshot#share_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_snapshot#share_id NfsSnapshot#share_id}.
 
 ---
 
@@ -944,7 +944,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_snapshot#id NfsSnapshot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_snapshot#id NfsSnapshot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

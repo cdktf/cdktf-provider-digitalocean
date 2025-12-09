@@ -4,7 +4,7 @@
 
 ### DataDigitaloceanNfs <a name="DataDigitaloceanNfs" id="@cdktf/provider-digitalocean.dataDigitaloceanNfs.DataDigitaloceanNfs"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/nfs digitalocean_nfs}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/data-sources/nfs digitalocean_nfs}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanNfs.DataDigitaloceanNfs.Initializer"></a>
 
@@ -39,7 +39,7 @@ dataDigitaloceanNfs.DataDigitaloceanNfs(
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanNfs.DataDigitaloceanNfs.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanNfs.DataDigitaloceanNfs.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanNfs.DataDigitaloceanNfs.Initializer.parameter.name">name</a></code> | <code>str</code> | name of the share. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanNfs.DataDigitaloceanNfs.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/nfs#id DataDigitaloceanNfs#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanNfs.DataDigitaloceanNfs.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/data-sources/nfs#id DataDigitaloceanNfs#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanNfs.DataDigitaloceanNfs.Initializer.parameter.region">region</a></code> | <code>str</code> | the region that the share is created in. |
 
 ---
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 name of the share.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/nfs#name DataDigitaloceanNfs#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/data-sources/nfs#name DataDigitaloceanNfs#name}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/nfs#id DataDigitaloceanNfs#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/data-sources/nfs#id DataDigitaloceanNfs#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -131,7 +131,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 the region that the share is created in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/nfs#region DataDigitaloceanNfs#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/data-sources/nfs#region DataDigitaloceanNfs#region}
 
 ---
 
@@ -504,7 +504,7 @@ The construct id used in the generated config for the DataDigitaloceanNfs to imp
 
 The id of the existing DataDigitaloceanNfs that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/nfs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/data-sources/nfs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -809,7 +809,7 @@ dataDigitaloceanNfs.DataDigitaloceanNfsConfig(
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanNfs.DataDigitaloceanNfsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanNfs.DataDigitaloceanNfsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanNfs.DataDigitaloceanNfsConfig.property.name">name</a></code> | <code>str</code> | name of the share. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanNfs.DataDigitaloceanNfsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/nfs#id DataDigitaloceanNfs#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanNfs.DataDigitaloceanNfsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/data-sources/nfs#id DataDigitaloceanNfs#id}. |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanNfs.DataDigitaloceanNfsConfig.property.region">region</a></code> | <code>str</code> | the region that the share is created in. |
 
 ---
@@ -894,7 +894,7 @@ name: str
 
 name of the share.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/nfs#name DataDigitaloceanNfs#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/data-sources/nfs#name DataDigitaloceanNfs#name}
 
 ---
 
@@ -906,7 +906,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/nfs#id DataDigitaloceanNfs#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/data-sources/nfs#id DataDigitaloceanNfs#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -923,7 +923,7 @@ region: str
 
 the region that the share is created in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/nfs#region DataDigitaloceanNfs#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/data-sources/nfs#region DataDigitaloceanNfs#region}
 
 ---
 
