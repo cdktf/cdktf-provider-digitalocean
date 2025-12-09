@@ -4,7 +4,7 @@
 
 ### DataDigitaloceanNfsSnapshot <a name="DataDigitaloceanNfsSnapshot" id="@cdktf/provider-digitalocean.dataDigitaloceanNfsSnapshot.DataDigitaloceanNfsSnapshot"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/nfs_snapshot digitalocean_nfs_snapshot}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/data-sources/nfs_snapshot digitalocean_nfs_snapshot}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanNfsSnapshot.DataDigitaloceanNfsSnapshot.Initializer"></a>
 
@@ -393,7 +393,7 @@ The construct id used in the generated config for the DataDigitaloceanNfsSnapsho
 
 The id of the existing DataDigitaloceanNfsSnapshot that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/nfs_snapshot#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/data-sources/nfs_snapshot#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -754,11 +754,11 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadig
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanNfsSnapshot.DataDigitaloceanNfsSnapshotConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanNfsSnapshot.DataDigitaloceanNfsSnapshotConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanNfsSnapshot.DataDigitaloceanNfsSnapshotConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanNfsSnapshot.DataDigitaloceanNfsSnapshotConfig.property.shareId">ShareId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/nfs_snapshot#share_id DataDigitaloceanNfsSnapshot#share_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanNfsSnapshot.DataDigitaloceanNfsSnapshotConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/nfs_snapshot#id DataDigitaloceanNfsSnapshot#id}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanNfsSnapshot.DataDigitaloceanNfsSnapshotConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/nfs_snapshot#name DataDigitaloceanNfsSnapshot#name}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanNfsSnapshot.DataDigitaloceanNfsSnapshotConfig.property.nameRegex">NameRegex</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/nfs_snapshot#name_regex DataDigitaloceanNfsSnapshot#name_regex}. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanNfsSnapshot.DataDigitaloceanNfsSnapshotConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/nfs_snapshot#region DataDigitaloceanNfsSnapshot#region}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanNfsSnapshot.DataDigitaloceanNfsSnapshotConfig.property.shareId">ShareId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/data-sources/nfs_snapshot#share_id DataDigitaloceanNfsSnapshot#share_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanNfsSnapshot.DataDigitaloceanNfsSnapshotConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/data-sources/nfs_snapshot#id DataDigitaloceanNfsSnapshot#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanNfsSnapshot.DataDigitaloceanNfsSnapshotConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/data-sources/nfs_snapshot#name DataDigitaloceanNfsSnapshot#name}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanNfsSnapshot.DataDigitaloceanNfsSnapshotConfig.property.nameRegex">NameRegex</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/data-sources/nfs_snapshot#name_regex DataDigitaloceanNfsSnapshot#name_regex}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanNfsSnapshot.DataDigitaloceanNfsSnapshotConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/data-sources/nfs_snapshot#region DataDigitaloceanNfsSnapshot#region}. |
 
 ---
 
@@ -840,7 +840,7 @@ ShareId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/nfs_snapshot#share_id DataDigitaloceanNfsSnapshot#share_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/data-sources/nfs_snapshot#share_id DataDigitaloceanNfsSnapshot#share_id}.
 
 ---
 
@@ -852,7 +852,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/nfs_snapshot#id DataDigitaloceanNfsSnapshot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/data-sources/nfs_snapshot#id DataDigitaloceanNfsSnapshot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -867,7 +867,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/nfs_snapshot#name DataDigitaloceanNfsSnapshot#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/data-sources/nfs_snapshot#name DataDigitaloceanNfsSnapshot#name}.
 
 ---
 
@@ -879,7 +879,7 @@ NameRegex *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/nfs_snapshot#name_regex DataDigitaloceanNfsSnapshot#name_regex}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/data-sources/nfs_snapshot#name_regex DataDigitaloceanNfsSnapshot#name_regex}.
 
 ---
 
@@ -891,7 +891,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/nfs_snapshot#region DataDigitaloceanNfsSnapshot#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/data-sources/nfs_snapshot#region DataDigitaloceanNfsSnapshot#region}.
 
 ---
 

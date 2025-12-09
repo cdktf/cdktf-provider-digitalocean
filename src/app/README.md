@@ -1,3 +1,3 @@
 # `digitalocean_app`
 
-Refer to the Terraform Registry for docs: [`digitalocean_app`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/app).
+Refer to the Terraform Registry for docs: [`digitalocean_app`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/app).

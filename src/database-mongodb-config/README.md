@@ -1,3 +1,3 @@
 # `digitalocean_database_mongodb_config`
 
-Refer to the Terraform Registry for docs: [`digitalocean_database_mongodb_config`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/database_mongodb_config).
+Refer to the Terraform Registry for docs: [`digitalocean_database_mongodb_config`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/database_mongodb_config).

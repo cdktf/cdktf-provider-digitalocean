@@ -1,3 +1,3 @@
 # `digitalocean_uptime_check`
 
-Refer to the Terraform Registry for docs: [`digitalocean_uptime_check`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/uptime_check).
+Refer to the Terraform Registry for docs: [`digitalocean_uptime_check`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/uptime_check).

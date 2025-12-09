@@ -1,3 +1,3 @@
 # `digitalocean_loadbalancer`
 
-Refer to the Terraform Registry for docs: [`digitalocean_loadbalancer`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/loadbalancer).
+Refer to the Terraform Registry for docs: [`digitalocean_loadbalancer`](https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/loadbalancer).

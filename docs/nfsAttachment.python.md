@@ -4,7 +4,7 @@
 
 ### NfsAttachment <a name="NfsAttachment" id="@cdktf/provider-digitalocean.nfsAttachment.NfsAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_attachment digitalocean_nfs_attachment}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_attachment digitalocean_nfs_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.nfsAttachment.NfsAttachment.Initializer"></a>
 
@@ -39,10 +39,10 @@ nfsAttachment.NfsAttachment(
 | <code><a href="#@cdktf/provider-digitalocean.nfsAttachment.NfsAttachment.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.nfsAttachment.NfsAttachment.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.nfsAttachment.NfsAttachment.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.nfsAttachment.NfsAttachment.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_attachment#region NfsAttachment#region}. |
-| <code><a href="#@cdktf/provider-digitalocean.nfsAttachment.NfsAttachment.Initializer.parameter.shareId">share_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_attachment#share_id NfsAttachment#share_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.nfsAttachment.NfsAttachment.Initializer.parameter.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_attachment#vpc_id NfsAttachment#vpc_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.nfsAttachment.NfsAttachment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_attachment#id NfsAttachment#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.nfsAttachment.NfsAttachment.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_attachment#region NfsAttachment#region}. |
+| <code><a href="#@cdktf/provider-digitalocean.nfsAttachment.NfsAttachment.Initializer.parameter.shareId">share_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_attachment#share_id NfsAttachment#share_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.nfsAttachment.NfsAttachment.Initializer.parameter.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_attachment#vpc_id NfsAttachment#vpc_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.nfsAttachment.NfsAttachment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_attachment#id NfsAttachment#id}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_attachment#region NfsAttachment#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_attachment#region NfsAttachment#region}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_attachment#share_id NfsAttachment#share_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_attachment#share_id NfsAttachment#share_id}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_attachment#vpc_id NfsAttachment#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_attachment#vpc_id NfsAttachment#vpc_id}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_attachment#id NfsAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_attachment#id NfsAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -617,7 +617,7 @@ The construct id used in the generated config for the NfsAttachment to import.
 
 The id of the existing NfsAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -933,10 +933,10 @@ nfsAttachment.NfsAttachmentConfig(
 | <code><a href="#@cdktf/provider-digitalocean.nfsAttachment.NfsAttachmentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.nfsAttachment.NfsAttachmentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.nfsAttachment.NfsAttachmentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-digitalocean.nfsAttachment.NfsAttachmentConfig.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_attachment#region NfsAttachment#region}. |
-| <code><a href="#@cdktf/provider-digitalocean.nfsAttachment.NfsAttachmentConfig.property.shareId">share_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_attachment#share_id NfsAttachment#share_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.nfsAttachment.NfsAttachmentConfig.property.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_attachment#vpc_id NfsAttachment#vpc_id}. |
-| <code><a href="#@cdktf/provider-digitalocean.nfsAttachment.NfsAttachmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_attachment#id NfsAttachment#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.nfsAttachment.NfsAttachmentConfig.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_attachment#region NfsAttachment#region}. |
+| <code><a href="#@cdktf/provider-digitalocean.nfsAttachment.NfsAttachmentConfig.property.shareId">share_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_attachment#share_id NfsAttachment#share_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.nfsAttachment.NfsAttachmentConfig.property.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_attachment#vpc_id NfsAttachment#vpc_id}. |
+| <code><a href="#@cdktf/provider-digitalocean.nfsAttachment.NfsAttachmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_attachment#id NfsAttachment#id}. |
 
 ---
 
@@ -1018,7 +1018,7 @@ region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_attachment#region NfsAttachment#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_attachment#region NfsAttachment#region}.
 
 ---
 
@@ -1030,7 +1030,7 @@ share_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_attachment#share_id NfsAttachment#share_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_attachment#share_id NfsAttachment#share_id}.
 
 ---
 
@@ -1042,7 +1042,7 @@ vpc_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_attachment#vpc_id NfsAttachment#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_attachment#vpc_id NfsAttachment#vpc_id}.
 
 ---
 
@@ -1054,7 +1054,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_attachment#id NfsAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_attachment#id NfsAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

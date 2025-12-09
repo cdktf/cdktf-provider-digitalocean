@@ -4,7 +4,7 @@
 
 ### DataDigitaloceanGenaiKnowledgeBaseIndexingJobs <a name="DataDigitaloceanGenaiKnowledgeBaseIndexingJobs" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiKnowledgeBaseIndexingJobs.DataDigitaloceanGenaiKnowledgeBaseIndexingJobs"></a>
 
-Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_knowledge_base_indexing_jobs digitalocean_genai_knowledge_base_indexing_jobs}.
+Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/data-sources/genai_knowledge_base_indexing_jobs digitalocean_genai_knowledge_base_indexing_jobs}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiKnowledgeBaseIndexingJobs.DataDigitaloceanGenaiKnowledgeBaseIndexingJobs.Initializer"></a>
 
@@ -36,7 +36,7 @@ DataDigitaloceanGenaiKnowledgeBaseIndexingJobs.Builder.create(Construct scope, j
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiKnowledgeBaseIndexingJobs.DataDigitaloceanGenaiKnowledgeBaseIndexingJobs.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiKnowledgeBaseIndexingJobs.DataDigitaloceanGenaiKnowledgeBaseIndexingJobs.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiKnowledgeBaseIndexingJobs.DataDigitaloceanGenaiKnowledgeBaseIndexingJobs.Initializer.parameter.knowledgeBaseUuid">knowledgeBaseUuid</a></code> | <code>java.lang.String</code> | UUID of the Knowledge Base. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiKnowledgeBaseIndexingJobs.DataDigitaloceanGenaiKnowledgeBaseIndexingJobs.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_knowledge_base_indexing_jobs#id DataDigitaloceanGenaiKnowledgeBaseIndexingJobs#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiKnowledgeBaseIndexingJobs.DataDigitaloceanGenaiKnowledgeBaseIndexingJobs.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/data-sources/genai_knowledge_base_indexing_jobs#id DataDigitaloceanGenaiKnowledgeBaseIndexingJobs#id}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 UUID of the Knowledge Base.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_knowledge_base_indexing_jobs#knowledge_base_uuid DataDigitaloceanGenaiKnowledgeBaseIndexingJobs#knowledge_base_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/data-sources/genai_knowledge_base_indexing_jobs#knowledge_base_uuid DataDigitaloceanGenaiKnowledgeBaseIndexingJobs#knowledge_base_uuid}
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_knowledge_base_indexing_jobs#id DataDigitaloceanGenaiKnowledgeBaseIndexingJobs#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/data-sources/genai_knowledge_base_indexing_jobs#id DataDigitaloceanGenaiKnowledgeBaseIndexingJobs#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -447,7 +447,7 @@ The construct id used in the generated config for the DataDigitaloceanGenaiKnowl
 
 The id of the existing DataDigitaloceanGenaiKnowledgeBaseIndexingJobs that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_knowledge_base_indexing_jobs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/data-sources/genai_knowledge_base_indexing_jobs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -718,7 +718,7 @@ DataDigitaloceanGenaiKnowledgeBaseIndexingJobsConfig.builder()
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiKnowledgeBaseIndexingJobs.DataDigitaloceanGenaiKnowledgeBaseIndexingJobsConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiKnowledgeBaseIndexingJobs.DataDigitaloceanGenaiKnowledgeBaseIndexingJobsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiKnowledgeBaseIndexingJobs.DataDigitaloceanGenaiKnowledgeBaseIndexingJobsConfig.property.knowledgeBaseUuid">knowledgeBaseUuid</a></code> | <code>java.lang.String</code> | UUID of the Knowledge Base. |
-| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiKnowledgeBaseIndexingJobs.DataDigitaloceanGenaiKnowledgeBaseIndexingJobsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_knowledge_base_indexing_jobs#id DataDigitaloceanGenaiKnowledgeBaseIndexingJobs#id}. |
+| <code><a href="#@cdktf/provider-digitalocean.dataDigitaloceanGenaiKnowledgeBaseIndexingJobs.DataDigitaloceanGenaiKnowledgeBaseIndexingJobsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/data-sources/genai_knowledge_base_indexing_jobs#id DataDigitaloceanGenaiKnowledgeBaseIndexingJobs#id}. |
 
 ---
 
@@ -802,7 +802,7 @@ public java.lang.String getKnowledgeBaseUuid();
 
 UUID of the Knowledge Base.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_knowledge_base_indexing_jobs#knowledge_base_uuid DataDigitaloceanGenaiKnowledgeBaseIndexingJobs#knowledge_base_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/data-sources/genai_knowledge_base_indexing_jobs#knowledge_base_uuid DataDigitaloceanGenaiKnowledgeBaseIndexingJobs#knowledge_base_uuid}
 
 ---
 
@@ -814,7 +814,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_knowledge_base_indexing_jobs#id DataDigitaloceanGenaiKnowledgeBaseIndexingJobs#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/data-sources/genai_knowledge_base_indexing_jobs#id DataDigitaloceanGenaiKnowledgeBaseIndexingJobs#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

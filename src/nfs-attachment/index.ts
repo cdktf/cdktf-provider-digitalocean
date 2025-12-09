@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_attachment
+// https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_attachment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +13,28 @@ import * as cdktf from 'cdktf';
 
 export interface NfsAttachmentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_attachment#id NfsAttachment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_attachment#id NfsAttachment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_attachment#region NfsAttachment#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_attachment#region NfsAttachment#region}
   */
   readonly region: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_attachment#share_id NfsAttachment#share_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_attachment#share_id NfsAttachment#share_id}
   */
   readonly shareId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_attachment#vpc_id NfsAttachment#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_attachment#vpc_id NfsAttachment#vpc_id}
   */
   readonly vpcId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_attachment digitalocean_nfs_attachment}
+* Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_attachment digitalocean_nfs_attachment}
 */
 export class NfsAttachment extends cdktf.TerraformResource {
 
@@ -50,7 +50,7 @@ export class NfsAttachment extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NfsAttachment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NfsAttachment to import
-  * @param importFromId The id of the existing NfsAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_attachment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NfsAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NfsAttachment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +62,7 @@ export class NfsAttachment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_attachment digitalocean_nfs_attachment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_attachment digitalocean_nfs_attachment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +73,7 @@ export class NfsAttachment extends cdktf.TerraformResource {
       terraformResourceType: 'digitalocean_nfs_attachment',
       terraformGeneratorMetadata: {
         providerName: 'digitalocean',
-        providerVersion: '2.70.0',
+        providerVersion: '2.71.0',
         providerVersionConstraint: '~> 2.19'
       },
       provider: config.provider,
