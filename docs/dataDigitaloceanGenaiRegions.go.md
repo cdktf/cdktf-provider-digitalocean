@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenairegions"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenairegions"
 
 datadigitaloceangenairegions.NewDataDigitaloceanGenaiRegions(scope Construct, id *string, config DataDigitaloceanGenaiRegionsConfig) DataDigitaloceanGenaiRegions
 ```
@@ -323,7 +323,7 @@ func ResetSort()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenairegions"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenairegions"
 
 datadigitaloceangenairegions.DataDigitaloceanGenaiRegions_IsConstruct(x interface{}) *bool
 ```
@@ -355,7 +355,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenairegions"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenairegions"
 
 datadigitaloceangenairegions.DataDigitaloceanGenaiRegions_IsTerraformElement(x interface{}) *bool
 ```
@@ -369,7 +369,7 @@ datadigitaloceangenairegions.DataDigitaloceanGenaiRegions_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenairegions"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenairegions"
 
 datadigitaloceangenairegions.DataDigitaloceanGenaiRegions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -383,7 +383,7 @@ datadigitaloceangenairegions.DataDigitaloceanGenaiRegions_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenairegions"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenairegions"
 
 datadigitaloceangenairegions.DataDigitaloceanGenaiRegions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -667,7 +667,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenairegions"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenairegions"
 
 &datadigitaloceangenairegions.DataDigitaloceanGenaiRegionsConfig {
 	Connection: interface{},
@@ -818,7 +818,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegionsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenairegions"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenairegions"
 
 &datadigitaloceangenairegions.DataDigitaloceanGenaiRegionsFilter {
 	Key: *string,
@@ -892,7 +892,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegionsRegions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenairegions"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenairegions"
 
 &datadigitaloceangenairegions.DataDigitaloceanGenaiRegionsRegions {
 
@@ -905,7 +905,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegionsSort.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenairegions"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenairegions"
 
 &datadigitaloceangenairegions.DataDigitaloceanGenaiRegionsSort {
 	Key: *string,
@@ -953,7 +953,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegionsFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenairegions"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenairegions"
 
 datadigitaloceangenairegions.NewDataDigitaloceanGenaiRegionsFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanGenaiRegionsFilterList
 ```
@@ -1113,7 +1113,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegionsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenairegions"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenairegions"
 
 datadigitaloceangenairegions.NewDataDigitaloceanGenaiRegionsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanGenaiRegionsFilterOutputReference
 ```
@@ -1482,7 +1482,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegionsRegionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenairegions"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenairegions"
 
 datadigitaloceangenairegions.NewDataDigitaloceanGenaiRegionsRegionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanGenaiRegionsRegionsList
 ```
@@ -1631,7 +1631,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegionsRegionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenairegions"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenairegions"
 
 datadigitaloceangenairegions.NewDataDigitaloceanGenaiRegionsRegionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanGenaiRegionsRegionsOutputReference
 ```
@@ -1953,7 +1953,7 @@ func InternalValue() DataDigitaloceanGenaiRegionsRegions
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegionsSortList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenairegions"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenairegions"
 
 datadigitaloceangenairegions.NewDataDigitaloceanGenaiRegionsSortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanGenaiRegionsSortList
 ```
@@ -2113,7 +2113,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiRegions.DataDigitaloceanGenaiRegionsSortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenairegions"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenairegions"
 
 datadigitaloceangenairegions.NewDataDigitaloceanGenaiRegionsSortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanGenaiRegionsSortOutputReference
 ```

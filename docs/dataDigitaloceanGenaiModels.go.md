@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModels.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaimodels"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaimodels"
 
 datadigitaloceangenaimodels.NewDataDigitaloceanGenaiModels(scope Construct, id *string, config DataDigitaloceanGenaiModelsConfig) DataDigitaloceanGenaiModels
 ```
@@ -323,7 +323,7 @@ func ResetSort()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModels.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaimodels"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaimodels"
 
 datadigitaloceangenaimodels.DataDigitaloceanGenaiModels_IsConstruct(x interface{}) *bool
 ```
@@ -355,7 +355,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModels.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaimodels"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaimodels"
 
 datadigitaloceangenaimodels.DataDigitaloceanGenaiModels_IsTerraformElement(x interface{}) *bool
 ```
@@ -369,7 +369,7 @@ datadigitaloceangenaimodels.DataDigitaloceanGenaiModels_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModels.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaimodels"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaimodels"
 
 datadigitaloceangenaimodels.DataDigitaloceanGenaiModels_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -383,7 +383,7 @@ datadigitaloceangenaimodels.DataDigitaloceanGenaiModels_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModels.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaimodels"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaimodels"
 
 datadigitaloceangenaimodels.DataDigitaloceanGenaiModels_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -667,7 +667,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaimodels"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaimodels"
 
 &datadigitaloceangenaimodels.DataDigitaloceanGenaiModelsConfig {
 	Connection: interface{},
@@ -818,7 +818,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaimodels"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaimodels"
 
 &datadigitaloceangenaimodels.DataDigitaloceanGenaiModelsFilter {
 	Key: *string,
@@ -892,7 +892,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsModels.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaimodels"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaimodels"
 
 &datadigitaloceangenaimodels.DataDigitaloceanGenaiModelsModels {
 
@@ -905,7 +905,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsModelsAgreement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaimodels"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaimodels"
 
 &datadigitaloceangenaimodels.DataDigitaloceanGenaiModelsModelsAgreement {
 
@@ -918,7 +918,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsModelsVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaimodels"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaimodels"
 
 &datadigitaloceangenaimodels.DataDigitaloceanGenaiModelsModelsVersion {
 
@@ -931,7 +931,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsSort.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaimodels"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaimodels"
 
 &datadigitaloceangenaimodels.DataDigitaloceanGenaiModelsSort {
 	Key: *string,
@@ -979,7 +979,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaimodels"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaimodels"
 
 datadigitaloceangenaimodels.NewDataDigitaloceanGenaiModelsFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanGenaiModelsFilterList
 ```
@@ -1139,7 +1139,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaimodels"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaimodels"
 
 datadigitaloceangenaimodels.NewDataDigitaloceanGenaiModelsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanGenaiModelsFilterOutputReference
 ```
@@ -1508,7 +1508,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsModelsAgreementList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaimodels"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaimodels"
 
 datadigitaloceangenaimodels.NewDataDigitaloceanGenaiModelsModelsAgreementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanGenaiModelsModelsAgreementList
 ```
@@ -1657,7 +1657,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsModelsAgreementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaimodels"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaimodels"
 
 datadigitaloceangenaimodels.NewDataDigitaloceanGenaiModelsModelsAgreementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanGenaiModelsModelsAgreementOutputReference
 ```
@@ -1968,7 +1968,7 @@ func InternalValue() DataDigitaloceanGenaiModelsModelsAgreement
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsModelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaimodels"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaimodels"
 
 datadigitaloceangenaimodels.NewDataDigitaloceanGenaiModelsModelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanGenaiModelsModelsList
 ```
@@ -2117,7 +2117,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsModelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaimodels"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaimodels"
 
 datadigitaloceangenaimodels.NewDataDigitaloceanGenaiModelsModelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanGenaiModelsModelsOutputReference
 ```
@@ -2505,7 +2505,7 @@ func InternalValue() DataDigitaloceanGenaiModelsModels
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsModelsVersionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaimodels"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaimodels"
 
 datadigitaloceangenaimodels.NewDataDigitaloceanGenaiModelsModelsVersionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanGenaiModelsModelsVersionList
 ```
@@ -2654,7 +2654,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsModelsVersionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaimodels"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaimodels"
 
 datadigitaloceangenaimodels.NewDataDigitaloceanGenaiModelsModelsVersionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanGenaiModelsModelsVersionOutputReference
 ```
@@ -2954,7 +2954,7 @@ func InternalValue() DataDigitaloceanGenaiModelsModelsVersion
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsSortList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaimodels"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaimodels"
 
 datadigitaloceangenaimodels.NewDataDigitaloceanGenaiModelsSortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanGenaiModelsSortList
 ```
@@ -3114,7 +3114,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiModels.DataDigitaloceanGenaiModelsSortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaimodels"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaimodels"
 
 datadigitaloceangenaimodels.NewDataDigitaloceanGenaiModelsSortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanGenaiModelsSortOutputReference
 ```

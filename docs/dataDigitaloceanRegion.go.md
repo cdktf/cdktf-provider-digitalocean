@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanRegion.DataDigitaloceanRegion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceanregion"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanregion"
 
 datadigitaloceanregion.NewDataDigitaloceanRegion(scope Construct, id *string, config DataDigitaloceanRegionConfig) DataDigitaloceanRegion
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanRegion.DataDigitaloceanRegion.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceanregion"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanregion"
 
 datadigitaloceanregion.DataDigitaloceanRegion_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanRegion.DataDigitaloceanRegion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceanregion"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanregion"
 
 datadigitaloceanregion.DataDigitaloceanRegion_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datadigitaloceanregion.DataDigitaloceanRegion_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanRegion.DataDigitaloceanRegion.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceanregion"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanregion"
 
 datadigitaloceanregion.DataDigitaloceanRegion_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datadigitaloceanregion.DataDigitaloceanRegion_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.dataDigitaloceanRegion.DataDigitaloceanRegion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceanregion"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanregion"
 
 datadigitaloceanregion.DataDigitaloceanRegion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -638,7 +638,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanRegion.DataDigitaloceanRegionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceanregion"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanregion"
 
 &datadigitaloceanregion.DataDigitaloceanRegionConfig {
 	Connection: interface{},

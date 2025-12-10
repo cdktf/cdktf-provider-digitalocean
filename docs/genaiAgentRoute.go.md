@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgentRoute.GenaiAgentRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagentroute"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagentroute"
 
 genaiagentroute.NewGenaiAgentRoute(scope Construct, id *string, config GenaiAgentRouteConfig) GenaiAgentRoute
 ```
@@ -406,7 +406,7 @@ func ResetRouteName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.genaiAgentRoute.GenaiAgentRoute.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagentroute"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagentroute"
 
 genaiagentroute.GenaiAgentRoute_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.genaiAgentRoute.GenaiAgentRoute.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagentroute"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagentroute"
 
 genaiagentroute.GenaiAgentRoute_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ genaiagentroute.GenaiAgentRoute_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.genaiAgentRoute.GenaiAgentRoute.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagentroute"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagentroute"
 
 genaiagentroute.GenaiAgentRoute_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ genaiagentroute.GenaiAgentRoute_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.genaiAgentRoute.GenaiAgentRoute.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagentroute"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagentroute"
 
 genaiagentroute.GenaiAgentRoute_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -838,7 +838,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgentRoute.GenaiAgentRouteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagentroute"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagentroute"
 
 &genaiagentroute.GenaiAgentRouteConfig {
 	Connection: interface{},

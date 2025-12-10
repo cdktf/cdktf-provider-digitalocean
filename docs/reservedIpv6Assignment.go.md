@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.reservedIpv6Assignment.ReservedIpv6Assignment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/reservedipv6assignment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/reservedipv6assignment"
 
 reservedipv6assignment.NewReservedIpv6Assignment(scope Construct, id *string, config ReservedIpv6AssignmentConfig) ReservedIpv6Assignment
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.reservedIpv6Assignment.ReservedIpv6Assignment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/reservedipv6assignment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/reservedipv6assignment"
 
 reservedipv6assignment.ReservedIpv6Assignment_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.reservedIpv6Assignment.ReservedIpv6Assignment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/reservedipv6assignment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/reservedipv6assignment"
 
 reservedipv6assignment.ReservedIpv6Assignment_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ reservedipv6assignment.ReservedIpv6Assignment_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.reservedIpv6Assignment.ReservedIpv6Assignment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/reservedipv6assignment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/reservedipv6assignment"
 
 reservedipv6assignment.ReservedIpv6Assignment_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ reservedipv6assignment.ReservedIpv6Assignment_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.reservedIpv6Assignment.ReservedIpv6Assignment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/reservedipv6assignment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/reservedipv6assignment"
 
 reservedipv6assignment.ReservedIpv6Assignment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.reservedIpv6Assignment.ReservedIpv6AssignmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/reservedipv6assignment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/reservedipv6assignment"
 
 &reservedipv6assignment.ReservedIpv6AssignmentConfig {
 	Connection: interface{},

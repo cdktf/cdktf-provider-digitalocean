@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databaseOnlineMigration.DatabaseOnlineMigration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/databaseonlinemigration"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databaseonlinemigration"
 
 databaseonlinemigration.NewDatabaseOnlineMigration(scope Construct, id *string, config DatabaseOnlineMigrationConfig) DatabaseOnlineMigration
 ```
@@ -405,7 +405,7 @@ func ResetIgnoreDbs()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.databaseOnlineMigration.DatabaseOnlineMigration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/databaseonlinemigration"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databaseonlinemigration"
 
 databaseonlinemigration.DatabaseOnlineMigration_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.databaseOnlineMigration.DatabaseOnlineMigration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/databaseonlinemigration"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databaseonlinemigration"
 
 databaseonlinemigration.DatabaseOnlineMigration_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ databaseonlinemigration.DatabaseOnlineMigration_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.databaseOnlineMigration.DatabaseOnlineMigration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/databaseonlinemigration"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databaseonlinemigration"
 
 databaseonlinemigration.DatabaseOnlineMigration_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ databaseonlinemigration.DatabaseOnlineMigration_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.databaseOnlineMigration.DatabaseOnlineMigration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/databaseonlinemigration"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databaseonlinemigration"
 
 databaseonlinemigration.DatabaseOnlineMigration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -815,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.databaseOnlineMigration.DatabaseOnlineMigrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/databaseonlinemigration"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databaseonlinemigration"
 
 &databaseonlinemigration.DatabaseOnlineMigrationConfig {
 	Connection: interface{},
@@ -826,7 +826,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/databas
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	ClusterId: *string,
-	Source: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13.databaseOnlineMigration.DatabaseOnlineMigrationSource,
+	Source: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.databaseOnlineMigration.DatabaseOnlineMigrationSource,
 	DisableSsl: interface{},
 	IgnoreDbs: *[]*string,
 }
@@ -979,7 +979,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.databaseOnlineMigration.DatabaseOnlineMigrationSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/databaseonlinemigration"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databaseonlinemigration"
 
 &databaseonlinemigration.DatabaseOnlineMigrationSource {
 	DbName: *string,
@@ -1079,7 +1079,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.databaseOnlineMigration.DatabaseOnlineMigrationSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/databaseonlinemigration"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/databaseonlinemigration"
 
 databaseonlinemigration.NewDatabaseOnlineMigrationSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseOnlineMigrationSourceOutputReference
 ```

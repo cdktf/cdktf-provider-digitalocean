@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgent(scope Construct, id *string, config GenaiAgentConfig) GenaiAgent
 ```
@@ -791,7 +791,7 @@ func ResetUserId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.GenaiAgent_IsConstruct(x interface{}) *bool
 ```
@@ -823,7 +823,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.GenaiAgent_IsTerraformElement(x interface{}) *bool
 ```
@@ -837,7 +837,7 @@ genaiagent.GenaiAgent_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.GenaiAgent_IsTerraformResource(x interface{}) *bool
 ```
@@ -851,7 +851,7 @@ genaiagent.GenaiAgent_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgent.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.GenaiAgent_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1938,7 +1938,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 &genaiagent.GenaiAgentAgentGuardrail {
 	AgentUuid: *string,
@@ -2100,7 +2100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 &genaiagent.GenaiAgentAnthropicApiKey {
 	CreatedBy: *string,
@@ -2166,7 +2166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfos.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 &genaiagent.GenaiAgentApiKeyInfos {
 	CreatedBy: *string,
@@ -2248,7 +2248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 &genaiagent.GenaiAgentApiKeys {
 	ApiKey: *string,
@@ -2282,7 +2282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 &genaiagent.GenaiAgentChatbot {
 	ButtonBackgroundColor: *string,
@@ -2396,7 +2396,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 &genaiagent.GenaiAgentChatbotIdentifiers {
 
@@ -2409,7 +2409,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiag
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgents.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 &genaiagent.GenaiAgentChildAgents {
 	Instruction: *string,
@@ -2619,7 +2619,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 &genaiagent.GenaiAgentChildAgentsAnthropicApiKey {
 	CreatedBy: *string,
@@ -2685,7 +2685,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfos.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 &genaiagent.GenaiAgentChildAgentsApiKeyInfos {
 	CreatedBy: *string,
@@ -2767,7 +2767,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 &genaiagent.GenaiAgentChildAgentsApiKeys {
 	ApiKey: *string,
@@ -2801,7 +2801,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 &genaiagent.GenaiAgentChildAgentsChatbot {
 	ButtonBackgroundColor: *string,
@@ -2915,7 +2915,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 &genaiagent.GenaiAgentChildAgentsChatbotIdentifiers {
 
@@ -2928,7 +2928,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiag
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeployment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 &genaiagent.GenaiAgentChildAgentsDeployment {
 	Name: *string,
@@ -3026,7 +3026,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 &genaiagent.GenaiAgentConfig {
 	Connection: interface{},
@@ -3737,7 +3737,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeployment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 &genaiagent.GenaiAgentDeployment {
 	Name: *string,
@@ -3835,7 +3835,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 &genaiagent.GenaiAgentFunctions {
 	ApiKey: *string,
@@ -3981,13 +3981,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBases.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 &genaiagent.GenaiAgentKnowledgeBases {
 	DatabaseId: *string,
 	EmbeddingModelUuid: *string,
 	IsPublic: interface{},
-	LastIndexingJob: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob,
+	LastIndexingJob: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob,
 	Name: *string,
 	ProjectId: *string,
 	Region: *string,
@@ -4143,7 +4143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJob.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 &genaiagent.GenaiAgentKnowledgeBasesLastIndexingJob {
 	CompletedDatasources: *f64,
@@ -4257,7 +4257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 &genaiagent.GenaiAgentModel {
 	Agreement: interface{},
@@ -4451,7 +4451,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 &genaiagent.GenaiAgentModelAgreement {
 	Description: *string,
@@ -4533,7 +4533,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 &genaiagent.GenaiAgentModelVersions {
 	Major: *f64,
@@ -4599,7 +4599,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 &genaiagent.GenaiAgentOpenAiApiKey {
 	CreatedBy: *string,
@@ -4665,7 +4665,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgents.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 &genaiagent.GenaiAgentParentAgents {
 	Instruction: *string,
@@ -4875,7 +4875,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 &genaiagent.GenaiAgentParentAgentsAnthropicApiKey {
 	CreatedBy: *string,
@@ -4941,7 +4941,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfos.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 &genaiagent.GenaiAgentParentAgentsApiKeyInfos {
 	CreatedBy: *string,
@@ -5023,7 +5023,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 &genaiagent.GenaiAgentParentAgentsApiKeys {
 	ApiKey: *string,
@@ -5057,7 +5057,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 &genaiagent.GenaiAgentParentAgentsChatbot {
 	ButtonBackgroundColor: *string,
@@ -5171,7 +5171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 &genaiagent.GenaiAgentParentAgentsChatbotIdentifiers {
 
@@ -5184,7 +5184,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiag
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeployment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 &genaiagent.GenaiAgentParentAgentsDeployment {
 	Name: *string,
@@ -5282,7 +5282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 &genaiagent.GenaiAgentTemplate {
 	Description: *string,
@@ -5460,13 +5460,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBases.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 &genaiagent.GenaiAgentTemplateKnowledgeBases {
 	DatabaseId: *string,
 	EmbeddingModelUuid: *string,
 	IsPublic: interface{},
-	LastIndexingJob: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob,
+	LastIndexingJob: github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob,
 	Name: *string,
 	ProjectId: *string,
 	Region: *string,
@@ -5622,7 +5622,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 &genaiagent.GenaiAgentTemplateKnowledgeBasesLastIndexingJob {
 	CompletedDatasources: *f64,
@@ -5736,7 +5736,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 &genaiagent.GenaiAgentTemplateModel {
 	Agreement: interface{},
@@ -5930,7 +5930,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 &genaiagent.GenaiAgentTemplateModelAgreement {
 	Description: *string,
@@ -6012,7 +6012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 &genaiagent.GenaiAgentTemplateModelVersions {
 	Major: *f64,
@@ -6080,7 +6080,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentAgentGuardrailList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiAgentAgentGuardrailList
 ```
@@ -6240,7 +6240,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAgentGuardrailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentAgentGuardrailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiAgentAgentGuardrailOutputReference
 ```
@@ -6801,7 +6801,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentAnthropicApiKeyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiAgentAnthropicApiKeyList
 ```
@@ -6961,7 +6961,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentAnthropicApiKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentAnthropicApiKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiAgentAnthropicApiKeyOutputReference
 ```
@@ -7348,7 +7348,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentApiKeyInfosList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiAgentApiKeyInfosList
 ```
@@ -7508,7 +7508,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeyInfosOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentApiKeyInfosOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiAgentApiKeyInfosOutputReference
 ```
@@ -7913,7 +7913,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentApiKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiAgentApiKeysList
 ```
@@ -8073,7 +8073,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentApiKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentApiKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiAgentApiKeysOutputReference
 ```
@@ -8369,7 +8369,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentChatbotIdentifiersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiAgentChatbotIdentifiersList
 ```
@@ -8529,7 +8529,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotIdentifiersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentChatbotIdentifiersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiAgentChatbotIdentifiersOutputReference
 ```
@@ -8807,7 +8807,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentChatbotList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiAgentChatbotList
 ```
@@ -8967,7 +8967,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChatbotOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentChatbotOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiAgentChatbotOutputReference
 ```
@@ -9408,7 +9408,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKeyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentChildAgentsAnthropicApiKeyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiAgentChildAgentsAnthropicApiKeyList
 ```
@@ -9568,7 +9568,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsAnthropicApiKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentChildAgentsAnthropicApiKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiAgentChildAgentsAnthropicApiKeyOutputReference
 ```
@@ -9955,7 +9955,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfosList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentChildAgentsApiKeyInfosList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiAgentChildAgentsApiKeyInfosList
 ```
@@ -10115,7 +10115,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeyInfosOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentChildAgentsApiKeyInfosOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiAgentChildAgentsApiKeyInfosOutputReference
 ```
@@ -10520,7 +10520,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentChildAgentsApiKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiAgentChildAgentsApiKeysList
 ```
@@ -10680,7 +10680,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsApiKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentChildAgentsApiKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiAgentChildAgentsApiKeysOutputReference
 ```
@@ -10976,7 +10976,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentChildAgentsChatbotIdentifiersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiAgentChildAgentsChatbotIdentifiersList
 ```
@@ -11136,7 +11136,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotIdentifiersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentChildAgentsChatbotIdentifiersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiAgentChildAgentsChatbotIdentifiersOutputReference
 ```
@@ -11414,7 +11414,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentChildAgentsChatbotList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiAgentChildAgentsChatbotList
 ```
@@ -11574,7 +11574,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsChatbotOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentChildAgentsChatbotOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiAgentChildAgentsChatbotOutputReference
 ```
@@ -12015,7 +12015,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentChildAgentsDeploymentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiAgentChildAgentsDeploymentList
 ```
@@ -12175,7 +12175,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsDeploymentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentChildAgentsDeploymentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiAgentChildAgentsDeploymentOutputReference
 ```
@@ -12609,7 +12609,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentChildAgentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiAgentChildAgentsList
 ```
@@ -12769,7 +12769,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentChildAgentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentChildAgentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiAgentChildAgentsOutputReference
 ```
@@ -13438,7 +13438,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeploymentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentDeploymentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiAgentDeploymentList
 ```
@@ -13598,7 +13598,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentDeploymentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentDeploymentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiAgentDeploymentOutputReference
 ```
@@ -14032,7 +14032,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentFunctionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiAgentFunctionsList
 ```
@@ -14192,7 +14192,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentFunctionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentFunctionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiAgentFunctionsOutputReference
 ```
@@ -14713,7 +14713,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesLastIndexingJobOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentKnowledgeBasesLastIndexingJobOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GenaiAgentKnowledgeBasesLastIndexingJobOutputReference
 ```
@@ -15191,7 +15191,7 @@ func InternalValue() GenaiAgentKnowledgeBasesLastIndexingJob
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentKnowledgeBasesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiAgentKnowledgeBasesList
 ```
@@ -15351,7 +15351,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentKnowledgeBasesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentKnowledgeBasesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiAgentKnowledgeBasesOutputReference
 ```
@@ -15936,7 +15936,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreementList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentModelAgreementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiAgentModelAgreementList
 ```
@@ -16096,7 +16096,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelAgreementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentModelAgreementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiAgentModelAgreementOutputReference
 ```
@@ -16479,7 +16479,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentModelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiAgentModelList
 ```
@@ -16639,7 +16639,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentModelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiAgentModelOutputReference
 ```
@@ -17273,7 +17273,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentModelVersionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiAgentModelVersionsList
 ```
@@ -17433,7 +17433,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentModelVersionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentModelVersionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiAgentModelVersionsOutputReference
 ```
@@ -17787,7 +17787,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKeyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentOpenAiApiKeyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiAgentOpenAiApiKeyList
 ```
@@ -17947,7 +17947,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentOpenAiApiKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentOpenAiApiKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiAgentOpenAiApiKeyOutputReference
 ```
@@ -18334,7 +18334,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKeyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentParentAgentsAnthropicApiKeyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiAgentParentAgentsAnthropicApiKeyList
 ```
@@ -18494,7 +18494,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsAnthropicApiKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentParentAgentsAnthropicApiKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiAgentParentAgentsAnthropicApiKeyOutputReference
 ```
@@ -18881,7 +18881,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfosList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentParentAgentsApiKeyInfosList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiAgentParentAgentsApiKeyInfosList
 ```
@@ -19041,7 +19041,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeyInfosOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentParentAgentsApiKeyInfosOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiAgentParentAgentsApiKeyInfosOutputReference
 ```
@@ -19446,7 +19446,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentParentAgentsApiKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiAgentParentAgentsApiKeysList
 ```
@@ -19606,7 +19606,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsApiKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentParentAgentsApiKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiAgentParentAgentsApiKeysOutputReference
 ```
@@ -19902,7 +19902,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentParentAgentsChatbotIdentifiersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiAgentParentAgentsChatbotIdentifiersList
 ```
@@ -20062,7 +20062,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotIdentifiersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentParentAgentsChatbotIdentifiersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiAgentParentAgentsChatbotIdentifiersOutputReference
 ```
@@ -20340,7 +20340,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentParentAgentsChatbotList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiAgentParentAgentsChatbotList
 ```
@@ -20500,7 +20500,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsChatbotOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentParentAgentsChatbotOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiAgentParentAgentsChatbotOutputReference
 ```
@@ -20941,7 +20941,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentParentAgentsDeploymentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiAgentParentAgentsDeploymentList
 ```
@@ -21101,7 +21101,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsDeploymentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentParentAgentsDeploymentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiAgentParentAgentsDeploymentOutputReference
 ```
@@ -21535,7 +21535,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentParentAgentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiAgentParentAgentsList
 ```
@@ -21695,7 +21695,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentParentAgentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentParentAgentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiAgentParentAgentsOutputReference
 ```
@@ -22364,7 +22364,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference
 ```
@@ -22842,7 +22842,7 @@ func InternalValue() GenaiAgentTemplateKnowledgeBasesLastIndexingJob
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentTemplateKnowledgeBasesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiAgentTemplateKnowledgeBasesList
 ```
@@ -23002,7 +23002,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateKnowledgeBasesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentTemplateKnowledgeBasesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiAgentTemplateKnowledgeBasesOutputReference
 ```
@@ -23587,7 +23587,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentTemplateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiAgentTemplateList
 ```
@@ -23747,7 +23747,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreementList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentTemplateModelAgreementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiAgentTemplateModelAgreementList
 ```
@@ -23907,7 +23907,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelAgreementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentTemplateModelAgreementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiAgentTemplateModelAgreementOutputReference
 ```
@@ -24290,7 +24290,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentTemplateModelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiAgentTemplateModelList
 ```
@@ -24450,7 +24450,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentTemplateModelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiAgentTemplateModelOutputReference
 ```
@@ -25084,7 +25084,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentTemplateModelVersionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiAgentTemplateModelVersionsList
 ```
@@ -25244,7 +25244,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateModelVersionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentTemplateModelVersionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiAgentTemplateModelVersionsOutputReference
 ```
@@ -25598,7 +25598,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiAgent.GenaiAgentTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiagent"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiagent"
 
 genaiagent.NewGenaiAgentTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiAgentTemplateOutputReference
 ```

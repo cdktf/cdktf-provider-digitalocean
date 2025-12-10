@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanByoipPrefix.DataDigitaloceanByoipPrefix.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceanbyoipprefix"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanbyoipprefix"
 
 datadigitaloceanbyoipprefix.NewDataDigitaloceanByoipPrefix(scope Construct, id *string, config DataDigitaloceanByoipPrefixConfig) DataDigitaloceanByoipPrefix
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanByoipPrefix.DataDigitaloceanByoipPrefix.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceanbyoipprefix"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanbyoipprefix"
 
 datadigitaloceanbyoipprefix.DataDigitaloceanByoipPrefix_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanByoipPrefix.DataDigitaloceanByoipPrefix.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceanbyoipprefix"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanbyoipprefix"
 
 datadigitaloceanbyoipprefix.DataDigitaloceanByoipPrefix_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datadigitaloceanbyoipprefix.DataDigitaloceanByoipPrefix_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanByoipPrefix.DataDigitaloceanByoipPrefix.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceanbyoipprefix"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanbyoipprefix"
 
 datadigitaloceanbyoipprefix.DataDigitaloceanByoipPrefix_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datadigitaloceanbyoipprefix.DataDigitaloceanByoipPrefix_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.dataDigitaloceanByoipPrefix.DataDigitaloceanByoipPrefix.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceanbyoipprefix"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanbyoipprefix"
 
 datadigitaloceanbyoipprefix.DataDigitaloceanByoipPrefix_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -649,7 +649,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanByoipPrefix.DataDigitaloceanByoipPrefixConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceanbyoipprefix"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanbyoipprefix"
 
 &datadigitaloceanbyoipprefix.DataDigitaloceanByoipPrefixConfig {
 	Connection: interface{},

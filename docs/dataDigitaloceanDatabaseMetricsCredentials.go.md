@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseMetricsCredentials.DataDigitaloceanDatabaseMetricsCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceandatabasemetricscredentials"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandatabasemetricscredentials"
 
 datadigitaloceandatabasemetricscredentials.NewDataDigitaloceanDatabaseMetricsCredentials(scope Construct, id *string, config DataDigitaloceanDatabaseMetricsCredentialsConfig) DataDigitaloceanDatabaseMetricsCredentials
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseMetricsCredentials.DataDigitaloceanDatabaseMetricsCredentials.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceandatabasemetricscredentials"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandatabasemetricscredentials"
 
 datadigitaloceandatabasemetricscredentials.DataDigitaloceanDatabaseMetricsCredentials_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseMetricsCredentials.DataDigitaloceanDatabaseMetricsCredentials.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceandatabasemetricscredentials"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandatabasemetricscredentials"
 
 datadigitaloceandatabasemetricscredentials.DataDigitaloceanDatabaseMetricsCredentials_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datadigitaloceandatabasemetricscredentials.DataDigitaloceanDatabaseMetricsCreden
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseMetricsCredentials.DataDigitaloceanDatabaseMetricsCredentials.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceandatabasemetricscredentials"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandatabasemetricscredentials"
 
 datadigitaloceandatabasemetricscredentials.DataDigitaloceanDatabaseMetricsCredentials_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datadigitaloceandatabasemetricscredentials.DataDigitaloceanDatabaseMetricsCreden
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseMetricsCredentials.DataDigitaloceanDatabaseMetricsCredentials.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceandatabasemetricscredentials"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandatabasemetricscredentials"
 
 datadigitaloceandatabasemetricscredentials.DataDigitaloceanDatabaseMetricsCredentials_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -594,7 +594,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanDatabaseMetricsCredentials.DataDigitaloceanDatabaseMetricsCredentialsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceandatabasemetricscredentials"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceandatabasemetricscredentials"
 
 &datadigitaloceandatabasemetricscredentials.DataDigitaloceanDatabaseMetricsCredentialsConfig {
 	Connection: interface{},

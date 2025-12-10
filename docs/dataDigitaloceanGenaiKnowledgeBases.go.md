@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiKnowledgeBases.DataDigitaloceanGenaiKnowledgeBases.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaiknowledgebases"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaiknowledgebases"
 
 datadigitaloceangenaiknowledgebases.NewDataDigitaloceanGenaiKnowledgeBases(scope Construct, id *string, config DataDigitaloceanGenaiKnowledgeBasesConfig) DataDigitaloceanGenaiKnowledgeBases
 ```
@@ -323,7 +323,7 @@ func ResetSort()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiKnowledgeBases.DataDigitaloceanGenaiKnowledgeBases.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaiknowledgebases"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaiknowledgebases"
 
 datadigitaloceangenaiknowledgebases.DataDigitaloceanGenaiKnowledgeBases_IsConstruct(x interface{}) *bool
 ```
@@ -355,7 +355,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiKnowledgeBases.DataDigitaloceanGenaiKnowledgeBases.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaiknowledgebases"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaiknowledgebases"
 
 datadigitaloceangenaiknowledgebases.DataDigitaloceanGenaiKnowledgeBases_IsTerraformElement(x interface{}) *bool
 ```
@@ -369,7 +369,7 @@ datadigitaloceangenaiknowledgebases.DataDigitaloceanGenaiKnowledgeBases_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiKnowledgeBases.DataDigitaloceanGenaiKnowledgeBases.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaiknowledgebases"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaiknowledgebases"
 
 datadigitaloceangenaiknowledgebases.DataDigitaloceanGenaiKnowledgeBases_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -383,7 +383,7 @@ datadigitaloceangenaiknowledgebases.DataDigitaloceanGenaiKnowledgeBases_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiKnowledgeBases.DataDigitaloceanGenaiKnowledgeBases.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaiknowledgebases"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaiknowledgebases"
 
 datadigitaloceangenaiknowledgebases.DataDigitaloceanGenaiKnowledgeBases_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -667,7 +667,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiKnowledgeBases.DataDigitaloceanGenaiKnowledgeBasesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaiknowledgebases"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaiknowledgebases"
 
 &datadigitaloceangenaiknowledgebases.DataDigitaloceanGenaiKnowledgeBasesConfig {
 	Connection: interface{},
@@ -818,7 +818,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiKnowledgeBases.DataDigitaloceanGenaiKnowledgeBasesFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaiknowledgebases"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaiknowledgebases"
 
 &datadigitaloceangenaiknowledgebases.DataDigitaloceanGenaiKnowledgeBasesFilter {
 	Key: *string,
@@ -892,7 +892,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiKnowledgeBases.DataDigitaloceanGenaiKnowledgeBasesKnowledgeBases.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaiknowledgebases"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaiknowledgebases"
 
 &datadigitaloceangenaiknowledgebases.DataDigitaloceanGenaiKnowledgeBasesKnowledgeBases {
 
@@ -905,7 +905,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiKnowledgeBases.DataDigitaloceanGenaiKnowledgeBasesKnowledgeBasesLastIndexingJob.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaiknowledgebases"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaiknowledgebases"
 
 &datadigitaloceangenaiknowledgebases.DataDigitaloceanGenaiKnowledgeBasesKnowledgeBasesLastIndexingJob {
 
@@ -918,7 +918,7 @@ import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadig
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiKnowledgeBases.DataDigitaloceanGenaiKnowledgeBasesSort.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaiknowledgebases"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaiknowledgebases"
 
 &datadigitaloceangenaiknowledgebases.DataDigitaloceanGenaiKnowledgeBasesSort {
 	Key: *string,
@@ -966,7 +966,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiKnowledgeBases.DataDigitaloceanGenaiKnowledgeBasesFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaiknowledgebases"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaiknowledgebases"
 
 datadigitaloceangenaiknowledgebases.NewDataDigitaloceanGenaiKnowledgeBasesFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanGenaiKnowledgeBasesFilterList
 ```
@@ -1126,7 +1126,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiKnowledgeBases.DataDigitaloceanGenaiKnowledgeBasesFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaiknowledgebases"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaiknowledgebases"
 
 datadigitaloceangenaiknowledgebases.NewDataDigitaloceanGenaiKnowledgeBasesFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanGenaiKnowledgeBasesFilterOutputReference
 ```
@@ -1495,7 +1495,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiKnowledgeBases.DataDigitaloceanGenaiKnowledgeBasesKnowledgeBasesLastIndexingJobList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaiknowledgebases"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaiknowledgebases"
 
 datadigitaloceangenaiknowledgebases.NewDataDigitaloceanGenaiKnowledgeBasesKnowledgeBasesLastIndexingJobList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanGenaiKnowledgeBasesKnowledgeBasesLastIndexingJobList
 ```
@@ -1644,7 +1644,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiKnowledgeBases.DataDigitaloceanGenaiKnowledgeBasesKnowledgeBasesLastIndexingJobOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaiknowledgebases"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaiknowledgebases"
 
 datadigitaloceangenaiknowledgebases.NewDataDigitaloceanGenaiKnowledgeBasesKnowledgeBasesLastIndexingJobOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanGenaiKnowledgeBasesKnowledgeBasesLastIndexingJobOutputReference
 ```
@@ -2032,7 +2032,7 @@ func InternalValue() DataDigitaloceanGenaiKnowledgeBasesKnowledgeBasesLastIndexi
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiKnowledgeBases.DataDigitaloceanGenaiKnowledgeBasesKnowledgeBasesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaiknowledgebases"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaiknowledgebases"
 
 datadigitaloceangenaiknowledgebases.NewDataDigitaloceanGenaiKnowledgeBasesKnowledgeBasesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanGenaiKnowledgeBasesKnowledgeBasesList
 ```
@@ -2181,7 +2181,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiKnowledgeBases.DataDigitaloceanGenaiKnowledgeBasesKnowledgeBasesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaiknowledgebases"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaiknowledgebases"
 
 datadigitaloceangenaiknowledgebases.NewDataDigitaloceanGenaiKnowledgeBasesKnowledgeBasesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanGenaiKnowledgeBasesKnowledgeBasesOutputReference
 ```
@@ -2591,7 +2591,7 @@ func InternalValue() DataDigitaloceanGenaiKnowledgeBasesKnowledgeBases
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiKnowledgeBases.DataDigitaloceanGenaiKnowledgeBasesSortList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaiknowledgebases"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaiknowledgebases"
 
 datadigitaloceangenaiknowledgebases.NewDataDigitaloceanGenaiKnowledgeBasesSortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanGenaiKnowledgeBasesSortList
 ```
@@ -2751,7 +2751,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanGenaiKnowledgeBases.DataDigitaloceanGenaiKnowledgeBasesSortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceangenaiknowledgebases"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceangenaiknowledgebases"
 
 datadigitaloceangenaiknowledgebases.NewDataDigitaloceanGenaiKnowledgeBasesSortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDigitaloceanGenaiKnowledgeBasesSortOutputReference
 ```
