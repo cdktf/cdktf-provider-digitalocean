@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/dropletsnapshot"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/dropletsnapshot"
 
 dropletsnapshot.NewDropletSnapshot(scope Construct, id *string, config DropletSnapshotConfig) DropletSnapshot
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/dropletsnapshot"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/dropletsnapshot"
 
 dropletsnapshot.DropletSnapshot_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/dropletsnapshot"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/dropletsnapshot"
 
 dropletsnapshot.DropletSnapshot_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ dropletsnapshot.DropletSnapshot_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/dropletsnapshot"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/dropletsnapshot"
 
 dropletsnapshot.DropletSnapshot_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ dropletsnapshot.DropletSnapshot_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshot.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/dropletsnapshot"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/dropletsnapshot"
 
 dropletsnapshot.DropletSnapshot_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -784,7 +784,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dropletSnapshot.DropletSnapshotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/dropletsnapshot"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/dropletsnapshot"
 
 &dropletsnapshot.DropletSnapshotConfig {
 	Connection: interface{},

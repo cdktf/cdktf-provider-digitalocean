@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiKnowledgeBase.GenaiKnowledgeBase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiknowledgebase"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiknowledgebase"
 
 genaiknowledgebase.NewGenaiKnowledgeBase(scope Construct, id *string, config GenaiKnowledgeBaseConfig) GenaiKnowledgeBase
 ```
@@ -453,7 +453,7 @@ func ResetVpcUuid()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.genaiKnowledgeBase.GenaiKnowledgeBase.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiknowledgebase"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiknowledgebase"
 
 genaiknowledgebase.GenaiKnowledgeBase_IsConstruct(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.genaiKnowledgeBase.GenaiKnowledgeBase.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiknowledgebase"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiknowledgebase"
 
 genaiknowledgebase.GenaiKnowledgeBase_IsTerraformElement(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ genaiknowledgebase.GenaiKnowledgeBase_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.genaiKnowledgeBase.GenaiKnowledgeBase.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiknowledgebase"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiknowledgebase"
 
 genaiknowledgebase.GenaiKnowledgeBase_IsTerraformResource(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ genaiknowledgebase.GenaiKnowledgeBase_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.genaiKnowledgeBase.GenaiKnowledgeBase.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiknowledgebase"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiknowledgebase"
 
 genaiknowledgebase.GenaiKnowledgeBase_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1017,7 +1017,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiKnowledgeBase.GenaiKnowledgeBaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiknowledgebase"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiknowledgebase"
 
 &genaiknowledgebase.GenaiKnowledgeBaseConfig {
 	Connection: interface{},
@@ -1308,7 +1308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiKnowledgeBase.GenaiKnowledgeBaseDatasources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiknowledgebase"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiknowledgebase"
 
 &genaiknowledgebase.GenaiKnowledgeBaseDatasources {
 	FileUploadDataSource: interface{},
@@ -1406,7 +1406,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiKnowledgeBase.GenaiKnowledgeBaseDatasourcesFileUploadDataSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiknowledgebase"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiknowledgebase"
 
 &genaiknowledgebase.GenaiKnowledgeBaseDatasourcesFileUploadDataSource {
 	OriginalFileName: *string,
@@ -1472,7 +1472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiKnowledgeBase.GenaiKnowledgeBaseDatasourcesLastIndexingJob.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiknowledgebase"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiknowledgebase"
 
 &genaiknowledgebase.GenaiKnowledgeBaseDatasourcesLastIndexingJob {
 	CompletedDatasources: *f64,
@@ -1586,7 +1586,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiKnowledgeBase.GenaiKnowledgeBaseDatasourcesSpacesDataSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiknowledgebase"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiknowledgebase"
 
 &genaiknowledgebase.GenaiKnowledgeBaseDatasourcesSpacesDataSource {
 	BucketName: *string,
@@ -1652,7 +1652,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiKnowledgeBase.GenaiKnowledgeBaseDatasourcesWebCrawlerDataSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiknowledgebase"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiknowledgebase"
 
 &genaiknowledgebase.GenaiKnowledgeBaseDatasourcesWebCrawlerDataSource {
 	BaseUrl: *string,
@@ -1724,7 +1724,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiKnowledgeBase.GenaiKnowledgeBaseLastIndexingJob.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiknowledgebase"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiknowledgebase"
 
 &genaiknowledgebase.GenaiKnowledgeBaseLastIndexingJob {
 	CompletedDatasources: *f64,
@@ -1840,7 +1840,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiKnowledgeBase.GenaiKnowledgeBaseDatasourcesFileUploadDataSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiknowledgebase"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiknowledgebase"
 
 genaiknowledgebase.NewGenaiKnowledgeBaseDatasourcesFileUploadDataSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiKnowledgeBaseDatasourcesFileUploadDataSourceList
 ```
@@ -2000,7 +2000,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiKnowledgeBase.GenaiKnowledgeBaseDatasourcesFileUploadDataSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiknowledgebase"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiknowledgebase"
 
 genaiknowledgebase.NewGenaiKnowledgeBaseDatasourcesFileUploadDataSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiKnowledgeBaseDatasourcesFileUploadDataSourceOutputReference
 ```
@@ -2354,7 +2354,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiKnowledgeBase.GenaiKnowledgeBaseDatasourcesLastIndexingJobList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiknowledgebase"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiknowledgebase"
 
 genaiknowledgebase.NewGenaiKnowledgeBaseDatasourcesLastIndexingJobList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiKnowledgeBaseDatasourcesLastIndexingJobList
 ```
@@ -2514,7 +2514,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiKnowledgeBase.GenaiKnowledgeBaseDatasourcesLastIndexingJobOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiknowledgebase"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiknowledgebase"
 
 genaiknowledgebase.NewGenaiKnowledgeBaseDatasourcesLastIndexingJobOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiKnowledgeBaseDatasourcesLastIndexingJobOutputReference
 ```
@@ -3010,7 +3010,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiKnowledgeBase.GenaiKnowledgeBaseDatasourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiknowledgebase"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiknowledgebase"
 
 genaiknowledgebase.NewGenaiKnowledgeBaseDatasourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiKnowledgeBaseDatasourcesList
 ```
@@ -3170,7 +3170,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiKnowledgeBase.GenaiKnowledgeBaseDatasourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiknowledgebase"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiknowledgebase"
 
 genaiknowledgebase.NewGenaiKnowledgeBaseDatasourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiKnowledgeBaseDatasourcesOutputReference
 ```
@@ -3656,7 +3656,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiKnowledgeBase.GenaiKnowledgeBaseDatasourcesSpacesDataSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiknowledgebase"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiknowledgebase"
 
 genaiknowledgebase.NewGenaiKnowledgeBaseDatasourcesSpacesDataSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiKnowledgeBaseDatasourcesSpacesDataSourceList
 ```
@@ -3816,7 +3816,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiKnowledgeBase.GenaiKnowledgeBaseDatasourcesSpacesDataSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiknowledgebase"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiknowledgebase"
 
 genaiknowledgebase.NewGenaiKnowledgeBaseDatasourcesSpacesDataSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiKnowledgeBaseDatasourcesSpacesDataSourceOutputReference
 ```
@@ -4170,7 +4170,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiKnowledgeBase.GenaiKnowledgeBaseDatasourcesWebCrawlerDataSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiknowledgebase"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiknowledgebase"
 
 genaiknowledgebase.NewGenaiKnowledgeBaseDatasourcesWebCrawlerDataSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiKnowledgeBaseDatasourcesWebCrawlerDataSourceList
 ```
@@ -4330,7 +4330,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiKnowledgeBase.GenaiKnowledgeBaseDatasourcesWebCrawlerDataSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiknowledgebase"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiknowledgebase"
 
 genaiknowledgebase.NewGenaiKnowledgeBaseDatasourcesWebCrawlerDataSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiKnowledgeBaseDatasourcesWebCrawlerDataSourceOutputReference
 ```
@@ -4684,7 +4684,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiKnowledgeBase.GenaiKnowledgeBaseLastIndexingJobList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiknowledgebase"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiknowledgebase"
 
 genaiknowledgebase.NewGenaiKnowledgeBaseLastIndexingJobList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiKnowledgeBaseLastIndexingJobList
 ```
@@ -4844,7 +4844,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiKnowledgeBase.GenaiKnowledgeBaseLastIndexingJobOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiknowledgebase"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiknowledgebase"
 
 genaiknowledgebase.NewGenaiKnowledgeBaseLastIndexingJobOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiKnowledgeBaseLastIndexingJobOutputReference
 ```

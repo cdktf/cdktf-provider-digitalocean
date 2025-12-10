@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiFunction.GenaiFunction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaifunction"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaifunction"
 
 genaifunction.NewGenaiFunction(scope Construct, id *string, config GenaiFunctionConfig) GenaiFunction
 ```
@@ -399,7 +399,7 @@ func ResetOutputSchema()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.genaiFunction.GenaiFunction.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaifunction"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaifunction"
 
 genaifunction.GenaiFunction_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.genaiFunction.GenaiFunction.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaifunction"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaifunction"
 
 genaifunction.GenaiFunction_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ genaifunction.GenaiFunction_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.genaiFunction.GenaiFunction.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaifunction"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaifunction"
 
 genaifunction.GenaiFunction_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ genaifunction.GenaiFunction_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.genaiFunction.GenaiFunction.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaifunction"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaifunction"
 
 genaifunction.GenaiFunction_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -875,7 +875,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiFunction.GenaiFunctionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaifunction"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaifunction"
 
 &genaifunction.GenaiFunctionConfig {
 	Connection: interface{},

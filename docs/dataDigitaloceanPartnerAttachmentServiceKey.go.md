@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.dataDigitaloceanPartnerAttachmentServiceKey.DataDigitaloceanPartnerAttachmentServiceKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanpartnerattachmentservicekey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceanpartnerattachmentservicekey"
 
 datadigitaloceanpartnerattachmentservicekey.NewDataDigitaloceanPartnerAttachmentServiceKey(scope Construct, id *string, config DataDigitaloceanPartnerAttachmentServiceKeyConfig) DataDigitaloceanPartnerAttachmentServiceKey
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.dataDigitaloceanPartnerAttachmentServiceKey.DataDigitaloceanPartnerAttachmentServiceKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanpartnerattachmentservicekey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceanpartnerattachmentservicekey"
 
 datadigitaloceanpartnerattachmentservicekey.DataDigitaloceanPartnerAttachmentServiceKey_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.dataDigitaloceanPartnerAttachmentServiceKey.DataDigitaloceanPartnerAttachmentServiceKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanpartnerattachmentservicekey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceanpartnerattachmentservicekey"
 
 datadigitaloceanpartnerattachmentservicekey.DataDigitaloceanPartnerAttachmentServiceKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datadigitaloceanpartnerattachmentservicekey.DataDigitaloceanPartnerAttachmentSer
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-digitalocean.dataDigitaloceanPartnerAttachmentServiceKey.DataDigitaloceanPartnerAttachmentServiceKey.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanpartnerattachmentservicekey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceanpartnerattachmentservicekey"
 
 datadigitaloceanpartnerattachmentservicekey.DataDigitaloceanPartnerAttachmentServiceKey_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datadigitaloceanpartnerattachmentservicekey.DataDigitaloceanPartnerAttachmentSer
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.dataDigitaloceanPartnerAttachmentServiceKey.DataDigitaloceanPartnerAttachmentServiceKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanpartnerattachmentservicekey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceanpartnerattachmentservicekey"
 
 datadigitaloceanpartnerattachmentservicekey.DataDigitaloceanPartnerAttachmentServiceKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -627,7 +627,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.dataDigitaloceanPartnerAttachmentServiceKey.DataDigitaloceanPartnerAttachmentServiceKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/datadigitaloceanpartnerattachmentservicekey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/datadigitaloceanpartnerattachmentservicekey"
 
 &datadigitaloceanpartnerattachmentservicekey.DataDigitaloceanPartnerAttachmentServiceKeyConfig {
 	Connection: interface{},

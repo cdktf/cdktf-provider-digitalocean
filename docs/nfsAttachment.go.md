@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.nfsAttachment.NfsAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/nfsattachment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/nfsattachment"
 
 nfsattachment.NewNfsAttachment(scope Construct, id *string, config NfsAttachmentConfig) NfsAttachment
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.nfsAttachment.NfsAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/nfsattachment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/nfsattachment"
 
 nfsattachment.NfsAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.nfsAttachment.NfsAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/nfsattachment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/nfsattachment"
 
 nfsattachment.NfsAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ nfsattachment.NfsAttachment_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.nfsAttachment.NfsAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/nfsattachment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/nfsattachment"
 
 nfsattachment.NfsAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ nfsattachment.NfsAttachment_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.nfsAttachment.NfsAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/nfsattachment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/nfsattachment"
 
 nfsattachment.NfsAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -762,7 +762,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.nfsAttachment.NfsAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/nfsattachment"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/nfsattachment"
 
 &nfsattachment.NfsAttachmentConfig {
 	Connection: interface{},

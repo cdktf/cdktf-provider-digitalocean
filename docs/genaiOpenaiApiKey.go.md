@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/digitalocean/digital
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiopenaiapikey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiopenaiapikey"
 
 genaiopenaiapikey.NewGenaiOpenaiApiKey(scope Construct, id *string, config GenaiOpenaiApiKeyConfig) GenaiOpenaiApiKey
 ```
@@ -405,7 +405,7 @@ func ResetModel()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiopenaiapikey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiopenaiapikey"
 
 genaiopenaiapikey.GenaiOpenaiApiKey_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiopenaiapikey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiopenaiapikey"
 
 genaiopenaiapikey.GenaiOpenaiApiKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ genaiopenaiapikey.GenaiOpenaiApiKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiopenaiapikey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiopenaiapikey"
 
 genaiopenaiapikey.GenaiOpenaiApiKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ genaiopenaiapikey.GenaiOpenaiApiKey_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiopenaiapikey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiopenaiapikey"
 
 genaiopenaiapikey.GenaiOpenaiApiKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiopenaiapikey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiopenaiapikey"
 
 &genaiopenaiapikey.GenaiOpenaiApiKeyConfig {
 	Connection: interface{},
@@ -1004,7 +1004,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKeyModel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiopenaiapikey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiopenaiapikey"
 
 &genaiopenaiapikey.GenaiOpenaiApiKeyModel {
 	Agreement: interface{},
@@ -1198,7 +1198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKeyModelAgreement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiopenaiapikey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiopenaiapikey"
 
 &genaiopenaiapikey.GenaiOpenaiApiKeyModelAgreement {
 	Description: *string,
@@ -1280,7 +1280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializer <a name="Initializer" id="@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKeyModelVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiopenaiapikey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiopenaiapikey"
 
 &genaiopenaiapikey.GenaiOpenaiApiKeyModelVersions {
 	Major: *f64,
@@ -1348,7 +1348,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digit
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKeyModelAgreementList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiopenaiapikey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiopenaiapikey"
 
 genaiopenaiapikey.NewGenaiOpenaiApiKeyModelAgreementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiOpenaiApiKeyModelAgreementList
 ```
@@ -1508,7 +1508,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKeyModelAgreementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiopenaiapikey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiopenaiapikey"
 
 genaiopenaiapikey.NewGenaiOpenaiApiKeyModelAgreementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiOpenaiApiKeyModelAgreementOutputReference
 ```
@@ -1891,7 +1891,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKeyModelList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiopenaiapikey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiopenaiapikey"
 
 genaiopenaiapikey.NewGenaiOpenaiApiKeyModelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiOpenaiApiKeyModelList
 ```
@@ -2051,7 +2051,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKeyModelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiopenaiapikey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiopenaiapikey"
 
 genaiopenaiapikey.NewGenaiOpenaiApiKeyModelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiOpenaiApiKeyModelOutputReference
 ```
@@ -2685,7 +2685,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKeyModelVersionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiopenaiapikey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiopenaiapikey"
 
 genaiopenaiapikey.NewGenaiOpenaiApiKeyModelVersionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GenaiOpenaiApiKeyModelVersionsList
 ```
@@ -2845,7 +2845,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-digitalocean.genaiOpenaiApiKey.GenaiOpenaiApiKeyModelVersionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/genaiopenaiapikey"
+import "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v13/genaiopenaiapikey"
 
 genaiopenaiapikey.NewGenaiOpenaiApiKeyModelVersionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GenaiOpenaiApiKeyModelVersionsOutputReference
 ```
